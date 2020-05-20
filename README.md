@@ -1,4 +1,4 @@
-Character Action Framework (or **CAF**) is a Unity-focused framework designed for making character action games. 
+**Character Action Framework** (or CAF) is a Unity-focused framework designed for making character action games. 
 
 ## Documentation
 N/A.
