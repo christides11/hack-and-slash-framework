@@ -1,2 +1,2 @@
 deploy:
-	git subtree push --prefix Assets\CAF origin upm
+	git subtree push --prefix Assets/CAF origin upm
