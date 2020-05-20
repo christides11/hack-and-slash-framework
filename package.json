@@ -3,5 +3,13 @@
 	"version": "0.0.1",
     "displayName": "Character Action Framework",
 	"description": "A framework for character action games.",
-    "unity": "2019.3"
+    "unity": "2019.3",
+	"keywords": {
+		"character",
+		"action",
+		"framework"
+	},
+	"dependencies": {
+		"https://github.com/Siccity/xNode.git": "1.7.0"
+	}
 }
