@@ -1,7 +1,5 @@
 ﻿using CAF.Camera;
 using CAF.Simulation;
-using System.Collections;
-using System.Collections.Generic;
 using TAPI.Combat;
 using UnityEngine;
 
