@@ -10,12 +10,12 @@ namespace CAF.Camera
         /// Make the handler look in the given direction.
         /// </summary>
         /// <param name="direction">The direction vector.</param>
-        public void SetLookDirection(Vector3 direction);
+        void SetLookDirection(Vector3 direction);
 
         /// <summary>
         /// Set the look direction to point at the given position.
         /// </summary>
         /// <param name="position">The position to look at.</param>
-        public void LookAt(Vector3 position);
+        void LookAt(Vector3 position);
     }
 }
