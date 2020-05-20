@@ -1,4 +1,5 @@
 ﻿using System;
+using CAF.Entities;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif

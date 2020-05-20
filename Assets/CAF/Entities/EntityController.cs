@@ -1,18 +1,37 @@
-﻿using System.Collections;
+﻿using CAF.Camera;
+using CAF.Simulation;
+using System.Collections;
 using System.Collections.Generic;
+using TAPI.Combat;
 using UnityEngine;
 
-public class EntityController : MonoBehaviour
+namespace CAF.Entities
 {
-    // Start is called before the first frame update
-    void Start()
+    public class EntityController : SimObject, ITargetable
     {
-        
-    }
+        public EntityInput InputManager { get { return entityInput; } }
+        public EntityStateManager StateManager { get { return entityStateManager; } }
+        public EntityCombatManager CombatManager { get { return entityCombatManager; } }
+        public EntityPhysicsManager PhysicsManager { get { return entityPhysicsManager; } }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public virtual bool Targetable { get { return false; } }
+        public virtual Vector3 Center { get { return new Vector3(0, 0, 0); } }
+        public bool IsGrounded { get; set; } = false;
+
+        [Header("References")]
+        [SerializeField] protected EntityInput entityInput;
+        [SerializeField] protected EntityStateManager entityStateManager;
+        [SerializeField] protected EntityCombatManager entityCombatManager;
+        [SerializeField] protected EntityPhysicsManager entityPhysicsManager;
+        public CapsuleCollider coll;
+        public GameObject visual;
+        public LookHandler lookHandler;
+
+        /// <summary>
+        /// Handles finding and locking on to targets.
+        /// </summary>
+        protected virtual void HandleLockon()
+        {
+        }
     }
-}
+} 
