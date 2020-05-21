@@ -5,7 +5,7 @@ N/A.
 
 ## Requirements
 ### xNode
-(xNode)[https://github.com/Siccity/xNode] is required.
+[xNode](https://github.com/Siccity/xNode) is required.
 
 ## Installation
 ### Package Manager (URL)
