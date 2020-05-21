@@ -1,9 +1,11 @@
 {
-    "name": "CAF",
+    "name": "CAF.Editor",
     "references": [
-        "GUID:b8e24fd1eb19b4226afebb2810e3c19b"
+        "GUID:60e386f2aae2e3745835ad13422e215a"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
