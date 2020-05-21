@@ -7,7 +7,7 @@ namespace CAF.Entities
 {
     public class EntityController : SimObject, ITargetable
     {
-        public EntityInput InputManager { get { return entityInput; } }
+        public EntityInputManager InputManager { get { return entityInput; } }
         public EntityStateManager StateManager { get { return entityStateManager; } }
         public EntityCombatManager CombatManager { get { return entityCombatManager; } }
         public EntityPhysicsManager PhysicsManager { get { return entityPhysicsManager; } }
@@ -17,7 +17,7 @@ namespace CAF.Entities
         public bool IsGrounded { get; set; } = false;
 
         [Header("References")]
-        [SerializeField] protected EntityInput entityInput;
+        [SerializeField] protected EntityInputManager entityInput;
         [SerializeField] protected EntityStateManager entityStateManager;
         [SerializeField] protected EntityCombatManager entityCombatManager;
         [SerializeField] protected EntityPhysicsManager entityPhysicsManager;
