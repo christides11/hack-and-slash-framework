@@ -27,7 +27,7 @@ namespace CAF.Entities
         /// Adds a state to the entity's state list.
         /// </summary>
         /// <param name="state">The state.</param>
-        /// <param name="stateName">The number of the state.</param>
+        /// <param name="stateNumber">The number of the state.</param>
         public virtual void AddState(EntityState state, int stateNumber)
         {
             state.Controller = controller;
