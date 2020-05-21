@@ -3,6 +3,10 @@
 ## Documentation
 N/A.
 
+## Requirements
+### xNode
+(xNode)[https://github.com/Siccity/xNode] is required.
+
 ## Installation
 ### Package Manager (URL)
 To install this framework with the package manager, use this URL:
