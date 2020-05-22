@@ -13,7 +13,6 @@ namespace CAF.Combat
         public int stateOverride = -1;
         public int length; //In frames
         public float heightRestriction;
-        public bool possibleGround;
         public float gravityScaleAdded = 0;
         #endregion
 
@@ -23,11 +22,11 @@ namespace CAF.Combat
         public WrapMode wrapMode;
         #endregion
 
-        #region Cancels
-        public List<Vector2Int> jumpCancelFrames = new List<Vector2Int>();
-        public List<Vector2Int> enemyStepFrames = new List<Vector2Int>();
-        public List<Vector2Int> landCancelFrames = new List<Vector2Int>();
-        public List<Vector2Int> attackCancelFrames = new List<Vector2Int>();
+        #region Cancel Windows
+        public List<Vector2Int> jumpCancelWindows = new List<Vector2Int>();
+        public List<Vector2Int> enemyStepWindows = new List<Vector2Int>();
+        public List<Vector2Int> landCancelWindows = new List<Vector2Int>();
+        public List<Vector2Int> commandAttackCancelWindows = new List<Vector2Int>();
         #endregion
 
         public List<BoxGroup> boxGroups = new List<BoxGroup>();

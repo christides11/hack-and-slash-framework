@@ -19,14 +19,13 @@ MonoBehaviour:
   stateOverride: -1
   length: 0
   heightRestriction: 0
-  possibleGround: 0
   gravityScaleAdded: 0
   animationGround: {fileID: 0}
   animationAir: {fileID: 0}
   wrapMode: 0
-  jumpCancelFrames: []
-  enemyStepFrames: []
-  landCancelFrames: []
-  attackCancelFrames: []
+  jumpCancelWindows: []
+  enemyStepWindows: []
+  landCancelWindows: []
+  commandAttackCancelWindows: []
   boxGroups: []
   events: []
