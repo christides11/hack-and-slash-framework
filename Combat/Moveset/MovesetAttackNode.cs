@@ -8,21 +8,27 @@ namespace CAF.Combat
     [System.Serializable]
     public class MovesetAttackNode : Node
     {
+        [System.Serializable]
+        public class nextNodeDefinition
+        {
+            public Vector2Int cancelWindow;
+            public MovesetAttackNode node;
+        }
+
         [Input] public MovesetAttackNode lastNode;
 
-        public List<InputDefinition> executeButton = new List<InputDefinition>();
-        public List<InputDefinition> buttonSequence = new List<InputDefinition>();
+        public List<InputDefinition> executeInputs = new List<InputDefinition>();
+        public List<InputDefinition> inputSequence = new List<InputDefinition>();
         public AttackDefinition attackDefinition;
 
-        public List<Vector2Int> cancelWindows = new List<Vector2Int>();
-        [Output(dynamicPortList = true)] public List<MovesetAttackNode> nextNode = new List<MovesetAttackNode>();
+        [Output(dynamicPortList = true)] public List<nextNodeDefinition> nextNode = new List<nextNodeDefinition>();
 
         public override void OnCreateConnection(NodePort from, NodePort to)
         {
             base.OnCreateConnection(from, to);
             if(from.node == this)
             {
-                nextNode[(int)from.GetOutputValue()] = (MovesetAttackNode)to.node;
+                nextNode[(int)from.GetOutputValue()].node = (MovesetAttackNode)to.node;
             }
             if(to.node == this)
             {
