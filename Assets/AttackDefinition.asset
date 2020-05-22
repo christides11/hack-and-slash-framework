@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8398635e348621e4ab5c46da7664782a, type: 3}
+  m_Name: AttackDefinition
+  m_EditorClassIdentifier: 
+  attackName: 
+  description: '
+
+'
+  stateOverride: -1
+  length: 0
+  heightRestriction: 0
+  possibleGround: 0
+  gravityScaleAdded: 0
+  animationGround: {fileID: 0}
+  animationAir: {fileID: 0}
+  wrapMode: 0
+  jumpCancelFrames: []
+  enemyStepFrames: []
+  landCancelFrames: []
+  attackCancelFrames: []
+  boxGroups: []
+  events: []
