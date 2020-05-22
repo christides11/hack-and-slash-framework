@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "com.github.siccity.xnode": "https://github.com/Siccity/xNode.git",
+    "com.malee.reorderablelist": "https://github.com/cfoulston/Unity-Reorderable-List.git",
     "com.unity.render-pipelines.universal": "7.3.1",
     "com.unity.textmeshpro": "2.0.1",
     "com.unity.ugui": "1.0.0",
@@ -40,6 +41,10 @@
     "com.github.siccity.xnode": {
       "revision": "HEAD",
       "hash": "8046e6e0bfb17f645ad9663e805bde843aa91313"
+    },
+    "com.malee.reorderablelist": {
+      "revision": "HEAD",
+      "hash": "b6a47f8257cf065e9feb04acdc92e500761e605c"
     }
   }
 }
