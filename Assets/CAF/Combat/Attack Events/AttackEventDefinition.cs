@@ -1,4 +1,6 @@
-﻿namespace CAF.Combat
+﻿using UnityEngine;
+
+namespace CAF.Combat
 {
     [System.Serializable]
     public class AttackEventDefinition
@@ -11,7 +13,7 @@
         public int onDetectHitboxGroup;
         public uint startFrame = 1;
         public uint endFrame = 1;
-        public AttackEvent attackEvent;
+        [SerializeReference] public AttackEvent attackEvent;
         public AttackEventVariables variables = new AttackEventVariables();
     }
 }

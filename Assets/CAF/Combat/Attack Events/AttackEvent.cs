@@ -29,5 +29,10 @@ namespace CAF.Combat
 #if UNITY_EDITOR
 #endif
         }
+
+        public virtual string GetName()
+        {
+            return "Attack Event";
+        }
     }
 }

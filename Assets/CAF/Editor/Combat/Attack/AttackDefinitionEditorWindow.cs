@@ -19,6 +19,22 @@ namespace CAF.Combat
             window.Show();
         }
 
+        private Dictionary<string, Type> attackEventTypes = new Dictionary<string, Type>();
+        private void OnFocus()
+        {
+            attackEventTypes.Clear();
+            foreach (var a in AppDomain.CurrentDomain.GetAssemblies())
+            {
+                foreach (var givenType in a.GetTypes())
+                {
+                    if (givenType.IsSubclassOf(typeof(AttackEvent)))
+                    {
+                        attackEventTypes.Add(givenType.FullName, givenType);
+                    }
+                }
+            }
+        }
+
         protected virtual void OnGUI()
         {
             attack = (AttackDefinition)EditorGUILayout.ObjectField("Attack", attack, typeof(AttackDefinition), false);
@@ -410,9 +426,115 @@ namespace CAF.Combat
             }
         }
 
+        #region Events
+        int eventSelected = -1;
         protected virtual void DrawEventsWindow()
         {
+            EditorGUILayout.BeginHorizontal();
+            if (GUILayout.Button("Add", GUILayout.Width(100)))
+            {
+                attack.events.Add(new AttackEventDefinition());
+            }
+            GUILayout.Space(20);
+            EditorGUILayout.EndHorizontal();
+            EditorGUILayout.BeginHorizontal();
 
+            EditorGUILayout.BeginVertical(GUILayout.MaxWidth(110));
+            for (int i = 0; i < attack.events.Count; i++)
+            {
+                EditorGUILayout.BeginHorizontal();
+                if (GUILayout.Button("X", GUILayout.Width(15)))
+                {
+                    attack.events.RemoveAt(i);
+                    continue;
+                }
+                if (GUILayout.Button($"{attack.events[i].nickname}",
+                    GUILayout.Height(25), GUILayout.Width(95)))
+                {
+                    eventSelected = eventSelected == i ? -1 : i;
+                }
+                EditorGUILayout.EndHorizontal();
+            }
+            EditorGUILayout.EndVertical();
+
+            if (eventSelected == -1)
+            {
+                EditorGUILayout.BeginVertical();
+                for (int i = 0; i < attack.events.Count; i++)
+                {
+                    EditorGUILayout.BeginHorizontal();
+                    EditorGUILayout.LabelField(attack.events[i].startFrame.ToString(), GUILayout.Width(20));
+                    float eventStart = attack.events[i].startFrame;
+                    float eventEnd = attack.events[i].endFrame;
+                    EditorGUILayout.MinMaxSlider(ref eventStart, ref eventEnd, 1, attack.length, GUILayout.Height(25));
+                    attack.events[i].startFrame = (uint)eventStart;
+                    attack.events[i].endFrame = (uint)eventEnd;
+                    EditorGUILayout.LabelField(attack.events[i].endFrame.ToString(), GUILayout.Width(20));
+                    EditorGUILayout.EndHorizontal();
+                }
+                EditorGUILayout.EndVertical();
+            }
+            else
+            {
+                EditorGUILayout.BeginVertical();
+                ShowEventInfo(eventSelected);
+                EditorGUILayout.EndVertical();
+            }
+            EditorGUILayout.EndHorizontal();
         }
+
+        bool eventVariablesFoldout;
+        private void ShowEventInfo(int eventSelected)
+        {
+            if (attack.events[eventSelected] == null)
+            {
+                return;
+            }
+            attack.events[eventSelected].nickname = EditorGUILayout.TextField("Name", attack.events[eventSelected].nickname);
+            attack.events[eventSelected].active = EditorGUILayout.Toggle("Active", attack.events[eventSelected].active);
+            attack.events[eventSelected].onHit = EditorGUILayout.Toggle("On Hit?", attack.events[eventSelected].onHit);
+            if (attack.events[eventSelected].onHit)
+            {
+                attack.events[eventSelected].onHitHitboxGroup = EditorGUILayout.IntField("Hitbox Group",
+                    attack.events[eventSelected].onHitHitboxGroup);
+            }
+            attack.events[eventSelected].onDetect = EditorGUILayout.Toggle("On Detect?", attack.events[eventSelected].onDetect);
+            if (attack.events[eventSelected].onDetect)
+            {
+                attack.events[eventSelected].onDetectHitboxGroup = EditorGUILayout.IntField("Detect Group",
+                    attack.events[eventSelected].onDetectHitboxGroup);
+            }
+            EditorGUILayout.LabelField(attack.events[eventSelected].attackEvent == null ? "..." 
+                : attack.events[eventSelected].attackEvent.GetName());
+            if (GUILayout.Button("Set Event"))
+            {
+                GenericMenu menu = new GenericMenu();
+
+                foreach (string t in attackEventTypes.Keys)
+                {
+                    string destination = t.Replace('.', '/');
+                    menu.AddItem(new GUIContent(destination), true, OnAttackEventSelected, t);
+                }
+                menu.AddSeparator("");
+
+                menu.ShowAsContext();
+            }
+            eventVariablesFoldout = EditorGUILayout.Foldout(eventVariablesFoldout, "Variables", true);
+            if (eventVariablesFoldout)
+            {
+                EditorGUI.indentLevel++;
+                if (attack.events[eventSelected].attackEvent != null)
+                {
+                    attack.events[eventSelected].attackEvent.DrawEventVariables(attack.events[eventSelected]);
+                }
+                EditorGUI.indentLevel--;
+            }
+        }
+
+        private void OnAttackEventSelected(object t)
+        {
+            attack.events[eventSelected].attackEvent = (AttackEvent)Activator.CreateInstance(attackEventTypes[(string)t]);
+        }
+        #endregion
     }
 }
