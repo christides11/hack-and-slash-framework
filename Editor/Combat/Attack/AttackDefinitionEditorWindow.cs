@@ -179,9 +179,126 @@ namespace CAF.Combat
             }
         }
 
+        int currentHitboxGroupIndex;
+        Vector2 scrollPos;
         private void DrawBoxesMenu()
         {
+            EditorGUILayout.BeginHorizontal();
 
+            if (GUILayout.Button("<", GUILayout.Width(40)))
+            {
+                currentHitboxGroupIndex--;
+                if (currentHitboxGroupIndex < 0)
+                {
+                    currentHitboxGroupIndex = Mathf.Clamp(attack.boxGroups.Count - 1, 0, attack.boxGroups.Count);
+                }
+            }
+            EditorGUILayout.LabelField($"{currentHitboxGroupIndex + 1}/{attack.boxGroups.Count}", GUILayout.Width(50));
+            GUILayout.Width(50);
+            if (GUILayout.Button(">", GUILayout.Width(40)))
+            {
+                currentHitboxGroupIndex++;
+                if (currentHitboxGroupIndex >= attack.boxGroups.Count)
+                {
+                    currentHitboxGroupIndex = 0;
+                }
+            }
+
+            if (GUILayout.Button("Add", GUILayout.Width(50)))
+            {
+                attack.boxGroups.Add(new BoxGroup());
+            }
+            if (GUILayout.Button("Remove", GUILayout.Width(60)))
+            {
+                attack.boxGroups.RemoveAt(currentHitboxGroupIndex);
+                currentHitboxGroupIndex--;
+            }
+
+            EditorGUILayout.EndHorizontal();
+            GUILayout.Space(30);
+            if (attack.boxGroups.Count == 0)
+            {
+                return;
+            }
+            BoxGroup currentGroup = attack.boxGroups[currentHitboxGroupIndex];
+
+            scrollPos = EditorGUILayout.BeginScrollView(scrollPos);
+            DrawHitboxGroup(currentGroup);
+            EditorGUILayout.EndScrollView();
+        }
+
+        bool boxesFoldout;
+        protected virtual void DrawHitboxGroup(BoxGroup currentGroup)
+        {
+            EditorGUILayout.LabelField("GENERAL");
+            currentGroup.ID = EditorGUILayout.IntField("Group ID", currentGroup.ID);
+
+            float activeFramesStart = currentGroup.activeFramesStart;
+            float activeFramesEnd = currentGroup.activeFramesEnd;
+            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.LabelField(currentGroup.activeFramesStart.ToString(), GUILayout.Width(30));
+            EditorGUILayout.MinMaxSlider(ref activeFramesStart,
+                ref activeFramesEnd, 1, (float)attack.length);
+            EditorGUILayout.LabelField(currentGroup.activeFramesEnd.ToString(), GUILayout.Width(30));
+            EditorGUILayout.EndHorizontal();
+            currentGroup.activeFramesStart = (int)activeFramesStart;
+            currentGroup.activeFramesEnd = (int)activeFramesEnd;
+
+            currentGroup.hitGroupType = (BoxGroupType)EditorGUILayout.EnumPopup("Hit Type", currentGroup.hitGroupType);
+            currentGroup.attachToEntity = EditorGUILayout.Toggle("Attach to Entity", currentGroup.attachToEntity);
+
+            EditorGUILayout.BeginHorizontal(GUILayout.Width(300));
+            boxesFoldout = EditorGUILayout.Foldout(boxesFoldout, "Boxes", true);
+            if (GUILayout.Button("Add"))
+            {
+                currentGroup.boxes.Add(new BoxDefinition());
+            }
+            EditorGUILayout.EndHorizontal();
+
+            if (boxesFoldout)
+            {
+                EditorGUI.indentLevel++;
+                for (int i = 0; i < currentGroup.boxes.Count; i++)
+                {
+                    DrawHitboxOptions(currentGroup, i);
+                    GUILayout.Space(5);
+                }
+                EditorGUI.indentLevel--;
+            }
+        }
+
+        private void DrawHitboxOptions(BoxGroup currentGroup, int index)
+        {
+            EditorGUILayout.BeginHorizontal();
+            if (GUILayout.Button("X", GUILayout.Width(20)))
+            {
+                currentGroup.boxes.RemoveAt(index);
+                return;
+            }
+            GUILayout.Label($"Group {index}");
+            EditorGUILayout.EndHorizontal();
+            currentGroup.boxes[index].shape = (BoxShapes)EditorGUILayout.EnumPopup("Shape", currentGroup.boxes[index].shape);
+            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.LabelField("Offset", GUILayout.Width(135));
+            currentGroup.boxes[index].offset.x = EditorGUILayout.FloatField(currentGroup.boxes[index].offset.x, GUILayout.Width(40));
+            currentGroup.boxes[index].offset.y = EditorGUILayout.FloatField(currentGroup.boxes[index].offset.y, GUILayout.Width(40));
+            currentGroup.boxes[index].offset.z = EditorGUILayout.FloatField(currentGroup.boxes[index].offset.z, GUILayout.Width(40));
+            EditorGUILayout.EndHorizontal();
+            switch (currentGroup.boxes[index].shape)
+            {
+                case BoxShapes.Rectangle:
+                    EditorGUILayout.BeginHorizontal();
+                    EditorGUILayout.LabelField("Size", GUILayout.Width(135));
+                    currentGroup.boxes[index].size.x = EditorGUILayout.FloatField(currentGroup.boxes[index].size.x, GUILayout.Width(40));
+                    currentGroup.boxes[index].size.y = EditorGUILayout.FloatField(currentGroup.boxes[index].size.y, GUILayout.Width(40));
+                    currentGroup.boxes[index].size.z = EditorGUILayout.FloatField(currentGroup.boxes[index].size.z, GUILayout.Width(40));
+                    EditorGUILayout.EndHorizontal();
+                    break;
+                case BoxShapes.Circle:
+                    currentGroup.boxes[index].radius
+                        = EditorGUILayout.FloatField("Radius", currentGroup.boxes[index].radius);
+                    break;
+            }
         }
 
         protected virtual void DrawEventsWindow()

@@ -8,10 +8,10 @@ namespace CAF.Combat
     public class BoxGroup
     {
         public int ID;
-        public int activeFramesStart;
-        public int activeFramesEnd;
+        public int activeFramesStart = 1;
+        public int activeFramesEnd = 1;
         public BoxGroupType hitGroupType;
-        public List<BoxDefinition> hitboxes = new List<BoxDefinition>();
+        public List<BoxDefinition> boxes = new List<BoxDefinition>();
         public bool attachToEntity = true;
 
         [SerializeField] public HitInfo hitboxHitInfo = new HitInfo();
@@ -27,7 +27,7 @@ namespace CAF.Combat
             activeFramesStart = other.activeFramesStart;
             activeFramesEnd = other.activeFramesEnd;
             hitGroupType = other.hitGroupType;
-            hitboxes = new List<BoxDefinition>(other.hitboxes);
+            boxes = new List<BoxDefinition>(other.boxes);
             attachToEntity = other.attachToEntity;
             hitboxHitInfo = new HitInfo(other.hitboxHitInfo);
         }
