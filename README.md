@@ -4,8 +4,7 @@
 N/A.
 
 ## Requirements
-### xNode
-[xNode](https://github.com/Siccity/xNode) is required.
+[xNode](https://github.com/Siccity/xNode) and [Reorderable List](https://github.com/cfoulston/Unity-Reorderable-List).
 
 ## Installation
 ### Package Manager (URL)
