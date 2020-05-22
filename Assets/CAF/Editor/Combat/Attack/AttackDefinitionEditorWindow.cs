@@ -280,7 +280,68 @@ namespace CAF.Combat
 
         private void DrawBoxGroupHitOptions(BoxGroup currentGroup)
         {
+            EditorGUILayout.LabelField("EFFECT");
+            currentGroup.hitboxHitInfo.groundOnly = EditorGUILayout.Toggle("Hit Ground Only?", currentGroup.hitboxHitInfo.groundOnly);
+            currentGroup.hitboxHitInfo.airOnly = EditorGUILayout.Toggle("Hit Air Only?", currentGroup.hitboxHitInfo.airOnly);
+            currentGroup.hitboxHitInfo.unblockable = EditorGUILayout.Toggle("Unblockable?", currentGroup.hitboxHitInfo.unblockable);
+            currentGroup.hitboxHitInfo.breakArmor = EditorGUILayout.Toggle("Breaks Armor?", currentGroup.hitboxHitInfo.breakArmor);
+            currentGroup.hitboxHitInfo.groundBounces = EditorGUILayout.Toggle("Ground Bounces?", currentGroup.hitboxHitInfo.groundBounces);
+            currentGroup.hitboxHitInfo.wallBounces = EditorGUILayout.Toggle("Wall Bounces?", currentGroup.hitboxHitInfo.wallBounces);
+            currentGroup.hitboxHitInfo.causesTumble = EditorGUILayout.Toggle("Causes Tumble?", currentGroup.hitboxHitInfo.causesTumble);
+            currentGroup.hitboxHitInfo.knockdown = EditorGUILayout.Toggle("Causes Knockdown?", currentGroup.hitboxHitInfo.knockdown);
+            currentGroup.hitboxHitInfo.continuousHit = EditorGUILayout.Toggle("Continuous Hit?", currentGroup.hitboxHitInfo.continuousHit);
+            if (currentGroup.hitboxHitInfo.continuousHit)
+            {
+                currentGroup.hitboxHitInfo.spaceBetweenHits = EditorGUILayout.IntField("Space between hits", currentGroup.hitboxHitInfo.spaceBetweenHits);
+            }
+            EditorGUILayout.Space(10);
 
+            EditorGUILayout.LabelField("DAMAGE");
+            currentGroup.hitboxHitInfo.damageOnBlock = EditorGUILayout.FloatField("Damage (Block)", currentGroup.hitboxHitInfo.damageOnBlock);
+            currentGroup.hitboxHitInfo.damageOnHit = EditorGUILayout.FloatField("Damage (Hit)", currentGroup.hitboxHitInfo.damageOnHit);
+            currentGroup.hitboxHitInfo.hitKills = EditorGUILayout.Toggle("Hit Kills", currentGroup.hitboxHitInfo.hitKills);
+            EditorGUILayout.Space(10);
+
+            EditorGUILayout.LabelField("FORCES");
+            currentGroup.hitboxHitInfo.opponentResetXForce = EditorGUILayout.Toggle("Reset X Force", currentGroup.hitboxHitInfo.opponentResetXForce);
+            currentGroup.hitboxHitInfo.opponentResetYForce = EditorGUILayout.Toggle("Reset Y Force", currentGroup.hitboxHitInfo.opponentResetYForce);
+            currentGroup.hitboxHitInfo.forceRelation = (HitboxForceRelation)EditorGUILayout.EnumPopup("Force Relation", currentGroup.hitboxHitInfo.forceRelation);
+            currentGroup.hitboxHitInfo.forceType = (HitboxForceType)EditorGUILayout.EnumPopup("Force Type", currentGroup.hitboxHitInfo.forceType);
+            switch (currentGroup.hitboxHitInfo.forceType)
+            {
+                case HitboxForceType.SET:
+                    currentGroup.hitboxHitInfo.opponentForceDir = EditorGUILayout.Vector3Field("Force Direction", currentGroup.hitboxHitInfo.opponentForceDir);
+                    if (GUILayout.Button("Normalize"))
+                    {
+                        currentGroup.hitboxHitInfo.opponentForceDir.Normalize();
+                    }
+                    currentGroup.hitboxHitInfo.opponentForceMagnitude = EditorGUILayout.FloatField("Force Magnitude", currentGroup.hitboxHitInfo.opponentForceMagnitude);
+                    break;
+                case HitboxForceType.PUSH:
+                    currentGroup.hitboxHitInfo.forceIncludeYForce = EditorGUILayout.Toggle("Include Y Force", currentGroup.hitboxHitInfo.forceIncludeYForce);
+                    currentGroup.hitboxHitInfo.opponentForceMagnitude
+                        = EditorGUILayout.FloatField("Force Multiplier", currentGroup.hitboxHitInfo.opponentForceMagnitude);
+                    break;
+                case HitboxForceType.PULL:
+                    currentGroup.hitboxHitInfo.forceIncludeYForce = EditorGUILayout.Toggle("Include Y Force", currentGroup.hitboxHitInfo.forceIncludeYForce);
+                    currentGroup.hitboxHitInfo.opponentForceMagnitude
+                        = EditorGUILayout.FloatField("Force Multiplier", currentGroup.hitboxHitInfo.opponentForceMagnitude);
+                    currentGroup.hitboxHitInfo.opponentMaxMagnitude
+                        = EditorGUILayout.FloatField("Max Magnitude", currentGroup.hitboxHitInfo.opponentMaxMagnitude);
+                    break;
+            }
+
+            if (currentGroup.hitboxHitInfo.wallBounces)
+            {
+                currentGroup.hitboxHitInfo.wallBounceForce = EditorGUILayout.FloatField("Wall Bounce Magnitude", currentGroup.hitboxHitInfo.wallBounceForce);
+            }
+            EditorGUILayout.Space(10);
+
+            EditorGUILayout.LabelField("STUN");
+            currentGroup.hitboxHitInfo.attackerHitstop = (ushort)EditorGUILayout.IntField("Hitstop (Attacker)",
+                currentGroup.hitboxHitInfo.attackerHitstop);
+            currentGroup.hitboxHitInfo.hitstop = (ushort)EditorGUILayout.IntField("Hitstop", currentGroup.hitboxHitInfo.hitstop);
+            currentGroup.hitboxHitInfo.hitstun = (ushort)EditorGUILayout.IntField("Hitstun", currentGroup.hitboxHitInfo.hitstun);
         }
 
         private void DrawBoxGroupGrabOptions(BoxGroup currentGroup)

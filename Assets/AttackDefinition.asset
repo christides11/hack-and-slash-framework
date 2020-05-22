@@ -34,6 +34,7 @@ MonoBehaviour:
     hitGroupType: 0
     boxes: []
     attachToEntity: 1
+    throwConfirm: {fileID: 0}
     hitboxHitInfo:
       airOnly: 0
       groundOnly: 0
@@ -58,7 +59,7 @@ MonoBehaviour:
       forceRelation: 0
       causesTumble: 0
       opponentForceMagnitude: 1
-      opponentForceDir: {x: 0, y: 0, z: 1}
+      opponentForceDir: {x: 0, y: 0, z: 0}
       forceIncludeYForce: 0
       opponentMaxMagnitude: 1
       opponentMinMagnitude: 1
