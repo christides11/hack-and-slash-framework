@@ -230,7 +230,7 @@ namespace CAF.Combat
         bool boxesFoldout;
         protected virtual void DrawHitboxGroup(BoxGroup currentGroup)
         {
-            EditorGUILayout.LabelField("GENERAL");
+            EditorGUILayout.LabelField("GENERAL", EditorStyles.boldLabel);
             currentGroup.ID = EditorGUILayout.IntField("Group ID", currentGroup.ID);
 
             float activeFramesStart = currentGroup.activeFramesStart;
@@ -278,9 +278,28 @@ namespace CAF.Combat
             }
         }
 
-        private void DrawBoxGroupHitOptions(BoxGroup currentGroup)
+        #region Box Group: Hit
+        protected virtual void DrawBoxGroupHitOptions(BoxGroup currentGroup)
         {
-            EditorGUILayout.LabelField("EFFECT");
+            EditorGUILayout.LabelField("EFFECT", EditorStyles.boldLabel);
+            DrawHitEffectsOptions(currentGroup);
+            EditorGUILayout.Space(10);
+
+            EditorGUILayout.LabelField("DAMAGE", EditorStyles.boldLabel);
+            DrawHitDamageOptions(currentGroup);
+            EditorGUILayout.Space(10);
+
+            EditorGUILayout.LabelField("FORCES", EditorStyles.boldLabel);
+            DrawHitForcesOptions(currentGroup);
+            EditorGUILayout.Space(10);
+
+            EditorGUILayout.LabelField("STUN", EditorStyles.boldLabel);
+            DrawHitStunOptions(currentGroup);
+            EditorGUILayout.Space(10);
+        }
+
+        protected virtual void DrawHitEffectsOptions(BoxGroup currentGroup)
+        {
             currentGroup.hitboxHitInfo.groundOnly = EditorGUILayout.Toggle("Hit Ground Only?", currentGroup.hitboxHitInfo.groundOnly);
             currentGroup.hitboxHitInfo.airOnly = EditorGUILayout.Toggle("Hit Air Only?", currentGroup.hitboxHitInfo.airOnly);
             currentGroup.hitboxHitInfo.unblockable = EditorGUILayout.Toggle("Unblockable?", currentGroup.hitboxHitInfo.unblockable);
@@ -294,15 +313,17 @@ namespace CAF.Combat
             {
                 currentGroup.hitboxHitInfo.spaceBetweenHits = EditorGUILayout.IntField("Space between hits", currentGroup.hitboxHitInfo.spaceBetweenHits);
             }
-            EditorGUILayout.Space(10);
+        }
 
-            EditorGUILayout.LabelField("DAMAGE");
+        protected virtual void DrawHitDamageOptions(BoxGroup currentGroup)
+        {
             currentGroup.hitboxHitInfo.damageOnBlock = EditorGUILayout.FloatField("Damage (Block)", currentGroup.hitboxHitInfo.damageOnBlock);
             currentGroup.hitboxHitInfo.damageOnHit = EditorGUILayout.FloatField("Damage (Hit)", currentGroup.hitboxHitInfo.damageOnHit);
             currentGroup.hitboxHitInfo.hitKills = EditorGUILayout.Toggle("Hit Kills", currentGroup.hitboxHitInfo.hitKills);
-            EditorGUILayout.Space(10);
+        }
 
-            EditorGUILayout.LabelField("FORCES");
+        protected virtual void DrawHitForcesOptions(BoxGroup currentGroup)
+        {
             currentGroup.hitboxHitInfo.opponentResetXForce = EditorGUILayout.Toggle("Reset X Force", currentGroup.hitboxHitInfo.opponentResetXForce);
             currentGroup.hitboxHitInfo.opponentResetYForce = EditorGUILayout.Toggle("Reset Y Force", currentGroup.hitboxHitInfo.opponentResetYForce);
             currentGroup.hitboxHitInfo.forceRelation = (HitboxForceRelation)EditorGUILayout.EnumPopup("Force Relation", currentGroup.hitboxHitInfo.forceRelation);
@@ -335,23 +356,27 @@ namespace CAF.Combat
             {
                 currentGroup.hitboxHitInfo.wallBounceForce = EditorGUILayout.FloatField("Wall Bounce Magnitude", currentGroup.hitboxHitInfo.wallBounceForce);
             }
-            EditorGUILayout.Space(10);
+        }
 
-            EditorGUILayout.LabelField("STUN");
+        protected virtual void DrawHitStunOptions(BoxGroup currentGroup)
+        {
             currentGroup.hitboxHitInfo.attackerHitstop = (ushort)EditorGUILayout.IntField("Hitstop (Attacker)",
                 currentGroup.hitboxHitInfo.attackerHitstop);
             currentGroup.hitboxHitInfo.hitstop = (ushort)EditorGUILayout.IntField("Hitstop", currentGroup.hitboxHitInfo.hitstop);
             currentGroup.hitboxHitInfo.hitstun = (ushort)EditorGUILayout.IntField("Hitstun", currentGroup.hitboxHitInfo.hitstun);
         }
+        #endregion
 
+        #region Box Group: Grab
         private void DrawBoxGroupGrabOptions(BoxGroup currentGroup)
         {
             currentGroup.throwConfirm = (AttackDefinition)EditorGUILayout.ObjectField("Throw Confirm Attack", 
                 currentGroup.throwConfirm,
                 typeof(AttackDefinition), false);
         }
+        #endregion
 
-        private void DrawHitboxOptions(BoxGroup currentGroup, int index)
+        protected virtual void DrawHitboxOptions(BoxGroup currentGroup, int index)
         {
             EditorGUILayout.BeginHorizontal();
             if (GUILayout.Button("X", GUILayout.Width(20)))
