@@ -17,7 +17,7 @@ MonoBehaviour:
 
 '
   stateOverride: -1
-  length: 0
+  length: 30
   heightRestriction: 0
   gravityScaleAdded: 0
   animationGround: {fileID: 0}
@@ -27,5 +27,39 @@ MonoBehaviour:
   enemyStepWindows: []
   landCancelWindows: []
   commandAttackCancelWindows: []
-  boxGroups: []
+  boxGroups:
+  - ID: 0
+    activeFramesStart: 1
+    activeFramesEnd: 5
+    hitGroupType: 0
+    boxes: []
+    attachToEntity: 1
+    hitboxHitInfo:
+      airOnly: 0
+      groundOnly: 0
+      continuousHit: 0
+      spaceBetweenHits: 0
+      breakArmor: 0
+      unblockable: 0
+      knockdown: 0
+      groundBounces: 0
+      groundBounceForce: 0
+      wallBounces: 0
+      wallBounceForce: 0
+      damageOnHit: 0
+      damageOnBlock: 0
+      hitKills: 1
+      attackerHitstop: 0
+      hitstop: 0
+      hitstun: 0
+      opponentResetXForce: 1
+      opponentResetYForce: 1
+      forceType: 0
+      forceRelation: 0
+      causesTumble: 0
+      opponentForceMagnitude: 1
+      opponentForceDir: {x: 0, y: 0, z: 1}
+      forceIncludeYForce: 0
+      opponentMaxMagnitude: 1
+      opponentMinMagnitude: 1
   events: []
