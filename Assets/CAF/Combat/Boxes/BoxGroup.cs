@@ -14,6 +14,8 @@ namespace CAF.Combat
         public List<BoxDefinition> boxes = new List<BoxDefinition>();
         public bool attachToEntity = true;
 
+        public AttackDefinition throwConfirm;
+
         [SerializeField] public HitInfo hitboxHitInfo = new HitInfo();
 
         public BoxGroup()

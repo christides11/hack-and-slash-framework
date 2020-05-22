@@ -265,6 +265,29 @@ namespace CAF.Combat
                 }
                 EditorGUI.indentLevel--;
             }
+            EditorGUILayout.Space(10);
+
+            switch (currentGroup.hitGroupType)
+            {
+                case BoxGroupType.HIT:
+                    DrawBoxGroupHitOptions(currentGroup);
+                    break;
+                case BoxGroupType.GRAB:
+                    DrawBoxGroupGrabOptions(currentGroup);
+                    break;
+            }
+        }
+
+        private void DrawBoxGroupHitOptions(BoxGroup currentGroup)
+        {
+
+        }
+
+        private void DrawBoxGroupGrabOptions(BoxGroup currentGroup)
+        {
+            currentGroup.throwConfirm = (AttackDefinition)EditorGUILayout.ObjectField("Throw Confirm Attack", 
+                currentGroup.throwConfirm,
+                typeof(AttackDefinition), false);
         }
 
         private void DrawHitboxOptions(BoxGroup currentGroup, int index)
