@@ -8,7 +8,7 @@ namespace CAF.Combat
     {
         int Team { get; }
 
-        void Hurt(Vector3 center, Vector3 forward, Vector3 right);
+        HitReaction Hurt(Vector3 center, Vector3 forward, Vector3 right);
         void Heal();
     }
 }

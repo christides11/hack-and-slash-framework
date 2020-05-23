@@ -104,8 +104,9 @@ namespace CAF.Entities
         /// <param name="checkBuffer">If the buffer should be checked.</param>
         /// <param name="bufferFrames">How many frames to check for buffer.</param>
         /// <returns>The button and the information about it on the frame.</returns>
-        public virtual InputRecordButton GetButton(int buttonID, int frameOffset = 0, bool checkBuffer = false, int bufferFrames = 3)
+        public virtual InputRecordButton GetButton(int buttonID, out int gotOffset, int frameOffset = 0, bool checkBuffer = false, int bufferFrames = 3)
         {
+            gotOffset = 0;
             if (InputRecord.Count == 0)
             {
                 return new InputRecordButton();
@@ -123,6 +124,7 @@ namespace CAF.Entities
                     }
                     if (b.firstPress)
                     {
+                        gotOffset = i;
                         return b;
                     }
                 }
