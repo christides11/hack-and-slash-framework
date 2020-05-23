@@ -32,6 +32,7 @@ namespace CAF.Entities
             {
                 hitStun--;
             }
+            hitboxManager.TickBoxes();
         }
 
         public virtual void Cleanup()

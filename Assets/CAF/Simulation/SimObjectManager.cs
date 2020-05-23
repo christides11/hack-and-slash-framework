@@ -19,7 +19,7 @@ namespace CAF.Simulation
                 return;
             }
             simObjects.Add(simObject);
-            simObject.Init(this);
+            simObject.simObjectManager = this;
         }
 
         /// <summary>

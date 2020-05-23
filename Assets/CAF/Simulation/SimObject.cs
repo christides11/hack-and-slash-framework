@@ -6,12 +6,7 @@ namespace CAF.Simulation
 {
     public class SimObject : MonoBehaviour
     {
-        protected SimObjectManager simObjectManager;
-
-        public virtual void Init(SimObjectManager simObjectManager)
-        {
-            this.simObjectManager = simObjectManager;
-        }
+        public SimObjectManager simObjectManager;
 
         protected virtual void Awake()
         {

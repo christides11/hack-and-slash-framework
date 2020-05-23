@@ -15,5 +15,9 @@ namespace CAF.Camera
         /// </summary>
         /// <param name="position">The position to look at.</param>
         void LookAt(Vector3 position);
+
+        Vector3 Forward();
+        Vector3 Right();
+        Vector3 Up();
     }
 }
