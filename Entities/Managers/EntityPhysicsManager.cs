@@ -23,24 +23,14 @@ namespace CAF.Entities
 
         }
 
+        public virtual void SetForceDirect(Vector3 movement, Vector3 gravity)
+        {
+
+        }
+
         public virtual Vector3 GetOverallForce()
         {
             return forceMovement + forceGravity + forceDamage;
-        }
-
-        public virtual void HandleGravity()
-        {
-
-        }
-
-        public virtual void HandleGravity(float gravity)
-        {
-
-        }
-
-        public virtual void HandleGravity(float gravity, float gravityScale)
-        {
-
         }
 
         public virtual void HandleGravity(float maxFallSpeed, float gravity, float gravityScale)
