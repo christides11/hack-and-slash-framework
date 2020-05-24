@@ -14,12 +14,12 @@ namespace CAF.Entities
         public event HitboxGroupEventAction OnHitboxHit;
 
         // Hitbox Group : Hitboxes
-        private Dictionary<int, List<Hitbox>> hitboxGroups = new Dictionary<int, List<Hitbox>>();
+        protected Dictionary<int, List<Hitbox>> hitboxGroups = new Dictionary<int, List<Hitbox>>();
         // Hitbox ID : Hit IHurtables
-        private Dictionary<int, List<IHurtable>> hurtablesHit = new Dictionary<int, List<IHurtable>>();
+        protected Dictionary<int, List<IHurtable>> hurtablesHit = new Dictionary<int, List<IHurtable>>();
 
-        private EntityCombatManager combatManager;
-        private EntityController controller;
+        public EntityCombatManager combatManager;
+        public EntityController controller;
 
         public EntityHitboxManager(EntityCombatManager combatManager, EntityController controller)
         {
