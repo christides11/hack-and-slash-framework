@@ -41,7 +41,7 @@ namespace CAF.Entities
             }
             else
             {
-                //PhysicsManager.SetForceDirect(Vector3.zero, Vector3.zero);
+                PhysicsManager.SetForceDirect(Vector3.zero, Vector3.zero);
             }
         }
 
