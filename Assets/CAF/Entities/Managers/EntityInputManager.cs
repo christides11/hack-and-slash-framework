@@ -93,7 +93,22 @@ namespace CAF.Entities
             }
             return ((InputRecordAxis2D)InputRecord[(InputRecord.Count - 1) - frameOffset].inputs[axis2DID]).axis2D;
         }
-        
+
+        /// <summary>
+        /// Get the status of the button given. If the buffer is being checked, 
+        /// the button returned will be from when it was first pressed within the window, if it exist.
+        /// Otherwise, the button at the offset is given.
+        /// </summary>
+        /// <param name="buttonID">The ID of the button to get.</param>
+        /// <param name="frameOffset">The offset from the current frame to check.</param>
+        /// <param name="checkBuffer">If the buffer should be checked.</param>
+        /// <param name="bufferFrames">How many frames to check for buffer.</param>
+        /// <returns>The button and the information about it on the frame.</returns>
+        public virtual InputRecordButton GetButton(int buttonID, int frameOffset = 0, bool checkBuffer = false, int bufferFrames = 3)
+        {
+            return GetButton(buttonID, out int go, frameOffset, checkBuffer, bufferFrames);
+        }
+
         /// <summary>
         /// Get the status of the button given. If the buffer is being checked, 
         /// the button returned will be from when it was first pressed within the window, if it exist.
