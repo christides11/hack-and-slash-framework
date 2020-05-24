@@ -11,6 +11,7 @@ namespace CAF.Entities
         public int Team { get; set; } = 0;
         public MovesetAttackNode CurrentAttack { get; set; } = null;
         public MovesetDefinition CurrentMoveset { get; protected set; } = null;
+        public HitInfo LastHitBy { get; protected set; }
 
         public EntityController controller;
         public EntityHitboxManager hitboxManager;
@@ -37,6 +38,11 @@ namespace CAF.Entities
 
         public virtual void Cleanup()
         {
+            if (CurrentAttack == null)
+            {
+                return;
+            }
+            hitboxManager.Reset();
             CurrentAttack = null;
         }
 
@@ -191,6 +197,9 @@ namespace CAF.Entities
                 return false;
             }
 
+
+            Cleanup();
+            CurrentAttack = node;
             return true;
         }
 
@@ -199,16 +208,16 @@ namespace CAF.Entities
             return false;
         }
 
-        public virtual void Heal()
-        {
-
-        }
-
-        public virtual HitReaction Hurt(Vector3 center, Vector3 forward, Vector3 right)
+        public virtual HitReaction Hurt(Vector3 center, Vector3 forward, Vector3 right, HitInfo hitInfo)
         {
             HitReaction hr = new HitReaction();
             hr.reactionType = HitReactionType.Hit;
             return hr;
+        }
+
+        public virtual void Heal()
+        {
+
         }
     }
 }
