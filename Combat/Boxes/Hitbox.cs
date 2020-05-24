@@ -1,5 +1,4 @@
 ﻿using CAF.Simulation;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,7 +6,11 @@ namespace CAF.Combat
 {
     public class Hitbox : SimObject
     {
+        public delegate void HurtAction(GameObject hurtableHit, HitInfo hitInfo);
+        public event HurtAction OnHurt;
+
         protected GameObject owner;
+        protected Transform directionOwner;
         protected bool activated;
         protected Collider coll;
         public HitInfo hitInfo;
@@ -15,9 +18,11 @@ namespace CAF.Combat
         public List<IHurtable> ignoreList = null;
         public List<GameObject> hitHurtables = new List<GameObject>();
 
-        public virtual void Initialize(GameObject owner, BoxShapes shape, HitInfo hitInfo, List<IHurtable> ignoreList = null)
+        public virtual void Initialize(GameObject owner, Transform directionOwner, BoxShapes shape, 
+            HitInfo hitInfo, List<IHurtable> ignoreList = null)
         {
             this.owner = owner;
+            this.directionOwner = directionOwner;
             this.ignoreList = ignoreList;
         }
 
@@ -68,6 +73,42 @@ namespace CAF.Combat
             sc.isTrigger = true;
             coll = sc;
             sc.radius = radius;
+        }
+
+        public virtual void CheckHits()
+        {
+            CheckHurtables();
+
+            hitHurtables.Clear();
+        }
+
+        protected virtual void CheckHurtables()
+        {
+            if (hitHurtables.Count > 0)
+            {
+                for (int i = 0; i < hitHurtables.Count; i++)
+                {
+                    IHurtable ih = hitHurtables[i].GetComponent<IHurtable>();
+                    if (ignoreList.Contains(ih))
+                    {
+                        continue;
+                    }
+                    switch (hitInfo.forceRelation)
+                    {
+                        case HitboxForceRelation.ATTACKER:
+                            ih.Hurt(directionOwner.position, directionOwner.forward, directionOwner.right, hitInfo);
+                            break;
+                        case HitboxForceRelation.HITBOX:
+                            ih.Hurt(transform.position, transform.forward, transform.right, hitInfo);
+                            break;
+                        case HitboxForceRelation.WORLD:
+                            ih.Hurt(transform.position, Vector3.forward, Vector3.right, hitInfo);
+                            break;
+                    }
+                    ignoreList.Add(ih);
+                    OnHurt?.Invoke(hitHurtables[i], hitInfo);
+                }
+            }
         }
 
         /// <summary>
