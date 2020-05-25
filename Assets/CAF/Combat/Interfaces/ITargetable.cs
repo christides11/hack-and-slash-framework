@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace TAPI.Combat
+namespace CAF.Combat
 {
     public interface ITargetable
     {
