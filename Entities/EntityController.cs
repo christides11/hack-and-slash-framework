@@ -1,7 +1,7 @@
 ﻿using CAF.Camera;
+using CAF.Combat;
 using CAF.Simulation;
 using System;
-using TAPI.Combat;
 using UnityEngine;
 
 namespace CAF.Entities
