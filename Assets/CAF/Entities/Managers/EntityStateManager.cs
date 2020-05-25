@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 namespace CAF.Entities
@@ -9,7 +8,7 @@ namespace CAF.Entities
         public EntityState CurrentState { get { return currentState; } }
         public uint CurrentStateFrame { get { return currentStateFrame; } }
 
-        [SerializeField] private EntityController controller = null;
+        [SerializeField] protected EntityController controller = null;
         protected Dictionary<int, EntityState> states = new Dictionary<int, EntityState>();
         protected EntityState currentState;
         [SerializeField] protected uint currentStateFrame = 0;
