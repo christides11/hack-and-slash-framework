@@ -8,8 +8,8 @@ namespace CAF.Combat
 {
     public class AttackDefinitionEditorWindow : EditorWindow
     {
-        private AttackDefinition attack;
-        private int currentMenu = 0;
+        protected AttackDefinition attack;
+        protected int currentMenu = 0;
 
         public static void Init(AttackDefinition attack)
         {
@@ -19,8 +19,8 @@ namespace CAF.Combat
             window.Show();
         }
 
-        private Dictionary<string, Type> attackEventTypes = new Dictionary<string, Type>();
-        private void OnFocus()
+        protected Dictionary<string, Type> attackEventTypes = new Dictionary<string, Type>();
+        protected virtual void OnFocus()
         {
             attackEventTypes.Clear();
             foreach (var a in AppDomain.CurrentDomain.GetAssemblies())
@@ -39,7 +39,9 @@ namespace CAF.Combat
         {
             attack = (AttackDefinition)EditorGUILayout.ObjectField("Attack", attack, typeof(AttackDefinition), false);
 
+            EditorGUILayout.BeginHorizontal();
             DrawMenuBar();
+            EditorGUILayout.EndHorizontal();
             DrawMenu();
 
             if (GUI.changed)
@@ -50,7 +52,6 @@ namespace CAF.Combat
 
         protected virtual void DrawMenuBar()
         {
-            EditorGUILayout.BeginHorizontal();
             if (GUILayout.Button("General"))
             {
                 currentMenu = 0;
@@ -67,7 +68,6 @@ namespace CAF.Combat
             {
                 currentMenu = 3;
             }
-            EditorGUILayout.EndHorizontal();
         }
 
         protected virtual void DrawMenu()
@@ -140,10 +140,10 @@ namespace CAF.Combat
             }
         }
 
-        bool jumpCancelWindowsFoldout;
-        bool enemyStepWindowsFoldout;
-        bool landCancelWindowsFoldout;
-        bool commandAttackCancelWindowsFoldout;
+        protected bool jumpCancelWindowsFoldout;
+        protected bool enemyStepWindowsFoldout;
+        protected bool landCancelWindowsFoldout;
+        protected bool commandAttackCancelWindowsFoldout;
         protected virtual void DrawCancelWindows()
         {
             EditorGUI.BeginChangeCheck();
@@ -195,9 +195,9 @@ namespace CAF.Combat
             }
         }
 
-        int currentHitboxGroupIndex;
-        Vector2 scrollPos;
-        private void DrawBoxesMenu()
+        protected int currentHitboxGroupIndex;
+        protected Vector2 scrollPos;
+        protected virtual void DrawBoxesMenu()
         {
             EditorGUILayout.BeginHorizontal();
 
@@ -243,7 +243,7 @@ namespace CAF.Combat
             EditorGUILayout.EndScrollView();
         }
 
-        bool boxesFoldout;
+        protected bool boxesFoldout;
         protected virtual void DrawHitboxGroup(BoxGroup currentGroup)
         {
             EditorGUILayout.LabelField("GENERAL", EditorStyles.boldLabel);
@@ -384,7 +384,7 @@ namespace CAF.Combat
         #endregion
 
         #region Box Group: Grab
-        private void DrawBoxGroupGrabOptions(BoxGroup currentGroup)
+        protected virtual void DrawBoxGroupGrabOptions(BoxGroup currentGroup)
         {
             currentGroup.throwConfirm = (AttackDefinition)EditorGUILayout.ObjectField("Throw Confirm Attack", 
                 currentGroup.throwConfirm,
@@ -427,7 +427,7 @@ namespace CAF.Combat
         }
 
         #region Events
-        int eventSelected = -1;
+        protected int eventSelected = -1;
         protected virtual void DrawEventsWindow()
         {
             EditorGUILayout.BeginHorizontal();
@@ -483,8 +483,8 @@ namespace CAF.Combat
             EditorGUILayout.EndHorizontal();
         }
 
-        bool eventVariablesFoldout;
-        private void ShowEventInfo(int eventSelected)
+        protected bool eventVariablesFoldout;
+        protected virtual void ShowEventInfo(int eventSelected)
         {
             if (attack.events[eventSelected] == null)
             {
@@ -531,7 +531,7 @@ namespace CAF.Combat
             }
         }
 
-        private void OnAttackEventSelected(object t)
+        protected void OnAttackEventSelected(object t)
         {
             attack.events[eventSelected].attackEvent = (AttackEvent)Activator.CreateInstance(attackEventTypes[(string)t]);
         }
