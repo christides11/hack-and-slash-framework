@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -222,7 +221,7 @@ namespace CAF.Combat
 
             if (GUILayout.Button("Add", GUILayout.Width(50)))
             {
-                attack.boxGroups.Add(new BoxGroup());
+                AddBoxGroup();
             }
             if (GUILayout.Button("Remove", GUILayout.Width(60)))
             {
@@ -239,12 +238,17 @@ namespace CAF.Combat
             BoxGroup currentGroup = attack.boxGroups[currentHitboxGroupIndex];
 
             scrollPos = EditorGUILayout.BeginScrollView(scrollPos);
-            DrawHitboxGroup(currentGroup);
+            DrawBoxGroup(currentGroup);
             EditorGUILayout.EndScrollView();
         }
 
+        protected virtual void AddBoxGroup()
+        {
+            attack.boxGroups.Add(new BoxGroup());
+        }
+
         protected bool boxesFoldout;
-        protected virtual void DrawHitboxGroup(BoxGroup currentGroup)
+        protected virtual void DrawBoxGroup(BoxGroup currentGroup)
         {
             EditorGUILayout.LabelField("GENERAL", EditorStyles.boldLabel);
             currentGroup.ID = EditorGUILayout.IntField("Group ID", currentGroup.ID);
@@ -267,7 +271,7 @@ namespace CAF.Combat
             boxesFoldout = EditorGUILayout.Foldout(boxesFoldout, "Boxes", true);
             if (GUILayout.Button("Add"))
             {
-                currentGroup.boxes.Add(new BoxDefinition());
+                BoxGroupAddBoxDefinition(currentGroup);
             }
             EditorGUILayout.EndHorizontal();
 
@@ -292,6 +296,11 @@ namespace CAF.Combat
                     DrawBoxGroupGrabOptions(currentGroup);
                     break;
             }
+        }
+
+        protected virtual void BoxGroupAddBoxDefinition(BoxGroup currentGroup)
+        {
+            currentGroup.boxes.Add(new BoxDefinition());
         }
 
         #region Box Group: Hit
@@ -433,7 +442,7 @@ namespace CAF.Combat
             EditorGUILayout.BeginHorizontal();
             if (GUILayout.Button("Add", GUILayout.Width(100)))
             {
-                attack.events.Add(new AttackEventDefinition());
+                AddAttackEventDefinition();
             }
             GUILayout.Space(20);
             EditorGUILayout.EndHorizontal();
@@ -481,6 +490,11 @@ namespace CAF.Combat
                 EditorGUILayout.EndVertical();
             }
             EditorGUILayout.EndHorizontal();
+        }
+
+        protected virtual void AddAttackEventDefinition()
+        {
+            attack.events.Add(new AttackEventDefinition());
         }
 
         protected bool eventVariablesFoldout;
