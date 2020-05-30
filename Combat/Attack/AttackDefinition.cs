@@ -29,8 +29,8 @@ namespace CAF.Combat
         public List<Vector2Int> commandAttackCancelWindows = new List<Vector2Int>();
         #endregion
 
-        public List<BoxGroup> boxGroups = new List<BoxGroup>();
+        [SerializeReference] public List<BoxGroup> boxGroups = new List<BoxGroup>();
 
-        public List<AttackEventDefinition> events = new List<AttackEventDefinition>();
+        [SerializeReference] public List<AttackEventDefinition> events = new List<AttackEventDefinition>();
     }
 }
