@@ -69,8 +69,8 @@ namespace CAF.Entities
             {
                 return Vector3.forward;
             }
-            Vector3 forward = lookHandler.Forward();
-            Vector3 right = lookHandler.Right();
+            Vector3 forward = lookHandler.LookTransform().forward;
+            Vector3 right = lookHandler.LookTransform().right;
 
             forward.y = 0;
             right.y = 0;

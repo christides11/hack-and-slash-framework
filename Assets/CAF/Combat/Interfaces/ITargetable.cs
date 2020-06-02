@@ -11,7 +11,7 @@ namespace CAF.Combat
         /// </summary>
         bool Targetable { get; }
         /// <summary>
-        /// The center of the object in world sace.
+        /// The center of the object in world space.
         /// </summary>
         Vector3 Center { get; }
     }
