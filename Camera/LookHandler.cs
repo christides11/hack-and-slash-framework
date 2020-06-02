@@ -17,8 +17,5 @@ namespace CAF.Camera
         void LookAt(Vector3 position);
 
         Transform LookTransform();
-        Vector3 Forward();
-        Vector3 Right();
-        Vector3 Up();
     }
 }
