@@ -19,11 +19,21 @@ namespace CAF.Combat
         public List<GameObject> hitHurtables = new List<GameObject>();
 
         public virtual void Initialize(GameObject owner, Transform directionOwner, BoxShapes shape, 
-            HitInfo hitInfo, List<IHurtable> ignoreList = null)
+            HitInfo hitInfo, BoxDefinition boxDefinition, List<IHurtable> ignoreList = null)
         {
             this.owner = owner;
             this.directionOwner = directionOwner;
             this.ignoreList = ignoreList;
+
+            switch (shape)
+            {
+                case BoxShapes.Rectangle:
+                    CreateRectangle(boxDefinition.size);
+                    break;
+                case BoxShapes.Circle:
+                    CreateSphere(boxDefinition.radius);
+                    break;
+            }
         }
 
         public virtual void Activate()
@@ -57,10 +67,8 @@ namespace CAF.Combat
         /// </summary>
         /// <param name="size">The size of the hitbox.</param>
         /// <param name="rotation">The rotation of the hitbox.</param>
-        protected virtual void CreateRectangle(Vector3 size, Vector3 rotation)
+        protected virtual void CreateRectangle(Vector3 size)
         {
-            transform.rotation = Quaternion.Euler(rotation);
-
             BoxCollider bc = gameObject.AddComponent<BoxCollider>();
             bc.isTrigger = true;
             coll = bc;
