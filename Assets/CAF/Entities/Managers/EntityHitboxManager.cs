@@ -143,7 +143,7 @@ namespace CAF.Entities
                 }
 
                 hitbox.Initialize(controller.gameObject, controller.visual.transform, currentGroup.boxes[i].shape, 
-                    currentGroup.hitboxHitInfo, hurtablesHit[currentGroup.ID]);
+                    currentGroup.hitboxHitInfo, hitboxDefinition, hurtablesHit[currentGroup.ID]);
                 int cID = currentGroup.ID;
                 int groupIndex = index;
                 hitbox.OnHurt += (hurtable, hitInfo) => { OnHitboxHurt(hurtable, hitInfo, cID, groupIndex); };
