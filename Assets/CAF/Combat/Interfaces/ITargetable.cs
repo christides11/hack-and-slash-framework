@@ -13,6 +13,6 @@ namespace CAF.Combat
         /// <summary>
         /// The center of the object in world space.
         /// </summary>
-        Vector3 Center { get; }
+        Vector3 GetCenter();
     }
 }

@@ -14,7 +14,6 @@ namespace CAF.Entities
         public EntityPhysicsManager PhysicsManager { get { return entityPhysicsManager; } }
 
         public virtual bool Targetable { get { return false; } }
-        public virtual Vector3 Center { get { return new Vector3(0, 0, 0); } }
         public bool IsGrounded { get; set; } = false;
 
         [Header("References")]
@@ -110,6 +109,16 @@ namespace CAF.Entities
         public virtual void SetVisualRotation(Vector3 direction)
         {
             visual.transform.rotation = Quaternion.LookRotation(direction);
+        }
+
+        public virtual Vector3 GetCenter()
+        {
+            return transform.position;
+        }
+
+        public virtual Vector3 GetSize()
+        {
+            return Vector3.zero;
         }
     }
 } 
