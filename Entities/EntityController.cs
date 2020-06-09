@@ -2,11 +2,12 @@
 using CAF.Combat;
 using CAF.Simulation;
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace CAF.Entities
 {
-    public class EntityController : SimObject, ITargetable
+    public class EntityController : SimObject, ITargetable, IStatusEffectable
     {
         public EntityInputManager InputManager { get { return entityInput; } }
         public EntityStateManager StateManager { get { return entityStateManager; } }
@@ -15,6 +16,8 @@ namespace CAF.Entities
 
         public virtual bool Targetable { get { return false; } }
         public bool IsGrounded { get; set; } = false;
+
+        public List<StatusEffect> statusEffects = new List<StatusEffect>();
 
         [Header("References")]
         [SerializeField] protected EntityInputManager entityInput;
@@ -31,6 +34,16 @@ namespace CAF.Entities
         public override void SimUpdate()
         {
             InputManager.Tick();
+
+            for(int i = 0; i < statusEffects.Count; i++)
+            {
+                statusEffects[i].Tick(this);
+                if(statusEffects[i].GetTime() == 0)
+                {
+                    statusEffects.RemoveAt(i);
+                }
+            }
+
             if (CombatManager.hitStop == 0)
             {
                 HandleLockon();
@@ -119,6 +132,12 @@ namespace CAF.Entities
         public virtual Vector3 GetSize()
         {
             return Vector3.zero;
+        }
+
+        public virtual void ApplyStatusEffect(StatusEffect statusEffect)
+        {
+            statusEffects.Add(statusEffect);
+            statusEffect.Initialize(this);
         }
     }
 } 
