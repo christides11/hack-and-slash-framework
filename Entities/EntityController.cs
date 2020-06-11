@@ -17,8 +17,6 @@ namespace CAF.Entities
         public virtual bool Targetable { get { return false; } }
         public bool IsGrounded { get; set; } = false;
 
-        public List<StatusEffect> statusEffects = new List<StatusEffect>();
-
         [Header("References")]
         [SerializeField] protected EntityInputManager entityInput;
         [SerializeField] protected EntityStateManager entityStateManager;
@@ -34,15 +32,6 @@ namespace CAF.Entities
         public override void SimUpdate()
         {
             InputManager.Tick();
-
-            for(int i = 0; i < statusEffects.Count; i++)
-            {
-                statusEffects[i].Tick(this);
-                if(statusEffects[i].GetTime() == 0)
-                {
-                    statusEffects.RemoveAt(i);
-                }
-            }
 
             if (CombatManager.hitStop == 0)
             {
@@ -134,10 +123,9 @@ namespace CAF.Entities
             return Vector3.zero;
         }
 
-        public virtual void ApplyStatusEffect(StatusEffect statusEffect)
+        public virtual void ApplyStatusEffect(StatusEffectDefinition statusEffect)
         {
-            statusEffects.Add(statusEffect);
-            statusEffect.Initialize(this);
+
         }
     }
 } 
