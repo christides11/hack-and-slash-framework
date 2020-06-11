@@ -1,39 +1,18 @@
 ﻿using CAF.Entities;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 namespace CAF.Combat
 {
-    public class StatusEffect
+    public abstract class StatusEffect
     {
-        protected int time;
+        public abstract void Apply();
+    }
 
-        public virtual int GetTime()
-        {
-            return time;
-        }
-
-        public virtual void SetTime(int time)
-        {
-            this.time = time;
-        }
-
-        public virtual string GetName()
-        {
-            return "";
-        }
-
-        public virtual void Initialize(EntityController entity)
-        {
-
-        }
-
-        public virtual void Tick(EntityController entity)
-        {
-            time -= 1;
-        }
-
-        public virtual void OnRemoved(EntityController entity)
-        {
-
-        }
+    public abstract class StatusEffect<DataType> : StatusEffect
+    {
+        public DataType data;
+        public EntityController target;
     }
 }

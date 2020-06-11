@@ -6,6 +6,6 @@ namespace CAF.Combat
 {
     public interface IStatusEffectable
     {
-        void ApplyStatusEffect(StatusEffect statusEffect);
+        void ApplyStatusEffect(StatusEffectDefinition statusEffect);
     }
 }
