@@ -199,7 +199,24 @@ namespace CAF.Combat
         protected virtual void DrawBoxesMenu()
         {
             EditorGUILayout.BeginHorizontal();
+            BoxesMenuNavigationBar();
+            EditorGUILayout.EndHorizontal();
 
+            GUILayout.Space(30);
+
+            if (attack.boxGroups.Count == 0)
+            {
+                return;
+            }
+            BoxGroup currentGroup = attack.boxGroups[currentHitboxGroupIndex];
+
+            scrollPos = EditorGUILayout.BeginScrollView(scrollPos);
+            DrawBoxGroup(currentGroup);
+            EditorGUILayout.EndScrollView();
+        }
+
+        private void BoxesMenuNavigationBar()
+        {
             if (GUILayout.Button("<", GUILayout.Width(40)))
             {
                 currentHitboxGroupIndex--;
@@ -228,18 +245,6 @@ namespace CAF.Combat
                 attack.boxGroups.RemoveAt(currentHitboxGroupIndex);
                 currentHitboxGroupIndex--;
             }
-
-            EditorGUILayout.EndHorizontal();
-            GUILayout.Space(30);
-            if (attack.boxGroups.Count == 0)
-            {
-                return;
-            }
-            BoxGroup currentGroup = attack.boxGroups[currentHitboxGroupIndex];
-
-            scrollPos = EditorGUILayout.BeginScrollView(scrollPos);
-            DrawBoxGroup(currentGroup);
-            EditorGUILayout.EndScrollView();
         }
 
         protected virtual void AddBoxGroup()
