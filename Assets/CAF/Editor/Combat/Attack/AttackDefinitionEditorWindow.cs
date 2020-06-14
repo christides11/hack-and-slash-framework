@@ -215,7 +215,7 @@ namespace CAF.Combat
             EditorGUILayout.EndScrollView();
         }
 
-        private void BoxesMenuNavigationBar()
+        protected virtual void BoxesMenuNavigationBar()
         {
             if (GUILayout.Button("<", GUILayout.Width(40)))
             {
