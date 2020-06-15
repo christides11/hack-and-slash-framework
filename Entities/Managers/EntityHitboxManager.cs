@@ -105,7 +105,7 @@ namespace CAF.Entities
         /// Create the hitbox group of the given index.
         /// </summary>
         /// <param name="index">The index of the hitbox group.</param>
-        public void CreateHitboxGroup(int index)
+        public virtual void CreateHitboxGroup(int index)
         {
             // Group was already created.
             if (hitboxGroups.ContainsKey(index))
