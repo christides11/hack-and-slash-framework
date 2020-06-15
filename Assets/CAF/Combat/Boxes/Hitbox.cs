@@ -25,6 +25,7 @@ namespace CAF.Combat
             this.owner = owner;
             this.directionOwner = directionOwner;
             this.ignoreList = ignoreList;
+            this.hitInfo = hitInfo;
 
             switch (shape)
             {
