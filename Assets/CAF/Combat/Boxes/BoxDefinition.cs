@@ -10,6 +10,7 @@ namespace CAF.Combat
         public Vector3 size;
         public Vector3 rotation;
         public float radius;
+        public float height;
 
         public BoxDefinition()
         {
@@ -23,6 +24,7 @@ namespace CAF.Combat
             size = other.size;
             rotation = other.rotation;
             radius = other.radius;
+            height = other.height;
         }
     }
 }

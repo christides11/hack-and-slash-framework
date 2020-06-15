@@ -2,6 +2,8 @@
 {
     public enum BoxShapes
     {
-        Rectangle, Circle
+        Rectangle = 0, 
+        Circle = 1,
+        Capsule = 2
     }
 }
