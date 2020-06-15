@@ -134,7 +134,7 @@ namespace CAF.Entities
                     + controller.GetVisualBasedDirection(Vector3.up) * hitboxDefinition.offset.y;
 
                 Hitbox hitbox = InstantiateHitbox(controller.transform.position + pos,
-                    Quaternion.Euler(controller.transform.eulerAngles + hitboxDefinition.rotation));
+                    Quaternion.Euler(controller.visual.transform.eulerAngles + hitboxDefinition.rotation));
 
                 // Attach the hitbox if neccessary.
                 if (currentGroup.attachToEntity)
