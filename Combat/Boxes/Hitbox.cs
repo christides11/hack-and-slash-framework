@@ -1,4 +1,5 @@
 ﻿using CAF.Simulation;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -32,6 +33,9 @@ namespace CAF.Combat
                     break;
                 case BoxShapes.Circle:
                     CreateSphere(boxDefinition.radius);
+                    break;
+                case BoxShapes.Capsule:
+                    CreateCapsule(boxDefinition.radius, boxDefinition.height);
                     break;
             }
         }
@@ -81,6 +85,16 @@ namespace CAF.Combat
             sc.isTrigger = true;
             coll = sc;
             sc.radius = radius;
+        }
+
+        protected virtual void CreateCapsule(float radius, float height)
+        {
+            CapsuleCollider cc = gameObject.AddComponent<CapsuleCollider>();
+            cc.isTrigger = true;
+            coll = cc;
+            cc.radius = radius;
+            cc.height = height;
+            cc.direction = 2;
         }
 
         public virtual void CheckHits()

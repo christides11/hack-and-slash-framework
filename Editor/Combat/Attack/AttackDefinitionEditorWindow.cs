@@ -423,6 +423,12 @@ namespace CAF.Combat
             currentGroup.boxes[index].offset.y = EditorGUILayout.FloatField(currentGroup.boxes[index].offset.y, GUILayout.Width(40));
             currentGroup.boxes[index].offset.z = EditorGUILayout.FloatField(currentGroup.boxes[index].offset.z, GUILayout.Width(40));
             EditorGUILayout.EndHorizontal();
+            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.LabelField("Rotation", GUILayout.Width(135));
+            currentGroup.boxes[index].rotation.x = EditorGUILayout.FloatField(currentGroup.boxes[index].rotation.x, GUILayout.Width(40));
+            currentGroup.boxes[index].rotation.y = EditorGUILayout.FloatField(currentGroup.boxes[index].rotation.y, GUILayout.Width(40));
+            currentGroup.boxes[index].rotation.z = EditorGUILayout.FloatField(currentGroup.boxes[index].rotation.z, GUILayout.Width(40));
+            EditorGUILayout.EndHorizontal();
             switch (currentGroup.boxes[index].shape)
             {
                 case BoxShapes.Rectangle:
@@ -436,6 +442,10 @@ namespace CAF.Combat
                 case BoxShapes.Circle:
                     currentGroup.boxes[index].radius
                         = EditorGUILayout.FloatField("Radius", currentGroup.boxes[index].radius);
+                    break;
+                case BoxShapes.Capsule:
+                    currentGroup.boxes[index].radius = EditorGUILayout.FloatField("Radius", currentGroup.boxes[index].radius);
+                    currentGroup.boxes[index].height = EditorGUILayout.FloatField("Height", currentGroup.boxes[index].height);
                     break;
             }
         }
