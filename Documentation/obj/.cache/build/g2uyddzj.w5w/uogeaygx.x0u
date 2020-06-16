@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EntityHitboxManager
+   | Example Unity documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EntityHitboxManager
+   | Example Unity documentation ">
+    <meta name="generator" content="docfx 2.55.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CAF.Entities.EntityHitboxManager">
+  
+  
+  <h1 id="CAF_Entities_EntityHitboxManager" data-uid="CAF.Entities.EntityHitboxManager" class="text-break">Class EntityHitboxManager
+  </h1>
+  <div class="markdown level0 summary"><p sourcefile="api/CAF.Entities.EntityHitboxManager.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Handles the hitboxes and other boxes used by entities for combat.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">EntityHitboxManager</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CAF.Entities.html">CAF.Entities</a></h6>
+  <h6><strong>Assembly</strong>: CAF.dll</h6>
+  <h5 id="CAF_Entities_EntityHitboxManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EntityHitboxManager</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityHitboxManager__ctor_CAF_Entities_EntityCombatManager_CAF_Entities_EntityController_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityHitboxManager.%23ctor(CAF.Entities.EntityCombatManager%2CCAF.Entities.EntityController)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityHitboxManager.cs/#L24">View Source</a>
+  </span>
+  <a id="CAF_Entities_EntityHitboxManager__ctor_" data-uid="CAF.Entities.EntityHitboxManager.#ctor*"></a>
+  <h4 id="CAF_Entities_EntityHitboxManager__ctor_CAF_Entities_EntityCombatManager_CAF_Entities_EntityController_" data-uid="CAF.Entities.EntityHitboxManager.#ctor(CAF.Entities.EntityCombatManager,CAF.Entities.EntityController)">EntityHitboxManager(EntityCombatManager, EntityController)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntityHitboxManager(EntityCombatManager combatManager, EntityController controller)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CAF.Entities.EntityCombatManager.html">EntityCombatManager</a></td>
+        <td><span class="parametername">combatManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CAF.Entities.EntityController.html">EntityController</a></td>
+        <td><span class="parametername">controller</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityHitboxManager_combatManager.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityHitboxManager.combatManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityHitboxManager.cs/#L21">View Source</a>
+  </span>
+  <h4 id="CAF_Entities_EntityHitboxManager_combatManager" data-uid="CAF.Entities.EntityHitboxManager.combatManager">combatManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntityCombatManager combatManager</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CAF.Entities.EntityCombatManager.html">EntityCombatManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityHitboxManager_controller.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityHitboxManager.controller%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityHitboxManager.cs/#L22">View Source</a>
+  </span>
+  <h4 id="CAF_Entities_EntityHitboxManager_controller" data-uid="CAF.Entities.EntityHitboxManager.controller">controller</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntityController controller</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CAF.Entities.EntityController.html">EntityController</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityHitboxManager_hitboxGroups.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityHitboxManager.hitboxGroups%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityHitboxManager.cs/#L17">View Source</a>
+  </span>
+  <h4 id="CAF_Entities_EntityHitboxManager_hitboxGroups" data-uid="CAF.Entities.EntityHitboxManager.hitboxGroups">hitboxGroups</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Dictionary&lt;int, List&lt;Hitbox&gt;&gt; hitboxGroups</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="CAF.Combat.Hitbox.html">Hitbox</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityHitboxManager_hurtablesHit.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityHitboxManager.hurtablesHit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityHitboxManager.cs/#L19">View Source</a>
+  </span>
+  <h4 id="CAF_Entities_EntityHitboxManager_hurtablesHit" data-uid="CAF.Entities.EntityHitboxManager.hurtablesHit">hurtablesHit</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Dictionary&lt;int, List&lt;IHurtable&gt;&gt; hurtablesHit</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="CAF.Combat.IHurtable.html">IHurtable</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityHitboxManager_ActivateHitboxGroup_System_Int32_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityHitboxManager.ActivateHitboxGroup(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityHitboxManager.cs/#L73">View Source</a>
+  </span>
+  <a id="CAF_Entities_EntityHitboxManager_ActivateHitboxGroup_" data-uid="CAF.Entities.EntityHitboxManager.ActivateHitboxGroup*"></a>
+  <h4 id="CAF_Entities_EntityHitboxManager_ActivateHitboxGroup_System_Int32_" data-uid="CAF.Entities.EntityHitboxManager.ActivateHitboxGroup(System.Int32)">ActivateHitboxGroup(Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/CAF.Entities.EntityHitboxManager.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Activate the hitbox group with the given index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ActivateHitboxGroup(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p sourcefile="api/CAF.Entities.EntityHitboxManager.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The index of the hitbox group.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityHitboxManager_CleanupAllHitboxes.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityHitboxManager.CleanupAllHitboxes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityHitboxManager.cs/#L42">View Source</a>
+  </span>
+  <a id="CAF_Entities_EntityHitboxManager_CleanupAllHitboxes_" data-uid="CAF.Entities.EntityHitboxManager.CleanupAllHitboxes*"></a>
+  <h4 id="CAF_Entities_EntityHitboxManager_CleanupAllHitboxes" data-uid="CAF.Entities.EntityHitboxManager.CleanupAllHitboxes">CleanupAllHitboxes()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/CAF.Entities.EntityHitboxManager.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Destroy all the boxes and clears the dictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CleanupAllHitboxes()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityHitboxManager_CreateHitboxGroup_System_Int32_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityHitboxManager.CreateHitboxGroup(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityHitboxManager.cs/#L108">View Source</a>
+  </span>
+  <a id="CAF_Entities_EntityHitboxManager_CreateHitboxGroup_" data-uid="CAF.Entities.EntityHitboxManager.CreateHitboxGroup*"></a>
+  <h4 id="CAF_Entities_EntityHitboxManager_CreateHitboxGroup_System_Int32_" data-uid="CAF.Entities.EntityHitboxManager.CreateHitboxGroup(System.Int32)">CreateHitboxGroup(Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/CAF.Entities.EntityHitboxManager.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Create the hitbox group of the given index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CreateHitboxGroup(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p sourcefile="api/CAF.Entities.EntityHitboxManager.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The index of the hitbox group.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityHitboxManager_DeactivateHitboxGroup_System_Int32_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityHitboxManager.DeactivateHitboxGroup(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityHitboxManager.cs/#L90">View Source</a>
+  </span>
+  <a id="CAF_Entities_EntityHitboxManager_DeactivateHitboxGroup_" data-uid="CAF.Entities.EntityHitboxManager.DeactivateHitboxGroup*"></a>
+  <h4 id="CAF_Entities_EntityHitboxManager_DeactivateHitboxGroup_System_Int32_" data-uid="CAF.Entities.EntityHitboxManager.DeactivateHitboxGroup(System.Int32)">DeactivateHitboxGroup(Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/CAF.Entities.EntityHitboxManager.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Deactivate the hitbox group with the given index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void DeactivateHitboxGroup(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p sourcefile="api/CAF.Entities.EntityHitboxManager.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The index of the hitbox group.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityHitboxManager_InstantiateHitbox_UnityEngine_Vector3_UnityEngine_Quaternion_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityHitboxManager.InstantiateHitbox(UnityEngine.Vector3%2CUnityEngine.Quaternion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityHitboxManager.cs/#L157">View Source</a>
+  </span>
+  <a id="CAF_Entities_EntityHitboxManager_InstantiateHitbox_" data-uid="CAF.Entities.EntityHitboxManager.InstantiateHitbox*"></a>
+  <h4 id="CAF_Entities_EntityHitboxManager_InstantiateHitbox_UnityEngine_Vector3_UnityEngine_Quaternion_" data-uid="CAF.Entities.EntityHitboxManager.InstantiateHitbox(UnityEngine.Vector3,UnityEngine.Quaternion)">InstantiateHitbox(Vector3, Quaternion)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Hitbox InstantiateHitbox(Vector3 position, Quaternion rotation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Vector3.html">Vector3</a></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">rotation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CAF.Combat.Hitbox.html">Hitbox</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityHitboxManager_OnHitboxHurt_UnityEngine_GameObject_CAF_Combat_HitInfo_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityHitboxManager.OnHitboxHurt(UnityEngine.GameObject%2CCAF.Combat.HitInfo%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityHitboxManager.cs/#L168">View Source</a>
+  </span>
+  <a id="CAF_Entities_EntityHitboxManager_OnHitboxHurt_" data-uid="CAF.Entities.EntityHitboxManager.OnHitboxHurt*"></a>
+  <h4 id="CAF_Entities_EntityHitboxManager_OnHitboxHurt_UnityEngine_GameObject_CAF_Combat_HitInfo_System_Int32_System_Int32_" data-uid="CAF.Entities.EntityHitboxManager.OnHitboxHurt(UnityEngine.GameObject,CAF.Combat.HitInfo,System.Int32,System.Int32)">OnHitboxHurt(GameObject, HitInfo, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/CAF.Entities.EntityHitboxManager.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Called whenever a hitbox hits a hurtbox successfully.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnHitboxHurt(GameObject hurtableHit, HitInfo hitInfo, int hitboxID, int hitboxGroup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/GameObject.html">GameObject</a></td>
+        <td><span class="parametername">hurtableHit</span></td>
+        <td><p sourcefile="api/CAF.Entities.EntityHitboxManager.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The hurtable that was hit.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CAF.Combat.HitInfo.html">HitInfo</a></td>
+        <td><span class="parametername">hitInfo</span></td>
+        <td><p sourcefile="api/CAF.Entities.EntityHitboxManager.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The hitInfo of the hitbox.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">hitboxID</span></td>
+        <td><p sourcefile="api/CAF.Entities.EntityHitboxManager.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The hitbox ID of the hitbox.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">hitboxGroup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityHitboxManager_Reset.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityHitboxManager.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityHitboxManager.cs/#L33">View Source</a>
+  </span>
+  <a id="CAF_Entities_EntityHitboxManager_Reset_" data-uid="CAF.Entities.EntityHitboxManager.Reset*"></a>
+  <h4 id="CAF_Entities_EntityHitboxManager_Reset" data-uid="CAF.Entities.EntityHitboxManager.Reset">Reset()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/CAF.Entities.EntityHitboxManager.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Destroys all boxes and clears variables.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Reset()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityHitboxManager_TickBoxes.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityHitboxManager.TickBoxes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityHitboxManager.cs/#L58">View Source</a>
+  </span>
+  <a id="CAF_Entities_EntityHitboxManager_TickBoxes_" data-uid="CAF.Entities.EntityHitboxManager.TickBoxes*"></a>
+  <h4 id="CAF_Entities_EntityHitboxManager_TickBoxes" data-uid="CAF.Entities.EntityHitboxManager.TickBoxes">TickBoxes()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/CAF.Entities.EntityHitboxManager.yml" sourcestartlinenumber="2" sourceendlinenumber="3">Checks the hitboxes and detectboxes to see what they hit this frame.
+This should be called in late update, as physics update right after update.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void TickBoxes()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityHitboxManager_UpdateHitboxIDIgnoreList_System_Int32_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityHitboxManager.UpdateHitboxIDIgnoreList(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityHitboxManager.cs/#L180">View Source</a>
+  </span>
+  <a id="CAF_Entities_EntityHitboxManager_UpdateHitboxIDIgnoreList_" data-uid="CAF.Entities.EntityHitboxManager.UpdateHitboxIDIgnoreList*"></a>
+  <h4 id="CAF_Entities_EntityHitboxManager_UpdateHitboxIDIgnoreList_System_Int32_" data-uid="CAF.Entities.EntityHitboxManager.UpdateHitboxIDIgnoreList(System.Int32)">UpdateHitboxIDIgnoreList(Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/CAF.Entities.EntityHitboxManager.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Updates the ignore/hit list of all hitboxes with the given ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void UpdateHitboxIDIgnoreList(int hitboxID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">hitboxID</span></td>
+        <td><p sourcefile="api/CAF.Entities.EntityHitboxManager.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The ID to update the hitboxes for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityHitboxManager_OnHitboxHit.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityHitboxManager.OnHitboxHit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityHitboxManager.cs/#L14">View Source</a>
+  </span>
+  <h4 id="CAF_Entities_EntityHitboxManager_OnHitboxHit" data-uid="CAF.Entities.EntityHitboxManager.OnHitboxHit">OnHitboxHit</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EntityHitboxManager.HitboxGroupEventAction OnHitboxHit</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CAF.Entities.EntityHitboxManager.HitboxGroupEventAction.html">EntityHitboxManager.HitboxGroupEventAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityHitboxManager.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityHitboxManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityHitboxManager.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Example Unity documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
