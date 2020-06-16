@@ -1,0 +1,7 @@
+apiRules:
+- include:
+    uidRegex: ^CAF
+    type: Namespace
+- exclude:
+    uidRegex: .*
+    type: Namespace

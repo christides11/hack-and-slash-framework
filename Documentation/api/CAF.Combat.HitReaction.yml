@@ -1,0 +1,78 @@
+### YamlMime:ManagedReference
+items:
+- uid: CAF.Combat.HitReaction
+  commentId: T:CAF.Combat.HitReaction
+  id: HitReaction
+  parent: CAF.Combat
+  children:
+  - CAF.Combat.HitReaction.reactionType
+  langs:
+  - csharp
+  - vb
+  name: HitReaction
+  nameWithType: HitReaction
+  fullName: CAF.Combat.HitReaction
+  type: Struct
+  source:
+    remote:
+      path: Assets/CAF/Combat/HitReaction.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: HitReaction
+    path: ../Assets/CAF/Combat/HitReaction.cs
+    startLine: 2
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public struct HitReaction
+    content.vb: Public Structure HitReaction
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: CAF.Combat.HitReaction.reactionType
+  commentId: F:CAF.Combat.HitReaction.reactionType
+  id: reactionType
+  parent: CAF.Combat.HitReaction
+  langs:
+  - csharp
+  - vb
+  name: reactionType
+  nameWithType: HitReaction.reactionType
+  fullName: CAF.Combat.HitReaction.reactionType
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/HitReaction.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: reactionType
+    path: ../Assets/CAF/Combat/HitReaction.cs
+    startLine: 4
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public HitReactionType reactionType
+    return:
+      type: CAF.Combat.HitReactionType
+    content.vb: Public reactionType As HitReactionType
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: CAF.Combat
+  commentId: N:CAF.Combat
+  name: CAF.Combat
+  nameWithType: CAF.Combat
+  fullName: CAF.Combat
+- uid: CAF.Combat.HitReactionType
+  commentId: T:CAF.Combat.HitReactionType
+  parent: CAF.Combat
+  name: HitReactionType
+  nameWithType: HitReactionType
+  fullName: CAF.Combat.HitReactionType

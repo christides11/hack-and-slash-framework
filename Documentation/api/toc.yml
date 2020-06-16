@@ -1,0 +1,131 @@
+### YamlMime:TableOfContent
+- uid: CAF
+  name: CAF
+  items:
+  - uid: CAF.HelperFunctions
+    name: HelperFunctions
+- uid: CAF.Camera
+  name: CAF.Camera
+  items:
+  - uid: CAF.Camera.LookHandler
+    name: LookHandler
+- uid: CAF.Combat
+  name: CAF.Combat
+  items:
+  - uid: CAF.Combat.AttackDefinition
+    name: AttackDefinition
+  - uid: CAF.Combat.AttackDefinitionEditor
+    name: AttackDefinitionEditor
+  - uid: CAF.Combat.AttackDefinitionEditorWindow
+    name: AttackDefinitionEditorWindow
+  - uid: CAF.Combat.AttackEvent
+    name: AttackEvent
+  - uid: CAF.Combat.AttackEventDefinition
+    name: AttackEventDefinition
+  - uid: CAF.Combat.AttackEventVariables
+    name: AttackEventVariables
+  - uid: CAF.Combat.BoxDefinition
+    name: BoxDefinition
+  - uid: CAF.Combat.BoxGroup
+    name: BoxGroup
+  - uid: CAF.Combat.BoxGroupType
+    name: BoxGroupType
+  - uid: CAF.Combat.BoxShapes
+    name: BoxShapes
+  - uid: CAF.Combat.ForceType
+    name: ForceType
+  - uid: CAF.Combat.Hitbox
+    name: Hitbox
+  - uid: CAF.Combat.Hitbox.HurtAction
+    name: Hitbox.HurtAction
+  - uid: CAF.Combat.HitboxForceRelation
+    name: HitboxForceRelation
+  - uid: CAF.Combat.HitboxForceType
+    name: HitboxForceType
+  - uid: CAF.Combat.HitInfo
+    name: HitInfo
+  - uid: CAF.Combat.HitReaction
+    name: HitReaction
+  - uid: CAF.Combat.HitReactionType
+    name: HitReactionType
+  - uid: CAF.Combat.Hurtbox
+    name: Hurtbox
+  - uid: CAF.Combat.HurtboxState
+    name: HurtboxState
+  - uid: CAF.Combat.IHurtable
+    name: IHurtable
+  - uid: CAF.Combat.IStatusEffectable
+    name: IStatusEffectable
+  - uid: CAF.Combat.ITargetable
+    name: ITargetable
+  - uid: CAF.Combat.MovesetAttackNode
+    name: MovesetAttackNode
+  - uid: CAF.Combat.MovesetAttackNode.nextNodeDefinition
+    name: MovesetAttackNode.nextNodeDefinition
+  - uid: CAF.Combat.MovesetAttackNodeEditor
+    name: MovesetAttackNodeEditor
+  - uid: CAF.Combat.MovesetDefinition
+    name: MovesetDefinition
+  - uid: CAF.Combat.StatusEffect
+    name: StatusEffect
+  - uid: CAF.Combat.StatusEffect`1
+    name: StatusEffect<DataType>
+    name.vb: StatusEffect(Of DataType)
+  - uid: CAF.Combat.StatusEffectDefinition
+    name: StatusEffectDefinition
+  - uid: CAF.Combat.StatusEffectDefinition`2
+    name: StatusEffectDefinition<DataType, StatusEffectType>
+    name.vb: StatusEffectDefinition(Of DataType, StatusEffectType)
+- uid: CAF.Entities
+  name: CAF.Entities
+  items:
+  - uid: CAF.Entities.EntityCombatManager
+    name: EntityCombatManager
+  - uid: CAF.Entities.EntityController
+    name: EntityController
+  - uid: CAF.Entities.EntityHitboxManager
+    name: EntityHitboxManager
+  - uid: CAF.Entities.EntityHitboxManager.HitboxGroupEventAction
+    name: EntityHitboxManager.HitboxGroupEventAction
+  - uid: CAF.Entities.EntityInputManager
+    name: EntityInputManager
+  - uid: CAF.Entities.EntityPhysicsManager
+    name: EntityPhysicsManager
+  - uid: CAF.Entities.EntityState
+    name: EntityState
+  - uid: CAF.Entities.EntityStateManager
+    name: EntityStateManager
+- uid: CAF.Input
+  name: CAF.Input
+  items:
+  - uid: CAF.Input.GlobalInputManager
+    name: GlobalInputManager
+  - uid: CAF.Input.InputControlType
+    name: InputControlType
+  - uid: CAF.Input.InputDefinition
+    name: InputDefinition
+  - uid: CAF.Input.InputDefinitionDrawer
+    name: InputDefinitionDrawer
+  - uid: CAF.Input.InputDefinitionType
+    name: InputDefinitionType
+  - uid: CAF.Input.InputRecordAxis
+    name: InputRecordAxis
+  - uid: CAF.Input.InputRecordAxis2D
+    name: InputRecordAxis2D
+  - uid: CAF.Input.InputRecordButton
+    name: InputRecordButton
+  - uid: CAF.Input.InputRecordInput
+    name: InputRecordInput
+  - uid: CAF.Input.InputRecordItem
+    name: InputRecordItem
+- uid: CAF.Simulation
+  name: CAF.Simulation
+  items:
+  - uid: CAF.Simulation.SimObject
+    name: SimObject
+  - uid: CAF.Simulation.SimObjectManager
+    name: SimObjectManager
+  - uid: CAF.Simulation.TimeStepManager
+    name: TimeStepManager
+  - uid: CAF.Simulation.TimeStepManager.UpdateAction
+    name: TimeStepManager.UpdateAction

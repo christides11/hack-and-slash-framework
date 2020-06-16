@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: CAF
+  commentId: N:CAF
+  id: CAF
+  children:
+  - CAF.HelperFunctions
+  langs:
+  - csharp
+  - vb
+  name: CAF
+  nameWithType: CAF
+  fullName: CAF
+  type: Namespace
+  assemblies:
+  - CAF
+references:
+- uid: CAF.HelperFunctions
+  commentId: T:CAF.HelperFunctions
+  name: HelperFunctions
+  nameWithType: HelperFunctions
+  fullName: CAF.HelperFunctions

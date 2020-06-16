@@ -1,0 +1,170 @@
+### YamlMime:ManagedReference
+items:
+- uid: CAF.Camera.LookHandler
+  commentId: T:CAF.Camera.LookHandler
+  id: LookHandler
+  parent: CAF.Camera
+  children:
+  - CAF.Camera.LookHandler.LookAt(UnityEngine.Vector3)
+  - CAF.Camera.LookHandler.LookTransform
+  - CAF.Camera.LookHandler.SetLookDirection(UnityEngine.Vector3)
+  langs:
+  - csharp
+  - vb
+  name: LookHandler
+  nameWithType: LookHandler
+  fullName: CAF.Camera.LookHandler
+  type: Interface
+  source:
+    remote:
+      path: Assets/CAF/Camera/LookHandler.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: LookHandler
+    path: ../Assets/CAF/Camera/LookHandler.cs
+    startLine: 4
+  assemblies:
+  - CAF
+  namespace: CAF.Camera
+  syntax:
+    content: public interface LookHandler
+    content.vb: Public Interface LookHandler
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: CAF.Camera.LookHandler.SetLookDirection(UnityEngine.Vector3)
+  commentId: M:CAF.Camera.LookHandler.SetLookDirection(UnityEngine.Vector3)
+  id: SetLookDirection(UnityEngine.Vector3)
+  parent: CAF.Camera.LookHandler
+  langs:
+  - csharp
+  - vb
+  name: SetLookDirection(Vector3)
+  nameWithType: LookHandler.SetLookDirection(Vector3)
+  fullName: CAF.Camera.LookHandler.SetLookDirection(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Camera/LookHandler.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: SetLookDirection
+    path: ../Assets/CAF/Camera/LookHandler.cs
+    startLine: 10
+  assemblies:
+  - CAF
+  namespace: CAF.Camera
+  summary: "\nMake the handler look in the given direction.\n"
+  example: []
+  syntax:
+    content: void SetLookDirection(Vector3 direction)
+    parameters:
+    - id: direction
+      type: UnityEngine.Vector3
+      description: The direction vector.
+    content.vb: Sub SetLookDirection(direction As Vector3)
+  overload: CAF.Camera.LookHandler.SetLookDirection*
+- uid: CAF.Camera.LookHandler.LookAt(UnityEngine.Vector3)
+  commentId: M:CAF.Camera.LookHandler.LookAt(UnityEngine.Vector3)
+  id: LookAt(UnityEngine.Vector3)
+  parent: CAF.Camera.LookHandler
+  langs:
+  - csharp
+  - vb
+  name: LookAt(Vector3)
+  nameWithType: LookHandler.LookAt(Vector3)
+  fullName: CAF.Camera.LookHandler.LookAt(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Camera/LookHandler.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: LookAt
+    path: ../Assets/CAF/Camera/LookHandler.cs
+    startLine: 16
+  assemblies:
+  - CAF
+  namespace: CAF.Camera
+  summary: "\nSet the look direction to point at the given position.\n"
+  example: []
+  syntax:
+    content: void LookAt(Vector3 position)
+    parameters:
+    - id: position
+      type: UnityEngine.Vector3
+      description: The position to look at.
+    content.vb: Sub LookAt(position As Vector3)
+  overload: CAF.Camera.LookHandler.LookAt*
+- uid: CAF.Camera.LookHandler.LookTransform
+  commentId: M:CAF.Camera.LookHandler.LookTransform
+  id: LookTransform
+  parent: CAF.Camera.LookHandler
+  langs:
+  - csharp
+  - vb
+  name: LookTransform()
+  nameWithType: LookHandler.LookTransform()
+  fullName: CAF.Camera.LookHandler.LookTransform()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Camera/LookHandler.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: LookTransform
+    path: ../Assets/CAF/Camera/LookHandler.cs
+    startLine: 18
+  assemblies:
+  - CAF
+  namespace: CAF.Camera
+  syntax:
+    content: Transform LookTransform()
+    return:
+      type: UnityEngine.Transform
+    content.vb: Function LookTransform As Transform
+  overload: CAF.Camera.LookHandler.LookTransform*
+references:
+- uid: CAF.Camera
+  commentId: N:CAF.Camera
+  name: CAF.Camera
+  nameWithType: CAF.Camera
+  fullName: CAF.Camera
+- uid: CAF.Camera.LookHandler.SetLookDirection*
+  commentId: Overload:CAF.Camera.LookHandler.SetLookDirection
+  name: SetLookDirection
+  nameWithType: LookHandler.SetLookDirection
+  fullName: CAF.Camera.LookHandler.SetLookDirection
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: CAF.Camera.LookHandler.LookAt*
+  commentId: Overload:CAF.Camera.LookHandler.LookAt
+  name: LookAt
+  nameWithType: LookHandler.LookAt
+  fullName: CAF.Camera.LookHandler.LookAt
+- uid: CAF.Camera.LookHandler.LookTransform*
+  commentId: Overload:CAF.Camera.LookHandler.LookTransform
+  name: LookTransform
+  nameWithType: LookHandler.LookTransform
+  fullName: CAF.Camera.LookHandler.LookTransform
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform

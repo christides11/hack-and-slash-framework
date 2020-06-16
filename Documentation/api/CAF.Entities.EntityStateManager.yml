@@ -1,0 +1,784 @@
+### YamlMime:ManagedReference
+items:
+- uid: CAF.Entities.EntityStateManager
+  commentId: T:CAF.Entities.EntityStateManager
+  id: EntityStateManager
+  parent: CAF.Entities
+  children:
+  - CAF.Entities.EntityStateManager.AddState(CAF.Entities.EntityState,System.Int32)
+  - CAF.Entities.EntityStateManager.ChangeState(CAF.Entities.EntityState,System.UInt32,System.Boolean)
+  - CAF.Entities.EntityStateManager.ChangeState(System.Int32,System.UInt32,System.Boolean)
+  - CAF.Entities.EntityStateManager.controller
+  - CAF.Entities.EntityStateManager.currentState
+  - CAF.Entities.EntityStateManager.CurrentState
+  - CAF.Entities.EntityStateManager.currentStateFrame
+  - CAF.Entities.EntityStateManager.CurrentStateFrame
+  - CAF.Entities.EntityStateManager.currentStateName
+  - CAF.Entities.EntityStateManager.IncrementFrame
+  - CAF.Entities.EntityStateManager.SetFrame(System.UInt32)
+  - CAF.Entities.EntityStateManager.states
+  - CAF.Entities.EntityStateManager.Tick
+  langs:
+  - csharp
+  - vb
+  name: EntityStateManager
+  nameWithType: EntityStateManager
+  fullName: CAF.Entities.EntityStateManager
+  type: Class
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityStateManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: EntityStateManager
+    path: ../Assets/CAF/Entities/Managers/EntityStateManager.cs
+    startLine: 5
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: 'public class EntityStateManager : MonoBehaviour'
+    content.vb: >-
+      Public Class EntityStateManager
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CAF.Entities.EntityStateManager.CurrentState
+  commentId: P:CAF.Entities.EntityStateManager.CurrentState
+  id: CurrentState
+  parent: CAF.Entities.EntityStateManager
+  langs:
+  - csharp
+  - vb
+  name: CurrentState
+  nameWithType: EntityStateManager.CurrentState
+  fullName: CAF.Entities.EntityStateManager.CurrentState
+  type: Property
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityStateManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: CurrentState
+    path: ../Assets/CAF/Entities/Managers/EntityStateManager.cs
+    startLine: 7
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public EntityState CurrentState { get; }
+    parameters: []
+    return:
+      type: CAF.Entities.EntityState
+    content.vb: Public ReadOnly Property CurrentState As EntityState
+  overload: CAF.Entities.EntityStateManager.CurrentState*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: CAF.Entities.EntityStateManager.CurrentStateFrame
+  commentId: P:CAF.Entities.EntityStateManager.CurrentStateFrame
+  id: CurrentStateFrame
+  parent: CAF.Entities.EntityStateManager
+  langs:
+  - csharp
+  - vb
+  name: CurrentStateFrame
+  nameWithType: EntityStateManager.CurrentStateFrame
+  fullName: CAF.Entities.EntityStateManager.CurrentStateFrame
+  type: Property
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityStateManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: CurrentStateFrame
+    path: ../Assets/CAF/Entities/Managers/EntityStateManager.cs
+    startLine: 8
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public uint CurrentStateFrame { get; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: Public ReadOnly Property CurrentStateFrame As UInteger
+  overload: CAF.Entities.EntityStateManager.CurrentStateFrame*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: CAF.Entities.EntityStateManager.controller
+  commentId: F:CAF.Entities.EntityStateManager.controller
+  id: controller
+  parent: CAF.Entities.EntityStateManager
+  langs:
+  - csharp
+  - vb
+  name: controller
+  nameWithType: EntityStateManager.controller
+  fullName: CAF.Entities.EntityStateManager.controller
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityStateManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: controller
+    path: ../Assets/CAF/Entities/Managers/EntityStateManager.cs
+    startLine: 10
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: >-
+      [SerializeField]
+
+      protected EntityController controller
+    return:
+      type: CAF.Entities.EntityController
+    content.vb: >-
+      <SerializeField>
+
+      Protected controller As EntityController
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Entities.EntityStateManager.states
+  commentId: F:CAF.Entities.EntityStateManager.states
+  id: states
+  parent: CAF.Entities.EntityStateManager
+  langs:
+  - csharp
+  - vb
+  name: states
+  nameWithType: EntityStateManager.states
+  fullName: CAF.Entities.EntityStateManager.states
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityStateManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: states
+    path: ../Assets/CAF/Entities/Managers/EntityStateManager.cs
+    startLine: 11
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: protected Dictionary<int, EntityState> states
+    return:
+      type: System.Collections.Generic.Dictionary{System.Int32,CAF.Entities.EntityState}
+    content.vb: Protected states As Dictionary(Of Integer, EntityState)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Entities.EntityStateManager.currentState
+  commentId: F:CAF.Entities.EntityStateManager.currentState
+  id: currentState
+  parent: CAF.Entities.EntityStateManager
+  langs:
+  - csharp
+  - vb
+  name: currentState
+  nameWithType: EntityStateManager.currentState
+  fullName: CAF.Entities.EntityStateManager.currentState
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityStateManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: currentState
+    path: ../Assets/CAF/Entities/Managers/EntityStateManager.cs
+    startLine: 12
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: protected EntityState currentState
+    return:
+      type: CAF.Entities.EntityState
+    content.vb: Protected currentState As EntityState
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Entities.EntityStateManager.currentStateFrame
+  commentId: F:CAF.Entities.EntityStateManager.currentStateFrame
+  id: currentStateFrame
+  parent: CAF.Entities.EntityStateManager
+  langs:
+  - csharp
+  - vb
+  name: currentStateFrame
+  nameWithType: EntityStateManager.currentStateFrame
+  fullName: CAF.Entities.EntityStateManager.currentStateFrame
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityStateManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: currentStateFrame
+    path: ../Assets/CAF/Entities/Managers/EntityStateManager.cs
+    startLine: 13
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: >-
+      [SerializeField]
+
+      protected uint currentStateFrame
+    return:
+      type: System.UInt32
+    content.vb: >-
+      <SerializeField>
+
+      Protected currentStateFrame As UInteger
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Entities.EntityStateManager.currentStateName
+  commentId: F:CAF.Entities.EntityStateManager.currentStateName
+  id: currentStateName
+  parent: CAF.Entities.EntityStateManager
+  langs:
+  - csharp
+  - vb
+  name: currentStateName
+  nameWithType: EntityStateManager.currentStateName
+  fullName: CAF.Entities.EntityStateManager.currentStateName
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityStateManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: currentStateName
+    path: ../Assets/CAF/Entities/Managers/EntityStateManager.cs
+    startLine: 14
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: >-
+      [SerializeField]
+
+      protected string currentStateName
+    return:
+      type: System.String
+    content.vb: >-
+      <SerializeField>
+
+      Protected currentStateName As String
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Entities.EntityStateManager.Tick
+  commentId: M:CAF.Entities.EntityStateManager.Tick
+  id: Tick
+  parent: CAF.Entities.EntityStateManager
+  langs:
+  - csharp
+  - vb
+  name: Tick()
+  nameWithType: EntityStateManager.Tick()
+  fullName: CAF.Entities.EntityStateManager.Tick()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityStateManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: Tick
+    path: ../Assets/CAF/Entities/Managers/EntityStateManager.cs
+    startLine: 16
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public virtual void Tick()
+    content.vb: Public Overridable Sub Tick
+  overload: CAF.Entities.EntityStateManager.Tick*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Entities.EntityStateManager.AddState(CAF.Entities.EntityState,System.Int32)
+  commentId: M:CAF.Entities.EntityStateManager.AddState(CAF.Entities.EntityState,System.Int32)
+  id: AddState(CAF.Entities.EntityState,System.Int32)
+  parent: CAF.Entities.EntityStateManager
+  langs:
+  - csharp
+  - vb
+  name: AddState(EntityState, Int32)
+  nameWithType: EntityStateManager.AddState(EntityState, Int32)
+  fullName: CAF.Entities.EntityStateManager.AddState(CAF.Entities.EntityState, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityStateManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: AddState
+    path: ../Assets/CAF/Entities/Managers/EntityStateManager.cs
+    startLine: 29
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  summary: "\nAdds a state to the entity&apos;s state list.\n"
+  example: []
+  syntax:
+    content: public virtual void AddState(EntityState state, int stateNumber)
+    parameters:
+    - id: state
+      type: CAF.Entities.EntityState
+      description: The state.
+    - id: stateNumber
+      type: System.Int32
+      description: The number of the state.
+    content.vb: Public Overridable Sub AddState(state As EntityState, stateNumber As Integer)
+  overload: CAF.Entities.EntityStateManager.AddState*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Entities.EntityStateManager.ChangeState(System.Int32,System.UInt32,System.Boolean)
+  commentId: M:CAF.Entities.EntityStateManager.ChangeState(System.Int32,System.UInt32,System.Boolean)
+  id: ChangeState(System.Int32,System.UInt32,System.Boolean)
+  parent: CAF.Entities.EntityStateManager
+  langs:
+  - csharp
+  - vb
+  name: ChangeState(Int32, UInt32, Boolean)
+  nameWithType: EntityStateManager.ChangeState(Int32, UInt32, Boolean)
+  fullName: CAF.Entities.EntityStateManager.ChangeState(System.Int32, System.UInt32, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityStateManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: ChangeState
+    path: ../Assets/CAF/Entities/Managers/EntityStateManager.cs
+    startLine: 42
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  summary: "\nChanges the state to the given one.\n"
+  example: []
+  syntax:
+    content: public virtual bool ChangeState(int state, uint stateFrame = 0U, bool callOnInterrupt = true)
+    parameters:
+    - id: state
+      type: System.Int32
+      description: The state to change to.
+    - id: stateFrame
+      type: System.UInt32
+      description: What frame to start the state at.
+    - id: callOnInterrupt
+      type: System.Boolean
+      description: If OnInterrupt of the current state should be called.
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Overridable Function ChangeState(state As Integer, stateFrame As UInteger = 0UI, callOnInterrupt As Boolean = True) As Boolean
+  overload: CAF.Entities.EntityStateManager.ChangeState*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Entities.EntityStateManager.ChangeState(CAF.Entities.EntityState,System.UInt32,System.Boolean)
+  commentId: M:CAF.Entities.EntityStateManager.ChangeState(CAF.Entities.EntityState,System.UInt32,System.Boolean)
+  id: ChangeState(CAF.Entities.EntityState,System.UInt32,System.Boolean)
+  parent: CAF.Entities.EntityStateManager
+  langs:
+  - csharp
+  - vb
+  name: ChangeState(EntityState, UInt32, Boolean)
+  nameWithType: EntityStateManager.ChangeState(EntityState, UInt32, Boolean)
+  fullName: CAF.Entities.EntityStateManager.ChangeState(CAF.Entities.EntityState, System.UInt32, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityStateManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: ChangeState
+    path: ../Assets/CAF/Entities/Managers/EntityStateManager.cs
+    startLine: 71
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  summary: "\nChanges the state to the given one.\n"
+  example: []
+  syntax:
+    content: public virtual void ChangeState(EntityState state, uint stateFrame = 0U, bool callOnInterrupt = true)
+    parameters:
+    - id: state
+      type: CAF.Entities.EntityState
+      description: The state to change to.
+    - id: stateFrame
+      type: System.UInt32
+      description: What frame to start the state at.
+    - id: callOnInterrupt
+      type: System.Boolean
+      description: If OnInterrupt of the current state should be called.
+    content.vb: Public Overridable Sub ChangeState(state As EntityState, stateFrame As UInteger = 0UI, callOnInterrupt As Boolean = True)
+  overload: CAF.Entities.EntityStateManager.ChangeState*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Entities.EntityStateManager.SetFrame(System.UInt32)
+  commentId: M:CAF.Entities.EntityStateManager.SetFrame(System.UInt32)
+  id: SetFrame(System.UInt32)
+  parent: CAF.Entities.EntityStateManager
+  langs:
+  - csharp
+  - vb
+  name: SetFrame(UInt32)
+  nameWithType: EntityStateManager.SetFrame(UInt32)
+  fullName: CAF.Entities.EntityStateManager.SetFrame(System.UInt32)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityStateManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: SetFrame
+    path: ../Assets/CAF/Entities/Managers/EntityStateManager.cs
+    startLine: 87
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public virtual void SetFrame(uint frame)
+    parameters:
+    - id: frame
+      type: System.UInt32
+    content.vb: Public Overridable Sub SetFrame(frame As UInteger)
+  overload: CAF.Entities.EntityStateManager.SetFrame*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Entities.EntityStateManager.IncrementFrame
+  commentId: M:CAF.Entities.EntityStateManager.IncrementFrame
+  id: IncrementFrame
+  parent: CAF.Entities.EntityStateManager
+  langs:
+  - csharp
+  - vb
+  name: IncrementFrame()
+  nameWithType: EntityStateManager.IncrementFrame()
+  fullName: CAF.Entities.EntityStateManager.IncrementFrame()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityStateManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: IncrementFrame
+    path: ../Assets/CAF/Entities/Managers/EntityStateManager.cs
+    startLine: 92
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public virtual void IncrementFrame()
+    content.vb: Public Overridable Sub IncrementFrame
+  overload: CAF.Entities.EntityStateManager.IncrementFrame*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: CAF.Entities
+  commentId: N:CAF.Entities
+  name: CAF.Entities
+  nameWithType: CAF.Entities
+  fullName: CAF.Entities
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: CAF.Entities.EntityStateManager.CurrentState*
+  commentId: Overload:CAF.Entities.EntityStateManager.CurrentState
+  name: CurrentState
+  nameWithType: EntityStateManager.CurrentState
+  fullName: CAF.Entities.EntityStateManager.CurrentState
+- uid: CAF.Entities.EntityState
+  commentId: T:CAF.Entities.EntityState
+  parent: CAF.Entities
+  name: EntityState
+  nameWithType: EntityState
+  fullName: CAF.Entities.EntityState
+- uid: CAF.Entities.EntityStateManager.CurrentStateFrame*
+  commentId: Overload:CAF.Entities.EntityStateManager.CurrentStateFrame
+  name: CurrentStateFrame
+  nameWithType: EntityStateManager.CurrentStateFrame
+  fullName: CAF.Entities.EntityStateManager.CurrentStateFrame
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  name: UInt32
+  nameWithType: UInt32
+  fullName: System.UInt32
+- uid: CAF.Entities.EntityController
+  commentId: T:CAF.Entities.EntityController
+  parent: CAF.Entities
+  name: EntityController
+  nameWithType: EntityController
+  fullName: CAF.Entities.EntityController
+- uid: System.Collections.Generic.Dictionary{System.Int32,CAF.Entities.EntityState}
+  commentId: T:System.Collections.Generic.Dictionary{System.Int32,CAF.Entities.EntityState}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<Int32, EntityState>
+  nameWithType: Dictionary<Int32, EntityState>
+  fullName: System.Collections.Generic.Dictionary<System.Int32, CAF.Entities.EntityState>
+  nameWithType.vb: Dictionary(Of Int32, EntityState)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.Int32, CAF.Entities.EntityState)
+  name.vb: Dictionary(Of Int32, EntityState)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: CAF.Entities.EntityState
+    name: EntityState
+    nameWithType: EntityState
+    fullName: CAF.Entities.EntityState
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: CAF.Entities.EntityState
+    name: EntityState
+    nameWithType: EntityState
+    fullName: CAF.Entities.EntityState
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: CAF.Entities.EntityStateManager.Tick*
+  commentId: Overload:CAF.Entities.EntityStateManager.Tick
+  name: Tick
+  nameWithType: EntityStateManager.Tick
+  fullName: CAF.Entities.EntityStateManager.Tick
+- uid: CAF.Entities.EntityStateManager.AddState*
+  commentId: Overload:CAF.Entities.EntityStateManager.AddState
+  name: AddState
+  nameWithType: EntityStateManager.AddState
+  fullName: CAF.Entities.EntityStateManager.AddState
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: CAF.Entities.EntityStateManager.ChangeState*
+  commentId: Overload:CAF.Entities.EntityStateManager.ChangeState
+  name: ChangeState
+  nameWithType: EntityStateManager.ChangeState
+  fullName: CAF.Entities.EntityStateManager.ChangeState
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: CAF.Entities.EntityStateManager.SetFrame*
+  commentId: Overload:CAF.Entities.EntityStateManager.SetFrame
+  name: SetFrame
+  nameWithType: EntityStateManager.SetFrame
+  fullName: CAF.Entities.EntityStateManager.SetFrame
+- uid: CAF.Entities.EntityStateManager.IncrementFrame*
+  commentId: Overload:CAF.Entities.EntityStateManager.IncrementFrame
+  name: IncrementFrame
+  nameWithType: EntityStateManager.IncrementFrame
+  fullName: CAF.Entities.EntityStateManager.IncrementFrame

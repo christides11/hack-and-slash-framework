@@ -1,0 +1,420 @@
+### YamlMime:ManagedReference
+items:
+- uid: CAF.Input.InputRecordButton
+  commentId: T:CAF.Input.InputRecordButton
+  id: InputRecordButton
+  parent: CAF.Input
+  children:
+  - CAF.Input.InputRecordButton.#ctor(System.Boolean)
+  - CAF.Input.InputRecordButton.firstPress
+  - CAF.Input.InputRecordButton.isDown
+  - CAF.Input.InputRecordButton.Process(CAF.Input.InputRecordInput)
+  - CAF.Input.InputRecordButton.released
+  - CAF.Input.InputRecordButton.usedInBuffer
+  - CAF.Input.InputRecordButton.UsedInBuffer
+  - CAF.Input.InputRecordButton.UseInBuffer
+  langs:
+  - csharp
+  - vb
+  name: InputRecordButton
+  nameWithType: InputRecordButton
+  fullName: CAF.Input.InputRecordButton
+  type: Struct
+  source:
+    remote:
+      path: Assets/CAF/Input/Input Record/InputRecordButton.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: InputRecordButton
+    path: ../Assets/CAF/Input/Input Record/InputRecordButton.cs
+    startLine: 2
+  assemblies:
+  - CAF
+  namespace: CAF.Input
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct InputRecordButton : InputRecordInput
+    content.vb: >-
+      <Serializable>
+
+      Public Structure InputRecordButton
+          Implements InputRecordInput
+  implements:
+  - CAF.Input.InputRecordInput
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: CAF.Input.InputRecordButton.usedInBuffer
+  commentId: F:CAF.Input.InputRecordButton.usedInBuffer
+  id: usedInBuffer
+  parent: CAF.Input.InputRecordButton
+  langs:
+  - csharp
+  - vb
+  name: usedInBuffer
+  nameWithType: InputRecordButton.usedInBuffer
+  fullName: CAF.Input.InputRecordButton.usedInBuffer
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Input/Input Record/InputRecordButton.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: usedInBuffer
+    path: ../Assets/CAF/Input/Input Record/InputRecordButton.cs
+    startLine: 5
+  assemblies:
+  - CAF
+  namespace: CAF.Input
+  syntax:
+    content: public bool usedInBuffer
+    return:
+      type: System.Boolean
+    content.vb: Public usedInBuffer As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Input.InputRecordButton.isDown
+  commentId: F:CAF.Input.InputRecordButton.isDown
+  id: isDown
+  parent: CAF.Input.InputRecordButton
+  langs:
+  - csharp
+  - vb
+  name: isDown
+  nameWithType: InputRecordButton.isDown
+  fullName: CAF.Input.InputRecordButton.isDown
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Input/Input Record/InputRecordButton.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: isDown
+    path: ../Assets/CAF/Input/Input Record/InputRecordButton.cs
+    startLine: 6
+  assemblies:
+  - CAF
+  namespace: CAF.Input
+  syntax:
+    content: public bool isDown
+    return:
+      type: System.Boolean
+    content.vb: Public isDown As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Input.InputRecordButton.firstPress
+  commentId: F:CAF.Input.InputRecordButton.firstPress
+  id: firstPress
+  parent: CAF.Input.InputRecordButton
+  langs:
+  - csharp
+  - vb
+  name: firstPress
+  nameWithType: InputRecordButton.firstPress
+  fullName: CAF.Input.InputRecordButton.firstPress
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Input/Input Record/InputRecordButton.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: firstPress
+    path: ../Assets/CAF/Input/Input Record/InputRecordButton.cs
+    startLine: 7
+  assemblies:
+  - CAF
+  namespace: CAF.Input
+  syntax:
+    content: public bool firstPress
+    return:
+      type: System.Boolean
+    content.vb: Public firstPress As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Input.InputRecordButton.released
+  commentId: F:CAF.Input.InputRecordButton.released
+  id: released
+  parent: CAF.Input.InputRecordButton
+  langs:
+  - csharp
+  - vb
+  name: released
+  nameWithType: InputRecordButton.released
+  fullName: CAF.Input.InputRecordButton.released
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Input/Input Record/InputRecordButton.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: released
+    path: ../Assets/CAF/Input/Input Record/InputRecordButton.cs
+    startLine: 8
+  assemblies:
+  - CAF
+  namespace: CAF.Input
+  syntax:
+    content: public bool released
+    return:
+      type: System.Boolean
+    content.vb: Public released As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Input.InputRecordButton.#ctor(System.Boolean)
+  commentId: M:CAF.Input.InputRecordButton.#ctor(System.Boolean)
+  id: '#ctor(System.Boolean)'
+  parent: CAF.Input.InputRecordButton
+  langs:
+  - csharp
+  - vb
+  name: InputRecordButton(Boolean)
+  nameWithType: InputRecordButton.InputRecordButton(Boolean)
+  fullName: CAF.Input.InputRecordButton.InputRecordButton(System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/CAF/Input/Input Record/InputRecordButton.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: .ctor
+    path: ../Assets/CAF/Input/Input Record/InputRecordButton.cs
+    startLine: 10
+  assemblies:
+  - CAF
+  namespace: CAF.Input
+  syntax:
+    content: public InputRecordButton(bool button)
+    parameters:
+    - id: button
+      type: System.Boolean
+    content.vb: Public Sub New(button As Boolean)
+  overload: CAF.Input.InputRecordButton.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Input.InputRecordButton.Process(CAF.Input.InputRecordInput)
+  commentId: M:CAF.Input.InputRecordButton.Process(CAF.Input.InputRecordInput)
+  id: Process(CAF.Input.InputRecordInput)
+  parent: CAF.Input.InputRecordButton
+  langs:
+  - csharp
+  - vb
+  name: Process(InputRecordInput)
+  nameWithType: InputRecordButton.Process(InputRecordInput)
+  fullName: CAF.Input.InputRecordButton.Process(CAF.Input.InputRecordInput)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Input/Input Record/InputRecordButton.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: Process
+    path: ../Assets/CAF/Input/Input Record/InputRecordButton.cs
+    startLine: 18
+  assemblies:
+  - CAF
+  namespace: CAF.Input
+  syntax:
+    content: public void Process(InputRecordInput lastInput)
+    parameters:
+    - id: lastInput
+      type: CAF.Input.InputRecordInput
+    content.vb: Public Sub Process(lastInput As InputRecordInput)
+  overload: CAF.Input.InputRecordButton.Process*
+  implements:
+  - CAF.Input.InputRecordInput.Process(CAF.Input.InputRecordInput)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Input.InputRecordButton.UsedInBuffer
+  commentId: M:CAF.Input.InputRecordButton.UsedInBuffer
+  id: UsedInBuffer
+  parent: CAF.Input.InputRecordButton
+  langs:
+  - csharp
+  - vb
+  name: UsedInBuffer()
+  nameWithType: InputRecordButton.UsedInBuffer()
+  fullName: CAF.Input.InputRecordButton.UsedInBuffer()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Input/Input Record/InputRecordButton.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: UsedInBuffer
+    path: ../Assets/CAF/Input/Input Record/InputRecordButton.cs
+    startLine: 31
+  assemblies:
+  - CAF
+  namespace: CAF.Input
+  syntax:
+    content: public bool UsedInBuffer()
+    return:
+      type: System.Boolean
+    content.vb: Public Function UsedInBuffer As Boolean
+  overload: CAF.Input.InputRecordButton.UsedInBuffer*
+  implements:
+  - CAF.Input.InputRecordInput.UsedInBuffer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Input.InputRecordButton.UseInBuffer
+  commentId: M:CAF.Input.InputRecordButton.UseInBuffer
+  id: UseInBuffer
+  parent: CAF.Input.InputRecordButton
+  langs:
+  - csharp
+  - vb
+  name: UseInBuffer()
+  nameWithType: InputRecordButton.UseInBuffer()
+  fullName: CAF.Input.InputRecordButton.UseInBuffer()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Input/Input Record/InputRecordButton.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: UseInBuffer
+    path: ../Assets/CAF/Input/Input Record/InputRecordButton.cs
+    startLine: 36
+  assemblies:
+  - CAF
+  namespace: CAF.Input
+  syntax:
+    content: public void UseInBuffer()
+    content.vb: Public Sub UseInBuffer
+  overload: CAF.Input.InputRecordButton.UseInBuffer*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: CAF.Input
+  commentId: N:CAF.Input
+  name: CAF.Input
+  nameWithType: CAF.Input
+  fullName: CAF.Input
+- uid: CAF.Input.InputRecordInput
+  commentId: T:CAF.Input.InputRecordInput
+  parent: CAF.Input
+  name: InputRecordInput
+  nameWithType: InputRecordInput
+  fullName: CAF.Input.InputRecordInput
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CAF.Input.InputRecordButton.#ctor*
+  commentId: Overload:CAF.Input.InputRecordButton.#ctor
+  name: InputRecordButton
+  nameWithType: InputRecordButton.InputRecordButton
+  fullName: CAF.Input.InputRecordButton.InputRecordButton
+- uid: CAF.Input.InputRecordButton.Process*
+  commentId: Overload:CAF.Input.InputRecordButton.Process
+  name: Process
+  nameWithType: InputRecordButton.Process
+  fullName: CAF.Input.InputRecordButton.Process
+- uid: CAF.Input.InputRecordInput.Process(CAF.Input.InputRecordInput)
+  commentId: M:CAF.Input.InputRecordInput.Process(CAF.Input.InputRecordInput)
+  parent: CAF.Input.InputRecordInput
+  name: Process(InputRecordInput)
+  nameWithType: InputRecordInput.Process(InputRecordInput)
+  fullName: CAF.Input.InputRecordInput.Process(CAF.Input.InputRecordInput)
+  spec.csharp:
+  - uid: CAF.Input.InputRecordInput.Process(CAF.Input.InputRecordInput)
+    name: Process
+    nameWithType: InputRecordInput.Process
+    fullName: CAF.Input.InputRecordInput.Process
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: CAF.Input.InputRecordInput
+    name: InputRecordInput
+    nameWithType: InputRecordInput
+    fullName: CAF.Input.InputRecordInput
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CAF.Input.InputRecordInput.Process(CAF.Input.InputRecordInput)
+    name: Process
+    nameWithType: InputRecordInput.Process
+    fullName: CAF.Input.InputRecordInput.Process
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: CAF.Input.InputRecordInput
+    name: InputRecordInput
+    nameWithType: InputRecordInput
+    fullName: CAF.Input.InputRecordInput
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CAF.Input.InputRecordButton.UsedInBuffer*
+  commentId: Overload:CAF.Input.InputRecordButton.UsedInBuffer
+  name: UsedInBuffer
+  nameWithType: InputRecordButton.UsedInBuffer
+  fullName: CAF.Input.InputRecordButton.UsedInBuffer
+- uid: CAF.Input.InputRecordInput.UsedInBuffer
+  commentId: M:CAF.Input.InputRecordInput.UsedInBuffer
+  parent: CAF.Input.InputRecordInput
+  name: UsedInBuffer()
+  nameWithType: InputRecordInput.UsedInBuffer()
+  fullName: CAF.Input.InputRecordInput.UsedInBuffer()
+  spec.csharp:
+  - uid: CAF.Input.InputRecordInput.UsedInBuffer
+    name: UsedInBuffer
+    nameWithType: InputRecordInput.UsedInBuffer
+    fullName: CAF.Input.InputRecordInput.UsedInBuffer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CAF.Input.InputRecordInput.UsedInBuffer
+    name: UsedInBuffer
+    nameWithType: InputRecordInput.UsedInBuffer
+    fullName: CAF.Input.InputRecordInput.UsedInBuffer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CAF.Input.InputRecordButton.UseInBuffer*
+  commentId: Overload:CAF.Input.InputRecordButton.UseInBuffer
+  name: UseInBuffer
+  nameWithType: InputRecordButton.UseInBuffer
+  fullName: CAF.Input.InputRecordButton.UseInBuffer

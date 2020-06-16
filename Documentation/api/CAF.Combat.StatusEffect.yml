@@ -1,0 +1,140 @@
+### YamlMime:ManagedReference
+items:
+- uid: CAF.Combat.StatusEffect
+  commentId: T:CAF.Combat.StatusEffect
+  id: StatusEffect
+  parent: CAF.Combat
+  children:
+  - CAF.Combat.StatusEffect.Apply
+  - CAF.Combat.StatusEffect.target
+  langs:
+  - csharp
+  - vb
+  name: StatusEffect
+  nameWithType: StatusEffect
+  fullName: CAF.Combat.StatusEffect
+  type: Class
+  source:
+    remote:
+      path: Assets/CAF/Combat/Status Effects/StatusEffect.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: StatusEffect
+    path: ../Assets/CAF/Combat/Status Effects/StatusEffect.cs
+    startLine: 7
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public abstract class StatusEffect
+    content.vb: Public MustInherit Class StatusEffect
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - CAF.Combat.StatusEffect`1
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: CAF.Combat.StatusEffect.target
+  commentId: F:CAF.Combat.StatusEffect.target
+  id: target
+  parent: CAF.Combat.StatusEffect
+  langs:
+  - csharp
+  - vb
+  name: target
+  nameWithType: StatusEffect.target
+  fullName: CAF.Combat.StatusEffect.target
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Status Effects/StatusEffect.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: target
+    path: ../Assets/CAF/Combat/Status Effects/StatusEffect.cs
+    startLine: 9
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public EntityController target
+    return:
+      type: CAF.Entities.EntityController
+    content.vb: Public target As EntityController
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.StatusEffect.Apply
+  commentId: M:CAF.Combat.StatusEffect.Apply
+  id: Apply
+  parent: CAF.Combat.StatusEffect
+  langs:
+  - csharp
+  - vb
+  name: Apply()
+  nameWithType: StatusEffect.Apply()
+  fullName: CAF.Combat.StatusEffect.Apply()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Combat/Status Effects/StatusEffect.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: Apply
+    path: ../Assets/CAF/Combat/Status Effects/StatusEffect.cs
+    startLine: 11
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public abstract void Apply()
+    content.vb: Public MustOverride Sub Apply
+  overload: CAF.Combat.StatusEffect.Apply*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+references:
+- uid: CAF.Combat
+  commentId: N:CAF.Combat
+  name: CAF.Combat
+  nameWithType: CAF.Combat
+  fullName: CAF.Combat
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CAF.Entities.EntityController
+  commentId: T:CAF.Entities.EntityController
+  parent: CAF.Entities
+  name: EntityController
+  nameWithType: EntityController
+  fullName: CAF.Entities.EntityController
+- uid: CAF.Entities
+  commentId: N:CAF.Entities
+  name: CAF.Entities
+  nameWithType: CAF.Entities
+  fullName: CAF.Entities
+- uid: CAF.Combat.StatusEffect.Apply*
+  commentId: Overload:CAF.Combat.StatusEffect.Apply
+  name: Apply
+  nameWithType: StatusEffect.Apply
+  fullName: CAF.Combat.StatusEffect.Apply

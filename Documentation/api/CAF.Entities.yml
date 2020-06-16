@@ -1,0 +1,77 @@
+### YamlMime:ManagedReference
+items:
+- uid: CAF.Entities
+  commentId: N:CAF.Entities
+  id: CAF.Entities
+  children:
+  - CAF.Entities.EntityCombatManager
+  - CAF.Entities.EntityController
+  - CAF.Entities.EntityHitboxManager
+  - CAF.Entities.EntityHitboxManager.HitboxGroupEventAction
+  - CAF.Entities.EntityInputManager
+  - CAF.Entities.EntityPhysicsManager
+  - CAF.Entities.EntityState
+  - CAF.Entities.EntityStateManager
+  langs:
+  - csharp
+  - vb
+  name: CAF.Entities
+  nameWithType: CAF.Entities
+  fullName: CAF.Entities
+  type: Namespace
+  assemblies:
+  - CAF
+references:
+- uid: CAF.Entities.EntityController
+  commentId: T:CAF.Entities.EntityController
+  parent: CAF.Entities
+  name: EntityController
+  nameWithType: EntityController
+  fullName: CAF.Entities.EntityController
+- uid: CAF.Entities.EntityState
+  commentId: T:CAF.Entities.EntityState
+  parent: CAF.Entities
+  name: EntityState
+  nameWithType: EntityState
+  fullName: CAF.Entities.EntityState
+- uid: CAF.Entities.EntityCombatManager
+  commentId: T:CAF.Entities.EntityCombatManager
+  parent: CAF.Entities
+  name: EntityCombatManager
+  nameWithType: EntityCombatManager
+  fullName: CAF.Entities.EntityCombatManager
+- uid: CAF.Entities.EntityHitboxManager
+  commentId: T:CAF.Entities.EntityHitboxManager
+  parent: CAF.Entities
+  name: EntityHitboxManager
+  nameWithType: EntityHitboxManager
+  fullName: CAF.Entities.EntityHitboxManager
+- uid: CAF.Entities.EntityHitboxManager.HitboxGroupEventAction
+  commentId: T:CAF.Entities.EntityHitboxManager.HitboxGroupEventAction
+  parent: CAF.Entities
+  name: EntityHitboxManager.HitboxGroupEventAction
+  nameWithType: EntityHitboxManager.HitboxGroupEventAction
+  fullName: CAF.Entities.EntityHitboxManager.HitboxGroupEventAction
+- uid: CAF.Entities.EntityInputManager
+  commentId: T:CAF.Entities.EntityInputManager
+  parent: CAF.Entities
+  name: EntityInputManager
+  nameWithType: EntityInputManager
+  fullName: CAF.Entities.EntityInputManager
+- uid: CAF.Entities.EntityPhysicsManager
+  commentId: T:CAF.Entities.EntityPhysicsManager
+  parent: CAF.Entities
+  name: EntityPhysicsManager
+  nameWithType: EntityPhysicsManager
+  fullName: CAF.Entities.EntityPhysicsManager
+- uid: CAF.Entities.EntityStateManager
+  commentId: T:CAF.Entities.EntityStateManager
+  parent: CAF.Entities
+  name: EntityStateManager
+  nameWithType: EntityStateManager
+  fullName: CAF.Entities.EntityStateManager
+- uid: CAF.Entities
+  commentId: N:CAF.Entities
+  name: CAF.Entities
+  nameWithType: CAF.Entities
+  fullName: CAF.Entities

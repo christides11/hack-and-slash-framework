@@ -1,0 +1,190 @@
+### YamlMime:ManagedReference
+items:
+- uid: CAF.Combat.Hurtbox
+  commentId: T:CAF.Combat.Hurtbox
+  id: Hurtbox
+  parent: CAF.Combat
+  children:
+  - CAF.Combat.Hurtbox.Hurtable
+  - CAF.Combat.Hurtbox.Owner
+  langs:
+  - csharp
+  - vb
+  name: Hurtbox
+  nameWithType: Hurtbox
+  fullName: CAF.Combat.Hurtbox
+  type: Class
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/Hurtbox.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: Hurtbox
+    path: ../Assets/CAF/Combat/Boxes/Hurtbox.cs
+    startLine: 6
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: 'public class Hurtbox : MonoBehaviour'
+    content.vb: >-
+      Public Class Hurtbox
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CAF.Combat.Hurtbox.Owner
+  commentId: P:CAF.Combat.Hurtbox.Owner
+  id: Owner
+  parent: CAF.Combat.Hurtbox
+  langs:
+  - csharp
+  - vb
+  name: Owner
+  nameWithType: Hurtbox.Owner
+  fullName: CAF.Combat.Hurtbox.Owner
+  type: Property
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/Hurtbox.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: Owner
+    path: ../Assets/CAF/Combat/Boxes/Hurtbox.cs
+    startLine: 8
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public GameObject Owner { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public Property Owner As GameObject
+  overload: CAF.Combat.Hurtbox.Owner*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.Hurtbox.Hurtable
+  commentId: P:CAF.Combat.Hurtbox.Hurtable
+  id: Hurtable
+  parent: CAF.Combat.Hurtbox
+  langs:
+  - csharp
+  - vb
+  name: Hurtable
+  nameWithType: Hurtbox.Hurtable
+  fullName: CAF.Combat.Hurtbox.Hurtable
+  type: Property
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/Hurtbox.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: Hurtable
+    path: ../Assets/CAF/Combat/Boxes/Hurtbox.cs
+    startLine: 9
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public IHurtable Hurtable { get; }
+    parameters: []
+    return:
+      type: CAF.Combat.IHurtable
+    content.vb: Public ReadOnly Property Hurtable As IHurtable
+  overload: CAF.Combat.Hurtbox.Hurtable*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: CAF.Combat
+  commentId: N:CAF.Combat
+  name: CAF.Combat
+  nameWithType: CAF.Combat
+  fullName: CAF.Combat
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: CAF.Combat.Hurtbox.Owner*
+  commentId: Overload:CAF.Combat.Hurtbox.Owner
+  name: Owner
+  nameWithType: Hurtbox.Owner
+  fullName: CAF.Combat.Hurtbox.Owner
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: CAF.Combat.Hurtbox.Hurtable*
+  commentId: Overload:CAF.Combat.Hurtbox.Hurtable
+  name: Hurtable
+  nameWithType: Hurtbox.Hurtable
+  fullName: CAF.Combat.Hurtbox.Hurtable
+- uid: CAF.Combat.IHurtable
+  commentId: T:CAF.Combat.IHurtable
+  parent: CAF.Combat
+  name: IHurtable
+  nameWithType: IHurtable
+  fullName: CAF.Combat.IHurtable

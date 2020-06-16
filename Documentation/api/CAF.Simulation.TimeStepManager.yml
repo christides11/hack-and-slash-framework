@@ -1,0 +1,602 @@
+### YamlMime:ManagedReference
+items:
+- uid: CAF.Simulation.TimeStepManager
+  commentId: T:CAF.Simulation.TimeStepManager
+  id: TimeStepManager
+  parent: CAF.Simulation
+  children:
+  - CAF.Simulation.TimeStepManager.#ctor(System.Single,System.Single,System.Single,System.Single)
+  - CAF.Simulation.TimeStepManager.accumulator
+  - CAF.Simulation.TimeStepManager.Activate
+  - CAF.Simulation.TimeStepManager.active
+  - CAF.Simulation.TimeStepManager.Clear
+  - CAF.Simulation.TimeStepManager.Deactivate
+  - CAF.Simulation.TimeStepManager.ManualUpdate(System.Single)
+  - CAF.Simulation.TimeStepManager.OnUpdate
+  - CAF.Simulation.TimeStepManager.resync
+  - CAF.Simulation.TimeStepManager.Resync
+  - CAF.Simulation.TimeStepManager.timescale
+  - CAF.Simulation.TimeStepManager.timestep
+  - CAF.Simulation.TimeStepManager.timestepClampLower
+  - CAF.Simulation.TimeStepManager.timestepClampUpper
+  - CAF.Simulation.TimeStepManager.Update(System.Single)
+  langs:
+  - csharp
+  - vb
+  name: TimeStepManager
+  nameWithType: TimeStepManager
+  fullName: CAF.Simulation.TimeStepManager
+  type: Class
+  source:
+    remote:
+      path: Assets/CAF/Simulation/TimeStepManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: TimeStepManager
+    path: ../Assets/CAF/Simulation/TimeStepManager.cs
+    startLine: 9
+  assemblies:
+  - CAF
+  namespace: CAF.Simulation
+  summary: "\nhttps://medium.com/@tglaiel/how-to-make-your-game-run-at-60fps-24c61210fe75\n"
+  example: []
+  syntax:
+    content: public class TimeStepManager
+    content.vb: Public Class TimeStepManager
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CAF.Simulation.TimeStepManager.OnUpdate
+  commentId: E:CAF.Simulation.TimeStepManager.OnUpdate
+  id: OnUpdate
+  parent: CAF.Simulation.TimeStepManager
+  langs:
+  - csharp
+  - vb
+  name: OnUpdate
+  nameWithType: TimeStepManager.OnUpdate
+  fullName: CAF.Simulation.TimeStepManager.OnUpdate
+  type: Event
+  source:
+    remote:
+      path: Assets/CAF/Simulation/TimeStepManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: OnUpdate
+    path: ../Assets/CAF/Simulation/TimeStepManager.cs
+    startLine: 12
+  assemblies:
+  - CAF
+  namespace: CAF.Simulation
+  syntax:
+    content: public event TimeStepManager.UpdateAction OnUpdate
+    return:
+      type: CAF.Simulation.TimeStepManager.UpdateAction
+    content.vb: Public Event OnUpdate As TimeStepManager.UpdateAction
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Simulation.TimeStepManager.timestep
+  commentId: F:CAF.Simulation.TimeStepManager.timestep
+  id: timestep
+  parent: CAF.Simulation.TimeStepManager
+  langs:
+  - csharp
+  - vb
+  name: timestep
+  nameWithType: TimeStepManager.timestep
+  fullName: CAF.Simulation.TimeStepManager.timestep
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Simulation/TimeStepManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: timestep
+    path: ../Assets/CAF/Simulation/TimeStepManager.cs
+    startLine: 14
+  assemblies:
+  - CAF
+  namespace: CAF.Simulation
+  syntax:
+    content: protected float timestep
+    return:
+      type: System.Single
+    content.vb: Protected timestep As Single
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Simulation.TimeStepManager.timestepClampUpper
+  commentId: F:CAF.Simulation.TimeStepManager.timestepClampUpper
+  id: timestepClampUpper
+  parent: CAF.Simulation.TimeStepManager
+  langs:
+  - csharp
+  - vb
+  name: timestepClampUpper
+  nameWithType: TimeStepManager.timestepClampUpper
+  fullName: CAF.Simulation.TimeStepManager.timestepClampUpper
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Simulation/TimeStepManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: timestepClampUpper
+    path: ../Assets/CAF/Simulation/TimeStepManager.cs
+    startLine: 15
+  assemblies:
+  - CAF
+  namespace: CAF.Simulation
+  syntax:
+    content: protected float timestepClampUpper
+    return:
+      type: System.Single
+    content.vb: Protected timestepClampUpper As Single
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Simulation.TimeStepManager.timestepClampLower
+  commentId: F:CAF.Simulation.TimeStepManager.timestepClampLower
+  id: timestepClampLower
+  parent: CAF.Simulation.TimeStepManager
+  langs:
+  - csharp
+  - vb
+  name: timestepClampLower
+  nameWithType: TimeStepManager.timestepClampLower
+  fullName: CAF.Simulation.TimeStepManager.timestepClampLower
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Simulation/TimeStepManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: timestepClampLower
+    path: ../Assets/CAF/Simulation/TimeStepManager.cs
+    startLine: 16
+  assemblies:
+  - CAF
+  namespace: CAF.Simulation
+  syntax:
+    content: protected float timestepClampLower
+    return:
+      type: System.Single
+    content.vb: Protected timestepClampLower As Single
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Simulation.TimeStepManager.timescale
+  commentId: F:CAF.Simulation.TimeStepManager.timescale
+  id: timescale
+  parent: CAF.Simulation.TimeStepManager
+  langs:
+  - csharp
+  - vb
+  name: timescale
+  nameWithType: TimeStepManager.timescale
+  fullName: CAF.Simulation.TimeStepManager.timescale
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Simulation/TimeStepManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: timescale
+    path: ../Assets/CAF/Simulation/TimeStepManager.cs
+    startLine: 17
+  assemblies:
+  - CAF
+  namespace: CAF.Simulation
+  syntax:
+    content: protected float timescale
+    return:
+      type: System.Single
+    content.vb: Protected timescale As Single
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Simulation.TimeStepManager.accumulator
+  commentId: F:CAF.Simulation.TimeStepManager.accumulator
+  id: accumulator
+  parent: CAF.Simulation.TimeStepManager
+  langs:
+  - csharp
+  - vb
+  name: accumulator
+  nameWithType: TimeStepManager.accumulator
+  fullName: CAF.Simulation.TimeStepManager.accumulator
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Simulation/TimeStepManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: accumulator
+    path: ../Assets/CAF/Simulation/TimeStepManager.cs
+    startLine: 19
+  assemblies:
+  - CAF
+  namespace: CAF.Simulation
+  syntax:
+    content: protected float accumulator
+    return:
+      type: System.Single
+    content.vb: Protected accumulator As Single
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Simulation.TimeStepManager.active
+  commentId: F:CAF.Simulation.TimeStepManager.active
+  id: active
+  parent: CAF.Simulation.TimeStepManager
+  langs:
+  - csharp
+  - vb
+  name: active
+  nameWithType: TimeStepManager.active
+  fullName: CAF.Simulation.TimeStepManager.active
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Simulation/TimeStepManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: active
+    path: ../Assets/CAF/Simulation/TimeStepManager.cs
+    startLine: 21
+  assemblies:
+  - CAF
+  namespace: CAF.Simulation
+  syntax:
+    content: protected bool active
+    return:
+      type: System.Boolean
+    content.vb: Protected active As Boolean
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Simulation.TimeStepManager.resync
+  commentId: F:CAF.Simulation.TimeStepManager.resync
+  id: resync
+  parent: CAF.Simulation.TimeStepManager
+  langs:
+  - csharp
+  - vb
+  name: resync
+  nameWithType: TimeStepManager.resync
+  fullName: CAF.Simulation.TimeStepManager.resync
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Simulation/TimeStepManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: resync
+    path: ../Assets/CAF/Simulation/TimeStepManager.cs
+    startLine: 22
+  assemblies:
+  - CAF
+  namespace: CAF.Simulation
+  syntax:
+    content: protected bool resync
+    return:
+      type: System.Boolean
+    content.vb: Protected resync As Boolean
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Simulation.TimeStepManager.#ctor(System.Single,System.Single,System.Single,System.Single)
+  commentId: M:CAF.Simulation.TimeStepManager.#ctor(System.Single,System.Single,System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single,System.Single,System.Single)'
+  parent: CAF.Simulation.TimeStepManager
+  langs:
+  - csharp
+  - vb
+  name: TimeStepManager(Single, Single, Single, Single)
+  nameWithType: TimeStepManager.TimeStepManager(Single, Single, Single, Single)
+  fullName: CAF.Simulation.TimeStepManager.TimeStepManager(System.Single, System.Single, System.Single, System.Single)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/CAF/Simulation/TimeStepManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: .ctor
+    path: ../Assets/CAF/Simulation/TimeStepManager.cs
+    startLine: 24
+  assemblies:
+  - CAF
+  namespace: CAF.Simulation
+  syntax:
+    content: public TimeStepManager(float tickRate, float timescale, float tickRateUpperClamp, float tickRateLowerClamp)
+    parameters:
+    - id: tickRate
+      type: System.Single
+    - id: timescale
+      type: System.Single
+    - id: tickRateUpperClamp
+      type: System.Single
+    - id: tickRateLowerClamp
+      type: System.Single
+    content.vb: Public Sub New(tickRate As Single, timescale As Single, tickRateUpperClamp As Single, tickRateLowerClamp As Single)
+  overload: CAF.Simulation.TimeStepManager.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Simulation.TimeStepManager.Resync
+  commentId: M:CAF.Simulation.TimeStepManager.Resync
+  id: Resync
+  parent: CAF.Simulation.TimeStepManager
+  langs:
+  - csharp
+  - vb
+  name: Resync()
+  nameWithType: TimeStepManager.Resync()
+  fullName: CAF.Simulation.TimeStepManager.Resync()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Simulation/TimeStepManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: Resync
+    path: ../Assets/CAF/Simulation/TimeStepManager.cs
+    startLine: 38
+  assemblies:
+  - CAF
+  namespace: CAF.Simulation
+  summary: "\nShould be called after swapping scenes or changing levels.\n"
+  example: []
+  syntax:
+    content: public void Resync()
+    content.vb: Public Sub Resync
+  overload: CAF.Simulation.TimeStepManager.Resync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Simulation.TimeStepManager.Clear
+  commentId: M:CAF.Simulation.TimeStepManager.Clear
+  id: Clear
+  parent: CAF.Simulation.TimeStepManager
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: TimeStepManager.Clear()
+  fullName: CAF.Simulation.TimeStepManager.Clear()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Simulation/TimeStepManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: Clear
+    path: ../Assets/CAF/Simulation/TimeStepManager.cs
+    startLine: 43
+  assemblies:
+  - CAF
+  namespace: CAF.Simulation
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+  overload: CAF.Simulation.TimeStepManager.Clear*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Simulation.TimeStepManager.Activate
+  commentId: M:CAF.Simulation.TimeStepManager.Activate
+  id: Activate
+  parent: CAF.Simulation.TimeStepManager
+  langs:
+  - csharp
+  - vb
+  name: Activate()
+  nameWithType: TimeStepManager.Activate()
+  fullName: CAF.Simulation.TimeStepManager.Activate()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Simulation/TimeStepManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: Activate
+    path: ../Assets/CAF/Simulation/TimeStepManager.cs
+    startLine: 48
+  assemblies:
+  - CAF
+  namespace: CAF.Simulation
+  syntax:
+    content: public void Activate()
+    content.vb: Public Sub Activate
+  overload: CAF.Simulation.TimeStepManager.Activate*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Simulation.TimeStepManager.Deactivate
+  commentId: M:CAF.Simulation.TimeStepManager.Deactivate
+  id: Deactivate
+  parent: CAF.Simulation.TimeStepManager
+  langs:
+  - csharp
+  - vb
+  name: Deactivate()
+  nameWithType: TimeStepManager.Deactivate()
+  fullName: CAF.Simulation.TimeStepManager.Deactivate()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Simulation/TimeStepManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: Deactivate
+    path: ../Assets/CAF/Simulation/TimeStepManager.cs
+    startLine: 53
+  assemblies:
+  - CAF
+  namespace: CAF.Simulation
+  syntax:
+    content: public void Deactivate()
+    content.vb: Public Sub Deactivate
+  overload: CAF.Simulation.TimeStepManager.Deactivate*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Simulation.TimeStepManager.Update(System.Single)
+  commentId: M:CAF.Simulation.TimeStepManager.Update(System.Single)
+  id: Update(System.Single)
+  parent: CAF.Simulation.TimeStepManager
+  langs:
+  - csharp
+  - vb
+  name: Update(Single)
+  nameWithType: TimeStepManager.Update(Single)
+  fullName: CAF.Simulation.TimeStepManager.Update(System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Simulation/TimeStepManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: Update
+    path: ../Assets/CAF/Simulation/TimeStepManager.cs
+    startLine: 58
+  assemblies:
+  - CAF
+  namespace: CAF.Simulation
+  syntax:
+    content: public void Update(float delta)
+    parameters:
+    - id: delta
+      type: System.Single
+    content.vb: Public Sub Update(delta As Single)
+  overload: CAF.Simulation.TimeStepManager.Update*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Simulation.TimeStepManager.ManualUpdate(System.Single)
+  commentId: M:CAF.Simulation.TimeStepManager.ManualUpdate(System.Single)
+  id: ManualUpdate(System.Single)
+  parent: CAF.Simulation.TimeStepManager
+  langs:
+  - csharp
+  - vb
+  name: ManualUpdate(Single)
+  nameWithType: TimeStepManager.ManualUpdate(Single)
+  fullName: CAF.Simulation.TimeStepManager.ManualUpdate(System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Simulation/TimeStepManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: ManualUpdate
+    path: ../Assets/CAF/Simulation/TimeStepManager.cs
+    startLine: 93
+  assemblies:
+  - CAF
+  namespace: CAF.Simulation
+  syntax:
+    content: public void ManualUpdate(float dt)
+    parameters:
+    - id: dt
+      type: System.Single
+    content.vb: Public Sub ManualUpdate(dt As Single)
+  overload: CAF.Simulation.TimeStepManager.ManualUpdate*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: CAF.Simulation
+  commentId: N:CAF.Simulation
+  name: CAF.Simulation
+  nameWithType: CAF.Simulation
+  fullName: CAF.Simulation
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CAF.Simulation.TimeStepManager.UpdateAction
+  commentId: T:CAF.Simulation.TimeStepManager.UpdateAction
+  parent: CAF.Simulation
+  name: TimeStepManager.UpdateAction
+  nameWithType: TimeStepManager.UpdateAction
+  fullName: CAF.Simulation.TimeStepManager.UpdateAction
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: CAF.Simulation.TimeStepManager.#ctor*
+  commentId: Overload:CAF.Simulation.TimeStepManager.#ctor
+  name: TimeStepManager
+  nameWithType: TimeStepManager.TimeStepManager
+  fullName: CAF.Simulation.TimeStepManager.TimeStepManager
+- uid: CAF.Simulation.TimeStepManager.Resync*
+  commentId: Overload:CAF.Simulation.TimeStepManager.Resync
+  name: Resync
+  nameWithType: TimeStepManager.Resync
+  fullName: CAF.Simulation.TimeStepManager.Resync
+- uid: CAF.Simulation.TimeStepManager.Clear*
+  commentId: Overload:CAF.Simulation.TimeStepManager.Clear
+  name: Clear
+  nameWithType: TimeStepManager.Clear
+  fullName: CAF.Simulation.TimeStepManager.Clear
+- uid: CAF.Simulation.TimeStepManager.Activate*
+  commentId: Overload:CAF.Simulation.TimeStepManager.Activate
+  name: Activate
+  nameWithType: TimeStepManager.Activate
+  fullName: CAF.Simulation.TimeStepManager.Activate
+- uid: CAF.Simulation.TimeStepManager.Deactivate*
+  commentId: Overload:CAF.Simulation.TimeStepManager.Deactivate
+  name: Deactivate
+  nameWithType: TimeStepManager.Deactivate
+  fullName: CAF.Simulation.TimeStepManager.Deactivate
+- uid: CAF.Simulation.TimeStepManager.Update*
+  commentId: Overload:CAF.Simulation.TimeStepManager.Update
+  name: Update
+  nameWithType: TimeStepManager.Update
+  fullName: CAF.Simulation.TimeStepManager.Update
+- uid: CAF.Simulation.TimeStepManager.ManualUpdate*
+  commentId: Overload:CAF.Simulation.TimeStepManager.ManualUpdate
+  name: ManualUpdate
+  nameWithType: TimeStepManager.ManualUpdate
+  fullName: CAF.Simulation.TimeStepManager.ManualUpdate

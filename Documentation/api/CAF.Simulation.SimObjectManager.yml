@@ -1,0 +1,563 @@
+### YamlMime:ManagedReference
+items:
+- uid: CAF.Simulation.SimObjectManager
+  commentId: T:CAF.Simulation.SimObjectManager
+  id: SimObjectManager
+  parent: CAF.Simulation
+  children:
+  - CAF.Simulation.SimObjectManager.DestroyObject(CAF.Simulation.SimObject)
+  - CAF.Simulation.SimObjectManager.LateUpdate(System.Single)
+  - CAF.Simulation.SimObjectManager.LateUpdateSimObjects
+  - CAF.Simulation.SimObjectManager.RegisterObject(CAF.Simulation.SimObject)
+  - CAF.Simulation.SimObjectManager.simObjects
+  - CAF.Simulation.SimObjectManager.SimulatePhysics(System.Single)
+  - CAF.Simulation.SimObjectManager.SpawnObject(UnityEngine.GameObject,UnityEngine.Vector3,UnityEngine.Quaternion)
+  - CAF.Simulation.SimObjectManager.Update(System.Single)
+  - CAF.Simulation.SimObjectManager.UpdateSimObjects
+  langs:
+  - csharp
+  - vb
+  name: SimObjectManager
+  nameWithType: SimObjectManager
+  fullName: CAF.Simulation.SimObjectManager
+  type: Class
+  source:
+    remote:
+      path: Assets/CAF/Simulation/SimObjectManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: SimObjectManager
+    path: ../Assets/CAF/Simulation/SimObjectManager.cs
+    startLine: 6
+  assemblies:
+  - CAF
+  namespace: CAF.Simulation
+  syntax:
+    content: public class SimObjectManager
+    content.vb: Public Class SimObjectManager
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CAF.Simulation.SimObjectManager.simObjects
+  commentId: F:CAF.Simulation.SimObjectManager.simObjects
+  id: simObjects
+  parent: CAF.Simulation.SimObjectManager
+  langs:
+  - csharp
+  - vb
+  name: simObjects
+  nameWithType: SimObjectManager.simObjects
+  fullName: CAF.Simulation.SimObjectManager.simObjects
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Simulation/SimObjectManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: simObjects
+    path: ../Assets/CAF/Simulation/SimObjectManager.cs
+    startLine: 8
+  assemblies:
+  - CAF
+  namespace: CAF.Simulation
+  syntax:
+    content: protected List<SimObject> simObjects
+    return:
+      type: System.Collections.Generic.List{CAF.Simulation.SimObject}
+    content.vb: Protected simObjects As List(Of SimObject)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Simulation.SimObjectManager.RegisterObject(CAF.Simulation.SimObject)
+  commentId: M:CAF.Simulation.SimObjectManager.RegisterObject(CAF.Simulation.SimObject)
+  id: RegisterObject(CAF.Simulation.SimObject)
+  parent: CAF.Simulation.SimObjectManager
+  langs:
+  - csharp
+  - vb
+  name: RegisterObject(SimObject)
+  nameWithType: SimObjectManager.RegisterObject(SimObject)
+  fullName: CAF.Simulation.SimObjectManager.RegisterObject(CAF.Simulation.SimObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Simulation/SimObjectManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: RegisterObject
+    path: ../Assets/CAF/Simulation/SimObjectManager.cs
+    startLine: 14
+  assemblies:
+  - CAF
+  namespace: CAF.Simulation
+  summary: "\nRegisters an object to the simulation.\n"
+  example: []
+  syntax:
+    content: public virtual void RegisterObject(SimObject simObject)
+    parameters:
+    - id: simObject
+      type: CAF.Simulation.SimObject
+      description: ''
+    content.vb: Public Overridable Sub RegisterObject(simObject As SimObject)
+  overload: CAF.Simulation.SimObjectManager.RegisterObject*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Simulation.SimObjectManager.SpawnObject(UnityEngine.GameObject,UnityEngine.Vector3,UnityEngine.Quaternion)
+  commentId: M:CAF.Simulation.SimObjectManager.SpawnObject(UnityEngine.GameObject,UnityEngine.Vector3,UnityEngine.Quaternion)
+  id: SpawnObject(UnityEngine.GameObject,UnityEngine.Vector3,UnityEngine.Quaternion)
+  parent: CAF.Simulation.SimObjectManager
+  langs:
+  - csharp
+  - vb
+  name: SpawnObject(GameObject, Vector3, Quaternion)
+  nameWithType: SimObjectManager.SpawnObject(GameObject, Vector3, Quaternion)
+  fullName: CAF.Simulation.SimObjectManager.SpawnObject(UnityEngine.GameObject, UnityEngine.Vector3, UnityEngine.Quaternion)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Simulation/SimObjectManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: SpawnObject
+    path: ../Assets/CAF/Simulation/SimObjectManager.cs
+    startLine: 31
+  assemblies:
+  - CAF
+  namespace: CAF.Simulation
+  summary: "\nInstantiate an object and registers it in the simulation.\n"
+  example: []
+  syntax:
+    content: public virtual GameObject SpawnObject(GameObject prefab, Vector3 position, Quaternion rotation)
+    parameters:
+    - id: prefab
+      type: UnityEngine.GameObject
+      description: The object to instantiate.
+    - id: position
+      type: UnityEngine.Vector3
+      description: The position to instantiate at.
+    - id: rotation
+      type: UnityEngine.Quaternion
+      description: The rotation to instantiate with.
+    return:
+      type: UnityEngine.GameObject
+      description: ''
+    content.vb: Public Overridable Function SpawnObject(prefab As GameObject, position As Vector3, rotation As Quaternion) As GameObject
+  overload: CAF.Simulation.SimObjectManager.SpawnObject*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Simulation.SimObjectManager.DestroyObject(CAF.Simulation.SimObject)
+  commentId: M:CAF.Simulation.SimObjectManager.DestroyObject(CAF.Simulation.SimObject)
+  id: DestroyObject(CAF.Simulation.SimObject)
+  parent: CAF.Simulation.SimObjectManager
+  langs:
+  - csharp
+  - vb
+  name: DestroyObject(SimObject)
+  nameWithType: SimObjectManager.DestroyObject(SimObject)
+  fullName: CAF.Simulation.SimObjectManager.DestroyObject(CAF.Simulation.SimObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Simulation/SimObjectManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: DestroyObject
+    path: ../Assets/CAF/Simulation/SimObjectManager.cs
+    startLine: 42
+  assemblies:
+  - CAF
+  namespace: CAF.Simulation
+  summary: "\nRemove an object from the simulation and destroys it.\n"
+  example: []
+  syntax:
+    content: public virtual void DestroyObject(SimObject simObject)
+    parameters:
+    - id: simObject
+      type: CAF.Simulation.SimObject
+      description: The object to remove.
+    content.vb: Public Overridable Sub DestroyObject(simObject As SimObject)
+  overload: CAF.Simulation.SimObjectManager.DestroyObject*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Simulation.SimObjectManager.Update(System.Single)
+  commentId: M:CAF.Simulation.SimObjectManager.Update(System.Single)
+  id: Update(System.Single)
+  parent: CAF.Simulation.SimObjectManager
+  langs:
+  - csharp
+  - vb
+  name: Update(Single)
+  nameWithType: SimObjectManager.Update(Single)
+  fullName: CAF.Simulation.SimObjectManager.Update(System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Simulation/SimObjectManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: Update
+    path: ../Assets/CAF/Simulation/SimObjectManager.cs
+    startLine: 56
+  assemblies:
+  - CAF
+  namespace: CAF.Simulation
+  summary: "\nCalls every object&apos;s SimUpdate method that is in the simulation.\nAfter that, it ticks the physics engine.\n"
+  example: []
+  syntax:
+    content: public virtual void Update(float deltatime)
+    parameters:
+    - id: deltatime
+      type: System.Single
+      description: The time between this and the last frame.
+    content.vb: Public Overridable Sub Update(deltatime As Single)
+  overload: CAF.Simulation.SimObjectManager.Update*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Simulation.SimObjectManager.UpdateSimObjects
+  commentId: M:CAF.Simulation.SimObjectManager.UpdateSimObjects
+  id: UpdateSimObjects
+  parent: CAF.Simulation.SimObjectManager
+  langs:
+  - csharp
+  - vb
+  name: UpdateSimObjects()
+  nameWithType: SimObjectManager.UpdateSimObjects()
+  fullName: CAF.Simulation.SimObjectManager.UpdateSimObjects()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Simulation/SimObjectManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: UpdateSimObjects
+    path: ../Assets/CAF/Simulation/SimObjectManager.cs
+    startLine: 62
+  assemblies:
+  - CAF
+  namespace: CAF.Simulation
+  syntax:
+    content: protected virtual void UpdateSimObjects()
+    content.vb: Protected Overridable Sub UpdateSimObjects
+  overload: CAF.Simulation.SimObjectManager.UpdateSimObjects*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Simulation.SimObjectManager.SimulatePhysics(System.Single)
+  commentId: M:CAF.Simulation.SimObjectManager.SimulatePhysics(System.Single)
+  id: SimulatePhysics(System.Single)
+  parent: CAF.Simulation.SimObjectManager
+  langs:
+  - csharp
+  - vb
+  name: SimulatePhysics(Single)
+  nameWithType: SimObjectManager.SimulatePhysics(Single)
+  fullName: CAF.Simulation.SimObjectManager.SimulatePhysics(System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Simulation/SimObjectManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: SimulatePhysics
+    path: ../Assets/CAF/Simulation/SimObjectManager.cs
+    startLine: 74
+  assemblies:
+  - CAF
+  namespace: CAF.Simulation
+  summary: "\nSimulate physics.\n"
+  example: []
+  syntax:
+    content: protected virtual void SimulatePhysics(float deltatime)
+    parameters:
+    - id: deltatime
+      type: System.Single
+      description: The time between this and the last frame.
+    content.vb: Protected Overridable Sub SimulatePhysics(deltatime As Single)
+  overload: CAF.Simulation.SimObjectManager.SimulatePhysics*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Simulation.SimObjectManager.LateUpdate(System.Single)
+  commentId: M:CAF.Simulation.SimObjectManager.LateUpdate(System.Single)
+  id: LateUpdate(System.Single)
+  parent: CAF.Simulation.SimObjectManager
+  langs:
+  - csharp
+  - vb
+  name: LateUpdate(Single)
+  nameWithType: SimObjectManager.LateUpdate(Single)
+  fullName: CAF.Simulation.SimObjectManager.LateUpdate(System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Simulation/SimObjectManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: LateUpdate
+    path: ../Assets/CAF/Simulation/SimObjectManager.cs
+    startLine: 83
+  assemblies:
+  - CAF
+  namespace: CAF.Simulation
+  summary: "\nCalls every object&apos;s SimLateUpate method that is in the simulation.\n"
+  example: []
+  syntax:
+    content: public virtual void LateUpdate(float deltatime)
+    parameters:
+    - id: deltatime
+      type: System.Single
+      description: ''
+    content.vb: Public Overridable Sub LateUpdate(deltatime As Single)
+  overload: CAF.Simulation.SimObjectManager.LateUpdate*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Simulation.SimObjectManager.LateUpdateSimObjects
+  commentId: M:CAF.Simulation.SimObjectManager.LateUpdateSimObjects
+  id: LateUpdateSimObjects
+  parent: CAF.Simulation.SimObjectManager
+  langs:
+  - csharp
+  - vb
+  name: LateUpdateSimObjects()
+  nameWithType: SimObjectManager.LateUpdateSimObjects()
+  fullName: CAF.Simulation.SimObjectManager.LateUpdateSimObjects()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Simulation/SimObjectManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: LateUpdateSimObjects
+    path: ../Assets/CAF/Simulation/SimObjectManager.cs
+    startLine: 88
+  assemblies:
+  - CAF
+  namespace: CAF.Simulation
+  syntax:
+    content: protected virtual void LateUpdateSimObjects()
+    content.vb: Protected Overridable Sub LateUpdateSimObjects
+  overload: CAF.Simulation.SimObjectManager.LateUpdateSimObjects*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+references:
+- uid: CAF.Simulation
+  commentId: N:CAF.Simulation
+  name: CAF.Simulation
+  nameWithType: CAF.Simulation
+  fullName: CAF.Simulation
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.List{CAF.Simulation.SimObject}
+  commentId: T:System.Collections.Generic.List{CAF.Simulation.SimObject}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<SimObject>
+  nameWithType: List<SimObject>
+  fullName: System.Collections.Generic.List<CAF.Simulation.SimObject>
+  nameWithType.vb: List(Of SimObject)
+  fullName.vb: System.Collections.Generic.List(Of CAF.Simulation.SimObject)
+  name.vb: List(Of SimObject)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CAF.Simulation.SimObject
+    name: SimObject
+    nameWithType: SimObject
+    fullName: CAF.Simulation.SimObject
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CAF.Simulation.SimObject
+    name: SimObject
+    nameWithType: SimObject
+    fullName: CAF.Simulation.SimObject
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: CAF.Simulation.SimObjectManager.RegisterObject*
+  commentId: Overload:CAF.Simulation.SimObjectManager.RegisterObject
+  name: RegisterObject
+  nameWithType: SimObjectManager.RegisterObject
+  fullName: CAF.Simulation.SimObjectManager.RegisterObject
+- uid: CAF.Simulation.SimObject
+  commentId: T:CAF.Simulation.SimObject
+  parent: CAF.Simulation
+  name: SimObject
+  nameWithType: SimObject
+  fullName: CAF.Simulation.SimObject
+- uid: CAF.Simulation.SimObjectManager.SpawnObject*
+  commentId: Overload:CAF.Simulation.SimObjectManager.SpawnObject
+  name: SpawnObject
+  nameWithType: SimObjectManager.SpawnObject
+  fullName: CAF.Simulation.SimObjectManager.SpawnObject
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine.Quaternion
+  commentId: T:UnityEngine.Quaternion
+  parent: UnityEngine
+  isExternal: true
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: UnityEngine.Quaternion
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: CAF.Simulation.SimObjectManager.DestroyObject*
+  commentId: Overload:CAF.Simulation.SimObjectManager.DestroyObject
+  name: DestroyObject
+  nameWithType: SimObjectManager.DestroyObject
+  fullName: CAF.Simulation.SimObjectManager.DestroyObject
+- uid: CAF.Simulation.SimObjectManager.Update*
+  commentId: Overload:CAF.Simulation.SimObjectManager.Update
+  name: Update
+  nameWithType: SimObjectManager.Update
+  fullName: CAF.Simulation.SimObjectManager.Update
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: CAF.Simulation.SimObjectManager.UpdateSimObjects*
+  commentId: Overload:CAF.Simulation.SimObjectManager.UpdateSimObjects
+  name: UpdateSimObjects
+  nameWithType: SimObjectManager.UpdateSimObjects
+  fullName: CAF.Simulation.SimObjectManager.UpdateSimObjects
+- uid: CAF.Simulation.SimObjectManager.SimulatePhysics*
+  commentId: Overload:CAF.Simulation.SimObjectManager.SimulatePhysics
+  name: SimulatePhysics
+  nameWithType: SimObjectManager.SimulatePhysics
+  fullName: CAF.Simulation.SimObjectManager.SimulatePhysics
+- uid: CAF.Simulation.SimObjectManager.LateUpdate*
+  commentId: Overload:CAF.Simulation.SimObjectManager.LateUpdate
+  name: LateUpdate
+  nameWithType: SimObjectManager.LateUpdate
+  fullName: CAF.Simulation.SimObjectManager.LateUpdate
+- uid: CAF.Simulation.SimObjectManager.LateUpdateSimObjects*
+  commentId: Overload:CAF.Simulation.SimObjectManager.LateUpdateSimObjects
+  name: LateUpdateSimObjects
+  nameWithType: SimObjectManager.LateUpdateSimObjects
+  fullName: CAF.Simulation.SimObjectManager.LateUpdateSimObjects

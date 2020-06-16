@@ -1,0 +1,908 @@
+{
+  "sitemap": {
+    "fileOptions": {
+      "api/*": {
+        "baseUrl": "https://christides11.github.io/Character-Action-Framework/",
+        "changefreq": "daily"
+      }
+    },
+    "baseUrl": "https://christides11.github.io/Character-Action-Framework/",
+    "changefreq": "weekly"
+  },
+  "homepages": [],
+  "source_base_path": "C:/Projects/Unity/Character-Action-Framework/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Camera.LookHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Camera.LookHandler.html",
+          "hash": "jEz67TABl1E4G3jAMmx9Zw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Camera.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Camera.html",
+          "hash": "O3k7rgAuurLf3S7GXeWP/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.AttackDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.AttackDefinition.html",
+          "hash": "YS4oQUQIunayYbgXQzK8jg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.AttackDefinitionEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.AttackDefinitionEditor.html",
+          "hash": "8jDbTiY8D3d6sijncPfDAw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.AttackDefinitionEditorWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.AttackDefinitionEditorWindow.html",
+          "hash": "q6+3/B2FwCLeSrPtdcMMDA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.AttackEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.AttackEvent.html",
+          "hash": "aU9+bj8tiuyfRSRndBJneA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.AttackEventDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.AttackEventDefinition.html",
+          "hash": "H4ZvUo9LFXM00VYmwGZ/Mg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.AttackEventVariables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.AttackEventVariables.html",
+          "hash": "KJLbFTFx4A13mycGty7Myg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.BoxDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.BoxDefinition.html",
+          "hash": "xuB8xD0O9pBPre3Gz7C+sw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.BoxGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.BoxGroup.html",
+          "hash": "ioWNp2bssmdwWHQ3lNRzDA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.BoxGroupType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.BoxGroupType.html",
+          "hash": "JJMKEYNJxRa0Pu16+rkmQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.BoxShapes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.BoxShapes.html",
+          "hash": "7sf//Mf9mv/Yfwa0uXF7ag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.ForceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.ForceType.html",
+          "hash": "LV3PSJ5b+51Yl+T5GpNR1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.HitInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.HitInfo.html",
+          "hash": "ZTWEl76TVZK3dlD1kScd1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.HitReaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.HitReaction.html",
+          "hash": "IUjgAamW1VwBx4NGOnzeaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.HitReactionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.HitReactionType.html",
+          "hash": "ibg0dVhsJZQ1QjAcpw6t9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.Hitbox.HurtAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.Hitbox.HurtAction.html",
+          "hash": "Y/C/lUcbMWfhyaHxCoDidA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.Hitbox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.Hitbox.html",
+          "hash": "8k4sD84Nl/WjiYa5La7XKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.HitboxForceRelation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.HitboxForceRelation.html",
+          "hash": "8gqEyfoKMrZx3P7Cs5g+DA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.HitboxForceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.HitboxForceType.html",
+          "hash": "vH0RLADL/k/W025BgaAyMQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.Hurtbox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.Hurtbox.html",
+          "hash": "xa479lEqiNzAHxIZQJZgNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.HurtboxState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.HurtboxState.html",
+          "hash": "dOTzEGMRcrVQljJDAugE7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.IHurtable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.IHurtable.html",
+          "hash": "d0RVrSOmMweEc9zwhdV5+Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.IStatusEffectable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.IStatusEffectable.html",
+          "hash": "mbOHC8BEvY5QvkNUCS7gUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.ITargetable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.ITargetable.html",
+          "hash": "7YXoNY9xxwv0H1MOv7ohQA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.MovesetAttackNode.nextNodeDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.MovesetAttackNode.nextNodeDefinition.html",
+          "hash": "bXfbwilH3V9MYUI3/LVawg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.MovesetAttackNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.MovesetAttackNode.html",
+          "hash": "YXfuZTk0Tt4FzwuXa/EpZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.MovesetAttackNodeEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.MovesetAttackNodeEditor.html",
+          "hash": "67KPhh8LoWFz0f0jn5Xr9w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.MovesetDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.MovesetDefinition.html",
+          "hash": "ikslgh8BaVbCz7h0lxSIgQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.StatusEffect-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.StatusEffect-1.html",
+          "hash": "e/GWBflQhJFfiKW4Zxw7PA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.StatusEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.StatusEffect.html",
+          "hash": "EDsWeL57+CyCaI/5ihSHaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.StatusEffectDefinition-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.StatusEffectDefinition-2.html",
+          "hash": "i5zEcfvoa+j4j06NrJI/dw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.StatusEffectDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.StatusEffectDefinition.html",
+          "hash": "DLsVM5hlu4rODMoHGnQl1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.html",
+          "hash": "dUjwAjC0DH37utsqGlFyOw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Entities.EntityCombatManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Entities.EntityCombatManager.html",
+          "hash": "BvzWqEiB8zQRF1g6GkcVUw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Entities.EntityController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Entities.EntityController.html",
+          "hash": "43f4znke11HUTzOsl1Mjjw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Entities.EntityHitboxManager.HitboxGroupEventAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Entities.EntityHitboxManager.HitboxGroupEventAction.html",
+          "hash": "f6atML0l6y9jwNc7klbvNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Entities.EntityHitboxManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Entities.EntityHitboxManager.html",
+          "hash": "G1/QHt0OrMQ70j9LSSuugQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Entities.EntityInputManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Entities.EntityInputManager.html",
+          "hash": "beqVqHSTkNTyN/u+a3lE0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Entities.EntityPhysicsManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Entities.EntityPhysicsManager.html",
+          "hash": "sz9YL95BtkdPtsIo6aM5vQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Entities.EntityState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Entities.EntityState.html",
+          "hash": "ybEiagr9/sXi34rHW37GZg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Entities.EntityStateManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Entities.EntityStateManager.html",
+          "hash": "/8KOK80cDGZa9QdacNbypA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Entities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Entities.html",
+          "hash": "NHVLh+cNHoB3cnJpI2NXfA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.HelperFunctions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.HelperFunctions.html",
+          "hash": "HM9Oix8RE4SZs7jvs25YhQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Input.GlobalInputManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Input.GlobalInputManager.html",
+          "hash": "4mcUzKsbvSufWhK/wPfovw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Input.InputControlType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Input.InputControlType.html",
+          "hash": "oyEu8p3/4Tf1HlFHS1bDDQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Input.InputDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Input.InputDefinition.html",
+          "hash": "RK6X6rsqVzWVVZDbl0+rWQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Input.InputDefinitionDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Input.InputDefinitionDrawer.html",
+          "hash": "VAxruimvvMBC7EltaB7VGA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Input.InputDefinitionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Input.InputDefinitionType.html",
+          "hash": "4qepmWbZUhiJegbf/vvIGA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Input.InputRecordAxis.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Input.InputRecordAxis.html",
+          "hash": "IrAwpIKspfgJ7zGVgTMP/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Input.InputRecordAxis2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Input.InputRecordAxis2D.html",
+          "hash": "zS6c/jAZVVWJlwNdPAzW4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Input.InputRecordButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Input.InputRecordButton.html",
+          "hash": "JmWiGvhf7Wm5OH+/mtoPJg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Input.InputRecordInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Input.InputRecordInput.html",
+          "hash": "p+mAuC11EE9lbY3brnwetw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Input.InputRecordItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Input.InputRecordItem.html",
+          "hash": "xfOLtJJzICXK+MviEhY+Fg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Input.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Input.html",
+          "hash": "ELST2vnIgw84ZBb2PP719g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Simulation.SimObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Simulation.SimObject.html",
+          "hash": "QUKw8jxdjYL7iV9O2we/Xw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Simulation.SimObjectManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Simulation.SimObjectManager.html",
+          "hash": "LWBrTg7miBkO0iL+FsHtXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Simulation.TimeStepManager.UpdateAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Simulation.TimeStepManager.UpdateAction.html",
+          "hash": "BIb056dttGegbMercfnHJQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Simulation.TimeStepManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Simulation.TimeStepManager.html",
+          "hash": "TPDBBpqj1SNdMiUEnM+8Eg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Simulation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Simulation.html",
+          "hash": "JVnuGydp58jASeDfwAllRA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.html",
+          "hash": "uSu/RIuOwKfYXaKgWH4Zzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "fLBTEuzU1co6Lc+I721T4w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "0ewYid5K9HO2U4J1YA7kwQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/coniunctis.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/coniunctis.html",
+          "hash": "wZs2mQLHExXGKRsn0FGIwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/etiam.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/etiam.html",
+          "hash": "BJyux3Bl2UP8YFU/qSZoJg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/toc.html",
+          "hash": "2q0qq03gpYNjYV8lSAAcVw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/ExampleManual.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/ExampleManual.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/ExampleScriptingApi.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/ExampleScriptingApi.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "0PYnuxUJbfFNAzKtycBT/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 61,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

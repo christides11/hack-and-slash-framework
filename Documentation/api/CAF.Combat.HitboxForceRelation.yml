@@ -1,0 +1,145 @@
+### YamlMime:ManagedReference
+items:
+- uid: CAF.Combat.HitboxForceRelation
+  commentId: T:CAF.Combat.HitboxForceRelation
+  id: HitboxForceRelation
+  parent: CAF.Combat
+  children:
+  - CAF.Combat.HitboxForceRelation.ATTACKER
+  - CAF.Combat.HitboxForceRelation.HITBOX
+  - CAF.Combat.HitboxForceRelation.WORLD
+  langs:
+  - csharp
+  - vb
+  name: HitboxForceRelation
+  nameWithType: HitboxForceRelation
+  fullName: CAF.Combat.HitboxForceRelation
+  type: Enum
+  source:
+    remote:
+      path: Assets/CAF/Combat/HitboxForceRelation.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: HitboxForceRelation
+    path: ../Assets/CAF/Combat/HitboxForceRelation.cs
+    startLine: 2
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public enum HitboxForceRelation
+    content.vb: Public Enum HitboxForceRelation
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: CAF.Combat.HitboxForceRelation.ATTACKER
+  commentId: F:CAF.Combat.HitboxForceRelation.ATTACKER
+  id: ATTACKER
+  parent: CAF.Combat.HitboxForceRelation
+  langs:
+  - csharp
+  - vb
+  name: ATTACKER
+  nameWithType: HitboxForceRelation.ATTACKER
+  fullName: CAF.Combat.HitboxForceRelation.ATTACKER
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/HitboxForceRelation.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: ATTACKER
+    path: ../Assets/CAF/Combat/HitboxForceRelation.cs
+    startLine: 4
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: ATTACKER = 0
+    return:
+      type: CAF.Combat.HitboxForceRelation
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: CAF.Combat.HitboxForceRelation.HITBOX
+  commentId: F:CAF.Combat.HitboxForceRelation.HITBOX
+  id: HITBOX
+  parent: CAF.Combat.HitboxForceRelation
+  langs:
+  - csharp
+  - vb
+  name: HITBOX
+  nameWithType: HitboxForceRelation.HITBOX
+  fullName: CAF.Combat.HitboxForceRelation.HITBOX
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/HitboxForceRelation.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: HITBOX
+    path: ../Assets/CAF/Combat/HitboxForceRelation.cs
+    startLine: 5
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: HITBOX = 1
+    return:
+      type: CAF.Combat.HitboxForceRelation
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: CAF.Combat.HitboxForceRelation.WORLD
+  commentId: F:CAF.Combat.HitboxForceRelation.WORLD
+  id: WORLD
+  parent: CAF.Combat.HitboxForceRelation
+  langs:
+  - csharp
+  - vb
+  name: WORLD
+  nameWithType: HitboxForceRelation.WORLD
+  fullName: CAF.Combat.HitboxForceRelation.WORLD
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/HitboxForceRelation.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: WORLD
+    path: ../Assets/CAF/Combat/HitboxForceRelation.cs
+    startLine: 6
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: WORLD = 2
+    return:
+      type: CAF.Combat.HitboxForceRelation
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: CAF.Combat
+  commentId: N:CAF.Combat
+  name: CAF.Combat
+  nameWithType: CAF.Combat
+  fullName: CAF.Combat
+- uid: CAF.Combat.HitboxForceRelation
+  commentId: T:CAF.Combat.HitboxForceRelation
+  parent: CAF.Combat
+  name: HitboxForceRelation
+  nameWithType: HitboxForceRelation
+  fullName: CAF.Combat.HitboxForceRelation
