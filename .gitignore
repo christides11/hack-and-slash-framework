@@ -11,6 +11,8 @@
 /[Mm]emoryCaptures/
 
 # Documentation
+Documentation/api/
+Documentation/index.*
 _site/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
