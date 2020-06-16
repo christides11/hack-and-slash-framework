@@ -1,0 +1,762 @@
+### YamlMime:ManagedReference
+items:
+- uid: CAF.Entities.EntityPhysicsManager
+  commentId: T:CAF.Entities.EntityPhysicsManager
+  id: EntityPhysicsManager
+  parent: CAF.Entities
+  children:
+  - CAF.Entities.EntityPhysicsManager.ApplyFriction(System.Single,System.Single)
+  - CAF.Entities.EntityPhysicsManager.ApplyGravityFriction(System.Single)
+  - CAF.Entities.EntityPhysicsManager.ApplyMovement(System.Single,System.Single,System.Single)
+  - CAF.Entities.EntityPhysicsManager.ApplyMovementFriction(System.Single)
+  - CAF.Entities.EntityPhysicsManager.CheckIfGrounded
+  - CAF.Entities.EntityPhysicsManager.controller
+  - CAF.Entities.EntityPhysicsManager.decelerationFactor
+  - CAF.Entities.EntityPhysicsManager.forceDamage
+  - CAF.Entities.EntityPhysicsManager.forceGravity
+  - CAF.Entities.EntityPhysicsManager.forceMovement
+  - CAF.Entities.EntityPhysicsManager.forcePushbox
+  - CAF.Entities.EntityPhysicsManager.GetOverallForce
+  - CAF.Entities.EntityPhysicsManager.GravityScale
+  - CAF.Entities.EntityPhysicsManager.HandleGravity(System.Single,System.Single,System.Single)
+  - CAF.Entities.EntityPhysicsManager.SetForceDirect(UnityEngine.Vector3,UnityEngine.Vector3)
+  - CAF.Entities.EntityPhysicsManager.Tick
+  langs:
+  - csharp
+  - vb
+  name: EntityPhysicsManager
+  nameWithType: EntityPhysicsManager
+  fullName: CAF.Entities.EntityPhysicsManager
+  type: Class
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: EntityPhysicsManager
+    path: ../Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+    startLine: 6
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: 'public class EntityPhysicsManager : MonoBehaviour'
+    content.vb: >-
+      Public Class EntityPhysicsManager
+
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CAF.Entities.EntityPhysicsManager.GravityScale
+  commentId: P:CAF.Entities.EntityPhysicsManager.GravityScale
+  id: GravityScale
+  parent: CAF.Entities.EntityPhysicsManager
+  langs:
+  - csharp
+  - vb
+  name: GravityScale
+  nameWithType: EntityPhysicsManager.GravityScale
+  fullName: CAF.Entities.EntityPhysicsManager.GravityScale
+  type: Property
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: GravityScale
+    path: ../Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+    startLine: 8
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public float GravityScale { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property GravityScale As Single
+  overload: CAF.Entities.EntityPhysicsManager.GravityScale*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CAF.Entities.EntityPhysicsManager.controller
+  commentId: F:CAF.Entities.EntityPhysicsManager.controller
+  id: controller
+  parent: CAF.Entities.EntityPhysicsManager
+  langs:
+  - csharp
+  - vb
+  name: controller
+  nameWithType: EntityPhysicsManager.controller
+  fullName: CAF.Entities.EntityPhysicsManager.controller
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: controller
+    path: ../Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+    startLine: 10
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: >-
+      [SerializeField]
+
+      protected EntityController controller
+    return:
+      type: CAF.Entities.EntityController
+    content.vb: >-
+      <SerializeField>
+
+      Protected controller As EntityController
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Entities.EntityPhysicsManager.forceMovement
+  commentId: F:CAF.Entities.EntityPhysicsManager.forceMovement
+  id: forceMovement
+  parent: CAF.Entities.EntityPhysicsManager
+  langs:
+  - csharp
+  - vb
+  name: forceMovement
+  nameWithType: EntityPhysicsManager.forceMovement
+  fullName: CAF.Entities.EntityPhysicsManager.forceMovement
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: forceMovement
+    path: ../Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+    startLine: 13
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: >-
+      [Header("Forces")]
+
+      public Vector3 forceMovement
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <Header("Forces")>
+
+      Public forceMovement As Vector3
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Forces
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Entities.EntityPhysicsManager.forceGravity
+  commentId: F:CAF.Entities.EntityPhysicsManager.forceGravity
+  id: forceGravity
+  parent: CAF.Entities.EntityPhysicsManager
+  langs:
+  - csharp
+  - vb
+  name: forceGravity
+  nameWithType: EntityPhysicsManager.forceGravity
+  fullName: CAF.Entities.EntityPhysicsManager.forceGravity
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: forceGravity
+    path: ../Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+    startLine: 14
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public Vector3 forceGravity
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public forceGravity As Vector3
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Entities.EntityPhysicsManager.forceDamage
+  commentId: F:CAF.Entities.EntityPhysicsManager.forceDamage
+  id: forceDamage
+  parent: CAF.Entities.EntityPhysicsManager
+  langs:
+  - csharp
+  - vb
+  name: forceDamage
+  nameWithType: EntityPhysicsManager.forceDamage
+  fullName: CAF.Entities.EntityPhysicsManager.forceDamage
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: forceDamage
+    path: ../Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+    startLine: 15
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public Vector3 forceDamage
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public forceDamage As Vector3
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Entities.EntityPhysicsManager.forcePushbox
+  commentId: F:CAF.Entities.EntityPhysicsManager.forcePushbox
+  id: forcePushbox
+  parent: CAF.Entities.EntityPhysicsManager
+  langs:
+  - csharp
+  - vb
+  name: forcePushbox
+  nameWithType: EntityPhysicsManager.forcePushbox
+  fullName: CAF.Entities.EntityPhysicsManager.forcePushbox
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: forcePushbox
+    path: ../Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+    startLine: 16
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public Vector3 forcePushbox
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public forcePushbox As Vector3
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Entities.EntityPhysicsManager.decelerationFactor
+  commentId: F:CAF.Entities.EntityPhysicsManager.decelerationFactor
+  id: decelerationFactor
+  parent: CAF.Entities.EntityPhysicsManager
+  langs:
+  - csharp
+  - vb
+  name: decelerationFactor
+  nameWithType: EntityPhysicsManager.decelerationFactor
+  fullName: CAF.Entities.EntityPhysicsManager.decelerationFactor
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: decelerationFactor
+    path: ../Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+    startLine: 18
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: protected float decelerationFactor
+    return:
+      type: System.Single
+    content.vb: Protected decelerationFactor As Single
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Entities.EntityPhysicsManager.Tick
+  commentId: M:CAF.Entities.EntityPhysicsManager.Tick
+  id: Tick
+  parent: CAF.Entities.EntityPhysicsManager
+  langs:
+  - csharp
+  - vb
+  name: Tick()
+  nameWithType: EntityPhysicsManager.Tick()
+  fullName: CAF.Entities.EntityPhysicsManager.Tick()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: Tick
+    path: ../Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+    startLine: 20
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public virtual void Tick()
+    content.vb: Public Overridable Sub Tick
+  overload: CAF.Entities.EntityPhysicsManager.Tick*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Entities.EntityPhysicsManager.SetForceDirect(UnityEngine.Vector3,UnityEngine.Vector3)
+  commentId: M:CAF.Entities.EntityPhysicsManager.SetForceDirect(UnityEngine.Vector3,UnityEngine.Vector3)
+  id: SetForceDirect(UnityEngine.Vector3,UnityEngine.Vector3)
+  parent: CAF.Entities.EntityPhysicsManager
+  langs:
+  - csharp
+  - vb
+  name: SetForceDirect(Vector3, Vector3)
+  nameWithType: EntityPhysicsManager.SetForceDirect(Vector3, Vector3)
+  fullName: CAF.Entities.EntityPhysicsManager.SetForceDirect(UnityEngine.Vector3, UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: SetForceDirect
+    path: ../Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+    startLine: 25
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public virtual void SetForceDirect(Vector3 movement, Vector3 gravity)
+    parameters:
+    - id: movement
+      type: UnityEngine.Vector3
+    - id: gravity
+      type: UnityEngine.Vector3
+    content.vb: Public Overridable Sub SetForceDirect(movement As Vector3, gravity As Vector3)
+  overload: CAF.Entities.EntityPhysicsManager.SetForceDirect*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Entities.EntityPhysicsManager.GetOverallForce
+  commentId: M:CAF.Entities.EntityPhysicsManager.GetOverallForce
+  id: GetOverallForce
+  parent: CAF.Entities.EntityPhysicsManager
+  langs:
+  - csharp
+  - vb
+  name: GetOverallForce()
+  nameWithType: EntityPhysicsManager.GetOverallForce()
+  fullName: CAF.Entities.EntityPhysicsManager.GetOverallForce()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: GetOverallForce
+    path: ../Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+    startLine: 30
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public virtual Vector3 GetOverallForce()
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Overridable Function GetOverallForce As Vector3
+  overload: CAF.Entities.EntityPhysicsManager.GetOverallForce*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Entities.EntityPhysicsManager.HandleGravity(System.Single,System.Single,System.Single)
+  commentId: M:CAF.Entities.EntityPhysicsManager.HandleGravity(System.Single,System.Single,System.Single)
+  id: HandleGravity(System.Single,System.Single,System.Single)
+  parent: CAF.Entities.EntityPhysicsManager
+  langs:
+  - csharp
+  - vb
+  name: HandleGravity(Single, Single, Single)
+  nameWithType: EntityPhysicsManager.HandleGravity(Single, Single, Single)
+  fullName: CAF.Entities.EntityPhysicsManager.HandleGravity(System.Single, System.Single, System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: HandleGravity
+    path: ../Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+    startLine: 35
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public virtual void HandleGravity(float maxFallSpeed, float gravity, float gravityScale)
+    parameters:
+    - id: maxFallSpeed
+      type: System.Single
+    - id: gravity
+      type: System.Single
+    - id: gravityScale
+      type: System.Single
+    content.vb: Public Overridable Sub HandleGravity(maxFallSpeed As Single, gravity As Single, gravityScale As Single)
+  overload: CAF.Entities.EntityPhysicsManager.HandleGravity*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Entities.EntityPhysicsManager.ApplyMovementFriction(System.Single)
+  commentId: M:CAF.Entities.EntityPhysicsManager.ApplyMovementFriction(System.Single)
+  id: ApplyMovementFriction(System.Single)
+  parent: CAF.Entities.EntityPhysicsManager
+  langs:
+  - csharp
+  - vb
+  name: ApplyMovementFriction(Single)
+  nameWithType: EntityPhysicsManager.ApplyMovementFriction(Single)
+  fullName: CAF.Entities.EntityPhysicsManager.ApplyMovementFriction(System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: ApplyMovementFriction
+    path: ../Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+    startLine: 51
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public virtual void ApplyMovementFriction(float friction = -1F)
+    parameters:
+    - id: friction
+      type: System.Single
+    content.vb: Public Overridable Sub ApplyMovementFriction(friction As Single = -1F)
+  overload: CAF.Entities.EntityPhysicsManager.ApplyMovementFriction*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Entities.EntityPhysicsManager.ApplyGravityFriction(System.Single)
+  commentId: M:CAF.Entities.EntityPhysicsManager.ApplyGravityFriction(System.Single)
+  id: ApplyGravityFriction(System.Single)
+  parent: CAF.Entities.EntityPhysicsManager
+  langs:
+  - csharp
+  - vb
+  name: ApplyGravityFriction(Single)
+  nameWithType: EntityPhysicsManager.ApplyGravityFriction(Single)
+  fullName: CAF.Entities.EntityPhysicsManager.ApplyGravityFriction(System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: ApplyGravityFriction
+    path: ../Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+    startLine: 62
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public virtual void ApplyGravityFriction(float friction)
+    parameters:
+    - id: friction
+      type: System.Single
+    content.vb: Public Overridable Sub ApplyGravityFriction(friction As Single)
+  overload: CAF.Entities.EntityPhysicsManager.ApplyGravityFriction*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Entities.EntityPhysicsManager.ApplyFriction(System.Single,System.Single)
+  commentId: M:CAF.Entities.EntityPhysicsManager.ApplyFriction(System.Single,System.Single)
+  id: ApplyFriction(System.Single,System.Single)
+  parent: CAF.Entities.EntityPhysicsManager
+  langs:
+  - csharp
+  - vb
+  name: ApplyFriction(Single, Single)
+  nameWithType: EntityPhysicsManager.ApplyFriction(Single, Single)
+  fullName: CAF.Entities.EntityPhysicsManager.ApplyFriction(System.Single, System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: ApplyFriction
+    path: ../Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+    startLine: 73
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  summary: "\nApplies friction on the given value based on the traction given.\n"
+  example: []
+  syntax:
+    content: protected virtual float ApplyFriction(float value, float traction)
+    parameters:
+    - id: value
+      type: System.Single
+      description: The value to apply traction to.
+    - id: traction
+      type: System.Single
+      description: The traction to apply.
+    return:
+      type: System.Single
+      description: The new value with the traction applied.
+    content.vb: Protected Overridable Function ApplyFriction(value As Single, traction As Single) As Single
+  overload: CAF.Entities.EntityPhysicsManager.ApplyFriction*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Entities.EntityPhysicsManager.ApplyMovement(System.Single,System.Single,System.Single)
+  commentId: M:CAF.Entities.EntityPhysicsManager.ApplyMovement(System.Single,System.Single,System.Single)
+  id: ApplyMovement(System.Single,System.Single,System.Single)
+  parent: CAF.Entities.EntityPhysicsManager
+  langs:
+  - csharp
+  - vb
+  name: ApplyMovement(Single, Single, Single)
+  nameWithType: EntityPhysicsManager.ApplyMovement(Single, Single, Single)
+  fullName: CAF.Entities.EntityPhysicsManager.ApplyMovement(System.Single, System.Single, System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: ApplyMovement
+    path: ../Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+    startLine: 102
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  summary: "\nCreate a force based on the parameters given and\nadds it to our movement force.\n"
+  example: []
+  syntax:
+    content: public virtual void ApplyMovement(float accel, float max, float decel)
+    parameters:
+    - id: accel
+      type: System.Single
+      description: How fast the entity accelerates in the movement direction.
+    - id: max
+      type: System.Single
+      description: The max magnitude of our movement force.
+    - id: decel
+      type: System.Single
+      description: >-
+        How much the entity decelerates when moving faster than the max magnitude.
+
+        1.0 = doesn&apos;t decelerate, 0.0 = force set to 0.
+    content.vb: Public Overridable Sub ApplyMovement(accel As Single, max As Single, decel As Single)
+  overload: CAF.Entities.EntityPhysicsManager.ApplyMovement*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Entities.EntityPhysicsManager.CheckIfGrounded
+  commentId: M:CAF.Entities.EntityPhysicsManager.CheckIfGrounded
+  id: CheckIfGrounded
+  parent: CAF.Entities.EntityPhysicsManager
+  langs:
+  - csharp
+  - vb
+  name: CheckIfGrounded()
+  nameWithType: EntityPhysicsManager.CheckIfGrounded()
+  fullName: CAF.Entities.EntityPhysicsManager.CheckIfGrounded()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: CheckIfGrounded
+    path: ../Assets/CAF/Entities/Managers/EntityPhysicsManager.cs
+    startLine: 124
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  summary: "\nCheck if we are on the ground.\n"
+  example: []
+  syntax:
+    content: public virtual void CheckIfGrounded()
+    content.vb: Public Overridable Sub CheckIfGrounded
+  overload: CAF.Entities.EntityPhysicsManager.CheckIfGrounded*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: CAF.Entities
+  commentId: N:CAF.Entities
+  name: CAF.Entities
+  nameWithType: CAF.Entities
+  fullName: CAF.Entities
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: CAF.Entities.EntityPhysicsManager.GravityScale*
+  commentId: Overload:CAF.Entities.EntityPhysicsManager.GravityScale
+  name: GravityScale
+  nameWithType: EntityPhysicsManager.GravityScale
+  fullName: CAF.Entities.EntityPhysicsManager.GravityScale
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: CAF.Entities.EntityController
+  commentId: T:CAF.Entities.EntityController
+  parent: CAF.Entities
+  name: EntityController
+  nameWithType: EntityController
+  fullName: CAF.Entities.EntityController
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: CAF.Entities.EntityPhysicsManager.Tick*
+  commentId: Overload:CAF.Entities.EntityPhysicsManager.Tick
+  name: Tick
+  nameWithType: EntityPhysicsManager.Tick
+  fullName: CAF.Entities.EntityPhysicsManager.Tick
+- uid: CAF.Entities.EntityPhysicsManager.SetForceDirect*
+  commentId: Overload:CAF.Entities.EntityPhysicsManager.SetForceDirect
+  name: SetForceDirect
+  nameWithType: EntityPhysicsManager.SetForceDirect
+  fullName: CAF.Entities.EntityPhysicsManager.SetForceDirect
+- uid: CAF.Entities.EntityPhysicsManager.GetOverallForce*
+  commentId: Overload:CAF.Entities.EntityPhysicsManager.GetOverallForce
+  name: GetOverallForce
+  nameWithType: EntityPhysicsManager.GetOverallForce
+  fullName: CAF.Entities.EntityPhysicsManager.GetOverallForce
+- uid: CAF.Entities.EntityPhysicsManager.HandleGravity*
+  commentId: Overload:CAF.Entities.EntityPhysicsManager.HandleGravity
+  name: HandleGravity
+  nameWithType: EntityPhysicsManager.HandleGravity
+  fullName: CAF.Entities.EntityPhysicsManager.HandleGravity
+- uid: CAF.Entities.EntityPhysicsManager.ApplyMovementFriction*
+  commentId: Overload:CAF.Entities.EntityPhysicsManager.ApplyMovementFriction
+  name: ApplyMovementFriction
+  nameWithType: EntityPhysicsManager.ApplyMovementFriction
+  fullName: CAF.Entities.EntityPhysicsManager.ApplyMovementFriction
+- uid: CAF.Entities.EntityPhysicsManager.ApplyGravityFriction*
+  commentId: Overload:CAF.Entities.EntityPhysicsManager.ApplyGravityFriction
+  name: ApplyGravityFriction
+  nameWithType: EntityPhysicsManager.ApplyGravityFriction
+  fullName: CAF.Entities.EntityPhysicsManager.ApplyGravityFriction
+- uid: CAF.Entities.EntityPhysicsManager.ApplyFriction*
+  commentId: Overload:CAF.Entities.EntityPhysicsManager.ApplyFriction
+  name: ApplyFriction
+  nameWithType: EntityPhysicsManager.ApplyFriction
+  fullName: CAF.Entities.EntityPhysicsManager.ApplyFriction
+- uid: CAF.Entities.EntityPhysicsManager.ApplyMovement*
+  commentId: Overload:CAF.Entities.EntityPhysicsManager.ApplyMovement
+  name: ApplyMovement
+  nameWithType: EntityPhysicsManager.ApplyMovement
+  fullName: CAF.Entities.EntityPhysicsManager.ApplyMovement
+- uid: CAF.Entities.EntityPhysicsManager.CheckIfGrounded*
+  commentId: Overload:CAF.Entities.EntityPhysicsManager.CheckIfGrounded
+  name: CheckIfGrounded
+  nameWithType: EntityPhysicsManager.CheckIfGrounded
+  fullName: CAF.Entities.EntityPhysicsManager.CheckIfGrounded

@@ -1,0 +1,565 @@
+### YamlMime:ManagedReference
+items:
+- uid: CAF.Input.GlobalInputManager
+  commentId: T:CAF.Input.GlobalInputManager
+  id: GlobalInputManager
+  parent: CAF.Input
+  children:
+  - CAF.Input.GlobalInputManager.GetAxis(System.Int32,System.Int32)
+  - CAF.Input.GlobalInputManager.GetAxis(System.Int32,System.String)
+  - CAF.Input.GlobalInputManager.GetAxis2D(System.Int32,System.Int32,System.Int32)
+  - CAF.Input.GlobalInputManager.GetAxis2D(System.Int32,System.String,System.String)
+  - CAF.Input.GlobalInputManager.GetButton(System.Int32,System.Int32)
+  - CAF.Input.GlobalInputManager.GetButton(System.Int32,System.String)
+  - CAF.Input.GlobalInputManager.GetButtonDown(System.Int32,System.Int32)
+  - CAF.Input.GlobalInputManager.GetButtonDown(System.Int32,System.String)
+  - CAF.Input.GlobalInputManager.GetButtonUp(System.Int32,System.Int32)
+  - CAF.Input.GlobalInputManager.GetButtonUp(System.Int32,System.String)
+  - CAF.Input.GlobalInputManager.instance
+  langs:
+  - csharp
+  - vb
+  name: GlobalInputManager
+  nameWithType: GlobalInputManager
+  fullName: CAF.Input.GlobalInputManager
+  type: Class
+  source:
+    remote:
+      path: Assets/CAF/Input/GlobalInputManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: GlobalInputManager
+    path: ../Assets/CAF/Input/GlobalInputManager.cs
+    startLine: 4
+  assemblies:
+  - CAF
+  namespace: CAF.Input
+  syntax:
+    content: public class GlobalInputManager
+    content.vb: Public Class GlobalInputManager
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CAF.Input.GlobalInputManager.instance
+  commentId: F:CAF.Input.GlobalInputManager.instance
+  id: instance
+  parent: CAF.Input.GlobalInputManager
+  langs:
+  - csharp
+  - vb
+  name: instance
+  nameWithType: GlobalInputManager.instance
+  fullName: CAF.Input.GlobalInputManager.instance
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Input/GlobalInputManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: instance
+    path: ../Assets/CAF/Input/GlobalInputManager.cs
+    startLine: 6
+  assemblies:
+  - CAF
+  namespace: CAF.Input
+  syntax:
+    content: public static GlobalInputManager instance
+    return:
+      type: CAF.Input.GlobalInputManager
+    content.vb: Public Shared instance As GlobalInputManager
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: CAF.Input.GlobalInputManager.GetAxis2D(System.Int32,System.String,System.String)
+  commentId: M:CAF.Input.GlobalInputManager.GetAxis2D(System.Int32,System.String,System.String)
+  id: GetAxis2D(System.Int32,System.String,System.String)
+  parent: CAF.Input.GlobalInputManager
+  langs:
+  - csharp
+  - vb
+  name: GetAxis2D(Int32, String, String)
+  nameWithType: GlobalInputManager.GetAxis2D(Int32, String, String)
+  fullName: CAF.Input.GlobalInputManager.GetAxis2D(System.Int32, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Input/GlobalInputManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: GetAxis2D
+    path: ../Assets/CAF/Input/GlobalInputManager.cs
+    startLine: 8
+  assemblies:
+  - CAF
+  namespace: CAF.Input
+  syntax:
+    content: public virtual Vector2 GetAxis2D(int playerID, string horizontal, string vertical)
+    parameters:
+    - id: playerID
+      type: System.Int32
+    - id: horizontal
+      type: System.String
+    - id: vertical
+      type: System.String
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Overridable Function GetAxis2D(playerID As Integer, horizontal As String, vertical As String) As Vector2
+  overload: CAF.Input.GlobalInputManager.GetAxis2D*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Input.GlobalInputManager.GetAxis2D(System.Int32,System.Int32,System.Int32)
+  commentId: M:CAF.Input.GlobalInputManager.GetAxis2D(System.Int32,System.Int32,System.Int32)
+  id: GetAxis2D(System.Int32,System.Int32,System.Int32)
+  parent: CAF.Input.GlobalInputManager
+  langs:
+  - csharp
+  - vb
+  name: GetAxis2D(Int32, Int32, Int32)
+  nameWithType: GlobalInputManager.GetAxis2D(Int32, Int32, Int32)
+  fullName: CAF.Input.GlobalInputManager.GetAxis2D(System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Input/GlobalInputManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: GetAxis2D
+    path: ../Assets/CAF/Input/GlobalInputManager.cs
+    startLine: 13
+  assemblies:
+  - CAF
+  namespace: CAF.Input
+  syntax:
+    content: public virtual Vector2 GetAxis2D(int playerID, int horizontal, int vertical)
+    parameters:
+    - id: playerID
+      type: System.Int32
+    - id: horizontal
+      type: System.Int32
+    - id: vertical
+      type: System.Int32
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Overridable Function GetAxis2D(playerID As Integer, horizontal As Integer, vertical As Integer) As Vector2
+  overload: CAF.Input.GlobalInputManager.GetAxis2D*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Input.GlobalInputManager.GetAxis(System.Int32,System.String)
+  commentId: M:CAF.Input.GlobalInputManager.GetAxis(System.Int32,System.String)
+  id: GetAxis(System.Int32,System.String)
+  parent: CAF.Input.GlobalInputManager
+  langs:
+  - csharp
+  - vb
+  name: GetAxis(Int32, String)
+  nameWithType: GlobalInputManager.GetAxis(Int32, String)
+  fullName: CAF.Input.GlobalInputManager.GetAxis(System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Input/GlobalInputManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: GetAxis
+    path: ../Assets/CAF/Input/GlobalInputManager.cs
+    startLine: 18
+  assemblies:
+  - CAF
+  namespace: CAF.Input
+  syntax:
+    content: public virtual float GetAxis(int playerID, string axisName)
+    parameters:
+    - id: playerID
+      type: System.Int32
+    - id: axisName
+      type: System.String
+    return:
+      type: System.Single
+    content.vb: Public Overridable Function GetAxis(playerID As Integer, axisName As String) As Single
+  overload: CAF.Input.GlobalInputManager.GetAxis*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Input.GlobalInputManager.GetAxis(System.Int32,System.Int32)
+  commentId: M:CAF.Input.GlobalInputManager.GetAxis(System.Int32,System.Int32)
+  id: GetAxis(System.Int32,System.Int32)
+  parent: CAF.Input.GlobalInputManager
+  langs:
+  - csharp
+  - vb
+  name: GetAxis(Int32, Int32)
+  nameWithType: GlobalInputManager.GetAxis(Int32, Int32)
+  fullName: CAF.Input.GlobalInputManager.GetAxis(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Input/GlobalInputManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: GetAxis
+    path: ../Assets/CAF/Input/GlobalInputManager.cs
+    startLine: 23
+  assemblies:
+  - CAF
+  namespace: CAF.Input
+  syntax:
+    content: public virtual float GetAxis(int playerID, int axis)
+    parameters:
+    - id: playerID
+      type: System.Int32
+    - id: axis
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: Public Overridable Function GetAxis(playerID As Integer, axis As Integer) As Single
+  overload: CAF.Input.GlobalInputManager.GetAxis*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Input.GlobalInputManager.GetButton(System.Int32,System.String)
+  commentId: M:CAF.Input.GlobalInputManager.GetButton(System.Int32,System.String)
+  id: GetButton(System.Int32,System.String)
+  parent: CAF.Input.GlobalInputManager
+  langs:
+  - csharp
+  - vb
+  name: GetButton(Int32, String)
+  nameWithType: GlobalInputManager.GetButton(Int32, String)
+  fullName: CAF.Input.GlobalInputManager.GetButton(System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Input/GlobalInputManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: GetButton
+    path: ../Assets/CAF/Input/GlobalInputManager.cs
+    startLine: 28
+  assemblies:
+  - CAF
+  namespace: CAF.Input
+  syntax:
+    content: public virtual bool GetButton(int playerID, string buttonName)
+    parameters:
+    - id: playerID
+      type: System.Int32
+    - id: buttonName
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Function GetButton(playerID As Integer, buttonName As String) As Boolean
+  overload: CAF.Input.GlobalInputManager.GetButton*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Input.GlobalInputManager.GetButton(System.Int32,System.Int32)
+  commentId: M:CAF.Input.GlobalInputManager.GetButton(System.Int32,System.Int32)
+  id: GetButton(System.Int32,System.Int32)
+  parent: CAF.Input.GlobalInputManager
+  langs:
+  - csharp
+  - vb
+  name: GetButton(Int32, Int32)
+  nameWithType: GlobalInputManager.GetButton(Int32, Int32)
+  fullName: CAF.Input.GlobalInputManager.GetButton(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Input/GlobalInputManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: GetButton
+    path: ../Assets/CAF/Input/GlobalInputManager.cs
+    startLine: 33
+  assemblies:
+  - CAF
+  namespace: CAF.Input
+  syntax:
+    content: public virtual bool GetButton(int playerID, int button)
+    parameters:
+    - id: playerID
+      type: System.Int32
+    - id: button
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Function GetButton(playerID As Integer, button As Integer) As Boolean
+  overload: CAF.Input.GlobalInputManager.GetButton*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Input.GlobalInputManager.GetButtonDown(System.Int32,System.String)
+  commentId: M:CAF.Input.GlobalInputManager.GetButtonDown(System.Int32,System.String)
+  id: GetButtonDown(System.Int32,System.String)
+  parent: CAF.Input.GlobalInputManager
+  langs:
+  - csharp
+  - vb
+  name: GetButtonDown(Int32, String)
+  nameWithType: GlobalInputManager.GetButtonDown(Int32, String)
+  fullName: CAF.Input.GlobalInputManager.GetButtonDown(System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Input/GlobalInputManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: GetButtonDown
+    path: ../Assets/CAF/Input/GlobalInputManager.cs
+    startLine: 38
+  assemblies:
+  - CAF
+  namespace: CAF.Input
+  syntax:
+    content: public virtual bool GetButtonDown(int playerID, string buttonName)
+    parameters:
+    - id: playerID
+      type: System.Int32
+    - id: buttonName
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Function GetButtonDown(playerID As Integer, buttonName As String) As Boolean
+  overload: CAF.Input.GlobalInputManager.GetButtonDown*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Input.GlobalInputManager.GetButtonDown(System.Int32,System.Int32)
+  commentId: M:CAF.Input.GlobalInputManager.GetButtonDown(System.Int32,System.Int32)
+  id: GetButtonDown(System.Int32,System.Int32)
+  parent: CAF.Input.GlobalInputManager
+  langs:
+  - csharp
+  - vb
+  name: GetButtonDown(Int32, Int32)
+  nameWithType: GlobalInputManager.GetButtonDown(Int32, Int32)
+  fullName: CAF.Input.GlobalInputManager.GetButtonDown(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Input/GlobalInputManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: GetButtonDown
+    path: ../Assets/CAF/Input/GlobalInputManager.cs
+    startLine: 43
+  assemblies:
+  - CAF
+  namespace: CAF.Input
+  syntax:
+    content: public virtual bool GetButtonDown(int playerID, int button)
+    parameters:
+    - id: playerID
+      type: System.Int32
+    - id: button
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Function GetButtonDown(playerID As Integer, button As Integer) As Boolean
+  overload: CAF.Input.GlobalInputManager.GetButtonDown*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Input.GlobalInputManager.GetButtonUp(System.Int32,System.String)
+  commentId: M:CAF.Input.GlobalInputManager.GetButtonUp(System.Int32,System.String)
+  id: GetButtonUp(System.Int32,System.String)
+  parent: CAF.Input.GlobalInputManager
+  langs:
+  - csharp
+  - vb
+  name: GetButtonUp(Int32, String)
+  nameWithType: GlobalInputManager.GetButtonUp(Int32, String)
+  fullName: CAF.Input.GlobalInputManager.GetButtonUp(System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Input/GlobalInputManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: GetButtonUp
+    path: ../Assets/CAF/Input/GlobalInputManager.cs
+    startLine: 48
+  assemblies:
+  - CAF
+  namespace: CAF.Input
+  syntax:
+    content: public virtual bool GetButtonUp(int playerID, string buttonName)
+    parameters:
+    - id: playerID
+      type: System.Int32
+    - id: buttonName
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Function GetButtonUp(playerID As Integer, buttonName As String) As Boolean
+  overload: CAF.Input.GlobalInputManager.GetButtonUp*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Input.GlobalInputManager.GetButtonUp(System.Int32,System.Int32)
+  commentId: M:CAF.Input.GlobalInputManager.GetButtonUp(System.Int32,System.Int32)
+  id: GetButtonUp(System.Int32,System.Int32)
+  parent: CAF.Input.GlobalInputManager
+  langs:
+  - csharp
+  - vb
+  name: GetButtonUp(Int32, Int32)
+  nameWithType: GlobalInputManager.GetButtonUp(Int32, Int32)
+  fullName: CAF.Input.GlobalInputManager.GetButtonUp(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Input/GlobalInputManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: GetButtonUp
+    path: ../Assets/CAF/Input/GlobalInputManager.cs
+    startLine: 53
+  assemblies:
+  - CAF
+  namespace: CAF.Input
+  syntax:
+    content: public virtual bool GetButtonUp(int playerID, int button)
+    parameters:
+    - id: playerID
+      type: System.Int32
+    - id: button
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Function GetButtonUp(playerID As Integer, button As Integer) As Boolean
+  overload: CAF.Input.GlobalInputManager.GetButtonUp*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: CAF.Input
+  commentId: N:CAF.Input
+  name: CAF.Input
+  nameWithType: CAF.Input
+  fullName: CAF.Input
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CAF.Input.GlobalInputManager
+  commentId: T:CAF.Input.GlobalInputManager
+  parent: CAF.Input
+  name: GlobalInputManager
+  nameWithType: GlobalInputManager
+  fullName: CAF.Input.GlobalInputManager
+- uid: CAF.Input.GlobalInputManager.GetAxis2D*
+  commentId: Overload:CAF.Input.GlobalInputManager.GetAxis2D
+  name: GetAxis2D
+  nameWithType: GlobalInputManager.GetAxis2D
+  fullName: CAF.Input.GlobalInputManager.GetAxis2D
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: CAF.Input.GlobalInputManager.GetAxis*
+  commentId: Overload:CAF.Input.GlobalInputManager.GetAxis
+  name: GetAxis
+  nameWithType: GlobalInputManager.GetAxis
+  fullName: CAF.Input.GlobalInputManager.GetAxis
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: CAF.Input.GlobalInputManager.GetButton*
+  commentId: Overload:CAF.Input.GlobalInputManager.GetButton
+  name: GetButton
+  nameWithType: GlobalInputManager.GetButton
+  fullName: CAF.Input.GlobalInputManager.GetButton
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: CAF.Input.GlobalInputManager.GetButtonDown*
+  commentId: Overload:CAF.Input.GlobalInputManager.GetButtonDown
+  name: GetButtonDown
+  nameWithType: GlobalInputManager.GetButtonDown
+  fullName: CAF.Input.GlobalInputManager.GetButtonDown
+- uid: CAF.Input.GlobalInputManager.GetButtonUp*
+  commentId: Overload:CAF.Input.GlobalInputManager.GetButtonUp
+  name: GetButtonUp
+  nameWithType: GlobalInputManager.GetButtonUp
+  fullName: CAF.Input.GlobalInputManager.GetButtonUp

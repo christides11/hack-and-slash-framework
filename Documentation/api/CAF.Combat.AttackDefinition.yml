@@ -1,0 +1,804 @@
+### YamlMime:ManagedReference
+items:
+- uid: CAF.Combat.AttackDefinition
+  commentId: T:CAF.Combat.AttackDefinition
+  id: AttackDefinition
+  parent: CAF.Combat
+  children:
+  - CAF.Combat.AttackDefinition.animationAir
+  - CAF.Combat.AttackDefinition.animationGround
+  - CAF.Combat.AttackDefinition.attackName
+  - CAF.Combat.AttackDefinition.boxGroups
+  - CAF.Combat.AttackDefinition.commandAttackCancelWindows
+  - CAF.Combat.AttackDefinition.description
+  - CAF.Combat.AttackDefinition.enemyStepWindows
+  - CAF.Combat.AttackDefinition.events
+  - CAF.Combat.AttackDefinition.gravityScaleAdded
+  - CAF.Combat.AttackDefinition.heightRestriction
+  - CAF.Combat.AttackDefinition.jumpCancelWindows
+  - CAF.Combat.AttackDefinition.landCancelWindows
+  - CAF.Combat.AttackDefinition.length
+  - CAF.Combat.AttackDefinition.stateOverride
+  - CAF.Combat.AttackDefinition.wrapMode
+  langs:
+  - csharp
+  - vb
+  name: AttackDefinition
+  nameWithType: AttackDefinition
+  fullName: CAF.Combat.AttackDefinition
+  type: Class
+  source:
+    remote:
+      path: Assets/CAF/Combat/Attack/AttackDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: AttackDefinition
+    path: ../Assets/CAF/Combat/Attack/AttackDefinition.cs
+    startLine: 6
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "AttackDefinition", menuName = "CAF/Combat/Attack Definition")]
+
+      public class AttackDefinition : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="AttackDefinition", menuName:="CAF/Combat/Attack Definition")>
+
+      Public Class AttackDefinition
+
+          Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: AttackDefinition
+    - name: menuName
+      type: System.String
+      value: CAF/Combat/Attack Definition
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CAF.Combat.AttackDefinition.attackName
+  commentId: F:CAF.Combat.AttackDefinition.attackName
+  id: attackName
+  parent: CAF.Combat.AttackDefinition
+  langs:
+  - csharp
+  - vb
+  name: attackName
+  nameWithType: AttackDefinition.attackName
+  fullName: CAF.Combat.AttackDefinition.attackName
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Attack/AttackDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: attackName
+    path: ../Assets/CAF/Combat/Attack/AttackDefinition.cs
+    startLine: 10
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public string attackName
+    return:
+      type: System.String
+    content.vb: Public attackName As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.AttackDefinition.description
+  commentId: F:CAF.Combat.AttackDefinition.description
+  id: description
+  parent: CAF.Combat.AttackDefinition
+  langs:
+  - csharp
+  - vb
+  name: description
+  nameWithType: AttackDefinition.description
+  fullName: CAF.Combat.AttackDefinition.description
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Attack/AttackDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: description
+    path: ../Assets/CAF/Combat/Attack/AttackDefinition.cs
+    startLine: 11
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public string description
+    return:
+      type: System.String
+    content.vb: Public description As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.AttackDefinition.stateOverride
+  commentId: F:CAF.Combat.AttackDefinition.stateOverride
+  id: stateOverride
+  parent: CAF.Combat.AttackDefinition
+  langs:
+  - csharp
+  - vb
+  name: stateOverride
+  nameWithType: AttackDefinition.stateOverride
+  fullName: CAF.Combat.AttackDefinition.stateOverride
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Attack/AttackDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: stateOverride
+    path: ../Assets/CAF/Combat/Attack/AttackDefinition.cs
+    startLine: 12
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public int stateOverride
+    return:
+      type: System.Int32
+    content.vb: Public stateOverride As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.AttackDefinition.length
+  commentId: F:CAF.Combat.AttackDefinition.length
+  id: length
+  parent: CAF.Combat.AttackDefinition
+  langs:
+  - csharp
+  - vb
+  name: length
+  nameWithType: AttackDefinition.length
+  fullName: CAF.Combat.AttackDefinition.length
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Attack/AttackDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: length
+    path: ../Assets/CAF/Combat/Attack/AttackDefinition.cs
+    startLine: 13
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public int length
+    return:
+      type: System.Int32
+    content.vb: Public length As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.AttackDefinition.heightRestriction
+  commentId: F:CAF.Combat.AttackDefinition.heightRestriction
+  id: heightRestriction
+  parent: CAF.Combat.AttackDefinition
+  langs:
+  - csharp
+  - vb
+  name: heightRestriction
+  nameWithType: AttackDefinition.heightRestriction
+  fullName: CAF.Combat.AttackDefinition.heightRestriction
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Attack/AttackDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: heightRestriction
+    path: ../Assets/CAF/Combat/Attack/AttackDefinition.cs
+    startLine: 14
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public float heightRestriction
+    return:
+      type: System.Single
+    content.vb: Public heightRestriction As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.AttackDefinition.gravityScaleAdded
+  commentId: F:CAF.Combat.AttackDefinition.gravityScaleAdded
+  id: gravityScaleAdded
+  parent: CAF.Combat.AttackDefinition
+  langs:
+  - csharp
+  - vb
+  name: gravityScaleAdded
+  nameWithType: AttackDefinition.gravityScaleAdded
+  fullName: CAF.Combat.AttackDefinition.gravityScaleAdded
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Attack/AttackDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: gravityScaleAdded
+    path: ../Assets/CAF/Combat/Attack/AttackDefinition.cs
+    startLine: 15
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public float gravityScaleAdded
+    return:
+      type: System.Single
+    content.vb: Public gravityScaleAdded As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.AttackDefinition.animationGround
+  commentId: F:CAF.Combat.AttackDefinition.animationGround
+  id: animationGround
+  parent: CAF.Combat.AttackDefinition
+  langs:
+  - csharp
+  - vb
+  name: animationGround
+  nameWithType: AttackDefinition.animationGround
+  fullName: CAF.Combat.AttackDefinition.animationGround
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Attack/AttackDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: animationGround
+    path: ../Assets/CAF/Combat/Attack/AttackDefinition.cs
+    startLine: 19
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public AnimationClip animationGround
+    return:
+      type: UnityEngine.AnimationClip
+    content.vb: Public animationGround As AnimationClip
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.AttackDefinition.animationAir
+  commentId: F:CAF.Combat.AttackDefinition.animationAir
+  id: animationAir
+  parent: CAF.Combat.AttackDefinition
+  langs:
+  - csharp
+  - vb
+  name: animationAir
+  nameWithType: AttackDefinition.animationAir
+  fullName: CAF.Combat.AttackDefinition.animationAir
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Attack/AttackDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: animationAir
+    path: ../Assets/CAF/Combat/Attack/AttackDefinition.cs
+    startLine: 20
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public AnimationClip animationAir
+    return:
+      type: UnityEngine.AnimationClip
+    content.vb: Public animationAir As AnimationClip
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.AttackDefinition.wrapMode
+  commentId: F:CAF.Combat.AttackDefinition.wrapMode
+  id: wrapMode
+  parent: CAF.Combat.AttackDefinition
+  langs:
+  - csharp
+  - vb
+  name: wrapMode
+  nameWithType: AttackDefinition.wrapMode
+  fullName: CAF.Combat.AttackDefinition.wrapMode
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Attack/AttackDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: wrapMode
+    path: ../Assets/CAF/Combat/Attack/AttackDefinition.cs
+    startLine: 21
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public WrapMode wrapMode
+    return:
+      type: UnityEngine.WrapMode
+    content.vb: Public wrapMode As WrapMode
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.AttackDefinition.jumpCancelWindows
+  commentId: F:CAF.Combat.AttackDefinition.jumpCancelWindows
+  id: jumpCancelWindows
+  parent: CAF.Combat.AttackDefinition
+  langs:
+  - csharp
+  - vb
+  name: jumpCancelWindows
+  nameWithType: AttackDefinition.jumpCancelWindows
+  fullName: CAF.Combat.AttackDefinition.jumpCancelWindows
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Attack/AttackDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: jumpCancelWindows
+    path: ../Assets/CAF/Combat/Attack/AttackDefinition.cs
+    startLine: 25
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public List<Vector2Int> jumpCancelWindows
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Vector2Int}
+    content.vb: Public jumpCancelWindows As List(Of Vector2Int)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.AttackDefinition.enemyStepWindows
+  commentId: F:CAF.Combat.AttackDefinition.enemyStepWindows
+  id: enemyStepWindows
+  parent: CAF.Combat.AttackDefinition
+  langs:
+  - csharp
+  - vb
+  name: enemyStepWindows
+  nameWithType: AttackDefinition.enemyStepWindows
+  fullName: CAF.Combat.AttackDefinition.enemyStepWindows
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Attack/AttackDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: enemyStepWindows
+    path: ../Assets/CAF/Combat/Attack/AttackDefinition.cs
+    startLine: 26
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public List<Vector2Int> enemyStepWindows
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Vector2Int}
+    content.vb: Public enemyStepWindows As List(Of Vector2Int)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.AttackDefinition.landCancelWindows
+  commentId: F:CAF.Combat.AttackDefinition.landCancelWindows
+  id: landCancelWindows
+  parent: CAF.Combat.AttackDefinition
+  langs:
+  - csharp
+  - vb
+  name: landCancelWindows
+  nameWithType: AttackDefinition.landCancelWindows
+  fullName: CAF.Combat.AttackDefinition.landCancelWindows
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Attack/AttackDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: landCancelWindows
+    path: ../Assets/CAF/Combat/Attack/AttackDefinition.cs
+    startLine: 27
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public List<Vector2Int> landCancelWindows
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Vector2Int}
+    content.vb: Public landCancelWindows As List(Of Vector2Int)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.AttackDefinition.commandAttackCancelWindows
+  commentId: F:CAF.Combat.AttackDefinition.commandAttackCancelWindows
+  id: commandAttackCancelWindows
+  parent: CAF.Combat.AttackDefinition
+  langs:
+  - csharp
+  - vb
+  name: commandAttackCancelWindows
+  nameWithType: AttackDefinition.commandAttackCancelWindows
+  fullName: CAF.Combat.AttackDefinition.commandAttackCancelWindows
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Attack/AttackDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: commandAttackCancelWindows
+    path: ../Assets/CAF/Combat/Attack/AttackDefinition.cs
+    startLine: 28
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public List<Vector2Int> commandAttackCancelWindows
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Vector2Int}
+    content.vb: Public commandAttackCancelWindows As List(Of Vector2Int)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.AttackDefinition.boxGroups
+  commentId: F:CAF.Combat.AttackDefinition.boxGroups
+  id: boxGroups
+  parent: CAF.Combat.AttackDefinition
+  langs:
+  - csharp
+  - vb
+  name: boxGroups
+  nameWithType: AttackDefinition.boxGroups
+  fullName: CAF.Combat.AttackDefinition.boxGroups
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Attack/AttackDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: boxGroups
+    path: ../Assets/CAF/Combat/Attack/AttackDefinition.cs
+    startLine: 31
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: >-
+      [SerializeReference]
+
+      public List<BoxGroup> boxGroups
+    return:
+      type: System.Collections.Generic.List{CAF.Combat.BoxGroup}
+    content.vb: >-
+      <SerializeReference>
+
+      Public boxGroups As List(Of BoxGroup)
+  attributes:
+  - type: UnityEngine.SerializeReference
+    ctor: UnityEngine.SerializeReference.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.AttackDefinition.events
+  commentId: F:CAF.Combat.AttackDefinition.events
+  id: events
+  parent: CAF.Combat.AttackDefinition
+  langs:
+  - csharp
+  - vb
+  name: events
+  nameWithType: AttackDefinition.events
+  fullName: CAF.Combat.AttackDefinition.events
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Attack/AttackDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: events
+    path: ../Assets/CAF/Combat/Attack/AttackDefinition.cs
+    startLine: 33
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: >-
+      [SerializeReference]
+
+      public List<AttackEventDefinition> events
+    return:
+      type: System.Collections.Generic.List{CAF.Combat.AttackEventDefinition}
+    content.vb: >-
+      <SerializeReference>
+
+      Public events As List(Of AttackEventDefinition)
+  attributes:
+  - type: UnityEngine.SerializeReference
+    ctor: UnityEngine.SerializeReference.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: CAF.Combat
+  commentId: N:CAF.Combat
+  name: CAF.Combat
+  nameWithType: CAF.Combat
+  fullName: CAF.Combat
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: UnityEngine.AnimationClip
+  commentId: T:UnityEngine.AnimationClip
+  parent: UnityEngine
+  isExternal: true
+  name: AnimationClip
+  nameWithType: AnimationClip
+  fullName: UnityEngine.AnimationClip
+- uid: UnityEngine.WrapMode
+  commentId: T:UnityEngine.WrapMode
+  parent: UnityEngine
+  isExternal: true
+  name: WrapMode
+  nameWithType: WrapMode
+  fullName: UnityEngine.WrapMode
+- uid: System.Collections.Generic.List{UnityEngine.Vector2Int}
+  commentId: T:System.Collections.Generic.List{UnityEngine.Vector2Int}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Vector2Int>
+  nameWithType: List<Vector2Int>
+  fullName: System.Collections.Generic.List<UnityEngine.Vector2Int>
+  nameWithType.vb: List(Of Vector2Int)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.Vector2Int)
+  name.vb: List(Of Vector2Int)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    nameWithType: Vector2Int
+    fullName: UnityEngine.Vector2Int
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    nameWithType: Vector2Int
+    fullName: UnityEngine.Vector2Int
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.List{CAF.Combat.BoxGroup}
+  commentId: T:System.Collections.Generic.List{CAF.Combat.BoxGroup}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<BoxGroup>
+  nameWithType: List<BoxGroup>
+  fullName: System.Collections.Generic.List<CAF.Combat.BoxGroup>
+  nameWithType.vb: List(Of BoxGroup)
+  fullName.vb: System.Collections.Generic.List(Of CAF.Combat.BoxGroup)
+  name.vb: List(Of BoxGroup)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CAF.Combat.BoxGroup
+    name: BoxGroup
+    nameWithType: BoxGroup
+    fullName: CAF.Combat.BoxGroup
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CAF.Combat.BoxGroup
+    name: BoxGroup
+    nameWithType: BoxGroup
+    fullName: CAF.Combat.BoxGroup
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{CAF.Combat.AttackEventDefinition}
+  commentId: T:System.Collections.Generic.List{CAF.Combat.AttackEventDefinition}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<AttackEventDefinition>
+  nameWithType: List<AttackEventDefinition>
+  fullName: System.Collections.Generic.List<CAF.Combat.AttackEventDefinition>
+  nameWithType.vb: List(Of AttackEventDefinition)
+  fullName.vb: System.Collections.Generic.List(Of CAF.Combat.AttackEventDefinition)
+  name.vb: List(Of AttackEventDefinition)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CAF.Combat.AttackEventDefinition
+    name: AttackEventDefinition
+    nameWithType: AttackEventDefinition
+    fullName: CAF.Combat.AttackEventDefinition
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CAF.Combat.AttackEventDefinition
+    name: AttackEventDefinition
+    nameWithType: AttackEventDefinition
+    fullName: CAF.Combat.AttackEventDefinition
+  - name: )
+    nameWithType: )
+    fullName: )

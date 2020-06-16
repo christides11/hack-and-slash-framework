@@ -1,0 +1,145 @@
+### YamlMime:ManagedReference
+items:
+- uid: CAF.Combat.HitboxForceType
+  commentId: T:CAF.Combat.HitboxForceType
+  id: HitboxForceType
+  parent: CAF.Combat
+  children:
+  - CAF.Combat.HitboxForceType.PULL
+  - CAF.Combat.HitboxForceType.PUSH
+  - CAF.Combat.HitboxForceType.SET
+  langs:
+  - csharp
+  - vb
+  name: HitboxForceType
+  nameWithType: HitboxForceType
+  fullName: CAF.Combat.HitboxForceType
+  type: Enum
+  source:
+    remote:
+      path: Assets/CAF/Combat/HitboxForceType.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: HitboxForceType
+    path: ../Assets/CAF/Combat/HitboxForceType.cs
+    startLine: 2
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public enum HitboxForceType
+    content.vb: Public Enum HitboxForceType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: CAF.Combat.HitboxForceType.SET
+  commentId: F:CAF.Combat.HitboxForceType.SET
+  id: SET
+  parent: CAF.Combat.HitboxForceType
+  langs:
+  - csharp
+  - vb
+  name: SET
+  nameWithType: HitboxForceType.SET
+  fullName: CAF.Combat.HitboxForceType.SET
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/HitboxForceType.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: SET
+    path: ../Assets/CAF/Combat/HitboxForceType.cs
+    startLine: 4
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: SET = 0
+    return:
+      type: CAF.Combat.HitboxForceType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: CAF.Combat.HitboxForceType.PUSH
+  commentId: F:CAF.Combat.HitboxForceType.PUSH
+  id: PUSH
+  parent: CAF.Combat.HitboxForceType
+  langs:
+  - csharp
+  - vb
+  name: PUSH
+  nameWithType: HitboxForceType.PUSH
+  fullName: CAF.Combat.HitboxForceType.PUSH
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/HitboxForceType.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: PUSH
+    path: ../Assets/CAF/Combat/HitboxForceType.cs
+    startLine: 5
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: PUSH = 1
+    return:
+      type: CAF.Combat.HitboxForceType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: CAF.Combat.HitboxForceType.PULL
+  commentId: F:CAF.Combat.HitboxForceType.PULL
+  id: PULL
+  parent: CAF.Combat.HitboxForceType
+  langs:
+  - csharp
+  - vb
+  name: PULL
+  nameWithType: HitboxForceType.PULL
+  fullName: CAF.Combat.HitboxForceType.PULL
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/HitboxForceType.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: PULL
+    path: ../Assets/CAF/Combat/HitboxForceType.cs
+    startLine: 6
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: PULL = 2
+    return:
+      type: CAF.Combat.HitboxForceType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: CAF.Combat
+  commentId: N:CAF.Combat
+  name: CAF.Combat
+  nameWithType: CAF.Combat
+  fullName: CAF.Combat
+- uid: CAF.Combat.HitboxForceType
+  commentId: T:CAF.Combat.HitboxForceType
+  parent: CAF.Combat
+  name: HitboxForceType
+  nameWithType: HitboxForceType
+  fullName: CAF.Combat.HitboxForceType

@@ -1,0 +1,305 @@
+### YamlMime:ManagedReference
+items:
+- uid: CAF.Combat
+  commentId: N:CAF.Combat
+  id: CAF.Combat
+  children:
+  - CAF.Combat.AttackDefinition
+  - CAF.Combat.AttackDefinitionEditor
+  - CAF.Combat.AttackDefinitionEditorWindow
+  - CAF.Combat.AttackEvent
+  - CAF.Combat.AttackEventDefinition
+  - CAF.Combat.AttackEventVariables
+  - CAF.Combat.BoxDefinition
+  - CAF.Combat.BoxGroup
+  - CAF.Combat.BoxGroupType
+  - CAF.Combat.BoxShapes
+  - CAF.Combat.ForceType
+  - CAF.Combat.Hitbox
+  - CAF.Combat.Hitbox.HurtAction
+  - CAF.Combat.HitboxForceRelation
+  - CAF.Combat.HitboxForceType
+  - CAF.Combat.HitInfo
+  - CAF.Combat.HitReaction
+  - CAF.Combat.HitReactionType
+  - CAF.Combat.Hurtbox
+  - CAF.Combat.HurtboxState
+  - CAF.Combat.IHurtable
+  - CAF.Combat.IStatusEffectable
+  - CAF.Combat.ITargetable
+  - CAF.Combat.MovesetAttackNode
+  - CAF.Combat.MovesetAttackNode.nextNodeDefinition
+  - CAF.Combat.MovesetAttackNodeEditor
+  - CAF.Combat.MovesetDefinition
+  - CAF.Combat.StatusEffect
+  - CAF.Combat.StatusEffect`1
+  - CAF.Combat.StatusEffectDefinition
+  - CAF.Combat.StatusEffectDefinition`2
+  langs:
+  - csharp
+  - vb
+  name: CAF.Combat
+  nameWithType: CAF.Combat
+  fullName: CAF.Combat
+  type: Namespace
+  assemblies:
+  - CAF
+references:
+- uid: CAF.Combat.AttackEvent
+  commentId: T:CAF.Combat.AttackEvent
+  parent: CAF.Combat
+  name: AttackEvent
+  nameWithType: AttackEvent
+  fullName: CAF.Combat.AttackEvent
+- uid: CAF.Combat.AttackEventDefinition
+  commentId: T:CAF.Combat.AttackEventDefinition
+  parent: CAF.Combat
+  name: AttackEventDefinition
+  nameWithType: AttackEventDefinition
+  fullName: CAF.Combat.AttackEventDefinition
+- uid: CAF.Combat.AttackEventVariables
+  commentId: T:CAF.Combat.AttackEventVariables
+  parent: CAF.Combat
+  name: AttackEventVariables
+  nameWithType: AttackEventVariables
+  fullName: CAF.Combat.AttackEventVariables
+- uid: CAF.Combat.AttackDefinition
+  commentId: T:CAF.Combat.AttackDefinition
+  parent: CAF.Combat
+  name: AttackDefinition
+  nameWithType: AttackDefinition
+  fullName: CAF.Combat.AttackDefinition
+- uid: CAF.Combat.BoxDefinition
+  commentId: T:CAF.Combat.BoxDefinition
+  parent: CAF.Combat
+  name: BoxDefinition
+  nameWithType: BoxDefinition
+  fullName: CAF.Combat.BoxDefinition
+- uid: CAF.Combat.BoxGroup
+  commentId: T:CAF.Combat.BoxGroup
+  parent: CAF.Combat
+  name: BoxGroup
+  nameWithType: BoxGroup
+  fullName: CAF.Combat.BoxGroup
+- uid: CAF.Combat.BoxGroupType
+  commentId: T:CAF.Combat.BoxGroupType
+  parent: CAF.Combat
+  name: BoxGroupType
+  nameWithType: BoxGroupType
+  fullName: CAF.Combat.BoxGroupType
+- uid: CAF.Combat.BoxShapes
+  commentId: T:CAF.Combat.BoxShapes
+  parent: CAF.Combat
+  name: BoxShapes
+  nameWithType: BoxShapes
+  fullName: CAF.Combat.BoxShapes
+- uid: CAF.Combat.Hitbox
+  commentId: T:CAF.Combat.Hitbox
+  parent: CAF.Combat
+  name: Hitbox
+  nameWithType: Hitbox
+  fullName: CAF.Combat.Hitbox
+- uid: CAF.Combat.Hitbox.HurtAction
+  commentId: T:CAF.Combat.Hitbox.HurtAction
+  parent: CAF.Combat
+  name: Hitbox.HurtAction
+  nameWithType: Hitbox.HurtAction
+  fullName: CAF.Combat.Hitbox.HurtAction
+- uid: CAF.Combat.Hurtbox
+  commentId: T:CAF.Combat.Hurtbox
+  name: Hurtbox
+  nameWithType: Hurtbox
+  fullName: CAF.Combat.Hurtbox
+- uid: CAF.Combat.HurtboxState
+  commentId: T:CAF.Combat.HurtboxState
+  parent: CAF.Combat
+  name: HurtboxState
+  nameWithType: HurtboxState
+  fullName: CAF.Combat.HurtboxState
+- uid: CAF.Combat.ForceType
+  commentId: T:CAF.Combat.ForceType
+  parent: CAF.Combat
+  name: ForceType
+  nameWithType: ForceType
+  fullName: CAF.Combat.ForceType
+- uid: CAF.Combat.HitInfo
+  commentId: T:CAF.Combat.HitInfo
+  parent: CAF.Combat
+  name: HitInfo
+  nameWithType: HitInfo
+  fullName: CAF.Combat.HitInfo
+- uid: CAF.Combat.HitReaction
+  commentId: T:CAF.Combat.HitReaction
+  parent: CAF.Combat
+  name: HitReaction
+  nameWithType: HitReaction
+  fullName: CAF.Combat.HitReaction
+- uid: CAF.Combat.HitReactionType
+  commentId: T:CAF.Combat.HitReactionType
+  parent: CAF.Combat
+  name: HitReactionType
+  nameWithType: HitReactionType
+  fullName: CAF.Combat.HitReactionType
+- uid: CAF.Combat.HitboxForceRelation
+  commentId: T:CAF.Combat.HitboxForceRelation
+  parent: CAF.Combat
+  name: HitboxForceRelation
+  nameWithType: HitboxForceRelation
+  fullName: CAF.Combat.HitboxForceRelation
+- uid: CAF.Combat.HitboxForceType
+  commentId: T:CAF.Combat.HitboxForceType
+  parent: CAF.Combat
+  name: HitboxForceType
+  nameWithType: HitboxForceType
+  fullName: CAF.Combat.HitboxForceType
+- uid: CAF.Combat.IHurtable
+  commentId: T:CAF.Combat.IHurtable
+  parent: CAF.Combat
+  name: IHurtable
+  nameWithType: IHurtable
+  fullName: CAF.Combat.IHurtable
+- uid: CAF.Combat.IStatusEffectable
+  commentId: T:CAF.Combat.IStatusEffectable
+  parent: CAF.Combat
+  name: IStatusEffectable
+  nameWithType: IStatusEffectable
+  fullName: CAF.Combat.IStatusEffectable
+- uid: CAF.Combat.ITargetable
+  commentId: T:CAF.Combat.ITargetable
+  parent: CAF.Combat
+  name: ITargetable
+  nameWithType: ITargetable
+  fullName: CAF.Combat.ITargetable
+- uid: CAF.Combat.MovesetAttackNode
+  commentId: T:CAF.Combat.MovesetAttackNode
+  parent: CAF.Combat
+  name: MovesetAttackNode
+  nameWithType: MovesetAttackNode
+  fullName: CAF.Combat.MovesetAttackNode
+- uid: CAF.Combat.MovesetAttackNode.nextNodeDefinition
+  commentId: T:CAF.Combat.MovesetAttackNode.nextNodeDefinition
+  name: MovesetAttackNode.nextNodeDefinition
+  nameWithType: MovesetAttackNode.nextNodeDefinition
+  fullName: CAF.Combat.MovesetAttackNode.nextNodeDefinition
+- uid: CAF.Combat.MovesetDefinition
+  commentId: T:CAF.Combat.MovesetDefinition
+  parent: CAF.Combat
+  name: MovesetDefinition
+  nameWithType: MovesetDefinition
+  fullName: CAF.Combat.MovesetDefinition
+- uid: CAF.Combat.StatusEffect
+  commentId: T:CAF.Combat.StatusEffect
+  parent: CAF.Combat
+  name: StatusEffect
+  nameWithType: StatusEffect
+  fullName: CAF.Combat.StatusEffect
+- uid: CAF.Combat.StatusEffect`1
+  commentId: T:CAF.Combat.StatusEffect`1
+  name: StatusEffect<DataType>
+  nameWithType: StatusEffect<DataType>
+  fullName: CAF.Combat.StatusEffect<DataType>
+  nameWithType.vb: StatusEffect(Of DataType)
+  fullName.vb: CAF.Combat.StatusEffect(Of DataType)
+  name.vb: StatusEffect(Of DataType)
+  spec.csharp:
+  - uid: CAF.Combat.StatusEffect`1
+    name: StatusEffect
+    nameWithType: StatusEffect
+    fullName: CAF.Combat.StatusEffect
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: DataType
+    nameWithType: DataType
+    fullName: DataType
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: CAF.Combat.StatusEffect`1
+    name: StatusEffect
+    nameWithType: StatusEffect
+    fullName: CAF.Combat.StatusEffect
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: DataType
+    nameWithType: DataType
+    fullName: DataType
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CAF.Combat.StatusEffectDefinition
+  commentId: T:CAF.Combat.StatusEffectDefinition
+  parent: CAF.Combat
+  name: StatusEffectDefinition
+  nameWithType: StatusEffectDefinition
+  fullName: CAF.Combat.StatusEffectDefinition
+- uid: CAF.Combat.StatusEffectDefinition`2
+  commentId: T:CAF.Combat.StatusEffectDefinition`2
+  name: StatusEffectDefinition<DataType, StatusEffectType>
+  nameWithType: StatusEffectDefinition<DataType, StatusEffectType>
+  fullName: CAF.Combat.StatusEffectDefinition<DataType, StatusEffectType>
+  nameWithType.vb: StatusEffectDefinition(Of DataType, StatusEffectType)
+  fullName.vb: CAF.Combat.StatusEffectDefinition(Of DataType, StatusEffectType)
+  name.vb: StatusEffectDefinition(Of DataType, StatusEffectType)
+  spec.csharp:
+  - uid: CAF.Combat.StatusEffectDefinition`2
+    name: StatusEffectDefinition
+    nameWithType: StatusEffectDefinition
+    fullName: CAF.Combat.StatusEffectDefinition
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: DataType
+    nameWithType: DataType
+    fullName: DataType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: StatusEffectType
+    nameWithType: StatusEffectType
+    fullName: StatusEffectType
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: CAF.Combat.StatusEffectDefinition`2
+    name: StatusEffectDefinition
+    nameWithType: StatusEffectDefinition
+    fullName: CAF.Combat.StatusEffectDefinition
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: DataType
+    nameWithType: DataType
+    fullName: DataType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: StatusEffectType
+    nameWithType: StatusEffectType
+    fullName: StatusEffectType
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CAF.Combat.AttackDefinitionEditor
+  commentId: T:CAF.Combat.AttackDefinitionEditor
+  name: AttackDefinitionEditor
+  nameWithType: AttackDefinitionEditor
+  fullName: CAF.Combat.AttackDefinitionEditor
+- uid: CAF.Combat.AttackDefinitionEditorWindow
+  commentId: T:CAF.Combat.AttackDefinitionEditorWindow
+  name: AttackDefinitionEditorWindow
+  nameWithType: AttackDefinitionEditorWindow
+  fullName: CAF.Combat.AttackDefinitionEditorWindow
+- uid: CAF.Combat.MovesetAttackNodeEditor
+  commentId: T:CAF.Combat.MovesetAttackNodeEditor
+  name: MovesetAttackNodeEditor
+  nameWithType: MovesetAttackNodeEditor
+  fullName: CAF.Combat.MovesetAttackNodeEditor
+- uid: CAF.Combat
+  commentId: N:CAF.Combat
+  name: CAF.Combat
+  nameWithType: CAF.Combat
+  fullName: CAF.Combat

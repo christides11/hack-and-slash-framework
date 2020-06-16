@@ -1,0 +1,1170 @@
+### YamlMime:ManagedReference
+items:
+- uid: CAF.Combat.Hitbox
+  commentId: T:CAF.Combat.Hitbox
+  id: Hitbox
+  parent: CAF.Combat
+  children:
+  - CAF.Combat.Hitbox.Activate
+  - CAF.Combat.Hitbox.activated
+  - CAF.Combat.Hitbox.CheckHits
+  - CAF.Combat.Hitbox.CheckHurtables
+  - CAF.Combat.Hitbox.coll
+  - CAF.Combat.Hitbox.CreateCapsule(System.Single,System.Single)
+  - CAF.Combat.Hitbox.CreateRectangle(UnityEngine.Vector3)
+  - CAF.Combat.Hitbox.CreateSphere(System.Single)
+  - CAF.Combat.Hitbox.Deactivate
+  - CAF.Combat.Hitbox.directionOwner
+  - CAF.Combat.Hitbox.hitHurtables
+  - CAF.Combat.Hitbox.hitInfo
+  - CAF.Combat.Hitbox.ignoreList
+  - CAF.Combat.Hitbox.Initialize(UnityEngine.GameObject,UnityEngine.Transform,CAF.Combat.BoxShapes,CAF.Combat.HitInfo,CAF.Combat.BoxDefinition,System.Collections.Generic.List{CAF.Combat.IHurtable})
+  - CAF.Combat.Hitbox.OnHurt
+  - CAF.Combat.Hitbox.OnTriggerStay(UnityEngine.Collider)
+  - CAF.Combat.Hitbox.owner
+  - CAF.Combat.Hitbox.ReActivate(System.Collections.Generic.List{CAF.Combat.IHurtable})
+  langs:
+  - csharp
+  - vb
+  name: Hitbox
+  nameWithType: Hitbox
+  fullName: CAF.Combat.Hitbox
+  type: Class
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/Hitbox.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: Hitbox
+    path: ../Assets/CAF/Combat/Boxes/Hitbox.cs
+    startLine: 7
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: 'public class Hitbox : SimObject'
+    content.vb: >-
+      Public Class Hitbox
+
+          Inherits SimObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - CAF.Simulation.SimObject
+  inheritedMembers:
+  - CAF.Simulation.SimObject.simObjectManager
+  - CAF.Simulation.SimObject.Awake
+  - CAF.Simulation.SimObject.Start
+  - CAF.Simulation.SimObject.SimAwake
+  - CAF.Simulation.SimObject.SimStart
+  - CAF.Simulation.SimObject.SimUpdate
+  - CAF.Simulation.SimObject.SimLateUpdate
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CAF.Combat.Hitbox.OnHurt
+  commentId: E:CAF.Combat.Hitbox.OnHurt
+  id: OnHurt
+  parent: CAF.Combat.Hitbox
+  langs:
+  - csharp
+  - vb
+  name: OnHurt
+  nameWithType: Hitbox.OnHurt
+  fullName: CAF.Combat.Hitbox.OnHurt
+  type: Event
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/Hitbox.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: OnHurt
+    path: ../Assets/CAF/Combat/Boxes/Hitbox.cs
+    startLine: 10
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public event Hitbox.HurtAction OnHurt
+    return:
+      type: CAF.Combat.Hitbox.HurtAction
+    content.vb: Public Event OnHurt As Hitbox.HurtAction
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.Hitbox.owner
+  commentId: F:CAF.Combat.Hitbox.owner
+  id: owner
+  parent: CAF.Combat.Hitbox
+  langs:
+  - csharp
+  - vb
+  name: owner
+  nameWithType: Hitbox.owner
+  fullName: CAF.Combat.Hitbox.owner
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/Hitbox.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: owner
+    path: ../Assets/CAF/Combat/Boxes/Hitbox.cs
+    startLine: 12
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: protected GameObject owner
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Protected owner As GameObject
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Combat.Hitbox.directionOwner
+  commentId: F:CAF.Combat.Hitbox.directionOwner
+  id: directionOwner
+  parent: CAF.Combat.Hitbox
+  langs:
+  - csharp
+  - vb
+  name: directionOwner
+  nameWithType: Hitbox.directionOwner
+  fullName: CAF.Combat.Hitbox.directionOwner
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/Hitbox.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: directionOwner
+    path: ../Assets/CAF/Combat/Boxes/Hitbox.cs
+    startLine: 13
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: protected Transform directionOwner
+    return:
+      type: UnityEngine.Transform
+    content.vb: Protected directionOwner As Transform
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Combat.Hitbox.activated
+  commentId: F:CAF.Combat.Hitbox.activated
+  id: activated
+  parent: CAF.Combat.Hitbox
+  langs:
+  - csharp
+  - vb
+  name: activated
+  nameWithType: Hitbox.activated
+  fullName: CAF.Combat.Hitbox.activated
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/Hitbox.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: activated
+    path: ../Assets/CAF/Combat/Boxes/Hitbox.cs
+    startLine: 14
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: protected bool activated
+    return:
+      type: System.Boolean
+    content.vb: Protected activated As Boolean
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Combat.Hitbox.coll
+  commentId: F:CAF.Combat.Hitbox.coll
+  id: coll
+  parent: CAF.Combat.Hitbox
+  langs:
+  - csharp
+  - vb
+  name: coll
+  nameWithType: Hitbox.coll
+  fullName: CAF.Combat.Hitbox.coll
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/Hitbox.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: coll
+    path: ../Assets/CAF/Combat/Boxes/Hitbox.cs
+    startLine: 15
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: protected Collider coll
+    return:
+      type: UnityEngine.Collider
+    content.vb: Protected coll As Collider
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Combat.Hitbox.hitInfo
+  commentId: F:CAF.Combat.Hitbox.hitInfo
+  id: hitInfo
+  parent: CAF.Combat.Hitbox
+  langs:
+  - csharp
+  - vb
+  name: hitInfo
+  nameWithType: Hitbox.hitInfo
+  fullName: CAF.Combat.Hitbox.hitInfo
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/Hitbox.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: hitInfo
+    path: ../Assets/CAF/Combat/Boxes/Hitbox.cs
+    startLine: 16
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public HitInfo hitInfo
+    return:
+      type: CAF.Combat.HitInfo
+    content.vb: Public hitInfo As HitInfo
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.Hitbox.ignoreList
+  commentId: F:CAF.Combat.Hitbox.ignoreList
+  id: ignoreList
+  parent: CAF.Combat.Hitbox
+  langs:
+  - csharp
+  - vb
+  name: ignoreList
+  nameWithType: Hitbox.ignoreList
+  fullName: CAF.Combat.Hitbox.ignoreList
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/Hitbox.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: ignoreList
+    path: ../Assets/CAF/Combat/Boxes/Hitbox.cs
+    startLine: 18
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public List<IHurtable> ignoreList
+    return:
+      type: System.Collections.Generic.List{CAF.Combat.IHurtable}
+    content.vb: Public ignoreList As List(Of IHurtable)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.Hitbox.hitHurtables
+  commentId: F:CAF.Combat.Hitbox.hitHurtables
+  id: hitHurtables
+  parent: CAF.Combat.Hitbox
+  langs:
+  - csharp
+  - vb
+  name: hitHurtables
+  nameWithType: Hitbox.hitHurtables
+  fullName: CAF.Combat.Hitbox.hitHurtables
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/Hitbox.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: hitHurtables
+    path: ../Assets/CAF/Combat/Boxes/Hitbox.cs
+    startLine: 19
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public List<GameObject> hitHurtables
+    return:
+      type: System.Collections.Generic.List{UnityEngine.GameObject}
+    content.vb: Public hitHurtables As List(Of GameObject)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.Hitbox.Initialize(UnityEngine.GameObject,UnityEngine.Transform,CAF.Combat.BoxShapes,CAF.Combat.HitInfo,CAF.Combat.BoxDefinition,System.Collections.Generic.List{CAF.Combat.IHurtable})
+  commentId: M:CAF.Combat.Hitbox.Initialize(UnityEngine.GameObject,UnityEngine.Transform,CAF.Combat.BoxShapes,CAF.Combat.HitInfo,CAF.Combat.BoxDefinition,System.Collections.Generic.List{CAF.Combat.IHurtable})
+  id: Initialize(UnityEngine.GameObject,UnityEngine.Transform,CAF.Combat.BoxShapes,CAF.Combat.HitInfo,CAF.Combat.BoxDefinition,System.Collections.Generic.List{CAF.Combat.IHurtable})
+  parent: CAF.Combat.Hitbox
+  langs:
+  - csharp
+  - vb
+  name: Initialize(GameObject, Transform, BoxShapes, HitInfo, BoxDefinition, List<IHurtable>)
+  nameWithType: Hitbox.Initialize(GameObject, Transform, BoxShapes, HitInfo, BoxDefinition, List<IHurtable>)
+  fullName: CAF.Combat.Hitbox.Initialize(UnityEngine.GameObject, UnityEngine.Transform, CAF.Combat.BoxShapes, CAF.Combat.HitInfo, CAF.Combat.BoxDefinition, System.Collections.Generic.List<CAF.Combat.IHurtable>)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/Hitbox.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: Initialize
+    path: ../Assets/CAF/Combat/Boxes/Hitbox.cs
+    startLine: 21
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public virtual void Initialize(GameObject owner, Transform directionOwner, BoxShapes shape, HitInfo hitInfo, BoxDefinition boxDefinition, List<IHurtable> ignoreList = null)
+    parameters:
+    - id: owner
+      type: UnityEngine.GameObject
+    - id: directionOwner
+      type: UnityEngine.Transform
+    - id: shape
+      type: CAF.Combat.BoxShapes
+    - id: hitInfo
+      type: CAF.Combat.HitInfo
+    - id: boxDefinition
+      type: CAF.Combat.BoxDefinition
+    - id: ignoreList
+      type: System.Collections.Generic.List{CAF.Combat.IHurtable}
+    content.vb: Public Overridable Sub Initialize(owner As GameObject, directionOwner As Transform, shape As BoxShapes, hitInfo As HitInfo, boxDefinition As BoxDefinition, ignoreList As List(Of IHurtable) = Nothing)
+  overload: CAF.Combat.Hitbox.Initialize*
+  nameWithType.vb: Hitbox.Initialize(GameObject, Transform, BoxShapes, HitInfo, BoxDefinition, List(Of IHurtable))
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: CAF.Combat.Hitbox.Initialize(UnityEngine.GameObject, UnityEngine.Transform, CAF.Combat.BoxShapes, CAF.Combat.HitInfo, CAF.Combat.BoxDefinition, System.Collections.Generic.List(Of CAF.Combat.IHurtable))
+  name.vb: Initialize(GameObject, Transform, BoxShapes, HitInfo, BoxDefinition, List(Of IHurtable))
+- uid: CAF.Combat.Hitbox.Activate
+  commentId: M:CAF.Combat.Hitbox.Activate
+  id: Activate
+  parent: CAF.Combat.Hitbox
+  langs:
+  - csharp
+  - vb
+  name: Activate()
+  nameWithType: Hitbox.Activate()
+  fullName: CAF.Combat.Hitbox.Activate()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/Hitbox.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: Activate
+    path: ../Assets/CAF/Combat/Boxes/Hitbox.cs
+    startLine: 43
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public virtual void Activate()
+    content.vb: Public Overridable Sub Activate
+  overload: CAF.Combat.Hitbox.Activate*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Combat.Hitbox.Deactivate
+  commentId: M:CAF.Combat.Hitbox.Deactivate
+  id: Deactivate
+  parent: CAF.Combat.Hitbox
+  langs:
+  - csharp
+  - vb
+  name: Deactivate()
+  nameWithType: Hitbox.Deactivate()
+  fullName: CAF.Combat.Hitbox.Deactivate()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/Hitbox.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: Deactivate
+    path: ../Assets/CAF/Combat/Boxes/Hitbox.cs
+    startLine: 52
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  summary: "\nDeactivates the hitbox.\n"
+  example: []
+  syntax:
+    content: public virtual void Deactivate()
+    content.vb: Public Overridable Sub Deactivate
+  overload: CAF.Combat.Hitbox.Deactivate*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Combat.Hitbox.ReActivate(System.Collections.Generic.List{CAF.Combat.IHurtable})
+  commentId: M:CAF.Combat.Hitbox.ReActivate(System.Collections.Generic.List{CAF.Combat.IHurtable})
+  id: ReActivate(System.Collections.Generic.List{CAF.Combat.IHurtable})
+  parent: CAF.Combat.Hitbox
+  langs:
+  - csharp
+  - vb
+  name: ReActivate(List<IHurtable>)
+  nameWithType: Hitbox.ReActivate(List<IHurtable>)
+  fullName: CAF.Combat.Hitbox.ReActivate(System.Collections.Generic.List<CAF.Combat.IHurtable>)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/Hitbox.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: ReActivate
+    path: ../Assets/CAF/Combat/Boxes/Hitbox.cs
+    startLine: 62
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  summary: "\nReactivates the hitbox, settings it&apos;s parameters back to their defaults.\n"
+  example: []
+  syntax:
+    content: public virtual void ReActivate(List<IHurtable> ignoreList = null)
+    parameters:
+    - id: ignoreList
+      type: System.Collections.Generic.List{CAF.Combat.IHurtable}
+      description: ''
+    content.vb: Public Overridable Sub ReActivate(ignoreList As List(Of IHurtable) = Nothing)
+  overload: CAF.Combat.Hitbox.ReActivate*
+  nameWithType.vb: Hitbox.ReActivate(List(Of IHurtable))
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: CAF.Combat.Hitbox.ReActivate(System.Collections.Generic.List(Of CAF.Combat.IHurtable))
+  name.vb: ReActivate(List(Of IHurtable))
+- uid: CAF.Combat.Hitbox.CreateRectangle(UnityEngine.Vector3)
+  commentId: M:CAF.Combat.Hitbox.CreateRectangle(UnityEngine.Vector3)
+  id: CreateRectangle(UnityEngine.Vector3)
+  parent: CAF.Combat.Hitbox
+  langs:
+  - csharp
+  - vb
+  name: CreateRectangle(Vector3)
+  nameWithType: Hitbox.CreateRectangle(Vector3)
+  fullName: CAF.Combat.Hitbox.CreateRectangle(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/Hitbox.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: CreateRectangle
+    path: ../Assets/CAF/Combat/Boxes/Hitbox.cs
+    startLine: 74
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  summary: "\nInitializes the hitbox as a rectangle type hitbox.\n"
+  example: []
+  syntax:
+    content: protected virtual void CreateRectangle(Vector3 size)
+    parameters:
+    - id: size
+      type: UnityEngine.Vector3
+      description: The size of the hitbox.
+    content.vb: Protected Overridable Sub CreateRectangle(size As Vector3)
+  overload: CAF.Combat.Hitbox.CreateRectangle*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Combat.Hitbox.CreateSphere(System.Single)
+  commentId: M:CAF.Combat.Hitbox.CreateSphere(System.Single)
+  id: CreateSphere(System.Single)
+  parent: CAF.Combat.Hitbox
+  langs:
+  - csharp
+  - vb
+  name: CreateSphere(Single)
+  nameWithType: Hitbox.CreateSphere(Single)
+  fullName: CAF.Combat.Hitbox.CreateSphere(System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/Hitbox.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: CreateSphere
+    path: ../Assets/CAF/Combat/Boxes/Hitbox.cs
+    startLine: 82
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: protected virtual void CreateSphere(float radius)
+    parameters:
+    - id: radius
+      type: System.Single
+    content.vb: Protected Overridable Sub CreateSphere(radius As Single)
+  overload: CAF.Combat.Hitbox.CreateSphere*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Combat.Hitbox.CreateCapsule(System.Single,System.Single)
+  commentId: M:CAF.Combat.Hitbox.CreateCapsule(System.Single,System.Single)
+  id: CreateCapsule(System.Single,System.Single)
+  parent: CAF.Combat.Hitbox
+  langs:
+  - csharp
+  - vb
+  name: CreateCapsule(Single, Single)
+  nameWithType: Hitbox.CreateCapsule(Single, Single)
+  fullName: CAF.Combat.Hitbox.CreateCapsule(System.Single, System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/Hitbox.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: CreateCapsule
+    path: ../Assets/CAF/Combat/Boxes/Hitbox.cs
+    startLine: 90
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: protected virtual void CreateCapsule(float radius, float height)
+    parameters:
+    - id: radius
+      type: System.Single
+    - id: height
+      type: System.Single
+    content.vb: Protected Overridable Sub CreateCapsule(radius As Single, height As Single)
+  overload: CAF.Combat.Hitbox.CreateCapsule*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Combat.Hitbox.CheckHits
+  commentId: M:CAF.Combat.Hitbox.CheckHits
+  id: CheckHits
+  parent: CAF.Combat.Hitbox
+  langs:
+  - csharp
+  - vb
+  name: CheckHits()
+  nameWithType: Hitbox.CheckHits()
+  fullName: CAF.Combat.Hitbox.CheckHits()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/Hitbox.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: CheckHits
+    path: ../Assets/CAF/Combat/Boxes/Hitbox.cs
+    startLine: 100
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public virtual void CheckHits()
+    content.vb: Public Overridable Sub CheckHits
+  overload: CAF.Combat.Hitbox.CheckHits*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Combat.Hitbox.CheckHurtables
+  commentId: M:CAF.Combat.Hitbox.CheckHurtables
+  id: CheckHurtables
+  parent: CAF.Combat.Hitbox
+  langs:
+  - csharp
+  - vb
+  name: CheckHurtables()
+  nameWithType: Hitbox.CheckHurtables()
+  fullName: CAF.Combat.Hitbox.CheckHurtables()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/Hitbox.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: CheckHurtables
+    path: ../Assets/CAF/Combat/Boxes/Hitbox.cs
+    startLine: 107
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: protected virtual void CheckHurtables()
+    content.vb: Protected Overridable Sub CheckHurtables
+  overload: CAF.Combat.Hitbox.CheckHurtables*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Combat.Hitbox.OnTriggerStay(UnityEngine.Collider)
+  commentId: M:CAF.Combat.Hitbox.OnTriggerStay(UnityEngine.Collider)
+  id: OnTriggerStay(UnityEngine.Collider)
+  parent: CAF.Combat.Hitbox
+  langs:
+  - csharp
+  - vb
+  name: OnTriggerStay(Collider)
+  nameWithType: Hitbox.OnTriggerStay(Collider)
+  fullName: CAF.Combat.Hitbox.OnTriggerStay(UnityEngine.Collider)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/Hitbox.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: OnTriggerStay
+    path: ../Assets/CAF/Combat/Boxes/Hitbox.cs
+    startLine: 141
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  summary: "\nCalled every tick for whatever object&apos;s are within this hitbox.\nGets all the hitboxes and checks if they should be hurt next LateUpdate.\n"
+  example: []
+  syntax:
+    content: protected virtual void OnTriggerStay(Collider other)
+    parameters:
+    - id: other
+      type: UnityEngine.Collider
+      description: The collider in our hitbox.
+    content.vb: Protected Overridable Sub OnTriggerStay(other As Collider)
+  overload: CAF.Combat.Hitbox.OnTriggerStay*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+references:
+- uid: CAF.Combat
+  commentId: N:CAF.Combat
+  name: CAF.Combat
+  nameWithType: CAF.Combat
+  fullName: CAF.Combat
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: CAF.Simulation.SimObject
+  commentId: T:CAF.Simulation.SimObject
+  parent: CAF.Simulation
+  name: SimObject
+  nameWithType: SimObject
+  fullName: CAF.Simulation.SimObject
+- uid: CAF.Simulation.SimObject.simObjectManager
+  commentId: F:CAF.Simulation.SimObject.simObjectManager
+  parent: CAF.Simulation.SimObject
+  name: simObjectManager
+  nameWithType: SimObject.simObjectManager
+  fullName: CAF.Simulation.SimObject.simObjectManager
+- uid: CAF.Simulation.SimObject.Awake
+  commentId: M:CAF.Simulation.SimObject.Awake
+  parent: CAF.Simulation.SimObject
+  name: Awake()
+  nameWithType: SimObject.Awake()
+  fullName: CAF.Simulation.SimObject.Awake()
+  spec.csharp:
+  - uid: CAF.Simulation.SimObject.Awake
+    name: Awake
+    nameWithType: SimObject.Awake
+    fullName: CAF.Simulation.SimObject.Awake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CAF.Simulation.SimObject.Awake
+    name: Awake
+    nameWithType: SimObject.Awake
+    fullName: CAF.Simulation.SimObject.Awake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CAF.Simulation.SimObject.Start
+  commentId: M:CAF.Simulation.SimObject.Start
+  parent: CAF.Simulation.SimObject
+  name: Start()
+  nameWithType: SimObject.Start()
+  fullName: CAF.Simulation.SimObject.Start()
+  spec.csharp:
+  - uid: CAF.Simulation.SimObject.Start
+    name: Start
+    nameWithType: SimObject.Start
+    fullName: CAF.Simulation.SimObject.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CAF.Simulation.SimObject.Start
+    name: Start
+    nameWithType: SimObject.Start
+    fullName: CAF.Simulation.SimObject.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CAF.Simulation.SimObject.SimAwake
+  commentId: M:CAF.Simulation.SimObject.SimAwake
+  parent: CAF.Simulation.SimObject
+  name: SimAwake()
+  nameWithType: SimObject.SimAwake()
+  fullName: CAF.Simulation.SimObject.SimAwake()
+  spec.csharp:
+  - uid: CAF.Simulation.SimObject.SimAwake
+    name: SimAwake
+    nameWithType: SimObject.SimAwake
+    fullName: CAF.Simulation.SimObject.SimAwake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CAF.Simulation.SimObject.SimAwake
+    name: SimAwake
+    nameWithType: SimObject.SimAwake
+    fullName: CAF.Simulation.SimObject.SimAwake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CAF.Simulation.SimObject.SimStart
+  commentId: M:CAF.Simulation.SimObject.SimStart
+  parent: CAF.Simulation.SimObject
+  name: SimStart()
+  nameWithType: SimObject.SimStart()
+  fullName: CAF.Simulation.SimObject.SimStart()
+  spec.csharp:
+  - uid: CAF.Simulation.SimObject.SimStart
+    name: SimStart
+    nameWithType: SimObject.SimStart
+    fullName: CAF.Simulation.SimObject.SimStart
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CAF.Simulation.SimObject.SimStart
+    name: SimStart
+    nameWithType: SimObject.SimStart
+    fullName: CAF.Simulation.SimObject.SimStart
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CAF.Simulation.SimObject.SimUpdate
+  commentId: M:CAF.Simulation.SimObject.SimUpdate
+  parent: CAF.Simulation.SimObject
+  name: SimUpdate()
+  nameWithType: SimObject.SimUpdate()
+  fullName: CAF.Simulation.SimObject.SimUpdate()
+  spec.csharp:
+  - uid: CAF.Simulation.SimObject.SimUpdate
+    name: SimUpdate
+    nameWithType: SimObject.SimUpdate
+    fullName: CAF.Simulation.SimObject.SimUpdate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CAF.Simulation.SimObject.SimUpdate
+    name: SimUpdate
+    nameWithType: SimObject.SimUpdate
+    fullName: CAF.Simulation.SimObject.SimUpdate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CAF.Simulation.SimObject.SimLateUpdate
+  commentId: M:CAF.Simulation.SimObject.SimLateUpdate
+  parent: CAF.Simulation.SimObject
+  name: SimLateUpdate()
+  nameWithType: SimObject.SimLateUpdate()
+  fullName: CAF.Simulation.SimObject.SimLateUpdate()
+  spec.csharp:
+  - uid: CAF.Simulation.SimObject.SimLateUpdate
+    name: SimLateUpdate
+    nameWithType: SimObject.SimLateUpdate
+    fullName: CAF.Simulation.SimObject.SimLateUpdate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CAF.Simulation.SimObject.SimLateUpdate
+    name: SimLateUpdate
+    nameWithType: SimObject.SimLateUpdate
+    fullName: CAF.Simulation.SimObject.SimLateUpdate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: CAF.Simulation
+  commentId: N:CAF.Simulation
+  name: CAF.Simulation
+  nameWithType: CAF.Simulation
+  fullName: CAF.Simulation
+- uid: CAF.Combat.Hitbox.HurtAction
+  commentId: T:CAF.Combat.Hitbox.HurtAction
+  parent: CAF.Combat
+  name: Hitbox.HurtAction
+  nameWithType: Hitbox.HurtAction
+  fullName: CAF.Combat.Hitbox.HurtAction
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: UnityEngine.Collider
+  commentId: T:UnityEngine.Collider
+  parent: UnityEngine
+  isExternal: true
+  name: Collider
+  nameWithType: Collider
+  fullName: UnityEngine.Collider
+- uid: CAF.Combat.HitInfo
+  commentId: T:CAF.Combat.HitInfo
+  parent: CAF.Combat
+  name: HitInfo
+  nameWithType: HitInfo
+  fullName: CAF.Combat.HitInfo
+- uid: System.Collections.Generic.List{CAF.Combat.IHurtable}
+  commentId: T:System.Collections.Generic.List{CAF.Combat.IHurtable}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<IHurtable>
+  nameWithType: List<IHurtable>
+  fullName: System.Collections.Generic.List<CAF.Combat.IHurtable>
+  nameWithType.vb: List(Of IHurtable)
+  fullName.vb: System.Collections.Generic.List(Of CAF.Combat.IHurtable)
+  name.vb: List(Of IHurtable)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CAF.Combat.IHurtable
+    name: IHurtable
+    nameWithType: IHurtable
+    fullName: CAF.Combat.IHurtable
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CAF.Combat.IHurtable
+    name: IHurtable
+    nameWithType: IHurtable
+    fullName: CAF.Combat.IHurtable
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.List{UnityEngine.GameObject}
+  commentId: T:System.Collections.Generic.List{UnityEngine.GameObject}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<GameObject>
+  nameWithType: List<GameObject>
+  fullName: System.Collections.Generic.List<UnityEngine.GameObject>
+  nameWithType.vb: List(Of GameObject)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.GameObject)
+  name.vb: List(Of GameObject)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    nameWithType: GameObject
+    fullName: UnityEngine.GameObject
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    nameWithType: GameObject
+    fullName: UnityEngine.GameObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CAF.Combat.Hitbox.Initialize*
+  commentId: Overload:CAF.Combat.Hitbox.Initialize
+  name: Initialize
+  nameWithType: Hitbox.Initialize
+  fullName: CAF.Combat.Hitbox.Initialize
+- uid: CAF.Combat.BoxShapes
+  commentId: T:CAF.Combat.BoxShapes
+  parent: CAF.Combat
+  name: BoxShapes
+  nameWithType: BoxShapes
+  fullName: CAF.Combat.BoxShapes
+- uid: CAF.Combat.BoxDefinition
+  commentId: T:CAF.Combat.BoxDefinition
+  parent: CAF.Combat
+  name: BoxDefinition
+  nameWithType: BoxDefinition
+  fullName: CAF.Combat.BoxDefinition
+- uid: CAF.Combat.Hitbox.Activate*
+  commentId: Overload:CAF.Combat.Hitbox.Activate
+  name: Activate
+  nameWithType: Hitbox.Activate
+  fullName: CAF.Combat.Hitbox.Activate
+- uid: CAF.Combat.Hitbox.Deactivate*
+  commentId: Overload:CAF.Combat.Hitbox.Deactivate
+  name: Deactivate
+  nameWithType: Hitbox.Deactivate
+  fullName: CAF.Combat.Hitbox.Deactivate
+- uid: CAF.Combat.Hitbox.ReActivate*
+  commentId: Overload:CAF.Combat.Hitbox.ReActivate
+  name: ReActivate
+  nameWithType: Hitbox.ReActivate
+  fullName: CAF.Combat.Hitbox.ReActivate
+- uid: CAF.Combat.Hitbox.CreateRectangle*
+  commentId: Overload:CAF.Combat.Hitbox.CreateRectangle
+  name: CreateRectangle
+  nameWithType: Hitbox.CreateRectangle
+  fullName: CAF.Combat.Hitbox.CreateRectangle
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: CAF.Combat.Hitbox.CreateSphere*
+  commentId: Overload:CAF.Combat.Hitbox.CreateSphere
+  name: CreateSphere
+  nameWithType: Hitbox.CreateSphere
+  fullName: CAF.Combat.Hitbox.CreateSphere
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: CAF.Combat.Hitbox.CreateCapsule*
+  commentId: Overload:CAF.Combat.Hitbox.CreateCapsule
+  name: CreateCapsule
+  nameWithType: Hitbox.CreateCapsule
+  fullName: CAF.Combat.Hitbox.CreateCapsule
+- uid: CAF.Combat.Hitbox.CheckHits*
+  commentId: Overload:CAF.Combat.Hitbox.CheckHits
+  name: CheckHits
+  nameWithType: Hitbox.CheckHits
+  fullName: CAF.Combat.Hitbox.CheckHits
+- uid: CAF.Combat.Hitbox.CheckHurtables*
+  commentId: Overload:CAF.Combat.Hitbox.CheckHurtables
+  name: CheckHurtables
+  nameWithType: Hitbox.CheckHurtables
+  fullName: CAF.Combat.Hitbox.CheckHurtables
+- uid: CAF.Combat.Hitbox.OnTriggerStay*
+  commentId: Overload:CAF.Combat.Hitbox.OnTriggerStay
+  name: OnTriggerStay
+  nameWithType: Hitbox.OnTriggerStay
+  fullName: CAF.Combat.Hitbox.OnTriggerStay

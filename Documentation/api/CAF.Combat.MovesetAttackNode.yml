@@ -1,0 +1,637 @@
+### YamlMime:ManagedReference
+items:
+- uid: CAF.Combat.MovesetAttackNode
+  commentId: T:CAF.Combat.MovesetAttackNode
+  id: MovesetAttackNode
+  parent: CAF.Combat
+  children:
+  - CAF.Combat.MovesetAttackNode.attackDefinition
+  - CAF.Combat.MovesetAttackNode.executeInputs
+  - CAF.Combat.MovesetAttackNode.GetValue(XNode.NodePort)
+  - CAF.Combat.MovesetAttackNode.inputSequence
+  - CAF.Combat.MovesetAttackNode.lastNode
+  - CAF.Combat.MovesetAttackNode.nextNode
+  - CAF.Combat.MovesetAttackNode.OnCreateConnection(XNode.NodePort,XNode.NodePort)
+  langs:
+  - csharp
+  - vb
+  name: MovesetAttackNode
+  nameWithType: MovesetAttackNode
+  fullName: CAF.Combat.MovesetAttackNode
+  type: Class
+  source:
+    remote:
+      path: Assets/CAF/Combat/Moveset/MovesetAttackNode.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: MovesetAttackNode
+    path: ../Assets/CAF/Combat/Moveset/MovesetAttackNode.cs
+    startLine: 7
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class MovesetAttackNode : Node
+    content.vb: >-
+      <Serializable>
+
+      Public Class MovesetAttackNode
+
+          Inherits Node
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - XNode.Node
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CAF.Combat.MovesetAttackNode.lastNode
+  commentId: F:CAF.Combat.MovesetAttackNode.lastNode
+  id: lastNode
+  parent: CAF.Combat.MovesetAttackNode
+  langs:
+  - csharp
+  - vb
+  name: lastNode
+  nameWithType: MovesetAttackNode.lastNode
+  fullName: CAF.Combat.MovesetAttackNode.lastNode
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Moveset/MovesetAttackNode.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: lastNode
+    path: ../Assets/CAF/Combat/Moveset/MovesetAttackNode.cs
+    startLine: 17
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: >-
+      [Node.Input(Node.ShowBackingValue.Unconnected, Node.ConnectionType.Multiple, Node.TypeConstraint.None, false)]
+
+      public MovesetAttackNode lastNode
+    return:
+      type: CAF.Combat.MovesetAttackNode
+    content.vb: >-
+      <Node.Input(Node.ShowBackingValue.Unconnected, Node.ConnectionType.Multiple, Node.TypeConstraint.None, False)>
+
+      Public lastNode As MovesetAttackNode
+  attributes:
+  - type: XNode.Node.InputAttribute
+    ctor: XNode.Node.InputAttribute.#ctor(XNode.Node.ShowBackingValue,XNode.Node.ConnectionType,XNode.Node.TypeConstraint,System.Boolean)
+    arguments:
+    - type: XNode.Node.ShowBackingValue
+      value: 1
+    - type: XNode.Node.ConnectionType
+      value: 0
+    - type: XNode.Node.TypeConstraint
+      value: 0
+    - type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.MovesetAttackNode.executeInputs
+  commentId: F:CAF.Combat.MovesetAttackNode.executeInputs
+  id: executeInputs
+  parent: CAF.Combat.MovesetAttackNode
+  langs:
+  - csharp
+  - vb
+  name: executeInputs
+  nameWithType: MovesetAttackNode.executeInputs
+  fullName: CAF.Combat.MovesetAttackNode.executeInputs
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Moveset/MovesetAttackNode.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: executeInputs
+    path: ../Assets/CAF/Combat/Moveset/MovesetAttackNode.cs
+    startLine: 19
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public List<InputDefinition> executeInputs
+    return:
+      type: System.Collections.Generic.List{CAF.Input.InputDefinition}
+    content.vb: Public executeInputs As List(Of InputDefinition)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.MovesetAttackNode.inputSequence
+  commentId: F:CAF.Combat.MovesetAttackNode.inputSequence
+  id: inputSequence
+  parent: CAF.Combat.MovesetAttackNode
+  langs:
+  - csharp
+  - vb
+  name: inputSequence
+  nameWithType: MovesetAttackNode.inputSequence
+  fullName: CAF.Combat.MovesetAttackNode.inputSequence
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Moveset/MovesetAttackNode.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: inputSequence
+    path: ../Assets/CAF/Combat/Moveset/MovesetAttackNode.cs
+    startLine: 20
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public List<InputDefinition> inputSequence
+    return:
+      type: System.Collections.Generic.List{CAF.Input.InputDefinition}
+    content.vb: Public inputSequence As List(Of InputDefinition)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.MovesetAttackNode.attackDefinition
+  commentId: F:CAF.Combat.MovesetAttackNode.attackDefinition
+  id: attackDefinition
+  parent: CAF.Combat.MovesetAttackNode
+  langs:
+  - csharp
+  - vb
+  name: attackDefinition
+  nameWithType: MovesetAttackNode.attackDefinition
+  fullName: CAF.Combat.MovesetAttackNode.attackDefinition
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Moveset/MovesetAttackNode.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: attackDefinition
+    path: ../Assets/CAF/Combat/Moveset/MovesetAttackNode.cs
+    startLine: 21
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public AttackDefinition attackDefinition
+    return:
+      type: CAF.Combat.AttackDefinition
+    content.vb: Public attackDefinition As AttackDefinition
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.MovesetAttackNode.nextNode
+  commentId: F:CAF.Combat.MovesetAttackNode.nextNode
+  id: nextNode
+  parent: CAF.Combat.MovesetAttackNode
+  langs:
+  - csharp
+  - vb
+  name: nextNode
+  nameWithType: MovesetAttackNode.nextNode
+  fullName: CAF.Combat.MovesetAttackNode.nextNode
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Moveset/MovesetAttackNode.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: nextNode
+    path: ../Assets/CAF/Combat/Moveset/MovesetAttackNode.cs
+    startLine: 23
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: >-
+      [Node.Output(Node.ShowBackingValue.Never, Node.ConnectionType.Multiple, Node.TypeConstraint.None, false, dynamicPortList = true)]
+
+      public List<MovesetAttackNode.nextNodeDefinition> nextNode
+    return:
+      type: System.Collections.Generic.List{CAF.Combat.MovesetAttackNode.nextNodeDefinition}
+    content.vb: >-
+      <Node.Output(Node.ShowBackingValue.Never, Node.ConnectionType.Multiple, Node.TypeConstraint.None, False, dynamicPortList:=True)>
+
+      Public nextNode As List(Of MovesetAttackNode.nextNodeDefinition)
+  attributes:
+  - type: XNode.Node.OutputAttribute
+    ctor: XNode.Node.OutputAttribute.#ctor(XNode.Node.ShowBackingValue,XNode.Node.ConnectionType,XNode.Node.TypeConstraint,System.Boolean)
+    arguments:
+    - type: XNode.Node.ShowBackingValue
+      value: 0
+    - type: XNode.Node.ConnectionType
+      value: 0
+    - type: XNode.Node.TypeConstraint
+      value: 0
+    - type: System.Boolean
+      value: false
+    namedArguments:
+    - name: dynamicPortList
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.MovesetAttackNode.OnCreateConnection(XNode.NodePort,XNode.NodePort)
+  commentId: M:CAF.Combat.MovesetAttackNode.OnCreateConnection(XNode.NodePort,XNode.NodePort)
+  id: OnCreateConnection(XNode.NodePort,XNode.NodePort)
+  parent: CAF.Combat.MovesetAttackNode
+  langs:
+  - csharp
+  - vb
+  name: OnCreateConnection(NodePort, NodePort)
+  nameWithType: MovesetAttackNode.OnCreateConnection(NodePort, NodePort)
+  fullName: CAF.Combat.MovesetAttackNode.OnCreateConnection(XNode.NodePort, XNode.NodePort)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Combat/Moveset/MovesetAttackNode.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: OnCreateConnection
+    path: ../Assets/CAF/Combat/Moveset/MovesetAttackNode.cs
+    startLine: 25
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public override void OnCreateConnection(NodePort from, NodePort to)
+    parameters:
+    - id: from
+      type: XNode.NodePort
+    - id: to
+      type: XNode.NodePort
+    content.vb: Public Overrides Sub OnCreateConnection(from As NodePort, to As NodePort)
+  overridden: XNode.Node.OnCreateConnection(XNode.NodePort,XNode.NodePort)
+  overload: CAF.Combat.MovesetAttackNode.OnCreateConnection*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: CAF.Combat.MovesetAttackNode.GetValue(XNode.NodePort)
+  commentId: M:CAF.Combat.MovesetAttackNode.GetValue(XNode.NodePort)
+  id: GetValue(XNode.NodePort)
+  parent: CAF.Combat.MovesetAttackNode
+  langs:
+  - csharp
+  - vb
+  name: GetValue(NodePort)
+  nameWithType: MovesetAttackNode.GetValue(NodePort)
+  fullName: CAF.Combat.MovesetAttackNode.GetValue(XNode.NodePort)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Combat/Moveset/MovesetAttackNode.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: GetValue
+    path: ../Assets/CAF/Combat/Moveset/MovesetAttackNode.cs
+    startLine: 38
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public override object GetValue(NodePort port)
+    parameters:
+    - id: port
+      type: XNode.NodePort
+    return:
+      type: System.Object
+    content.vb: Public Overrides Function GetValue(port As NodePort) As Object
+  overridden: XNode.Node.GetValue(XNode.NodePort)
+  overload: CAF.Combat.MovesetAttackNode.GetValue*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: CAF.Combat
+  commentId: N:CAF.Combat
+  name: CAF.Combat
+  nameWithType: CAF.Combat
+  fullName: CAF.Combat
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: XNode.Node
+  commentId: T:XNode.Node
+  parent: XNode
+  isExternal: true
+  name: Node
+  nameWithType: Node
+  fullName: XNode.Node
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: XNode
+  commentId: N:XNode
+  isExternal: true
+  name: XNode
+  nameWithType: XNode
+  fullName: XNode
+- uid: CAF.Combat.MovesetAttackNode
+  commentId: T:CAF.Combat.MovesetAttackNode
+  parent: CAF.Combat
+  name: MovesetAttackNode
+  nameWithType: MovesetAttackNode
+  fullName: CAF.Combat.MovesetAttackNode
+- uid: System.Collections.Generic.List{CAF.Input.InputDefinition}
+  commentId: T:System.Collections.Generic.List{CAF.Input.InputDefinition}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<InputDefinition>
+  nameWithType: List<InputDefinition>
+  fullName: System.Collections.Generic.List<CAF.Input.InputDefinition>
+  nameWithType.vb: List(Of InputDefinition)
+  fullName.vb: System.Collections.Generic.List(Of CAF.Input.InputDefinition)
+  name.vb: List(Of InputDefinition)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CAF.Input.InputDefinition
+    name: InputDefinition
+    nameWithType: InputDefinition
+    fullName: CAF.Input.InputDefinition
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CAF.Input.InputDefinition
+    name: InputDefinition
+    nameWithType: InputDefinition
+    fullName: CAF.Input.InputDefinition
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: CAF.Combat.AttackDefinition
+  commentId: T:CAF.Combat.AttackDefinition
+  parent: CAF.Combat
+  name: AttackDefinition
+  nameWithType: AttackDefinition
+  fullName: CAF.Combat.AttackDefinition
+- uid: System.Collections.Generic.List{CAF.Combat.MovesetAttackNode.nextNodeDefinition}
+  commentId: T:System.Collections.Generic.List{CAF.Combat.MovesetAttackNode.nextNodeDefinition}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<MovesetAttackNode.nextNodeDefinition>
+  nameWithType: List<MovesetAttackNode.nextNodeDefinition>
+  fullName: System.Collections.Generic.List<CAF.Combat.MovesetAttackNode.nextNodeDefinition>
+  nameWithType.vb: List(Of MovesetAttackNode.nextNodeDefinition)
+  fullName.vb: System.Collections.Generic.List(Of CAF.Combat.MovesetAttackNode.nextNodeDefinition)
+  name.vb: List(Of MovesetAttackNode.nextNodeDefinition)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CAF.Combat.MovesetAttackNode.nextNodeDefinition
+    name: MovesetAttackNode.nextNodeDefinition
+    nameWithType: MovesetAttackNode.nextNodeDefinition
+    fullName: CAF.Combat.MovesetAttackNode.nextNodeDefinition
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CAF.Combat.MovesetAttackNode.nextNodeDefinition
+    name: MovesetAttackNode.nextNodeDefinition
+    nameWithType: MovesetAttackNode.nextNodeDefinition
+    fullName: CAF.Combat.MovesetAttackNode.nextNodeDefinition
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: XNode.Node.OnCreateConnection(XNode.NodePort,XNode.NodePort)
+  commentId: M:XNode.Node.OnCreateConnection(XNode.NodePort,XNode.NodePort)
+  parent: XNode.Node
+  isExternal: true
+  name: OnCreateConnection(NodePort, NodePort)
+  nameWithType: Node.OnCreateConnection(NodePort, NodePort)
+  fullName: XNode.Node.OnCreateConnection(XNode.NodePort, XNode.NodePort)
+  spec.csharp:
+  - uid: XNode.Node.OnCreateConnection(XNode.NodePort,XNode.NodePort)
+    name: OnCreateConnection
+    nameWithType: Node.OnCreateConnection
+    fullName: XNode.Node.OnCreateConnection
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: XNode.NodePort
+    name: NodePort
+    nameWithType: NodePort
+    fullName: XNode.NodePort
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: XNode.NodePort
+    name: NodePort
+    nameWithType: NodePort
+    fullName: XNode.NodePort
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: XNode.Node.OnCreateConnection(XNode.NodePort,XNode.NodePort)
+    name: OnCreateConnection
+    nameWithType: Node.OnCreateConnection
+    fullName: XNode.Node.OnCreateConnection
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: XNode.NodePort
+    name: NodePort
+    nameWithType: NodePort
+    fullName: XNode.NodePort
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: XNode.NodePort
+    name: NodePort
+    nameWithType: NodePort
+    fullName: XNode.NodePort
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CAF.Combat.MovesetAttackNode.OnCreateConnection*
+  commentId: Overload:CAF.Combat.MovesetAttackNode.OnCreateConnection
+  name: OnCreateConnection
+  nameWithType: MovesetAttackNode.OnCreateConnection
+  fullName: CAF.Combat.MovesetAttackNode.OnCreateConnection
+- uid: XNode.NodePort
+  commentId: T:XNode.NodePort
+  parent: XNode
+  isExternal: true
+  name: NodePort
+  nameWithType: NodePort
+  fullName: XNode.NodePort
+- uid: XNode.Node.GetValue(XNode.NodePort)
+  commentId: M:XNode.Node.GetValue(XNode.NodePort)
+  parent: XNode.Node
+  isExternal: true
+  name: GetValue(NodePort)
+  nameWithType: Node.GetValue(NodePort)
+  fullName: XNode.Node.GetValue(XNode.NodePort)
+  spec.csharp:
+  - uid: XNode.Node.GetValue(XNode.NodePort)
+    name: GetValue
+    nameWithType: Node.GetValue
+    fullName: XNode.Node.GetValue
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: XNode.NodePort
+    name: NodePort
+    nameWithType: NodePort
+    fullName: XNode.NodePort
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: XNode.Node.GetValue(XNode.NodePort)
+    name: GetValue
+    nameWithType: Node.GetValue
+    fullName: XNode.Node.GetValue
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: XNode.NodePort
+    name: NodePort
+    nameWithType: NodePort
+    fullName: XNode.NodePort
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CAF.Combat.MovesetAttackNode.GetValue*
+  commentId: Overload:CAF.Combat.MovesetAttackNode.GetValue
+  name: GetValue
+  nameWithType: MovesetAttackNode.GetValue
+  fullName: CAF.Combat.MovesetAttackNode.GetValue

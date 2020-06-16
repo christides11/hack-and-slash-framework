@@ -1,0 +1,403 @@
+### YamlMime:ManagedReference
+items:
+- uid: CAF.Combat.MovesetAttackNodeEditor
+  commentId: T:CAF.Combat.MovesetAttackNodeEditor
+  id: MovesetAttackNodeEditor
+  parent: CAF.Combat
+  children:
+  - CAF.Combat.MovesetAttackNodeEditor.OnBodyGUI
+  - CAF.Combat.MovesetAttackNodeEditor.OnCreate
+  langs:
+  - csharp
+  - vb
+  name: MovesetAttackNodeEditor
+  nameWithType: MovesetAttackNodeEditor
+  fullName: CAF.Combat.MovesetAttackNodeEditor
+  type: Class
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Moveset/MovesetAttackNodeEditor.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: MovesetAttackNodeEditor
+    path: ../Assets/CAF/Editor/Combat/Moveset/MovesetAttackNodeEditor.cs
+    startLine: 12
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: >-
+      [NodeEditor.CustomNodeEditor(typeof(MovesetAttackNode))]
+
+      public class MovesetAttackNodeEditor : NodeEditor
+    content.vb: >-
+      <NodeEditor.CustomNodeEditor(GetType(MovesetAttackNode))>
+
+      Public Class MovesetAttackNodeEditor
+
+          Inherits NodeEditor
+  inheritance:
+  - System.Object
+  - XNodeEditor.Internal.NodeEditorBase{XNodeEditor.NodeEditor,XNodeEditor.NodeEditor.CustomNodeEditorAttribute,XNode.Node}
+  - XNodeEditor.NodeEditor
+  attributes:
+  - type: XNodeEditor.NodeEditor.CustomNodeEditorAttribute
+    ctor: XNodeEditor.NodeEditor.CustomNodeEditorAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: CAF.Combat.MovesetAttackNode
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CAF.Combat.MovesetAttackNodeEditor.OnCreate
+  commentId: M:CAF.Combat.MovesetAttackNodeEditor.OnCreate
+  id: OnCreate
+  parent: CAF.Combat.MovesetAttackNodeEditor
+  langs:
+  - csharp
+  - vb
+  name: OnCreate()
+  nameWithType: MovesetAttackNodeEditor.OnCreate()
+  fullName: CAF.Combat.MovesetAttackNodeEditor.OnCreate()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Moveset/MovesetAttackNodeEditor.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: OnCreate
+    path: ../Assets/CAF/Editor/Combat/Moveset/MovesetAttackNodeEditor.cs
+    startLine: 22
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: public override void OnCreate()
+    content.vb: Public Overrides Sub OnCreate
+  overridden: XNodeEditor.Internal.NodeEditorBase{XNodeEditor.NodeEditor,XNodeEditor.NodeEditor.CustomNodeEditorAttribute,XNode.Node}.OnCreate
+  overload: CAF.Combat.MovesetAttackNodeEditor.OnCreate*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: CAF.Combat.MovesetAttackNodeEditor.OnBodyGUI
+  commentId: M:CAF.Combat.MovesetAttackNodeEditor.OnBodyGUI
+  id: OnBodyGUI
+  parent: CAF.Combat.MovesetAttackNodeEditor
+  langs:
+  - csharp
+  - vb
+  name: OnBodyGUI()
+  nameWithType: MovesetAttackNodeEditor.OnBodyGUI()
+  fullName: CAF.Combat.MovesetAttackNodeEditor.OnBodyGUI()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Moveset/MovesetAttackNodeEditor.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: OnBodyGUI
+    path: ../Assets/CAF/Editor/Combat/Moveset/MovesetAttackNodeEditor.cs
+    startLine: 32
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: public override void OnBodyGUI()
+    content.vb: Public Overrides Sub OnBodyGUI
+  overridden: XNodeEditor.NodeEditor.OnBodyGUI
+  overload: CAF.Combat.MovesetAttackNodeEditor.OnBodyGUI*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: CAF.Combat
+  commentId: N:CAF.Combat
+  name: CAF.Combat
+  nameWithType: CAF.Combat
+  fullName: CAF.Combat
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: XNodeEditor.Internal.NodeEditorBase{XNodeEditor.NodeEditor,XNodeEditor.NodeEditor.CustomNodeEditorAttribute,XNode.Node}
+  commentId: T:XNodeEditor.Internal.NodeEditorBase{XNodeEditor.NodeEditor,XNodeEditor.NodeEditor.CustomNodeEditorAttribute,XNode.Node}
+  parent: XNodeEditor.Internal
+  definition: XNodeEditor.Internal.NodeEditorBase`3
+  name: NodeEditorBase<NodeEditor, NodeEditor.CustomNodeEditorAttribute, Node>
+  nameWithType: NodeEditorBase<NodeEditor, NodeEditor.CustomNodeEditorAttribute, Node>
+  fullName: XNodeEditor.Internal.NodeEditorBase<XNodeEditor.NodeEditor, XNodeEditor.NodeEditor.CustomNodeEditorAttribute, XNode.Node>
+  nameWithType.vb: NodeEditorBase(Of NodeEditor, NodeEditor.CustomNodeEditorAttribute, Node)
+  fullName.vb: XNodeEditor.Internal.NodeEditorBase(Of XNodeEditor.NodeEditor, XNodeEditor.NodeEditor.CustomNodeEditorAttribute, XNode.Node)
+  name.vb: NodeEditorBase(Of NodeEditor, NodeEditor.CustomNodeEditorAttribute, Node)
+  spec.csharp:
+  - uid: XNodeEditor.Internal.NodeEditorBase`3
+    name: NodeEditorBase
+    nameWithType: NodeEditorBase
+    fullName: XNodeEditor.Internal.NodeEditorBase
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: XNodeEditor.NodeEditor
+    name: NodeEditor
+    nameWithType: NodeEditor
+    fullName: XNodeEditor.NodeEditor
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: XNodeEditor.NodeEditor.CustomNodeEditorAttribute
+    name: NodeEditor.CustomNodeEditorAttribute
+    nameWithType: NodeEditor.CustomNodeEditorAttribute
+    fullName: XNodeEditor.NodeEditor.CustomNodeEditorAttribute
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: XNode.Node
+    name: Node
+    nameWithType: Node
+    fullName: XNode.Node
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: XNodeEditor.Internal.NodeEditorBase`3
+    name: NodeEditorBase
+    nameWithType: NodeEditorBase
+    fullName: XNodeEditor.Internal.NodeEditorBase
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: XNodeEditor.NodeEditor
+    name: NodeEditor
+    nameWithType: NodeEditor
+    fullName: XNodeEditor.NodeEditor
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: XNodeEditor.NodeEditor.CustomNodeEditorAttribute
+    name: NodeEditor.CustomNodeEditorAttribute
+    nameWithType: NodeEditor.CustomNodeEditorAttribute
+    fullName: XNodeEditor.NodeEditor.CustomNodeEditorAttribute
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: XNode.Node
+    name: Node
+    nameWithType: Node
+    fullName: XNode.Node
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: XNodeEditor.NodeEditor
+  commentId: T:XNodeEditor.NodeEditor
+  parent: XNodeEditor
+  isExternal: true
+  name: NodeEditor
+  nameWithType: NodeEditor
+  fullName: XNodeEditor.NodeEditor
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: XNodeEditor.Internal.NodeEditorBase`3
+  commentId: T:XNodeEditor.Internal.NodeEditorBase`3
+  isExternal: true
+  name: NodeEditorBase<T, A, K>
+  nameWithType: NodeEditorBase<T, A, K>
+  fullName: XNodeEditor.Internal.NodeEditorBase<T, A, K>
+  nameWithType.vb: NodeEditorBase(Of T, A, K)
+  fullName.vb: XNodeEditor.Internal.NodeEditorBase(Of T, A, K)
+  name.vb: NodeEditorBase(Of T, A, K)
+  spec.csharp:
+  - uid: XNodeEditor.Internal.NodeEditorBase`3
+    name: NodeEditorBase
+    nameWithType: NodeEditorBase
+    fullName: XNodeEditor.Internal.NodeEditorBase
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: A
+    nameWithType: A
+    fullName: A
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: K
+    nameWithType: K
+    fullName: K
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: XNodeEditor.Internal.NodeEditorBase`3
+    name: NodeEditorBase
+    nameWithType: NodeEditorBase
+    fullName: XNodeEditor.Internal.NodeEditorBase
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: A
+    nameWithType: A
+    fullName: A
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: K
+    nameWithType: K
+    fullName: K
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: XNodeEditor.Internal
+  commentId: N:XNodeEditor.Internal
+  isExternal: true
+  name: XNodeEditor.Internal
+  nameWithType: XNodeEditor.Internal
+  fullName: XNodeEditor.Internal
+- uid: XNodeEditor
+  commentId: N:XNodeEditor
+  isExternal: true
+  name: XNodeEditor
+  nameWithType: XNodeEditor
+  fullName: XNodeEditor
+- uid: XNodeEditor.Internal.NodeEditorBase{XNodeEditor.NodeEditor,XNodeEditor.NodeEditor.CustomNodeEditorAttribute,XNode.Node}.OnCreate
+  commentId: M:XNodeEditor.Internal.NodeEditorBase{XNodeEditor.NodeEditor,XNodeEditor.NodeEditor.CustomNodeEditorAttribute,XNode.Node}.OnCreate
+  parent: XNodeEditor.Internal.NodeEditorBase{XNodeEditor.NodeEditor,XNodeEditor.NodeEditor.CustomNodeEditorAttribute,XNode.Node}
+  definition: XNodeEditor.Internal.NodeEditorBase`3.OnCreate
+  name: OnCreate()
+  nameWithType: NodeEditorBase<NodeEditor, NodeEditor.CustomNodeEditorAttribute, Node>.OnCreate()
+  fullName: XNodeEditor.Internal.NodeEditorBase<XNodeEditor.NodeEditor, XNodeEditor.NodeEditor.CustomNodeEditorAttribute, XNode.Node>.OnCreate()
+  nameWithType.vb: NodeEditorBase(Of NodeEditor, NodeEditor.CustomNodeEditorAttribute, Node).OnCreate()
+  fullName.vb: XNodeEditor.Internal.NodeEditorBase(Of XNodeEditor.NodeEditor, XNodeEditor.NodeEditor.CustomNodeEditorAttribute, XNode.Node).OnCreate()
+  spec.csharp:
+  - uid: XNodeEditor.Internal.NodeEditorBase`3.OnCreate
+    name: OnCreate
+    nameWithType: NodeEditorBase<NodeEditor, NodeEditor.CustomNodeEditorAttribute, Node>.OnCreate
+    fullName: XNodeEditor.Internal.NodeEditorBase<XNodeEditor.NodeEditor, XNodeEditor.NodeEditor.CustomNodeEditorAttribute, XNode.Node>.OnCreate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: XNodeEditor.Internal.NodeEditorBase`3.OnCreate
+    name: OnCreate
+    nameWithType: NodeEditorBase(Of NodeEditor, NodeEditor.CustomNodeEditorAttribute, Node).OnCreate
+    fullName: XNodeEditor.Internal.NodeEditorBase(Of XNodeEditor.NodeEditor, XNodeEditor.NodeEditor.CustomNodeEditorAttribute, XNode.Node).OnCreate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CAF.Combat.MovesetAttackNodeEditor.OnCreate*
+  commentId: Overload:CAF.Combat.MovesetAttackNodeEditor.OnCreate
+  name: OnCreate
+  nameWithType: MovesetAttackNodeEditor.OnCreate
+  fullName: CAF.Combat.MovesetAttackNodeEditor.OnCreate
+- uid: XNodeEditor.Internal.NodeEditorBase`3.OnCreate
+  commentId: M:XNodeEditor.Internal.NodeEditorBase`3.OnCreate
+  isExternal: true
+  name: OnCreate()
+  nameWithType: NodeEditorBase<T, A, K>.OnCreate()
+  fullName: XNodeEditor.Internal.NodeEditorBase<T, A, K>.OnCreate()
+  nameWithType.vb: NodeEditorBase(Of T, A, K).OnCreate()
+  fullName.vb: XNodeEditor.Internal.NodeEditorBase(Of T, A, K).OnCreate()
+  spec.csharp:
+  - uid: XNodeEditor.Internal.NodeEditorBase`3.OnCreate
+    name: OnCreate
+    nameWithType: NodeEditorBase<T, A, K>.OnCreate
+    fullName: XNodeEditor.Internal.NodeEditorBase<T, A, K>.OnCreate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: XNodeEditor.Internal.NodeEditorBase`3.OnCreate
+    name: OnCreate
+    nameWithType: NodeEditorBase(Of T, A, K).OnCreate
+    fullName: XNodeEditor.Internal.NodeEditorBase(Of T, A, K).OnCreate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: XNodeEditor.NodeEditor.OnBodyGUI
+  commentId: M:XNodeEditor.NodeEditor.OnBodyGUI
+  parent: XNodeEditor.NodeEditor
+  isExternal: true
+  name: OnBodyGUI()
+  nameWithType: NodeEditor.OnBodyGUI()
+  fullName: XNodeEditor.NodeEditor.OnBodyGUI()
+  spec.csharp:
+  - uid: XNodeEditor.NodeEditor.OnBodyGUI
+    name: OnBodyGUI
+    nameWithType: NodeEditor.OnBodyGUI
+    fullName: XNodeEditor.NodeEditor.OnBodyGUI
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: XNodeEditor.NodeEditor.OnBodyGUI
+    name: OnBodyGUI
+    nameWithType: NodeEditor.OnBodyGUI
+    fullName: XNodeEditor.NodeEditor.OnBodyGUI
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CAF.Combat.MovesetAttackNodeEditor.OnBodyGUI*
+  commentId: Overload:CAF.Combat.MovesetAttackNodeEditor.OnBodyGUI
+  name: OnBodyGUI
+  nameWithType: MovesetAttackNodeEditor.OnBodyGUI
+  fullName: CAF.Combat.MovesetAttackNodeEditor.OnBodyGUI

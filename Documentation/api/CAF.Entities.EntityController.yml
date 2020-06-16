@@ -1,0 +1,1412 @@
+### YamlMime:ManagedReference
+items:
+- uid: CAF.Entities.EntityController
+  commentId: T:CAF.Entities.EntityController
+  id: EntityController
+  parent: CAF.Entities
+  children:
+  - CAF.Entities.EntityController.ApplyStatusEffect(CAF.Combat.StatusEffectDefinition)
+  - CAF.Entities.EntityController.coll
+  - CAF.Entities.EntityController.CombatManager
+  - CAF.Entities.EntityController.entityCombatManager
+  - CAF.Entities.EntityController.entityInput
+  - CAF.Entities.EntityController.entityPhysicsManager
+  - CAF.Entities.EntityController.entityStateManager
+  - CAF.Entities.EntityController.GetCenter
+  - CAF.Entities.EntityController.GetMovementVector(System.Single,System.Single)
+  - CAF.Entities.EntityController.GetSize
+  - CAF.Entities.EntityController.GetVisualBasedDirection(UnityEngine.Vector3)
+  - CAF.Entities.EntityController.HandleLockon
+  - CAF.Entities.EntityController.InputManager
+  - CAF.Entities.EntityController.IsGrounded
+  - CAF.Entities.EntityController.lookHandler
+  - CAF.Entities.EntityController.PhysicsManager
+  - CAF.Entities.EntityController.RotateVisual(UnityEngine.Vector3,System.Single)
+  - CAF.Entities.EntityController.SetVisualRotation(UnityEngine.Vector3)
+  - CAF.Entities.EntityController.SimLateUpdate
+  - CAF.Entities.EntityController.SimUpdate
+  - CAF.Entities.EntityController.StateManager
+  - CAF.Entities.EntityController.Targetable
+  - CAF.Entities.EntityController.visual
+  langs:
+  - csharp
+  - vb
+  name: EntityController
+  nameWithType: EntityController
+  fullName: CAF.Entities.EntityController
+  type: Class
+  source:
+    remote:
+      path: Assets/CAF/Entities/EntityController.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: EntityController
+    path: ../Assets/CAF/Entities/EntityController.cs
+    startLine: 9
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: 'public class EntityController : SimObject, ITargetable, IStatusEffectable'
+    content.vb: >-
+      Public Class EntityController
+
+          Inherits SimObject
+
+          Implements ITargetable, IStatusEffectable
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - CAF.Simulation.SimObject
+  implements:
+  - CAF.Combat.ITargetable
+  - CAF.Combat.IStatusEffectable
+  inheritedMembers:
+  - CAF.Simulation.SimObject.simObjectManager
+  - CAF.Simulation.SimObject.Awake
+  - CAF.Simulation.SimObject.Start
+  - CAF.Simulation.SimObject.SimAwake
+  - CAF.Simulation.SimObject.SimStart
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CAF.Entities.EntityController.InputManager
+  commentId: P:CAF.Entities.EntityController.InputManager
+  id: InputManager
+  parent: CAF.Entities.EntityController
+  langs:
+  - csharp
+  - vb
+  name: InputManager
+  nameWithType: EntityController.InputManager
+  fullName: CAF.Entities.EntityController.InputManager
+  type: Property
+  source:
+    remote:
+      path: Assets/CAF/Entities/EntityController.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: InputManager
+    path: ../Assets/CAF/Entities/EntityController.cs
+    startLine: 11
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public EntityInputManager InputManager { get; }
+    parameters: []
+    return:
+      type: CAF.Entities.EntityInputManager
+    content.vb: Public ReadOnly Property InputManager As EntityInputManager
+  overload: CAF.Entities.EntityController.InputManager*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: CAF.Entities.EntityController.StateManager
+  commentId: P:CAF.Entities.EntityController.StateManager
+  id: StateManager
+  parent: CAF.Entities.EntityController
+  langs:
+  - csharp
+  - vb
+  name: StateManager
+  nameWithType: EntityController.StateManager
+  fullName: CAF.Entities.EntityController.StateManager
+  type: Property
+  source:
+    remote:
+      path: Assets/CAF/Entities/EntityController.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: StateManager
+    path: ../Assets/CAF/Entities/EntityController.cs
+    startLine: 12
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public EntityStateManager StateManager { get; }
+    parameters: []
+    return:
+      type: CAF.Entities.EntityStateManager
+    content.vb: Public ReadOnly Property StateManager As EntityStateManager
+  overload: CAF.Entities.EntityController.StateManager*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: CAF.Entities.EntityController.CombatManager
+  commentId: P:CAF.Entities.EntityController.CombatManager
+  id: CombatManager
+  parent: CAF.Entities.EntityController
+  langs:
+  - csharp
+  - vb
+  name: CombatManager
+  nameWithType: EntityController.CombatManager
+  fullName: CAF.Entities.EntityController.CombatManager
+  type: Property
+  source:
+    remote:
+      path: Assets/CAF/Entities/EntityController.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: CombatManager
+    path: ../Assets/CAF/Entities/EntityController.cs
+    startLine: 13
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public EntityCombatManager CombatManager { get; }
+    parameters: []
+    return:
+      type: CAF.Entities.EntityCombatManager
+    content.vb: Public ReadOnly Property CombatManager As EntityCombatManager
+  overload: CAF.Entities.EntityController.CombatManager*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: CAF.Entities.EntityController.PhysicsManager
+  commentId: P:CAF.Entities.EntityController.PhysicsManager
+  id: PhysicsManager
+  parent: CAF.Entities.EntityController
+  langs:
+  - csharp
+  - vb
+  name: PhysicsManager
+  nameWithType: EntityController.PhysicsManager
+  fullName: CAF.Entities.EntityController.PhysicsManager
+  type: Property
+  source:
+    remote:
+      path: Assets/CAF/Entities/EntityController.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: PhysicsManager
+    path: ../Assets/CAF/Entities/EntityController.cs
+    startLine: 14
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public EntityPhysicsManager PhysicsManager { get; }
+    parameters: []
+    return:
+      type: CAF.Entities.EntityPhysicsManager
+    content.vb: Public ReadOnly Property PhysicsManager As EntityPhysicsManager
+  overload: CAF.Entities.EntityController.PhysicsManager*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: CAF.Entities.EntityController.Targetable
+  commentId: P:CAF.Entities.EntityController.Targetable
+  id: Targetable
+  parent: CAF.Entities.EntityController
+  langs:
+  - csharp
+  - vb
+  name: Targetable
+  nameWithType: EntityController.Targetable
+  fullName: CAF.Entities.EntityController.Targetable
+  type: Property
+  source:
+    remote:
+      path: Assets/CAF/Entities/EntityController.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: Targetable
+    path: ../Assets/CAF/Entities/EntityController.cs
+    startLine: 16
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public virtual bool Targetable { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable ReadOnly Property Targetable As Boolean
+  overload: CAF.Entities.EntityController.Targetable*
+  implements:
+  - CAF.Combat.ITargetable.Targetable
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: CAF.Entities.EntityController.IsGrounded
+  commentId: P:CAF.Entities.EntityController.IsGrounded
+  id: IsGrounded
+  parent: CAF.Entities.EntityController
+  langs:
+  - csharp
+  - vb
+  name: IsGrounded
+  nameWithType: EntityController.IsGrounded
+  fullName: CAF.Entities.EntityController.IsGrounded
+  type: Property
+  source:
+    remote:
+      path: Assets/CAF/Entities/EntityController.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: IsGrounded
+    path: ../Assets/CAF/Entities/EntityController.cs
+    startLine: 17
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public bool IsGrounded { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsGrounded As Boolean
+  overload: CAF.Entities.EntityController.IsGrounded*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CAF.Entities.EntityController.entityInput
+  commentId: F:CAF.Entities.EntityController.entityInput
+  id: entityInput
+  parent: CAF.Entities.EntityController
+  langs:
+  - csharp
+  - vb
+  name: entityInput
+  nameWithType: EntityController.entityInput
+  fullName: CAF.Entities.EntityController.entityInput
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Entities/EntityController.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: entityInput
+    path: ../Assets/CAF/Entities/EntityController.cs
+    startLine: 20
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: >-
+      [Header("References")]
+
+      [SerializeField]
+
+      protected EntityInputManager entityInput
+    return:
+      type: CAF.Entities.EntityInputManager
+    content.vb: >-
+      <Header("References")>
+
+      <SerializeField>
+
+      Protected entityInput As EntityInputManager
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: References
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Entities.EntityController.entityStateManager
+  commentId: F:CAF.Entities.EntityController.entityStateManager
+  id: entityStateManager
+  parent: CAF.Entities.EntityController
+  langs:
+  - csharp
+  - vb
+  name: entityStateManager
+  nameWithType: EntityController.entityStateManager
+  fullName: CAF.Entities.EntityController.entityStateManager
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Entities/EntityController.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: entityStateManager
+    path: ../Assets/CAF/Entities/EntityController.cs
+    startLine: 21
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: >-
+      [SerializeField]
+
+      protected EntityStateManager entityStateManager
+    return:
+      type: CAF.Entities.EntityStateManager
+    content.vb: >-
+      <SerializeField>
+
+      Protected entityStateManager As EntityStateManager
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Entities.EntityController.entityCombatManager
+  commentId: F:CAF.Entities.EntityController.entityCombatManager
+  id: entityCombatManager
+  parent: CAF.Entities.EntityController
+  langs:
+  - csharp
+  - vb
+  name: entityCombatManager
+  nameWithType: EntityController.entityCombatManager
+  fullName: CAF.Entities.EntityController.entityCombatManager
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Entities/EntityController.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: entityCombatManager
+    path: ../Assets/CAF/Entities/EntityController.cs
+    startLine: 22
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: >-
+      [SerializeField]
+
+      protected EntityCombatManager entityCombatManager
+    return:
+      type: CAF.Entities.EntityCombatManager
+    content.vb: >-
+      <SerializeField>
+
+      Protected entityCombatManager As EntityCombatManager
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Entities.EntityController.entityPhysicsManager
+  commentId: F:CAF.Entities.EntityController.entityPhysicsManager
+  id: entityPhysicsManager
+  parent: CAF.Entities.EntityController
+  langs:
+  - csharp
+  - vb
+  name: entityPhysicsManager
+  nameWithType: EntityController.entityPhysicsManager
+  fullName: CAF.Entities.EntityController.entityPhysicsManager
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Entities/EntityController.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: entityPhysicsManager
+    path: ../Assets/CAF/Entities/EntityController.cs
+    startLine: 23
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: >-
+      [SerializeField]
+
+      protected EntityPhysicsManager entityPhysicsManager
+    return:
+      type: CAF.Entities.EntityPhysicsManager
+    content.vb: >-
+      <SerializeField>
+
+      Protected entityPhysicsManager As EntityPhysicsManager
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Entities.EntityController.coll
+  commentId: F:CAF.Entities.EntityController.coll
+  id: coll
+  parent: CAF.Entities.EntityController
+  langs:
+  - csharp
+  - vb
+  name: coll
+  nameWithType: EntityController.coll
+  fullName: CAF.Entities.EntityController.coll
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Entities/EntityController.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: coll
+    path: ../Assets/CAF/Entities/EntityController.cs
+    startLine: 24
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public CapsuleCollider coll
+    return:
+      type: UnityEngine.CapsuleCollider
+    content.vb: Public coll As CapsuleCollider
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Entities.EntityController.visual
+  commentId: F:CAF.Entities.EntityController.visual
+  id: visual
+  parent: CAF.Entities.EntityController
+  langs:
+  - csharp
+  - vb
+  name: visual
+  nameWithType: EntityController.visual
+  fullName: CAF.Entities.EntityController.visual
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Entities/EntityController.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: visual
+    path: ../Assets/CAF/Entities/EntityController.cs
+    startLine: 25
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public GameObject visual
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public visual As GameObject
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Entities.EntityController.lookHandler
+  commentId: F:CAF.Entities.EntityController.lookHandler
+  id: lookHandler
+  parent: CAF.Entities.EntityController
+  langs:
+  - csharp
+  - vb
+  name: lookHandler
+  nameWithType: EntityController.lookHandler
+  fullName: CAF.Entities.EntityController.lookHandler
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Entities/EntityController.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: lookHandler
+    path: ../Assets/CAF/Entities/EntityController.cs
+    startLine: 26
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public LookHandler lookHandler
+    return:
+      type: CAF.Camera.LookHandler
+    content.vb: Public lookHandler As LookHandler
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Entities.EntityController.SimUpdate
+  commentId: M:CAF.Entities.EntityController.SimUpdate
+  id: SimUpdate
+  parent: CAF.Entities.EntityController
+  langs:
+  - csharp
+  - vb
+  name: SimUpdate()
+  nameWithType: EntityController.SimUpdate()
+  fullName: CAF.Entities.EntityController.SimUpdate()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/EntityController.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: SimUpdate
+    path: ../Assets/CAF/Entities/EntityController.cs
+    startLine: 31
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  summary: "\nCalled every simulation tick. \n"
+  example: []
+  syntax:
+    content: public override void SimUpdate()
+    content.vb: Public Overrides Sub SimUpdate
+  overridden: CAF.Simulation.SimObject.SimUpdate
+  overload: CAF.Entities.EntityController.SimUpdate*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: CAF.Entities.EntityController.SimLateUpdate
+  commentId: M:CAF.Entities.EntityController.SimLateUpdate
+  id: SimLateUpdate
+  parent: CAF.Entities.EntityController
+  langs:
+  - csharp
+  - vb
+  name: SimLateUpdate()
+  nameWithType: EntityController.SimLateUpdate()
+  fullName: CAF.Entities.EntityController.SimLateUpdate()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/EntityController.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: SimLateUpdate
+    path: ../Assets/CAF/Entities/EntityController.cs
+    startLine: 48
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public override void SimLateUpdate()
+    content.vb: Public Overrides Sub SimLateUpdate
+  overridden: CAF.Simulation.SimObject.SimLateUpdate
+  overload: CAF.Entities.EntityController.SimLateUpdate*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: CAF.Entities.EntityController.HandleLockon
+  commentId: M:CAF.Entities.EntityController.HandleLockon
+  id: HandleLockon
+  parent: CAF.Entities.EntityController
+  langs:
+  - csharp
+  - vb
+  name: HandleLockon()
+  nameWithType: EntityController.HandleLockon()
+  fullName: CAF.Entities.EntityController.HandleLockon()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/EntityController.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: HandleLockon
+    path: ../Assets/CAF/Entities/EntityController.cs
+    startLine: 56
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  summary: "\nHandles finding and locking on to targets.\n"
+  example: []
+  syntax:
+    content: protected virtual void HandleLockon()
+    content.vb: Protected Overridable Sub HandleLockon
+  overload: CAF.Entities.EntityController.HandleLockon*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Entities.EntityController.GetMovementVector(System.Single,System.Single)
+  commentId: M:CAF.Entities.EntityController.GetMovementVector(System.Single,System.Single)
+  id: GetMovementVector(System.Single,System.Single)
+  parent: CAF.Entities.EntityController
+  langs:
+  - csharp
+  - vb
+  name: GetMovementVector(Single, Single)
+  nameWithType: EntityController.GetMovementVector(Single, Single)
+  fullName: CAF.Entities.EntityController.GetMovementVector(System.Single, System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/EntityController.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: GetMovementVector
+    path: ../Assets/CAF/Entities/EntityController.cs
+    startLine: 66
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  summary: "\nTranslates the given vector based on the look transform&apos;s forward.\n"
+  example: []
+  syntax:
+    content: public virtual Vector3 GetMovementVector(float horizontal, float vertical)
+    parameters:
+    - id: horizontal
+      type: System.Single
+      description: The horizontal axis of the vector.
+    - id: vertical
+      type: System.Single
+      description: The vertical axis of the vector.
+    return:
+      type: UnityEngine.Vector3
+      description: A direction vector based on the camera&apos;s forward.
+    content.vb: Public Overridable Function GetMovementVector(horizontal As Single, vertical As Single) As Vector3
+  overload: CAF.Entities.EntityController.GetMovementVector*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Entities.EntityController.GetVisualBasedDirection(UnityEngine.Vector3)
+  commentId: M:CAF.Entities.EntityController.GetVisualBasedDirection(UnityEngine.Vector3)
+  id: GetVisualBasedDirection(UnityEngine.Vector3)
+  parent: CAF.Entities.EntityController
+  langs:
+  - csharp
+  - vb
+  name: GetVisualBasedDirection(Vector3)
+  nameWithType: EntityController.GetVisualBasedDirection(Vector3)
+  fullName: CAF.Entities.EntityController.GetVisualBasedDirection(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/EntityController.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: GetVisualBasedDirection
+    path: ../Assets/CAF/Entities/EntityController.cs
+    startLine: 89
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  summary: "\nTransforms the given direction into one based on the visual&apos;s forward.\n"
+  example: []
+  syntax:
+    content: public virtual Vector3 GetVisualBasedDirection(Vector3 direction)
+    parameters:
+    - id: direction
+      type: UnityEngine.Vector3
+      description: The direction vector.
+    return:
+      type: UnityEngine.Vector3
+      description: A direction vector based on the visual&apos;s forward.
+    content.vb: Public Overridable Function GetVisualBasedDirection(direction As Vector3) As Vector3
+  overload: CAF.Entities.EntityController.GetVisualBasedDirection*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Entities.EntityController.RotateVisual(UnityEngine.Vector3,System.Single)
+  commentId: M:CAF.Entities.EntityController.RotateVisual(UnityEngine.Vector3,System.Single)
+  id: RotateVisual(UnityEngine.Vector3,System.Single)
+  parent: CAF.Entities.EntityController
+  langs:
+  - csharp
+  - vb
+  name: RotateVisual(Vector3, Single)
+  nameWithType: EntityController.RotateVisual(Vector3, Single)
+  fullName: CAF.Entities.EntityController.RotateVisual(UnityEngine.Vector3, System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/EntityController.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: RotateVisual
+    path: ../Assets/CAF/Entities/EntityController.cs
+    startLine: 100
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  summary: "\nRotate the visual towards the given direction based on the speed given.\n"
+  example: []
+  syntax:
+    content: public virtual void RotateVisual(Vector3 direction, float speed)
+    parameters:
+    - id: direction
+      type: UnityEngine.Vector3
+      description: The direction to rotate towards.
+    - id: speed
+      type: System.Single
+      description: The speed of the rotation.
+    content.vb: Public Overridable Sub RotateVisual(direction As Vector3, speed As Single)
+  overload: CAF.Entities.EntityController.RotateVisual*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Entities.EntityController.SetVisualRotation(UnityEngine.Vector3)
+  commentId: M:CAF.Entities.EntityController.SetVisualRotation(UnityEngine.Vector3)
+  id: SetVisualRotation(UnityEngine.Vector3)
+  parent: CAF.Entities.EntityController
+  langs:
+  - csharp
+  - vb
+  name: SetVisualRotation(Vector3)
+  nameWithType: EntityController.SetVisualRotation(Vector3)
+  fullName: CAF.Entities.EntityController.SetVisualRotation(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/EntityController.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: SetVisualRotation
+    path: ../Assets/CAF/Entities/EntityController.cs
+    startLine: 110
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  summary: "\nSet the visual&apos;s rotation to the given direction.\n"
+  example: []
+  syntax:
+    content: public virtual void SetVisualRotation(Vector3 direction)
+    parameters:
+    - id: direction
+      type: UnityEngine.Vector3
+      description: The direction to set the rotation to.
+    content.vb: Public Overridable Sub SetVisualRotation(direction As Vector3)
+  overload: CAF.Entities.EntityController.SetVisualRotation*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Entities.EntityController.GetCenter
+  commentId: M:CAF.Entities.EntityController.GetCenter
+  id: GetCenter
+  parent: CAF.Entities.EntityController
+  langs:
+  - csharp
+  - vb
+  name: GetCenter()
+  nameWithType: EntityController.GetCenter()
+  fullName: CAF.Entities.EntityController.GetCenter()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/EntityController.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: GetCenter
+    path: ../Assets/CAF/Entities/EntityController.cs
+    startLine: 115
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public virtual Vector3 GetCenter()
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Overridable Function GetCenter As Vector3
+  overload: CAF.Entities.EntityController.GetCenter*
+  implements:
+  - CAF.Combat.ITargetable.GetCenter
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Entities.EntityController.GetSize
+  commentId: M:CAF.Entities.EntityController.GetSize
+  id: GetSize
+  parent: CAF.Entities.EntityController
+  langs:
+  - csharp
+  - vb
+  name: GetSize()
+  nameWithType: EntityController.GetSize()
+  fullName: CAF.Entities.EntityController.GetSize()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/EntityController.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: GetSize
+    path: ../Assets/CAF/Entities/EntityController.cs
+    startLine: 120
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public virtual Vector3 GetSize()
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Overridable Function GetSize As Vector3
+  overload: CAF.Entities.EntityController.GetSize*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Entities.EntityController.ApplyStatusEffect(CAF.Combat.StatusEffectDefinition)
+  commentId: M:CAF.Entities.EntityController.ApplyStatusEffect(CAF.Combat.StatusEffectDefinition)
+  id: ApplyStatusEffect(CAF.Combat.StatusEffectDefinition)
+  parent: CAF.Entities.EntityController
+  langs:
+  - csharp
+  - vb
+  name: ApplyStatusEffect(StatusEffectDefinition)
+  nameWithType: EntityController.ApplyStatusEffect(StatusEffectDefinition)
+  fullName: CAF.Entities.EntityController.ApplyStatusEffect(CAF.Combat.StatusEffectDefinition)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/EntityController.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: ApplyStatusEffect
+    path: ../Assets/CAF/Entities/EntityController.cs
+    startLine: 125
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public virtual void ApplyStatusEffect(StatusEffectDefinition statusEffect)
+    parameters:
+    - id: statusEffect
+      type: CAF.Combat.StatusEffectDefinition
+    content.vb: Public Overridable Sub ApplyStatusEffect(statusEffect As StatusEffectDefinition)
+  overload: CAF.Entities.EntityController.ApplyStatusEffect*
+  implements:
+  - CAF.Combat.IStatusEffectable.ApplyStatusEffect(CAF.Combat.StatusEffectDefinition)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: CAF.Entities
+  commentId: N:CAF.Entities
+  name: CAF.Entities
+  nameWithType: CAF.Entities
+  fullName: CAF.Entities
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: CAF.Simulation.SimObject
+  commentId: T:CAF.Simulation.SimObject
+  parent: CAF.Simulation
+  name: SimObject
+  nameWithType: SimObject
+  fullName: CAF.Simulation.SimObject
+- uid: CAF.Combat.ITargetable
+  commentId: T:CAF.Combat.ITargetable
+  parent: CAF.Combat
+  name: ITargetable
+  nameWithType: ITargetable
+  fullName: CAF.Combat.ITargetable
+- uid: CAF.Combat.IStatusEffectable
+  commentId: T:CAF.Combat.IStatusEffectable
+  parent: CAF.Combat
+  name: IStatusEffectable
+  nameWithType: IStatusEffectable
+  fullName: CAF.Combat.IStatusEffectable
+- uid: CAF.Simulation.SimObject.simObjectManager
+  commentId: F:CAF.Simulation.SimObject.simObjectManager
+  parent: CAF.Simulation.SimObject
+  name: simObjectManager
+  nameWithType: SimObject.simObjectManager
+  fullName: CAF.Simulation.SimObject.simObjectManager
+- uid: CAF.Simulation.SimObject.Awake
+  commentId: M:CAF.Simulation.SimObject.Awake
+  parent: CAF.Simulation.SimObject
+  name: Awake()
+  nameWithType: SimObject.Awake()
+  fullName: CAF.Simulation.SimObject.Awake()
+  spec.csharp:
+  - uid: CAF.Simulation.SimObject.Awake
+    name: Awake
+    nameWithType: SimObject.Awake
+    fullName: CAF.Simulation.SimObject.Awake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CAF.Simulation.SimObject.Awake
+    name: Awake
+    nameWithType: SimObject.Awake
+    fullName: CAF.Simulation.SimObject.Awake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CAF.Simulation.SimObject.Start
+  commentId: M:CAF.Simulation.SimObject.Start
+  parent: CAF.Simulation.SimObject
+  name: Start()
+  nameWithType: SimObject.Start()
+  fullName: CAF.Simulation.SimObject.Start()
+  spec.csharp:
+  - uid: CAF.Simulation.SimObject.Start
+    name: Start
+    nameWithType: SimObject.Start
+    fullName: CAF.Simulation.SimObject.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CAF.Simulation.SimObject.Start
+    name: Start
+    nameWithType: SimObject.Start
+    fullName: CAF.Simulation.SimObject.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CAF.Simulation.SimObject.SimAwake
+  commentId: M:CAF.Simulation.SimObject.SimAwake
+  parent: CAF.Simulation.SimObject
+  name: SimAwake()
+  nameWithType: SimObject.SimAwake()
+  fullName: CAF.Simulation.SimObject.SimAwake()
+  spec.csharp:
+  - uid: CAF.Simulation.SimObject.SimAwake
+    name: SimAwake
+    nameWithType: SimObject.SimAwake
+    fullName: CAF.Simulation.SimObject.SimAwake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CAF.Simulation.SimObject.SimAwake
+    name: SimAwake
+    nameWithType: SimObject.SimAwake
+    fullName: CAF.Simulation.SimObject.SimAwake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CAF.Simulation.SimObject.SimStart
+  commentId: M:CAF.Simulation.SimObject.SimStart
+  parent: CAF.Simulation.SimObject
+  name: SimStart()
+  nameWithType: SimObject.SimStart()
+  fullName: CAF.Simulation.SimObject.SimStart()
+  spec.csharp:
+  - uid: CAF.Simulation.SimObject.SimStart
+    name: SimStart
+    nameWithType: SimObject.SimStart
+    fullName: CAF.Simulation.SimObject.SimStart
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CAF.Simulation.SimObject.SimStart
+    name: SimStart
+    nameWithType: SimObject.SimStart
+    fullName: CAF.Simulation.SimObject.SimStart
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: CAF.Simulation
+  commentId: N:CAF.Simulation
+  name: CAF.Simulation
+  nameWithType: CAF.Simulation
+  fullName: CAF.Simulation
+- uid: CAF.Combat
+  commentId: N:CAF.Combat
+  name: CAF.Combat
+  nameWithType: CAF.Combat
+  fullName: CAF.Combat
+- uid: CAF.Entities.EntityController.InputManager*
+  commentId: Overload:CAF.Entities.EntityController.InputManager
+  name: InputManager
+  nameWithType: EntityController.InputManager
+  fullName: CAF.Entities.EntityController.InputManager
+- uid: CAF.Entities.EntityInputManager
+  commentId: T:CAF.Entities.EntityInputManager
+  parent: CAF.Entities
+  name: EntityInputManager
+  nameWithType: EntityInputManager
+  fullName: CAF.Entities.EntityInputManager
+- uid: CAF.Entities.EntityController.StateManager*
+  commentId: Overload:CAF.Entities.EntityController.StateManager
+  name: StateManager
+  nameWithType: EntityController.StateManager
+  fullName: CAF.Entities.EntityController.StateManager
+- uid: CAF.Entities.EntityStateManager
+  commentId: T:CAF.Entities.EntityStateManager
+  parent: CAF.Entities
+  name: EntityStateManager
+  nameWithType: EntityStateManager
+  fullName: CAF.Entities.EntityStateManager
+- uid: CAF.Entities.EntityController.CombatManager*
+  commentId: Overload:CAF.Entities.EntityController.CombatManager
+  name: CombatManager
+  nameWithType: EntityController.CombatManager
+  fullName: CAF.Entities.EntityController.CombatManager
+- uid: CAF.Entities.EntityCombatManager
+  commentId: T:CAF.Entities.EntityCombatManager
+  parent: CAF.Entities
+  name: EntityCombatManager
+  nameWithType: EntityCombatManager
+  fullName: CAF.Entities.EntityCombatManager
+- uid: CAF.Entities.EntityController.PhysicsManager*
+  commentId: Overload:CAF.Entities.EntityController.PhysicsManager
+  name: PhysicsManager
+  nameWithType: EntityController.PhysicsManager
+  fullName: CAF.Entities.EntityController.PhysicsManager
+- uid: CAF.Entities.EntityPhysicsManager
+  commentId: T:CAF.Entities.EntityPhysicsManager
+  parent: CAF.Entities
+  name: EntityPhysicsManager
+  nameWithType: EntityPhysicsManager
+  fullName: CAF.Entities.EntityPhysicsManager
+- uid: CAF.Entities.EntityController.Targetable*
+  commentId: Overload:CAF.Entities.EntityController.Targetable
+  name: Targetable
+  nameWithType: EntityController.Targetable
+  fullName: CAF.Entities.EntityController.Targetable
+- uid: CAF.Combat.ITargetable.Targetable
+  commentId: P:CAF.Combat.ITargetable.Targetable
+  parent: CAF.Combat.ITargetable
+  name: Targetable
+  nameWithType: ITargetable.Targetable
+  fullName: CAF.Combat.ITargetable.Targetable
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: CAF.Entities.EntityController.IsGrounded*
+  commentId: Overload:CAF.Entities.EntityController.IsGrounded
+  name: IsGrounded
+  nameWithType: EntityController.IsGrounded
+  fullName: CAF.Entities.EntityController.IsGrounded
+- uid: UnityEngine.CapsuleCollider
+  commentId: T:UnityEngine.CapsuleCollider
+  parent: UnityEngine
+  isExternal: true
+  name: CapsuleCollider
+  nameWithType: CapsuleCollider
+  fullName: UnityEngine.CapsuleCollider
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: CAF.Camera.LookHandler
+  commentId: T:CAF.Camera.LookHandler
+  parent: CAF.Camera
+  name: LookHandler
+  nameWithType: LookHandler
+  fullName: CAF.Camera.LookHandler
+- uid: CAF.Camera
+  commentId: N:CAF.Camera
+  name: CAF.Camera
+  nameWithType: CAF.Camera
+  fullName: CAF.Camera
+- uid: CAF.Simulation.SimObject.SimUpdate
+  commentId: M:CAF.Simulation.SimObject.SimUpdate
+  parent: CAF.Simulation.SimObject
+  name: SimUpdate()
+  nameWithType: SimObject.SimUpdate()
+  fullName: CAF.Simulation.SimObject.SimUpdate()
+  spec.csharp:
+  - uid: CAF.Simulation.SimObject.SimUpdate
+    name: SimUpdate
+    nameWithType: SimObject.SimUpdate
+    fullName: CAF.Simulation.SimObject.SimUpdate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CAF.Simulation.SimObject.SimUpdate
+    name: SimUpdate
+    nameWithType: SimObject.SimUpdate
+    fullName: CAF.Simulation.SimObject.SimUpdate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CAF.Entities.EntityController.SimUpdate*
+  commentId: Overload:CAF.Entities.EntityController.SimUpdate
+  name: SimUpdate
+  nameWithType: EntityController.SimUpdate
+  fullName: CAF.Entities.EntityController.SimUpdate
+- uid: CAF.Simulation.SimObject.SimLateUpdate
+  commentId: M:CAF.Simulation.SimObject.SimLateUpdate
+  parent: CAF.Simulation.SimObject
+  name: SimLateUpdate()
+  nameWithType: SimObject.SimLateUpdate()
+  fullName: CAF.Simulation.SimObject.SimLateUpdate()
+  spec.csharp:
+  - uid: CAF.Simulation.SimObject.SimLateUpdate
+    name: SimLateUpdate
+    nameWithType: SimObject.SimLateUpdate
+    fullName: CAF.Simulation.SimObject.SimLateUpdate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CAF.Simulation.SimObject.SimLateUpdate
+    name: SimLateUpdate
+    nameWithType: SimObject.SimLateUpdate
+    fullName: CAF.Simulation.SimObject.SimLateUpdate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CAF.Entities.EntityController.SimLateUpdate*
+  commentId: Overload:CAF.Entities.EntityController.SimLateUpdate
+  name: SimLateUpdate
+  nameWithType: EntityController.SimLateUpdate
+  fullName: CAF.Entities.EntityController.SimLateUpdate
+- uid: CAF.Entities.EntityController.HandleLockon*
+  commentId: Overload:CAF.Entities.EntityController.HandleLockon
+  name: HandleLockon
+  nameWithType: EntityController.HandleLockon
+  fullName: CAF.Entities.EntityController.HandleLockon
+- uid: CAF.Entities.EntityController.GetMovementVector*
+  commentId: Overload:CAF.Entities.EntityController.GetMovementVector
+  name: GetMovementVector
+  nameWithType: EntityController.GetMovementVector
+  fullName: CAF.Entities.EntityController.GetMovementVector
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: CAF.Entities.EntityController.GetVisualBasedDirection*
+  commentId: Overload:CAF.Entities.EntityController.GetVisualBasedDirection
+  name: GetVisualBasedDirection
+  nameWithType: EntityController.GetVisualBasedDirection
+  fullName: CAF.Entities.EntityController.GetVisualBasedDirection
+- uid: CAF.Entities.EntityController.RotateVisual*
+  commentId: Overload:CAF.Entities.EntityController.RotateVisual
+  name: RotateVisual
+  nameWithType: EntityController.RotateVisual
+  fullName: CAF.Entities.EntityController.RotateVisual
+- uid: CAF.Entities.EntityController.SetVisualRotation*
+  commentId: Overload:CAF.Entities.EntityController.SetVisualRotation
+  name: SetVisualRotation
+  nameWithType: EntityController.SetVisualRotation
+  fullName: CAF.Entities.EntityController.SetVisualRotation
+- uid: CAF.Entities.EntityController.GetCenter*
+  commentId: Overload:CAF.Entities.EntityController.GetCenter
+  name: GetCenter
+  nameWithType: EntityController.GetCenter
+  fullName: CAF.Entities.EntityController.GetCenter
+- uid: CAF.Combat.ITargetable.GetCenter
+  commentId: M:CAF.Combat.ITargetable.GetCenter
+  parent: CAF.Combat.ITargetable
+  name: GetCenter()
+  nameWithType: ITargetable.GetCenter()
+  fullName: CAF.Combat.ITargetable.GetCenter()
+  spec.csharp:
+  - uid: CAF.Combat.ITargetable.GetCenter
+    name: GetCenter
+    nameWithType: ITargetable.GetCenter
+    fullName: CAF.Combat.ITargetable.GetCenter
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CAF.Combat.ITargetable.GetCenter
+    name: GetCenter
+    nameWithType: ITargetable.GetCenter
+    fullName: CAF.Combat.ITargetable.GetCenter
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CAF.Entities.EntityController.GetSize*
+  commentId: Overload:CAF.Entities.EntityController.GetSize
+  name: GetSize
+  nameWithType: EntityController.GetSize
+  fullName: CAF.Entities.EntityController.GetSize
+- uid: CAF.Entities.EntityController.ApplyStatusEffect*
+  commentId: Overload:CAF.Entities.EntityController.ApplyStatusEffect
+  name: ApplyStatusEffect
+  nameWithType: EntityController.ApplyStatusEffect
+  fullName: CAF.Entities.EntityController.ApplyStatusEffect
+- uid: CAF.Combat.IStatusEffectable.ApplyStatusEffect(CAF.Combat.StatusEffectDefinition)
+  commentId: M:CAF.Combat.IStatusEffectable.ApplyStatusEffect(CAF.Combat.StatusEffectDefinition)
+  parent: CAF.Combat.IStatusEffectable
+  name: ApplyStatusEffect(StatusEffectDefinition)
+  nameWithType: IStatusEffectable.ApplyStatusEffect(StatusEffectDefinition)
+  fullName: CAF.Combat.IStatusEffectable.ApplyStatusEffect(CAF.Combat.StatusEffectDefinition)
+  spec.csharp:
+  - uid: CAF.Combat.IStatusEffectable.ApplyStatusEffect(CAF.Combat.StatusEffectDefinition)
+    name: ApplyStatusEffect
+    nameWithType: IStatusEffectable.ApplyStatusEffect
+    fullName: CAF.Combat.IStatusEffectable.ApplyStatusEffect
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: CAF.Combat.StatusEffectDefinition
+    name: StatusEffectDefinition
+    nameWithType: StatusEffectDefinition
+    fullName: CAF.Combat.StatusEffectDefinition
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CAF.Combat.IStatusEffectable.ApplyStatusEffect(CAF.Combat.StatusEffectDefinition)
+    name: ApplyStatusEffect
+    nameWithType: IStatusEffectable.ApplyStatusEffect
+    fullName: CAF.Combat.IStatusEffectable.ApplyStatusEffect
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: CAF.Combat.StatusEffectDefinition
+    name: StatusEffectDefinition
+    nameWithType: StatusEffectDefinition
+    fullName: CAF.Combat.StatusEffectDefinition
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CAF.Combat.StatusEffectDefinition
+  commentId: T:CAF.Combat.StatusEffectDefinition
+  parent: CAF.Combat
+  name: StatusEffectDefinition
+  nameWithType: StatusEffectDefinition
+  fullName: CAF.Combat.StatusEffectDefinition

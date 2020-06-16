@@ -1,0 +1,1685 @@
+### YamlMime:ManagedReference
+items:
+- uid: CAF.Combat.AttackDefinitionEditorWindow
+  commentId: T:CAF.Combat.AttackDefinitionEditorWindow
+  id: AttackDefinitionEditorWindow
+  parent: CAF.Combat
+  children:
+  - CAF.Combat.AttackDefinitionEditorWindow.AddAttackEventDefinition
+  - CAF.Combat.AttackDefinitionEditorWindow.AddBoxGroup
+  - CAF.Combat.AttackDefinitionEditorWindow.attack
+  - CAF.Combat.AttackDefinitionEditorWindow.attackEventTypes
+  - CAF.Combat.AttackDefinitionEditorWindow.boxesFoldout
+  - CAF.Combat.AttackDefinitionEditorWindow.BoxesMenuNavigationBar
+  - CAF.Combat.AttackDefinitionEditorWindow.BoxGroupAddBoxDefinition(CAF.Combat.BoxGroup)
+  - CAF.Combat.AttackDefinitionEditorWindow.commandAttackCancelWindowsFoldout
+  - CAF.Combat.AttackDefinitionEditorWindow.currentHitboxGroupIndex
+  - CAF.Combat.AttackDefinitionEditorWindow.currentMenu
+  - CAF.Combat.AttackDefinitionEditorWindow.DrawBoxesMenu
+  - CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroup(CAF.Combat.BoxGroup)
+  - CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupGrabOptions(CAF.Combat.BoxGroup)
+  - CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupHitOptions(CAF.Combat.BoxGroup)
+  - CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindow(System.String,System.Boolean@,System.Collections.Generic.List{UnityEngine.Vector2Int}@,System.Single)
+  - CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindows
+  - CAF.Combat.AttackDefinitionEditorWindow.DrawEventsWindow
+  - CAF.Combat.AttackDefinitionEditorWindow.DrawGeneralMenu
+  - CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxOptions(CAF.Combat.BoxGroup,System.Int32)
+  - CAF.Combat.AttackDefinitionEditorWindow.DrawHitDamageOptions(CAF.Combat.BoxGroup)
+  - CAF.Combat.AttackDefinitionEditorWindow.DrawHitEffectsOptions(CAF.Combat.BoxGroup)
+  - CAF.Combat.AttackDefinitionEditorWindow.DrawHitForcesOptions(CAF.Combat.BoxGroup)
+  - CAF.Combat.AttackDefinitionEditorWindow.DrawHitStunOptions(CAF.Combat.BoxGroup)
+  - CAF.Combat.AttackDefinitionEditorWindow.DrawMenu
+  - CAF.Combat.AttackDefinitionEditorWindow.DrawMenuBar
+  - CAF.Combat.AttackDefinitionEditorWindow.enemyStepWindowsFoldout
+  - CAF.Combat.AttackDefinitionEditorWindow.eventSelected
+  - CAF.Combat.AttackDefinitionEditorWindow.eventVariablesFoldout
+  - CAF.Combat.AttackDefinitionEditorWindow.Init(CAF.Combat.AttackDefinition)
+  - CAF.Combat.AttackDefinitionEditorWindow.jumpCancelWindowsFoldout
+  - CAF.Combat.AttackDefinitionEditorWindow.landCancelWindowsFoldout
+  - CAF.Combat.AttackDefinitionEditorWindow.OnAttackEventSelected(System.Object)
+  - CAF.Combat.AttackDefinitionEditorWindow.OnFocus
+  - CAF.Combat.AttackDefinitionEditorWindow.OnGUI
+  - CAF.Combat.AttackDefinitionEditorWindow.scrollPos
+  - CAF.Combat.AttackDefinitionEditorWindow.ShowEventInfo(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: AttackDefinitionEditorWindow
+  nameWithType: AttackDefinitionEditorWindow
+  fullName: CAF.Combat.AttackDefinitionEditorWindow
+  type: Class
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: AttackDefinitionEditorWindow
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 7
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: 'public class AttackDefinitionEditorWindow : EditorWindow'
+    content.vb: >-
+      Public Class AttackDefinitionEditorWindow
+
+          Inherits EditorWindow
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - UnityEditor.EditorWindow
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CAF.Combat.AttackDefinitionEditorWindow.attack
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.attack
+  id: attack
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: attack
+  nameWithType: AttackDefinitionEditorWindow.attack
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.attack
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: attack
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 9
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected AttackDefinition attack
+    return:
+      type: CAF.Combat.AttackDefinition
+    content.vb: Protected attack As AttackDefinition
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Combat.AttackDefinitionEditorWindow.currentMenu
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.currentMenu
+  id: currentMenu
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: currentMenu
+  nameWithType: AttackDefinitionEditorWindow.currentMenu
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.currentMenu
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: currentMenu
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 10
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected int currentMenu
+    return:
+      type: System.Int32
+    content.vb: Protected currentMenu As Integer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Combat.AttackDefinitionEditorWindow.Init(CAF.Combat.AttackDefinition)
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.Init(CAF.Combat.AttackDefinition)
+  id: Init(CAF.Combat.AttackDefinition)
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: Init(AttackDefinition)
+  nameWithType: AttackDefinitionEditorWindow.Init(AttackDefinition)
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.Init(CAF.Combat.AttackDefinition)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: Init
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 12
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: public static void Init(AttackDefinition attack)
+    parameters:
+    - id: attack
+      type: CAF.Combat.AttackDefinition
+    content.vb: Public Shared Sub Init(attack As AttackDefinition)
+  overload: CAF.Combat.AttackDefinitionEditorWindow.Init*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: CAF.Combat.AttackDefinitionEditorWindow.attackEventTypes
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.attackEventTypes
+  id: attackEventTypes
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: attackEventTypes
+  nameWithType: AttackDefinitionEditorWindow.attackEventTypes
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.attackEventTypes
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: attackEventTypes
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 20
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected Dictionary<string, Type> attackEventTypes
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Type}
+    content.vb: Protected attackEventTypes As Dictionary(Of String, Type)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Combat.AttackDefinitionEditorWindow.OnFocus
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.OnFocus
+  id: OnFocus
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: OnFocus()
+  nameWithType: AttackDefinitionEditorWindow.OnFocus()
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.OnFocus()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: OnFocus
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 21
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected virtual void OnFocus()
+    content.vb: Protected Overridable Sub OnFocus
+  overload: CAF.Combat.AttackDefinitionEditorWindow.OnFocus*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Combat.AttackDefinitionEditorWindow.OnGUI
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.OnGUI
+  id: OnGUI
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: OnGUI()
+  nameWithType: AttackDefinitionEditorWindow.OnGUI()
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.OnGUI()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: OnGUI
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 36
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected virtual void OnGUI()
+    content.vb: Protected Overridable Sub OnGUI
+  overload: CAF.Combat.AttackDefinitionEditorWindow.OnGUI*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawMenuBar
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawMenuBar
+  id: DrawMenuBar
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: DrawMenuBar()
+  nameWithType: AttackDefinitionEditorWindow.DrawMenuBar()
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawMenuBar()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: DrawMenuBar
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 51
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected virtual void DrawMenuBar()
+    content.vb: Protected Overridable Sub DrawMenuBar
+  overload: CAF.Combat.AttackDefinitionEditorWindow.DrawMenuBar*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawMenu
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawMenu
+  id: DrawMenu
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: DrawMenu()
+  nameWithType: AttackDefinitionEditorWindow.DrawMenu()
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawMenu()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: DrawMenu
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 71
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected virtual void DrawMenu()
+    content.vb: Protected Overridable Sub DrawMenu
+  overload: CAF.Combat.AttackDefinitionEditorWindow.DrawMenu*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawGeneralMenu
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawGeneralMenu
+  id: DrawGeneralMenu
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: DrawGeneralMenu()
+  nameWithType: AttackDefinitionEditorWindow.DrawGeneralMenu()
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawGeneralMenu()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: DrawGeneralMenu
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 91
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected virtual void DrawGeneralMenu()
+    content.vb: Protected Overridable Sub DrawGeneralMenu
+  overload: CAF.Combat.AttackDefinitionEditorWindow.DrawGeneralMenu*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Combat.AttackDefinitionEditorWindow.jumpCancelWindowsFoldout
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.jumpCancelWindowsFoldout
+  id: jumpCancelWindowsFoldout
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: jumpCancelWindowsFoldout
+  nameWithType: AttackDefinitionEditorWindow.jumpCancelWindowsFoldout
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.jumpCancelWindowsFoldout
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: jumpCancelWindowsFoldout
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 141
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected bool jumpCancelWindowsFoldout
+    return:
+      type: System.Boolean
+    content.vb: Protected jumpCancelWindowsFoldout As Boolean
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Combat.AttackDefinitionEditorWindow.enemyStepWindowsFoldout
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.enemyStepWindowsFoldout
+  id: enemyStepWindowsFoldout
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: enemyStepWindowsFoldout
+  nameWithType: AttackDefinitionEditorWindow.enemyStepWindowsFoldout
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.enemyStepWindowsFoldout
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: enemyStepWindowsFoldout
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 142
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected bool enemyStepWindowsFoldout
+    return:
+      type: System.Boolean
+    content.vb: Protected enemyStepWindowsFoldout As Boolean
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Combat.AttackDefinitionEditorWindow.landCancelWindowsFoldout
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.landCancelWindowsFoldout
+  id: landCancelWindowsFoldout
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: landCancelWindowsFoldout
+  nameWithType: AttackDefinitionEditorWindow.landCancelWindowsFoldout
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.landCancelWindowsFoldout
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: landCancelWindowsFoldout
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 143
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected bool landCancelWindowsFoldout
+    return:
+      type: System.Boolean
+    content.vb: Protected landCancelWindowsFoldout As Boolean
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Combat.AttackDefinitionEditorWindow.commandAttackCancelWindowsFoldout
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.commandAttackCancelWindowsFoldout
+  id: commandAttackCancelWindowsFoldout
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: commandAttackCancelWindowsFoldout
+  nameWithType: AttackDefinitionEditorWindow.commandAttackCancelWindowsFoldout
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.commandAttackCancelWindowsFoldout
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: commandAttackCancelWindowsFoldout
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 144
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected bool commandAttackCancelWindowsFoldout
+    return:
+      type: System.Boolean
+    content.vb: Protected commandAttackCancelWindowsFoldout As Boolean
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindows
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindows
+  id: DrawCancelWindows
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: DrawCancelWindows()
+  nameWithType: AttackDefinitionEditorWindow.DrawCancelWindows()
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindows()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: DrawCancelWindows
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 145
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected virtual void DrawCancelWindows()
+    content.vb: Protected Overridable Sub DrawCancelWindows
+  overload: CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindows*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindow(System.String,System.Boolean@,System.Collections.Generic.List{UnityEngine.Vector2Int}@,System.Single)
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindow(System.String,System.Boolean@,System.Collections.Generic.List{UnityEngine.Vector2Int}@,System.Single)
+  id: DrawCancelWindow(System.String,System.Boolean@,System.Collections.Generic.List{UnityEngine.Vector2Int}@,System.Single)
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: DrawCancelWindow(String, ref Boolean, ref List<Vector2Int>, Single)
+  nameWithType: AttackDefinitionEditorWindow.DrawCancelWindow(String, ref Boolean, ref List<Vector2Int>, Single)
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindow(System.String, ref System.Boolean, ref System.Collections.Generic.List<UnityEngine.Vector2Int>, System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: DrawCancelWindow
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 169
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected virtual void DrawCancelWindow(string foldoutName, ref bool foldout, ref List<Vector2Int> windows, float width)
+    parameters:
+    - id: foldoutName
+      type: System.String
+    - id: foldout
+      type: System.Boolean
+    - id: windows
+      type: System.Collections.Generic.List{UnityEngine.Vector2Int}
+    - id: width
+      type: System.Single
+    content.vb: Protected Overridable Sub DrawCancelWindow(foldoutName As String, ByRef foldout As Boolean, ByRef windows As List(Of Vector2Int), width As Single)
+  overload: CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindow*
+  nameWithType.vb: AttackDefinitionEditorWindow.DrawCancelWindow(String, ByRef Boolean, ByRef List(Of Vector2Int), Single)
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindow(System.String, ByRef System.Boolean, ByRef System.Collections.Generic.List(Of UnityEngine.Vector2Int), System.Single)
+  name.vb: DrawCancelWindow(String, ByRef Boolean, ByRef List(Of Vector2Int), Single)
+- uid: CAF.Combat.AttackDefinitionEditorWindow.currentHitboxGroupIndex
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.currentHitboxGroupIndex
+  id: currentHitboxGroupIndex
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: currentHitboxGroupIndex
+  nameWithType: AttackDefinitionEditorWindow.currentHitboxGroupIndex
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.currentHitboxGroupIndex
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: currentHitboxGroupIndex
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 196
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected int currentHitboxGroupIndex
+    return:
+      type: System.Int32
+    content.vb: Protected currentHitboxGroupIndex As Integer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Combat.AttackDefinitionEditorWindow.scrollPos
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.scrollPos
+  id: scrollPos
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: scrollPos
+  nameWithType: AttackDefinitionEditorWindow.scrollPos
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.scrollPos
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: scrollPos
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 197
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected Vector2 scrollPos
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Protected scrollPos As Vector2
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxesMenu
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawBoxesMenu
+  id: DrawBoxesMenu
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: DrawBoxesMenu()
+  nameWithType: AttackDefinitionEditorWindow.DrawBoxesMenu()
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxesMenu()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: DrawBoxesMenu
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 198
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected virtual void DrawBoxesMenu()
+    content.vb: Protected Overridable Sub DrawBoxesMenu
+  overload: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxesMenu*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Combat.AttackDefinitionEditorWindow.BoxesMenuNavigationBar
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.BoxesMenuNavigationBar
+  id: BoxesMenuNavigationBar
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: BoxesMenuNavigationBar()
+  nameWithType: AttackDefinitionEditorWindow.BoxesMenuNavigationBar()
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.BoxesMenuNavigationBar()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: BoxesMenuNavigationBar
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 217
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected virtual void BoxesMenuNavigationBar()
+    content.vb: Protected Overridable Sub BoxesMenuNavigationBar
+  overload: CAF.Combat.AttackDefinitionEditorWindow.BoxesMenuNavigationBar*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Combat.AttackDefinitionEditorWindow.AddBoxGroup
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.AddBoxGroup
+  id: AddBoxGroup
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: AddBoxGroup()
+  nameWithType: AttackDefinitionEditorWindow.AddBoxGroup()
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.AddBoxGroup()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: AddBoxGroup
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 249
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected virtual void AddBoxGroup()
+    content.vb: Protected Overridable Sub AddBoxGroup
+  overload: CAF.Combat.AttackDefinitionEditorWindow.AddBoxGroup*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Combat.AttackDefinitionEditorWindow.boxesFoldout
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.boxesFoldout
+  id: boxesFoldout
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: boxesFoldout
+  nameWithType: AttackDefinitionEditorWindow.boxesFoldout
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.boxesFoldout
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: boxesFoldout
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 254
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected bool boxesFoldout
+    return:
+      type: System.Boolean
+    content.vb: Protected boxesFoldout As Boolean
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroup(CAF.Combat.BoxGroup)
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroup(CAF.Combat.BoxGroup)
+  id: DrawBoxGroup(CAF.Combat.BoxGroup)
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: DrawBoxGroup(BoxGroup)
+  nameWithType: AttackDefinitionEditorWindow.DrawBoxGroup(BoxGroup)
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroup(CAF.Combat.BoxGroup)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: DrawBoxGroup
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 255
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected virtual void DrawBoxGroup(BoxGroup currentGroup)
+    parameters:
+    - id: currentGroup
+      type: CAF.Combat.BoxGroup
+    content.vb: Protected Overridable Sub DrawBoxGroup(currentGroup As BoxGroup)
+  overload: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroup*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Combat.AttackDefinitionEditorWindow.BoxGroupAddBoxDefinition(CAF.Combat.BoxGroup)
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.BoxGroupAddBoxDefinition(CAF.Combat.BoxGroup)
+  id: BoxGroupAddBoxDefinition(CAF.Combat.BoxGroup)
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: BoxGroupAddBoxDefinition(BoxGroup)
+  nameWithType: AttackDefinitionEditorWindow.BoxGroupAddBoxDefinition(BoxGroup)
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.BoxGroupAddBoxDefinition(CAF.Combat.BoxGroup)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: BoxGroupAddBoxDefinition
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 305
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected virtual void BoxGroupAddBoxDefinition(BoxGroup currentGroup)
+    parameters:
+    - id: currentGroup
+      type: CAF.Combat.BoxGroup
+    content.vb: Protected Overridable Sub BoxGroupAddBoxDefinition(currentGroup As BoxGroup)
+  overload: CAF.Combat.AttackDefinitionEditorWindow.BoxGroupAddBoxDefinition*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupHitOptions(CAF.Combat.BoxGroup)
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupHitOptions(CAF.Combat.BoxGroup)
+  id: DrawBoxGroupHitOptions(CAF.Combat.BoxGroup)
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: DrawBoxGroupHitOptions(BoxGroup)
+  nameWithType: AttackDefinitionEditorWindow.DrawBoxGroupHitOptions(BoxGroup)
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupHitOptions(CAF.Combat.BoxGroup)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: DrawBoxGroupHitOptions
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 311
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected virtual void DrawBoxGroupHitOptions(BoxGroup currentGroup)
+    parameters:
+    - id: currentGroup
+      type: CAF.Combat.BoxGroup
+    content.vb: Protected Overridable Sub DrawBoxGroupHitOptions(currentGroup As BoxGroup)
+  overload: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupHitOptions*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawHitEffectsOptions(CAF.Combat.BoxGroup)
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawHitEffectsOptions(CAF.Combat.BoxGroup)
+  id: DrawHitEffectsOptions(CAF.Combat.BoxGroup)
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: DrawHitEffectsOptions(BoxGroup)
+  nameWithType: AttackDefinitionEditorWindow.DrawHitEffectsOptions(BoxGroup)
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawHitEffectsOptions(CAF.Combat.BoxGroup)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: DrawHitEffectsOptions
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 330
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected virtual void DrawHitEffectsOptions(BoxGroup currentGroup)
+    parameters:
+    - id: currentGroup
+      type: CAF.Combat.BoxGroup
+    content.vb: Protected Overridable Sub DrawHitEffectsOptions(currentGroup As BoxGroup)
+  overload: CAF.Combat.AttackDefinitionEditorWindow.DrawHitEffectsOptions*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawHitDamageOptions(CAF.Combat.BoxGroup)
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawHitDamageOptions(CAF.Combat.BoxGroup)
+  id: DrawHitDamageOptions(CAF.Combat.BoxGroup)
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: DrawHitDamageOptions(BoxGroup)
+  nameWithType: AttackDefinitionEditorWindow.DrawHitDamageOptions(BoxGroup)
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawHitDamageOptions(CAF.Combat.BoxGroup)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: DrawHitDamageOptions
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 347
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected virtual void DrawHitDamageOptions(BoxGroup currentGroup)
+    parameters:
+    - id: currentGroup
+      type: CAF.Combat.BoxGroup
+    content.vb: Protected Overridable Sub DrawHitDamageOptions(currentGroup As BoxGroup)
+  overload: CAF.Combat.AttackDefinitionEditorWindow.DrawHitDamageOptions*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawHitForcesOptions(CAF.Combat.BoxGroup)
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawHitForcesOptions(CAF.Combat.BoxGroup)
+  id: DrawHitForcesOptions(CAF.Combat.BoxGroup)
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: DrawHitForcesOptions(BoxGroup)
+  nameWithType: AttackDefinitionEditorWindow.DrawHitForcesOptions(BoxGroup)
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawHitForcesOptions(CAF.Combat.BoxGroup)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: DrawHitForcesOptions
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 354
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected virtual void DrawHitForcesOptions(BoxGroup currentGroup)
+    parameters:
+    - id: currentGroup
+      type: CAF.Combat.BoxGroup
+    content.vb: Protected Overridable Sub DrawHitForcesOptions(currentGroup As BoxGroup)
+  overload: CAF.Combat.AttackDefinitionEditorWindow.DrawHitForcesOptions*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawHitStunOptions(CAF.Combat.BoxGroup)
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawHitStunOptions(CAF.Combat.BoxGroup)
+  id: DrawHitStunOptions(CAF.Combat.BoxGroup)
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: DrawHitStunOptions(BoxGroup)
+  nameWithType: AttackDefinitionEditorWindow.DrawHitStunOptions(BoxGroup)
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawHitStunOptions(CAF.Combat.BoxGroup)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: DrawHitStunOptions
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 390
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected virtual void DrawHitStunOptions(BoxGroup currentGroup)
+    parameters:
+    - id: currentGroup
+      type: CAF.Combat.BoxGroup
+    content.vb: Protected Overridable Sub DrawHitStunOptions(currentGroup As BoxGroup)
+  overload: CAF.Combat.AttackDefinitionEditorWindow.DrawHitStunOptions*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupGrabOptions(CAF.Combat.BoxGroup)
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupGrabOptions(CAF.Combat.BoxGroup)
+  id: DrawBoxGroupGrabOptions(CAF.Combat.BoxGroup)
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: DrawBoxGroupGrabOptions(BoxGroup)
+  nameWithType: AttackDefinitionEditorWindow.DrawBoxGroupGrabOptions(BoxGroup)
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupGrabOptions(CAF.Combat.BoxGroup)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: DrawBoxGroupGrabOptions
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 400
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected virtual void DrawBoxGroupGrabOptions(BoxGroup currentGroup)
+    parameters:
+    - id: currentGroup
+      type: CAF.Combat.BoxGroup
+    content.vb: Protected Overridable Sub DrawBoxGroupGrabOptions(currentGroup As BoxGroup)
+  overload: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupGrabOptions*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxOptions(CAF.Combat.BoxGroup,System.Int32)
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxOptions(CAF.Combat.BoxGroup,System.Int32)
+  id: DrawHitboxOptions(CAF.Combat.BoxGroup,System.Int32)
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: DrawHitboxOptions(BoxGroup, Int32)
+  nameWithType: AttackDefinitionEditorWindow.DrawHitboxOptions(BoxGroup, Int32)
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxOptions(CAF.Combat.BoxGroup, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: DrawHitboxOptions
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 408
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected virtual void DrawHitboxOptions(BoxGroup currentGroup, int index)
+    parameters:
+    - id: currentGroup
+      type: CAF.Combat.BoxGroup
+    - id: index
+      type: System.Int32
+    content.vb: Protected Overridable Sub DrawHitboxOptions(currentGroup As BoxGroup, index As Integer)
+  overload: CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxOptions*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Combat.AttackDefinitionEditorWindow.eventSelected
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.eventSelected
+  id: eventSelected
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: eventSelected
+  nameWithType: AttackDefinitionEditorWindow.eventSelected
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.eventSelected
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: eventSelected
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 453
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected int eventSelected
+    return:
+      type: System.Int32
+    content.vb: Protected eventSelected As Integer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawEventsWindow
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawEventsWindow
+  id: DrawEventsWindow
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: DrawEventsWindow()
+  nameWithType: AttackDefinitionEditorWindow.DrawEventsWindow()
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawEventsWindow()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: DrawEventsWindow
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 454
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected virtual void DrawEventsWindow()
+    content.vb: Protected Overridable Sub DrawEventsWindow
+  overload: CAF.Combat.AttackDefinitionEditorWindow.DrawEventsWindow*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Combat.AttackDefinitionEditorWindow.AddAttackEventDefinition
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.AddAttackEventDefinition
+  id: AddAttackEventDefinition
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: AddAttackEventDefinition()
+  nameWithType: AttackDefinitionEditorWindow.AddAttackEventDefinition()
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.AddAttackEventDefinition()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: AddAttackEventDefinition
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 509
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected virtual void AddAttackEventDefinition()
+    content.vb: Protected Overridable Sub AddAttackEventDefinition
+  overload: CAF.Combat.AttackDefinitionEditorWindow.AddAttackEventDefinition*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Combat.AttackDefinitionEditorWindow.eventVariablesFoldout
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.eventVariablesFoldout
+  id: eventVariablesFoldout
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: eventVariablesFoldout
+  nameWithType: AttackDefinitionEditorWindow.eventVariablesFoldout
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.eventVariablesFoldout
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: eventVariablesFoldout
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 514
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected bool eventVariablesFoldout
+    return:
+      type: System.Boolean
+    content.vb: Protected eventVariablesFoldout As Boolean
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Combat.AttackDefinitionEditorWindow.ShowEventInfo(System.Int32)
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.ShowEventInfo(System.Int32)
+  id: ShowEventInfo(System.Int32)
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: ShowEventInfo(Int32)
+  nameWithType: AttackDefinitionEditorWindow.ShowEventInfo(Int32)
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.ShowEventInfo(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: ShowEventInfo
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 515
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected virtual void ShowEventInfo(int eventSelected)
+    parameters:
+    - id: eventSelected
+      type: System.Int32
+    content.vb: Protected Overridable Sub ShowEventInfo(eventSelected As Integer)
+  overload: CAF.Combat.AttackDefinitionEditorWindow.ShowEventInfo*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Combat.AttackDefinitionEditorWindow.OnAttackEventSelected(System.Object)
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.OnAttackEventSelected(System.Object)
+  id: OnAttackEventSelected(System.Object)
+  parent: CAF.Combat.AttackDefinitionEditorWindow
+  langs:
+  - csharp
+  - vb
+  name: OnAttackEventSelected(Object)
+  nameWithType: AttackDefinitionEditorWindow.OnAttackEventSelected(Object)
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.OnAttackEventSelected(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: OnAttackEventSelected
+    path: ../Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs
+    startLine: 562
+  assemblies:
+  - CAF.Editor
+  namespace: CAF.Combat
+  syntax:
+    content: protected void OnAttackEventSelected(object t)
+    parameters:
+    - id: t
+      type: System.Object
+    content.vb: Protected Sub OnAttackEventSelected(t As Object)
+  overload: CAF.Combat.AttackDefinitionEditorWindow.OnAttackEventSelected*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+references:
+- uid: CAF.Combat
+  commentId: N:CAF.Combat
+  name: CAF.Combat
+  nameWithType: CAF.Combat
+  fullName: CAF.Combat
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: UnityEditor.EditorWindow
+  commentId: T:UnityEditor.EditorWindow
+  parent: UnityEditor
+  isExternal: true
+  name: EditorWindow
+  nameWithType: EditorWindow
+  fullName: UnityEditor.EditorWindow
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEditor
+  commentId: N:UnityEditor
+  isExternal: true
+  name: UnityEditor
+  nameWithType: UnityEditor
+  fullName: UnityEditor
+- uid: CAF.Combat.AttackDefinition
+  commentId: T:CAF.Combat.AttackDefinition
+  parent: CAF.Combat
+  name: AttackDefinition
+  nameWithType: AttackDefinition
+  fullName: CAF.Combat.AttackDefinition
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: CAF.Combat.AttackDefinitionEditorWindow.Init*
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.Init
+  name: Init
+  nameWithType: AttackDefinitionEditorWindow.Init
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.Init
+- uid: System.Collections.Generic.Dictionary{System.String,System.Type}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Type}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, Type>
+  nameWithType: Dictionary<String, Type>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.Type>
+  nameWithType.vb: Dictionary(Of String, Type)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.Type)
+  name.vb: Dictionary(Of String, Type)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: CAF.Combat.AttackDefinitionEditorWindow.OnFocus*
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.OnFocus
+  name: OnFocus
+  nameWithType: AttackDefinitionEditorWindow.OnFocus
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.OnFocus
+- uid: CAF.Combat.AttackDefinitionEditorWindow.OnGUI*
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.OnGUI
+  name: OnGUI
+  nameWithType: AttackDefinitionEditorWindow.OnGUI
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.OnGUI
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawMenuBar*
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawMenuBar
+  name: DrawMenuBar
+  nameWithType: AttackDefinitionEditorWindow.DrawMenuBar
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawMenuBar
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawMenu*
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawMenu
+  name: DrawMenu
+  nameWithType: AttackDefinitionEditorWindow.DrawMenu
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawMenu
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawGeneralMenu*
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawGeneralMenu
+  name: DrawGeneralMenu
+  nameWithType: AttackDefinitionEditorWindow.DrawGeneralMenu
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawGeneralMenu
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindows*
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindows
+  name: DrawCancelWindows
+  nameWithType: AttackDefinitionEditorWindow.DrawCancelWindows
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindows
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindow*
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindow
+  name: DrawCancelWindow
+  nameWithType: AttackDefinitionEditorWindow.DrawCancelWindow
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindow
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Collections.Generic.List{UnityEngine.Vector2Int}
+  commentId: T:System.Collections.Generic.List{UnityEngine.Vector2Int}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Vector2Int>
+  nameWithType: List<Vector2Int>
+  fullName: System.Collections.Generic.List<UnityEngine.Vector2Int>
+  nameWithType.vb: List(Of Vector2Int)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.Vector2Int)
+  name.vb: List(Of Vector2Int)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    nameWithType: Vector2Int
+    fullName: UnityEngine.Vector2Int
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    nameWithType: Vector2Int
+    fullName: UnityEngine.Vector2Int
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxesMenu*
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawBoxesMenu
+  name: DrawBoxesMenu
+  nameWithType: AttackDefinitionEditorWindow.DrawBoxesMenu
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxesMenu
+- uid: CAF.Combat.AttackDefinitionEditorWindow.BoxesMenuNavigationBar*
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.BoxesMenuNavigationBar
+  name: BoxesMenuNavigationBar
+  nameWithType: AttackDefinitionEditorWindow.BoxesMenuNavigationBar
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.BoxesMenuNavigationBar
+- uid: CAF.Combat.AttackDefinitionEditorWindow.AddBoxGroup*
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.AddBoxGroup
+  name: AddBoxGroup
+  nameWithType: AttackDefinitionEditorWindow.AddBoxGroup
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.AddBoxGroup
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroup*
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroup
+  name: DrawBoxGroup
+  nameWithType: AttackDefinitionEditorWindow.DrawBoxGroup
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroup
+- uid: CAF.Combat.BoxGroup
+  commentId: T:CAF.Combat.BoxGroup
+  parent: CAF.Combat
+  name: BoxGroup
+  nameWithType: BoxGroup
+  fullName: CAF.Combat.BoxGroup
+- uid: CAF.Combat.AttackDefinitionEditorWindow.BoxGroupAddBoxDefinition*
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.BoxGroupAddBoxDefinition
+  name: BoxGroupAddBoxDefinition
+  nameWithType: AttackDefinitionEditorWindow.BoxGroupAddBoxDefinition
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.BoxGroupAddBoxDefinition
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupHitOptions*
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupHitOptions
+  name: DrawBoxGroupHitOptions
+  nameWithType: AttackDefinitionEditorWindow.DrawBoxGroupHitOptions
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupHitOptions
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawHitEffectsOptions*
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawHitEffectsOptions
+  name: DrawHitEffectsOptions
+  nameWithType: AttackDefinitionEditorWindow.DrawHitEffectsOptions
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawHitEffectsOptions
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawHitDamageOptions*
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawHitDamageOptions
+  name: DrawHitDamageOptions
+  nameWithType: AttackDefinitionEditorWindow.DrawHitDamageOptions
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawHitDamageOptions
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawHitForcesOptions*
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawHitForcesOptions
+  name: DrawHitForcesOptions
+  nameWithType: AttackDefinitionEditorWindow.DrawHitForcesOptions
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawHitForcesOptions
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawHitStunOptions*
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawHitStunOptions
+  name: DrawHitStunOptions
+  nameWithType: AttackDefinitionEditorWindow.DrawHitStunOptions
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawHitStunOptions
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupGrabOptions*
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupGrabOptions
+  name: DrawBoxGroupGrabOptions
+  nameWithType: AttackDefinitionEditorWindow.DrawBoxGroupGrabOptions
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupGrabOptions
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxOptions*
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxOptions
+  name: DrawHitboxOptions
+  nameWithType: AttackDefinitionEditorWindow.DrawHitboxOptions
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxOptions
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawEventsWindow*
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawEventsWindow
+  name: DrawEventsWindow
+  nameWithType: AttackDefinitionEditorWindow.DrawEventsWindow
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawEventsWindow
+- uid: CAF.Combat.AttackDefinitionEditorWindow.AddAttackEventDefinition*
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.AddAttackEventDefinition
+  name: AddAttackEventDefinition
+  nameWithType: AttackDefinitionEditorWindow.AddAttackEventDefinition
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.AddAttackEventDefinition
+- uid: CAF.Combat.AttackDefinitionEditorWindow.ShowEventInfo*
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.ShowEventInfo
+  name: ShowEventInfo
+  nameWithType: AttackDefinitionEditorWindow.ShowEventInfo
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.ShowEventInfo
+- uid: CAF.Combat.AttackDefinitionEditorWindow.OnAttackEventSelected*
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.OnAttackEventSelected
+  name: OnAttackEventSelected
+  nameWithType: AttackDefinitionEditorWindow.OnAttackEventSelected
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.OnAttackEventSelected

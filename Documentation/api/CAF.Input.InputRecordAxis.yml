@@ -1,0 +1,296 @@
+### YamlMime:ManagedReference
+items:
+- uid: CAF.Input.InputRecordAxis
+  commentId: T:CAF.Input.InputRecordAxis
+  id: InputRecordAxis
+  parent: CAF.Input
+  children:
+  - CAF.Input.InputRecordAxis.#ctor(System.Single)
+  - CAF.Input.InputRecordAxis.axis
+  - CAF.Input.InputRecordAxis.Process(CAF.Input.InputRecordInput)
+  - CAF.Input.InputRecordAxis.UsedInBuffer
+  langs:
+  - csharp
+  - vb
+  name: InputRecordAxis
+  nameWithType: InputRecordAxis
+  fullName: CAF.Input.InputRecordAxis
+  type: Struct
+  source:
+    remote:
+      path: Assets/CAF/Input/Input Record/InputRecordAxis.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: InputRecordAxis
+    path: ../Assets/CAF/Input/Input Record/InputRecordAxis.cs
+    startLine: 2
+  assemblies:
+  - CAF
+  namespace: CAF.Input
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct InputRecordAxis : InputRecordInput
+    content.vb: >-
+      <Serializable>
+
+      Public Structure InputRecordAxis
+
+          Implements InputRecordInput
+  implements:
+  - CAF.Input.InputRecordInput
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: CAF.Input.InputRecordAxis.axis
+  commentId: F:CAF.Input.InputRecordAxis.axis
+  id: axis
+  parent: CAF.Input.InputRecordAxis
+  langs:
+  - csharp
+  - vb
+  name: axis
+  nameWithType: InputRecordAxis.axis
+  fullName: CAF.Input.InputRecordAxis.axis
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Input/Input Record/InputRecordAxis.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: axis
+    path: ../Assets/CAF/Input/Input Record/InputRecordAxis.cs
+    startLine: 5
+  assemblies:
+  - CAF
+  namespace: CAF.Input
+  syntax:
+    content: public float axis
+    return:
+      type: System.Single
+    content.vb: Public axis As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Input.InputRecordAxis.#ctor(System.Single)
+  commentId: M:CAF.Input.InputRecordAxis.#ctor(System.Single)
+  id: '#ctor(System.Single)'
+  parent: CAF.Input.InputRecordAxis
+  langs:
+  - csharp
+  - vb
+  name: InputRecordAxis(Single)
+  nameWithType: InputRecordAxis.InputRecordAxis(Single)
+  fullName: CAF.Input.InputRecordAxis.InputRecordAxis(System.Single)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/CAF/Input/Input Record/InputRecordAxis.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: .ctor
+    path: ../Assets/CAF/Input/Input Record/InputRecordAxis.cs
+    startLine: 7
+  assemblies:
+  - CAF
+  namespace: CAF.Input
+  syntax:
+    content: public InputRecordAxis(float axis)
+    parameters:
+    - id: axis
+      type: System.Single
+    content.vb: Public Sub New(axis As Single)
+  overload: CAF.Input.InputRecordAxis.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Input.InputRecordAxis.UsedInBuffer
+  commentId: M:CAF.Input.InputRecordAxis.UsedInBuffer
+  id: UsedInBuffer
+  parent: CAF.Input.InputRecordAxis
+  langs:
+  - csharp
+  - vb
+  name: UsedInBuffer()
+  nameWithType: InputRecordAxis.UsedInBuffer()
+  fullName: CAF.Input.InputRecordAxis.UsedInBuffer()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Input/Input Record/InputRecordAxis.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: UsedInBuffer
+    path: ../Assets/CAF/Input/Input Record/InputRecordAxis.cs
+    startLine: 12
+  assemblies:
+  - CAF
+  namespace: CAF.Input
+  syntax:
+    content: public bool UsedInBuffer()
+    return:
+      type: System.Boolean
+    content.vb: Public Function UsedInBuffer As Boolean
+  overload: CAF.Input.InputRecordAxis.UsedInBuffer*
+  implements:
+  - CAF.Input.InputRecordInput.UsedInBuffer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Input.InputRecordAxis.Process(CAF.Input.InputRecordInput)
+  commentId: M:CAF.Input.InputRecordAxis.Process(CAF.Input.InputRecordInput)
+  id: Process(CAF.Input.InputRecordInput)
+  parent: CAF.Input.InputRecordAxis
+  langs:
+  - csharp
+  - vb
+  name: Process(InputRecordInput)
+  nameWithType: InputRecordAxis.Process(InputRecordInput)
+  fullName: CAF.Input.InputRecordAxis.Process(CAF.Input.InputRecordInput)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Input/Input Record/InputRecordAxis.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: Process
+    path: ../Assets/CAF/Input/Input Record/InputRecordAxis.cs
+    startLine: 17
+  assemblies:
+  - CAF
+  namespace: CAF.Input
+  syntax:
+    content: public void Process(InputRecordInput lastStateDown)
+    parameters:
+    - id: lastStateDown
+      type: CAF.Input.InputRecordInput
+    content.vb: Public Sub Process(lastStateDown As InputRecordInput)
+  overload: CAF.Input.InputRecordAxis.Process*
+  implements:
+  - CAF.Input.InputRecordInput.Process(CAF.Input.InputRecordInput)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: CAF.Input
+  commentId: N:CAF.Input
+  name: CAF.Input
+  nameWithType: CAF.Input
+  fullName: CAF.Input
+- uid: CAF.Input.InputRecordInput
+  commentId: T:CAF.Input.InputRecordInput
+  parent: CAF.Input
+  name: InputRecordInput
+  nameWithType: InputRecordInput
+  fullName: CAF.Input.InputRecordInput
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CAF.Input.InputRecordAxis.#ctor*
+  commentId: Overload:CAF.Input.InputRecordAxis.#ctor
+  name: InputRecordAxis
+  nameWithType: InputRecordAxis.InputRecordAxis
+  fullName: CAF.Input.InputRecordAxis.InputRecordAxis
+- uid: CAF.Input.InputRecordAxis.UsedInBuffer*
+  commentId: Overload:CAF.Input.InputRecordAxis.UsedInBuffer
+  name: UsedInBuffer
+  nameWithType: InputRecordAxis.UsedInBuffer
+  fullName: CAF.Input.InputRecordAxis.UsedInBuffer
+- uid: CAF.Input.InputRecordInput.UsedInBuffer
+  commentId: M:CAF.Input.InputRecordInput.UsedInBuffer
+  parent: CAF.Input.InputRecordInput
+  name: UsedInBuffer()
+  nameWithType: InputRecordInput.UsedInBuffer()
+  fullName: CAF.Input.InputRecordInput.UsedInBuffer()
+  spec.csharp:
+  - uid: CAF.Input.InputRecordInput.UsedInBuffer
+    name: UsedInBuffer
+    nameWithType: InputRecordInput.UsedInBuffer
+    fullName: CAF.Input.InputRecordInput.UsedInBuffer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CAF.Input.InputRecordInput.UsedInBuffer
+    name: UsedInBuffer
+    nameWithType: InputRecordInput.UsedInBuffer
+    fullName: CAF.Input.InputRecordInput.UsedInBuffer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: CAF.Input.InputRecordAxis.Process*
+  commentId: Overload:CAF.Input.InputRecordAxis.Process
+  name: Process
+  nameWithType: InputRecordAxis.Process
+  fullName: CAF.Input.InputRecordAxis.Process
+- uid: CAF.Input.InputRecordInput.Process(CAF.Input.InputRecordInput)
+  commentId: M:CAF.Input.InputRecordInput.Process(CAF.Input.InputRecordInput)
+  parent: CAF.Input.InputRecordInput
+  name: Process(InputRecordInput)
+  nameWithType: InputRecordInput.Process(InputRecordInput)
+  fullName: CAF.Input.InputRecordInput.Process(CAF.Input.InputRecordInput)
+  spec.csharp:
+  - uid: CAF.Input.InputRecordInput.Process(CAF.Input.InputRecordInput)
+    name: Process
+    nameWithType: InputRecordInput.Process
+    fullName: CAF.Input.InputRecordInput.Process
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: CAF.Input.InputRecordInput
+    name: InputRecordInput
+    nameWithType: InputRecordInput
+    fullName: CAF.Input.InputRecordInput
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CAF.Input.InputRecordInput.Process(CAF.Input.InputRecordInput)
+    name: Process
+    nameWithType: InputRecordInput.Process
+    fullName: CAF.Input.InputRecordInput.Process
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: CAF.Input.InputRecordInput
+    name: InputRecordInput
+    nameWithType: InputRecordInput
+    fullName: CAF.Input.InputRecordInput
+  - name: )
+    nameWithType: )
+    fullName: )

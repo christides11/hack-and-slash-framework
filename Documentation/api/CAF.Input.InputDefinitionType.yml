@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: CAF.Input.InputDefinitionType
+  commentId: T:CAF.Input.InputDefinitionType
+  id: InputDefinitionType
+  parent: CAF.Input
+  children:
+  - CAF.Input.InputDefinitionType.Button
+  - CAF.Input.InputDefinitionType.Stick
+  langs:
+  - csharp
+  - vb
+  name: InputDefinitionType
+  nameWithType: InputDefinitionType
+  fullName: CAF.Input.InputDefinitionType
+  type: Enum
+  source:
+    remote:
+      path: Assets/CAF/Input/InputDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: InputDefinitionType
+    path: ../Assets/CAF/Input/InputDefinition.cs
+    startLine: 15
+  assemblies:
+  - CAF
+  namespace: CAF.Input
+  syntax:
+    content: public enum InputDefinitionType
+    content.vb: Public Enum InputDefinitionType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: CAF.Input.InputDefinitionType.Button
+  commentId: F:CAF.Input.InputDefinitionType.Button
+  id: Button
+  parent: CAF.Input.InputDefinitionType
+  langs:
+  - csharp
+  - vb
+  name: Button
+  nameWithType: InputDefinitionType.Button
+  fullName: CAF.Input.InputDefinitionType.Button
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Input/InputDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: Button
+    path: ../Assets/CAF/Input/InputDefinition.cs
+    startLine: 17
+  assemblies:
+  - CAF
+  namespace: CAF.Input
+  syntax:
+    content: Button = 0
+    return:
+      type: CAF.Input.InputDefinitionType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: CAF.Input.InputDefinitionType.Stick
+  commentId: F:CAF.Input.InputDefinitionType.Stick
+  id: Stick
+  parent: CAF.Input.InputDefinitionType
+  langs:
+  - csharp
+  - vb
+  name: Stick
+  nameWithType: InputDefinitionType.Stick
+  fullName: CAF.Input.InputDefinitionType.Stick
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Input/InputDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: Stick
+    path: ../Assets/CAF/Input/InputDefinition.cs
+    startLine: 18
+  assemblies:
+  - CAF
+  namespace: CAF.Input
+  syntax:
+    content: Stick = 1
+    return:
+      type: CAF.Input.InputDefinitionType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: CAF.Input
+  commentId: N:CAF.Input
+  name: CAF.Input
+  nameWithType: CAF.Input
+  fullName: CAF.Input
+- uid: CAF.Input.InputDefinitionType
+  commentId: T:CAF.Input.InputDefinitionType
+  parent: CAF.Input
+  name: InputDefinitionType
+  nameWithType: InputDefinitionType
+  fullName: CAF.Input.InputDefinitionType

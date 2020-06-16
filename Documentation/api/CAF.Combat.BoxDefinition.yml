@@ -1,0 +1,359 @@
+### YamlMime:ManagedReference
+items:
+- uid: CAF.Combat.BoxDefinition
+  commentId: T:CAF.Combat.BoxDefinition
+  id: BoxDefinition
+  parent: CAF.Combat
+  children:
+  - CAF.Combat.BoxDefinition.#ctor
+  - CAF.Combat.BoxDefinition.#ctor(CAF.Combat.BoxDefinition)
+  - CAF.Combat.BoxDefinition.height
+  - CAF.Combat.BoxDefinition.offset
+  - CAF.Combat.BoxDefinition.radius
+  - CAF.Combat.BoxDefinition.rotation
+  - CAF.Combat.BoxDefinition.shape
+  - CAF.Combat.BoxDefinition.size
+  langs:
+  - csharp
+  - vb
+  name: BoxDefinition
+  nameWithType: BoxDefinition
+  fullName: CAF.Combat.BoxDefinition
+  type: Class
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/BoxDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: BoxDefinition
+    path: ../Assets/CAF/Combat/Boxes/BoxDefinition.cs
+    startLine: 4
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class BoxDefinition
+    content.vb: >-
+      <Serializable>
+
+      Public Class BoxDefinition
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CAF.Combat.BoxDefinition.shape
+  commentId: F:CAF.Combat.BoxDefinition.shape
+  id: shape
+  parent: CAF.Combat.BoxDefinition
+  langs:
+  - csharp
+  - vb
+  name: shape
+  nameWithType: BoxDefinition.shape
+  fullName: CAF.Combat.BoxDefinition.shape
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/BoxDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: shape
+    path: ../Assets/CAF/Combat/Boxes/BoxDefinition.cs
+    startLine: 7
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public BoxShapes shape
+    return:
+      type: CAF.Combat.BoxShapes
+    content.vb: Public shape As BoxShapes
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.BoxDefinition.offset
+  commentId: F:CAF.Combat.BoxDefinition.offset
+  id: offset
+  parent: CAF.Combat.BoxDefinition
+  langs:
+  - csharp
+  - vb
+  name: offset
+  nameWithType: BoxDefinition.offset
+  fullName: CAF.Combat.BoxDefinition.offset
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/BoxDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: offset
+    path: ../Assets/CAF/Combat/Boxes/BoxDefinition.cs
+    startLine: 8
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public Vector3 offset
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public offset As Vector3
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.BoxDefinition.size
+  commentId: F:CAF.Combat.BoxDefinition.size
+  id: size
+  parent: CAF.Combat.BoxDefinition
+  langs:
+  - csharp
+  - vb
+  name: size
+  nameWithType: BoxDefinition.size
+  fullName: CAF.Combat.BoxDefinition.size
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/BoxDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: size
+    path: ../Assets/CAF/Combat/Boxes/BoxDefinition.cs
+    startLine: 9
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public Vector3 size
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public size As Vector3
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.BoxDefinition.rotation
+  commentId: F:CAF.Combat.BoxDefinition.rotation
+  id: rotation
+  parent: CAF.Combat.BoxDefinition
+  langs:
+  - csharp
+  - vb
+  name: rotation
+  nameWithType: BoxDefinition.rotation
+  fullName: CAF.Combat.BoxDefinition.rotation
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/BoxDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: rotation
+    path: ../Assets/CAF/Combat/Boxes/BoxDefinition.cs
+    startLine: 10
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public Vector3 rotation
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public rotation As Vector3
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.BoxDefinition.radius
+  commentId: F:CAF.Combat.BoxDefinition.radius
+  id: radius
+  parent: CAF.Combat.BoxDefinition
+  langs:
+  - csharp
+  - vb
+  name: radius
+  nameWithType: BoxDefinition.radius
+  fullName: CAF.Combat.BoxDefinition.radius
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/BoxDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: radius
+    path: ../Assets/CAF/Combat/Boxes/BoxDefinition.cs
+    startLine: 11
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public float radius
+    return:
+      type: System.Single
+    content.vb: Public radius As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.BoxDefinition.height
+  commentId: F:CAF.Combat.BoxDefinition.height
+  id: height
+  parent: CAF.Combat.BoxDefinition
+  langs:
+  - csharp
+  - vb
+  name: height
+  nameWithType: BoxDefinition.height
+  fullName: CAF.Combat.BoxDefinition.height
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/BoxDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: height
+    path: ../Assets/CAF/Combat/Boxes/BoxDefinition.cs
+    startLine: 12
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public float height
+    return:
+      type: System.Single
+    content.vb: Public height As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.BoxDefinition.#ctor
+  commentId: M:CAF.Combat.BoxDefinition.#ctor
+  id: '#ctor'
+  parent: CAF.Combat.BoxDefinition
+  langs:
+  - csharp
+  - vb
+  name: BoxDefinition()
+  nameWithType: BoxDefinition.BoxDefinition()
+  fullName: CAF.Combat.BoxDefinition.BoxDefinition()
+  type: Constructor
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/BoxDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: .ctor
+    path: ../Assets/CAF/Combat/Boxes/BoxDefinition.cs
+    startLine: 14
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public BoxDefinition()
+    content.vb: Public Sub New
+  overload: CAF.Combat.BoxDefinition.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.BoxDefinition.#ctor(CAF.Combat.BoxDefinition)
+  commentId: M:CAF.Combat.BoxDefinition.#ctor(CAF.Combat.BoxDefinition)
+  id: '#ctor(CAF.Combat.BoxDefinition)'
+  parent: CAF.Combat.BoxDefinition
+  langs:
+  - csharp
+  - vb
+  name: BoxDefinition(BoxDefinition)
+  nameWithType: BoxDefinition.BoxDefinition(BoxDefinition)
+  fullName: CAF.Combat.BoxDefinition.BoxDefinition(CAF.Combat.BoxDefinition)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/BoxDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: .ctor
+    path: ../Assets/CAF/Combat/Boxes/BoxDefinition.cs
+    startLine: 19
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public BoxDefinition(BoxDefinition other)
+    parameters:
+    - id: other
+      type: CAF.Combat.BoxDefinition
+    content.vb: Public Sub New(other As BoxDefinition)
+  overload: CAF.Combat.BoxDefinition.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: CAF.Combat
+  commentId: N:CAF.Combat
+  name: CAF.Combat
+  nameWithType: CAF.Combat
+  fullName: CAF.Combat
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CAF.Combat.BoxShapes
+  commentId: T:CAF.Combat.BoxShapes
+  parent: CAF.Combat
+  name: BoxShapes
+  nameWithType: BoxShapes
+  fullName: CAF.Combat.BoxShapes
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: CAF.Combat.BoxDefinition.#ctor*
+  commentId: Overload:CAF.Combat.BoxDefinition.#ctor
+  name: BoxDefinition
+  nameWithType: BoxDefinition.BoxDefinition
+  fullName: CAF.Combat.BoxDefinition.BoxDefinition
+- uid: CAF.Combat.BoxDefinition
+  commentId: T:CAF.Combat.BoxDefinition
+  parent: CAF.Combat
+  name: BoxDefinition
+  nameWithType: BoxDefinition
+  fullName: CAF.Combat.BoxDefinition

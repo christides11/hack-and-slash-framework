@@ -1,0 +1,56 @@
+### YamlMime:ManagedReference
+items:
+- uid: CAF.Simulation.TimeStepManager.UpdateAction
+  commentId: T:CAF.Simulation.TimeStepManager.UpdateAction
+  id: TimeStepManager.UpdateAction
+  parent: CAF.Simulation
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: TimeStepManager.UpdateAction
+  nameWithType: TimeStepManager.UpdateAction
+  fullName: CAF.Simulation.TimeStepManager.UpdateAction
+  type: Delegate
+  source:
+    remote:
+      path: Assets/CAF/Simulation/TimeStepManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: UpdateAction
+    path: ../Assets/CAF/Simulation/TimeStepManager.cs
+    startLine: 11
+  assemblies:
+  - CAF
+  namespace: CAF.Simulation
+  syntax:
+    content: public delegate void UpdateAction(float dt);
+    parameters:
+    - id: dt
+      type: System.Single
+    content.vb: Public Delegate Sub UpdateAction(dt As Single)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: CAF.Simulation
+  commentId: N:CAF.Simulation
+  name: CAF.Simulation
+  nameWithType: CAF.Simulation
+  fullName: CAF.Simulation
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

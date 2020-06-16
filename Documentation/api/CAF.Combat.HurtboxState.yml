@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: CAF.Combat.HurtboxState
+  commentId: T:CAF.Combat.HurtboxState
+  id: HurtboxState
+  parent: CAF.Combat
+  children:
+  - CAF.Combat.HurtboxState.INVINCIBLE
+  - CAF.Combat.HurtboxState.VULNERABLE
+  langs:
+  - csharp
+  - vb
+  name: HurtboxState
+  nameWithType: HurtboxState
+  fullName: CAF.Combat.HurtboxState
+  type: Enum
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/HurtboxState.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: HurtboxState
+    path: ../Assets/CAF/Combat/Boxes/HurtboxState.cs
+    startLine: 6
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public enum HurtboxState
+    content.vb: Public Enum HurtboxState
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: CAF.Combat.HurtboxState.VULNERABLE
+  commentId: F:CAF.Combat.HurtboxState.VULNERABLE
+  id: VULNERABLE
+  parent: CAF.Combat.HurtboxState
+  langs:
+  - csharp
+  - vb
+  name: VULNERABLE
+  nameWithType: HurtboxState.VULNERABLE
+  fullName: CAF.Combat.HurtboxState.VULNERABLE
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/HurtboxState.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: VULNERABLE
+    path: ../Assets/CAF/Combat/Boxes/HurtboxState.cs
+    startLine: 8
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: VULNERABLE = 0
+    return:
+      type: CAF.Combat.HurtboxState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: CAF.Combat.HurtboxState.INVINCIBLE
+  commentId: F:CAF.Combat.HurtboxState.INVINCIBLE
+  id: INVINCIBLE
+  parent: CAF.Combat.HurtboxState
+  langs:
+  - csharp
+  - vb
+  name: INVINCIBLE
+  nameWithType: HurtboxState.INVINCIBLE
+  fullName: CAF.Combat.HurtboxState.INVINCIBLE
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Boxes/HurtboxState.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: INVINCIBLE
+    path: ../Assets/CAF/Combat/Boxes/HurtboxState.cs
+    startLine: 9
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: INVINCIBLE = 1
+    return:
+      type: CAF.Combat.HurtboxState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: CAF.Combat
+  commentId: N:CAF.Combat
+  name: CAF.Combat
+  nameWithType: CAF.Combat
+  fullName: CAF.Combat
+- uid: CAF.Combat.HurtboxState
+  commentId: T:CAF.Combat.HurtboxState
+  parent: CAF.Combat
+  name: HurtboxState
+  nameWithType: HurtboxState
+  fullName: CAF.Combat.HurtboxState

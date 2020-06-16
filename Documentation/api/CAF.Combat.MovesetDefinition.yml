@@ -1,0 +1,337 @@
+### YamlMime:ManagedReference
+items:
+- uid: CAF.Combat.MovesetDefinition
+  commentId: T:CAF.Combat.MovesetDefinition
+  id: MovesetDefinition
+  parent: CAF.Combat
+  children:
+  - CAF.Combat.MovesetDefinition.airAttackCommandNormals
+  - CAF.Combat.MovesetDefinition.airAttackStartNodes
+  - CAF.Combat.MovesetDefinition.groundAttackCommandNormals
+  - CAF.Combat.MovesetDefinition.groundAttackStartNodes
+  langs:
+  - csharp
+  - vb
+  name: MovesetDefinition
+  nameWithType: MovesetDefinition
+  fullName: CAF.Combat.MovesetDefinition
+  type: Class
+  source:
+    remote:
+      path: Assets/CAF/Combat/Moveset/MovesetDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: MovesetDefinition
+    path: ../Assets/CAF/Combat/Moveset/MovesetDefinition.cs
+    startLine: 6
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "MovesetDefinition", menuName = "CAF/Combat/Moveset")]
+
+      public class MovesetDefinition : NodeGraph
+    content.vb: >-
+      <CreateAssetMenu(fileName:="MovesetDefinition", menuName:="CAF/Combat/Moveset")>
+
+      Public Class MovesetDefinition
+
+          Inherits NodeGraph
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - XNode.NodeGraph
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: MovesetDefinition
+    - name: menuName
+      type: System.String
+      value: CAF/Combat/Moveset
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CAF.Combat.MovesetDefinition.groundAttackCommandNormals
+  commentId: F:CAF.Combat.MovesetDefinition.groundAttackCommandNormals
+  id: groundAttackCommandNormals
+  parent: CAF.Combat.MovesetDefinition
+  langs:
+  - csharp
+  - vb
+  name: groundAttackCommandNormals
+  nameWithType: MovesetDefinition.groundAttackCommandNormals
+  fullName: CAF.Combat.MovesetDefinition.groundAttackCommandNormals
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Moveset/MovesetDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: groundAttackCommandNormals
+    path: ../Assets/CAF/Combat/Moveset/MovesetDefinition.cs
+    startLine: 10
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: >-
+      [Header("Normal Attacks")]
+
+      public List<MovesetAttackNode> groundAttackCommandNormals
+    return:
+      type: System.Collections.Generic.List{CAF.Combat.MovesetAttackNode}
+    content.vb: >-
+      <Header("Normal Attacks")>
+
+      Public groundAttackCommandNormals As List(Of MovesetAttackNode)
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Normal Attacks
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.MovesetDefinition.groundAttackStartNodes
+  commentId: F:CAF.Combat.MovesetDefinition.groundAttackStartNodes
+  id: groundAttackStartNodes
+  parent: CAF.Combat.MovesetDefinition
+  langs:
+  - csharp
+  - vb
+  name: groundAttackStartNodes
+  nameWithType: MovesetDefinition.groundAttackStartNodes
+  fullName: CAF.Combat.MovesetDefinition.groundAttackStartNodes
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Moveset/MovesetDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: groundAttackStartNodes
+    path: ../Assets/CAF/Combat/Moveset/MovesetDefinition.cs
+    startLine: 11
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public List<MovesetAttackNode> groundAttackStartNodes
+    return:
+      type: System.Collections.Generic.List{CAF.Combat.MovesetAttackNode}
+    content.vb: Public groundAttackStartNodes As List(Of MovesetAttackNode)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.MovesetDefinition.airAttackCommandNormals
+  commentId: F:CAF.Combat.MovesetDefinition.airAttackCommandNormals
+  id: airAttackCommandNormals
+  parent: CAF.Combat.MovesetDefinition
+  langs:
+  - csharp
+  - vb
+  name: airAttackCommandNormals
+  nameWithType: MovesetDefinition.airAttackCommandNormals
+  fullName: CAF.Combat.MovesetDefinition.airAttackCommandNormals
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Moveset/MovesetDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: airAttackCommandNormals
+    path: ../Assets/CAF/Combat/Moveset/MovesetDefinition.cs
+    startLine: 12
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public List<MovesetAttackNode> airAttackCommandNormals
+    return:
+      type: System.Collections.Generic.List{CAF.Combat.MovesetAttackNode}
+    content.vb: Public airAttackCommandNormals As List(Of MovesetAttackNode)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Combat.MovesetDefinition.airAttackStartNodes
+  commentId: F:CAF.Combat.MovesetDefinition.airAttackStartNodes
+  id: airAttackStartNodes
+  parent: CAF.Combat.MovesetDefinition
+  langs:
+  - csharp
+  - vb
+  name: airAttackStartNodes
+  nameWithType: MovesetDefinition.airAttackStartNodes
+  fullName: CAF.Combat.MovesetDefinition.airAttackStartNodes
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Combat/Moveset/MovesetDefinition.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: airAttackStartNodes
+    path: ../Assets/CAF/Combat/Moveset/MovesetDefinition.cs
+    startLine: 13
+  assemblies:
+  - CAF
+  namespace: CAF.Combat
+  syntax:
+    content: public List<MovesetAttackNode> airAttackStartNodes
+    return:
+      type: System.Collections.Generic.List{CAF.Combat.MovesetAttackNode}
+    content.vb: Public airAttackStartNodes As List(Of MovesetAttackNode)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: CAF.Combat
+  commentId: N:CAF.Combat
+  name: CAF.Combat
+  nameWithType: CAF.Combat
+  fullName: CAF.Combat
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: XNode.NodeGraph
+  commentId: T:XNode.NodeGraph
+  parent: XNode
+  isExternal: true
+  name: NodeGraph
+  nameWithType: NodeGraph
+  fullName: XNode.NodeGraph
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: XNode
+  commentId: N:XNode
+  isExternal: true
+  name: XNode
+  nameWithType: XNode
+  fullName: XNode
+- uid: System.Collections.Generic.List{CAF.Combat.MovesetAttackNode}
+  commentId: T:System.Collections.Generic.List{CAF.Combat.MovesetAttackNode}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<MovesetAttackNode>
+  nameWithType: List<MovesetAttackNode>
+  fullName: System.Collections.Generic.List<CAF.Combat.MovesetAttackNode>
+  nameWithType.vb: List(Of MovesetAttackNode)
+  fullName.vb: System.Collections.Generic.List(Of CAF.Combat.MovesetAttackNode)
+  name.vb: List(Of MovesetAttackNode)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CAF.Combat.MovesetAttackNode
+    name: MovesetAttackNode
+    nameWithType: MovesetAttackNode
+    fullName: CAF.Combat.MovesetAttackNode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CAF.Combat.MovesetAttackNode
+    name: MovesetAttackNode
+    nameWithType: MovesetAttackNode
+    fullName: CAF.Combat.MovesetAttackNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

@@ -1,0 +1,937 @@
+### YamlMime:ManagedReference
+items:
+- uid: CAF.Entities.EntityHitboxManager
+  commentId: T:CAF.Entities.EntityHitboxManager
+  id: EntityHitboxManager
+  parent: CAF.Entities
+  children:
+  - CAF.Entities.EntityHitboxManager.#ctor(CAF.Entities.EntityCombatManager,CAF.Entities.EntityController)
+  - CAF.Entities.EntityHitboxManager.ActivateHitboxGroup(System.Int32)
+  - CAF.Entities.EntityHitboxManager.CleanupAllHitboxes
+  - CAF.Entities.EntityHitboxManager.combatManager
+  - CAF.Entities.EntityHitboxManager.controller
+  - CAF.Entities.EntityHitboxManager.CreateHitboxGroup(System.Int32)
+  - CAF.Entities.EntityHitboxManager.DeactivateHitboxGroup(System.Int32)
+  - CAF.Entities.EntityHitboxManager.hitboxGroups
+  - CAF.Entities.EntityHitboxManager.hurtablesHit
+  - CAF.Entities.EntityHitboxManager.InstantiateHitbox(UnityEngine.Vector3,UnityEngine.Quaternion)
+  - CAF.Entities.EntityHitboxManager.OnHitboxHit
+  - CAF.Entities.EntityHitboxManager.OnHitboxHurt(UnityEngine.GameObject,CAF.Combat.HitInfo,System.Int32,System.Int32)
+  - CAF.Entities.EntityHitboxManager.Reset
+  - CAF.Entities.EntityHitboxManager.TickBoxes
+  - CAF.Entities.EntityHitboxManager.UpdateHitboxIDIgnoreList(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: EntityHitboxManager
+  nameWithType: EntityHitboxManager
+  fullName: CAF.Entities.EntityHitboxManager
+  type: Class
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: EntityHitboxManager
+    path: ../Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+    startLine: 10
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  summary: "\nHandles the hitboxes and other boxes used by entities for combat.\n"
+  example: []
+  syntax:
+    content: public class EntityHitboxManager
+    content.vb: Public Class EntityHitboxManager
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CAF.Entities.EntityHitboxManager.OnHitboxHit
+  commentId: E:CAF.Entities.EntityHitboxManager.OnHitboxHit
+  id: OnHitboxHit
+  parent: CAF.Entities.EntityHitboxManager
+  langs:
+  - csharp
+  - vb
+  name: OnHitboxHit
+  nameWithType: EntityHitboxManager.OnHitboxHit
+  fullName: CAF.Entities.EntityHitboxManager.OnHitboxHit
+  type: Event
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: OnHitboxHit
+    path: ../Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+    startLine: 13
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public event EntityHitboxManager.HitboxGroupEventAction OnHitboxHit
+    return:
+      type: CAF.Entities.EntityHitboxManager.HitboxGroupEventAction
+    content.vb: Public Event OnHitboxHit As EntityHitboxManager.HitboxGroupEventAction
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Entities.EntityHitboxManager.hitboxGroups
+  commentId: F:CAF.Entities.EntityHitboxManager.hitboxGroups
+  id: hitboxGroups
+  parent: CAF.Entities.EntityHitboxManager
+  langs:
+  - csharp
+  - vb
+  name: hitboxGroups
+  nameWithType: EntityHitboxManager.hitboxGroups
+  fullName: CAF.Entities.EntityHitboxManager.hitboxGroups
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: hitboxGroups
+    path: ../Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+    startLine: 16
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: protected Dictionary<int, List<Hitbox>> hitboxGroups
+    return:
+      type: System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.List{CAF.Combat.Hitbox}}
+    content.vb: Protected hitboxGroups As Dictionary(Of Integer, List(Of Hitbox))
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Entities.EntityHitboxManager.hurtablesHit
+  commentId: F:CAF.Entities.EntityHitboxManager.hurtablesHit
+  id: hurtablesHit
+  parent: CAF.Entities.EntityHitboxManager
+  langs:
+  - csharp
+  - vb
+  name: hurtablesHit
+  nameWithType: EntityHitboxManager.hurtablesHit
+  fullName: CAF.Entities.EntityHitboxManager.hurtablesHit
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: hurtablesHit
+    path: ../Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+    startLine: 18
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: protected Dictionary<int, List<IHurtable>> hurtablesHit
+    return:
+      type: System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.List{CAF.Combat.IHurtable}}
+    content.vb: Protected hurtablesHit As Dictionary(Of Integer, List(Of IHurtable))
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: CAF.Entities.EntityHitboxManager.combatManager
+  commentId: F:CAF.Entities.EntityHitboxManager.combatManager
+  id: combatManager
+  parent: CAF.Entities.EntityHitboxManager
+  langs:
+  - csharp
+  - vb
+  name: combatManager
+  nameWithType: EntityHitboxManager.combatManager
+  fullName: CAF.Entities.EntityHitboxManager.combatManager
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: combatManager
+    path: ../Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+    startLine: 20
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public EntityCombatManager combatManager
+    return:
+      type: CAF.Entities.EntityCombatManager
+    content.vb: Public combatManager As EntityCombatManager
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Entities.EntityHitboxManager.controller
+  commentId: F:CAF.Entities.EntityHitboxManager.controller
+  id: controller
+  parent: CAF.Entities.EntityHitboxManager
+  langs:
+  - csharp
+  - vb
+  name: controller
+  nameWithType: EntityHitboxManager.controller
+  fullName: CAF.Entities.EntityHitboxManager.controller
+  type: Field
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: controller
+    path: ../Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+    startLine: 21
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public EntityController controller
+    return:
+      type: CAF.Entities.EntityController
+    content.vb: Public controller As EntityController
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Entities.EntityHitboxManager.#ctor(CAF.Entities.EntityCombatManager,CAF.Entities.EntityController)
+  commentId: M:CAF.Entities.EntityHitboxManager.#ctor(CAF.Entities.EntityCombatManager,CAF.Entities.EntityController)
+  id: '#ctor(CAF.Entities.EntityCombatManager,CAF.Entities.EntityController)'
+  parent: CAF.Entities.EntityHitboxManager
+  langs:
+  - csharp
+  - vb
+  name: EntityHitboxManager(EntityCombatManager, EntityController)
+  nameWithType: EntityHitboxManager.EntityHitboxManager(EntityCombatManager, EntityController)
+  fullName: CAF.Entities.EntityHitboxManager.EntityHitboxManager(CAF.Entities.EntityCombatManager, CAF.Entities.EntityController)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: .ctor
+    path: ../Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+    startLine: 23
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: public EntityHitboxManager(EntityCombatManager combatManager, EntityController controller)
+    parameters:
+    - id: combatManager
+      type: CAF.Entities.EntityCombatManager
+    - id: controller
+      type: CAF.Entities.EntityController
+    content.vb: Public Sub New(combatManager As EntityCombatManager, controller As EntityController)
+  overload: CAF.Entities.EntityHitboxManager.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CAF.Entities.EntityHitboxManager.Reset
+  commentId: M:CAF.Entities.EntityHitboxManager.Reset
+  id: Reset
+  parent: CAF.Entities.EntityHitboxManager
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: EntityHitboxManager.Reset()
+  fullName: CAF.Entities.EntityHitboxManager.Reset()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: Reset
+    path: ../Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+    startLine: 32
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  summary: "\nDestroys all boxes and clears variables.\n"
+  example: []
+  syntax:
+    content: public virtual void Reset()
+    content.vb: Public Overridable Sub Reset
+  overload: CAF.Entities.EntityHitboxManager.Reset*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Entities.EntityHitboxManager.CleanupAllHitboxes
+  commentId: M:CAF.Entities.EntityHitboxManager.CleanupAllHitboxes
+  id: CleanupAllHitboxes
+  parent: CAF.Entities.EntityHitboxManager
+  langs:
+  - csharp
+  - vb
+  name: CleanupAllHitboxes()
+  nameWithType: EntityHitboxManager.CleanupAllHitboxes()
+  fullName: CAF.Entities.EntityHitboxManager.CleanupAllHitboxes()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: CleanupAllHitboxes
+    path: ../Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+    startLine: 41
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  summary: "\nDestroy all the boxes and clears the dictionary.\n"
+  example: []
+  syntax:
+    content: protected virtual void CleanupAllHitboxes()
+    content.vb: Protected Overridable Sub CleanupAllHitboxes
+  overload: CAF.Entities.EntityHitboxManager.CleanupAllHitboxes*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Entities.EntityHitboxManager.TickBoxes
+  commentId: M:CAF.Entities.EntityHitboxManager.TickBoxes
+  id: TickBoxes
+  parent: CAF.Entities.EntityHitboxManager
+  langs:
+  - csharp
+  - vb
+  name: TickBoxes()
+  nameWithType: EntityHitboxManager.TickBoxes()
+  fullName: CAF.Entities.EntityHitboxManager.TickBoxes()
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: TickBoxes
+    path: ../Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+    startLine: 57
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  summary: "\nChecks the hitboxes and detectboxes to see what they hit this frame.\nThis should be called in late update, as physics update right after update.\n"
+  example: []
+  syntax:
+    content: public virtual void TickBoxes()
+    content.vb: Public Overridable Sub TickBoxes
+  overload: CAF.Entities.EntityHitboxManager.TickBoxes*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Entities.EntityHitboxManager.ActivateHitboxGroup(System.Int32)
+  commentId: M:CAF.Entities.EntityHitboxManager.ActivateHitboxGroup(System.Int32)
+  id: ActivateHitboxGroup(System.Int32)
+  parent: CAF.Entities.EntityHitboxManager
+  langs:
+  - csharp
+  - vb
+  name: ActivateHitboxGroup(Int32)
+  nameWithType: EntityHitboxManager.ActivateHitboxGroup(Int32)
+  fullName: CAF.Entities.EntityHitboxManager.ActivateHitboxGroup(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: ActivateHitboxGroup
+    path: ../Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+    startLine: 72
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  summary: "\nActivate the hitbox group with the given index.\n"
+  example: []
+  syntax:
+    content: public virtual void ActivateHitboxGroup(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index of the hitbox group.
+    content.vb: Public Overridable Sub ActivateHitboxGroup(index As Integer)
+  overload: CAF.Entities.EntityHitboxManager.ActivateHitboxGroup*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Entities.EntityHitboxManager.DeactivateHitboxGroup(System.Int32)
+  commentId: M:CAF.Entities.EntityHitboxManager.DeactivateHitboxGroup(System.Int32)
+  id: DeactivateHitboxGroup(System.Int32)
+  parent: CAF.Entities.EntityHitboxManager
+  langs:
+  - csharp
+  - vb
+  name: DeactivateHitboxGroup(Int32)
+  nameWithType: EntityHitboxManager.DeactivateHitboxGroup(Int32)
+  fullName: CAF.Entities.EntityHitboxManager.DeactivateHitboxGroup(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: DeactivateHitboxGroup
+    path: ../Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+    startLine: 89
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  summary: "\nDeactivate the hitbox group with the given index.\n"
+  example: []
+  syntax:
+    content: public virtual void DeactivateHitboxGroup(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index of the hitbox group.
+    content.vb: Public Overridable Sub DeactivateHitboxGroup(index As Integer)
+  overload: CAF.Entities.EntityHitboxManager.DeactivateHitboxGroup*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Entities.EntityHitboxManager.CreateHitboxGroup(System.Int32)
+  commentId: M:CAF.Entities.EntityHitboxManager.CreateHitboxGroup(System.Int32)
+  id: CreateHitboxGroup(System.Int32)
+  parent: CAF.Entities.EntityHitboxManager
+  langs:
+  - csharp
+  - vb
+  name: CreateHitboxGroup(Int32)
+  nameWithType: EntityHitboxManager.CreateHitboxGroup(Int32)
+  fullName: CAF.Entities.EntityHitboxManager.CreateHitboxGroup(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: CreateHitboxGroup
+    path: ../Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+    startLine: 107
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  summary: "\nCreate the hitbox group of the given index.\n"
+  example: []
+  syntax:
+    content: public virtual void CreateHitboxGroup(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index of the hitbox group.
+    content.vb: Public Overridable Sub CreateHitboxGroup(index As Integer)
+  overload: CAF.Entities.EntityHitboxManager.CreateHitboxGroup*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: CAF.Entities.EntityHitboxManager.InstantiateHitbox(UnityEngine.Vector3,UnityEngine.Quaternion)
+  commentId: M:CAF.Entities.EntityHitboxManager.InstantiateHitbox(UnityEngine.Vector3,UnityEngine.Quaternion)
+  id: InstantiateHitbox(UnityEngine.Vector3,UnityEngine.Quaternion)
+  parent: CAF.Entities.EntityHitboxManager
+  langs:
+  - csharp
+  - vb
+  name: InstantiateHitbox(Vector3, Quaternion)
+  nameWithType: EntityHitboxManager.InstantiateHitbox(Vector3, Quaternion)
+  fullName: CAF.Entities.EntityHitboxManager.InstantiateHitbox(UnityEngine.Vector3, UnityEngine.Quaternion)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: InstantiateHitbox
+    path: ../Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+    startLine: 156
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  syntax:
+    content: protected virtual Hitbox InstantiateHitbox(Vector3 position, Quaternion rotation)
+    parameters:
+    - id: position
+      type: UnityEngine.Vector3
+    - id: rotation
+      type: UnityEngine.Quaternion
+    return:
+      type: CAF.Combat.Hitbox
+    content.vb: Protected Overridable Function InstantiateHitbox(position As Vector3, rotation As Quaternion) As Hitbox
+  overload: CAF.Entities.EntityHitboxManager.InstantiateHitbox*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Entities.EntityHitboxManager.OnHitboxHurt(UnityEngine.GameObject,CAF.Combat.HitInfo,System.Int32,System.Int32)
+  commentId: M:CAF.Entities.EntityHitboxManager.OnHitboxHurt(UnityEngine.GameObject,CAF.Combat.HitInfo,System.Int32,System.Int32)
+  id: OnHitboxHurt(UnityEngine.GameObject,CAF.Combat.HitInfo,System.Int32,System.Int32)
+  parent: CAF.Entities.EntityHitboxManager
+  langs:
+  - csharp
+  - vb
+  name: OnHitboxHurt(GameObject, HitInfo, Int32, Int32)
+  nameWithType: EntityHitboxManager.OnHitboxHurt(GameObject, HitInfo, Int32, Int32)
+  fullName: CAF.Entities.EntityHitboxManager.OnHitboxHurt(UnityEngine.GameObject, CAF.Combat.HitInfo, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: OnHitboxHurt
+    path: ../Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+    startLine: 167
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  summary: "\nCalled whenever a hitbox hits a hurtbox successfully.\n"
+  example: []
+  syntax:
+    content: protected virtual void OnHitboxHurt(GameObject hurtableHit, HitInfo hitInfo, int hitboxID, int hitboxGroup)
+    parameters:
+    - id: hurtableHit
+      type: UnityEngine.GameObject
+      description: The hurtable that was hit.
+    - id: hitInfo
+      type: CAF.Combat.HitInfo
+      description: The hitInfo of the hitbox.
+    - id: hitboxID
+      type: System.Int32
+      description: The hitbox ID of the hitbox.
+    - id: hitboxGroup
+      type: System.Int32
+    content.vb: Protected Overridable Sub OnHitboxHurt(hurtableHit As GameObject, hitInfo As HitInfo, hitboxID As Integer, hitboxGroup As Integer)
+  overload: CAF.Entities.EntityHitboxManager.OnHitboxHurt*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: CAF.Entities.EntityHitboxManager.UpdateHitboxIDIgnoreList(System.Int32)
+  commentId: M:CAF.Entities.EntityHitboxManager.UpdateHitboxIDIgnoreList(System.Int32)
+  id: UpdateHitboxIDIgnoreList(System.Int32)
+  parent: CAF.Entities.EntityHitboxManager
+  langs:
+  - csharp
+  - vb
+  name: UpdateHitboxIDIgnoreList(Int32)
+  nameWithType: EntityHitboxManager.UpdateHitboxIDIgnoreList(Int32)
+  fullName: CAF.Entities.EntityHitboxManager.UpdateHitboxIDIgnoreList(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+      branch: master
+      repo: https://github.com/christides11/Character-Action-Framework.git
+    id: UpdateHitboxIDIgnoreList
+    path: ../Assets/CAF/Entities/Managers/EntityHitboxManager.cs
+    startLine: 179
+  assemblies:
+  - CAF
+  namespace: CAF.Entities
+  summary: "\nUpdates the ignore/hit list of all hitboxes with the given ID.\n"
+  example: []
+  syntax:
+    content: protected virtual void UpdateHitboxIDIgnoreList(int hitboxID)
+    parameters:
+    - id: hitboxID
+      type: System.Int32
+      description: The ID to update the hitboxes for.
+    content.vb: Protected Overridable Sub UpdateHitboxIDIgnoreList(hitboxID As Integer)
+  overload: CAF.Entities.EntityHitboxManager.UpdateHitboxIDIgnoreList*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+references:
+- uid: CAF.Entities
+  commentId: N:CAF.Entities
+  name: CAF.Entities
+  nameWithType: CAF.Entities
+  fullName: CAF.Entities
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CAF.Entities.EntityHitboxManager.HitboxGroupEventAction
+  commentId: T:CAF.Entities.EntityHitboxManager.HitboxGroupEventAction
+  parent: CAF.Entities
+  name: EntityHitboxManager.HitboxGroupEventAction
+  nameWithType: EntityHitboxManager.HitboxGroupEventAction
+  fullName: CAF.Entities.EntityHitboxManager.HitboxGroupEventAction
+- uid: System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.List{CAF.Combat.Hitbox}}
+  commentId: T:System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.List{CAF.Combat.Hitbox}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<Int32, List<Hitbox>>
+  nameWithType: Dictionary<Int32, List<Hitbox>>
+  fullName: System.Collections.Generic.Dictionary<System.Int32, System.Collections.Generic.List<CAF.Combat.Hitbox>>
+  nameWithType.vb: Dictionary(Of Int32, List(Of Hitbox))
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.Int32, System.Collections.Generic.List(Of CAF.Combat.Hitbox))
+  name.vb: Dictionary(Of Int32, List(Of Hitbox))
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CAF.Combat.Hitbox
+    name: Hitbox
+    nameWithType: Hitbox
+    fullName: CAF.Combat.Hitbox
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CAF.Combat.Hitbox
+    name: Hitbox
+    nameWithType: Hitbox
+    fullName: CAF.Combat.Hitbox
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.List{CAF.Combat.IHurtable}}
+  commentId: T:System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.List{CAF.Combat.IHurtable}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<Int32, List<IHurtable>>
+  nameWithType: Dictionary<Int32, List<IHurtable>>
+  fullName: System.Collections.Generic.Dictionary<System.Int32, System.Collections.Generic.List<CAF.Combat.IHurtable>>
+  nameWithType.vb: Dictionary(Of Int32, List(Of IHurtable))
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.Int32, System.Collections.Generic.List(Of CAF.Combat.IHurtable))
+  name.vb: Dictionary(Of Int32, List(Of IHurtable))
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CAF.Combat.IHurtable
+    name: IHurtable
+    nameWithType: IHurtable
+    fullName: CAF.Combat.IHurtable
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CAF.Combat.IHurtable
+    name: IHurtable
+    nameWithType: IHurtable
+    fullName: CAF.Combat.IHurtable
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CAF.Entities.EntityCombatManager
+  commentId: T:CAF.Entities.EntityCombatManager
+  parent: CAF.Entities
+  name: EntityCombatManager
+  nameWithType: EntityCombatManager
+  fullName: CAF.Entities.EntityCombatManager
+- uid: CAF.Entities.EntityController
+  commentId: T:CAF.Entities.EntityController
+  parent: CAF.Entities
+  name: EntityController
+  nameWithType: EntityController
+  fullName: CAF.Entities.EntityController
+- uid: CAF.Entities.EntityHitboxManager.#ctor*
+  commentId: Overload:CAF.Entities.EntityHitboxManager.#ctor
+  name: EntityHitboxManager
+  nameWithType: EntityHitboxManager.EntityHitboxManager
+  fullName: CAF.Entities.EntityHitboxManager.EntityHitboxManager
+- uid: CAF.Entities.EntityHitboxManager.Reset*
+  commentId: Overload:CAF.Entities.EntityHitboxManager.Reset
+  name: Reset
+  nameWithType: EntityHitboxManager.Reset
+  fullName: CAF.Entities.EntityHitboxManager.Reset
+- uid: CAF.Entities.EntityHitboxManager.CleanupAllHitboxes*
+  commentId: Overload:CAF.Entities.EntityHitboxManager.CleanupAllHitboxes
+  name: CleanupAllHitboxes
+  nameWithType: EntityHitboxManager.CleanupAllHitboxes
+  fullName: CAF.Entities.EntityHitboxManager.CleanupAllHitboxes
+- uid: CAF.Entities.EntityHitboxManager.TickBoxes*
+  commentId: Overload:CAF.Entities.EntityHitboxManager.TickBoxes
+  name: TickBoxes
+  nameWithType: EntityHitboxManager.TickBoxes
+  fullName: CAF.Entities.EntityHitboxManager.TickBoxes
+- uid: CAF.Entities.EntityHitboxManager.ActivateHitboxGroup*
+  commentId: Overload:CAF.Entities.EntityHitboxManager.ActivateHitboxGroup
+  name: ActivateHitboxGroup
+  nameWithType: EntityHitboxManager.ActivateHitboxGroup
+  fullName: CAF.Entities.EntityHitboxManager.ActivateHitboxGroup
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: CAF.Entities.EntityHitboxManager.DeactivateHitboxGroup*
+  commentId: Overload:CAF.Entities.EntityHitboxManager.DeactivateHitboxGroup
+  name: DeactivateHitboxGroup
+  nameWithType: EntityHitboxManager.DeactivateHitboxGroup
+  fullName: CAF.Entities.EntityHitboxManager.DeactivateHitboxGroup
+- uid: CAF.Entities.EntityHitboxManager.CreateHitboxGroup*
+  commentId: Overload:CAF.Entities.EntityHitboxManager.CreateHitboxGroup
+  name: CreateHitboxGroup
+  nameWithType: EntityHitboxManager.CreateHitboxGroup
+  fullName: CAF.Entities.EntityHitboxManager.CreateHitboxGroup
+- uid: CAF.Entities.EntityHitboxManager.InstantiateHitbox*
+  commentId: Overload:CAF.Entities.EntityHitboxManager.InstantiateHitbox
+  name: InstantiateHitbox
+  nameWithType: EntityHitboxManager.InstantiateHitbox
+  fullName: CAF.Entities.EntityHitboxManager.InstantiateHitbox
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine.Quaternion
+  commentId: T:UnityEngine.Quaternion
+  parent: UnityEngine
+  isExternal: true
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: UnityEngine.Quaternion
+- uid: CAF.Combat.Hitbox
+  commentId: T:CAF.Combat.Hitbox
+  parent: CAF.Combat
+  name: Hitbox
+  nameWithType: Hitbox
+  fullName: CAF.Combat.Hitbox
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: CAF.Combat
+  commentId: N:CAF.Combat
+  name: CAF.Combat
+  nameWithType: CAF.Combat
+  fullName: CAF.Combat
+- uid: CAF.Entities.EntityHitboxManager.OnHitboxHurt*
+  commentId: Overload:CAF.Entities.EntityHitboxManager.OnHitboxHurt
+  name: OnHitboxHurt
+  nameWithType: EntityHitboxManager.OnHitboxHurt
+  fullName: CAF.Entities.EntityHitboxManager.OnHitboxHurt
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: CAF.Combat.HitInfo
+  commentId: T:CAF.Combat.HitInfo
+  parent: CAF.Combat
+  name: HitInfo
+  nameWithType: HitInfo
+  fullName: CAF.Combat.HitInfo
+- uid: CAF.Entities.EntityHitboxManager.UpdateHitboxIDIgnoreList*
+  commentId: Overload:CAF.Entities.EntityHitboxManager.UpdateHitboxIDIgnoreList
+  name: UpdateHitboxIDIgnoreList
+  nameWithType: EntityHitboxManager.UpdateHitboxIDIgnoreList
+  fullName: CAF.Entities.EntityHitboxManager.UpdateHitboxIDIgnoreList
