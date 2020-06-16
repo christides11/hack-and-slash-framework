@@ -1,6 +1,8 @@
+![Documentation](https://github.com/christides11/Character-Action-Framework/workflows/Documentation/badge.svg)
+
 **Character Action Framework** (or CAF) is a Unity-focused framework designed for making character action games. 
 
-## Documentation ![Documentation](https://github.com/christides11/Character-Action-Framework/workflows/Documentation/badge.svg)
+## Documentation
 Documentation can be found here https://christides11.github.io/Character-Action-Framework/
 
 ## Requirements
@@ -12,6 +14,12 @@ To install this framework with the package manager, use this URL:
 ```
 https://github.com/christides11/Character-Action-Framework.git#upm
 ```
+I recommend [this package](https://github.com/mob-sakai/UpmGitExtension) to make the upm's github support better.
+
+## Examples
+The only current "example" is my fangame, [Touhou Unlimited Fantasies](https://github.com/christides11/touhou-unlimited-fantasies). 
+
+An actual example is currently being worked on. 
 
 ## Donations
 [Donations](https://paypal.me/ChrisTides11?locale.x=en_US) are apprceciated, but not neccessary.
