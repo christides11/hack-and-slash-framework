@@ -2,385 +2,385 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Camera.LookHandler.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Camera.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.AttackDefinition.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.AttackDefinitionEditor.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.AttackDefinitionEditorWindow.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.AttackEvent.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.AttackEventDefinition.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.AttackEventVariables.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.BoxDefinition.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.BoxGroup.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.BoxGroupType.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.BoxShapes.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.ForceType.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.Hitbox.HurtAction.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.Hitbox.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.HitboxForceRelation.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.HitboxForceType.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.HitInfo.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.HitReaction.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.HitReactionType.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.Hurtbox.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.HurtboxState.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.IHurtable.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.IStatusEffectable.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.ITargetable.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.MovesetAttackNode.nextNodeDefinition.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.MovesetAttackNode.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.MovesetAttackNodeEditor.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.MovesetDefinition.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.StatusEffect.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.StatusEffect-1.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.StatusEffectDefinition.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.StatusEffectDefinition-2.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Combat.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Entities.EntityCombatManager.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Entities.EntityController.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Entities.EntityHitboxManager.HitboxGroupEventAction.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Entities.EntityHitboxManager.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Entities.EntityInputManager.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Entities.EntityPhysicsManager.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Entities.EntityState.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Entities.EntityStateManager.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Entities.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.HelperFunctions.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Input.GlobalInputManager.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Input.InputControlType.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Input.InputDefinition.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Input.InputDefinitionDrawer.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Input.InputDefinitionType.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Input.InputRecordAxis.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Input.InputRecordAxis2D.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Input.InputRecordButton.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Input.InputRecordInput.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Input.InputRecordItem.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Input.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Simulation.SimObject.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Simulation.SimObjectManager.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Simulation.TimeStepManager.UpdateAction.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Simulation.TimeStepManager.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.Simulation.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/api/CAF.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/index.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/manual/coniunctis.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/Character-Action-Framework/manual/etiam.html</loc>
-    <lastmod>2020-06-16T10:33:37+00:00</lastmod>
+    <lastmod>2020-06-16T11:13:54+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
