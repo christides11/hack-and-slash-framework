@@ -14,8 +14,8 @@
     ],
     "build": {
         "globalMetadata": {
-            "_appTitle": "Example Unity documentation",
-            "_appFooter": "Example Unity documentation",
+            "_appTitle": "Character Action Framework Documentation",
+            "_appFooter": "Character Action Framework Documentation",
             "_enableSearch": true
         },
         "content": [
