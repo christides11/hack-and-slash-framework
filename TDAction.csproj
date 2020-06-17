@@ -73,6 +73,8 @@
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\Managers\EntityInputManager.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\Managers\EntityPhysicsManager.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\Managers\EntityStateManager.cs" />
+    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Managers\BootLoader.cs" />
+    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Managers\GameHandler.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Managers\GameManager.cs" />
     <None Include="Assets\CAF\Samples\TDAction\TDAction.asmdef" />
     <Reference Include="UnityEngine">

@@ -6,6 +6,11 @@ namespace TDAction.Managers
 {
     public class GameManager : MonoBehaviour
     {
+        [SerializeField] private GameHandler gameHandler;
 
+        public void SetupGame()
+        {
+            gameHandler = new GameHandler();
+        }
     }
 }
