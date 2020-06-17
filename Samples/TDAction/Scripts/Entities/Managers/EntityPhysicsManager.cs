@@ -6,7 +6,10 @@ namespace TDAction.Entities
 {
     public class EntityPhysicsManager : CAF.Entities.EntityPhysicsManager
     {
-        
 
+        public override void Tick()
+        {
+            ((EntityController)controller).charController2D.move(GetOverallForce());
+        }
     }
 }

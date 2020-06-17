@@ -168,7 +168,7 @@ MonoBehaviour:
     currentPlayerEntity: {fileID: 0}
   playerEntity: {fileID: 8147816337253296054, guid: 566a2b9082a19f54d9a11fabf7eb2be8,
     type: 3}
-  playerSpawnPosition: {x: 0, y: 1, z: 0}
+  playerSpawnPosition: {x: 0, y: 3, z: 0}
 --- !u!1 &1254264089
 GameObject:
   m_ObjectHideFlags: 0
