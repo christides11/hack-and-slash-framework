@@ -17,9 +17,10 @@ https://github.com/christides11/Character-Action-Framework.git#upm
 I recommend [this package](https://github.com/mob-sakai/UpmGitExtension) to make the upm's github support better.
 
 ## Examples
-The only current "example" is my fangame, [Touhou Unlimited Fantasies](https://github.com/christides11/touhou-unlimited-fantasies). 
+Right now the project come with a 2D action game example, but it's a WIP.
 
-An actual example is currently being worked on. 
+Other than that, you can look at [Touhou Unlimited Fantasies](https://github.com/christides11/touhou-unlimited-fantasies) for an example too.
+
 
 ## Donations
 [Donations](https://paypal.me/ChrisTides11?locale.x=en_US) are apprceciated, but not neccessary.
