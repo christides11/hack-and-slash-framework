@@ -28,9 +28,9 @@
                 "dest": "api"
             },
             {
-                "src": "manual",
+                "src": "guides",
                 "files": [ "toc.yml", "*.md" ],
-                "dest": "manual"
+                "dest": "guides"
             }
         ],
         "overwrite": [
