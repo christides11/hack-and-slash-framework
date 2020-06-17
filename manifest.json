@@ -768,11 +768,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "index.md",
+      "source_relative_path": "guides/getting_started.md",
       "output": {
         ".html": {
-          "relative_path": "index.html",
-          "hash": "EtIpt3WwCiW2H2R8S1lI9A=="
+          "relative_path": "guides/getting_started.html",
+          "hash": "LMVlppeBWpUm5+ZxbdTcQw=="
         }
       },
       "is_incremental": false,
@@ -780,23 +780,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/coniunctis.md",
+      "source_relative_path": "guides/index.md",
       "output": {
         ".html": {
-          "relative_path": "manual/coniunctis.html",
-          "hash": "so3we/WADix+Z5cZj0WBWg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/etiam.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/etiam.html",
-          "hash": "c/2so7ZBtALFjx8RmW2ntg=="
+          "relative_path": "guides/index.html",
+          "hash": "DlzBQBahyd/mPEt3XJ+hXw=="
         }
       },
       "is_incremental": false,
@@ -804,11 +792,23 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "manual/toc.yml",
+      "source_relative_path": "guides/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "manual/toc.html",
-          "hash": "2q0qq03gpYNjYV8lSAAcVw=="
+          "relative_path": "guides/toc.html",
+          "hash": "tqbV6rgqAhDNJmTyNZSQJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "EtIpt3WwCiW2H2R8S1lI9A=="
         }
       },
       "is_incremental": false,
@@ -842,7 +842,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "0PYnuxUJbfFNAzKtycBT/g=="
+          "hash": "nJlKrL9WqjiE2dhgV8VcqA=="
         }
       },
       "is_incremental": false,
@@ -852,25 +852,23 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because config changed.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "ConfigChanged"
+        "skipped_file_count": 0
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 0
+          "skipped_file_count": 1
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 61,
-          "skipped_file_count": 0
+          "skipped_file_count": 5
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
