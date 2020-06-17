@@ -1,6 +1,10 @@
 {
     "name": "TDAction",
-    "references": [],
+    "references": [
+        "GUID:60e386f2aae2e3745835ad13422e215a",
+        "GUID:b8e24fd1eb19b4226afebb2810e3c19b",
+        "GUID:75469ad4d38634e559750d17036d5f7c"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

@@ -4,7 +4,6 @@ using XNode;
 
 namespace CAF.Combat
 {
-    [CreateAssetMenu(fileName = "MovesetDefinition", menuName = "CAF/Combat/Moveset")]
     public class MovesetDefinition : NodeGraph
     {
         [Header("Normal Attacks")]

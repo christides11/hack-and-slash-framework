@@ -4,7 +4,6 @@ using UnityEngine;
 
 namespace CAF.Combat
 {
-    [CreateAssetMenu(fileName = "AttackDefinition", menuName = "CAF/Combat/Attack Definition")]
     public class AttackDefinition : ScriptableObject
     {
         #region General
