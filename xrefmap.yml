@@ -2021,12 +2021,6 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityController.ApplyStatusEffect
   nameWithType: EntityController.ApplyStatusEffect
-- uid: CAF.Entities.EntityController.coll
-  name: coll
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_coll
-  commentId: F:CAF.Entities.EntityController.coll
-  fullName: CAF.Entities.EntityController.coll
-  nameWithType: EntityController.coll
 - uid: CAF.Entities.EntityController.CombatManager
   name: CombatManager
   href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_CombatManager
