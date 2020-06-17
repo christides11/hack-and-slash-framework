@@ -52,7 +52,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.AttackDefinition.html",
-          "hash": "XyazmgctjJZymyEj95GUCA=="
+          "hash": "a7lPYazPsK5ge8OJyxvPFQ=="
         }
       },
       "is_incremental": false,
@@ -364,7 +364,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.MovesetDefinition.html",
-          "hash": "GkNssdpWbBiGKyWQemHbOQ=="
+          "hash": "YpChDIA5Ko64arxfzcwxkw=="
         }
       },
       "is_incremental": false,
