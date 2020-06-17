@@ -67,6 +67,7 @@
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Attack\AttackDefinition.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\HitInfo.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Moveset\MovesetDefinition.cs" />
+    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\CharacterController2D.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\EntityController.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\EntityState.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\Managers\EntityCombatManager.cs" />

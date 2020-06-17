@@ -16,5 +16,13 @@ namespace TDAction.Managers
 
             gameHandler.SpawnPlayer(playerEntity, playerSpawnPosition);
         }
+
+        public void FixedUpdate()
+        {
+            if (gameHandler != null)
+            {
+                gameHandler.FixedUpdate();
+            }
+        }
     }
 }
