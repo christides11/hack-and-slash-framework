@@ -22,7 +22,6 @@ namespace CAF.Entities
         [SerializeField] protected EntityStateManager entityStateManager;
         [SerializeField] protected EntityCombatManager entityCombatManager;
         [SerializeField] protected EntityPhysicsManager entityPhysicsManager;
-        public CapsuleCollider coll;
         public GameObject visual;
         public LookHandler lookHandler;
 

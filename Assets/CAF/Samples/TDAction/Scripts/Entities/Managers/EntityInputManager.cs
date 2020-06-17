@@ -7,5 +7,9 @@ namespace TDAction.Entities
     public class EntityInputManager : CAF.Entities.EntityInputManager
     {
 
+        protected override void GetInputs()
+        {
+
+        }
     }
 }
