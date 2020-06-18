@@ -4,14 +4,21 @@ using UnityEngine;
 
 namespace CAF.Simulation
 {
+    /// <summary>
+    /// The SimObjectManager handles keeping track of all objects that should be simulated
+    /// and simulates them and the physics engine.
+    /// </summary>
     public class SimObjectManager
     {
+        /// <summary>
+        /// A list of all objects in the simulation.
+        /// </summary>
         protected List<SimObject> simObjects = new List<SimObject>();
 
         /// <summary>
         /// Registers an object to the simulation.
         /// </summary>
-        /// <param name="simObject"></param>
+        /// <param name="simObject">The object to register to the simulation.</param>
         public virtual void RegisterObject(SimObject simObject)
         {
             if (simObjects.Contains(simObject))
@@ -28,7 +35,7 @@ namespace CAF.Simulation
         /// <param name="prefab">The object to instantiate.</param>
         /// <param name="position">The position to instantiate at.</param>
         /// <param name="rotation">The rotation to instantiate with.</param>
-        /// <returns></returns>
+        /// <returns>The object that was created.</returns>
         public virtual GameObject SpawnObject(GameObject prefab, Vector3 position, Quaternion rotation)
         {
             GameObject obj = GameObject.Instantiate(prefab, position, rotation);
@@ -53,18 +60,22 @@ namespace CAF.Simulation
         /// Calls every object's SimUpdate method that is in the simulation.
         /// After that, it ticks the physics engine.
         /// </summary>
-        /// <param name="deltatime">The time between this and the last frame.</param>
-        public virtual void Update(float deltatime)
+        /// <param name="deltaTime">The time between this and the last frame.</param>
+        public virtual void Update(float deltaTime)
         {
-            UpdateSimObjects();
-            SimulatePhysics(deltatime);
+            UpdateSimObjects(deltaTime);
+            SimulatePhysics(deltaTime);
         }
 
-        protected virtual void UpdateSimObjects()
+        /// <summary>
+        /// Calls every object's SimUpdate method that is in the simulation.
+        /// </summary>
+        /// <param name="deltaTime">The time between this and the last frame.</param>
+        protected virtual void UpdateSimObjects(float deltaTime)
         {
             for (int i = 0; i < simObjects.Count; i++)
             {
-                simObjects[i].SimUpdate();
+                simObjects[i].SimUpdate(deltaTime);
             }
         }
 
@@ -80,17 +91,21 @@ namespace CAF.Simulation
         /// <summary>
         /// Calls every object's SimLateUpate method that is in the simulation.
         /// </summary>
-        /// <param name="deltatime"></param>
-        public virtual void LateUpdate(float deltatime)
+        /// <param name="deltaTime">The time between this and the last frame.</param>
+        public virtual void LateUpdate(float deltaTime)
         {
-            LateUpdateSimObjects();
+            LateUpdateSimObjects(deltaTime);
         }
 
-        protected virtual void LateUpdateSimObjects()
+        /// <summary>
+        /// Calls every object's SimLateUpate method that is in the simulation.
+        /// </summary>
+        /// <param name="deltaTime">The time between this and the last frame.</param>
+        protected virtual void LateUpdateSimObjects(float deltaTime)
         {
             for (int i = 0; i < simObjects.Count; i++)
             {
-                simObjects[i].SimLateUpdate();
+                simObjects[i].SimLateUpdate(deltaTime);
             }
         }
     }

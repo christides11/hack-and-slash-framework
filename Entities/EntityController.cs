@@ -25,10 +25,7 @@ namespace CAF.Entities
         public GameObject visual;
         public LookHandler lookHandler;
 
-        /// <summary>
-        /// Called every simulation tick. 
-        /// </summary>
-        public override void SimUpdate()
+        public override void SimUpdate(float deltaTime)
         {
             InputManager.Tick();
 
@@ -45,7 +42,7 @@ namespace CAF.Entities
             }
         }
 
-        public override void SimLateUpdate()
+        public override void SimLateUpdate(float deltaTime)
         {
             CombatManager.CLateUpdate();
         }
