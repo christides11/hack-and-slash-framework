@@ -768,11 +768,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "guides/getting_started.md",
+      "source_relative_path": "guides/index.md",
       "output": {
         ".html": {
-          "relative_path": "guides/getting_started.html",
-          "hash": "LMVlppeBWpUm5+ZxbdTcQw=="
+          "relative_path": "guides/index.html",
+          "hash": "g4hSdXvwyhvkHMhKh170MQ=="
         }
       },
       "is_incremental": false,
@@ -780,11 +780,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "guides/index.md",
+      "source_relative_path": "guides/setup.md",
       "output": {
         ".html": {
-          "relative_path": "guides/index.html",
-          "hash": "DlzBQBahyd/mPEt3XJ+hXw=="
+          "relative_path": "guides/setup.html",
+          "hash": "uiHWPJCTdUFvn3cR+4csDA=="
         }
       },
       "is_incremental": false,
@@ -796,7 +796,7 @@
       "output": {
         ".html": {
           "relative_path": "guides/toc.html",
-          "hash": "tqbV6rgqAhDNJmTyNZSQJA=="
+          "hash": "m4/IOSzDG9clMDSPbshq0w=="
         }
       },
       "is_incremental": false,
@@ -862,7 +862,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 1
+          "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
