@@ -28,7 +28,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Camera.LookHandler.html",
-          "hash": "YIERQBOrq2Lw0kTMKxrrNA=="
+          "hash": "JiZRB6cphARf+kVxAAZyOA=="
         }
       },
       "is_incremental": false,
@@ -40,7 +40,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Camera.html",
-          "hash": "TCRAC88uWqUjG4OT0YpYEw=="
+          "hash": "PWOC6hW3zRClbxEA4yoU9g=="
         }
       },
       "is_incremental": false,
@@ -232,7 +232,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.Hitbox.html",
-          "hash": "7sfLz/pS+GRObAFuEGTjkA=="
+          "hash": "n+2UNhq8K8vftSLSqM552A=="
         }
       },
       "is_incremental": false,
@@ -448,7 +448,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Entities.EntityController.html",
-          "hash": "3kbZDpEIsdoa49mLTTEmYw=="
+          "hash": "4BankbHlfEwi3tsUIxWq6w=="
         }
       },
       "is_incremental": false,
@@ -544,7 +544,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.HelperFunctions.html",
-          "hash": "VHOwPbawizsLNiMiz2eWPg=="
+          "hash": "dVkcYxT2wfLNRwYszuDmjA=="
         }
       },
       "is_incremental": false,
@@ -688,7 +688,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Simulation.SimObject.html",
-          "hash": "iFWJhXEpGLLS/MjKzVmyDQ=="
+          "hash": "JBD48P0+CowT6OjvIwhcqQ=="
         }
       },
       "is_incremental": false,
@@ -700,31 +700,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Simulation.SimObjectManager.html",
-          "hash": "C8JQ8Ofgv0qgmjWUet1WtQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Simulation.TimeStepManager.UpdateAction.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CAF.Simulation.TimeStepManager.UpdateAction.html",
-          "hash": "j5UJpkUXX10EIqTV0jMjug=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Simulation.TimeStepManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CAF.Simulation.TimeStepManager.html",
-          "hash": "s6KjYpbt56ZJxdPX8hlGDw=="
+          "hash": "cAE9By0WEkuEVyydKQSgSw=="
         }
       },
       "is_incremental": false,
@@ -736,7 +712,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Simulation.html",
-          "hash": "+EvTs3egXcXNkR8/G3dnXg=="
+          "hash": "0tsgP0iMUuPTYcVsNULyiQ=="
         }
       },
       "is_incremental": false,
@@ -748,7 +724,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.html",
-          "hash": "Znyw6xJAHUs6HZMv9ZBIOQ=="
+          "hash": "PKzHnOgbyrsE1O3yBcAJqg=="
         }
       },
       "is_incremental": false,
@@ -760,7 +736,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "fLBTEuzU1co6Lc+I721T4w=="
+          "hash": "tuDqP2nuQgrFDW6i8kLjQg=="
         }
       },
       "is_incremental": false,
@@ -784,7 +760,7 @@
       "output": {
         ".html": {
           "relative_path": "guides/setup.html",
-          "hash": "kp02shkzmmzNySdKLsD6vQ=="
+          "hash": "QEYDxlbagrdbphhiGIs4zQ=="
         }
       },
       "is_incremental": false,
@@ -852,23 +828,25 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 2
+          "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 61,
-          "skipped_file_count": 5
+          "total_file_count": 59,
+          "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

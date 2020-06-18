@@ -94,21 +94,23 @@
 <li>MovesetDefinition</li>
 </ul>
 <h2 id="simulation">Simulation</h2>
-<p>The first thing you want to do is start the simulation. You can do this whenever, but you probably want to do this as soon as the player starts the game and you want to spawn the player&#39;s character. When that does happen, you want to do this once.</p>
+<p>The first thing you want to do is start the simulation. You can do this whenever, but you probably want to do this as soon as the player starts the game and you want to spawn the player&#39;s character. When that does happen, you want to create an instance of the SimObjectManager, like so.</p>
 <pre><code>simulationObjectManager = new SimObjectManager();
-timeStepManager = new TimeStepManager(Tickrate, Timescale, Tickrate*2, Tickrate/2);
-timeStepManager.OnUpdate += Tick;
-</code></pre><p>Along with that, you want to call the TimeStepManager&#39;s update method every Update, like so.</p>
-<pre><code>public void Update(){
-    timeStepManager.Update(Time.deltaTime);
+</code></pre><p>Once you do that, you want to call these two every fixed update. </p>
+<pre><code>public void FixedUpdate(){
+    simulationObjectManager.Update(Time.fixedDeltaTime);
+    simulationObjectManager.LateUpdate(Time.fixedDeltaTime);
 }
 </code></pre><p>With that, the simulation is now running. The next step is to create objects and add them to the simulation. </p>
-<h3 id="side-note">Side Note</h3>
+<h3 id="side-note-physics">Side Note: Physics</h3>
 <p>SimObjectManager defaults to updating 3D Physics. If you&#39;re using 2D Physics, you&#39;ll want to override the SimulatePhysics method like so.</p>
 <pre><code>protected override void SimulatePhysics(float deltatime){
     Physics2D.Simulate(deltatime);
 }
-</code></pre></article>
+</code></pre><h3 id="side-note-tick-rate">Side Note: Tick Rate</h3>
+<p>since the simulation is ticked every fixed update, how often the simulation updates depends on the value of Fixed Timestep. By default it&#39;s set to 0.02, which translates to a tick rate of 50 times a second (0.02 = 1/50). 
+Most action games target a tick rate of 60 times a second, so you may want to change the value to 0.01666667 (~1/60). You also might want to make the Maximum Allowed Timestep something like 0.02 for reasons explained <a href="https://johnaustin.io/articles/2019/fix-your-unity-timestep">here</a>.</p>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

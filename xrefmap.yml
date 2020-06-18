@@ -2194,12 +2194,12 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityController.SetVisualRotation
   nameWithType: EntityController.SetVisualRotation
-- uid: CAF.Entities.EntityController.SimLateUpdate
-  name: SimLateUpdate()
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_SimLateUpdate
-  commentId: M:CAF.Entities.EntityController.SimLateUpdate
-  fullName: CAF.Entities.EntityController.SimLateUpdate()
-  nameWithType: EntityController.SimLateUpdate()
+- uid: CAF.Entities.EntityController.SimLateUpdate(System.Single)
+  name: SimLateUpdate(Single)
+  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_SimLateUpdate_System_Single_
+  commentId: M:CAF.Entities.EntityController.SimLateUpdate(System.Single)
+  fullName: CAF.Entities.EntityController.SimLateUpdate(System.Single)
+  nameWithType: EntityController.SimLateUpdate(Single)
 - uid: CAF.Entities.EntityController.SimLateUpdate*
   name: SimLateUpdate
   href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_SimLateUpdate_
@@ -2207,12 +2207,12 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityController.SimLateUpdate
   nameWithType: EntityController.SimLateUpdate
-- uid: CAF.Entities.EntityController.SimUpdate
-  name: SimUpdate()
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_SimUpdate
-  commentId: M:CAF.Entities.EntityController.SimUpdate
-  fullName: CAF.Entities.EntityController.SimUpdate()
-  nameWithType: EntityController.SimUpdate()
+- uid: CAF.Entities.EntityController.SimUpdate(System.Single)
+  name: SimUpdate(Single)
+  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_SimUpdate_System_Single_
+  commentId: M:CAF.Entities.EntityController.SimUpdate(System.Single)
+  fullName: CAF.Entities.EntityController.SimUpdate(System.Single)
+  nameWithType: EntityController.SimUpdate(Single)
 - uid: CAF.Entities.EntityController.SimUpdate*
   name: SimUpdate
   href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_SimUpdate_
@@ -3549,12 +3549,12 @@ references:
   isSpec: "True"
   fullName: CAF.Simulation.SimObject.SimAwake
   nameWithType: SimObject.SimAwake
-- uid: CAF.Simulation.SimObject.SimLateUpdate
-  name: SimLateUpdate()
-  href: api/CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_SimLateUpdate
-  commentId: M:CAF.Simulation.SimObject.SimLateUpdate
-  fullName: CAF.Simulation.SimObject.SimLateUpdate()
-  nameWithType: SimObject.SimLateUpdate()
+- uid: CAF.Simulation.SimObject.SimLateUpdate(System.Single)
+  name: SimLateUpdate(Single)
+  href: api/CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_SimLateUpdate_System_Single_
+  commentId: M:CAF.Simulation.SimObject.SimLateUpdate(System.Single)
+  fullName: CAF.Simulation.SimObject.SimLateUpdate(System.Single)
+  nameWithType: SimObject.SimLateUpdate(Single)
 - uid: CAF.Simulation.SimObject.SimLateUpdate*
   name: SimLateUpdate
   href: api/CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_SimLateUpdate_
@@ -3581,12 +3581,12 @@ references:
   isSpec: "True"
   fullName: CAF.Simulation.SimObject.SimStart
   nameWithType: SimObject.SimStart
-- uid: CAF.Simulation.SimObject.SimUpdate
-  name: SimUpdate()
-  href: api/CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_SimUpdate
-  commentId: M:CAF.Simulation.SimObject.SimUpdate
-  fullName: CAF.Simulation.SimObject.SimUpdate()
-  nameWithType: SimObject.SimUpdate()
+- uid: CAF.Simulation.SimObject.SimUpdate(System.Single)
+  name: SimUpdate(Single)
+  href: api/CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_SimUpdate_System_Single_
+  commentId: M:CAF.Simulation.SimObject.SimUpdate(System.Single)
+  fullName: CAF.Simulation.SimObject.SimUpdate(System.Single)
+  nameWithType: SimObject.SimUpdate(Single)
 - uid: CAF.Simulation.SimObject.SimUpdate*
   name: SimUpdate
   href: api/CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_SimUpdate_
@@ -3639,12 +3639,12 @@ references:
   isSpec: "True"
   fullName: CAF.Simulation.SimObjectManager.LateUpdate
   nameWithType: SimObjectManager.LateUpdate
-- uid: CAF.Simulation.SimObjectManager.LateUpdateSimObjects
-  name: LateUpdateSimObjects()
-  href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_LateUpdateSimObjects
-  commentId: M:CAF.Simulation.SimObjectManager.LateUpdateSimObjects
-  fullName: CAF.Simulation.SimObjectManager.LateUpdateSimObjects()
-  nameWithType: SimObjectManager.LateUpdateSimObjects()
+- uid: CAF.Simulation.SimObjectManager.LateUpdateSimObjects(System.Single)
+  name: LateUpdateSimObjects(Single)
+  href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_LateUpdateSimObjects_System_Single_
+  commentId: M:CAF.Simulation.SimObjectManager.LateUpdateSimObjects(System.Single)
+  fullName: CAF.Simulation.SimObjectManager.LateUpdateSimObjects(System.Single)
+  nameWithType: SimObjectManager.LateUpdateSimObjects(Single)
 - uid: CAF.Simulation.SimObjectManager.LateUpdateSimObjects*
   name: LateUpdateSimObjects
   href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_LateUpdateSimObjects_
@@ -3710,12 +3710,12 @@ references:
   isSpec: "True"
   fullName: CAF.Simulation.SimObjectManager.Update
   nameWithType: SimObjectManager.Update
-- uid: CAF.Simulation.SimObjectManager.UpdateSimObjects
-  name: UpdateSimObjects()
-  href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_UpdateSimObjects
-  commentId: M:CAF.Simulation.SimObjectManager.UpdateSimObjects
-  fullName: CAF.Simulation.SimObjectManager.UpdateSimObjects()
-  nameWithType: SimObjectManager.UpdateSimObjects()
+- uid: CAF.Simulation.SimObjectManager.UpdateSimObjects(System.Single)
+  name: UpdateSimObjects(Single)
+  href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_UpdateSimObjects_System_Single_
+  commentId: M:CAF.Simulation.SimObjectManager.UpdateSimObjects(System.Single)
+  fullName: CAF.Simulation.SimObjectManager.UpdateSimObjects(System.Single)
+  nameWithType: SimObjectManager.UpdateSimObjects(Single)
 - uid: CAF.Simulation.SimObjectManager.UpdateSimObjects*
   name: UpdateSimObjects
   href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_UpdateSimObjects_
@@ -3723,154 +3723,3 @@ references:
   isSpec: "True"
   fullName: CAF.Simulation.SimObjectManager.UpdateSimObjects
   nameWithType: SimObjectManager.UpdateSimObjects
-- uid: CAF.Simulation.TimeStepManager
-  name: TimeStepManager
-  href: api/CAF.Simulation.TimeStepManager.html
-  commentId: T:CAF.Simulation.TimeStepManager
-  fullName: CAF.Simulation.TimeStepManager
-  nameWithType: TimeStepManager
-- uid: CAF.Simulation.TimeStepManager.#ctor(System.Single,System.Single,System.Single,System.Single)
-  name: TimeStepManager(Single, Single, Single, Single)
-  href: api/CAF.Simulation.TimeStepManager.html#CAF_Simulation_TimeStepManager__ctor_System_Single_System_Single_System_Single_System_Single_
-  commentId: M:CAF.Simulation.TimeStepManager.#ctor(System.Single,System.Single,System.Single,System.Single)
-  fullName: CAF.Simulation.TimeStepManager.TimeStepManager(System.Single, System.Single, System.Single, System.Single)
-  nameWithType: TimeStepManager.TimeStepManager(Single, Single, Single, Single)
-- uid: CAF.Simulation.TimeStepManager.#ctor*
-  name: TimeStepManager
-  href: api/CAF.Simulation.TimeStepManager.html#CAF_Simulation_TimeStepManager__ctor_
-  commentId: Overload:CAF.Simulation.TimeStepManager.#ctor
-  isSpec: "True"
-  fullName: CAF.Simulation.TimeStepManager.TimeStepManager
-  nameWithType: TimeStepManager.TimeStepManager
-- uid: CAF.Simulation.TimeStepManager.accumulator
-  name: accumulator
-  href: api/CAF.Simulation.TimeStepManager.html#CAF_Simulation_TimeStepManager_accumulator
-  commentId: F:CAF.Simulation.TimeStepManager.accumulator
-  fullName: CAF.Simulation.TimeStepManager.accumulator
-  nameWithType: TimeStepManager.accumulator
-- uid: CAF.Simulation.TimeStepManager.Activate
-  name: Activate()
-  href: api/CAF.Simulation.TimeStepManager.html#CAF_Simulation_TimeStepManager_Activate
-  commentId: M:CAF.Simulation.TimeStepManager.Activate
-  fullName: CAF.Simulation.TimeStepManager.Activate()
-  nameWithType: TimeStepManager.Activate()
-- uid: CAF.Simulation.TimeStepManager.Activate*
-  name: Activate
-  href: api/CAF.Simulation.TimeStepManager.html#CAF_Simulation_TimeStepManager_Activate_
-  commentId: Overload:CAF.Simulation.TimeStepManager.Activate
-  isSpec: "True"
-  fullName: CAF.Simulation.TimeStepManager.Activate
-  nameWithType: TimeStepManager.Activate
-- uid: CAF.Simulation.TimeStepManager.active
-  name: active
-  href: api/CAF.Simulation.TimeStepManager.html#CAF_Simulation_TimeStepManager_active
-  commentId: F:CAF.Simulation.TimeStepManager.active
-  fullName: CAF.Simulation.TimeStepManager.active
-  nameWithType: TimeStepManager.active
-- uid: CAF.Simulation.TimeStepManager.Clear
-  name: Clear()
-  href: api/CAF.Simulation.TimeStepManager.html#CAF_Simulation_TimeStepManager_Clear
-  commentId: M:CAF.Simulation.TimeStepManager.Clear
-  fullName: CAF.Simulation.TimeStepManager.Clear()
-  nameWithType: TimeStepManager.Clear()
-- uid: CAF.Simulation.TimeStepManager.Clear*
-  name: Clear
-  href: api/CAF.Simulation.TimeStepManager.html#CAF_Simulation_TimeStepManager_Clear_
-  commentId: Overload:CAF.Simulation.TimeStepManager.Clear
-  isSpec: "True"
-  fullName: CAF.Simulation.TimeStepManager.Clear
-  nameWithType: TimeStepManager.Clear
-- uid: CAF.Simulation.TimeStepManager.Deactivate
-  name: Deactivate()
-  href: api/CAF.Simulation.TimeStepManager.html#CAF_Simulation_TimeStepManager_Deactivate
-  commentId: M:CAF.Simulation.TimeStepManager.Deactivate
-  fullName: CAF.Simulation.TimeStepManager.Deactivate()
-  nameWithType: TimeStepManager.Deactivate()
-- uid: CAF.Simulation.TimeStepManager.Deactivate*
-  name: Deactivate
-  href: api/CAF.Simulation.TimeStepManager.html#CAF_Simulation_TimeStepManager_Deactivate_
-  commentId: Overload:CAF.Simulation.TimeStepManager.Deactivate
-  isSpec: "True"
-  fullName: CAF.Simulation.TimeStepManager.Deactivate
-  nameWithType: TimeStepManager.Deactivate
-- uid: CAF.Simulation.TimeStepManager.ManualUpdate(System.Single)
-  name: ManualUpdate(Single)
-  href: api/CAF.Simulation.TimeStepManager.html#CAF_Simulation_TimeStepManager_ManualUpdate_System_Single_
-  commentId: M:CAF.Simulation.TimeStepManager.ManualUpdate(System.Single)
-  fullName: CAF.Simulation.TimeStepManager.ManualUpdate(System.Single)
-  nameWithType: TimeStepManager.ManualUpdate(Single)
-- uid: CAF.Simulation.TimeStepManager.ManualUpdate*
-  name: ManualUpdate
-  href: api/CAF.Simulation.TimeStepManager.html#CAF_Simulation_TimeStepManager_ManualUpdate_
-  commentId: Overload:CAF.Simulation.TimeStepManager.ManualUpdate
-  isSpec: "True"
-  fullName: CAF.Simulation.TimeStepManager.ManualUpdate
-  nameWithType: TimeStepManager.ManualUpdate
-- uid: CAF.Simulation.TimeStepManager.OnUpdate
-  name: OnUpdate
-  href: api/CAF.Simulation.TimeStepManager.html#CAF_Simulation_TimeStepManager_OnUpdate
-  commentId: E:CAF.Simulation.TimeStepManager.OnUpdate
-  fullName: CAF.Simulation.TimeStepManager.OnUpdate
-  nameWithType: TimeStepManager.OnUpdate
-- uid: CAF.Simulation.TimeStepManager.resync
-  name: resync
-  href: api/CAF.Simulation.TimeStepManager.html#CAF_Simulation_TimeStepManager_resync
-  commentId: F:CAF.Simulation.TimeStepManager.resync
-  fullName: CAF.Simulation.TimeStepManager.resync
-  nameWithType: TimeStepManager.resync
-- uid: CAF.Simulation.TimeStepManager.Resync
-  name: Resync()
-  href: api/CAF.Simulation.TimeStepManager.html#CAF_Simulation_TimeStepManager_Resync
-  commentId: M:CAF.Simulation.TimeStepManager.Resync
-  fullName: CAF.Simulation.TimeStepManager.Resync()
-  nameWithType: TimeStepManager.Resync()
-- uid: CAF.Simulation.TimeStepManager.Resync*
-  name: Resync
-  href: api/CAF.Simulation.TimeStepManager.html#CAF_Simulation_TimeStepManager_Resync_
-  commentId: Overload:CAF.Simulation.TimeStepManager.Resync
-  isSpec: "True"
-  fullName: CAF.Simulation.TimeStepManager.Resync
-  nameWithType: TimeStepManager.Resync
-- uid: CAF.Simulation.TimeStepManager.timescale
-  name: timescale
-  href: api/CAF.Simulation.TimeStepManager.html#CAF_Simulation_TimeStepManager_timescale
-  commentId: F:CAF.Simulation.TimeStepManager.timescale
-  fullName: CAF.Simulation.TimeStepManager.timescale
-  nameWithType: TimeStepManager.timescale
-- uid: CAF.Simulation.TimeStepManager.timestep
-  name: timestep
-  href: api/CAF.Simulation.TimeStepManager.html#CAF_Simulation_TimeStepManager_timestep
-  commentId: F:CAF.Simulation.TimeStepManager.timestep
-  fullName: CAF.Simulation.TimeStepManager.timestep
-  nameWithType: TimeStepManager.timestep
-- uid: CAF.Simulation.TimeStepManager.timestepClampLower
-  name: timestepClampLower
-  href: api/CAF.Simulation.TimeStepManager.html#CAF_Simulation_TimeStepManager_timestepClampLower
-  commentId: F:CAF.Simulation.TimeStepManager.timestepClampLower
-  fullName: CAF.Simulation.TimeStepManager.timestepClampLower
-  nameWithType: TimeStepManager.timestepClampLower
-- uid: CAF.Simulation.TimeStepManager.timestepClampUpper
-  name: timestepClampUpper
-  href: api/CAF.Simulation.TimeStepManager.html#CAF_Simulation_TimeStepManager_timestepClampUpper
-  commentId: F:CAF.Simulation.TimeStepManager.timestepClampUpper
-  fullName: CAF.Simulation.TimeStepManager.timestepClampUpper
-  nameWithType: TimeStepManager.timestepClampUpper
-- uid: CAF.Simulation.TimeStepManager.Update(System.Single)
-  name: Update(Single)
-  href: api/CAF.Simulation.TimeStepManager.html#CAF_Simulation_TimeStepManager_Update_System_Single_
-  commentId: M:CAF.Simulation.TimeStepManager.Update(System.Single)
-  fullName: CAF.Simulation.TimeStepManager.Update(System.Single)
-  nameWithType: TimeStepManager.Update(Single)
-- uid: CAF.Simulation.TimeStepManager.Update*
-  name: Update
-  href: api/CAF.Simulation.TimeStepManager.html#CAF_Simulation_TimeStepManager_Update_
-  commentId: Overload:CAF.Simulation.TimeStepManager.Update
-  isSpec: "True"
-  fullName: CAF.Simulation.TimeStepManager.Update
-  nameWithType: TimeStepManager.Update
-- uid: CAF.Simulation.TimeStepManager.UpdateAction
-  name: TimeStepManager.UpdateAction
-  href: api/CAF.Simulation.TimeStepManager.UpdateAction.html
-  commentId: T:CAF.Simulation.TimeStepManager.UpdateAction
-  fullName: CAF.Simulation.TimeStepManager.UpdateAction
-  nameWithType: TimeStepManager.UpdateAction
