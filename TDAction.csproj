@@ -78,6 +78,7 @@
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Managers\BootLoader.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Managers\GameHandler.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Managers\GameManager.cs" />
+    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Simulation\SimObjectManager.cs" />
     <None Include="Assets\CAF\Samples\TDAction\TDAction.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
