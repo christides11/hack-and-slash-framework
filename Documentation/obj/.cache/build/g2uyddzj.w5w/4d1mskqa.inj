@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AttackDefinitionEditorWindow
+   | Character Action Framework Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AttackDefinitionEditorWindow
+   | Character Action Framework Documentation ">
+    <meta name="generator" content="docfx 2.55.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CAF.Combat.AttackDefinitionEditorWindow">
+  
+  
+  <h1 id="CAF_Combat_AttackDefinitionEditorWindow" data-uid="CAF.Combat.AttackDefinitionEditorWindow" class="text-break">Class AttackDefinitionEditorWindow
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.ScriptableObject</span></div>
+    <div class="level3"><span class="xref">UnityEditor.EditorWindow</span></div>
+    <div class="level4"><span class="xref">AttackDefinitionEditorWindow</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CAF.Combat.html">CAF.Combat</a></h6>
+  <h6><strong>Assembly</strong>: CAF.Editor.dll</h6>
+  <h5 id="CAF_Combat_AttackDefinitionEditorWindow_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AttackDefinitionEditorWindow : EditorWindow</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_attack.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.attack%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L10">View Source</a>
+  </span>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_attack" data-uid="CAF.Combat.AttackDefinitionEditorWindow.attack">attack</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AttackDefinition attack</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CAF.Combat.AttackDefinition.html">AttackDefinition</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_attackEventTypes.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.attackEventTypes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L21">View Source</a>
+  </span>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_attackEventTypes" data-uid="CAF.Combat.AttackDefinitionEditorWindow.attackEventTypes">attackEventTypes</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Dictionary&lt;string, Type&gt; attackEventTypes</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_boxesFoldout.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.boxesFoldout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L255">View Source</a>
+  </span>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_boxesFoldout" data-uid="CAF.Combat.AttackDefinitionEditorWindow.boxesFoldout">boxesFoldout</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool boxesFoldout</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_commandAttackCancelWindowsFoldout.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.commandAttackCancelWindowsFoldout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L145">View Source</a>
+  </span>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_commandAttackCancelWindowsFoldout" data-uid="CAF.Combat.AttackDefinitionEditorWindow.commandAttackCancelWindowsFoldout">commandAttackCancelWindowsFoldout</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool commandAttackCancelWindowsFoldout</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_currentHitboxGroupIndex.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.currentHitboxGroupIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L197">View Source</a>
+  </span>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_currentHitboxGroupIndex" data-uid="CAF.Combat.AttackDefinitionEditorWindow.currentHitboxGroupIndex">currentHitboxGroupIndex</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int currentHitboxGroupIndex</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_currentMenu.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.currentMenu%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L11">View Source</a>
+  </span>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_currentMenu" data-uid="CAF.Combat.AttackDefinitionEditorWindow.currentMenu">currentMenu</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int currentMenu</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_enemyStepWindowsFoldout.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.enemyStepWindowsFoldout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L143">View Source</a>
+  </span>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_enemyStepWindowsFoldout" data-uid="CAF.Combat.AttackDefinitionEditorWindow.enemyStepWindowsFoldout">enemyStepWindowsFoldout</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool enemyStepWindowsFoldout</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_eventSelected.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.eventSelected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L454">View Source</a>
+  </span>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_eventSelected" data-uid="CAF.Combat.AttackDefinitionEditorWindow.eventSelected">eventSelected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int eventSelected</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_eventVariablesFoldout.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.eventVariablesFoldout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L515">View Source</a>
+  </span>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_eventVariablesFoldout" data-uid="CAF.Combat.AttackDefinitionEditorWindow.eventVariablesFoldout">eventVariablesFoldout</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool eventVariablesFoldout</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_jumpCancelWindowsFoldout.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.jumpCancelWindowsFoldout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L142">View Source</a>
+  </span>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_jumpCancelWindowsFoldout" data-uid="CAF.Combat.AttackDefinitionEditorWindow.jumpCancelWindowsFoldout">jumpCancelWindowsFoldout</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool jumpCancelWindowsFoldout</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_landCancelWindowsFoldout.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.landCancelWindowsFoldout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L144">View Source</a>
+  </span>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_landCancelWindowsFoldout" data-uid="CAF.Combat.AttackDefinitionEditorWindow.landCancelWindowsFoldout">landCancelWindowsFoldout</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool landCancelWindowsFoldout</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_scrollPos.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.scrollPos%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L198">View Source</a>
+  </span>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_scrollPos" data-uid="CAF.Combat.AttackDefinitionEditorWindow.scrollPos">scrollPos</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Vector2 scrollPos</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_AddAttackEventDefinition.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.AddAttackEventDefinition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L510">View Source</a>
+  </span>
+  <a id="CAF_Combat_AttackDefinitionEditorWindow_AddAttackEventDefinition_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.AddAttackEventDefinition*"></a>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_AddAttackEventDefinition" data-uid="CAF.Combat.AttackDefinitionEditorWindow.AddAttackEventDefinition">AddAttackEventDefinition()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void AddAttackEventDefinition()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_AddBoxGroup.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.AddBoxGroup%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L250">View Source</a>
+  </span>
+  <a id="CAF_Combat_AttackDefinitionEditorWindow_AddBoxGroup_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.AddBoxGroup*"></a>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_AddBoxGroup" data-uid="CAF.Combat.AttackDefinitionEditorWindow.AddBoxGroup">AddBoxGroup()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void AddBoxGroup()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_BoxesMenuNavigationBar.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.BoxesMenuNavigationBar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L218">View Source</a>
+  </span>
+  <a id="CAF_Combat_AttackDefinitionEditorWindow_BoxesMenuNavigationBar_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.BoxesMenuNavigationBar*"></a>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_BoxesMenuNavigationBar" data-uid="CAF.Combat.AttackDefinitionEditorWindow.BoxesMenuNavigationBar">BoxesMenuNavigationBar()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void BoxesMenuNavigationBar()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_BoxGroupAddBoxDefinition_CAF_Combat_BoxGroup_.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.BoxGroupAddBoxDefinition(CAF.Combat.BoxGroup)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L306">View Source</a>
+  </span>
+  <a id="CAF_Combat_AttackDefinitionEditorWindow_BoxGroupAddBoxDefinition_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.BoxGroupAddBoxDefinition*"></a>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_BoxGroupAddBoxDefinition_CAF_Combat_BoxGroup_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.BoxGroupAddBoxDefinition(CAF.Combat.BoxGroup)">BoxGroupAddBoxDefinition(BoxGroup)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void BoxGroupAddBoxDefinition(BoxGroup currentGroup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CAF.Combat.BoxGroup.html">BoxGroup</a></td>
+        <td><span class="parametername">currentGroup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_DrawBoxesMenu.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.DrawBoxesMenu%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L199">View Source</a>
+  </span>
+  <a id="CAF_Combat_AttackDefinitionEditorWindow_DrawBoxesMenu_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawBoxesMenu*"></a>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_DrawBoxesMenu" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawBoxesMenu">DrawBoxesMenu()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DrawBoxesMenu()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_DrawBoxGroup_CAF_Combat_BoxGroup_.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroup(CAF.Combat.BoxGroup)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L256">View Source</a>
+  </span>
+  <a id="CAF_Combat_AttackDefinitionEditorWindow_DrawBoxGroup_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroup*"></a>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_DrawBoxGroup_CAF_Combat_BoxGroup_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroup(CAF.Combat.BoxGroup)">DrawBoxGroup(BoxGroup)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DrawBoxGroup(BoxGroup currentGroup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CAF.Combat.BoxGroup.html">BoxGroup</a></td>
+        <td><span class="parametername">currentGroup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_DrawBoxGroupGrabOptions_CAF_Combat_BoxGroup_.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupGrabOptions(CAF.Combat.BoxGroup)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L401">View Source</a>
+  </span>
+  <a id="CAF_Combat_AttackDefinitionEditorWindow_DrawBoxGroupGrabOptions_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupGrabOptions*"></a>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_DrawBoxGroupGrabOptions_CAF_Combat_BoxGroup_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupGrabOptions(CAF.Combat.BoxGroup)">DrawBoxGroupGrabOptions(BoxGroup)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DrawBoxGroupGrabOptions(BoxGroup currentGroup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CAF.Combat.BoxGroup.html">BoxGroup</a></td>
+        <td><span class="parametername">currentGroup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_DrawBoxGroupHitOptions_CAF_Combat_BoxGroup_.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupHitOptions(CAF.Combat.BoxGroup)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L312">View Source</a>
+  </span>
+  <a id="CAF_Combat_AttackDefinitionEditorWindow_DrawBoxGroupHitOptions_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupHitOptions*"></a>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_DrawBoxGroupHitOptions_CAF_Combat_BoxGroup_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupHitOptions(CAF.Combat.BoxGroup)">DrawBoxGroupHitOptions(BoxGroup)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DrawBoxGroupHitOptions(BoxGroup currentGroup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CAF.Combat.BoxGroup.html">BoxGroup</a></td>
+        <td><span class="parametername">currentGroup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_DrawCancelWindow_System_String_System_Boolean__System_Collections_Generic_List_UnityEngine_Vector2Int___System_Single_.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindow(System.String%2CSystem.Boolean%40%2CSystem.Collections.Generic.List%7BUnityEngine.Vector2Int%7D%40%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L170">View Source</a>
+  </span>
+  <a id="CAF_Combat_AttackDefinitionEditorWindow_DrawCancelWindow_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindow*"></a>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_DrawCancelWindow_System_String_System_Boolean__System_Collections_Generic_List_UnityEngine_Vector2Int___System_Single_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindow(System.String,System.Boolean@,System.Collections.Generic.List{UnityEngine.Vector2Int}@,System.Single)">DrawCancelWindow(String, ref Boolean, ref List&lt;Vector2Int&gt;, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DrawCancelWindow(string foldoutName, ref bool foldout, ref List&lt;Vector2Int&gt; windows, float width)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">foldoutName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">foldout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">UnityEngine.Vector2Int</span>&gt;</td>
+        <td><span class="parametername">windows</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_DrawCancelWindows.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindows%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L146">View Source</a>
+  </span>
+  <a id="CAF_Combat_AttackDefinitionEditorWindow_DrawCancelWindows_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindows*"></a>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_DrawCancelWindows" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindows">DrawCancelWindows()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DrawCancelWindows()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_DrawEventsWindow.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.DrawEventsWindow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L455">View Source</a>
+  </span>
+  <a id="CAF_Combat_AttackDefinitionEditorWindow_DrawEventsWindow_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawEventsWindow*"></a>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_DrawEventsWindow" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawEventsWindow">DrawEventsWindow()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DrawEventsWindow()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_DrawGeneralMenu.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.DrawGeneralMenu%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L92">View Source</a>
+  </span>
+  <a id="CAF_Combat_AttackDefinitionEditorWindow_DrawGeneralMenu_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawGeneralMenu*"></a>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_DrawGeneralMenu" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawGeneralMenu">DrawGeneralMenu()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DrawGeneralMenu()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_DrawHitboxOptions_CAF_Combat_BoxGroup_System_Int32_.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxOptions(CAF.Combat.BoxGroup%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L409">View Source</a>
+  </span>
+  <a id="CAF_Combat_AttackDefinitionEditorWindow_DrawHitboxOptions_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxOptions*"></a>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_DrawHitboxOptions_CAF_Combat_BoxGroup_System_Int32_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxOptions(CAF.Combat.BoxGroup,System.Int32)">DrawHitboxOptions(BoxGroup, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DrawHitboxOptions(BoxGroup currentGroup, int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CAF.Combat.BoxGroup.html">BoxGroup</a></td>
+        <td><span class="parametername">currentGroup</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_DrawHitDamageOptions_CAF_Combat_BoxGroup_.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.DrawHitDamageOptions(CAF.Combat.BoxGroup)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L348">View Source</a>
+  </span>
+  <a id="CAF_Combat_AttackDefinitionEditorWindow_DrawHitDamageOptions_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawHitDamageOptions*"></a>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_DrawHitDamageOptions_CAF_Combat_BoxGroup_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawHitDamageOptions(CAF.Combat.BoxGroup)">DrawHitDamageOptions(BoxGroup)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DrawHitDamageOptions(BoxGroup currentGroup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CAF.Combat.BoxGroup.html">BoxGroup</a></td>
+        <td><span class="parametername">currentGroup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_DrawHitEffectsOptions_CAF_Combat_BoxGroup_.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.DrawHitEffectsOptions(CAF.Combat.BoxGroup)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L331">View Source</a>
+  </span>
+  <a id="CAF_Combat_AttackDefinitionEditorWindow_DrawHitEffectsOptions_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawHitEffectsOptions*"></a>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_DrawHitEffectsOptions_CAF_Combat_BoxGroup_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawHitEffectsOptions(CAF.Combat.BoxGroup)">DrawHitEffectsOptions(BoxGroup)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DrawHitEffectsOptions(BoxGroup currentGroup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CAF.Combat.BoxGroup.html">BoxGroup</a></td>
+        <td><span class="parametername">currentGroup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_DrawHitForcesOptions_CAF_Combat_BoxGroup_.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.DrawHitForcesOptions(CAF.Combat.BoxGroup)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L355">View Source</a>
+  </span>
+  <a id="CAF_Combat_AttackDefinitionEditorWindow_DrawHitForcesOptions_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawHitForcesOptions*"></a>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_DrawHitForcesOptions_CAF_Combat_BoxGroup_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawHitForcesOptions(CAF.Combat.BoxGroup)">DrawHitForcesOptions(BoxGroup)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DrawHitForcesOptions(BoxGroup currentGroup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CAF.Combat.BoxGroup.html">BoxGroup</a></td>
+        <td><span class="parametername">currentGroup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_DrawHitStunOptions_CAF_Combat_BoxGroup_.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.DrawHitStunOptions(CAF.Combat.BoxGroup)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L391">View Source</a>
+  </span>
+  <a id="CAF_Combat_AttackDefinitionEditorWindow_DrawHitStunOptions_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawHitStunOptions*"></a>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_DrawHitStunOptions_CAF_Combat_BoxGroup_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawHitStunOptions(CAF.Combat.BoxGroup)">DrawHitStunOptions(BoxGroup)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DrawHitStunOptions(BoxGroup currentGroup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CAF.Combat.BoxGroup.html">BoxGroup</a></td>
+        <td><span class="parametername">currentGroup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_DrawMenu.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.DrawMenu%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L72">View Source</a>
+  </span>
+  <a id="CAF_Combat_AttackDefinitionEditorWindow_DrawMenu_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawMenu*"></a>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_DrawMenu" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawMenu">DrawMenu()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DrawMenu()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_DrawMenuBar.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.DrawMenuBar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L52">View Source</a>
+  </span>
+  <a id="CAF_Combat_AttackDefinitionEditorWindow_DrawMenuBar_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawMenuBar*"></a>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_DrawMenuBar" data-uid="CAF.Combat.AttackDefinitionEditorWindow.DrawMenuBar">DrawMenuBar()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DrawMenuBar()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_Init_CAF_Combat_AttackDefinition_.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.Init(CAF.Combat.AttackDefinition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L13">View Source</a>
+  </span>
+  <a id="CAF_Combat_AttackDefinitionEditorWindow_Init_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.Init*"></a>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_Init_CAF_Combat_AttackDefinition_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.Init(CAF.Combat.AttackDefinition)">Init(AttackDefinition)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Init(AttackDefinition attack)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CAF.Combat.AttackDefinition.html">AttackDefinition</a></td>
+        <td><span class="parametername">attack</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_OnAttackEventSelected_System_Object_.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.OnAttackEventSelected(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L563">View Source</a>
+  </span>
+  <a id="CAF_Combat_AttackDefinitionEditorWindow_OnAttackEventSelected_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.OnAttackEventSelected*"></a>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_OnAttackEventSelected_System_Object_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.OnAttackEventSelected(System.Object)">OnAttackEventSelected(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnAttackEventSelected(object t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_OnFocus.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.OnFocus%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L22">View Source</a>
+  </span>
+  <a id="CAF_Combat_AttackDefinitionEditorWindow_OnFocus_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.OnFocus*"></a>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_OnFocus" data-uid="CAF.Combat.AttackDefinitionEditorWindow.OnFocus">OnFocus()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnFocus()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_OnGUI.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.OnGUI%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L37">View Source</a>
+  </span>
+  <a id="CAF_Combat_AttackDefinitionEditorWindow_OnGUI_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.OnGUI*"></a>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_OnGUI" data-uid="CAF.Combat.AttackDefinitionEditorWindow.OnGUI">OnGUI()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnGUI()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow_ShowEventInfo_System_Int32_.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow.ShowEventInfo(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L516">View Source</a>
+  </span>
+  <a id="CAF_Combat_AttackDefinitionEditorWindow_ShowEventInfo_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.ShowEventInfo*"></a>
+  <h4 id="CAF_Combat_AttackDefinitionEditorWindow_ShowEventInfo_System_Int32_" data-uid="CAF.Combat.AttackDefinitionEditorWindow.ShowEventInfo(System.Int32)">ShowEventInfo(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ShowEventInfo(int eventSelected)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">eventSelected</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackDefinitionEditorWindow.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackDefinitionEditorWindow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/Attack/AttackDefinitionEditorWindow.cs/#L8" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Character Action Framework Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
