@@ -106,7 +106,6 @@
     <Compile Include="Assets\CAF\Other\HelperFunctions.cs" />
     <Compile Include="Assets\CAF\Simulation\SimObject.cs" />
     <Compile Include="Assets\CAF\Simulation\SimObjectManager.cs" />
-    <Compile Include="Assets\CAF\Simulation\TimeStepManager.cs" />
     <None Include="Assets\CAF\CAF.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

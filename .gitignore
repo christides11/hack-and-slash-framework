@@ -13,6 +13,7 @@
 # Documentation
 Documentation/api/
 Documentation/index.*
+Documentation/obj/
 _site/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored

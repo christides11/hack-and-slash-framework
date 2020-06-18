@@ -4,8 +4,14 @@ using UnityEngine;
 
 namespace CAF.Simulation
 {
+    /// <summary>
+    /// A SimObject should be implemented by any class that will be apart of the simulation.
+    /// </summary>
     public class SimObject : MonoBehaviour
     {
+        /// <summary>
+        /// The SimObjectManager this is attached to. Assigned once it's added to the simulation.
+        /// </summary>
         public SimObjectManager simObjectManager;
 
         protected virtual void Awake()
@@ -35,14 +41,16 @@ namespace CAF.Simulation
         /// <summary>
         /// Called every simulations tick.
         /// </summary>
-        public virtual void SimUpdate()
+        /// <param name="deltaTime">the time between the last frame and this one.</param>
+        public virtual void SimUpdate(float deltaTime)
         {
         }
 
         /// <summary>
         /// Called every simulation tick after all updates are called.
-        /// </summary>
-        public virtual void SimLateUpdate()
+        /// </summary
+        /// <param name="deltaTime">the time between the last frame and this one.</param>
+        public virtual void SimLateUpdate(float deltaTime)
         {
         }
     }

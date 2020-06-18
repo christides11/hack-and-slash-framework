@@ -2,6 +2,11 @@
 
 namespace CAF.Camera
 {
+    /// <summary>
+    /// The LookHandler is used to defined a camera-like object.
+    /// This is useful for objects that don't need an actual camera,
+    /// but do need to move based on some sort of "camera."
+    /// </summary>
     public interface LookHandler
     {
         /// <summary>
@@ -16,6 +21,10 @@ namespace CAF.Camera
         /// <param name="position">The position to look at.</param>
         void LookAt(Vector3 position);
 
+        /// <summary>
+        /// The transform that is used to define what direction we're currently looking in.
+        /// </summary>
+        /// <returns>The transform.</returns>
         Transform LookTransform();
     }
 }
