@@ -18,7 +18,7 @@ namespace CAF.Combat
         /// <param name="controller">The controller using this event.</param>
         /// <param name="variables"></param>
         /// <returns>True if the attack state should cancel.</returns>
-        public virtual bool Evaluate(uint frame, uint endFrame, EntityController controller,
+        public virtual bool Evaluate(uint frame, uint endFrame, EntityManager controller,
             AttackEventVariables variables)
         {
             return false;

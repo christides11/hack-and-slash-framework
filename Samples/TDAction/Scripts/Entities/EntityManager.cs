@@ -6,10 +6,11 @@ using UnityEngine;
 
 namespace TDAction.Entities
 {
-    public class EntityController : CAF.Entities.EntityController
+    public class EntityManager : CAF.Entities.EntityManager
     {
         public CharacterController2D charController2D;
         public Collider2D coll;
+        public EntityDefinition entityDefinition;
 
         public virtual void Initialize(InputControlType controlType)
         {

@@ -8,7 +8,7 @@ namespace CAF.Entities
         public EntityState CurrentState { get { return currentState; } }
         public uint CurrentStateFrame { get { return currentStateFrame; } }
 
-        [SerializeField] protected EntityController controller = null;
+        [SerializeField] protected EntityManager controller = null;
         protected Dictionary<int, EntityState> states = new Dictionary<int, EntityState>();
         protected EntityState currentState;
         [SerializeField] protected uint currentStateFrame = 0;

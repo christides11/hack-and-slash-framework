@@ -13,7 +13,7 @@ namespace CAF.Entities
         public MovesetDefinition CurrentMoveset { get; protected set; } = null;
         public HitInfo LastHitBy { get; protected set; }
 
-        public EntityController controller;
+        public EntityManager controller;
         public EntityHitboxManager hitboxManager;
         [SerializeField] public int hitStun;
         [SerializeField] public int hitStop;

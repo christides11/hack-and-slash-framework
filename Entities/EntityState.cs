@@ -6,7 +6,7 @@ namespace CAF.Entities
 {
     public class EntityState
     {
-        public EntityController Controller { get; set; } = null;
+        public EntityManager Controller { get; set; } = null;
 
         /// <summary>
         /// Get the name of the state.

@@ -7,7 +7,7 @@ namespace CAF.Combat
 {
     public abstract class StatusEffect
     {
-        public EntityController target;
+        public EntityManager target;
 
         public abstract void Apply();
     }

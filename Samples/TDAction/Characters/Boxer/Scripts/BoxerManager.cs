@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace TDAction.Entities.Characters
 {
-    public class BoxerController : TDAction.Entities.EntityController
+    public class BoxerManager : CharacterManager
     {
 
     }

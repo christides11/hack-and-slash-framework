@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace CAF.Entities
 {
-    public class EntityController : SimObject, ITargetable, IStatusEffectable
+    public class EntityManager : SimObject, ITargetable, IStatusEffectable
     {
         public EntityInputManager InputManager { get { return entityInput; } }
         public EntityStateManager StateManager { get { return entityStateManager; } }
