@@ -36,4 +36,5 @@ SimObjectManager defaults to updating 3D Physics. If you're using 2D Physics, yo
 	
 ### Side Note: Tick Rate
 since the simulation is ticked every fixed update, how often the simulation updates depends on the value of Fixed Timestep. By default it's set to 0.02, which translates to a tick rate of 50 times a second (0.02 = 1/50). 
+
 Most action games target a tick rate of 60 times a second, so you may want to change the value to 0.01666667 (~1/60). You also might want to make the Maximum Allowed Timestep something like 0.02 for reasons explained [here](https://johnaustin.io/articles/2019/fix-your-unity-timestep).
