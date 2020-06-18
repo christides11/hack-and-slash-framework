@@ -16,7 +16,7 @@ namespace CAF.Combat
     {
         public DataType data;
 
-        public virtual StatusEffectType GetStatusEffect(EntityController target)
+        public virtual StatusEffectType GetStatusEffect(EntityManager target)
         {
             return new StatusEffectType { data = this.data, target = target };
         }

@@ -165,6 +165,7 @@ MonoBehaviour:
   visual: {fileID: 8500522958957405919}
   charController2D: {fileID: 5370282184306079421}
   coll: {fileID: 7143026638669106818}
+  entityDefinition: {fileID: 11400000, guid: 1630f8195ec1d2c46a07b9a8f315398b, type: 2}
 --- !u!114 &5384823916746293231
 MonoBehaviour:
   m_ObjectHideFlags: 0

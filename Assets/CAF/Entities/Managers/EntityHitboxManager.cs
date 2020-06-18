@@ -19,9 +19,9 @@ namespace CAF.Entities
         protected Dictionary<int, List<IHurtable>> hurtablesHit = new Dictionary<int, List<IHurtable>>();
 
         public EntityCombatManager combatManager;
-        public EntityController controller;
+        public EntityManager controller;
 
-        public EntityHitboxManager(EntityCombatManager combatManager, EntityController controller)
+        public EntityHitboxManager(EntityCombatManager combatManager, EntityManager controller)
         {
             this.combatManager = combatManager;
             this.controller = controller;

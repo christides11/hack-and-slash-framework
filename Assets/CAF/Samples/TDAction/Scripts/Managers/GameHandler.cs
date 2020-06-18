@@ -9,7 +9,7 @@ namespace TDAction.Managers
     {
         public SimObjectManager simulationObjectManager;
 
-        [SerializeField] private EntityController currentPlayerEntity;
+        [SerializeField] private EntityManager currentPlayerEntity;
 
         public GameHandler()
         {
@@ -22,10 +22,10 @@ namespace TDAction.Managers
             simulationObjectManager.LateUpdate(Time.fixedDeltaTime);
         }
 
-        public void SpawnPlayer(EntityController entity, Vector3 spawnPosition)
+        public void SpawnPlayer(EntityManager entity, Vector3 spawnPosition)
         {
             currentPlayerEntity = GameObject.Instantiate(entity.gameObject, spawnPosition, Quaternion.identity)
-                .GetComponent<EntityController>();
+                .GetComponent<EntityManager>();
             currentPlayerEntity.Initialize(CAF.Input.InputControlType.Direct);
 
             simulationObjectManager.RegisterObject(currentPlayerEntity);

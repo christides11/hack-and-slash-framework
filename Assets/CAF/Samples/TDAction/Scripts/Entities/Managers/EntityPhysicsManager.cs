@@ -9,7 +9,7 @@ namespace TDAction.Entities
 
         public override void Tick()
         {
-            ((EntityController)controller).charController2D.move(GetOverallForce());
+            ((EntityManager)controller).charController2D.move(GetOverallForce());
         }
     }
 }

@@ -4,7 +4,7 @@ First, you should implement these classes so that you have your own implementati
 
  - SimObjectManager
  - EntityState
- - EntityController
+ - EntityManager
  - EntityCombatManager
  - EntityHitboxManager
  - EntityInputManager
