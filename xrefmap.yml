@@ -591,12 +591,12 @@ references:
   isSpec: "True"
   fullName: CAF.Combat.AttackEvent.DrawEventVariables
   nameWithType: AttackEvent.DrawEventVariables
-- uid: CAF.Combat.AttackEvent.Evaluate(System.UInt32,System.UInt32,CAF.Entities.EntityController,CAF.Combat.AttackEventVariables)
-  name: Evaluate(UInt32, UInt32, EntityController, AttackEventVariables)
-  href: api/CAF.Combat.AttackEvent.html#CAF_Combat_AttackEvent_Evaluate_System_UInt32_System_UInt32_CAF_Entities_EntityController_CAF_Combat_AttackEventVariables_
-  commentId: M:CAF.Combat.AttackEvent.Evaluate(System.UInt32,System.UInt32,CAF.Entities.EntityController,CAF.Combat.AttackEventVariables)
-  fullName: CAF.Combat.AttackEvent.Evaluate(System.UInt32, System.UInt32, CAF.Entities.EntityController, CAF.Combat.AttackEventVariables)
-  nameWithType: AttackEvent.Evaluate(UInt32, UInt32, EntityController, AttackEventVariables)
+- uid: CAF.Combat.AttackEvent.Evaluate(System.UInt32,System.UInt32,CAF.Entities.EntityManager,CAF.Combat.AttackEventVariables)
+  name: Evaluate(UInt32, UInt32, EntityManager, AttackEventVariables)
+  href: api/CAF.Combat.AttackEvent.html#CAF_Combat_AttackEvent_Evaluate_System_UInt32_System_UInt32_CAF_Entities_EntityManager_CAF_Combat_AttackEventVariables_
+  commentId: M:CAF.Combat.AttackEvent.Evaluate(System.UInt32,System.UInt32,CAF.Entities.EntityManager,CAF.Combat.AttackEventVariables)
+  fullName: CAF.Combat.AttackEvent.Evaluate(System.UInt32, System.UInt32, CAF.Entities.EntityManager, CAF.Combat.AttackEventVariables)
+  nameWithType: AttackEvent.Evaluate(UInt32, UInt32, EntityManager, AttackEventVariables)
 - uid: CAF.Combat.AttackEvent.Evaluate*
   name: Evaluate
   href: api/CAF.Combat.AttackEvent.html#CAF_Combat_AttackEvent_Evaluate_
@@ -1751,14 +1751,14 @@ references:
   fullName.vb: CAF.Combat.StatusEffectDefinition(Of DataType, StatusEffectType).data
   nameWithType: StatusEffectDefinition<DataType, StatusEffectType>.data
   nameWithType.vb: StatusEffectDefinition(Of DataType, StatusEffectType).data
-- uid: CAF.Combat.StatusEffectDefinition`2.GetStatusEffect(CAF.Entities.EntityController)
-  name: GetStatusEffect(EntityController)
-  href: api/CAF.Combat.StatusEffectDefinition-2.html#CAF_Combat_StatusEffectDefinition_2_GetStatusEffect_CAF_Entities_EntityController_
-  commentId: M:CAF.Combat.StatusEffectDefinition`2.GetStatusEffect(CAF.Entities.EntityController)
-  fullName: CAF.Combat.StatusEffectDefinition<DataType, StatusEffectType>.GetStatusEffect(CAF.Entities.EntityController)
-  fullName.vb: CAF.Combat.StatusEffectDefinition(Of DataType, StatusEffectType).GetStatusEffect(CAF.Entities.EntityController)
-  nameWithType: StatusEffectDefinition<DataType, StatusEffectType>.GetStatusEffect(EntityController)
-  nameWithType.vb: StatusEffectDefinition(Of DataType, StatusEffectType).GetStatusEffect(EntityController)
+- uid: CAF.Combat.StatusEffectDefinition`2.GetStatusEffect(CAF.Entities.EntityManager)
+  name: GetStatusEffect(EntityManager)
+  href: api/CAF.Combat.StatusEffectDefinition-2.html#CAF_Combat_StatusEffectDefinition_2_GetStatusEffect_CAF_Entities_EntityManager_
+  commentId: M:CAF.Combat.StatusEffectDefinition`2.GetStatusEffect(CAF.Entities.EntityManager)
+  fullName: CAF.Combat.StatusEffectDefinition<DataType, StatusEffectType>.GetStatusEffect(CAF.Entities.EntityManager)
+  fullName.vb: CAF.Combat.StatusEffectDefinition(Of DataType, StatusEffectType).GetStatusEffect(CAF.Entities.EntityManager)
+  nameWithType: StatusEffectDefinition<DataType, StatusEffectType>.GetStatusEffect(EntityManager)
+  nameWithType.vb: StatusEffectDefinition(Of DataType, StatusEffectType).GetStatusEffect(EntityManager)
 - uid: CAF.Combat.StatusEffectDefinition`2.GetStatusEffect*
   name: GetStatusEffect
   href: api/CAF.Combat.StatusEffectDefinition-2.html#CAF_Combat_StatusEffectDefinition_2_GetStatusEffect_
@@ -2002,268 +2002,18 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityCombatManager.TryAttack
   nameWithType: EntityCombatManager.TryAttack
-- uid: CAF.Entities.EntityController
-  name: EntityController
-  href: api/CAF.Entities.EntityController.html
-  commentId: T:CAF.Entities.EntityController
-  fullName: CAF.Entities.EntityController
-  nameWithType: EntityController
-- uid: CAF.Entities.EntityController.ApplyStatusEffect(CAF.Combat.StatusEffectDefinition)
-  name: ApplyStatusEffect(StatusEffectDefinition)
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_ApplyStatusEffect_CAF_Combat_StatusEffectDefinition_
-  commentId: M:CAF.Entities.EntityController.ApplyStatusEffect(CAF.Combat.StatusEffectDefinition)
-  fullName: CAF.Entities.EntityController.ApplyStatusEffect(CAF.Combat.StatusEffectDefinition)
-  nameWithType: EntityController.ApplyStatusEffect(StatusEffectDefinition)
-- uid: CAF.Entities.EntityController.ApplyStatusEffect*
-  name: ApplyStatusEffect
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_ApplyStatusEffect_
-  commentId: Overload:CAF.Entities.EntityController.ApplyStatusEffect
-  isSpec: "True"
-  fullName: CAF.Entities.EntityController.ApplyStatusEffect
-  nameWithType: EntityController.ApplyStatusEffect
-- uid: CAF.Entities.EntityController.CombatManager
-  name: CombatManager
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_CombatManager
-  commentId: P:CAF.Entities.EntityController.CombatManager
-  fullName: CAF.Entities.EntityController.CombatManager
-  nameWithType: EntityController.CombatManager
-- uid: CAF.Entities.EntityController.CombatManager*
-  name: CombatManager
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_CombatManager_
-  commentId: Overload:CAF.Entities.EntityController.CombatManager
-  isSpec: "True"
-  fullName: CAF.Entities.EntityController.CombatManager
-  nameWithType: EntityController.CombatManager
-- uid: CAF.Entities.EntityController.entityCombatManager
-  name: entityCombatManager
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_entityCombatManager
-  commentId: F:CAF.Entities.EntityController.entityCombatManager
-  fullName: CAF.Entities.EntityController.entityCombatManager
-  nameWithType: EntityController.entityCombatManager
-- uid: CAF.Entities.EntityController.entityInput
-  name: entityInput
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_entityInput
-  commentId: F:CAF.Entities.EntityController.entityInput
-  fullName: CAF.Entities.EntityController.entityInput
-  nameWithType: EntityController.entityInput
-- uid: CAF.Entities.EntityController.entityPhysicsManager
-  name: entityPhysicsManager
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_entityPhysicsManager
-  commentId: F:CAF.Entities.EntityController.entityPhysicsManager
-  fullName: CAF.Entities.EntityController.entityPhysicsManager
-  nameWithType: EntityController.entityPhysicsManager
-- uid: CAF.Entities.EntityController.entityStateManager
-  name: entityStateManager
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_entityStateManager
-  commentId: F:CAF.Entities.EntityController.entityStateManager
-  fullName: CAF.Entities.EntityController.entityStateManager
-  nameWithType: EntityController.entityStateManager
-- uid: CAF.Entities.EntityController.GetCenter
-  name: GetCenter()
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_GetCenter
-  commentId: M:CAF.Entities.EntityController.GetCenter
-  fullName: CAF.Entities.EntityController.GetCenter()
-  nameWithType: EntityController.GetCenter()
-- uid: CAF.Entities.EntityController.GetCenter*
-  name: GetCenter
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_GetCenter_
-  commentId: Overload:CAF.Entities.EntityController.GetCenter
-  isSpec: "True"
-  fullName: CAF.Entities.EntityController.GetCenter
-  nameWithType: EntityController.GetCenter
-- uid: CAF.Entities.EntityController.GetMovementVector(System.Single,System.Single)
-  name: GetMovementVector(Single, Single)
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_GetMovementVector_System_Single_System_Single_
-  commentId: M:CAF.Entities.EntityController.GetMovementVector(System.Single,System.Single)
-  fullName: CAF.Entities.EntityController.GetMovementVector(System.Single, System.Single)
-  nameWithType: EntityController.GetMovementVector(Single, Single)
-- uid: CAF.Entities.EntityController.GetMovementVector*
-  name: GetMovementVector
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_GetMovementVector_
-  commentId: Overload:CAF.Entities.EntityController.GetMovementVector
-  isSpec: "True"
-  fullName: CAF.Entities.EntityController.GetMovementVector
-  nameWithType: EntityController.GetMovementVector
-- uid: CAF.Entities.EntityController.GetSize
-  name: GetSize()
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_GetSize
-  commentId: M:CAF.Entities.EntityController.GetSize
-  fullName: CAF.Entities.EntityController.GetSize()
-  nameWithType: EntityController.GetSize()
-- uid: CAF.Entities.EntityController.GetSize*
-  name: GetSize
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_GetSize_
-  commentId: Overload:CAF.Entities.EntityController.GetSize
-  isSpec: "True"
-  fullName: CAF.Entities.EntityController.GetSize
-  nameWithType: EntityController.GetSize
-- uid: CAF.Entities.EntityController.GetVisualBasedDirection(Vector3)
-  name: GetVisualBasedDirection(Vector3)
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_GetVisualBasedDirection_Vector3_
-  commentId: M:CAF.Entities.EntityController.GetVisualBasedDirection(Vector3)
-  fullName: CAF.Entities.EntityController.GetVisualBasedDirection(Vector3)
-  nameWithType: EntityController.GetVisualBasedDirection(Vector3)
-- uid: CAF.Entities.EntityController.GetVisualBasedDirection*
-  name: GetVisualBasedDirection
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_GetVisualBasedDirection_
-  commentId: Overload:CAF.Entities.EntityController.GetVisualBasedDirection
-  isSpec: "True"
-  fullName: CAF.Entities.EntityController.GetVisualBasedDirection
-  nameWithType: EntityController.GetVisualBasedDirection
-- uid: CAF.Entities.EntityController.HandleLockon
-  name: HandleLockon()
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_HandleLockon
-  commentId: M:CAF.Entities.EntityController.HandleLockon
-  fullName: CAF.Entities.EntityController.HandleLockon()
-  nameWithType: EntityController.HandleLockon()
-- uid: CAF.Entities.EntityController.HandleLockon*
-  name: HandleLockon
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_HandleLockon_
-  commentId: Overload:CAF.Entities.EntityController.HandleLockon
-  isSpec: "True"
-  fullName: CAF.Entities.EntityController.HandleLockon
-  nameWithType: EntityController.HandleLockon
-- uid: CAF.Entities.EntityController.InputManager
-  name: InputManager
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_InputManager
-  commentId: P:CAF.Entities.EntityController.InputManager
-  fullName: CAF.Entities.EntityController.InputManager
-  nameWithType: EntityController.InputManager
-- uid: CAF.Entities.EntityController.InputManager*
-  name: InputManager
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_InputManager_
-  commentId: Overload:CAF.Entities.EntityController.InputManager
-  isSpec: "True"
-  fullName: CAF.Entities.EntityController.InputManager
-  nameWithType: EntityController.InputManager
-- uid: CAF.Entities.EntityController.IsGrounded
-  name: IsGrounded
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_IsGrounded
-  commentId: P:CAF.Entities.EntityController.IsGrounded
-  fullName: CAF.Entities.EntityController.IsGrounded
-  nameWithType: EntityController.IsGrounded
-- uid: CAF.Entities.EntityController.IsGrounded*
-  name: IsGrounded
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_IsGrounded_
-  commentId: Overload:CAF.Entities.EntityController.IsGrounded
-  isSpec: "True"
-  fullName: CAF.Entities.EntityController.IsGrounded
-  nameWithType: EntityController.IsGrounded
-- uid: CAF.Entities.EntityController.lookHandler
-  name: lookHandler
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_lookHandler
-  commentId: F:CAF.Entities.EntityController.lookHandler
-  fullName: CAF.Entities.EntityController.lookHandler
-  nameWithType: EntityController.lookHandler
-- uid: CAF.Entities.EntityController.PhysicsManager
-  name: PhysicsManager
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_PhysicsManager
-  commentId: P:CAF.Entities.EntityController.PhysicsManager
-  fullName: CAF.Entities.EntityController.PhysicsManager
-  nameWithType: EntityController.PhysicsManager
-- uid: CAF.Entities.EntityController.PhysicsManager*
-  name: PhysicsManager
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_PhysicsManager_
-  commentId: Overload:CAF.Entities.EntityController.PhysicsManager
-  isSpec: "True"
-  fullName: CAF.Entities.EntityController.PhysicsManager
-  nameWithType: EntityController.PhysicsManager
-- uid: CAF.Entities.EntityController.RotateVisual(Vector3,System.Single)
-  name: RotateVisual(Vector3, Single)
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_RotateVisual_Vector3_System_Single_
-  commentId: M:CAF.Entities.EntityController.RotateVisual(Vector3,System.Single)
-  fullName: CAF.Entities.EntityController.RotateVisual(Vector3, System.Single)
-  nameWithType: EntityController.RotateVisual(Vector3, Single)
-- uid: CAF.Entities.EntityController.RotateVisual*
-  name: RotateVisual
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_RotateVisual_
-  commentId: Overload:CAF.Entities.EntityController.RotateVisual
-  isSpec: "True"
-  fullName: CAF.Entities.EntityController.RotateVisual
-  nameWithType: EntityController.RotateVisual
-- uid: CAF.Entities.EntityController.SetVisualRotation(Vector3)
-  name: SetVisualRotation(Vector3)
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_SetVisualRotation_Vector3_
-  commentId: M:CAF.Entities.EntityController.SetVisualRotation(Vector3)
-  fullName: CAF.Entities.EntityController.SetVisualRotation(Vector3)
-  nameWithType: EntityController.SetVisualRotation(Vector3)
-- uid: CAF.Entities.EntityController.SetVisualRotation*
-  name: SetVisualRotation
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_SetVisualRotation_
-  commentId: Overload:CAF.Entities.EntityController.SetVisualRotation
-  isSpec: "True"
-  fullName: CAF.Entities.EntityController.SetVisualRotation
-  nameWithType: EntityController.SetVisualRotation
-- uid: CAF.Entities.EntityController.SimLateUpdate(System.Single)
-  name: SimLateUpdate(Single)
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_SimLateUpdate_System_Single_
-  commentId: M:CAF.Entities.EntityController.SimLateUpdate(System.Single)
-  fullName: CAF.Entities.EntityController.SimLateUpdate(System.Single)
-  nameWithType: EntityController.SimLateUpdate(Single)
-- uid: CAF.Entities.EntityController.SimLateUpdate*
-  name: SimLateUpdate
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_SimLateUpdate_
-  commentId: Overload:CAF.Entities.EntityController.SimLateUpdate
-  isSpec: "True"
-  fullName: CAF.Entities.EntityController.SimLateUpdate
-  nameWithType: EntityController.SimLateUpdate
-- uid: CAF.Entities.EntityController.SimUpdate(System.Single)
-  name: SimUpdate(Single)
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_SimUpdate_System_Single_
-  commentId: M:CAF.Entities.EntityController.SimUpdate(System.Single)
-  fullName: CAF.Entities.EntityController.SimUpdate(System.Single)
-  nameWithType: EntityController.SimUpdate(Single)
-- uid: CAF.Entities.EntityController.SimUpdate*
-  name: SimUpdate
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_SimUpdate_
-  commentId: Overload:CAF.Entities.EntityController.SimUpdate
-  isSpec: "True"
-  fullName: CAF.Entities.EntityController.SimUpdate
-  nameWithType: EntityController.SimUpdate
-- uid: CAF.Entities.EntityController.StateManager
-  name: StateManager
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_StateManager
-  commentId: P:CAF.Entities.EntityController.StateManager
-  fullName: CAF.Entities.EntityController.StateManager
-  nameWithType: EntityController.StateManager
-- uid: CAF.Entities.EntityController.StateManager*
-  name: StateManager
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_StateManager_
-  commentId: Overload:CAF.Entities.EntityController.StateManager
-  isSpec: "True"
-  fullName: CAF.Entities.EntityController.StateManager
-  nameWithType: EntityController.StateManager
-- uid: CAF.Entities.EntityController.Targetable
-  name: Targetable
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_Targetable
-  commentId: P:CAF.Entities.EntityController.Targetable
-  fullName: CAF.Entities.EntityController.Targetable
-  nameWithType: EntityController.Targetable
-- uid: CAF.Entities.EntityController.Targetable*
-  name: Targetable
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_Targetable_
-  commentId: Overload:CAF.Entities.EntityController.Targetable
-  isSpec: "True"
-  fullName: CAF.Entities.EntityController.Targetable
-  nameWithType: EntityController.Targetable
-- uid: CAF.Entities.EntityController.visual
-  name: visual
-  href: api/CAF.Entities.EntityController.html#CAF_Entities_EntityController_visual
-  commentId: F:CAF.Entities.EntityController.visual
-  fullName: CAF.Entities.EntityController.visual
-  nameWithType: EntityController.visual
 - uid: CAF.Entities.EntityHitboxManager
   name: EntityHitboxManager
   href: api/CAF.Entities.EntityHitboxManager.html
   commentId: T:CAF.Entities.EntityHitboxManager
   fullName: CAF.Entities.EntityHitboxManager
   nameWithType: EntityHitboxManager
-- uid: CAF.Entities.EntityHitboxManager.#ctor(CAF.Entities.EntityCombatManager,CAF.Entities.EntityController)
-  name: EntityHitboxManager(EntityCombatManager, EntityController)
-  href: api/CAF.Entities.EntityHitboxManager.html#CAF_Entities_EntityHitboxManager__ctor_CAF_Entities_EntityCombatManager_CAF_Entities_EntityController_
-  commentId: M:CAF.Entities.EntityHitboxManager.#ctor(CAF.Entities.EntityCombatManager,CAF.Entities.EntityController)
-  fullName: CAF.Entities.EntityHitboxManager.EntityHitboxManager(CAF.Entities.EntityCombatManager, CAF.Entities.EntityController)
-  nameWithType: EntityHitboxManager.EntityHitboxManager(EntityCombatManager, EntityController)
+- uid: CAF.Entities.EntityHitboxManager.#ctor(CAF.Entities.EntityCombatManager,CAF.Entities.EntityManager)
+  name: EntityHitboxManager(EntityCombatManager, EntityManager)
+  href: api/CAF.Entities.EntityHitboxManager.html#CAF_Entities_EntityHitboxManager__ctor_CAF_Entities_EntityCombatManager_CAF_Entities_EntityManager_
+  commentId: M:CAF.Entities.EntityHitboxManager.#ctor(CAF.Entities.EntityCombatManager,CAF.Entities.EntityManager)
+  fullName: CAF.Entities.EntityHitboxManager.EntityHitboxManager(CAF.Entities.EntityCombatManager, CAF.Entities.EntityManager)
+  nameWithType: EntityHitboxManager.EntityHitboxManager(EntityCombatManager, EntityManager)
 - uid: CAF.Entities.EntityHitboxManager.#ctor*
   name: EntityHitboxManager
   href: api/CAF.Entities.EntityHitboxManager.html#CAF_Entities_EntityHitboxManager__ctor_
@@ -2619,6 +2369,256 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityInputManager.Tick
   nameWithType: EntityInputManager.Tick
+- uid: CAF.Entities.EntityManager
+  name: EntityManager
+  href: api/CAF.Entities.EntityManager.html
+  commentId: T:CAF.Entities.EntityManager
+  fullName: CAF.Entities.EntityManager
+  nameWithType: EntityManager
+- uid: CAF.Entities.EntityManager.ApplyStatusEffect(CAF.Combat.StatusEffectDefinition)
+  name: ApplyStatusEffect(StatusEffectDefinition)
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_ApplyStatusEffect_CAF_Combat_StatusEffectDefinition_
+  commentId: M:CAF.Entities.EntityManager.ApplyStatusEffect(CAF.Combat.StatusEffectDefinition)
+  fullName: CAF.Entities.EntityManager.ApplyStatusEffect(CAF.Combat.StatusEffectDefinition)
+  nameWithType: EntityManager.ApplyStatusEffect(StatusEffectDefinition)
+- uid: CAF.Entities.EntityManager.ApplyStatusEffect*
+  name: ApplyStatusEffect
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_ApplyStatusEffect_
+  commentId: Overload:CAF.Entities.EntityManager.ApplyStatusEffect
+  isSpec: "True"
+  fullName: CAF.Entities.EntityManager.ApplyStatusEffect
+  nameWithType: EntityManager.ApplyStatusEffect
+- uid: CAF.Entities.EntityManager.CombatManager
+  name: CombatManager
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_CombatManager
+  commentId: P:CAF.Entities.EntityManager.CombatManager
+  fullName: CAF.Entities.EntityManager.CombatManager
+  nameWithType: EntityManager.CombatManager
+- uid: CAF.Entities.EntityManager.CombatManager*
+  name: CombatManager
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_CombatManager_
+  commentId: Overload:CAF.Entities.EntityManager.CombatManager
+  isSpec: "True"
+  fullName: CAF.Entities.EntityManager.CombatManager
+  nameWithType: EntityManager.CombatManager
+- uid: CAF.Entities.EntityManager.entityCombatManager
+  name: entityCombatManager
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_entityCombatManager
+  commentId: F:CAF.Entities.EntityManager.entityCombatManager
+  fullName: CAF.Entities.EntityManager.entityCombatManager
+  nameWithType: EntityManager.entityCombatManager
+- uid: CAF.Entities.EntityManager.entityInput
+  name: entityInput
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_entityInput
+  commentId: F:CAF.Entities.EntityManager.entityInput
+  fullName: CAF.Entities.EntityManager.entityInput
+  nameWithType: EntityManager.entityInput
+- uid: CAF.Entities.EntityManager.entityPhysicsManager
+  name: entityPhysicsManager
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_entityPhysicsManager
+  commentId: F:CAF.Entities.EntityManager.entityPhysicsManager
+  fullName: CAF.Entities.EntityManager.entityPhysicsManager
+  nameWithType: EntityManager.entityPhysicsManager
+- uid: CAF.Entities.EntityManager.entityStateManager
+  name: entityStateManager
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_entityStateManager
+  commentId: F:CAF.Entities.EntityManager.entityStateManager
+  fullName: CAF.Entities.EntityManager.entityStateManager
+  nameWithType: EntityManager.entityStateManager
+- uid: CAF.Entities.EntityManager.GetCenter
+  name: GetCenter()
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_GetCenter
+  commentId: M:CAF.Entities.EntityManager.GetCenter
+  fullName: CAF.Entities.EntityManager.GetCenter()
+  nameWithType: EntityManager.GetCenter()
+- uid: CAF.Entities.EntityManager.GetCenter*
+  name: GetCenter
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_GetCenter_
+  commentId: Overload:CAF.Entities.EntityManager.GetCenter
+  isSpec: "True"
+  fullName: CAF.Entities.EntityManager.GetCenter
+  nameWithType: EntityManager.GetCenter
+- uid: CAF.Entities.EntityManager.GetMovementVector(System.Single,System.Single)
+  name: GetMovementVector(Single, Single)
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_GetMovementVector_System_Single_System_Single_
+  commentId: M:CAF.Entities.EntityManager.GetMovementVector(System.Single,System.Single)
+  fullName: CAF.Entities.EntityManager.GetMovementVector(System.Single, System.Single)
+  nameWithType: EntityManager.GetMovementVector(Single, Single)
+- uid: CAF.Entities.EntityManager.GetMovementVector*
+  name: GetMovementVector
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_GetMovementVector_
+  commentId: Overload:CAF.Entities.EntityManager.GetMovementVector
+  isSpec: "True"
+  fullName: CAF.Entities.EntityManager.GetMovementVector
+  nameWithType: EntityManager.GetMovementVector
+- uid: CAF.Entities.EntityManager.GetSize
+  name: GetSize()
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_GetSize
+  commentId: M:CAF.Entities.EntityManager.GetSize
+  fullName: CAF.Entities.EntityManager.GetSize()
+  nameWithType: EntityManager.GetSize()
+- uid: CAF.Entities.EntityManager.GetSize*
+  name: GetSize
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_GetSize_
+  commentId: Overload:CAF.Entities.EntityManager.GetSize
+  isSpec: "True"
+  fullName: CAF.Entities.EntityManager.GetSize
+  nameWithType: EntityManager.GetSize
+- uid: CAF.Entities.EntityManager.GetVisualBasedDirection(Vector3)
+  name: GetVisualBasedDirection(Vector3)
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_GetVisualBasedDirection_Vector3_
+  commentId: M:CAF.Entities.EntityManager.GetVisualBasedDirection(Vector3)
+  fullName: CAF.Entities.EntityManager.GetVisualBasedDirection(Vector3)
+  nameWithType: EntityManager.GetVisualBasedDirection(Vector3)
+- uid: CAF.Entities.EntityManager.GetVisualBasedDirection*
+  name: GetVisualBasedDirection
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_GetVisualBasedDirection_
+  commentId: Overload:CAF.Entities.EntityManager.GetVisualBasedDirection
+  isSpec: "True"
+  fullName: CAF.Entities.EntityManager.GetVisualBasedDirection
+  nameWithType: EntityManager.GetVisualBasedDirection
+- uid: CAF.Entities.EntityManager.HandleLockon
+  name: HandleLockon()
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_HandleLockon
+  commentId: M:CAF.Entities.EntityManager.HandleLockon
+  fullName: CAF.Entities.EntityManager.HandleLockon()
+  nameWithType: EntityManager.HandleLockon()
+- uid: CAF.Entities.EntityManager.HandleLockon*
+  name: HandleLockon
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_HandleLockon_
+  commentId: Overload:CAF.Entities.EntityManager.HandleLockon
+  isSpec: "True"
+  fullName: CAF.Entities.EntityManager.HandleLockon
+  nameWithType: EntityManager.HandleLockon
+- uid: CAF.Entities.EntityManager.InputManager
+  name: InputManager
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_InputManager
+  commentId: P:CAF.Entities.EntityManager.InputManager
+  fullName: CAF.Entities.EntityManager.InputManager
+  nameWithType: EntityManager.InputManager
+- uid: CAF.Entities.EntityManager.InputManager*
+  name: InputManager
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_InputManager_
+  commentId: Overload:CAF.Entities.EntityManager.InputManager
+  isSpec: "True"
+  fullName: CAF.Entities.EntityManager.InputManager
+  nameWithType: EntityManager.InputManager
+- uid: CAF.Entities.EntityManager.IsGrounded
+  name: IsGrounded
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_IsGrounded
+  commentId: P:CAF.Entities.EntityManager.IsGrounded
+  fullName: CAF.Entities.EntityManager.IsGrounded
+  nameWithType: EntityManager.IsGrounded
+- uid: CAF.Entities.EntityManager.IsGrounded*
+  name: IsGrounded
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_IsGrounded_
+  commentId: Overload:CAF.Entities.EntityManager.IsGrounded
+  isSpec: "True"
+  fullName: CAF.Entities.EntityManager.IsGrounded
+  nameWithType: EntityManager.IsGrounded
+- uid: CAF.Entities.EntityManager.lookHandler
+  name: lookHandler
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_lookHandler
+  commentId: F:CAF.Entities.EntityManager.lookHandler
+  fullName: CAF.Entities.EntityManager.lookHandler
+  nameWithType: EntityManager.lookHandler
+- uid: CAF.Entities.EntityManager.PhysicsManager
+  name: PhysicsManager
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_PhysicsManager
+  commentId: P:CAF.Entities.EntityManager.PhysicsManager
+  fullName: CAF.Entities.EntityManager.PhysicsManager
+  nameWithType: EntityManager.PhysicsManager
+- uid: CAF.Entities.EntityManager.PhysicsManager*
+  name: PhysicsManager
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_PhysicsManager_
+  commentId: Overload:CAF.Entities.EntityManager.PhysicsManager
+  isSpec: "True"
+  fullName: CAF.Entities.EntityManager.PhysicsManager
+  nameWithType: EntityManager.PhysicsManager
+- uid: CAF.Entities.EntityManager.RotateVisual(Vector3,System.Single)
+  name: RotateVisual(Vector3, Single)
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_RotateVisual_Vector3_System_Single_
+  commentId: M:CAF.Entities.EntityManager.RotateVisual(Vector3,System.Single)
+  fullName: CAF.Entities.EntityManager.RotateVisual(Vector3, System.Single)
+  nameWithType: EntityManager.RotateVisual(Vector3, Single)
+- uid: CAF.Entities.EntityManager.RotateVisual*
+  name: RotateVisual
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_RotateVisual_
+  commentId: Overload:CAF.Entities.EntityManager.RotateVisual
+  isSpec: "True"
+  fullName: CAF.Entities.EntityManager.RotateVisual
+  nameWithType: EntityManager.RotateVisual
+- uid: CAF.Entities.EntityManager.SetVisualRotation(Vector3)
+  name: SetVisualRotation(Vector3)
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_SetVisualRotation_Vector3_
+  commentId: M:CAF.Entities.EntityManager.SetVisualRotation(Vector3)
+  fullName: CAF.Entities.EntityManager.SetVisualRotation(Vector3)
+  nameWithType: EntityManager.SetVisualRotation(Vector3)
+- uid: CAF.Entities.EntityManager.SetVisualRotation*
+  name: SetVisualRotation
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_SetVisualRotation_
+  commentId: Overload:CAF.Entities.EntityManager.SetVisualRotation
+  isSpec: "True"
+  fullName: CAF.Entities.EntityManager.SetVisualRotation
+  nameWithType: EntityManager.SetVisualRotation
+- uid: CAF.Entities.EntityManager.SimLateUpdate(System.Single)
+  name: SimLateUpdate(Single)
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_SimLateUpdate_System_Single_
+  commentId: M:CAF.Entities.EntityManager.SimLateUpdate(System.Single)
+  fullName: CAF.Entities.EntityManager.SimLateUpdate(System.Single)
+  nameWithType: EntityManager.SimLateUpdate(Single)
+- uid: CAF.Entities.EntityManager.SimLateUpdate*
+  name: SimLateUpdate
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_SimLateUpdate_
+  commentId: Overload:CAF.Entities.EntityManager.SimLateUpdate
+  isSpec: "True"
+  fullName: CAF.Entities.EntityManager.SimLateUpdate
+  nameWithType: EntityManager.SimLateUpdate
+- uid: CAF.Entities.EntityManager.SimUpdate(System.Single)
+  name: SimUpdate(Single)
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_SimUpdate_System_Single_
+  commentId: M:CAF.Entities.EntityManager.SimUpdate(System.Single)
+  fullName: CAF.Entities.EntityManager.SimUpdate(System.Single)
+  nameWithType: EntityManager.SimUpdate(Single)
+- uid: CAF.Entities.EntityManager.SimUpdate*
+  name: SimUpdate
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_SimUpdate_
+  commentId: Overload:CAF.Entities.EntityManager.SimUpdate
+  isSpec: "True"
+  fullName: CAF.Entities.EntityManager.SimUpdate
+  nameWithType: EntityManager.SimUpdate
+- uid: CAF.Entities.EntityManager.StateManager
+  name: StateManager
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_StateManager
+  commentId: P:CAF.Entities.EntityManager.StateManager
+  fullName: CAF.Entities.EntityManager.StateManager
+  nameWithType: EntityManager.StateManager
+- uid: CAF.Entities.EntityManager.StateManager*
+  name: StateManager
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_StateManager_
+  commentId: Overload:CAF.Entities.EntityManager.StateManager
+  isSpec: "True"
+  fullName: CAF.Entities.EntityManager.StateManager
+  nameWithType: EntityManager.StateManager
+- uid: CAF.Entities.EntityManager.Targetable
+  name: Targetable
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_Targetable
+  commentId: P:CAF.Entities.EntityManager.Targetable
+  fullName: CAF.Entities.EntityManager.Targetable
+  nameWithType: EntityManager.Targetable
+- uid: CAF.Entities.EntityManager.Targetable*
+  name: Targetable
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_Targetable_
+  commentId: Overload:CAF.Entities.EntityManager.Targetable
+  isSpec: "True"
+  fullName: CAF.Entities.EntityManager.Targetable
+  nameWithType: EntityManager.Targetable
+- uid: CAF.Entities.EntityManager.visual
+  name: visual
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_visual
+  commentId: F:CAF.Entities.EntityManager.visual
+  fullName: CAF.Entities.EntityManager.visual
+  nameWithType: EntityManager.visual
 - uid: CAF.Entities.EntityPhysicsManager
   name: EntityPhysicsManager
   href: api/CAF.Entities.EntityPhysicsManager.html

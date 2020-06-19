@@ -88,7 +88,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.AttackEvent.html",
-          "hash": "5eCV0fuhIjmGcnZRVMNO+g=="
+          "hash": "XELiW6UQLNS3RJ7UTtyPYQ=="
         }
       },
       "is_incremental": false,
@@ -388,7 +388,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.StatusEffect.html",
-          "hash": "X9DsVBeWBYtCwxNReptzCw=="
+          "hash": "Ch3pTsLoVBuxDCMaVe/atw=="
         }
       },
       "is_incremental": false,
@@ -400,7 +400,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.StatusEffectDefinition-2.html",
-          "hash": "51v3S0D1RJqkfTYezLF3lQ=="
+          "hash": "/lLjYojoT1Vyyqz0AcTSkQ=="
         }
       },
       "is_incremental": false,
@@ -436,19 +436,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Entities.EntityCombatManager.html",
-          "hash": "RJbsbF7XfcX9GGuzM8G+dA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Entities.EntityController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CAF.Entities.EntityController.html",
-          "hash": "4BankbHlfEwi3tsUIxWq6w=="
+          "hash": "i5IBpUWRdsvMhBGJsUz3hg=="
         }
       },
       "is_incremental": false,
@@ -472,7 +460,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Entities.EntityHitboxManager.html",
-          "hash": "zln9aBl8ua4/SzFs2lpClw=="
+          "hash": "SWLBJGOq1EVhbNzgBpI8wQ=="
         }
       },
       "is_incremental": false,
@@ -484,7 +472,19 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Entities.EntityInputManager.html",
-          "hash": "xQG5SgggFZqYpCY+oeVFdg=="
+          "hash": "coPNQx+kYvpnlGDiL08q9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Entities.EntityManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Entities.EntityManager.html",
+          "hash": "oXkNlUKQ+OQ8WwRDbrAkKg=="
         }
       },
       "is_incremental": false,
@@ -496,7 +496,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Entities.EntityPhysicsManager.html",
-          "hash": "GdESLf+dNwqdgNy8c1KJbg=="
+          "hash": "THfrg79wH7WwFDy0xESX6A=="
         }
       },
       "is_incremental": false,
@@ -508,7 +508,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Entities.EntityState.html",
-          "hash": "yq0jqzAUADHG/RbtD1iqeg=="
+          "hash": "PM4uZIGbZ2jEtsc1ZB3OCw=="
         }
       },
       "is_incremental": false,
@@ -520,7 +520,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Entities.EntityStateManager.html",
-          "hash": "7N1rkWwf+/vaTIgdrJq0hg=="
+          "hash": "msHxBFvxoKJZe38TluJxgw=="
         }
       },
       "is_incremental": false,
@@ -532,7 +532,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Entities.html",
-          "hash": "CwkqaspO10oMDcF+NRfpYw=="
+          "hash": "k8DFQJl3NCfe4T0dCFcH2w=="
         }
       },
       "is_incremental": false,
@@ -688,7 +688,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Simulation.SimObject.html",
-          "hash": "JBD48P0+CowT6OjvIwhcqQ=="
+          "hash": "TVyYhbQyZCphiEtl2xXnbA=="
         }
       },
       "is_incremental": false,
@@ -736,7 +736,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "tuDqP2nuQgrFDW6i8kLjQg=="
+          "hash": "6GF4/o92EzIyoXuxy0QGHg=="
         }
       },
       "is_incremental": false,
@@ -760,7 +760,7 @@
       "output": {
         ".html": {
           "relative_path": "guides/setup.html",
-          "hash": "Pn2xXxb+9Zan3+7t053J/A=="
+          "hash": "I5T9082lSOvA+asApe3jEA=="
         }
       },
       "is_incremental": false,
