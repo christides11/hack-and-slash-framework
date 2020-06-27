@@ -30,10 +30,7 @@ namespace CAF.Entities
         /// </summary>
         public virtual void OnUpdate()
         {
-            if (CheckInterrupt())
-            {
-                return;
-            }
+            CheckInterrupt();
         }
 
         /// <summary>

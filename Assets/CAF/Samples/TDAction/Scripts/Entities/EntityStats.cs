@@ -6,6 +6,8 @@ namespace TDAction.Entities
 {
     public abstract class EntityStats : ScriptableObject
     {
-
+        [Header("Aerial")]
+        public float gravity;
+        public float maxFallSpeed;
     }
 }

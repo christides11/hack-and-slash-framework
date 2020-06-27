@@ -11,5 +11,16 @@ namespace TDAction.Entities
         {
             ((EntityManager)controller).charController2D.move(GetOverallForce());
         }
+
+        public virtual void ApplyGravity()
+        {
+            EntityStats stats = ((EntityManager)controller).entityDefinition.GetEntityStats();
+            HandleGravity(stats.maxFallSpeed, stats.gravity, GravityScale);
+        }
+
+        public override void CheckIfGrounded()
+        {
+            ((EntityManager)controller).IsGrounded = ((EntityManager)controller).charController2D.isGrounded;
+        }
     }
 }
