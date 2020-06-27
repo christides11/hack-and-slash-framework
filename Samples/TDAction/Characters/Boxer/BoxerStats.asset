@@ -12,3 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 543368f64fa67f740999c0c9dc949cb3, type: 3}
   m_Name: BoxerStats
   m_EditorClassIdentifier: 
+  gravity: 0.01
+  maxFallSpeed: 5
+  groundFriction: 0.025
+  walkBaseAcceleration: 0.2
+  walkAcceleration: 0.1
+  walkMaxSpeed: 0.1

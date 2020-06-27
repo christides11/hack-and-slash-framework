@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7640531122581608929}
   - component: {fileID: 8147816337253296054}
   - component: {fileID: 5384823916746293231}
-  - component: {fileID: 3132543926313950121}
+  - component: {fileID: 3441043856010495584}
   - component: {fileID: 1031207210466028850}
   - component: {fileID: 6300165297845272074}
   m_Layer: 8
@@ -161,7 +161,7 @@ MonoBehaviour:
   entityInput: {fileID: 5384823916746293231}
   entityStateManager: {fileID: 1031207210466028850}
   entityCombatManager: {fileID: 6300165297845272074}
-  entityPhysicsManager: {fileID: 3132543926313950121}
+  entityPhysicsManager: {fileID: 3441043856010495584}
   visual: {fileID: 8500522958957405919}
   charController2D: {fileID: 5370282184306079421}
   coll: {fileID: 7143026638669106818}
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 8147816337253296054}
---- !u!114 &3132543926313950121
+--- !u!114 &3441043856010495584
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -188,12 +188,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6667267786158460212}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdf0e0f853702d94ca22715cf6e948dc, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e907260f059d11479c35c39bd086a1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 8147816337253296054}
   forceMovement: {x: 0, y: 0, z: 0}
-  forceGravity: {x: 0, y: -0.02, z: 0}
+  forceGravity: {x: 0, y: 0, z: 0}
   forceDamage: {x: 0, y: 0, z: 0}
   forcePushbox: {x: 0, y: 0, z: 0}
 --- !u!114 &1031207210466028850
