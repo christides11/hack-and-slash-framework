@@ -15,5 +15,18 @@ namespace TDAction.Entities.Characters
         public float walkBaseAcceleration;
         public float walkAcceleration;
         public float walkMaxSpeed;
+
+        [Header("Run")]
+        public float runBaseAcceleration;
+        public float runAcceleration;
+        public float runMaxSpeed;
+
+        [Header("Aerial")]
+        public float airBaseAcceleration;
+        public float airAcceleration;
+        public float airMaxSpeed;
+        public float aerialFriction;
+        public float shortHopForce;
+        public float fullHopForce;
     }
 }

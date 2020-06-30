@@ -15,6 +15,10 @@ namespace TDAction.Entities
 
             recordItem.AddInput((int)EntityInputs.MOVEMENT,
                 new InputRecordAxis2D(new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"))));
+            recordItem.AddInput((int)EntityInputs.JUMP,
+                new InputRecordButton(Input.GetKey(KeyCode.Space)));
+            recordItem.AddInput((int)EntityInputs.DASH,
+                new InputRecordButton(Input.GetKey(KeyCode.LeftShift)));
 
             InputRecord.Add(recordItem);
         }

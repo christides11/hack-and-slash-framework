@@ -14,7 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gravity: 0.01
   maxFallSpeed: 5
+  jumpSquatFrames: 4
   groundFriction: 0.025
-  walkBaseAcceleration: 0.2
+  walkBaseAcceleration: 0.05
   walkAcceleration: 0.1
   walkMaxSpeed: 0.1
+  runBaseAcceleration: 0.075
+  runAcceleration: 0.1
+  runMaxSpeed: 0.2
+  airBaseAcceleration: 0.05
+  airAcceleration: 0.05
+  airMaxSpeed: 0.1
+  aerialFriction: 0.01
+  shortHopForce: 0.2
+  fullHopForce: 0.2

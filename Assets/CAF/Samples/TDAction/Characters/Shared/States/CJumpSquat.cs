@@ -18,8 +18,7 @@ namespace TDAction.Entities.Characters
         {
             CharacterManager c = GetCharacterController();
             CharacterStats stats = (CharacterStats)c.entityDefinition.GetEntityStats();
-            if (c.StateManager.CurrentStateFrame 
-                >= stats.jumpSquatFrames)
+            if (c.StateManager.CurrentStateFrame >= stats.jumpSquatFrames)
             {
                 c.StateManager.ChangeState((int)CharacterStates.JUMP);
                 return true;

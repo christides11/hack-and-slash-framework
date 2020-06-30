@@ -39,7 +39,7 @@ namespace TDAction.Entities.Characters
 
             c.PhysicsManager.forceMovement = currentSpeed;
 
-            c.SetFaceDirection((int)Mathf.Sign(currentSpeed.x));
+            c.SetFaceDirection((int)Mathf.Sign(movementAxis.x));
 
             CheckInterrupt();
         }
@@ -47,9 +47,19 @@ namespace TDAction.Entities.Characters
         public override bool CheckInterrupt()
         {
             CharacterManager c = GetCharacterController();
-            if (Mathf.Abs(c.InputManager.GetAxis2D((int)EntityInputs.MOVEMENT).x) <= 0.2f)
+            if (c.InputManager.GetButton((int)EntityInputs.JUMP).firstPress)
+            {
+                c.StateManager.ChangeState((int)CharacterStates.JUMP_SQUAT);
+                return true;
+            }
+            if (Mathf.Abs(c.InputManager.GetAxis2D((int)EntityInputs.MOVEMENT).x) <= InputConstants.moveDeadzone)
             {
                 c.StateManager.ChangeState((int)CharacterStates.IDLE);
+                return true;
+            }
+            if (c.InputManager.GetButton((int)EntityInputs.DASH).firstPress)
+            {
+                c.StateManager.ChangeState((int)CharacterStates.RUN);
                 return true;
             }
             return false;

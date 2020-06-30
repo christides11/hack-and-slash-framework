@@ -9,6 +9,7 @@ namespace TDAction.Inputs
         MOVEMENT,
         CAMERA,
         JUMP,
-        ATTACK
+        ATTACK,
+        DASH
     }
 }
