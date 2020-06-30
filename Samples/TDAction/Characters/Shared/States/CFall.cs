@@ -14,6 +14,8 @@ namespace TDAction.Entities.Characters
         {
             ((EntityPhysicsManager)GetCharacterController().PhysicsManager).ApplyGravity();
 
+            ((CharacterPhysicsManager)GetCharacterController().PhysicsManager).AirDrift();
+
             CheckInterrupt();
         }
 

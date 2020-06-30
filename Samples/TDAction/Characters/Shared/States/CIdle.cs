@@ -24,9 +24,16 @@ namespace TDAction.Entities.Characters
 
         public override bool CheckInterrupt()
         {
-            if (Mathf.Abs(GetCharacterController().InputManager.GetAxis2D((int)EntityInputs.MOVEMENT).x) > 0.2f)
+            CharacterManager c = GetCharacterController();
+            CharacterStats stats = (CharacterStats)c.entityDefinition.GetEntityStats();
+            if (c.InputManager.GetButton((int)EntityInputs.JUMP).firstPress)
             {
-                GetCharacterController().StateManager.ChangeState((int)CharacterStates.WALK);
+                c.StateManager.ChangeState((int)CharacterStates.JUMP_SQUAT);
+                return true;
+            }
+            if (Mathf.Abs(c.InputManager.GetAxis2D((int)EntityInputs.MOVEMENT).x) > InputConstants.moveDeadzone)
+            {
+                c.StateManager.ChangeState((int)CharacterStates.WALK);
                 return true;
             }
             return false;
