@@ -28,7 +28,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Camera.LookHandler.html",
-          "hash": "JiZRB6cphARf+kVxAAZyOA=="
+          "hash": "awjLOvqwDLUEqEjgtVxepA=="
         }
       },
       "is_incremental": false,
@@ -40,7 +40,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Camera.html",
-          "hash": "PWOC6hW3zRClbxEA4yoU9g=="
+          "hash": "PG+W6T2ODD/ublwJ+w+DUQ=="
         }
       },
       "is_incremental": false,
@@ -52,7 +52,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.AttackDefinition.html",
-          "hash": "Uae+PTblJKvpQLQtXYUYeQ=="
+          "hash": "7Z5QzEH51RlAWam6P+tDbA=="
         }
       },
       "is_incremental": false,
@@ -64,7 +64,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.AttackDefinitionEditor.html",
-          "hash": "V0hSqEaV87PZws1gPGRNYw=="
+          "hash": "jDet5iyYv0KesRfyGz1FVQ=="
         }
       },
       "is_incremental": false,
@@ -76,7 +76,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.AttackDefinitionEditorWindow.html",
-          "hash": "TcQKBqUi/8z2WJ8zmv3qBg=="
+          "hash": "C+I8ncLE4yn3kDIPpfo8MQ=="
         }
       },
       "is_incremental": false,
@@ -88,7 +88,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.AttackEvent.html",
-          "hash": "XELiW6UQLNS3RJ7UTtyPYQ=="
+          "hash": "p4k6jzEh9vvMB/ElIWhuog=="
         }
       },
       "is_incremental": false,
@@ -100,7 +100,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.AttackEventDefinition.html",
-          "hash": "NyojN48TV6XRfuNFmg4/3w=="
+          "hash": "Kt2J2CXBzAuYpir3oCdVVg=="
         }
       },
       "is_incremental": false,
@@ -112,7 +112,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.AttackEventVariables.html",
-          "hash": "RztA08wo0pGoQML5wcglkw=="
+          "hash": "ZrS0wyrD3uipMMcQIWMESQ=="
         }
       },
       "is_incremental": false,
@@ -124,7 +124,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.BoxDefinition.html",
-          "hash": "FwGWUPGjVEK+ZVJCY1c+fA=="
+          "hash": "maqXbYzzsqVBMqoPLpBQcQ=="
         }
       },
       "is_incremental": false,
@@ -136,7 +136,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.BoxGroup.html",
-          "hash": "c95gnCaX7ppKDBdVUmiFkA=="
+          "hash": "q6doolXPZzmrkAW238dVQw=="
         }
       },
       "is_incremental": false,
@@ -148,7 +148,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.BoxGroupType.html",
-          "hash": "IMV18th3Znls6yFHp86spw=="
+          "hash": "kxrxMSDKVzOBiAToOfblgw=="
         }
       },
       "is_incremental": false,
@@ -160,7 +160,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.BoxShapes.html",
-          "hash": "ddXTN5fK2oL9cU3Hn79DgQ=="
+          "hash": "VREd0HNvWY7JRSPpKmv87g=="
         }
       },
       "is_incremental": false,
@@ -172,7 +172,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.ForceType.html",
-          "hash": "LHe8lpjQX/vfyXYHCIggoQ=="
+          "hash": "ITE28UIugBs4qGArIyfjzw=="
         }
       },
       "is_incremental": false,
@@ -184,7 +184,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.HitInfo.html",
-          "hash": "BM2WGCG14SoRjQasURqFNQ=="
+          "hash": "BE+GwKPCYW6YiGl3U+9ZOg=="
         }
       },
       "is_incremental": false,
@@ -196,7 +196,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.HitReaction.html",
-          "hash": "ZWGwsw6paifvtbMEt8bcQA=="
+          "hash": "cPL7HRscSZESJtx+W0BLUg=="
         }
       },
       "is_incremental": false,
@@ -208,7 +208,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.HitReactionType.html",
-          "hash": "CijnH2JzkqJfyGRORQG6bQ=="
+          "hash": "AuxW8+PY3heUZGflh+8FYA=="
         }
       },
       "is_incremental": false,
@@ -220,7 +220,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.Hitbox.HurtAction.html",
-          "hash": "C15J/a1epmjlfltiOEN8Nw=="
+          "hash": "NZHHZCojbrZpBoP5OpgePA=="
         }
       },
       "is_incremental": false,
@@ -232,7 +232,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.Hitbox.html",
-          "hash": "n+2UNhq8K8vftSLSqM552A=="
+          "hash": "ueBbvsHFkEuhWhGrBcCjWA=="
         }
       },
       "is_incremental": false,
@@ -244,7 +244,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.HitboxForceRelation.html",
-          "hash": "Tvv6ziz6y26b7AsMy1Ht2Q=="
+          "hash": "yqn6zaehWOWsk85AdmCBNA=="
         }
       },
       "is_incremental": false,
@@ -256,7 +256,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.HitboxForceType.html",
-          "hash": "8+YyZ8B7iAXMos/MNDpsbQ=="
+          "hash": "xRr+KjMOwPydoOZR7RcDCw=="
         }
       },
       "is_incremental": false,
@@ -268,7 +268,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.Hurtbox.html",
-          "hash": "B60p7ay77Ov3j5f2/NlGZA=="
+          "hash": "GA7/y35OE72Vmo8MsFaAGQ=="
         }
       },
       "is_incremental": false,
@@ -280,7 +280,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.HurtboxState.html",
-          "hash": "jssQD9KTONrVQPaUrvDgfA=="
+          "hash": "RDv7OwyHHWEKPZVZ5hHePQ=="
         }
       },
       "is_incremental": false,
@@ -292,7 +292,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.IHurtable.html",
-          "hash": "FFETTkF0+tr/Rbg9ZZk0Bg=="
+          "hash": "EezOtKa8pjg1DvWWWej2zQ=="
         }
       },
       "is_incremental": false,
@@ -304,7 +304,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.IStatusEffectable.html",
-          "hash": "z2n54y8y5dLxzi9nBiCijA=="
+          "hash": "syF09Po/JNFbZZsXGU25Zg=="
         }
       },
       "is_incremental": false,
@@ -316,7 +316,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.ITargetable.html",
-          "hash": "YNqkT4LJBOGHLPoN2BtkRg=="
+          "hash": "mqeW6gZay5gjXrtEl8ONGw=="
         }
       },
       "is_incremental": false,
@@ -328,7 +328,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.MovesetAttackNode.nextNodeDefinition.html",
-          "hash": "NhUKQM+EDH70A6HBhvyVbw=="
+          "hash": "2Ad7x2ATb3/CtSA7sTG+NQ=="
         }
       },
       "is_incremental": false,
@@ -340,7 +340,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.MovesetAttackNode.html",
-          "hash": "OoI010kJNa/eOuEYg/nFqw=="
+          "hash": "8CTl7QV3fs8WtOKPtvKEMg=="
         }
       },
       "is_incremental": false,
@@ -352,7 +352,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.MovesetAttackNodeEditor.html",
-          "hash": "a5wYDS2BnyU6tcS0rRBP2A=="
+          "hash": "UKmTrWmlkrrVWmTEEv8bZA=="
         }
       },
       "is_incremental": false,
@@ -364,7 +364,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.MovesetDefinition.html",
-          "hash": "a4gYibJKNq+vt4ylTe6uZQ=="
+          "hash": "huMZQPjNwtTDhYsgMvQmAQ=="
         }
       },
       "is_incremental": false,
@@ -376,7 +376,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.StatusEffect-1.html",
-          "hash": "/4dFgOlKPRjXqKKjpoZF8Q=="
+          "hash": "iULqENAWnljDjEGR3Vt+RA=="
         }
       },
       "is_incremental": false,
@@ -388,7 +388,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.StatusEffect.html",
-          "hash": "Ch3pTsLoVBuxDCMaVe/atw=="
+          "hash": "POqlsj4aj82+/tn7AB4Drg=="
         }
       },
       "is_incremental": false,
@@ -400,7 +400,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.StatusEffectDefinition-2.html",
-          "hash": "/lLjYojoT1Vyyqz0AcTSkQ=="
+          "hash": "ZnIy8GsVuAdH8xtwrRntWw=="
         }
       },
       "is_incremental": false,
@@ -412,7 +412,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.StatusEffectDefinition.html",
-          "hash": "ufCCLJPUxTjC/RxVsrPg1g=="
+          "hash": "9foO9dqBNQKGSJYxx49oFw=="
         }
       },
       "is_incremental": false,
@@ -424,7 +424,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.html",
-          "hash": "a09uOsgmQkMYPFUc+mtQCA=="
+          "hash": "cieZ5lkIxEL9G1fyZtyj3A=="
         }
       },
       "is_incremental": false,
@@ -436,7 +436,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Entities.EntityCombatManager.html",
-          "hash": "i5IBpUWRdsvMhBGJsUz3hg=="
+          "hash": "ZER2Q/xsgWouO0XlTaNJ5w=="
         }
       },
       "is_incremental": false,
@@ -448,7 +448,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Entities.EntityHitboxManager.HitboxGroupEventAction.html",
-          "hash": "Ehg0ZH23AKy0fjZk2PWRug=="
+          "hash": "r3l/v0sEzmHjtdyPFyor6g=="
         }
       },
       "is_incremental": false,
@@ -460,7 +460,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Entities.EntityHitboxManager.html",
-          "hash": "SWLBJGOq1EVhbNzgBpI8wQ=="
+          "hash": "joIBNVEBzh4B0GBPGZfPMA=="
         }
       },
       "is_incremental": false,
@@ -472,7 +472,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Entities.EntityInputManager.html",
-          "hash": "coPNQx+kYvpnlGDiL08q9A=="
+          "hash": "O11sbHDoiGgyolf6opsweQ=="
         }
       },
       "is_incremental": false,
@@ -484,7 +484,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Entities.EntityManager.html",
-          "hash": "oXkNlUKQ+OQ8WwRDbrAkKg=="
+          "hash": "SoW2g9Q/9VQez6yeokrIxg=="
         }
       },
       "is_incremental": false,
@@ -496,7 +496,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Entities.EntityPhysicsManager.html",
-          "hash": "THfrg79wH7WwFDy0xESX6A=="
+          "hash": "8FmHxallKgJlUN6gLXEtrw=="
         }
       },
       "is_incremental": false,
@@ -508,7 +508,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Entities.EntityState.html",
-          "hash": "QXh35K3VVqVFIOrZezaZCA=="
+          "hash": "UxTpgXbtvS4SzdscxUrYxw=="
         }
       },
       "is_incremental": false,
@@ -520,7 +520,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Entities.EntityStateManager.html",
-          "hash": "msHxBFvxoKJZe38TluJxgw=="
+          "hash": "dFdztyZACUlK30oWNTrw2w=="
         }
       },
       "is_incremental": false,
@@ -532,7 +532,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Entities.html",
-          "hash": "k8DFQJl3NCfe4T0dCFcH2w=="
+          "hash": "q+7tpoQAyRd5FjUVpdSkZg=="
         }
       },
       "is_incremental": false,
@@ -544,7 +544,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.HelperFunctions.html",
-          "hash": "dVkcYxT2wfLNRwYszuDmjA=="
+          "hash": "erSeQS+TMQYh1L3vYYgSYg=="
         }
       },
       "is_incremental": false,
@@ -556,7 +556,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Input.GlobalInputManager.html",
-          "hash": "N2obd1nmr2JhBvwNlO7I6w=="
+          "hash": "WMEncvFDvKUGU3nnjOOAWQ=="
         }
       },
       "is_incremental": false,
@@ -568,7 +568,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Input.InputControlType.html",
-          "hash": "ZG6UUKdXn36eL49eUa0u2Q=="
+          "hash": "geW+V3ZHMbU9hP7R0nfU5A=="
         }
       },
       "is_incremental": false,
@@ -580,7 +580,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Input.InputDefinition.html",
-          "hash": "fA1HktSwScAJ9ErsEi+/QA=="
+          "hash": "pbmvIRoQZt53WsmBUrAGwQ=="
         }
       },
       "is_incremental": false,
@@ -592,7 +592,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Input.InputDefinitionDrawer.html",
-          "hash": "HgTHlGE94mKZWyUe1egcZQ=="
+          "hash": "4YClXn1nX7Zwztm2KXCEOw=="
         }
       },
       "is_incremental": false,
@@ -604,7 +604,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Input.InputDefinitionType.html",
-          "hash": "DwwrlZEi+LxUELbxT/wUPg=="
+          "hash": "Ole7bVICYJ5QtO1DGIKjMQ=="
         }
       },
       "is_incremental": false,
@@ -616,7 +616,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Input.InputRecordAxis.html",
-          "hash": "vof9ifWNPUpMUfFmsxgk5w=="
+          "hash": "TpYkPA4cJeOREmOQJ7hOkw=="
         }
       },
       "is_incremental": false,
@@ -628,7 +628,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Input.InputRecordAxis2D.html",
-          "hash": "1ZgrBbJfPzOD1sR6uALPBA=="
+          "hash": "1GpLgZzK6GUw3s7oV8mcUQ=="
         }
       },
       "is_incremental": false,
@@ -640,7 +640,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Input.InputRecordButton.html",
-          "hash": "41oDol7xNI51sfNkZ7hTkA=="
+          "hash": "yBmI61IerA3GS4Nmn58Vbg=="
         }
       },
       "is_incremental": false,
@@ -652,7 +652,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Input.InputRecordInput.html",
-          "hash": "uWEdsAjvDMS+hAY7ma08ow=="
+          "hash": "1/FPZygguQfZ/7ngRcJKPA=="
         }
       },
       "is_incremental": false,
@@ -664,7 +664,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Input.InputRecordItem.html",
-          "hash": "zwLpFt4w3ku2YBJo/9CsnQ=="
+          "hash": "CTkMOl49HBkIXo0XRFi2KQ=="
         }
       },
       "is_incremental": false,
@@ -676,7 +676,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Input.html",
-          "hash": "W7/bZYq3x6rj/F2Vty95WA=="
+          "hash": "Sup51IzxYnKpPxZu0uYCcw=="
         }
       },
       "is_incremental": false,
@@ -688,7 +688,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Simulation.SimObject.html",
-          "hash": "TVyYhbQyZCphiEtl2xXnbA=="
+          "hash": "2ELYhw/JNpmt5rQIcZ9eFg=="
         }
       },
       "is_incremental": false,
@@ -700,7 +700,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Simulation.SimObjectManager.html",
-          "hash": "cAE9By0WEkuEVyydKQSgSw=="
+          "hash": "viyIUCG9nXFzMPx3HwbMBg=="
         }
       },
       "is_incremental": false,
@@ -712,7 +712,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Simulation.html",
-          "hash": "0tsgP0iMUuPTYcVsNULyiQ=="
+          "hash": "8eyIBDBdkCSYaYBrRUzsfg=="
         }
       },
       "is_incremental": false,
@@ -724,7 +724,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.html",
-          "hash": "PKzHnOgbyrsE1O3yBcAJqg=="
+          "hash": "cx+bRpn3cLM4ixi7jhAnWA=="
         }
       },
       "is_incremental": false,
@@ -748,7 +748,7 @@
       "output": {
         ".html": {
           "relative_path": "guides/index.html",
-          "hash": "IaSFpZ1jMCmaFm+FMfuhmg=="
+          "hash": "Jf2Tuse3kQPSnIglogrecg=="
         }
       },
       "is_incremental": false,
@@ -760,7 +760,7 @@
       "output": {
         ".html": {
           "relative_path": "guides/setup.html",
-          "hash": "I5T9082lSOvA+asApe3jEA=="
+          "hash": "xCU723VH3WoLrH3owobySw=="
         }
       },
       "is_incremental": false,
@@ -784,7 +784,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "TJgT30Wo3TWXTNdaWs7DcA=="
+          "hash": "rQxew7s6oVvV0kSz4HYp8w=="
         }
       },
       "is_incremental": false,
