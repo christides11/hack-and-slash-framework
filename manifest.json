@@ -528,11 +528,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Entities.HealthManager.HealthChangedAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Entities.HealthManager.HealthChangedAction.html",
+          "hash": "NlSBPlXonVCeNHyNvXygsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CAF.Entities.HealthManager.yml",
       "output": {
         ".html": {
           "relative_path": "api/CAF.Entities.HealthManager.html",
-          "hash": "gMMTWkios4ZtAZ3Nhgna7w=="
+          "hash": "2rEASTSYSdeprTXm7Vl03g=="
         }
       },
       "is_incremental": false,
@@ -544,7 +556,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Entities.html",
-          "hash": "hUg6vItMXEAAHsJZhA3B6g=="
+          "hash": "82/INM8fKsAvcCsg3bs1zg=="
         }
       },
       "is_incremental": false,
@@ -748,7 +760,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "4Q/tOz8kPKQCSb6fVyp4dg=="
+          "hash": "kN0MTMP+9OOnGrcPrtTInA=="
         }
       },
       "is_incremental": false,
@@ -857,7 +869,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 60,
+          "total_file_count": 61,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

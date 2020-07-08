@@ -3059,6 +3059,12 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.HealthManager.Health
   nameWithType: HealthManager.Health
+- uid: CAF.Entities.HealthManager.HealthChangedAction
+  name: HealthManager.HealthChangedAction
+  href: api/CAF.Entities.HealthManager.HealthChangedAction.html
+  commentId: T:CAF.Entities.HealthManager.HealthChangedAction
+  fullName: CAF.Entities.HealthManager.HealthChangedAction
+  nameWithType: HealthManager.HealthChangedAction
 - uid: CAF.Entities.HealthManager.Hurt(System.Single)
   name: Hurt(Single)
   href: api/CAF.Entities.HealthManager.html#CAF_Entities_HealthManager_Hurt_System_Single_
@@ -3072,6 +3078,24 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.HealthManager.Hurt
   nameWithType: HealthManager.Hurt
+- uid: CAF.Entities.HealthManager.OnHeal
+  name: OnHeal
+  href: api/CAF.Entities.HealthManager.html#CAF_Entities_HealthManager_OnHeal
+  commentId: E:CAF.Entities.HealthManager.OnHeal
+  fullName: CAF.Entities.HealthManager.OnHeal
+  nameWithType: HealthManager.OnHeal
+- uid: CAF.Entities.HealthManager.OnHealthSet
+  name: OnHealthSet
+  href: api/CAF.Entities.HealthManager.html#CAF_Entities_HealthManager_OnHealthSet
+  commentId: E:CAF.Entities.HealthManager.OnHealthSet
+  fullName: CAF.Entities.HealthManager.OnHealthSet
+  nameWithType: HealthManager.OnHealthSet
+- uid: CAF.Entities.HealthManager.OnHurt
+  name: OnHurt
+  href: api/CAF.Entities.HealthManager.html#CAF_Entities_HealthManager_OnHurt
+  commentId: E:CAF.Entities.HealthManager.OnHurt
+  fullName: CAF.Entities.HealthManager.OnHurt
+  nameWithType: HealthManager.OnHurt
 - uid: CAF.Entities.HealthManager.SetHealth(System.Single)
   name: SetHealth(Single)
   href: api/CAF.Entities.HealthManager.html#CAF_Entities_HealthManager_SetHealth_System_Single_
