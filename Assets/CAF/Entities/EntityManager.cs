@@ -15,8 +15,10 @@ namespace CAF.Entities
         public EntityPhysicsManager PhysicsManager { get { return entityPhysicsManager; } }
         public HealthManager HealthManager { get { return healthManager; } }
 
-        public virtual bool Targetable { get { return false; } }
+        public virtual bool Targetable { get { return targetable; } }
         public bool IsGrounded { get; set; } = false;
+
+        protected bool targetable = true;
 
         [Header("References")]
         [SerializeField] protected EntityInputManager entityInput;
@@ -47,6 +49,11 @@ namespace CAF.Entities
         public override void SimLateUpdate(float deltaTime)
         {
             CombatManager.CLateUpdate();
+        }
+
+        public void SetTargetable(bool value)
+        {
+            targetable = value;
         }
 
         /// <summary>
