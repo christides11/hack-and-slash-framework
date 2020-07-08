@@ -2567,6 +2567,19 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityManager.RotateVisual
   nameWithType: EntityManager.RotateVisual
+- uid: CAF.Entities.EntityManager.SetTargetable(System.Boolean)
+  name: SetTargetable(Boolean)
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_SetTargetable_System_Boolean_
+  commentId: M:CAF.Entities.EntityManager.SetTargetable(System.Boolean)
+  fullName: CAF.Entities.EntityManager.SetTargetable(System.Boolean)
+  nameWithType: EntityManager.SetTargetable(Boolean)
+- uid: CAF.Entities.EntityManager.SetTargetable*
+  name: SetTargetable
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_SetTargetable_
+  commentId: Overload:CAF.Entities.EntityManager.SetTargetable
+  isSpec: "True"
+  fullName: CAF.Entities.EntityManager.SetTargetable
+  nameWithType: EntityManager.SetTargetable
 - uid: CAF.Entities.EntityManager.SetVisualRotation(Vector3)
   name: SetVisualRotation(Vector3)
   href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_SetVisualRotation_Vector3_
@@ -2619,6 +2632,12 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityManager.StateManager
   nameWithType: EntityManager.StateManager
+- uid: CAF.Entities.EntityManager.targetable
+  name: targetable
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_targetable
+  commentId: F:CAF.Entities.EntityManager.targetable
+  fullName: CAF.Entities.EntityManager.targetable
+  nameWithType: EntityManager.targetable
 - uid: CAF.Entities.EntityManager.Targetable
   name: Targetable
   href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_Targetable
