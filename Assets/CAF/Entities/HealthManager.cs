@@ -4,7 +4,7 @@ namespace CAF.Entities
 {
     public class HealthManager : MonoBehaviour
     {
-        public delegate void HealthChangedAction(float oldHealth, float currentHealth);
+        public delegate void HealthChangedAction(GameObject gameObject, float oldHealth, float currentHealth);
         public event HealthChangedAction OnHurt;
         public event HealthChangedAction OnHeal;
         public event HealthChangedAction OnHealthSet;
@@ -15,21 +15,22 @@ namespace CAF.Entities
 
         public void SetHealth(float value)
         {
+            
             float oldHealth = health;
             health = value;
-            OnHealthSet?.Invoke(oldHealth, health);
+            OnHealthSet?.Invoke(gameObject, oldHealth, health);
         }
 
         public void Hurt(float value)
         {
             health -= value;
-            OnHurt?.Invoke(health+value, health);
+            OnHurt?.Invoke(gameObject, health+value, health);
         }
 
         public void Heal(float value)
         {
             health += value;
-            OnHeal?.Invoke(health-value, health);
+            OnHeal?.Invoke(gameObject, health-value, health);
         }
     }
 }
