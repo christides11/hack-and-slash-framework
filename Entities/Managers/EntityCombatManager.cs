@@ -212,6 +212,7 @@ namespace CAF.Entities
         {
             HitReaction hr = new HitReaction();
             hr.reactionType = HitReactionType.Hit;
+            controller.HealthManager.Hurt(hitInfo.damageOnHit);
             return hr;
         }
 

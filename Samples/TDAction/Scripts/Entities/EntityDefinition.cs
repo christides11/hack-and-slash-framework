@@ -4,10 +4,15 @@ using UnityEngine;
 
 namespace TDAction.Entities
 {
-    public abstract class EntityDefinition : ScriptableObject
+    [CreateAssetMenu(menuName = "TDA/Entities/Definition")]
+    public class EntityDefinition : ScriptableObject
     {
-        public EntityManager entityPrefab;
+        [SerializeField] protected EntityManager entityPrefab;
+        [SerializeField] protected EntityStats entityStats;
 
-        public abstract EntityStats GetEntityStats();
+        public virtual EntityStats GetEntityStats()
+        {
+            return entityStats;
+        }
     }
 }

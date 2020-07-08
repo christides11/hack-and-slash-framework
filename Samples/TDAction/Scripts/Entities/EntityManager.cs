@@ -20,6 +20,11 @@ namespace TDAction.Entities
         public virtual void Initialize(InputControlType controlType)
         {
             InputManager.SetControlType(controlType);
+        }
+
+        public override void SimStart()
+        {
+            base.SimStart();
             SetupStates();
         }
 
