@@ -2490,6 +2490,25 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityManager.HandleLockon
   nameWithType: EntityManager.HandleLockon
+- uid: CAF.Entities.EntityManager.healthManager
+  name: healthManager
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_healthManager
+  commentId: F:CAF.Entities.EntityManager.healthManager
+  fullName: CAF.Entities.EntityManager.healthManager
+  nameWithType: EntityManager.healthManager
+- uid: CAF.Entities.EntityManager.HealthManager
+  name: HealthManager
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_HealthManager
+  commentId: P:CAF.Entities.EntityManager.HealthManager
+  fullName: CAF.Entities.EntityManager.HealthManager
+  nameWithType: EntityManager.HealthManager
+- uid: CAF.Entities.EntityManager.HealthManager*
+  name: HealthManager
+  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_HealthManager_
+  commentId: Overload:CAF.Entities.EntityManager.HealthManager
+  isSpec: "True"
+  fullName: CAF.Entities.EntityManager.HealthManager
+  nameWithType: EntityManager.HealthManager
 - uid: CAF.Entities.EntityManager.InputManager
   name: InputManager
   href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_InputManager
@@ -3008,6 +3027,64 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityStateManager.Tick
   nameWithType: EntityStateManager.Tick
+- uid: CAF.Entities.HealthManager
+  name: HealthManager
+  href: api/CAF.Entities.HealthManager.html
+  commentId: T:CAF.Entities.HealthManager
+  fullName: CAF.Entities.HealthManager
+  nameWithType: HealthManager
+- uid: CAF.Entities.HealthManager.Heal(System.Single)
+  name: Heal(Single)
+  href: api/CAF.Entities.HealthManager.html#CAF_Entities_HealthManager_Heal_System_Single_
+  commentId: M:CAF.Entities.HealthManager.Heal(System.Single)
+  fullName: CAF.Entities.HealthManager.Heal(System.Single)
+  nameWithType: HealthManager.Heal(Single)
+- uid: CAF.Entities.HealthManager.Heal*
+  name: Heal
+  href: api/CAF.Entities.HealthManager.html#CAF_Entities_HealthManager_Heal_
+  commentId: Overload:CAF.Entities.HealthManager.Heal
+  isSpec: "True"
+  fullName: CAF.Entities.HealthManager.Heal
+  nameWithType: HealthManager.Heal
+- uid: CAF.Entities.HealthManager.Health
+  name: Health
+  href: api/CAF.Entities.HealthManager.html#CAF_Entities_HealthManager_Health
+  commentId: P:CAF.Entities.HealthManager.Health
+  fullName: CAF.Entities.HealthManager.Health
+  nameWithType: HealthManager.Health
+- uid: CAF.Entities.HealthManager.Health*
+  name: Health
+  href: api/CAF.Entities.HealthManager.html#CAF_Entities_HealthManager_Health_
+  commentId: Overload:CAF.Entities.HealthManager.Health
+  isSpec: "True"
+  fullName: CAF.Entities.HealthManager.Health
+  nameWithType: HealthManager.Health
+- uid: CAF.Entities.HealthManager.Hurt(System.Single)
+  name: Hurt(Single)
+  href: api/CAF.Entities.HealthManager.html#CAF_Entities_HealthManager_Hurt_System_Single_
+  commentId: M:CAF.Entities.HealthManager.Hurt(System.Single)
+  fullName: CAF.Entities.HealthManager.Hurt(System.Single)
+  nameWithType: HealthManager.Hurt(Single)
+- uid: CAF.Entities.HealthManager.Hurt*
+  name: Hurt
+  href: api/CAF.Entities.HealthManager.html#CAF_Entities_HealthManager_Hurt_
+  commentId: Overload:CAF.Entities.HealthManager.Hurt
+  isSpec: "True"
+  fullName: CAF.Entities.HealthManager.Hurt
+  nameWithType: HealthManager.Hurt
+- uid: CAF.Entities.HealthManager.SetHealth(System.Single)
+  name: SetHealth(Single)
+  href: api/CAF.Entities.HealthManager.html#CAF_Entities_HealthManager_SetHealth_System_Single_
+  commentId: M:CAF.Entities.HealthManager.SetHealth(System.Single)
+  fullName: CAF.Entities.HealthManager.SetHealth(System.Single)
+  nameWithType: HealthManager.SetHealth(Single)
+- uid: CAF.Entities.HealthManager.SetHealth*
+  name: SetHealth
+  href: api/CAF.Entities.HealthManager.html#CAF_Entities_HealthManager_SetHealth_
+  commentId: Overload:CAF.Entities.HealthManager.SetHealth
+  isSpec: "True"
+  fullName: CAF.Entities.HealthManager.SetHealth
+  nameWithType: HealthManager.SetHealth
 - uid: CAF.HelperFunctions
   name: HelperFunctions
   href: api/CAF.HelperFunctions.html
