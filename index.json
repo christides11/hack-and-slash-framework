@@ -212,7 +212,7 @@
   "api/CAF.Entities.HealthManager.HealthChangedAction.html": {
     "href": "api/CAF.Entities.HealthManager.HealthChangedAction.html",
     "title": "Delegate HealthManager.HealthChangedAction | Character Action Framework Documentation",
-    "keywords": "Delegate HealthManager.HealthChangedAction Namespace : CAF.Entities Assembly : CAF.dll Syntax public delegate void HealthChangedAction(float oldHealth, float currentHealth); Parameters Type Name Description Single oldHealth Single currentHealth"
+    "keywords": "Delegate HealthManager.HealthChangedAction Namespace : CAF.Entities Assembly : CAF.dll Syntax public delegate void HealthChangedAction(GameObject gameObject, float oldHealth, float currentHealth); Parameters Type Name Description GameObject gameObject Single oldHealth Single currentHealth"
   },
   "api/CAF.Entities.HealthManager.html": {
     "href": "api/CAF.Entities.HealthManager.html",

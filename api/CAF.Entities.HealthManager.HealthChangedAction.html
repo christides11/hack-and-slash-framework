@@ -89,7 +89,7 @@
   <h6><strong>Assembly</strong>: CAF.dll</h6>
   <h5 id="CAF_Entities_HealthManager_HealthChangedAction_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public delegate void HealthChangedAction(float oldHealth, float currentHealth);</code></pre>
+    <pre><code class="lang-csharp hljs">public delegate void HealthChangedAction(GameObject gameObject, float oldHealth, float currentHealth);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -101,6 +101,11 @@
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">gameObject</span></td>
+        <td></td>
+      </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
         <td><span class="parametername">oldHealth</span></td>

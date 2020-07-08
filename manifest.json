@@ -532,7 +532,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Entities.HealthManager.HealthChangedAction.html",
-          "hash": "NlSBPlXonVCeNHyNvXygsw=="
+          "hash": "VOhDvz9/YiSJ/Ocy8fo//w=="
         }
       },
       "is_incremental": false,
@@ -544,7 +544,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Entities.HealthManager.html",
-          "hash": "2rEASTSYSdeprTXm7Vl03g=="
+          "hash": "v4vrU0gmDDQmFSknQGsO6g=="
         }
       },
       "is_incremental": false,
