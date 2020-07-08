@@ -80,6 +80,7 @@
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\States\CJumpSquat.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\States\CRun.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\States\CWalk.cs" />
+    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Camera\CameraHandler.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Attack\AttackDefinition.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\HitInfo.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Moveset\MovesetDefinition.cs" />
@@ -99,6 +100,7 @@
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Managers\GameHandler.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Simulation\SimObjectManager.cs" />
+    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Simulation\SimObjectRegister.cs" />
     <None Include="Assets\CAF\Samples\TDAction\TDAction.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -660,6 +662,9 @@
     </Reference>
     <Reference Include="XNode">
       <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/XNode.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>

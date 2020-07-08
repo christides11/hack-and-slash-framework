@@ -1,4 +1,5 @@
-﻿using TDAction.Entities;
+﻿using TDAction.Camera;
+using TDAction.Entities;
 using TDAction.Simulation;
 using UnityEngine;
 
@@ -29,6 +30,8 @@ namespace TDAction.Managers
             currentPlayerEntity.Initialize(CAF.Input.InputControlType.Direct);
 
             simulationObjectManager.RegisterObject(currentPlayerEntity);
+
+            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraHandler>().SetFollowTarget(currentPlayerEntity.transform);
         }
     }
 }
