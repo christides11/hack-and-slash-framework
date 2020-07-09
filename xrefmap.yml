@@ -1976,6 +1976,19 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityCombatManager.LastHitBy
   nameWithType: EntityCombatManager.LastHitBy
+- uid: CAF.Entities.EntityCombatManager.SetAttack(CAF.Combat.MovesetAttackNode)
+  name: SetAttack(MovesetAttackNode)
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_SetAttack_CAF_Combat_MovesetAttackNode_
+  commentId: M:CAF.Entities.EntityCombatManager.SetAttack(CAF.Combat.MovesetAttackNode)
+  fullName: CAF.Entities.EntityCombatManager.SetAttack(CAF.Combat.MovesetAttackNode)
+  nameWithType: EntityCombatManager.SetAttack(MovesetAttackNode)
+- uid: CAF.Entities.EntityCombatManager.SetAttack*
+  name: SetAttack
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_SetAttack_
+  commentId: Overload:CAF.Entities.EntityCombatManager.SetAttack
+  isSpec: "True"
+  fullName: CAF.Entities.EntityCombatManager.SetAttack
+  nameWithType: EntityCombatManager.SetAttack
 - uid: CAF.Entities.EntityCombatManager.Team
   name: Team
   href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_Team
@@ -2002,6 +2015,19 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityCombatManager.TryAttack
   nameWithType: EntityCombatManager.TryAttack
+- uid: CAF.Entities.EntityCombatManager.TryCommandAttack
+  name: TryCommandAttack()
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_TryCommandAttack
+  commentId: M:CAF.Entities.EntityCombatManager.TryCommandAttack
+  fullName: CAF.Entities.EntityCombatManager.TryCommandAttack()
+  nameWithType: EntityCombatManager.TryCommandAttack()
+- uid: CAF.Entities.EntityCombatManager.TryCommandAttack*
+  name: TryCommandAttack
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_TryCommandAttack_
+  commentId: Overload:CAF.Entities.EntityCombatManager.TryCommandAttack
+  isSpec: "True"
+  fullName: CAF.Entities.EntityCombatManager.TryCommandAttack
+  nameWithType: EntityCombatManager.TryCommandAttack
 - uid: CAF.Entities.EntityHitboxManager
   name: EntityHitboxManager
   href: api/CAF.Entities.EntityHitboxManager.html

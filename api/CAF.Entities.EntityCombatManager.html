@@ -233,7 +233,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MovesetAttackNode CurrentAttack { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public MovesetAttackNode CurrentAttack { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -362,7 +362,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityCombatManager_CheckAttackNode_CAF_Combat_MovesetAttackNode_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityCombatManager.CheckAttackNode(CAF.Combat.MovesetAttackNode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L118">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L148">View Source</a>
   </span>
   <a id="CAF_Entities_EntityCombatManager_CheckAttackNode_" data-uid="CAF.Entities.EntityCombatManager.CheckAttackNode*"></a>
   <h4 id="CAF_Entities_EntityCombatManager_CheckAttackNode_CAF_Combat_MovesetAttackNode_" data-uid="CAF.Entities.EntityCombatManager.CheckAttackNode(CAF.Combat.MovesetAttackNode)">CheckAttackNode(MovesetAttackNode)</h4>
@@ -370,7 +370,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual bool CheckAttackNode(MovesetAttackNode node)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual MovesetAttackNode CheckAttackNode(MovesetAttackNode node)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -399,7 +399,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="CAF.Combat.MovesetAttackNode.html">MovesetAttackNode</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -409,7 +409,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityCombatManager_CheckAttackNodes_System_Collections_Generic_List_CAF_Combat_MovesetAttackNode___.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityCombatManager.CheckAttackNodes(System.Collections.Generic.List%7BCAF.Combat.MovesetAttackNode%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L106">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L135">View Source</a>
   </span>
   <a id="CAF_Entities_EntityCombatManager_CheckAttackNodes_" data-uid="CAF.Entities.EntityCombatManager.CheckAttackNodes*"></a>
   <h4 id="CAF_Entities_EntityCombatManager_CheckAttackNodes_System_Collections_Generic_List_CAF_Combat_MovesetAttackNode___" data-uid="CAF.Entities.EntityCombatManager.CheckAttackNodes(System.Collections.Generic.List{CAF.Combat.MovesetAttackNode}@)">CheckAttackNodes(ref List&lt;MovesetAttackNode&gt;)</h4>
@@ -417,7 +417,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual bool CheckAttackNodes(ref List&lt;MovesetAttackNode&gt; nodes)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual MovesetAttackNode CheckAttackNodes(ref List&lt;MovesetAttackNode&gt; nodes)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -446,7 +446,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="CAF.Combat.MovesetAttackNode.html">MovesetAttackNode</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -456,7 +456,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityCombatManager_CheckCurrentAttackCancelWindows.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityCombatManager.CheckCurrentAttackCancelWindows%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L90">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L118">View Source</a>
   </span>
   <a id="CAF_Entities_EntityCombatManager_CheckCurrentAttackCancelWindows_" data-uid="CAF.Entities.EntityCombatManager.CheckCurrentAttackCancelWindows*"></a>
   <h4 id="CAF_Entities_EntityCombatManager_CheckCurrentAttackCancelWindows" data-uid="CAF.Entities.EntityCombatManager.CheckCurrentAttackCancelWindows">CheckCurrentAttackCancelWindows()</h4>
@@ -464,7 +464,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual bool CheckCurrentAttackCancelWindows()</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual MovesetAttackNode CheckCurrentAttackCancelWindows()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -476,7 +476,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="CAF.Combat.MovesetAttackNode.html">MovesetAttackNode</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -486,7 +486,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityCombatManager_CheckStartingNodes.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityCombatManager.CheckStartingNodes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L62">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L86">View Source</a>
   </span>
   <a id="CAF_Entities_EntityCombatManager_CheckStartingNodes_" data-uid="CAF.Entities.EntityCombatManager.CheckStartingNodes*"></a>
   <h4 id="CAF_Entities_EntityCombatManager_CheckStartingNodes" data-uid="CAF.Entities.EntityCombatManager.CheckStartingNodes">CheckStartingNodes()</h4>
@@ -494,7 +494,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual bool CheckStartingNodes()</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual MovesetAttackNode CheckStartingNodes()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -506,7 +506,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="CAF.Combat.MovesetAttackNode.html">MovesetAttackNode</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -516,7 +516,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityCombatManager_CheckStickDirection_Vector2_System_Single_System_Int32_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityCombatManager.CheckStickDirection(Vector2%2CSystem.Single%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L206">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L233">View Source</a>
   </span>
   <a id="CAF_Entities_EntityCombatManager_CheckStickDirection_" data-uid="CAF.Entities.EntityCombatManager.CheckStickDirection*"></a>
   <h4 id="CAF_Entities_EntityCombatManager_CheckStickDirection_Vector2_System_Single_System_Int32_" data-uid="CAF.Entities.EntityCombatManager.CheckStickDirection(Vector2,System.Single,System.Int32)">CheckStickDirection(Vector2, Single, Int32)</h4>
@@ -603,7 +603,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityCombatManager_Heal.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityCombatManager.Heal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L219">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L246">View Source</a>
   </span>
   <a id="CAF_Entities_EntityCombatManager_Heal_" data-uid="CAF.Entities.EntityCombatManager.Heal*"></a>
   <h4 id="CAF_Entities_EntityCombatManager_Heal" data-uid="CAF.Entities.EntityCombatManager.Heal">Heal()</h4>
@@ -618,7 +618,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityCombatManager_Hurt_Vector3_Vector3_Vector3_CAF_Combat_HitInfo_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityCombatManager.Hurt(Vector3%2CVector3%2CVector3%2CCAF.Combat.HitInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L211">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L238">View Source</a>
   </span>
   <a id="CAF_Entities_EntityCombatManager_Hurt_" data-uid="CAF.Entities.EntityCombatManager.Hurt*"></a>
   <h4 id="CAF_Entities_EntityCombatManager_Hurt_Vector3_Vector3_Vector3_CAF_Combat_HitInfo_" data-uid="CAF.Entities.EntityCombatManager.Hurt(Vector3,Vector3,Vector3,CAF.Combat.HitInfo)">Hurt(Vector3, Vector3, Vector3, HitInfo)</h4>
@@ -677,10 +677,42 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityCombatManager_TryAttack.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityCombatManager.TryAttack%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityCombatManager_SetAttack_CAF_Combat_MovesetAttackNode_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityCombatManager.SetAttack(CAF.Combat.MovesetAttackNode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L49">View Source</a>
+  </span>
+  <a id="CAF_Entities_EntityCombatManager_SetAttack_" data-uid="CAF.Entities.EntityCombatManager.SetAttack*"></a>
+  <h4 id="CAF_Entities_EntityCombatManager_SetAttack_CAF_Combat_MovesetAttackNode_" data-uid="CAF.Entities.EntityCombatManager.SetAttack(CAF.Combat.MovesetAttackNode)">SetAttack(MovesetAttackNode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetAttack(MovesetAttackNode attackNode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CAF.Combat.MovesetAttackNode.html">MovesetAttackNode</a></td>
+        <td><span class="parametername">attackNode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityCombatManager_TryAttack.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityCombatManager.TryAttack%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L55">View Source</a>
   </span>
   <a id="CAF_Entities_EntityCombatManager_TryAttack_" data-uid="CAF.Entities.EntityCombatManager.TryAttack*"></a>
   <h4 id="CAF_Entities_EntityCombatManager_TryAttack" data-uid="CAF.Entities.EntityCombatManager.TryAttack">TryAttack()</h4>
@@ -688,7 +720,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual bool TryAttack()</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual MovesetAttackNode TryAttack()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -700,7 +732,37 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="CAF.Combat.MovesetAttackNode.html">MovesetAttackNode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityCombatManager_TryCommandAttack.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityCombatManager.TryCommandAttack%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L64">View Source</a>
+  </span>
+  <a id="CAF_Entities_EntityCombatManager_TryCommandAttack_" data-uid="CAF.Entities.EntityCombatManager.TryCommandAttack*"></a>
+  <h4 id="CAF_Entities_EntityCombatManager_TryCommandAttack" data-uid="CAF.Entities.EntityCombatManager.TryCommandAttack">TryCommandAttack()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual MovesetAttackNode TryCommandAttack()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CAF.Combat.MovesetAttackNode.html">MovesetAttackNode</a></td>
         <td></td>
       </tr>
     </tbody>
