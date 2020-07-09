@@ -9,7 +9,7 @@ namespace CAF.Entities
     public class EntityCombatManager : MonoBehaviour, IHurtable
     {
         public int Team { get; set; } = 0;
-        public MovesetAttackNode CurrentAttack { get; set; } = null;
+        public MovesetAttackNode CurrentAttack { get; protected set; } = null;
         public MovesetDefinition CurrentMoveset { get; protected set; } = null;
         public HitInfo LastHitBy { get; protected set; }
 
@@ -46,80 +46,110 @@ namespace CAF.Entities
             CurrentAttack = null;
         }
 
-        public virtual bool TryAttack()
+        public virtual void SetAttack(MovesetAttackNode attackNode)
+        {
+            Cleanup();
+            CurrentAttack = attackNode;
+        }
+
+        public virtual MovesetAttackNode TryAttack()
         {
             if(CurrentAttack == null)
             {
                 return CheckStartingNodes();
             }
-            if (CheckCurrentAttackCancelWindows())
-            {
-                return true;
-            }
-            return false;
+            return CheckCurrentAttackCancelWindows();
         }
 
-        protected virtual bool CheckStartingNodes()
+        public virtual MovesetAttackNode TryCommandAttack()
         {
             switch (controller.IsGrounded)
             {
                 case true:
-                    if (CheckAttackNodes(ref CurrentMoveset.groundAttackCommandNormals))
+                    MovesetAttackNode groundCommandNormal = CheckAttackNodes(ref CurrentMoveset.groundAttackCommandNormals);
+                    if (groundCommandNormal != null)
                     {
-                        return true;
-                    }
-                    if (CheckAttackNodes(ref CurrentMoveset.groundAttackStartNodes))
-                    {
-                        return true;
+                        return groundCommandNormal;
                     }
                     break;
                 case false:
-                    if (CheckAttackNodes(ref CurrentMoveset.airAttackCommandNormals))
+                    MovesetAttackNode airCommandNormal = CheckAttackNodes(ref CurrentMoveset.airAttackCommandNormals);
+                    if (airCommandNormal != null)
                     {
-                        return true;
-                    }
-                    if (CheckAttackNodes(ref CurrentMoveset.airAttackStartNodes))
-                    {
-                        return true;
+                        return airCommandNormal;
                     }
                     break;
             }
-            return false;
+            return null;
         }
 
-        protected virtual bool CheckCurrentAttackCancelWindows()
+        protected virtual MovesetAttackNode CheckStartingNodes()
+        {
+            switch (controller.IsGrounded)
+            {
+                case true:
+                    MovesetAttackNode groundCommandNormal = CheckAttackNodes(ref CurrentMoveset.groundAttackCommandNormals);
+                    if (groundCommandNormal != null)
+                    {
+                        return groundCommandNormal;
+                    }
+                    MovesetAttackNode groundNormal = CheckAttackNodes(ref CurrentMoveset.groundAttackStartNodes);
+                    if (groundNormal != null)
+                    {
+                        return groundNormal;
+                    }
+                    break;
+                case false:
+                    MovesetAttackNode airCommandNormal = CheckAttackNodes(ref CurrentMoveset.airAttackCommandNormals);
+                    if (airCommandNormal != null)
+                    {
+                        return airCommandNormal;
+                    }
+                    MovesetAttackNode airNormal = CheckAttackNodes(ref CurrentMoveset.airAttackStartNodes);
+                    if (airNormal != null)
+                    {
+                        return airNormal;
+                    }
+                    break;
+            }
+            return null;
+        }
+
+        protected virtual MovesetAttackNode CheckCurrentAttackCancelWindows()
         {
             for (int i = 0; i < CurrentAttack.nextNode.Count; i++)
             {
                 if (controller.StateManager.CurrentStateFrame >= CurrentAttack.nextNode[i].cancelWindow.x &&
                     controller.StateManager.CurrentStateFrame <= CurrentAttack.nextNode[i].cancelWindow.y)
                 {
-                    if (CheckAttackNode(CurrentAttack.nextNode[i].node))
+                    MovesetAttackNode man = CheckAttackNode(CurrentAttack.nextNode[i].node);
+                    if(man != null)
                     {
-                        return true;
+                        return man;
                     }
                 }
             }
-            return false;
+            return null;
         }
 
-        protected virtual bool CheckAttackNodes(ref List<MovesetAttackNode> nodes)
+        protected virtual MovesetAttackNode CheckAttackNodes(ref List<MovesetAttackNode> nodes)
         {
             for (int i = 0; i < nodes.Count; i++)
             {
-                if (CheckAttackNode(nodes[i]))
+                MovesetAttackNode man = CheckAttackNode(nodes[i]);
+                if(man != null)
                 {
-                    return true;
+                    return man;
                 }
             }
-            return false;
+            return null;
         }
 
-        protected virtual bool CheckAttackNode(MovesetAttackNode node)
+        protected virtual MovesetAttackNode CheckAttackNode(MovesetAttackNode node)
         {
             if (node.attackDefinition == null)
             {
-                return false;
+                return null;
             }
 
             int currentOffset = 0;
@@ -158,7 +188,7 @@ namespace CAF.Entities
             // We did not press the buttons required for this move.
             if (!pressedExecuteInputs)
             {
-                return false;
+                return null;
             }
 
             bool pressedSequenceButtons = true;
@@ -194,13 +224,10 @@ namespace CAF.Entities
 
             if (!pressedSequenceButtons)
             {
-                return false;
+                return null;
             }
 
-
-            Cleanup();
-            CurrentAttack = node;
-            return true;
+            return node;
         }
 
         protected virtual bool CheckStickDirection(Vector2 wantedDirection, float deviation, int framesBack)
