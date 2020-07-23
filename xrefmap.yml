@@ -58,6 +58,19 @@ references:
   isSpec: "True"
   fullName: CAF.Camera.LookHandler.SetLookDirection
   nameWithType: LookHandler.SetLookDirection
+- uid: CAF.Camera.LookHandler.SetTarget(CAF.Entities.EntityManager)
+  name: SetTarget(EntityManager)
+  href: api/CAF.Camera.LookHandler.html#CAF_Camera_LookHandler_SetTarget_CAF_Entities_EntityManager_
+  commentId: M:CAF.Camera.LookHandler.SetTarget(CAF.Entities.EntityManager)
+  fullName: CAF.Camera.LookHandler.SetTarget(CAF.Entities.EntityManager)
+  nameWithType: LookHandler.SetTarget(EntityManager)
+- uid: CAF.Camera.LookHandler.SetTarget*
+  name: SetTarget
+  href: api/CAF.Camera.LookHandler.html#CAF_Camera_LookHandler_SetTarget_
+  commentId: Overload:CAF.Camera.LookHandler.SetTarget
+  isSpec: "True"
+  fullName: CAF.Camera.LookHandler.SetTarget
+  nameWithType: LookHandler.SetTarget
 - uid: CAF.Combat
   name: CAF.Combat
   href: api/CAF.Combat.html
