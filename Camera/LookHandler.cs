@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using CAF.Entities;
+using UnityEngine;
 
 namespace CAF.Camera
 {
@@ -9,6 +10,8 @@ namespace CAF.Camera
     /// </summary>
     public interface LookHandler
     {
+        void SetTarget(EntityManager entityTarget);
+
         /// <summary>
         /// Make the handler look in the given direction.
         /// </summary>
