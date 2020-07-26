@@ -269,6 +269,7 @@ namespace CAF.Combat
             currentGroup.activeFramesStart = (int)activeFramesStart;
             currentGroup.activeFramesEnd = (int)activeFramesEnd;
 
+            currentGroup.styleGain = EditorGUILayout.FloatField("Style Gain", currentGroup.styleGain);
             currentGroup.hitGroupType = (BoxGroupType)EditorGUILayout.EnumPopup("Hit Type", currentGroup.hitGroupType);
             currentGroup.attachToEntity = EditorGUILayout.Toggle("Attach to Entity", currentGroup.attachToEntity);
 

@@ -13,6 +13,7 @@ namespace CAF.Combat
         public BoxGroupType hitGroupType;
         public List<BoxDefinition> boxes = new List<BoxDefinition>();
         public bool attachToEntity = true;
+        public float styleGain = 1.0f;
 
         public AttackDefinition throwConfirm;
 
