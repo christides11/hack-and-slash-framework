@@ -854,6 +854,12 @@ references:
   commentId: F:CAF.Combat.BoxGroup.ID
   fullName: CAF.Combat.BoxGroup.ID
   nameWithType: BoxGroup.ID
+- uid: CAF.Combat.BoxGroup.styleGain
+  name: styleGain
+  href: api/CAF.Combat.BoxGroup.html#CAF_Combat_BoxGroup_styleGain
+  commentId: F:CAF.Combat.BoxGroup.styleGain
+  fullName: CAF.Combat.BoxGroup.styleGain
+  nameWithType: BoxGroup.styleGain
 - uid: CAF.Combat.BoxGroup.throwConfirm
   name: throwConfirm
   href: api/CAF.Combat.BoxGroup.html#CAF_Combat_BoxGroup_throwConfirm
