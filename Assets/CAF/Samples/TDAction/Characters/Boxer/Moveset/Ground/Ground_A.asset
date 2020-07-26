@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b727ab7513f07da4ab8ca7d2f6d52cc9, type: 3}
+  m_Name: Ground_A
+  m_EditorClassIdentifier: 
+  attackName: 
+  description: 
+  stateOverride: -1
+  length: 0
+  heightRestriction: 0
+  gravityScaleAdded: 0
+  animationGround: {fileID: 0}
+  animationAir: {fileID: 0}
+  wrapMode: 0
+  jumpCancelWindows: []
+  enemyStepWindows: []
+  landCancelWindows: []
+  commandAttackCancelWindows: []
+  boxGroups:
+  - id: 0
+  events: []
+  references:
+    version: 1
+    00000000:
+      type: {class: BoxGroup, ns: CAF.Combat, asm: CAF}
+      data:
+        ID: 0
+        activeFramesStart: 1
+        activeFramesEnd: 1
+        hitGroupType: 0
+        boxes: []
+        attachToEntity: 1
+        styleGain: 1
+        throwConfirm: {fileID: 0}
+        hitboxHitInfo:
+          airOnly: 0
+          groundOnly: 0
+          continuousHit: 0
+          spaceBetweenHits: 0
+          breakArmor: 0
+          unblockable: 0
+          knockdown: 0
+          groundBounces: 0
+          groundBounceForce: 0
+          wallBounces: 0
+          wallBounceForce: 0
+          damageOnHit: 0
+          damageOnBlock: 0
+          hitKills: 1
+          attackerHitstop: 0
+          hitstop: 0
+          hitstun: 0
+          opponentResetXForce: 1
+          opponentResetYForce: 1
+          forceType: 0
+          forceRelation: 0
+          causesTumble: 0
+          opponentForceMagnitude: 1
+          opponentForceDir: {x: 0, y: 0, z: 1}
+          forceIncludeYForce: 0
+          opponentMaxMagnitude: 1
+          opponentMinMagnitude: 1
