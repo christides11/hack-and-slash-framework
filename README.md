@@ -10,11 +10,10 @@ Documentation can be found here https://christides11.github.io/Character-Action-
 
 ## Installation
 ### Package Manager (URL)
-To install this framework with the package manager, use this URL:
+To install this framework with the package manager, use this URL (replacing vX.X.X with the version you want):
 ```
-https://github.com/christides11/Character-Action-Framework.git#upm
+https://github.com/christides11/Character-Action-Framework.git#upm/vX.X.X
 ```
-I recommend [this package](https://github.com/mob-sakai/UpmGitExtension) to make the upm's github support better.
 
 ## Examples
 Right now the project come with a 2D action game example, but it's a WIP.
