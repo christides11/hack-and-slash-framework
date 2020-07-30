@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using XNodeEditor;
 using UnityEditor;
-using Malee.Editor;
 using static CAF.Combat.MovesetAttackNode;
 using XNode;
+using Malee.List;
 
 namespace CAF.Combat
 {

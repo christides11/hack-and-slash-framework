@@ -39,15 +39,5 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
-  },
-  "lock": {
-    "com.github.siccity.xnode": {
-      "revision": "HEAD",
-      "hash": "8046e6e0bfb17f645ad9663e805bde843aa91313"
-    },
-    "com.malee.reorderablelist": {
-      "revision": "HEAD",
-      "hash": "b6a47f8257cf065e9feb04acdc92e500761e605c"
-    }
   }
 }
