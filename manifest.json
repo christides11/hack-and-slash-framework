@@ -76,7 +76,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.AttackDefinitionEditorWindow.html",
-          "hash": "UI/YqdcbdMa68lYaUsa9qw=="
+          "hash": "gLYQX3PtJoKHUiHZT4gBcA=="
         }
       },
       "is_incremental": false,
@@ -100,7 +100,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.AttackEventDefinition.html",
-          "hash": "OInHfE1R2bAwHWtByvUZLw=="
+          "hash": "XsoilwyLHn0LAR4u2H034A=="
         }
       },
       "is_incremental": false,
@@ -460,7 +460,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Entities.EntityHitboxManager.html",
-          "hash": "uZHv+dKS4FsjtA4Sv/QDag=="
+          "hash": "bSyNtKcpwkIJ0FTyj0GK7g=="
         }
       },
       "is_incremental": false,

@@ -660,18 +660,6 @@ references:
   commentId: F:CAF.Combat.AttackEventDefinition.nickname
   fullName: CAF.Combat.AttackEventDefinition.nickname
   nameWithType: AttackEventDefinition.nickname
-- uid: CAF.Combat.AttackEventDefinition.onDetect
-  name: onDetect
-  href: api/CAF.Combat.AttackEventDefinition.html#CAF_Combat_AttackEventDefinition_onDetect
-  commentId: F:CAF.Combat.AttackEventDefinition.onDetect
-  fullName: CAF.Combat.AttackEventDefinition.onDetect
-  nameWithType: AttackEventDefinition.onDetect
-- uid: CAF.Combat.AttackEventDefinition.onDetectHitboxGroup
-  name: onDetectHitboxGroup
-  href: api/CAF.Combat.AttackEventDefinition.html#CAF_Combat_AttackEventDefinition_onDetectHitboxGroup
-  commentId: F:CAF.Combat.AttackEventDefinition.onDetectHitboxGroup
-  fullName: CAF.Combat.AttackEventDefinition.onDetectHitboxGroup
-  nameWithType: AttackEventDefinition.onDetectHitboxGroup
 - uid: CAF.Combat.AttackEventDefinition.onHit
   name: onHit
   href: api/CAF.Combat.AttackEventDefinition.html#CAF_Combat_AttackEventDefinition_onHit
