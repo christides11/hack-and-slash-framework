@@ -10,18 +10,18 @@ namespace CAF.Entities
         [SerializeField] protected EntityManager controller;
 
         public InputControlType ControlType { get; protected set; } = InputControlType.None;
+        public int ControllerID { get; protected set; } = -1;
         public List<InputRecordItem> InputRecord { get; protected set; } = new List<InputRecordItem>();
         
         protected int inputRecordMaxSize = 600; //60 = second
-        protected int controllerID = -1;
 
         public virtual void Awake()
         {
         }
 
-        public virtual void SetController(int controllerID)
+        public virtual void SetControllerID(int controllerID)
         {
-            this.controllerID = controllerID;
+            ControllerID = controllerID;
         }
 
         public virtual void SetControlType(InputControlType controlType)
