@@ -552,12 +552,6 @@ namespace CAF.Combat
                 attack.events[eventSelected].onHitHitboxGroup = EditorGUILayout.IntField("Hitbox Group",
                     attack.events[eventSelected].onHitHitboxGroup);
             }
-            attack.events[eventSelected].onDetect = EditorGUILayout.Toggle("On Detect?", attack.events[eventSelected].onDetect);
-            if (attack.events[eventSelected].onDetect)
-            {
-                attack.events[eventSelected].onDetectHitboxGroup = EditorGUILayout.IntField("Detect Group",
-                    attack.events[eventSelected].onDetectHitboxGroup);
-            }
             EditorGUILayout.LabelField(attack.events[eventSelected].attackEvent == null ? "..." 
                 : attack.events[eventSelected].attackEvent.GetName());
             if (GUILayout.Button("Set Event"))
