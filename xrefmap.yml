@@ -2257,12 +2257,19 @@ references:
   commentId: F:CAF.Entities.EntityInputManager.controller
   fullName: CAF.Entities.EntityInputManager.controller
   nameWithType: EntityInputManager.controller
-- uid: CAF.Entities.EntityInputManager.controllerID
-  name: controllerID
-  href: api/CAF.Entities.EntityInputManager.html#CAF_Entities_EntityInputManager_controllerID
-  commentId: F:CAF.Entities.EntityInputManager.controllerID
-  fullName: CAF.Entities.EntityInputManager.controllerID
-  nameWithType: EntityInputManager.controllerID
+- uid: CAF.Entities.EntityInputManager.ControllerID
+  name: ControllerID
+  href: api/CAF.Entities.EntityInputManager.html#CAF_Entities_EntityInputManager_ControllerID
+  commentId: P:CAF.Entities.EntityInputManager.ControllerID
+  fullName: CAF.Entities.EntityInputManager.ControllerID
+  nameWithType: EntityInputManager.ControllerID
+- uid: CAF.Entities.EntityInputManager.ControllerID*
+  name: ControllerID
+  href: api/CAF.Entities.EntityInputManager.html#CAF_Entities_EntityInputManager_ControllerID_
+  commentId: Overload:CAF.Entities.EntityInputManager.ControllerID
+  isSpec: "True"
+  fullName: CAF.Entities.EntityInputManager.ControllerID
+  nameWithType: EntityInputManager.ControllerID
 - uid: CAF.Entities.EntityInputManager.ControlType
   name: ControlType
   href: api/CAF.Entities.EntityInputManager.html#CAF_Entities_EntityInputManager_ControlType
@@ -2369,19 +2376,19 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityInputManager.ProcessInputs
   nameWithType: EntityInputManager.ProcessInputs
-- uid: CAF.Entities.EntityInputManager.SetController(System.Int32)
-  name: SetController(Int32)
-  href: api/CAF.Entities.EntityInputManager.html#CAF_Entities_EntityInputManager_SetController_System_Int32_
-  commentId: M:CAF.Entities.EntityInputManager.SetController(System.Int32)
-  fullName: CAF.Entities.EntityInputManager.SetController(System.Int32)
-  nameWithType: EntityInputManager.SetController(Int32)
-- uid: CAF.Entities.EntityInputManager.SetController*
-  name: SetController
-  href: api/CAF.Entities.EntityInputManager.html#CAF_Entities_EntityInputManager_SetController_
-  commentId: Overload:CAF.Entities.EntityInputManager.SetController
+- uid: CAF.Entities.EntityInputManager.SetControllerID(System.Int32)
+  name: SetControllerID(Int32)
+  href: api/CAF.Entities.EntityInputManager.html#CAF_Entities_EntityInputManager_SetControllerID_System_Int32_
+  commentId: M:CAF.Entities.EntityInputManager.SetControllerID(System.Int32)
+  fullName: CAF.Entities.EntityInputManager.SetControllerID(System.Int32)
+  nameWithType: EntityInputManager.SetControllerID(Int32)
+- uid: CAF.Entities.EntityInputManager.SetControllerID*
+  name: SetControllerID
+  href: api/CAF.Entities.EntityInputManager.html#CAF_Entities_EntityInputManager_SetControllerID_
+  commentId: Overload:CAF.Entities.EntityInputManager.SetControllerID
   isSpec: "True"
-  fullName: CAF.Entities.EntityInputManager.SetController
-  nameWithType: EntityInputManager.SetController
+  fullName: CAF.Entities.EntityInputManager.SetControllerID
+  nameWithType: EntityInputManager.SetControllerID
 - uid: CAF.Entities.EntityInputManager.SetControlType(CAF.Input.InputControlType)
   name: SetControlType(InputControlType)
   href: api/CAF.Entities.EntityInputManager.html#CAF_Entities_EntityInputManager_SetControlType_CAF_Input_InputControlType_
