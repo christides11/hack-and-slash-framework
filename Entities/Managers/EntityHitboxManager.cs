@@ -52,7 +52,7 @@ namespace CAF.Entities
         }
 
         /// <summary>
-        /// Checks the hitboxes and detectboxes to see what they hit this frame.
+        /// Checks the hitboxes to see what they hit this frame.
         /// This should be called in late update, as physics update right after update.
         /// </summary>
         public virtual void TickBoxes()
