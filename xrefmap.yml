@@ -872,12 +872,6 @@ references:
   commentId: T:CAF.Combat.BoxGroupType
   fullName: CAF.Combat.BoxGroupType
   nameWithType: BoxGroupType
-- uid: CAF.Combat.BoxGroupType.DETECT
-  name: DETECT
-  href: api/CAF.Combat.BoxGroupType.html#CAF_Combat_BoxGroupType_DETECT
-  commentId: F:CAF.Combat.BoxGroupType.DETECT
-  fullName: CAF.Combat.BoxGroupType.DETECT
-  nameWithType: BoxGroupType.DETECT
 - uid: CAF.Combat.BoxGroupType.GRAB
   name: GRAB
   href: api/CAF.Combat.BoxGroupType.html#CAF_Combat_BoxGroupType_GRAB

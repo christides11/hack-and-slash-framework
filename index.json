@@ -52,7 +52,7 @@
   "api/CAF.Combat.BoxGroupType.html": {
     "href": "api/CAF.Combat.BoxGroupType.html",
     "title": "Enum BoxGroupType | Character Action Framework Documentation",
-    "keywords": "Enum BoxGroupType Namespace : CAF.Combat Assembly : CAF.dll Syntax public enum BoxGroupType Fields Name Description DETECT GRAB HIT"
+    "keywords": "Enum BoxGroupType Namespace : CAF.Combat Assembly : CAF.dll Syntax public enum BoxGroupType Fields Name Description GRAB HIT"
   },
   "api/CAF.Combat.BoxShapes.html": {
     "href": "api/CAF.Combat.BoxShapes.html",
