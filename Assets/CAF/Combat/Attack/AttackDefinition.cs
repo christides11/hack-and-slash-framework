@@ -10,7 +10,7 @@ namespace CAF.Combat
         public string attackName;
         public string description;
         public int stateOverride = -1;
-        public int length; //In frames
+        public int length = 1; //In frames
         public float heightRestriction;
         public float gravityScaleAdded = 0;
         #endregion
