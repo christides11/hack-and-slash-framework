@@ -108,10 +108,11 @@ namespace CAF.Combat
 
             if (stateOverride < 0)
             {
-                length = EditorGUILayout.IntField("Length", attack.length);
+                length = Mathf.Clamp(EditorGUILayout.IntField("Length", attack.length), 1, int.MaxValue);
 
                 GUILayout.Space(15);
 
+                EditorGUILayout.LabelField("ANIMATION", EditorStyles.boldLabel);
                 animationGround = (AnimationClip)EditorGUILayout.ObjectField("Animation (Ground)", attack.animationGround,
                         typeof(AnimationClip), false);
                 animationAir = (AnimationClip)EditorGUILayout.ObjectField("Animation (Air)", attack.animationAir,
@@ -120,6 +121,7 @@ namespace CAF.Combat
 
                 GUILayout.Space(15);
 
+                EditorGUILayout.LabelField("OTHER", EditorStyles.boldLabel);
                 heightRestriction = EditorGUILayout.FloatField("Height Restriction", attack.heightRestriction);
                 gravityScale = EditorGUILayout.FloatField("Gravity Scale Added", attack.gravityScaleAdded);
             }
@@ -256,6 +258,7 @@ namespace CAF.Combat
         protected virtual void DrawBoxGroup(BoxGroup currentGroup)
         {
             EditorGUILayout.LabelField("GENERAL", EditorStyles.boldLabel);
+            EditorGUI.indentLevel++;
             currentGroup.ID = EditorGUILayout.IntField("Group ID", currentGroup.ID);
 
             float activeFramesStart = currentGroup.activeFramesStart;
@@ -291,6 +294,7 @@ namespace CAF.Combat
                 }
                 EditorGUI.indentLevel--;
             }
+            EditorGUI.indentLevel--;
             EditorGUILayout.Space(10);
 
             switch (currentGroup.hitGroupType)
@@ -310,22 +314,46 @@ namespace CAF.Combat
         }
 
         #region Box Group: Hit
+        bool drawHitEffectsDropdown;
+        bool drawHitDamageDropdown;
+        bool drawHitForcesDropdown;
+        bool drawHitStunDropdown;
         protected virtual void DrawBoxGroupHitOptions(BoxGroup currentGroup)
         {
-            EditorGUILayout.LabelField("EFFECT", EditorStyles.boldLabel);
-            DrawHitEffectsOptions(currentGroup);
+            drawHitEffectsDropdown = EditorGUILayout.Foldout(drawHitEffectsDropdown, "EFFECT", true, EditorStyles.boldLabel);
+            if (drawHitEffectsDropdown)
+            {
+                EditorGUI.indentLevel++;
+                DrawHitEffectsOptions(currentGroup);
+                EditorGUI.indentLevel--;
+            }
             EditorGUILayout.Space(10);
 
-            EditorGUILayout.LabelField("DAMAGE", EditorStyles.boldLabel);
-            DrawHitDamageOptions(currentGroup);
+            drawHitDamageDropdown = EditorGUILayout.Foldout(drawHitDamageDropdown, "DAMAGE", true, EditorStyles.boldLabel);
+            if (drawHitDamageDropdown)
+            {
+                EditorGUI.indentLevel++;
+                DrawHitDamageOptions(currentGroup);
+                EditorGUI.indentLevel--;
+            }
             EditorGUILayout.Space(10);
 
-            EditorGUILayout.LabelField("FORCES", EditorStyles.boldLabel);
-            DrawHitForcesOptions(currentGroup);
+            drawHitForcesDropdown = EditorGUILayout.Foldout(drawHitForcesDropdown, "FORCE", true, EditorStyles.boldLabel);
+            if (drawHitForcesDropdown)
+            {
+                EditorGUI.indentLevel++;
+                DrawHitForcesOptions(currentGroup);
+                EditorGUI.indentLevel--;
+            }
             EditorGUILayout.Space(10);
 
-            EditorGUILayout.LabelField("STUN", EditorStyles.boldLabel);
-            DrawHitStunOptions(currentGroup);
+            drawHitStunDropdown = EditorGUILayout.Foldout(drawHitStunDropdown, "STUN", true, EditorStyles.boldLabel);
+            if (drawHitStunDropdown)
+            {
+                EditorGUI.indentLevel++;
+                DrawHitStunOptions(currentGroup);
+                EditorGUI.indentLevel--;
+            }
             EditorGUILayout.Space(10);
         }
 
@@ -362,12 +390,8 @@ namespace CAF.Combat
             switch (currentGroup.hitboxHitInfo.forceType)
             {
                 case HitboxForceType.SET:
-                    currentGroup.hitboxHitInfo.opponentForceDir = EditorGUILayout.Vector3Field("Force Direction", currentGroup.hitboxHitInfo.opponentForceDir);
-                    if (GUILayout.Button("Normalize"))
-                    {
-                        currentGroup.hitboxHitInfo.opponentForceDir.Normalize();
-                    }
                     currentGroup.hitboxHitInfo.opponentForceMagnitude = EditorGUILayout.FloatField("Force Magnitude", currentGroup.hitboxHitInfo.opponentForceMagnitude);
+                    currentGroup.hitboxHitInfo.opponentForceDir = EditorGUILayout.Vector3Field("Force Direction", currentGroup.hitboxHitInfo.opponentForceDir);
                     break;
                 case HitboxForceType.PUSH:
                     currentGroup.hitboxHitInfo.forceIncludeYForce = EditorGUILayout.Toggle("Include Y Force", currentGroup.hitboxHitInfo.forceIncludeYForce);

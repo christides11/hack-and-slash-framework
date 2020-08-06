@@ -15,7 +15,7 @@ MonoBehaviour:
   attackName: 
   description: 
   stateOverride: -1
-  length: 0
+  length: 1
   heightRestriction: 0
   gravityScaleAdded: 0
   animationGround: {fileID: 0}
@@ -34,8 +34,8 @@ MonoBehaviour:
       type: {class: BoxGroup, ns: CAF.Combat, asm: CAF}
       data:
         ID: 0
-        activeFramesStart: 1
-        activeFramesEnd: 1
+        activeFramesStart: 0
+        activeFramesEnd: 0
         hitGroupType: 0
         boxes: []
         attachToEntity: 1
