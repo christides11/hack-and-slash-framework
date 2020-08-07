@@ -107,6 +107,12 @@ references:
   commentId: F:CAF.Combat.AttackDefinition.boxGroups
   fullName: CAF.Combat.AttackDefinition.boxGroups
   nameWithType: AttackDefinition.boxGroups
+- uid: CAF.Combat.AttackDefinition.chargeWindows
+  name: chargeWindows
+  href: api/CAF.Combat.AttackDefinition.html#CAF_Combat_AttackDefinition_chargeWindows
+  commentId: F:CAF.Combat.AttackDefinition.chargeWindows
+  fullName: CAF.Combat.AttackDefinition.chargeWindows
+  nameWithType: AttackDefinition.chargeWindows
 - uid: CAF.Combat.AttackDefinition.commandAttackCancelWindows
   name: commandAttackCancelWindows
   href: api/CAF.Combat.AttackDefinition.html#CAF_Combat_AttackDefinition_commandAttackCancelWindows
@@ -268,12 +274,37 @@ references:
   isSpec: "True"
   fullName: CAF.Combat.AttackDefinitionEditorWindow.BoxGroupAddBoxDefinition
   nameWithType: AttackDefinitionEditorWindow.BoxGroupAddBoxDefinition
+- uid: CAF.Combat.AttackDefinitionEditorWindow.cancelWindowsFoldout
+  name: cancelWindowsFoldout
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_cancelWindowsFoldout
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.cancelWindowsFoldout
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.cancelWindowsFoldout
+  nameWithType: AttackDefinitionEditorWindow.cancelWindowsFoldout
+- uid: CAF.Combat.AttackDefinitionEditorWindow.chargeWindowsFoldout
+  name: chargeWindowsFoldout
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_chargeWindowsFoldout
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.chargeWindowsFoldout
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.chargeWindowsFoldout
+  nameWithType: AttackDefinitionEditorWindow.chargeWindowsFoldout
 - uid: CAF.Combat.AttackDefinitionEditorWindow.commandAttackCancelWindowsFoldout
   name: commandAttackCancelWindowsFoldout
   href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_commandAttackCancelWindowsFoldout
   commentId: F:CAF.Combat.AttackDefinitionEditorWindow.commandAttackCancelWindowsFoldout
   fullName: CAF.Combat.AttackDefinitionEditorWindow.commandAttackCancelWindowsFoldout
   nameWithType: AttackDefinitionEditorWindow.commandAttackCancelWindowsFoldout
+- uid: CAF.Combat.AttackDefinitionEditorWindow.CreateChargeDefinition
+  name: CreateChargeDefinition()
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_CreateChargeDefinition
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.CreateChargeDefinition
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.CreateChargeDefinition()
+  nameWithType: AttackDefinitionEditorWindow.CreateChargeDefinition()
+- uid: CAF.Combat.AttackDefinitionEditorWindow.CreateChargeDefinition*
+  name: CreateChargeDefinition
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_CreateChargeDefinition_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.CreateChargeDefinition
+  isSpec: "True"
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.CreateChargeDefinition
+  nameWithType: AttackDefinitionEditorWindow.CreateChargeDefinition
 - uid: CAF.Combat.AttackDefinitionEditorWindow.currentHitboxGroupIndex
   name: currentHitboxGroupIndex
   href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_currentHitboxGroupIndex
@@ -354,19 +385,19 @@ references:
   isSpec: "True"
   fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindow
   nameWithType: AttackDefinitionEditorWindow.DrawCancelWindow
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindows
-  name: DrawCancelWindows()
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawCancelWindows
-  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindows
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindows()
-  nameWithType: AttackDefinitionEditorWindow.DrawCancelWindows()
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindows*
-  name: DrawCancelWindows
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawCancelWindows_
-  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindows
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawChargeWindow(System.Int32)
+  name: DrawChargeWindow(Int32)
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawChargeWindow_System_Int32_
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawChargeWindow(System.Int32)
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawChargeWindow(System.Int32)
+  nameWithType: AttackDefinitionEditorWindow.DrawChargeWindow(Int32)
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawChargeWindow*
+  name: DrawChargeWindow
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawChargeWindow_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawChargeWindow
   isSpec: "True"
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindows
-  nameWithType: AttackDefinitionEditorWindow.DrawCancelWindows
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawChargeWindow
+  nameWithType: AttackDefinitionEditorWindow.DrawChargeWindow
 - uid: CAF.Combat.AttackDefinitionEditorWindow.DrawEventsWindow
   name: DrawEventsWindow()
   href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawEventsWindow
@@ -484,6 +515,19 @@ references:
   isSpec: "True"
   fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawMenuBar
   nameWithType: AttackDefinitionEditorWindow.DrawMenuBar
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawWindowsMenu
+  name: DrawWindowsMenu()
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawWindowsMenu
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawWindowsMenu
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawWindowsMenu()
+  nameWithType: AttackDefinitionEditorWindow.DrawWindowsMenu()
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawWindowsMenu*
+  name: DrawWindowsMenu
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawWindowsMenu_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawWindowsMenu
+  isSpec: "True"
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawWindowsMenu
+  nameWithType: AttackDefinitionEditorWindow.DrawWindowsMenu
 - uid: CAF.Combat.AttackDefinitionEditorWindow.enemyStepWindowsFoldout
   name: enemyStepWindowsFoldout
   href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_enemyStepWindowsFoldout
@@ -896,6 +940,24 @@ references:
   commentId: F:CAF.Combat.BoxShapes.Rectangle
   fullName: CAF.Combat.BoxShapes.Rectangle
   nameWithType: BoxShapes.Rectangle
+- uid: CAF.Combat.ChargeDefinition
+  name: ChargeDefinition
+  href: api/CAF.Combat.ChargeDefinition.html
+  commentId: T:CAF.Combat.ChargeDefinition
+  fullName: CAF.Combat.ChargeDefinition
+  nameWithType: ChargeDefinition
+- uid: CAF.Combat.ChargeDefinition.frame
+  name: frame
+  href: api/CAF.Combat.ChargeDefinition.html#CAF_Combat_ChargeDefinition_frame
+  commentId: F:CAF.Combat.ChargeDefinition.frame
+  fullName: CAF.Combat.ChargeDefinition.frame
+  nameWithType: ChargeDefinition.frame
+- uid: CAF.Combat.ChargeDefinition.maxChargeFrames
+  name: maxChargeFrames
+  href: api/CAF.Combat.ChargeDefinition.html#CAF_Combat_ChargeDefinition_maxChargeFrames
+  commentId: F:CAF.Combat.ChargeDefinition.maxChargeFrames
+  fullName: CAF.Combat.ChargeDefinition.maxChargeFrames
+  nameWithType: ChargeDefinition.maxChargeFrames
 - uid: CAF.Combat.ForceType
   name: ForceType
   href: api/CAF.Combat.ForceType.html

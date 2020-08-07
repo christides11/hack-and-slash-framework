@@ -52,7 +52,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.AttackDefinition.html",
-          "hash": "inEQ/mIAdq0fEykzm7b45g=="
+          "hash": "W3x8cUddZOwIOuci5qbdJA=="
         }
       },
       "is_incremental": false,
@@ -76,7 +76,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.AttackDefinitionEditorWindow.html",
-          "hash": "gLYQX3PtJoKHUiHZT4gBcA=="
+          "hash": "kD/Gjnd9+XEXnledWKrFwg=="
         }
       },
       "is_incremental": false,
@@ -161,6 +161,18 @@
         ".html": {
           "relative_path": "api/CAF.Combat.BoxShapes.html",
           "hash": "Q+OfxOrWd4qMc6p64V0HnA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.ChargeDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.ChargeDefinition.html",
+          "hash": "tfzV2c5/4uMkanPJ+/cEig=="
         }
       },
       "is_incremental": false,
@@ -424,7 +436,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.html",
-          "hash": "EkzRrMwmwpuErN/sai0agQ=="
+          "hash": "99sv6FrLSWwQxKB3c1uQlQ=="
         }
       },
       "is_incremental": false,
@@ -760,7 +772,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "kN0MTMP+9OOnGrcPrtTInA=="
+          "hash": "yR7NicxPzplky1gh/trPZw=="
         }
       },
       "is_incremental": false,
@@ -869,7 +881,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 61,
+          "total_file_count": 62,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
