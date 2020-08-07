@@ -28,6 +28,8 @@ namespace CAF.Combat
         public List<Vector2Int> commandAttackCancelWindows = new List<Vector2Int>();
         #endregion
 
+        [SerializeReference] public List<ChargeDefinition> chargeWindows = new List<ChargeDefinition>();
+
         [SerializeReference] public List<BoxGroup> boxGroups = new List<BoxGroup>();
 
         [SerializeReference] public List<AttackEventDefinition> events = new List<AttackEventDefinition>();

@@ -55,7 +55,7 @@ namespace CAF.Combat
             {
                 currentMenu = 0;
             }
-            if (GUILayout.Button("Cancels"))
+            if (GUILayout.Button("Windows"))
             {
                 currentMenu = 1;
             }
@@ -77,7 +77,7 @@ namespace CAF.Combat
             }
             if (currentMenu == 1)
             {
-                DrawCancelWindows();
+                DrawWindowsMenu();
             }
             if(currentMenu == 2)
             {
@@ -145,28 +145,76 @@ namespace CAF.Combat
         protected bool enemyStepWindowsFoldout;
         protected bool landCancelWindowsFoldout;
         protected bool commandAttackCancelWindowsFoldout;
-        protected virtual void DrawCancelWindows()
-        {
-            EditorGUI.BeginChangeCheck();
+        protected bool chargeWindowsFoldout;
+        protected bool cancelWindowsFoldout;
 
+        protected virtual void DrawWindowsMenu()
+        {
+            chargeWindowsFoldout = EditorGUILayout.Foldout(chargeWindowsFoldout, "CHARGE WINDOWS", true, EditorStyles.boldLabel);
+            if (chargeWindowsFoldout)
+            {
+                EditorGUI.indentLevel++;
+                EditorGUI.BeginChangeCheck();
+                if (GUILayout.Button("Add Window"))
+                {
+                    attack.chargeWindows.Add(CreateChargeDefinition());
+                }
+                for(int i = 0; i < attack.chargeWindows.Count; i++)
+                {
+                    DrawChargeWindow(i);
+                    EditorGUILayout.Space();
+                }
+                if (EditorGUI.EndChangeCheck())
+                {
+                    Undo.RecordObject(attack, "Changed Charge Window.");
+                }
+                EditorGUI.indentLevel--;
+            }
+
+            cancelWindowsFoldout = EditorGUILayout.Foldout(cancelWindowsFoldout, "CANCEL WINDOWS", true, EditorStyles.boldLabel);
             List<Vector2Int> jumpCancelWindows = new List<Vector2Int>(attack.jumpCancelWindows);
             List<Vector2Int> enemyStepWindows = new List<Vector2Int>(attack.enemyStepWindows);
             List<Vector2Int> landCancelWindows = new List<Vector2Int>(attack.landCancelWindows);
             List<Vector2Int> commandAttackCancelWindows = new List<Vector2Int>(attack.commandAttackCancelWindows);
-
-            DrawCancelWindow("Jump Cancel Windows", ref jumpCancelWindowsFoldout, ref jumpCancelWindows, 180);
-            DrawCancelWindow("Enemy Step Windows", ref enemyStepWindowsFoldout, ref enemyStepWindows, 180);
-            DrawCancelWindow("Land Cancel Windows", ref landCancelWindowsFoldout, ref landCancelWindows, 180);
-            DrawCancelWindow("Command Attack Cancel Windows", ref commandAttackCancelWindowsFoldout, ref commandAttackCancelWindows, 230);
-
-            if (EditorGUI.EndChangeCheck())
+            if (cancelWindowsFoldout)
             {
-                Undo.RecordObject(attack, "Changed Cancel Window.");
-                attack.jumpCancelWindows = jumpCancelWindows;
-                attack.enemyStepWindows = enemyStepWindows;
-                attack.landCancelWindows = landCancelWindows;
-                attack.commandAttackCancelWindows = commandAttackCancelWindows;
+                EditorGUI.indentLevel++;
+                EditorGUI.BeginChangeCheck();
+                DrawCancelWindow("Jump Cancel Windows", ref jumpCancelWindowsFoldout, ref jumpCancelWindows, 180);
+                DrawCancelWindow("Enemy Step Windows", ref enemyStepWindowsFoldout, ref enemyStepWindows, 180);
+                DrawCancelWindow("Land Cancel Windows", ref landCancelWindowsFoldout, ref landCancelWindows, 180);
+                DrawCancelWindow("Command Attack Cancel Windows", ref commandAttackCancelWindowsFoldout, ref commandAttackCancelWindows, 230);
+                if (EditorGUI.EndChangeCheck())
+                {
+                    Undo.RecordObject(attack, "Changed Cancel Window.");
+                    attack.jumpCancelWindows = jumpCancelWindows;
+                    attack.enemyStepWindows = enemyStepWindows;
+                    attack.landCancelWindows = landCancelWindows;
+                    attack.commandAttackCancelWindows = commandAttackCancelWindows;
+                }
+                EditorGUI.indentLevel--;
             }
+        }
+
+        protected virtual void DrawChargeWindow(int i)
+        {
+            EditorGUILayout.BeginHorizontal();
+            if (GUILayout.Button("X", GUILayout.Width(30)))
+            {
+                attack.chargeWindows.RemoveAt(i);
+                return;
+            }
+            GUILayout.Label($"{i}.");
+            EditorGUILayout.EndHorizontal();
+            EditorGUI.indentLevel++;
+            attack.chargeWindows[i].frame = EditorGUILayout.IntField("Frame", attack.chargeWindows[i].frame);
+            attack.chargeWindows[i].maxChargeFrames = EditorGUILayout.IntField("Max Charge Frames", attack.chargeWindows[i].maxChargeFrames);
+            EditorGUI.indentLevel--;
+        }
+
+        protected virtual ChargeDefinition CreateChargeDefinition()
+        {
+            return new ChargeDefinition();
         }
 
         protected virtual void DrawCancelWindow(string foldoutName, ref bool foldout, ref List<Vector2Int> windows, float width)

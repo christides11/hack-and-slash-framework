@@ -25,6 +25,7 @@ MonoBehaviour:
   enemyStepWindows: []
   landCancelWindows: []
   commandAttackCancelWindows: []
+  chargeWindows: []
   boxGroups:
   - id: 0
   events: []
