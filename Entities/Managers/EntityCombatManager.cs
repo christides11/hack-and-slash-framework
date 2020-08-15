@@ -8,6 +8,13 @@ namespace CAF.Entities
 {
     public class EntityCombatManager : MonoBehaviour, IHurtable
     {
+        public delegate void EntityEmptyAction(EntityManager self);
+        public delegate void EntityHealthChangedAction(EntityManager initializer, EntityManager self, HitInfo hitInfo);
+        public event EntityHealthChangedAction OnHit;
+        public event EntityHealthChangedAction OnHealed;
+        public event EntityEmptyAction OnExitHitStop;
+        public event EntityEmptyAction OnExitHitStun;
+
         public int Team { get; set; } = 0;
         public MovesetAttackNode CurrentAttack { get; protected set; } = null;
         public MovesetDefinition CurrentMoveset { get; protected set; } = null;
@@ -28,10 +35,18 @@ namespace CAF.Entities
             if (hitStop > 0)
             {
                 hitStop--;
+                if(hitStop == 0)
+                {
+                    OnExitHitStop?.Invoke(controller);
+                }
             }
             else if (hitStun > 0)
             {
                 hitStun--;
+                if(hitStun == 0)
+                {
+                    OnExitHitStun?.Invoke(controller);
+                }
             }
             hitboxManager.TickBoxes();
         }
@@ -240,12 +255,13 @@ namespace CAF.Entities
             HitReaction hr = new HitReaction();
             hr.reactionType = HitReactionType.Hit;
             controller.HealthManager.Hurt(hitInfo.damageOnHit);
+            OnHit?.Invoke(null, controller, hitInfo);
             return hr;
         }
 
         public virtual void Heal()
         {
-
+            OnHealed?.Invoke(null, controller, null);
         }
     }
 }
