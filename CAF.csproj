@@ -76,6 +76,7 @@
     <Compile Include="Assets\CAF\Combat\Boxes\Hurtbox.cs" />
     <Compile Include="Assets\CAF\Combat\Boxes\HurtboxState.cs" />
     <Compile Include="Assets\CAF\Combat\ChargeDefinition.cs" />
+    <Compile Include="Assets\CAF\Combat\ChargeLevel.cs" />
     <Compile Include="Assets\CAF\Combat\ForceType.cs" />
     <Compile Include="Assets\CAF\Combat\HitInfo.cs" />
     <Compile Include="Assets\CAF\Combat\HitReaction.cs" />
