@@ -33,7 +33,7 @@ namespace CAF.Entities
         {
             InputManager.Tick();
 
-            if (CombatManager.hitStop == 0)
+            if (CombatManager.HitStop == 0)
             {
                 HandleLockon();
                 PhysicsManager.CheckIfGrounded();

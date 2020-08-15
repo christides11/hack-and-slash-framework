@@ -168,7 +168,7 @@ namespace CAF.Entities
         protected virtual void OnHitboxHurt(GameObject hurtableHit, HitInfo hitInfo, int hitboxID, int hitboxGroup)
         {
             hurtablesHit[hitboxID].Add(hurtableHit.GetComponent<IHurtable>());
-            combatManager.hitStop = hitInfo.attackerHitstop;
+            combatManager.SetHitStop(hitInfo.attackerHitstop);
             UpdateHitboxIDIgnoreList(hitboxID);
             OnHitboxHit?.Invoke(hurtableHit, hitboxGroup, combatManager.CurrentAttack);
         }

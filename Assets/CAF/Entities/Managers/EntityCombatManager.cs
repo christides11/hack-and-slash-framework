@@ -12,18 +12,22 @@ namespace CAF.Entities
         public delegate void EntityHealthChangedAction(EntityManager initializer, EntityManager self, HitInfo hitInfo);
         public event EntityHealthChangedAction OnHit;
         public event EntityHealthChangedAction OnHealed;
+        public event EntityEmptyAction OnEnterHitStop;
+        public event EntityEmptyAction OnEnterHitStun;
+        public event EntityEmptyAction OnHitStopAdded;
+        public event EntityEmptyAction OnHitStunAdded;
         public event EntityEmptyAction OnExitHitStop;
         public event EntityEmptyAction OnExitHitStun;
 
         public int Team { get; set; } = 0;
+        public int HitStun { get; protected set; } = 0;
+        public int HitStop { get; protected set; } = 0;
         public MovesetAttackNode CurrentAttack { get; protected set; } = null;
         public MovesetDefinition CurrentMoveset { get; protected set; } = null;
         public HitInfo LastHitBy { get; protected set; }
 
         public EntityManager controller;
         public EntityHitboxManager hitboxManager;
-        [SerializeField] public int hitStun;
-        [SerializeField] public int hitStop;
 
         protected virtual void Awake()
         {
@@ -32,18 +36,18 @@ namespace CAF.Entities
 
         public virtual void CLateUpdate()
         {
-            if (hitStop > 0)
+            if (HitStop > 0)
             {
-                hitStop--;
-                if(hitStop == 0)
+                HitStop--;
+                if(HitStop == 0)
                 {
                     OnExitHitStop?.Invoke(controller);
                 }
             }
-            else if (hitStun > 0)
+            else if (HitStun > 0)
             {
-                hitStun--;
-                if(hitStun == 0)
+                HitStun--;
+                if(HitStun == 0)
                 {
                     OnExitHitStun?.Invoke(controller);
                 }
@@ -248,6 +252,30 @@ namespace CAF.Entities
         protected virtual bool CheckStickDirection(Vector2 wantedDirection, float deviation, int framesBack)
         {
             return false;
+        }
+
+        public virtual void SetHitStop(int value)
+        {
+            HitStop = value;
+            OnEnterHitStop?.Invoke(controller);
+        }
+
+        public virtual void AddHitStop(int value)
+        {
+            HitStop += value;
+            OnHitStopAdded?.Invoke(controller);
+        }
+
+        public virtual void SetHitStun(int value)
+        {
+            HitStun = value;
+            OnEnterHitStun?.Invoke(controller);
+         }
+
+        public virtual void AddHitStun(int value)
+        {
+            HitStun += value;
+            OnHitStunAdded?.Invoke(controller);
         }
 
         public virtual HitReaction Hurt(Vector3 center, Vector3 forward, Vector3 right, HitInfo hitInfo)
