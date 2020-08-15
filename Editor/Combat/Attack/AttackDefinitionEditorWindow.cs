@@ -208,8 +208,26 @@ namespace CAF.Combat
             EditorGUILayout.EndHorizontal();
             EditorGUI.indentLevel++;
             attack.chargeWindows[i].frame = EditorGUILayout.IntField("Frame", attack.chargeWindows[i].frame);
-            attack.chargeWindows[i].maxChargeFrames = EditorGUILayout.IntField("Max Charge Frames", attack.chargeWindows[i].maxChargeFrames);
+            if(GUILayout.Button("Add Charge Level"))
+            {
+                attack.chargeWindows[i].chargeLevels.Add(CreateChargeLevelInstance());
+            }
+            for(int w = 0; w < attack.chargeWindows[i].chargeLevels.Count; w++)
+            {
+                DrawChargeLevel(w);
+                EditorGUILayout.Space();
+            }
             EditorGUI.indentLevel--;
+        }
+
+        protected virtual void DrawChargeLevel(int index)
+        {
+
+        }
+
+        protected virtual ChargeLevel CreateChargeLevelInstance()
+        {
+            return new ChargeLevel();
         }
 
         protected virtual ChargeDefinition CreateChargeDefinition()
