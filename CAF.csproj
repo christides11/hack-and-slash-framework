@@ -78,7 +78,9 @@
     <Compile Include="Assets\CAF\Combat\ChargeDefinition.cs" />
     <Compile Include="Assets\CAF\Combat\ChargeLevel.cs" />
     <Compile Include="Assets\CAF\Combat\ForceType.cs" />
+    <Compile Include="Assets\CAF\Combat\HealInfoBase.cs" />
     <Compile Include="Assets\CAF\Combat\HitInfo.cs" />
+    <Compile Include="Assets\CAF\Combat\HitInfoBase.cs" />
     <Compile Include="Assets\CAF\Combat\HitReaction.cs" />
     <Compile Include="Assets\CAF\Combat\HitReactionType.cs" />
     <Compile Include="Assets\CAF\Combat\HitboxForceRelation.cs" />
