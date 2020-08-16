@@ -13,7 +13,6 @@ namespace CAF.Entities
         public EntityStateManager StateManager { get { return entityStateManager; } }
         public EntityCombatManager CombatManager { get { return entityCombatManager; } }
         public EntityPhysicsManager PhysicsManager { get { return entityPhysicsManager; } }
-        public HealthManager HealthManager { get { return healthManager; } }
 
         public virtual bool Targetable { get { return targetable; } }
         public bool IsGrounded { get; set; } = false;
@@ -25,7 +24,6 @@ namespace CAF.Entities
         [SerializeField] protected EntityStateManager entityStateManager;
         [SerializeField] protected EntityCombatManager entityCombatManager;
         [SerializeField] protected EntityPhysicsManager entityPhysicsManager;
-        [SerializeField] protected HealthManager healthManager;
         public GameObject visual;
         public LookHandler lookHandler;
 
