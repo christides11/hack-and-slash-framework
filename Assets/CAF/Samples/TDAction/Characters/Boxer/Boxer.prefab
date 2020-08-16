@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3441043856010495584}
   - component: {fileID: 1031207210466028850}
   - component: {fileID: 6300165297845272074}
-  - component: {fileID: -492021407046418247}
+  - component: {fileID: 1715174515004957371}
   m_Layer: 8
   m_Name: Boxer
   m_TagString: Untagged
@@ -163,11 +163,11 @@ MonoBehaviour:
   entityStateManager: {fileID: 1031207210466028850}
   entityCombatManager: {fileID: 6300165297845272074}
   entityPhysicsManager: {fileID: 3441043856010495584}
-  healthManager: {fileID: -492021407046418247}
   visual: {fileID: 8500522958957405919}
   charController2D: {fileID: 5370282184306079421}
   coll: {fileID: 7143026638669106818}
   entityDefinition: {fileID: 11400000, guid: 1630f8195ec1d2c46a07b9a8f315398b, type: 2}
+  healthManager: {fileID: 1715174515004957371}
 --- !u!114 &5384823916746293231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 8147816337253296054}
---- !u!114 &-492021407046418247
+--- !u!114 &1715174515004957371
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -235,7 +235,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6667267786158460212}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecd4de386c4e723469e4e0b8e5e4009c, type: 3}
+  m_Script: {fileID: 11500000, guid: b1bfe94f06eee0e4d8b8979399db326a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0

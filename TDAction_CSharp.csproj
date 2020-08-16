@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Boxer\Scripts\BoxerManager.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Boxer\Scripts\BoxerStats.cs" />
+    <Compile Include="Assets\CAF\Samples\TDAction\Characters\Boxer\States\BAttack.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Boxer\States\BFall.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Boxer\States\BIdle.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Boxer\States\BWalk.cs" />
@@ -89,11 +90,13 @@
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\EntityManager.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\EntityState.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\EntityStats.cs" />
+    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\HealthManager.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\Managers\EntityCombatManager.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\Managers\EntityHitboxManager.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\Managers\EntityInputManager.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\Managers\EntityPhysicsManager.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\Managers\EntityStateManager.cs" />
+    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\States\EntityStateAttack.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Inputs\EntityInputs.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Inputs\InputConstants.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Managers\BootLoader.cs" />
