@@ -1,9 +1,13 @@
-﻿using UnityEngine;
+﻿#if UNITY_EDITOR
+using UnityEditor;
+#endif
+using System;
+using UnityEngine;
 
 namespace CAF.Combat
 {
     [System.Serializable]
-    public class HitInfo
+    public class HitInfo : HitInfoBase
     {
         public bool airOnly;
         public bool groundOnly;
@@ -76,6 +80,51 @@ namespace CAF.Combat
 
             forceIncludeYForce = other.forceIncludeYForce;
             opponentMaxMagnitude = other.opponentMaxMagnitude;
+        }
+
+        [NonSerialized] bool drawHitEffectsDropdown;
+        [NonSerialized] bool drawHitDamageDropdown;
+        [NonSerialized] bool drawHitForcesDropdown;
+        [NonSerialized] bool drawHitStunDropdown;
+        public override void DrawInspectorInfo()
+        {
+#if UNITY_EDITOR
+            drawHitEffectsDropdown = EditorGUILayout.Foldout(drawHitEffectsDropdown, "EFFECT", true, EditorStyles.boldLabel);
+            if (drawHitEffectsDropdown)
+            {
+                EditorGUI.indentLevel++;
+                //DrawHitEffectsOptions(currentGroup);
+                EditorGUI.indentLevel--;
+            }
+            EditorGUILayout.Space(10);
+
+            drawHitDamageDropdown = EditorGUILayout.Foldout(drawHitDamageDropdown, "DAMAGE", true, EditorStyles.boldLabel);
+            if (drawHitDamageDropdown)
+            {
+                EditorGUI.indentLevel++;
+                //DrawHitDamageOptions(currentGroup);
+                EditorGUI.indentLevel--;
+            }
+            EditorGUILayout.Space(10);
+
+            drawHitForcesDropdown = EditorGUILayout.Foldout(drawHitForcesDropdown, "FORCE", true, EditorStyles.boldLabel);
+            if (drawHitForcesDropdown)
+            {
+                EditorGUI.indentLevel++;
+                ///DrawHitForcesOptions(currentGroup);
+                EditorGUI.indentLevel--;
+            }
+            EditorGUILayout.Space(10);
+
+            drawHitStunDropdown = EditorGUILayout.Foldout(drawHitStunDropdown, "STUN", true, EditorStyles.boldLabel);
+            if (drawHitStunDropdown)
+            {
+                EditorGUI.indentLevel++;
+                //DrawHitStunOptions(currentGroup);
+                EditorGUI.indentLevel--;
+            }
+            EditorGUILayout.Space(10);
+#endif
         }
     }
 }

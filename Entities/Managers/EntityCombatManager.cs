@@ -287,7 +287,7 @@ namespace CAF.Entities
             return hr;
         }
 
-        public virtual void Heal()
+        public virtual void Heal(HealInfoBase healInfo)
         {
             OnHealed?.Invoke(null, controller, null);
         }

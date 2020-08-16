@@ -366,7 +366,7 @@ namespace CAF.Combat
             switch (currentGroup.hitGroupType)
             {
                 case BoxGroupType.HIT:
-                    DrawBoxGroupHitOptions(currentGroup);
+                    DrawBoxGroupHitInfo(currentGroup);
                     break;
                 case BoxGroupType.GRAB:
                     DrawBoxGroupGrabOptions(currentGroup);
@@ -384,7 +384,7 @@ namespace CAF.Combat
         bool drawHitDamageDropdown;
         bool drawHitForcesDropdown;
         bool drawHitStunDropdown;
-        protected virtual void DrawBoxGroupHitOptions(BoxGroup currentGroup)
+        protected virtual void DrawBoxGroupHitInfo(BoxGroup currentGroup)
         {
             drawHitEffectsDropdown = EditorGUILayout.Foldout(drawHitEffectsDropdown, "EFFECT", true, EditorStyles.boldLabel);
             if (drawHitEffectsDropdown)
