@@ -1,7 +1,9 @@
-﻿using CAF.Input;
+﻿using CAF.Combat;
+using CAF.Input;
 using Prime31;
 using System.Collections;
 using System.Collections.Generic;
+using TDAction.Entities.Characters;
 using UnityEngine;
 
 namespace TDAction.Entities
@@ -15,6 +17,7 @@ namespace TDAction.Entities
         public CharacterController2D charController2D;
         public Collider2D coll;
         public EntityDefinition entityDefinition;
+        public HealthManager healthManager;
 
 
         public virtual void Initialize(InputControlType controlType)
@@ -36,6 +39,18 @@ namespace TDAction.Entities
         public void SetFaceDirection(int faceDirection)
         {
             this.faceDirection = faceDirection;
+        }
+
+        public virtual bool TryAttack()
+        {
+            MovesetAttackNode man = CombatManager.TryAttack();
+            if (man != null)
+            {
+                CombatManager.SetAttack(man);
+                StateManager.ChangeState((int)CharacterStates.ATTACK);
+                return true;
+            }
+            return false;
         }
     }
 }

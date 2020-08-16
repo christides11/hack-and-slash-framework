@@ -15,6 +15,7 @@ namespace TDAction.Entities.Characters.Boxer
             StateManager.AddState(new CJump(), (int)CharacterStates.JUMP);
             StateManager.AddState(new BFall(), (int)CharacterStates.FALL);
             StateManager.AddState(new CRun(), (int)CharacterStates.RUN);
+            StateManager.AddState(new BAttack(), (int)CharacterStates.ATTACK);
 
             StateManager.ChangeState((int)CharacterStates.FALL);
         }

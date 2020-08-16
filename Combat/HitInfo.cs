@@ -9,11 +9,6 @@ namespace CAF.Combat
     [System.Serializable]
     public class HitInfo : HitInfoBase
     {
-        public bool airOnly;
-        public bool groundOnly;
-
-        public bool continuousHit;
-        public int spaceBetweenHits;
         public bool breakArmor;
         public bool unblockable;
         public bool knockdown;
@@ -23,13 +18,7 @@ namespace CAF.Combat
         public float wallBounceForce;
         public float damageOnHit;
         public float damageOnBlock;
-        public bool hitKills = true;
-        public ushort attackerHitstop;
-        public ushort hitstop;
-        public ushort hitstun;
 
-        public bool opponentResetXForce = true;
-        public bool opponentResetYForce = true;
         public bool causesTumble;
         public float opponentForceMagnitude = 1;
         // Set ForceType.
