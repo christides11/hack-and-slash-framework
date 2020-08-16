@@ -25,13 +25,23 @@ MonoBehaviour:
   enemyStepWindows: []
   landCancelWindows: []
   commandAttackCancelWindows: []
-  chargeWindows: []
-  boxGroups:
+  chargeWindows:
   - id: 0
+  boxGroups:
+  - id: 1
   events: []
   references:
     version: 1
     00000000:
+      type: {class: ChargeDefinition, ns: CAF.Combat, asm: CAF}
+      data:
+        frame: 1
+        releaseOnCompletion: 1
+        chargeLevels:
+        - maxChargeFrames: 30
+        - maxChargeFrames: 30
+        - maxChargeFrames: 30
+    00000001:
       type: {class: BoxGroup, ns: CAF.Combat, asm: CAF}
       data:
         ID: 0
@@ -41,10 +51,9 @@ MonoBehaviour:
         boxes: []
         attachToEntity: 1
         styleGain: 1
-        throwConfirm: {fileID: 0}
         hitboxHitInfo:
-          id: 1
-    00000001:
+          id: 2
+    00000002:
       type: {class: HitInfo, ns: TDAction.Combat, asm: TDAction}
       data:
         forceType: 0
@@ -74,3 +83,4 @@ MonoBehaviour:
         forceIncludeYForce: 0
         opponentMaxMagnitude: 1
         opponentMinMagnitude: 1
+        throwConfirm: {fileID: 0}
