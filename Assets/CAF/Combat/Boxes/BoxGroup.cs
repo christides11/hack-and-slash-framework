@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,9 +16,7 @@ namespace CAF.Combat
         public bool attachToEntity = true;
         public float styleGain = 1.0f;
 
-        public AttackDefinition throwConfirm;
-
-        [SerializeField] public HitInfo hitboxHitInfo = new HitInfo();
+        [SerializeReference] public HitInfoBase hitboxHitInfo = new HitInfo();
 
         public BoxGroup()
         {
@@ -31,7 +30,10 @@ namespace CAF.Combat
             activeFramesEnd = other.activeFramesEnd;
             hitGroupType = other.hitGroupType;
             attachToEntity = other.attachToEntity;
-            hitboxHitInfo = new HitInfo(other.hitboxHitInfo);
+            if (other.hitboxHitInfo.GetType() == typeof(HitInfo))
+            {
+                hitboxHitInfo = new HitInfo((HitInfo)other.hitboxHitInfo);
+            }
             boxes = new List<BoxDefinition>();
             for (int i = 0; i < other.boxes.Count; i++)
             {

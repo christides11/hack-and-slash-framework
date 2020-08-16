@@ -9,7 +9,7 @@ namespace CAF.Entities
     public class EntityCombatManager : MonoBehaviour, IHurtable
     {
         public delegate void EntityEmptyAction(EntityManager self);
-        public delegate void EntityHealthChangedAction(EntityManager initializer, EntityManager self, HitInfo hitInfo);
+        public delegate void EntityHealthChangedAction(EntityManager initializer, EntityManager self, HitInfoBase hitInfo);
         public event EntityHealthChangedAction OnHit;
         public event EntityHealthChangedAction OnHealed;
         public event EntityEmptyAction OnEnterHitStop;
@@ -278,11 +278,10 @@ namespace CAF.Entities
             OnHitStunAdded?.Invoke(controller);
         }
 
-        public virtual HitReaction Hurt(Vector3 center, Vector3 forward, Vector3 right, HitInfo hitInfo)
+        public virtual HitReaction Hurt(Vector3 center, Vector3 forward, Vector3 right, HitInfoBase hitInfo)
         {
             HitReaction hr = new HitReaction();
             hr.reactionType = HitReactionType.Hit;
-            controller.HealthManager.Hurt(hitInfo.damageOnHit);
             OnHit?.Invoke(null, controller, hitInfo);
             return hr;
         }

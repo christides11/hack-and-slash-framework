@@ -7,20 +7,20 @@ namespace CAF.Combat
 {
     public class Hitbox : SimObject
     {
-        public delegate void HurtAction(GameObject hurtableHit, HitInfo hitInfo);
+        public delegate void HurtAction(GameObject hurtableHit, HitInfoBase hitInfo);
         public event HurtAction OnHurt;
 
         protected GameObject owner;
         protected Transform directionOwner;
         protected bool activated;
         protected Collider coll;
-        public HitInfo hitInfo;
+        public HitInfoBase hitInfo;
 
         public List<IHurtable> ignoreList = null;
         public List<GameObject> hitHurtables = new List<GameObject>();
 
         public virtual void Initialize(GameObject owner, Transform directionOwner, BoxShapes shape, 
-            HitInfo hitInfo, BoxDefinition boxDefinition, List<IHurtable> ignoreList = null)
+            HitInfoBase hitInfo, BoxDefinition boxDefinition, List<IHurtable> ignoreList = null)
         {
             this.owner = owner;
             this.directionOwner = directionOwner;

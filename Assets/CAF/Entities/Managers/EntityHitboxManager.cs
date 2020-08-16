@@ -165,10 +165,10 @@ namespace CAF.Entities
         /// <param name="hurtableHit">The hurtable that was hit.</param>
         /// <param name="hitInfo">The hitInfo of the hitbox.</param>
         /// <param name="hitboxID">The hitbox ID of the hitbox.</param>
-        protected virtual void OnHitboxHurt(GameObject hurtableHit, HitInfo hitInfo, int hitboxID, int hitboxGroup)
+        protected virtual void OnHitboxHurt(GameObject hurtableHit, HitInfoBase hitInfo, int hitboxID, int hitboxGroup)
         {
             hurtablesHit[hitboxID].Add(hurtableHit.GetComponent<IHurtable>());
-            combatManager.SetHitStop(hitInfo.attackerHitstop);
+            //combatManager.SetHitStop(hitInfo.attackerHitstop);
             UpdateHitboxIDIgnoreList(hitboxID);
             OnHitboxHit?.Invoke(hurtableHit, hitboxGroup, combatManager.CurrentAttack);
         }
