@@ -15,7 +15,8 @@ MonoBehaviour:
   nodes:
   - {fileID: 4997239229425092478}
   groundAttackCommandNormals: []
-  groundAttackStartNodes: []
+  groundAttackStartNodes:
+  - {fileID: 4997239229425092478}
   airAttackCommandNormals: []
   airAttackStartNodes: []
 --- !u!114 &4997239229425092478
@@ -59,7 +60,7 @@ MonoBehaviour:
   lastNode: {fileID: 0}
   executeInputs:
   - inputType: 0
-    buttonID: 0
+    buttonID: 3
     stickDirection: {x: 0, y: 0}
     directionDeviation: 0
   inputSequence: []

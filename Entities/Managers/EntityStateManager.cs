@@ -66,6 +66,7 @@ namespace CAF.Entities
                 if (currentStateFrame == 0)
                 {
                     currentState.Initialize();
+                    currentStateFrame = 1;
                 }
                 currentStateName = currentState.GetName();
                 OnStatePostChange?.Invoke(controller, oldState, oldStateFrame);
@@ -96,6 +97,7 @@ namespace CAF.Entities
             if (currentStateFrame == 0)
             {
                 currentState.Initialize();
+                currentStateFrame = 1;
             }
             currentStateName = currentState.GetName();
             OnStatePostChange?.Invoke(controller, oldState, oldStateFrame);
