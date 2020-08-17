@@ -39,7 +39,10 @@ namespace TDAction.Entities.Characters
 
             c.PhysicsManager.forceMovement = currentSpeed;
 
-            c.SetFaceDirection((int)Mathf.Sign(movementAxis.x));
+            if (movementAxis.x != 0)
+            {
+                c.SetFaceDirection((int)Mathf.Sign(movementAxis.x));
+            }
 
             CheckInterrupt();
         }

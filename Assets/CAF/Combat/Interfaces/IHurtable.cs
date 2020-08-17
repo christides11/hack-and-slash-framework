@@ -6,8 +6,7 @@ namespace CAF.Combat
 {
     public interface IHurtable
     {
-        int Team { get; }
-
+        int GetTeam();
         HitReaction Hurt(Vector3 center, Vector3 forward, Vector3 right, HitInfoBase hitInfo);
         void Heal(HealInfoBase healInfo);
     }

@@ -40,6 +40,9 @@ namespace TDAction.Entities
         public void SetFaceDirection(int faceDirection)
         {
             this.faceDirection = faceDirection;
+            Vector3 visualScale = visual.transform.localScale;
+            visualScale.x = 1 * faceDirection;
+            visual.transform.localScale = visualScale;
         }
 
         public virtual bool TryAttack()
