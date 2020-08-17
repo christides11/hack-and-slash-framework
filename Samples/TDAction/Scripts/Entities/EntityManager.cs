@@ -18,6 +18,7 @@ namespace TDAction.Entities
         public Collider2D coll;
         public EntityDefinition entityDefinition;
         public HealthManager healthManager;
+        public Hitbox hitboxPrefab;
 
 
         public virtual void Initialize(InputControlType controlType)

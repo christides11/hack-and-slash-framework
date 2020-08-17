@@ -1,4 +1,5 @@
 ﻿using CAF.Combat;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -156,7 +157,7 @@ namespace CAF.Entities
 
         protected virtual Hitbox InstantiateHitbox(Vector3 position, Quaternion rotation)
         {
-            return null;
+            throw new NotImplementedException("InstantiateHitbox in EntityHitboxManager must be overriden!");
         }
 
         /// <summary>
