@@ -15,8 +15,8 @@ TagManager:
   - 
   - Entity
   - Level
-  - 
-  - 
+  - Hitbox
+  - Hurtbox
   - 
   - 
   - 
