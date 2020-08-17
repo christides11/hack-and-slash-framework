@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b727ab7513f07da4ab8ca7d2f6d52cc9, type: 3}
   m_Name: Ground_A
   m_EditorClassIdentifier: 
-  attackName: 
+  attackName: Ground A
   description: 
   stateOverride: -1
-  length: 1
+  length: 45
   heightRestriction: 0
   gravityScaleAdded: 0
   animationGround: {fileID: 0}
@@ -25,43 +25,39 @@ MonoBehaviour:
   enemyStepWindows: []
   landCancelWindows: []
   commandAttackCancelWindows: []
-  chargeWindows:
-  - id: 0
+  chargeWindows: []
   boxGroups:
-  - id: 1
+  - id: 0
   events: []
   references:
     version: 1
     00000000:
-      type: {class: ChargeDefinition, ns: CAF.Combat, asm: CAF}
-      data:
-        frame: 1
-        releaseOnCompletion: 1
-        chargeLevels:
-        - maxChargeFrames: 30
-        - maxChargeFrames: 30
-        - maxChargeFrames: 30
-    00000001:
       type: {class: BoxGroup, ns: CAF.Combat, asm: CAF}
       data:
         ID: 0
-        activeFramesStart: 0
-        activeFramesEnd: 0
+        activeFramesStart: 5
+        activeFramesEnd: 8
         hitGroupType: 0
         boxes: []
         attachToEntity: 1
         styleGain: 1
         hitboxHitInfo:
-          id: 2
-    00000002:
-      type: {class: HitInfo, ns: TDAction.Combat, asm: TDAction}
+          id: 1
+    00000001:
+      type: {class: HitInfo, ns: CAF.Combat, asm: CAF}
       data:
-        forceType: 0
-        forceRelation: 0
         airOnly: 0
         groundOnly: 0
+        hitKills: 1
         continuousHit: 0
         spaceBetweenHits: 0
+        opponentResetXForce: 1
+        opponentResetYForce: 1
+        attackerHitstop: 0
+        hitstop: 0
+        hitstun: 0
+        forceType: 0
+        forceRelation: 0
         breakArmor: 0
         unblockable: 0
         knockdown: 0
@@ -71,12 +67,6 @@ MonoBehaviour:
         wallBounceForce: 0
         damageOnHit: 0
         damageOnBlock: 0
-        hitKills: 1
-        attackerHitstop: 0
-        hitstop: 0
-        hitstun: 0
-        opponentResetXForce: 1
-        opponentResetYForce: 1
         causesTumble: 0
         opponentForceMagnitude: 1
         opponentForceDir: {x: 0, y: 0, z: 1}

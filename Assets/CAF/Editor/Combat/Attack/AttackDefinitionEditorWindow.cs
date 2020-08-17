@@ -325,12 +325,14 @@ namespace CAF.Combat
 
             if (GUILayout.Button("Add", GUILayout.Width(50)))
             {
+                Undo.RecordObject(attack, "Added Box Group");
                 AddBoxGroup();
             }
             if (GUILayout.Button("Remove", GUILayout.Width(60)))
             {
+                Undo.RecordObject(attack, "Removed Box Group");
                 attack.boxGroups.RemoveAt(currentHitboxGroupIndex);
-                currentHitboxGroupIndex--;
+                currentHitboxGroupIndex--; 
             }
         }
 

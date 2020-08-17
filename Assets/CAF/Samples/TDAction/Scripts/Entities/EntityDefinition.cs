@@ -10,7 +10,7 @@ namespace TDAction.Entities
     {
         [SerializeField] protected EntityManager entityPrefab;
         [SerializeField] protected EntityStats entityStats;
-        [SerializeField] protected List<MovesetDefinition> movesets = new List<MovesetDefinition>();
+        [SerializeField] public List<MovesetDefinition> movesets = new List<MovesetDefinition>();
 
         public virtual EntityStats GetEntityStats()
         {

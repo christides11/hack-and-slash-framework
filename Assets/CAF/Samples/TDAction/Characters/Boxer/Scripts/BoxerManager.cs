@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using CAF.Input;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,6 +7,11 @@ namespace TDAction.Entities.Characters.Boxer
 {
     public class BoxerManager : CharacterManager
     {
+        public override void Initialize(InputControlType controlType)
+        {
+            base.Initialize(controlType);
+            CombatManager.SetMoveset(entityDefinition.movesets[0]);
+        }
 
         protected override void SetupStates()
         {

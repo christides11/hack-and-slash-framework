@@ -15,3 +15,5 @@ MonoBehaviour:
   entityPrefab: {fileID: 8147816337253296054, guid: 566a2b9082a19f54d9a11fabf7eb2be8,
     type: 3}
   entityStats: {fileID: 11400000, guid: 8146d0caba1679d42a9e707c89dba1cb, type: 2}
+  movesets:
+  - {fileID: 11400000, guid: d767c8566af37be4fb1c760ebd85d96f, type: 2}

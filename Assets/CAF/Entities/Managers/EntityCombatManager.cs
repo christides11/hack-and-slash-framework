@@ -10,6 +10,7 @@ namespace CAF.Entities
     {
         public delegate void EntityEmptyAction(EntityManager self);
         public delegate void EntityHealthChangedAction(EntityManager initializer, EntityManager self, HitInfoBase hitInfo);
+        public delegate void EntityMovesetChangedAction(EntityManager self, MovesetDefinition lastMoveset);
         public event EntityHealthChangedAction OnHit;
         public event EntityHealthChangedAction OnHealed;
         public event EntityEmptyAction OnEnterHitStop;
@@ -18,6 +19,7 @@ namespace CAF.Entities
         public event EntityEmptyAction OnHitStunAdded;
         public event EntityEmptyAction OnExitHitStop;
         public event EntityEmptyAction OnExitHitStun;
+        public event EntityMovesetChangedAction OnMovesetChanged;
 
         public int Team { get; set; } = 0;
         public int HitStun { get; protected set; } = 0;
@@ -73,6 +75,10 @@ namespace CAF.Entities
 
         public virtual MovesetAttackNode TryAttack()
         {
+            if(CurrentMoveset == null)
+            {
+                return null;
+            }
             if(CurrentAttack == null)
             {
                 return CheckStartingNodes();
@@ -276,6 +282,13 @@ namespace CAF.Entities
         {
             HitStun += value;
             OnHitStunAdded?.Invoke(controller);
+        }
+
+        public virtual void SetMoveset(MovesetDefinition moveset)
+        {
+            MovesetDefinition oldMoveset = CurrentMoveset;
+            CurrentMoveset = moveset;
+            OnMovesetChanged?.Invoke(controller, oldMoveset);
         }
 
         public virtual HitReaction Hurt(Vector3 center, Vector3 forward, Vector3 right, HitInfoBase hitInfo)
