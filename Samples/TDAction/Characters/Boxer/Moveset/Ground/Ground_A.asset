@@ -46,7 +46,7 @@ MonoBehaviour:
       data:
         ID: 0
         activeFramesStart: 5
-        activeFramesEnd: 8
+        activeFramesEnd: 28
         hitGroupType: 0
         boxes:
         - shape: 0
