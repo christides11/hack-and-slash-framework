@@ -47,6 +47,10 @@ namespace TDAction.Entities.Characters
         public override bool CheckInterrupt()
         {
             CharacterManager c = GetCharacterController();
+            if (c.TryAttack())
+            {
+                return true;
+            }
             if (c.InputManager.GetButton((int)EntityInputs.JUMP).firstPress)
             {
                 c.StateManager.ChangeState((int)CharacterStates.JUMP_SQUAT);

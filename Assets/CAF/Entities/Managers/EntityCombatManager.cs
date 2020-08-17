@@ -8,28 +8,36 @@ namespace CAF.Entities
 {
     public class EntityCombatManager : MonoBehaviour, IHurtable
     {
-        public delegate void EntityEmptyAction(EntityManager self);
-        public delegate void EntityHealthChangedAction(EntityManager initializer, EntityManager self, HitInfoBase hitInfo);
-        public delegate void EntityMovesetChangedAction(EntityManager self, MovesetDefinition lastMoveset);
-        public event EntityHealthChangedAction OnHit;
-        public event EntityHealthChangedAction OnHealed;
-        public event EntityEmptyAction OnEnterHitStop;
-        public event EntityEmptyAction OnEnterHitStun;
-        public event EntityEmptyAction OnHitStopAdded;
-        public event EntityEmptyAction OnHitStunAdded;
-        public event EntityEmptyAction OnExitHitStop;
-        public event EntityEmptyAction OnExitHitStun;
-        public event EntityMovesetChangedAction OnMovesetChanged;
+        public delegate void EmptyAction(EntityManager self);
+        public delegate void HealthChangedAction(EntityManager initializer, EntityManager self, HitInfoBase hitInfo);
+        public delegate void MovesetChangedAction(EntityManager self, MovesetDefinition lastMoveset);
+        public delegate void ChargeLevelChangedAction(EntityManager self, int lastChargeLevel);
+        public delegate void ChargeLevelChargeChangedAction(EntityManager self, int lastChargeLevelCharge);
+        public event HealthChangedAction OnHit;
+        public event HealthChangedAction OnHealed;
+        public event EmptyAction OnEnterHitStop;
+        public event EmptyAction OnEnterHitStun;
+        public event EmptyAction OnHitStopAdded;
+        public event EmptyAction OnHitStunAdded;
+        public event EmptyAction OnExitHitStop;
+        public event EmptyAction OnExitHitStun;
+        public event MovesetChangedAction OnMovesetChanged;
+        public event ChargeLevelChangedAction OnChargeLevelChanged;
+        public event ChargeLevelChargeChangedAction OnChargeLevelChargeChanged;
 
         public int Team { get; set; } = 0;
         public int HitStun { get; protected set; } = 0;
         public int HitStop { get; protected set; } = 0;
+        public int CurrentChargeLevel { get; protected set; } = 0;
+        public int CurrentChargeLevelCharge { get; protected set; } = 0;
         public MovesetAttackNode CurrentAttack { get; protected set; } = null;
         public MovesetDefinition CurrentMoveset { get; protected set; } = null;
         public HitInfo LastHitBy { get; protected set; }
 
         public EntityManager controller;
         public EntityHitboxManager hitboxManager;
+
+
 
         protected virtual void Awake()
         {
@@ -63,6 +71,8 @@ namespace CAF.Entities
             {
                 return;
             }
+            CurrentChargeLevel = 0;
+            CurrentChargeLevelCharge = 0;
             hitboxManager.Reset();
             CurrentAttack = null;
         }
@@ -289,6 +299,26 @@ namespace CAF.Entities
             MovesetDefinition oldMoveset = CurrentMoveset;
             CurrentMoveset = moveset;
             OnMovesetChanged?.Invoke(controller, oldMoveset);
+        }
+
+        public virtual void SetChargeLevel(int value)
+        {
+            int lastChargeLevel = value;
+            CurrentChargeLevel = value;
+            OnChargeLevelChanged?.Invoke(controller, lastChargeLevel);
+        }
+        
+        public virtual void SetChargeLevelCharge(int value)
+        {
+            int oldValue = CurrentChargeLevelCharge;
+            CurrentChargeLevelCharge = value;
+            OnChargeLevelChargeChanged?.Invoke(controller, oldValue);
+        }
+
+        public virtual void IncrementChargeLevelCharge()
+        {
+            CurrentChargeLevelCharge++;
+            OnChargeLevelChargeChanged?.Invoke(controller, CurrentChargeLevelCharge-1);
         }
 
         public virtual HitReaction Hurt(Vector3 center, Vector3 forward, Vector3 right, HitInfoBase hitInfo)

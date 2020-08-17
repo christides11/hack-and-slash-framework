@@ -26,6 +26,10 @@ namespace TDAction.Entities.Characters
         {
             CharacterManager c = GetCharacterController();
             CharacterStats stats = (CharacterStats)c.entityDefinition.GetEntityStats();
+            if (c.TryAttack())
+            {
+                return true;
+            }
             if (c.InputManager.GetButton((int)EntityInputs.JUMP).firstPress)
             {
                 c.StateManager.ChangeState((int)CharacterStates.JUMP_SQUAT);

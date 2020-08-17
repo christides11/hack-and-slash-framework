@@ -25,13 +25,21 @@ MonoBehaviour:
   enemyStepWindows: []
   landCancelWindows: []
   commandAttackCancelWindows: []
-  chargeWindows: []
-  boxGroups:
+  chargeWindows:
   - id: 0
+  boxGroups:
+  - id: 1
   events: []
   references:
     version: 1
     00000000:
+      type: {class: ChargeDefinition, ns: CAF.Combat, asm: CAF}
+      data:
+        frame: 1
+        releaseOnCompletion: 1
+        chargeLevels:
+        - maxChargeFrames: 30
+    00000001:
       type: {class: BoxGroup, ns: CAF.Combat, asm: CAF}
       data:
         ID: 0
@@ -44,8 +52,8 @@ MonoBehaviour:
         chargeLevelNeeded: -1
         chargeLevelMax: 1
         hitboxHitInfo:
-          id: 1
-    00000001:
+          id: 2
+    00000002:
       type: {class: HitInfo, ns: CAF.Combat, asm: CAF}
       data:
         airOnly: 0
