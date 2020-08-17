@@ -38,7 +38,9 @@ MonoBehaviour:
         frame: 1
         releaseOnCompletion: 1
         chargeLevels:
-        - maxChargeFrames: 30
+        - maxChargeFrames: 25
+        - maxChargeFrames: 50
+        - maxChargeFrames: 75
     00000001:
       type: {class: BoxGroup, ns: CAF.Combat, asm: CAF}
       data:
@@ -46,7 +48,13 @@ MonoBehaviour:
         activeFramesStart: 5
         activeFramesEnd: 8
         hitGroupType: 0
-        boxes: []
+        boxes:
+        - shape: 0
+          offset: {x: 0, y: 0, z: 0}
+          size: {x: 4, y: 4, z: 0}
+          rotation: {x: 0, y: 0, z: 0}
+          radius: 0
+          height: 0
         attachToEntity: 1
         styleGain: 1
         chargeLevelNeeded: -1

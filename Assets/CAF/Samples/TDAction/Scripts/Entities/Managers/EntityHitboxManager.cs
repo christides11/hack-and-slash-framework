@@ -12,5 +12,10 @@ namespace TDAction.Entities
         {
             
         }
+
+        protected override Hitbox InstantiateHitbox(Vector3 position, Quaternion rotation)
+        {
+            return GameObject.Instantiate(((EntityManager)controller).hitboxPrefab, position, rotation);
+        }
     }
 }

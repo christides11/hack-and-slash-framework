@@ -8,6 +8,11 @@ namespace TDAction.Entities
     public class EntityCombatManager : CAF.Entities.EntityCombatManager
     {
 
+        protected override void Awake()
+        {
+            hitboxManager = new EntityHitboxManager(this, (EntityManager)controller);
+        }
+
         public override HitReaction Hurt(Vector3 center, Vector3 forward, Vector3 right, HitInfoBase hitInfo)
         {
             return base.Hurt(center, forward, right, hitInfo);

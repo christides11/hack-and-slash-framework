@@ -168,6 +168,8 @@ MonoBehaviour:
   coll: {fileID: 7143026638669106818}
   entityDefinition: {fileID: 11400000, guid: 1630f8195ec1d2c46a07b9a8f315398b, type: 2}
   healthManager: {fileID: 1715174515004957371}
+  hitboxPrefab: {fileID: 8701306930311813587, guid: 615623af5916ce74fbef98bec30a2efd,
+    type: 3}
 --- !u!114 &5384823916746293231
 MonoBehaviour:
   m_ObjectHideFlags: 0
