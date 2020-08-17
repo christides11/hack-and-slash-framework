@@ -9,7 +9,7 @@ namespace TDAction.Entities.Characters.Boxer
     {
         public override bool CheckInterrupt()
         {
-            EntityManager entityManager = GetEntityController();
+            EntityManager entityManager = GetEntityManager();
             if (entityManager.TryAttack())
             {
                 return true;
@@ -19,13 +19,13 @@ namespace TDAction.Entities.Characters.Boxer
             {
                 if (entityManager.IsGrounded)
                 {
-                    entityManager.StateManager.ChangeState((int)CharacterStates.IDLE);
+                    entityManager.StateManager.ChangeState((int)EntityStates.IDLE);
                 }
                 else
                 {
-                    entityManager.StateManager.ChangeState((int)CharacterStates.FALL);
+                    entityManager.StateManager.ChangeState((int)EntityStates.FALL);
                 }
-                Controller.CombatManager.Cleanup();
+                Manager.CombatManager.Cleanup();
                 return true;
             }
             return false;

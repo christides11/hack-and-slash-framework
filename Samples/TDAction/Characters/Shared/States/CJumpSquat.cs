@@ -20,7 +20,7 @@ namespace TDAction.Entities.Characters
             CharacterStats stats = (CharacterStats)c.entityDefinition.GetEntityStats();
             if (c.StateManager.CurrentStateFrame >= stats.jumpSquatFrames)
             {
-                c.StateManager.ChangeState((int)CharacterStates.JUMP);
+                c.StateManager.ChangeState((int)EntityStates.JUMP);
                 return true;
             }
             return false;

@@ -16,8 +16,8 @@ namespace TDAction.Entities
 
         public void AirDrift()
         {
-            CharacterStats stats = (CharacterStats)((CharacterManager)controller).entityDefinition.GetEntityStats();
-            Vector2 movement = controller.InputManager.GetAxis2D((int)EntityInputs.MOVEMENT);
+            CharacterStats stats = (CharacterStats)((CharacterManager)manager).entityDefinition.GetEntityStats();
+            Vector2 movement = manager.InputManager.GetAxis2D((int)EntityInputs.MOVEMENT);
             float tempMax;
             if (Mathf.Abs(movement.x) < InputConstants.moveDeadzone)
             {
@@ -28,49 +28,49 @@ namespace TDAction.Entities
                 tempMax = stats.airMaxSpeed * movement.x;
             }
 
-            if ((tempMax < 0 && controller.PhysicsManager.forceMovement.x < tempMax) 
-                || (tempMax > 0 && controller.PhysicsManager.forceMovement.x > tempMax))
+            if ((tempMax < 0 && manager.PhysicsManager.forceMovement.x < tempMax) 
+                || (tempMax > 0 && manager.PhysicsManager.forceMovement.x > tempMax))
             {
-                if (controller.PhysicsManager.forceMovement.x > 0)
+                if (manager.PhysicsManager.forceMovement.x > 0)
                 {
-                    controller.PhysicsManager.forceMovement.x -= stats.aerialFriction;
-                    if (controller.PhysicsManager.forceMovement.x < 0)
+                    manager.PhysicsManager.forceMovement.x -= stats.aerialFriction;
+                    if (manager.PhysicsManager.forceMovement.x < 0)
                     {
-                        controller.PhysicsManager.forceMovement.x = 0;
+                        manager.PhysicsManager.forceMovement.x = 0;
                     }
                 }
                 else
                 {
-                    controller.PhysicsManager.forceMovement.x += stats.aerialFriction;
-                    if (controller.PhysicsManager.forceMovement.x > 0)
+                    manager.PhysicsManager.forceMovement.x += stats.aerialFriction;
+                    if (manager.PhysicsManager.forceMovement.x > 0)
                     {
-                        controller.PhysicsManager.forceMovement.x = 0;
+                        manager.PhysicsManager.forceMovement.x = 0;
                     }
                 }
             }
             else if (Mathf.Abs(movement.x) > 0.3f &&
-              ((tempMax < 0 && controller.PhysicsManager.forceMovement.x > tempMax) || (tempMax > 0 && controller.PhysicsManager.forceMovement.x < tempMax)))
+              ((tempMax < 0 && manager.PhysicsManager.forceMovement.x > tempMax) || (tempMax > 0 && manager.PhysicsManager.forceMovement.x < tempMax)))
             {
-                controller.PhysicsManager.forceMovement.x += (stats.airAcceleration * movement.x)
+                manager.PhysicsManager.forceMovement.x += (stats.airAcceleration * movement.x)
                     + (Mathf.Sign(movement.x) * stats.airBaseAcceleration);
             }
 
             if (Mathf.Abs(movement.x) < InputConstants.moveDeadzone)
             {
-                if (controller.PhysicsManager.forceMovement.x > 0)
+                if (manager.PhysicsManager.forceMovement.x > 0)
                 {
-                    controller.PhysicsManager.forceMovement.x -= stats.aerialFriction;
-                    if (controller.PhysicsManager.forceMovement.x < 0)
+                    manager.PhysicsManager.forceMovement.x -= stats.aerialFriction;
+                    if (manager.PhysicsManager.forceMovement.x < 0)
                     {
-                        controller.PhysicsManager.forceMovement.x = 0;
+                        manager.PhysicsManager.forceMovement.x = 0;
                     }
                 }
                 else
                 {
-                    controller.PhysicsManager.forceMovement.x += stats.aerialFriction;
-                    if (controller.PhysicsManager.forceMovement.x > 0)
+                    manager.PhysicsManager.forceMovement.x += stats.aerialFriction;
+                    if (manager.PhysicsManager.forceMovement.x > 0)
                     {
-                        controller.PhysicsManager.forceMovement.x = 0;
+                        manager.PhysicsManager.forceMovement.x = 0;
                     }
                 }
             }

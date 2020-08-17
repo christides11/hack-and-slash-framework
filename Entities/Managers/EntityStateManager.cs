@@ -14,7 +14,7 @@ namespace CAF.Entities
         public EntityState CurrentState { get { return currentState; } }
         public uint CurrentStateFrame { get { return currentStateFrame; } }
 
-        [SerializeField] protected EntityManager controller = null;
+        [SerializeField] protected EntityManager manager = null;
         protected Dictionary<int, EntityState> states = new Dictionary<int, EntityState>();
         protected EntityState currentState;
         [SerializeField] protected uint currentStateFrame = 0;
@@ -35,7 +35,7 @@ namespace CAF.Entities
         /// <param name="stateNumber">The number of the state.</param>
         public virtual void AddState(EntityState state, int stateNumber)
         {
-            state.Controller = controller;
+            state.Manager = manager;
             states.Add(stateNumber, state);
         }
 
@@ -62,14 +62,14 @@ namespace CAF.Entities
                 }
                 currentStateFrame = stateFrame;
                 currentState = states[state];
-                OnStatePreChange?.Invoke(controller, oldState, oldStateFrame);
+                OnStatePreChange?.Invoke(manager, oldState, oldStateFrame);
                 if (currentStateFrame == 0)
                 {
                     currentState.Initialize();
                     currentStateFrame = 1;
                 }
                 currentStateName = currentState.GetName();
-                OnStatePostChange?.Invoke(controller, oldState, oldStateFrame);
+                OnStatePostChange?.Invoke(manager, oldState, oldStateFrame);
                 return true;
             }
             return false;
@@ -92,22 +92,22 @@ namespace CAF.Entities
             }
             currentStateFrame = stateFrame;
             currentState = state;
-            state.Controller = controller;
-            OnStatePreChange?.Invoke(controller, oldState, oldStateFrame);
+            state.Manager = manager;
+            OnStatePreChange?.Invoke(manager, oldState, oldStateFrame);
             if (currentStateFrame == 0)
             {
                 currentState.Initialize();
                 currentStateFrame = 1;
             }
             currentStateName = currentState.GetName();
-            OnStatePostChange?.Invoke(controller, oldState, oldStateFrame);
+            OnStatePostChange?.Invoke(manager, oldState, oldStateFrame);
         }
 
         public virtual void SetFrame(uint frame)
         {
             uint preFrame = currentStateFrame;
             currentStateFrame = frame;
-            OnStateFrameSet?.Invoke(controller, preFrame);
+            OnStateFrameSet?.Invoke(manager, preFrame);
         }
 
         public virtual void IncrementFrame()

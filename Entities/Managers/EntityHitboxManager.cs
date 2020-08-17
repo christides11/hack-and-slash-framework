@@ -20,12 +20,12 @@ namespace CAF.Entities
         protected Dictionary<int, List<IHurtable>> hurtablesHit = new Dictionary<int, List<IHurtable>>();
 
         public EntityCombatManager combatManager;
-        public EntityManager controller;
+        public EntityManager manager;
 
-        public EntityHitboxManager(EntityCombatManager combatManager, EntityManager controller)
+        public EntityHitboxManager(EntityCombatManager combatManager, EntityManager manager)
         {
             this.combatManager = combatManager;
-            this.controller = controller;
+            this.manager = manager;
         }
 
         /// <summary>
@@ -130,20 +130,20 @@ namespace CAF.Entities
             {
                 // Instantiate the hitbox with the correct position and rotation.
                 BoxDefinition hitboxDefinition = currentGroup.boxes[i];
-                Vector3 pos = controller.GetVisualBasedDirection(Vector3.forward) * hitboxDefinition.offset.z
-                    + controller.GetVisualBasedDirection(Vector3.right) * hitboxDefinition.offset.x
-                    + controller.GetVisualBasedDirection(Vector3.up) * hitboxDefinition.offset.y;
+                Vector3 pos = manager.GetVisualBasedDirection(Vector3.forward) * hitboxDefinition.offset.z
+                    + manager.GetVisualBasedDirection(Vector3.right) * hitboxDefinition.offset.x
+                    + manager.GetVisualBasedDirection(Vector3.up) * hitboxDefinition.offset.y;
 
-                Hitbox hitbox = InstantiateHitbox(controller.transform.position + pos,
-                    Quaternion.Euler(controller.visual.transform.eulerAngles + hitboxDefinition.rotation));
+                Hitbox hitbox = InstantiateHitbox(manager.transform.position + pos,
+                    Quaternion.Euler(manager.visual.transform.eulerAngles + hitboxDefinition.rotation));
 
                 // Attach the hitbox if neccessary.
                 if (currentGroup.attachToEntity)
                 {
-                    hitbox.transform.SetParent(controller.transform, true);
+                    hitbox.transform.SetParent(manager.transform, true);
                 }
 
-                hitbox.Initialize(controller.gameObject, controller.visual.transform, currentGroup.boxes[i].shape, 
+                hitbox.Initialize(manager.gameObject, manager.visual.transform, currentGroup.boxes[i].shape, 
                     currentGroup.hitboxHitInfo, hitboxDefinition, hurtablesHit[currentGroup.ID]);
                 int cID = currentGroup.ID;
                 int groupIndex = index;

@@ -36,7 +36,7 @@ namespace TDAction.Entities.Characters
             CharacterManager c = GetCharacterController();
             if (c.PhysicsManager.forceGravity.y <= 0)
             {
-                c.StateManager.ChangeState((int)CharacterStates.FALL);
+                c.StateManager.ChangeState((int)EntityStates.FALL);
                 return true;
             }
             return false;

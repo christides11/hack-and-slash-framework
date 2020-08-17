@@ -11,7 +11,7 @@ namespace TDAction.Entities.States
     {
         public override string GetName()
         {
-            return $"Attack ({GetEntityController().CombatManager.CurrentAttack?.name}).";
+            return $"Attack ({GetEntityManager().CombatManager.CurrentAttack?.name})";
         }
 
         protected bool charging = true;
@@ -20,10 +20,10 @@ namespace TDAction.Entities.States
         {
             base.Initialize();
             AttackDefinition currentAttack = 
-                (TDAction.Combat.AttackDefinition)GetEntityController().CombatManager.CurrentAttack.attackDefinition;
+                (TDAction.Combat.AttackDefinition)GetEntityManager().CombatManager.CurrentAttack.attackDefinition;
             if (currentAttack.stateOverride > -1)
             {
-                GetEntityController().StateManager.ChangeState(currentAttack.stateOverride);
+                GetEntityManager().StateManager.ChangeState(currentAttack.stateOverride);
                 return;
             }
             charging = true;
@@ -31,7 +31,7 @@ namespace TDAction.Entities.States
 
         public override void OnUpdate()
         {
-            EntityManager entityManager = GetEntityController();
+            EntityManager entityManager = GetEntityManager();
             AttackDefinition currentAttack =
                 (TDAction.Combat.AttackDefinition)entityManager.CombatManager.CurrentAttack.attackDefinition;
 
@@ -115,7 +115,7 @@ namespace TDAction.Entities.States
         /// <param name="boxGroup">The group being processed.</param>
         protected virtual void HandleBoxGroup(int groupIndex, CAF.Combat.BoxGroup boxGroup)
         {
-            EntityManager entityManager = GetEntityController();
+            EntityManager entityManager = GetEntityManager();
             // Cleanup the box if it's active frames are over.
             if(entityManager.StateManager.CurrentStateFrame == boxGroup.activeFramesEnd + 1)
             {
