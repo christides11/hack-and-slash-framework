@@ -359,6 +359,12 @@ namespace CAF.Combat
             currentGroup.activeFramesStart = (int)activeFramesStart;
             currentGroup.activeFramesEnd = (int)activeFramesEnd;
 
+            currentGroup.chargeLevelNeeded = EditorGUILayout.IntField("Charge Level Needed", currentGroup.chargeLevelNeeded);
+            if(currentGroup.chargeLevelNeeded >= 0)
+            {
+                currentGroup.chargeLevelMax = EditorGUILayout.IntField("Charge Level Max", currentGroup.chargeLevelMax);
+            }
+
             currentGroup.styleGain = EditorGUILayout.FloatField("Style Gain", currentGroup.styleGain);
             currentGroup.hitGroupType = (BoxGroupType)EditorGUILayout.EnumPopup("Hit Type", currentGroup.hitGroupType);
             currentGroup.attachToEntity = EditorGUILayout.Toggle("Attach to Entity", currentGroup.attachToEntity);
