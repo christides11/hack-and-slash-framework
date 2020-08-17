@@ -12,7 +12,7 @@ namespace TDAction.Entities
 
         protected override void Awake()
         {
-            hitboxManager = new EntityHitboxManager(this, (EntityManager)controller);
+            hitboxManager = new EntityHitboxManager(this, (EntityManager)manager);
         }
 
         public override int GetTeam()

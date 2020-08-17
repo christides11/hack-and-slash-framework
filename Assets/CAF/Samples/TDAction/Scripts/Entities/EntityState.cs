@@ -6,9 +6,9 @@ namespace TDAction.Entities
 {
     public class EntityState : CAF.Entities.EntityState
     {
-        public virtual EntityManager GetEntityController()
+        public virtual EntityManager GetEntityManager()
         {
-            return (EntityManager)Controller;
+            return (EntityManager)Manager;
         }
     }
 }

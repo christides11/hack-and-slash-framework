@@ -72,7 +72,6 @@
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\CharacterDefinition.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\CharacterManager.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\CharacterState.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\CharacterStates.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\CharacterStats.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\Managers\CharacterPhysicsManager.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\States\CFall.cs" />
@@ -90,6 +89,7 @@
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\EntityDefinition.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\EntityManager.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\EntityState.cs" />
+    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\EntityStates.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\EntityStats.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\HealthManager.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\Managers\EntityCombatManager.cs" />
@@ -98,6 +98,10 @@
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\Managers\EntityPhysicsManager.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\Managers\EntityStateManager.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\States\EntityStateAttack.cs" />
+    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\States\EntityStateFlinchAir.cs" />
+    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\States\EntityStateFlinchGround.cs" />
+    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\States\EntityStateKnockdown.cs" />
+    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\States\EntityStateTumble.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Inputs\EntityInputs.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Inputs\InputConstants.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Managers\BootLoader.cs" />

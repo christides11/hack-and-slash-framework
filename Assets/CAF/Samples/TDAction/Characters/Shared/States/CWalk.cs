@@ -56,17 +56,17 @@ namespace TDAction.Entities.Characters
             }
             if (c.InputManager.GetButton((int)EntityInputs.JUMP).firstPress)
             {
-                c.StateManager.ChangeState((int)CharacterStates.JUMP_SQUAT);
+                c.StateManager.ChangeState((int)EntityStates.JUMP_SQUAT);
                 return true;
             }
             if (Mathf.Abs(c.InputManager.GetAxis2D((int)EntityInputs.MOVEMENT).x) <= InputConstants.moveDeadzone)
             {
-                c.StateManager.ChangeState((int)CharacterStates.IDLE);
+                c.StateManager.ChangeState((int)EntityStates.IDLE);
                 return true;
             }
             if (c.InputManager.GetButton((int)EntityInputs.DASH).firstPress)
             {
-                c.StateManager.ChangeState((int)CharacterStates.RUN);
+                c.StateManager.ChangeState((int)EntityStates.RUN);
                 return true;
             }
             return false;

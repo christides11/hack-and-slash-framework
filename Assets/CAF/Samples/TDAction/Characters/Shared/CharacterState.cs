@@ -9,7 +9,7 @@ namespace TDAction.Entities.Characters
 
         public virtual CharacterManager GetCharacterController()
         {
-            return (CharacterManager)Controller;
+            return (CharacterManager)Manager;
         }
     }
 }

@@ -33,14 +33,14 @@ namespace CAF.Entities
         public MovesetDefinition CurrentMoveset { get; protected set; } = null;
         public HitInfo LastHitBy { get; protected set; }
 
-        public EntityManager controller;
+        public EntityManager manager;
         public EntityHitboxManager hitboxManager;
 
 
 
         protected virtual void Awake()
         {
-            hitboxManager = new EntityHitboxManager(this, controller);
+            hitboxManager = new EntityHitboxManager(this, manager);
         }
 
         public virtual void CLateUpdate()
@@ -50,7 +50,7 @@ namespace CAF.Entities
                 HitStop--;
                 if(HitStop == 0)
                 {
-                    OnExitHitStop?.Invoke(controller);
+                    OnExitHitStop?.Invoke(manager);
                 }
             }
             else if (HitStun > 0)
@@ -58,7 +58,7 @@ namespace CAF.Entities
                 HitStun--;
                 if(HitStun == 0)
                 {
-                    OnExitHitStun?.Invoke(controller);
+                    OnExitHitStun?.Invoke(manager);
                 }
             }
             hitboxManager.TickBoxes();
@@ -97,7 +97,7 @@ namespace CAF.Entities
 
         public virtual MovesetAttackNode TryCommandAttack()
         {
-            switch (controller.IsGrounded)
+            switch (manager.IsGrounded)
             {
                 case true:
                     MovesetAttackNode groundCommandNormal = CheckAttackNodes(ref CurrentMoveset.groundAttackCommandNormals);
@@ -119,7 +119,7 @@ namespace CAF.Entities
 
         protected virtual MovesetAttackNode CheckStartingNodes()
         {
-            switch (controller.IsGrounded)
+            switch (manager.IsGrounded)
             {
                 case true:
                     MovesetAttackNode groundCommandNormal = CheckAttackNodes(ref CurrentMoveset.groundAttackCommandNormals);
@@ -153,8 +153,8 @@ namespace CAF.Entities
         {
             for (int i = 0; i < CurrentAttack.nextNode.Count; i++)
             {
-                if (controller.StateManager.CurrentStateFrame >= CurrentAttack.nextNode[i].cancelWindow.x &&
-                    controller.StateManager.CurrentStateFrame <= CurrentAttack.nextNode[i].cancelWindow.y)
+                if (manager.StateManager.CurrentStateFrame >= CurrentAttack.nextNode[i].cancelWindow.x &&
+                    manager.StateManager.CurrentStateFrame <= CurrentAttack.nextNode[i].cancelWindow.y)
                 {
                     MovesetAttackNode man = CheckAttackNode(CurrentAttack.nextNode[i].node);
                     if(man != null)
@@ -202,7 +202,7 @@ namespace CAF.Entities
                         }
                         break;
                     case Input.InputDefinitionType.Button:
-                        if (!controller.InputManager.GetButton(node.executeInputs[e].buttonID, out int gotOffset, 0, true, 3).firstPress)
+                        if (!manager.InputManager.GetButton(node.executeInputs[e].buttonID, out int gotOffset, 0, true, 3).firstPress)
                         {
                             pressedExecuteInputs = false;
                             break;
@@ -272,65 +272,65 @@ namespace CAF.Entities
         public virtual void SetHitStop(int value)
         {
             HitStop = value;
-            OnEnterHitStop?.Invoke(controller);
+            OnEnterHitStop?.Invoke(manager);
         }
 
         public virtual void AddHitStop(int value)
         {
             HitStop += value;
-            OnHitStopAdded?.Invoke(controller);
+            OnHitStopAdded?.Invoke(manager);
         }
 
         public virtual void SetHitStun(int value)
         {
             HitStun = value;
-            OnEnterHitStun?.Invoke(controller);
+            OnEnterHitStun?.Invoke(manager);
          }
 
         public virtual void AddHitStun(int value)
         {
             HitStun += value;
-            OnHitStunAdded?.Invoke(controller);
+            OnHitStunAdded?.Invoke(manager);
         }
 
         public virtual void SetMoveset(MovesetDefinition moveset)
         {
             MovesetDefinition oldMoveset = CurrentMoveset;
             CurrentMoveset = moveset;
-            OnMovesetChanged?.Invoke(controller, oldMoveset);
+            OnMovesetChanged?.Invoke(manager, oldMoveset);
         }
 
         public virtual void SetChargeLevel(int value)
         {
             int lastChargeLevel = value;
             CurrentChargeLevel = value;
-            OnChargeLevelChanged?.Invoke(controller, lastChargeLevel);
+            OnChargeLevelChanged?.Invoke(manager, lastChargeLevel);
         }
         
         public virtual void SetChargeLevelCharge(int value)
         {
             int oldValue = CurrentChargeLevelCharge;
             CurrentChargeLevelCharge = value;
-            OnChargeLevelChargeChanged?.Invoke(controller, oldValue);
+            OnChargeLevelChargeChanged?.Invoke(manager, oldValue);
         }
 
         public virtual void IncrementChargeLevelCharge()
         {
             CurrentChargeLevelCharge++;
-            OnChargeLevelChargeChanged?.Invoke(controller, CurrentChargeLevelCharge-1);
+            OnChargeLevelChargeChanged?.Invoke(manager, CurrentChargeLevelCharge-1);
         }
 
         public virtual HitReaction Hurt(Vector3 center, Vector3 forward, Vector3 right, HitInfoBase hitInfo)
         {
             HitReaction hr = new HitReaction();
             hr.reactionType = HitReactionType.Hit;
-            OnHit?.Invoke(null, controller, hitInfo);
+            OnHit?.Invoke(null, manager, hitInfo);
             return hr;
         }
 
         public virtual void Heal(HealInfoBase healInfo)
         {
-            OnHealed?.Invoke(null, controller, null);
+            OnHealed?.Invoke(null, manager, null);
         }
 
         public virtual int GetTeam()

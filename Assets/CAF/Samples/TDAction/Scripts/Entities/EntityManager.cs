@@ -51,7 +51,7 @@ namespace TDAction.Entities
             if (man != null)
             {
                 CombatManager.SetAttack(man);
-                StateManager.ChangeState((int)CharacterStates.ATTACK);
+                StateManager.ChangeState((int)EntityStates.ATTACK);
                 return true;
             }
             return false;
