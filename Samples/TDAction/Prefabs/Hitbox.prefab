@@ -142,7 +142,7 @@ MonoBehaviour:
     forceRelation: 0
   hitHurtables: []
   rectangleVisual: {fileID: 296148798601241223}
-  sphereVisual: {fileID: 6524434448343894863}
+  circleVisual: {fileID: 6524434448343894863}
   capsuleVisual: {fileID: 6528340413916479202}
 --- !u!1 &6524434448343894863
 GameObject:

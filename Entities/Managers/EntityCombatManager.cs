@@ -322,7 +322,6 @@ namespace CAF.Entities
 
         public virtual HitReaction Hurt(Vector3 center, Vector3 forward, Vector3 right, HitInfoBase hitInfo)
         {
-            Debug.Log("Hit.");
             HitReaction hr = new HitReaction();
             hr.reactionType = HitReactionType.Hit;
             OnHit?.Invoke(null, controller, hitInfo);
