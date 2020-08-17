@@ -25,7 +25,6 @@ namespace CAF.Entities
         public event ChargeLevelChangedAction OnChargeLevelChanged;
         public event ChargeLevelChargeChangedAction OnChargeLevelChargeChanged;
 
-        public int Team { get; set; } = 0;
         public int HitStun { get; protected set; } = 0;
         public int HitStop { get; protected set; } = 0;
         public int CurrentChargeLevel { get; protected set; } = 0;
@@ -323,6 +322,7 @@ namespace CAF.Entities
 
         public virtual HitReaction Hurt(Vector3 center, Vector3 forward, Vector3 right, HitInfoBase hitInfo)
         {
+            Debug.Log("Hit.");
             HitReaction hr = new HitReaction();
             hr.reactionType = HitReactionType.Hit;
             OnHit?.Invoke(null, controller, hitInfo);
@@ -332,6 +332,11 @@ namespace CAF.Entities
         public virtual void Heal(HealInfoBase healInfo)
         {
             OnHealed?.Invoke(null, controller, null);
+        }
+
+        public virtual int GetTeam()
+        {
+            return 0;
         }
     }
 }
