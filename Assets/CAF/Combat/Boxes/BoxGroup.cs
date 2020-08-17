@@ -15,6 +15,8 @@ namespace CAF.Combat
         public List<BoxDefinition> boxes = new List<BoxDefinition>();
         public bool attachToEntity = true;
         public float styleGain = 1.0f;
+        public int chargeLevelNeeded = -1;
+        public int chargeLevelMax = 1;
 
         [SerializeReference] public HitInfoBase hitboxHitInfo = new HitInfo();
 
