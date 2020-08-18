@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b727ab7513f07da4ab8ca7d2f6d52cc9, type: 3}
-  m_Name: Ground_A
+  m_Name: Ground_AAA
   m_EditorClassIdentifier: 
-  attackName: Ground A
+  attackName: Ground AAA
   description: 
   stateOverride: -1
   length: 30
@@ -21,8 +21,7 @@ MonoBehaviour:
   animationGround: {fileID: 0}
   animationAir: {fileID: 0}
   wrapMode: 0
-  jumpCancelWindows:
-  - {x: 9, y: 60}
+  jumpCancelWindows: []
   enemyStepWindows: []
   landCancelWindows: []
   commandAttackCancelWindows: []
@@ -42,14 +41,14 @@ MonoBehaviour:
         boxes:
         - shape: 0
           offset: {x: 1, y: 0, z: 0}
-          size: {x: 2, y: 2.2, z: 0}
+          size: {x: 3, y: 2.2, z: 0}
           rotation: {x: 0, y: 0, z: 0}
           radius: 0
           height: 0
         attachToEntity: 1
         styleGain: 1
         chargeLevelNeeded: -1
-        chargeLevelMax: 4
+        chargeLevelMax: 1
         hitboxHitInfo:
           id: 1
     00000001:
@@ -64,7 +63,7 @@ MonoBehaviour:
         opponentResetYForce: 1
         attackerHitstop: 4
         hitstop: 4
-        hitstun: 25
+        hitstun: 30
         forceType: 0
         forceRelation: 1
         breakArmor: 0
@@ -77,8 +76,8 @@ MonoBehaviour:
         damageOnHit: 0
         damageOnBlock: 0
         causesTumble: 0
-        opponentForceMagnitude: 0.05
-        opponentForceDir: {x: 1, y: 0, z: 0}
+        opponentForceMagnitude: 0.25
+        opponentForceDir: {x: 1, y: 0, z: 1}
         forceIncludeYForce: 0
         opponentMaxMagnitude: 1
         opponentMinMagnitude: 1

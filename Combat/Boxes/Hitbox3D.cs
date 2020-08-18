@@ -7,8 +7,6 @@ namespace CAF.Combat
 {
     public class Hitbox3D : Hitbox
     {
-        public override event Hitbox.HurtAction OnHurt;
-
         protected Collider coll;
 
         public override void Initialize(GameObject owner, Transform directionOwner, BoxShapes shape,
