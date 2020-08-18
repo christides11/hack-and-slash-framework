@@ -48,14 +48,60 @@ namespace TDAction.Entities.States
                 return;
             }
 
+            bool eventCancel = false;
+            for (int i = 0; i < currentAttack.events.Count; i++)
+            {
+                if (HandleEvents(currentAttack.events[i]))
+                {
+                    eventCancel = true;
+                    return;
+                }
+            }
+
             if (CheckInterrupt())
             {
                 return;
             }
-            if (!HandleChargeLevels(entityManager, currentAttack))
+            if (!eventCancel && !HandleChargeLevels(entityManager, currentAttack))
             {
                 entityManager.StateManager.IncrementFrame();
             }
+        }
+
+        /// <summary>
+        /// Handles the lifetime of events.
+        /// </summary>
+        /// <param name="currentEvent">The event being processed.</param>
+        /// <returns>True if the current attack state was canceled by the event.</returns>
+        protected virtual bool HandleEvents(CAF.Combat.AttackEventDefinition currentEvent)
+        {
+            if (!currentEvent.active)
+            {
+                return false;
+            }
+            EntityManager e = GetEntityManager();
+            if (e.StateManager.CurrentStateFrame >= currentEvent.startFrame
+                && e.StateManager.CurrentStateFrame <= currentEvent.endFrame)
+            {
+                if (currentEvent.onHit)
+                {
+                    List<CAF.Combat.IHurtable> ihList = 
+                        ((EntityHitboxManager)e.CombatManager.hitboxManager).GetHitList(currentEvent.onHitHitboxGroup);
+                    if (ihList == null)
+                    {
+                        return false;
+                    }
+                    if (ihList.Count <= 1)
+                    {
+                        return false;
+                    }
+                }
+                return currentEvent.attackEvent.Evaluate(e.StateManager.CurrentStateFrame - currentEvent.startFrame,
+                    currentEvent.endFrame - currentEvent.startFrame,
+                    e,
+                    currentEvent.variables);
+            }
+            return false;
         }
 
         /// <summary>
