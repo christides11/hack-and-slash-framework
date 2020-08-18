@@ -4084,7 +4084,7 @@ GameObject:
   - component: {fileID: 1629233911}
   - component: {fileID: 1629233913}
   - component: {fileID: 1629233912}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Slope_128x64_Grey
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4842,7 +4842,7 @@ GameObject:
   - component: {fileID: 2142067202}
   - component: {fileID: 2142067204}
   - component: {fileID: 2142067203}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Slope_64x64_Grey
   m_TagString: Untagged
   m_Icon: {fileID: 0}

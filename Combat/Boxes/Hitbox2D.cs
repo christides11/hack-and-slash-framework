@@ -11,8 +11,8 @@ namespace CAF.Combat
 
         protected Collider2D coll;
 
-        public override void Initialize(GameObject owner, Transform directionOwner, BoxShapes shape, 
-            HitInfoBase hitInfo, BoxDefinition boxDefinition, List<IHurtable> ignoreList = null)
+        public override void Initialize(GameObject owner, Transform directionOwner, int team,
+            BoxShapes shape, HitInfoBase hitInfo, BoxDefinition boxDefinition, List<IHurtable> ignoreList = null)
         {
             this.owner = owner;
             this.directionOwner = directionOwner;

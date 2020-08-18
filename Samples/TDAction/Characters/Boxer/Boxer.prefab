@@ -323,6 +323,8 @@ MonoBehaviour:
   healthManager: {fileID: 1715174515004957371}
   hitboxPrefab: {fileID: 8701306930311813587, guid: 615623af5916ce74fbef98bec30a2efd,
     type: 3}
+  hitstopShakeAmt: 0.02
+  hitstopShakeInv: 1
 --- !u!114 &5384823916746293231
 MonoBehaviour:
   m_ObjectHideFlags: 0
