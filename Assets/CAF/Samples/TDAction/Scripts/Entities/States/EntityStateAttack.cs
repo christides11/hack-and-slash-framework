@@ -48,11 +48,13 @@ namespace TDAction.Entities.States
                 return;
             }
 
+            // Process events.
             bool eventCancel = false;
             for (int i = 0; i < currentAttack.events.Count; i++)
             {
                 if (HandleEvents(currentAttack.events[i]))
                 {
+                    // Event wants us to stall on the current frame.
                     eventCancel = true;
                     return;
                 }

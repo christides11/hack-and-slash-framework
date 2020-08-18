@@ -31,6 +31,21 @@ namespace TDAction.Entities
         {
             base.SimStart();
             SetupStates();
+            CombatManager.OnExitHitStop += (self) => { visual.transform.localPosition = Vector3.zero; };
+        }
+
+        public override void SimUpdate(float deltaTime)
+        {
+            // Shake during hitstop (only when you got hit by an attack).
+            if(CombatManager.HitStop > 0
+                && CombatManager.HitStun > 0)
+            {
+                Vector3 pos = visual.transform.localPosition;
+                pos.x = (Mathf.Sign(pos.x) > 0 ? -1 : 0) * .02f;
+                visual.transform.localPosition = pos;
+            }
+
+            base.SimUpdate(deltaTime);
         }
 
         protected virtual void SetupStates()

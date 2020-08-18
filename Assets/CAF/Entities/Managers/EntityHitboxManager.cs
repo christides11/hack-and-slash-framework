@@ -1,6 +1,5 @@
 ﻿using CAF.Combat;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -148,8 +147,8 @@ namespace CAF.Entities
                     hitbox.transform.SetParent(manager.transform, true);
                 }
 
-                hitbox.Initialize(manager.gameObject, manager.visual.transform, currentGroup.boxes[i].shape,
-                    currentGroup.hitboxHitInfo, hitboxDefinition, hurtablesHit[currentGroup.ID]);
+                hitbox.Initialize(manager.gameObject, manager.visual.transform, manager.CombatManager.GetTeam(),
+                    currentGroup.boxes[i].shape, currentGroup.hitboxHitInfo, hitboxDefinition, hurtablesHit[currentGroup.ID]);
                 int cID = currentGroup.ID;
                 int groupIndex = index;
                 hitbox.OnHurt += (hurtable, hitInfo) => { OnHitboxHurt(hurtable, hitInfo, cID, groupIndex); };
