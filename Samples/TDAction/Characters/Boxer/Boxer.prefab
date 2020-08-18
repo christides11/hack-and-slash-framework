@@ -335,7 +335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbd9a02930101474f859ac388b9c7dc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 8147816337253296054}
+  manager: {fileID: 8147816337253296054}
 --- !u!114 &3441043856010495584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -348,7 +348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e907260f059d11479c35c39bd086a1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 8147816337253296054}
+  manager: {fileID: 8147816337253296054}
   forceMovement: {x: 0, y: 0, z: 0}
   forceGravity: {x: 0, y: 0, z: 0}
   forceDamage: {x: 0, y: 0, z: 0}
@@ -365,7 +365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83a9c22a51fa47a42ab796c663e79158, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 8147816337253296054}
+  manager: {fileID: 8147816337253296054}
   currentStateFrame: 0
   currentStateName: 
 --- !u!114 &6300165297845272074
@@ -380,7 +380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 252b4cefb136aba4a8613602a0582adc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 8147816337253296054}
+  manager: {fileID: 8147816337253296054}
   team: 0
 --- !u!114 &1715174515004957371
 MonoBehaviour:

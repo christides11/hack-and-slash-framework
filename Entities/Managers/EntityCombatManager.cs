@@ -31,7 +31,7 @@ namespace CAF.Entities
         public int CurrentChargeLevelCharge { get; protected set; } = 0;
         public MovesetAttackNode CurrentAttack { get; protected set; } = null;
         public MovesetDefinition CurrentMoveset { get; protected set; } = null;
-        public HitInfo LastHitBy { get; protected set; }
+        public HitInfoBase LastHitBy { get; protected set; }
 
         public EntityManager manager;
         public EntityHitboxManager hitboxManager;

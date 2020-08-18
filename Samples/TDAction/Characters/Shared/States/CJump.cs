@@ -24,7 +24,7 @@ namespace TDAction.Entities.Characters
         {
             CharacterManager c = GetCharacterController();
 
-            ((EntityPhysicsManager)c.PhysicsManager).ApplyGravity();
+            ((EntityPhysicsManager)c.PhysicsManager).HandleGravity();
 
             ((CharacterPhysicsManager)c.PhysicsManager).AirDrift();
 

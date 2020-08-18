@@ -61,21 +61,26 @@ namespace CAF.Combat
                     {
                         continue;
                     }
-                    switch (hitInfo.forceRelation)
-                    {
-                        case HitboxForceRelation.ATTACKER:
-                            ih.Hurt(directionOwner.position, directionOwner.forward, directionOwner.right, hitInfo);
-                            break;
-                        case HitboxForceRelation.HITBOX:
-                            ih.Hurt(transform.position, transform.forward, transform.right, hitInfo);
-                            break;
-                        case HitboxForceRelation.WORLD:
-                            ih.Hurt(transform.position, Vector3.forward, Vector3.right, hitInfo);
-                            break;
-                    }
+                    HurtHurtable(ih);
                     ignoreList.Add(ih);
                     OnHurt?.Invoke(hitHurtables[i], hitInfo);
                 }
+            }
+        }
+
+        protected virtual void HurtHurtable(IHurtable ih)
+        {
+            switch (hitInfo.forceRelation)
+            {
+                case HitboxForceRelation.ATTACKER:
+                    ih.Hurt(directionOwner.position, directionOwner.forward, directionOwner.right, hitInfo);
+                    break;
+                case HitboxForceRelation.HITBOX:
+                    ih.Hurt(transform.position, transform.forward, transform.right, hitInfo);
+                    break;
+                case HitboxForceRelation.WORLD:
+                    ih.Hurt(transform.position, Vector3.forward, Vector3.right, hitInfo);
+                    break;
             }
         }
     }

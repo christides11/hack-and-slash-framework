@@ -56,5 +56,10 @@ namespace TDAction.Entities
             }
             return false;
         }
+
+        public EntityPhysicsManager GetPhysicsManager()
+        {
+            return (EntityPhysicsManager)PhysicsManager;
+        }
     }
 }

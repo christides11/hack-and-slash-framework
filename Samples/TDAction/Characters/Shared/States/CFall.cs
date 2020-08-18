@@ -12,7 +12,7 @@ namespace TDAction.Entities.Characters
         }
         public override void OnUpdate()
         {
-            ((EntityPhysicsManager)GetCharacterController().PhysicsManager).ApplyGravity();
+            ((EntityPhysicsManager)GetCharacterController().PhysicsManager).HandleGravity();
 
             ((CharacterPhysicsManager)GetCharacterController().PhysicsManager).AirDrift();
 
