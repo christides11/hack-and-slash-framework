@@ -4,6 +4,7 @@ using Prime31;
 using System.Collections;
 using System.Collections.Generic;
 using TDAction.Entities.Characters;
+using TDAction.Inputs;
 using UnityEngine;
 
 namespace TDAction.Entities
@@ -52,6 +53,26 @@ namespace TDAction.Entities
             {
                 CombatManager.SetAttack(man);
                 StateManager.ChangeState((int)EntityStates.ATTACK);
+                return true;
+            }
+            return false;
+        }
+
+        public virtual bool TryJump()
+        {
+            if (InputManager.GetButton((int)EntityInputs.JUMP).firstPress)
+            {
+                StateManager.ChangeState(IsGrounded ? (int)EntityStates.JUMP_SQUAT : (int)EntityStates.JUMP);
+                return true;
+            }
+            return false;
+        }
+
+        public virtual bool TryLandCancel()
+        {
+            if (IsGrounded)
+            {
+                StateManager.ChangeState((int)EntityStates.IDLE);
                 return true;
             }
             return false;

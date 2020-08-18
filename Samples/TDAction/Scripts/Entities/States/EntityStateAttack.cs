@@ -151,6 +151,45 @@ namespace TDAction.Entities.States
 
         protected virtual bool CheckCancelWindows(AttackDefinition currentAttack)
         {
+            if (CheckJumpCancelWindows(currentAttack)
+                || CheckLandCancelWindows(currentAttack))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        private bool CheckLandCancelWindows(AttackDefinition currentAttack)
+        {
+            EntityManager entityManager = GetEntityManager();
+            for (int i = 0; i < currentAttack.landCancelWindows.Count; i++)
+            {
+                if (entityManager.StateManager.CurrentStateFrame >= currentAttack.landCancelWindows[i].x
+                    || entityManager.StateManager.CurrentStateFrame <= currentAttack.landCancelWindows[i].y)
+                {
+                    if (entityManager.TryLandCancel())
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        private bool CheckJumpCancelWindows(AttackDefinition currentAttack)
+        {
+            EntityManager entityManager = GetEntityManager();
+            for (int i = 0; i < currentAttack.jumpCancelWindows.Count; i++)
+            {
+                if (entityManager.StateManager.CurrentStateFrame >= currentAttack.jumpCancelWindows[i].x
+                    && entityManager.StateManager.CurrentStateFrame <= currentAttack.jumpCancelWindows[i].y)
+                {
+                    if (entityManager.TryJump())
+                    {
+                        return true;
+                    }
+                }
+            }
             return false;
         }
     }
