@@ -1,18 +1,47 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class EntityStateFlinchGround : MonoBehaviour
+namespace TDAction.Entities.States
 {
-    // Start is called before the first frame update
-    void Start()
+    public class EntityStateFlinchGround: EntityState
     {
-        
-    }
+        public override string GetName()
+        {
+            return $"Flinch (GROUND)";
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public override void OnUpdate()
+        {
+            EntityManager e = GetEntityManager();
+
+            e.GetPhysicsManager().ApplyMovementFriction(e.entityDefinition.GetEntityStats().hitstunFrictionGround);
+            e.GetPhysicsManager().HandleGravity();
+
+            e.StateManager.IncrementFrame();
+
+            CheckInterrupt();
+        }
+
+        public override bool CheckInterrupt()
+        {
+            EntityManager e = GetEntityManager();
+            if (e.CombatManager.HitStun == 0)
+            {
+                // Hitstun finished.
+                if (e.IsGrounded)
+                {
+                    e.StateManager.ChangeState((int)EntityStates.IDLE);
+                }
+                else
+                {
+                    e.StateManager.ChangeState((int)EntityStates.FALL);
+                }
+            }
+            else if(!e.IsGrounded)
+            {
+                e.StateManager.ChangeState((int)EntityStates.FLINCH_AIR, e.StateManager.CurrentStateFrame, false);
+                return true;
+            }
+            return false;
+        }
     }
 }

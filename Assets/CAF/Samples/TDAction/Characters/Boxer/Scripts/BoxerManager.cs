@@ -15,6 +15,7 @@ namespace TDAction.Entities.Characters.Boxer
 
         protected override void SetupStates()
         {
+            base.SetupStates();
             StateManager.AddState(new BIdle(), (int)EntityStates.IDLE);
             StateManager.AddState(new BWalk(), (int)EntityStates.WALK);
             StateManager.AddState(new CJumpSquat(), (int)EntityStates.JUMP_SQUAT);
