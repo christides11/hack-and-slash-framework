@@ -24,5 +24,11 @@ namespace TDAction.Entities
                 + manager.GetVisualBasedDirection(Vector3.right) * hitboxDefinition.offset.x * ((EntityManager)manager).FaceDirection
                 + manager.GetVisualBasedDirection(Vector3.up) * hitboxDefinition.offset.y;
         }
+
+        protected override Quaternion GetHitboxRotation(BoxDefinition hitboxDefinition)
+        {
+            return Quaternion.Euler(manager.visual.transform.eulerAngles 
+                + hitboxDefinition.rotation);
+        }
     }
 }

@@ -21,27 +21,18 @@ MonoBehaviour:
   animationGround: {fileID: 0}
   animationAir: {fileID: 0}
   wrapMode: 0
-  jumpCancelWindows: []
+  jumpCancelWindows:
+  - {x: 9, y: 60}
   enemyStepWindows: []
   landCancelWindows: []
   commandAttackCancelWindows: []
-  chargeWindows:
-  - id: 0
+  chargeWindows: []
   boxGroups:
-  - id: 1
+  - id: 0
   events: []
   references:
     version: 1
     00000000:
-      type: {class: ChargeDefinition, ns: CAF.Combat, asm: CAF}
-      data:
-        frame: 1
-        releaseOnCompletion: 1
-        chargeLevels:
-        - maxChargeFrames: 25
-        - maxChargeFrames: 50
-        - maxChargeFrames: 75
-    00000001:
       type: {class: BoxGroup, ns: CAF.Combat, asm: CAF}
       data:
         ID: 0
@@ -58,10 +49,10 @@ MonoBehaviour:
         attachToEntity: 1
         styleGain: 1
         chargeLevelNeeded: -1
-        chargeLevelMax: 1
+        chargeLevelMax: 4
         hitboxHitInfo:
-          id: 2
-    00000002:
+          id: 1
+    00000001:
       type: {class: HitInfo, ns: CAF.Combat, asm: CAF}
       data:
         airOnly: 0
@@ -75,7 +66,7 @@ MonoBehaviour:
         hitstop: 4
         hitstun: 25
         forceType: 0
-        forceRelation: 0
+        forceRelation: 1
         breakArmor: 0
         unblockable: 0
         knockdown: 0
@@ -86,8 +77,8 @@ MonoBehaviour:
         damageOnHit: 0
         damageOnBlock: 0
         causesTumble: 0
-        opponentForceMagnitude: 0.3
-        opponentForceDir: {x: 0, y: 1, z: 0}
+        opponentForceMagnitude: 0.2
+        opponentForceDir: {x: 1, y: 1, z: 0}
         forceIncludeYForce: 0
         opponentMaxMagnitude: 1
         opponentMinMagnitude: 1

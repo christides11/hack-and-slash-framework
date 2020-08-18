@@ -131,7 +131,7 @@ namespace CAF.Entities
                 // Instantiate the hitbox with the correct position and rotation.
                 BoxDefinition hitboxDefinition = currentGroup.boxes[i];
                 Hitbox hitbox = InstantiateHitbox(GetHitboxPosition(hitboxDefinition),
-                    Quaternion.Euler(manager.visual.transform.eulerAngles + hitboxDefinition.rotation));
+                    GetHitboxRotation(hitboxDefinition));
 
                 // Attach the hitbox if neccessary.
                 if (currentGroup.attachToEntity)
@@ -151,6 +151,16 @@ namespace CAF.Entities
             hitboxGroups.Add(index, groupHitboxList);
         }
 
+        protected virtual Quaternion GetHitboxRotation(BoxDefinition hitboxDefinition)
+        {
+            return Quaternion.Euler(manager.visual.transform.eulerAngles + hitboxDefinition.rotation);
+        }
+
+        /// <summary>
+        /// Calculates where the hitbox being created should be positioned.
+        /// </summary>
+        /// <param name="hitboxDefinition">The definition of the hitbox.</param>
+        /// <returns>The position the hitbox should be in.</returns>
         protected virtual Vector3 GetHitboxPosition(BoxDefinition hitboxDefinition)
         {
             return manager.transform.position
