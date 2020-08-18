@@ -27,7 +27,7 @@ namespace TDAction.Entities
 
         protected override Quaternion GetHitboxRotation(BoxDefinition hitboxDefinition)
         {
-            return Quaternion.Euler(manager.visual.transform.eulerAngles 
+            return Quaternion.Euler(new Vector3(0, 0, manager.visual.transform.localScale.x < 0 ? 180 : 0)
                 + hitboxDefinition.rotation);
         }
     }

@@ -8,7 +8,6 @@ namespace CAF.Combat
 {
     public class Hitbox2D : Hitbox
     {
-        public override event Hitbox.HurtAction OnHurt;
 
         protected Collider2D coll;
 

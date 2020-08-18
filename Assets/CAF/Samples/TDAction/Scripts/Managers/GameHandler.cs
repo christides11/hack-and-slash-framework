@@ -5,6 +5,11 @@ using UnityEngine;
 
 namespace TDAction.Managers
 {
+    /// <summary>
+    /// This script handles anything that the game needs to run.
+    /// The main thing it does is update the simulation with the
+    /// correct delta time.
+    /// </summary>
     [System.Serializable]
     public class GameHandler
     {
@@ -17,12 +22,20 @@ namespace TDAction.Managers
             simulationObjectManager = new SimObjectManager();
         }
 
-        public virtual void FixedUpdate()
+        /// <summary>
+        /// Ticks the game. This should be called from FixedUpdate.
+        /// </summary>
+        public virtual void Tick()
         {
             simulationObjectManager.Update(Time.fixedDeltaTime);
             simulationObjectManager.LateUpdate(Time.fixedDeltaTime);
         }
 
+        /// <summary>
+        /// Spawns the player in the simulation and attaches the camera to them.
+        /// </summary>
+        /// <param name="entity">The entity to spawn that the player controls.</param>
+        /// <param name="spawnPosition">The position to spawn them at.</param>
         public void SpawnPlayer(EntityManager entity, Vector3 spawnPosition)
         {
             currentPlayerEntity = GameObject.Instantiate(entity.gameObject, spawnPosition, Quaternion.identity)
