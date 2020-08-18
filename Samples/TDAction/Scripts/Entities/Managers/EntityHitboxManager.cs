@@ -17,5 +17,12 @@ namespace TDAction.Entities
         {
             return GameObject.Instantiate(((EntityManager)manager).hitboxPrefab, position, rotation);
         }
+
+        protected override Vector3 GetHitboxPosition(BoxDefinition hitboxDefinition)
+        {
+            return manager.transform.position
+                + manager.GetVisualBasedDirection(Vector3.right) * hitboxDefinition.offset.x * ((EntityManager)manager).FaceDirection
+                + manager.GetVisualBasedDirection(Vector3.up) * hitboxDefinition.offset.y;
+        }
     }
 }

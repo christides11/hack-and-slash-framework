@@ -14,8 +14,6 @@ namespace TDAction.Entities.States
             EntityManager e = GetEntityManager();
 
             e.GetPhysicsManager().ApplyMovementFriction(e.entityDefinition.GetEntityStats().hitstunFrictionGround);
-            e.GetPhysicsManager().HandleGravity();
-
             e.StateManager.IncrementFrame();
 
             CheckInterrupt();

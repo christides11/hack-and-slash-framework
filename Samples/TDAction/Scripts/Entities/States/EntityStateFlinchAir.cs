@@ -20,7 +20,6 @@ namespace TDAction.Entities.States
 
             e.GetPhysicsManager().ApplyMovementFriction(e.entityDefinition.GetEntityStats().hitstunFrictionAir);
             e.GetPhysicsManager().HandleGravity();
-
             e.StateManager.IncrementFrame();
 
             CheckInterrupt();

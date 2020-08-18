@@ -130,11 +130,7 @@ namespace CAF.Entities
             {
                 // Instantiate the hitbox with the correct position and rotation.
                 BoxDefinition hitboxDefinition = currentGroup.boxes[i];
-                Vector3 pos = manager.GetVisualBasedDirection(Vector3.forward) * hitboxDefinition.offset.z
-                    + manager.GetVisualBasedDirection(Vector3.right) * hitboxDefinition.offset.x
-                    + manager.GetVisualBasedDirection(Vector3.up) * hitboxDefinition.offset.y;
-
-                Hitbox hitbox = InstantiateHitbox(manager.transform.position + pos,
+                Hitbox hitbox = InstantiateHitbox(GetHitboxPosition(hitboxDefinition),
                     Quaternion.Euler(manager.visual.transform.eulerAngles + hitboxDefinition.rotation));
 
                 // Attach the hitbox if neccessary.
@@ -143,7 +139,7 @@ namespace CAF.Entities
                     hitbox.transform.SetParent(manager.transform, true);
                 }
 
-                hitbox.Initialize(manager.gameObject, manager.visual.transform, currentGroup.boxes[i].shape, 
+                hitbox.Initialize(manager.gameObject, manager.visual.transform, currentGroup.boxes[i].shape,
                     currentGroup.hitboxHitInfo, hitboxDefinition, hurtablesHit[currentGroup.ID]);
                 int cID = currentGroup.ID;
                 int groupIndex = index;
@@ -153,6 +149,14 @@ namespace CAF.Entities
             }
             // Add the hitbox group to our list.
             hitboxGroups.Add(index, groupHitboxList);
+        }
+
+        protected virtual Vector3 GetHitboxPosition(BoxDefinition hitboxDefinition)
+        {
+            return manager.transform.position
+                + manager.GetVisualBasedDirection(Vector3.forward) * hitboxDefinition.offset.z
+                + manager.GetVisualBasedDirection(Vector3.right) * hitboxDefinition.offset.x
+                + manager.GetVisualBasedDirection(Vector3.up) * hitboxDefinition.offset.y;
         }
 
         protected virtual Hitbox InstantiateHitbox(Vector3 position, Quaternion rotation)

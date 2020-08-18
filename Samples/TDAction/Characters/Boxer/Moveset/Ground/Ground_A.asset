@@ -15,7 +15,7 @@ MonoBehaviour:
   attackName: Ground A
   description: 
   stateOverride: -1
-  length: 45
+  length: 30
   heightRestriction: 0
   gravityScaleAdded: 0
   animationGround: {fileID: 0}
@@ -46,7 +46,7 @@ MonoBehaviour:
       data:
         ID: 0
         activeFramesStart: 5
-        activeFramesEnd: 28
+        activeFramesEnd: 8
         hitGroupType: 0
         boxes:
         - shape: 0
@@ -87,7 +87,7 @@ MonoBehaviour:
         damageOnBlock: 0
         causesTumble: 0
         opponentForceMagnitude: 0.3
-        opponentForceDir: {x: 1, y: 0, z: 0}
+        opponentForceDir: {x: 0, y: 1, z: 0}
         forceIncludeYForce: 0
         opponentMaxMagnitude: 1
         opponentMinMagnitude: 1
