@@ -21,14 +21,16 @@ MonoBehaviour:
   animationGround: {fileID: 0}
   animationAir: {fileID: 0}
   wrapMode: 0
-  jumpCancelWindows: []
+  jumpCancelWindows:
+  - {x: 9, y: 60}
   enemyStepWindows: []
   landCancelWindows: []
   commandAttackCancelWindows: []
   chargeWindows: []
   boxGroups:
   - id: 0
-  events: []
+  events:
+  - id: 1
   references:
     version: 1
     00000000:
@@ -50,8 +52,25 @@ MonoBehaviour:
         chargeLevelNeeded: -1
         chargeLevelMax: 1
         hitboxHitInfo:
-          id: 1
+          id: 2
     00000001:
+      type: {class: AttackEventDefinition, ns: CAF.Combat, asm: CAF}
+      data:
+        nickname: X Friction
+        active: 1
+        onHit: 0
+        onHitHitboxGroup: 0
+        startFrame: 1
+        endFrame: 1
+        attackEvent:
+          id: 3
+        variables:
+          intVars: 
+          floatVars:
+          - 0.01
+          objectVars: []
+          curveVars: []
+    00000002:
       type: {class: HitInfo, ns: CAF.Combat, asm: CAF}
       data:
         airOnly: 0
@@ -82,3 +101,8 @@ MonoBehaviour:
         opponentMaxMagnitude: 1
         opponentMinMagnitude: 1
         throwConfirm: {fileID: 0}
+    00000003:
+      type: {class: ApplyFriction, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
+      data:
+        xFriction: 1
+        yFriction: 0

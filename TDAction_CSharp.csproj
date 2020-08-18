@@ -82,6 +82,7 @@
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\States\CWalk.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Camera\CameraHandler.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Attack\AttackDefinition.cs" />
+    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\ApplyFriction.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Hitbox.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Moveset\MovesetDefinition.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\TeamTypes.cs" />

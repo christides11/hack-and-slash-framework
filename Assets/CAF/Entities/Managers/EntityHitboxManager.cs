@@ -28,6 +28,15 @@ namespace CAF.Entities
             this.manager = manager;
         }
 
+        public virtual List<IHurtable> GetHitList(int group)
+        {
+            if (!hurtablesHit.ContainsKey(group))
+            {
+                return null;
+            }
+            return hurtablesHit[group];
+        }
+
         /// <summary>
         /// Destroys all boxes and clears variables.
         /// </summary>
