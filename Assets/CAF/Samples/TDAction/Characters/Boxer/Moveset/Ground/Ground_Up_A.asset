@@ -10,23 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b727ab7513f07da4ab8ca7d2f6d52cc9, type: 3}
-  m_Name: Ground_AAA
+  m_Name: Ground_Up_A
   m_EditorClassIdentifier: 
-  attackName: Ground AAA
+  attackName: Ground Up A
   description: 
   stateOverride: -1
-  length: 35
+  length: 30
   heightRestriction: 0
   gravityScaleAdded: 0
   animationGround: {fileID: 0}
   animationAir: {fileID: 0}
   wrapMode: 0
   jumpCancelWindows:
-  - {x: 11, y: 60}
+  - {x: 9, y: 60}
   enemyStepWindows: []
   landCancelWindows: []
-  commandAttackCancelWindows:
-  - {x: 8, y: 60}
+  commandAttackCancelWindows: []
   chargeWindows:
   - id: 0
   boxGroups:
@@ -37,21 +36,23 @@ MonoBehaviour:
     00000000:
       type: {class: ChargeDefinition, ns: CAF.Combat, asm: CAF}
       data:
-        frame: 6
-        releaseOnCompletion: 1
+        frame: 3
+        releaseOnCompletion: 0
         chargeLevels:
-        - maxChargeFrames: 15
+        - maxChargeFrames: 25
+        - maxChargeFrames: 25
+        - maxChargeFrames: 25
     00000001:
       type: {class: BoxGroup, ns: CAF.Combat, asm: CAF}
       data:
         ID: 0
-        activeFramesStart: 7
-        activeFramesEnd: 10
+        activeFramesStart: 5
+        activeFramesEnd: 8
         hitGroupType: 0
         boxes:
         - shape: 0
-          offset: {x: 1, y: 0, z: 0}
-          size: {x: 3, y: 2.2, z: 0}
+          offset: {x: 0.5, y: 0.2, z: 0}
+          size: {x: 3, y: 3, z: 0}
           rotation: {x: 0, y: 0, z: 0}
           radius: 0
           height: 0
@@ -71,11 +72,11 @@ MonoBehaviour:
         spaceBetweenHits: 0
         opponentResetXForce: 1
         opponentResetYForce: 1
-        attackerHitstop: 6
-        hitstop: 6
-        hitstun: 30
+        attackerHitstop: 4
+        hitstop: 4
+        hitstun: 60
         forceType: 0
-        forceRelation: 1
+        forceRelation: 0
         breakArmor: 0
         unblockable: 0
         knockdown: 0
@@ -87,7 +88,7 @@ MonoBehaviour:
         damageOnBlock: 0
         causesTumble: 0
         opponentForceMagnitude: 0.25
-        opponentForceDir: {x: 1, y: 0, z: 1}
+        opponentForceDir: {x: 0, y: 1, z: 0}
         forceIncludeYForce: 0
         opponentMaxMagnitude: 1
         opponentMinMagnitude: 1

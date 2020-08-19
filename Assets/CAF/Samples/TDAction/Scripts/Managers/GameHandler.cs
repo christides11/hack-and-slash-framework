@@ -16,16 +16,41 @@ namespace TDAction.Managers
         public SimObjectManager simulationObjectManager;
 
         [SerializeField] private EntityManager currentPlayerEntity;
+        [SerializeField] private bool frameByFrameMode;
 
         public GameHandler()
         {
             simulationObjectManager = new SimObjectManager();
         }
 
+        public virtual void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                frameByFrameMode = !frameByFrameMode;
+            }
+            if (frameByFrameMode)
+            {
+                if (Input.GetKeyDown(KeyCode.Alpha2))
+                {
+                    UpdateSimulation();
+                }
+            }
+        }
+
         /// <summary>
         /// Ticks the game. This should be called from FixedUpdate.
         /// </summary>
         public virtual void Tick()
+        {
+            if (frameByFrameMode)
+            {
+                return;
+            }
+            UpdateSimulation();
+        }
+
+        private void UpdateSimulation()
         {
             simulationObjectManager.Update(Time.fixedDeltaTime);
             simulationObjectManager.LateUpdate(Time.fixedDeltaTime);

@@ -16,6 +16,7 @@ namespace TDAction.Entities.Characters
             StateManager.AddState(new EntityStateFlinchAir(), (int)EntityStates.FLINCH_AIR);
             StateManager.AddState(new EntityStateFlinchGround(), (int)EntityStates.FLINCH_GROUND);
             StateManager.AddState(new EntityStateTumble(), (int)EntityStates.TUMBLE);
+            StateManager.AddState(new EntityStateKnockdown(), (int)EntityStates.KNOCKDOWN);
         }
     }
 }

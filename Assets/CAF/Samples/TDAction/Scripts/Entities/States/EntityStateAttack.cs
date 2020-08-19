@@ -48,6 +48,11 @@ namespace TDAction.Entities.States
                 return;
             }
 
+            if (TryCommandAttackCancel(currentAttack))
+            {
+                return;
+            }
+
             // Process events.
             bool eventCancel = false;
             for (int i = 0; i < currentAttack.events.Count; i++)
@@ -68,6 +73,31 @@ namespace TDAction.Entities.States
             {
                 entityManager.StateManager.IncrementFrame();
             }
+        }
+
+        /// <summary>
+        /// Tries to cancel into a command attack.
+        /// </summary>
+        /// <param name="currentAttack">The current attack's information.</param>
+        /// <returns>True if we attack canceled.</returns>
+        protected virtual bool TryCommandAttackCancel(AttackDefinition currentAttack)
+        {
+            EntityManager e = GetEntityManager();
+            for (int i = 0; i < currentAttack.commandAttackCancelWindows.Count; i++)
+            {
+                if (e.StateManager.CurrentStateFrame >= currentAttack.commandAttackCancelWindows[i].x
+                    && e.StateManager.CurrentStateFrame <= currentAttack.commandAttackCancelWindows[i].y)
+                {
+                    CAF.Combat.MovesetAttackNode man = (CAF.Combat.MovesetAttackNode)e.CombatManager.TryCommandAttack();
+                    if (man != null)
+                    {
+                        e.CombatManager.SetAttack(man);
+                        e.StateManager.ChangeState((int)EntityStates.ATTACK);
+                        return true;
+                    }
+                }
+            }
+            return false;
         }
 
         /// <summary>

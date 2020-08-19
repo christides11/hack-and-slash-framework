@@ -21,6 +21,11 @@ namespace TDAction.Entities.Characters
 
         public override bool CheckInterrupt()
         {
+            CharacterManager c = GetCharacterController();
+            if (c.TryAttack())
+            {
+                return true;
+            }
             if (GetCharacterController().IsGrounded)
             {
                 GetCharacterController().StateManager.ChangeState((int)EntityStates.IDLE);

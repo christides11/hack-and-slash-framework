@@ -21,7 +21,11 @@ namespace TDAction.Entities.States
 
         public override void OnUpdate()
         {
+            EntityManager e = GetEntityManager();
 
+            e.GetPhysicsManager().ApplyMovementFriction(e.entityDefinition.GetEntityStats().hitstunFrictionAir);
+            e.GetPhysicsManager().HandleGravity();
+            e.StateManager.IncrementFrame();
 
             CheckInterrupt();
         }

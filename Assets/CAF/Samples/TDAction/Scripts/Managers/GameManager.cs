@@ -13,13 +13,21 @@ namespace TDAction.Managers
 
         public GameHandler GameHandler { get { return gameHandler; } }
 
-        [SerializeField] private GameHandler gameHandler;
+        [SerializeField] private GameHandler gameHandler = null;
         [SerializeField] private TDAction.Entities.EntityManager playerEntity;
         [SerializeField] private Vector3 playerSpawnPosition;
 
         private void Awake()
         {
             instance = this;
+        }
+
+        private void Update()
+        {
+            if (gameHandler != null)
+            {
+                gameHandler.Update();
+            }
         }
 
         /// <summary>

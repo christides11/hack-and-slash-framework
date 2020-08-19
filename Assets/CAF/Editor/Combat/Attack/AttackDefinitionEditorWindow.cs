@@ -13,7 +13,7 @@ namespace CAF.Combat
         public static void Init(AttackDefinition attack)
         {
             AttackDefinitionEditorWindow window =
-                (AttackDefinitionEditorWindow)EditorWindow.GetWindow(typeof(AttackDefinitionEditorWindow));
+                ScriptableObject.CreateInstance<AttackDefinitionEditorWindow>();
             window.attack = attack;
             window.Show();
         }

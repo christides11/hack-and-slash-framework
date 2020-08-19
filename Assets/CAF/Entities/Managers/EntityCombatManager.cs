@@ -266,6 +266,7 @@ namespace CAF.Entities
 
         protected virtual bool CheckStickDirection(Vector2 wantedDirection, float deviation, int framesBack)
         {
+            Debug.LogError("CheckStickDirection has to be overrided for command inputs to work.");
             return false;
         }
 

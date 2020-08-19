@@ -83,6 +83,10 @@
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Camera\CameraHandler.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Attack\AttackDefinition.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\ApplyFriction.cs" />
+    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\ApplyGravity.cs" />
+    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\ClampGravity.cs" />
+    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\ForceAdd.cs" />
+    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\ForceSet.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Hitbox.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Moveset\MovesetDefinition.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\TeamTypes.cs" />
