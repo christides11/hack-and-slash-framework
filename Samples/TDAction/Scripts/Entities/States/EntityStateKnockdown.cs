@@ -11,7 +11,8 @@ namespace TDAction.Entities.States
 
         public override void Initialize()
         {
-            GetEntityManager().PhysicsManager.SetForceDirect(Vector3.zero, Vector3.zero);
+            GetEntityManager().PhysicsManager.forceMovement = Vector3.zero;
+            GetEntityManager().PhysicsManager.forceGravity = Vector3.zero;
         }
 
         public override void OnUpdate()

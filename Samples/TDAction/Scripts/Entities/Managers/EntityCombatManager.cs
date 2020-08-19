@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TDAction.Combat;
+using TDAction.Inputs;
 using UnityEngine;
 
 namespace TDAction.Entities
@@ -86,6 +87,21 @@ namespace TDAction.Entities
                 manager.StateManager.ChangeState((int)(manager.IsGrounded ? EntityStates.FLINCH_GROUND : EntityStates.FLINCH_AIR));
             }
             return hitReaction;
+        }
+
+        protected override bool CheckStickDirection(Vector2 wantedDirection, float deviation, int framesBack)
+        {
+            Vector2 stickDir = manager.InputManager.GetAxis2D((int)EntityInputs.MOVEMENT, framesBack);
+            if (stickDir.magnitude < 0.2f)
+            {
+                return false;
+            }
+
+            if (Vector2.Dot(stickDir, wantedDirection) >= deviation)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

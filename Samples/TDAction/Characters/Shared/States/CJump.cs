@@ -34,6 +34,10 @@ namespace TDAction.Entities.Characters
         public override bool CheckInterrupt()
         {
             CharacterManager c = GetCharacterController();
+            if (c.TryAttack())
+            {
+                return true;
+            }
             if (c.PhysicsManager.forceGravity.y <= 0)
             {
                 c.StateManager.ChangeState((int)EntityStates.FALL);
