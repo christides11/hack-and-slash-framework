@@ -305,6 +305,19 @@ references:
   isSpec: "True"
   fullName: CAF.Combat.AttackDefinitionEditorWindow.CreateChargeDefinition
   nameWithType: AttackDefinitionEditorWindow.CreateChargeDefinition
+- uid: CAF.Combat.AttackDefinitionEditorWindow.CreateChargeLevelInstance
+  name: CreateChargeLevelInstance()
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_CreateChargeLevelInstance
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.CreateChargeLevelInstance
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.CreateChargeLevelInstance()
+  nameWithType: AttackDefinitionEditorWindow.CreateChargeLevelInstance()
+- uid: CAF.Combat.AttackDefinitionEditorWindow.CreateChargeLevelInstance*
+  name: CreateChargeLevelInstance
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_CreateChargeLevelInstance_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.CreateChargeLevelInstance
+  isSpec: "True"
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.CreateChargeLevelInstance
+  nameWithType: AttackDefinitionEditorWindow.CreateChargeLevelInstance
 - uid: CAF.Combat.AttackDefinitionEditorWindow.currentHitboxGroupIndex
   name: currentHitboxGroupIndex
   href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_currentHitboxGroupIndex
@@ -343,32 +356,6 @@ references:
   isSpec: "True"
   fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroup
   nameWithType: AttackDefinitionEditorWindow.DrawBoxGroup
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupGrabOptions(CAF.Combat.BoxGroup)
-  name: DrawBoxGroupGrabOptions(BoxGroup)
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawBoxGroupGrabOptions_CAF_Combat_BoxGroup_
-  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupGrabOptions(CAF.Combat.BoxGroup)
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupGrabOptions(CAF.Combat.BoxGroup)
-  nameWithType: AttackDefinitionEditorWindow.DrawBoxGroupGrabOptions(BoxGroup)
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupGrabOptions*
-  name: DrawBoxGroupGrabOptions
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawBoxGroupGrabOptions_
-  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupGrabOptions
-  isSpec: "True"
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupGrabOptions
-  nameWithType: AttackDefinitionEditorWindow.DrawBoxGroupGrabOptions
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupHitOptions(CAF.Combat.BoxGroup)
-  name: DrawBoxGroupHitOptions(BoxGroup)
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawBoxGroupHitOptions_CAF_Combat_BoxGroup_
-  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupHitOptions(CAF.Combat.BoxGroup)
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupHitOptions(CAF.Combat.BoxGroup)
-  nameWithType: AttackDefinitionEditorWindow.DrawBoxGroupHitOptions(BoxGroup)
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupHitOptions*
-  name: DrawBoxGroupHitOptions
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawBoxGroupHitOptions_
-  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupHitOptions
-  isSpec: "True"
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroupHitOptions
-  nameWithType: AttackDefinitionEditorWindow.DrawBoxGroupHitOptions
 - uid: CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindow(System.String,System.Boolean@,System.Collections.Generic.List{Vector2Int}@,System.Single)
   name: DrawCancelWindow(String, ref Boolean, ref List<Vector2Int>, Single)
   href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawCancelWindow_System_String_System_Boolean__System_Collections_Generic_List_Vector2Int___System_Single_
@@ -385,6 +372,19 @@ references:
   isSpec: "True"
   fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindow
   nameWithType: AttackDefinitionEditorWindow.DrawCancelWindow
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawChargeLevel(System.Int32,System.Int32)
+  name: DrawChargeLevel(Int32, Int32)
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawChargeLevel_System_Int32_System_Int32_
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawChargeLevel(System.Int32,System.Int32)
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawChargeLevel(System.Int32, System.Int32)
+  nameWithType: AttackDefinitionEditorWindow.DrawChargeLevel(Int32, Int32)
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawChargeLevel*
+  name: DrawChargeLevel
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawChargeLevel_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawChargeLevel
+  isSpec: "True"
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawChargeLevel
+  nameWithType: AttackDefinitionEditorWindow.DrawChargeLevel
 - uid: CAF.Combat.AttackDefinitionEditorWindow.DrawChargeWindow(System.Int32)
   name: DrawChargeWindow(Int32)
   href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawChargeWindow_System_Int32_
@@ -437,58 +437,6 @@ references:
   isSpec: "True"
   fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxOptions
   nameWithType: AttackDefinitionEditorWindow.DrawHitboxOptions
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawHitDamageOptions(CAF.Combat.BoxGroup)
-  name: DrawHitDamageOptions(BoxGroup)
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawHitDamageOptions_CAF_Combat_BoxGroup_
-  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawHitDamageOptions(CAF.Combat.BoxGroup)
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawHitDamageOptions(CAF.Combat.BoxGroup)
-  nameWithType: AttackDefinitionEditorWindow.DrawHitDamageOptions(BoxGroup)
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawHitDamageOptions*
-  name: DrawHitDamageOptions
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawHitDamageOptions_
-  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawHitDamageOptions
-  isSpec: "True"
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawHitDamageOptions
-  nameWithType: AttackDefinitionEditorWindow.DrawHitDamageOptions
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawHitEffectsOptions(CAF.Combat.BoxGroup)
-  name: DrawHitEffectsOptions(BoxGroup)
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawHitEffectsOptions_CAF_Combat_BoxGroup_
-  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawHitEffectsOptions(CAF.Combat.BoxGroup)
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawHitEffectsOptions(CAF.Combat.BoxGroup)
-  nameWithType: AttackDefinitionEditorWindow.DrawHitEffectsOptions(BoxGroup)
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawHitEffectsOptions*
-  name: DrawHitEffectsOptions
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawHitEffectsOptions_
-  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawHitEffectsOptions
-  isSpec: "True"
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawHitEffectsOptions
-  nameWithType: AttackDefinitionEditorWindow.DrawHitEffectsOptions
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawHitForcesOptions(CAF.Combat.BoxGroup)
-  name: DrawHitForcesOptions(BoxGroup)
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawHitForcesOptions_CAF_Combat_BoxGroup_
-  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawHitForcesOptions(CAF.Combat.BoxGroup)
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawHitForcesOptions(CAF.Combat.BoxGroup)
-  nameWithType: AttackDefinitionEditorWindow.DrawHitForcesOptions(BoxGroup)
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawHitForcesOptions*
-  name: DrawHitForcesOptions
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawHitForcesOptions_
-  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawHitForcesOptions
-  isSpec: "True"
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawHitForcesOptions
-  nameWithType: AttackDefinitionEditorWindow.DrawHitForcesOptions
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawHitStunOptions(CAF.Combat.BoxGroup)
-  name: DrawHitStunOptions(BoxGroup)
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawHitStunOptions_CAF_Combat_BoxGroup_
-  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawHitStunOptions(CAF.Combat.BoxGroup)
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawHitStunOptions(CAF.Combat.BoxGroup)
-  nameWithType: AttackDefinitionEditorWindow.DrawHitStunOptions(BoxGroup)
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawHitStunOptions*
-  name: DrawHitStunOptions
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawHitStunOptions_
-  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawHitStunOptions
-  isSpec: "True"
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawHitStunOptions
-  nameWithType: AttackDefinitionEditorWindow.DrawHitStunOptions
 - uid: CAF.Combat.AttackDefinitionEditorWindow.DrawMenu
   name: DrawMenu()
   href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawMenu
@@ -546,6 +494,12 @@ references:
   commentId: F:CAF.Combat.AttackDefinitionEditorWindow.eventVariablesFoldout
   fullName: CAF.Combat.AttackDefinitionEditorWindow.eventVariablesFoldout
   nameWithType: AttackDefinitionEditorWindow.eventVariablesFoldout
+- uid: CAF.Combat.AttackDefinitionEditorWindow.hitInfoTypes
+  name: hitInfoTypes
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_hitInfoTypes
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.hitInfoTypes
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.hitInfoTypes
+  nameWithType: AttackDefinitionEditorWindow.hitInfoTypes
 - uid: CAF.Combat.AttackDefinitionEditorWindow.Init(CAF.Combat.AttackDefinition)
   name: Init(AttackDefinition)
   href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_Init_CAF_Combat_AttackDefinition_
@@ -610,6 +564,19 @@ references:
   isSpec: "True"
   fullName: CAF.Combat.AttackDefinitionEditorWindow.OnGUI
   nameWithType: AttackDefinitionEditorWindow.OnGUI
+- uid: CAF.Combat.AttackDefinitionEditorWindow.OnHitInfoSelected(System.Object)
+  name: OnHitInfoSelected(Object)
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_OnHitInfoSelected_System_Object_
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.OnHitInfoSelected(System.Object)
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.OnHitInfoSelected(System.Object)
+  nameWithType: AttackDefinitionEditorWindow.OnHitInfoSelected(Object)
+- uid: CAF.Combat.AttackDefinitionEditorWindow.OnHitInfoSelected*
+  name: OnHitInfoSelected
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_OnHitInfoSelected_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.OnHitInfoSelected
+  isSpec: "True"
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.OnHitInfoSelected
+  nameWithType: AttackDefinitionEditorWindow.OnHitInfoSelected
 - uid: CAF.Combat.AttackDefinitionEditorWindow.scrollPos
   name: scrollPos
   href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_scrollPos
@@ -868,6 +835,18 @@ references:
   commentId: F:CAF.Combat.BoxGroup.boxes
   fullName: CAF.Combat.BoxGroup.boxes
   nameWithType: BoxGroup.boxes
+- uid: CAF.Combat.BoxGroup.chargeLevelMax
+  name: chargeLevelMax
+  href: api/CAF.Combat.BoxGroup.html#CAF_Combat_BoxGroup_chargeLevelMax
+  commentId: F:CAF.Combat.BoxGroup.chargeLevelMax
+  fullName: CAF.Combat.BoxGroup.chargeLevelMax
+  nameWithType: BoxGroup.chargeLevelMax
+- uid: CAF.Combat.BoxGroup.chargeLevelNeeded
+  name: chargeLevelNeeded
+  href: api/CAF.Combat.BoxGroup.html#CAF_Combat_BoxGroup_chargeLevelNeeded
+  commentId: F:CAF.Combat.BoxGroup.chargeLevelNeeded
+  fullName: CAF.Combat.BoxGroup.chargeLevelNeeded
+  nameWithType: BoxGroup.chargeLevelNeeded
 - uid: CAF.Combat.BoxGroup.hitboxHitInfo
   name: hitboxHitInfo
   href: api/CAF.Combat.BoxGroup.html#CAF_Combat_BoxGroup_hitboxHitInfo
@@ -892,12 +871,6 @@ references:
   commentId: F:CAF.Combat.BoxGroup.styleGain
   fullName: CAF.Combat.BoxGroup.styleGain
   nameWithType: BoxGroup.styleGain
-- uid: CAF.Combat.BoxGroup.throwConfirm
-  name: throwConfirm
-  href: api/CAF.Combat.BoxGroup.html#CAF_Combat_BoxGroup_throwConfirm
-  commentId: F:CAF.Combat.BoxGroup.throwConfirm
-  fullName: CAF.Combat.BoxGroup.throwConfirm
-  nameWithType: BoxGroup.throwConfirm
 - uid: CAF.Combat.BoxGroupType
   name: BoxGroupType
   href: api/CAF.Combat.BoxGroupType.html
@@ -946,18 +919,36 @@ references:
   commentId: T:CAF.Combat.ChargeDefinition
   fullName: CAF.Combat.ChargeDefinition
   nameWithType: ChargeDefinition
+- uid: CAF.Combat.ChargeDefinition.chargeLevels
+  name: chargeLevels
+  href: api/CAF.Combat.ChargeDefinition.html#CAF_Combat_ChargeDefinition_chargeLevels
+  commentId: F:CAF.Combat.ChargeDefinition.chargeLevels
+  fullName: CAF.Combat.ChargeDefinition.chargeLevels
+  nameWithType: ChargeDefinition.chargeLevels
 - uid: CAF.Combat.ChargeDefinition.frame
   name: frame
   href: api/CAF.Combat.ChargeDefinition.html#CAF_Combat_ChargeDefinition_frame
   commentId: F:CAF.Combat.ChargeDefinition.frame
   fullName: CAF.Combat.ChargeDefinition.frame
   nameWithType: ChargeDefinition.frame
-- uid: CAF.Combat.ChargeDefinition.maxChargeFrames
+- uid: CAF.Combat.ChargeDefinition.releaseOnCompletion
+  name: releaseOnCompletion
+  href: api/CAF.Combat.ChargeDefinition.html#CAF_Combat_ChargeDefinition_releaseOnCompletion
+  commentId: F:CAF.Combat.ChargeDefinition.releaseOnCompletion
+  fullName: CAF.Combat.ChargeDefinition.releaseOnCompletion
+  nameWithType: ChargeDefinition.releaseOnCompletion
+- uid: CAF.Combat.ChargeLevel
+  name: ChargeLevel
+  href: api/CAF.Combat.ChargeLevel.html
+  commentId: T:CAF.Combat.ChargeLevel
+  fullName: CAF.Combat.ChargeLevel
+  nameWithType: ChargeLevel
+- uid: CAF.Combat.ChargeLevel.maxChargeFrames
   name: maxChargeFrames
-  href: api/CAF.Combat.ChargeDefinition.html#CAF_Combat_ChargeDefinition_maxChargeFrames
-  commentId: F:CAF.Combat.ChargeDefinition.maxChargeFrames
-  fullName: CAF.Combat.ChargeDefinition.maxChargeFrames
-  nameWithType: ChargeDefinition.maxChargeFrames
+  href: api/CAF.Combat.ChargeLevel.html#CAF_Combat_ChargeLevel_maxChargeFrames
+  commentId: F:CAF.Combat.ChargeLevel.maxChargeFrames
+  fullName: CAF.Combat.ChargeLevel.maxChargeFrames
+  nameWithType: ChargeLevel.maxChargeFrames
 - uid: CAF.Combat.ForceType
   name: ForceType
   href: api/CAF.Combat.ForceType.html
@@ -976,6 +967,12 @@ references:
   commentId: F:CAF.Combat.ForceType.SET
   fullName: CAF.Combat.ForceType.SET
   nameWithType: ForceType.SET
+- uid: CAF.Combat.HealInfoBase
+  name: HealInfoBase
+  href: api/CAF.Combat.HealInfoBase.html
+  commentId: T:CAF.Combat.HealInfoBase
+  fullName: CAF.Combat.HealInfoBase
+  nameWithType: HealInfoBase
 - uid: CAF.Combat.Hitbox
   name: Hitbox
   href: api/CAF.Combat.Hitbox.html
@@ -1027,51 +1024,6 @@ references:
   isSpec: "True"
   fullName: CAF.Combat.Hitbox.CheckHurtables
   nameWithType: Hitbox.CheckHurtables
-- uid: CAF.Combat.Hitbox.coll
-  name: coll
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_coll
-  commentId: F:CAF.Combat.Hitbox.coll
-  fullName: CAF.Combat.Hitbox.coll
-  nameWithType: Hitbox.coll
-- uid: CAF.Combat.Hitbox.CreateCapsule(System.Single,System.Single)
-  name: CreateCapsule(Single, Single)
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_CreateCapsule_System_Single_System_Single_
-  commentId: M:CAF.Combat.Hitbox.CreateCapsule(System.Single,System.Single)
-  fullName: CAF.Combat.Hitbox.CreateCapsule(System.Single, System.Single)
-  nameWithType: Hitbox.CreateCapsule(Single, Single)
-- uid: CAF.Combat.Hitbox.CreateCapsule*
-  name: CreateCapsule
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_CreateCapsule_
-  commentId: Overload:CAF.Combat.Hitbox.CreateCapsule
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox.CreateCapsule
-  nameWithType: Hitbox.CreateCapsule
-- uid: CAF.Combat.Hitbox.CreateRectangle(Vector3)
-  name: CreateRectangle(Vector3)
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_CreateRectangle_Vector3_
-  commentId: M:CAF.Combat.Hitbox.CreateRectangle(Vector3)
-  fullName: CAF.Combat.Hitbox.CreateRectangle(Vector3)
-  nameWithType: Hitbox.CreateRectangle(Vector3)
-- uid: CAF.Combat.Hitbox.CreateRectangle*
-  name: CreateRectangle
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_CreateRectangle_
-  commentId: Overload:CAF.Combat.Hitbox.CreateRectangle
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox.CreateRectangle
-  nameWithType: Hitbox.CreateRectangle
-- uid: CAF.Combat.Hitbox.CreateSphere(System.Single)
-  name: CreateSphere(Single)
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_CreateSphere_System_Single_
-  commentId: M:CAF.Combat.Hitbox.CreateSphere(System.Single)
-  fullName: CAF.Combat.Hitbox.CreateSphere(System.Single)
-  nameWithType: Hitbox.CreateSphere(Single)
-- uid: CAF.Combat.Hitbox.CreateSphere*
-  name: CreateSphere
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_CreateSphere_
-  commentId: Overload:CAF.Combat.Hitbox.CreateSphere
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox.CreateSphere
-  nameWithType: Hitbox.CreateSphere
 - uid: CAF.Combat.Hitbox.Deactivate
   name: Deactivate()
   href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_Deactivate
@@ -1109,21 +1061,34 @@ references:
   commentId: T:CAF.Combat.Hitbox.HurtAction
   fullName: CAF.Combat.Hitbox.HurtAction
   nameWithType: Hitbox.HurtAction
+- uid: CAF.Combat.Hitbox.HurtHurtable(CAF.Combat.IHurtable)
+  name: HurtHurtable(IHurtable)
+  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_HurtHurtable_CAF_Combat_IHurtable_
+  commentId: M:CAF.Combat.Hitbox.HurtHurtable(CAF.Combat.IHurtable)
+  fullName: CAF.Combat.Hitbox.HurtHurtable(CAF.Combat.IHurtable)
+  nameWithType: Hitbox.HurtHurtable(IHurtable)
+- uid: CAF.Combat.Hitbox.HurtHurtable*
+  name: HurtHurtable
+  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_HurtHurtable_
+  commentId: Overload:CAF.Combat.Hitbox.HurtHurtable
+  isSpec: "True"
+  fullName: CAF.Combat.Hitbox.HurtHurtable
+  nameWithType: Hitbox.HurtHurtable
 - uid: CAF.Combat.Hitbox.ignoreList
   name: ignoreList
   href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_ignoreList
   commentId: F:CAF.Combat.Hitbox.ignoreList
   fullName: CAF.Combat.Hitbox.ignoreList
   nameWithType: Hitbox.ignoreList
-- uid: CAF.Combat.Hitbox.Initialize(GameObject,Transform,CAF.Combat.BoxShapes,CAF.Combat.HitInfo,CAF.Combat.BoxDefinition,System.Collections.Generic.List{CAF.Combat.IHurtable})
-  name: Initialize(GameObject, Transform, BoxShapes, HitInfo, BoxDefinition, List<IHurtable>)
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_Initialize_GameObject_Transform_CAF_Combat_BoxShapes_CAF_Combat_HitInfo_CAF_Combat_BoxDefinition_System_Collections_Generic_List_CAF_Combat_IHurtable__
-  commentId: M:CAF.Combat.Hitbox.Initialize(GameObject,Transform,CAF.Combat.BoxShapes,CAF.Combat.HitInfo,CAF.Combat.BoxDefinition,System.Collections.Generic.List{CAF.Combat.IHurtable})
-  name.vb: Initialize(GameObject, Transform, BoxShapes, HitInfo, BoxDefinition, List(Of IHurtable))
-  fullName: CAF.Combat.Hitbox.Initialize(GameObject, Transform, CAF.Combat.BoxShapes, CAF.Combat.HitInfo, CAF.Combat.BoxDefinition, System.Collections.Generic.List<CAF.Combat.IHurtable>)
-  fullName.vb: CAF.Combat.Hitbox.Initialize(GameObject, Transform, CAF.Combat.BoxShapes, CAF.Combat.HitInfo, CAF.Combat.BoxDefinition, System.Collections.Generic.List(Of CAF.Combat.IHurtable))
-  nameWithType: Hitbox.Initialize(GameObject, Transform, BoxShapes, HitInfo, BoxDefinition, List<IHurtable>)
-  nameWithType.vb: Hitbox.Initialize(GameObject, Transform, BoxShapes, HitInfo, BoxDefinition, List(Of IHurtable))
+- uid: CAF.Combat.Hitbox.Initialize(GameObject,Transform,System.Int32,CAF.Combat.BoxShapes,CAF.Combat.HitInfoBase,CAF.Combat.BoxDefinition,System.Collections.Generic.List{CAF.Combat.IHurtable})
+  name: Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinition, List<IHurtable>)
+  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_Initialize_GameObject_Transform_System_Int32_CAF_Combat_BoxShapes_CAF_Combat_HitInfoBase_CAF_Combat_BoxDefinition_System_Collections_Generic_List_CAF_Combat_IHurtable__
+  commentId: M:CAF.Combat.Hitbox.Initialize(GameObject,Transform,System.Int32,CAF.Combat.BoxShapes,CAF.Combat.HitInfoBase,CAF.Combat.BoxDefinition,System.Collections.Generic.List{CAF.Combat.IHurtable})
+  name.vb: Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinition, List(Of IHurtable))
+  fullName: CAF.Combat.Hitbox.Initialize(GameObject, Transform, System.Int32, CAF.Combat.BoxShapes, CAF.Combat.HitInfoBase, CAF.Combat.BoxDefinition, System.Collections.Generic.List<CAF.Combat.IHurtable>)
+  fullName.vb: CAF.Combat.Hitbox.Initialize(GameObject, Transform, System.Int32, CAF.Combat.BoxShapes, CAF.Combat.HitInfoBase, CAF.Combat.BoxDefinition, System.Collections.Generic.List(Of CAF.Combat.IHurtable))
+  nameWithType: Hitbox.Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinition, List<IHurtable>)
+  nameWithType.vb: Hitbox.Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinition, List(Of IHurtable))
 - uid: CAF.Combat.Hitbox.Initialize*
   name: Initialize
   href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_Initialize_
@@ -1137,19 +1102,6 @@ references:
   commentId: E:CAF.Combat.Hitbox.OnHurt
   fullName: CAF.Combat.Hitbox.OnHurt
   nameWithType: Hitbox.OnHurt
-- uid: CAF.Combat.Hitbox.OnTriggerStay(Collider)
-  name: OnTriggerStay(Collider)
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_OnTriggerStay_Collider_
-  commentId: M:CAF.Combat.Hitbox.OnTriggerStay(Collider)
-  fullName: CAF.Combat.Hitbox.OnTriggerStay(Collider)
-  nameWithType: Hitbox.OnTriggerStay(Collider)
-- uid: CAF.Combat.Hitbox.OnTriggerStay*
-  name: OnTriggerStay
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_OnTriggerStay_
-  commentId: Overload:CAF.Combat.Hitbox.OnTriggerStay
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox.OnTriggerStay
-  nameWithType: Hitbox.OnTriggerStay
 - uid: CAF.Combat.Hitbox.owner
   name: owner
   href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_owner
@@ -1172,6 +1124,273 @@ references:
   isSpec: "True"
   fullName: CAF.Combat.Hitbox.ReActivate
   nameWithType: Hitbox.ReActivate
+- uid: CAF.Combat.Hitbox2D
+  name: Hitbox2D
+  href: api/CAF.Combat.Hitbox2D.html
+  commentId: T:CAF.Combat.Hitbox2D
+  fullName: CAF.Combat.Hitbox2D
+  nameWithType: Hitbox2D
+- uid: CAF.Combat.Hitbox2D.Activate
+  name: Activate()
+  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_Activate
+  commentId: M:CAF.Combat.Hitbox2D.Activate
+  fullName: CAF.Combat.Hitbox2D.Activate()
+  nameWithType: Hitbox2D.Activate()
+- uid: CAF.Combat.Hitbox2D.Activate*
+  name: Activate
+  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_Activate_
+  commentId: Overload:CAF.Combat.Hitbox2D.Activate
+  isSpec: "True"
+  fullName: CAF.Combat.Hitbox2D.Activate
+  nameWithType: Hitbox2D.Activate
+- uid: CAF.Combat.Hitbox2D.CheckForHurtboxes(Collider2D)
+  name: CheckForHurtboxes(Collider2D)
+  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_CheckForHurtboxes_Collider2D_
+  commentId: M:CAF.Combat.Hitbox2D.CheckForHurtboxes(Collider2D)
+  fullName: CAF.Combat.Hitbox2D.CheckForHurtboxes(Collider2D)
+  nameWithType: Hitbox2D.CheckForHurtboxes(Collider2D)
+- uid: CAF.Combat.Hitbox2D.CheckForHurtboxes*
+  name: CheckForHurtboxes
+  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_CheckForHurtboxes_
+  commentId: Overload:CAF.Combat.Hitbox2D.CheckForHurtboxes
+  isSpec: "True"
+  fullName: CAF.Combat.Hitbox2D.CheckForHurtboxes
+  nameWithType: Hitbox2D.CheckForHurtboxes
+- uid: CAF.Combat.Hitbox2D.coll
+  name: coll
+  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_coll
+  commentId: F:CAF.Combat.Hitbox2D.coll
+  fullName: CAF.Combat.Hitbox2D.coll
+  nameWithType: Hitbox2D.coll
+- uid: CAF.Combat.Hitbox2D.CreateCapsule(System.Single,System.Single)
+  name: CreateCapsule(Single, Single)
+  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_CreateCapsule_System_Single_System_Single_
+  commentId: M:CAF.Combat.Hitbox2D.CreateCapsule(System.Single,System.Single)
+  fullName: CAF.Combat.Hitbox2D.CreateCapsule(System.Single, System.Single)
+  nameWithType: Hitbox2D.CreateCapsule(Single, Single)
+- uid: CAF.Combat.Hitbox2D.CreateCapsule*
+  name: CreateCapsule
+  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_CreateCapsule_
+  commentId: Overload:CAF.Combat.Hitbox2D.CreateCapsule
+  isSpec: "True"
+  fullName: CAF.Combat.Hitbox2D.CreateCapsule
+  nameWithType: Hitbox2D.CreateCapsule
+- uid: CAF.Combat.Hitbox2D.CreateCircle(System.Single)
+  name: CreateCircle(Single)
+  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_CreateCircle_System_Single_
+  commentId: M:CAF.Combat.Hitbox2D.CreateCircle(System.Single)
+  fullName: CAF.Combat.Hitbox2D.CreateCircle(System.Single)
+  nameWithType: Hitbox2D.CreateCircle(Single)
+- uid: CAF.Combat.Hitbox2D.CreateCircle*
+  name: CreateCircle
+  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_CreateCircle_
+  commentId: Overload:CAF.Combat.Hitbox2D.CreateCircle
+  isSpec: "True"
+  fullName: CAF.Combat.Hitbox2D.CreateCircle
+  nameWithType: Hitbox2D.CreateCircle
+- uid: CAF.Combat.Hitbox2D.CreateRectangle(Vector2)
+  name: CreateRectangle(Vector2)
+  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_CreateRectangle_Vector2_
+  commentId: M:CAF.Combat.Hitbox2D.CreateRectangle(Vector2)
+  fullName: CAF.Combat.Hitbox2D.CreateRectangle(Vector2)
+  nameWithType: Hitbox2D.CreateRectangle(Vector2)
+- uid: CAF.Combat.Hitbox2D.CreateRectangle*
+  name: CreateRectangle
+  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_CreateRectangle_
+  commentId: Overload:CAF.Combat.Hitbox2D.CreateRectangle
+  isSpec: "True"
+  fullName: CAF.Combat.Hitbox2D.CreateRectangle
+  nameWithType: Hitbox2D.CreateRectangle
+- uid: CAF.Combat.Hitbox2D.Deactivate
+  name: Deactivate()
+  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_Deactivate
+  commentId: M:CAF.Combat.Hitbox2D.Deactivate
+  fullName: CAF.Combat.Hitbox2D.Deactivate()
+  nameWithType: Hitbox2D.Deactivate()
+- uid: CAF.Combat.Hitbox2D.Deactivate*
+  name: Deactivate
+  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_Deactivate_
+  commentId: Overload:CAF.Combat.Hitbox2D.Deactivate
+  isSpec: "True"
+  fullName: CAF.Combat.Hitbox2D.Deactivate
+  nameWithType: Hitbox2D.Deactivate
+- uid: CAF.Combat.Hitbox2D.HurtHurtable(CAF.Combat.IHurtable)
+  name: HurtHurtable(IHurtable)
+  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_HurtHurtable_CAF_Combat_IHurtable_
+  commentId: M:CAF.Combat.Hitbox2D.HurtHurtable(CAF.Combat.IHurtable)
+  fullName: CAF.Combat.Hitbox2D.HurtHurtable(CAF.Combat.IHurtable)
+  nameWithType: Hitbox2D.HurtHurtable(IHurtable)
+- uid: CAF.Combat.Hitbox2D.HurtHurtable*
+  name: HurtHurtable
+  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_HurtHurtable_
+  commentId: Overload:CAF.Combat.Hitbox2D.HurtHurtable
+  isSpec: "True"
+  fullName: CAF.Combat.Hitbox2D.HurtHurtable
+  nameWithType: Hitbox2D.HurtHurtable
+- uid: CAF.Combat.Hitbox2D.Initialize(GameObject,Transform,System.Int32,CAF.Combat.BoxShapes,CAF.Combat.HitInfoBase,CAF.Combat.BoxDefinition,System.Collections.Generic.List{CAF.Combat.IHurtable})
+  name: Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinition, List<IHurtable>)
+  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_Initialize_GameObject_Transform_System_Int32_CAF_Combat_BoxShapes_CAF_Combat_HitInfoBase_CAF_Combat_BoxDefinition_System_Collections_Generic_List_CAF_Combat_IHurtable__
+  commentId: M:CAF.Combat.Hitbox2D.Initialize(GameObject,Transform,System.Int32,CAF.Combat.BoxShapes,CAF.Combat.HitInfoBase,CAF.Combat.BoxDefinition,System.Collections.Generic.List{CAF.Combat.IHurtable})
+  name.vb: Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinition, List(Of IHurtable))
+  fullName: CAF.Combat.Hitbox2D.Initialize(GameObject, Transform, System.Int32, CAF.Combat.BoxShapes, CAF.Combat.HitInfoBase, CAF.Combat.BoxDefinition, System.Collections.Generic.List<CAF.Combat.IHurtable>)
+  fullName.vb: CAF.Combat.Hitbox2D.Initialize(GameObject, Transform, System.Int32, CAF.Combat.BoxShapes, CAF.Combat.HitInfoBase, CAF.Combat.BoxDefinition, System.Collections.Generic.List(Of CAF.Combat.IHurtable))
+  nameWithType: Hitbox2D.Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinition, List<IHurtable>)
+  nameWithType.vb: Hitbox2D.Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinition, List(Of IHurtable))
+- uid: CAF.Combat.Hitbox2D.Initialize*
+  name: Initialize
+  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_Initialize_
+  commentId: Overload:CAF.Combat.Hitbox2D.Initialize
+  isSpec: "True"
+  fullName: CAF.Combat.Hitbox2D.Initialize
+  nameWithType: Hitbox2D.Initialize
+- uid: CAF.Combat.Hitbox2D.OnTriggerStay2D(Collider2D)
+  name: OnTriggerStay2D(Collider2D)
+  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_OnTriggerStay2D_Collider2D_
+  commentId: M:CAF.Combat.Hitbox2D.OnTriggerStay2D(Collider2D)
+  fullName: CAF.Combat.Hitbox2D.OnTriggerStay2D(Collider2D)
+  nameWithType: Hitbox2D.OnTriggerStay2D(Collider2D)
+- uid: CAF.Combat.Hitbox2D.OnTriggerStay2D*
+  name: OnTriggerStay2D
+  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_OnTriggerStay2D_
+  commentId: Overload:CAF.Combat.Hitbox2D.OnTriggerStay2D
+  isSpec: "True"
+  fullName: CAF.Combat.Hitbox2D.OnTriggerStay2D
+  nameWithType: Hitbox2D.OnTriggerStay2D
+- uid: CAF.Combat.Hitbox2D.ReActivate(System.Collections.Generic.List{CAF.Combat.IHurtable})
+  name: ReActivate(List<IHurtable>)
+  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_ReActivate_System_Collections_Generic_List_CAF_Combat_IHurtable__
+  commentId: M:CAF.Combat.Hitbox2D.ReActivate(System.Collections.Generic.List{CAF.Combat.IHurtable})
+  name.vb: ReActivate(List(Of IHurtable))
+  fullName: CAF.Combat.Hitbox2D.ReActivate(System.Collections.Generic.List<CAF.Combat.IHurtable>)
+  fullName.vb: CAF.Combat.Hitbox2D.ReActivate(System.Collections.Generic.List(Of CAF.Combat.IHurtable))
+  nameWithType: Hitbox2D.ReActivate(List<IHurtable>)
+  nameWithType.vb: Hitbox2D.ReActivate(List(Of IHurtable))
+- uid: CAF.Combat.Hitbox2D.ReActivate*
+  name: ReActivate
+  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_ReActivate_
+  commentId: Overload:CAF.Combat.Hitbox2D.ReActivate
+  isSpec: "True"
+  fullName: CAF.Combat.Hitbox2D.ReActivate
+  nameWithType: Hitbox2D.ReActivate
+- uid: CAF.Combat.Hitbox3D
+  name: Hitbox3D
+  href: api/CAF.Combat.Hitbox3D.html
+  commentId: T:CAF.Combat.Hitbox3D
+  fullName: CAF.Combat.Hitbox3D
+  nameWithType: Hitbox3D
+- uid: CAF.Combat.Hitbox3D.Activate
+  name: Activate()
+  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_Activate
+  commentId: M:CAF.Combat.Hitbox3D.Activate
+  fullName: CAF.Combat.Hitbox3D.Activate()
+  nameWithType: Hitbox3D.Activate()
+- uid: CAF.Combat.Hitbox3D.Activate*
+  name: Activate
+  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_Activate_
+  commentId: Overload:CAF.Combat.Hitbox3D.Activate
+  isSpec: "True"
+  fullName: CAF.Combat.Hitbox3D.Activate
+  nameWithType: Hitbox3D.Activate
+- uid: CAF.Combat.Hitbox3D.CheckForHurtboxes(Collider)
+  name: CheckForHurtboxes(Collider)
+  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_CheckForHurtboxes_Collider_
+  commentId: M:CAF.Combat.Hitbox3D.CheckForHurtboxes(Collider)
+  fullName: CAF.Combat.Hitbox3D.CheckForHurtboxes(Collider)
+  nameWithType: Hitbox3D.CheckForHurtboxes(Collider)
+- uid: CAF.Combat.Hitbox3D.CheckForHurtboxes*
+  name: CheckForHurtboxes
+  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_CheckForHurtboxes_
+  commentId: Overload:CAF.Combat.Hitbox3D.CheckForHurtboxes
+  isSpec: "True"
+  fullName: CAF.Combat.Hitbox3D.CheckForHurtboxes
+  nameWithType: Hitbox3D.CheckForHurtboxes
+- uid: CAF.Combat.Hitbox3D.coll
+  name: coll
+  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_coll
+  commentId: F:CAF.Combat.Hitbox3D.coll
+  fullName: CAF.Combat.Hitbox3D.coll
+  nameWithType: Hitbox3D.coll
+- uid: CAF.Combat.Hitbox3D.CreateCapsule(System.Single,System.Single)
+  name: CreateCapsule(Single, Single)
+  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_CreateCapsule_System_Single_System_Single_
+  commentId: M:CAF.Combat.Hitbox3D.CreateCapsule(System.Single,System.Single)
+  fullName: CAF.Combat.Hitbox3D.CreateCapsule(System.Single, System.Single)
+  nameWithType: Hitbox3D.CreateCapsule(Single, Single)
+- uid: CAF.Combat.Hitbox3D.CreateCapsule*
+  name: CreateCapsule
+  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_CreateCapsule_
+  commentId: Overload:CAF.Combat.Hitbox3D.CreateCapsule
+  isSpec: "True"
+  fullName: CAF.Combat.Hitbox3D.CreateCapsule
+  nameWithType: Hitbox3D.CreateCapsule
+- uid: CAF.Combat.Hitbox3D.CreateRectangle(Vector3)
+  name: CreateRectangle(Vector3)
+  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_CreateRectangle_Vector3_
+  commentId: M:CAF.Combat.Hitbox3D.CreateRectangle(Vector3)
+  fullName: CAF.Combat.Hitbox3D.CreateRectangle(Vector3)
+  nameWithType: Hitbox3D.CreateRectangle(Vector3)
+- uid: CAF.Combat.Hitbox3D.CreateRectangle*
+  name: CreateRectangle
+  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_CreateRectangle_
+  commentId: Overload:CAF.Combat.Hitbox3D.CreateRectangle
+  isSpec: "True"
+  fullName: CAF.Combat.Hitbox3D.CreateRectangle
+  nameWithType: Hitbox3D.CreateRectangle
+- uid: CAF.Combat.Hitbox3D.CreateSphere(System.Single)
+  name: CreateSphere(Single)
+  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_CreateSphere_System_Single_
+  commentId: M:CAF.Combat.Hitbox3D.CreateSphere(System.Single)
+  fullName: CAF.Combat.Hitbox3D.CreateSphere(System.Single)
+  nameWithType: Hitbox3D.CreateSphere(Single)
+- uid: CAF.Combat.Hitbox3D.CreateSphere*
+  name: CreateSphere
+  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_CreateSphere_
+  commentId: Overload:CAF.Combat.Hitbox3D.CreateSphere
+  isSpec: "True"
+  fullName: CAF.Combat.Hitbox3D.CreateSphere
+  nameWithType: Hitbox3D.CreateSphere
+- uid: CAF.Combat.Hitbox3D.Deactivate
+  name: Deactivate()
+  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_Deactivate
+  commentId: M:CAF.Combat.Hitbox3D.Deactivate
+  fullName: CAF.Combat.Hitbox3D.Deactivate()
+  nameWithType: Hitbox3D.Deactivate()
+- uid: CAF.Combat.Hitbox3D.Deactivate*
+  name: Deactivate
+  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_Deactivate_
+  commentId: Overload:CAF.Combat.Hitbox3D.Deactivate
+  isSpec: "True"
+  fullName: CAF.Combat.Hitbox3D.Deactivate
+  nameWithType: Hitbox3D.Deactivate
+- uid: CAF.Combat.Hitbox3D.Initialize(GameObject,Transform,System.Int32,CAF.Combat.BoxShapes,CAF.Combat.HitInfoBase,CAF.Combat.BoxDefinition,System.Collections.Generic.List{CAF.Combat.IHurtable})
+  name: Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinition, List<IHurtable>)
+  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_Initialize_GameObject_Transform_System_Int32_CAF_Combat_BoxShapes_CAF_Combat_HitInfoBase_CAF_Combat_BoxDefinition_System_Collections_Generic_List_CAF_Combat_IHurtable__
+  commentId: M:CAF.Combat.Hitbox3D.Initialize(GameObject,Transform,System.Int32,CAF.Combat.BoxShapes,CAF.Combat.HitInfoBase,CAF.Combat.BoxDefinition,System.Collections.Generic.List{CAF.Combat.IHurtable})
+  name.vb: Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinition, List(Of IHurtable))
+  fullName: CAF.Combat.Hitbox3D.Initialize(GameObject, Transform, System.Int32, CAF.Combat.BoxShapes, CAF.Combat.HitInfoBase, CAF.Combat.BoxDefinition, System.Collections.Generic.List<CAF.Combat.IHurtable>)
+  fullName.vb: CAF.Combat.Hitbox3D.Initialize(GameObject, Transform, System.Int32, CAF.Combat.BoxShapes, CAF.Combat.HitInfoBase, CAF.Combat.BoxDefinition, System.Collections.Generic.List(Of CAF.Combat.IHurtable))
+  nameWithType: Hitbox3D.Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinition, List<IHurtable>)
+  nameWithType.vb: Hitbox3D.Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinition, List(Of IHurtable))
+- uid: CAF.Combat.Hitbox3D.Initialize*
+  name: Initialize
+  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_Initialize_
+  commentId: Overload:CAF.Combat.Hitbox3D.Initialize
+  isSpec: "True"
+  fullName: CAF.Combat.Hitbox3D.Initialize
+  nameWithType: Hitbox3D.Initialize
+- uid: CAF.Combat.Hitbox3D.OnTriggerStay(Collider)
+  name: OnTriggerStay(Collider)
+  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_OnTriggerStay_Collider_
+  commentId: M:CAF.Combat.Hitbox3D.OnTriggerStay(Collider)
+  fullName: CAF.Combat.Hitbox3D.OnTriggerStay(Collider)
+  nameWithType: Hitbox3D.OnTriggerStay(Collider)
+- uid: CAF.Combat.Hitbox3D.OnTriggerStay*
+  name: OnTriggerStay
+  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_OnTriggerStay_
+  commentId: Overload:CAF.Combat.Hitbox3D.OnTriggerStay
+  isSpec: "True"
+  fullName: CAF.Combat.Hitbox3D.OnTriggerStay
+  nameWithType: Hitbox3D.OnTriggerStay
 - uid: CAF.Combat.HitboxForceRelation
   name: HitboxForceRelation
   href: api/CAF.Combat.HitboxForceRelation.html
@@ -1245,18 +1464,6 @@ references:
   isSpec: "True"
   fullName: CAF.Combat.HitInfo.HitInfo
   nameWithType: HitInfo.HitInfo
-- uid: CAF.Combat.HitInfo.airOnly
-  name: airOnly
-  href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_airOnly
-  commentId: F:CAF.Combat.HitInfo.airOnly
-  fullName: CAF.Combat.HitInfo.airOnly
-  nameWithType: HitInfo.airOnly
-- uid: CAF.Combat.HitInfo.attackerHitstop
-  name: attackerHitstop
-  href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_attackerHitstop
-  commentId: F:CAF.Combat.HitInfo.attackerHitstop
-  fullName: CAF.Combat.HitInfo.attackerHitstop
-  nameWithType: HitInfo.attackerHitstop
 - uid: CAF.Combat.HitInfo.breakArmor
   name: breakArmor
   href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_breakArmor
@@ -1269,12 +1476,6 @@ references:
   commentId: F:CAF.Combat.HitInfo.causesTumble
   fullName: CAF.Combat.HitInfo.causesTumble
   nameWithType: HitInfo.causesTumble
-- uid: CAF.Combat.HitInfo.continuousHit
-  name: continuousHit
-  href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_continuousHit
-  commentId: F:CAF.Combat.HitInfo.continuousHit
-  fullName: CAF.Combat.HitInfo.continuousHit
-  nameWithType: HitInfo.continuousHit
 - uid: CAF.Combat.HitInfo.damageOnBlock
   name: damageOnBlock
   href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_damageOnBlock
@@ -1287,24 +1488,90 @@ references:
   commentId: F:CAF.Combat.HitInfo.damageOnHit
   fullName: CAF.Combat.HitInfo.damageOnHit
   nameWithType: HitInfo.damageOnHit
+- uid: CAF.Combat.HitInfo.DrawHitDamageOptions
+  name: DrawHitDamageOptions()
+  href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_DrawHitDamageOptions
+  commentId: M:CAF.Combat.HitInfo.DrawHitDamageOptions
+  fullName: CAF.Combat.HitInfo.DrawHitDamageOptions()
+  nameWithType: HitInfo.DrawHitDamageOptions()
+- uid: CAF.Combat.HitInfo.DrawHitDamageOptions*
+  name: DrawHitDamageOptions
+  href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_DrawHitDamageOptions_
+  commentId: Overload:CAF.Combat.HitInfo.DrawHitDamageOptions
+  isSpec: "True"
+  fullName: CAF.Combat.HitInfo.DrawHitDamageOptions
+  nameWithType: HitInfo.DrawHitDamageOptions
+- uid: CAF.Combat.HitInfo.DrawHitEffectsOptions
+  name: DrawHitEffectsOptions()
+  href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_DrawHitEffectsOptions
+  commentId: M:CAF.Combat.HitInfo.DrawHitEffectsOptions
+  fullName: CAF.Combat.HitInfo.DrawHitEffectsOptions()
+  nameWithType: HitInfo.DrawHitEffectsOptions()
+- uid: CAF.Combat.HitInfo.DrawHitEffectsOptions*
+  name: DrawHitEffectsOptions
+  href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_DrawHitEffectsOptions_
+  commentId: Overload:CAF.Combat.HitInfo.DrawHitEffectsOptions
+  isSpec: "True"
+  fullName: CAF.Combat.HitInfo.DrawHitEffectsOptions
+  nameWithType: HitInfo.DrawHitEffectsOptions
+- uid: CAF.Combat.HitInfo.DrawHitForcesOptions
+  name: DrawHitForcesOptions()
+  href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_DrawHitForcesOptions
+  commentId: M:CAF.Combat.HitInfo.DrawHitForcesOptions
+  fullName: CAF.Combat.HitInfo.DrawHitForcesOptions()
+  nameWithType: HitInfo.DrawHitForcesOptions()
+- uid: CAF.Combat.HitInfo.DrawHitForcesOptions*
+  name: DrawHitForcesOptions
+  href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_DrawHitForcesOptions_
+  commentId: Overload:CAF.Combat.HitInfo.DrawHitForcesOptions
+  isSpec: "True"
+  fullName: CAF.Combat.HitInfo.DrawHitForcesOptions
+  nameWithType: HitInfo.DrawHitForcesOptions
+- uid: CAF.Combat.HitInfo.DrawHitStunOptions
+  name: DrawHitStunOptions()
+  href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_DrawHitStunOptions
+  commentId: M:CAF.Combat.HitInfo.DrawHitStunOptions
+  fullName: CAF.Combat.HitInfo.DrawHitStunOptions()
+  nameWithType: HitInfo.DrawHitStunOptions()
+- uid: CAF.Combat.HitInfo.DrawHitStunOptions*
+  name: DrawHitStunOptions
+  href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_DrawHitStunOptions_
+  commentId: Overload:CAF.Combat.HitInfo.DrawHitStunOptions
+  isSpec: "True"
+  fullName: CAF.Combat.HitInfo.DrawHitStunOptions
+  nameWithType: HitInfo.DrawHitStunOptions
+- uid: CAF.Combat.HitInfo.DrawInspectorGrabInfo
+  name: DrawInspectorGrabInfo()
+  href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_DrawInspectorGrabInfo
+  commentId: M:CAF.Combat.HitInfo.DrawInspectorGrabInfo
+  fullName: CAF.Combat.HitInfo.DrawInspectorGrabInfo()
+  nameWithType: HitInfo.DrawInspectorGrabInfo()
+- uid: CAF.Combat.HitInfo.DrawInspectorGrabInfo*
+  name: DrawInspectorGrabInfo
+  href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_DrawInspectorGrabInfo_
+  commentId: Overload:CAF.Combat.HitInfo.DrawInspectorGrabInfo
+  isSpec: "True"
+  fullName: CAF.Combat.HitInfo.DrawInspectorGrabInfo
+  nameWithType: HitInfo.DrawInspectorGrabInfo
+- uid: CAF.Combat.HitInfo.DrawInspectorHitInfo
+  name: DrawInspectorHitInfo()
+  href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_DrawInspectorHitInfo
+  commentId: M:CAF.Combat.HitInfo.DrawInspectorHitInfo
+  fullName: CAF.Combat.HitInfo.DrawInspectorHitInfo()
+  nameWithType: HitInfo.DrawInspectorHitInfo()
+- uid: CAF.Combat.HitInfo.DrawInspectorHitInfo*
+  name: DrawInspectorHitInfo
+  href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_DrawInspectorHitInfo_
+  commentId: Overload:CAF.Combat.HitInfo.DrawInspectorHitInfo
+  isSpec: "True"
+  fullName: CAF.Combat.HitInfo.DrawInspectorHitInfo
+  nameWithType: HitInfo.DrawInspectorHitInfo
 - uid: CAF.Combat.HitInfo.forceIncludeYForce
   name: forceIncludeYForce
   href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_forceIncludeYForce
   commentId: F:CAF.Combat.HitInfo.forceIncludeYForce
   fullName: CAF.Combat.HitInfo.forceIncludeYForce
   nameWithType: HitInfo.forceIncludeYForce
-- uid: CAF.Combat.HitInfo.forceRelation
-  name: forceRelation
-  href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_forceRelation
-  commentId: F:CAF.Combat.HitInfo.forceRelation
-  fullName: CAF.Combat.HitInfo.forceRelation
-  nameWithType: HitInfo.forceRelation
-- uid: CAF.Combat.HitInfo.forceType
-  name: forceType
-  href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_forceType
-  commentId: F:CAF.Combat.HitInfo.forceType
-  fullName: CAF.Combat.HitInfo.forceType
-  nameWithType: HitInfo.forceType
 - uid: CAF.Combat.HitInfo.groundBounceForce
   name: groundBounceForce
   href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_groundBounceForce
@@ -1317,30 +1584,6 @@ references:
   commentId: F:CAF.Combat.HitInfo.groundBounces
   fullName: CAF.Combat.HitInfo.groundBounces
   nameWithType: HitInfo.groundBounces
-- uid: CAF.Combat.HitInfo.groundOnly
-  name: groundOnly
-  href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_groundOnly
-  commentId: F:CAF.Combat.HitInfo.groundOnly
-  fullName: CAF.Combat.HitInfo.groundOnly
-  nameWithType: HitInfo.groundOnly
-- uid: CAF.Combat.HitInfo.hitKills
-  name: hitKills
-  href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_hitKills
-  commentId: F:CAF.Combat.HitInfo.hitKills
-  fullName: CAF.Combat.HitInfo.hitKills
-  nameWithType: HitInfo.hitKills
-- uid: CAF.Combat.HitInfo.hitstop
-  name: hitstop
-  href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_hitstop
-  commentId: F:CAF.Combat.HitInfo.hitstop
-  fullName: CAF.Combat.HitInfo.hitstop
-  nameWithType: HitInfo.hitstop
-- uid: CAF.Combat.HitInfo.hitstun
-  name: hitstun
-  href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_hitstun
-  commentId: F:CAF.Combat.HitInfo.hitstun
-  fullName: CAF.Combat.HitInfo.hitstun
-  nameWithType: HitInfo.hitstun
 - uid: CAF.Combat.HitInfo.knockdown
   name: knockdown
   href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_knockdown
@@ -1371,24 +1614,12 @@ references:
   commentId: F:CAF.Combat.HitInfo.opponentMinMagnitude
   fullName: CAF.Combat.HitInfo.opponentMinMagnitude
   nameWithType: HitInfo.opponentMinMagnitude
-- uid: CAF.Combat.HitInfo.opponentResetXForce
-  name: opponentResetXForce
-  href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_opponentResetXForce
-  commentId: F:CAF.Combat.HitInfo.opponentResetXForce
-  fullName: CAF.Combat.HitInfo.opponentResetXForce
-  nameWithType: HitInfo.opponentResetXForce
-- uid: CAF.Combat.HitInfo.opponentResetYForce
-  name: opponentResetYForce
-  href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_opponentResetYForce
-  commentId: F:CAF.Combat.HitInfo.opponentResetYForce
-  fullName: CAF.Combat.HitInfo.opponentResetYForce
-  nameWithType: HitInfo.opponentResetYForce
-- uid: CAF.Combat.HitInfo.spaceBetweenHits
-  name: spaceBetweenHits
-  href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_spaceBetweenHits
-  commentId: F:CAF.Combat.HitInfo.spaceBetweenHits
-  fullName: CAF.Combat.HitInfo.spaceBetweenHits
-  nameWithType: HitInfo.spaceBetweenHits
+- uid: CAF.Combat.HitInfo.throwConfirm
+  name: throwConfirm
+  href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_throwConfirm
+  commentId: F:CAF.Combat.HitInfo.throwConfirm
+  fullName: CAF.Combat.HitInfo.throwConfirm
+  nameWithType: HitInfo.throwConfirm
 - uid: CAF.Combat.HitInfo.unblockable
   name: unblockable
   href: api/CAF.Combat.HitInfo.html#CAF_Combat_HitInfo_unblockable
@@ -1407,6 +1638,110 @@ references:
   commentId: F:CAF.Combat.HitInfo.wallBounces
   fullName: CAF.Combat.HitInfo.wallBounces
   nameWithType: HitInfo.wallBounces
+- uid: CAF.Combat.HitInfoBase
+  name: HitInfoBase
+  href: api/CAF.Combat.HitInfoBase.html
+  commentId: T:CAF.Combat.HitInfoBase
+  fullName: CAF.Combat.HitInfoBase
+  nameWithType: HitInfoBase
+- uid: CAF.Combat.HitInfoBase.airOnly
+  name: airOnly
+  href: api/CAF.Combat.HitInfoBase.html#CAF_Combat_HitInfoBase_airOnly
+  commentId: F:CAF.Combat.HitInfoBase.airOnly
+  fullName: CAF.Combat.HitInfoBase.airOnly
+  nameWithType: HitInfoBase.airOnly
+- uid: CAF.Combat.HitInfoBase.attackerHitstop
+  name: attackerHitstop
+  href: api/CAF.Combat.HitInfoBase.html#CAF_Combat_HitInfoBase_attackerHitstop
+  commentId: F:CAF.Combat.HitInfoBase.attackerHitstop
+  fullName: CAF.Combat.HitInfoBase.attackerHitstop
+  nameWithType: HitInfoBase.attackerHitstop
+- uid: CAF.Combat.HitInfoBase.continuousHit
+  name: continuousHit
+  href: api/CAF.Combat.HitInfoBase.html#CAF_Combat_HitInfoBase_continuousHit
+  commentId: F:CAF.Combat.HitInfoBase.continuousHit
+  fullName: CAF.Combat.HitInfoBase.continuousHit
+  nameWithType: HitInfoBase.continuousHit
+- uid: CAF.Combat.HitInfoBase.DrawInspectorGrabInfo
+  name: DrawInspectorGrabInfo()
+  href: api/CAF.Combat.HitInfoBase.html#CAF_Combat_HitInfoBase_DrawInspectorGrabInfo
+  commentId: M:CAF.Combat.HitInfoBase.DrawInspectorGrabInfo
+  fullName: CAF.Combat.HitInfoBase.DrawInspectorGrabInfo()
+  nameWithType: HitInfoBase.DrawInspectorGrabInfo()
+- uid: CAF.Combat.HitInfoBase.DrawInspectorGrabInfo*
+  name: DrawInspectorGrabInfo
+  href: api/CAF.Combat.HitInfoBase.html#CAF_Combat_HitInfoBase_DrawInspectorGrabInfo_
+  commentId: Overload:CAF.Combat.HitInfoBase.DrawInspectorGrabInfo
+  isSpec: "True"
+  fullName: CAF.Combat.HitInfoBase.DrawInspectorGrabInfo
+  nameWithType: HitInfoBase.DrawInspectorGrabInfo
+- uid: CAF.Combat.HitInfoBase.DrawInspectorHitInfo
+  name: DrawInspectorHitInfo()
+  href: api/CAF.Combat.HitInfoBase.html#CAF_Combat_HitInfoBase_DrawInspectorHitInfo
+  commentId: M:CAF.Combat.HitInfoBase.DrawInspectorHitInfo
+  fullName: CAF.Combat.HitInfoBase.DrawInspectorHitInfo()
+  nameWithType: HitInfoBase.DrawInspectorHitInfo()
+- uid: CAF.Combat.HitInfoBase.DrawInspectorHitInfo*
+  name: DrawInspectorHitInfo
+  href: api/CAF.Combat.HitInfoBase.html#CAF_Combat_HitInfoBase_DrawInspectorHitInfo_
+  commentId: Overload:CAF.Combat.HitInfoBase.DrawInspectorHitInfo
+  isSpec: "True"
+  fullName: CAF.Combat.HitInfoBase.DrawInspectorHitInfo
+  nameWithType: HitInfoBase.DrawInspectorHitInfo
+- uid: CAF.Combat.HitInfoBase.forceRelation
+  name: forceRelation
+  href: api/CAF.Combat.HitInfoBase.html#CAF_Combat_HitInfoBase_forceRelation
+  commentId: F:CAF.Combat.HitInfoBase.forceRelation
+  fullName: CAF.Combat.HitInfoBase.forceRelation
+  nameWithType: HitInfoBase.forceRelation
+- uid: CAF.Combat.HitInfoBase.forceType
+  name: forceType
+  href: api/CAF.Combat.HitInfoBase.html#CAF_Combat_HitInfoBase_forceType
+  commentId: F:CAF.Combat.HitInfoBase.forceType
+  fullName: CAF.Combat.HitInfoBase.forceType
+  nameWithType: HitInfoBase.forceType
+- uid: CAF.Combat.HitInfoBase.groundOnly
+  name: groundOnly
+  href: api/CAF.Combat.HitInfoBase.html#CAF_Combat_HitInfoBase_groundOnly
+  commentId: F:CAF.Combat.HitInfoBase.groundOnly
+  fullName: CAF.Combat.HitInfoBase.groundOnly
+  nameWithType: HitInfoBase.groundOnly
+- uid: CAF.Combat.HitInfoBase.hitKills
+  name: hitKills
+  href: api/CAF.Combat.HitInfoBase.html#CAF_Combat_HitInfoBase_hitKills
+  commentId: F:CAF.Combat.HitInfoBase.hitKills
+  fullName: CAF.Combat.HitInfoBase.hitKills
+  nameWithType: HitInfoBase.hitKills
+- uid: CAF.Combat.HitInfoBase.hitstop
+  name: hitstop
+  href: api/CAF.Combat.HitInfoBase.html#CAF_Combat_HitInfoBase_hitstop
+  commentId: F:CAF.Combat.HitInfoBase.hitstop
+  fullName: CAF.Combat.HitInfoBase.hitstop
+  nameWithType: HitInfoBase.hitstop
+- uid: CAF.Combat.HitInfoBase.hitstun
+  name: hitstun
+  href: api/CAF.Combat.HitInfoBase.html#CAF_Combat_HitInfoBase_hitstun
+  commentId: F:CAF.Combat.HitInfoBase.hitstun
+  fullName: CAF.Combat.HitInfoBase.hitstun
+  nameWithType: HitInfoBase.hitstun
+- uid: CAF.Combat.HitInfoBase.opponentResetXForce
+  name: opponentResetXForce
+  href: api/CAF.Combat.HitInfoBase.html#CAF_Combat_HitInfoBase_opponentResetXForce
+  commentId: F:CAF.Combat.HitInfoBase.opponentResetXForce
+  fullName: CAF.Combat.HitInfoBase.opponentResetXForce
+  nameWithType: HitInfoBase.opponentResetXForce
+- uid: CAF.Combat.HitInfoBase.opponentResetYForce
+  name: opponentResetYForce
+  href: api/CAF.Combat.HitInfoBase.html#CAF_Combat_HitInfoBase_opponentResetYForce
+  commentId: F:CAF.Combat.HitInfoBase.opponentResetYForce
+  fullName: CAF.Combat.HitInfoBase.opponentResetYForce
+  nameWithType: HitInfoBase.opponentResetYForce
+- uid: CAF.Combat.HitInfoBase.spaceBetweenHits
+  name: spaceBetweenHits
+  href: api/CAF.Combat.HitInfoBase.html#CAF_Combat_HitInfoBase_spaceBetweenHits
+  commentId: F:CAF.Combat.HitInfoBase.spaceBetweenHits
+  fullName: CAF.Combat.HitInfoBase.spaceBetweenHits
+  nameWithType: HitInfoBase.spaceBetweenHits
 - uid: CAF.Combat.HitReaction
   name: HitReaction
   href: api/CAF.Combat.HitReaction.html
@@ -1468,6 +1803,12 @@ references:
   isSpec: "True"
   fullName: CAF.Combat.Hurtbox.Hurtable
   nameWithType: Hurtbox.Hurtable
+- uid: CAF.Combat.Hurtbox.owner
+  name: owner
+  href: api/CAF.Combat.Hurtbox.html#CAF_Combat_Hurtbox_owner
+  commentId: F:CAF.Combat.Hurtbox.owner
+  fullName: CAF.Combat.Hurtbox.owner
+  nameWithType: Hurtbox.owner
 - uid: CAF.Combat.Hurtbox.Owner
   name: Owner
   href: api/CAF.Combat.Hurtbox.html#CAF_Combat_Hurtbox_Owner
@@ -1505,12 +1846,25 @@ references:
   commentId: T:CAF.Combat.IHurtable
   fullName: CAF.Combat.IHurtable
   nameWithType: IHurtable
-- uid: CAF.Combat.IHurtable.Heal
-  name: Heal()
-  href: api/CAF.Combat.IHurtable.html#CAF_Combat_IHurtable_Heal
-  commentId: M:CAF.Combat.IHurtable.Heal
-  fullName: CAF.Combat.IHurtable.Heal()
-  nameWithType: IHurtable.Heal()
+- uid: CAF.Combat.IHurtable.GetTeam
+  name: GetTeam()
+  href: api/CAF.Combat.IHurtable.html#CAF_Combat_IHurtable_GetTeam
+  commentId: M:CAF.Combat.IHurtable.GetTeam
+  fullName: CAF.Combat.IHurtable.GetTeam()
+  nameWithType: IHurtable.GetTeam()
+- uid: CAF.Combat.IHurtable.GetTeam*
+  name: GetTeam
+  href: api/CAF.Combat.IHurtable.html#CAF_Combat_IHurtable_GetTeam_
+  commentId: Overload:CAF.Combat.IHurtable.GetTeam
+  isSpec: "True"
+  fullName: CAF.Combat.IHurtable.GetTeam
+  nameWithType: IHurtable.GetTeam
+- uid: CAF.Combat.IHurtable.Heal(CAF.Combat.HealInfoBase)
+  name: Heal(HealInfoBase)
+  href: api/CAF.Combat.IHurtable.html#CAF_Combat_IHurtable_Heal_CAF_Combat_HealInfoBase_
+  commentId: M:CAF.Combat.IHurtable.Heal(CAF.Combat.HealInfoBase)
+  fullName: CAF.Combat.IHurtable.Heal(CAF.Combat.HealInfoBase)
+  nameWithType: IHurtable.Heal(HealInfoBase)
 - uid: CAF.Combat.IHurtable.Heal*
   name: Heal
   href: api/CAF.Combat.IHurtable.html#CAF_Combat_IHurtable_Heal_
@@ -1518,12 +1872,12 @@ references:
   isSpec: "True"
   fullName: CAF.Combat.IHurtable.Heal
   nameWithType: IHurtable.Heal
-- uid: CAF.Combat.IHurtable.Hurt(Vector3,Vector3,Vector3,CAF.Combat.HitInfo)
-  name: Hurt(Vector3, Vector3, Vector3, HitInfo)
-  href: api/CAF.Combat.IHurtable.html#CAF_Combat_IHurtable_Hurt_Vector3_Vector3_Vector3_CAF_Combat_HitInfo_
-  commentId: M:CAF.Combat.IHurtable.Hurt(Vector3,Vector3,Vector3,CAF.Combat.HitInfo)
-  fullName: CAF.Combat.IHurtable.Hurt(Vector3, Vector3, Vector3, CAF.Combat.HitInfo)
-  nameWithType: IHurtable.Hurt(Vector3, Vector3, Vector3, HitInfo)
+- uid: CAF.Combat.IHurtable.Hurt(Vector3,Vector3,Vector3,CAF.Combat.HitInfoBase)
+  name: Hurt(Vector3, Vector3, Vector3, HitInfoBase)
+  href: api/CAF.Combat.IHurtable.html#CAF_Combat_IHurtable_Hurt_Vector3_Vector3_Vector3_CAF_Combat_HitInfoBase_
+  commentId: M:CAF.Combat.IHurtable.Hurt(Vector3,Vector3,Vector3,CAF.Combat.HitInfoBase)
+  fullName: CAF.Combat.IHurtable.Hurt(Vector3, Vector3, Vector3, CAF.Combat.HitInfoBase)
+  nameWithType: IHurtable.Hurt(Vector3, Vector3, Vector3, HitInfoBase)
 - uid: CAF.Combat.IHurtable.Hurt*
   name: Hurt
   href: api/CAF.Combat.IHurtable.html#CAF_Combat_IHurtable_Hurt_
@@ -1531,19 +1885,6 @@ references:
   isSpec: "True"
   fullName: CAF.Combat.IHurtable.Hurt
   nameWithType: IHurtable.Hurt
-- uid: CAF.Combat.IHurtable.Team
-  name: Team
-  href: api/CAF.Combat.IHurtable.html#CAF_Combat_IHurtable_Team
-  commentId: P:CAF.Combat.IHurtable.Team
-  fullName: CAF.Combat.IHurtable.Team
-  nameWithType: IHurtable.Team
-- uid: CAF.Combat.IHurtable.Team*
-  name: Team
-  href: api/CAF.Combat.IHurtable.html#CAF_Combat_IHurtable_Team_
-  commentId: Overload:CAF.Combat.IHurtable.Team
-  isSpec: "True"
-  fullName: CAF.Combat.IHurtable.Team
-  nameWithType: IHurtable.Team
 - uid: CAF.Combat.IStatusEffectable
   name: IStatusEffectable
   href: api/CAF.Combat.IStatusEffectable.html
@@ -1843,6 +2184,32 @@ references:
   commentId: T:CAF.Entities.EntityCombatManager
   fullName: CAF.Entities.EntityCombatManager
   nameWithType: EntityCombatManager
+- uid: CAF.Entities.EntityCombatManager.AddHitStop(System.Int32)
+  name: AddHitStop(Int32)
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_AddHitStop_System_Int32_
+  commentId: M:CAF.Entities.EntityCombatManager.AddHitStop(System.Int32)
+  fullName: CAF.Entities.EntityCombatManager.AddHitStop(System.Int32)
+  nameWithType: EntityCombatManager.AddHitStop(Int32)
+- uid: CAF.Entities.EntityCombatManager.AddHitStop*
+  name: AddHitStop
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_AddHitStop_
+  commentId: Overload:CAF.Entities.EntityCombatManager.AddHitStop
+  isSpec: "True"
+  fullName: CAF.Entities.EntityCombatManager.AddHitStop
+  nameWithType: EntityCombatManager.AddHitStop
+- uid: CAF.Entities.EntityCombatManager.AddHitStun(System.Int32)
+  name: AddHitStun(Int32)
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_AddHitStun_System_Int32_
+  commentId: M:CAF.Entities.EntityCombatManager.AddHitStun(System.Int32)
+  fullName: CAF.Entities.EntityCombatManager.AddHitStun(System.Int32)
+  nameWithType: EntityCombatManager.AddHitStun(Int32)
+- uid: CAF.Entities.EntityCombatManager.AddHitStun*
+  name: AddHitStun
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_AddHitStun_
+  commentId: Overload:CAF.Entities.EntityCombatManager.AddHitStun
+  isSpec: "True"
+  fullName: CAF.Entities.EntityCombatManager.AddHitStun
+  nameWithType: EntityCombatManager.AddHitStun
 - uid: CAF.Entities.EntityCombatManager.Awake
   name: Awake()
   href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_Awake
@@ -1856,6 +2223,18 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityCombatManager.Awake
   nameWithType: EntityCombatManager.Awake
+- uid: CAF.Entities.EntityCombatManager.ChargeLevelChangedAction
+  name: EntityCombatManager.ChargeLevelChangedAction
+  href: api/CAF.Entities.EntityCombatManager.ChargeLevelChangedAction.html
+  commentId: T:CAF.Entities.EntityCombatManager.ChargeLevelChangedAction
+  fullName: CAF.Entities.EntityCombatManager.ChargeLevelChangedAction
+  nameWithType: EntityCombatManager.ChargeLevelChangedAction
+- uid: CAF.Entities.EntityCombatManager.ChargeLevelChargeChangedAction
+  name: EntityCombatManager.ChargeLevelChargeChangedAction
+  href: api/CAF.Entities.EntityCombatManager.ChargeLevelChargeChangedAction.html
+  commentId: T:CAF.Entities.EntityCombatManager.ChargeLevelChargeChangedAction
+  fullName: CAF.Entities.EntityCombatManager.ChargeLevelChargeChangedAction
+  nameWithType: EntityCombatManager.ChargeLevelChargeChangedAction
 - uid: CAF.Entities.EntityCombatManager.CheckAttackNode(CAF.Combat.MovesetAttackNode)
   name: CheckAttackNode(MovesetAttackNode)
   href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_CheckAttackNode_CAF_Combat_MovesetAttackNode_
@@ -1950,12 +2329,6 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityCombatManager.Cleanup
   nameWithType: EntityCombatManager.Cleanup
-- uid: CAF.Entities.EntityCombatManager.controller
-  name: controller
-  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_controller
-  commentId: F:CAF.Entities.EntityCombatManager.controller
-  fullName: CAF.Entities.EntityCombatManager.controller
-  nameWithType: EntityCombatManager.controller
 - uid: CAF.Entities.EntityCombatManager.CurrentAttack
   name: CurrentAttack
   href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_CurrentAttack
@@ -1969,6 +2342,32 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityCombatManager.CurrentAttack
   nameWithType: EntityCombatManager.CurrentAttack
+- uid: CAF.Entities.EntityCombatManager.CurrentChargeLevel
+  name: CurrentChargeLevel
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_CurrentChargeLevel
+  commentId: P:CAF.Entities.EntityCombatManager.CurrentChargeLevel
+  fullName: CAF.Entities.EntityCombatManager.CurrentChargeLevel
+  nameWithType: EntityCombatManager.CurrentChargeLevel
+- uid: CAF.Entities.EntityCombatManager.CurrentChargeLevel*
+  name: CurrentChargeLevel
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_CurrentChargeLevel_
+  commentId: Overload:CAF.Entities.EntityCombatManager.CurrentChargeLevel
+  isSpec: "True"
+  fullName: CAF.Entities.EntityCombatManager.CurrentChargeLevel
+  nameWithType: EntityCombatManager.CurrentChargeLevel
+- uid: CAF.Entities.EntityCombatManager.CurrentChargeLevelCharge
+  name: CurrentChargeLevelCharge
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_CurrentChargeLevelCharge
+  commentId: P:CAF.Entities.EntityCombatManager.CurrentChargeLevelCharge
+  fullName: CAF.Entities.EntityCombatManager.CurrentChargeLevelCharge
+  nameWithType: EntityCombatManager.CurrentChargeLevelCharge
+- uid: CAF.Entities.EntityCombatManager.CurrentChargeLevelCharge*
+  name: CurrentChargeLevelCharge
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_CurrentChargeLevelCharge_
+  commentId: Overload:CAF.Entities.EntityCombatManager.CurrentChargeLevelCharge
+  isSpec: "True"
+  fullName: CAF.Entities.EntityCombatManager.CurrentChargeLevelCharge
+  nameWithType: EntityCombatManager.CurrentChargeLevelCharge
 - uid: CAF.Entities.EntityCombatManager.CurrentMoveset
   name: CurrentMoveset
   href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_CurrentMoveset
@@ -1982,12 +2381,31 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityCombatManager.CurrentMoveset
   nameWithType: EntityCombatManager.CurrentMoveset
-- uid: CAF.Entities.EntityCombatManager.Heal
-  name: Heal()
-  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_Heal
-  commentId: M:CAF.Entities.EntityCombatManager.Heal
-  fullName: CAF.Entities.EntityCombatManager.Heal()
-  nameWithType: EntityCombatManager.Heal()
+- uid: CAF.Entities.EntityCombatManager.EmptyAction
+  name: EntityCombatManager.EmptyAction
+  href: api/CAF.Entities.EntityCombatManager.EmptyAction.html
+  commentId: T:CAF.Entities.EntityCombatManager.EmptyAction
+  fullName: CAF.Entities.EntityCombatManager.EmptyAction
+  nameWithType: EntityCombatManager.EmptyAction
+- uid: CAF.Entities.EntityCombatManager.GetTeam
+  name: GetTeam()
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_GetTeam
+  commentId: M:CAF.Entities.EntityCombatManager.GetTeam
+  fullName: CAF.Entities.EntityCombatManager.GetTeam()
+  nameWithType: EntityCombatManager.GetTeam()
+- uid: CAF.Entities.EntityCombatManager.GetTeam*
+  name: GetTeam
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_GetTeam_
+  commentId: Overload:CAF.Entities.EntityCombatManager.GetTeam
+  isSpec: "True"
+  fullName: CAF.Entities.EntityCombatManager.GetTeam
+  nameWithType: EntityCombatManager.GetTeam
+- uid: CAF.Entities.EntityCombatManager.Heal(CAF.Combat.HealInfoBase)
+  name: Heal(HealInfoBase)
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_Heal_CAF_Combat_HealInfoBase_
+  commentId: M:CAF.Entities.EntityCombatManager.Heal(CAF.Combat.HealInfoBase)
+  fullName: CAF.Entities.EntityCombatManager.Heal(CAF.Combat.HealInfoBase)
+  nameWithType: EntityCombatManager.Heal(HealInfoBase)
 - uid: CAF.Entities.EntityCombatManager.Heal*
   name: Heal
   href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_Heal_
@@ -1995,30 +2413,50 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityCombatManager.Heal
   nameWithType: EntityCombatManager.Heal
+- uid: CAF.Entities.EntityCombatManager.HealthChangedAction
+  name: EntityCombatManager.HealthChangedAction
+  href: api/CAF.Entities.EntityCombatManager.HealthChangedAction.html
+  commentId: T:CAF.Entities.EntityCombatManager.HealthChangedAction
+  fullName: CAF.Entities.EntityCombatManager.HealthChangedAction
+  nameWithType: EntityCombatManager.HealthChangedAction
 - uid: CAF.Entities.EntityCombatManager.hitboxManager
   name: hitboxManager
   href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_hitboxManager
   commentId: F:CAF.Entities.EntityCombatManager.hitboxManager
   fullName: CAF.Entities.EntityCombatManager.hitboxManager
   nameWithType: EntityCombatManager.hitboxManager
-- uid: CAF.Entities.EntityCombatManager.hitStop
-  name: hitStop
-  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_hitStop
-  commentId: F:CAF.Entities.EntityCombatManager.hitStop
-  fullName: CAF.Entities.EntityCombatManager.hitStop
-  nameWithType: EntityCombatManager.hitStop
-- uid: CAF.Entities.EntityCombatManager.hitStun
-  name: hitStun
-  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_hitStun
-  commentId: F:CAF.Entities.EntityCombatManager.hitStun
-  fullName: CAF.Entities.EntityCombatManager.hitStun
-  nameWithType: EntityCombatManager.hitStun
-- uid: CAF.Entities.EntityCombatManager.Hurt(Vector3,Vector3,Vector3,CAF.Combat.HitInfo)
-  name: Hurt(Vector3, Vector3, Vector3, HitInfo)
-  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_Hurt_Vector3_Vector3_Vector3_CAF_Combat_HitInfo_
-  commentId: M:CAF.Entities.EntityCombatManager.Hurt(Vector3,Vector3,Vector3,CAF.Combat.HitInfo)
-  fullName: CAF.Entities.EntityCombatManager.Hurt(Vector3, Vector3, Vector3, CAF.Combat.HitInfo)
-  nameWithType: EntityCombatManager.Hurt(Vector3, Vector3, Vector3, HitInfo)
+- uid: CAF.Entities.EntityCombatManager.HitStop
+  name: HitStop
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_HitStop
+  commentId: P:CAF.Entities.EntityCombatManager.HitStop
+  fullName: CAF.Entities.EntityCombatManager.HitStop
+  nameWithType: EntityCombatManager.HitStop
+- uid: CAF.Entities.EntityCombatManager.HitStop*
+  name: HitStop
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_HitStop_
+  commentId: Overload:CAF.Entities.EntityCombatManager.HitStop
+  isSpec: "True"
+  fullName: CAF.Entities.EntityCombatManager.HitStop
+  nameWithType: EntityCombatManager.HitStop
+- uid: CAF.Entities.EntityCombatManager.HitStun
+  name: HitStun
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_HitStun
+  commentId: P:CAF.Entities.EntityCombatManager.HitStun
+  fullName: CAF.Entities.EntityCombatManager.HitStun
+  nameWithType: EntityCombatManager.HitStun
+- uid: CAF.Entities.EntityCombatManager.HitStun*
+  name: HitStun
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_HitStun_
+  commentId: Overload:CAF.Entities.EntityCombatManager.HitStun
+  isSpec: "True"
+  fullName: CAF.Entities.EntityCombatManager.HitStun
+  nameWithType: EntityCombatManager.HitStun
+- uid: CAF.Entities.EntityCombatManager.Hurt(Vector3,Vector3,Vector3,CAF.Combat.HitInfoBase)
+  name: Hurt(Vector3, Vector3, Vector3, HitInfoBase)
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_Hurt_Vector3_Vector3_Vector3_CAF_Combat_HitInfoBase_
+  commentId: M:CAF.Entities.EntityCombatManager.Hurt(Vector3,Vector3,Vector3,CAF.Combat.HitInfoBase)
+  fullName: CAF.Entities.EntityCombatManager.Hurt(Vector3, Vector3, Vector3, CAF.Combat.HitInfoBase)
+  nameWithType: EntityCombatManager.Hurt(Vector3, Vector3, Vector3, HitInfoBase)
 - uid: CAF.Entities.EntityCombatManager.Hurt*
   name: Hurt
   href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_Hurt_
@@ -2026,6 +2464,19 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityCombatManager.Hurt
   nameWithType: EntityCombatManager.Hurt
+- uid: CAF.Entities.EntityCombatManager.IncrementChargeLevelCharge
+  name: IncrementChargeLevelCharge()
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_IncrementChargeLevelCharge
+  commentId: M:CAF.Entities.EntityCombatManager.IncrementChargeLevelCharge
+  fullName: CAF.Entities.EntityCombatManager.IncrementChargeLevelCharge()
+  nameWithType: EntityCombatManager.IncrementChargeLevelCharge()
+- uid: CAF.Entities.EntityCombatManager.IncrementChargeLevelCharge*
+  name: IncrementChargeLevelCharge
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_IncrementChargeLevelCharge_
+  commentId: Overload:CAF.Entities.EntityCombatManager.IncrementChargeLevelCharge
+  isSpec: "True"
+  fullName: CAF.Entities.EntityCombatManager.IncrementChargeLevelCharge
+  nameWithType: EntityCombatManager.IncrementChargeLevelCharge
 - uid: CAF.Entities.EntityCombatManager.LastHitBy
   name: LastHitBy
   href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_LastHitBy
@@ -2039,6 +2490,84 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityCombatManager.LastHitBy
   nameWithType: EntityCombatManager.LastHitBy
+- uid: CAF.Entities.EntityCombatManager.manager
+  name: manager
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_manager
+  commentId: F:CAF.Entities.EntityCombatManager.manager
+  fullName: CAF.Entities.EntityCombatManager.manager
+  nameWithType: EntityCombatManager.manager
+- uid: CAF.Entities.EntityCombatManager.MovesetChangedAction
+  name: EntityCombatManager.MovesetChangedAction
+  href: api/CAF.Entities.EntityCombatManager.MovesetChangedAction.html
+  commentId: T:CAF.Entities.EntityCombatManager.MovesetChangedAction
+  fullName: CAF.Entities.EntityCombatManager.MovesetChangedAction
+  nameWithType: EntityCombatManager.MovesetChangedAction
+- uid: CAF.Entities.EntityCombatManager.OnChargeLevelChanged
+  name: OnChargeLevelChanged
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_OnChargeLevelChanged
+  commentId: E:CAF.Entities.EntityCombatManager.OnChargeLevelChanged
+  fullName: CAF.Entities.EntityCombatManager.OnChargeLevelChanged
+  nameWithType: EntityCombatManager.OnChargeLevelChanged
+- uid: CAF.Entities.EntityCombatManager.OnChargeLevelChargeChanged
+  name: OnChargeLevelChargeChanged
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_OnChargeLevelChargeChanged
+  commentId: E:CAF.Entities.EntityCombatManager.OnChargeLevelChargeChanged
+  fullName: CAF.Entities.EntityCombatManager.OnChargeLevelChargeChanged
+  nameWithType: EntityCombatManager.OnChargeLevelChargeChanged
+- uid: CAF.Entities.EntityCombatManager.OnEnterHitStop
+  name: OnEnterHitStop
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_OnEnterHitStop
+  commentId: E:CAF.Entities.EntityCombatManager.OnEnterHitStop
+  fullName: CAF.Entities.EntityCombatManager.OnEnterHitStop
+  nameWithType: EntityCombatManager.OnEnterHitStop
+- uid: CAF.Entities.EntityCombatManager.OnEnterHitStun
+  name: OnEnterHitStun
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_OnEnterHitStun
+  commentId: E:CAF.Entities.EntityCombatManager.OnEnterHitStun
+  fullName: CAF.Entities.EntityCombatManager.OnEnterHitStun
+  nameWithType: EntityCombatManager.OnEnterHitStun
+- uid: CAF.Entities.EntityCombatManager.OnExitHitStop
+  name: OnExitHitStop
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_OnExitHitStop
+  commentId: E:CAF.Entities.EntityCombatManager.OnExitHitStop
+  fullName: CAF.Entities.EntityCombatManager.OnExitHitStop
+  nameWithType: EntityCombatManager.OnExitHitStop
+- uid: CAF.Entities.EntityCombatManager.OnExitHitStun
+  name: OnExitHitStun
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_OnExitHitStun
+  commentId: E:CAF.Entities.EntityCombatManager.OnExitHitStun
+  fullName: CAF.Entities.EntityCombatManager.OnExitHitStun
+  nameWithType: EntityCombatManager.OnExitHitStun
+- uid: CAF.Entities.EntityCombatManager.OnHealed
+  name: OnHealed
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_OnHealed
+  commentId: E:CAF.Entities.EntityCombatManager.OnHealed
+  fullName: CAF.Entities.EntityCombatManager.OnHealed
+  nameWithType: EntityCombatManager.OnHealed
+- uid: CAF.Entities.EntityCombatManager.OnHit
+  name: OnHit
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_OnHit
+  commentId: E:CAF.Entities.EntityCombatManager.OnHit
+  fullName: CAF.Entities.EntityCombatManager.OnHit
+  nameWithType: EntityCombatManager.OnHit
+- uid: CAF.Entities.EntityCombatManager.OnHitStopAdded
+  name: OnHitStopAdded
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_OnHitStopAdded
+  commentId: E:CAF.Entities.EntityCombatManager.OnHitStopAdded
+  fullName: CAF.Entities.EntityCombatManager.OnHitStopAdded
+  nameWithType: EntityCombatManager.OnHitStopAdded
+- uid: CAF.Entities.EntityCombatManager.OnHitStunAdded
+  name: OnHitStunAdded
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_OnHitStunAdded
+  commentId: E:CAF.Entities.EntityCombatManager.OnHitStunAdded
+  fullName: CAF.Entities.EntityCombatManager.OnHitStunAdded
+  nameWithType: EntityCombatManager.OnHitStunAdded
+- uid: CAF.Entities.EntityCombatManager.OnMovesetChanged
+  name: OnMovesetChanged
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_OnMovesetChanged
+  commentId: E:CAF.Entities.EntityCombatManager.OnMovesetChanged
+  fullName: CAF.Entities.EntityCombatManager.OnMovesetChanged
+  nameWithType: EntityCombatManager.OnMovesetChanged
 - uid: CAF.Entities.EntityCombatManager.SetAttack(CAF.Combat.MovesetAttackNode)
   name: SetAttack(MovesetAttackNode)
   href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_SetAttack_CAF_Combat_MovesetAttackNode_
@@ -2052,19 +2581,71 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityCombatManager.SetAttack
   nameWithType: EntityCombatManager.SetAttack
-- uid: CAF.Entities.EntityCombatManager.Team
-  name: Team
-  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_Team
-  commentId: P:CAF.Entities.EntityCombatManager.Team
-  fullName: CAF.Entities.EntityCombatManager.Team
-  nameWithType: EntityCombatManager.Team
-- uid: CAF.Entities.EntityCombatManager.Team*
-  name: Team
-  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_Team_
-  commentId: Overload:CAF.Entities.EntityCombatManager.Team
+- uid: CAF.Entities.EntityCombatManager.SetChargeLevel(System.Int32)
+  name: SetChargeLevel(Int32)
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_SetChargeLevel_System_Int32_
+  commentId: M:CAF.Entities.EntityCombatManager.SetChargeLevel(System.Int32)
+  fullName: CAF.Entities.EntityCombatManager.SetChargeLevel(System.Int32)
+  nameWithType: EntityCombatManager.SetChargeLevel(Int32)
+- uid: CAF.Entities.EntityCombatManager.SetChargeLevel*
+  name: SetChargeLevel
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_SetChargeLevel_
+  commentId: Overload:CAF.Entities.EntityCombatManager.SetChargeLevel
   isSpec: "True"
-  fullName: CAF.Entities.EntityCombatManager.Team
-  nameWithType: EntityCombatManager.Team
+  fullName: CAF.Entities.EntityCombatManager.SetChargeLevel
+  nameWithType: EntityCombatManager.SetChargeLevel
+- uid: CAF.Entities.EntityCombatManager.SetChargeLevelCharge(System.Int32)
+  name: SetChargeLevelCharge(Int32)
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_SetChargeLevelCharge_System_Int32_
+  commentId: M:CAF.Entities.EntityCombatManager.SetChargeLevelCharge(System.Int32)
+  fullName: CAF.Entities.EntityCombatManager.SetChargeLevelCharge(System.Int32)
+  nameWithType: EntityCombatManager.SetChargeLevelCharge(Int32)
+- uid: CAF.Entities.EntityCombatManager.SetChargeLevelCharge*
+  name: SetChargeLevelCharge
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_SetChargeLevelCharge_
+  commentId: Overload:CAF.Entities.EntityCombatManager.SetChargeLevelCharge
+  isSpec: "True"
+  fullName: CAF.Entities.EntityCombatManager.SetChargeLevelCharge
+  nameWithType: EntityCombatManager.SetChargeLevelCharge
+- uid: CAF.Entities.EntityCombatManager.SetHitStop(System.Int32)
+  name: SetHitStop(Int32)
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_SetHitStop_System_Int32_
+  commentId: M:CAF.Entities.EntityCombatManager.SetHitStop(System.Int32)
+  fullName: CAF.Entities.EntityCombatManager.SetHitStop(System.Int32)
+  nameWithType: EntityCombatManager.SetHitStop(Int32)
+- uid: CAF.Entities.EntityCombatManager.SetHitStop*
+  name: SetHitStop
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_SetHitStop_
+  commentId: Overload:CAF.Entities.EntityCombatManager.SetHitStop
+  isSpec: "True"
+  fullName: CAF.Entities.EntityCombatManager.SetHitStop
+  nameWithType: EntityCombatManager.SetHitStop
+- uid: CAF.Entities.EntityCombatManager.SetHitStun(System.Int32)
+  name: SetHitStun(Int32)
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_SetHitStun_System_Int32_
+  commentId: M:CAF.Entities.EntityCombatManager.SetHitStun(System.Int32)
+  fullName: CAF.Entities.EntityCombatManager.SetHitStun(System.Int32)
+  nameWithType: EntityCombatManager.SetHitStun(Int32)
+- uid: CAF.Entities.EntityCombatManager.SetHitStun*
+  name: SetHitStun
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_SetHitStun_
+  commentId: Overload:CAF.Entities.EntityCombatManager.SetHitStun
+  isSpec: "True"
+  fullName: CAF.Entities.EntityCombatManager.SetHitStun
+  nameWithType: EntityCombatManager.SetHitStun
+- uid: CAF.Entities.EntityCombatManager.SetMoveset(CAF.Combat.MovesetDefinition)
+  name: SetMoveset(MovesetDefinition)
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_SetMoveset_CAF_Combat_MovesetDefinition_
+  commentId: M:CAF.Entities.EntityCombatManager.SetMoveset(CAF.Combat.MovesetDefinition)
+  fullName: CAF.Entities.EntityCombatManager.SetMoveset(CAF.Combat.MovesetDefinition)
+  nameWithType: EntityCombatManager.SetMoveset(MovesetDefinition)
+- uid: CAF.Entities.EntityCombatManager.SetMoveset*
+  name: SetMoveset
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_SetMoveset_
+  commentId: Overload:CAF.Entities.EntityCombatManager.SetMoveset
+  isSpec: "True"
+  fullName: CAF.Entities.EntityCombatManager.SetMoveset
+  nameWithType: EntityCombatManager.SetMoveset
 - uid: CAF.Entities.EntityCombatManager.TryAttack
   name: TryAttack()
   href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_TryAttack
@@ -2142,12 +2723,6 @@ references:
   commentId: F:CAF.Entities.EntityHitboxManager.combatManager
   fullName: CAF.Entities.EntityHitboxManager.combatManager
   nameWithType: EntityHitboxManager.combatManager
-- uid: CAF.Entities.EntityHitboxManager.controller
-  name: controller
-  href: api/CAF.Entities.EntityHitboxManager.html#CAF_Entities_EntityHitboxManager_controller
-  commentId: F:CAF.Entities.EntityHitboxManager.controller
-  fullName: CAF.Entities.EntityHitboxManager.controller
-  nameWithType: EntityHitboxManager.controller
 - uid: CAF.Entities.EntityHitboxManager.CreateHitboxGroup(System.Int32)
   name: CreateHitboxGroup(Int32)
   href: api/CAF.Entities.EntityHitboxManager.html#CAF_Entities_EntityHitboxManager_CreateHitboxGroup_System_Int32_
@@ -2174,6 +2749,45 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityHitboxManager.DeactivateHitboxGroup
   nameWithType: EntityHitboxManager.DeactivateHitboxGroup
+- uid: CAF.Entities.EntityHitboxManager.GetHitboxPosition(CAF.Combat.BoxDefinition)
+  name: GetHitboxPosition(BoxDefinition)
+  href: api/CAF.Entities.EntityHitboxManager.html#CAF_Entities_EntityHitboxManager_GetHitboxPosition_CAF_Combat_BoxDefinition_
+  commentId: M:CAF.Entities.EntityHitboxManager.GetHitboxPosition(CAF.Combat.BoxDefinition)
+  fullName: CAF.Entities.EntityHitboxManager.GetHitboxPosition(CAF.Combat.BoxDefinition)
+  nameWithType: EntityHitboxManager.GetHitboxPosition(BoxDefinition)
+- uid: CAF.Entities.EntityHitboxManager.GetHitboxPosition*
+  name: GetHitboxPosition
+  href: api/CAF.Entities.EntityHitboxManager.html#CAF_Entities_EntityHitboxManager_GetHitboxPosition_
+  commentId: Overload:CAF.Entities.EntityHitboxManager.GetHitboxPosition
+  isSpec: "True"
+  fullName: CAF.Entities.EntityHitboxManager.GetHitboxPosition
+  nameWithType: EntityHitboxManager.GetHitboxPosition
+- uid: CAF.Entities.EntityHitboxManager.GetHitboxRotation(CAF.Combat.BoxDefinition)
+  name: GetHitboxRotation(BoxDefinition)
+  href: api/CAF.Entities.EntityHitboxManager.html#CAF_Entities_EntityHitboxManager_GetHitboxRotation_CAF_Combat_BoxDefinition_
+  commentId: M:CAF.Entities.EntityHitboxManager.GetHitboxRotation(CAF.Combat.BoxDefinition)
+  fullName: CAF.Entities.EntityHitboxManager.GetHitboxRotation(CAF.Combat.BoxDefinition)
+  nameWithType: EntityHitboxManager.GetHitboxRotation(BoxDefinition)
+- uid: CAF.Entities.EntityHitboxManager.GetHitboxRotation*
+  name: GetHitboxRotation
+  href: api/CAF.Entities.EntityHitboxManager.html#CAF_Entities_EntityHitboxManager_GetHitboxRotation_
+  commentId: Overload:CAF.Entities.EntityHitboxManager.GetHitboxRotation
+  isSpec: "True"
+  fullName: CAF.Entities.EntityHitboxManager.GetHitboxRotation
+  nameWithType: EntityHitboxManager.GetHitboxRotation
+- uid: CAF.Entities.EntityHitboxManager.GetHitList(System.Int32)
+  name: GetHitList(Int32)
+  href: api/CAF.Entities.EntityHitboxManager.html#CAF_Entities_EntityHitboxManager_GetHitList_System_Int32_
+  commentId: M:CAF.Entities.EntityHitboxManager.GetHitList(System.Int32)
+  fullName: CAF.Entities.EntityHitboxManager.GetHitList(System.Int32)
+  nameWithType: EntityHitboxManager.GetHitList(Int32)
+- uid: CAF.Entities.EntityHitboxManager.GetHitList*
+  name: GetHitList
+  href: api/CAF.Entities.EntityHitboxManager.html#CAF_Entities_EntityHitboxManager_GetHitList_
+  commentId: Overload:CAF.Entities.EntityHitboxManager.GetHitList
+  isSpec: "True"
+  fullName: CAF.Entities.EntityHitboxManager.GetHitList
+  nameWithType: EntityHitboxManager.GetHitList
 - uid: CAF.Entities.EntityHitboxManager.HitboxGroupEventAction
   name: EntityHitboxManager.HitboxGroupEventAction
   href: api/CAF.Entities.EntityHitboxManager.HitboxGroupEventAction.html
@@ -2205,18 +2819,24 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityHitboxManager.InstantiateHitbox
   nameWithType: EntityHitboxManager.InstantiateHitbox
+- uid: CAF.Entities.EntityHitboxManager.manager
+  name: manager
+  href: api/CAF.Entities.EntityHitboxManager.html#CAF_Entities_EntityHitboxManager_manager
+  commentId: F:CAF.Entities.EntityHitboxManager.manager
+  fullName: CAF.Entities.EntityHitboxManager.manager
+  nameWithType: EntityHitboxManager.manager
 - uid: CAF.Entities.EntityHitboxManager.OnHitboxHit
   name: OnHitboxHit
   href: api/CAF.Entities.EntityHitboxManager.html#CAF_Entities_EntityHitboxManager_OnHitboxHit
   commentId: E:CAF.Entities.EntityHitboxManager.OnHitboxHit
   fullName: CAF.Entities.EntityHitboxManager.OnHitboxHit
   nameWithType: EntityHitboxManager.OnHitboxHit
-- uid: CAF.Entities.EntityHitboxManager.OnHitboxHurt(GameObject,CAF.Combat.HitInfo,System.Int32,System.Int32)
-  name: OnHitboxHurt(GameObject, HitInfo, Int32, Int32)
-  href: api/CAF.Entities.EntityHitboxManager.html#CAF_Entities_EntityHitboxManager_OnHitboxHurt_GameObject_CAF_Combat_HitInfo_System_Int32_System_Int32_
-  commentId: M:CAF.Entities.EntityHitboxManager.OnHitboxHurt(GameObject,CAF.Combat.HitInfo,System.Int32,System.Int32)
-  fullName: CAF.Entities.EntityHitboxManager.OnHitboxHurt(GameObject, CAF.Combat.HitInfo, System.Int32, System.Int32)
-  nameWithType: EntityHitboxManager.OnHitboxHurt(GameObject, HitInfo, Int32, Int32)
+- uid: CAF.Entities.EntityHitboxManager.OnHitboxHurt(GameObject,CAF.Combat.HitInfoBase,System.Int32,System.Int32)
+  name: OnHitboxHurt(GameObject, HitInfoBase, Int32, Int32)
+  href: api/CAF.Entities.EntityHitboxManager.html#CAF_Entities_EntityHitboxManager_OnHitboxHurt_GameObject_CAF_Combat_HitInfoBase_System_Int32_System_Int32_
+  commentId: M:CAF.Entities.EntityHitboxManager.OnHitboxHurt(GameObject,CAF.Combat.HitInfoBase,System.Int32,System.Int32)
+  fullName: CAF.Entities.EntityHitboxManager.OnHitboxHurt(GameObject, CAF.Combat.HitInfoBase, System.Int32, System.Int32)
+  nameWithType: EntityHitboxManager.OnHitboxHurt(GameObject, HitInfoBase, Int32, Int32)
 - uid: CAF.Entities.EntityHitboxManager.OnHitboxHurt*
   name: OnHitboxHurt
   href: api/CAF.Entities.EntityHitboxManager.html#CAF_Entities_EntityHitboxManager_OnHitboxHurt_
@@ -2301,12 +2921,6 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityInputManager.ClearBuffer
   nameWithType: EntityInputManager.ClearBuffer
-- uid: CAF.Entities.EntityInputManager.controller
-  name: controller
-  href: api/CAF.Entities.EntityInputManager.html#CAF_Entities_EntityInputManager_controller
-  commentId: F:CAF.Entities.EntityInputManager.controller
-  fullName: CAF.Entities.EntityInputManager.controller
-  nameWithType: EntityInputManager.controller
 - uid: CAF.Entities.EntityInputManager.ControllerID
   name: ControllerID
   href: api/CAF.Entities.EntityInputManager.html#CAF_Entities_EntityInputManager_ControllerID
@@ -2413,6 +3027,12 @@ references:
   commentId: F:CAF.Entities.EntityInputManager.inputRecordMaxSize
   fullName: CAF.Entities.EntityInputManager.inputRecordMaxSize
   nameWithType: EntityInputManager.inputRecordMaxSize
+- uid: CAF.Entities.EntityInputManager.manager
+  name: manager
+  href: api/CAF.Entities.EntityInputManager.html#CAF_Entities_EntityInputManager_manager
+  commentId: F:CAF.Entities.EntityInputManager.manager
+  fullName: CAF.Entities.EntityInputManager.manager
+  nameWithType: EntityInputManager.manager
 - uid: CAF.Entities.EntityInputManager.ProcessInputs
   name: ProcessInputs()
   href: api/CAF.Entities.EntityInputManager.html#CAF_Entities_EntityInputManager_ProcessInputs
@@ -2586,25 +3206,6 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityManager.HandleLockon
   nameWithType: EntityManager.HandleLockon
-- uid: CAF.Entities.EntityManager.healthManager
-  name: healthManager
-  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_healthManager
-  commentId: F:CAF.Entities.EntityManager.healthManager
-  fullName: CAF.Entities.EntityManager.healthManager
-  nameWithType: EntityManager.healthManager
-- uid: CAF.Entities.EntityManager.HealthManager
-  name: HealthManager
-  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_HealthManager
-  commentId: P:CAF.Entities.EntityManager.HealthManager
-  fullName: CAF.Entities.EntityManager.HealthManager
-  nameWithType: EntityManager.HealthManager
-- uid: CAF.Entities.EntityManager.HealthManager*
-  name: HealthManager
-  href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_HealthManager_
-  commentId: Overload:CAF.Entities.EntityManager.HealthManager
-  isSpec: "True"
-  fullName: CAF.Entities.EntityManager.HealthManager
-  nameWithType: EntityManager.HealthManager
 - uid: CAF.Entities.EntityManager.InputManager
   name: InputManager
   href: api/CAF.Entities.EntityManager.html#CAF_Entities_EntityManager_InputManager
@@ -2824,12 +3425,6 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityPhysicsManager.CheckIfGrounded
   nameWithType: EntityPhysicsManager.CheckIfGrounded
-- uid: CAF.Entities.EntityPhysicsManager.controller
-  name: controller
-  href: api/CAF.Entities.EntityPhysicsManager.html#CAF_Entities_EntityPhysicsManager_controller
-  commentId: F:CAF.Entities.EntityPhysicsManager.controller
-  fullName: CAF.Entities.EntityPhysicsManager.controller
-  nameWithType: EntityPhysicsManager.controller
 - uid: CAF.Entities.EntityPhysicsManager.decelerationFactor
   name: decelerationFactor
   href: api/CAF.Entities.EntityPhysicsManager.html#CAF_Entities_EntityPhysicsManager_decelerationFactor
@@ -2899,6 +3494,12 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityPhysicsManager.HandleGravity
   nameWithType: EntityPhysicsManager.HandleGravity
+- uid: CAF.Entities.EntityPhysicsManager.manager
+  name: manager
+  href: api/CAF.Entities.EntityPhysicsManager.html#CAF_Entities_EntityPhysicsManager_manager
+  commentId: F:CAF.Entities.EntityPhysicsManager.manager
+  fullName: CAF.Entities.EntityPhysicsManager.manager
+  nameWithType: EntityPhysicsManager.manager
 - uid: CAF.Entities.EntityPhysicsManager.SetForceDirect(Vector3,Vector3)
   name: SetForceDirect(Vector3, Vector3)
   href: api/CAF.Entities.EntityPhysicsManager.html#CAF_Entities_EntityPhysicsManager_SetForceDirect_Vector3_Vector3_
@@ -2944,19 +3545,6 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityState.CheckInterrupt
   nameWithType: EntityState.CheckInterrupt
-- uid: CAF.Entities.EntityState.Controller
-  name: Controller
-  href: api/CAF.Entities.EntityState.html#CAF_Entities_EntityState_Controller
-  commentId: P:CAF.Entities.EntityState.Controller
-  fullName: CAF.Entities.EntityState.Controller
-  nameWithType: EntityState.Controller
-- uid: CAF.Entities.EntityState.Controller*
-  name: Controller
-  href: api/CAF.Entities.EntityState.html#CAF_Entities_EntityState_Controller_
-  commentId: Overload:CAF.Entities.EntityState.Controller
-  isSpec: "True"
-  fullName: CAF.Entities.EntityState.Controller
-  nameWithType: EntityState.Controller
 - uid: CAF.Entities.EntityState.GetName
   name: GetName()
   href: api/CAF.Entities.EntityState.html#CAF_Entities_EntityState_GetName
@@ -2983,6 +3571,19 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityState.Initialize
   nameWithType: EntityState.Initialize
+- uid: CAF.Entities.EntityState.Manager
+  name: Manager
+  href: api/CAF.Entities.EntityState.html#CAF_Entities_EntityState_Manager
+  commentId: P:CAF.Entities.EntityState.Manager
+  fullName: CAF.Entities.EntityState.Manager
+  nameWithType: EntityState.Manager
+- uid: CAF.Entities.EntityState.Manager*
+  name: Manager
+  href: api/CAF.Entities.EntityState.html#CAF_Entities_EntityState_Manager_
+  commentId: Overload:CAF.Entities.EntityState.Manager
+  isSpec: "True"
+  fullName: CAF.Entities.EntityState.Manager
+  nameWithType: EntityState.Manager
 - uid: CAF.Entities.EntityState.OnInterrupted
   name: OnInterrupted()
   href: api/CAF.Entities.EntityState.html#CAF_Entities_EntityState_OnInterrupted
@@ -3047,12 +3648,6 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityStateManager.ChangeState
   nameWithType: EntityStateManager.ChangeState
-- uid: CAF.Entities.EntityStateManager.controller
-  name: controller
-  href: api/CAF.Entities.EntityStateManager.html#CAF_Entities_EntityStateManager_controller
-  commentId: F:CAF.Entities.EntityStateManager.controller
-  fullName: CAF.Entities.EntityStateManager.controller
-  nameWithType: EntityStateManager.controller
 - uid: CAF.Entities.EntityStateManager.currentState
   name: currentState
   href: api/CAF.Entities.EntityStateManager.html#CAF_Entities_EntityStateManager_currentState
@@ -3110,6 +3705,30 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityStateManager.IncrementFrame
   nameWithType: EntityStateManager.IncrementFrame
+- uid: CAF.Entities.EntityStateManager.manager
+  name: manager
+  href: api/CAF.Entities.EntityStateManager.html#CAF_Entities_EntityStateManager_manager
+  commentId: F:CAF.Entities.EntityStateManager.manager
+  fullName: CAF.Entities.EntityStateManager.manager
+  nameWithType: EntityStateManager.manager
+- uid: CAF.Entities.EntityStateManager.OnStateFrameSet
+  name: OnStateFrameSet
+  href: api/CAF.Entities.EntityStateManager.html#CAF_Entities_EntityStateManager_OnStateFrameSet
+  commentId: E:CAF.Entities.EntityStateManager.OnStateFrameSet
+  fullName: CAF.Entities.EntityStateManager.OnStateFrameSet
+  nameWithType: EntityStateManager.OnStateFrameSet
+- uid: CAF.Entities.EntityStateManager.OnStatePostChange
+  name: OnStatePostChange
+  href: api/CAF.Entities.EntityStateManager.html#CAF_Entities_EntityStateManager_OnStatePostChange
+  commentId: E:CAF.Entities.EntityStateManager.OnStatePostChange
+  fullName: CAF.Entities.EntityStateManager.OnStatePostChange
+  nameWithType: EntityStateManager.OnStatePostChange
+- uid: CAF.Entities.EntityStateManager.OnStatePreChange
+  name: OnStatePreChange
+  href: api/CAF.Entities.EntityStateManager.html#CAF_Entities_EntityStateManager_OnStatePreChange
+  commentId: E:CAF.Entities.EntityStateManager.OnStatePreChange
+  fullName: CAF.Entities.EntityStateManager.OnStatePreChange
+  nameWithType: EntityStateManager.OnStatePreChange
 - uid: CAF.Entities.EntityStateManager.SetFrame(System.UInt32)
   name: SetFrame(UInt32)
   href: api/CAF.Entities.EntityStateManager.html#CAF_Entities_EntityStateManager_SetFrame_System_UInt32_
@@ -3123,6 +3742,18 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityStateManager.SetFrame
   nameWithType: EntityStateManager.SetFrame
+- uid: CAF.Entities.EntityStateManager.StateAction
+  name: EntityStateManager.StateAction
+  href: api/CAF.Entities.EntityStateManager.StateAction.html
+  commentId: T:CAF.Entities.EntityStateManager.StateAction
+  fullName: CAF.Entities.EntityStateManager.StateAction
+  nameWithType: EntityStateManager.StateAction
+- uid: CAF.Entities.EntityStateManager.StateFrameAction
+  name: EntityStateManager.StateFrameAction
+  href: api/CAF.Entities.EntityStateManager.StateFrameAction.html
+  commentId: T:CAF.Entities.EntityStateManager.StateFrameAction
+  fullName: CAF.Entities.EntityStateManager.StateFrameAction
+  nameWithType: EntityStateManager.StateFrameAction
 - uid: CAF.Entities.EntityStateManager.states
   name: states
   href: api/CAF.Entities.EntityStateManager.html#CAF_Entities_EntityStateManager_states
@@ -3142,88 +3773,6 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityStateManager.Tick
   nameWithType: EntityStateManager.Tick
-- uid: CAF.Entities.HealthManager
-  name: HealthManager
-  href: api/CAF.Entities.HealthManager.html
-  commentId: T:CAF.Entities.HealthManager
-  fullName: CAF.Entities.HealthManager
-  nameWithType: HealthManager
-- uid: CAF.Entities.HealthManager.Heal(System.Single)
-  name: Heal(Single)
-  href: api/CAF.Entities.HealthManager.html#CAF_Entities_HealthManager_Heal_System_Single_
-  commentId: M:CAF.Entities.HealthManager.Heal(System.Single)
-  fullName: CAF.Entities.HealthManager.Heal(System.Single)
-  nameWithType: HealthManager.Heal(Single)
-- uid: CAF.Entities.HealthManager.Heal*
-  name: Heal
-  href: api/CAF.Entities.HealthManager.html#CAF_Entities_HealthManager_Heal_
-  commentId: Overload:CAF.Entities.HealthManager.Heal
-  isSpec: "True"
-  fullName: CAF.Entities.HealthManager.Heal
-  nameWithType: HealthManager.Heal
-- uid: CAF.Entities.HealthManager.Health
-  name: Health
-  href: api/CAF.Entities.HealthManager.html#CAF_Entities_HealthManager_Health
-  commentId: P:CAF.Entities.HealthManager.Health
-  fullName: CAF.Entities.HealthManager.Health
-  nameWithType: HealthManager.Health
-- uid: CAF.Entities.HealthManager.Health*
-  name: Health
-  href: api/CAF.Entities.HealthManager.html#CAF_Entities_HealthManager_Health_
-  commentId: Overload:CAF.Entities.HealthManager.Health
-  isSpec: "True"
-  fullName: CAF.Entities.HealthManager.Health
-  nameWithType: HealthManager.Health
-- uid: CAF.Entities.HealthManager.HealthChangedAction
-  name: HealthManager.HealthChangedAction
-  href: api/CAF.Entities.HealthManager.HealthChangedAction.html
-  commentId: T:CAF.Entities.HealthManager.HealthChangedAction
-  fullName: CAF.Entities.HealthManager.HealthChangedAction
-  nameWithType: HealthManager.HealthChangedAction
-- uid: CAF.Entities.HealthManager.Hurt(System.Single)
-  name: Hurt(Single)
-  href: api/CAF.Entities.HealthManager.html#CAF_Entities_HealthManager_Hurt_System_Single_
-  commentId: M:CAF.Entities.HealthManager.Hurt(System.Single)
-  fullName: CAF.Entities.HealthManager.Hurt(System.Single)
-  nameWithType: HealthManager.Hurt(Single)
-- uid: CAF.Entities.HealthManager.Hurt*
-  name: Hurt
-  href: api/CAF.Entities.HealthManager.html#CAF_Entities_HealthManager_Hurt_
-  commentId: Overload:CAF.Entities.HealthManager.Hurt
-  isSpec: "True"
-  fullName: CAF.Entities.HealthManager.Hurt
-  nameWithType: HealthManager.Hurt
-- uid: CAF.Entities.HealthManager.OnHeal
-  name: OnHeal
-  href: api/CAF.Entities.HealthManager.html#CAF_Entities_HealthManager_OnHeal
-  commentId: E:CAF.Entities.HealthManager.OnHeal
-  fullName: CAF.Entities.HealthManager.OnHeal
-  nameWithType: HealthManager.OnHeal
-- uid: CAF.Entities.HealthManager.OnHealthSet
-  name: OnHealthSet
-  href: api/CAF.Entities.HealthManager.html#CAF_Entities_HealthManager_OnHealthSet
-  commentId: E:CAF.Entities.HealthManager.OnHealthSet
-  fullName: CAF.Entities.HealthManager.OnHealthSet
-  nameWithType: HealthManager.OnHealthSet
-- uid: CAF.Entities.HealthManager.OnHurt
-  name: OnHurt
-  href: api/CAF.Entities.HealthManager.html#CAF_Entities_HealthManager_OnHurt
-  commentId: E:CAF.Entities.HealthManager.OnHurt
-  fullName: CAF.Entities.HealthManager.OnHurt
-  nameWithType: HealthManager.OnHurt
-- uid: CAF.Entities.HealthManager.SetHealth(System.Single)
-  name: SetHealth(Single)
-  href: api/CAF.Entities.HealthManager.html#CAF_Entities_HealthManager_SetHealth_System_Single_
-  commentId: M:CAF.Entities.HealthManager.SetHealth(System.Single)
-  fullName: CAF.Entities.HealthManager.SetHealth(System.Single)
-  nameWithType: HealthManager.SetHealth(Single)
-- uid: CAF.Entities.HealthManager.SetHealth*
-  name: SetHealth
-  href: api/CAF.Entities.HealthManager.html#CAF_Entities_HealthManager_SetHealth_
-  commentId: Overload:CAF.Entities.HealthManager.SetHealth
-  isSpec: "True"
-  fullName: CAF.Entities.HealthManager.SetHealth
-  nameWithType: HealthManager.SetHealth
 - uid: CAF.HelperFunctions
   name: HelperFunctions
   href: api/CAF.HelperFunctions.html
