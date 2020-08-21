@@ -12,7 +12,7 @@ namespace TDAction.Entities.Characters
         }
         public override void OnUpdate()
         {
-            ((EntityPhysicsManager)GetCharacterController().PhysicsManager).ApplyGravity();
+            ((EntityPhysicsManager)GetCharacterController().PhysicsManager).HandleGravity();
 
             ((CharacterPhysicsManager)GetCharacterController().PhysicsManager).AirDrift();
 
@@ -21,9 +21,14 @@ namespace TDAction.Entities.Characters
 
         public override bool CheckInterrupt()
         {
+            CharacterManager c = GetCharacterController();
+            if (c.TryAttack())
+            {
+                return true;
+            }
             if (GetCharacterController().IsGrounded)
             {
-                GetCharacterController().StateManager.ChangeState((int)CharacterStates.IDLE);
+                GetCharacterController().StateManager.ChangeState((int)EntityStates.IDLE);
                 return true;
             }
             return false;

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TDAction.Combat;
 using UnityEngine;
 
 namespace TDAction.Entities
@@ -9,6 +10,7 @@ namespace TDAction.Entities
     {
         [SerializeField] protected EntityManager entityPrefab;
         [SerializeField] protected EntityStats entityStats;
+        [SerializeField] public List<MovesetDefinition> movesets = new List<MovesetDefinition>();
 
         public virtual EntityStats GetEntityStats()
         {

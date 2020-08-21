@@ -4,8 +4,10 @@ using UnityEngine;
 
 namespace TDAction.Combat
 {
-    public class HitInfo : CAF.Combat.HitInfo
+    public enum TeamTypes
     {
-
+        FFA = 0,
+        Team1 = 1,
+        Team2 = 2
     }
 }

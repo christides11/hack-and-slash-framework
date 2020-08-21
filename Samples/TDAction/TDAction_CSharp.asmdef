@@ -1,5 +1,5 @@
 {
-    "name": "TDAction",
+    "name": "TDAction_CSharp",
     "references": [
         "GUID:60e386f2aae2e3745835ad13422e215a",
         "GUID:b8e24fd1eb19b4226afebb2810e3c19b",

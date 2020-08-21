@@ -26,14 +26,18 @@ namespace TDAction.Entities.Characters
         {
             CharacterManager c = GetCharacterController();
             CharacterStats stats = (CharacterStats)c.entityDefinition.GetEntityStats();
+            if (c.TryAttack())
+            {
+                return true;
+            }
             if (c.InputManager.GetButton((int)EntityInputs.JUMP).firstPress)
             {
-                c.StateManager.ChangeState((int)CharacterStates.JUMP_SQUAT);
+                c.StateManager.ChangeState((int)EntityStates.JUMP_SQUAT);
                 return true;
             }
             if (Mathf.Abs(c.InputManager.GetAxis2D((int)EntityInputs.MOVEMENT).x) > InputConstants.moveDeadzone)
             {
-                c.StateManager.ChangeState((int)CharacterStates.WALK);
+                c.StateManager.ChangeState((int)EntityStates.WALK);
                 return true;
             }
             return false;

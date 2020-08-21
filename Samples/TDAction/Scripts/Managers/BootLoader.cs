@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 namespace TDAction.Managers
 {
+    /// <summary>
+    /// Handles initializing the game. 
+    /// This is the first script that runs when the game is started.
+    /// </summary>
     public class BootLoader : MonoBehaviour
     {
         public delegate void EmptyAction();
@@ -17,6 +21,7 @@ namespace TDAction.Managers
         {
             OnPlaySceneLoaded += StartGame;
 
+            // Play scene is already loaded.
             if (SceneManager.GetSceneByName(playScene).IsValid())
             {
                 OnPlaySceneLoaded.Invoke();
@@ -30,6 +35,10 @@ namespace TDAction.Managers
             gameManager.SetupGame();
         }
 
+        /// <summary>
+        /// Loads the play scene and sets it as the active one.
+        /// </summary>
+        /// <returns></returns>
         IEnumerator LoadPlayScene()
         {
             var ls = SceneManager.LoadSceneAsync(playScene, LoadSceneMode.Additive);

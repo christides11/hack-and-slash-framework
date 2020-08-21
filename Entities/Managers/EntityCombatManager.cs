@@ -8,30 +8,58 @@ namespace CAF.Entities
 {
     public class EntityCombatManager : MonoBehaviour, IHurtable
     {
-        public int Team { get; set; } = 0;
+        public delegate void EmptyAction(EntityManager self);
+        public delegate void HealthChangedAction(EntityManager initializer, EntityManager self, HitInfoBase hitInfo);
+        public delegate void MovesetChangedAction(EntityManager self, MovesetDefinition lastMoveset);
+        public delegate void ChargeLevelChangedAction(EntityManager self, int lastChargeLevel);
+        public delegate void ChargeLevelChargeChangedAction(EntityManager self, int lastChargeLevelCharge);
+        public event HealthChangedAction OnHit;
+        public event HealthChangedAction OnHealed;
+        public event EmptyAction OnEnterHitStop;
+        public event EmptyAction OnEnterHitStun;
+        public event EmptyAction OnHitStopAdded;
+        public event EmptyAction OnHitStunAdded;
+        public event EmptyAction OnExitHitStop;
+        public event EmptyAction OnExitHitStun;
+        public event MovesetChangedAction OnMovesetChanged;
+        public event ChargeLevelChangedAction OnChargeLevelChanged;
+        public event ChargeLevelChargeChangedAction OnChargeLevelChargeChanged;
+
+        public int HitStun { get; protected set; } = 0;
+        public int HitStop { get; protected set; } = 0;
+        public int CurrentChargeLevel { get; protected set; } = 0;
+        public int CurrentChargeLevelCharge { get; protected set; } = 0;
         public MovesetAttackNode CurrentAttack { get; protected set; } = null;
         public MovesetDefinition CurrentMoveset { get; protected set; } = null;
-        public HitInfo LastHitBy { get; protected set; }
+        public HitInfoBase LastHitBy { get; protected set; }
 
-        public EntityManager controller;
+        public EntityManager manager;
         public EntityHitboxManager hitboxManager;
-        [SerializeField] public int hitStun;
-        [SerializeField] public int hitStop;
+
+
 
         protected virtual void Awake()
         {
-            hitboxManager = new EntityHitboxManager(this, controller);
+            hitboxManager = new EntityHitboxManager(this, manager);
         }
 
         public virtual void CLateUpdate()
         {
-            if (hitStop > 0)
+            if (HitStop > 0)
             {
-                hitStop--;
+                HitStop--;
+                if(HitStop == 0)
+                {
+                    OnExitHitStop?.Invoke(manager);
+                }
             }
-            else if (hitStun > 0)
+            else if (HitStun > 0)
             {
-                hitStun--;
+                HitStun--;
+                if(HitStun == 0)
+                {
+                    OnExitHitStun?.Invoke(manager);
+                }
             }
             hitboxManager.TickBoxes();
         }
@@ -42,6 +70,8 @@ namespace CAF.Entities
             {
                 return;
             }
+            CurrentChargeLevel = 0;
+            CurrentChargeLevelCharge = 0;
             hitboxManager.Reset();
             CurrentAttack = null;
         }
@@ -54,6 +84,10 @@ namespace CAF.Entities
 
         public virtual MovesetAttackNode TryAttack()
         {
+            if(CurrentMoveset == null)
+            {
+                return null;
+            }
             if(CurrentAttack == null)
             {
                 return CheckStartingNodes();
@@ -63,7 +97,7 @@ namespace CAF.Entities
 
         public virtual MovesetAttackNode TryCommandAttack()
         {
-            switch (controller.IsGrounded)
+            switch (manager.IsGrounded)
             {
                 case true:
                     MovesetAttackNode groundCommandNormal = CheckAttackNodes(ref CurrentMoveset.groundAttackCommandNormals);
@@ -85,7 +119,7 @@ namespace CAF.Entities
 
         protected virtual MovesetAttackNode CheckStartingNodes()
         {
-            switch (controller.IsGrounded)
+            switch (manager.IsGrounded)
             {
                 case true:
                     MovesetAttackNode groundCommandNormal = CheckAttackNodes(ref CurrentMoveset.groundAttackCommandNormals);
@@ -119,8 +153,8 @@ namespace CAF.Entities
         {
             for (int i = 0; i < CurrentAttack.nextNode.Count; i++)
             {
-                if (controller.StateManager.CurrentStateFrame >= CurrentAttack.nextNode[i].cancelWindow.x &&
-                    controller.StateManager.CurrentStateFrame <= CurrentAttack.nextNode[i].cancelWindow.y)
+                if (manager.StateManager.CurrentStateFrame >= CurrentAttack.nextNode[i].cancelWindow.x &&
+                    manager.StateManager.CurrentStateFrame <= CurrentAttack.nextNode[i].cancelWindow.y)
                 {
                     MovesetAttackNode man = CheckAttackNode(CurrentAttack.nextNode[i].node);
                     if(man != null)
@@ -168,7 +202,7 @@ namespace CAF.Entities
                         }
                         break;
                     case Input.InputDefinitionType.Button:
-                        if (!controller.InputManager.GetButton(node.executeInputs[e].buttonID, out int gotOffset, 0, true, 3).firstPress)
+                        if (!manager.InputManager.GetButton(node.executeInputs[e].buttonID, out int gotOffset, 0, true, 3).firstPress)
                         {
                             pressedExecuteInputs = false;
                             break;
@@ -232,20 +266,77 @@ namespace CAF.Entities
 
         protected virtual bool CheckStickDirection(Vector2 wantedDirection, float deviation, int framesBack)
         {
+            Debug.LogError("CheckStickDirection has to be overrided for command inputs to work.");
             return false;
         }
 
-        public virtual HitReaction Hurt(Vector3 center, Vector3 forward, Vector3 right, HitInfo hitInfo)
+        public virtual void SetHitStop(int value)
+        {
+            HitStop = value;
+            OnEnterHitStop?.Invoke(manager);
+        }
+
+        public virtual void AddHitStop(int value)
+        {
+            HitStop += value;
+            OnHitStopAdded?.Invoke(manager);
+        }
+
+        public virtual void SetHitStun(int value)
+        {
+            HitStun = value;
+            OnEnterHitStun?.Invoke(manager);
+         }
+
+        public virtual void AddHitStun(int value)
+        {
+            HitStun += value;
+            OnHitStunAdded?.Invoke(manager);
+        }
+
+        public virtual void SetMoveset(MovesetDefinition moveset)
+        {
+            MovesetDefinition oldMoveset = CurrentMoveset;
+            CurrentMoveset = moveset;
+            OnMovesetChanged?.Invoke(manager, oldMoveset);
+        }
+
+        public virtual void SetChargeLevel(int value)
+        {
+            int lastChargeLevel = value;
+            CurrentChargeLevel = value;
+            OnChargeLevelChanged?.Invoke(manager, lastChargeLevel);
+        }
+        
+        public virtual void SetChargeLevelCharge(int value)
+        {
+            int oldValue = CurrentChargeLevelCharge;
+            CurrentChargeLevelCharge = value;
+            OnChargeLevelChargeChanged?.Invoke(manager, oldValue);
+        }
+
+        public virtual void IncrementChargeLevelCharge()
+        {
+            CurrentChargeLevelCharge++;
+            OnChargeLevelChargeChanged?.Invoke(manager, CurrentChargeLevelCharge-1);
+        }
+
+        public virtual HitReaction Hurt(Vector3 center, Vector3 forward, Vector3 right, HitInfoBase hitInfo)
         {
             HitReaction hr = new HitReaction();
             hr.reactionType = HitReactionType.Hit;
-            controller.HealthManager.Hurt(hitInfo.damageOnHit);
+            OnHit?.Invoke(null, manager, hitInfo);
             return hr;
         }
 
-        public virtual void Heal()
+        public virtual void Heal(HealInfoBase healInfo)
         {
+            OnHealed?.Invoke(null, manager, null);
+        }
 
+        public virtual int GetTeam()
+        {
+            return 0;
         }
     }
 }
