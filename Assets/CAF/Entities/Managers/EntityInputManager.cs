@@ -7,7 +7,7 @@ namespace CAF.Entities
 {
     public class EntityInputManager : MonoBehaviour
     {
-        [SerializeField] protected EntityManager controller;
+        [SerializeField] protected EntityManager manager;
 
         public InputControlType ControlType { get; protected set; } = InputControlType.None;
         public int ControllerID { get; protected set; } = -1;

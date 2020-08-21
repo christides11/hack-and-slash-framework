@@ -13,15 +13,17 @@ namespace CAF.Combat
         public static void Init(AttackDefinition attack)
         {
             AttackDefinitionEditorWindow window =
-                (AttackDefinitionEditorWindow)EditorWindow.GetWindow(typeof(AttackDefinitionEditorWindow));
+                ScriptableObject.CreateInstance<AttackDefinitionEditorWindow>();
             window.attack = attack;
             window.Show();
         }
 
         protected Dictionary<string, Type> attackEventTypes = new Dictionary<string, Type>();
+        protected Dictionary<string, Type> hitInfoTypes = new Dictionary<string, Type>();
         protected virtual void OnFocus()
         {
             attackEventTypes.Clear();
+            hitInfoTypes.Clear();
             foreach (var a in AppDomain.CurrentDomain.GetAssemblies())
             {
                 foreach (var givenType in a.GetTypes())
@@ -29,6 +31,10 @@ namespace CAF.Combat
                     if (givenType.IsSubclassOf(typeof(AttackEvent)))
                     {
                         attackEventTypes.Add(givenType.FullName, givenType);
+                    }
+                    if (givenType.IsSubclassOf(typeof(HitInfoBase)))
+                    {
+                        hitInfoTypes.Add(givenType.FullName, givenType);
                     }
                 }
             }
@@ -208,8 +214,39 @@ namespace CAF.Combat
             EditorGUILayout.EndHorizontal();
             EditorGUI.indentLevel++;
             attack.chargeWindows[i].frame = EditorGUILayout.IntField("Frame", attack.chargeWindows[i].frame);
-            attack.chargeWindows[i].maxChargeFrames = EditorGUILayout.IntField("Max Charge Frames", attack.chargeWindows[i].maxChargeFrames);
+            attack.chargeWindows[i].releaseOnCompletion = EditorGUILayout.Toggle("Auto Release?", 
+                attack.chargeWindows[i].releaseOnCompletion);
+            if(GUILayout.Button("Add Charge Level"))
+            {
+                attack.chargeWindows[i].chargeLevels.Add(CreateChargeLevelInstance());
+            }
+            for(int w = 0; w < attack.chargeWindows[i].chargeLevels.Count; w++)
+            {
+                EditorGUI.indentLevel++;
+                DrawChargeLevel(i, w);
+                EditorGUI.indentLevel--;
+                EditorGUILayout.Space();
+            }
             EditorGUI.indentLevel--;
+        }
+
+        protected virtual void DrawChargeLevel(int chargeWindowIndex, int index)
+        {
+            EditorGUILayout.BeginHorizontal();
+            if (GUILayout.Button("X", GUILayout.Width(30)))
+            {
+                attack.chargeWindows[chargeWindowIndex].chargeLevels.RemoveAt(index);
+                return;
+            }
+            GUILayout.Label($"Level {index+1}");
+            EditorGUILayout.EndHorizontal();
+            attack.chargeWindows[chargeWindowIndex].chargeLevels[index].maxChargeFrames =
+                EditorGUILayout.IntField("Max Charge Frames", attack.chargeWindows[chargeWindowIndex].chargeLevels[index].maxChargeFrames);
+        }
+
+        protected virtual ChargeLevel CreateChargeLevelInstance()
+        {
+            return new ChargeLevel();
         }
 
         protected virtual ChargeDefinition CreateChargeDefinition()
@@ -288,12 +325,14 @@ namespace CAF.Combat
 
             if (GUILayout.Button("Add", GUILayout.Width(50)))
             {
+                Undo.RecordObject(attack, "Added Box Group");
                 AddBoxGroup();
             }
             if (GUILayout.Button("Remove", GUILayout.Width(60)))
             {
+                Undo.RecordObject(attack, "Removed Box Group");
                 attack.boxGroups.RemoveAt(currentHitboxGroupIndex);
-                currentHitboxGroupIndex--;
+                currentHitboxGroupIndex--; 
             }
         }
 
@@ -320,6 +359,12 @@ namespace CAF.Combat
             currentGroup.activeFramesStart = (int)activeFramesStart;
             currentGroup.activeFramesEnd = (int)activeFramesEnd;
 
+            currentGroup.chargeLevelNeeded = EditorGUILayout.IntField("Charge Level Needed", currentGroup.chargeLevelNeeded);
+            if(currentGroup.chargeLevelNeeded >= 0)
+            {
+                currentGroup.chargeLevelMax = EditorGUILayout.IntField("Charge Level Max", currentGroup.chargeLevelMax);
+            }
+
             currentGroup.styleGain = EditorGUILayout.FloatField("Style Gain", currentGroup.styleGain);
             currentGroup.hitGroupType = (BoxGroupType)EditorGUILayout.EnumPopup("Hit Type", currentGroup.hitGroupType);
             currentGroup.attachToEntity = EditorGUILayout.Toggle("Attach to Entity", currentGroup.attachToEntity);
@@ -345,139 +390,44 @@ namespace CAF.Combat
             EditorGUI.indentLevel--;
             EditorGUILayout.Space(10);
 
+            if (GUILayout.Button("Set HitInfo Type"))
+            {
+                GenericMenu menu = new GenericMenu();
+
+                foreach (string t in hitInfoTypes.Keys)
+                {
+                    string destination = t.Replace('.', '/');
+                    menu.AddItem(new GUIContent(destination), true, OnHitInfoSelected, t);
+                }
+
+                menu.ShowAsContext();
+            }
+
+            if(currentGroup.hitboxHitInfo == null)
+            {
+                return;
+            }
+
             switch (currentGroup.hitGroupType)
             {
                 case BoxGroupType.HIT:
-                    DrawBoxGroupHitOptions(currentGroup);
+                    currentGroup.hitboxHitInfo.DrawInspectorHitInfo();
                     break;
                 case BoxGroupType.GRAB:
-                    DrawBoxGroupGrabOptions(currentGroup);
+                    currentGroup.hitboxHitInfo.DrawInspectorGrabInfo();
                     break;
             }
+        }
+
+        protected void OnHitInfoSelected(object t)
+        {
+            attack.boxGroups[currentHitboxGroupIndex].hitboxHitInfo = (HitInfoBase)Activator.CreateInstance(hitInfoTypes[(string)t]);
         }
 
         protected virtual void BoxGroupAddBoxDefinition(BoxGroup currentGroup)
         {
             currentGroup.boxes.Add(new BoxDefinition());
         }
-
-        #region Box Group: Hit
-        bool drawHitEffectsDropdown;
-        bool drawHitDamageDropdown;
-        bool drawHitForcesDropdown;
-        bool drawHitStunDropdown;
-        protected virtual void DrawBoxGroupHitOptions(BoxGroup currentGroup)
-        {
-            drawHitEffectsDropdown = EditorGUILayout.Foldout(drawHitEffectsDropdown, "EFFECT", true, EditorStyles.boldLabel);
-            if (drawHitEffectsDropdown)
-            {
-                EditorGUI.indentLevel++;
-                DrawHitEffectsOptions(currentGroup);
-                EditorGUI.indentLevel--;
-            }
-            EditorGUILayout.Space(10);
-
-            drawHitDamageDropdown = EditorGUILayout.Foldout(drawHitDamageDropdown, "DAMAGE", true, EditorStyles.boldLabel);
-            if (drawHitDamageDropdown)
-            {
-                EditorGUI.indentLevel++;
-                DrawHitDamageOptions(currentGroup);
-                EditorGUI.indentLevel--;
-            }
-            EditorGUILayout.Space(10);
-
-            drawHitForcesDropdown = EditorGUILayout.Foldout(drawHitForcesDropdown, "FORCE", true, EditorStyles.boldLabel);
-            if (drawHitForcesDropdown)
-            {
-                EditorGUI.indentLevel++;
-                DrawHitForcesOptions(currentGroup);
-                EditorGUI.indentLevel--;
-            }
-            EditorGUILayout.Space(10);
-
-            drawHitStunDropdown = EditorGUILayout.Foldout(drawHitStunDropdown, "STUN", true, EditorStyles.boldLabel);
-            if (drawHitStunDropdown)
-            {
-                EditorGUI.indentLevel++;
-                DrawHitStunOptions(currentGroup);
-                EditorGUI.indentLevel--;
-            }
-            EditorGUILayout.Space(10);
-        }
-
-        protected virtual void DrawHitEffectsOptions(BoxGroup currentGroup)
-        {
-            currentGroup.hitboxHitInfo.groundOnly = EditorGUILayout.Toggle("Hit Ground Only?", currentGroup.hitboxHitInfo.groundOnly);
-            currentGroup.hitboxHitInfo.airOnly = EditorGUILayout.Toggle("Hit Air Only?", currentGroup.hitboxHitInfo.airOnly);
-            currentGroup.hitboxHitInfo.unblockable = EditorGUILayout.Toggle("Unblockable?", currentGroup.hitboxHitInfo.unblockable);
-            currentGroup.hitboxHitInfo.breakArmor = EditorGUILayout.Toggle("Breaks Armor?", currentGroup.hitboxHitInfo.breakArmor);
-            currentGroup.hitboxHitInfo.groundBounces = EditorGUILayout.Toggle("Ground Bounces?", currentGroup.hitboxHitInfo.groundBounces);
-            currentGroup.hitboxHitInfo.wallBounces = EditorGUILayout.Toggle("Wall Bounces?", currentGroup.hitboxHitInfo.wallBounces);
-            currentGroup.hitboxHitInfo.causesTumble = EditorGUILayout.Toggle("Causes Tumble?", currentGroup.hitboxHitInfo.causesTumble);
-            currentGroup.hitboxHitInfo.knockdown = EditorGUILayout.Toggle("Causes Knockdown?", currentGroup.hitboxHitInfo.knockdown);
-            currentGroup.hitboxHitInfo.continuousHit = EditorGUILayout.Toggle("Continuous Hit?", currentGroup.hitboxHitInfo.continuousHit);
-            if (currentGroup.hitboxHitInfo.continuousHit)
-            {
-                currentGroup.hitboxHitInfo.spaceBetweenHits = EditorGUILayout.IntField("Space between hits", currentGroup.hitboxHitInfo.spaceBetweenHits);
-            }
-        }
-
-        protected virtual void DrawHitDamageOptions(BoxGroup currentGroup)
-        {
-            currentGroup.hitboxHitInfo.damageOnBlock = EditorGUILayout.FloatField("Damage (Block)", currentGroup.hitboxHitInfo.damageOnBlock);
-            currentGroup.hitboxHitInfo.damageOnHit = EditorGUILayout.FloatField("Damage (Hit)", currentGroup.hitboxHitInfo.damageOnHit);
-            currentGroup.hitboxHitInfo.hitKills = EditorGUILayout.Toggle("Hit Kills", currentGroup.hitboxHitInfo.hitKills);
-        }
-
-        protected virtual void DrawHitForcesOptions(BoxGroup currentGroup)
-        {
-            currentGroup.hitboxHitInfo.opponentResetXForce = EditorGUILayout.Toggle("Reset X Force", currentGroup.hitboxHitInfo.opponentResetXForce);
-            currentGroup.hitboxHitInfo.opponentResetYForce = EditorGUILayout.Toggle("Reset Y Force", currentGroup.hitboxHitInfo.opponentResetYForce);
-            currentGroup.hitboxHitInfo.forceRelation = (HitboxForceRelation)EditorGUILayout.EnumPopup("Force Relation", currentGroup.hitboxHitInfo.forceRelation);
-            currentGroup.hitboxHitInfo.forceType = (HitboxForceType)EditorGUILayout.EnumPopup("Force Type", currentGroup.hitboxHitInfo.forceType);
-            switch (currentGroup.hitboxHitInfo.forceType)
-            {
-                case HitboxForceType.SET:
-                    currentGroup.hitboxHitInfo.opponentForceMagnitude = EditorGUILayout.FloatField("Force Magnitude", currentGroup.hitboxHitInfo.opponentForceMagnitude);
-                    currentGroup.hitboxHitInfo.opponentForceDir = EditorGUILayout.Vector3Field("Force Direction", currentGroup.hitboxHitInfo.opponentForceDir);
-                    break;
-                case HitboxForceType.PUSH:
-                    currentGroup.hitboxHitInfo.forceIncludeYForce = EditorGUILayout.Toggle("Include Y Force", currentGroup.hitboxHitInfo.forceIncludeYForce);
-                    currentGroup.hitboxHitInfo.opponentForceMagnitude
-                        = EditorGUILayout.FloatField("Force Multiplier", currentGroup.hitboxHitInfo.opponentForceMagnitude);
-                    break;
-                case HitboxForceType.PULL:
-                    currentGroup.hitboxHitInfo.forceIncludeYForce = EditorGUILayout.Toggle("Include Y Force", currentGroup.hitboxHitInfo.forceIncludeYForce);
-                    currentGroup.hitboxHitInfo.opponentForceMagnitude
-                        = EditorGUILayout.FloatField("Force Multiplier", currentGroup.hitboxHitInfo.opponentForceMagnitude);
-                    currentGroup.hitboxHitInfo.opponentMaxMagnitude
-                        = EditorGUILayout.FloatField("Max Magnitude", currentGroup.hitboxHitInfo.opponentMaxMagnitude);
-                    break;
-            }
-
-            if (currentGroup.hitboxHitInfo.wallBounces)
-            {
-                currentGroup.hitboxHitInfo.wallBounceForce = EditorGUILayout.FloatField("Wall Bounce Magnitude", currentGroup.hitboxHitInfo.wallBounceForce);
-            }
-        }
-
-        protected virtual void DrawHitStunOptions(BoxGroup currentGroup)
-        {
-            currentGroup.hitboxHitInfo.attackerHitstop = (ushort)EditorGUILayout.IntField("Hitstop (Attacker)",
-                currentGroup.hitboxHitInfo.attackerHitstop);
-            currentGroup.hitboxHitInfo.hitstop = (ushort)EditorGUILayout.IntField("Hitstop", currentGroup.hitboxHitInfo.hitstop);
-            currentGroup.hitboxHitInfo.hitstun = (ushort)EditorGUILayout.IntField("Hitstun", currentGroup.hitboxHitInfo.hitstun);
-        }
-        #endregion
-
-        #region Box Group: Grab
-        protected virtual void DrawBoxGroupGrabOptions(BoxGroup currentGroup)
-        {
-            currentGroup.throwConfirm = (AttackDefinition)EditorGUILayout.ObjectField("Throw Confirm Attack", 
-                currentGroup.throwConfirm,
-                typeof(AttackDefinition), false);
-        }
-        #endregion
 
         protected virtual void DrawHitboxOptions(BoxGroup currentGroup, int index)
         {
@@ -492,24 +442,24 @@ namespace CAF.Combat
             currentGroup.boxes[index].shape = (BoxShapes)EditorGUILayout.EnumPopup("Shape", currentGroup.boxes[index].shape);
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.LabelField("Offset", GUILayout.Width(135));
-            currentGroup.boxes[index].offset.x = EditorGUILayout.FloatField(currentGroup.boxes[index].offset.x, GUILayout.Width(40));
-            currentGroup.boxes[index].offset.y = EditorGUILayout.FloatField(currentGroup.boxes[index].offset.y, GUILayout.Width(40));
-            currentGroup.boxes[index].offset.z = EditorGUILayout.FloatField(currentGroup.boxes[index].offset.z, GUILayout.Width(40));
+            currentGroup.boxes[index].offset.x = EditorGUILayout.FloatField(currentGroup.boxes[index].offset.x, GUILayout.Width(60));
+            currentGroup.boxes[index].offset.y = EditorGUILayout.FloatField(currentGroup.boxes[index].offset.y, GUILayout.Width(60));
+            currentGroup.boxes[index].offset.z = EditorGUILayout.FloatField(currentGroup.boxes[index].offset.z, GUILayout.Width(60));
             EditorGUILayout.EndHorizontal();
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.LabelField("Rotation", GUILayout.Width(135));
-            currentGroup.boxes[index].rotation.x = EditorGUILayout.FloatField(currentGroup.boxes[index].rotation.x, GUILayout.Width(40));
-            currentGroup.boxes[index].rotation.y = EditorGUILayout.FloatField(currentGroup.boxes[index].rotation.y, GUILayout.Width(40));
-            currentGroup.boxes[index].rotation.z = EditorGUILayout.FloatField(currentGroup.boxes[index].rotation.z, GUILayout.Width(40));
+            currentGroup.boxes[index].rotation.x = EditorGUILayout.FloatField(currentGroup.boxes[index].rotation.x, GUILayout.Width(60));
+            currentGroup.boxes[index].rotation.y = EditorGUILayout.FloatField(currentGroup.boxes[index].rotation.y, GUILayout.Width(60));
+            currentGroup.boxes[index].rotation.z = EditorGUILayout.FloatField(currentGroup.boxes[index].rotation.z, GUILayout.Width(60));
             EditorGUILayout.EndHorizontal();
             switch (currentGroup.boxes[index].shape)
             {
                 case BoxShapes.Rectangle:
                     EditorGUILayout.BeginHorizontal();
                     EditorGUILayout.LabelField("Size", GUILayout.Width(135));
-                    currentGroup.boxes[index].size.x = EditorGUILayout.FloatField(currentGroup.boxes[index].size.x, GUILayout.Width(40));
-                    currentGroup.boxes[index].size.y = EditorGUILayout.FloatField(currentGroup.boxes[index].size.y, GUILayout.Width(40));
-                    currentGroup.boxes[index].size.z = EditorGUILayout.FloatField(currentGroup.boxes[index].size.z, GUILayout.Width(40));
+                    currentGroup.boxes[index].size.x = EditorGUILayout.FloatField(currentGroup.boxes[index].size.x, GUILayout.Width(60));
+                    currentGroup.boxes[index].size.y = EditorGUILayout.FloatField(currentGroup.boxes[index].size.y, GUILayout.Width(60));
+                    currentGroup.boxes[index].size.z = EditorGUILayout.FloatField(currentGroup.boxes[index].size.z, GUILayout.Width(60));
                     EditorGUILayout.EndHorizontal();
                     break;
                 case BoxShapes.Circle:

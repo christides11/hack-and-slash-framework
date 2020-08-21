@@ -1,12 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace CAF.Entities
+﻿namespace CAF.Entities
 {
     public class EntityState
     {
-        public EntityManager Controller { get; set; } = null;
+        public EntityManager Manager { get; set; } = null;
 
         /// <summary>
         /// Get the name of the state.

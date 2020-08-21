@@ -24,7 +24,7 @@ namespace TDAction.Entities.Characters
         {
             CharacterManager c = GetCharacterController();
 
-            ((EntityPhysicsManager)c.PhysicsManager).ApplyGravity();
+            ((EntityPhysicsManager)c.PhysicsManager).HandleGravity();
 
             ((CharacterPhysicsManager)c.PhysicsManager).AirDrift();
 
@@ -34,9 +34,13 @@ namespace TDAction.Entities.Characters
         public override bool CheckInterrupt()
         {
             CharacterManager c = GetCharacterController();
+            if (c.TryAttack())
+            {
+                return true;
+            }
             if (c.PhysicsManager.forceGravity.y <= 0)
             {
-                c.StateManager.ChangeState((int)CharacterStates.FALL);
+                c.StateManager.ChangeState((int)EntityStates.FALL);
                 return true;
             }
             return false;

@@ -8,6 +8,7 @@ namespace CAF.Combat
     public class ChargeDefinition
     {
         public int frame = 1;
-        public int maxChargeFrames = 30;
+        public bool releaseOnCompletion = true;
+        public List<ChargeLevel> chargeLevels = new List<ChargeLevel>();
     }
 }

@@ -1,16 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace TDAction.Managers
 {
+    /// <summary>
+    /// Manages the whole game.
+    /// mainly it sets up the game with the proper variables when it's ready,
+    /// and then ticks the game every FixedUpdate.
+    /// </summary>
     public class GameManager : MonoBehaviour
     {
         public static GameManager instance;
 
         public GameHandler GameHandler { get { return gameHandler; } }
 
-        [SerializeField] private GameHandler gameHandler;
+        [SerializeField] private GameHandler gameHandler = null;
         [SerializeField] private TDAction.Entities.EntityManager playerEntity;
         [SerializeField] private Vector3 playerSpawnPosition;
 
@@ -19,6 +22,17 @@ namespace TDAction.Managers
             instance = this;
         }
 
+        private void Update()
+        {
+            if (gameHandler != null)
+            {
+                gameHandler.Update();
+            }
+        }
+
+        /// <summary>
+        /// Starts a game, creating a handler and spawning the player.
+        /// </summary>
         public void SetupGame()
         {
             gameHandler = new GameHandler();
@@ -30,7 +44,7 @@ namespace TDAction.Managers
         {
             if (gameHandler != null)
             {
-                gameHandler.FixedUpdate();
+                gameHandler.Tick();
             }
         }
     }

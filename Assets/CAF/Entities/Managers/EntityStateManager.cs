@@ -5,10 +5,16 @@ namespace CAF.Entities
 {
     public class EntityStateManager : MonoBehaviour
     {
+        public delegate void StateAction(EntityManager self, EntityState from, uint fromStateFrame);
+        public delegate void StateFrameAction(EntityManager self, uint preChangeFrame);
+        public event StateAction OnStatePreChange;
+        public event StateAction OnStatePostChange;
+        public event StateFrameAction OnStateFrameSet;
+
         public EntityState CurrentState { get { return currentState; } }
         public uint CurrentStateFrame { get { return currentStateFrame; } }
 
-        [SerializeField] protected EntityManager controller = null;
+        [SerializeField] protected EntityManager manager = null;
         protected Dictionary<int, EntityState> states = new Dictionary<int, EntityState>();
         protected EntityState currentState;
         [SerializeField] protected uint currentStateFrame = 0;
@@ -29,7 +35,7 @@ namespace CAF.Entities
         /// <param name="stateNumber">The number of the state.</param>
         public virtual void AddState(EntityState state, int stateNumber)
         {
-            state.Controller = controller;
+            state.Manager = manager;
             states.Add(stateNumber, state);
         }
 
@@ -44,6 +50,9 @@ namespace CAF.Entities
         {
             if (states.ContainsKey(state))
             {
+                EntityState oldState = currentState;
+                uint oldStateFrame = currentStateFrame;
+
                 if (callOnInterrupt)
                 {
                     if (currentState != null)
@@ -53,11 +62,14 @@ namespace CAF.Entities
                 }
                 currentStateFrame = stateFrame;
                 currentState = states[state];
+                OnStatePreChange?.Invoke(manager, oldState, oldStateFrame);
                 if (currentStateFrame == 0)
                 {
                     currentState.Initialize();
+                    currentStateFrame = 1;
                 }
                 currentStateName = currentState.GetName();
+                OnStatePostChange?.Invoke(manager, oldState, oldStateFrame);
                 return true;
             }
             return false;
@@ -71,23 +83,31 @@ namespace CAF.Entities
         /// <param name="callOnInterrupt">If OnInterrupt of the current state should be called.</param>
         public virtual void ChangeState(EntityState state, uint stateFrame = 0, bool callOnInterrupt = true)
         {
-            currentStateFrame = stateFrame;
+            EntityState oldState = currentState;
+            uint oldStateFrame = currentStateFrame;
+
             if (callOnInterrupt)
             {
                 currentState.OnInterrupted();
             }
-
+            currentStateFrame = stateFrame;
             currentState = state;
-            state.Controller = controller;
+            state.Manager = manager;
+            OnStatePreChange?.Invoke(manager, oldState, oldStateFrame);
             if (currentStateFrame == 0)
             {
                 currentState.Initialize();
+                currentStateFrame = 1;
             }
+            currentStateName = currentState.GetName();
+            OnStatePostChange?.Invoke(manager, oldState, oldStateFrame);
         }
 
         public virtual void SetFrame(uint frame)
         {
+            uint preFrame = currentStateFrame;
             currentStateFrame = frame;
+            OnStateFrameSet?.Invoke(manager, preFrame);
         }
 
         public virtual void IncrementFrame()

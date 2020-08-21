@@ -1,20 +1,19 @@
 ﻿using CAF.Simulation;
-using System.Collections;
-using System.Collections.Generic;
 using TDAction.Managers;
 using UnityEngine;
 
 namespace TDAction.Simulation
 {
+    /// <summary>
+    /// Registers the object given to the simulation.
+    /// </summary>
     public class SimObjectRegister : MonoBehaviour
     {
-        [SerializeField] private List<SimObject> objects = new List<SimObject>();
+        [SerializeField] private SimObject simObject;
 
         private void Start()
         {
-            foreach (SimObject so in objects) {
-                GameManager.instance.GameHandler.simulationObjectManager.RegisterObject(so);
-            }
+            GameManager.instance.GameHandler.simulationObjectManager.RegisterObject(simObject);
         }
     }
 }

@@ -6,10 +6,10 @@ namespace TDAction.Inputs
 {
     public enum EntityInputs
     {
-        MOVEMENT,
-        CAMERA,
-        JUMP,
-        ATTACK,
-        DASH
+        MOVEMENT = 0,
+        CAMERA = 1,
+        JUMP = 2,
+        ATTACK = 3,
+        DASH = 4
     }
 }

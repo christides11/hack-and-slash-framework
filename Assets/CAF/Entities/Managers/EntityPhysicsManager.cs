@@ -8,7 +8,7 @@ namespace CAF.Entities
     {
         public float GravityScale { get; set; } = 1.0f;
 
-        [SerializeField] protected EntityManager controller;
+        [SerializeField] protected EntityManager manager;
 
         [Header("Forces")]
         public Vector3 forceMovement;

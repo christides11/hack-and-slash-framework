@@ -1,5 +1,5 @@
 ﻿using CAF.Combat;
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,12 +19,21 @@ namespace CAF.Entities
         protected Dictionary<int, List<IHurtable>> hurtablesHit = new Dictionary<int, List<IHurtable>>();
 
         public EntityCombatManager combatManager;
-        public EntityManager controller;
+        public EntityManager manager;
 
-        public EntityHitboxManager(EntityCombatManager combatManager, EntityManager controller)
+        public EntityHitboxManager(EntityCombatManager combatManager, EntityManager manager)
         {
             this.combatManager = combatManager;
-            this.controller = controller;
+            this.manager = manager;
+        }
+
+        public virtual List<IHurtable> GetHitList(int group)
+        {
+            if (!hurtablesHit.ContainsKey(group))
+            {
+                return null;
+            }
+            return hurtablesHit[group];
         }
 
         /// <summary>
@@ -129,21 +138,17 @@ namespace CAF.Entities
             {
                 // Instantiate the hitbox with the correct position and rotation.
                 BoxDefinition hitboxDefinition = currentGroup.boxes[i];
-                Vector3 pos = controller.GetVisualBasedDirection(Vector3.forward) * hitboxDefinition.offset.z
-                    + controller.GetVisualBasedDirection(Vector3.right) * hitboxDefinition.offset.x
-                    + controller.GetVisualBasedDirection(Vector3.up) * hitboxDefinition.offset.y;
-
-                Hitbox hitbox = InstantiateHitbox(controller.transform.position + pos,
-                    Quaternion.Euler(controller.visual.transform.eulerAngles + hitboxDefinition.rotation));
+                Hitbox hitbox = InstantiateHitbox(GetHitboxPosition(hitboxDefinition),
+                    GetHitboxRotation(hitboxDefinition));
 
                 // Attach the hitbox if neccessary.
                 if (currentGroup.attachToEntity)
                 {
-                    hitbox.transform.SetParent(controller.transform, true);
+                    hitbox.transform.SetParent(manager.transform, true);
                 }
 
-                hitbox.Initialize(controller.gameObject, controller.visual.transform, currentGroup.boxes[i].shape, 
-                    currentGroup.hitboxHitInfo, hitboxDefinition, hurtablesHit[currentGroup.ID]);
+                hitbox.Initialize(manager.gameObject, manager.visual.transform, manager.CombatManager.GetTeam(),
+                    currentGroup.boxes[i].shape, currentGroup.hitboxHitInfo, hitboxDefinition, hurtablesHit[currentGroup.ID]);
                 int cID = currentGroup.ID;
                 int groupIndex = index;
                 hitbox.OnHurt += (hurtable, hitInfo) => { OnHitboxHurt(hurtable, hitInfo, cID, groupIndex); };
@@ -154,9 +159,27 @@ namespace CAF.Entities
             hitboxGroups.Add(index, groupHitboxList);
         }
 
+        protected virtual Quaternion GetHitboxRotation(BoxDefinition hitboxDefinition)
+        {
+            return Quaternion.Euler(manager.visual.transform.eulerAngles + hitboxDefinition.rotation);
+        }
+
+        /// <summary>
+        /// Calculates where the hitbox being created should be positioned.
+        /// </summary>
+        /// <param name="hitboxDefinition">The definition of the hitbox.</param>
+        /// <returns>The position the hitbox should be in.</returns>
+        protected virtual Vector3 GetHitboxPosition(BoxDefinition hitboxDefinition)
+        {
+            return manager.transform.position
+                + manager.GetVisualBasedDirection(Vector3.forward) * hitboxDefinition.offset.z
+                + manager.GetVisualBasedDirection(Vector3.right) * hitboxDefinition.offset.x
+                + manager.GetVisualBasedDirection(Vector3.up) * hitboxDefinition.offset.y;
+        }
+
         protected virtual Hitbox InstantiateHitbox(Vector3 position, Quaternion rotation)
         {
-            return null;
+            throw new NotImplementedException("InstantiateHitbox in EntityHitboxManager must be overriden!");
         }
 
         /// <summary>
@@ -165,10 +188,10 @@ namespace CAF.Entities
         /// <param name="hurtableHit">The hurtable that was hit.</param>
         /// <param name="hitInfo">The hitInfo of the hitbox.</param>
         /// <param name="hitboxID">The hitbox ID of the hitbox.</param>
-        protected virtual void OnHitboxHurt(GameObject hurtableHit, HitInfo hitInfo, int hitboxID, int hitboxGroup)
+        protected virtual void OnHitboxHurt(GameObject hurtableHit, HitInfoBase hitInfo, int hitboxID, int hitboxGroup)
         {
             hurtablesHit[hitboxID].Add(hurtableHit.GetComponent<IHurtable>());
-            combatManager.hitStop = hitInfo.attackerHitstop;
+            combatManager.SetHitStop(hitInfo.attackerHitstop);
             UpdateHitboxIDIgnoreList(hitboxID);
             OnHitboxHit?.Invoke(hurtableHit, hitboxGroup, combatManager.CurrentAttack);
         }

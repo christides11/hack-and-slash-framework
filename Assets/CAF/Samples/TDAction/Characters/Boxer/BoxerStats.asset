@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 543368f64fa67f740999c0c9dc949cb3, type: 3}
   m_Name: BoxerStats
   m_EditorClassIdentifier: 
+  hitstunFrictionGround: 0.01
+  hitstunFrictionAir: 0.01
   gravity: 0.01
-  maxFallSpeed: 5
+  hitstunGravity: 0.008
+  maxFallSpeed: 0.15
+  hitstunMaxFallSpeed: 0.1
   jumpSquatFrames: 4
   groundFriction: 0.025
   walkBaseAcceleration: 0.05
@@ -27,4 +31,4 @@ MonoBehaviour:
   airMaxSpeed: 0.1
   aerialFriction: 0.01
   shortHopForce: 0.2
-  fullHopForce: 0.2
+  fullHopForce: 0.25

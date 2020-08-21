@@ -9,18 +9,21 @@ namespace TDAction.Entities
 
         public override void Tick()
         {
-            ((EntityManager)controller).charController2D.move(GetOverallForce());
-        }
-
-        public virtual void ApplyGravity()
-        {
-            EntityStats stats = ((EntityManager)controller).entityDefinition.GetEntityStats();
-            HandleGravity(stats.maxFallSpeed, stats.gravity, GravityScale);
+            ((EntityManager)manager).charController2D.move(GetOverallForce());
         }
 
         public override void CheckIfGrounded()
         {
-            ((EntityManager)controller).IsGrounded = ((EntityManager)controller).charController2D.isGrounded;
+            ((EntityManager)manager).IsGrounded = ((EntityManager)manager).charController2D.isGrounded;
+        }
+
+        public virtual void HandleGravity()
+        {
+            EntityManager m = ((EntityManager)manager);
+            EntityStats stats = m.entityDefinition.GetEntityStats();
+            float maxFallSpeed = m.CombatManager.HitStun > 0 ? stats.hitstunMaxFallSpeed : stats.maxFallSpeed;
+            float gravity = m.CombatManager.HitStun > 0 ?  stats.hitstunGravity : stats.gravity;
+            HandleGravity(maxFallSpeed, gravity, GravityScale);
         }
     }
 }

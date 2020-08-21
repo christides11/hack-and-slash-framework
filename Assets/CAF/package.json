@@ -3,7 +3,7 @@
   "version": "3.1.0",
   "displayName": "Character Action Framework",
   "description": "A framework for character action games.",
-  "unity": "2019.3",
+  "unity": "2019.4",
   "samples": [
     {
       "displayName": "2D Action Game",

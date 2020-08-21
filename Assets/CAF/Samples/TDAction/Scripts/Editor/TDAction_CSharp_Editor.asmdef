@@ -1,0 +1,17 @@
+{
+    "name": "TDAction_CSharp_Editor",
+    "references": [
+        "GUID:abe1bbd337772054c8b0c8af2068ad0a"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

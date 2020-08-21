@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace CAF.Entities
+namespace TDAction.Entities
 {
     public class HealthManager : MonoBehaviour
     {
@@ -15,7 +15,7 @@ namespace CAF.Entities
 
         public void SetHealth(float value)
         {
-            
+
             float oldHealth = health;
             health = value;
             OnHealthSet?.Invoke(gameObject, oldHealth, health);
@@ -24,13 +24,13 @@ namespace CAF.Entities
         public void Hurt(float value)
         {
             health -= value;
-            OnHurt?.Invoke(gameObject, health+value, health);
+            OnHurt?.Invoke(gameObject, health + value, health);
         }
 
         public void Heal(float value)
         {
             health += value;
-            OnHeal?.Invoke(gameObject, health-value, health);
+            OnHeal?.Invoke(gameObject, health - value, health);
         }
     }
 }

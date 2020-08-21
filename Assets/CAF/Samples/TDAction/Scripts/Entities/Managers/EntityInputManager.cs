@@ -19,6 +19,8 @@ namespace TDAction.Entities
                 new InputRecordButton(Input.GetKey(KeyCode.Space)));
             recordItem.AddInput((int)EntityInputs.DASH,
                 new InputRecordButton(Input.GetKey(KeyCode.LeftShift)));
+            recordItem.AddInput((int)EntityInputs.ATTACK,
+                new InputRecordButton(Input.GetMouseButton(0)));
 
             InputRecord.Add(recordItem);
         }
