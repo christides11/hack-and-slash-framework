@@ -25,7 +25,8 @@ MonoBehaviour:
   enemyStepWindows: []
   landCancelWindows:
   - {x: 9, y: 100}
-  commandAttackCancelWindows: []
+  commandAttackCancelWindows:
+  - {x: 6, y: 120}
   chargeWindows: []
   boxGroups:
   - id: 0

@@ -19,6 +19,7 @@ namespace TDAction.Entities
         FLINCH_GROUND = 10,
         FLINCH_AIR = 11,
         TUMBLE = 12,
-        KNOCKDOWN = 13
+        KNOCKDOWN = 13,
+        ENEMY_STEP = 14
     }
 }

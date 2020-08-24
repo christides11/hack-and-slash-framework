@@ -74,9 +74,11 @@
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\CharacterState.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\CharacterStats.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\Managers\CharacterPhysicsManager.cs" />
+    <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\States\CEnemyStep.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\States\CFall.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\States\CIdle.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\States\CJump.cs" />
+    <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\States\CJumpAir.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\States\CJumpSquat.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\States\CRun.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\States\CWalk.cs" />

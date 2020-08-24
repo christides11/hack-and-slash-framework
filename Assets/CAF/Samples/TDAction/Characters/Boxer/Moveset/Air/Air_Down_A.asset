@@ -41,7 +41,13 @@ MonoBehaviour:
         activeFramesStart: 6
         activeFramesEnd: 120
         hitGroupType: 0
-        boxes: []
+        boxes:
+        - shape: 0
+          offset: {x: 0.75, y: 0, z: 0}
+          size: {x: 2, y: 2, z: 0}
+          rotation: {x: 0, y: 0, z: 0}
+          radius: 0
+          height: 0
         attachToEntity: 1
         styleGain: 1
         chargeLevelNeeded: -1
@@ -81,7 +87,7 @@ MonoBehaviour:
           intVars: 
           floatVars:
           - 0
-          - -0.25
+          - -0.3
           objectVars: []
           curveVars: []
     00000003:
@@ -109,7 +115,7 @@ MonoBehaviour:
         damageOnHit: 0
         damageOnBlock: 0
         causesTumble: 0
-        opponentForceMagnitude: 0.4
+        opponentForceMagnitude: 1
         opponentForceDir: {x: 0, y: -1, z: 0}
         forceIncludeYForce: 0
         opponentMaxMagnitude: 1

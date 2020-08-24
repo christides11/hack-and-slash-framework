@@ -20,6 +20,8 @@ namespace TDAction.Entities
         public EntityDefinition entityDefinition;
         public HealthManager healthManager;
         public Hitbox hitboxPrefab;
+        public LayerMask enemyStepLayerMask;
+        public float enemyStepRadius = 2;
 
 
         public virtual void Initialize(InputControlType controlType)
@@ -69,6 +71,24 @@ namespace TDAction.Entities
                 CombatManager.SetAttack(man);
                 StateManager.ChangeState((int)EntityStates.ATTACK);
                 return true;
+            }
+            return false;
+        }
+
+        Collider2D[] enemyStepResults = new Collider2D[2];
+        public virtual bool TryEnemyStep(int bufferFrames = 3)
+        {
+            if (InputManager.GetButton((int)EntityInputs.JUMP, 0, true, bufferFrames).firstPress)
+            {
+                Physics2D.OverlapCircleNonAlloc(transform.position, enemyStepRadius, enemyStepResults, enemyStepLayerMask);
+                foreach (Collider2D e in enemyStepResults)
+                {
+                    if (e.gameObject != gameObject)
+                    {
+                        StateManager.ChangeState((int)EntityStates.ENEMY_STEP);
+                        return true;
+                    }
+                }
             }
             return false;
         }

@@ -229,7 +229,8 @@ namespace TDAction.Entities.States
 
         protected virtual bool CheckCancelWindows(AttackDefinition currentAttack)
         {
-            if (CheckJumpCancelWindows(currentAttack)
+            if (CheckEnemyStepWindows(currentAttack)
+                || CheckJumpCancelWindows(currentAttack)
                 || CheckLandCancelWindows(currentAttack))
             {
                 return true;
@@ -263,6 +264,23 @@ namespace TDAction.Entities.States
                     && entityManager.StateManager.CurrentStateFrame <= currentAttack.jumpCancelWindows[i].y)
                 {
                     if (entityManager.TryJump())
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        private bool CheckEnemyStepWindows(AttackDefinition currentAttack)
+        {
+            EntityManager e = GetEntityManager();
+            for(int i = 0; i < currentAttack.enemyStepWindows.Count; i++)
+            {
+                if(e.StateManager.CurrentStateFrame >= currentAttack.enemyStepWindows[i].x
+                    && e.StateManager.CurrentStateFrame <= currentAttack.enemyStepWindows[i].y)
+                {
+                    if (e.TryEnemyStep())
                     {
                         return true;
                     }
