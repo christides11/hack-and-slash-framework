@@ -126,5 +126,20 @@ namespace CAF.Entities
         {
 
         }
+
+        public virtual void RedirectInertia3D(Vector3 forceMovement, Vector2 movementInput)
+        {
+            movementInput.Normalize();
+            Vector3 redirectedMovement = forceMovement.magnitude
+                * manager.GetMovementVector(movementInput.x, movementInput.y);
+            this.forceMovement = redirectedMovement;
+        }
+
+        public virtual void RedirectInertia2D(float forceMovementX, Vector2 movementInput)
+        {
+            float redirectedMovement = Mathf.Sign(movementInput.x)
+                * forceMovementX;
+            this.forceMovement.x = redirectedMovement;
+        }
     }
 }

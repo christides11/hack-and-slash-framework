@@ -15,7 +15,7 @@ MonoBehaviour:
   attackName: Air AAA
   description: 
   stateOverride: -1
-  length: 45
+  length: 30
   heightRestriction: 0
   gravityScaleAdded: 0
   animationGround: {fileID: 0}
@@ -25,7 +25,8 @@ MonoBehaviour:
   enemyStepWindows: []
   landCancelWindows:
   - {x: 9, y: 100}
-  commandAttackCancelWindows: []
+  commandAttackCancelWindows:
+  - {x: 8, y: 60}
   chargeWindows: []
   boxGroups:
   - id: 0
