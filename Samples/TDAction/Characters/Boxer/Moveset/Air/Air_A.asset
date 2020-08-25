@@ -35,6 +35,8 @@ MonoBehaviour:
   - id: 1
   - id: 2
   - id: 3
+  - id: 4
+  - id: 5
   references:
     version: 1
     00000000:
@@ -56,7 +58,7 @@ MonoBehaviour:
         chargeLevelNeeded: -1
         chargeLevelMax: 1
         hitboxHitInfo:
-          id: 4
+          id: 6
     00000001:
       type: {class: AttackEventDefinition, ns: CAF.Combat, asm: CAF}
       data:
@@ -67,7 +69,7 @@ MonoBehaviour:
         startFrame: 1
         endFrame: 1
         attackEvent:
-          id: 5
+          id: 7
         variables:
           intVars: 
           floatVars:
@@ -82,10 +84,10 @@ MonoBehaviour:
         active: 1
         onHit: 0
         onHitHitboxGroup: 0
-        startFrame: 7
+        startFrame: 10
         endFrame: 30
         attackEvent:
-          id: 6
+          id: 8
         variables:
           intVars: 
           floatVars:
@@ -116,10 +118,10 @@ MonoBehaviour:
         active: 1
         onHit: 0
         onHitHitboxGroup: 0
-        startFrame: 4
-        endFrame: 6
+        startFrame: 7
+        endFrame: 9
         attackEvent:
-          id: 7
+          id: 9
         variables:
           intVars: 
           floatVars:
@@ -128,6 +130,40 @@ MonoBehaviour:
           objectVars: []
           curveVars: []
     00000004:
+      type: {class: AttackEventDefinition, ns: CAF.Combat, asm: CAF}
+      data:
+        nickname: Clamp M
+        active: 1
+        onHit: 0
+        onHitHitboxGroup: 0
+        startFrame: 1
+        endFrame: 1
+        attackEvent:
+          id: 10
+        variables:
+          intVars: 
+          floatVars:
+          - 0.08
+          objectVars: []
+          curveVars: []
+    00000005:
+      type: {class: AttackEventDefinition, ns: CAF.Combat, asm: CAF}
+      data:
+        nickname: Friction M
+        active: 1
+        onHit: 0
+        onHitHitboxGroup: 0
+        startFrame: 6
+        endFrame: 30
+        attackEvent:
+          id: 11
+        variables:
+          intVars: 
+          floatVars:
+          - 0.01
+          objectVars: []
+          curveVars: []
+    00000006:
       type: {class: HitInfo, ns: CAF.Combat, asm: CAF}
       data:
         airOnly: 0
@@ -158,18 +194,27 @@ MonoBehaviour:
         opponentMaxMagnitude: 1
         opponentMinMagnitude: 1
         throwConfirm: {fileID: 0}
-    00000005:
+    00000007:
       type: {class: ClampGravityEvent, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
         dmy: 0
-    00000006:
+    00000008:
       type: {class: ApplyGravity, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
         useEntityMaxFallSpeed: 1
         useEntityGravity: 1
         useEntityGravityScale: 1
-    00000007:
+    00000009:
       type: {class: ForceAdd, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
         xForce: 0
         yForce: 1
+    0000000A:
+      type: {class: ClampMovement, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
+      data:
+        dmy: 0
+    0000000B:
+      type: {class: ApplyFriction, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
+      data:
+        xFriction: 1
+        yFriction: 0
