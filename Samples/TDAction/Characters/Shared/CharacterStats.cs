@@ -28,5 +28,6 @@ namespace TDAction.Entities.Characters
         public float aerialFriction;
         public float shortHopForce;
         public float fullHopForce;
+        public float airJumpForce;
     }
 }

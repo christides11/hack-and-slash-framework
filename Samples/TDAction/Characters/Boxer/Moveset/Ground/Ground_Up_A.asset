@@ -72,8 +72,8 @@ MonoBehaviour:
         spaceBetweenHits: 0
         opponentResetXForce: 1
         opponentResetYForce: 1
-        attackerHitstop: 4
-        hitstop: 4
+        attackerHitstop: 3
+        hitstop: 3
         hitstun: 60
         forceType: 0
         forceRelation: 0

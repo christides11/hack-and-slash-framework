@@ -561,8 +561,6 @@ namespace CAF.Combat
                     string destination = t.Replace('.', '/');
                     menu.AddItem(new GUIContent(destination), true, OnAttackEventSelected, t);
                 }
-                menu.AddSeparator("");
-
                 menu.ShowAsContext();
             }
             eventVariablesFoldout = EditorGUILayout.Foldout(eventVariablesFoldout, "Variables", true);

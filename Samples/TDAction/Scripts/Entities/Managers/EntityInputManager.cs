@@ -16,11 +16,11 @@ namespace TDAction.Entities
             recordItem.AddInput((int)EntityInputs.MOVEMENT,
                 new InputRecordAxis2D(new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"))));
             recordItem.AddInput((int)EntityInputs.JUMP,
-                new InputRecordButton(Input.GetKey(KeyCode.Space)));
+                new InputRecordButton(Input.GetKey(KeyCode.K)));
             recordItem.AddInput((int)EntityInputs.DASH,
                 new InputRecordButton(Input.GetKey(KeyCode.LeftShift)));
             recordItem.AddInput((int)EntityInputs.ATTACK,
-                new InputRecordButton(Input.GetMouseButton(0)));
+                new InputRecordButton(Input.GetKey(KeyCode.I)));
 
             InputRecord.Add(recordItem);
         }
