@@ -1,3 +1,10 @@
+# [4.1.0](https://github.com/christides11/Character-Action-Framework/compare/v4.0.0...v4.1.0) (2020-08-25)
+
+
+### Features
+
+* Added methods for inertia redirection. ([2672ff2](https://github.com/christides11/Character-Action-Framework/commit/2672ff27eb0d750817113917339d112bd8d5f9de))
+
 # [4.0.0](https://github.com/christides11/Character-Action-Framework/compare/v3.1.0...v4.0.0) (2020-08-21)
 
 
