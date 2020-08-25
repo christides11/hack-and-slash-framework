@@ -20,9 +20,11 @@ namespace TDAction.Entities.Characters.Boxer
             StateManager.AddState(new BWalk(), (int)EntityStates.WALK);
             StateManager.AddState(new CJumpSquat(), (int)EntityStates.JUMP_SQUAT);
             StateManager.AddState(new CJump(), (int)EntityStates.JUMP);
+            StateManager.AddState(new CJumpAir(), (int)EntityStates.AIR_JUMP);
             StateManager.AddState(new BFall(), (int)EntityStates.FALL);
             StateManager.AddState(new CRun(), (int)EntityStates.RUN);
             StateManager.AddState(new BAttack(), (int)EntityStates.ATTACK);
+            StateManager.AddState(new CEnemyStep(), (int)EntityStates.ENEMY_STEP);
 
             StateManager.ChangeState((int)EntityStates.FALL);
         }

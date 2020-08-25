@@ -74,9 +74,11 @@
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\CharacterState.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\CharacterStats.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\Managers\CharacterPhysicsManager.cs" />
+    <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\States\CEnemyStep.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\States\CFall.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\States\CIdle.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\States\CJump.cs" />
+    <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\States\CJumpAir.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\States\CJumpSquat.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\States\CRun.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Characters\Shared\States\CWalk.cs" />
@@ -85,6 +87,7 @@
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\ApplyFriction.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\ApplyGravity.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\ClampGravity.cs" />
+    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\ClampMovement.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\ForceAdd.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\ForceSet.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Hitbox.cs" />
