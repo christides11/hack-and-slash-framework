@@ -43,12 +43,14 @@ namespace TDAction.Entities.Characters
             }
             if (c.TryAttack())
             {
-                Debug.Log("Attack Cancel");
                 Vector2 movementInput = c.InputManager.GetAxis2D((int)EntityInputs.MOVEMENT);
                 if (movementInput.magnitude > InputConstants.moveDeadzone)
                 {
                     c.PhysicsManager.RedirectInertia2D(storedMovement.x, movementInput);
-                    Debug.Log("Inertia Redirected.");
+                }
+                else
+                {
+                    c.PhysicsManager.forceMovement = storedMovement;
                 }
                 return true;
             }

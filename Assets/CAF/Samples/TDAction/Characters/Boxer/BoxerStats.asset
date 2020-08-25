@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 543368f64fa67f740999c0c9dc949cb3, type: 3}
   m_Name: BoxerStats
   m_EditorClassIdentifier: 
-  enemyStepLength: 4
+  enemyStepLength: 6
   hitstunFrictionGround: 0.01
   hitstunFrictionAir: 0.01
   gravity: 0.01

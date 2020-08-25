@@ -83,6 +83,10 @@ namespace TDAction.Entities
                 Physics2D.OverlapCircleNonAlloc(transform.position, enemyStepRadius, enemyStepResults, enemyStepLayerMask);
                 foreach (Collider2D e in enemyStepResults)
                 {
+                    if(e == null)
+                    {
+                        continue;
+                    }
                     if (e.gameObject != gameObject)
                     {
                         StateManager.ChangeState((int)EntityStates.ENEMY_STEP);

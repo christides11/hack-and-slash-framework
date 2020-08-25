@@ -326,7 +326,7 @@ MonoBehaviour:
   enemyStepLayerMask:
     serializedVersion: 2
     m_Bits: 256
-  enemyStepRadius: 2
+  enemyStepRadius: 1
 --- !u!114 &5384823916746293231
 MonoBehaviour:
   m_ObjectHideFlags: 0
