@@ -3500,6 +3500,32 @@ references:
   commentId: F:CAF.Entities.EntityPhysicsManager.manager
   fullName: CAF.Entities.EntityPhysicsManager.manager
   nameWithType: EntityPhysicsManager.manager
+- uid: CAF.Entities.EntityPhysicsManager.RedirectInertia2D(System.Single,Vector2)
+  name: RedirectInertia2D(Single, Vector2)
+  href: api/CAF.Entities.EntityPhysicsManager.html#CAF_Entities_EntityPhysicsManager_RedirectInertia2D_System_Single_Vector2_
+  commentId: M:CAF.Entities.EntityPhysicsManager.RedirectInertia2D(System.Single,Vector2)
+  fullName: CAF.Entities.EntityPhysicsManager.RedirectInertia2D(System.Single, Vector2)
+  nameWithType: EntityPhysicsManager.RedirectInertia2D(Single, Vector2)
+- uid: CAF.Entities.EntityPhysicsManager.RedirectInertia2D*
+  name: RedirectInertia2D
+  href: api/CAF.Entities.EntityPhysicsManager.html#CAF_Entities_EntityPhysicsManager_RedirectInertia2D_
+  commentId: Overload:CAF.Entities.EntityPhysicsManager.RedirectInertia2D
+  isSpec: "True"
+  fullName: CAF.Entities.EntityPhysicsManager.RedirectInertia2D
+  nameWithType: EntityPhysicsManager.RedirectInertia2D
+- uid: CAF.Entities.EntityPhysicsManager.RedirectInertia3D(Vector3,Vector2)
+  name: RedirectInertia3D(Vector3, Vector2)
+  href: api/CAF.Entities.EntityPhysicsManager.html#CAF_Entities_EntityPhysicsManager_RedirectInertia3D_Vector3_Vector2_
+  commentId: M:CAF.Entities.EntityPhysicsManager.RedirectInertia3D(Vector3,Vector2)
+  fullName: CAF.Entities.EntityPhysicsManager.RedirectInertia3D(Vector3, Vector2)
+  nameWithType: EntityPhysicsManager.RedirectInertia3D(Vector3, Vector2)
+- uid: CAF.Entities.EntityPhysicsManager.RedirectInertia3D*
+  name: RedirectInertia3D
+  href: api/CAF.Entities.EntityPhysicsManager.html#CAF_Entities_EntityPhysicsManager_RedirectInertia3D_
+  commentId: Overload:CAF.Entities.EntityPhysicsManager.RedirectInertia3D
+  isSpec: "True"
+  fullName: CAF.Entities.EntityPhysicsManager.RedirectInertia3D
+  nameWithType: EntityPhysicsManager.RedirectInertia3D
 - uid: CAF.Entities.EntityPhysicsManager.SetForceDirect(Vector3,Vector3)
   name: SetForceDirect(Vector3, Vector3)
   href: api/CAF.Entities.EntityPhysicsManager.html#CAF_Entities_EntityPhysicsManager_SetForceDirect_Vector3_Vector3_
