@@ -14,7 +14,7 @@ namespace CAF.Entities
         public event HitboxGroupEventAction OnHitboxHit;
 
         // Hitbox Group : Hitboxes
-        protected Dictionary<int, List<Hitbox>> hitboxGroups = new Dictionary<int, List<Hitbox>>();
+        protected Dictionary<int, List<HitboxBase>> hitboxGroups = new Dictionary<int, List<HitboxBase>>();
         // Hitbox ID : Hit IHurtables
         protected Dictionary<int, List<IHurtable>> hurtablesHit = new Dictionary<int, List<IHurtable>>();
 
@@ -66,7 +66,7 @@ namespace CAF.Entities
         /// </summary>
         public virtual void TickBoxes()
         {
-            foreach(List<Hitbox> hitboxGroup in hitboxGroups.Values)
+            foreach(List<HitboxBase> hitboxGroup in hitboxGroups.Values)
             {
                 for(int i = 0; i < hitboxGroup.Count; i++)
                 {
@@ -124,7 +124,7 @@ namespace CAF.Entities
 
             // Variables.
             BoxGroup currentGroup = combatManager.CurrentAttack.attackDefinition.boxGroups[index];
-            List<Hitbox> groupHitboxList = new List<Hitbox>(currentGroup.boxes.Count);
+            List<HitboxBase> groupHitboxList = new List<HitboxBase>(currentGroup.boxes.Count);
 
             // Keep track of what the hitbox ID has hit.
             if (!hurtablesHit.ContainsKey(currentGroup.ID))
@@ -138,7 +138,7 @@ namespace CAF.Entities
             {
                 // Instantiate the hitbox with the correct position and rotation.
                 BoxDefinition hitboxDefinition = currentGroup.boxes[i];
-                Hitbox hitbox = InstantiateHitbox(GetHitboxPosition(hitboxDefinition),
+                HitboxBase hitbox = InstantiateHitbox(GetHitboxPosition(hitboxDefinition),
                     GetHitboxRotation(hitboxDefinition));
 
                 // Attach the hitbox if neccessary.
@@ -177,7 +177,7 @@ namespace CAF.Entities
                 + manager.GetVisualBasedDirection(Vector3.up) * hitboxDefinition.offset.y;
         }
 
-        protected virtual Hitbox InstantiateHitbox(Vector3 position, Quaternion rotation)
+        protected virtual HitboxBase InstantiateHitbox(Vector3 position, Quaternion rotation)
         {
             throw new NotImplementedException("InstantiateHitbox in EntityHitboxManager must be overriden!");
         }
