@@ -29,5 +29,10 @@ namespace CAF.Camera
         /// </summary>
         /// <returns>The transform.</returns>
         Transform LookTransform();
+
+        /// <summary>
+        /// Resets the lookhandler to a wanted set position.
+        /// </summary>
+        void Reset();
     }
 }
