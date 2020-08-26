@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace CAF.Combat
 {
-    public abstract class Hitbox : SimObject
+    public abstract class HitboxBase : SimObject
     {
         public delegate void HurtAction(GameObject hurtableHit, HitInfoBase hitInfo);
         public virtual event HurtAction OnHurt;

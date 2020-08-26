@@ -72,9 +72,9 @@
     <Compile Include="Assets\CAF\Combat\Boxes\BoxGroup.cs" />
     <Compile Include="Assets\CAF\Combat\Boxes\BoxGroupType.cs" />
     <Compile Include="Assets\CAF\Combat\Boxes\BoxShapes.cs" />
-    <Compile Include="Assets\CAF\Combat\Boxes\Hitbox.cs" />
     <Compile Include="Assets\CAF\Combat\Boxes\Hitbox2D.cs" />
     <Compile Include="Assets\CAF\Combat\Boxes\Hitbox3D.cs" />
+    <Compile Include="Assets\CAF\Combat\Boxes\HitboxBase.cs" />
     <Compile Include="Assets\CAF\Combat\Boxes\Hurtbox.cs" />
     <Compile Include="Assets\CAF\Combat\Boxes\HurtboxState.cs" />
     <Compile Include="Assets\CAF\Combat\ChargeDefinition.cs" />

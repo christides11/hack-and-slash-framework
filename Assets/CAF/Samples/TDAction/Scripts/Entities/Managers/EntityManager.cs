@@ -19,7 +19,7 @@ namespace TDAction.Entities
         public Collider2D coll;
         public EntityDefinition entityDefinition;
         public HealthManager healthManager;
-        public Hitbox hitboxPrefab;
+        public HitboxBase hitboxPrefab;
         public LayerMask enemyStepLayerMask;
         public float enemyStepRadius = 2;
 

@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace CAF.Combat
 {
-    public class Hitbox2D : Hitbox
+    public class Hitbox2D : HitboxBase
     {
 
         protected Collider2D coll;
