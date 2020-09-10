@@ -550,6 +550,18 @@ namespace CAF.Combat
                 attack.events[eventSelected].onHitHitboxGroup = EditorGUILayout.IntField("Hitbox Group",
                     attack.events[eventSelected].onHitHitboxGroup);
             }
+            attack.events[eventSelected].inputCheckTiming = (AttackEventInputCheckTiming)EditorGUILayout.EnumPopup("Input Requirement", 
+                attack.events[eventSelected].inputCheckTiming);
+            EditorGUI.indentLevel++;
+            if(attack.events[eventSelected].inputCheckTiming != AttackEventInputCheckTiming.NONE)
+            {
+                attack.events[eventSelected].inputCheckStartFrame = (uint)EditorGUILayout.IntField("Start Frame", (int)attack.events[eventSelected].inputCheckStartFrame);
+                attack.events[eventSelected].inputCheckEndFrame = (uint)EditorGUILayout.IntField("End Frame", (int)attack.events[eventSelected].inputCheckEndFrame);
+            }
+            EditorGUI.indentLevel--;
+
+            EditorGUILayout.Space();
+
             EditorGUILayout.LabelField(attack.events[eventSelected].attackEvent == null ? "..." 
                 : attack.events[eventSelected].attackEvent.GetName());
             if (GUILayout.Button("Set Event"))

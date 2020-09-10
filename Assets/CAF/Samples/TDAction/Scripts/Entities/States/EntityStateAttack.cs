@@ -112,6 +112,31 @@ namespace TDAction.Entities.States
                 return false;
             }
             EntityManager e = GetEntityManager();
+
+            if(e.StateManager.CurrentStateFrame >= currentEvent.inputCheckStartFrame
+                && e.StateManager.CurrentStateFrame <= currentEvent.inputCheckEndFrame)
+            {
+                switch (currentEvent.inputCheckTiming)
+                {
+                    case CAF.Combat.AttackEventInputCheckTiming.ONCE:
+                        if (currentEvent.inputCheckProcessed)
+                        {
+                            break;
+                        }
+                        currentEvent.inputCheckProcessed = e.CombatManager.CheckForInputSequence(currentEvent.input);
+                        break;
+                    case CAF.Combat.AttackEventInputCheckTiming.CONTINUOUS:
+                        currentEvent.inputCheckProcessed = e.CombatManager.CheckForInputSequence(currentEvent.input);
+                        break;
+                }
+            }
+
+            if(currentEvent.inputCheckTiming != CAF.Combat.AttackEventInputCheckTiming.NONE
+                && !currentEvent.inputCheckProcessed)
+            {
+                return false;
+            }
+
             if (e.StateManager.CurrentStateFrame >= currentEvent.startFrame
                 && e.StateManager.CurrentStateFrame <= currentEvent.endFrame)
             {

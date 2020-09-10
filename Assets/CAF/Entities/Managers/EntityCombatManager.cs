@@ -1,4 +1,5 @@
 ﻿using CAF.Combat;
+using CAF.Input;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -186,28 +187,36 @@ namespace CAF.Entities
                 return null;
             }
 
-            int currentOffset = 0;
+            if (CheckForInputSequence(node.inputSequence))
+            {
+                return node;
+            }
+            return null;
+        }
 
+        public virtual bool CheckForInputSequence(InputSequence sequence)
+        {
+            int currentOffset = 0;
             // Check execute button(s)
             bool pressedExecuteInputs = true;
-            for (int e = 0; e < node.executeInputs.Count; e++)
+            for (int e = 0; e < sequence.executeInputs.Count; e++)
             {
-                switch (node.executeInputs[e].inputType)
+                switch (sequence.executeInputs[e].inputType)
                 {
                     case Input.InputDefinitionType.Stick:
-                        if (!CheckStickDirection(node.executeInputs[e].stickDirection, node.executeInputs[e].directionDeviation, 0))
+                        if (!CheckStickDirection(sequence.executeInputs[e].stickDirection, sequence.executeInputs[e].directionDeviation, 0))
                         {
                             pressedExecuteInputs = false;
                             break;
                         }
                         break;
                     case Input.InputDefinitionType.Button:
-                        if (!manager.InputManager.GetButton(node.executeInputs[e].buttonID, out int gotOffset, 0, true, 3).firstPress)
+                        if (!manager.InputManager.GetButton(sequence.executeInputs[e].buttonID, out int gotOffset, 0, true, 3).firstPress)
                         {
                             pressedExecuteInputs = false;
                             break;
                         }
-                        if(gotOffset < currentOffset)
+                        if (gotOffset < currentOffset)
                         {
                             currentOffset = gotOffset;
                         }
@@ -215,26 +224,26 @@ namespace CAF.Entities
                 }
             }
 
-            if (node.executeInputs.Count <= 0)
+            if (sequence.executeInputs.Count <= 0)
             {
                 pressedExecuteInputs = false;
             }
             // We did not press the buttons required for this move.
             if (!pressedExecuteInputs)
             {
-                return null;
+                return false;
             }
 
             bool pressedSequenceButtons = true;
-            for (int s = 0; s < node.inputSequence.Count; s++)
+            for (int s = 0; s < sequence.sequenceInputs.Count; s++)
             {
-                switch (node.inputSequence[s].inputType) 
+                switch (sequence.sequenceInputs[s].inputType)
                 {
                     case Input.InputDefinitionType.Stick:
                         bool foundDir = false;
                         for (int f = currentOffset; f < currentOffset + 8; f++)
                         {
-                            if (CheckStickDirection(node.inputSequence[s].stickDirection, node.inputSequence[s].directionDeviation, f))
+                            if (CheckStickDirection(sequence.sequenceInputs[s].stickDirection, sequence.sequenceInputs[s].directionDeviation, f))
                             {
                                 foundDir = true;
                                 currentOffset = f;
@@ -258,10 +267,9 @@ namespace CAF.Entities
 
             if (!pressedSequenceButtons)
             {
-                return null;
+                return false;
             }
-
-            return node;
+            return true;
         }
 
         protected virtual bool CheckStickDirection(Vector2 wantedDirection, float deviation, int framesBack)

@@ -23,10 +23,10 @@ namespace CAF.Combat
         public override void OnCreate()
         {
             base.OnCreate();
-            executeList = new ReorderableList(serializedObject.FindProperty("executeInputs"));
+            executeList = new ReorderableList(serializedObject.FindProperty("inputSequence").FindPropertyRelative("executeInputs"));
             executeList.elementNameProperty = "Execute Inputs";
 
-            inputSequence = new ReorderableList(serializedObject.FindProperty("inputSequence"));
+            inputSequence = new ReorderableList(serializedObject.FindProperty("inputSequence").FindPropertyRelative("sequenceInputs"));
             inputSequence.elementNameProperty = "Input Sequence";
         }
 

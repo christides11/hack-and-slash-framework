@@ -66,6 +66,7 @@
     <Compile Include="Assets\CAF\Camera\LookHandler.cs" />
     <Compile Include="Assets\CAF\Combat\Attack Events\AttackEvent.cs" />
     <Compile Include="Assets\CAF\Combat\Attack Events\AttackEventDefinition.cs" />
+    <Compile Include="Assets\CAF\Combat\Attack Events\AttackEventInputCheckTiming.cs" />
     <Compile Include="Assets\CAF\Combat\Attack Events\AttackEventVariables.cs" />
     <Compile Include="Assets\CAF\Combat\Attack\AttackDefinition.cs" />
     <Compile Include="Assets\CAF\Combat\Boxes\BoxDefinition.cs" />
@@ -107,8 +108,10 @@
     <Compile Include="Assets\CAF\Input\Input Record\InputRecordButton.cs" />
     <Compile Include="Assets\CAF\Input\Input Record\InputRecordInput.cs" />
     <Compile Include="Assets\CAF\Input\Input Record\InputRecordItem.cs" />
+    <Compile Include="Assets\CAF\Input\InputButtonStates.cs" />
     <Compile Include="Assets\CAF\Input\InputControlType.cs" />
     <Compile Include="Assets\CAF\Input\InputDefinition.cs" />
+    <Compile Include="Assets\CAF\Input\InputSequence.cs" />
     <Compile Include="Assets\CAF\Other\HelperFunctions.cs" />
     <Compile Include="Assets\CAF\Simulation\SimObject.cs" />
     <Compile Include="Assets\CAF\Simulation\SimObjectManager.cs" />
