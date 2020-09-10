@@ -71,6 +71,11 @@ MonoBehaviour:
           - 0.01
           objectVars: []
           curveVars: []
+        inputCheckTiming: 1
+        inputCheckFrame: 0
+        input:
+          executeInputs: []
+          sequenceInputs: []
     00000002:
       type: {class: HitInfo, ns: CAF.Combat, asm: CAF}
       data:

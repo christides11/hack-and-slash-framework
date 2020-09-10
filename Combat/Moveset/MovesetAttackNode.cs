@@ -17,8 +17,7 @@ namespace CAF.Combat
 
         [Input] public MovesetAttackNode lastNode;
 
-        public List<InputDefinition> executeInputs = new List<InputDefinition>();
-        public List<InputDefinition> inputSequence = new List<InputDefinition>();
+        public InputSequence inputSequence = new InputSequence();
         public AttackDefinition attackDefinition;
 
         [Output(dynamicPortList = true)] public List<nextNodeDefinition> nextNode = new List<nextNodeDefinition>();
