@@ -40,6 +40,9 @@ namespace CAF.Combat
 
             NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("attackDefinition"));
 
+            NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("inputSequence").FindPropertyRelative("executeWindow"));
+            NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("inputSequence").FindPropertyRelative("sequenceWindow"));
+
             executeList.DoLayoutList();
 
             inputSequence.DoLayoutList();

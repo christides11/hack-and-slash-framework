@@ -1,4 +1,8 @@
-﻿namespace CAF.Input
+﻿using System.Diagnostics;
+using UnityEngine;
+using Debug = UnityEngine.Debug;
+
+namespace CAF.Input
 {
     [System.Serializable]
     public struct InputRecordButton : InputRecordInput
