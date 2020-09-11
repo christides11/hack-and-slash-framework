@@ -53,11 +53,13 @@ MonoBehaviour:
       _dynamic: 1
   lastNode: {fileID: 0}
   inputSequence:
+    executeWindow: 3
     executeInputs:
     - inputType: 0
       buttonID: 3
       stickDirection: {x: 0, y: 0}
       directionDeviation: 0
+    sequenceWindow: 8
     sequenceInputs: []
   attackDefinition: {fileID: 11400000, guid: 6b5af3166b563264a9461e1318fee445, type: 2}
   nextNode:
@@ -119,11 +121,13 @@ MonoBehaviour:
       _dynamic: 1
   lastNode: {fileID: 509854845894301865}
   inputSequence:
+    executeWindow: 3
     executeInputs:
     - inputType: 0
       buttonID: 3
       stickDirection: {x: 0, y: 0}
       directionDeviation: 0
+    sequenceWindow: 8
     sequenceInputs: []
   attackDefinition: {fileID: 11400000, guid: ed10805aadc96f34fa790986ded89a03, type: 2}
   nextNode:
@@ -209,11 +213,13 @@ MonoBehaviour:
       _dynamic: 1
   lastNode: {fileID: 0}
   inputSequence:
+    executeWindow: 3
     executeInputs:
     - inputType: 0
       buttonID: 3
       stickDirection: {x: 0, y: 0}
       directionDeviation: 0
+    sequenceWindow: 8
     sequenceInputs: []
   attackDefinition: {fileID: 11400000, guid: bcad4f9de9756054483693c781c2415f, type: 2}
   nextNode:
@@ -262,11 +268,13 @@ MonoBehaviour:
       _dynamic: 0
   lastNode: {fileID: -2480016657355686588}
   inputSequence:
+    executeWindow: 3
     executeInputs:
     - inputType: 0
       buttonID: 3
       stickDirection: {x: 0, y: 0}
       directionDeviation: 0
+    sequenceWindow: 8
     sequenceInputs: []
   attackDefinition: {fileID: 11400000, guid: 3769cdcf98e521b4ea509fdf35d3b9a5, type: 2}
   nextNode: []
@@ -326,11 +334,13 @@ MonoBehaviour:
       _dynamic: 1
   lastNode: {fileID: -3053810752503418589}
   inputSequence:
+    executeWindow: 3
     executeInputs:
     - inputType: 0
       buttonID: 3
       stickDirection: {x: 0, y: 0}
       directionDeviation: 0
+    sequenceWindow: 8
     sequenceInputs: []
   attackDefinition: {fileID: 11400000, guid: 2e0abd68fbe37d246b9fe3a7446475be, type: 2}
   nextNode:
@@ -379,11 +389,13 @@ MonoBehaviour:
       _dynamic: 0
   lastNode: {fileID: 7489305346470690819}
   inputSequence:
+    executeWindow: 3
     executeInputs:
     - inputType: 0
       buttonID: 3
       stickDirection: {x: 0, y: 0}
       directionDeviation: 0
+    sequenceWindow: 8
     sequenceInputs: []
   attackDefinition: {fileID: 11400000, guid: 70e3e4c4a9abb8a4fac77a6ca3d3dc29, type: 2}
   nextNode: []
@@ -400,7 +412,7 @@ MonoBehaviour:
   m_Name: Ground_Up+A
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -168, y: -472}
+  position: {x: -168, y: -520}
   ports:
     keys:
     - lastNode
@@ -427,11 +439,13 @@ MonoBehaviour:
       _dynamic: 0
   lastNode: {fileID: 0}
   inputSequence:
+    executeWindow: 3
     executeInputs:
     - inputType: 0
       buttonID: 3
       stickDirection: {x: 0, y: 0}
       directionDeviation: 0
+    sequenceWindow: 8
     sequenceInputs:
     - inputType: 1
       buttonID: 0

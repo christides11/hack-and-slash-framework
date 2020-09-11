@@ -17,6 +17,11 @@ namespace CAF.Input
             return false;
         }
 
+        public void UseInBuffer()
+        {
+
+        }
+
         public void Process(InputRecordInput lastStateDown)
         {
         }

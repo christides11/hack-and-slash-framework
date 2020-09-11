@@ -1,4 +1,5 @@
 ﻿using CAF.Input;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -121,12 +122,11 @@ namespace CAF.Entities
         /// <returns>The button and the information about it on the frame.</returns>
         public virtual InputRecordButton GetButton(int buttonID, out int gotOffset, int frameOffset = 0, bool checkBuffer = false, int bufferFrames = 3)
         {
-            gotOffset = 0;
+            gotOffset = frameOffset;
             if (InputRecord.Count == 0)
             {
                 return new InputRecordButton();
             }
-
             if (checkBuffer && (InputRecord.Count - 1) >= (frameOffset + bufferFrames))
             {
                 for (int i = 0; i < bufferFrames; i++)
@@ -139,7 +139,7 @@ namespace CAF.Entities
                     }
                     if (b.firstPress)
                     {
-                        gotOffset = i;
+                        gotOffset = frameOffset + i;
                         return b;
                     }
                 }
@@ -154,7 +154,7 @@ namespace CAF.Entities
         {
             foreach (var r in InputRecord[InputRecord.Count - 1].inputs)
             {
-                r.Value.UsedInBuffer();
+                r.Value.UseInBuffer();
             }
         }
 
@@ -164,7 +164,7 @@ namespace CAF.Entities
         /// <param name="inputID">The input to clear the buffer for.</param>
         public virtual void ClearBuffer(int inputID)
         {
-            InputRecord[InputRecord.Count - 1].inputs[inputID].UsedInBuffer();
+            InputRecord[InputRecord.Count - 1].inputs[inputID].UseInBuffer();
         }
     }
 }

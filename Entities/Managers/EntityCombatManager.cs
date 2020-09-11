@@ -211,12 +211,13 @@ namespace CAF.Entities
                         }
                         break;
                     case Input.InputDefinitionType.Button:
-                        if (!manager.InputManager.GetButton(sequence.executeInputs[e].buttonID, out int gotOffset, 0, true, 3).firstPress)
+                        if (!manager.InputManager.GetButton(sequence.executeInputs[e].buttonID, out int gotOffset, 0, 
+                            true, sequence.executeWindow).firstPress)
                         {
                             pressedExecuteInputs = false;
                             break;
                         }
-                        if (gotOffset < currentOffset)
+                        if (gotOffset >= currentOffset)
                         {
                             currentOffset = gotOffset;
                         }
@@ -233,7 +234,15 @@ namespace CAF.Entities
             {
                 return false;
             }
+            
+            // Execute inputs where used, make them unusable to stop them from being read twice.
+            for(int a = 0; a < sequence.executeInputs.Count; a++)
+            {
+                manager.InputManager.ClearBuffer(sequence.executeInputs[a].buttonID);
+            }
 
+            currentOffset++;
+            // Check sequence button(s).
             bool pressedSequenceButtons = true;
             for (int s = 0; s < sequence.sequenceInputs.Count; s++)
             {
@@ -241,7 +250,7 @@ namespace CAF.Entities
                 {
                     case Input.InputDefinitionType.Stick:
                         bool foundDir = false;
-                        for (int f = currentOffset; f < currentOffset + 8; f++)
+                        for (int f = currentOffset; f < currentOffset + sequence.sequenceWindow; f++)
                         {
                             if (CheckStickDirection(sequence.sequenceInputs[s].stickDirection, sequence.sequenceInputs[s].directionDeviation, f))
                             {
@@ -257,6 +266,21 @@ namespace CAF.Entities
                         }
                         break;
                     case Input.InputDefinitionType.Button:
+                        bool foundButton = false;
+                        for (int f = currentOffset; f < currentOffset + sequence.sequenceWindow; f++)
+                        {
+                            if (manager.InputManager.GetButton(sequence.sequenceInputs[s].buttonID, out int gotOffset, f, false).firstPress)
+                            {
+                                foundButton = true;
+                                currentOffset = f;
+                                break;
+                            }
+                        }
+                        if (!foundButton)
+                        {
+                            pressedSequenceButtons = false;
+                            break;
+                        }
                         break;
                 }
                 if (!pressedSequenceButtons)
