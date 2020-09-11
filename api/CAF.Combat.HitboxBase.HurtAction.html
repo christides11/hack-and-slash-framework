@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Delegate EntityCombatManager.HealthChangedAction
+    <title>Delegate HitboxBase.HurtAction
    | Character Action Framework Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Delegate EntityCombatManager.HealthChangedAction
+    <meta name="title" content="Delegate HitboxBase.HurtAction
    | Character Action Framework Documentation ">
     <meta name="generator" content="docfx 2.56.2.0">
     
@@ -78,18 +78,18 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CAF.Entities.EntityCombatManager.HealthChangedAction">
+            <article class="content wrap" id="_content" data-uid="CAF.Combat.HitboxBase.HurtAction">
   
   
-  <h1 id="CAF_Entities_EntityCombatManager_HealthChangedAction" data-uid="CAF.Entities.EntityCombatManager.HealthChangedAction" class="text-break">Delegate EntityCombatManager.HealthChangedAction
+  <h1 id="CAF_Combat_HitboxBase_HurtAction" data-uid="CAF.Combat.HitboxBase.HurtAction" class="text-break">Delegate HitboxBase.HurtAction
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="CAF.Entities.html">CAF.Entities</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CAF.Combat.html">CAF.Combat</a></h6>
   <h6><strong>Assembly</strong>: CAF.dll</h6>
-  <h5 id="CAF_Entities_EntityCombatManager_HealthChangedAction_syntax">Syntax</h5>
+  <h5 id="CAF_Combat_HitboxBase_HurtAction_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public delegate void HealthChangedAction(EntityManager initializer, EntityManager self, HitInfoBase hitInfo);</code></pre>
+    <pre><code class="lang-csharp hljs">public delegate void HurtAction(GameObject hurtableHit, HitInfoBase hitInfo);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -102,13 +102,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="CAF.Entities.EntityManager.html">EntityManager</a></td>
-        <td><span class="parametername">initializer</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="CAF.Entities.EntityManager.html">EntityManager</a></td>
-        <td><span class="parametername">self</span></td>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">hurtableHit</span></td>
         <td></td>
       </tr>
       <tr>
@@ -126,10 +121,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityCombatManager_HealthChangedAction.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityCombatManager.HealthChangedAction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_HitboxBase_HurtAction.md&amp;value=---%0Auid%3A%20CAF.Combat.HitboxBase.HurtAction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Combat/Boxes/HitboxBase.cs/#L9" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

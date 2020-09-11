@@ -89,37 +89,37 @@
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><a class="xref" href="CAF.Simulation.SimObject.html">SimObject</a></div>
-    <div class="level2"><a class="xref" href="CAF.Combat.Hitbox.html">Hitbox</a></div>
+    <div class="level2"><a class="xref" href="CAF.Combat.HitboxBase.html">HitboxBase</a></div>
     <div class="level3"><span class="xref">Hitbox2D</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_OnHurt">Hitbox.OnHurt</a>
+      <a class="xref" href="CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_OnHurt">HitboxBase.OnHurt</a>
     </div>
     <div>
-      <a class="xref" href="CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_owner">Hitbox.owner</a>
+      <a class="xref" href="CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_owner">HitboxBase.owner</a>
     </div>
     <div>
-      <a class="xref" href="CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_directionOwner">Hitbox.directionOwner</a>
+      <a class="xref" href="CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_directionOwner">HitboxBase.directionOwner</a>
     </div>
     <div>
-      <a class="xref" href="CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_activated">Hitbox.activated</a>
+      <a class="xref" href="CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_activated">HitboxBase.activated</a>
     </div>
     <div>
-      <a class="xref" href="CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_hitInfo">Hitbox.hitInfo</a>
+      <a class="xref" href="CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_hitInfo">HitboxBase.hitInfo</a>
     </div>
     <div>
-      <a class="xref" href="CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_ignoreList">Hitbox.ignoreList</a>
+      <a class="xref" href="CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_ignoreList">HitboxBase.ignoreList</a>
     </div>
     <div>
-      <a class="xref" href="CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_hitHurtables">Hitbox.hitHurtables</a>
+      <a class="xref" href="CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_hitHurtables">HitboxBase.hitHurtables</a>
     </div>
     <div>
-      <a class="xref" href="CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_CheckHits">Hitbox.CheckHits()</a>
+      <a class="xref" href="CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_CheckHits">HitboxBase.CheckHits()</a>
     </div>
     <div>
-      <a class="xref" href="CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_CheckHurtables">Hitbox.CheckHurtables()</a>
+      <a class="xref" href="CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_CheckHurtables">HitboxBase.CheckHurtables()</a>
     </div>
     <div>
       <a class="xref" href="CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_simObjectManager">SimObject.simObjectManager</a>
@@ -147,7 +147,7 @@
   <h6><strong>Assembly</strong>: CAF.dll</h6>
   <h5 id="CAF_Combat_Hitbox2D_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Hitbox2D : Hitbox</code></pre>
+    <pre><code class="lang-csharp hljs">public class Hitbox2D : HitboxBase</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -198,7 +198,7 @@
     <pre><code class="lang-csharp hljs">public override void Activate()</code></pre>
   </div>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_Activate">Hitbox.Activate()</a></div>
+  <div><a class="xref" href="CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_Activate">HitboxBase.Activate()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_Hitbox2D_CheckForHurtboxes_Collider2D_.md&amp;value=---%0Auid%3A%20CAF.Combat.Hitbox2D.CheckForHurtboxes(Collider2D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -348,7 +348,7 @@
     <pre><code class="lang-csharp hljs">public override void Deactivate()</code></pre>
   </div>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_Deactivate">Hitbox.Deactivate()</a></div>
+  <div><a class="xref" href="CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_Deactivate">HitboxBase.Deactivate()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_Hitbox2D_HurtHurtable_CAF_Combat_IHurtable_.md&amp;value=---%0Auid%3A%20CAF.Combat.Hitbox2D.HurtHurtable(CAF.Combat.IHurtable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -382,7 +382,7 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_HurtHurtable_CAF_Combat_IHurtable_">Hitbox.HurtHurtable(IHurtable)</a></div>
+  <div><a class="xref" href="CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_HurtHurtable_CAF_Combat_IHurtable_">HitboxBase.HurtHurtable(IHurtable)</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_Hitbox2D_Initialize_GameObject_Transform_System_Int32_CAF_Combat_BoxShapes_CAF_Combat_HitInfoBase_CAF_Combat_BoxDefinition_System_Collections_Generic_List_CAF_Combat_IHurtable__.md&amp;value=---%0Auid%3A%20CAF.Combat.Hitbox2D.Initialize(GameObject%2CTransform%2CSystem.Int32%2CCAF.Combat.BoxShapes%2CCAF.Combat.HitInfoBase%2CCAF.Combat.BoxDefinition%2CSystem.Collections.Generic.List%7BCAF.Combat.IHurtable%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -446,7 +446,7 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_Initialize_GameObject_Transform_System_Int32_CAF_Combat_BoxShapes_CAF_Combat_HitInfoBase_CAF_Combat_BoxDefinition_System_Collections_Generic_List_CAF_Combat_IHurtable__">Hitbox.Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinition, List&lt;IHurtable&gt;)</a></div>
+  <div><a class="xref" href="CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_Initialize_GameObject_Transform_System_Int32_CAF_Combat_BoxShapes_CAF_Combat_HitInfoBase_CAF_Combat_BoxDefinition_System_Collections_Generic_List_CAF_Combat_IHurtable__">HitboxBase.Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinition, List&lt;IHurtable&gt;)</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_Hitbox2D_OnTriggerStay2D_Collider2D_.md&amp;value=---%0Auid%3A%20CAF.Combat.Hitbox2D.OnTriggerStay2D(Collider2D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -512,7 +512,7 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_ReActivate_System_Collections_Generic_List_CAF_Combat_IHurtable__">Hitbox.ReActivate(List&lt;IHurtable&gt;)</a></div>
+  <div><a class="xref" href="CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_ReActivate_System_Collections_Generic_List_CAF_Combat_IHurtable__">HitboxBase.ReActivate(List&lt;IHurtable&gt;)</a></div>
 </article>
           </div>
           

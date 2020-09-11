@@ -45,6 +45,19 @@ references:
   isSpec: "True"
   fullName: CAF.Camera.LookHandler.LookTransform
   nameWithType: LookHandler.LookTransform
+- uid: CAF.Camera.LookHandler.Reset
+  name: Reset()
+  href: api/CAF.Camera.LookHandler.html#CAF_Camera_LookHandler_Reset
+  commentId: M:CAF.Camera.LookHandler.Reset
+  fullName: CAF.Camera.LookHandler.Reset()
+  nameWithType: LookHandler.Reset()
+- uid: CAF.Camera.LookHandler.Reset*
+  name: Reset
+  href: api/CAF.Camera.LookHandler.html#CAF_Camera_LookHandler_Reset_
+  commentId: Overload:CAF.Camera.LookHandler.Reset
+  isSpec: "True"
+  fullName: CAF.Camera.LookHandler.Reset
+  nameWithType: LookHandler.Reset
 - uid: CAF.Camera.LookHandler.SetLookDirection(Vector3)
   name: SetLookDirection(Vector3)
   href: api/CAF.Camera.LookHandler.html#CAF_Camera_LookHandler_SetLookDirection_Vector3_
@@ -665,6 +678,36 @@ references:
   commentId: F:CAF.Combat.AttackEventDefinition.endFrame
   fullName: CAF.Combat.AttackEventDefinition.endFrame
   nameWithType: AttackEventDefinition.endFrame
+- uid: CAF.Combat.AttackEventDefinition.input
+  name: input
+  href: api/CAF.Combat.AttackEventDefinition.html#CAF_Combat_AttackEventDefinition_input
+  commentId: F:CAF.Combat.AttackEventDefinition.input
+  fullName: CAF.Combat.AttackEventDefinition.input
+  nameWithType: AttackEventDefinition.input
+- uid: CAF.Combat.AttackEventDefinition.inputCheckEndFrame
+  name: inputCheckEndFrame
+  href: api/CAF.Combat.AttackEventDefinition.html#CAF_Combat_AttackEventDefinition_inputCheckEndFrame
+  commentId: F:CAF.Combat.AttackEventDefinition.inputCheckEndFrame
+  fullName: CAF.Combat.AttackEventDefinition.inputCheckEndFrame
+  nameWithType: AttackEventDefinition.inputCheckEndFrame
+- uid: CAF.Combat.AttackEventDefinition.inputCheckProcessed
+  name: inputCheckProcessed
+  href: api/CAF.Combat.AttackEventDefinition.html#CAF_Combat_AttackEventDefinition_inputCheckProcessed
+  commentId: F:CAF.Combat.AttackEventDefinition.inputCheckProcessed
+  fullName: CAF.Combat.AttackEventDefinition.inputCheckProcessed
+  nameWithType: AttackEventDefinition.inputCheckProcessed
+- uid: CAF.Combat.AttackEventDefinition.inputCheckStartFrame
+  name: inputCheckStartFrame
+  href: api/CAF.Combat.AttackEventDefinition.html#CAF_Combat_AttackEventDefinition_inputCheckStartFrame
+  commentId: F:CAF.Combat.AttackEventDefinition.inputCheckStartFrame
+  fullName: CAF.Combat.AttackEventDefinition.inputCheckStartFrame
+  nameWithType: AttackEventDefinition.inputCheckStartFrame
+- uid: CAF.Combat.AttackEventDefinition.inputCheckTiming
+  name: inputCheckTiming
+  href: api/CAF.Combat.AttackEventDefinition.html#CAF_Combat_AttackEventDefinition_inputCheckTiming
+  commentId: F:CAF.Combat.AttackEventDefinition.inputCheckTiming
+  fullName: CAF.Combat.AttackEventDefinition.inputCheckTiming
+  nameWithType: AttackEventDefinition.inputCheckTiming
 - uid: CAF.Combat.AttackEventDefinition.nickname
   name: nickname
   href: api/CAF.Combat.AttackEventDefinition.html#CAF_Combat_AttackEventDefinition_nickname
@@ -695,6 +738,30 @@ references:
   commentId: F:CAF.Combat.AttackEventDefinition.variables
   fullName: CAF.Combat.AttackEventDefinition.variables
   nameWithType: AttackEventDefinition.variables
+- uid: CAF.Combat.AttackEventInputCheckTiming
+  name: AttackEventInputCheckTiming
+  href: api/CAF.Combat.AttackEventInputCheckTiming.html
+  commentId: T:CAF.Combat.AttackEventInputCheckTiming
+  fullName: CAF.Combat.AttackEventInputCheckTiming
+  nameWithType: AttackEventInputCheckTiming
+- uid: CAF.Combat.AttackEventInputCheckTiming.CONTINUOUS
+  name: CONTINUOUS
+  href: api/CAF.Combat.AttackEventInputCheckTiming.html#CAF_Combat_AttackEventInputCheckTiming_CONTINUOUS
+  commentId: F:CAF.Combat.AttackEventInputCheckTiming.CONTINUOUS
+  fullName: CAF.Combat.AttackEventInputCheckTiming.CONTINUOUS
+  nameWithType: AttackEventInputCheckTiming.CONTINUOUS
+- uid: CAF.Combat.AttackEventInputCheckTiming.NONE
+  name: NONE
+  href: api/CAF.Combat.AttackEventInputCheckTiming.html#CAF_Combat_AttackEventInputCheckTiming_NONE
+  commentId: F:CAF.Combat.AttackEventInputCheckTiming.NONE
+  fullName: CAF.Combat.AttackEventInputCheckTiming.NONE
+  nameWithType: AttackEventInputCheckTiming.NONE
+- uid: CAF.Combat.AttackEventInputCheckTiming.ONCE
+  name: ONCE
+  href: api/CAF.Combat.AttackEventInputCheckTiming.html#CAF_Combat_AttackEventInputCheckTiming_ONCE
+  commentId: F:CAF.Combat.AttackEventInputCheckTiming.ONCE
+  fullName: CAF.Combat.AttackEventInputCheckTiming.ONCE
+  nameWithType: AttackEventInputCheckTiming.ONCE
 - uid: CAF.Combat.AttackEventVariables
   name: AttackEventVariables
   href: api/CAF.Combat.AttackEventVariables.html
@@ -973,157 +1040,6 @@ references:
   commentId: T:CAF.Combat.HealInfoBase
   fullName: CAF.Combat.HealInfoBase
   nameWithType: HealInfoBase
-- uid: CAF.Combat.Hitbox
-  name: Hitbox
-  href: api/CAF.Combat.Hitbox.html
-  commentId: T:CAF.Combat.Hitbox
-  fullName: CAF.Combat.Hitbox
-  nameWithType: Hitbox
-- uid: CAF.Combat.Hitbox.Activate
-  name: Activate()
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_Activate
-  commentId: M:CAF.Combat.Hitbox.Activate
-  fullName: CAF.Combat.Hitbox.Activate()
-  nameWithType: Hitbox.Activate()
-- uid: CAF.Combat.Hitbox.Activate*
-  name: Activate
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_Activate_
-  commentId: Overload:CAF.Combat.Hitbox.Activate
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox.Activate
-  nameWithType: Hitbox.Activate
-- uid: CAF.Combat.Hitbox.activated
-  name: activated
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_activated
-  commentId: F:CAF.Combat.Hitbox.activated
-  fullName: CAF.Combat.Hitbox.activated
-  nameWithType: Hitbox.activated
-- uid: CAF.Combat.Hitbox.CheckHits
-  name: CheckHits()
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_CheckHits
-  commentId: M:CAF.Combat.Hitbox.CheckHits
-  fullName: CAF.Combat.Hitbox.CheckHits()
-  nameWithType: Hitbox.CheckHits()
-- uid: CAF.Combat.Hitbox.CheckHits*
-  name: CheckHits
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_CheckHits_
-  commentId: Overload:CAF.Combat.Hitbox.CheckHits
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox.CheckHits
-  nameWithType: Hitbox.CheckHits
-- uid: CAF.Combat.Hitbox.CheckHurtables
-  name: CheckHurtables()
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_CheckHurtables
-  commentId: M:CAF.Combat.Hitbox.CheckHurtables
-  fullName: CAF.Combat.Hitbox.CheckHurtables()
-  nameWithType: Hitbox.CheckHurtables()
-- uid: CAF.Combat.Hitbox.CheckHurtables*
-  name: CheckHurtables
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_CheckHurtables_
-  commentId: Overload:CAF.Combat.Hitbox.CheckHurtables
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox.CheckHurtables
-  nameWithType: Hitbox.CheckHurtables
-- uid: CAF.Combat.Hitbox.Deactivate
-  name: Deactivate()
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_Deactivate
-  commentId: M:CAF.Combat.Hitbox.Deactivate
-  fullName: CAF.Combat.Hitbox.Deactivate()
-  nameWithType: Hitbox.Deactivate()
-- uid: CAF.Combat.Hitbox.Deactivate*
-  name: Deactivate
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_Deactivate_
-  commentId: Overload:CAF.Combat.Hitbox.Deactivate
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox.Deactivate
-  nameWithType: Hitbox.Deactivate
-- uid: CAF.Combat.Hitbox.directionOwner
-  name: directionOwner
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_directionOwner
-  commentId: F:CAF.Combat.Hitbox.directionOwner
-  fullName: CAF.Combat.Hitbox.directionOwner
-  nameWithType: Hitbox.directionOwner
-- uid: CAF.Combat.Hitbox.hitHurtables
-  name: hitHurtables
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_hitHurtables
-  commentId: F:CAF.Combat.Hitbox.hitHurtables
-  fullName: CAF.Combat.Hitbox.hitHurtables
-  nameWithType: Hitbox.hitHurtables
-- uid: CAF.Combat.Hitbox.hitInfo
-  name: hitInfo
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_hitInfo
-  commentId: F:CAF.Combat.Hitbox.hitInfo
-  fullName: CAF.Combat.Hitbox.hitInfo
-  nameWithType: Hitbox.hitInfo
-- uid: CAF.Combat.Hitbox.HurtAction
-  name: Hitbox.HurtAction
-  href: api/CAF.Combat.Hitbox.HurtAction.html
-  commentId: T:CAF.Combat.Hitbox.HurtAction
-  fullName: CAF.Combat.Hitbox.HurtAction
-  nameWithType: Hitbox.HurtAction
-- uid: CAF.Combat.Hitbox.HurtHurtable(CAF.Combat.IHurtable)
-  name: HurtHurtable(IHurtable)
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_HurtHurtable_CAF_Combat_IHurtable_
-  commentId: M:CAF.Combat.Hitbox.HurtHurtable(CAF.Combat.IHurtable)
-  fullName: CAF.Combat.Hitbox.HurtHurtable(CAF.Combat.IHurtable)
-  nameWithType: Hitbox.HurtHurtable(IHurtable)
-- uid: CAF.Combat.Hitbox.HurtHurtable*
-  name: HurtHurtable
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_HurtHurtable_
-  commentId: Overload:CAF.Combat.Hitbox.HurtHurtable
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox.HurtHurtable
-  nameWithType: Hitbox.HurtHurtable
-- uid: CAF.Combat.Hitbox.ignoreList
-  name: ignoreList
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_ignoreList
-  commentId: F:CAF.Combat.Hitbox.ignoreList
-  fullName: CAF.Combat.Hitbox.ignoreList
-  nameWithType: Hitbox.ignoreList
-- uid: CAF.Combat.Hitbox.Initialize(GameObject,Transform,System.Int32,CAF.Combat.BoxShapes,CAF.Combat.HitInfoBase,CAF.Combat.BoxDefinition,System.Collections.Generic.List{CAF.Combat.IHurtable})
-  name: Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinition, List<IHurtable>)
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_Initialize_GameObject_Transform_System_Int32_CAF_Combat_BoxShapes_CAF_Combat_HitInfoBase_CAF_Combat_BoxDefinition_System_Collections_Generic_List_CAF_Combat_IHurtable__
-  commentId: M:CAF.Combat.Hitbox.Initialize(GameObject,Transform,System.Int32,CAF.Combat.BoxShapes,CAF.Combat.HitInfoBase,CAF.Combat.BoxDefinition,System.Collections.Generic.List{CAF.Combat.IHurtable})
-  name.vb: Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinition, List(Of IHurtable))
-  fullName: CAF.Combat.Hitbox.Initialize(GameObject, Transform, System.Int32, CAF.Combat.BoxShapes, CAF.Combat.HitInfoBase, CAF.Combat.BoxDefinition, System.Collections.Generic.List<CAF.Combat.IHurtable>)
-  fullName.vb: CAF.Combat.Hitbox.Initialize(GameObject, Transform, System.Int32, CAF.Combat.BoxShapes, CAF.Combat.HitInfoBase, CAF.Combat.BoxDefinition, System.Collections.Generic.List(Of CAF.Combat.IHurtable))
-  nameWithType: Hitbox.Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinition, List<IHurtable>)
-  nameWithType.vb: Hitbox.Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinition, List(Of IHurtable))
-- uid: CAF.Combat.Hitbox.Initialize*
-  name: Initialize
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_Initialize_
-  commentId: Overload:CAF.Combat.Hitbox.Initialize
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox.Initialize
-  nameWithType: Hitbox.Initialize
-- uid: CAF.Combat.Hitbox.OnHurt
-  name: OnHurt
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_OnHurt
-  commentId: E:CAF.Combat.Hitbox.OnHurt
-  fullName: CAF.Combat.Hitbox.OnHurt
-  nameWithType: Hitbox.OnHurt
-- uid: CAF.Combat.Hitbox.owner
-  name: owner
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_owner
-  commentId: F:CAF.Combat.Hitbox.owner
-  fullName: CAF.Combat.Hitbox.owner
-  nameWithType: Hitbox.owner
-- uid: CAF.Combat.Hitbox.ReActivate(System.Collections.Generic.List{CAF.Combat.IHurtable})
-  name: ReActivate(List<IHurtable>)
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_ReActivate_System_Collections_Generic_List_CAF_Combat_IHurtable__
-  commentId: M:CAF.Combat.Hitbox.ReActivate(System.Collections.Generic.List{CAF.Combat.IHurtable})
-  name.vb: ReActivate(List(Of IHurtable))
-  fullName: CAF.Combat.Hitbox.ReActivate(System.Collections.Generic.List<CAF.Combat.IHurtable>)
-  fullName.vb: CAF.Combat.Hitbox.ReActivate(System.Collections.Generic.List(Of CAF.Combat.IHurtable))
-  nameWithType: Hitbox.ReActivate(List<IHurtable>)
-  nameWithType.vb: Hitbox.ReActivate(List(Of IHurtable))
-- uid: CAF.Combat.Hitbox.ReActivate*
-  name: ReActivate
-  href: api/CAF.Combat.Hitbox.html#CAF_Combat_Hitbox_ReActivate_
-  commentId: Overload:CAF.Combat.Hitbox.ReActivate
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox.ReActivate
-  nameWithType: Hitbox.ReActivate
 - uid: CAF.Combat.Hitbox2D
   name: Hitbox2D
   href: api/CAF.Combat.Hitbox2D.html
@@ -1391,6 +1307,157 @@ references:
   isSpec: "True"
   fullName: CAF.Combat.Hitbox3D.OnTriggerStay
   nameWithType: Hitbox3D.OnTriggerStay
+- uid: CAF.Combat.HitboxBase
+  name: HitboxBase
+  href: api/CAF.Combat.HitboxBase.html
+  commentId: T:CAF.Combat.HitboxBase
+  fullName: CAF.Combat.HitboxBase
+  nameWithType: HitboxBase
+- uid: CAF.Combat.HitboxBase.Activate
+  name: Activate()
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_Activate
+  commentId: M:CAF.Combat.HitboxBase.Activate
+  fullName: CAF.Combat.HitboxBase.Activate()
+  nameWithType: HitboxBase.Activate()
+- uid: CAF.Combat.HitboxBase.Activate*
+  name: Activate
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_Activate_
+  commentId: Overload:CAF.Combat.HitboxBase.Activate
+  isSpec: "True"
+  fullName: CAF.Combat.HitboxBase.Activate
+  nameWithType: HitboxBase.Activate
+- uid: CAF.Combat.HitboxBase.activated
+  name: activated
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_activated
+  commentId: F:CAF.Combat.HitboxBase.activated
+  fullName: CAF.Combat.HitboxBase.activated
+  nameWithType: HitboxBase.activated
+- uid: CAF.Combat.HitboxBase.CheckHits
+  name: CheckHits()
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_CheckHits
+  commentId: M:CAF.Combat.HitboxBase.CheckHits
+  fullName: CAF.Combat.HitboxBase.CheckHits()
+  nameWithType: HitboxBase.CheckHits()
+- uid: CAF.Combat.HitboxBase.CheckHits*
+  name: CheckHits
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_CheckHits_
+  commentId: Overload:CAF.Combat.HitboxBase.CheckHits
+  isSpec: "True"
+  fullName: CAF.Combat.HitboxBase.CheckHits
+  nameWithType: HitboxBase.CheckHits
+- uid: CAF.Combat.HitboxBase.CheckHurtables
+  name: CheckHurtables()
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_CheckHurtables
+  commentId: M:CAF.Combat.HitboxBase.CheckHurtables
+  fullName: CAF.Combat.HitboxBase.CheckHurtables()
+  nameWithType: HitboxBase.CheckHurtables()
+- uid: CAF.Combat.HitboxBase.CheckHurtables*
+  name: CheckHurtables
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_CheckHurtables_
+  commentId: Overload:CAF.Combat.HitboxBase.CheckHurtables
+  isSpec: "True"
+  fullName: CAF.Combat.HitboxBase.CheckHurtables
+  nameWithType: HitboxBase.CheckHurtables
+- uid: CAF.Combat.HitboxBase.Deactivate
+  name: Deactivate()
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_Deactivate
+  commentId: M:CAF.Combat.HitboxBase.Deactivate
+  fullName: CAF.Combat.HitboxBase.Deactivate()
+  nameWithType: HitboxBase.Deactivate()
+- uid: CAF.Combat.HitboxBase.Deactivate*
+  name: Deactivate
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_Deactivate_
+  commentId: Overload:CAF.Combat.HitboxBase.Deactivate
+  isSpec: "True"
+  fullName: CAF.Combat.HitboxBase.Deactivate
+  nameWithType: HitboxBase.Deactivate
+- uid: CAF.Combat.HitboxBase.directionOwner
+  name: directionOwner
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_directionOwner
+  commentId: F:CAF.Combat.HitboxBase.directionOwner
+  fullName: CAF.Combat.HitboxBase.directionOwner
+  nameWithType: HitboxBase.directionOwner
+- uid: CAF.Combat.HitboxBase.hitHurtables
+  name: hitHurtables
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_hitHurtables
+  commentId: F:CAF.Combat.HitboxBase.hitHurtables
+  fullName: CAF.Combat.HitboxBase.hitHurtables
+  nameWithType: HitboxBase.hitHurtables
+- uid: CAF.Combat.HitboxBase.hitInfo
+  name: hitInfo
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_hitInfo
+  commentId: F:CAF.Combat.HitboxBase.hitInfo
+  fullName: CAF.Combat.HitboxBase.hitInfo
+  nameWithType: HitboxBase.hitInfo
+- uid: CAF.Combat.HitboxBase.HurtAction
+  name: HitboxBase.HurtAction
+  href: api/CAF.Combat.HitboxBase.HurtAction.html
+  commentId: T:CAF.Combat.HitboxBase.HurtAction
+  fullName: CAF.Combat.HitboxBase.HurtAction
+  nameWithType: HitboxBase.HurtAction
+- uid: CAF.Combat.HitboxBase.HurtHurtable(CAF.Combat.IHurtable)
+  name: HurtHurtable(IHurtable)
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_HurtHurtable_CAF_Combat_IHurtable_
+  commentId: M:CAF.Combat.HitboxBase.HurtHurtable(CAF.Combat.IHurtable)
+  fullName: CAF.Combat.HitboxBase.HurtHurtable(CAF.Combat.IHurtable)
+  nameWithType: HitboxBase.HurtHurtable(IHurtable)
+- uid: CAF.Combat.HitboxBase.HurtHurtable*
+  name: HurtHurtable
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_HurtHurtable_
+  commentId: Overload:CAF.Combat.HitboxBase.HurtHurtable
+  isSpec: "True"
+  fullName: CAF.Combat.HitboxBase.HurtHurtable
+  nameWithType: HitboxBase.HurtHurtable
+- uid: CAF.Combat.HitboxBase.ignoreList
+  name: ignoreList
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_ignoreList
+  commentId: F:CAF.Combat.HitboxBase.ignoreList
+  fullName: CAF.Combat.HitboxBase.ignoreList
+  nameWithType: HitboxBase.ignoreList
+- uid: CAF.Combat.HitboxBase.Initialize(GameObject,Transform,System.Int32,CAF.Combat.BoxShapes,CAF.Combat.HitInfoBase,CAF.Combat.BoxDefinition,System.Collections.Generic.List{CAF.Combat.IHurtable})
+  name: Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinition, List<IHurtable>)
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_Initialize_GameObject_Transform_System_Int32_CAF_Combat_BoxShapes_CAF_Combat_HitInfoBase_CAF_Combat_BoxDefinition_System_Collections_Generic_List_CAF_Combat_IHurtable__
+  commentId: M:CAF.Combat.HitboxBase.Initialize(GameObject,Transform,System.Int32,CAF.Combat.BoxShapes,CAF.Combat.HitInfoBase,CAF.Combat.BoxDefinition,System.Collections.Generic.List{CAF.Combat.IHurtable})
+  name.vb: Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinition, List(Of IHurtable))
+  fullName: CAF.Combat.HitboxBase.Initialize(GameObject, Transform, System.Int32, CAF.Combat.BoxShapes, CAF.Combat.HitInfoBase, CAF.Combat.BoxDefinition, System.Collections.Generic.List<CAF.Combat.IHurtable>)
+  fullName.vb: CAF.Combat.HitboxBase.Initialize(GameObject, Transform, System.Int32, CAF.Combat.BoxShapes, CAF.Combat.HitInfoBase, CAF.Combat.BoxDefinition, System.Collections.Generic.List(Of CAF.Combat.IHurtable))
+  nameWithType: HitboxBase.Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinition, List<IHurtable>)
+  nameWithType.vb: HitboxBase.Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinition, List(Of IHurtable))
+- uid: CAF.Combat.HitboxBase.Initialize*
+  name: Initialize
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_Initialize_
+  commentId: Overload:CAF.Combat.HitboxBase.Initialize
+  isSpec: "True"
+  fullName: CAF.Combat.HitboxBase.Initialize
+  nameWithType: HitboxBase.Initialize
+- uid: CAF.Combat.HitboxBase.OnHurt
+  name: OnHurt
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_OnHurt
+  commentId: E:CAF.Combat.HitboxBase.OnHurt
+  fullName: CAF.Combat.HitboxBase.OnHurt
+  nameWithType: HitboxBase.OnHurt
+- uid: CAF.Combat.HitboxBase.owner
+  name: owner
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_owner
+  commentId: F:CAF.Combat.HitboxBase.owner
+  fullName: CAF.Combat.HitboxBase.owner
+  nameWithType: HitboxBase.owner
+- uid: CAF.Combat.HitboxBase.ReActivate(System.Collections.Generic.List{CAF.Combat.IHurtable})
+  name: ReActivate(List<IHurtable>)
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_ReActivate_System_Collections_Generic_List_CAF_Combat_IHurtable__
+  commentId: M:CAF.Combat.HitboxBase.ReActivate(System.Collections.Generic.List{CAF.Combat.IHurtable})
+  name.vb: ReActivate(List(Of IHurtable))
+  fullName: CAF.Combat.HitboxBase.ReActivate(System.Collections.Generic.List<CAF.Combat.IHurtable>)
+  fullName.vb: CAF.Combat.HitboxBase.ReActivate(System.Collections.Generic.List(Of CAF.Combat.IHurtable))
+  nameWithType: HitboxBase.ReActivate(List<IHurtable>)
+  nameWithType.vb: HitboxBase.ReActivate(List(Of IHurtable))
+- uid: CAF.Combat.HitboxBase.ReActivate*
+  name: ReActivate
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_ReActivate_
+  commentId: Overload:CAF.Combat.HitboxBase.ReActivate
+  isSpec: "True"
+  fullName: CAF.Combat.HitboxBase.ReActivate
+  nameWithType: HitboxBase.ReActivate
 - uid: CAF.Combat.HitboxForceRelation
   name: HitboxForceRelation
   href: api/CAF.Combat.HitboxForceRelation.html
@@ -1948,12 +2015,6 @@ references:
   commentId: F:CAF.Combat.MovesetAttackNode.attackDefinition
   fullName: CAF.Combat.MovesetAttackNode.attackDefinition
   nameWithType: MovesetAttackNode.attackDefinition
-- uid: CAF.Combat.MovesetAttackNode.executeInputs
-  name: executeInputs
-  href: api/CAF.Combat.MovesetAttackNode.html#CAF_Combat_MovesetAttackNode_executeInputs
-  commentId: F:CAF.Combat.MovesetAttackNode.executeInputs
-  fullName: CAF.Combat.MovesetAttackNode.executeInputs
-  nameWithType: MovesetAttackNode.executeInputs
 - uid: CAF.Combat.MovesetAttackNode.GetValue(NodePort)
   name: GetValue(NodePort)
   href: api/CAF.Combat.MovesetAttackNode.html#CAF_Combat_MovesetAttackNode_GetValue_NodePort_
@@ -2277,6 +2338,19 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityCombatManager.CheckCurrentAttackCancelWindows
   nameWithType: EntityCombatManager.CheckCurrentAttackCancelWindows
+- uid: CAF.Entities.EntityCombatManager.CheckForInputSequence(CAF.Input.InputSequence)
+  name: CheckForInputSequence(InputSequence)
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_CheckForInputSequence_CAF_Input_InputSequence_
+  commentId: M:CAF.Entities.EntityCombatManager.CheckForInputSequence(CAF.Input.InputSequence)
+  fullName: CAF.Entities.EntityCombatManager.CheckForInputSequence(CAF.Input.InputSequence)
+  nameWithType: EntityCombatManager.CheckForInputSequence(InputSequence)
+- uid: CAF.Entities.EntityCombatManager.CheckForInputSequence*
+  name: CheckForInputSequence
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_CheckForInputSequence_
+  commentId: Overload:CAF.Entities.EntityCombatManager.CheckForInputSequence
+  isSpec: "True"
+  fullName: CAF.Entities.EntityCombatManager.CheckForInputSequence
+  nameWithType: EntityCombatManager.CheckForInputSequence
 - uid: CAF.Entities.EntityCombatManager.CheckStartingNodes
   name: CheckStartingNodes()
   href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_CheckStartingNodes
@@ -3944,6 +4018,30 @@ references:
   commentId: F:CAF.Input.GlobalInputManager.instance
   fullName: CAF.Input.GlobalInputManager.instance
   nameWithType: GlobalInputManager.instance
+- uid: CAF.Input.InputButtonStates
+  name: InputButtonStates
+  href: api/CAF.Input.InputButtonStates.html
+  commentId: T:CAF.Input.InputButtonStates
+  fullName: CAF.Input.InputButtonStates
+  nameWithType: InputButtonStates
+- uid: CAF.Input.InputButtonStates.FIRST_PRESS
+  name: FIRST_PRESS
+  href: api/CAF.Input.InputButtonStates.html#CAF_Input_InputButtonStates_FIRST_PRESS
+  commentId: F:CAF.Input.InputButtonStates.FIRST_PRESS
+  fullName: CAF.Input.InputButtonStates.FIRST_PRESS
+  nameWithType: InputButtonStates.FIRST_PRESS
+- uid: CAF.Input.InputButtonStates.IS_DOWN
+  name: IS_DOWN
+  href: api/CAF.Input.InputButtonStates.html#CAF_Input_InputButtonStates_IS_DOWN
+  commentId: F:CAF.Input.InputButtonStates.IS_DOWN
+  fullName: CAF.Input.InputButtonStates.IS_DOWN
+  nameWithType: InputButtonStates.IS_DOWN
+- uid: CAF.Input.InputButtonStates.RELEASED
+  name: RELEASED
+  href: api/CAF.Input.InputButtonStates.html#CAF_Input_InputButtonStates_RELEASED
+  commentId: F:CAF.Input.InputButtonStates.RELEASED
+  fullName: CAF.Input.InputButtonStates.RELEASED
+  nameWithType: InputButtonStates.RELEASED
 - uid: CAF.Input.InputControlType
   name: InputControlType
   href: api/CAF.Input.InputControlType.html
@@ -4099,6 +4197,19 @@ references:
   isSpec: "True"
   fullName: CAF.Input.InputRecordAxis.UsedInBuffer
   nameWithType: InputRecordAxis.UsedInBuffer
+- uid: CAF.Input.InputRecordAxis.UseInBuffer
+  name: UseInBuffer()
+  href: api/CAF.Input.InputRecordAxis.html#CAF_Input_InputRecordAxis_UseInBuffer
+  commentId: M:CAF.Input.InputRecordAxis.UseInBuffer
+  fullName: CAF.Input.InputRecordAxis.UseInBuffer()
+  nameWithType: InputRecordAxis.UseInBuffer()
+- uid: CAF.Input.InputRecordAxis.UseInBuffer*
+  name: UseInBuffer
+  href: api/CAF.Input.InputRecordAxis.html#CAF_Input_InputRecordAxis_UseInBuffer_
+  commentId: Overload:CAF.Input.InputRecordAxis.UseInBuffer
+  isSpec: "True"
+  fullName: CAF.Input.InputRecordAxis.UseInBuffer
+  nameWithType: InputRecordAxis.UseInBuffer
 - uid: CAF.Input.InputRecordAxis2D
   name: InputRecordAxis2D
   href: api/CAF.Input.InputRecordAxis2D.html
@@ -4150,6 +4261,19 @@ references:
   isSpec: "True"
   fullName: CAF.Input.InputRecordAxis2D.UsedInBuffer
   nameWithType: InputRecordAxis2D.UsedInBuffer
+- uid: CAF.Input.InputRecordAxis2D.UseInBuffer
+  name: UseInBuffer()
+  href: api/CAF.Input.InputRecordAxis2D.html#CAF_Input_InputRecordAxis2D_UseInBuffer
+  commentId: M:CAF.Input.InputRecordAxis2D.UseInBuffer
+  fullName: CAF.Input.InputRecordAxis2D.UseInBuffer()
+  nameWithType: InputRecordAxis2D.UseInBuffer()
+- uid: CAF.Input.InputRecordAxis2D.UseInBuffer*
+  name: UseInBuffer
+  href: api/CAF.Input.InputRecordAxis2D.html#CAF_Input_InputRecordAxis2D_UseInBuffer_
+  commentId: Overload:CAF.Input.InputRecordAxis2D.UseInBuffer
+  isSpec: "True"
+  fullName: CAF.Input.InputRecordAxis2D.UseInBuffer
+  nameWithType: InputRecordAxis2D.UseInBuffer
 - uid: CAF.Input.InputRecordButton
   name: InputRecordButton
   href: api/CAF.Input.InputRecordButton.html
@@ -4264,6 +4388,19 @@ references:
   isSpec: "True"
   fullName: CAF.Input.InputRecordInput.UsedInBuffer
   nameWithType: InputRecordInput.UsedInBuffer
+- uid: CAF.Input.InputRecordInput.UseInBuffer
+  name: UseInBuffer()
+  href: api/CAF.Input.InputRecordInput.html#CAF_Input_InputRecordInput_UseInBuffer
+  commentId: M:CAF.Input.InputRecordInput.UseInBuffer
+  fullName: CAF.Input.InputRecordInput.UseInBuffer()
+  nameWithType: InputRecordInput.UseInBuffer()
+- uid: CAF.Input.InputRecordInput.UseInBuffer*
+  name: UseInBuffer
+  href: api/CAF.Input.InputRecordInput.html#CAF_Input_InputRecordInput_UseInBuffer_
+  commentId: Overload:CAF.Input.InputRecordInput.UseInBuffer
+  isSpec: "True"
+  fullName: CAF.Input.InputRecordInput.UseInBuffer
+  nameWithType: InputRecordInput.UseInBuffer
 - uid: CAF.Input.InputRecordItem
   name: InputRecordItem
   href: api/CAF.Input.InputRecordItem.html
@@ -4302,6 +4439,36 @@ references:
   commentId: F:CAF.Input.InputRecordItem.inputs
   fullName: CAF.Input.InputRecordItem.inputs
   nameWithType: InputRecordItem.inputs
+- uid: CAF.Input.InputSequence
+  name: InputSequence
+  href: api/CAF.Input.InputSequence.html
+  commentId: T:CAF.Input.InputSequence
+  fullName: CAF.Input.InputSequence
+  nameWithType: InputSequence
+- uid: CAF.Input.InputSequence.executeInputs
+  name: executeInputs
+  href: api/CAF.Input.InputSequence.html#CAF_Input_InputSequence_executeInputs
+  commentId: F:CAF.Input.InputSequence.executeInputs
+  fullName: CAF.Input.InputSequence.executeInputs
+  nameWithType: InputSequence.executeInputs
+- uid: CAF.Input.InputSequence.executeWindow
+  name: executeWindow
+  href: api/CAF.Input.InputSequence.html#CAF_Input_InputSequence_executeWindow
+  commentId: F:CAF.Input.InputSequence.executeWindow
+  fullName: CAF.Input.InputSequence.executeWindow
+  nameWithType: InputSequence.executeWindow
+- uid: CAF.Input.InputSequence.sequenceInputs
+  name: sequenceInputs
+  href: api/CAF.Input.InputSequence.html#CAF_Input_InputSequence_sequenceInputs
+  commentId: F:CAF.Input.InputSequence.sequenceInputs
+  fullName: CAF.Input.InputSequence.sequenceInputs
+  nameWithType: InputSequence.sequenceInputs
+- uid: CAF.Input.InputSequence.sequenceWindow
+  name: sequenceWindow
+  href: api/CAF.Input.InputSequence.html#CAF_Input_InputSequence_sequenceWindow
+  commentId: F:CAF.Input.InputSequence.sequenceWindow
+  fullName: CAF.Input.InputSequence.sequenceWindow
+  nameWithType: InputSequence.sequenceWindow
 - uid: CAF.Simulation
   name: CAF.Simulation
   href: api/CAF.Simulation.html
