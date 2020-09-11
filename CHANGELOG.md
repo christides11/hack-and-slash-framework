@@ -1,3 +1,22 @@
+# [5.0.0](https://github.com/christides11/Character-Action-Framework/compare/v4.1.0...v5.0.0) (2020-09-11)
+
+
+### Code Refactoring
+
+* Changed Hitbox to HitboxBase. ([89c135d](https://github.com/christides11/Character-Action-Framework/commit/89c135dfe2ddb80eb0894f92119d58d5a26956e3))
+
+
+### Features
+
+* Added reset method to LookHandler. ([317235a](https://github.com/christides11/Character-Action-Framework/commit/317235a1e38b56b24e83c6c114e38881c87f6df2))
+* Attack events can now check for input. ([9409de5](https://github.com/christides11/Character-Action-Framework/commit/9409de5c6ee7b93d0b43e6754e96821a6d66af37))
+
+
+### BREAKING CHANGES
+
+* inputs sequences put into their own class, separate from attacks. Makes it easier to define and read input for things besides attacks.
+* Changed Hitbox to HitboxBase to better reflect it's usage.
+
 # [4.1.0](https://github.com/christides11/Character-Action-Framework/compare/v4.0.0...v4.1.0) (2020-08-25)
 
 
