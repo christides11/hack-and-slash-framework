@@ -3,16 +3,15 @@
 namespace CAF.Combat
 {
     [System.Serializable]
-    public class BoxDefinition
+    public class BoxDefinition : BoxDefinitionBase
     {
-        public BoxShapes shape;
         public Vector3 offset;
         public Vector3 size;
         public Vector3 rotation;
         public float radius;
         public float height;
 
-        public BoxDefinition()
+        public BoxDefinition() : base()
         {
 
         }
