@@ -109,8 +109,6 @@ namespace CAF.Combat
             AnimationClip animationGround = attack.animationGround;
             AnimationClip animationAir = attack.animationAir;
             WrapMode wrapMode = attack.wrapMode;
-            float heightRestriction = attack.heightRestriction;
-            float gravityScale = attack.gravityScaleAdded;
 
             if (stateOverride < 0)
             {
@@ -124,12 +122,6 @@ namespace CAF.Combat
                 animationAir = (AnimationClip)EditorGUILayout.ObjectField("Animation (Air)", attack.animationAir,
                         typeof(AnimationClip), false);
                 wrapMode = (WrapMode)EditorGUILayout.EnumPopup("Wrap Mode", attack.wrapMode);
-
-                GUILayout.Space(15);
-
-                EditorGUILayout.LabelField("OTHER", EditorStyles.boldLabel);
-                heightRestriction = EditorGUILayout.FloatField("Height Restriction", attack.heightRestriction);
-                gravityScale = EditorGUILayout.FloatField("Gravity Scale Added", attack.gravityScaleAdded);
             }
 
             if (EditorGUI.EndChangeCheck())
@@ -142,8 +134,6 @@ namespace CAF.Combat
                 attack.animationGround = animationGround;
                 attack.animationAir = animationAir;
                 attack.wrapMode = wrapMode;
-                attack.heightRestriction = heightRestriction;
-                attack.gravityScaleAdded = gravityScale;
             }
         }
 
