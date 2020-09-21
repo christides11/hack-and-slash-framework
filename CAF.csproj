@@ -70,6 +70,7 @@
     <Compile Include="Assets\CAF\Combat\Attack Events\AttackEventVariables.cs" />
     <Compile Include="Assets\CAF\Combat\Attack\AttackDefinition.cs" />
     <Compile Include="Assets\CAF\Combat\Boxes\BoxDefinition.cs" />
+    <Compile Include="Assets\CAF\Combat\Boxes\BoxDefinitionBase.cs" />
     <Compile Include="Assets\CAF\Combat\Boxes\BoxGroup.cs" />
     <Compile Include="Assets\CAF\Combat\Boxes\BoxGroupType.cs" />
     <Compile Include="Assets\CAF\Combat\Boxes\BoxShapes.cs" />
