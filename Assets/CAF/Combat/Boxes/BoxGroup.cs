@@ -14,7 +14,6 @@ namespace CAF.Combat
         public BoxGroupType hitGroupType;
         public List<BoxDefinition> boxes = new List<BoxDefinition>();
         public bool attachToEntity = true;
-        public float styleGain = 1.0f;
         public int chargeLevelNeeded = -1;
         public int chargeLevelMax = 1;
 

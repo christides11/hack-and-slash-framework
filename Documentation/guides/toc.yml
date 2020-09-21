@@ -2,3 +2,5 @@
   href: index.md
 - name: Setup
   href: setup.md
+- name: Character Setup
+  href: createchara.md

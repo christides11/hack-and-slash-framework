@@ -102,6 +102,7 @@
     <Compile Include="Assets\CAF\Entities\Managers\EntityInputManager.cs" />
     <Compile Include="Assets\CAF\Entities\Managers\EntityPhysicsManager.cs" />
     <Compile Include="Assets\CAF\Entities\Managers\EntityStateManager.cs" />
+    <Compile Include="Assets\CAF\Entities\StateHurtboxDefinition.cs" />
     <Compile Include="Assets\CAF\Input\GlobalInputManager.cs" />
     <Compile Include="Assets\CAF\Input\Input Record\InputRecordAxis.cs" />
     <Compile Include="Assets\CAF\Input\Input Record\InputRecordAxis2D.cs" />
