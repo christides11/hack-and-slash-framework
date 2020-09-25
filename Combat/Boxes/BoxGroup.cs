@@ -12,7 +12,7 @@ namespace CAF.Combat
         public int activeFramesStart = 1;
         public int activeFramesEnd = 1;
         public BoxGroupType hitGroupType;
-        public List<BoxDefinition> boxes = new List<BoxDefinition>();
+        [SerializeReference] public List<BoxDefinitionBase> boxes = new List<BoxDefinitionBase>();
         public bool attachToEntity = true;
         public int chargeLevelNeeded = -1;
         public int chargeLevelMax = 1;
@@ -35,11 +35,7 @@ namespace CAF.Combat
             {
                 hitboxHitInfo = new HitInfo((HitInfo)other.hitboxHitInfo);
             }
-            boxes = new List<BoxDefinition>();
-            for (int i = 0; i < other.boxes.Count; i++)
-            {
-                boxes.Add(new BoxDefinition(other.boxes[i]));
-            }
+            boxes = new List<BoxDefinitionBase>();
         }
     }
 }

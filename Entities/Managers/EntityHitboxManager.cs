@@ -137,9 +137,8 @@ namespace CAF.Entities
             for (int i = 0; i < currentGroup.boxes.Count; i++)
             {
                 // Instantiate the hitbox with the correct position and rotation.
-                BoxDefinition hitboxDefinition = currentGroup.boxes[i];
-                HitboxBase hitbox = InstantiateHitbox(GetHitboxPosition(hitboxDefinition),
-                    GetHitboxRotation(hitboxDefinition));
+                BoxDefinitionBase hitboxDefinition = currentGroup.boxes[i];
+                HitboxBase hitbox = InstantiateHitbox(hitboxDefinition);
 
                 // Attach the hitbox if neccessary.
                 if (currentGroup.attachToEntity)
@@ -159,25 +158,7 @@ namespace CAF.Entities
             hitboxGroups.Add(index, groupHitboxList);
         }
 
-        protected virtual Quaternion GetHitboxRotation(BoxDefinition hitboxDefinition)
-        {
-            return Quaternion.Euler(manager.visual.transform.eulerAngles + hitboxDefinition.rotation);
-        }
-
-        /// <summary>
-        /// Calculates where the hitbox being created should be positioned.
-        /// </summary>
-        /// <param name="hitboxDefinition">The definition of the hitbox.</param>
-        /// <returns>The position the hitbox should be in.</returns>
-        protected virtual Vector3 GetHitboxPosition(BoxDefinition hitboxDefinition)
-        {
-            return manager.transform.position
-                + manager.GetVisualBasedDirection(Vector3.forward) * hitboxDefinition.offset.z
-                + manager.GetVisualBasedDirection(Vector3.right) * hitboxDefinition.offset.x
-                + manager.GetVisualBasedDirection(Vector3.up) * hitboxDefinition.offset.y;
-        }
-
-        protected virtual HitboxBase InstantiateHitbox(Vector3 position, Quaternion rotation)
+        protected virtual HitboxBase InstantiateHitbox(BoxDefinitionBase hitboxDefinitionBase)
         {
             throw new NotImplementedException("InstantiateHitbox in EntityHitboxManager must be overriden!");
         }
