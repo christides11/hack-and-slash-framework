@@ -89,7 +89,7 @@ namespace TDAction.Entities
             return hitReaction;
         }
 
-        protected override bool CheckStickDirection(Vector2 wantedDirection, float deviation, int framesBack)
+        protected override bool CheckStickDirection(CAF.Input.InputDefinition sequenceInput, int framesBack)
         {
             Vector2 stickDir = manager.InputManager.GetAxis2D((int)EntityInputs.MOVEMENT, framesBack);
             if (stickDir.magnitude < 0.2f)
@@ -97,7 +97,7 @@ namespace TDAction.Entities
                 return false;
             }
 
-            if (Vector2.Dot(stickDir, wantedDirection) >= deviation)
+            if (Vector2.Dot(stickDir, sequenceInput.stickDirection) >= sequenceInput.directionDeviation)
             {
                 return true;
             }

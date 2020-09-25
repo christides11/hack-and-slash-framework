@@ -204,7 +204,7 @@ namespace CAF.Entities
                 switch (sequence.executeInputs[e].inputType)
                 {
                     case Input.InputDefinitionType.Stick:
-                        if (!CheckStickDirection(sequence.executeInputs[e].stickDirection, sequence.executeInputs[e].directionDeviation, 0))
+                        if (!CheckStickDirection(sequence.executeInputs[e], 0))
                         {
                             pressedExecuteInputs = false;
                             break;
@@ -252,7 +252,7 @@ namespace CAF.Entities
                         bool foundDir = false;
                         for (int f = currentOffset; f < currentOffset + sequence.sequenceWindow; f++)
                         {
-                            if (CheckStickDirection(sequence.sequenceInputs[s].stickDirection, sequence.sequenceInputs[s].directionDeviation, f))
+                            if (CheckStickDirection(sequence.sequenceInputs[s], f))
                             {
                                 foundDir = true;
                                 currentOffset = f;
@@ -296,7 +296,7 @@ namespace CAF.Entities
             return true;
         }
 
-        protected virtual bool CheckStickDirection(Vector2 wantedDirection, float deviation, int framesBack)
+        protected virtual bool CheckStickDirection(InputDefinition sequenceInput, int framesBack)
         {
             Debug.LogError("CheckStickDirection has to be overrided for command inputs to work.");
             return false;
