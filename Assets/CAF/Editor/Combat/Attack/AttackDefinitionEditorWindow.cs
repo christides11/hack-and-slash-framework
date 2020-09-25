@@ -20,10 +20,12 @@ namespace CAF.Combat
 
         protected Dictionary<string, Type> attackEventTypes = new Dictionary<string, Type>();
         protected Dictionary<string, Type> hitInfoTypes = new Dictionary<string, Type>();
+        protected Dictionary<string, Type> boxDefinitionTypes = new Dictionary<string, Type>();
         protected virtual void OnFocus()
         {
             attackEventTypes.Clear();
             hitInfoTypes.Clear();
+            boxDefinitionTypes.Clear();
             foreach (var a in AppDomain.CurrentDomain.GetAssemblies())
             {
                 foreach (var givenType in a.GetTypes())
@@ -35,6 +37,10 @@ namespace CAF.Combat
                     if (givenType.IsSubclassOf(typeof(HitInfoBase)))
                     {
                         hitInfoTypes.Add(givenType.FullName, givenType);
+                    }
+                    if (givenType.IsSubclassOf(typeof(BoxDefinitionBase)))
+                    {
+                        boxDefinitionTypes.Add(givenType.FullName, givenType);
                     }
                 }
             }
@@ -362,7 +368,14 @@ namespace CAF.Combat
             boxesFoldout = EditorGUILayout.Foldout(boxesFoldout, "Boxes", true);
             if (GUILayout.Button("Add"))
             {
-                BoxGroupAddBoxDefinition(currentGroup);
+                GenericMenu menu = new GenericMenu();
+
+                foreach (string t in boxDefinitionTypes.Keys)
+                {
+                    string destination = t.Replace('.', '/');
+                    menu.AddItem(new GUIContent(destination), true, OnBoxDefinitionSelected, t);
+                }
+                menu.ShowAsContext();
             }
             EditorGUILayout.EndHorizontal();
 
@@ -413,9 +426,9 @@ namespace CAF.Combat
             attack.boxGroups[currentHitboxGroupIndex].hitboxHitInfo = (HitInfoBase)Activator.CreateInstance(hitInfoTypes[(string)t]);
         }
 
-        protected virtual void BoxGroupAddBoxDefinition(BoxGroup currentGroup)
+        protected void OnBoxDefinitionSelected(object t)
         {
-            currentGroup.boxes.Add(new BoxDefinition());
+            attack.boxGroups[currentHitboxGroupIndex].boxes.Add((BoxDefinitionBase)Activator.CreateInstance(boxDefinitionTypes[(string)t]));
         }
 
         protected virtual void DrawHitboxOptions(BoxGroup currentGroup, int index)
@@ -428,38 +441,7 @@ namespace CAF.Combat
             }
             GUILayout.Label($"Group {index}");
             EditorGUILayout.EndHorizontal();
-            currentGroup.boxes[index].shape = (BoxShapes)EditorGUILayout.EnumPopup("Shape", currentGroup.boxes[index].shape);
-            EditorGUILayout.BeginHorizontal();
-            EditorGUILayout.LabelField("Offset", GUILayout.Width(135));
-            currentGroup.boxes[index].offset.x = EditorGUILayout.FloatField(currentGroup.boxes[index].offset.x, GUILayout.Width(60));
-            currentGroup.boxes[index].offset.y = EditorGUILayout.FloatField(currentGroup.boxes[index].offset.y, GUILayout.Width(60));
-            currentGroup.boxes[index].offset.z = EditorGUILayout.FloatField(currentGroup.boxes[index].offset.z, GUILayout.Width(60));
-            EditorGUILayout.EndHorizontal();
-            EditorGUILayout.BeginHorizontal();
-            EditorGUILayout.LabelField("Rotation", GUILayout.Width(135));
-            currentGroup.boxes[index].rotation.x = EditorGUILayout.FloatField(currentGroup.boxes[index].rotation.x, GUILayout.Width(60));
-            currentGroup.boxes[index].rotation.y = EditorGUILayout.FloatField(currentGroup.boxes[index].rotation.y, GUILayout.Width(60));
-            currentGroup.boxes[index].rotation.z = EditorGUILayout.FloatField(currentGroup.boxes[index].rotation.z, GUILayout.Width(60));
-            EditorGUILayout.EndHorizontal();
-            switch (currentGroup.boxes[index].shape)
-            {
-                case BoxShapes.Rectangle:
-                    EditorGUILayout.BeginHorizontal();
-                    EditorGUILayout.LabelField("Size", GUILayout.Width(135));
-                    currentGroup.boxes[index].size.x = EditorGUILayout.FloatField(currentGroup.boxes[index].size.x, GUILayout.Width(60));
-                    currentGroup.boxes[index].size.y = EditorGUILayout.FloatField(currentGroup.boxes[index].size.y, GUILayout.Width(60));
-                    currentGroup.boxes[index].size.z = EditorGUILayout.FloatField(currentGroup.boxes[index].size.z, GUILayout.Width(60));
-                    EditorGUILayout.EndHorizontal();
-                    break;
-                case BoxShapes.Circle:
-                    currentGroup.boxes[index].radius
-                        = EditorGUILayout.FloatField("Radius", currentGroup.boxes[index].radius);
-                    break;
-                case BoxShapes.Capsule:
-                    currentGroup.boxes[index].radius = EditorGUILayout.FloatField("Radius", currentGroup.boxes[index].radius);
-                    currentGroup.boxes[index].height = EditorGUILayout.FloatField("Height", currentGroup.boxes[index].height);
-                    break;
-            }
+            currentGroup.boxes[index].DrawInspector();
         }
 
         #region Events

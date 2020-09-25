@@ -1,7 +1,13 @@
 ﻿using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 namespace CAF.Combat
 {
+    /// <summary>
+    /// Default implementation of BoxDefinitionBase.
+    /// </summary>
     [System.Serializable]
     public class BoxDefinition : BoxDefinitionBase
     {
@@ -24,6 +30,43 @@ namespace CAF.Combat
             rotation = other.rotation;
             radius = other.radius;
             height = other.height;
+        }
+
+        public override void DrawInspector()
+        {
+#if UNITY_EDITOR
+            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.LabelField("Offset", GUILayout.Width(135));
+            offset.x = EditorGUILayout.FloatField(offset.x, GUILayout.Width(60));
+            offset.y = EditorGUILayout.FloatField(offset.y, GUILayout.Width(60));
+            offset.z = EditorGUILayout.FloatField(offset.z, GUILayout.Width(60));
+            EditorGUILayout.EndHorizontal();
+            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.LabelField("Rotation", GUILayout.Width(135));
+            rotation.x = EditorGUILayout.FloatField(rotation.x, GUILayout.Width(60));
+            rotation.y = EditorGUILayout.FloatField(rotation.y, GUILayout.Width(60));
+            rotation.z = EditorGUILayout.FloatField(rotation.z, GUILayout.Width(60));
+            EditorGUILayout.EndHorizontal();
+            switch (shape)
+            {
+                case BoxShapes.Rectangle:
+                    EditorGUILayout.BeginHorizontal();
+                    EditorGUILayout.LabelField("Size", GUILayout.Width(135));
+                    size.x = EditorGUILayout.FloatField(size.x, GUILayout.Width(60));
+                    size.y = EditorGUILayout.FloatField(size.y, GUILayout.Width(60));
+                    size.z = EditorGUILayout.FloatField(size.z, GUILayout.Width(60));
+                    EditorGUILayout.EndHorizontal();
+                    break;
+                case BoxShapes.Circle:
+                    radius
+                        = EditorGUILayout.FloatField("Radius", radius);
+                    break;
+                case BoxShapes.Capsule:
+                    radius = EditorGUILayout.FloatField("Radius", radius);
+                    height = EditorGUILayout.FloatField("Height", height);
+                    break;
+            }
+#endif
         }
     }
 }

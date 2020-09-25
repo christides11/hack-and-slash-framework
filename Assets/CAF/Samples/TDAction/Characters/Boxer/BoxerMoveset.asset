@@ -61,7 +61,7 @@ MonoBehaviour:
       directionDeviation: 0
     sequenceWindow: 8
     sequenceInputs: []
-  attackDefinition: {fileID: 11400000, guid: 6b5af3166b563264a9461e1318fee445, type: 2}
+  attackDefinition: {fileID: 11400000, guid: e7782add1c595bb4fa111a9e95eee407, type: 2}
   nextNode:
   - cancelWindow: {x: 10, y: 60}
     node: {fileID: 7489305346470690819}
@@ -153,8 +153,7 @@ MonoBehaviour:
   - {fileID: 509854845894301865}
   - {fileID: -2480016657355686588}
   - {fileID: 6984970888826348028}
-  groundAttackCommandNormals:
-  - {fileID: 8357619711189707542}
+  groundAttackCommandNormals: []
   groundAttackStartNodes:
   - {fileID: -3053810752503418589}
   airAttackCommandNormals: []
@@ -451,5 +450,5 @@ MonoBehaviour:
       buttonID: 0
       stickDirection: {x: 0, y: 1}
       directionDeviation: 0.85
-  attackDefinition: {fileID: 11400000, guid: 916177f7ac273ac49955cda84d11e59e, type: 2}
+  attackDefinition: {fileID: 0}
   nextNode: []

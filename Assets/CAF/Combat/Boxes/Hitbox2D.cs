@@ -12,13 +12,14 @@ namespace CAF.Combat
         protected Collider2D coll;
 
         public override void Initialize(GameObject owner, Transform directionOwner, int team,
-            BoxShapes shape, HitInfoBase hitInfo, BoxDefinition boxDefinition, List<IHurtable> ignoreList = null)
+            BoxShapes shape, HitInfoBase hitInfo, BoxDefinitionBase boxDefinitionBase, List<IHurtable> ignoreList = null)
         {
             this.owner = owner;
             this.directionOwner = directionOwner;
             this.ignoreList = ignoreList;
             this.hitInfo = hitInfo;
 
+            BoxDefinition boxDefinition = (BoxDefinition)boxDefinitionBase;
             switch (shape)
             {
                 case BoxShapes.Rectangle:

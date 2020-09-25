@@ -13,20 +13,24 @@ namespace TDAction.Entities
             
         }
 
-        protected override HitboxBase InstantiateHitbox(Vector3 position, Quaternion rotation)
+        protected override HitboxBase InstantiateHitbox(BoxDefinitionBase hitboxDefinitionBase)
         {
-            return GameObject.Instantiate(((EntityManager)manager).hitboxPrefab, position, rotation);
+            return GameObject.Instantiate(((EntityManager)manager).hitboxPrefab, 
+                GetHitboxPosition(hitboxDefinitionBase), 
+                GetHitboxRotation(hitboxDefinitionBase));
         }
 
-        protected override Vector3 GetHitboxPosition(BoxDefinition hitboxDefinition)
+        protected virtual Vector3 GetHitboxPosition(BoxDefinitionBase hitboxDefinitionBase)
         {
+            BoxDefinition hitboxDefinition = (BoxDefinition)hitboxDefinitionBase;
             return manager.transform.position
                 + manager.GetVisualBasedDirection(Vector3.right) * hitboxDefinition.offset.x * ((EntityManager)manager).FaceDirection
                 + manager.GetVisualBasedDirection(Vector3.up) * hitboxDefinition.offset.y;
         }
 
-        protected override Quaternion GetHitboxRotation(BoxDefinition hitboxDefinition)
+        protected virtual Quaternion GetHitboxRotation(BoxDefinitionBase hitboxDefinitionBase)
         {
+            BoxDefinition hitboxDefinition = (BoxDefinition)hitboxDefinitionBase;
             return Quaternion.Euler(new Vector3(0, 0, manager.visual.transform.localScale.x < 0 ? 180 : 0)
                 + hitboxDefinition.rotation);
         }
