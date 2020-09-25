@@ -27,7 +27,7 @@ namespace CAF.Entities
         public GameObject visual;
         public LookHandler lookHandler;
 
-        public override void SimUpdate(float deltaTime)
+        public override void SimUpdate()
         {
             InputManager.Tick();
 
@@ -44,7 +44,7 @@ namespace CAF.Entities
             }
         }
 
-        public override void SimLateUpdate(float deltaTime)
+        public override void SimLateUpdate()
         {
             CombatManager.CLateUpdate();
         }
