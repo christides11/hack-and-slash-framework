@@ -6,9 +6,9 @@ namespace TDAction.Simulation
 {
     public class SimObjectManager : CAF.Simulation.SimObjectManager
     {
-        protected override void SimulatePhysics(float deltatime)
+        protected override void SimulatePhysics()
         {
-            Physics2D.Simulate(deltatime);
+            Physics2D.Simulate(Time.fixedDeltaTime);
         }
     }
 }
