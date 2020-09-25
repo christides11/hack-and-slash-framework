@@ -116,19 +116,14 @@ namespace CAF.Entities
             visual.transform.rotation = Quaternion.LookRotation(direction);
         }
 
-        public virtual Vector3 GetCenter()
-        {
-            return transform.position;
-        }
-
-        public virtual Vector3 GetSize()
-        {
-            return Vector3.zero;
-        }
-
         public virtual void ApplyStatusEffect(StatusEffectDefinition statusEffect)
         {
 
+        }
+
+        public GameObject GetGameObject()
+        {
+            return gameObject;
         }
     }
 } 

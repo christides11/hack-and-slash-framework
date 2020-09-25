@@ -9,8 +9,8 @@ namespace CAF.Combat
         /// </summary>
         bool Targetable { get; }
         /// <summary>
-        /// The center of the object in world space.
+        /// The object that's being targeted.
         /// </summary>
-        Vector3 GetCenter();
+        GameObject GetGameObject();
     }
 }
