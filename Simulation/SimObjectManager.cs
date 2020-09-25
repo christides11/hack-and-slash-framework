@@ -61,51 +61,47 @@ namespace CAF.Simulation
         /// After that, it ticks the physics engine.
         /// </summary>
         /// <param name="deltaTime">The time between this and the last frame.</param>
-        public virtual void Update(float deltaTime)
+        public virtual void Update()
         {
-            UpdateSimObjects(deltaTime);
-            SimulatePhysics(deltaTime);
+            UpdateSimObjects();
+            SimulatePhysics();
         }
 
         /// <summary>
         /// Calls every object's SimUpdate method that is in the simulation.
         /// </summary>
-        /// <param name="deltaTime">The time between this and the last frame.</param>
-        protected virtual void UpdateSimObjects(float deltaTime)
+        protected virtual void UpdateSimObjects()
         {
             for (int i = 0; i < simObjects.Count; i++)
             {
-                simObjects[i].SimUpdate(deltaTime);
+                simObjects[i].SimUpdate();
             }
         }
 
         /// <summary>
         /// Simulate physics.
         /// </summary>
-        /// <param name="deltatime">The time between this and the last frame.</param>
-        protected virtual void SimulatePhysics(float deltatime)
+        protected virtual void SimulatePhysics()
         {
-            Physics.Simulate(deltatime);
+            Physics.Simulate(Time.fixedDeltaTime);
         }
 
         /// <summary>
         /// Calls every object's SimLateUpate method that is in the simulation.
         /// </summary>
-        /// <param name="deltaTime">The time between this and the last frame.</param>
-        public virtual void LateUpdate(float deltaTime)
+        public virtual void LateUpdate()
         {
-            LateUpdateSimObjects(deltaTime);
+            LateUpdateSimObjects();
         }
 
         /// <summary>
         /// Calls every object's SimLateUpate method that is in the simulation.
         /// </summary>
-        /// <param name="deltaTime">The time between this and the last frame.</param>
-        protected virtual void LateUpdateSimObjects(float deltaTime)
+        protected virtual void LateUpdateSimObjects()
         {
             for (int i = 0; i < simObjects.Count; i++)
             {
-                simObjects[i].SimLateUpdate(deltaTime);
+                simObjects[i].SimLateUpdate();
             }
         }
     }

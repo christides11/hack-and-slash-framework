@@ -52,8 +52,8 @@ namespace TDAction.Managers
 
         private void UpdateSimulation()
         {
-            simulationObjectManager.Update(Time.fixedDeltaTime);
-            simulationObjectManager.LateUpdate(Time.fixedDeltaTime);
+            simulationObjectManager.Update();
+            simulationObjectManager.LateUpdate();
         }
 
         /// <summary>

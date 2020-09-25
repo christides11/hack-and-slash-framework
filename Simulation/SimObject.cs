@@ -41,16 +41,14 @@ namespace CAF.Simulation
         /// <summary>
         /// Called every simulations tick.
         /// </summary>
-        /// <param name="deltaTime">the time between the last frame and this one.</param>
-        public virtual void SimUpdate(float deltaTime)
+        public virtual void SimUpdate()
         {
         }
 
         /// <summary>
         /// Called every simulation tick after all updates are called.
         /// </summary
-        /// <param name="deltaTime">the time between the last frame and this one.</param>
-        public virtual void SimLateUpdate(float deltaTime)
+        public virtual void SimLateUpdate()
         {
         }
     }
