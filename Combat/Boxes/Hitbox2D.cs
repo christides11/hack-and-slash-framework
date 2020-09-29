@@ -107,18 +107,34 @@ namespace CAF.Combat
 
         protected override void HurtHurtable(IHurtable ih)
         {
+            ih.Hurt(BuildHurtInfo());
+        }
+
+        protected override HurtInfoBase BuildHurtInfo()
+        {
+            HurtInfo2D hurtInfo;
+            int faceDirection = GetFaceDirection();
             switch (hitInfo.forceRelation)
             {
                 case HitboxForceRelation.ATTACKER:
-                    ih.Hurt(directionOwner.position, directionOwner.right, directionOwner.right, hitInfo);
+                    hurtInfo = new HurtInfo2D(hitInfo, directionOwner.position, faceDirection);
                     break;
                 case HitboxForceRelation.HITBOX:
-                    ih.Hurt(transform.position, transform.right, transform.right, hitInfo);
+                    hurtInfo = new HurtInfo2D(hitInfo, transform.position, faceDirection);
                     break;
                 case HitboxForceRelation.WORLD:
-                    ih.Hurt(transform.position, Vector3.right, Vector3.right, hitInfo);
+                    hurtInfo = new HurtInfo2D(hitInfo, transform.position, faceDirection);
+                    break;
+                default:
+                    hurtInfo = new HurtInfo2D();
                     break;
             }
+            return hurtInfo;
+        }
+
+        private int GetFaceDirection()
+        {
+            return directionOwner.localScale.x > 0 ? 1 : -1;
         }
     }
 }

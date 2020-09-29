@@ -107,5 +107,31 @@ namespace CAF.Combat
                 }
             }
         }
+
+        protected override void HurtHurtable(IHurtable ih)
+        {
+            ih.Hurt(BuildHurtInfo());
+        }
+
+        protected override HurtInfoBase BuildHurtInfo()
+        {
+            HurtInfo3D hurtInfo;
+            switch (hitInfo.forceRelation)
+            {
+                case HitboxForceRelation.ATTACKER:
+                    hurtInfo = new HurtInfo3D(hitInfo, directionOwner.position, directionOwner.forward, directionOwner.right);
+                    break;
+                case HitboxForceRelation.HITBOX:
+                    hurtInfo = new HurtInfo3D(hitInfo, transform.position, transform.forward, transform.right);
+                    break;
+                case HitboxForceRelation.WORLD:
+                    hurtInfo = new HurtInfo3D(hitInfo, transform.position, Vector3.forward, Vector3.right);
+                    break;
+                default:
+                    hurtInfo = new HurtInfo3D();
+                    break;
+            }
+            return hurtInfo;
+        }
     }
 }

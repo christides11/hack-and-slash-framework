@@ -21,9 +21,10 @@ namespace TDAction.Entities
             return (int)team; 
         }
 
-        public override HitReaction Hurt(Vector3 center, Vector3 forward, Vector3 right, HitInfoBase hitInfo)
+        public override HitReaction Hurt(HurtInfoBase hurtInfoBase)
         {
-            HitInfo hInfo = (HitInfo)hitInfo;
+            HurtInfo2D hurtInfo2D = (HurtInfo2D)hurtInfoBase;
+            HitInfo hInfo = (HitInfo)hurtInfo2D.hitInfo;
 
             HitReaction hitReaction = new HitReaction();
             hitReaction.reactionType = HitReactionType.Hit;
@@ -35,7 +36,7 @@ namespace TDAction.Entities
                 return hitReaction;
             }
             // Got hit, apply stun, damage, and forces.
-            LastHitBy = hitInfo;
+            LastHitBy = hInfo;
             SetHitStop(hInfo.hitstop);
             SetHitStun(hInfo.hitstun);
 
@@ -44,14 +45,14 @@ namespace TDAction.Entities
             {
                 case HitboxForceType.SET:
                     Vector2 baseForce = hInfo.opponentForceDir * hInfo.opponentForceMagnitude;
-                    Vector3 forces = (forward * baseForce.x);
+                    Vector3 forces = new Vector3(baseForce.x * hurtInfo2D.faceDirection, 0, 0);
                     forces.y = baseForce.y;
                     manager.PhysicsManager.forceGravity.y = baseForce.y;
                     forces.y = 0;
                     manager.PhysicsManager.forceMovement = forces;
                     break;
                 case HitboxForceType.PULL:
-                    Vector3 dir = transform.position - center;
+                    Vector2 dir = (Vector2)transform.position - hurtInfo2D.center;
                     if (!hInfo.forceIncludeYForce)
                     {
                         dir.y = 0;
