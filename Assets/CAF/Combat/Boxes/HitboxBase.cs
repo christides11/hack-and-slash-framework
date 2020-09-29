@@ -70,18 +70,12 @@ namespace CAF.Combat
 
         protected virtual void HurtHurtable(IHurtable ih)
         {
-            switch (hitInfo.forceRelation)
-            {
-                case HitboxForceRelation.ATTACKER:
-                    ih.Hurt(directionOwner.position, directionOwner.forward, directionOwner.right, hitInfo);
-                    break;
-                case HitboxForceRelation.HITBOX:
-                    ih.Hurt(transform.position, transform.forward, transform.right, hitInfo);
-                    break;
-                case HitboxForceRelation.WORLD:
-                    ih.Hurt(transform.position, Vector3.forward, Vector3.right, hitInfo);
-                    break;
-            }
+            ih.Hurt(BuildHurtInfo());
+        }
+
+        protected virtual HurtInfoBase BuildHurtInfo()
+        {
+            return new HurtInfoBase(hitInfo);
         }
     }
 }

@@ -353,11 +353,11 @@ namespace CAF.Entities
             OnChargeLevelChargeChanged?.Invoke(manager, CurrentChargeLevelCharge-1);
         }
 
-        public virtual HitReaction Hurt(Vector3 center, Vector3 forward, Vector3 right, HitInfoBase hitInfo)
+        public virtual HitReaction Hurt(HurtInfoBase hurtInfoBase)
         {
             HitReaction hr = new HitReaction();
             hr.reactionType = HitReactionType.Hit;
-            OnHit?.Invoke(null, manager, hitInfo);
+            OnHit?.Invoke(null, manager, hurtInfoBase.hitInfo);
             return hr;
         }
 
