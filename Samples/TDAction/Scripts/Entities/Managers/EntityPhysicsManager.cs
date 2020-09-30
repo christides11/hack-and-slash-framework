@@ -4,12 +4,26 @@ using UnityEngine;
 
 namespace TDAction.Entities
 {
-    public class EntityPhysicsManager : CAF.Entities.EntityPhysicsManager
+    public class EntityPhysicsManager : CAF.Entities.EntityPhysicsManager2D
     {
 
         public override void Tick()
         {
             ((EntityManager)manager).charController2D.move(GetOverallForce());
+        }
+
+        /// <summary>
+        /// Create a force based on the parameters given and
+        /// adds it to our movement force.
+        /// </summary>
+        /// <param name="accel">How fast the entity accelerates in the movement direction.</param>
+        /// <param name="max">The max magnitude of our movement force.</param>
+        /// <param name="decel">How much the entity decelerates when moving faster than the max magnitude.
+        /// 1.0 = doesn't decelerate, 0.0 = force set to 0.</param>
+        public virtual void ApplyMovement(float accel, float max, float decel)
+        {/*
+          * 
+          */
         }
 
         public override void CheckIfGrounded()

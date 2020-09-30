@@ -4,11 +4,11 @@ using UnityEngine;
 
 namespace CAF.Entities
 {
-    public class EntityPhysicsManager : MonoBehaviour
+    public class EntityPhysicsManager3D : EntityPhysicsManagerBase
     {
         public float GravityScale { get; set; } = 1.0f;
 
-        [SerializeField] protected EntityManager manager;
+        protected float decelerationFactor = 0.97f;
 
         [Header("Forces")]
         public Vector3 forceMovement;
@@ -16,16 +16,12 @@ namespace CAF.Entities
         public Vector3 forceDamage;
         public Vector3 forcePushbox;
 
-        protected float decelerationFactor = 0.97f;
-
-        public virtual void Tick()
+        public override void ResetForces()
         {
-
-        }
-
-        public virtual void SetForceDirect(Vector3 movement, Vector3 gravity)
-        {
-
+            forceMovement = Vector3.zero;
+            forceGravity = Vector3.zero;
+            forceDamage = Vector3.zero;
+            forcePushbox = Vector3.zero;
         }
 
         public virtual Vector3 GetOverallForce()
@@ -92,54 +88,12 @@ namespace CAF.Entities
             return value;
         }
 
-        /// <summary>
-        /// Create a force based on the parameters given and
-        /// adds it to our movement force.
-        /// </summary>
-        /// <param name="accel">How fast the entity accelerates in the movement direction.</param>
-        /// <param name="max">The max magnitude of our movement force.</param>
-        /// <param name="decel">How much the entity decelerates when moving faster than the max magnitude.
-        /// 1.0 = doesn't decelerate, 0.0 = force set to 0.</param>
-        public virtual void ApplyMovement(float accel, float max, float decel)
-        {/*
-            Vector2 movement = controller.InputManager.GetMovement(0);
-            if (movement.magnitude >= InputConstants.movementMagnitude)
-            {
-                //Translate movment based on "camera."
-                Vector3 translatedMovement = controller.lookTransform.TransformDirection(new Vector3(movement.x, 0, movement.y));
-                translatedMovement.y = 0;
-                translatedMovement *= accel;
-
-                forceMovement += translatedMovement;
-                //Limit movement velocity.
-                if (forceMovement.magnitude > max * movement.magnitude)
-                {
-                    forceMovement *= decel;
-                }
-            }*/
-        }
-
-        /// <summary>
-        /// Check if we are on the ground.
-        /// </summary>
-        public virtual void CheckIfGrounded()
-        {
-
-        }
-
-        public virtual void RedirectInertia3D(Vector3 forceMovement, Vector2 movementInput)
+        public virtual void RedirectInertia(Vector3 forceMovement, Vector2 movementInput)
         {
             movementInput.Normalize();
             Vector3 redirectedMovement = forceMovement.magnitude
                 * manager.GetMovementVector(movementInput.x, movementInput.y);
             this.forceMovement = redirectedMovement;
-        }
-
-        public virtual void RedirectInertia2D(float forceMovementX, Vector2 movementInput)
-        {
-            float redirectedMovement = Mathf.Sign(movementInput.x)
-                * forceMovementX;
-            this.forceMovement.x = redirectedMovement;
         }
     }
 }

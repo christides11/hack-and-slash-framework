@@ -17,7 +17,7 @@ namespace TDAction.Entities.Characters
             CharacterManager c = GetCharacterController();
             CharacterStats stats = (CharacterStats)c.entityDefinition.GetEntityStats();
 
-            c.PhysicsManager.forceGravity.y = stats.airJumpForce;
+            GetPhysicsManager().forceGravity.y = stats.airJumpForce;
         }
 
         public override void OnUpdate()
@@ -38,7 +38,7 @@ namespace TDAction.Entities.Characters
             {
                 return true;
             }
-            if (c.PhysicsManager.forceGravity.y <= 0)
+            if (GetPhysicsManager().forceGravity.y <= 0)
             {
                 c.StateManager.ChangeState((int)EntityStates.FALL);
                 return true;

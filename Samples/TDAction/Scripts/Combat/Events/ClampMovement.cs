@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using CAF.Combat;
+using TDAction.Entities;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -19,7 +20,8 @@ namespace TDAction.Combat.Events
         public override bool Evaluate(uint frame, uint endFrame,
             CAF.Entities.EntityManager controller, AttackEventVariables variables)
         {
-            controller.PhysicsManager.forceMovement.x = Mathf.Clamp(controller.PhysicsManager.forceMovement.x,
+            EntityPhysicsManager physicsManager = (EntityPhysicsManager)controller.PhysicsManager;
+            physicsManager.forceMovement.x = Mathf.Clamp(physicsManager.forceMovement.x,
                 -variables.floatVars[0], variables.floatVars[0]);
             return false;
         }

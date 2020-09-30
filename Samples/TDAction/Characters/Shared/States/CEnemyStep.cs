@@ -17,9 +17,10 @@ namespace TDAction.Entities.Characters
         {
             base.Initialize();
             CharacterManager c = GetCharacterController();
-            storedMovement = c.PhysicsManager.forceMovement;
-            c.PhysicsManager.forceMovement = Vector3.zero;
-            c.PhysicsManager.forceGravity = Vector3.zero;
+            EntityPhysicsManager physicsManager = (EntityPhysicsManager)GetPhysicsManager();
+            storedMovement = physicsManager.forceMovement;
+            physicsManager.forceMovement = Vector3.zero;
+            physicsManager.forceGravity = Vector3.zero;
         }
 
         public override void OnUpdate()
@@ -35,6 +36,7 @@ namespace TDAction.Entities.Characters
         public override bool CheckInterrupt()
         {
             CharacterManager c = GetCharacterController();
+            EntityPhysicsManager physicsManager = (EntityPhysicsManager)GetPhysicsManager();
             CharacterStats stats = (CharacterStats)c.entityDefinition.GetEntityStats();
             if (c.StateManager.CurrentStateFrame == stats.enemyStepLength)
             {
@@ -46,11 +48,11 @@ namespace TDAction.Entities.Characters
                 Vector2 movementInput = c.InputManager.GetAxis2D((int)EntityInputs.MOVEMENT);
                 if (movementInput.magnitude > InputConstants.moveDeadzone)
                 {
-                    c.PhysicsManager.RedirectInertia2D(storedMovement.x, movementInput);
+                    physicsManager.RedirectInertia(storedMovement.x, movementInput);
                 }
                 else
                 {
-                    c.PhysicsManager.forceMovement = storedMovement;
+                    physicsManager.forceMovement = storedMovement;
                 }
                 return true;
             }

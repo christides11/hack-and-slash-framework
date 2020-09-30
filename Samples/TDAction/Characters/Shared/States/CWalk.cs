@@ -15,15 +15,16 @@ namespace TDAction.Entities.Characters
         public override void OnUpdate()
         {
             CharacterManager c = GetCharacterController();
+            EntityPhysicsManager physicsManager = GetPhysicsManager();
             CharacterStats stats = (CharacterStats)c.entityDefinition.GetEntityStats();
             Vector2 movementAxis = c.InputManager.GetAxis2D((int)EntityInputs.MOVEMENT);
             float maxSpeed = (stats.walkMaxSpeed * movementAxis.x);
 
-            Vector3 currentSpeed = c.PhysicsManager.forceMovement;
+            Vector3 currentSpeed = physicsManager.forceMovement;
 
-            if(Mathf.Abs(c.PhysicsManager.forceMovement.x) > Mathf.Abs(maxSpeed))
+            if(Mathf.Abs(physicsManager.forceMovement.x) > Mathf.Abs(maxSpeed))
             {
-                c.PhysicsManager.ApplyMovementFriction(stats.groundFriction);
+                physicsManager.ApplyMovementFriction(stats.groundFriction);
             }
             else
             {
@@ -37,7 +38,7 @@ namespace TDAction.Entities.Characters
                 }
             }
 
-            c.PhysicsManager.forceMovement = currentSpeed;
+            physicsManager.forceMovement = currentSpeed;
 
             if (movementAxis.x != 0)
             {

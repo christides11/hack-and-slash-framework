@@ -23,6 +23,7 @@ namespace TDAction.Combat.Events
             CAF.Entities.EntityManager controller, AttackEventVariables variables)
         {
             EntityManager e = (EntityManager)controller;
+            EntityPhysicsManager physicsManager = (EntityPhysicsManager)controller.PhysicsManager;
             Vector3 f = Vector3.zero;
             if (xForce)
             {
@@ -35,12 +36,12 @@ namespace TDAction.Combat.Events
 
             if (yForce)
             {
-                controller.PhysicsManager.forceGravity.y = f.y;
+                physicsManager.forceGravity.y = f.y;
             }
             if (xForce)
             {
                 f.y = 0;
-                controller.PhysicsManager.forceMovement = f;
+                physicsManager.forceMovement = f;
             }
             return false;
         }

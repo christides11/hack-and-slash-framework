@@ -10,5 +10,10 @@ namespace TDAction.Entities
         {
             return (EntityManager)Manager;
         }
+
+        public virtual EntityPhysicsManager GetPhysicsManager()
+        {
+            return (EntityPhysicsManager)Manager.PhysicsManager;
+        }
     }
 }
