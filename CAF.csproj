@@ -104,7 +104,9 @@
     <Compile Include="Assets\CAF\Entities\Managers\EntityCombatManager.cs" />
     <Compile Include="Assets\CAF\Entities\Managers\EntityHitboxManager.cs" />
     <Compile Include="Assets\CAF\Entities\Managers\EntityInputManager.cs" />
-    <Compile Include="Assets\CAF\Entities\Managers\EntityPhysicsManager.cs" />
+    <Compile Include="Assets\CAF\Entities\Managers\EntityPhysicsManager2D.cs" />
+    <Compile Include="Assets\CAF\Entities\Managers\EntityPhysicsManager3D.cs" />
+    <Compile Include="Assets\CAF\Entities\Managers\EntityPhysicsManagerBase.cs" />
     <Compile Include="Assets\CAF\Entities\Managers\EntityStateManager.cs" />
     <Compile Include="Assets\CAF\Entities\StateHurtboxDefinition.cs" />
     <Compile Include="Assets\CAF\Input\GlobalInputManager.cs" />

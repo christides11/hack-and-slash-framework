@@ -23,6 +23,8 @@ namespace TDAction.Entities
 
         public override HitReaction Hurt(HurtInfoBase hurtInfoBase)
         {
+            EntityPhysicsManager physicsManager = (EntityPhysicsManager)manager.PhysicsManager;
+
             HurtInfo2D hurtInfo2D = (HurtInfo2D)hurtInfoBase;
             HitInfo hInfo = (HitInfo)hurtInfo2D.hitInfo;
 
@@ -47,9 +49,9 @@ namespace TDAction.Entities
                     Vector2 baseForce = hInfo.opponentForceDir * hInfo.opponentForceMagnitude;
                     Vector3 forces = new Vector3(baseForce.x * hurtInfo2D.faceDirection, 0, 0);
                     forces.y = baseForce.y;
-                    manager.PhysicsManager.forceGravity.y = baseForce.y;
+                    physicsManager.forceGravity.y = baseForce.y;
                     forces.y = 0;
-                    manager.PhysicsManager.forceMovement = forces;
+                    physicsManager.forceMovement = forces;
                     break;
                 case HitboxForceType.PULL:
                     Vector2 dir = (Vector2)transform.position - hurtInfo2D.center;
@@ -62,13 +64,13 @@ namespace TDAction.Entities
                     forceDir.y = 0;
                     if (hInfo.forceIncludeYForce)
                     {
-                        manager.PhysicsManager.forceGravity.y = yForce;
+                        physicsManager.forceGravity.y = yForce;
                     }
-                    manager.PhysicsManager.forceMovement = forceDir;
+                    physicsManager.forceMovement = forceDir;
                     break;
             }
 
-            if (manager.PhysicsManager.forceGravity.y > 0)
+            if (physicsManager.forceGravity.y > 0)
             {
                 manager.IsGrounded = false;
             }

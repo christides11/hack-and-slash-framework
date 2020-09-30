@@ -28,49 +28,49 @@ namespace TDAction.Entities
                 tempMax = stats.airMaxSpeed * movement.x;
             }
 
-            if ((tempMax < 0 && manager.PhysicsManager.forceMovement.x < tempMax) 
-                || (tempMax > 0 && manager.PhysicsManager.forceMovement.x > tempMax))
+            if ((tempMax < 0 && forceMovement.x < tempMax) 
+                || (tempMax > 0 && forceMovement.x > tempMax))
             {
-                if (manager.PhysicsManager.forceMovement.x > 0)
+                if (forceMovement.x > 0)
                 {
-                    manager.PhysicsManager.forceMovement.x -= stats.aerialFriction;
-                    if (manager.PhysicsManager.forceMovement.x < 0)
+                    forceMovement.x -= stats.aerialFriction;
+                    if (forceMovement.x < 0)
                     {
-                        manager.PhysicsManager.forceMovement.x = 0;
+                        forceMovement.x = 0;
                     }
                 }
                 else
                 {
-                    manager.PhysicsManager.forceMovement.x += stats.aerialFriction;
-                    if (manager.PhysicsManager.forceMovement.x > 0)
+                    forceMovement.x += stats.aerialFriction;
+                    if (forceMovement.x > 0)
                     {
-                        manager.PhysicsManager.forceMovement.x = 0;
+                        forceMovement.x = 0;
                     }
                 }
             }
             else if (Mathf.Abs(movement.x) > 0.3f &&
-              ((tempMax < 0 && manager.PhysicsManager.forceMovement.x > tempMax) || (tempMax > 0 && manager.PhysicsManager.forceMovement.x < tempMax)))
+              ((tempMax < 0 && forceMovement.x > tempMax) || (tempMax > 0 && forceMovement.x < tempMax)))
             {
-                manager.PhysicsManager.forceMovement.x += (stats.airAcceleration * movement.x)
+                forceMovement.x += (stats.airAcceleration * movement.x)
                     + (Mathf.Sign(movement.x) * stats.airBaseAcceleration);
             }
 
             if (Mathf.Abs(movement.x) < InputConstants.moveDeadzone)
             {
-                if (manager.PhysicsManager.forceMovement.x > 0)
+                if (forceMovement.x > 0)
                 {
-                    manager.PhysicsManager.forceMovement.x -= stats.aerialFriction;
-                    if (manager.PhysicsManager.forceMovement.x < 0)
+                    forceMovement.x -= stats.aerialFriction;
+                    if (forceMovement.x < 0)
                     {
-                        manager.PhysicsManager.forceMovement.x = 0;
+                        forceMovement.x = 0;
                     }
                 }
                 else
                 {
-                    manager.PhysicsManager.forceMovement.x += stats.aerialFriction;
-                    if (manager.PhysicsManager.forceMovement.x > 0)
+                    forceMovement.x += stats.aerialFriction;
+                    if (forceMovement.x > 0)
                     {
-                        manager.PhysicsManager.forceMovement.x = 0;
+                        forceMovement.x = 0;
                     }
                 }
             }

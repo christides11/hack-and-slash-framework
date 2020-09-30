@@ -12,7 +12,7 @@ namespace CAF.Entities
         public EntityInputManager InputManager { get { return entityInput; } }
         public EntityStateManager StateManager { get { return entityStateManager; } }
         public EntityCombatManager CombatManager { get { return entityCombatManager; } }
-        public EntityPhysicsManager PhysicsManager { get { return entityPhysicsManager; } }
+        public EntityPhysicsManagerBase PhysicsManager { get { return entityPhysicsManager; } }
 
         public virtual bool Targetable { get { return targetable; } }
         public bool IsGrounded { get; set; } = false;
@@ -23,7 +23,7 @@ namespace CAF.Entities
         [SerializeField] protected EntityInputManager entityInput;
         [SerializeField] protected EntityStateManager entityStateManager;
         [SerializeField] protected EntityCombatManager entityCombatManager;
-        [SerializeField] protected EntityPhysicsManager entityPhysicsManager;
+        [SerializeField] protected EntityPhysicsManagerBase entityPhysicsManager;
         public GameObject visual;
         public LookHandler lookHandler;
 
@@ -40,7 +40,7 @@ namespace CAF.Entities
             }
             else
             {
-                PhysicsManager.SetForceDirect(Vector3.zero, Vector3.zero);
+                PhysicsManager.ResetForces();
             }
         }
 

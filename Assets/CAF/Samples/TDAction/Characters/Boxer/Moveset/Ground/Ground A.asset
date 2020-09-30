@@ -77,7 +77,7 @@ MonoBehaviour:
         damageOnHit: 0
         damageOnBlock: 0
         causesTumble: 0
-        opponentForceMagnitude: 1
+        opponentForceMagnitude: 0.1
         opponentForceDir: {x: 1, y: 0, z: 0}
         forceIncludeYForce: 0
         opponentMaxMagnitude: 1

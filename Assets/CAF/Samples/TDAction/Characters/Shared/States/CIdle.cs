@@ -17,7 +17,7 @@ namespace TDAction.Entities.Characters
             CharacterManager c = GetCharacterController();
             CharacterStats stats = (CharacterStats)c.entityDefinition.GetEntityStats();
 
-            c.PhysicsManager.ApplyMovementFriction(stats.groundFriction);
+            GetPhysicsManager().ApplyMovementFriction(stats.groundFriction);
 
             CheckInterrupt();
         }
