@@ -93,12 +93,9 @@
     <Compile Include="Assets\CAF\Combat\Info\HurtInfo3D.cs" />
     <Compile Include="Assets\CAF\Combat\Info\HurtInfoBase.cs" />
     <Compile Include="Assets\CAF\Combat\Interfaces\IHurtable.cs" />
-    <Compile Include="Assets\CAF\Combat\Interfaces\IStatusEffectable.cs" />
     <Compile Include="Assets\CAF\Combat\Interfaces\ITargetable.cs" />
     <Compile Include="Assets\CAF\Combat\Moveset\MovesetAttackNode.cs" />
     <Compile Include="Assets\CAF\Combat\Moveset\MovesetDefinition.cs" />
-    <Compile Include="Assets\CAF\Combat\Status Effects\StatusEffect.cs" />
-    <Compile Include="Assets\CAF\Combat\Status Effects\StatusEffectDefinition.cs" />
     <Compile Include="Assets\CAF\Entities\EntityManager.cs" />
     <Compile Include="Assets\CAF\Entities\EntityState.cs" />
     <Compile Include="Assets\CAF\Entities\Managers\EntityCombatManager.cs" />
