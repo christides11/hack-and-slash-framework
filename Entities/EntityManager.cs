@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace CAF.Entities
 {
-    public class EntityManager : SimObject, ITargetable, IStatusEffectable
+    public class EntityManager : SimObject, ITargetable
     {
         public EntityInputManager InputManager { get { return entityInput; } }
         public EntityStateManager StateManager { get { return entityStateManager; } }
@@ -114,11 +114,6 @@ namespace CAF.Entities
         public virtual void SetVisualRotation(Vector3 direction)
         {
             visual.transform.rotation = Quaternion.LookRotation(direction);
-        }
-
-        public virtual void ApplyStatusEffect(StatusEffectDefinition statusEffect)
-        {
-
         }
 
         public GameObject GetGameObject()
