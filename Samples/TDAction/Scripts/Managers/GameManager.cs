@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using CAF.Combat;
+using UnityEngine;
 
 namespace TDAction.Managers
 {
@@ -16,6 +17,7 @@ namespace TDAction.Managers
         [SerializeField] private GameHandler gameHandler = null;
         [SerializeField] private TDAction.Entities.EntityManager playerEntity;
         [SerializeField] private Vector3 playerSpawnPosition;
+        public Hurtbox hurtboxPrefab;
 
         private void Awake()
         {

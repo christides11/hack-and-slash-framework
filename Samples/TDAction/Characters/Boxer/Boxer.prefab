@@ -170,6 +170,7 @@ GameObject:
   - component: {fileID: 1031207210466028850}
   - component: {fileID: 6300165297845272074}
   - component: {fileID: 1715174515004957371}
+  - component: {fileID: -2960863564831657620}
   m_Layer: 8
   m_Name: Boxer
   m_TagString: Untagged
@@ -353,10 +354,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 8147816337253296054}
-  forceMovement: {x: 0, y: 0, z: 0}
-  forceGravity: {x: 0, y: 0, z: 0}
-  forceDamage: {x: 0, y: 0, z: 0}
-  forcePushbox: {x: 0, y: 0, z: 0}
+  forceMovement: {x: 0, y: 0}
+  forceGravity: {x: 0, y: 0}
+  forceDamage: {x: 0, y: 0}
+  forcePushbox: {x: 0, y: 0}
 --- !u!114 &1031207210466028850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -399,6 +400,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
+--- !u!114 &-2960863564831657620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6667267786158460212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 204e422f772d87d4f8b23557a37b17b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 8147816337253296054}
 --- !u!1 &8500522958957405919
 GameObject:
   m_ObjectHideFlags: 0
