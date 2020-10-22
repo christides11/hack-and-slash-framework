@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TDAction.Inputs;
 using UnityEngine;
 
@@ -10,6 +11,13 @@ namespace TDAction.Entities.Characters
         public override string GetName()
         {
             return "Idle";
+        }
+
+        public override void Initialize()
+        {
+            base.Initialize();
+            CharacterManager c = GetCharacterController();
+            c.HurtboxManager.SetHurtboxDefinition(c.entityDefinition.hurtboxDefinitions.FirstOrDefault(x => x.name == "idle").hurtboxDefinition);
         }
 
         public override void OnUpdate()

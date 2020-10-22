@@ -41,7 +41,7 @@ namespace CAF.Entities
                 {
                     Hurtbox hurtbox;
                     // Group doesn't already have a hurtbox, create one.
-                    if(hurtboxGroups[i].Count < w)
+                    if(hurtboxGroups[i].Count <= w)
                     {
                         hurtbox = CreateHurtbox();
                         hurtboxGroups[i].Add(hurtbox);
