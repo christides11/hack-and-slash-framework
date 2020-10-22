@@ -317,6 +317,7 @@ MonoBehaviour:
   entityStateManager: {fileID: 1031207210466028850}
   entityCombatManager: {fileID: 6300165297845272074}
   entityPhysicsManager: {fileID: 3441043856010495584}
+  entityHurtboxManager: {fileID: -2960863564831657620}
   visual: {fileID: 8500522958957405919}
   charController2D: {fileID: 5370282184306079421}
   coll: {fileID: 7143026638669106818}

@@ -17,3 +17,7 @@ MonoBehaviour:
   entityStats: {fileID: 11400000, guid: 8146d0caba1679d42a9e707c89dba1cb, type: 2}
   movesets:
   - {fileID: 11400000, guid: 5058445f560812b4495278084c0e8945, type: 2}
+  hurtboxDefinitions:
+  - name: idle
+    hurtboxDefinition: {fileID: 11400000, guid: d4070f7c23ff3fe4dbf04a6b09a15557,
+      type: 2}

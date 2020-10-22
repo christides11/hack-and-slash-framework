@@ -16,8 +16,14 @@ MonoBehaviour:
   - ID: 0
     activeFramesStart: 1
     activeFramesEnd: 60
-    boxes: []
+    boxes:
+    - id: 0
+    - id: 0
+    - id: 0
+    - id: 0
     attachToEntity: 1
     attachTo: 
   references:
     version: 1
+    00000000:
+      type: {class: , ns: , asm: }

@@ -13,6 +13,7 @@ namespace CAF.Entities
         public EntityStateManager StateManager { get { return entityStateManager; } }
         public EntityCombatManager CombatManager { get { return entityCombatManager; } }
         public EntityPhysicsManagerBase PhysicsManager { get { return entityPhysicsManager; } }
+        public EntityHurtboxManager HurtboxManager { get { return entityHurtboxManager; } }
 
         public virtual bool Targetable { get { return targetable; } }
         public bool IsGrounded { get; set; } = false;
@@ -24,6 +25,7 @@ namespace CAF.Entities
         [SerializeField] protected EntityStateManager entityStateManager;
         [SerializeField] protected EntityCombatManager entityCombatManager;
         [SerializeField] protected EntityPhysicsManagerBase entityPhysicsManager;
+        [SerializeField] protected EntityHurtboxManager entityHurtboxManager;
         public GameObject visual;
         public LookHandler lookHandler;
 
@@ -42,6 +44,7 @@ namespace CAF.Entities
             {
                 PhysicsManager.ResetForces();
             }
+            HurtboxManager.Tick();
         }
 
         public override void SimLateUpdate()
