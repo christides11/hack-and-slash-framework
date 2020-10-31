@@ -8,7 +8,7 @@
     <title>Setup | Character Action Framework Documentation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Setup | Character Action Framework Documentation ">
-    <meta name="generator" content="docfx 2.56.2.0">
+    <meta name="generator" content="docfx 2.56.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -59,11 +59,11 @@
       <div class="container body-content">
         
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
@@ -80,7 +80,7 @@
 <h1 id="setup">Setup</h1>
 
 <h2 id="implement-classes">Implement Classes</h2>
-<p>First, you should implement these classes so that you have your own implementations to modify. These classes have many methods whose implementation will depend on your game.</p>
+<p>First, you should create scripts that inherit from the ones listed below. These classes contain methods that depend on your game, so it&#39;s important that you do this from the start. We&#39;ll talk about the specifics of these classes later on.</p>
 <ul>
 <li>SimObjectManager</li>
 <li>EntityState</li>
@@ -93,22 +93,22 @@
 <li>AttackDefinition</li>
 <li>MovesetDefinition</li>
 </ul>
-<h2 id="simulation">Simulation</h2>
-<p>The first thing you want to do is start the simulation. You can do this whenever, but you probably want to do this as soon as the player starts the game and you want to spawn the player&#39;s character. When that does happen, you want to create an instance of the SimObjectManager, like so.</p>
+<h2 id="run-the-simulation">Run the Simulation</h2>
+<p>In CAF, every object that exist in the game depends on the SimObjectManager. This script handles the creation and tracking of these objects, along with calling their update methods and simulating physics. Because of this, the next thing we want to do is create an instance of this class somewhere, perferably when your game is in the state where you want to instantiate the player&#39;s character and other stage elements.</p>
 <pre><code>simulationObjectManager = new SimObjectManager();
 </code></pre><p>Once you do that, you want to call these two every fixed update. </p>
 <pre><code>public void FixedUpdate(){
     simulationObjectManager.Update(Time.fixedDeltaTime);
     simulationObjectManager.LateUpdate(Time.fixedDeltaTime);
 }
-</code></pre><p>With that, the simulation is now running. The next step is to create objects and add them to the simulation. </p>
+</code></pre><p>With that, the simulation should run, but right now we have nothing in the simulation.<br>In the next step we&#39;ll walk through the components of a entity and show how to add objects to the simulation.</p>
 <h3 id="side-note-physics">Side Note: Physics</h3>
 <p>SimObjectManager defaults to updating 3D Physics. If you&#39;re using 2D Physics, you&#39;ll want to override the SimulatePhysics method like so.</p>
 <pre><code>protected override void SimulatePhysics(float deltatime){
     Physics2D.Simulate(deltatime);
 }
 </code></pre><h3 id="side-note-tick-rate">Side Note: Tick Rate</h3>
-<p>since the simulation is ticked every fixed update, how often the simulation updates depends on the value of Fixed Timestep. By default it&#39;s set to 0.02, which translates to a tick rate of 50 times a second (0.02 = 1/50). </p>
+<p>since the simulation is ticked every fixed update, how often the simulation updates depends on the value of <a href="https://docs.unity3d.com/Manual/class-TimeManager.html">Fixed Timestep</a>. By default it&#39;s set to 0.02, which translates to a tick rate of 50 times a second (0.02 = 1/50). </p>
 <p>Most action games target a tick rate of 60 times a second, so you may want to change the value to 0.01666667 (~1/60). You also might want to make the Maximum Allowed Timestep something like 0.02 for reasons explained <a href="https://johnaustin.io/articles/2019/fix-your-unity-timestep">here</a>.</p>
 </article>
           </div>
@@ -123,7 +123,8 @@
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

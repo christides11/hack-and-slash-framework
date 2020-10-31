@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class EntityHitboxManager
    | Character Action Framework Documentation ">
-    <meta name="generator" content="docfx 2.56.2.0">
+    <meta name="generator" content="docfx 2.56.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -61,11 +61,11 @@
       <div class="container body-content">
         
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
@@ -376,103 +376,6 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityHitboxManager_GetHitboxPosition_CAF_Combat_BoxDefinition_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityHitboxManager.GetHitboxPosition(CAF.Combat.BoxDefinition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityHitboxManager.cs/#L172">View Source</a>
-  </span>
-  <a id="CAF_Entities_EntityHitboxManager_GetHitboxPosition_" data-uid="CAF.Entities.EntityHitboxManager.GetHitboxPosition*"></a>
-  <h4 id="CAF_Entities_EntityHitboxManager_GetHitboxPosition_CAF_Combat_BoxDefinition_" data-uid="CAF.Entities.EntityHitboxManager.GetHitboxPosition(CAF.Combat.BoxDefinition)">GetHitboxPosition(BoxDefinition)</h4>
-  <div class="markdown level1 summary"><p>Calculates where the hitbox being created should be positioned.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual Vector3 GetHitboxPosition(BoxDefinition hitboxDefinition)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CAF.Combat.BoxDefinition.html">BoxDefinition</a></td>
-        <td><span class="parametername">hitboxDefinition</span></td>
-        <td><p>The definition of the hitbox.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td><p>The position the hitbox should be in.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityHitboxManager_GetHitboxRotation_CAF_Combat_BoxDefinition_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityHitboxManager.GetHitboxRotation(CAF.Combat.BoxDefinition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityHitboxManager.cs/#L162">View Source</a>
-  </span>
-  <a id="CAF_Entities_EntityHitboxManager_GetHitboxRotation_" data-uid="CAF.Entities.EntityHitboxManager.GetHitboxRotation*"></a>
-  <h4 id="CAF_Entities_EntityHitboxManager_GetHitboxRotation_CAF_Combat_BoxDefinition_" data-uid="CAF.Entities.EntityHitboxManager.GetHitboxRotation(CAF.Combat.BoxDefinition)">GetHitboxRotation(BoxDefinition)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual Quaternion GetHitboxRotation(BoxDefinition hitboxDefinition)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CAF.Combat.BoxDefinition.html">BoxDefinition</a></td>
-        <td><span class="parametername">hitboxDefinition</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Quaternion</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityHitboxManager_GetHitList_System_Int32_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityHitboxManager.GetHitList(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -520,18 +423,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityHitboxManager_InstantiateHitbox_Vector3_Quaternion_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityHitboxManager.InstantiateHitbox(Vector3%2CQuaternion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityHitboxManager_InstantiateHitbox_CAF_Combat_BoxDefinitionBase_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityHitboxManager.InstantiateHitbox(CAF.Combat.BoxDefinitionBase)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityHitboxManager.cs/#L180">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityHitboxManager.cs/#L161">View Source</a>
   </span>
   <a id="CAF_Entities_EntityHitboxManager_InstantiateHitbox_" data-uid="CAF.Entities.EntityHitboxManager.InstantiateHitbox*"></a>
-  <h4 id="CAF_Entities_EntityHitboxManager_InstantiateHitbox_Vector3_Quaternion_" data-uid="CAF.Entities.EntityHitboxManager.InstantiateHitbox(Vector3,Quaternion)">InstantiateHitbox(Vector3, Quaternion)</h4>
+  <h4 id="CAF_Entities_EntityHitboxManager_InstantiateHitbox_CAF_Combat_BoxDefinitionBase_" data-uid="CAF.Entities.EntityHitboxManager.InstantiateHitbox(CAF.Combat.BoxDefinitionBase)">InstantiateHitbox(BoxDefinitionBase)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual HitboxBase InstantiateHitbox(Vector3 position, Quaternion rotation)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual HitboxBase InstantiateHitbox(BoxDefinitionBase hitboxDefinitionBase)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -544,13 +447,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td><span class="parametername">position</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Quaternion</span></td>
-        <td><span class="parametername">rotation</span></td>
+        <td><a class="xref" href="CAF.Combat.BoxDefinitionBase.html">BoxDefinitionBase</a></td>
+        <td><span class="parametername">hitboxDefinitionBase</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -575,7 +473,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityHitboxManager_OnHitboxHurt_GameObject_CAF_Combat_HitInfoBase_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityHitboxManager.OnHitboxHurt(GameObject%2CCAF.Combat.HitInfoBase%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityHitboxManager.cs/#L191">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityHitboxManager.cs/#L172">View Source</a>
   </span>
   <a id="CAF_Entities_EntityHitboxManager_OnHitboxHurt_" data-uid="CAF.Entities.EntityHitboxManager.OnHitboxHurt*"></a>
   <h4 id="CAF_Entities_EntityHitboxManager_OnHitboxHurt_GameObject_CAF_Combat_HitInfoBase_System_Int32_System_Int32_" data-uid="CAF.Entities.EntityHitboxManager.OnHitboxHurt(GameObject,CAF.Combat.HitInfoBase,System.Int32,System.Int32)">OnHitboxHurt(GameObject, HitInfoBase, Int32, Int32)</h4>
@@ -659,7 +557,7 @@ This should be called in late update, as physics update right after update.</p>
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityHitboxManager_UpdateHitboxIDIgnoreList_System_Int32_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityHitboxManager.UpdateHitboxIDIgnoreList(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityHitboxManager.cs/#L203">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityHitboxManager.cs/#L184">View Source</a>
   </span>
   <a id="CAF_Entities_EntityHitboxManager_UpdateHitboxIDIgnoreList_" data-uid="CAF.Entities.EntityHitboxManager.UpdateHitboxIDIgnoreList*"></a>
   <h4 id="CAF_Entities_EntityHitboxManager_UpdateHitboxIDIgnoreList_System_Int32_" data-uid="CAF.Entities.EntityHitboxManager.UpdateHitboxIDIgnoreList(System.Int32)">UpdateHitboxIDIgnoreList(Int32)</h4>
@@ -735,7 +633,8 @@ This should be called in late update, as physics update right after update.</p>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

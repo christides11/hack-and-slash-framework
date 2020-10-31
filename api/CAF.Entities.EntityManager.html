@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class EntityManager
    | Character Action Framework Documentation ">
-    <meta name="generator" content="docfx 2.56.2.0">
+    <meta name="generator" content="docfx 2.56.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -61,11 +61,11 @@
       <div class="container body-content">
         
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
@@ -94,7 +94,6 @@
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="CAF.Combat.ITargetable.html">ITargetable</a></div>
-    <div><a class="xref" href="CAF.Combat.IStatusEffectable.html">IStatusEffectable</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -118,7 +117,7 @@
   <h6><strong>Assembly</strong>: CAF.dll</h6>
   <h5 id="CAF_Entities_EntityManager_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class EntityManager : SimObject, ITargetable, IStatusEffectable</code></pre>
+    <pre><code class="lang-csharp hljs">public class EntityManager : SimObject, ITargetable</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -127,7 +126,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityManager_entityCombatManager.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityManager.entityCombatManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L25">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L26">View Source</a>
   </span>
   <h4 id="CAF_Entities_EntityManager_entityCombatManager" data-uid="CAF.Entities.EntityManager.entityCombatManager">entityCombatManager</h4>
   <div class="markdown level1 summary"></div>
@@ -153,10 +152,39 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityManager_entityHurtboxManager.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityManager.entityHurtboxManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L28">View Source</a>
+  </span>
+  <h4 id="CAF_Entities_EntityManager_entityHurtboxManager" data-uid="CAF.Entities.EntityManager.entityHurtboxManager">entityHurtboxManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected EntityHurtboxManager entityHurtboxManager</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CAF.Entities.EntityHurtboxManager.html">EntityHurtboxManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityManager_entityInput.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityManager.entityInput%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L23">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L24">View Source</a>
   </span>
   <h4 id="CAF_Entities_EntityManager_entityInput" data-uid="CAF.Entities.EntityManager.entityInput">entityInput</h4>
   <div class="markdown level1 summary"></div>
@@ -185,14 +213,14 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityManager_entityPhysicsManager.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityManager.entityPhysicsManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L26">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L27">View Source</a>
   </span>
   <h4 id="CAF_Entities_EntityManager_entityPhysicsManager" data-uid="CAF.Entities.EntityManager.entityPhysicsManager">entityPhysicsManager</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected EntityPhysicsManager entityPhysicsManager</code></pre>
+    <pre><code class="lang-csharp hljs">protected EntityPhysicsManagerBase entityPhysicsManager</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -204,7 +232,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="CAF.Entities.EntityPhysicsManager.html">EntityPhysicsManager</a></td>
+        <td><a class="xref" href="CAF.Entities.EntityPhysicsManagerBase.html">EntityPhysicsManagerBase</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -214,7 +242,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityManager_entityStateManager.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityManager.entityStateManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L24">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L25">View Source</a>
   </span>
   <h4 id="CAF_Entities_EntityManager_entityStateManager" data-uid="CAF.Entities.EntityManager.entityStateManager">entityStateManager</h4>
   <div class="markdown level1 summary"></div>
@@ -243,7 +271,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityManager_lookHandler.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityManager.lookHandler%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L28">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L30">View Source</a>
   </span>
   <h4 id="CAF_Entities_EntityManager_lookHandler" data-uid="CAF.Entities.EntityManager.lookHandler">lookHandler</h4>
   <div class="markdown level1 summary"></div>
@@ -272,7 +300,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityManager_targetable.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityManager.targetable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L20">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L21">View Source</a>
   </span>
   <h4 id="CAF_Entities_EntityManager_targetable" data-uid="CAF.Entities.EntityManager.targetable">targetable</h4>
   <div class="markdown level1 summary"></div>
@@ -301,7 +329,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityManager_visual.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityManager.visual%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L27">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L29">View Source</a>
   </span>
   <h4 id="CAF_Entities_EntityManager_visual" data-uid="CAF.Entities.EntityManager.visual">visual</h4>
   <div class="markdown level1 summary"></div>
@@ -359,6 +387,36 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityManager_HurtboxManager.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityManager.HurtboxManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L16">View Source</a>
+  </span>
+  <a id="CAF_Entities_EntityManager_HurtboxManager_" data-uid="CAF.Entities.EntityManager.HurtboxManager*"></a>
+  <h4 id="CAF_Entities_EntityManager_HurtboxManager" data-uid="CAF.Entities.EntityManager.HurtboxManager">HurtboxManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntityHurtboxManager HurtboxManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CAF.Entities.EntityHurtboxManager.html">EntityHurtboxManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityManager_InputManager.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityManager.InputManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -392,7 +450,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityManager_IsGrounded.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityManager.IsGrounded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L18">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L19">View Source</a>
   </span>
   <a id="CAF_Entities_EntityManager_IsGrounded_" data-uid="CAF.Entities.EntityManager.IsGrounded*"></a>
   <h4 id="CAF_Entities_EntityManager_IsGrounded" data-uid="CAF.Entities.EntityManager.IsGrounded">IsGrounded</h4>
@@ -430,7 +488,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EntityPhysicsManager PhysicsManager { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public EntityPhysicsManagerBase PhysicsManager { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -442,7 +500,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="CAF.Entities.EntityPhysicsManager.html">EntityPhysicsManager</a></td>
+        <td><a class="xref" href="CAF.Entities.EntityPhysicsManagerBase.html">EntityPhysicsManagerBase</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -482,7 +540,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityManager_Targetable.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityManager.Targetable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L17">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L18">View Source</a>
   </span>
   <a id="CAF_Entities_EntityManager_Targetable_" data-uid="CAF.Entities.EntityManager.Targetable*"></a>
   <h4 id="CAF_Entities_EntityManager_Targetable" data-uid="CAF.Entities.EntityManager.Targetable">Targetable</h4>
@@ -511,50 +569,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityManager_ApplyStatusEffect_CAF_Combat_StatusEffectDefinition_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityManager.ApplyStatusEffect(CAF.Combat.StatusEffectDefinition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityManager_GetGameObject.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityManager.GetGameObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L129">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L122">View Source</a>
   </span>
-  <a id="CAF_Entities_EntityManager_ApplyStatusEffect_" data-uid="CAF.Entities.EntityManager.ApplyStatusEffect*"></a>
-  <h4 id="CAF_Entities_EntityManager_ApplyStatusEffect_CAF_Combat_StatusEffectDefinition_" data-uid="CAF.Entities.EntityManager.ApplyStatusEffect(CAF.Combat.StatusEffectDefinition)">ApplyStatusEffect(StatusEffectDefinition)</h4>
+  <a id="CAF_Entities_EntityManager_GetGameObject_" data-uid="CAF.Entities.EntityManager.GetGameObject*"></a>
+  <h4 id="CAF_Entities_EntityManager_GetGameObject" data-uid="CAF.Entities.EntityManager.GetGameObject">GetGameObject()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void ApplyStatusEffect(StatusEffectDefinition statusEffect)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CAF.Combat.StatusEffectDefinition.html">StatusEffectDefinition</a></td>
-        <td><span class="parametername">statusEffect</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityManager_GetCenter.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityManager.GetCenter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L119">View Source</a>
-  </span>
-  <a id="CAF_Entities_EntityManager_GetCenter_" data-uid="CAF.Entities.EntityManager.GetCenter*"></a>
-  <h4 id="CAF_Entities_EntityManager_GetCenter" data-uid="CAF.Entities.EntityManager.GetCenter">GetCenter()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Vector3 GetCenter()</code></pre>
+    <pre><code class="lang-csharp hljs">public GameObject GetGameObject()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -566,7 +592,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><span class="xref">GameObject</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -576,7 +602,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityManager_GetMovementVector_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityManager.GetMovementVector(System.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L70">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L73">View Source</a>
   </span>
   <a id="CAF_Entities_EntityManager_GetMovementVector_" data-uid="CAF.Entities.EntityManager.GetMovementVector*"></a>
   <h4 id="CAF_Entities_EntityManager_GetMovementVector_System_Single_System_Single_" data-uid="CAF.Entities.EntityManager.GetMovementVector(System.Single,System.Single)">GetMovementVector(Single, Single)</h4>
@@ -629,40 +655,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityManager_GetSize.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityManager.GetSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L124">View Source</a>
-  </span>
-  <a id="CAF_Entities_EntityManager_GetSize_" data-uid="CAF.Entities.EntityManager.GetSize*"></a>
-  <h4 id="CAF_Entities_EntityManager_GetSize" data-uid="CAF.Entities.EntityManager.GetSize">GetSize()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Vector3 GetSize()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityManager_GetVisualBasedDirection_Vector3_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityManager.GetVisualBasedDirection(Vector3)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L93">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L96">View Source</a>
   </span>
   <a id="CAF_Entities_EntityManager_GetVisualBasedDirection_" data-uid="CAF.Entities.EntityManager.GetVisualBasedDirection*"></a>
   <h4 id="CAF_Entities_EntityManager_GetVisualBasedDirection_Vector3_" data-uid="CAF.Entities.EntityManager.GetVisualBasedDirection(Vector3)">GetVisualBasedDirection(Vector3)</h4>
@@ -712,7 +708,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityManager_HandleLockon.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityManager.HandleLockon%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L60">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L63">View Source</a>
   </span>
   <a id="CAF_Entities_EntityManager_HandleLockon_" data-uid="CAF.Entities.EntityManager.HandleLockon*"></a>
   <h4 id="CAF_Entities_EntityManager_HandleLockon" data-uid="CAF.Entities.EntityManager.HandleLockon">HandleLockon()</h4>
@@ -728,7 +724,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityManager_RotateVisual_Vector3_System_Single_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityManager.RotateVisual(Vector3%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L104">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L107">View Source</a>
   </span>
   <a id="CAF_Entities_EntityManager_RotateVisual_" data-uid="CAF.Entities.EntityManager.RotateVisual*"></a>
   <h4 id="CAF_Entities_EntityManager_RotateVisual_Vector3_System_Single_" data-uid="CAF.Entities.EntityManager.RotateVisual(Vector3,System.Single)">RotateVisual(Vector3, Single)</h4>
@@ -768,7 +764,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityManager_SetTargetable_System_Boolean_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityManager.SetTargetable(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L52">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L55">View Source</a>
   </span>
   <a id="CAF_Entities_EntityManager_SetTargetable_" data-uid="CAF.Entities.EntityManager.SetTargetable*"></a>
   <h4 id="CAF_Entities_EntityManager_SetTargetable_System_Boolean_" data-uid="CAF.Entities.EntityManager.SetTargetable(System.Boolean)">SetTargetable(Boolean)</h4>
@@ -800,7 +796,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityManager_SetVisualRotation_Vector3_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityManager.SetVisualRotation(Vector3)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L114">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L117">View Source</a>
   </span>
   <a id="CAF_Entities_EntityManager_SetVisualRotation_" data-uid="CAF.Entities.EntityManager.SetVisualRotation*"></a>
   <h4 id="CAF_Entities_EntityManager_SetVisualRotation_Vector3_" data-uid="CAF.Entities.EntityManager.SetVisualRotation(Vector3)">SetVisualRotation(Vector3)</h4>
@@ -831,78 +827,41 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityManager_SimLateUpdate_System_Single_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityManager.SimLateUpdate(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityManager_SimLateUpdate.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityManager.SimLateUpdate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L47">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L50">View Source</a>
   </span>
   <a id="CAF_Entities_EntityManager_SimLateUpdate_" data-uid="CAF.Entities.EntityManager.SimLateUpdate*"></a>
-  <h4 id="CAF_Entities_EntityManager_SimLateUpdate_System_Single_" data-uid="CAF.Entities.EntityManager.SimLateUpdate(System.Single)">SimLateUpdate(Single)</h4>
+  <h4 id="CAF_Entities_EntityManager_SimLateUpdate" data-uid="CAF.Entities.EntityManager.SimLateUpdate">SimLateUpdate()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void SimLateUpdate(float deltaTime)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void SimLateUpdate()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
-        <td><span class="parametername">deltaTime</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_SimLateUpdate_System_Single_">SimObject.SimLateUpdate(Single)</a></div>
+  <div><a class="xref" href="CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_SimLateUpdate">SimObject.SimLateUpdate()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityManager_SimUpdate_System_Single_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityManager.SimUpdate(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityManager_SimUpdate.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityManager.SimUpdate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L30">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/EntityManager.cs/#L32">View Source</a>
   </span>
   <a id="CAF_Entities_EntityManager_SimUpdate_" data-uid="CAF.Entities.EntityManager.SimUpdate*"></a>
-  <h4 id="CAF_Entities_EntityManager_SimUpdate_System_Single_" data-uid="CAF.Entities.EntityManager.SimUpdate(System.Single)">SimUpdate(Single)</h4>
+  <h4 id="CAF_Entities_EntityManager_SimUpdate" data-uid="CAF.Entities.EntityManager.SimUpdate">SimUpdate()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void SimUpdate(float deltaTime)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void SimUpdate()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
-        <td><span class="parametername">deltaTime</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_SimUpdate_System_Single_">SimObject.SimUpdate(Single)</a></div>
+  <div><a class="xref" href="CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_SimUpdate">SimObject.SimUpdate()</a></div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="CAF.Combat.ITargetable.html">ITargetable</a>
-  </div>
-  <div>
-      <a class="xref" href="CAF.Combat.IStatusEffectable.html">IStatusEffectable</a>
   </div>
 </article>
           </div>
@@ -920,7 +879,8 @@
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
