@@ -16,8 +16,6 @@ MonoBehaviour:
   description: 
   stateOverride: -1
   length: 120
-  heightRestriction: 0
-  gravityScaleAdded: 0
   animationGround: {fileID: 0}
   animationAir: {fileID: 0}
   wrapMode: 0
@@ -28,35 +26,14 @@ MonoBehaviour:
   - {x: 8, y: 120}
   commandAttackCancelWindows: []
   chargeWindows: []
-  boxGroups:
-  - id: 0
+  boxGroups: []
   events:
+  - id: 0
   - id: 1
   - id: 2
-  - id: 3
   references:
     version: 1
     00000000:
-      type: {class: BoxGroup, ns: CAF.Combat, asm: CAF}
-      data:
-        ID: 0
-        activeFramesStart: 6
-        activeFramesEnd: 120
-        hitGroupType: 0
-        boxes:
-        - shape: 0
-          offset: {x: 0.2, y: -0.25, z: 0}
-          size: {x: 2, y: 2, z: 0}
-          rotation: {x: 0, y: 0, z: 0}
-          radius: 0
-          height: 0
-        attachToEntity: 1
-        styleGain: 1
-        chargeLevelNeeded: -1
-        chargeLevelMax: 1
-        hitboxHitInfo:
-          id: 4
-    00000001:
       type: {class: AttackEventDefinition, ns: CAF.Combat, asm: CAF}
       data:
         nickname: Clamp Gravity
@@ -66,7 +43,7 @@ MonoBehaviour:
         startFrame: 1
         endFrame: 1
         attackEvent:
-          id: 5
+          id: 3
         variables:
           intVars: 
           floatVars:
@@ -74,7 +51,16 @@ MonoBehaviour:
           - 0.02
           objectVars: []
           curveVars: []
-    00000002:
+        inputCheckTiming: 0
+        inputCheckStartFrame: 0
+        inputCheckEndFrame: 0
+        input:
+          executeWindow: 3
+          executeInputs: []
+          sequenceWindow: 8
+          sequenceInputs: []
+        inputCheckProcessed: 0
+    00000001:
       type: {class: AttackEventDefinition, ns: CAF.Combat, asm: CAF}
       data:
         nickname: F.Down
@@ -84,7 +70,7 @@ MonoBehaviour:
         startFrame: 7
         endFrame: 7
         attackEvent:
-          id: 6
+          id: 4
         variables:
           intVars: 
           floatVars:
@@ -92,7 +78,16 @@ MonoBehaviour:
           - -0.3
           objectVars: []
           curveVars: []
-    00000003:
+        inputCheckTiming: 0
+        inputCheckStartFrame: 0
+        inputCheckEndFrame: 0
+        input:
+          executeWindow: 3
+          executeInputs: []
+          sequenceWindow: 8
+          sequenceInputs: []
+        inputCheckProcessed: 0
+    00000002:
       type: {class: AttackEventDefinition, ns: CAF.Combat, asm: CAF}
       data:
         nickname: F.Forward
@@ -102,7 +97,7 @@ MonoBehaviour:
         startFrame: 7
         endFrame: 7
         attackEvent:
-          id: 7
+          id: 5
         variables:
           intVars: 
           floatVars:
@@ -110,47 +105,25 @@ MonoBehaviour:
           - 0
           objectVars: []
           curveVars: []
-    00000004:
-      type: {class: HitInfo, ns: CAF.Combat, asm: CAF}
-      data:
-        airOnly: 0
-        groundOnly: 0
-        hitKills: 1
-        continuousHit: 0
-        spaceBetweenHits: 0
-        opponentResetXForce: 1
-        opponentResetYForce: 1
-        attackerHitstop: 4
-        hitstop: 4
-        hitstun: 60
-        forceType: 0
-        forceRelation: 1
-        breakArmor: 0
-        unblockable: 0
-        knockdown: 0
-        groundBounces: 0
-        groundBounceForce: 0
-        wallBounces: 0
-        wallBounceForce: 0
-        damageOnHit: 0
-        damageOnBlock: 0
-        causesTumble: 0
-        opponentForceMagnitude: 0.15
-        opponentForceDir: {x: 0, y: 1, z: 0}
-        forceIncludeYForce: 0
-        opponentMaxMagnitude: 1
-        opponentMinMagnitude: 1
-        throwConfirm: {fileID: 0}
-    00000005:
+        inputCheckTiming: 0
+        inputCheckStartFrame: 0
+        inputCheckEndFrame: 0
+        input:
+          executeWindow: 3
+          executeInputs: []
+          sequenceWindow: 8
+          sequenceInputs: []
+        inputCheckProcessed: 0
+    00000003:
       type: {class: ClampGravityEvent, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
         dmy: 0
-    00000006:
+    00000004:
       type: {class: ForceSet, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
         xForce: 0
         yForce: 1
-    00000007:
+    00000005:
       type: {class: ForceSet, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
         xForce: 1

@@ -16,8 +16,6 @@ MonoBehaviour:
   description: 
   stateOverride: -1
   length: 30
-  heightRestriction: 0
-  gravityScaleAdded: 0
   animationGround: {fileID: 0}
   animationAir: {fileID: 0}
   wrapMode: 0
@@ -29,37 +27,16 @@ MonoBehaviour:
   commandAttackCancelWindows:
   - {x: 6, y: 120}
   chargeWindows: []
-  boxGroups:
-  - id: 0
+  boxGroups: []
   events:
+  - id: 0
   - id: 1
   - id: 2
   - id: 3
   - id: 4
-  - id: 5
   references:
     version: 1
     00000000:
-      type: {class: BoxGroup, ns: CAF.Combat, asm: CAF}
-      data:
-        ID: 0
-        activeFramesStart: 5
-        activeFramesEnd: 8
-        hitGroupType: 0
-        boxes:
-        - shape: 0
-          offset: {x: 0.75, y: 0, z: 0}
-          size: {x: 3, y: 2, z: 0}
-          rotation: {x: 0, y: 0, z: 0}
-          radius: 0
-          height: 0
-        attachToEntity: 1
-        styleGain: 1
-        chargeLevelNeeded: -1
-        chargeLevelMax: 1
-        hitboxHitInfo:
-          id: 6
-    00000001:
       type: {class: AttackEventDefinition, ns: CAF.Combat, asm: CAF}
       data:
         nickname: Clamp G
@@ -69,7 +46,7 @@ MonoBehaviour:
         startFrame: 1
         endFrame: 1
         attackEvent:
-          id: 7
+          id: 5
         variables:
           intVars: 
           floatVars:
@@ -77,7 +54,16 @@ MonoBehaviour:
           - 0.01
           objectVars: []
           curveVars: []
-    00000002:
+        inputCheckTiming: 0
+        inputCheckStartFrame: 0
+        inputCheckEndFrame: 0
+        input:
+          executeWindow: 3
+          executeInputs: []
+          sequenceWindow: 8
+          sequenceInputs: []
+        inputCheckProcessed: 0
+    00000001:
       type: {class: AttackEventDefinition, ns: CAF.Combat, asm: CAF}
       data:
         nickname: Apply Gravity
@@ -87,7 +73,7 @@ MonoBehaviour:
         startFrame: 10
         endFrame: 30
         attackEvent:
-          id: 8
+          id: 6
         variables:
           intVars: 
           floatVars:
@@ -111,17 +97,26 @@ MonoBehaviour:
             m_PreInfinity: 2
             m_PostInfinity: 2
             m_RotationOrder: 4
-    00000003:
+        inputCheckTiming: 0
+        inputCheckStartFrame: 0
+        inputCheckEndFrame: 0
+        input:
+          executeWindow: 3
+          executeInputs: []
+          sequenceWindow: 8
+          sequenceInputs: []
+        inputCheckProcessed: 0
+    00000002:
       type: {class: AttackEventDefinition, ns: CAF.Combat, asm: CAF}
       data:
         nickname: F.Up
-        active: 1
+        active: 0
         onHit: 0
         onHitHitboxGroup: 0
         startFrame: 7
         endFrame: 9
         attackEvent:
-          id: 9
+          id: 7
         variables:
           intVars: 
           floatVars:
@@ -129,7 +124,16 @@ MonoBehaviour:
           - 0.02
           objectVars: []
           curveVars: []
-    00000004:
+        inputCheckTiming: 0
+        inputCheckStartFrame: 0
+        inputCheckEndFrame: 0
+        input:
+          executeWindow: 3
+          executeInputs: []
+          sequenceWindow: 8
+          sequenceInputs: []
+        inputCheckProcessed: 0
+    00000003:
       type: {class: AttackEventDefinition, ns: CAF.Combat, asm: CAF}
       data:
         nickname: Clamp M
@@ -139,14 +143,23 @@ MonoBehaviour:
         startFrame: 1
         endFrame: 1
         attackEvent:
-          id: 10
+          id: 8
         variables:
           intVars: 
           floatVars:
           - 0.08
           objectVars: []
           curveVars: []
-    00000005:
+        inputCheckTiming: 0
+        inputCheckStartFrame: 0
+        inputCheckEndFrame: 0
+        input:
+          executeWindow: 3
+          executeInputs: []
+          sequenceWindow: 8
+          sequenceInputs: []
+        inputCheckProcessed: 0
+    00000004:
       type: {class: AttackEventDefinition, ns: CAF.Combat, asm: CAF}
       data:
         nickname: Friction M
@@ -156,64 +169,42 @@ MonoBehaviour:
         startFrame: 6
         endFrame: 30
         attackEvent:
-          id: 11
+          id: 9
         variables:
           intVars: 
           floatVars:
           - 0.01
           objectVars: []
           curveVars: []
-    00000006:
-      type: {class: HitInfo, ns: CAF.Combat, asm: CAF}
-      data:
-        airOnly: 0
-        groundOnly: 0
-        hitKills: 1
-        continuousHit: 0
-        spaceBetweenHits: 0
-        opponentResetXForce: 1
-        opponentResetYForce: 1
-        attackerHitstop: 4
-        hitstop: 4
-        hitstun: 30
-        forceType: 0
-        forceRelation: 1
-        breakArmor: 0
-        unblockable: 0
-        knockdown: 0
-        groundBounces: 0
-        groundBounceForce: 0
-        wallBounces: 0
-        wallBounceForce: 0
-        damageOnHit: 0
-        damageOnBlock: 0
-        causesTumble: 0
-        opponentForceMagnitude: 0.1
-        opponentForceDir: {x: 0, y: 1, z: 0}
-        forceIncludeYForce: 0
-        opponentMaxMagnitude: 1
-        opponentMinMagnitude: 1
-        throwConfirm: {fileID: 0}
-    00000007:
+        inputCheckTiming: 0
+        inputCheckStartFrame: 0
+        inputCheckEndFrame: 0
+        input:
+          executeWindow: 3
+          executeInputs: []
+          sequenceWindow: 8
+          sequenceInputs: []
+        inputCheckProcessed: 0
+    00000005:
       type: {class: ClampGravityEvent, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
         dmy: 0
-    00000008:
+    00000006:
       type: {class: ApplyGravity, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
         useEntityMaxFallSpeed: 1
         useEntityGravity: 1
         useEntityGravityScale: 1
-    00000009:
+    00000007:
       type: {class: ForceAdd, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
         xForce: 0
         yForce: 1
-    0000000A:
+    00000008:
       type: {class: ClampMovement, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
         dmy: 0
-    0000000B:
+    00000009:
       type: {class: ApplyFriction, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
         xFriction: 1

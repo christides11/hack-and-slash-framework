@@ -29,14 +29,29 @@ namespace CAF.Entities
                 return;
             }
 
-            // Create hurtbox groups.
             for(int i = 0; i < currentHurtboxDefinition.hurtboxGroups.Count; i++)
             {
                 if (!hurtboxGroups.ContainsKey(i))
                 {
                     hurtboxGroups.Add(i, new List<Hurtbox>());
                 }
-                // Create Hurtboxes.
+
+                // STRAY HURTBOX CLEANUP //
+                for (int s = currentHurtboxDefinition.hurtboxGroups[i].boxes.Count; s < hurtboxGroups[i].Count; s++)
+                {
+                    DestroyHurtbox(hurtboxGroups[i][s]);
+                    hurtboxGroups[i].RemoveAt(s);
+                }
+
+                // CHECK CLEANUP WINDOW //
+                if (manager.StateManager.CurrentStateFrame > currentHurtboxDefinition.hurtboxGroups[i].activeFramesEnd
+                    || manager.StateManager.CurrentStateFrame < currentHurtboxDefinition.hurtboxGroups[i].activeFramesStart)
+                {
+                    CleanupHurtboxGroup(i);
+                    continue;
+                }
+
+                // CREATE HURTBOX GROUPS //
                 for(int w = 0; w < currentHurtboxDefinition.hurtboxGroups[i].boxes.Count; w++)
                 {
                     Hurtbox hurtbox;
@@ -56,15 +71,9 @@ namespace CAF.Entities
                     // Set the hurtbox's position/rotation/etc.
                     SetHurtboxInfo(i, w);
                 }
-                // Cleanup stray hurtboxes.
-                for(int s = currentHurtboxDefinition.hurtboxGroups[i].boxes.Count; s < hurtboxGroups[i].Count; s++)
-                {
-                    DestroyHurtbox(hurtboxGroups[i][s]);
-                    hurtboxGroups[i].RemoveAt(s);
-                }
             }
 
-            // Cleanup stray hurtbox groups.
+            // CLEANUP EXTRA HURTBOXES //
             foreach(int k in hurtboxGroups.Keys)
             {
                 if(k >= currentHurtboxDefinition.hurtboxGroups.Count)
@@ -73,6 +82,7 @@ namespace CAF.Entities
                     CleanupHurtboxGroup(k);
                 }
             }
+
             for(int h = 0; h < hurtboxGroupsToDelete.Count; h++)
             {
                 hurtboxGroups.Remove(h);
@@ -86,6 +96,7 @@ namespace CAF.Entities
             {
                 DestroyHurtbox(hurtboxGroups[groupID][i]);
             }
+            hurtboxGroups[groupID].Clear();
         }
 
         protected virtual void SetHurtboxInfo(int groupID, int hurtboxIndex)
@@ -98,6 +109,10 @@ namespace CAF.Entities
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Deactivates a hurtbox and returns it to the pool.
+        /// </summary>
+        /// <param name="hurtbox">The hurtbox to deactivate.</param>
         protected virtual void DestroyHurtbox(Hurtbox hurtbox)
         {
             hurtboxPool.Add(hurtbox);
