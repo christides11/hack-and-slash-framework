@@ -1,3 +1,38 @@
+# [6.0.0](https://github.com/christides11/Character-Action-Framework/compare/v5.0.0...v6.0.0) (2020-10-31)
+
+
+### Code Refactoring
+
+* Made BoxDefinitionBase the default assumed class. ([1bf3769](https://github.com/christides11/Character-Action-Framework/commit/1bf3769678ce379fbe4b6b46d1008d09ff686779))
+* Removed deltatime from Simulation method variables. ([389c187](https://github.com/christides11/Character-Action-Framework/commit/389c187af64c3d00e923c2beafbefda4cec948d3))
+* Removed status effects. ([1b6076d](https://github.com/christides11/Character-Action-Framework/commit/1b6076dca2c82b699ee69951eafef3d544d39f2b))
+* Removed styleGain variable from BoxGroup. ([5e02bf1](https://github.com/christides11/Character-Action-Framework/commit/5e02bf1c45d45859413d713410a610e4e4487093))
+* Removed variables from AttackDefinition. ([f3ed16f](https://github.com/christides11/Character-Action-Framework/commit/f3ed16f127cfa872fe96661857d46d34917adeea))
+* Replaced GetCenter for GetGameObject in ITargetable. ([30de643](https://github.com/christides11/Character-Action-Framework/commit/30de643e44c821861390fcfac5fd5dc19c3d511e))
+* Take InputDefinition directly for CheckStickDirection. ([48d7c65](https://github.com/christides11/Character-Action-Framework/commit/48d7c653ec9c851158aa9cb8cd9314c07e0c183e))
+
+
+### Features
+
+* Added EntityPhysicsManagerBase. ([1f6d586](https://github.com/christides11/Character-Action-Framework/commit/1f6d586344b43512cb7115501ea99da31bf036c1))
+* Added HurtInfoBase to store hurt information. ([b28032b](https://github.com/christides11/Character-Action-Framework/commit/b28032ba8b2084a6109e6b5381e38720d1f3a1e2))
+* Added StateHurtboxDefinition. ([36e3dff](https://github.com/christides11/Character-Action-Framework/commit/36e3dffc02db9ba9d2da17e5c71b1c4ba0c76d8f))
+* Editor for StateHurtboxDefinition. ([9d26e39](https://github.com/christides11/Character-Action-Framework/commit/9d26e391eebf39463275503720f27ad0b9488bde))
+* Functionally of EntityHurtboxManager. ([8d7e273](https://github.com/christides11/Character-Action-Framework/commit/8d7e27355742a0507a3c166887ad98423b124d20))
+
+
+### BREAKING CHANGES
+
+* Status effects should be handled user-side, outside of what CAF needs to do.
+* PhysicsManager now allows for your own implementation, with two given implementations for 3D and 2D.
+* Instead of passing the huirt variables directly in OnHurt, instead allow the user to define what should be passed in their own HurtInfoBase. Avoids assuming how the user will implement this method.
+* Take InputDefinition directly now for CheckStickDirection. Avoids forcing floats in the user's system.
+* With this, the center of the object and any other needed data can be grabbed, while also not assuming the numeric type to be a Vector3.
+* Removed deltatime variables from method relating to the simulation. Part of changes to make using fixed point variables easier.
+* BoxDefinition was replaced with BoxDefinitionBase in any case that it was reference. This change was made mainly to allow changing the type of the variables used (important if you want fixed point variables).
+* Removed both heightRestriction and gravityScaleAdded from AttackDefinition. Should be implemented by the user.
+* Removed styleGain variable from BoxGroup. This should be defined by the user as they might either not use a style meter at all or not want to use floats.
+
 # [5.0.0](https://github.com/christides11/Character-Action-Framework/compare/v4.1.0...v5.0.0) (2020-09-11)
 
 
