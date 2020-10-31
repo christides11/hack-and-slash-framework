@@ -6,6 +6,6 @@ namespace CAF.Combat
     [CreateAssetMenu(fileName = "StateHurtbox", menuName = "CAF/StateHurtboxDefinition")]
     public class StateHurtboxDefinition : ScriptableObject
     {
-        public List<HurtboxGroup> hurtboxGroups = new List<HurtboxGroup>();
+        [SerializeReference] public List<HurtboxGroup> hurtboxGroups = new List<HurtboxGroup>();
     }
 }

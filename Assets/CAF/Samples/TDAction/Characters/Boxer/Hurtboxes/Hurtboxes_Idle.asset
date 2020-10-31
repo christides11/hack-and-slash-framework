@@ -13,17 +13,25 @@ MonoBehaviour:
   m_Name: Hurtboxes_Idle
   m_EditorClassIdentifier: 
   hurtboxGroups:
-  - ID: 0
-    activeFramesStart: 1
-    activeFramesEnd: 60
-    boxes:
-    - id: 0
-    - id: 0
-    - id: 0
-    - id: 0
-    attachToEntity: 1
-    attachTo: 
+  - id: 0
+  - id: 1
   references:
     version: 1
     00000000:
-      type: {class: , ns: , asm: }
+      type: {class: HurtboxGroup, ns: CAF.Combat, asm: CAF}
+      data:
+        ID: 0
+        activeFramesStart: 1
+        activeFramesEnd: 1
+        boxes: []
+        attachToEntity: 1
+        attachTo: 
+    00000001:
+      type: {class: HurtboxGroup, ns: CAF.Combat, asm: CAF}
+      data:
+        ID: 0
+        activeFramesStart: 1
+        activeFramesEnd: 1
+        boxes: []
+        attachToEntity: 1
+        attachTo: 
