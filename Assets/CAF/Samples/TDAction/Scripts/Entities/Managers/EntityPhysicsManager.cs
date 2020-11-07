@@ -12,6 +12,11 @@ namespace TDAction.Entities
             ((EntityManager)manager).charController2D.move(GetOverallForce());
         }
 
+        public override void Freeze()
+        {
+            ((EntityManager)manager).charController2D.move(Vector3.zero);
+        }
+
         /// <summary>
         /// Create a force based on the parameters given and
         /// adds it to our movement force.

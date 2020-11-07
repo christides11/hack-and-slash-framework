@@ -34,6 +34,11 @@ namespace TDAction.Entities
             base.SimStart();
             SetupStates();
             CombatManager.OnExitHitStop += (self) => { visual.transform.localPosition = Vector3.zero; };
+            if (healthManager.MaxHealth == 0)
+            {
+                healthManager.SetMaxHealth(entityDefinition.GetEntityStats().health);
+                healthManager.SetHealth(entityDefinition.GetEntityStats().health);
+            }
         }
 
         public override void SimUpdate()

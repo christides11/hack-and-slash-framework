@@ -118,6 +118,7 @@
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Simulation\SimObjectManager.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Simulation\SimObjectRegister.cs" />
+    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\UI\PlayerHUD.cs" />
     <None Include="Assets\CAF\Samples\TDAction\TDAction_CSharp.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

@@ -25,6 +25,7 @@ namespace CAF.Entities
         public event MovesetChangedAction OnMovesetChanged;
         public event ChargeLevelChangedAction OnChargeLevelChanged;
         public event ChargeLevelChargeChangedAction OnChargeLevelChargeChanged;
+        public event ChargeLevelChargeChangedAction OnChargeLevelChargeMaxReached;
 
         public int HitStun { get; protected set; } = 0;
         public int HitStop { get; protected set; } = 0;
@@ -347,10 +348,14 @@ namespace CAF.Entities
             OnChargeLevelChargeChanged?.Invoke(manager, oldValue);
         }
 
-        public virtual void IncrementChargeLevelCharge()
+        public virtual void IncrementChargeLevelCharge(int maxCharge)
         {
             CurrentChargeLevelCharge++;
             OnChargeLevelChargeChanged?.Invoke(manager, CurrentChargeLevelCharge-1);
+            if(CurrentChargeLevelCharge == maxCharge)
+            {
+                OnChargeLevelChargeMaxReached?.Invoke(manager, CurrentChargeLevelCharge - 1);
+            }
         }
 
         public virtual HitReaction Hurt(HurtInfoBase hurtInfoBase)

@@ -42,7 +42,7 @@ namespace CAF.Entities
             }
             else
             {
-                PhysicsManager.ResetForces();
+                PhysicsManager.Freeze();
             }
             HurtboxManager.Tick();
         }

@@ -14,6 +14,11 @@ namespace CAF.Entities
 
         }
 
+        public virtual void Freeze()
+        {
+
+        }
+
         public virtual void ResetForces()
         {
 

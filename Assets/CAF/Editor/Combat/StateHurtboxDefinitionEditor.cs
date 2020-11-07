@@ -45,10 +45,23 @@ namespace CAF.Combat
 
             for(int i = 0; i < t.hurtboxGroups.Count; i++)
             {
-                EditorGUILayout.LabelField($"Hurtbox Group {i}");
+                EditorGUILayout.BeginHorizontal();
+                EditorGUILayout.LabelField($"Hurtbox Group {i}", GUILayout.MaxWidth(100));
+                if (GUILayout.Button("X", GUILayout.Width(30)))
+                {
+                    t.hurtboxGroups.RemoveAt(i);
+                    break;
+                }
+                EditorGUILayout.EndHorizontal();
                 EditorGUI.indentLevel++;
                 t.hurtboxGroups[i].DrawInspector(15);
                 EditorGUI.indentLevel--;
+            }
+
+            if (GUI.changed)
+            {
+                EditorUtility.SetDirty(target);
+                GUI.changed = false;
             }
         }
 

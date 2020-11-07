@@ -7,6 +7,8 @@ namespace TDAction.Entities
 {
     public abstract class EntityStats : ScriptableObject
     {
+        public float health = 100;
+
         public int enemyStepLength = 4;
         public float hitstunFrictionGround;
         public float hitstunFrictionAir;

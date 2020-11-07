@@ -457,6 +457,7 @@ GameObject:
   - component: {fileID: 67565670}
   - component: {fileID: 67565669}
   - component: {fileID: 67565668}
+  - component: {fileID: 67565672}
   m_Layer: 5
   m_Name: PlayerHUD
   m_TagString: Untagged
@@ -544,6 +545,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &67565672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67565667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99c5064c73f72d940a8624874fe0da0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthImage: {fileID: 700706410}
 --- !u!1 &92815367
 GameObject:
   m_ObjectHideFlags: 0
@@ -2917,6 +2931,16 @@ PrefabInstance:
     - target: {fileID: 1011028484438550925, guid: 566a2b9082a19f54d9a11fabf7eb2be8,
         type: 3}
       propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1715174515004957371, guid: 566a2b9082a19f54d9a11fabf7eb2be8,
+        type: 3}
+      propertyPath: maxHealth
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1715174515004957371, guid: 566a2b9082a19f54d9a11fabf7eb2be8,
+        type: 3}
+      propertyPath: health
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6667267786158460212, guid: 566a2b9082a19f54d9a11fabf7eb2be8,
