@@ -10,7 +10,10 @@ namespace TDAction.Entities
     {
         protected override void SetHurtboxInfo(int groupID, int hurtboxIndex)
         {
-
+            BoxDefinition bd = (BoxDefinition)currentHurtboxDefinition.hurtboxGroups[groupID].boxes[hurtboxIndex];
+            BoxCollider2D bc = hurtboxGroups[groupID][hurtboxIndex].GetComponent<BoxCollider2D>();
+            bc.size = bd.size;
+            bc.transform.localPosition = bd.offset;
         }
 
         protected override Hurtbox CreateHurtbox()
@@ -25,6 +28,7 @@ namespace TDAction.Entities
             else
             {
                 hurtbox = GameObject.Instantiate(GameManager.instance.hurtboxPrefab, gameObject.transform, false);
+                hurtbox.Owner = gameObject;
             }
             hurtbox.gameObject.SetActive(false);
             return hurtbox;

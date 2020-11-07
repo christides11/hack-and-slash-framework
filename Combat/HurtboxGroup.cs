@@ -72,7 +72,7 @@ namespace CAF.Combat
                     if (GUILayout.Button("X", GUILayout.Width(40)))
                     {
                         boxes.RemoveAt(i);
-                        return;
+                        break;
                     }
                     EditorGUILayout.EndHorizontal();
                     EditorGUI.indentLevel++;

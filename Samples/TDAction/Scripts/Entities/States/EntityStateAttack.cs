@@ -193,7 +193,7 @@ namespace TDAction.Entities.States
                 // Still have charge levels to go through.
                 if(entityManager.CombatManager.CurrentChargeLevel < currentAttack.chargeWindows[i].chargeLevels.Count)
                 {
-                    cManager.IncrementChargeLevelCharge();
+                    cManager.IncrementChargeLevelCharge(currentAttack.chargeWindows[i].chargeLevels[cManager.CurrentChargeLevel].maxChargeFrames);
                     // Charge completed, move on to the next level.
                     if(cManager.CurrentChargeLevelCharge == currentAttack.chargeWindows[i].chargeLevels[cManager.CurrentChargeLevel].maxChargeFrames)
                     {

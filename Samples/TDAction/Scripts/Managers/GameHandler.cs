@@ -1,6 +1,7 @@
 ﻿using TDAction.Camera;
 using TDAction.Entities;
 using TDAction.Simulation;
+using TDAction.UI;
 using UnityEngine;
 
 namespace TDAction.Managers
@@ -16,11 +17,13 @@ namespace TDAction.Managers
         public SimObjectManager simulationObjectManager;
 
         [SerializeField] private EntityManager currentPlayerEntity;
+        [SerializeField] private PlayerHUD playerHUD;
         [SerializeField] private bool frameByFrameMode;
 
-        public GameHandler()
+        public GameHandler(PlayerHUD playerHUD)
         {
             simulationObjectManager = new SimObjectManager();
+            this.playerHUD = playerHUD;
         }
 
         public virtual void Update()
@@ -70,6 +73,12 @@ namespace TDAction.Managers
             simulationObjectManager.RegisterObject(currentPlayerEntity);
 
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraHandler>().SetFollowTarget(currentPlayerEntity.transform);
+
+            if (playerHUD)
+            {
+                currentPlayerEntity.GetComponent<HealthManager>().OnHurt += (source, oldHealth, currentHealth) 
+                    => { playerHUD.SetHealthValue(currentHealth, source.MaxHealth); };
+            }
         }
     }
 }

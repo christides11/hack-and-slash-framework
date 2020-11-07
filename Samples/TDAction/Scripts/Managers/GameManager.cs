@@ -1,4 +1,5 @@
 ﻿using CAF.Combat;
+using TDAction.UI;
 using UnityEngine;
 
 namespace TDAction.Managers
@@ -37,8 +38,7 @@ namespace TDAction.Managers
         /// </summary>
         public void SetupGame()
         {
-            gameHandler = new GameHandler();
-
+            gameHandler = new GameHandler(GameObject.FindObjectOfType<PlayerHUD>());
             gameHandler.SpawnPlayer(playerEntity, playerSpawnPosition);
         }
 
