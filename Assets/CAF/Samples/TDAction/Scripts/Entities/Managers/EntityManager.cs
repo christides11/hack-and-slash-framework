@@ -80,6 +80,17 @@ namespace TDAction.Entities
             return false;
         }
 
+        public virtual bool TryAttack(MovesetAttackNode man, bool resetFrameCounter = true)
+        {
+            if(man != null)
+            {
+                CombatManager.SetAttack(man);
+                StateManager.ChangeState((int)EntityStates.ATTACK, resetFrameCounter ? 0 : StateManager.CurrentStateFrame);
+                return true;
+            }
+            return false;
+        }
+
         Collider2D[] enemyStepResults = new Collider2D[2];
         public virtual bool TryEnemyStep(int bufferFrames = 3)
         {

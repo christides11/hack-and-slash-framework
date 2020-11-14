@@ -683,6 +683,12 @@
     <Reference Include="XNode">
       <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/XNode.dll</HintPath>
     </Reference>
+    <Reference Include="Malee.ReorderableList">
+      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/Malee.ReorderableList.dll</HintPath>
+    </Reference>
+    <Reference Include="Malee.ReorderableList.Editor">
+      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/Malee.ReorderableList.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>

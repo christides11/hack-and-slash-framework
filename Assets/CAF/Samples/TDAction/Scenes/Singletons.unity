@@ -166,6 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameHandler:
     currentPlayerEntity: {fileID: 0}
+    playerHUD: {fileID: 0}
     frameByFrameMode: 0
   playerEntity: {fileID: 8147816337253296054, guid: 566a2b9082a19f54d9a11fabf7eb2be8,
     type: 3}

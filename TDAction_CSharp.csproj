@@ -86,6 +86,7 @@
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Attack\AttackDefinition.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\ApplyFriction.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\ApplyGravity.cs" />
+    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\ChangeAttack.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\ClampGravity.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\ClampMovement.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\ForceAdd.cs" />
