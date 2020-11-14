@@ -1,5 +1,58 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7301761618268684859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cf4d5189da6b334e93745642899b7ca, type: 3}
+  m_Name: Combo A (AAAA)
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 616, y: -72}
+  ports:
+    keys:
+    - lastNode
+    - nextNode
+    values:
+    - _fieldName: lastNode
+      _node: {fileID: -7301761618268684859}
+      _typeQualifiedName: CAF.Combat.MovesetAttackNode, CAF, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: nextNode 0
+        node: {fileID: 7879068164077439251}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: nextNode
+      _node: {fileID: -7301761618268684859}
+      _typeQualifiedName: System.Collections.Generic.List`1[[CAF.Combat.MovesetAttackNode+nextNodeDefinition,
+        CAF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
+        Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  lastNode: {fileID: 7879068164077439251}
+  inputSequence:
+    executeWindow: 3
+    executeInputs:
+    - inputType: 0
+      buttonID: 3
+      stickDirection: {x: 0, y: 0}
+      directionDeviation: 0.9
+    sequenceWindow: 8
+    sequenceInputs: []
+  attackDefinition: {fileID: 11400000, guid: 6576094d7b5a1674499fa2f6f0a9990b, type: 2}
+  nextNode: []
 --- !u!114 &-3053810752503418589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10,7 +63,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5cf4d5189da6b334e93745642899b7ca, type: 3}
-  m_Name: Ground_A
+  m_Name: Combo A (A)
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
   position: {x: -170.5, y: -75.5}
@@ -58,7 +111,7 @@ MonoBehaviour:
     - inputType: 0
       buttonID: 3
       stickDirection: {x: 0, y: 0}
-      directionDeviation: 0
+      directionDeviation: 0.9
     sequenceWindow: 8
     sequenceInputs: []
   attackDefinition: {fileID: 11400000, guid: e7782add1c595bb4fa111a9e95eee407, type: 2}
@@ -78,7 +131,7 @@ MonoBehaviour:
   m_Name: Air_AA
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 104, y: 472}
+  position: {x: 88, y: 712}
   ports:
     keys:
     - lastNode
@@ -126,7 +179,7 @@ MonoBehaviour:
     - inputType: 0
       buttonID: 3
       stickDirection: {x: 0, y: 0}
-      directionDeviation: 0
+      directionDeviation: 0.9
     sequenceWindow: 8
     sequenceInputs: []
   attackDefinition: {fileID: 11400000, guid: ed10805aadc96f34fa790986ded89a03, type: 2}
@@ -153,7 +206,10 @@ MonoBehaviour:
   - {fileID: 509854845894301865}
   - {fileID: -2480016657355686588}
   - {fileID: 6984970888826348028}
-  groundAttackCommandNormals: []
+  - {fileID: -7301761618268684859}
+  - {fileID: 3231258674586516776}
+  groundAttackCommandNormals:
+  - {fileID: 8357619711189707542}
   groundAttackStartNodes:
   - {fileID: -3053810752503418589}
   airAttackCommandNormals: []
@@ -172,7 +228,7 @@ MonoBehaviour:
   m_Name: Air_A
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -152, y: 472}
+  position: {x: -168, y: 712}
   ports:
     keys:
     - lastNode
@@ -217,13 +273,59 @@ MonoBehaviour:
     - inputType: 0
       buttonID: 3
       stickDirection: {x: 0, y: 0}
-      directionDeviation: 0
+      directionDeviation: 0.9
     sequenceWindow: 8
     sequenceInputs: []
   attackDefinition: {fileID: 11400000, guid: bcad4f9de9756054483693c781c2415f, type: 2}
   nextNode:
   - cancelWindow: {x: 10, y: 60}
     node: {fileID: -2480016657355686588}
+--- !u!114 &3231258674586516776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cf4d5189da6b334e93745642899b7ca, type: 3}
+  m_Name: Launcher B
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 88, y: -520}
+  ports:
+    keys:
+    - lastNode
+    - nextNode
+    values:
+    - _fieldName: lastNode
+      _node: {fileID: 3231258674586516776}
+      _typeQualifiedName: CAF.Combat.MovesetAttackNode, CAF, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: nextNode
+      _node: {fileID: 3231258674586516776}
+      _typeQualifiedName: System.Collections.Generic.List`1[[CAF.Combat.MovesetAttackNode+nextNodeDefinition,
+        CAF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
+        Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  lastNode: {fileID: 0}
+  inputSequence:
+    executeWindow: 3
+    executeInputs: []
+    sequenceWindow: 8
+    sequenceInputs: []
+  attackDefinition: {fileID: 11400000, guid: 3b414d9b9b56e9841b1e9378e0767686, type: 2}
+  nextNode: []
 --- !u!114 &6984970888826348028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,7 +339,7 @@ MonoBehaviour:
   m_Name: Moveset Attack
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 360, y: 472}
+  position: {x: 344, y: 712}
   ports:
     keys:
     - lastNode
@@ -272,7 +374,7 @@ MonoBehaviour:
     - inputType: 0
       buttonID: 3
       stickDirection: {x: 0, y: 0}
-      directionDeviation: 0
+      directionDeviation: 0.9
     sequenceWindow: 8
     sequenceInputs: []
   attackDefinition: {fileID: 11400000, guid: 3769cdcf98e521b4ea509fdf35d3b9a5, type: 2}
@@ -287,7 +389,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5cf4d5189da6b334e93745642899b7ca, type: 3}
-  m_Name: Ground_AA
+  m_Name: Combo A (AA)
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
   position: {x: 88, y: -72}
@@ -338,10 +440,10 @@ MonoBehaviour:
     - inputType: 0
       buttonID: 3
       stickDirection: {x: 0, y: 0}
-      directionDeviation: 0
+      directionDeviation: 0.9
     sequenceWindow: 8
     sequenceInputs: []
-  attackDefinition: {fileID: 11400000, guid: 2e0abd68fbe37d246b9fe3a7446475be, type: 2}
+  attackDefinition: {fileID: 11400000, guid: b9cf44b696c953b40a7ed6d1e516910b, type: 2}
   nextNode:
   - cancelWindow: {x: 10, y: 60}
     node: {fileID: 7879068164077439251}
@@ -355,7 +457,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5cf4d5189da6b334e93745642899b7ca, type: 3}
-  m_Name: Grond_AAA
+  m_Name: Combo A (AAA)
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
   position: {x: 344, y: -72}
@@ -363,6 +465,7 @@ MonoBehaviour:
     keys:
     - lastNode
     - nextNode
+    - nextNode 0
     values:
     - _fieldName: lastNode
       _node: {fileID: 7879068164077439251}
@@ -386,6 +489,18 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: nextNode 0
+      _node: {fileID: 7879068164077439251}
+      _typeQualifiedName: CAF.Combat.MovesetAttackNode+nextNodeDefinition, CAF, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: lastNode
+        node: {fileID: -7301761618268684859}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
   lastNode: {fileID: 7489305346470690819}
   inputSequence:
     executeWindow: 3
@@ -393,11 +508,13 @@ MonoBehaviour:
     - inputType: 0
       buttonID: 3
       stickDirection: {x: 0, y: 0}
-      directionDeviation: 0
+      directionDeviation: 0.9
     sequenceWindow: 8
     sequenceInputs: []
-  attackDefinition: {fileID: 11400000, guid: 70e3e4c4a9abb8a4fac77a6ca3d3dc29, type: 2}
-  nextNode: []
+  attackDefinition: {fileID: 11400000, guid: eb883a81e54b5374a884a11fbf12647f, type: 2}
+  nextNode:
+  - cancelWindow: {x: 9, y: 60}
+    node: {fileID: -7301761618268684859}
 --- !u!114 &8357619711189707542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -408,7 +525,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5cf4d5189da6b334e93745642899b7ca, type: 3}
-  m_Name: Ground_Up+A
+  m_Name: Launcher A
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
   position: {x: -168, y: -520}
@@ -443,12 +560,12 @@ MonoBehaviour:
     - inputType: 0
       buttonID: 3
       stickDirection: {x: 0, y: 0}
-      directionDeviation: 0
+      directionDeviation: 0.9
     sequenceWindow: 8
     sequenceInputs:
     - inputType: 1
       buttonID: 0
       stickDirection: {x: 0, y: 1}
-      directionDeviation: 0.85
-  attackDefinition: {fileID: 0}
+      directionDeviation: 0.9
+  attackDefinition: {fileID: 11400000, guid: b14ced946c397f744adeb1815ddcaedc, type: 2}
   nextNode: []

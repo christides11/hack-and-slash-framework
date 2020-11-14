@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b727ab7513f07da4ab8ca7d2f6d52cc9, type: 3}
-  m_Name: Ground A
+  m_Name: Combo A (AAA)
   m_EditorClassIdentifier: 
-  attackName: Ground A
+  attackName: Ground AAA
   description: 
   stateOverride: -1
   length: 25
@@ -28,9 +28,10 @@ MonoBehaviour:
   - id: 0
   boxGroups:
   - id: 1
-  events:
   - id: 2
+  events:
   - id: 3
+  - id: 4
   references:
     version: 1
     00000000:
@@ -45,16 +46,30 @@ MonoBehaviour:
       data:
         ID: 0
         activeFramesStart: 5
-        activeFramesEnd: 13
+        activeFramesEnd: 8
         hitGroupType: 0
         boxes:
-        - id: 4
+        - id: 5
         attachToEntity: 1
         chargeLevelNeeded: -1
         chargeLevelMax: 1
         hitboxHitInfo:
-          id: 5
+          id: 6
     00000002:
+      type: {class: BoxGroup, ns: CAF.Combat, asm: CAF}
+      data:
+        ID: 1
+        activeFramesStart: 10
+        activeFramesEnd: 13
+        hitGroupType: 0
+        boxes:
+        - id: 7
+        attachToEntity: 1
+        chargeLevelNeeded: -1
+        chargeLevelMax: 1
+        hitboxHitInfo:
+          id: 8
+    00000003:
       type: {class: AttackEventDefinition, ns: CAF.Combat, asm: CAF}
       data:
         nickname: High.Friction
@@ -64,7 +79,7 @@ MonoBehaviour:
         startFrame: 1
         endFrame: 4
         attackEvent:
-          id: 6
+          id: 9
         variables:
           intVars: 
           floatVars:
@@ -80,7 +95,7 @@ MonoBehaviour:
           sequenceWindow: 8
           sequenceInputs: []
         inputCheckProcessed: 0
-    00000003:
+    00000004:
       type: {class: AttackEventDefinition, ns: CAF.Combat, asm: CAF}
       data:
         nickname: Friction
@@ -90,7 +105,7 @@ MonoBehaviour:
         startFrame: 5
         endFrame: 35
         attackEvent:
-          id: 7
+          id: 10
         variables:
           intVars: 
           floatVars:
@@ -106,16 +121,16 @@ MonoBehaviour:
           sequenceWindow: 8
           sequenceInputs: []
         inputCheckProcessed: 0
-    00000004:
+    00000005:
       type: {class: BoxDefinition, ns: CAF.Combat, asm: CAF}
       data:
         shape: 0
-        offset: {x: 1, y: 0.5, z: 0}
-        size: {x: 3, y: 3, z: 0}
+        offset: {x: 1, y: 0, z: 0}
+        size: {x: 2, y: 1.5, z: 0}
         rotation: {x: 0, y: 0, z: 0}
         radius: 0
         height: 0
-    00000005:
+    00000006:
       type: {class: HitInfo, ns: CAF.Combat, asm: CAF}
       data:
         airOnly: 0
@@ -140,18 +155,58 @@ MonoBehaviour:
         damageOnHit: 0
         damageOnBlock: 0
         causesTumble: 0
-        opponentForceMagnitude: 0.1
+        opponentForceMagnitude: 0.05
         opponentForceDir: {x: 1, y: 0, z: 0}
         forceIncludeYForce: 0
         opponentMaxMagnitude: 1
         opponentMinMagnitude: 1
         throwConfirm: {fileID: 0}
-    00000006:
+    00000007:
+      type: {class: BoxDefinition, ns: CAF.Combat, asm: CAF}
+      data:
+        shape: 0
+        offset: {x: 1, y: 0, z: 0}
+        size: {x: 2, y: 1.5, z: 0}
+        rotation: {x: 0, y: 0, z: 0}
+        radius: 0
+        height: 0
+    00000008:
+      type: {class: HitInfo, ns: CAF.Combat, asm: CAF}
+      data:
+        airOnly: 0
+        groundOnly: 0
+        hitKills: 1
+        continuousHit: 0
+        spaceBetweenHits: 0
+        opponentResetXForce: 1
+        opponentResetYForce: 1
+        attackerHitstop: 4
+        hitstop: 4
+        hitstun: 30
+        forceType: 0
+        forceRelation: 0
+        breakArmor: 0
+        unblockable: 0
+        knockdown: 0
+        groundBounces: 0
+        groundBounceForce: 0
+        wallBounces: 0
+        wallBounceForce: 0
+        damageOnHit: 0
+        damageOnBlock: 0
+        causesTumble: 0
+        opponentForceMagnitude: 0.05
+        opponentForceDir: {x: 1, y: 0, z: 0}
+        forceIncludeYForce: 0
+        opponentMaxMagnitude: 1
+        opponentMinMagnitude: 1
+        throwConfirm: {fileID: 0}
+    00000009:
       type: {class: ApplyFriction, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
         xFriction: 1
         yFriction: 0
-    00000007:
+    0000000A:
       type: {class: ApplyFriction, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
         xFriction: 1

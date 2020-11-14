@@ -526,8 +526,17 @@ namespace CAF.Combat
             EditorGUI.indentLevel++;
             if(attack.events[eventSelected].inputCheckTiming != AttackEventInputCheckTiming.NONE)
             {
+                SerializedObject serializedObject = new UnityEditor.SerializedObject(attack);
+                serializedObject.Update();
                 attack.events[eventSelected].inputCheckStartFrame = (uint)EditorGUILayout.IntField("Start Frame", (int)attack.events[eventSelected].inputCheckStartFrame);
                 attack.events[eventSelected].inputCheckEndFrame = (uint)EditorGUILayout.IntField("End Frame", (int)attack.events[eventSelected].inputCheckEndFrame);
+                EditorGUILayout.Space();
+                EditorGUILayout.LabelField("Input");
+                attack.events[eventSelected].input.DrawInspector(
+                    serializedObject.FindProperty("events").GetArrayElementAtIndex(eventSelected).FindPropertyRelative("input").FindPropertyRelative("executeInputs"),
+                    serializedObject.FindProperty("events").GetArrayElementAtIndex(eventSelected).FindPropertyRelative("input").FindPropertyRelative("sequenceInputs")
+                    );
+                serializedObject.ApplyModifiedProperties();
             }
             EditorGUI.indentLevel--;
 

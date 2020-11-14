@@ -195,7 +195,7 @@ namespace CAF.Entities
             return null;
         }
 
-        public virtual bool CheckForInputSequence(InputSequence sequence)
+        public virtual bool CheckForInputSequence(InputSequence sequence, bool processSequenceButtons = false, bool holdInput = false)
         {
             int currentOffset = 0;
             // Check execute button(s)
@@ -228,7 +228,11 @@ namespace CAF.Entities
 
             if (sequence.executeInputs.Count <= 0)
             {
-                pressedExecuteInputs = false;
+                currentOffset++;
+                if (!processSequenceButtons)
+                {
+                    pressedExecuteInputs = false;
+                }
             }
             // We did not press the buttons required for this move.
             if (!pressedExecuteInputs)
@@ -241,8 +245,6 @@ namespace CAF.Entities
             {
                 manager.InputManager.ClearBuffer(sequence.executeInputs[a].buttonID);
             }
-
-            currentOffset++;
             // Check sequence button(s).
             bool pressedSequenceButtons = true;
             for (int s = 0; s < sequence.sequenceInputs.Count; s++)
@@ -270,7 +272,8 @@ namespace CAF.Entities
                         bool foundButton = false;
                         for (int f = currentOffset; f < currentOffset + sequence.sequenceWindow; f++)
                         {
-                            if (manager.InputManager.GetButton(sequence.sequenceInputs[s].buttonID, out int gotOffset, f, false).firstPress)
+                            if ( (!holdInput && manager.InputManager.GetButton(sequence.sequenceInputs[s].buttonID, out int gotOffset, f, false).firstPress)
+                                || (holdInput && manager.InputManager.GetButton(sequence.sequenceInputs[s].buttonID, out int gotOffsetTwo, f, false).isDown) )
                             {
                                 foundButton = true;
                                 currentOffset = f;

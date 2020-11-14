@@ -1,0 +1,158 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b727ab7513f07da4ab8ca7d2f6d52cc9, type: 3}
+  m_Name: Combo A (AA)
+  m_EditorClassIdentifier: 
+  attackName: Ground AA
+  description: 
+  stateOverride: -1
+  length: 25
+  animationGround: {fileID: 0}
+  animationAir: {fileID: 0}
+  wrapMode: 0
+  jumpCancelWindows:
+  - {x: 6, y: 100}
+  enemyStepWindows: []
+  landCancelWindows: []
+  commandAttackCancelWindows: []
+  chargeWindows:
+  - id: 0
+  boxGroups:
+  - id: 1
+  events:
+  - id: 2
+  - id: 3
+  references:
+    version: 1
+    00000000:
+      type: {class: ChargeDefinition, ns: CAF.Combat, asm: CAF}
+      data:
+        frame: 4
+        releaseOnCompletion: 0
+        chargeLevels:
+        - maxChargeFrames: 30
+    00000001:
+      type: {class: BoxGroup, ns: CAF.Combat, asm: CAF}
+      data:
+        ID: 0
+        activeFramesStart: 5
+        activeFramesEnd: 13
+        hitGroupType: 0
+        boxes:
+        - id: 4
+        attachToEntity: 1
+        chargeLevelNeeded: -1
+        chargeLevelMax: 1
+        hitboxHitInfo:
+          id: 5
+    00000002:
+      type: {class: AttackEventDefinition, ns: CAF.Combat, asm: CAF}
+      data:
+        nickname: High.Friction
+        active: 1
+        onHit: 0
+        onHitHitboxGroup: 0
+        startFrame: 1
+        endFrame: 4
+        attackEvent:
+          id: 6
+        variables:
+          intVars: 
+          floatVars:
+          - 0.013
+          objectVars: []
+          curveVars: []
+        inputCheckTiming: 0
+        inputCheckStartFrame: 1
+        inputCheckEndFrame: 1
+        input:
+          executeWindow: 3
+          executeInputs: []
+          sequenceWindow: 8
+          sequenceInputs: []
+        inputCheckProcessed: 0
+    00000003:
+      type: {class: AttackEventDefinition, ns: CAF.Combat, asm: CAF}
+      data:
+        nickname: Friction
+        active: 1
+        onHit: 0
+        onHitHitboxGroup: 0
+        startFrame: 5
+        endFrame: 35
+        attackEvent:
+          id: 7
+        variables:
+          intVars: 
+          floatVars:
+          - 0.005
+          objectVars: []
+          curveVars: []
+        inputCheckTiming: 0
+        inputCheckStartFrame: 1
+        inputCheckEndFrame: 1
+        input:
+          executeWindow: 3
+          executeInputs: []
+          sequenceWindow: 8
+          sequenceInputs: []
+        inputCheckProcessed: 0
+    00000004:
+      type: {class: BoxDefinition, ns: CAF.Combat, asm: CAF}
+      data:
+        shape: 0
+        offset: {x: 1, y: 0.5, z: 0}
+        size: {x: 3, y: 3, z: 0}
+        rotation: {x: 0, y: 0, z: 0}
+        radius: 0
+        height: 0
+    00000005:
+      type: {class: HitInfo, ns: CAF.Combat, asm: CAF}
+      data:
+        airOnly: 0
+        groundOnly: 0
+        hitKills: 1
+        continuousHit: 0
+        spaceBetweenHits: 0
+        opponentResetXForce: 1
+        opponentResetYForce: 1
+        attackerHitstop: 4
+        hitstop: 4
+        hitstun: 30
+        forceType: 0
+        forceRelation: 0
+        breakArmor: 0
+        unblockable: 0
+        knockdown: 0
+        groundBounces: 0
+        groundBounceForce: 0
+        wallBounces: 0
+        wallBounceForce: 0
+        damageOnHit: 0
+        damageOnBlock: 0
+        causesTumble: 0
+        opponentForceMagnitude: 0.05
+        opponentForceDir: {x: 1, y: 0, z: 0}
+        forceIncludeYForce: 0
+        opponentMaxMagnitude: 1
+        opponentMinMagnitude: 1
+        throwConfirm: {fileID: 0}
+    00000006:
+      type: {class: ApplyFriction, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
+      data:
+        xFriction: 1
+        yFriction: 0
+    00000007:
+      type: {class: ApplyFriction, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
+      data:
+        xFriction: 1
+        yFriction: 0
