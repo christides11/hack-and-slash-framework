@@ -1,3 +1,11 @@
+# [6.1.0](https://github.com/christides11/Character-Action-Framework/compare/v6.0.0...v6.1.0) (2020-11-14)
+
+
+### Features
+
+* Added event for max attack charge reached per level. ([5f0e8ee](https://github.com/christides11/Character-Action-Framework/commit/5f0e8ee5a1f06155d4131d0724afae50936b0ae8))
+* Inpector code for InputDefinition & InputSequence. ([56cdec2](https://github.com/christides11/Character-Action-Framework/commit/56cdec20b895c3da1682af6b15bb13495cb74968))
+
 # [6.0.0](https://github.com/christides11/Character-Action-Framework/compare/v5.0.0...v6.0.0) (2020-10-31)
 
 
