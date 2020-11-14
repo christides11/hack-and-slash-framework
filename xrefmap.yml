@@ -2563,12 +2563,12 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityCombatManager.CheckCurrentAttackCancelWindows
   nameWithType: EntityCombatManager.CheckCurrentAttackCancelWindows
-- uid: CAF.Entities.EntityCombatManager.CheckForInputSequence(CAF.Input.InputSequence)
-  name: CheckForInputSequence(InputSequence)
-  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_CheckForInputSequence_CAF_Input_InputSequence_
-  commentId: M:CAF.Entities.EntityCombatManager.CheckForInputSequence(CAF.Input.InputSequence)
-  fullName: CAF.Entities.EntityCombatManager.CheckForInputSequence(CAF.Input.InputSequence)
-  nameWithType: EntityCombatManager.CheckForInputSequence(InputSequence)
+- uid: CAF.Entities.EntityCombatManager.CheckForInputSequence(CAF.Input.InputSequence,System.Boolean,System.Boolean)
+  name: CheckForInputSequence(InputSequence, Boolean, Boolean)
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_CheckForInputSequence_CAF_Input_InputSequence_System_Boolean_System_Boolean_
+  commentId: M:CAF.Entities.EntityCombatManager.CheckForInputSequence(CAF.Input.InputSequence,System.Boolean,System.Boolean)
+  fullName: CAF.Entities.EntityCombatManager.CheckForInputSequence(CAF.Input.InputSequence, System.Boolean, System.Boolean)
+  nameWithType: EntityCombatManager.CheckForInputSequence(InputSequence, Boolean, Boolean)
 - uid: CAF.Entities.EntityCombatManager.CheckForInputSequence*
   name: CheckForInputSequence
   href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_CheckForInputSequence_
@@ -2763,12 +2763,12 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityCombatManager.Hurt
   nameWithType: EntityCombatManager.Hurt
-- uid: CAF.Entities.EntityCombatManager.IncrementChargeLevelCharge
-  name: IncrementChargeLevelCharge()
-  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_IncrementChargeLevelCharge
-  commentId: M:CAF.Entities.EntityCombatManager.IncrementChargeLevelCharge
-  fullName: CAF.Entities.EntityCombatManager.IncrementChargeLevelCharge()
-  nameWithType: EntityCombatManager.IncrementChargeLevelCharge()
+- uid: CAF.Entities.EntityCombatManager.IncrementChargeLevelCharge(System.Int32)
+  name: IncrementChargeLevelCharge(Int32)
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_IncrementChargeLevelCharge_System_Int32_
+  commentId: M:CAF.Entities.EntityCombatManager.IncrementChargeLevelCharge(System.Int32)
+  fullName: CAF.Entities.EntityCombatManager.IncrementChargeLevelCharge(System.Int32)
+  nameWithType: EntityCombatManager.IncrementChargeLevelCharge(Int32)
 - uid: CAF.Entities.EntityCombatManager.IncrementChargeLevelCharge*
   name: IncrementChargeLevelCharge
   href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_IncrementChargeLevelCharge_
@@ -2813,6 +2813,12 @@ references:
   commentId: E:CAF.Entities.EntityCombatManager.OnChargeLevelChargeChanged
   fullName: CAF.Entities.EntityCombatManager.OnChargeLevelChargeChanged
   nameWithType: EntityCombatManager.OnChargeLevelChargeChanged
+- uid: CAF.Entities.EntityCombatManager.OnChargeLevelChargeMaxReached
+  name: OnChargeLevelChargeMaxReached
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_OnChargeLevelChargeMaxReached
+  commentId: E:CAF.Entities.EntityCombatManager.OnChargeLevelChargeMaxReached
+  fullName: CAF.Entities.EntityCombatManager.OnChargeLevelChargeMaxReached
+  nameWithType: EntityCombatManager.OnChargeLevelChargeMaxReached
 - uid: CAF.Entities.EntityCombatManager.OnEnterHitStop
   name: OnEnterHitStop
   href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_OnEnterHitStop
@@ -4027,6 +4033,19 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityPhysicsManagerBase.CheckIfGrounded
   nameWithType: EntityPhysicsManagerBase.CheckIfGrounded
+- uid: CAF.Entities.EntityPhysicsManagerBase.Freeze
+  name: Freeze()
+  href: api/CAF.Entities.EntityPhysicsManagerBase.html#CAF_Entities_EntityPhysicsManagerBase_Freeze
+  commentId: M:CAF.Entities.EntityPhysicsManagerBase.Freeze
+  fullName: CAF.Entities.EntityPhysicsManagerBase.Freeze()
+  nameWithType: EntityPhysicsManagerBase.Freeze()
+- uid: CAF.Entities.EntityPhysicsManagerBase.Freeze*
+  name: Freeze
+  href: api/CAF.Entities.EntityPhysicsManagerBase.html#CAF_Entities_EntityPhysicsManagerBase_Freeze_
+  commentId: Overload:CAF.Entities.EntityPhysicsManagerBase.Freeze
+  isSpec: "True"
+  fullName: CAF.Entities.EntityPhysicsManagerBase.Freeze
+  nameWithType: EntityPhysicsManagerBase.Freeze
 - uid: CAF.Entities.EntityPhysicsManagerBase.manager
   name: manager
   href: api/CAF.Entities.EntityPhysicsManagerBase.html#CAF_Entities_EntityPhysicsManagerBase_manager
@@ -4517,6 +4536,19 @@ references:
   commentId: F:CAF.Input.InputDefinition.directionDeviation
   fullName: CAF.Input.InputDefinition.directionDeviation
   nameWithType: InputDefinition.directionDeviation
+- uid: CAF.Input.InputDefinition.DrawInspector
+  name: DrawInspector()
+  href: api/CAF.Input.InputDefinition.html#CAF_Input_InputDefinition_DrawInspector
+  commentId: M:CAF.Input.InputDefinition.DrawInspector
+  fullName: CAF.Input.InputDefinition.DrawInspector()
+  nameWithType: InputDefinition.DrawInspector()
+- uid: CAF.Input.InputDefinition.DrawInspector*
+  name: DrawInspector
+  href: api/CAF.Input.InputDefinition.html#CAF_Input_InputDefinition_DrawInspector_
+  commentId: Overload:CAF.Input.InputDefinition.DrawInspector
+  isSpec: "True"
+  fullName: CAF.Input.InputDefinition.DrawInspector
+  nameWithType: InputDefinition.DrawInspector
 - uid: CAF.Input.InputDefinition.inputType
   name: inputType
   href: api/CAF.Input.InputDefinition.html#CAF_Input_InputDefinition_inputType
@@ -4878,6 +4910,19 @@ references:
   commentId: T:CAF.Input.InputSequence
   fullName: CAF.Input.InputSequence
   nameWithType: InputSequence
+- uid: CAF.Input.InputSequence.DrawInspector(SerializedProperty,SerializedProperty)
+  name: DrawInspector(SerializedProperty, SerializedProperty)
+  href: api/CAF.Input.InputSequence.html#CAF_Input_InputSequence_DrawInspector_SerializedProperty_SerializedProperty_
+  commentId: M:CAF.Input.InputSequence.DrawInspector(SerializedProperty,SerializedProperty)
+  fullName: CAF.Input.InputSequence.DrawInspector(SerializedProperty, SerializedProperty)
+  nameWithType: InputSequence.DrawInspector(SerializedProperty, SerializedProperty)
+- uid: CAF.Input.InputSequence.DrawInspector*
+  name: DrawInspector
+  href: api/CAF.Input.InputSequence.html#CAF_Input_InputSequence_DrawInspector_
+  commentId: Overload:CAF.Input.InputSequence.DrawInspector
+  isSpec: "True"
+  fullName: CAF.Input.InputSequence.DrawInspector
+  nameWithType: InputSequence.DrawInspector
 - uid: CAF.Input.InputSequence.executeInputs
   name: executeInputs
   href: api/CAF.Input.InputSequence.html#CAF_Input_InputSequence_executeInputs
