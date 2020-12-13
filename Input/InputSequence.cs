@@ -21,7 +21,7 @@ namespace CAF.Input
         [NonSerialized] private bool sequenceWindowFoldout = false;
 #endif
 
-        public virtual void DrawInspector(SerializedProperty executeInputsProperty, SerializedProperty sequenceInputsProperty)
+        public virtual void DrawInspector()
         {
 #if UNITY_EDITOR
             executeWindow = EditorGUILayout.IntField("Execute Window", executeWindow);

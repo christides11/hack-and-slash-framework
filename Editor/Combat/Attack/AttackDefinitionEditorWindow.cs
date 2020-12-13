@@ -532,10 +532,11 @@ namespace CAF.Combat
                 attack.events[eventSelected].inputCheckEndFrame = (uint)EditorGUILayout.IntField("End Frame", (int)attack.events[eventSelected].inputCheckEndFrame);
                 EditorGUILayout.Space();
                 EditorGUILayout.LabelField("Input");
-                attack.events[eventSelected].input.DrawInspector(
+                /*attack.events[eventSelected].input.DrawInspector(
                     serializedObject.FindProperty("events").GetArrayElementAtIndex(eventSelected).FindPropertyRelative("input").FindPropertyRelative("executeInputs"),
                     serializedObject.FindProperty("events").GetArrayElementAtIndex(eventSelected).FindPropertyRelative("input").FindPropertyRelative("sequenceInputs")
-                    );
+                    );*/
+                attack.events[eventSelected].input.DrawInspector();
                 serializedObject.ApplyModifiedProperties();
             }
             EditorGUI.indentLevel--;
