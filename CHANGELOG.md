@@ -1,3 +1,10 @@
+# [6.2.0](https://github.com/christides11/Character-Action-Framework/compare/v6.1.0...v6.2.0) (2020-12-13)
+
+
+### Features
+
+* Upgraded to 2019.4.15f1, Fixed build error. ([399d070](https://github.com/christides11/Character-Action-Framework/commit/399d070c714fef07ca0856cb4969353af9c57359))
+
 # [6.1.0](https://github.com/christides11/Character-Action-Framework/compare/v6.0.0...v6.1.0) (2020-11-14)
 
 
