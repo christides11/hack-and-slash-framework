@@ -4910,12 +4910,12 @@ references:
   commentId: T:CAF.Input.InputSequence
   fullName: CAF.Input.InputSequence
   nameWithType: InputSequence
-- uid: CAF.Input.InputSequence.DrawInspector(SerializedProperty,SerializedProperty)
-  name: DrawInspector(SerializedProperty, SerializedProperty)
-  href: api/CAF.Input.InputSequence.html#CAF_Input_InputSequence_DrawInspector_SerializedProperty_SerializedProperty_
-  commentId: M:CAF.Input.InputSequence.DrawInspector(SerializedProperty,SerializedProperty)
-  fullName: CAF.Input.InputSequence.DrawInspector(SerializedProperty, SerializedProperty)
-  nameWithType: InputSequence.DrawInspector(SerializedProperty, SerializedProperty)
+- uid: CAF.Input.InputSequence.DrawInspector
+  name: DrawInspector()
+  href: api/CAF.Input.InputSequence.html#CAF_Input_InputSequence_DrawInspector
+  commentId: M:CAF.Input.InputSequence.DrawInspector
+  fullName: CAF.Input.InputSequence.DrawInspector()
+  nameWithType: InputSequence.DrawInspector()
 - uid: CAF.Input.InputSequence.DrawInspector*
   name: DrawInspector
   href: api/CAF.Input.InputSequence.html#CAF_Input_InputSequence_DrawInspector_
