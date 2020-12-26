@@ -1204,6 +1204,15 @@ references:
   fullName.vb: CAF.Combat.Hitbox2D.Initialize(GameObject, Transform, System.Int32, CAF.Combat.BoxShapes, CAF.Combat.HitInfoBase, CAF.Combat.BoxDefinitionBase, System.Collections.Generic.List(Of CAF.Combat.IHurtable))
   nameWithType: Hitbox2D.Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinitionBase, List<IHurtable>)
   nameWithType.vb: Hitbox2D.Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinitionBase, List(Of IHurtable))
+- uid: CAF.Combat.Hitbox2D.Initialize(GameObject,Transform,System.Int32,CAF.Combat.HitInfoBase,System.Collections.Generic.List{CAF.Combat.IHurtable})
+  name: Initialize(GameObject, Transform, Int32, HitInfoBase, List<IHurtable>)
+  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_Initialize_GameObject_Transform_System_Int32_CAF_Combat_HitInfoBase_System_Collections_Generic_List_CAF_Combat_IHurtable__
+  commentId: M:CAF.Combat.Hitbox2D.Initialize(GameObject,Transform,System.Int32,CAF.Combat.HitInfoBase,System.Collections.Generic.List{CAF.Combat.IHurtable})
+  name.vb: Initialize(GameObject, Transform, Int32, HitInfoBase, List(Of IHurtable))
+  fullName: CAF.Combat.Hitbox2D.Initialize(GameObject, Transform, System.Int32, CAF.Combat.HitInfoBase, System.Collections.Generic.List<CAF.Combat.IHurtable>)
+  fullName.vb: CAF.Combat.Hitbox2D.Initialize(GameObject, Transform, System.Int32, CAF.Combat.HitInfoBase, System.Collections.Generic.List(Of CAF.Combat.IHurtable))
+  nameWithType: Hitbox2D.Initialize(GameObject, Transform, Int32, HitInfoBase, List<IHurtable>)
+  nameWithType.vb: Hitbox2D.Initialize(GameObject, Transform, Int32, HitInfoBase, List(Of IHurtable))
 - uid: CAF.Combat.Hitbox2D.Initialize*
   name: Initialize
   href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_Initialize_
@@ -1365,6 +1374,15 @@ references:
   fullName.vb: CAF.Combat.Hitbox3D.Initialize(GameObject, Transform, System.Int32, CAF.Combat.BoxShapes, CAF.Combat.HitInfoBase, CAF.Combat.BoxDefinitionBase, System.Collections.Generic.List(Of CAF.Combat.IHurtable))
   nameWithType: Hitbox3D.Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinitionBase, List<IHurtable>)
   nameWithType.vb: Hitbox3D.Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinitionBase, List(Of IHurtable))
+- uid: CAF.Combat.Hitbox3D.Initialize(GameObject,Transform,System.Int32,CAF.Combat.HitInfoBase,System.Collections.Generic.List{CAF.Combat.IHurtable})
+  name: Initialize(GameObject, Transform, Int32, HitInfoBase, List<IHurtable>)
+  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_Initialize_GameObject_Transform_System_Int32_CAF_Combat_HitInfoBase_System_Collections_Generic_List_CAF_Combat_IHurtable__
+  commentId: M:CAF.Combat.Hitbox3D.Initialize(GameObject,Transform,System.Int32,CAF.Combat.HitInfoBase,System.Collections.Generic.List{CAF.Combat.IHurtable})
+  name.vb: Initialize(GameObject, Transform, Int32, HitInfoBase, List(Of IHurtable))
+  fullName: CAF.Combat.Hitbox3D.Initialize(GameObject, Transform, System.Int32, CAF.Combat.HitInfoBase, System.Collections.Generic.List<CAF.Combat.IHurtable>)
+  fullName.vb: CAF.Combat.Hitbox3D.Initialize(GameObject, Transform, System.Int32, CAF.Combat.HitInfoBase, System.Collections.Generic.List(Of CAF.Combat.IHurtable))
+  nameWithType: Hitbox3D.Initialize(GameObject, Transform, Int32, HitInfoBase, List<IHurtable>)
+  nameWithType.vb: Hitbox3D.Initialize(GameObject, Transform, Int32, HitInfoBase, List(Of IHurtable))
 - uid: CAF.Combat.Hitbox3D.Initialize*
   name: Initialize
   href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_Initialize_
@@ -1514,6 +1532,15 @@ references:
   fullName.vb: CAF.Combat.HitboxBase.Initialize(GameObject, Transform, System.Int32, CAF.Combat.BoxShapes, CAF.Combat.HitInfoBase, CAF.Combat.BoxDefinitionBase, System.Collections.Generic.List(Of CAF.Combat.IHurtable))
   nameWithType: HitboxBase.Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinitionBase, List<IHurtable>)
   nameWithType.vb: HitboxBase.Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinitionBase, List(Of IHurtable))
+- uid: CAF.Combat.HitboxBase.Initialize(GameObject,Transform,System.Int32,CAF.Combat.HitInfoBase,System.Collections.Generic.List{CAF.Combat.IHurtable})
+  name: Initialize(GameObject, Transform, Int32, HitInfoBase, List<IHurtable>)
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_Initialize_GameObject_Transform_System_Int32_CAF_Combat_HitInfoBase_System_Collections_Generic_List_CAF_Combat_IHurtable__
+  commentId: M:CAF.Combat.HitboxBase.Initialize(GameObject,Transform,System.Int32,CAF.Combat.HitInfoBase,System.Collections.Generic.List{CAF.Combat.IHurtable})
+  name.vb: Initialize(GameObject, Transform, Int32, HitInfoBase, List(Of IHurtable))
+  fullName: CAF.Combat.HitboxBase.Initialize(GameObject, Transform, System.Int32, CAF.Combat.HitInfoBase, System.Collections.Generic.List<CAF.Combat.IHurtable>)
+  fullName.vb: CAF.Combat.HitboxBase.Initialize(GameObject, Transform, System.Int32, CAF.Combat.HitInfoBase, System.Collections.Generic.List(Of CAF.Combat.IHurtable))
+  nameWithType: HitboxBase.Initialize(GameObject, Transform, Int32, HitInfoBase, List<IHurtable>)
+  nameWithType.vb: HitboxBase.Initialize(GameObject, Transform, Int32, HitInfoBase, List(Of IHurtable))
 - uid: CAF.Combat.HitboxBase.Initialize*
   name: Initialize
   href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_Initialize_

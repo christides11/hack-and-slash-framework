@@ -292,7 +292,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.Hitbox2D.html",
-          "hash": "khTFqOSy1t/mFqB195h2FA=="
+          "hash": "Mf91m3MUzdiCg7MOsodPUg=="
         }
       },
       "is_incremental": false,
@@ -304,7 +304,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.Hitbox3D.html",
-          "hash": "1DEuAdNeZfurAQOq+d5JQg=="
+          "hash": "oxU7tSplyoxG9hYt7ULJ3A=="
         }
       },
       "is_incremental": false,
@@ -328,7 +328,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.HitboxBase.html",
-          "hash": "0bjaXzJKKB0Fk1Y64RGUIw=="
+          "hash": "IDCprgx85XUeEl00rqwEgQ=="
         }
       },
       "is_incremental": false,
