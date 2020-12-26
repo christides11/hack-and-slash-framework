@@ -18,6 +18,8 @@ namespace CAF.Combat
         public List<GameObject> hitHurtables = new List<GameObject>();
 
         public abstract void Initialize(GameObject owner, Transform directionOwner, int team,
+            HitInfoBase hitInfo, List<IHurtable> ignoreList = null);
+        public abstract void Initialize(GameObject owner, Transform directionOwner, int team,
             BoxShapes shape, HitInfoBase hitInfo, BoxDefinitionBase boxDefinition, List<IHurtable> ignoreList = null);
 
         public virtual void Activate()
