@@ -1,3 +1,10 @@
+# [6.3.0](https://github.com/christides11/Character-Action-Framework/compare/v6.2.0...v6.3.0) (2020-12-26)
+
+
+### Features
+
+* Initialize hitbox without creating hitbox. ([d4712e7](https://github.com/christides11/Character-Action-Framework/commit/d4712e7982a4b4e00f9f1d0ca56f1aa122bd1664))
+
 # [6.2.0](https://github.com/christides11/Character-Action-Framework/compare/v6.1.0...v6.2.0) (2020-12-13)
 
 
