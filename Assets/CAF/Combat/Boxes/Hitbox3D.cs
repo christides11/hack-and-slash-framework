@@ -7,15 +7,21 @@ namespace CAF.Combat
 {
     public class Hitbox3D : HitboxBase
     {
-        protected Collider coll;
+        [SerializeField] protected Collider coll;
 
-        public override void Initialize(GameObject owner, Transform directionOwner, int team, 
-            BoxShapes shape, HitInfoBase hitInfo, BoxDefinitionBase boxDefinitionBase, List<IHurtable> ignoreList = null)
+        public override void Initialize(GameObject owner, Transform directionOwner, int team,
+            HitInfoBase hitInfo, List<IHurtable> ignoreList = null)
         {
             this.owner = owner;
             this.directionOwner = directionOwner;
             this.ignoreList = ignoreList;
             this.hitInfo = hitInfo;
+        }
+
+        public override void Initialize(GameObject owner, Transform directionOwner, int team, 
+            BoxShapes shape, HitInfoBase hitInfo, BoxDefinitionBase boxDefinitionBase, List<IHurtable> ignoreList = null)
+        {
+            this.Initialize(owner, directionOwner, team, hitInfo, ignoreList);
 
             BoxDefinition boxDefinition = (BoxDefinition)boxDefinitionBase;
             switch (shape)
