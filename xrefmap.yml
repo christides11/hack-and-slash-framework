@@ -2751,6 +2751,12 @@ references:
   commentId: F:CAF.Entities.EntityCombatManager.hitboxManager
   fullName: CAF.Entities.EntityCombatManager.hitboxManager
   nameWithType: EntityCombatManager.hitboxManager
+- uid: CAF.Entities.EntityCombatManager.hitstop
+  name: hitstop
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_hitstop
+  commentId: F:CAF.Entities.EntityCombatManager.hitstop
+  fullName: CAF.Entities.EntityCombatManager.hitstop
+  nameWithType: EntityCombatManager.hitstop
 - uid: CAF.Entities.EntityCombatManager.HitStop
   name: HitStop
   href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_HitStop
@@ -2764,6 +2770,12 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityCombatManager.HitStop
   nameWithType: EntityCombatManager.HitStop
+- uid: CAF.Entities.EntityCombatManager.hitstun
+  name: hitstun
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_hitstun
+  commentId: F:CAF.Entities.EntityCombatManager.hitstun
+  fullName: CAF.Entities.EntityCombatManager.hitstun
+  nameWithType: EntityCombatManager.hitstun
 - uid: CAF.Entities.EntityCombatManager.HitStun
   name: HitStun
   href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_HitStun
