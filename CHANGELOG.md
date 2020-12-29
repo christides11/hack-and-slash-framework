@@ -1,3 +1,10 @@
+## [6.3.1](https://github.com/christides11/Character-Action-Framework/compare/v6.3.0...v6.3.1) (2020-12-29)
+
+
+### Bug Fixes
+
+* Created values for hitstun/hitstop. ([62b7445](https://github.com/christides11/Character-Action-Framework/commit/62b74454808019a44c8d1d261cc2ca3c896daaa0))
+
 # [6.3.0](https://github.com/christides11/Character-Action-Framework/compare/v6.2.0...v6.3.0) (2020-12-26)
 
 
