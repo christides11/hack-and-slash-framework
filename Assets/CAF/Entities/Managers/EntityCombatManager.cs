@@ -168,7 +168,7 @@ namespace CAF.Entities
             return null;
         }
 
-        protected virtual MovesetAttackNode CheckAttackNodes(ref List<MovesetAttackNode> nodes)
+        protected virtual MovesetAttackNode CheckAttackNodes<T>(ref List<T> nodes) where T : MovesetAttackNode
         {
             for (int i = 0; i < nodes.Count; i++)
             {
