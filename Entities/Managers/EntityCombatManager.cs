@@ -27,13 +27,16 @@ namespace CAF.Entities
         public event ChargeLevelChargeChangedAction OnChargeLevelChargeChanged;
         public event ChargeLevelChargeChangedAction OnChargeLevelChargeMaxReached;
 
-        public int HitStun { get; protected set; } = 0;
-        public int HitStop { get; protected set; } = 0;
+        public int HitStun { get { return hitstun; } set { hitstun = value; } }
+        public int HitStop { get { return hitstop; } set { hitstop = value; } }
         public int CurrentChargeLevel { get; protected set; } = 0;
         public int CurrentChargeLevelCharge { get; protected set; } = 0;
         public MovesetAttackNode CurrentAttack { get; protected set; } = null;
         public MovesetDefinition CurrentMoveset { get; protected set; } = null;
         public HitInfoBase LastHitBy { get; protected set; }
+
+        protected int hitstun = 0;
+        protected int hitstop;
 
         public EntityManager manager;
         public EntityHitboxManager hitboxManager;
