@@ -2561,15 +2561,6 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityCombatManager.CheckAttackNode
   nameWithType: EntityCombatManager.CheckAttackNode
-- uid: CAF.Entities.EntityCombatManager.CheckAttackNodes(System.Collections.Generic.List{CAF.Combat.MovesetAttackNode}@)
-  name: CheckAttackNodes(ref List<MovesetAttackNode>)
-  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_CheckAttackNodes_System_Collections_Generic_List_CAF_Combat_MovesetAttackNode___
-  commentId: M:CAF.Entities.EntityCombatManager.CheckAttackNodes(System.Collections.Generic.List{CAF.Combat.MovesetAttackNode}@)
-  name.vb: CheckAttackNodes(ByRef List(Of MovesetAttackNode))
-  fullName: CAF.Entities.EntityCombatManager.CheckAttackNodes(ref System.Collections.Generic.List<CAF.Combat.MovesetAttackNode>)
-  fullName.vb: CAF.Entities.EntityCombatManager.CheckAttackNodes(ByRef System.Collections.Generic.List(Of CAF.Combat.MovesetAttackNode))
-  nameWithType: EntityCombatManager.CheckAttackNodes(ref List<MovesetAttackNode>)
-  nameWithType.vb: EntityCombatManager.CheckAttackNodes(ByRef List(Of MovesetAttackNode))
 - uid: CAF.Entities.EntityCombatManager.CheckAttackNodes*
   name: CheckAttackNodes
   href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_CheckAttackNodes_
@@ -2577,6 +2568,15 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityCombatManager.CheckAttackNodes
   nameWithType: EntityCombatManager.CheckAttackNodes
+- uid: CAF.Entities.EntityCombatManager.CheckAttackNodes``1(System.Collections.Generic.List{``0}@)
+  name: CheckAttackNodes<T>(ref List<T>)
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_CheckAttackNodes__1_System_Collections_Generic_List___0___
+  commentId: M:CAF.Entities.EntityCombatManager.CheckAttackNodes``1(System.Collections.Generic.List{``0}@)
+  name.vb: CheckAttackNodes(Of T)(ByRef List(Of T))
+  fullName: CAF.Entities.EntityCombatManager.CheckAttackNodes<T>(ref System.Collections.Generic.List<T>)
+  fullName.vb: CAF.Entities.EntityCombatManager.CheckAttackNodes(Of T)(ByRef System.Collections.Generic.List(Of T))
+  nameWithType: EntityCombatManager.CheckAttackNodes<T>(ref List<T>)
+  nameWithType.vb: EntityCombatManager.CheckAttackNodes(Of T)(ByRef List(Of T))
 - uid: CAF.Entities.EntityCombatManager.CheckCurrentAttackCancelWindows
   name: CheckCurrentAttackCancelWindows()
   href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_CheckCurrentAttackCancelWindows
