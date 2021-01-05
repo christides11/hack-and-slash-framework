@@ -1,4 +1,5 @@
 ﻿using CAF.Simulation;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,6 +17,8 @@ namespace CAF.Combat
 
         public List<IHurtable> ignoreList = null;
         public List<GameObject> hitHurtables = new List<GameObject>();
+
+        public int team;
 
         public abstract void Initialize(GameObject owner, Transform directionOwner, int team,
             HitInfoBase hitInfo, List<IHurtable> ignoreList = null);
@@ -59,7 +62,8 @@ namespace CAF.Combat
                 for (int i = 0; i < hitHurtables.Count; i++)
                 {
                     IHurtable ih = hitHurtables[i].GetComponent<IHurtable>();
-                    if (ignoreList.Contains(ih))
+                    if (ignoreList.Contains(ih)
+                        || !ShouldHurt(ih))
                     {
                         continue;
                     }
@@ -68,6 +72,15 @@ namespace CAF.Combat
                     OnHurt?.Invoke(hitHurtables[i], hitInfo);
                 }
             }
+        }
+
+        protected virtual bool ShouldHurt(IHurtable ih)
+        {
+            if(ih.GetTeam() != team)
+            {
+                return true;
+            }
+            return false;
         }
 
         protected virtual void HurtHurtable(IHurtable ih)
