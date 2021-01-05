@@ -18,6 +18,7 @@ namespace CAF.Combat
             this.directionOwner = directionOwner;
             this.ignoreList = ignoreList;
             this.hitInfo = hitInfo;
+            this.team = team;
         }
 
         public override void Initialize(GameObject owner, Transform directionOwner, int team,
