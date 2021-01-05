@@ -1576,6 +1576,25 @@ references:
   isSpec: "True"
   fullName: CAF.Combat.HitboxBase.ReActivate
   nameWithType: HitboxBase.ReActivate
+- uid: CAF.Combat.HitboxBase.ShouldHurt(CAF.Combat.IHurtable)
+  name: ShouldHurt(IHurtable)
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_ShouldHurt_CAF_Combat_IHurtable_
+  commentId: M:CAF.Combat.HitboxBase.ShouldHurt(CAF.Combat.IHurtable)
+  fullName: CAF.Combat.HitboxBase.ShouldHurt(CAF.Combat.IHurtable)
+  nameWithType: HitboxBase.ShouldHurt(IHurtable)
+- uid: CAF.Combat.HitboxBase.ShouldHurt*
+  name: ShouldHurt
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_ShouldHurt_
+  commentId: Overload:CAF.Combat.HitboxBase.ShouldHurt
+  isSpec: "True"
+  fullName: CAF.Combat.HitboxBase.ShouldHurt
+  nameWithType: HitboxBase.ShouldHurt
+- uid: CAF.Combat.HitboxBase.team
+  name: team
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_team
+  commentId: F:CAF.Combat.HitboxBase.team
+  fullName: CAF.Combat.HitboxBase.team
+  nameWithType: HitboxBase.team
 - uid: CAF.Combat.HitboxForceRelation
   name: HitboxForceRelation
   href: api/CAF.Combat.HitboxForceRelation.html
