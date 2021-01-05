@@ -1,3 +1,10 @@
+# [6.4.0](https://github.com/christides11/Character-Action-Framework/compare/v6.3.1...v6.4.0) (2021-01-05)
+
+
+### Features
+
+* Hitboxes now properly have support for team detection. ([ee19f27](https://github.com/christides11/Character-Action-Framework/commit/ee19f2726ed4c4f69f98693d7ca45a2a0da1db1d))
+
 ## [6.3.1](https://github.com/christides11/Character-Action-Framework/compare/v6.3.0...v6.3.1) (2020-12-29)
 
 
