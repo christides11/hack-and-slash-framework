@@ -1,3 +1,15 @@
+# [8.0.0](https://github.com/christides11/Character-Action-Framework/compare/v7.0.0...v8.0.0) (2021-01-06)
+
+
+### Features
+
+* CheckForInputSequence offset support ([69243c2](https://github.com/christides11/Character-Action-Framework/commit/69243c2519b9cfe077edbd3b803cd2098b8cd5f8))
+
+
+### BREAKING CHANGES
+
+* CheckForInputSequence now has a baseOffset variable, allowing you to check for a sequences that weren't inputed recently.
+
 # [7.0.0](https://github.com/christides11/Character-Action-Framework/compare/v6.4.0...v7.0.0) (2021-01-06)
 
 
