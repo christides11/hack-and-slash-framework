@@ -10,7 +10,17 @@ namespace CAF.Camera
     /// </summary>
     public interface LookHandler
     {
-        void SetTarget(EntityManager entityTarget);
+        /// <summary>
+        /// Set the target that we should be tracking.
+        /// </summary>
+        /// <param name="target"></param>
+        void SetLookAtTarget(Transform target);
+
+        /// <summary>
+        /// Set the target that we should lock on to.
+        /// </summary>
+        /// <param name="entityTarget"></param>
+        void SetLockOnTarget(EntityManager entityTarget);
 
         /// <summary>
         /// Make the handler look in the given direction.
