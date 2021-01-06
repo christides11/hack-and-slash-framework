@@ -2622,12 +2622,12 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityCombatManager.CheckCurrentAttackCancelWindows
   nameWithType: EntityCombatManager.CheckCurrentAttackCancelWindows
-- uid: CAF.Entities.EntityCombatManager.CheckForInputSequence(CAF.Input.InputSequence,System.Boolean,System.Boolean)
-  name: CheckForInputSequence(InputSequence, Boolean, Boolean)
-  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_CheckForInputSequence_CAF_Input_InputSequence_System_Boolean_System_Boolean_
-  commentId: M:CAF.Entities.EntityCombatManager.CheckForInputSequence(CAF.Input.InputSequence,System.Boolean,System.Boolean)
-  fullName: CAF.Entities.EntityCombatManager.CheckForInputSequence(CAF.Input.InputSequence, System.Boolean, System.Boolean)
-  nameWithType: EntityCombatManager.CheckForInputSequence(InputSequence, Boolean, Boolean)
+- uid: CAF.Entities.EntityCombatManager.CheckForInputSequence(CAF.Input.InputSequence,System.Int32,System.Boolean,System.Boolean)
+  name: CheckForInputSequence(InputSequence, Int32, Boolean, Boolean)
+  href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_CheckForInputSequence_CAF_Input_InputSequence_System_Int32_System_Boolean_System_Boolean_
+  commentId: M:CAF.Entities.EntityCombatManager.CheckForInputSequence(CAF.Input.InputSequence,System.Int32,System.Boolean,System.Boolean)
+  fullName: CAF.Entities.EntityCombatManager.CheckForInputSequence(CAF.Input.InputSequence, System.Int32, System.Boolean, System.Boolean)
+  nameWithType: EntityCombatManager.CheckForInputSequence(InputSequence, Int32, Boolean, Boolean)
 - uid: CAF.Entities.EntityCombatManager.CheckForInputSequence*
   name: CheckForInputSequence
   href: api/CAF.Entities.EntityCombatManager.html#CAF_Entities_EntityCombatManager_CheckForInputSequence_

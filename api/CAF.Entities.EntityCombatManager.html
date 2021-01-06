@@ -437,7 +437,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityCombatManager_AddHitStop_System_Int32_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityCombatManager.AddHitStop(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L318">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L326">View Source</a>
   </span>
   <a id="CAF_Entities_EntityCombatManager_AddHitStop_" data-uid="CAF.Entities.EntityCombatManager.AddHitStop*"></a>
   <h4 id="CAF_Entities_EntityCombatManager_AddHitStop_System_Int32_" data-uid="CAF.Entities.EntityCombatManager.AddHitStop(System.Int32)">AddHitStop(Int32)</h4>
@@ -469,7 +469,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityCombatManager_AddHitStun_System_Int32_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityCombatManager.AddHitStun(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L330">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L338">View Source</a>
   </span>
   <a id="CAF_Entities_EntityCombatManager_AddHitStun_" data-uid="CAF.Entities.EntityCombatManager.AddHitStun*"></a>
   <h4 id="CAF_Entities_EntityCombatManager_AddHitStun_System_Int32_" data-uid="CAF.Entities.EntityCombatManager.AddHitStun(System.Int32)">AddHitStun(Int32)</h4>
@@ -653,18 +653,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityCombatManager_CheckForInputSequence_CAF_Input_InputSequence_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityCombatManager.CheckForInputSequence(CAF.Input.InputSequence%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityCombatManager_CheckForInputSequence_CAF_Input_InputSequence_System_Int32_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityCombatManager.CheckForInputSequence(CAF.Input.InputSequence%2CSystem.Int32%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L201">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L209">View Source</a>
   </span>
   <a id="CAF_Entities_EntityCombatManager_CheckForInputSequence_" data-uid="CAF.Entities.EntityCombatManager.CheckForInputSequence*"></a>
-  <h4 id="CAF_Entities_EntityCombatManager_CheckForInputSequence_CAF_Input_InputSequence_System_Boolean_System_Boolean_" data-uid="CAF.Entities.EntityCombatManager.CheckForInputSequence(CAF.Input.InputSequence,System.Boolean,System.Boolean)">CheckForInputSequence(InputSequence, Boolean, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="CAF_Entities_EntityCombatManager_CheckForInputSequence_CAF_Input_InputSequence_System_Int32_System_Boolean_System_Boolean_" data-uid="CAF.Entities.EntityCombatManager.CheckForInputSequence(CAF.Input.InputSequence,System.Int32,System.Boolean,System.Boolean)">CheckForInputSequence(InputSequence, Int32, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Checks to see if a given input sequence was inputted.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual bool CheckForInputSequence(InputSequence sequence, bool processSequenceButtons = false, bool holdInput = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual bool CheckForInputSequence(InputSequence sequence, int baseOffset = 0, bool processSequenceButtons = false, bool holdInput = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -679,17 +680,26 @@
       <tr>
         <td><a class="xref" href="CAF.Input.InputSequence.html">InputSequence</a></td>
         <td><span class="parametername">sequence</span></td>
-        <td></td>
+        <td><p>The sequence we&apos;re looking for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">baseOffset</span></td>
+        <td><p>How far back we want to start the sequence check. 0 = current frame, 1 = 1 frame back, etc.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><span class="parametername">processSequenceButtons</span></td>
-        <td></td>
+        <td><p>If the sequence buttons should be checked, even if the execute buttons were not pressed.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><span class="parametername">holdInput</span></td>
-        <td></td>
+        <td><p>If the sequence check should check for the buttons being held down instead of their first prcess.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -704,7 +714,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
+        <td><p>True if the input sequence was inputted.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -743,7 +754,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityCombatManager_CheckStickDirection_CAF_Input_InputDefinition_System_Int32_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityCombatManager.CheckStickDirection(CAF.Input.InputDefinition%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L306">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L314">View Source</a>
   </span>
   <a id="CAF_Entities_EntityCombatManager_CheckStickDirection_" data-uid="CAF.Entities.EntityCombatManager.CheckStickDirection*"></a>
   <h4 id="CAF_Entities_EntityCombatManager_CheckStickDirection_CAF_Input_InputDefinition_System_Int32_" data-uid="CAF.Entities.EntityCombatManager.CheckStickDirection(CAF.Input.InputDefinition,System.Int32)">CheckStickDirection(InputDefinition, Int32)</h4>
@@ -825,7 +836,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityCombatManager_GetTeam.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityCombatManager.GetTeam%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L380">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L388">View Source</a>
   </span>
   <a id="CAF_Entities_EntityCombatManager_GetTeam_" data-uid="CAF.Entities.EntityCombatManager.GetTeam*"></a>
   <h4 id="CAF_Entities_EntityCombatManager_GetTeam" data-uid="CAF.Entities.EntityCombatManager.GetTeam">GetTeam()</h4>
@@ -855,7 +866,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityCombatManager_Heal_CAF_Combat_HealInfoBase_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityCombatManager.Heal(CAF.Combat.HealInfoBase)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L375">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L383">View Source</a>
   </span>
   <a id="CAF_Entities_EntityCombatManager_Heal_" data-uid="CAF.Entities.EntityCombatManager.Heal*"></a>
   <h4 id="CAF_Entities_EntityCombatManager_Heal_CAF_Combat_HealInfoBase_" data-uid="CAF.Entities.EntityCombatManager.Heal(CAF.Combat.HealInfoBase)">Heal(HealInfoBase)</h4>
@@ -887,7 +898,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityCombatManager_Hurt_CAF_Combat_HurtInfoBase_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityCombatManager.Hurt(CAF.Combat.HurtInfoBase)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L367">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L375">View Source</a>
   </span>
   <a id="CAF_Entities_EntityCombatManager_Hurt_" data-uid="CAF.Entities.EntityCombatManager.Hurt*"></a>
   <h4 id="CAF_Entities_EntityCombatManager_Hurt_CAF_Combat_HurtInfoBase_" data-uid="CAF.Entities.EntityCombatManager.Hurt(CAF.Combat.HurtInfoBase)">Hurt(HurtInfoBase)</h4>
@@ -934,7 +945,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityCombatManager_IncrementChargeLevelCharge_System_Int32_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityCombatManager.IncrementChargeLevelCharge(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L357">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L365">View Source</a>
   </span>
   <a id="CAF_Entities_EntityCombatManager_IncrementChargeLevelCharge_" data-uid="CAF.Entities.EntityCombatManager.IncrementChargeLevelCharge*"></a>
   <h4 id="CAF_Entities_EntityCombatManager_IncrementChargeLevelCharge_System_Int32_" data-uid="CAF.Entities.EntityCombatManager.IncrementChargeLevelCharge(System.Int32)">IncrementChargeLevelCharge(Int32)</h4>
@@ -998,7 +1009,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityCombatManager_SetChargeLevel_System_Int32_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityCombatManager.SetChargeLevel(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L343">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L351">View Source</a>
   </span>
   <a id="CAF_Entities_EntityCombatManager_SetChargeLevel_" data-uid="CAF.Entities.EntityCombatManager.SetChargeLevel*"></a>
   <h4 id="CAF_Entities_EntityCombatManager_SetChargeLevel_System_Int32_" data-uid="CAF.Entities.EntityCombatManager.SetChargeLevel(System.Int32)">SetChargeLevel(Int32)</h4>
@@ -1030,7 +1041,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityCombatManager_SetChargeLevelCharge_System_Int32_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityCombatManager.SetChargeLevelCharge(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L350">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L358">View Source</a>
   </span>
   <a id="CAF_Entities_EntityCombatManager_SetChargeLevelCharge_" data-uid="CAF.Entities.EntityCombatManager.SetChargeLevelCharge*"></a>
   <h4 id="CAF_Entities_EntityCombatManager_SetChargeLevelCharge_System_Int32_" data-uid="CAF.Entities.EntityCombatManager.SetChargeLevelCharge(System.Int32)">SetChargeLevelCharge(Int32)</h4>
@@ -1062,7 +1073,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityCombatManager_SetHitStop_System_Int32_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityCombatManager.SetHitStop(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L312">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L320">View Source</a>
   </span>
   <a id="CAF_Entities_EntityCombatManager_SetHitStop_" data-uid="CAF.Entities.EntityCombatManager.SetHitStop*"></a>
   <h4 id="CAF_Entities_EntityCombatManager_SetHitStop_System_Int32_" data-uid="CAF.Entities.EntityCombatManager.SetHitStop(System.Int32)">SetHitStop(Int32)</h4>
@@ -1094,7 +1105,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityCombatManager_SetHitStun_System_Int32_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityCombatManager.SetHitStun(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L324">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L332">View Source</a>
   </span>
   <a id="CAF_Entities_EntityCombatManager_SetHitStun_" data-uid="CAF.Entities.EntityCombatManager.SetHitStun*"></a>
   <h4 id="CAF_Entities_EntityCombatManager_SetHitStun_System_Int32_" data-uid="CAF.Entities.EntityCombatManager.SetHitStun(System.Int32)">SetHitStun(Int32)</h4>
@@ -1126,7 +1137,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityCombatManager_SetMoveset_CAF_Combat_MovesetDefinition_.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityCombatManager.SetMoveset(CAF.Combat.MovesetDefinition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L336">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityCombatManager.cs/#L344">View Source</a>
   </span>
   <a id="CAF_Entities_EntityCombatManager_SetMoveset_" data-uid="CAF.Entities.EntityCombatManager.SetMoveset*"></a>
   <h4 id="CAF_Entities_EntityCombatManager_SetMoveset_CAF_Combat_MovesetDefinition_" data-uid="CAF.Entities.EntityCombatManager.SetMoveset(CAF.Combat.MovesetDefinition)">SetMoveset(MovesetDefinition)</h4>

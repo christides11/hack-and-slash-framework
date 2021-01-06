@@ -80,16 +80,11 @@
 <h1 id="setup">Setup</h1>
 
 <h2 id="implement-classes">Implement Classes</h2>
-<p>First, you should create scripts that inherit from the ones listed below. These classes contain methods that depend on your game, so it&#39;s important that you do this from the start. We&#39;ll talk about the specifics of these classes later on.</p>
+<p>First, you should create scripts that inherit from the ones listed below. These classes contain methods that you&#39;ll want to override depending on your game&#39;s needs, so it&#39;s important to do this now instead of potentially having to switch out the CAF component later.</p>
 <ul>
-<li>SimObjectManager</li>
-<li>EntityState</li>
-<li>EntityManager</li>
-<li>EntityCombatManager</li>
-<li>EntityHitboxManager</li>
-<li>EntityInputManager</li>
-<li>EntityPhysicsManager</li>
-<li>EntityStateManager</li>
+<li><a class="xref" href="../api/CAF.Simulation.SimObjectManager.html">SimObjectManager</a> </li>
+<li><a class="xref" href="../api/CAF.Entities.EntityState.html">EntityState</a></li>
+<li>Entity Managers (Basically anything under <a class="xref" href="../api/CAF.Entities.html">CAF.Entities</a>)</li>
 <li>AttackDefinition</li>
 <li>MovesetDefinition</li>
 </ul>
