@@ -1,3 +1,15 @@
+# [7.0.0](https://github.com/christides11/Character-Action-Framework/compare/v6.4.0...v7.0.0) (2021-01-06)
+
+
+### Features
+
+* Lookhandler methods for lockon and lookat targets. ([fcd8000](https://github.com/christides11/Character-Action-Framework/commit/fcd80000b91aa52edc1c4e866ab8a9afad696bbb))
+
+
+### BREAKING CHANGES
+
+* Renamed SetTarget to SetLockOnTarget to better reflect it's usage. Added SetLookAtTarget to set the target the camera will follow.
+
 # [6.4.0](https://github.com/christides11/Character-Action-Framework/compare/v6.3.1...v6.4.0) (2021-01-05)
 
 
