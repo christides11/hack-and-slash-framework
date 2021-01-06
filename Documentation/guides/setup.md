@@ -1,16 +1,11 @@
 # Setup
 
 ## Implement Classes
-First, you should create scripts that inherit from the ones listed below. These classes contain methods that depend on your game, so it's important that you do this from the start. We'll talk about the specifics of these classes later on.
+First, you should create scripts that inherit from the ones listed below. These classes contain methods that you'll want to override depending on your game's needs, so it's important to do this now instead of potentially having to switch out the CAF component later.
 
- - SimObjectManager
- - EntityState
- - EntityManager
- - EntityCombatManager
- - EntityHitboxManager
- - EntityInputManager
- - EntityPhysicsManager
- - EntityStateManager
+ - @CAF.Simulation.SimObjectManager 
+ - @CAF.Entities.EntityState
+ - Entity Managers (Basically anything under @"CAF.Entities")
  - AttackDefinition
  - MovesetDefinition
 

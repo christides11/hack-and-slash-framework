@@ -12,5 +12,5 @@ To install this framework with the package manager, use this URL (replacing vX.X
 https://github.com/christides11/Character-Action-Framework.git#upm/vX.X.X
 ```
 
-## Regular Asset
+## Download
 Download the repository (either by cloning it or downloading as a zip) and put the CAF folder in your project. Delete the Samples folder if you don't need it.

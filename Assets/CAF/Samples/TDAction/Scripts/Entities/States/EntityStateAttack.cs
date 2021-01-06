@@ -127,7 +127,7 @@ namespace TDAction.Entities.States
                         Debug.Log($"?{currentEvent.inputCheckProcessed}, ({currentEvent.input.executeInputs.Count})");
                         break;
                     case CAF.Combat.AttackEventInputCheckTiming.CONTINUOUS:
-                        currentEvent.inputCheckProcessed = e.CombatManager.CheckForInputSequence(currentEvent.input, true, true);
+                        currentEvent.inputCheckProcessed = e.CombatManager.CheckForInputSequence(currentEvent.input, 0, true, true);
                         break;
                 }
             }

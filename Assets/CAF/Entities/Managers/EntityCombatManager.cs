@@ -36,7 +36,7 @@ namespace CAF.Entities
         public HitInfoBase LastHitBy { get; protected set; }
 
         protected int hitstun = 0;
-        protected int hitstop;
+        protected int hitstop; 
 
         public EntityManager manager;
         public EntityHitboxManager hitboxManager;
@@ -198,7 +198,15 @@ namespace CAF.Entities
             return null;
         }
 
-        public virtual bool CheckForInputSequence(InputSequence sequence, bool processSequenceButtons = false, bool holdInput = false)
+        /// <summary>
+        /// Checks to see if a given input sequence was inputted.
+        /// </summary>
+        /// <param name="sequence">The sequence we're looking for.</param>
+        /// <param name="baseOffset">How far back we want to start the sequence check. 0 = current frame, 1 = 1 frame back, etc.</param>
+        /// <param name="processSequenceButtons">If the sequence buttons should be checked, even if the execute buttons were not pressed.</param>
+        /// <param name="holdInput">If the sequence check should check for the buttons being held down instead of their first prcess.</param>
+        /// <returns>True if the input sequence was inputted.</returns>
+        public virtual bool CheckForInputSequence(InputSequence sequence, int baseOffset = 0, bool processSequenceButtons = false, bool holdInput = false)
         {
             int currentOffset = 0;
             // Check execute button(s)
@@ -208,14 +216,14 @@ namespace CAF.Entities
                 switch (sequence.executeInputs[e].inputType)
                 {
                     case Input.InputDefinitionType.Stick:
-                        if (!CheckStickDirection(sequence.executeInputs[e], 0))
+                        if (!CheckStickDirection(sequence.executeInputs[e], baseOffset))
                         {
                             pressedExecuteInputs = false;
                             break;
                         }
                         break;
                     case Input.InputDefinitionType.Button:
-                        if (!manager.InputManager.GetButton(sequence.executeInputs[e].buttonID, out int gotOffset, 0, 
+                        if (!manager.InputManager.GetButton(sequence.executeInputs[e].buttonID, out int gotOffset, baseOffset, 
                             true, sequence.executeWindow).firstPress)
                         {
                             pressedExecuteInputs = false;
