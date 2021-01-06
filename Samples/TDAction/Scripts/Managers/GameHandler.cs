@@ -72,7 +72,7 @@ namespace TDAction.Managers
 
             simulationObjectManager.RegisterObject(currentPlayerEntity);
 
-            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraHandler>().SetFollowTarget(currentPlayerEntity.transform);
+            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraHandler>().SetLookAtTarget(currentPlayerEntity.transform);
 
             if (playerHUD)
             {
