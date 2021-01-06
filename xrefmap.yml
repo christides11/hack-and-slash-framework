@@ -58,6 +58,32 @@ references:
   isSpec: "True"
   fullName: CAF.Camera.LookHandler.Reset
   nameWithType: LookHandler.Reset
+- uid: CAF.Camera.LookHandler.SetLockOnTarget(CAF.Entities.EntityManager)
+  name: SetLockOnTarget(EntityManager)
+  href: api/CAF.Camera.LookHandler.html#CAF_Camera_LookHandler_SetLockOnTarget_CAF_Entities_EntityManager_
+  commentId: M:CAF.Camera.LookHandler.SetLockOnTarget(CAF.Entities.EntityManager)
+  fullName: CAF.Camera.LookHandler.SetLockOnTarget(CAF.Entities.EntityManager)
+  nameWithType: LookHandler.SetLockOnTarget(EntityManager)
+- uid: CAF.Camera.LookHandler.SetLockOnTarget*
+  name: SetLockOnTarget
+  href: api/CAF.Camera.LookHandler.html#CAF_Camera_LookHandler_SetLockOnTarget_
+  commentId: Overload:CAF.Camera.LookHandler.SetLockOnTarget
+  isSpec: "True"
+  fullName: CAF.Camera.LookHandler.SetLockOnTarget
+  nameWithType: LookHandler.SetLockOnTarget
+- uid: CAF.Camera.LookHandler.SetLookAtTarget(Transform)
+  name: SetLookAtTarget(Transform)
+  href: api/CAF.Camera.LookHandler.html#CAF_Camera_LookHandler_SetLookAtTarget_Transform_
+  commentId: M:CAF.Camera.LookHandler.SetLookAtTarget(Transform)
+  fullName: CAF.Camera.LookHandler.SetLookAtTarget(Transform)
+  nameWithType: LookHandler.SetLookAtTarget(Transform)
+- uid: CAF.Camera.LookHandler.SetLookAtTarget*
+  name: SetLookAtTarget
+  href: api/CAF.Camera.LookHandler.html#CAF_Camera_LookHandler_SetLookAtTarget_
+  commentId: Overload:CAF.Camera.LookHandler.SetLookAtTarget
+  isSpec: "True"
+  fullName: CAF.Camera.LookHandler.SetLookAtTarget
+  nameWithType: LookHandler.SetLookAtTarget
 - uid: CAF.Camera.LookHandler.SetLookDirection(Vector3)
   name: SetLookDirection(Vector3)
   href: api/CAF.Camera.LookHandler.html#CAF_Camera_LookHandler_SetLookDirection_Vector3_
@@ -71,19 +97,6 @@ references:
   isSpec: "True"
   fullName: CAF.Camera.LookHandler.SetLookDirection
   nameWithType: LookHandler.SetLookDirection
-- uid: CAF.Camera.LookHandler.SetTarget(CAF.Entities.EntityManager)
-  name: SetTarget(EntityManager)
-  href: api/CAF.Camera.LookHandler.html#CAF_Camera_LookHandler_SetTarget_CAF_Entities_EntityManager_
-  commentId: M:CAF.Camera.LookHandler.SetTarget(CAF.Entities.EntityManager)
-  fullName: CAF.Camera.LookHandler.SetTarget(CAF.Entities.EntityManager)
-  nameWithType: LookHandler.SetTarget(EntityManager)
-- uid: CAF.Camera.LookHandler.SetTarget*
-  name: SetTarget
-  href: api/CAF.Camera.LookHandler.html#CAF_Camera_LookHandler_SetTarget_
-  commentId: Overload:CAF.Camera.LookHandler.SetTarget
-  isSpec: "True"
-  fullName: CAF.Camera.LookHandler.SetTarget
-  nameWithType: LookHandler.SetTarget
 - uid: CAF.Combat
   name: CAF.Combat
   href: api/CAF.Combat.html
