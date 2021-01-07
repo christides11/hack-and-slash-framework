@@ -679,6 +679,18 @@ references:
   commentId: F:CAF.Combat.AttackEventDefinition.attackEvent
   fullName: CAF.Combat.AttackEventDefinition.attackEvent
   nameWithType: AttackEventDefinition.attackEvent
+- uid: CAF.Combat.AttackEventDefinition.chargeLevelMax
+  name: chargeLevelMax
+  href: api/CAF.Combat.AttackEventDefinition.html#CAF_Combat_AttackEventDefinition_chargeLevelMax
+  commentId: F:CAF.Combat.AttackEventDefinition.chargeLevelMax
+  fullName: CAF.Combat.AttackEventDefinition.chargeLevelMax
+  nameWithType: AttackEventDefinition.chargeLevelMax
+- uid: CAF.Combat.AttackEventDefinition.chargeLevelMin
+  name: chargeLevelMin
+  href: api/CAF.Combat.AttackEventDefinition.html#CAF_Combat_AttackEventDefinition_chargeLevelMin
+  commentId: F:CAF.Combat.AttackEventDefinition.chargeLevelMin
+  fullName: CAF.Combat.AttackEventDefinition.chargeLevelMin
+  nameWithType: AttackEventDefinition.chargeLevelMin
 - uid: CAF.Combat.AttackEventDefinition.endFrame
   name: endFrame
   href: api/CAF.Combat.AttackEventDefinition.html#CAF_Combat_AttackEventDefinition_endFrame
