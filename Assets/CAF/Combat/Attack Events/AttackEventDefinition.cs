@@ -19,6 +19,9 @@ namespace CAF.Combat
         public uint inputCheckEndFrame = 1;
         public InputSequence input = new InputSequence();
 
+        public int chargeLevelMin = 0;
+        public int chargeLevelMax = 0;
+
         public bool inputCheckProcessed;
     }
 }

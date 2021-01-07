@@ -521,6 +521,13 @@ namespace CAF.Combat
                 attack.events[eventSelected].onHitHitboxGroup = EditorGUILayout.IntField("Hitbox Group",
                     attack.events[eventSelected].onHitHitboxGroup);
             }
+            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.LabelField("Charge Required", GUILayout.Width(150));
+            EditorGUILayout.LabelField("min", GUILayout.Width(25));
+            attack.events[eventSelected].chargeLevelMin = EditorGUILayout.IntField(attack.events[eventSelected].chargeLevelMin, GUILayout.Width(30));
+            EditorGUILayout.LabelField("max", GUILayout.Width(25));
+            attack.events[eventSelected].chargeLevelMax = EditorGUILayout.IntField(attack.events[eventSelected].chargeLevelMax, GUILayout.Width(30));
+            EditorGUILayout.EndHorizontal();
             attack.events[eventSelected].inputCheckTiming = (AttackEventInputCheckTiming)EditorGUILayout.EnumPopup("Input Requirement", 
                 attack.events[eventSelected].inputCheckTiming);
             EditorGUI.indentLevel++;
