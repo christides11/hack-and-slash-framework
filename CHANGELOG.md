@@ -1,3 +1,10 @@
+# [8.1.0](https://github.com/christides11/Character-Action-Framework/compare/v8.0.0...v8.1.0) (2021-01-07)
+
+
+### Features
+
+* Attack Event charge level check support. ([d45ddcc](https://github.com/christides11/Character-Action-Framework/commit/d45ddcc8fe4606e935b12fb5d46b9656189600a0))
+
 # [8.0.0](https://github.com/christides11/Character-Action-Framework/compare/v7.0.0...v8.0.0) (2021-01-06)
 
 
