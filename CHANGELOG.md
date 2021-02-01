@@ -1,3 +1,10 @@
+## [9.0.1](https://github.com/christides11/Character-Action-Framework/compare/v9.0.0...v9.0.1) (2021-02-01)
+
+
+### Bug Fixes
+
+* Fixed ReActivate hitbox error. ([8a2e3ef](https://github.com/christides11/Character-Action-Framework/commit/8a2e3ef76b99ac6a6da97759b5aadaac2a6ac88c))
+
 # [9.0.0](https://github.com/christides11/Character-Action-Framework/compare/v8.1.0...v9.0.0) (2021-02-01)
 
 
