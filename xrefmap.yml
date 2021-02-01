@@ -1466,19 +1466,6 @@ references:
   isSpec: "True"
   fullName: CAF.Combat.HitboxBase.BuildHurtInfo
   nameWithType: HitboxBase.BuildHurtInfo
-- uid: CAF.Combat.HitboxBase.CheckHits
-  name: CheckHits()
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_CheckHits
-  commentId: M:CAF.Combat.HitboxBase.CheckHits
-  fullName: CAF.Combat.HitboxBase.CheckHits()
-  nameWithType: HitboxBase.CheckHits()
-- uid: CAF.Combat.HitboxBase.CheckHits*
-  name: CheckHits
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_CheckHits_
-  commentId: Overload:CAF.Combat.HitboxBase.CheckHits
-  isSpec: "True"
-  fullName: CAF.Combat.HitboxBase.CheckHits
-  nameWithType: HitboxBase.CheckHits
 - uid: CAF.Combat.HitboxBase.CheckHurtables
   name: CheckHurtables()
   href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_CheckHurtables
@@ -1620,6 +1607,19 @@ references:
   commentId: F:CAF.Combat.HitboxBase.team
   fullName: CAF.Combat.HitboxBase.team
   nameWithType: HitboxBase.team
+- uid: CAF.Combat.HitboxBase.Tick
+  name: Tick()
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_Tick
+  commentId: M:CAF.Combat.HitboxBase.Tick
+  fullName: CAF.Combat.HitboxBase.Tick()
+  nameWithType: HitboxBase.Tick()
+- uid: CAF.Combat.HitboxBase.Tick*
+  name: Tick
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_Tick_
+  commentId: Overload:CAF.Combat.HitboxBase.Tick
+  isSpec: "True"
+  fullName: CAF.Combat.HitboxBase.Tick
+  nameWithType: HitboxBase.Tick
 - uid: CAF.Combat.HitboxForceRelation
   name: HitboxForceRelation
   href: api/CAF.Combat.HitboxForceRelation.html
@@ -3206,6 +3206,19 @@ references:
   isSpec: "True"
   fullName: CAF.Entities.EntityHitboxManager.OnHitboxHurt
   nameWithType: EntityHitboxManager.OnHitboxHurt
+- uid: CAF.Entities.EntityHitboxManager.ReactivateHitboxGroup(System.Int32)
+  name: ReactivateHitboxGroup(Int32)
+  href: api/CAF.Entities.EntityHitboxManager.html#CAF_Entities_EntityHitboxManager_ReactivateHitboxGroup_System_Int32_
+  commentId: M:CAF.Entities.EntityHitboxManager.ReactivateHitboxGroup(System.Int32)
+  fullName: CAF.Entities.EntityHitboxManager.ReactivateHitboxGroup(System.Int32)
+  nameWithType: EntityHitboxManager.ReactivateHitboxGroup(Int32)
+- uid: CAF.Entities.EntityHitboxManager.ReactivateHitboxGroup*
+  name: ReactivateHitboxGroup
+  href: api/CAF.Entities.EntityHitboxManager.html#CAF_Entities_EntityHitboxManager_ReactivateHitboxGroup_
+  commentId: Overload:CAF.Entities.EntityHitboxManager.ReactivateHitboxGroup
+  isSpec: "True"
+  fullName: CAF.Entities.EntityHitboxManager.ReactivateHitboxGroup
+  nameWithType: EntityHitboxManager.ReactivateHitboxGroup
 - uid: CAF.Entities.EntityHitboxManager.Reset
   name: Reset()
   href: api/CAF.Entities.EntityHitboxManager.html#CAF_Entities_EntityHitboxManager_Reset

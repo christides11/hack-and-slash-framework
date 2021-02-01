@@ -122,7 +122,7 @@
       <a class="xref" href="CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_ReActivate_System_Collections_Generic_List_CAF_Combat_IHurtable__">HitboxBase.ReActivate(List&lt;IHurtable&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_CheckHits">HitboxBase.CheckHits()</a>
+      <a class="xref" href="CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_Tick">HitboxBase.Tick()</a>
     </div>
     <div>
       <a class="xref" href="CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_CheckHurtables">HitboxBase.CheckHurtables()</a>
@@ -196,7 +196,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_Hitbox3D_Activate.md&amp;value=---%0Auid%3A%20CAF.Combat.Hitbox3D.Activate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Combat/Boxes/Hitbox3D.cs/#L73">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Combat/Boxes/Hitbox3D.cs/#L77">View Source</a>
   </span>
   <a id="CAF_Combat_Hitbox3D_Activate_" data-uid="CAF.Combat.Hitbox3D.Activate*"></a>
   <h4 id="CAF_Combat_Hitbox3D_Activate" data-uid="CAF.Combat.Hitbox3D.Activate">Activate()</h4>
@@ -213,7 +213,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_Hitbox3D_BuildHurtInfo.md&amp;value=---%0Auid%3A%20CAF.Combat.Hitbox3D.BuildHurtInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Combat/Boxes/Hitbox3D.cs/#L123">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Combat/Boxes/Hitbox3D.cs/#L128">View Source</a>
   </span>
   <a id="CAF_Combat_Hitbox3D_BuildHurtInfo_" data-uid="CAF.Combat.Hitbox3D.BuildHurtInfo*"></a>
   <h4 id="CAF_Combat_Hitbox3D_BuildHurtInfo" data-uid="CAF.Combat.Hitbox3D.BuildHurtInfo">BuildHurtInfo()</h4>
@@ -245,11 +245,13 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_Hitbox3D_CheckForHurtboxes_Collider_.md&amp;value=---%0Auid%3A%20CAF.Combat.Hitbox3D.CheckForHurtboxes(Collider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Combat/Boxes/Hitbox3D.cs/#L95">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Combat/Boxes/Hitbox3D.cs/#L99">View Source</a>
   </span>
   <a id="CAF_Combat_Hitbox3D_CheckForHurtboxes_" data-uid="CAF.Combat.Hitbox3D.CheckForHurtboxes*"></a>
   <h4 id="CAF_Combat_Hitbox3D_CheckForHurtboxes_Collider_" data-uid="CAF.Combat.Hitbox3D.CheckForHurtboxes(Collider)">CheckForHurtboxes(Collider)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called in OnTriggerStay to check for any hurtboxes within the hitbox.
+If any are found, they are added to a list to be handled next tick.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -268,7 +270,8 @@
       <tr>
         <td><span class="xref">Collider</span></td>
         <td><span class="parametername">other</span></td>
-        <td></td>
+        <td><p>The hurtbox that collided with this hitbox.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -277,7 +280,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_Hitbox3D_CreateCapsule_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20CAF.Combat.Hitbox3D.CreateCapsule(System.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Combat/Boxes/Hitbox3D.cs/#L63">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Combat/Boxes/Hitbox3D.cs/#L66">View Source</a>
   </span>
   <a id="CAF_Combat_Hitbox3D_CreateCapsule_" data-uid="CAF.Combat.Hitbox3D.CreateCapsule*"></a>
   <h4 id="CAF_Combat_Hitbox3D_CreateCapsule_System_Single_System_Single_" data-uid="CAF.Combat.Hitbox3D.CreateCapsule(System.Single,System.Single)">CreateCapsule(Single, Single)</h4>
@@ -314,7 +317,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_Hitbox3D_CreateRectangle_Vector3_.md&amp;value=---%0Auid%3A%20CAF.Combat.Hitbox3D.CreateRectangle(Vector3)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Combat/Boxes/Hitbox3D.cs/#L47">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Combat/Boxes/Hitbox3D.cs/#L50">View Source</a>
   </span>
   <a id="CAF_Combat_Hitbox3D_CreateRectangle_" data-uid="CAF.Combat.Hitbox3D.CreateRectangle*"></a>
   <h4 id="CAF_Combat_Hitbox3D_CreateRectangle_Vector3_" data-uid="CAF.Combat.Hitbox3D.CreateRectangle(Vector3)">CreateRectangle(Vector3)</h4>
@@ -348,7 +351,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_Hitbox3D_CreateSphere_System_Single_.md&amp;value=---%0Auid%3A%20CAF.Combat.Hitbox3D.CreateSphere(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Combat/Boxes/Hitbox3D.cs/#L55">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Combat/Boxes/Hitbox3D.cs/#L58">View Source</a>
   </span>
   <a id="CAF_Combat_Hitbox3D_CreateSphere_" data-uid="CAF.Combat.Hitbox3D.CreateSphere*"></a>
   <h4 id="CAF_Combat_Hitbox3D_CreateSphere_System_Single_" data-uid="CAF.Combat.Hitbox3D.CreateSphere(System.Single)">CreateSphere(Single)</h4>
@@ -380,7 +383,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_Hitbox3D_Deactivate.md&amp;value=---%0Auid%3A%20CAF.Combat.Hitbox3D.Deactivate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Combat/Boxes/Hitbox3D.cs/#L79">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Combat/Boxes/Hitbox3D.cs/#L83">View Source</a>
   </span>
   <a id="CAF_Combat_Hitbox3D_Deactivate_" data-uid="CAF.Combat.Hitbox3D.Deactivate*"></a>
   <h4 id="CAF_Combat_Hitbox3D_Deactivate" data-uid="CAF.Combat.Hitbox3D.Deactivate">Deactivate()</h4>
@@ -397,7 +400,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_Hitbox3D_HurtHurtable_CAF_Combat_IHurtable_.md&amp;value=---%0Auid%3A%20CAF.Combat.Hitbox3D.HurtHurtable(CAF.Combat.IHurtable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Combat/Boxes/Hitbox3D.cs/#L118">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Combat/Boxes/Hitbox3D.cs/#L123">View Source</a>
   </span>
   <a id="CAF_Combat_Hitbox3D_HurtHurtable_" data-uid="CAF.Combat.Hitbox3D.HurtHurtable*"></a>
   <h4 id="CAF_Combat_Hitbox3D_HurtHurtable_CAF_Combat_IHurtable_" data-uid="CAF.Combat.Hitbox3D.HurtHurtable(CAF.Combat.IHurtable)">HurtHurtable(IHurtable)</h4>
@@ -431,7 +434,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_Hitbox3D_Initialize_GameObject_Transform_System_Int32_CAF_Combat_BoxShapes_CAF_Combat_HitInfoBase_CAF_Combat_BoxDefinitionBase_System_Collections_Generic_List_CAF_Combat_IHurtable__.md&amp;value=---%0Auid%3A%20CAF.Combat.Hitbox3D.Initialize(GameObject%2CTransform%2CSystem.Int32%2CCAF.Combat.BoxShapes%2CCAF.Combat.HitInfoBase%2CCAF.Combat.BoxDefinitionBase%2CSystem.Collections.Generic.List%7BCAF.Combat.IHurtable%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Combat/Boxes/Hitbox3D.cs/#L22">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Combat/Boxes/Hitbox3D.cs/#L23">View Source</a>
   </span>
   <a id="CAF_Combat_Hitbox3D_Initialize_" data-uid="CAF.Combat.Hitbox3D.Initialize*"></a>
   <h4 id="CAF_Combat_Hitbox3D_Initialize_GameObject_Transform_System_Int32_CAF_Combat_BoxShapes_CAF_Combat_HitInfoBase_CAF_Combat_BoxDefinitionBase_System_Collections_Generic_List_CAF_Combat_IHurtable__" data-uid="CAF.Combat.Hitbox3D.Initialize(GameObject,Transform,System.Int32,CAF.Combat.BoxShapes,CAF.Combat.HitInfoBase,CAF.Combat.BoxDefinitionBase,System.Collections.Generic.List{CAF.Combat.IHurtable})">Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinitionBase, List&lt;IHurtable&gt;)</h4>
@@ -495,7 +498,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_Hitbox3D_Initialize_GameObject_Transform_System_Int32_CAF_Combat_HitInfoBase_System_Collections_Generic_List_CAF_Combat_IHurtable__.md&amp;value=---%0Auid%3A%20CAF.Combat.Hitbox3D.Initialize(GameObject%2CTransform%2CSystem.Int32%2CCAF.Combat.HitInfoBase%2CSystem.Collections.Generic.List%7BCAF.Combat.IHurtable%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Combat/Boxes/Hitbox3D.cs/#L12">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Combat/Boxes/Hitbox3D.cs/#L13">View Source</a>
   </span>
   <a id="CAF_Combat_Hitbox3D_Initialize_" data-uid="CAF.Combat.Hitbox3D.Initialize*"></a>
   <h4 id="CAF_Combat_Hitbox3D_Initialize_GameObject_Transform_System_Int32_CAF_Combat_HitInfoBase_System_Collections_Generic_List_CAF_Combat_IHurtable__" data-uid="CAF.Combat.Hitbox3D.Initialize(GameObject,Transform,System.Int32,CAF.Combat.HitInfoBase,System.Collections.Generic.List{CAF.Combat.IHurtable})">Initialize(GameObject, Transform, Int32, HitInfoBase, List&lt;IHurtable&gt;)</h4>
@@ -549,13 +552,11 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_Hitbox3D_OnTriggerStay_Collider_.md&amp;value=---%0Auid%3A%20CAF.Combat.Hitbox3D.OnTriggerStay(Collider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Combat/Boxes/Hitbox3D.cs/#L90">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Combat/Boxes/Hitbox3D.cs/#L89">View Source</a>
   </span>
   <a id="CAF_Combat_Hitbox3D_OnTriggerStay_" data-uid="CAF.Combat.Hitbox3D.OnTriggerStay*"></a>
   <h4 id="CAF_Combat_Hitbox3D_OnTriggerStay_Collider_" data-uid="CAF.Combat.Hitbox3D.OnTriggerStay(Collider)">OnTriggerStay(Collider)</h4>
-  <div class="markdown level1 summary"><p>Called every tick for whatever object&apos;s are within this hitbox.
-Gets all the hitboxes and checks if they should be hurt next LateUpdate.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -574,8 +575,7 @@ Gets all the hitboxes and checks if they should be hurt next LateUpdate.</p>
       <tr>
         <td><span class="xref">Collider</span></td>
         <td><span class="parametername">other</span></td>
-        <td><p>The collider in our hitbox.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
