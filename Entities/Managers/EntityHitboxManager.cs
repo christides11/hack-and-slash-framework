@@ -99,9 +99,18 @@ namespace CAF.Entities
                 return;
             }
 
+            BoxGroup currentGroup = combatManager.CurrentAttack.attackDefinition.boxGroups[index];
+            // Keep track of what the hitbox ID has hit.
+            if (hurtablesHit.ContainsKey(currentGroup.ID) == false)
+            {
+                hurtablesHit.Add(currentGroup.ID, new List<IHurtable>());
+            }
+            hurtablesHit[currentGroup.ID].Clear();
+            hurtablesHit[currentGroup.ID].Add(combatManager);
+
             for (int i = 0; i < hitboxGroups[index].Count; i++)
             {
-                hitboxGroups[index][i].ReActivate();
+                hitboxGroups[index][i].ReActivate(hurtablesHit[currentGroup.ID]);
             }
         }
 
