@@ -1,3 +1,15 @@
+# [9.0.0](https://github.com/christides11/Character-Action-Framework/compare/v8.1.0...v9.0.0) (2021-02-01)
+
+
+### Code Refactoring
+
+* Changed CheckHits to Tick, cleanup. ([1105768](https://github.com/christides11/Character-Action-Framework/commit/1105768c5af17496ab468f0cf7a31ddeb1f77661))
+
+
+### BREAKING CHANGES
+
+* CheckHits in HitboxBase is now called Tick, since it should be called every tick.
+
 # [8.1.0](https://github.com/christides11/Character-Action-Framework/compare/v8.0.0...v8.1.0) (2021-01-07)
 
 
