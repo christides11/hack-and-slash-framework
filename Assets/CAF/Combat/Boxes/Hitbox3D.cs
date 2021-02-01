@@ -9,6 +9,7 @@ namespace CAF.Combat
     {
         [SerializeField] protected Collider coll;
 
+        #region Initialization
         public override void Initialize(GameObject owner, Transform directionOwner, int team,
             HitInfoBase hitInfo, List<IHurtable> ignoreList = null)
         {
@@ -38,7 +39,9 @@ namespace CAF.Combat
                     break;
             }
         }
+        #endregion
 
+        #region Create Shape
         /// <summary>
         /// Initializes the hitbox as a rectangle type hitbox.
         /// </summary>
@@ -69,6 +72,7 @@ namespace CAF.Combat
             cc.height = height;
             cc.direction = 2;
         }
+        #endregion
 
         public override void Activate()
         {
@@ -82,16 +86,16 @@ namespace CAF.Combat
             coll.enabled = false;
         }
 
-        /// <summary>
-        /// Called every tick for whatever object's are within this hitbox.
-        /// Gets all the hitboxes and checks if they should be hurt next LateUpdate.
-        /// </summary>
-        /// <param name="other">The collider in our hitbox.</param>
         protected virtual void OnTriggerStay(Collider other)
         {
             CheckForHurtboxes(other);
         }
 
+        /// <summary>
+        /// Called in OnTriggerStay to check for any hurtboxes within the hitbox.
+        /// If any are found, they are added to a list to be handled next tick.
+        /// </summary>
+        /// <param name="other">The hurtbox that collided with this hitbox.</param>
         protected virtual void CheckForHurtboxes(Collider other)
         {
             if (!activated)
@@ -100,18 +104,19 @@ namespace CAF.Combat
             }
 
             Hurtbox otherHurtbox = null;
-            if (!other.TryGetComponent<Hurtbox>(out otherHurtbox))
+            if (other.TryGetComponent<Hurtbox>(out otherHurtbox) == false)
             {
                 return;
             }
 
-            if (otherHurtbox != null)
+            if (hitHurtables.Contains(otherHurtbox.Owner))
             {
-                if (!hitHurtables.Contains(otherHurtbox.Owner)
-                    && (ignoreList == null || !ignoreList.Contains(otherHurtbox.Hurtable)))
-                {
-                    hitHurtables.Add(otherHurtbox.Owner);
-                }
+                return;
+            }
+
+            if (ignoreList == null || ignoreList.Contains(otherHurtbox.Hurtable) == false)
+            {
+                hitHurtables.Add(otherHurtbox.Owner);
             }
         }
 

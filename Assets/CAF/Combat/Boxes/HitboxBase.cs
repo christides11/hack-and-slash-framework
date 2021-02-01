@@ -49,7 +49,7 @@ namespace CAF.Combat
             Activate();
         }
 
-        public virtual void CheckHits()
+        public virtual void Tick()
         {
             CheckHurtables();
             hitHurtables.Clear();
@@ -57,20 +57,23 @@ namespace CAF.Combat
 
         protected virtual void CheckHurtables()
         {
-            if (hitHurtables.Count > 0)
+            if (hitHurtables.Count <= 0)
             {
-                for (int i = 0; i < hitHurtables.Count; i++)
+                return;
+            }
+            
+            for (int i = 0; i < hitHurtables.Count; i++)
+            {
+                IHurtable ih = hitHurtables[i].GetComponent<IHurtable>();
+                if (ignoreList.Contains(ih)
+                    || ShouldHurt(ih) == false)
                 {
-                    IHurtable ih = hitHurtables[i].GetComponent<IHurtable>();
-                    if (ignoreList.Contains(ih)
-                        || !ShouldHurt(ih))
-                    {
-                        continue;
-                    }
-                    HurtHurtable(ih);
-                    ignoreList.Add(ih);
-                    OnHurt?.Invoke(hitHurtables[i], hitInfo);
+                    continue;
                 }
+
+                HurtHurtable(ih);
+                ignoreList.Add(ih);
+                OnHurt?.Invoke(hitHurtables[i], hitInfo);
             }
         }
 

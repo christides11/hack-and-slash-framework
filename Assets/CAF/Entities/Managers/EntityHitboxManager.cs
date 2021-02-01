@@ -70,7 +70,7 @@ namespace CAF.Entities
             {
                 for(int i = 0; i < hitboxGroup.Count; i++)
                 {
-                    hitboxGroup[i].CheckHits();
+                    hitboxGroup[i].Tick();
                 }
             }
         }
@@ -89,6 +89,19 @@ namespace CAF.Entities
             for (int i = 0; i < hitboxGroups[index].Count; i++)
             {
                 hitboxGroups[index][i].Activate();
+            }
+        }
+
+        public virtual void ReactivateHitboxGroup(int index)
+        {
+            if (!hitboxGroups.ContainsKey(index))
+            {
+                return;
+            }
+
+            for (int i = 0; i < hitboxGroups[index].Count; i++)
+            {
+                hitboxGroups[index][i].ReActivate();
             }
         }
 
@@ -146,6 +159,7 @@ namespace CAF.Entities
                     hitbox.transform.SetParent(manager.transform, true);
                 }
 
+                // Create the hitbox and activate it.
                 hitbox.Initialize(manager.gameObject, manager.visual.transform, manager.CombatManager.GetTeam(),
                     currentGroup.boxes[i].shape, currentGroup.hitboxHitInfo, hitboxDefinition, hurtablesHit[currentGroup.ID]);
                 int cID = currentGroup.ID;

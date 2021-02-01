@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Name: Air_AA
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 88, y: 712}
+  position: {x: 88, y: 424}
   ports:
     keys:
     - lastNode
@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Name: Air_A
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -168, y: 712}
+  position: {x: -168, y: 424}
   ports:
     keys:
     - lastNode
@@ -339,7 +339,7 @@ MonoBehaviour:
   m_Name: Moveset Attack
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 344, y: 712}
+  position: {x: 344, y: 424}
   ports:
     keys:
     - lastNode
