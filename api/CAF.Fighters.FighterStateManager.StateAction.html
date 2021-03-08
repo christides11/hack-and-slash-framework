@@ -5,12 +5,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Delegate EntityHitboxManager.HitboxGroupEventAction
+    <title>Delegate FighterStateManager.StateAction
    | Character Action Framework Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Delegate EntityHitboxManager.HitboxGroupEventAction
+    <meta name="title" content="Delegate FighterStateManager.StateAction
    | Character Action Framework Documentation ">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -78,18 +78,18 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CAF.Entities.EntityHitboxManager.HitboxGroupEventAction">
+            <article class="content wrap" id="_content" data-uid="CAF.Fighters.FighterStateManager.StateAction">
   
   
-  <h1 id="CAF_Entities_EntityHitboxManager_HitboxGroupEventAction" data-uid="CAF.Entities.EntityHitboxManager.HitboxGroupEventAction" class="text-break">Delegate EntityHitboxManager.HitboxGroupEventAction
+  <h1 id="CAF_Fighters_FighterStateManager_StateAction" data-uid="CAF.Fighters.FighterStateManager.StateAction" class="text-break">Delegate FighterStateManager.StateAction
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="CAF.Entities.html">CAF.Entities</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CAF.Fighters.html">CAF.Fighters</a></h6>
   <h6><strong>Assembly</strong>: CAF.dll</h6>
-  <h5 id="CAF_Entities_EntityHitboxManager_HitboxGroupEventAction_syntax">Syntax</h5>
+  <h5 id="CAF_Fighters_FighterStateManager_StateAction_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public delegate void HitboxGroupEventAction(GameObject hurtableHit, int hitboxGroupIndex, MovesetAttackNode attack);</code></pre>
+    <pre><code class="lang-csharp hljs">public delegate void StateAction(FighterBase self, FighterState from, uint fromStateFrame);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -102,18 +102,18 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">GameObject</span></td>
-        <td><span class="parametername">hurtableHit</span></td>
+        <td><a class="xref" href="CAF.Fighters.FighterBase.html">FighterBase</a></td>
+        <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">hitboxGroupIndex</span></td>
+        <td><a class="xref" href="CAF.Fighters.FighterState.html">FighterState</a></td>
+        <td><span class="parametername">from</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="CAF.Combat.MovesetAttackNode.html">MovesetAttackNode</a></td>
-        <td><span class="parametername">attack</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="parametername">fromStateFrame</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -126,10 +126,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Entities_EntityHitboxManager_HitboxGroupEventAction.md&amp;value=---%0Auid%3A%20CAF.Entities.EntityHitboxManager.HitboxGroupEventAction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterStateManager_StateAction.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterStateManager.StateAction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Entities/Managers/EntityHitboxManager.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterStateManager.cs/#L8" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
