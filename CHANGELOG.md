@@ -1,3 +1,15 @@
+# [10.0.0](https://github.com/christides11/Character-Action-Framework/compare/v9.0.1...v10.0.0) (2021-03-08)
+
+
+### Code Refactoring
+
+* Renamed Entities to Fighters. ([b41e069](https://github.com/christides11/Character-Action-Framework/commit/b41e069c2809f9131e8632be66371319cf9e45cc))
+
+
+### BREAKING CHANGES
+
+* Renamed Entities to Fighters to better reflect what they are.
+
 ## [9.0.1](https://github.com/christides11/Character-Action-Framework/compare/v9.0.0...v9.0.1) (2021-02-01)
 
 
