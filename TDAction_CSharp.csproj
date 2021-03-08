@@ -105,9 +105,9 @@
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\Managers\EntityHitboxManager.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\Managers\EntityHurtboxManager.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\Managers\EntityInputManager.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\Managers\EntityManager.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\Managers\EntityPhysicsManager.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\Managers\EntityStateManager.cs" />
+    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\Managers\FighterManager.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\States\EntityStateAttack.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\States\EntityStateFlinchAir.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\States\EntityStateFlinchGround.cs" />

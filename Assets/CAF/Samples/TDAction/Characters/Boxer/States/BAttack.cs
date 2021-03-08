@@ -9,7 +9,7 @@ namespace TDAction.Entities.Characters.Boxer
     {
         public override bool CheckInterrupt()
         {
-            EntityManager entityManager = GetEntityManager();
+            FighterManager entityManager = GetEntityManager();
             if (entityManager.TryAttack())
             {
                 return true;

@@ -31,7 +31,7 @@ namespace TDAction.Entities.States
 
         public override void OnUpdate()
         {
-            EntityManager entityManager = GetEntityManager();
+            FighterManager entityManager = GetEntityManager();
             AttackDefinition currentAttack =
                 (TDAction.Combat.AttackDefinition)entityManager.CombatManager.CurrentAttack.attackDefinition;
 
@@ -82,7 +82,7 @@ namespace TDAction.Entities.States
         /// <returns>True if we attack canceled.</returns>
         protected virtual bool TryCommandAttackCancel(AttackDefinition currentAttack)
         {
-            EntityManager e = GetEntityManager();
+            FighterManager e = GetEntityManager();
             for (int i = 0; i < currentAttack.commandAttackCancelWindows.Count; i++)
             {
                 if (e.StateManager.CurrentStateFrame >= currentAttack.commandAttackCancelWindows[i].x
@@ -111,7 +111,7 @@ namespace TDAction.Entities.States
             {
                 return false;
             }
-            EntityManager e = GetEntityManager();
+            FighterManager e = GetEntityManager();
 
             if(e.StateManager.CurrentStateFrame >= currentEvent.inputCheckStartFrame
                 && e.StateManager.CurrentStateFrame <= currentEvent.inputCheckEndFrame)
@@ -168,7 +168,7 @@ namespace TDAction.Entities.States
         /// <param name="entityManager">The entity itself.</param>
         /// <param name="currentAttack">The current attack the entity is doing.</param>
         /// <returns>If the frame should be held.</returns>
-        private bool HandleChargeLevels(EntityManager entityManager, AttackDefinition currentAttack)
+        private bool HandleChargeLevels(FighterManager entityManager, AttackDefinition currentAttack)
         {
             EntityCombatManager cManager = (EntityCombatManager)entityManager.CombatManager;
             if (!charging)
@@ -219,7 +219,7 @@ namespace TDAction.Entities.States
         /// <param name="boxGroup">The group being processed.</param>
         protected virtual void HandleBoxGroup(int groupIndex, CAF.Combat.BoxGroup boxGroup)
         {
-            EntityManager entityManager = GetEntityManager();
+            FighterManager entityManager = GetEntityManager();
             // Cleanup the box if it's active frames are over.
             if(entityManager.StateManager.CurrentStateFrame == boxGroup.activeFramesEnd + 1)
             {
@@ -266,7 +266,7 @@ namespace TDAction.Entities.States
 
         private bool CheckLandCancelWindows(AttackDefinition currentAttack)
         {
-            EntityManager entityManager = GetEntityManager();
+            FighterManager entityManager = GetEntityManager();
             for (int i = 0; i < currentAttack.landCancelWindows.Count; i++)
             {
                 if (entityManager.StateManager.CurrentStateFrame >= currentAttack.landCancelWindows[i].x
@@ -283,7 +283,7 @@ namespace TDAction.Entities.States
 
         private bool CheckJumpCancelWindows(AttackDefinition currentAttack)
         {
-            EntityManager entityManager = GetEntityManager();
+            FighterManager entityManager = GetEntityManager();
             for (int i = 0; i < currentAttack.jumpCancelWindows.Count; i++)
             {
                 if (entityManager.StateManager.CurrentStateFrame >= currentAttack.jumpCancelWindows[i].x
@@ -300,7 +300,7 @@ namespace TDAction.Entities.States
 
         private bool CheckEnemyStepWindows(AttackDefinition currentAttack)
         {
-            EntityManager e = GetEntityManager();
+            FighterManager e = GetEntityManager();
             for(int i = 0; i < currentAttack.enemyStepWindows.Count; i++)
             {
                 if(e.StateManager.CurrentStateFrame >= currentAttack.enemyStepWindows[i].x

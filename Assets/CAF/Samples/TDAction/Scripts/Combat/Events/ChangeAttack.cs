@@ -20,13 +20,13 @@ namespace TDAction.Combat.Events
         }
 
         public override bool Evaluate(uint frame, uint endFrame,
-            CAF.Entities.EntityManager controller, AttackEventVariables variables)
+            CAF.Fighters.FighterBase controller, AttackEventVariables variables)
         {
             if(lastFrameExecution && frame != endFrame)
             {
                 return false;
             }
-            EntityManager e = (EntityManager)controller;
+            FighterManager e = (FighterManager)controller;
             EntityCombatManager combatManager = (EntityCombatManager)controller.CombatManager;
 
             e.TryAttack((MovesetAttackNode)variables.objectVars[0]);

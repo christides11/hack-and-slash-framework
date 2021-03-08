@@ -1,22 +1,22 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace CAF.Entities
+namespace CAF.Fighters
 {
-    public class EntityStateManager : MonoBehaviour
+    public class FighterStateManager : MonoBehaviour
     {
-        public delegate void StateAction(EntityManager self, EntityState from, uint fromStateFrame);
-        public delegate void StateFrameAction(EntityManager self, uint preChangeFrame);
+        public delegate void StateAction(FighterBase self, FighterState from, uint fromStateFrame);
+        public delegate void StateFrameAction(FighterBase self, uint preChangeFrame);
         public event StateAction OnStatePreChange;
         public event StateAction OnStatePostChange;
         public event StateFrameAction OnStateFrameSet;
 
-        public EntityState CurrentState { get { return currentState; } }
+        public FighterState CurrentState { get { return currentState; } }
         public uint CurrentStateFrame { get { return currentStateFrame; } }
 
-        [SerializeField] protected EntityManager manager = null;
-        protected Dictionary<int, EntityState> states = new Dictionary<int, EntityState>();
-        protected EntityState currentState;
+        [SerializeField] protected FighterBase manager = null;
+        protected Dictionary<int, FighterState> states = new Dictionary<int, FighterState>();
+        protected FighterState currentState;
         [SerializeField] protected uint currentStateFrame = 0;
         [SerializeField] protected string currentStateName;
 
@@ -33,7 +33,7 @@ namespace CAF.Entities
         /// </summary>
         /// <param name="state">The state.</param>
         /// <param name="stateNumber">The number of the state.</param>
-        public virtual void AddState(EntityState state, int stateNumber)
+        public virtual void AddState(FighterState state, int stateNumber)
         {
             state.Manager = manager;
             states.Add(stateNumber, state);
@@ -50,7 +50,7 @@ namespace CAF.Entities
         {
             if (states.ContainsKey(state))
             {
-                EntityState oldState = currentState;
+                FighterState oldState = currentState;
                 uint oldStateFrame = currentStateFrame;
 
                 if (callOnInterrupt)
@@ -81,9 +81,9 @@ namespace CAF.Entities
         /// <param name="state">The state to change to.</param>
         /// <param name="stateFrame">What frame to start the state at.</param>
         /// <param name="callOnInterrupt">If OnInterrupt of the current state should be called.</param>
-        public virtual void ChangeState(EntityState state, uint stateFrame = 0, bool callOnInterrupt = true)
+        public virtual void ChangeState(FighterState state, uint stateFrame = 0, bool callOnInterrupt = true)
         {
-            EntityState oldState = currentState;
+            FighterState oldState = currentState;
             uint oldStateFrame = currentStateFrame;
 
             if (callOnInterrupt)

@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace TDAction.Entities.Characters
 {
-    public class CharacterManager : EntityManager
+    public class CharacterManager : FighterManager
     {
 
 

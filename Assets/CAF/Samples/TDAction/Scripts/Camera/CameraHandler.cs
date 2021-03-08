@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 using CAF.Camera;
-using CAF.Entities;
+using CAF.Fighters;
 
 namespace TDAction.Camera
 {
@@ -32,7 +32,7 @@ namespace TDAction.Camera
             followCamera.LookAt = target;
         }
 
-        public void SetLockOnTarget(EntityManager entityTarget)
+        public void SetLockOnTarget(FighterBase entityTarget)
         {
 
         }

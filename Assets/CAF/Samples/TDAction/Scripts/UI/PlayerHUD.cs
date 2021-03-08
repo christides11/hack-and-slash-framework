@@ -8,10 +8,10 @@ namespace TDAction.UI
 {
     public class PlayerHUD : MonoBehaviour
     {
-        private EntityManager entity;
+        private FighterManager entity;
         public Image healthImage;
 
-        public void SetEntity(EntityManager entity)
+        public void SetEntity(FighterManager entity)
         {
             this.entity = entity;
         }

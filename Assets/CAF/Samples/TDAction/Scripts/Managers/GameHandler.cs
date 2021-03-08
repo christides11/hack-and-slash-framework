@@ -16,7 +16,7 @@ namespace TDAction.Managers
     {
         public SimObjectManager simulationObjectManager;
 
-        [SerializeField] private EntityManager currentPlayerEntity;
+        [SerializeField] private FighterManager currentPlayerEntity;
         [SerializeField] private PlayerHUD playerHUD;
         [SerializeField] private bool frameByFrameMode;
 
@@ -64,10 +64,10 @@ namespace TDAction.Managers
         /// </summary>
         /// <param name="entity">The entity to spawn that the player controls.</param>
         /// <param name="spawnPosition">The position to spawn them at.</param>
-        public void SpawnPlayer(EntityManager entity, Vector3 spawnPosition)
+        public void SpawnPlayer(FighterManager entity, Vector3 spawnPosition)
         {
             currentPlayerEntity = GameObject.Instantiate(entity.gameObject, spawnPosition, Quaternion.identity)
-                .GetComponent<EntityManager>();
+                .GetComponent<FighterManager>();
             currentPlayerEntity.Initialize(CAF.Input.InputControlType.Direct);
 
             simulationObjectManager.RegisterObject(currentPlayerEntity);

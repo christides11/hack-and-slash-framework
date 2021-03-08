@@ -1,8 +1,8 @@
-﻿namespace CAF.Entities
+﻿namespace CAF.Fighters
 {
-    public class EntityState
+    public class FighterState
     {
-        public EntityManager Manager { get; set; } = null;
+        public FighterBase Manager { get; set; } = null;
 
         /// <summary>
         /// Get the name of the state.
@@ -10,7 +10,7 @@
         /// <returns>The state name.</returns>
         public virtual string GetName()
         {
-            return "Entity State";
+            return "State";
         }
 
         /// <summary>

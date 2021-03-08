@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace TDAction.Entities
 {
-    public class EntityManager : CAF.Entities.EntityManager
+    public class FighterManager : CAF.Fighters.FighterBase
     {
         public int FaceDirection { get { return faceDirection; } }
 

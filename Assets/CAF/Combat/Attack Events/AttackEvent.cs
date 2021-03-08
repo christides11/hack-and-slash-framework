@@ -1,5 +1,5 @@
 ﻿using System;
-using CAF.Entities;
+using CAF.Fighters;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -18,7 +18,7 @@ namespace CAF.Combat
         /// <param name="manager">The manager using this event.</param>
         /// <param name="variables"></param>
         /// <returns>True if the attack state should cancel.</returns>
-        public virtual bool Evaluate(uint frame, uint endFrame, EntityManager manager,
+        public virtual bool Evaluate(uint frame, uint endFrame, FighterBase manager,
             AttackEventVariables variables)
         {
             return false;

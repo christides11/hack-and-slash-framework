@@ -1,4 +1,4 @@
-﻿using CAF.Entities;
+﻿using CAF.Fighters;
 using UnityEngine;
 
 namespace CAF.Camera
@@ -20,7 +20,7 @@ namespace CAF.Camera
         /// Set the target that we should lock on to.
         /// </summary>
         /// <param name="entityTarget"></param>
-        void SetLockOnTarget(EntityManager entityTarget);
+        void SetLockOnTarget(FighterBase entityTarget);
 
         /// <summary>
         /// Make the handler look in the given direction.

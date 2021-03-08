@@ -5,15 +5,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace CAF.Entities
+namespace CAF.Fighters
 {
-    public class EntityCombatManager : MonoBehaviour, IHurtable
+    public class FighterCombatManager : MonoBehaviour, IHurtable
     {
-        public delegate void EmptyAction(EntityManager self);
-        public delegate void HealthChangedAction(EntityManager initializer, EntityManager self, HitInfoBase hitInfo);
-        public delegate void MovesetChangedAction(EntityManager self, MovesetDefinition lastMoveset);
-        public delegate void ChargeLevelChangedAction(EntityManager self, int lastChargeLevel);
-        public delegate void ChargeLevelChargeChangedAction(EntityManager self, int lastChargeLevelCharge);
+        public delegate void EmptyAction(FighterBase self);
+        public delegate void HealthChangedAction(FighterBase initializer, FighterBase self, HitInfoBase hitInfo);
+        public delegate void MovesetChangedAction(FighterBase self, MovesetDefinition lastMoveset);
+        public delegate void ChargeLevelChangedAction(FighterBase self, int lastChargeLevel);
+        public delegate void ChargeLevelChargeChangedAction(FighterBase self, int lastChargeLevelCharge);
         public event HealthChangedAction OnHit;
         public event HealthChangedAction OnHealed;
         public event EmptyAction OnEnterHitStop;
@@ -38,14 +38,14 @@ namespace CAF.Entities
         protected int hitstun = 0;
         protected int hitstop; 
 
-        public EntityManager manager;
-        public EntityHitboxManager hitboxManager;
+        public FighterBase manager;
+        public FighterHitboxManager hitboxManager;
 
 
 
         protected virtual void Awake()
         {
-            hitboxManager = new EntityHitboxManager(this, manager);
+            hitboxManager = new FighterHitboxManager(this, manager);
         }
 
         public virtual void CLateUpdate()

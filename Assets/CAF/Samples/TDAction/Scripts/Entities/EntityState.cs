@@ -4,11 +4,11 @@ using UnityEngine;
 
 namespace TDAction.Entities
 {
-    public class EntityState : CAF.Entities.EntityState
+    public class EntityState : CAF.Fighters.FighterState
     {
-        public virtual EntityManager GetEntityManager()
+        public virtual FighterManager GetEntityManager()
         {
-            return (EntityManager)Manager;
+            return (FighterManager)Manager;
         }
 
         public virtual EntityPhysicsManager GetPhysicsManager()

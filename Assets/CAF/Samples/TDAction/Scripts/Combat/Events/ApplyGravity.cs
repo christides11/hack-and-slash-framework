@@ -20,7 +20,7 @@ namespace TDAction.Combat.Events
         }
 
         public override bool Evaluate(uint frame, uint endFrame,
-            CAF.Entities.EntityManager controller, AttackEventVariables variables)
+            CAF.Fighters.FighterBase controller, AttackEventVariables variables)
         {
             EntityPhysicsManager physicsManager = (EntityPhysicsManager)controller.PhysicsManager;
             if (controller.IsGrounded)
@@ -28,7 +28,7 @@ namespace TDAction.Combat.Events
                 physicsManager.forceGravity = Vector3.zero;
                 return false;
             }
-            EntityStats entityStats = ((TDAction.Entities.EntityManager)controller).entityDefinition.GetEntityStats();
+            EntityStats entityStats = ((TDAction.Entities.FighterManager)controller).entityDefinition.GetEntityStats();
             float percent = (float)frame / (float)endFrame;
 
             float gravity = entityStats.gravity;

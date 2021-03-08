@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace CAF.Entities
+namespace CAF.Fighters
 {
-    public class EntityPhysicsManager3D : EntityPhysicsManagerBase
+    public class FighterPhysicsManager3D : FighterPhysicsManagerBase
     {
         public float GravityScale { get; set; } = 1.0f;
 

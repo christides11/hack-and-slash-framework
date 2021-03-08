@@ -4,17 +4,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace CAF.Entities
+namespace CAF.Fighters
 {
-    public class EntityInputManager : MonoBehaviour
+    public class FighterInputManager : MonoBehaviour
     {
-        [SerializeField] protected EntityManager manager;
+        [SerializeField] protected FighterBase manager;
 
         public InputControlType ControlType { get; protected set; } = InputControlType.None;
         public int ControllerID { get; protected set; } = -1;
         public List<InputRecordItem> InputRecord { get; protected set; } = new List<InputRecordItem>();
         
-        protected int inputRecordMaxSize = 600; //60 = second
+        protected int inputRecordMaxSize = 600;
 
         public virtual void Awake()
         {

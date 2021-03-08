@@ -5,15 +5,15 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace CAF.Entities
+namespace CAF.Fighters
 {
-    public class EntityManager : SimObject, ITargetable
+    public class FighterBase : SimObject, ITargetable
     {
-        public EntityInputManager InputManager { get { return entityInput; } }
-        public EntityStateManager StateManager { get { return entityStateManager; } }
-        public EntityCombatManager CombatManager { get { return entityCombatManager; } }
-        public EntityPhysicsManagerBase PhysicsManager { get { return entityPhysicsManager; } }
-        public EntityHurtboxManager HurtboxManager { get { return entityHurtboxManager; } }
+        public FighterInputManager InputManager { get { return entityInput; } }
+        public FighterStateManager StateManager { get { return entityStateManager; } }
+        public FighterCombatManager CombatManager { get { return entityCombatManager; } }
+        public FighterPhysicsManagerBase PhysicsManager { get { return entityPhysicsManager; } }
+        public FighterHurtboxManager HurtboxManager { get { return entityHurtboxManager; } }
 
         public virtual bool Targetable { get { return targetable; } }
         public bool IsGrounded { get; set; } = false;
@@ -21,11 +21,11 @@ namespace CAF.Entities
         protected bool targetable = true;
 
         [Header("References")]
-        [SerializeField] protected EntityInputManager entityInput;
-        [SerializeField] protected EntityStateManager entityStateManager;
-        [SerializeField] protected EntityCombatManager entityCombatManager;
-        [SerializeField] protected EntityPhysicsManagerBase entityPhysicsManager;
-        [SerializeField] protected EntityHurtboxManager entityHurtboxManager;
+        [SerializeField] protected FighterInputManager entityInput;
+        [SerializeField] protected FighterStateManager entityStateManager;
+        [SerializeField] protected FighterCombatManager entityCombatManager;
+        [SerializeField] protected FighterPhysicsManagerBase entityPhysicsManager;
+        [SerializeField] protected FighterHurtboxManager entityHurtboxManager;
         public GameObject visual;
         public LookHandler lookHandler;
 

@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace TDAction.Entities
 {
-    public class EntityHurtboxManager : CAF.Entities.EntityHurtboxManager
+    public class EntityHurtboxManager : CAF.Fighters.FighterHurtboxManager
     {
         protected override void SetHurtboxInfo(int groupID, int hurtboxIndex)
         {

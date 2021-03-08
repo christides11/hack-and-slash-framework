@@ -16,7 +16,7 @@ namespace TDAction.Entities.States
 
         public override void OnUpdate()
         {
-            EntityManager e = GetEntityManager();
+            FighterManager e = GetEntityManager();
 
             e.GetPhysicsManager().ApplyMovementFriction(e.entityDefinition.GetEntityStats().hitstunFrictionAir);
             e.GetPhysicsManager().HandleGravity();
@@ -27,7 +27,7 @@ namespace TDAction.Entities.States
 
         public override bool CheckInterrupt()
         {
-            EntityManager e = GetEntityManager();
+            FighterManager e = GetEntityManager();
             if (e.CombatManager.HitStun == 0)
             {
                 // Hitstun finished.
