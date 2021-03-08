@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace TDAction.Entities
 {
-    public class EntityInputManager : CAF.Entities.EntityInputManager
+    public class EntityInputManager : CAF.Fighters.FighterInputManager
     {
 
         protected override void GetInputs()

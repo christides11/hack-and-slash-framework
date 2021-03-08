@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace TDAction.Entities
 {
-    public class EntityStateManager : CAF.Entities.EntityStateManager
+    public class EntityStateManager : CAF.Fighters.FighterStateManager
     {
 
     }

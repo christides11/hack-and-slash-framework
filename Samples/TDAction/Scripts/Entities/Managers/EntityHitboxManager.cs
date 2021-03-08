@@ -5,9 +5,9 @@ using UnityEngine;
 
 namespace TDAction.Entities
 {
-    public class EntityHitboxManager : CAF.Entities.EntityHitboxManager
+    public class EntityHitboxManager : CAF.Fighters.FighterHitboxManager
     {
-        public EntityHitboxManager(EntityCombatManager combatManager, EntityManager manager) 
+        public EntityHitboxManager(EntityCombatManager combatManager, FighterManager manager) 
             : base(combatManager, manager)
         {
             
@@ -15,7 +15,7 @@ namespace TDAction.Entities
 
         protected override HitboxBase InstantiateHitbox(BoxDefinitionBase hitboxDefinitionBase)
         {
-            return GameObject.Instantiate(((EntityManager)manager).hitboxPrefab, 
+            return GameObject.Instantiate(((FighterManager)manager).hitboxPrefab, 
                 GetHitboxPosition(hitboxDefinitionBase), 
                 GetHitboxRotation(hitboxDefinitionBase));
         }
@@ -24,7 +24,7 @@ namespace TDAction.Entities
         {
             BoxDefinition hitboxDefinition = (BoxDefinition)hitboxDefinitionBase;
             return manager.transform.position
-                + manager.GetVisualBasedDirection(Vector3.right) * hitboxDefinition.offset.x * ((EntityManager)manager).FaceDirection
+                + manager.GetVisualBasedDirection(Vector3.right) * hitboxDefinition.offset.x * ((FighterManager)manager).FaceDirection
                 + manager.GetVisualBasedDirection(Vector3.up) * hitboxDefinition.offset.y;
         }
 

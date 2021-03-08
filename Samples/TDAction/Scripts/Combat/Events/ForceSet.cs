@@ -20,9 +20,9 @@ namespace TDAction.Combat.Events
         }
 
         public override bool Evaluate(uint frame, uint endFrame,
-            CAF.Entities.EntityManager controller, AttackEventVariables variables)
+            CAF.Fighters.FighterBase controller, AttackEventVariables variables)
         {
-            EntityManager e = (EntityManager)controller;
+            FighterManager e = (FighterManager)controller;
             EntityPhysicsManager physicsManager = (EntityPhysicsManager)controller.PhysicsManager;
             Vector3 f = Vector3.zero;
             if (xForce)

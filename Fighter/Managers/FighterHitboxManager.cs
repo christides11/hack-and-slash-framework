@@ -3,12 +3,12 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace CAF.Entities
+namespace CAF.Fighters
 {
     /// <summary>
     /// Handles the hitboxes and other boxes used by entities for combat.
     /// </summary>
-    public class EntityHitboxManager
+    public class FighterHitboxManager
     {
         public delegate void HitboxGroupEventAction(GameObject hurtableHit, int hitboxGroupIndex, MovesetAttackNode attack);
         public event HitboxGroupEventAction OnHitboxHit;
@@ -18,10 +18,10 @@ namespace CAF.Entities
         // Hitbox ID : Hit IHurtables
         protected Dictionary<int, List<IHurtable>> hurtablesHit = new Dictionary<int, List<IHurtable>>();
 
-        public EntityCombatManager combatManager;
-        public EntityManager manager;
+        public FighterCombatManager combatManager;
+        public FighterBase manager;
 
-        public EntityHitboxManager(EntityCombatManager combatManager, EntityManager manager)
+        public FighterHitboxManager(FighterCombatManager combatManager, FighterBase manager)
         {
             this.combatManager = combatManager;
             this.manager = manager;

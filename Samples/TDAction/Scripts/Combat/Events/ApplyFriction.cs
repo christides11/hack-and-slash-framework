@@ -19,7 +19,7 @@ namespace TDAction.Combat.Events
         }
 
         public override bool Evaluate(uint frame, uint endFrame,
-            CAF.Entities.EntityManager controller, AttackEventVariables variables)
+            CAF.Fighters.FighterBase controller, AttackEventVariables variables)
         {
             EntityPhysicsManager physicsManager = (EntityPhysicsManager)controller.PhysicsManager;
             if (xFriction)

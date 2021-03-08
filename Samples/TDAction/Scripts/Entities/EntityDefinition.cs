@@ -16,7 +16,7 @@ namespace TDAction.Entities
             public StateHurtboxDefinition hurtboxDefinition;
         }
 
-        [SerializeField] protected EntityManager entityPrefab;
+        [SerializeField] protected FighterManager entityPrefab;
         [SerializeField] protected EntityStats entityStats;
         public List<Combat.MovesetDefinition> movesets = new List<Combat.MovesetDefinition>();
         public List<HurtboxDefinitionItem> hurtboxDefinitions = new List<HurtboxDefinitionItem>();

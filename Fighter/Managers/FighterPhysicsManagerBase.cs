@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace CAF.Entities
+namespace CAF.Fighters
 {
-    public class EntityPhysicsManagerBase : MonoBehaviour
+    public class FighterPhysicsManagerBase : MonoBehaviour
     {
 
-        [SerializeField] protected EntityManager manager;
+        [SerializeField] protected FighterBase manager;
 
         public virtual void Tick()
         {

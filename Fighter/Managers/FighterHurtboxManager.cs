@@ -5,11 +5,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace CAF.Entities
+namespace CAF.Fighters
 {
-    public class EntityHurtboxManager : MonoBehaviour
+    public class FighterHurtboxManager : MonoBehaviour
     {
-        [SerializeField] protected EntityManager manager;
+        [SerializeField] protected FighterBase manager;
 
         protected StateHurtboxDefinition currentHurtboxDefinition;
 

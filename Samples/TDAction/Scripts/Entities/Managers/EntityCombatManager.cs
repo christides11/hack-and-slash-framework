@@ -7,13 +7,13 @@ using UnityEngine;
 
 namespace TDAction.Entities
 {
-    public class EntityCombatManager : CAF.Entities.EntityCombatManager
+    public class EntityCombatManager : CAF.Fighters.FighterCombatManager
     {
         public TeamTypes team = TeamTypes.FFA;
 
         protected override void Awake()
         {
-            hitboxManager = new EntityHitboxManager(this, (EntityManager)manager);
+            hitboxManager = new EntityHitboxManager(this, (FighterManager)manager);
         }
 
         public override int GetTeam()
@@ -75,7 +75,7 @@ namespace TDAction.Entities
                 manager.IsGrounded = false;
             }
 
-            ((EntityManager)manager).healthManager.Hurt(hInfo.damageOnHit);
+            ((FighterManager)manager).healthManager.Hurt(hInfo.damageOnHit);
 
             // Change into the correct state.
             if (hInfo.groundBounces && manager.IsGrounded)
