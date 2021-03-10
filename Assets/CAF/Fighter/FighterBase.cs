@@ -9,11 +9,11 @@ namespace CAF.Fighters
 {
     public class FighterBase : SimObject, ITargetable
     {
-        public FighterInputManager InputManager { get { return entityInput; } }
-        public FighterStateManager StateManager { get { return entityStateManager; } }
-        public FighterCombatManager CombatManager { get { return entityCombatManager; } }
-        public FighterPhysicsManagerBase PhysicsManager { get { return entityPhysicsManager; } }
-        public FighterHurtboxManager HurtboxManager { get { return entityHurtboxManager; } }
+        public FighterInputManager InputManager { get { return inputManager; } }
+        public FighterStateManager StateManager { get { return stateManager; } }
+        public FighterCombatManager CombatManager { get { return combatManager; } }
+        public FighterPhysicsManagerBase PhysicsManager { get { return physicsManager; } }
+        public FighterHurtboxManager HurtboxManager { get { return hurtboxManager; } }
 
         public virtual bool Targetable { get { return targetable; } }
         public bool IsGrounded { get; set; } = false;
@@ -21,11 +21,11 @@ namespace CAF.Fighters
         protected bool targetable = true;
 
         [Header("References")]
-        [SerializeField] protected FighterInputManager entityInput;
-        [SerializeField] protected FighterStateManager entityStateManager;
-        [SerializeField] protected FighterCombatManager entityCombatManager;
-        [SerializeField] protected FighterPhysicsManagerBase entityPhysicsManager;
-        [SerializeField] protected FighterHurtboxManager entityHurtboxManager;
+        [SerializeField] protected FighterInputManager inputManager;
+        [SerializeField] protected FighterStateManager stateManager;
+        [SerializeField] protected FighterCombatManager combatManager;
+        [SerializeField] protected FighterPhysicsManagerBase physicsManager;
+        [SerializeField] protected FighterHurtboxManager hurtboxManager;
         public GameObject visual;
         public LookHandler lookHandler;
 
