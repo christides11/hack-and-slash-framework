@@ -1,3 +1,20 @@
+# [11.0.0](https://github.com/christides11/Character-Action-Framework/compare/v10.0.0...v11.0.0) (2021-03-16)
+
+
+### Code Refactoring
+
+* Renaming of fighter fields. ([ee893e4](https://github.com/christides11/Character-Action-Framework/commit/ee893e45625b234bc7d77e7400b055cb459dd95e))
+
+
+### Features
+
+* Added ISimObjectManager. ([901f0a0](https://github.com/christides11/Character-Action-Framework/commit/901f0a0dbea7c83059dfdb18ef84101f70ce0797))
+
+
+### BREAKING CHANGES
+
+* Renamed FighterBase fields.
+
 # [10.0.0](https://github.com/christides11/Character-Action-Framework/compare/v9.0.1...v10.0.0) (2021-03-08)
 
 
