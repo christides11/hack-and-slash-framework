@@ -2541,6 +2541,12 @@ references:
   commentId: T:CAF.Fighters.FighterBase
   fullName: CAF.Fighters.FighterBase
   nameWithType: FighterBase
+- uid: CAF.Fighters.FighterBase.combatManager
+  name: combatManager
+  href: api/CAF.Fighters.FighterBase.html#CAF_Fighters_FighterBase_combatManager
+  commentId: F:CAF.Fighters.FighterBase.combatManager
+  fullName: CAF.Fighters.FighterBase.combatManager
+  nameWithType: FighterBase.combatManager
 - uid: CAF.Fighters.FighterBase.CombatManager
   name: CombatManager
   href: api/CAF.Fighters.FighterBase.html#CAF_Fighters_FighterBase_CombatManager
@@ -2554,36 +2560,6 @@ references:
   isSpec: "True"
   fullName: CAF.Fighters.FighterBase.CombatManager
   nameWithType: FighterBase.CombatManager
-- uid: CAF.Fighters.FighterBase.entityCombatManager
-  name: entityCombatManager
-  href: api/CAF.Fighters.FighterBase.html#CAF_Fighters_FighterBase_entityCombatManager
-  commentId: F:CAF.Fighters.FighterBase.entityCombatManager
-  fullName: CAF.Fighters.FighterBase.entityCombatManager
-  nameWithType: FighterBase.entityCombatManager
-- uid: CAF.Fighters.FighterBase.entityHurtboxManager
-  name: entityHurtboxManager
-  href: api/CAF.Fighters.FighterBase.html#CAF_Fighters_FighterBase_entityHurtboxManager
-  commentId: F:CAF.Fighters.FighterBase.entityHurtboxManager
-  fullName: CAF.Fighters.FighterBase.entityHurtboxManager
-  nameWithType: FighterBase.entityHurtboxManager
-- uid: CAF.Fighters.FighterBase.entityInput
-  name: entityInput
-  href: api/CAF.Fighters.FighterBase.html#CAF_Fighters_FighterBase_entityInput
-  commentId: F:CAF.Fighters.FighterBase.entityInput
-  fullName: CAF.Fighters.FighterBase.entityInput
-  nameWithType: FighterBase.entityInput
-- uid: CAF.Fighters.FighterBase.entityPhysicsManager
-  name: entityPhysicsManager
-  href: api/CAF.Fighters.FighterBase.html#CAF_Fighters_FighterBase_entityPhysicsManager
-  commentId: F:CAF.Fighters.FighterBase.entityPhysicsManager
-  fullName: CAF.Fighters.FighterBase.entityPhysicsManager
-  nameWithType: FighterBase.entityPhysicsManager
-- uid: CAF.Fighters.FighterBase.entityStateManager
-  name: entityStateManager
-  href: api/CAF.Fighters.FighterBase.html#CAF_Fighters_FighterBase_entityStateManager
-  commentId: F:CAF.Fighters.FighterBase.entityStateManager
-  fullName: CAF.Fighters.FighterBase.entityStateManager
-  nameWithType: FighterBase.entityStateManager
 - uid: CAF.Fighters.FighterBase.GetGameObject
   name: GetGameObject()
   href: api/CAF.Fighters.FighterBase.html#CAF_Fighters_FighterBase_GetGameObject
@@ -2636,6 +2612,12 @@ references:
   isSpec: "True"
   fullName: CAF.Fighters.FighterBase.HandleLockon
   nameWithType: FighterBase.HandleLockon
+- uid: CAF.Fighters.FighterBase.hurtboxManager
+  name: hurtboxManager
+  href: api/CAF.Fighters.FighterBase.html#CAF_Fighters_FighterBase_hurtboxManager
+  commentId: F:CAF.Fighters.FighterBase.hurtboxManager
+  fullName: CAF.Fighters.FighterBase.hurtboxManager
+  nameWithType: FighterBase.hurtboxManager
 - uid: CAF.Fighters.FighterBase.HurtboxManager
   name: HurtboxManager
   href: api/CAF.Fighters.FighterBase.html#CAF_Fighters_FighterBase_HurtboxManager
@@ -2649,6 +2631,12 @@ references:
   isSpec: "True"
   fullName: CAF.Fighters.FighterBase.HurtboxManager
   nameWithType: FighterBase.HurtboxManager
+- uid: CAF.Fighters.FighterBase.inputManager
+  name: inputManager
+  href: api/CAF.Fighters.FighterBase.html#CAF_Fighters_FighterBase_inputManager
+  commentId: F:CAF.Fighters.FighterBase.inputManager
+  fullName: CAF.Fighters.FighterBase.inputManager
+  nameWithType: FighterBase.inputManager
 - uid: CAF.Fighters.FighterBase.InputManager
   name: InputManager
   href: api/CAF.Fighters.FighterBase.html#CAF_Fighters_FighterBase_InputManager
@@ -2681,6 +2669,12 @@ references:
   commentId: F:CAF.Fighters.FighterBase.lookHandler
   fullName: CAF.Fighters.FighterBase.lookHandler
   nameWithType: FighterBase.lookHandler
+- uid: CAF.Fighters.FighterBase.physicsManager
+  name: physicsManager
+  href: api/CAF.Fighters.FighterBase.html#CAF_Fighters_FighterBase_physicsManager
+  commentId: F:CAF.Fighters.FighterBase.physicsManager
+  fullName: CAF.Fighters.FighterBase.physicsManager
+  nameWithType: FighterBase.physicsManager
 - uid: CAF.Fighters.FighterBase.PhysicsManager
   name: PhysicsManager
   href: api/CAF.Fighters.FighterBase.html#CAF_Fighters_FighterBase_PhysicsManager
@@ -2759,6 +2753,12 @@ references:
   isSpec: "True"
   fullName: CAF.Fighters.FighterBase.SimUpdate
   nameWithType: FighterBase.SimUpdate
+- uid: CAF.Fighters.FighterBase.stateManager
+  name: stateManager
+  href: api/CAF.Fighters.FighterBase.html#CAF_Fighters_FighterBase_stateManager
+  commentId: F:CAF.Fighters.FighterBase.stateManager
+  fullName: CAF.Fighters.FighterBase.stateManager
+  nameWithType: FighterBase.stateManager
 - uid: CAF.Fighters.FighterBase.StateManager
   name: StateManager
   href: api/CAF.Fighters.FighterBase.html#CAF_Fighters_FighterBase_StateManager
@@ -5049,6 +5049,51 @@ references:
   commentId: N:CAF.Simulation
   fullName: CAF.Simulation
   nameWithType: CAF.Simulation
+- uid: CAF.Simulation.ISimObjectManager
+  name: ISimObjectManager
+  href: api/CAF.Simulation.ISimObjectManager.html
+  commentId: T:CAF.Simulation.ISimObjectManager
+  fullName: CAF.Simulation.ISimObjectManager
+  nameWithType: ISimObjectManager
+- uid: CAF.Simulation.ISimObjectManager.DestroyObject(CAF.Simulation.SimObject)
+  name: DestroyObject(SimObject)
+  href: api/CAF.Simulation.ISimObjectManager.html#CAF_Simulation_ISimObjectManager_DestroyObject_CAF_Simulation_SimObject_
+  commentId: M:CAF.Simulation.ISimObjectManager.DestroyObject(CAF.Simulation.SimObject)
+  fullName: CAF.Simulation.ISimObjectManager.DestroyObject(CAF.Simulation.SimObject)
+  nameWithType: ISimObjectManager.DestroyObject(SimObject)
+- uid: CAF.Simulation.ISimObjectManager.DestroyObject*
+  name: DestroyObject
+  href: api/CAF.Simulation.ISimObjectManager.html#CAF_Simulation_ISimObjectManager_DestroyObject_
+  commentId: Overload:CAF.Simulation.ISimObjectManager.DestroyObject
+  isSpec: "True"
+  fullName: CAF.Simulation.ISimObjectManager.DestroyObject
+  nameWithType: ISimObjectManager.DestroyObject
+- uid: CAF.Simulation.ISimObjectManager.RegisterObject(CAF.Simulation.SimObject)
+  name: RegisterObject(SimObject)
+  href: api/CAF.Simulation.ISimObjectManager.html#CAF_Simulation_ISimObjectManager_RegisterObject_CAF_Simulation_SimObject_
+  commentId: M:CAF.Simulation.ISimObjectManager.RegisterObject(CAF.Simulation.SimObject)
+  fullName: CAF.Simulation.ISimObjectManager.RegisterObject(CAF.Simulation.SimObject)
+  nameWithType: ISimObjectManager.RegisterObject(SimObject)
+- uid: CAF.Simulation.ISimObjectManager.RegisterObject*
+  name: RegisterObject
+  href: api/CAF.Simulation.ISimObjectManager.html#CAF_Simulation_ISimObjectManager_RegisterObject_
+  commentId: Overload:CAF.Simulation.ISimObjectManager.RegisterObject
+  isSpec: "True"
+  fullName: CAF.Simulation.ISimObjectManager.RegisterObject
+  nameWithType: ISimObjectManager.RegisterObject
+- uid: CAF.Simulation.ISimObjectManager.SpawnObject(GameObject,Vector3,Quaternion)
+  name: SpawnObject(GameObject, Vector3, Quaternion)
+  href: api/CAF.Simulation.ISimObjectManager.html#CAF_Simulation_ISimObjectManager_SpawnObject_GameObject_Vector3_Quaternion_
+  commentId: M:CAF.Simulation.ISimObjectManager.SpawnObject(GameObject,Vector3,Quaternion)
+  fullName: CAF.Simulation.ISimObjectManager.SpawnObject(GameObject, Vector3, Quaternion)
+  nameWithType: ISimObjectManager.SpawnObject(GameObject, Vector3, Quaternion)
+- uid: CAF.Simulation.ISimObjectManager.SpawnObject*
+  name: SpawnObject
+  href: api/CAF.Simulation.ISimObjectManager.html#CAF_Simulation_ISimObjectManager_SpawnObject_
+  commentId: Overload:CAF.Simulation.ISimObjectManager.SpawnObject
+  isSpec: "True"
+  fullName: CAF.Simulation.ISimObjectManager.SpawnObject
+  nameWithType: ISimObjectManager.SpawnObject
 - uid: CAF.Simulation.SimObject
   name: SimObject
   href: api/CAF.Simulation.SimObject.html

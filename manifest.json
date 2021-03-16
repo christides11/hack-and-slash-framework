@@ -544,7 +544,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Fighters.FighterBase.html",
-          "hash": "pc31JIS1GEFejzZ/yybllw=="
+          "hash": "hvveY/8SNJ3LfY5IDf24Yw=="
         }
       },
       "is_incremental": false,
@@ -936,11 +936,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Simulation.ISimObjectManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Simulation.ISimObjectManager.html",
+          "hash": "HgPQnDuMp5NloJZJH1cBuQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CAF.Simulation.SimObject.yml",
       "output": {
         ".html": {
           "relative_path": "api/CAF.Simulation.SimObject.html",
-          "hash": "iPstAnWB39WpmckVKFm8SQ=="
+          "hash": "9Fc6Tu/waMXKu57NekeiRQ=="
         }
       },
       "is_incremental": false,
@@ -952,7 +964,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Simulation.SimObjectManager.html",
-          "hash": "Jq6k48zi/GgVJEqvILXJ5Q=="
+          "hash": "DmF1rJJ6Mx7EoSC3KINvEw=="
         }
       },
       "is_incremental": false,
@@ -964,7 +976,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Simulation.html",
-          "hash": "8F1l37a12G66Fx6K0EoDTw=="
+          "hash": "Z0X4HNGreZ/np01iOuHVSA=="
         }
       },
       "is_incremental": false,
@@ -988,7 +1000,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "D3N4cuuaQ0TT06NbbxkttA=="
+          "hash": "K/d5jbGnOt7lThz4lTRuTw=="
         }
       },
       "is_incremental": false,
@@ -1109,7 +1121,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 80,
+          "total_file_count": 81,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

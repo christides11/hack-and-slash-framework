@@ -92,11 +92,15 @@ and simulates them and the physics engine.</p>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">SimObjectManager</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="CAF.Simulation.ISimObjectManager.html">ISimObjectManager</a></div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="CAF.Simulation.html">CAF.Simulation</a></h6>
   <h6><strong>Assembly</strong>: CAF.dll</h6>
   <h5 id="CAF_Simulation_SimObjectManager_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SimObjectManager</code></pre>
+    <pre><code class="lang-csharp hljs">public class SimObjectManager : ISimObjectManager</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -342,6 +346,10 @@ After that, it ticks the physics engine.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void UpdateSimObjects()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="CAF.Simulation.ISimObjectManager.html">ISimObjectManager</a>
   </div>
 </article>
           </div>
