@@ -8,7 +8,7 @@ namespace CAF.Simulation
     /// The SimObjectManager handles keeping track of all objects that should be simulated
     /// and simulates them and the physics engine.
     /// </summary>
-    public class SimObjectManager
+    public class SimObjectManager : ISimObjectManager
     {
         /// <summary>
         /// A list of all objects in the simulation.

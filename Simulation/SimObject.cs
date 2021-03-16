@@ -12,7 +12,7 @@ namespace CAF.Simulation
         /// <summary>
         /// The SimObjectManager this is attached to. Assigned once it's added to the simulation.
         /// </summary>
-        public SimObjectManager simObjectManager;
+        public ISimObjectManager simObjectManager;
 
         protected virtual void Awake()
         {
