@@ -1,7 +1,4 @@
 ﻿using CAF.Input;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
 namespace TDAction.Entities.Characters.Boxer
 {

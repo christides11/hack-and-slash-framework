@@ -14,7 +14,7 @@ namespace TDAction.Managers
     [System.Serializable]
     public class GameHandler
     {
-        public SimObjectManager simulationObjectManager;
+        [SerializeReference] public SimObjectManager simulationObjectManager;
 
         [SerializeField] private FighterManager currentPlayerEntity;
         [SerializeField] private PlayerHUD playerHUD;

@@ -9,11 +9,9 @@ namespace TDAction.Simulation
     /// </summary>
     public class SimObjectRegister : MonoBehaviour
     {
-        [SerializeField] private SimObject simObject;
-
         private void Start()
         {
-            GameManager.instance.GameHandler.simulationObjectManager.RegisterObject(simObject);
+            GameManager.instance.GameHandler.simulationObjectManager.RegisterObject(GetComponent<ISimObject>());
         }
     }
 }
