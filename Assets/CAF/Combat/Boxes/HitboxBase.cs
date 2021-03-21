@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace CAF.Combat
 {
-    public abstract class HitboxBase : SimObject
+    public abstract class HitboxBase : MonoBehaviour, ISimObject
     {
         public delegate void HurtAction(GameObject hurtableHit, HitInfoBase hitInfo);
         public virtual event HurtAction OnHurt;
@@ -24,6 +24,26 @@ namespace CAF.Combat
             HitInfoBase hitInfo, List<IHurtable> ignoreList = null);
         public abstract void Initialize(GameObject owner, Transform directionOwner, int team,
             BoxShapes shape, HitInfoBase hitInfo, BoxDefinitionBase boxDefinition, List<IHurtable> ignoreList = null);
+
+        public void SimAwake()
+        {
+
+        }
+
+        public void SimStart()
+        {
+
+        }
+
+        public void SimUpdate()
+        {
+
+        }
+
+        public void SimLateUpdate()
+        {
+
+        }
 
         public virtual void Activate()
         {

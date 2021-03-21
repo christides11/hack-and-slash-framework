@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace CAF.Fighters
 {
-    public class FighterBase : SimObject, ITargetable
+    public class FighterBase : MonoBehaviour, ITargetable
     {
         public FighterInputManager InputManager { get { return inputManager; } }
         public FighterStateManager StateManager { get { return stateManager; } }
@@ -29,7 +29,7 @@ namespace CAF.Fighters
         public GameObject visual;
         public LookHandler lookHandler;
 
-        public override void SimUpdate()
+        public virtual void Tick()
         {
             InputManager.Tick();
 
@@ -47,7 +47,7 @@ namespace CAF.Fighters
             HurtboxManager.Tick();
         }
 
-        public override void SimLateUpdate()
+        public virtual void LateTick()
         {
             CombatManager.CLateUpdate();
         }

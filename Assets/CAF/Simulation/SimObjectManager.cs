@@ -13,20 +13,19 @@ namespace CAF.Simulation
         /// <summary>
         /// A list of all objects in the simulation.
         /// </summary>
-        protected List<SimObject> simObjects = new List<SimObject>();
+        protected List<ISimObject> simObjects = new List<ISimObject>();
 
         /// <summary>
         /// Registers an object to the simulation.
         /// </summary>
         /// <param name="simObject">The object to register to the simulation.</param>
-        public virtual void RegisterObject(SimObject simObject)
+        public virtual void RegisterObject(ISimObject simObject)
         {
             if (simObjects.Contains(simObject))
             {
                 return;
             }
             simObjects.Add(simObject);
-            simObject.simObjectManager = this;
         }
 
         /// <summary>
@@ -39,21 +38,20 @@ namespace CAF.Simulation
         public virtual GameObject SpawnObject(GameObject prefab, Vector3 position, Quaternion rotation)
         {
             GameObject obj = GameObject.Instantiate(prefab, position, rotation);
-            RegisterObject(obj.GetComponent<SimObject>());
+            RegisterObject(obj.GetComponent<ISimObject>());
             return obj;
         }
 
         /// <summary>
-        /// Remove an object from the simulation and destroys it.
+        /// Remove an object from the simulation.
         /// </summary>
         /// <param name="simObject">The object to remove.</param>
-        public virtual void DestroyObject(SimObject simObject)
+        public virtual void RemoveObjectFromSimulation(ISimObject simObject)
         {
             if (simObjects.Contains(simObject))
             {
                 simObjects.Remove(simObject);
             }
-            GameObject.Destroy(simObject.gameObject);
         }
 
         /// <summary>

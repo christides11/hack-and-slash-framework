@@ -1,5 +1,6 @@
 ﻿using CAF.Combat;
 using CAF.Input;
+using CAF.Simulation;
 using Prime31;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ using UnityEngine;
 
 namespace TDAction.Entities
 {
-    public class FighterManager : CAF.Fighters.FighterBase
+    public class FighterManager : CAF.Fighters.FighterBase, ISimObject
     {
         public int FaceDirection { get { return faceDirection; } }
 
@@ -23,15 +24,13 @@ namespace TDAction.Entities
         public LayerMask enemyStepLayerMask;
         public float enemyStepRadius = 2;
 
-
         public virtual void Initialize(InputControlType controlType)
         {
             InputManager.SetControlType(controlType);
         }
 
-        public override void SimStart()
+        public void Start()
         {
-            base.SimStart();
             SetupStates();
             CombatManager.OnExitHitStop += (self) => { visual.transform.localPosition = Vector3.zero; };
             if (healthManager.MaxHealth == 0)
@@ -41,7 +40,17 @@ namespace TDAction.Entities
             }
         }
 
-        public override void SimUpdate()
+        public virtual void SimUpdate()
+        {
+            Tick();
+        }
+
+        public virtual void SimLateUpdate()
+        {
+            LateTick();
+        }
+
+        public override void Tick()
         {
             // Shake during hitstop (only when you got hit by an attack).
             if(CombatManager.HitStop > 0
@@ -52,7 +61,7 @@ namespace TDAction.Entities
                 visual.transform.localPosition = pos;
             }
 
-            base.SimUpdate();
+            base.Tick();
         }
 
         protected virtual void SetupStates()

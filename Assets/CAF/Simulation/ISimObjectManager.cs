@@ -6,8 +6,8 @@ namespace CAF.Simulation
 {
     public interface ISimObjectManager
     {
-        void RegisterObject(SimObject simObject);
+        void RegisterObject(ISimObject simObject);
         GameObject SpawnObject(GameObject prefab, Vector3 position, Quaternion rotation);
-        void DestroyObject(SimObject simObject);
+        void RemoveObjectFromSimulation(ISimObject simObject);
     }
 }

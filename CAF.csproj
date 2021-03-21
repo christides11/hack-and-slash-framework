@@ -120,8 +120,8 @@
     <Compile Include="Assets\CAF\Input\InputDefinition.cs" />
     <Compile Include="Assets\CAF\Input\InputSequence.cs" />
     <Compile Include="Assets\CAF\Other\HelperFunctions.cs" />
+    <Compile Include="Assets\CAF\Simulation\ISimObject.cs" />
     <Compile Include="Assets\CAF\Simulation\ISimObjectManager.cs" />
-    <Compile Include="Assets\CAF\Simulation\SimObject.cs" />
     <Compile Include="Assets\CAF\Simulation\SimObjectManager.cs" />
     <None Include="Assets\CAF\CAF.asmdef" />
     <Reference Include="UnityEngine">
