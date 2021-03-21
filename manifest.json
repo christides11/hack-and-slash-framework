@@ -292,7 +292,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.Hitbox2D.html",
-          "hash": "aaBFQGeXz7vce9jS491LDw=="
+          "hash": "dEBBJTvwq9NiZ7QsR6QS+w=="
         }
       },
       "is_incremental": false,
@@ -304,7 +304,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.Hitbox3D.html",
-          "hash": "NLza6H1Kr2AxfXb2fFC9Ag=="
+          "hash": "zDTt+mJSetwg0uqVVOHeTQ=="
         }
       },
       "is_incremental": false,
@@ -328,7 +328,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.HitboxBase.html",
-          "hash": "lsld09ub6GA2WxaPvt3jUQ=="
+          "hash": "NgDq1m7Y3vPjeqbHaidf/Q=="
         }
       },
       "is_incremental": false,
@@ -544,7 +544,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Fighters.FighterBase.html",
-          "hash": "hvveY/8SNJ3LfY5IDf24Yw=="
+          "hash": "pA95qG0+ekgCUrc2cFlRcQ=="
         }
       },
       "is_incremental": false,
@@ -936,11 +936,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Simulation.ISimObjectManager.yml",
+      "source_relative_path": "api/CAF.Simulation.ISimObject.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Simulation.ISimObjectManager.html",
-          "hash": "HgPQnDuMp5NloJZJH1cBuQ=="
+          "relative_path": "api/CAF.Simulation.ISimObject.html",
+          "hash": "oxHOEysNngAi30BIB43VqA=="
         }
       },
       "is_incremental": false,
@@ -948,11 +948,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Simulation.SimObject.yml",
+      "source_relative_path": "api/CAF.Simulation.ISimObjectManager.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Simulation.SimObject.html",
-          "hash": "9Fc6Tu/waMXKu57NekeiRQ=="
+          "relative_path": "api/CAF.Simulation.ISimObjectManager.html",
+          "hash": "tgpYsfND5dPvKUgxkvVxPg=="
         }
       },
       "is_incremental": false,
@@ -964,7 +964,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Simulation.SimObjectManager.html",
-          "hash": "DmF1rJJ6Mx7EoSC3KINvEw=="
+          "hash": "ssCUIxMaon6uzZOhTtGlVA=="
         }
       },
       "is_incremental": false,
@@ -976,7 +976,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Simulation.html",
-          "hash": "Z0X4HNGreZ/np01iOuHVSA=="
+          "hash": "a5EfoJL6BDM+vr3BhN3yOg=="
         }
       },
       "is_incremental": false,
@@ -1000,7 +1000,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "K/d5jbGnOt7lThz4lTRuTw=="
+          "hash": "BCTRY5PUEOhvwrgaRbJDuw=="
         }
       },
       "is_incremental": false,

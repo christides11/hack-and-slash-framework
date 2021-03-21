@@ -88,9 +88,12 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><a class="xref" href="CAF.Simulation.SimObject.html">SimObject</a></div>
-    <div class="level2"><a class="xref" href="CAF.Combat.HitboxBase.html">HitboxBase</a></div>
-    <div class="level3"><span class="xref">Hitbox3D</span></div>
+    <div class="level1"><a class="xref" href="CAF.Combat.HitboxBase.html">HitboxBase</a></div>
+    <div class="level2"><span class="xref">Hitbox3D</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="CAF.Simulation.ISimObject.html">ISimObject</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -119,6 +122,18 @@
       <a class="xref" href="CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_team">HitboxBase.team</a>
     </div>
     <div>
+      <a class="xref" href="CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_SimAwake">HitboxBase.SimAwake()</a>
+    </div>
+    <div>
+      <a class="xref" href="CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_SimStart">HitboxBase.SimStart()</a>
+    </div>
+    <div>
+      <a class="xref" href="CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_SimUpdate">HitboxBase.SimUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_SimLateUpdate">HitboxBase.SimLateUpdate()</a>
+    </div>
+    <div>
       <a class="xref" href="CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_ReActivate_System_Collections_Generic_List_CAF_Combat_IHurtable__">HitboxBase.ReActivate(List&lt;IHurtable&gt;)</a>
     </div>
     <div>
@@ -130,33 +145,12 @@
     <div>
       <a class="xref" href="CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_ShouldHurt_CAF_Combat_IHurtable_">HitboxBase.ShouldHurt(IHurtable)</a>
     </div>
-    <div>
-      <a class="xref" href="CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_simObjectManager">SimObject.simObjectManager</a>
-    </div>
-    <div>
-      <a class="xref" href="CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_Awake">SimObject.Awake()</a>
-    </div>
-    <div>
-      <a class="xref" href="CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_Start">SimObject.Start()</a>
-    </div>
-    <div>
-      <a class="xref" href="CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_SimAwake">SimObject.SimAwake()</a>
-    </div>
-    <div>
-      <a class="xref" href="CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_SimStart">SimObject.SimStart()</a>
-    </div>
-    <div>
-      <a class="xref" href="CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_SimUpdate">SimObject.SimUpdate()</a>
-    </div>
-    <div>
-      <a class="xref" href="CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_SimLateUpdate">SimObject.SimLateUpdate()</a>
-    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="CAF.Combat.html">CAF.Combat</a></h6>
   <h6><strong>Assembly</strong>: CAF.dll</h6>
   <h5 id="CAF_Combat_Hitbox3D_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Hitbox3D : HitboxBase</code></pre>
+    <pre><code class="lang-csharp hljs">public class Hitbox3D : HitboxBase, ISimObject</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -579,6 +573,10 @@ If any are found, they are added to a list to be handled next tick.</p>
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="CAF.Simulation.ISimObject.html">ISimObject</a>
+  </div>
 </article>
           </div>
           

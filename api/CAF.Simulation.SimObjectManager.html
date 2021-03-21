@@ -117,7 +117,7 @@ and simulates them and the physics engine.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected List&lt;SimObject&gt; simObjects</code></pre>
+    <pre><code class="lang-csharp hljs">protected List&lt;ISimObject&gt; simObjects</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -129,7 +129,7 @@ and simulates them and the physics engine.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="CAF.Simulation.SimObject.html">SimObject</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="CAF.Simulation.ISimObject.html">ISimObject</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -138,44 +138,10 @@ and simulates them and the physics engine.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Simulation_SimObjectManager_DestroyObject_CAF_Simulation_SimObject_.md&amp;value=---%0Auid%3A%20CAF.Simulation.SimObjectManager.DestroyObject(CAF.Simulation.SimObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Simulation/SimObjectManager.cs/#L50">View Source</a>
-  </span>
-  <a id="CAF_Simulation_SimObjectManager_DestroyObject_" data-uid="CAF.Simulation.SimObjectManager.DestroyObject*"></a>
-  <h4 id="CAF_Simulation_SimObjectManager_DestroyObject_CAF_Simulation_SimObject_" data-uid="CAF.Simulation.SimObjectManager.DestroyObject(CAF.Simulation.SimObject)">DestroyObject(SimObject)</h4>
-  <div class="markdown level1 summary"><p>Remove an object from the simulation and destroys it.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void DestroyObject(SimObject simObject)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CAF.Simulation.SimObject.html">SimObject</a></td>
-        <td><span class="parametername">simObject</span></td>
-        <td><p>The object to remove.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Simulation_SimObjectManager_LateUpdate.md&amp;value=---%0Auid%3A%20CAF.Simulation.SimObjectManager.LateUpdate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Simulation/SimObjectManager.cs/#L92">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Simulation/SimObjectManager.cs/#L90">View Source</a>
   </span>
   <a id="CAF_Simulation_SimObjectManager_LateUpdate_" data-uid="CAF.Simulation.SimObjectManager.LateUpdate*"></a>
   <h4 id="CAF_Simulation_SimObjectManager_LateUpdate" data-uid="CAF.Simulation.SimObjectManager.LateUpdate">LateUpdate()</h4>
@@ -191,7 +157,7 @@ and simulates them and the physics engine.</p>
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Simulation_SimObjectManager_LateUpdateSimObjects.md&amp;value=---%0Auid%3A%20CAF.Simulation.SimObjectManager.LateUpdateSimObjects%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Simulation/SimObjectManager.cs/#L100">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Simulation/SimObjectManager.cs/#L98">View Source</a>
   </span>
   <a id="CAF_Simulation_SimObjectManager_LateUpdateSimObjects_" data-uid="CAF.Simulation.SimObjectManager.LateUpdateSimObjects*"></a>
   <h4 id="CAF_Simulation_SimObjectManager_LateUpdateSimObjects" data-uid="CAF.Simulation.SimObjectManager.LateUpdateSimObjects">LateUpdateSimObjects()</h4>
@@ -204,19 +170,19 @@ and simulates them and the physics engine.</p>
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Simulation_SimObjectManager_RegisterObject_CAF_Simulation_SimObject_.md&amp;value=---%0Auid%3A%20CAF.Simulation.SimObjectManager.RegisterObject(CAF.Simulation.SimObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Simulation_SimObjectManager_RegisterObject_CAF_Simulation_ISimObject_.md&amp;value=---%0Auid%3A%20CAF.Simulation.SimObjectManager.RegisterObject(CAF.Simulation.ISimObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Simulation/SimObjectManager.cs/#L22">View Source</a>
   </span>
   <a id="CAF_Simulation_SimObjectManager_RegisterObject_" data-uid="CAF.Simulation.SimObjectManager.RegisterObject*"></a>
-  <h4 id="CAF_Simulation_SimObjectManager_RegisterObject_CAF_Simulation_SimObject_" data-uid="CAF.Simulation.SimObjectManager.RegisterObject(CAF.Simulation.SimObject)">RegisterObject(SimObject)</h4>
+  <h4 id="CAF_Simulation_SimObjectManager_RegisterObject_CAF_Simulation_ISimObject_" data-uid="CAF.Simulation.SimObjectManager.RegisterObject(CAF.Simulation.ISimObject)">RegisterObject(ISimObject)</h4>
   <div class="markdown level1 summary"><p>Registers an object to the simulation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void RegisterObject(SimObject simObject)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void RegisterObject(ISimObject simObject)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -229,9 +195,43 @@ and simulates them and the physics engine.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="CAF.Simulation.SimObject.html">SimObject</a></td>
+        <td><a class="xref" href="CAF.Simulation.ISimObject.html">ISimObject</a></td>
         <td><span class="parametername">simObject</span></td>
         <td><p>The object to register to the simulation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Simulation_SimObjectManager_RemoveObjectFromSimulation_CAF_Simulation_ISimObject_.md&amp;value=---%0Auid%3A%20CAF.Simulation.SimObjectManager.RemoveObjectFromSimulation(CAF.Simulation.ISimObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Simulation/SimObjectManager.cs/#L49">View Source</a>
+  </span>
+  <a id="CAF_Simulation_SimObjectManager_RemoveObjectFromSimulation_" data-uid="CAF.Simulation.SimObjectManager.RemoveObjectFromSimulation*"></a>
+  <h4 id="CAF_Simulation_SimObjectManager_RemoveObjectFromSimulation_CAF_Simulation_ISimObject_" data-uid="CAF.Simulation.SimObjectManager.RemoveObjectFromSimulation(CAF.Simulation.ISimObject)">RemoveObjectFromSimulation(ISimObject)</h4>
+  <div class="markdown level1 summary"><p>Remove an object from the simulation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RemoveObjectFromSimulation(ISimObject simObject)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CAF.Simulation.ISimObject.html">ISimObject</a></td>
+        <td><span class="parametername">simObject</span></td>
+        <td><p>The object to remove.</p>
 </td>
       </tr>
     </tbody>
@@ -241,7 +241,7 @@ and simulates them and the physics engine.</p>
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Simulation_SimObjectManager_SimulatePhysics.md&amp;value=---%0Auid%3A%20CAF.Simulation.SimObjectManager.SimulatePhysics%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Simulation/SimObjectManager.cs/#L84">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Simulation/SimObjectManager.cs/#L82">View Source</a>
   </span>
   <a id="CAF_Simulation_SimObjectManager_SimulatePhysics_" data-uid="CAF.Simulation.SimObjectManager.SimulatePhysics*"></a>
   <h4 id="CAF_Simulation_SimObjectManager_SimulatePhysics" data-uid="CAF.Simulation.SimObjectManager.SimulatePhysics">SimulatePhysics()</h4>
@@ -257,7 +257,7 @@ and simulates them and the physics engine.</p>
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Simulation_SimObjectManager_SpawnObject_GameObject_Vector3_Quaternion_.md&amp;value=---%0Auid%3A%20CAF.Simulation.SimObjectManager.SpawnObject(GameObject%2CVector3%2CQuaternion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Simulation/SimObjectManager.cs/#L39">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Simulation/SimObjectManager.cs/#L38">View Source</a>
   </span>
   <a id="CAF_Simulation_SimObjectManager_SpawnObject_" data-uid="CAF.Simulation.SimObjectManager.SpawnObject*"></a>
   <h4 id="CAF_Simulation_SimObjectManager_SpawnObject_GameObject_Vector3_Quaternion_" data-uid="CAF.Simulation.SimObjectManager.SpawnObject(GameObject,Vector3,Quaternion)">SpawnObject(GameObject, Vector3, Quaternion)</h4>
@@ -319,7 +319,7 @@ and simulates them and the physics engine.</p>
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Simulation_SimObjectManager_Update.md&amp;value=---%0Auid%3A%20CAF.Simulation.SimObjectManager.Update%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Simulation/SimObjectManager.cs/#L64">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Simulation/SimObjectManager.cs/#L62">View Source</a>
   </span>
   <a id="CAF_Simulation_SimObjectManager_Update_" data-uid="CAF.Simulation.SimObjectManager.Update*"></a>
   <h4 id="CAF_Simulation_SimObjectManager_Update" data-uid="CAF.Simulation.SimObjectManager.Update">Update()</h4>
@@ -336,7 +336,7 @@ After that, it ticks the physics engine.</p>
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Simulation_SimObjectManager_UpdateSimObjects.md&amp;value=---%0Auid%3A%20CAF.Simulation.SimObjectManager.UpdateSimObjects%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Simulation/SimObjectManager.cs/#L73">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Simulation/SimObjectManager.cs/#L71">View Source</a>
   </span>
   <a id="CAF_Simulation_SimObjectManager_UpdateSimObjects_" data-uid="CAF.Simulation.SimObjectManager.UpdateSimObjects*"></a>
   <h4 id="CAF_Simulation_SimObjectManager_UpdateSimObjects" data-uid="CAF.Simulation.SimObjectManager.UpdateSimObjects">UpdateSimObjects()</h4>

@@ -1601,6 +1601,58 @@ references:
   isSpec: "True"
   fullName: CAF.Combat.HitboxBase.ShouldHurt
   nameWithType: HitboxBase.ShouldHurt
+- uid: CAF.Combat.HitboxBase.SimAwake
+  name: SimAwake()
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_SimAwake
+  commentId: M:CAF.Combat.HitboxBase.SimAwake
+  fullName: CAF.Combat.HitboxBase.SimAwake()
+  nameWithType: HitboxBase.SimAwake()
+- uid: CAF.Combat.HitboxBase.SimAwake*
+  name: SimAwake
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_SimAwake_
+  commentId: Overload:CAF.Combat.HitboxBase.SimAwake
+  isSpec: "True"
+  fullName: CAF.Combat.HitboxBase.SimAwake
+  nameWithType: HitboxBase.SimAwake
+- uid: CAF.Combat.HitboxBase.SimLateUpdate
+  name: SimLateUpdate()
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_SimLateUpdate
+  commentId: M:CAF.Combat.HitboxBase.SimLateUpdate
+  fullName: CAF.Combat.HitboxBase.SimLateUpdate()
+  nameWithType: HitboxBase.SimLateUpdate()
+- uid: CAF.Combat.HitboxBase.SimLateUpdate*
+  name: SimLateUpdate
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_SimLateUpdate_
+  commentId: Overload:CAF.Combat.HitboxBase.SimLateUpdate
+  isSpec: "True"
+  fullName: CAF.Combat.HitboxBase.SimLateUpdate
+  nameWithType: HitboxBase.SimLateUpdate
+- uid: CAF.Combat.HitboxBase.SimStart
+  name: SimStart()
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_SimStart
+  commentId: M:CAF.Combat.HitboxBase.SimStart
+  fullName: CAF.Combat.HitboxBase.SimStart()
+  nameWithType: HitboxBase.SimStart()
+- uid: CAF.Combat.HitboxBase.SimStart*
+  name: SimStart
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_SimStart_
+  commentId: Overload:CAF.Combat.HitboxBase.SimStart
+  isSpec: "True"
+  fullName: CAF.Combat.HitboxBase.SimStart
+  nameWithType: HitboxBase.SimStart
+- uid: CAF.Combat.HitboxBase.SimUpdate
+  name: SimUpdate()
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_SimUpdate
+  commentId: M:CAF.Combat.HitboxBase.SimUpdate
+  fullName: CAF.Combat.HitboxBase.SimUpdate()
+  nameWithType: HitboxBase.SimUpdate()
+- uid: CAF.Combat.HitboxBase.SimUpdate*
+  name: SimUpdate
+  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_SimUpdate_
+  commentId: Overload:CAF.Combat.HitboxBase.SimUpdate
+  isSpec: "True"
+  fullName: CAF.Combat.HitboxBase.SimUpdate
+  nameWithType: HitboxBase.SimUpdate
 - uid: CAF.Combat.HitboxBase.team
   name: team
   href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_team
@@ -2663,6 +2715,19 @@ references:
   isSpec: "True"
   fullName: CAF.Fighters.FighterBase.IsGrounded
   nameWithType: FighterBase.IsGrounded
+- uid: CAF.Fighters.FighterBase.LateTick
+  name: LateTick()
+  href: api/CAF.Fighters.FighterBase.html#CAF_Fighters_FighterBase_LateTick
+  commentId: M:CAF.Fighters.FighterBase.LateTick
+  fullName: CAF.Fighters.FighterBase.LateTick()
+  nameWithType: FighterBase.LateTick()
+- uid: CAF.Fighters.FighterBase.LateTick*
+  name: LateTick
+  href: api/CAF.Fighters.FighterBase.html#CAF_Fighters_FighterBase_LateTick_
+  commentId: Overload:CAF.Fighters.FighterBase.LateTick
+  isSpec: "True"
+  fullName: CAF.Fighters.FighterBase.LateTick
+  nameWithType: FighterBase.LateTick
 - uid: CAF.Fighters.FighterBase.lookHandler
   name: lookHandler
   href: api/CAF.Fighters.FighterBase.html#CAF_Fighters_FighterBase_lookHandler
@@ -2727,32 +2792,6 @@ references:
   isSpec: "True"
   fullName: CAF.Fighters.FighterBase.SetVisualRotation
   nameWithType: FighterBase.SetVisualRotation
-- uid: CAF.Fighters.FighterBase.SimLateUpdate
-  name: SimLateUpdate()
-  href: api/CAF.Fighters.FighterBase.html#CAF_Fighters_FighterBase_SimLateUpdate
-  commentId: M:CAF.Fighters.FighterBase.SimLateUpdate
-  fullName: CAF.Fighters.FighterBase.SimLateUpdate()
-  nameWithType: FighterBase.SimLateUpdate()
-- uid: CAF.Fighters.FighterBase.SimLateUpdate*
-  name: SimLateUpdate
-  href: api/CAF.Fighters.FighterBase.html#CAF_Fighters_FighterBase_SimLateUpdate_
-  commentId: Overload:CAF.Fighters.FighterBase.SimLateUpdate
-  isSpec: "True"
-  fullName: CAF.Fighters.FighterBase.SimLateUpdate
-  nameWithType: FighterBase.SimLateUpdate
-- uid: CAF.Fighters.FighterBase.SimUpdate
-  name: SimUpdate()
-  href: api/CAF.Fighters.FighterBase.html#CAF_Fighters_FighterBase_SimUpdate
-  commentId: M:CAF.Fighters.FighterBase.SimUpdate
-  fullName: CAF.Fighters.FighterBase.SimUpdate()
-  nameWithType: FighterBase.SimUpdate()
-- uid: CAF.Fighters.FighterBase.SimUpdate*
-  name: SimUpdate
-  href: api/CAF.Fighters.FighterBase.html#CAF_Fighters_FighterBase_SimUpdate_
-  commentId: Overload:CAF.Fighters.FighterBase.SimUpdate
-  isSpec: "True"
-  fullName: CAF.Fighters.FighterBase.SimUpdate
-  nameWithType: FighterBase.SimUpdate
 - uid: CAF.Fighters.FighterBase.stateManager
   name: stateManager
   href: api/CAF.Fighters.FighterBase.html#CAF_Fighters_FighterBase_stateManager
@@ -2791,6 +2830,19 @@ references:
   isSpec: "True"
   fullName: CAF.Fighters.FighterBase.Targetable
   nameWithType: FighterBase.Targetable
+- uid: CAF.Fighters.FighterBase.Tick
+  name: Tick()
+  href: api/CAF.Fighters.FighterBase.html#CAF_Fighters_FighterBase_Tick
+  commentId: M:CAF.Fighters.FighterBase.Tick
+  fullName: CAF.Fighters.FighterBase.Tick()
+  nameWithType: FighterBase.Tick()
+- uid: CAF.Fighters.FighterBase.Tick*
+  name: Tick
+  href: api/CAF.Fighters.FighterBase.html#CAF_Fighters_FighterBase_Tick_
+  commentId: Overload:CAF.Fighters.FighterBase.Tick
+  isSpec: "True"
+  fullName: CAF.Fighters.FighterBase.Tick
+  nameWithType: FighterBase.Tick
 - uid: CAF.Fighters.FighterBase.visual
   name: visual
   href: api/CAF.Fighters.FighterBase.html#CAF_Fighters_FighterBase_visual
@@ -5049,31 +5101,50 @@ references:
   commentId: N:CAF.Simulation
   fullName: CAF.Simulation
   nameWithType: CAF.Simulation
+- uid: CAF.Simulation.ISimObject
+  name: ISimObject
+  href: api/CAF.Simulation.ISimObject.html
+  commentId: T:CAF.Simulation.ISimObject
+  fullName: CAF.Simulation.ISimObject
+  nameWithType: ISimObject
+- uid: CAF.Simulation.ISimObject.SimLateUpdate
+  name: SimLateUpdate()
+  href: api/CAF.Simulation.ISimObject.html#CAF_Simulation_ISimObject_SimLateUpdate
+  commentId: M:CAF.Simulation.ISimObject.SimLateUpdate
+  fullName: CAF.Simulation.ISimObject.SimLateUpdate()
+  nameWithType: ISimObject.SimLateUpdate()
+- uid: CAF.Simulation.ISimObject.SimLateUpdate*
+  name: SimLateUpdate
+  href: api/CAF.Simulation.ISimObject.html#CAF_Simulation_ISimObject_SimLateUpdate_
+  commentId: Overload:CAF.Simulation.ISimObject.SimLateUpdate
+  isSpec: "True"
+  fullName: CAF.Simulation.ISimObject.SimLateUpdate
+  nameWithType: ISimObject.SimLateUpdate
+- uid: CAF.Simulation.ISimObject.SimUpdate
+  name: SimUpdate()
+  href: api/CAF.Simulation.ISimObject.html#CAF_Simulation_ISimObject_SimUpdate
+  commentId: M:CAF.Simulation.ISimObject.SimUpdate
+  fullName: CAF.Simulation.ISimObject.SimUpdate()
+  nameWithType: ISimObject.SimUpdate()
+- uid: CAF.Simulation.ISimObject.SimUpdate*
+  name: SimUpdate
+  href: api/CAF.Simulation.ISimObject.html#CAF_Simulation_ISimObject_SimUpdate_
+  commentId: Overload:CAF.Simulation.ISimObject.SimUpdate
+  isSpec: "True"
+  fullName: CAF.Simulation.ISimObject.SimUpdate
+  nameWithType: ISimObject.SimUpdate
 - uid: CAF.Simulation.ISimObjectManager
   name: ISimObjectManager
   href: api/CAF.Simulation.ISimObjectManager.html
   commentId: T:CAF.Simulation.ISimObjectManager
   fullName: CAF.Simulation.ISimObjectManager
   nameWithType: ISimObjectManager
-- uid: CAF.Simulation.ISimObjectManager.DestroyObject(CAF.Simulation.SimObject)
-  name: DestroyObject(SimObject)
-  href: api/CAF.Simulation.ISimObjectManager.html#CAF_Simulation_ISimObjectManager_DestroyObject_CAF_Simulation_SimObject_
-  commentId: M:CAF.Simulation.ISimObjectManager.DestroyObject(CAF.Simulation.SimObject)
-  fullName: CAF.Simulation.ISimObjectManager.DestroyObject(CAF.Simulation.SimObject)
-  nameWithType: ISimObjectManager.DestroyObject(SimObject)
-- uid: CAF.Simulation.ISimObjectManager.DestroyObject*
-  name: DestroyObject
-  href: api/CAF.Simulation.ISimObjectManager.html#CAF_Simulation_ISimObjectManager_DestroyObject_
-  commentId: Overload:CAF.Simulation.ISimObjectManager.DestroyObject
-  isSpec: "True"
-  fullName: CAF.Simulation.ISimObjectManager.DestroyObject
-  nameWithType: ISimObjectManager.DestroyObject
-- uid: CAF.Simulation.ISimObjectManager.RegisterObject(CAF.Simulation.SimObject)
-  name: RegisterObject(SimObject)
-  href: api/CAF.Simulation.ISimObjectManager.html#CAF_Simulation_ISimObjectManager_RegisterObject_CAF_Simulation_SimObject_
-  commentId: M:CAF.Simulation.ISimObjectManager.RegisterObject(CAF.Simulation.SimObject)
-  fullName: CAF.Simulation.ISimObjectManager.RegisterObject(CAF.Simulation.SimObject)
-  nameWithType: ISimObjectManager.RegisterObject(SimObject)
+- uid: CAF.Simulation.ISimObjectManager.RegisterObject(CAF.Simulation.ISimObject)
+  name: RegisterObject(ISimObject)
+  href: api/CAF.Simulation.ISimObjectManager.html#CAF_Simulation_ISimObjectManager_RegisterObject_CAF_Simulation_ISimObject_
+  commentId: M:CAF.Simulation.ISimObjectManager.RegisterObject(CAF.Simulation.ISimObject)
+  fullName: CAF.Simulation.ISimObjectManager.RegisterObject(CAF.Simulation.ISimObject)
+  nameWithType: ISimObjectManager.RegisterObject(ISimObject)
 - uid: CAF.Simulation.ISimObjectManager.RegisterObject*
   name: RegisterObject
   href: api/CAF.Simulation.ISimObjectManager.html#CAF_Simulation_ISimObjectManager_RegisterObject_
@@ -5081,6 +5152,19 @@ references:
   isSpec: "True"
   fullName: CAF.Simulation.ISimObjectManager.RegisterObject
   nameWithType: ISimObjectManager.RegisterObject
+- uid: CAF.Simulation.ISimObjectManager.RemoveObjectFromSimulation(CAF.Simulation.ISimObject)
+  name: RemoveObjectFromSimulation(ISimObject)
+  href: api/CAF.Simulation.ISimObjectManager.html#CAF_Simulation_ISimObjectManager_RemoveObjectFromSimulation_CAF_Simulation_ISimObject_
+  commentId: M:CAF.Simulation.ISimObjectManager.RemoveObjectFromSimulation(CAF.Simulation.ISimObject)
+  fullName: CAF.Simulation.ISimObjectManager.RemoveObjectFromSimulation(CAF.Simulation.ISimObject)
+  nameWithType: ISimObjectManager.RemoveObjectFromSimulation(ISimObject)
+- uid: CAF.Simulation.ISimObjectManager.RemoveObjectFromSimulation*
+  name: RemoveObjectFromSimulation
+  href: api/CAF.Simulation.ISimObjectManager.html#CAF_Simulation_ISimObjectManager_RemoveObjectFromSimulation_
+  commentId: Overload:CAF.Simulation.ISimObjectManager.RemoveObjectFromSimulation
+  isSpec: "True"
+  fullName: CAF.Simulation.ISimObjectManager.RemoveObjectFromSimulation
+  nameWithType: ISimObjectManager.RemoveObjectFromSimulation
 - uid: CAF.Simulation.ISimObjectManager.SpawnObject(GameObject,Vector3,Quaternion)
   name: SpawnObject(GameObject, Vector3, Quaternion)
   href: api/CAF.Simulation.ISimObjectManager.html#CAF_Simulation_ISimObjectManager_SpawnObject_GameObject_Vector3_Quaternion_
@@ -5094,115 +5178,12 @@ references:
   isSpec: "True"
   fullName: CAF.Simulation.ISimObjectManager.SpawnObject
   nameWithType: ISimObjectManager.SpawnObject
-- uid: CAF.Simulation.SimObject
-  name: SimObject
-  href: api/CAF.Simulation.SimObject.html
-  commentId: T:CAF.Simulation.SimObject
-  fullName: CAF.Simulation.SimObject
-  nameWithType: SimObject
-- uid: CAF.Simulation.SimObject.Awake
-  name: Awake()
-  href: api/CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_Awake
-  commentId: M:CAF.Simulation.SimObject.Awake
-  fullName: CAF.Simulation.SimObject.Awake()
-  nameWithType: SimObject.Awake()
-- uid: CAF.Simulation.SimObject.Awake*
-  name: Awake
-  href: api/CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_Awake_
-  commentId: Overload:CAF.Simulation.SimObject.Awake
-  isSpec: "True"
-  fullName: CAF.Simulation.SimObject.Awake
-  nameWithType: SimObject.Awake
-- uid: CAF.Simulation.SimObject.SimAwake
-  name: SimAwake()
-  href: api/CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_SimAwake
-  commentId: M:CAF.Simulation.SimObject.SimAwake
-  fullName: CAF.Simulation.SimObject.SimAwake()
-  nameWithType: SimObject.SimAwake()
-- uid: CAF.Simulation.SimObject.SimAwake*
-  name: SimAwake
-  href: api/CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_SimAwake_
-  commentId: Overload:CAF.Simulation.SimObject.SimAwake
-  isSpec: "True"
-  fullName: CAF.Simulation.SimObject.SimAwake
-  nameWithType: SimObject.SimAwake
-- uid: CAF.Simulation.SimObject.SimLateUpdate
-  name: SimLateUpdate()
-  href: api/CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_SimLateUpdate
-  commentId: M:CAF.Simulation.SimObject.SimLateUpdate
-  fullName: CAF.Simulation.SimObject.SimLateUpdate()
-  nameWithType: SimObject.SimLateUpdate()
-- uid: CAF.Simulation.SimObject.SimLateUpdate*
-  name: SimLateUpdate
-  href: api/CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_SimLateUpdate_
-  commentId: Overload:CAF.Simulation.SimObject.SimLateUpdate
-  isSpec: "True"
-  fullName: CAF.Simulation.SimObject.SimLateUpdate
-  nameWithType: SimObject.SimLateUpdate
-- uid: CAF.Simulation.SimObject.simObjectManager
-  name: simObjectManager
-  href: api/CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_simObjectManager
-  commentId: F:CAF.Simulation.SimObject.simObjectManager
-  fullName: CAF.Simulation.SimObject.simObjectManager
-  nameWithType: SimObject.simObjectManager
-- uid: CAF.Simulation.SimObject.SimStart
-  name: SimStart()
-  href: api/CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_SimStart
-  commentId: M:CAF.Simulation.SimObject.SimStart
-  fullName: CAF.Simulation.SimObject.SimStart()
-  nameWithType: SimObject.SimStart()
-- uid: CAF.Simulation.SimObject.SimStart*
-  name: SimStart
-  href: api/CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_SimStart_
-  commentId: Overload:CAF.Simulation.SimObject.SimStart
-  isSpec: "True"
-  fullName: CAF.Simulation.SimObject.SimStart
-  nameWithType: SimObject.SimStart
-- uid: CAF.Simulation.SimObject.SimUpdate
-  name: SimUpdate()
-  href: api/CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_SimUpdate
-  commentId: M:CAF.Simulation.SimObject.SimUpdate
-  fullName: CAF.Simulation.SimObject.SimUpdate()
-  nameWithType: SimObject.SimUpdate()
-- uid: CAF.Simulation.SimObject.SimUpdate*
-  name: SimUpdate
-  href: api/CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_SimUpdate_
-  commentId: Overload:CAF.Simulation.SimObject.SimUpdate
-  isSpec: "True"
-  fullName: CAF.Simulation.SimObject.SimUpdate
-  nameWithType: SimObject.SimUpdate
-- uid: CAF.Simulation.SimObject.Start
-  name: Start()
-  href: api/CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_Start
-  commentId: M:CAF.Simulation.SimObject.Start
-  fullName: CAF.Simulation.SimObject.Start()
-  nameWithType: SimObject.Start()
-- uid: CAF.Simulation.SimObject.Start*
-  name: Start
-  href: api/CAF.Simulation.SimObject.html#CAF_Simulation_SimObject_Start_
-  commentId: Overload:CAF.Simulation.SimObject.Start
-  isSpec: "True"
-  fullName: CAF.Simulation.SimObject.Start
-  nameWithType: SimObject.Start
 - uid: CAF.Simulation.SimObjectManager
   name: SimObjectManager
   href: api/CAF.Simulation.SimObjectManager.html
   commentId: T:CAF.Simulation.SimObjectManager
   fullName: CAF.Simulation.SimObjectManager
   nameWithType: SimObjectManager
-- uid: CAF.Simulation.SimObjectManager.DestroyObject(CAF.Simulation.SimObject)
-  name: DestroyObject(SimObject)
-  href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_DestroyObject_CAF_Simulation_SimObject_
-  commentId: M:CAF.Simulation.SimObjectManager.DestroyObject(CAF.Simulation.SimObject)
-  fullName: CAF.Simulation.SimObjectManager.DestroyObject(CAF.Simulation.SimObject)
-  nameWithType: SimObjectManager.DestroyObject(SimObject)
-- uid: CAF.Simulation.SimObjectManager.DestroyObject*
-  name: DestroyObject
-  href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_DestroyObject_
-  commentId: Overload:CAF.Simulation.SimObjectManager.DestroyObject
-  isSpec: "True"
-  fullName: CAF.Simulation.SimObjectManager.DestroyObject
-  nameWithType: SimObjectManager.DestroyObject
 - uid: CAF.Simulation.SimObjectManager.LateUpdate
   name: LateUpdate()
   href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_LateUpdate
@@ -5229,12 +5210,12 @@ references:
   isSpec: "True"
   fullName: CAF.Simulation.SimObjectManager.LateUpdateSimObjects
   nameWithType: SimObjectManager.LateUpdateSimObjects
-- uid: CAF.Simulation.SimObjectManager.RegisterObject(CAF.Simulation.SimObject)
-  name: RegisterObject(SimObject)
-  href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_RegisterObject_CAF_Simulation_SimObject_
-  commentId: M:CAF.Simulation.SimObjectManager.RegisterObject(CAF.Simulation.SimObject)
-  fullName: CAF.Simulation.SimObjectManager.RegisterObject(CAF.Simulation.SimObject)
-  nameWithType: SimObjectManager.RegisterObject(SimObject)
+- uid: CAF.Simulation.SimObjectManager.RegisterObject(CAF.Simulation.ISimObject)
+  name: RegisterObject(ISimObject)
+  href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_RegisterObject_CAF_Simulation_ISimObject_
+  commentId: M:CAF.Simulation.SimObjectManager.RegisterObject(CAF.Simulation.ISimObject)
+  fullName: CAF.Simulation.SimObjectManager.RegisterObject(CAF.Simulation.ISimObject)
+  nameWithType: SimObjectManager.RegisterObject(ISimObject)
 - uid: CAF.Simulation.SimObjectManager.RegisterObject*
   name: RegisterObject
   href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_RegisterObject_
@@ -5242,6 +5223,19 @@ references:
   isSpec: "True"
   fullName: CAF.Simulation.SimObjectManager.RegisterObject
   nameWithType: SimObjectManager.RegisterObject
+- uid: CAF.Simulation.SimObjectManager.RemoveObjectFromSimulation(CAF.Simulation.ISimObject)
+  name: RemoveObjectFromSimulation(ISimObject)
+  href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_RemoveObjectFromSimulation_CAF_Simulation_ISimObject_
+  commentId: M:CAF.Simulation.SimObjectManager.RemoveObjectFromSimulation(CAF.Simulation.ISimObject)
+  fullName: CAF.Simulation.SimObjectManager.RemoveObjectFromSimulation(CAF.Simulation.ISimObject)
+  nameWithType: SimObjectManager.RemoveObjectFromSimulation(ISimObject)
+- uid: CAF.Simulation.SimObjectManager.RemoveObjectFromSimulation*
+  name: RemoveObjectFromSimulation
+  href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_RemoveObjectFromSimulation_
+  commentId: Overload:CAF.Simulation.SimObjectManager.RemoveObjectFromSimulation
+  isSpec: "True"
+  fullName: CAF.Simulation.SimObjectManager.RemoveObjectFromSimulation
+  nameWithType: SimObjectManager.RemoveObjectFromSimulation
 - uid: CAF.Simulation.SimObjectManager.simObjects
   name: simObjects
   href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_simObjects
