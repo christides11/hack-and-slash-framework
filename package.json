@@ -1,6 +1,6 @@
 {
   "name": "com.christides.character-action-framework",
-  "version": "11.0.0",
+  "version": "12.0.0",
   "displayName": "Character Action Framework",
   "description": "A framework for character action games.",
   "unity": "2019.4",
