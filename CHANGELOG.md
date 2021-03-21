@@ -1,3 +1,15 @@
+# [12.0.0](https://github.com/christides11/Character-Action-Framework/compare/v11.0.0...v12.0.0) (2021-03-21)
+
+
+### Code Refactoring
+
+* SimulationManager changes. ([9d5dc63](https://github.com/christides11/Character-Action-Framework/commit/9d5dc63a55d6677ef269c701951686e991c6085c))
+
+
+### BREAKING CHANGES
+
+* SimObject changed to an interface.
+
 # [11.0.0](https://github.com/christides11/Character-Action-Framework/compare/v10.0.0...v11.0.0) (2021-03-16)
 
 
