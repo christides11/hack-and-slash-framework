@@ -1,3 +1,17 @@
+# [13.0.0](https://github.com/christides11/Character-Action-Framework/compare/v12.0.0...v13.0.0) (2021-03-23)
+
+
+### Code Refactoring
+
+* Reference current state using ushort instead of state itself. ([3d08151](https://github.com/christides11/Character-Action-Framework/commit/3d08151eec2a444f86978b6ec77c960d685fe364))
+
+
+### BREAKING CHANGES
+
+* Changed the state identifier from a int to a ushort.
+CurrentState now refered to by it's number instead of saving a reference to it.
+Removed changing state by providing a state directly.
+
 # [12.0.0](https://github.com/christides11/Character-Action-Framework/compare/v11.0.0...v12.0.0) (2021-03-21)
 
 
