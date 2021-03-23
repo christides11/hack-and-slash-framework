@@ -87,7 +87,7 @@ namespace TDAction.Entities
             }
             else
             {
-                manager.StateManager.ChangeState((int)(manager.IsGrounded ? EntityStates.FLINCH_GROUND : EntityStates.FLINCH_AIR));
+                manager.StateManager.ChangeState((ushort)(manager.IsGrounded ? EntityStates.FLINCH_GROUND : EntityStates.FLINCH_AIR));
             }
             return hitReaction;
         }

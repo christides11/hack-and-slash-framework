@@ -9,7 +9,8 @@ namespace CAF.Combat
         #region General
         public string attackName;
         public string description;
-        public int stateOverride = -1;
+        public bool useState = false;
+        public ushort stateOverride = 0;
         public int length = 1; //In frames
         #endregion
 
