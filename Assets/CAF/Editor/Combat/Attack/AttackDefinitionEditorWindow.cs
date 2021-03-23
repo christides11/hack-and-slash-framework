@@ -109,7 +109,10 @@ namespace CAF.Combat
             EditorGUILayout.LabelField("Description");
             string description = EditorGUILayout.TextArea(attack.description, GUILayout.Height(50));
 
-            int stateOverride = EditorGUILayout.IntField("State Override", attack.stateOverride);
+            bool useState = EditorGUILayout.Toggle("Use State", attack.useState);
+            EditorGUI.BeginDisabledGroup(useState == false);
+            ushort stateOverride = (ushort)EditorGUILayout.IntField("State Override", attack.stateOverride);
+            EditorGUI.EndDisabledGroup();
 
             int length = attack.length;
             AnimationClip animationGround = attack.animationGround;
@@ -135,6 +138,7 @@ namespace CAF.Combat
                 Undo.RecordObject(attack, "Changed General Property.");
                 attack.attackName = attackName;
                 attack.description = description;
+                attack.useState = useState;
                 attack.stateOverride = stateOverride;
                 attack.length = length;
                 attack.animationGround = animationGround;

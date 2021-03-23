@@ -126,7 +126,7 @@ namespace TDAction.Entities
         {
             if (InputManager.GetButton((int)EntityInputs.JUMP).firstPress)
             {
-                StateManager.ChangeState(IsGrounded ? (int)EntityStates.JUMP_SQUAT : (int)EntityStates.JUMP);
+                StateManager.ChangeState(IsGrounded ? (ushort)EntityStates.JUMP_SQUAT : (ushort)EntityStates.JUMP);
                 return true;
             }
             return false;
@@ -136,7 +136,7 @@ namespace TDAction.Entities
         {
             if (IsGrounded)
             {
-                StateManager.ChangeState((int)EntityStates.IDLE);
+                StateManager.ChangeState((ushort)EntityStates.IDLE);
                 return true;
             }
             return false;

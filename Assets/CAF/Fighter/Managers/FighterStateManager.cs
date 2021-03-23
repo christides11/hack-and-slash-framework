@@ -5,27 +5,28 @@ namespace CAF.Fighters
 {
     public class FighterStateManager : MonoBehaviour
     {
-        public delegate void StateAction(FighterBase self, FighterState from, uint fromStateFrame);
+        public delegate void StateAction(FighterBase self, ushort from, uint fromStateFrame);
         public delegate void StateFrameAction(FighterBase self, uint preChangeFrame);
         public event StateAction OnStatePreChange;
         public event StateAction OnStatePostChange;
         public event StateFrameAction OnStateFrameSet;
 
-        public FighterState CurrentState { get { return currentState; } }
+        public ushort CurrentState { get { return currentState; } }
         public uint CurrentStateFrame { get { return currentStateFrame; } }
 
         [SerializeField] protected FighterBase manager = null;
-        protected Dictionary<int, FighterState> states = new Dictionary<int, FighterState>();
-        protected FighterState currentState;
+        protected Dictionary<ushort, FighterState> states = new Dictionary<ushort, FighterState>();
+        protected ushort currentState;
         [SerializeField] protected uint currentStateFrame = 0;
         [SerializeField] protected string currentStateName;
 
         public virtual void Tick()
         {
-            if (currentState != null)
+            if (!states.ContainsKey(currentState))
             {
-                currentState.OnUpdate();
+                return;
             }
+            states[currentState].OnUpdate();
         }
 
         /// <summary>
@@ -33,7 +34,7 @@ namespace CAF.Fighters
         /// </summary>
         /// <param name="state">The state.</param>
         /// <param name="stateNumber">The number of the state.</param>
-        public virtual void AddState(FighterState state, int stateNumber)
+        public virtual void AddState(FighterState state, ushort stateNumber)
         {
             state.Manager = manager;
             states.Add(stateNumber, state);
@@ -46,61 +47,42 @@ namespace CAF.Fighters
         /// <param name="stateFrame">What frame to start the state at.</param>
         /// <param name="callOnInterrupt">If OnInterrupt of the current state should be called.</param>
         /// <returns></returns>
-        public virtual bool ChangeState(int state, uint stateFrame = 0, bool callOnInterrupt = true)
+        public virtual bool ChangeState(ushort state, uint stateFrame = 0, bool callOnInterrupt = true)
         {
             if (states.ContainsKey(state))
             {
-                FighterState oldState = currentState;
+                ushort oldState = currentState;
                 uint oldStateFrame = currentStateFrame;
 
                 if (callOnInterrupt)
                 {
-                    if (currentState != null)
+                    if (states.ContainsKey(currentState))
                     {
-                        currentState.OnInterrupted();
+                        states[currentState].OnInterrupted();
                     }
                 }
                 currentStateFrame = stateFrame;
-                currentState = states[state];
+                currentState = state;
                 OnStatePreChange?.Invoke(manager, oldState, oldStateFrame);
                 if (currentStateFrame == 0)
                 {
-                    currentState.Initialize();
+                    states[currentState].Initialize();
                     currentStateFrame = 1;
                 }
-                currentStateName = currentState.GetName();
+                currentStateName = states[currentState].GetName();
                 OnStatePostChange?.Invoke(manager, oldState, oldStateFrame);
                 return true;
             }
             return false;
         }
 
-        /// <summary>
-        /// Changes the state to the given one.
-        /// </summary>
-        /// <param name="state">The state to change to.</param>
-        /// <param name="stateFrame">What frame to start the state at.</param>
-        /// <param name="callOnInterrupt">If OnInterrupt of the current state should be called.</param>
-        public virtual void ChangeState(FighterState state, uint stateFrame = 0, bool callOnInterrupt = true)
+        public virtual FighterState GetState(ushort state)
         {
-            FighterState oldState = currentState;
-            uint oldStateFrame = currentStateFrame;
-
-            if (callOnInterrupt)
+            if (states.ContainsKey(state))
             {
-                currentState.OnInterrupted();
+                return states[state];
             }
-            currentStateFrame = stateFrame;
-            currentState = state;
-            state.Manager = manager;
-            OnStatePreChange?.Invoke(manager, oldState, oldStateFrame);
-            if (currentStateFrame == 0)
-            {
-                currentState.Initialize();
-                currentStateFrame = 1;
-            }
-            currentStateName = currentState.GetName();
-            OnStatePostChange?.Invoke(manager, oldState, oldStateFrame);
+            return null;
         }
 
         public virtual void SetFrame(uint frame)

@@ -21,7 +21,7 @@ namespace TDAction.Entities.States
             base.Initialize();
             AttackDefinition currentAttack = 
                 (TDAction.Combat.AttackDefinition)GetEntityManager().CombatManager.CurrentAttack.attackDefinition;
-            if (currentAttack.stateOverride > -1)
+            if (currentAttack.useState)
             {
                 GetEntityManager().StateManager.ChangeState(currentAttack.stateOverride);
                 return;
