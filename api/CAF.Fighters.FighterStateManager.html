@@ -110,7 +110,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected FighterState currentState</code></pre>
+    <pre><code class="lang-csharp hljs">protected ushort currentState</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -122,7 +122,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="CAF.Fighters.FighterState.html">FighterState</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -226,7 +226,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Dictionary&lt;int, FighterState&gt; states</code></pre>
+    <pre><code class="lang-csharp hljs">protected Dictionary&lt;ushort, FighterState&gt; states</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -238,7 +238,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="CAF.Fighters.FighterState.html">FighterState</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a>, <a class="xref" href="CAF.Fighters.FighterState.html">FighterState</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -258,7 +258,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FighterState CurrentState { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ushort CurrentState { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -270,7 +270,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="CAF.Fighters.FighterState.html">FighterState</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -309,19 +309,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterStateManager_AddState_CAF_Fighters_FighterState_System_Int32_.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterStateManager.AddState(CAF.Fighters.FighterState%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterStateManager_AddState_CAF_Fighters_FighterState_System_UInt16_.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterStateManager.AddState(CAF.Fighters.FighterState%2CSystem.UInt16)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterStateManager.cs/#L36">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterStateManager.cs/#L37">View Source</a>
   </span>
   <a id="CAF_Fighters_FighterStateManager_AddState_" data-uid="CAF.Fighters.FighterStateManager.AddState*"></a>
-  <h4 id="CAF_Fighters_FighterStateManager_AddState_CAF_Fighters_FighterState_System_Int32_" data-uid="CAF.Fighters.FighterStateManager.AddState(CAF.Fighters.FighterState,System.Int32)">AddState(FighterState, Int32)</h4>
+  <h4 id="CAF_Fighters_FighterStateManager_AddState_CAF_Fighters_FighterState_System_UInt16_" data-uid="CAF.Fighters.FighterStateManager.AddState(CAF.Fighters.FighterState,System.UInt16)">AddState(FighterState, UInt16)</h4>
   <div class="markdown level1 summary"><p>Adds a state to the entity&apos;s state list.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void AddState(FighterState state, int stateNumber)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void AddState(FighterState state, ushort stateNumber)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -340,7 +340,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
         <td><span class="parametername">stateNumber</span></td>
         <td><p>The number of the state.</p>
 </td>
@@ -349,19 +349,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterStateManager_ChangeState_CAF_Fighters_FighterState_System_UInt32_System_Boolean_.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterStateManager.ChangeState(CAF.Fighters.FighterState%2CSystem.UInt32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterStateManager_ChangeState_System_UInt16_System_UInt32_System_Boolean_.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterStateManager.ChangeState(System.UInt16%2CSystem.UInt32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterStateManager.cs/#L84">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterStateManager.cs/#L50">View Source</a>
   </span>
   <a id="CAF_Fighters_FighterStateManager_ChangeState_" data-uid="CAF.Fighters.FighterStateManager.ChangeState*"></a>
-  <h4 id="CAF_Fighters_FighterStateManager_ChangeState_CAF_Fighters_FighterState_System_UInt32_System_Boolean_" data-uid="CAF.Fighters.FighterStateManager.ChangeState(CAF.Fighters.FighterState,System.UInt32,System.Boolean)">ChangeState(FighterState, UInt32, Boolean)</h4>
+  <h4 id="CAF_Fighters_FighterStateManager_ChangeState_System_UInt16_System_UInt32_System_Boolean_" data-uid="CAF.Fighters.FighterStateManager.ChangeState(System.UInt16,System.UInt32,System.Boolean)">ChangeState(UInt16, UInt32, Boolean)</h4>
   <div class="markdown level1 summary"><p>Changes the state to the given one.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void ChangeState(FighterState state, uint stateFrame = 0U, bool callOnInterrupt = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual bool ChangeState(ushort state, uint stateFrame = 0U, bool callOnInterrupt = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -374,53 +374,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="CAF.Fighters.FighterState.html">FighterState</a></td>
-        <td><span class="parametername">state</span></td>
-        <td><p>The state to change to.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
-        <td><span class="parametername">stateFrame</span></td>
-        <td><p>What frame to start the state at.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">callOnInterrupt</span></td>
-        <td><p>If OnInterrupt of the current state should be called.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterStateManager_ChangeState_System_Int32_System_UInt32_System_Boolean_.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterStateManager.ChangeState(System.Int32%2CSystem.UInt32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterStateManager.cs/#L49">View Source</a>
-  </span>
-  <a id="CAF_Fighters_FighterStateManager_ChangeState_" data-uid="CAF.Fighters.FighterStateManager.ChangeState*"></a>
-  <h4 id="CAF_Fighters_FighterStateManager_ChangeState_System_Int32_System_UInt32_System_Boolean_" data-uid="CAF.Fighters.FighterStateManager.ChangeState(System.Int32,System.UInt32,System.Boolean)">ChangeState(Int32, UInt32, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Changes the state to the given one.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual bool ChangeState(int state, uint stateFrame = 0U, bool callOnInterrupt = true)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
         <td><span class="parametername">state</span></td>
         <td><p>The state to change to.</p>
 </td>
@@ -456,10 +410,57 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterStateManager_GetState_System_UInt16_.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterStateManager.GetState(System.UInt16)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterStateManager.cs/#L79">View Source</a>
+  </span>
+  <a id="CAF_Fighters_FighterStateManager_GetState_" data-uid="CAF.Fighters.FighterStateManager.GetState*"></a>
+  <h4 id="CAF_Fighters_FighterStateManager_GetState_System_UInt16_" data-uid="CAF.Fighters.FighterStateManager.GetState(System.UInt16)">GetState(UInt16)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual FighterState GetState(ushort state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CAF.Fighters.FighterState.html">FighterState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterStateManager_IncrementFrame.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterStateManager.IncrementFrame%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterStateManager.cs/#L113">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterStateManager.cs/#L95">View Source</a>
   </span>
   <a id="CAF_Fighters_FighterStateManager_IncrementFrame_" data-uid="CAF.Fighters.FighterStateManager.IncrementFrame*"></a>
   <h4 id="CAF_Fighters_FighterStateManager_IncrementFrame" data-uid="CAF.Fighters.FighterStateManager.IncrementFrame">IncrementFrame()</h4>
@@ -474,7 +475,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterStateManager_SetFrame_System_UInt32_.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterStateManager.SetFrame(System.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterStateManager.cs/#L106">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterStateManager.cs/#L88">View Source</a>
   </span>
   <a id="CAF_Fighters_FighterStateManager_SetFrame_" data-uid="CAF.Fighters.FighterStateManager.SetFrame*"></a>
   <h4 id="CAF_Fighters_FighterStateManager_SetFrame_System_UInt32_" data-uid="CAF.Fighters.FighterStateManager.SetFrame(System.UInt32)">SetFrame(UInt32)</h4>

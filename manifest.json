@@ -52,7 +52,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.AttackDefinition.html",
-          "hash": "BDjo1nDT9SnEB1d4RdDEXw=="
+          "hash": "pWkKdIlhRl/BqSmJjdD2RA=="
         }
       },
       "is_incremental": false,
@@ -76,7 +76,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.AttackDefinitionEditorWindow.html",
-          "hash": "vvxZGIFo7q9ohZWZaUl0pA=="
+          "hash": "kbDQZuFz0omroqeRJHQ5AQ=="
         }
       },
       "is_incremental": false,
@@ -724,7 +724,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Fighters.FighterStateManager.StateAction.html",
-          "hash": "a1JbKBZIynIH8MhWVVesEQ=="
+          "hash": "OGvNv0nXjB4XEH2aG+zARQ=="
         }
       },
       "is_incremental": false,
@@ -748,7 +748,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Fighters.FighterStateManager.html",
-          "hash": "PByDXk0sxSqVT0a7fwNUqQ=="
+          "hash": "WjyGaW7D8gpcanVZl7aeHA=="
         }
       },
       "is_incremental": false,

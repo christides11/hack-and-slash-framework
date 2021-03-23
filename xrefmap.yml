@@ -187,6 +187,12 @@ references:
   commentId: F:CAF.Combat.AttackDefinition.stateOverride
   fullName: CAF.Combat.AttackDefinition.stateOverride
   nameWithType: AttackDefinition.stateOverride
+- uid: CAF.Combat.AttackDefinition.useState
+  name: useState
+  href: api/CAF.Combat.AttackDefinition.html#CAF_Combat_AttackDefinition_useState
+  commentId: F:CAF.Combat.AttackDefinition.useState
+  fullName: CAF.Combat.AttackDefinition.useState
+  nameWithType: AttackDefinition.useState
 - uid: CAF.Combat.AttackDefinition.wrapMode
   name: wrapMode
   href: api/CAF.Combat.AttackDefinition.html#CAF_Combat_AttackDefinition_wrapMode
@@ -4316,12 +4322,12 @@ references:
   commentId: T:CAF.Fighters.FighterStateManager
   fullName: CAF.Fighters.FighterStateManager
   nameWithType: FighterStateManager
-- uid: CAF.Fighters.FighterStateManager.AddState(CAF.Fighters.FighterState,System.Int32)
-  name: AddState(FighterState, Int32)
-  href: api/CAF.Fighters.FighterStateManager.html#CAF_Fighters_FighterStateManager_AddState_CAF_Fighters_FighterState_System_Int32_
-  commentId: M:CAF.Fighters.FighterStateManager.AddState(CAF.Fighters.FighterState,System.Int32)
-  fullName: CAF.Fighters.FighterStateManager.AddState(CAF.Fighters.FighterState, System.Int32)
-  nameWithType: FighterStateManager.AddState(FighterState, Int32)
+- uid: CAF.Fighters.FighterStateManager.AddState(CAF.Fighters.FighterState,System.UInt16)
+  name: AddState(FighterState, UInt16)
+  href: api/CAF.Fighters.FighterStateManager.html#CAF_Fighters_FighterStateManager_AddState_CAF_Fighters_FighterState_System_UInt16_
+  commentId: M:CAF.Fighters.FighterStateManager.AddState(CAF.Fighters.FighterState,System.UInt16)
+  fullName: CAF.Fighters.FighterStateManager.AddState(CAF.Fighters.FighterState, System.UInt16)
+  nameWithType: FighterStateManager.AddState(FighterState, UInt16)
 - uid: CAF.Fighters.FighterStateManager.AddState*
   name: AddState
   href: api/CAF.Fighters.FighterStateManager.html#CAF_Fighters_FighterStateManager_AddState_
@@ -4329,18 +4335,12 @@ references:
   isSpec: "True"
   fullName: CAF.Fighters.FighterStateManager.AddState
   nameWithType: FighterStateManager.AddState
-- uid: CAF.Fighters.FighterStateManager.ChangeState(CAF.Fighters.FighterState,System.UInt32,System.Boolean)
-  name: ChangeState(FighterState, UInt32, Boolean)
-  href: api/CAF.Fighters.FighterStateManager.html#CAF_Fighters_FighterStateManager_ChangeState_CAF_Fighters_FighterState_System_UInt32_System_Boolean_
-  commentId: M:CAF.Fighters.FighterStateManager.ChangeState(CAF.Fighters.FighterState,System.UInt32,System.Boolean)
-  fullName: CAF.Fighters.FighterStateManager.ChangeState(CAF.Fighters.FighterState, System.UInt32, System.Boolean)
-  nameWithType: FighterStateManager.ChangeState(FighterState, UInt32, Boolean)
-- uid: CAF.Fighters.FighterStateManager.ChangeState(System.Int32,System.UInt32,System.Boolean)
-  name: ChangeState(Int32, UInt32, Boolean)
-  href: api/CAF.Fighters.FighterStateManager.html#CAF_Fighters_FighterStateManager_ChangeState_System_Int32_System_UInt32_System_Boolean_
-  commentId: M:CAF.Fighters.FighterStateManager.ChangeState(System.Int32,System.UInt32,System.Boolean)
-  fullName: CAF.Fighters.FighterStateManager.ChangeState(System.Int32, System.UInt32, System.Boolean)
-  nameWithType: FighterStateManager.ChangeState(Int32, UInt32, Boolean)
+- uid: CAF.Fighters.FighterStateManager.ChangeState(System.UInt16,System.UInt32,System.Boolean)
+  name: ChangeState(UInt16, UInt32, Boolean)
+  href: api/CAF.Fighters.FighterStateManager.html#CAF_Fighters_FighterStateManager_ChangeState_System_UInt16_System_UInt32_System_Boolean_
+  commentId: M:CAF.Fighters.FighterStateManager.ChangeState(System.UInt16,System.UInt32,System.Boolean)
+  fullName: CAF.Fighters.FighterStateManager.ChangeState(System.UInt16, System.UInt32, System.Boolean)
+  nameWithType: FighterStateManager.ChangeState(UInt16, UInt32, Boolean)
 - uid: CAF.Fighters.FighterStateManager.ChangeState*
   name: ChangeState
   href: api/CAF.Fighters.FighterStateManager.html#CAF_Fighters_FighterStateManager_ChangeState_
@@ -4392,6 +4392,19 @@ references:
   commentId: F:CAF.Fighters.FighterStateManager.currentStateName
   fullName: CAF.Fighters.FighterStateManager.currentStateName
   nameWithType: FighterStateManager.currentStateName
+- uid: CAF.Fighters.FighterStateManager.GetState(System.UInt16)
+  name: GetState(UInt16)
+  href: api/CAF.Fighters.FighterStateManager.html#CAF_Fighters_FighterStateManager_GetState_System_UInt16_
+  commentId: M:CAF.Fighters.FighterStateManager.GetState(System.UInt16)
+  fullName: CAF.Fighters.FighterStateManager.GetState(System.UInt16)
+  nameWithType: FighterStateManager.GetState(UInt16)
+- uid: CAF.Fighters.FighterStateManager.GetState*
+  name: GetState
+  href: api/CAF.Fighters.FighterStateManager.html#CAF_Fighters_FighterStateManager_GetState_
+  commentId: Overload:CAF.Fighters.FighterStateManager.GetState
+  isSpec: "True"
+  fullName: CAF.Fighters.FighterStateManager.GetState
+  nameWithType: FighterStateManager.GetState
 - uid: CAF.Fighters.FighterStateManager.IncrementFrame
   name: IncrementFrame()
   href: api/CAF.Fighters.FighterStateManager.html#CAF_Fighters_FighterStateManager_IncrementFrame
