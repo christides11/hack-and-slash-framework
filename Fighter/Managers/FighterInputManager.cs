@@ -11,18 +11,15 @@ namespace CAF.Fighters
         [SerializeField] protected FighterBase manager;
 
         public InputControlType ControlType { get; protected set; } = InputControlType.None;
-        public int ControllerID { get; protected set; } = -1;
-        public List<InputRecordItem> InputRecord { get; protected set; } = new List<InputRecordItem>();
-        
-        protected int inputRecordMaxSize = 600;
+        public uint inputRecordSize { get; protected set; } = 1024;
+        public InputRecordItem[] InputRecord { get; protected set; } = null;
+        public uint inputTick { get; protected set; } = 0;
+
+        public Dictionary<int, uint> bufferLimitAtTick = new Dictionary<int, uint>();
 
         public virtual void Awake()
         {
-        }
-
-        public virtual void SetControllerID(int controllerID)
-        {
-            ControllerID = controllerID;
+            InputRecord = new InputRecordItem[inputRecordSize];
         }
 
         public virtual void SetControlType(InputControlType controlType)
@@ -35,10 +32,7 @@ namespace CAF.Fighters
             switch (ControlType) {
                 case InputControlType.Direct:
                     GetInputs();
-                    if (InputRecord.Count > 1)
-                    {
-                        ProcessInputs();
-                    }
+                    ProcessInput();
                     break;
             }
         }
@@ -50,20 +44,19 @@ namespace CAF.Fighters
         {
         }
 
-        /// <summary>
-        /// Update the current frame's inputs based on the last frame's inputs.
-        /// </summary>
-        protected virtual void ProcessInputs()
+        protected virtual void ProcessInput()
         {
-            foreach (var r in InputRecord[InputRecord.Count - 1].inputs)
+            if(inputTick < 2)
             {
-                r.Value.Process(InputRecord[InputRecord.Count - 2].inputs[r.Key]);
+                return;
             }
-            if (InputRecord.Count > inputRecordMaxSize)
+
+            foreach (var r in InputRecord[(inputTick - 1) % inputRecordSize].inputs)
             {
-                InputRecord.RemoveAt(0);
+                r.Value.Process(InputRecord[(inputTick - 2) % inputRecordSize].inputs[r.Key]);
             }
         }
+
 
         /// <summary>
         /// Get the axis at the offset given.
@@ -71,13 +64,13 @@ namespace CAF.Fighters
         /// <param name="axis">The ID of the axis.</param>
         /// <param name="frameOffset">The frame offset to get the axis at.</param>
         /// <returns>The axis.</returns>
-        public virtual float GetAxis(int axis, int frameOffset = 0)
+        public virtual float GetAxis(int axis, uint frameOffset = 0)
         {
-            if (InputRecord.Count == 0 || (InputRecord.Count - 1) <= frameOffset)
+            if (inputTick == 0 || inputTick < frameOffset)
             {
                 return 0;
             }
-            return ((InputRecordAxis)InputRecord[(InputRecord.Count - 1) - frameOffset].inputs[axis]).axis;
+            return ((InputRecordAxis)InputRecord[(inputTick - 1 - frameOffset) % inputRecordSize].inputs[axis]).axis;
         }
 
         /// <summary>
@@ -86,13 +79,13 @@ namespace CAF.Fighters
         /// <param name="axis2DID">The ID of the 2D axis.</param>
         /// <param name="frameOffset">The frame offset to get the 2D axis at.</param>
         /// <returns>The 2D axis.</returns>
-        public virtual Vector2 GetAxis2D(int axis2DID, int frameOffset = 0)
+        public virtual Vector2 GetAxis2D(int axis2DID, uint frameOffset = 0)
         {
-            if (InputRecord.Count == 0 || (InputRecord.Count - 1) <= frameOffset)
+            if (inputTick == 0 || inputTick < frameOffset)
             {
                 return Vector2.zero;
             }
-            return ((InputRecordAxis2D)InputRecord[(InputRecord.Count - 1) - frameOffset].inputs[axis2DID]).axis2D;
+            return ((InputRecordAxis2D)InputRecord[(inputTick - 1 - frameOffset) % inputRecordSize].inputs[axis2DID]).axis2D;
         }
 
         /// <summary>
@@ -105,9 +98,9 @@ namespace CAF.Fighters
         /// <param name="checkBuffer">If the buffer should be checked.</param>
         /// <param name="bufferFrames">How many frames to check for buffer.</param>
         /// <returns>The button and the information about it on the frame.</returns>
-        public virtual InputRecordButton GetButton(int buttonID, int frameOffset = 0, bool checkBuffer = false, int bufferFrames = 3)
+        public virtual InputRecordButton GetButton(int buttonID, uint frameOffset = 0, bool checkBuffer = false, uint bufferFrames = 3)
         {
-            return GetButton(buttonID, out int go, frameOffset, checkBuffer, bufferFrames);
+            return GetButton(buttonID, out uint go, frameOffset, checkBuffer, bufferFrames);
         }
 
         /// <summary>
@@ -120,20 +113,21 @@ namespace CAF.Fighters
         /// <param name="checkBuffer">If the buffer should be checked.</param>
         /// <param name="bufferFrames">How many frames to check for buffer.</param>
         /// <returns>The button and the information about it on the frame.</returns>
-        public virtual InputRecordButton GetButton(int buttonID, out int gotOffset, int frameOffset = 0, bool checkBuffer = false, int bufferFrames = 3)
+        public virtual InputRecordButton GetButton(int buttonID, out uint gotOffset, uint frameOffset = 0, bool checkBuffer = false, uint bufferFrames = 3)
         {
             gotOffset = frameOffset;
-            if (InputRecord.Count == 0)
+            if (inputTick == 0 || inputTick < frameOffset)
             {
                 return new InputRecordButton();
             }
-            if (checkBuffer && (InputRecord.Count - 1) >= (frameOffset + bufferFrames))
+            if (checkBuffer 
+                && inputTick - 1 >= (frameOffset + bufferFrames))
             {
-                for (int i = 0; i < bufferFrames; i++)
+                for (uint i = 0; i < bufferFrames; i++)
                 {
-                    InputRecordButton b = ((InputRecordButton)InputRecord[(InputRecord.Count - 1) - (frameOffset + bufferFrames)].inputs[buttonID]);
+                    InputRecordButton b = ((InputRecordButton)InputRecord[(inputTick - 1 - (frameOffset + bufferFrames)) % inputRecordSize].inputs[buttonID]);
                     //Can't go further, already used buffer past here.
-                    if (b.usedInBuffer)
+                    if (UsedInBuffer(buttonID, (inputTick - 1 - (frameOffset+bufferFrames))))
                     {
                         break;
                     }
@@ -144,18 +138,20 @@ namespace CAF.Fighters
                     }
                 }
             }
-            return (InputRecordButton)InputRecord[(InputRecord.Count - 1) - frameOffset].inputs[buttonID];
+            return (InputRecordButton)InputRecord[(inputTick - 1 - frameOffset) % inputRecordSize].inputs[buttonID];
         }
 
-        /// <summary>
-        /// Clear every input's buffer.
-        /// </summary>
-        public virtual void ClearBuffer()
+        public virtual bool UsedInBuffer(int inputID, uint tick)
         {
-            foreach (var r in InputRecord[InputRecord.Count - 1].inputs)
+            if (!bufferLimitAtTick.ContainsKey(inputID))
             {
-                r.Value.UseInBuffer();
+                return false;
             }
+            if (bufferLimitAtTick[inputID] < tick)
+            {
+                return false;
+            }
+            return true;
         }
 
         /// <summary>
@@ -164,7 +160,12 @@ namespace CAF.Fighters
         /// <param name="inputID">The input to clear the buffer for.</param>
         public virtual void ClearBuffer(int inputID)
         {
-            InputRecord[InputRecord.Count - 1].inputs[inputID].UseInBuffer();
+            if (!bufferLimitAtTick.ContainsKey(inputID))
+            {
+                bufferLimitAtTick.Add(inputID, inputTick);
+                return;
+            }
+            bufferLimitAtTick[inputID] = inputTick;
         }
     }
 }
