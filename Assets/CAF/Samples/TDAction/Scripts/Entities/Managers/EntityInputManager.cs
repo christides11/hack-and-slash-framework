@@ -22,7 +22,8 @@ namespace TDAction.Entities
             recordItem.AddInput((int)EntityInputs.ATTACK,
                 new InputRecordButton(Input.GetKey(KeyCode.I)));
 
-            InputRecord.Add(recordItem);
+            InputRecord[inputTick % inputRecordSize] = recordItem;
+            inputTick++;
         }
     }
 }

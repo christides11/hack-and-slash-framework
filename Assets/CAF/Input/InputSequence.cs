@@ -11,9 +11,9 @@ namespace CAF.Input
     [System.Serializable]
     public class InputSequence
     {
-        public int executeWindow = 3;
+        public uint executeWindow = 3;
         [SerializeField]public List<InputDefinition> executeInputs = new List<InputDefinition>();
-        public int sequenceWindow = 8;
+        public uint sequenceWindow = 8;
         [SerializeField]public List<InputDefinition> sequenceInputs = new List<InputDefinition>();
 
 #if UNITY_EDITOR
@@ -24,10 +24,10 @@ namespace CAF.Input
         public virtual void DrawInspector()
         {
 #if UNITY_EDITOR
-            executeWindow = EditorGUILayout.IntField("Execute Window", executeWindow);
+            executeWindow = (uint)EditorGUILayout.IntField("Execute Window", (int)executeWindow);
             DrawInputDefinitionList(ref executeWindowFoldout, "Execute Buttons", ref executeInputs);
             EditorGUILayout.Space();
-            sequenceWindow = EditorGUILayout.IntField("Sequence Window", sequenceWindow);
+            sequenceWindow = (uint)EditorGUILayout.IntField("Sequence Window", (int)sequenceWindow);
             DrawInputDefinitionList(ref sequenceWindowFoldout, "Sequence Buttons", ref sequenceInputs);
 #endif
         }

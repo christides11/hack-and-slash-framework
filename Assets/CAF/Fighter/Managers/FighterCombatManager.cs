@@ -206,9 +206,9 @@ namespace CAF.Fighters
         /// <param name="processSequenceButtons">If the sequence buttons should be checked, even if the execute buttons were not pressed.</param>
         /// <param name="holdInput">If the sequence check should check for the buttons being held down instead of their first prcess.</param>
         /// <returns>True if the input sequence was inputted.</returns>
-        public virtual bool CheckForInputSequence(InputSequence sequence, int baseOffset = 0, bool processSequenceButtons = false, bool holdInput = false)
+        public virtual bool CheckForInputSequence(InputSequence sequence, uint baseOffset = 0, bool processSequenceButtons = false, bool holdInput = false)
         {
-            int currentOffset = 0;
+            uint currentOffset = 0;
             // Check execute button(s)
             bool pressedExecuteInputs = true;
             for (int e = 0; e < sequence.executeInputs.Count; e++)
@@ -223,7 +223,7 @@ namespace CAF.Fighters
                         }
                         break;
                     case Input.InputDefinitionType.Button:
-                        if (!manager.InputManager.GetButton(sequence.executeInputs[e].buttonID, out int gotOffset, baseOffset, 
+                        if (!manager.InputManager.GetButton(sequence.executeInputs[e].buttonID, out uint gotOffset, baseOffset, 
                             true, sequence.executeWindow).firstPress)
                         {
                             pressedExecuteInputs = false;
@@ -264,7 +264,7 @@ namespace CAF.Fighters
                 {
                     case Input.InputDefinitionType.Stick:
                         bool foundDir = false;
-                        for (int f = currentOffset; f < currentOffset + sequence.sequenceWindow; f++)
+                        for (uint f = currentOffset; f < currentOffset + sequence.sequenceWindow; f++)
                         {
                             if (CheckStickDirection(sequence.sequenceInputs[s], f))
                             {
@@ -281,10 +281,10 @@ namespace CAF.Fighters
                         break;
                     case Input.InputDefinitionType.Button:
                         bool foundButton = false;
-                        for (int f = currentOffset; f < currentOffset + sequence.sequenceWindow; f++)
+                        for (uint f = currentOffset; f < currentOffset + sequence.sequenceWindow; f++)
                         {
-                            if ( (!holdInput && manager.InputManager.GetButton(sequence.sequenceInputs[s].buttonID, out int gotOffset, f, false).firstPress)
-                                || (holdInput && manager.InputManager.GetButton(sequence.sequenceInputs[s].buttonID, out int gotOffsetTwo, f, false).isDown) )
+                            if ( (!holdInput && manager.InputManager.GetButton(sequence.sequenceInputs[s].buttonID, out uint gotOffset, f, false).firstPress)
+                                || (holdInput && manager.InputManager.GetButton(sequence.sequenceInputs[s].buttonID, out uint gotOffsetTwo, f, false).isDown) )
                             {
                                 foundButton = true;
                                 currentOffset = f;
@@ -311,7 +311,7 @@ namespace CAF.Fighters
             return true;
         }
 
-        protected virtual bool CheckStickDirection(InputDefinition sequenceInput, int framesBack)
+        protected virtual bool CheckStickDirection(InputDefinition sequenceInput, uint framesBack)
         {
             Debug.LogError("CheckStickDirection has to be overrided for command inputs to work.");
             return false;

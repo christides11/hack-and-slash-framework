@@ -101,7 +101,7 @@ namespace TDAction.Entities
         }
 
         Collider2D[] enemyStepResults = new Collider2D[2];
-        public virtual bool TryEnemyStep(int bufferFrames = 3)
+        public virtual bool TryEnemyStep(uint bufferFrames = 3)
         {
             if (InputManager.GetButton((int)EntityInputs.JUMP, 0, true, bufferFrames).firstPress)
             {

@@ -7,14 +7,12 @@ namespace CAF.Input
     [System.Serializable]
     public struct InputRecordButton : InputRecordInput
     {
-        public bool usedInBuffer;
         public bool isDown;
-        public bool firstPress; //If the button was pressed on this frame
-        public bool released; //If the button was released this frame
+        public bool firstPress;
+        public bool released;
 
         public InputRecordButton(bool button)
         {
-            usedInBuffer = false;
             isDown = button;
             firstPress = false;
             released = false;
@@ -31,16 +29,6 @@ namespace CAF.Input
             {
                 released = true;
             }
-        }
-
-        public bool UsedInBuffer()
-        {
-            return usedInBuffer;
-        }
-
-        public void UseInBuffer()
-        {
-            usedInBuffer = true;
         }
     }
 }
