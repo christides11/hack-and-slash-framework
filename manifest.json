@@ -616,7 +616,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Fighters.FighterCombatManager.html",
-          "hash": "R2PdkeeOY3kT/6bolacUjQ=="
+          "hash": "te7XxVceH3yyAAf6NHjcuA=="
         }
       },
       "is_incremental": false,
@@ -664,7 +664,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Fighters.FighterInputManager.html",
-          "hash": "YcsSVBU3PfGIDra9lG9aWg=="
+          "hash": "eaZIwrEGsYqrc7ZCN/8tAg=="
         }
       },
       "is_incremental": false,
@@ -880,7 +880,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Input.InputRecordButton.html",
-          "hash": "4evutEkEJi3+1+dzw9acJA=="
+          "hash": "yqt5iXTmvokfcIV0BjZARA=="
         }
       },
       "is_incremental": false,
@@ -892,7 +892,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Input.InputRecordInput.html",
-          "hash": "9vUUxW2LQ98bwK3U4dPFTA=="
+          "hash": "qj++twuYSvNXSD6pg4utpg=="
         }
       },
       "is_incremental": false,
@@ -916,7 +916,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Input.InputSequence.html",
-          "hash": "fZoz4I92QYjb1YOAw67QWg=="
+          "hash": "r4hUO+l69JlwNMl3NPB1aQ=="
         }
       },
       "is_incremental": false,

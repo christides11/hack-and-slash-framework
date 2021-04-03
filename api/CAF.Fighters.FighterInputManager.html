@@ -100,17 +100,17 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterInputManager_inputRecordMaxSize.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterInputManager.inputRecordMaxSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterInputManager_bufferLimitAtTick.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterInputManager.bufferLimitAtTick%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterInputManager.cs/#L17">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterInputManager.cs/#L18">View Source</a>
   </span>
-  <h4 id="CAF_Fighters_FighterInputManager_inputRecordMaxSize" data-uid="CAF.Fighters.FighterInputManager.inputRecordMaxSize">inputRecordMaxSize</h4>
+  <h4 id="CAF_Fighters_FighterInputManager_bufferLimitAtTick" data-uid="CAF.Fighters.FighterInputManager.bufferLimitAtTick">bufferLimitAtTick</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected int inputRecordMaxSize</code></pre>
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;int, uint&gt; bufferLimitAtTick</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -122,7 +122,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -158,36 +158,6 @@
   </table>
   <h3 id="properties">Properties
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterInputManager_ControllerID.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterInputManager.ControllerID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterInputManager.cs/#L14">View Source</a>
-  </span>
-  <a id="CAF_Fighters_FighterInputManager_ControllerID_" data-uid="CAF.Fighters.FighterInputManager.ControllerID*"></a>
-  <h4 id="CAF_Fighters_FighterInputManager_ControllerID" data-uid="CAF.Fighters.FighterInputManager.ControllerID">ControllerID</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int ControllerID { get; protected set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterInputManager_ControlType.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterInputManager.ControlType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -231,7 +201,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;InputRecordItem&gt; InputRecord { get; protected set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public InputRecordItem[] InputRecord { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -243,7 +213,67 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="CAF.Input.InputRecordItem.html">InputRecordItem</a>&gt;</td>
+        <td><a class="xref" href="CAF.Input.InputRecordItem.html">InputRecordItem</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterInputManager_inputRecordSize.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterInputManager.inputRecordSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterInputManager.cs/#L14">View Source</a>
+  </span>
+  <a id="CAF_Fighters_FighterInputManager_inputRecordSize_" data-uid="CAF.Fighters.FighterInputManager.inputRecordSize*"></a>
+  <h4 id="CAF_Fighters_FighterInputManager_inputRecordSize" data-uid="CAF.Fighters.FighterInputManager.inputRecordSize">inputRecordSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint inputRecordSize { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterInputManager_inputTick.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterInputManager.inputTick%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterInputManager.cs/#L16">View Source</a>
+  </span>
+  <a id="CAF_Fighters_FighterInputManager_inputTick_" data-uid="CAF.Fighters.FighterInputManager.inputTick*"></a>
+  <h4 id="CAF_Fighters_FighterInputManager_inputTick" data-uid="CAF.Fighters.FighterInputManager.inputTick">inputTick</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint inputTick { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -255,7 +285,7 @@
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterInputManager_Awake.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterInputManager.Awake%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterInputManager.cs/#L19">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterInputManager.cs/#L20">View Source</a>
   </span>
   <a id="CAF_Fighters_FighterInputManager_Awake_" data-uid="CAF.Fighters.FighterInputManager.Awake*"></a>
   <h4 id="CAF_Fighters_FighterInputManager_Awake" data-uid="CAF.Fighters.FighterInputManager.Awake">Awake()</h4>
@@ -267,26 +297,10 @@
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterInputManager_ClearBuffer.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterInputManager.ClearBuffer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterInputManager.cs/#L153">View Source</a>
-  </span>
-  <a id="CAF_Fighters_FighterInputManager_ClearBuffer_" data-uid="CAF.Fighters.FighterInputManager.ClearBuffer*"></a>
-  <h4 id="CAF_Fighters_FighterInputManager_ClearBuffer" data-uid="CAF.Fighters.FighterInputManager.ClearBuffer">ClearBuffer()</h4>
-  <div class="markdown level1 summary"><p>Clear every input&apos;s buffer.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void ClearBuffer()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterInputManager_ClearBuffer_System_Int32_.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterInputManager.ClearBuffer(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterInputManager.cs/#L165">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterInputManager.cs/#L161">View Source</a>
   </span>
   <a id="CAF_Fighters_FighterInputManager_ClearBuffer_" data-uid="CAF.Fighters.FighterInputManager.ClearBuffer*"></a>
   <h4 id="CAF_Fighters_FighterInputManager_ClearBuffer_System_Int32_" data-uid="CAF.Fighters.FighterInputManager.ClearBuffer(System.Int32)">ClearBuffer(Int32)</h4>
@@ -317,19 +331,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterInputManager_GetAxis_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterInputManager.GetAxis(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterInputManager_GetAxis_System_Int32_System_UInt32_.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterInputManager.GetAxis(System.Int32%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterInputManager.cs/#L74">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterInputManager.cs/#L67">View Source</a>
   </span>
   <a id="CAF_Fighters_FighterInputManager_GetAxis_" data-uid="CAF.Fighters.FighterInputManager.GetAxis*"></a>
-  <h4 id="CAF_Fighters_FighterInputManager_GetAxis_System_Int32_System_Int32_" data-uid="CAF.Fighters.FighterInputManager.GetAxis(System.Int32,System.Int32)">GetAxis(Int32, Int32)</h4>
+  <h4 id="CAF_Fighters_FighterInputManager_GetAxis_System_Int32_System_UInt32_" data-uid="CAF.Fighters.FighterInputManager.GetAxis(System.Int32,System.UInt32)">GetAxis(Int32, UInt32)</h4>
   <div class="markdown level1 summary"><p>Get the axis at the offset given.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual float GetAxis(int axis, int frameOffset = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual float GetAxis(int axis, uint frameOffset = 0U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -348,7 +362,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
         <td><span class="parametername">frameOffset</span></td>
         <td><p>The frame offset to get the axis at.</p>
 </td>
@@ -373,19 +387,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterInputManager_GetAxis2D_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterInputManager.GetAxis2D(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterInputManager_GetAxis2D_System_Int32_System_UInt32_.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterInputManager.GetAxis2D(System.Int32%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterInputManager.cs/#L89">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterInputManager.cs/#L82">View Source</a>
   </span>
   <a id="CAF_Fighters_FighterInputManager_GetAxis2D_" data-uid="CAF.Fighters.FighterInputManager.GetAxis2D*"></a>
-  <h4 id="CAF_Fighters_FighterInputManager_GetAxis2D_System_Int32_System_Int32_" data-uid="CAF.Fighters.FighterInputManager.GetAxis2D(System.Int32,System.Int32)">GetAxis2D(Int32, Int32)</h4>
+  <h4 id="CAF_Fighters_FighterInputManager_GetAxis2D_System_Int32_System_UInt32_" data-uid="CAF.Fighters.FighterInputManager.GetAxis2D(System.Int32,System.UInt32)">GetAxis2D(Int32, UInt32)</h4>
   <div class="markdown level1 summary"><p>Get the 2D axis at the offset given.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Vector2 GetAxis2D(int axis2DID, int frameOffset = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Vector2 GetAxis2D(int axis2DID, uint frameOffset = 0U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -404,7 +418,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
         <td><span class="parametername">frameOffset</span></td>
         <td><p>The frame offset to get the 2D axis at.</p>
 </td>
@@ -429,13 +443,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterInputManager_GetButton_System_Int32_System_Int32_System_Boolean_System_Int32_.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterInputManager.GetButton(System.Int32%2CSystem.Int32%2CSystem.Boolean%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterInputManager_GetButton_System_Int32_System_UInt32_System_Boolean_System_UInt32_.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterInputManager.GetButton(System.Int32%2CSystem.UInt32%2CSystem.Boolean%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterInputManager.cs/#L108">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterInputManager.cs/#L101">View Source</a>
   </span>
   <a id="CAF_Fighters_FighterInputManager_GetButton_" data-uid="CAF.Fighters.FighterInputManager.GetButton*"></a>
-  <h4 id="CAF_Fighters_FighterInputManager_GetButton_System_Int32_System_Int32_System_Boolean_System_Int32_" data-uid="CAF.Fighters.FighterInputManager.GetButton(System.Int32,System.Int32,System.Boolean,System.Int32)">GetButton(Int32, Int32, Boolean, Int32)</h4>
+  <h4 id="CAF_Fighters_FighterInputManager_GetButton_System_Int32_System_UInt32_System_Boolean_System_UInt32_" data-uid="CAF.Fighters.FighterInputManager.GetButton(System.Int32,System.UInt32,System.Boolean,System.UInt32)">GetButton(Int32, UInt32, Boolean, UInt32)</h4>
   <div class="markdown level1 summary"><p>Get the status of the button given. If the buffer is being checked, 
 the button returned will be from when it was first pressed within the window, if it exist.
 Otherwise, the button at the offset is given.</p>
@@ -443,7 +457,7 @@ Otherwise, the button at the offset is given.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual InputRecordButton GetButton(int buttonID, int frameOffset = 0, bool checkBuffer = false, int bufferFrames = 3)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual InputRecordButton GetButton(int buttonID, uint frameOffset = 0U, bool checkBuffer = false, uint bufferFrames = 3U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -462,7 +476,7 @@ Otherwise, the button at the offset is given.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
         <td><span class="parametername">frameOffset</span></td>
         <td><p>The offset from the current frame to check.</p>
 </td>
@@ -474,7 +488,7 @@ Otherwise, the button at the offset is given.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
         <td><span class="parametername">bufferFrames</span></td>
         <td><p>How many frames to check for buffer.</p>
 </td>
@@ -499,13 +513,13 @@ Otherwise, the button at the offset is given.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterInputManager_GetButton_System_Int32_System_Int32__System_Int32_System_Boolean_System_Int32_.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterInputManager.GetButton(System.Int32%2CSystem.Int32%40%2CSystem.Int32%2CSystem.Boolean%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterInputManager_GetButton_System_Int32_System_UInt32__System_UInt32_System_Boolean_System_UInt32_.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterInputManager.GetButton(System.Int32%2CSystem.UInt32%40%2CSystem.UInt32%2CSystem.Boolean%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterInputManager.cs/#L123">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterInputManager.cs/#L116">View Source</a>
   </span>
   <a id="CAF_Fighters_FighterInputManager_GetButton_" data-uid="CAF.Fighters.FighterInputManager.GetButton*"></a>
-  <h4 id="CAF_Fighters_FighterInputManager_GetButton_System_Int32_System_Int32__System_Int32_System_Boolean_System_Int32_" data-uid="CAF.Fighters.FighterInputManager.GetButton(System.Int32,System.Int32@,System.Int32,System.Boolean,System.Int32)">GetButton(Int32, out Int32, Int32, Boolean, Int32)</h4>
+  <h4 id="CAF_Fighters_FighterInputManager_GetButton_System_Int32_System_UInt32__System_UInt32_System_Boolean_System_UInt32_" data-uid="CAF.Fighters.FighterInputManager.GetButton(System.Int32,System.UInt32@,System.UInt32,System.Boolean,System.UInt32)">GetButton(Int32, out UInt32, UInt32, Boolean, UInt32)</h4>
   <div class="markdown level1 summary"><p>Get the status of the button given. If the buffer is being checked, 
 the button returned will be from when it was first pressed within the window, if it exist.
 Otherwise, the button at the offset is given.</p>
@@ -513,7 +527,7 @@ Otherwise, the button at the offset is given.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual InputRecordButton GetButton(int buttonID, out int gotOffset, int frameOffset = 0, bool checkBuffer = false, int bufferFrames = 3)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual InputRecordButton GetButton(int buttonID, out uint gotOffset, uint frameOffset = 0U, bool checkBuffer = false, uint bufferFrames = 3U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -532,12 +546,12 @@ Otherwise, the button at the offset is given.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
         <td><span class="parametername">gotOffset</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
         <td><span class="parametername">frameOffset</span></td>
         <td><p>The offset from the current frame to check.</p>
 </td>
@@ -549,7 +563,7 @@ Otherwise, the button at the offset is given.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
         <td><span class="parametername">bufferFrames</span></td>
         <td><p>How many frames to check for buffer.</p>
 </td>
@@ -577,7 +591,7 @@ Otherwise, the button at the offset is given.</p>
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterInputManager_GetInputs.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterInputManager.GetInputs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterInputManager.cs/#L49">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterInputManager.cs/#L43">View Source</a>
   </span>
   <a id="CAF_Fighters_FighterInputManager_GetInputs_" data-uid="CAF.Fighters.FighterInputManager.GetInputs*"></a>
   <h4 id="CAF_Fighters_FighterInputManager_GetInputs" data-uid="CAF.Fighters.FighterInputManager.GetInputs">GetInputs()</h4>
@@ -590,58 +604,25 @@ Otherwise, the button at the offset is given.</p>
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterInputManager_ProcessInputs.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterInputManager.ProcessInputs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterInputManager_ProcessInput.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterInputManager.ProcessInput%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterInputManager.cs/#L56">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterInputManager.cs/#L47">View Source</a>
   </span>
-  <a id="CAF_Fighters_FighterInputManager_ProcessInputs_" data-uid="CAF.Fighters.FighterInputManager.ProcessInputs*"></a>
-  <h4 id="CAF_Fighters_FighterInputManager_ProcessInputs" data-uid="CAF.Fighters.FighterInputManager.ProcessInputs">ProcessInputs()</h4>
-  <div class="markdown level1 summary"><p>Update the current frame&apos;s inputs based on the last frame&apos;s inputs.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual void ProcessInputs()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterInputManager_SetControllerID_System_Int32_.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterInputManager.SetControllerID(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterInputManager.cs/#L23">View Source</a>
-  </span>
-  <a id="CAF_Fighters_FighterInputManager_SetControllerID_" data-uid="CAF.Fighters.FighterInputManager.SetControllerID*"></a>
-  <h4 id="CAF_Fighters_FighterInputManager_SetControllerID_System_Int32_" data-uid="CAF.Fighters.FighterInputManager.SetControllerID(System.Int32)">SetControllerID(Int32)</h4>
+  <a id="CAF_Fighters_FighterInputManager_ProcessInput_" data-uid="CAF.Fighters.FighterInputManager.ProcessInput*"></a>
+  <h4 id="CAF_Fighters_FighterInputManager_ProcessInput" data-uid="CAF.Fighters.FighterInputManager.ProcessInput">ProcessInput()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void SetControllerID(int controllerID)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual void ProcessInput()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">controllerID</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterInputManager_SetControlType_CAF_Input_InputControlType_.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterInputManager.SetControlType(CAF.Input.InputControlType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterInputManager.cs/#L28">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterInputManager.cs/#L25">View Source</a>
   </span>
   <a id="CAF_Fighters_FighterInputManager_SetControlType_" data-uid="CAF.Fighters.FighterInputManager.SetControlType*"></a>
   <h4 id="CAF_Fighters_FighterInputManager_SetControlType_CAF_Input_InputControlType_" data-uid="CAF.Fighters.FighterInputManager.SetControlType(CAF.Input.InputControlType)">SetControlType(InputControlType)</h4>
@@ -673,7 +654,7 @@ Otherwise, the button at the offset is given.</p>
     <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterInputManager_Tick.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterInputManager.Tick%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterInputManager.cs/#L33">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterInputManager.cs/#L30">View Source</a>
   </span>
   <a id="CAF_Fighters_FighterInputManager_Tick_" data-uid="CAF.Fighters.FighterInputManager.Tick*"></a>
   <h4 id="CAF_Fighters_FighterInputManager_Tick" data-uid="CAF.Fighters.FighterInputManager.Tick">Tick()</h4>
@@ -683,6 +664,58 @@ Otherwise, the button at the offset is given.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void Tick()</code></pre>
   </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Fighters_FighterInputManager_UsedInBuffer_System_Int32_System_UInt32_.md&amp;value=---%0Auid%3A%20CAF.Fighters.FighterInputManager.UsedInBuffer(System.Int32%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Fighter/Managers/FighterInputManager.cs/#L144">View Source</a>
+  </span>
+  <a id="CAF_Fighters_FighterInputManager_UsedInBuffer_" data-uid="CAF.Fighters.FighterInputManager.UsedInBuffer*"></a>
+  <h4 id="CAF_Fighters_FighterInputManager_UsedInBuffer_System_Int32_System_UInt32_" data-uid="CAF.Fighters.FighterInputManager.UsedInBuffer(System.Int32,System.UInt32)">UsedInBuffer(Int32, UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool UsedInBuffer(int inputID, uint tick)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">inputID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="parametername">tick</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

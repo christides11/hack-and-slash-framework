@@ -2954,12 +2954,12 @@ references:
   isSpec: "True"
   fullName: CAF.Fighters.FighterCombatManager.CheckCurrentAttackCancelWindows
   nameWithType: FighterCombatManager.CheckCurrentAttackCancelWindows
-- uid: CAF.Fighters.FighterCombatManager.CheckForInputSequence(CAF.Input.InputSequence,System.Int32,System.Boolean,System.Boolean)
-  name: CheckForInputSequence(InputSequence, Int32, Boolean, Boolean)
-  href: api/CAF.Fighters.FighterCombatManager.html#CAF_Fighters_FighterCombatManager_CheckForInputSequence_CAF_Input_InputSequence_System_Int32_System_Boolean_System_Boolean_
-  commentId: M:CAF.Fighters.FighterCombatManager.CheckForInputSequence(CAF.Input.InputSequence,System.Int32,System.Boolean,System.Boolean)
-  fullName: CAF.Fighters.FighterCombatManager.CheckForInputSequence(CAF.Input.InputSequence, System.Int32, System.Boolean, System.Boolean)
-  nameWithType: FighterCombatManager.CheckForInputSequence(InputSequence, Int32, Boolean, Boolean)
+- uid: CAF.Fighters.FighterCombatManager.CheckForInputSequence(CAF.Input.InputSequence,System.UInt32,System.Boolean,System.Boolean)
+  name: CheckForInputSequence(InputSequence, UInt32, Boolean, Boolean)
+  href: api/CAF.Fighters.FighterCombatManager.html#CAF_Fighters_FighterCombatManager_CheckForInputSequence_CAF_Input_InputSequence_System_UInt32_System_Boolean_System_Boolean_
+  commentId: M:CAF.Fighters.FighterCombatManager.CheckForInputSequence(CAF.Input.InputSequence,System.UInt32,System.Boolean,System.Boolean)
+  fullName: CAF.Fighters.FighterCombatManager.CheckForInputSequence(CAF.Input.InputSequence, System.UInt32, System.Boolean, System.Boolean)
+  nameWithType: FighterCombatManager.CheckForInputSequence(InputSequence, UInt32, Boolean, Boolean)
 - uid: CAF.Fighters.FighterCombatManager.CheckForInputSequence*
   name: CheckForInputSequence
   href: api/CAF.Fighters.FighterCombatManager.html#CAF_Fighters_FighterCombatManager_CheckForInputSequence_
@@ -2980,12 +2980,12 @@ references:
   isSpec: "True"
   fullName: CAF.Fighters.FighterCombatManager.CheckStartingNodes
   nameWithType: FighterCombatManager.CheckStartingNodes
-- uid: CAF.Fighters.FighterCombatManager.CheckStickDirection(CAF.Input.InputDefinition,System.Int32)
-  name: CheckStickDirection(InputDefinition, Int32)
-  href: api/CAF.Fighters.FighterCombatManager.html#CAF_Fighters_FighterCombatManager_CheckStickDirection_CAF_Input_InputDefinition_System_Int32_
-  commentId: M:CAF.Fighters.FighterCombatManager.CheckStickDirection(CAF.Input.InputDefinition,System.Int32)
-  fullName: CAF.Fighters.FighterCombatManager.CheckStickDirection(CAF.Input.InputDefinition, System.Int32)
-  nameWithType: FighterCombatManager.CheckStickDirection(InputDefinition, Int32)
+- uid: CAF.Fighters.FighterCombatManager.CheckStickDirection(CAF.Input.InputDefinition,System.UInt32)
+  name: CheckStickDirection(InputDefinition, UInt32)
+  href: api/CAF.Fighters.FighterCombatManager.html#CAF_Fighters_FighterCombatManager_CheckStickDirection_CAF_Input_InputDefinition_System_UInt32_
+  commentId: M:CAF.Fighters.FighterCombatManager.CheckStickDirection(CAF.Input.InputDefinition,System.UInt32)
+  fullName: CAF.Fighters.FighterCombatManager.CheckStickDirection(CAF.Input.InputDefinition, System.UInt32)
+  nameWithType: FighterCombatManager.CheckStickDirection(InputDefinition, UInt32)
 - uid: CAF.Fighters.FighterCombatManager.CheckStickDirection*
   name: CheckStickDirection
   href: api/CAF.Fighters.FighterCombatManager.html#CAF_Fighters_FighterCombatManager_CheckStickDirection_
@@ -3705,12 +3705,12 @@ references:
   isSpec: "True"
   fullName: CAF.Fighters.FighterInputManager.Awake
   nameWithType: FighterInputManager.Awake
-- uid: CAF.Fighters.FighterInputManager.ClearBuffer
-  name: ClearBuffer()
-  href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_ClearBuffer
-  commentId: M:CAF.Fighters.FighterInputManager.ClearBuffer
-  fullName: CAF.Fighters.FighterInputManager.ClearBuffer()
-  nameWithType: FighterInputManager.ClearBuffer()
+- uid: CAF.Fighters.FighterInputManager.bufferLimitAtTick
+  name: bufferLimitAtTick
+  href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_bufferLimitAtTick
+  commentId: F:CAF.Fighters.FighterInputManager.bufferLimitAtTick
+  fullName: CAF.Fighters.FighterInputManager.bufferLimitAtTick
+  nameWithType: FighterInputManager.bufferLimitAtTick
 - uid: CAF.Fighters.FighterInputManager.ClearBuffer(System.Int32)
   name: ClearBuffer(Int32)
   href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_ClearBuffer_System_Int32_
@@ -3724,19 +3724,6 @@ references:
   isSpec: "True"
   fullName: CAF.Fighters.FighterInputManager.ClearBuffer
   nameWithType: FighterInputManager.ClearBuffer
-- uid: CAF.Fighters.FighterInputManager.ControllerID
-  name: ControllerID
-  href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_ControllerID
-  commentId: P:CAF.Fighters.FighterInputManager.ControllerID
-  fullName: CAF.Fighters.FighterInputManager.ControllerID
-  nameWithType: FighterInputManager.ControllerID
-- uid: CAF.Fighters.FighterInputManager.ControllerID*
-  name: ControllerID
-  href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_ControllerID_
-  commentId: Overload:CAF.Fighters.FighterInputManager.ControllerID
-  isSpec: "True"
-  fullName: CAF.Fighters.FighterInputManager.ControllerID
-  nameWithType: FighterInputManager.ControllerID
 - uid: CAF.Fighters.FighterInputManager.ControlType
   name: ControlType
   href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_ControlType
@@ -3750,12 +3737,12 @@ references:
   isSpec: "True"
   fullName: CAF.Fighters.FighterInputManager.ControlType
   nameWithType: FighterInputManager.ControlType
-- uid: CAF.Fighters.FighterInputManager.GetAxis(System.Int32,System.Int32)
-  name: GetAxis(Int32, Int32)
-  href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_GetAxis_System_Int32_System_Int32_
-  commentId: M:CAF.Fighters.FighterInputManager.GetAxis(System.Int32,System.Int32)
-  fullName: CAF.Fighters.FighterInputManager.GetAxis(System.Int32, System.Int32)
-  nameWithType: FighterInputManager.GetAxis(Int32, Int32)
+- uid: CAF.Fighters.FighterInputManager.GetAxis(System.Int32,System.UInt32)
+  name: GetAxis(Int32, UInt32)
+  href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_GetAxis_System_Int32_System_UInt32_
+  commentId: M:CAF.Fighters.FighterInputManager.GetAxis(System.Int32,System.UInt32)
+  fullName: CAF.Fighters.FighterInputManager.GetAxis(System.Int32, System.UInt32)
+  nameWithType: FighterInputManager.GetAxis(Int32, UInt32)
 - uid: CAF.Fighters.FighterInputManager.GetAxis*
   name: GetAxis
   href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_GetAxis_
@@ -3763,12 +3750,12 @@ references:
   isSpec: "True"
   fullName: CAF.Fighters.FighterInputManager.GetAxis
   nameWithType: FighterInputManager.GetAxis
-- uid: CAF.Fighters.FighterInputManager.GetAxis2D(System.Int32,System.Int32)
-  name: GetAxis2D(Int32, Int32)
-  href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_GetAxis2D_System_Int32_System_Int32_
-  commentId: M:CAF.Fighters.FighterInputManager.GetAxis2D(System.Int32,System.Int32)
-  fullName: CAF.Fighters.FighterInputManager.GetAxis2D(System.Int32, System.Int32)
-  nameWithType: FighterInputManager.GetAxis2D(Int32, Int32)
+- uid: CAF.Fighters.FighterInputManager.GetAxis2D(System.Int32,System.UInt32)
+  name: GetAxis2D(Int32, UInt32)
+  href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_GetAxis2D_System_Int32_System_UInt32_
+  commentId: M:CAF.Fighters.FighterInputManager.GetAxis2D(System.Int32,System.UInt32)
+  fullName: CAF.Fighters.FighterInputManager.GetAxis2D(System.Int32, System.UInt32)
+  nameWithType: FighterInputManager.GetAxis2D(Int32, UInt32)
 - uid: CAF.Fighters.FighterInputManager.GetAxis2D*
   name: GetAxis2D
   href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_GetAxis2D_
@@ -3776,21 +3763,21 @@ references:
   isSpec: "True"
   fullName: CAF.Fighters.FighterInputManager.GetAxis2D
   nameWithType: FighterInputManager.GetAxis2D
-- uid: CAF.Fighters.FighterInputManager.GetButton(System.Int32,System.Int32,System.Boolean,System.Int32)
-  name: GetButton(Int32, Int32, Boolean, Int32)
-  href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_GetButton_System_Int32_System_Int32_System_Boolean_System_Int32_
-  commentId: M:CAF.Fighters.FighterInputManager.GetButton(System.Int32,System.Int32,System.Boolean,System.Int32)
-  fullName: CAF.Fighters.FighterInputManager.GetButton(System.Int32, System.Int32, System.Boolean, System.Int32)
-  nameWithType: FighterInputManager.GetButton(Int32, Int32, Boolean, Int32)
-- uid: CAF.Fighters.FighterInputManager.GetButton(System.Int32,System.Int32@,System.Int32,System.Boolean,System.Int32)
-  name: GetButton(Int32, out Int32, Int32, Boolean, Int32)
-  href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_GetButton_System_Int32_System_Int32__System_Int32_System_Boolean_System_Int32_
-  commentId: M:CAF.Fighters.FighterInputManager.GetButton(System.Int32,System.Int32@,System.Int32,System.Boolean,System.Int32)
-  name.vb: GetButton(Int32, ByRef Int32, Int32, Boolean, Int32)
-  fullName: CAF.Fighters.FighterInputManager.GetButton(System.Int32, out System.Int32, System.Int32, System.Boolean, System.Int32)
-  fullName.vb: CAF.Fighters.FighterInputManager.GetButton(System.Int32, ByRef System.Int32, System.Int32, System.Boolean, System.Int32)
-  nameWithType: FighterInputManager.GetButton(Int32, out Int32, Int32, Boolean, Int32)
-  nameWithType.vb: FighterInputManager.GetButton(Int32, ByRef Int32, Int32, Boolean, Int32)
+- uid: CAF.Fighters.FighterInputManager.GetButton(System.Int32,System.UInt32,System.Boolean,System.UInt32)
+  name: GetButton(Int32, UInt32, Boolean, UInt32)
+  href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_GetButton_System_Int32_System_UInt32_System_Boolean_System_UInt32_
+  commentId: M:CAF.Fighters.FighterInputManager.GetButton(System.Int32,System.UInt32,System.Boolean,System.UInt32)
+  fullName: CAF.Fighters.FighterInputManager.GetButton(System.Int32, System.UInt32, System.Boolean, System.UInt32)
+  nameWithType: FighterInputManager.GetButton(Int32, UInt32, Boolean, UInt32)
+- uid: CAF.Fighters.FighterInputManager.GetButton(System.Int32,System.UInt32@,System.UInt32,System.Boolean,System.UInt32)
+  name: GetButton(Int32, out UInt32, UInt32, Boolean, UInt32)
+  href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_GetButton_System_Int32_System_UInt32__System_UInt32_System_Boolean_System_UInt32_
+  commentId: M:CAF.Fighters.FighterInputManager.GetButton(System.Int32,System.UInt32@,System.UInt32,System.Boolean,System.UInt32)
+  name.vb: GetButton(Int32, ByRef UInt32, UInt32, Boolean, UInt32)
+  fullName: CAF.Fighters.FighterInputManager.GetButton(System.Int32, out System.UInt32, System.UInt32, System.Boolean, System.UInt32)
+  fullName.vb: CAF.Fighters.FighterInputManager.GetButton(System.Int32, ByRef System.UInt32, System.UInt32, System.Boolean, System.UInt32)
+  nameWithType: FighterInputManager.GetButton(Int32, out UInt32, UInt32, Boolean, UInt32)
+  nameWithType.vb: FighterInputManager.GetButton(Int32, ByRef UInt32, UInt32, Boolean, UInt32)
 - uid: CAF.Fighters.FighterInputManager.GetButton*
   name: GetButton
   href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_GetButton_
@@ -3824,44 +3811,51 @@ references:
   isSpec: "True"
   fullName: CAF.Fighters.FighterInputManager.InputRecord
   nameWithType: FighterInputManager.InputRecord
-- uid: CAF.Fighters.FighterInputManager.inputRecordMaxSize
-  name: inputRecordMaxSize
-  href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_inputRecordMaxSize
-  commentId: F:CAF.Fighters.FighterInputManager.inputRecordMaxSize
-  fullName: CAF.Fighters.FighterInputManager.inputRecordMaxSize
-  nameWithType: FighterInputManager.inputRecordMaxSize
+- uid: CAF.Fighters.FighterInputManager.inputRecordSize
+  name: inputRecordSize
+  href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_inputRecordSize
+  commentId: P:CAF.Fighters.FighterInputManager.inputRecordSize
+  fullName: CAF.Fighters.FighterInputManager.inputRecordSize
+  nameWithType: FighterInputManager.inputRecordSize
+- uid: CAF.Fighters.FighterInputManager.inputRecordSize*
+  name: inputRecordSize
+  href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_inputRecordSize_
+  commentId: Overload:CAF.Fighters.FighterInputManager.inputRecordSize
+  isSpec: "True"
+  fullName: CAF.Fighters.FighterInputManager.inputRecordSize
+  nameWithType: FighterInputManager.inputRecordSize
+- uid: CAF.Fighters.FighterInputManager.inputTick
+  name: inputTick
+  href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_inputTick
+  commentId: P:CAF.Fighters.FighterInputManager.inputTick
+  fullName: CAF.Fighters.FighterInputManager.inputTick
+  nameWithType: FighterInputManager.inputTick
+- uid: CAF.Fighters.FighterInputManager.inputTick*
+  name: inputTick
+  href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_inputTick_
+  commentId: Overload:CAF.Fighters.FighterInputManager.inputTick
+  isSpec: "True"
+  fullName: CAF.Fighters.FighterInputManager.inputTick
+  nameWithType: FighterInputManager.inputTick
 - uid: CAF.Fighters.FighterInputManager.manager
   name: manager
   href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_manager
   commentId: F:CAF.Fighters.FighterInputManager.manager
   fullName: CAF.Fighters.FighterInputManager.manager
   nameWithType: FighterInputManager.manager
-- uid: CAF.Fighters.FighterInputManager.ProcessInputs
-  name: ProcessInputs()
-  href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_ProcessInputs
-  commentId: M:CAF.Fighters.FighterInputManager.ProcessInputs
-  fullName: CAF.Fighters.FighterInputManager.ProcessInputs()
-  nameWithType: FighterInputManager.ProcessInputs()
-- uid: CAF.Fighters.FighterInputManager.ProcessInputs*
-  name: ProcessInputs
-  href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_ProcessInputs_
-  commentId: Overload:CAF.Fighters.FighterInputManager.ProcessInputs
+- uid: CAF.Fighters.FighterInputManager.ProcessInput
+  name: ProcessInput()
+  href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_ProcessInput
+  commentId: M:CAF.Fighters.FighterInputManager.ProcessInput
+  fullName: CAF.Fighters.FighterInputManager.ProcessInput()
+  nameWithType: FighterInputManager.ProcessInput()
+- uid: CAF.Fighters.FighterInputManager.ProcessInput*
+  name: ProcessInput
+  href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_ProcessInput_
+  commentId: Overload:CAF.Fighters.FighterInputManager.ProcessInput
   isSpec: "True"
-  fullName: CAF.Fighters.FighterInputManager.ProcessInputs
-  nameWithType: FighterInputManager.ProcessInputs
-- uid: CAF.Fighters.FighterInputManager.SetControllerID(System.Int32)
-  name: SetControllerID(Int32)
-  href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_SetControllerID_System_Int32_
-  commentId: M:CAF.Fighters.FighterInputManager.SetControllerID(System.Int32)
-  fullName: CAF.Fighters.FighterInputManager.SetControllerID(System.Int32)
-  nameWithType: FighterInputManager.SetControllerID(Int32)
-- uid: CAF.Fighters.FighterInputManager.SetControllerID*
-  name: SetControllerID
-  href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_SetControllerID_
-  commentId: Overload:CAF.Fighters.FighterInputManager.SetControllerID
-  isSpec: "True"
-  fullName: CAF.Fighters.FighterInputManager.SetControllerID
-  nameWithType: FighterInputManager.SetControllerID
+  fullName: CAF.Fighters.FighterInputManager.ProcessInput
+  nameWithType: FighterInputManager.ProcessInput
 - uid: CAF.Fighters.FighterInputManager.SetControlType(CAF.Input.InputControlType)
   name: SetControlType(InputControlType)
   href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_SetControlType_CAF_Input_InputControlType_
@@ -3888,6 +3882,19 @@ references:
   isSpec: "True"
   fullName: CAF.Fighters.FighterInputManager.Tick
   nameWithType: FighterInputManager.Tick
+- uid: CAF.Fighters.FighterInputManager.UsedInBuffer(System.Int32,System.UInt32)
+  name: UsedInBuffer(Int32, UInt32)
+  href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_UsedInBuffer_System_Int32_System_UInt32_
+  commentId: M:CAF.Fighters.FighterInputManager.UsedInBuffer(System.Int32,System.UInt32)
+  fullName: CAF.Fighters.FighterInputManager.UsedInBuffer(System.Int32, System.UInt32)
+  nameWithType: FighterInputManager.UsedInBuffer(Int32, UInt32)
+- uid: CAF.Fighters.FighterInputManager.UsedInBuffer*
+  name: UsedInBuffer
+  href: api/CAF.Fighters.FighterInputManager.html#CAF_Fighters_FighterInputManager_UsedInBuffer_
+  commentId: Overload:CAF.Fighters.FighterInputManager.UsedInBuffer
+  isSpec: "True"
+  fullName: CAF.Fighters.FighterInputManager.UsedInBuffer
+  nameWithType: FighterInputManager.UsedInBuffer
 - uid: CAF.Fighters.FighterPhysicsManager2D
   name: FighterPhysicsManager2D
   href: api/CAF.Fighters.FighterPhysicsManager2D.html
@@ -4950,38 +4957,6 @@ references:
   commentId: F:CAF.Input.InputRecordButton.released
   fullName: CAF.Input.InputRecordButton.released
   nameWithType: InputRecordButton.released
-- uid: CAF.Input.InputRecordButton.usedInBuffer
-  name: usedInBuffer
-  href: api/CAF.Input.InputRecordButton.html#CAF_Input_InputRecordButton_usedInBuffer
-  commentId: F:CAF.Input.InputRecordButton.usedInBuffer
-  fullName: CAF.Input.InputRecordButton.usedInBuffer
-  nameWithType: InputRecordButton.usedInBuffer
-- uid: CAF.Input.InputRecordButton.UsedInBuffer
-  name: UsedInBuffer()
-  href: api/CAF.Input.InputRecordButton.html#CAF_Input_InputRecordButton_UsedInBuffer
-  commentId: M:CAF.Input.InputRecordButton.UsedInBuffer
-  fullName: CAF.Input.InputRecordButton.UsedInBuffer()
-  nameWithType: InputRecordButton.UsedInBuffer()
-- uid: CAF.Input.InputRecordButton.UsedInBuffer*
-  name: UsedInBuffer
-  href: api/CAF.Input.InputRecordButton.html#CAF_Input_InputRecordButton_UsedInBuffer_
-  commentId: Overload:CAF.Input.InputRecordButton.UsedInBuffer
-  isSpec: "True"
-  fullName: CAF.Input.InputRecordButton.UsedInBuffer
-  nameWithType: InputRecordButton.UsedInBuffer
-- uid: CAF.Input.InputRecordButton.UseInBuffer
-  name: UseInBuffer()
-  href: api/CAF.Input.InputRecordButton.html#CAF_Input_InputRecordButton_UseInBuffer
-  commentId: M:CAF.Input.InputRecordButton.UseInBuffer
-  fullName: CAF.Input.InputRecordButton.UseInBuffer()
-  nameWithType: InputRecordButton.UseInBuffer()
-- uid: CAF.Input.InputRecordButton.UseInBuffer*
-  name: UseInBuffer
-  href: api/CAF.Input.InputRecordButton.html#CAF_Input_InputRecordButton_UseInBuffer_
-  commentId: Overload:CAF.Input.InputRecordButton.UseInBuffer
-  isSpec: "True"
-  fullName: CAF.Input.InputRecordButton.UseInBuffer
-  nameWithType: InputRecordButton.UseInBuffer
 - uid: CAF.Input.InputRecordInput
   name: InputRecordInput
   href: api/CAF.Input.InputRecordInput.html
@@ -5001,32 +4976,6 @@ references:
   isSpec: "True"
   fullName: CAF.Input.InputRecordInput.Process
   nameWithType: InputRecordInput.Process
-- uid: CAF.Input.InputRecordInput.UsedInBuffer
-  name: UsedInBuffer()
-  href: api/CAF.Input.InputRecordInput.html#CAF_Input_InputRecordInput_UsedInBuffer
-  commentId: M:CAF.Input.InputRecordInput.UsedInBuffer
-  fullName: CAF.Input.InputRecordInput.UsedInBuffer()
-  nameWithType: InputRecordInput.UsedInBuffer()
-- uid: CAF.Input.InputRecordInput.UsedInBuffer*
-  name: UsedInBuffer
-  href: api/CAF.Input.InputRecordInput.html#CAF_Input_InputRecordInput_UsedInBuffer_
-  commentId: Overload:CAF.Input.InputRecordInput.UsedInBuffer
-  isSpec: "True"
-  fullName: CAF.Input.InputRecordInput.UsedInBuffer
-  nameWithType: InputRecordInput.UsedInBuffer
-- uid: CAF.Input.InputRecordInput.UseInBuffer
-  name: UseInBuffer()
-  href: api/CAF.Input.InputRecordInput.html#CAF_Input_InputRecordInput_UseInBuffer
-  commentId: M:CAF.Input.InputRecordInput.UseInBuffer
-  fullName: CAF.Input.InputRecordInput.UseInBuffer()
-  nameWithType: InputRecordInput.UseInBuffer()
-- uid: CAF.Input.InputRecordInput.UseInBuffer*
-  name: UseInBuffer
-  href: api/CAF.Input.InputRecordInput.html#CAF_Input_InputRecordInput_UseInBuffer_
-  commentId: Overload:CAF.Input.InputRecordInput.UseInBuffer
-  isSpec: "True"
-  fullName: CAF.Input.InputRecordInput.UseInBuffer
-  nameWithType: InputRecordInput.UseInBuffer
 - uid: CAF.Input.InputRecordItem
   name: InputRecordItem
   href: api/CAF.Input.InputRecordItem.html
