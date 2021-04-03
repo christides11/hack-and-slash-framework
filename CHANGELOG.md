@@ -1,3 +1,15 @@
+# [14.0.0](https://github.com/christides11/Character-Action-Framework/compare/v13.0.0...v14.0.0) (2021-04-03)
+
+
+### Code Refactoring
+
+* Input handling changes. ([282cf1c](https://github.com/christides11/Character-Action-Framework/commit/282cf1c2e03ca7fa5e367f4bf02483ec3e3b96b0))
+
+
+### BREAKING CHANGES
+
+* InputRecord changed to circular buffer.
+
 # [13.0.0](https://github.com/christides11/Character-Action-Framework/compare/v12.0.0...v13.0.0) (2021-03-23)
 
 
