@@ -37,7 +37,12 @@ namespace TDAction.Camera
 
         }
 
-        public void SetLookDirection(Vector3 direction)
+        public void SetRotation(Vector3 direction)
+        {
+
+        }
+
+        public void SetRotation(Quaternion rotation)
         {
 
         }
