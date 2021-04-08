@@ -84,19 +84,25 @@ references:
   isSpec: "True"
   fullName: CAF.Camera.LookHandler.SetLookAtTarget
   nameWithType: LookHandler.SetLookAtTarget
-- uid: CAF.Camera.LookHandler.SetLookDirection(Vector3)
-  name: SetLookDirection(Vector3)
-  href: api/CAF.Camera.LookHandler.html#CAF_Camera_LookHandler_SetLookDirection_Vector3_
-  commentId: M:CAF.Camera.LookHandler.SetLookDirection(Vector3)
-  fullName: CAF.Camera.LookHandler.SetLookDirection(Vector3)
-  nameWithType: LookHandler.SetLookDirection(Vector3)
-- uid: CAF.Camera.LookHandler.SetLookDirection*
-  name: SetLookDirection
-  href: api/CAF.Camera.LookHandler.html#CAF_Camera_LookHandler_SetLookDirection_
-  commentId: Overload:CAF.Camera.LookHandler.SetLookDirection
+- uid: CAF.Camera.LookHandler.SetRotation(Quaternion)
+  name: SetRotation(Quaternion)
+  href: api/CAF.Camera.LookHandler.html#CAF_Camera_LookHandler_SetRotation_Quaternion_
+  commentId: M:CAF.Camera.LookHandler.SetRotation(Quaternion)
+  fullName: CAF.Camera.LookHandler.SetRotation(Quaternion)
+  nameWithType: LookHandler.SetRotation(Quaternion)
+- uid: CAF.Camera.LookHandler.SetRotation(Vector3)
+  name: SetRotation(Vector3)
+  href: api/CAF.Camera.LookHandler.html#CAF_Camera_LookHandler_SetRotation_Vector3_
+  commentId: M:CAF.Camera.LookHandler.SetRotation(Vector3)
+  fullName: CAF.Camera.LookHandler.SetRotation(Vector3)
+  nameWithType: LookHandler.SetRotation(Vector3)
+- uid: CAF.Camera.LookHandler.SetRotation*
+  name: SetRotation
+  href: api/CAF.Camera.LookHandler.html#CAF_Camera_LookHandler_SetRotation_
+  commentId: Overload:CAF.Camera.LookHandler.SetRotation
   isSpec: "True"
-  fullName: CAF.Camera.LookHandler.SetLookDirection
-  nameWithType: LookHandler.SetLookDirection
+  fullName: CAF.Camera.LookHandler.SetRotation
+  nameWithType: LookHandler.SetRotation
 - uid: CAF.Combat
   name: CAF.Combat
   href: api/CAF.Combat.html
