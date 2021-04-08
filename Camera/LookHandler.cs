@@ -23,10 +23,16 @@ namespace CAF.Camera
         void SetLockOnTarget(FighterBase entityTarget);
 
         /// <summary>
-        /// Make the handler look in the given direction.
+        /// Set the rotation of the handler.
         /// </summary>
-        /// <param name="direction">The direction vector.</param>
-        void SetLookDirection(Vector3 direction);
+        /// <param name="rotation">The rotation quaternion.</param>
+        void SetRotation(Quaternion rotation);
+
+        /// <summary>
+        /// Set the rotation of the handler.
+        /// </summary>
+        /// <param name="rotation">The rotation euler angle.</param>
+        void SetRotation(Vector3 rotation);
 
         /// <summary>
         /// Set the look direction to point at the given position.
