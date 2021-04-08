@@ -1,3 +1,10 @@
+# [14.1.0](https://github.com/christides11/Character-Action-Framework/compare/v14.0.0...v14.1.0) (2021-04-08)
+
+
+### Features
+
+* Added methods to set LookHandler rotation. ([5000570](https://github.com/christides11/Character-Action-Framework/commit/50005705b5bcf295de78fd3a4deb80af9bebff0a))
+
 # [14.0.0](https://github.com/christides11/Character-Action-Framework/compare/v13.0.0...v14.0.0) (2021-04-03)
 
 
