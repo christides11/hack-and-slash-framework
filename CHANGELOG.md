@@ -1,3 +1,10 @@
+# [14.2.0](https://github.com/christides11/Character-Action-Framework/compare/v14.1.0...v14.2.0) (2021-04-11)
+
+
+### Features
+
+* Added SetPosition to LookHandler. ([e3e0533](https://github.com/christides11/Character-Action-Framework/commit/e3e0533e378922c77ce76c90a49474532ed3e440))
+
 # [14.1.0](https://github.com/christides11/Character-Action-Framework/compare/v14.0.0...v14.1.0) (2021-04-08)
 
 
