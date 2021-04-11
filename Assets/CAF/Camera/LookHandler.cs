@@ -35,6 +35,12 @@ namespace CAF.Camera
         void SetRotation(Vector3 rotation);
 
         /// <summary>
+        /// Set the position of the handler.
+        /// </summary>
+        /// <param name="position">The position.</param>
+        void SetPosition(Vector3 position);
+
+        /// <summary>
         /// Set the look direction to point at the given position.
         /// </summary>
         /// <param name="position">The position to look at.</param>
