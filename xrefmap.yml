@@ -84,6 +84,19 @@ references:
   isSpec: "True"
   fullName: CAF.Camera.LookHandler.SetLookAtTarget
   nameWithType: LookHandler.SetLookAtTarget
+- uid: CAF.Camera.LookHandler.SetPosition(Vector3)
+  name: SetPosition(Vector3)
+  href: api/CAF.Camera.LookHandler.html#CAF_Camera_LookHandler_SetPosition_Vector3_
+  commentId: M:CAF.Camera.LookHandler.SetPosition(Vector3)
+  fullName: CAF.Camera.LookHandler.SetPosition(Vector3)
+  nameWithType: LookHandler.SetPosition(Vector3)
+- uid: CAF.Camera.LookHandler.SetPosition*
+  name: SetPosition
+  href: api/CAF.Camera.LookHandler.html#CAF_Camera_LookHandler_SetPosition_
+  commentId: Overload:CAF.Camera.LookHandler.SetPosition
+  isSpec: "True"
+  fullName: CAF.Camera.LookHandler.SetPosition
+  nameWithType: LookHandler.SetPosition
 - uid: CAF.Camera.LookHandler.SetRotation(Quaternion)
   name: SetRotation(Quaternion)
   href: api/CAF.Camera.LookHandler.html#CAF_Camera_LookHandler_SetRotation_Quaternion_
