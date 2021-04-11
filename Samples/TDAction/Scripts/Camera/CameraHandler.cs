@@ -46,5 +46,10 @@ namespace TDAction.Camera
         {
 
         }
+
+        public void SetPosition(Vector3 position)
+        {
+
+        }
     }
 }
