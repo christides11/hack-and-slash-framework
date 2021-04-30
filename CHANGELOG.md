@@ -1,3 +1,10 @@
+## [14.2.1](https://github.com/christides11/Character-Action-Framework/compare/v14.2.0...v14.2.1) (2021-04-30)
+
+
+### Bug Fixes
+
+* Attack general parameters are now shown if not using a state override. ([795fee6](https://github.com/christides11/Character-Action-Framework/commit/795fee64b35dc5d21ed85ee1ec02690b774d1f08))
+
 # [14.2.0](https://github.com/christides11/Character-Action-Framework/compare/v14.1.0...v14.2.0) (2021-04-11)
 
 
