@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackName: Ground AAA
   description: 
-  stateOverride: -1
+  useState: 0
+  stateOverride: 0
   length: 25
   animationGround: {fileID: 0}
   animationAir: {fileID: 0}
@@ -94,6 +95,8 @@ MonoBehaviour:
           executeInputs: []
           sequenceWindow: 8
           sequenceInputs: []
+        chargeLevelMin: 0
+        chargeLevelMax: 0
         inputCheckProcessed: 0
     00000004:
       type: {class: AttackEventDefinition, ns: CAF.Combat, asm: CAF}
@@ -120,6 +123,8 @@ MonoBehaviour:
           executeInputs: []
           sequenceWindow: 8
           sequenceInputs: []
+        chargeLevelMin: 0
+        chargeLevelMax: 0
         inputCheckProcessed: 0
     00000005:
       type: {class: BoxDefinition, ns: CAF.Combat, asm: CAF}

@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackName: Air AA
   description: 
-  stateOverride: -1
+  useState: 0
+  stateOverride: 0
   length: 30
   animationGround: {fileID: 0}
   animationAir: {fileID: 0}
@@ -60,6 +61,8 @@ MonoBehaviour:
           executeInputs: []
           sequenceWindow: 8
           sequenceInputs: []
+        chargeLevelMin: 0
+        chargeLevelMax: 0
         inputCheckProcessed: 0
     00000001:
       type: {class: AttackEventDefinition, ns: CAF.Combat, asm: CAF}
@@ -103,6 +106,8 @@ MonoBehaviour:
           executeInputs: []
           sequenceWindow: 8
           sequenceInputs: []
+        chargeLevelMin: 0
+        chargeLevelMax: 0
         inputCheckProcessed: 0
     00000002:
       type: {class: AttackEventDefinition, ns: CAF.Combat, asm: CAF}
@@ -129,6 +134,8 @@ MonoBehaviour:
           executeInputs: []
           sequenceWindow: 8
           sequenceInputs: []
+        chargeLevelMin: 0
+        chargeLevelMax: 0
         inputCheckProcessed: 0
     00000003:
       type: {class: AttackEventDefinition, ns: CAF.Combat, asm: CAF}
@@ -155,6 +162,8 @@ MonoBehaviour:
           executeInputs: []
           sequenceWindow: 8
           sequenceInputs: []
+        chargeLevelMin: 0
+        chargeLevelMax: 0
         inputCheckProcessed: 0
     00000004:
       type: {class: ClampGravityEvent, ns: TDAction.Combat.Events, asm: TDAction_CSharp}

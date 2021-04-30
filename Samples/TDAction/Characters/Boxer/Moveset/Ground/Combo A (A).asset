@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackName: Ground A
   description: 
-  stateOverride: -1
+  useState: 0
+  stateOverride: 0
   length: 25
   animationGround: {fileID: 0}
   animationAir: {fileID: 0}

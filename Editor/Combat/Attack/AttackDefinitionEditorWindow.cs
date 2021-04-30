@@ -119,7 +119,8 @@ namespace CAF.Combat
             AnimationClip animationAir = attack.animationAir;
             WrapMode wrapMode = attack.wrapMode;
 
-            if (stateOverride < 0)
+            GUILayout.Space(15);
+            if (useState == false)
             {
                 length = Mathf.Clamp(EditorGUILayout.IntField("Length", attack.length), 1, int.MaxValue);
 
@@ -156,6 +157,7 @@ namespace CAF.Combat
 
         protected virtual void DrawWindowsMenu()
         {
+            scrollPos = EditorGUILayout.BeginScrollView(scrollPos);
             chargeWindowsFoldout = EditorGUILayout.Foldout(chargeWindowsFoldout, "CHARGE WINDOWS", true, EditorStyles.boldLabel);
             if (chargeWindowsFoldout)
             {
@@ -200,6 +202,7 @@ namespace CAF.Combat
                 }
                 EditorGUI.indentLevel--;
             }
+            EditorGUILayout.EndScrollView();
         }
 
         protected virtual void DrawChargeWindow(int i)
@@ -216,16 +219,24 @@ namespace CAF.Combat
             attack.chargeWindows[i].frame = EditorGUILayout.IntField("Frame", attack.chargeWindows[i].frame);
             attack.chargeWindows[i].releaseOnCompletion = EditorGUILayout.Toggle("Auto Release?", 
                 attack.chargeWindows[i].releaseOnCompletion);
-            if(GUILayout.Button("Add Charge Level"))
+
+            using (var cHorizontalScope = new GUILayout.HorizontalScope())
             {
-                attack.chargeWindows[i].chargeLevels.Add(CreateChargeLevelInstance());
-            }
-            for(int w = 0; w < attack.chargeWindows[i].chargeLevels.Count; w++)
-            {
-                EditorGUI.indentLevel++;
-                DrawChargeLevel(i, w);
-                EditorGUI.indentLevel--;
-                EditorGUILayout.Space();
+                GUILayout.Space(30f); // horizontal indent size od 20 (pixels?)
+
+                using (var cVerticalScope = new GUILayout.VerticalScope())
+                {
+                    if (GUILayout.Button("Add Charge Level"))
+                    {
+                        attack.chargeWindows[i].chargeLevels.Add(CreateChargeLevelInstance());
+                    }
+
+                    for (int w = 0; w < attack.chargeWindows[i].chargeLevels.Count; w++)
+                    {
+                        DrawChargeLevel(i, w);
+                        EditorGUILayout.Space();
+                    }
+                }
             }
             EditorGUI.indentLevel--;
         }
