@@ -18,7 +18,7 @@ namespace TDAction.Combat.Events
             return "Friction";
         }
 
-        public override bool Evaluate(uint frame, uint endFrame,
+        public override AttackEventReturnType Evaluate(int frame, int endFrame,
             CAF.Fighters.FighterBase controller, AttackEventVariables variables)
         {
             EntityPhysicsManager physicsManager = (EntityPhysicsManager)controller.PhysicsManager;
@@ -30,7 +30,7 @@ namespace TDAction.Combat.Events
             {
                 physicsManager.ApplyGravityFriction(variables.floatVars[0]);
             }
-            return false;
+            return AttackEventReturnType.NONE;
         }
 
 #if UNITY_EDITOR

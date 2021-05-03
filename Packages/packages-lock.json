@@ -1,11 +1,11 @@
 {
   "dependencies": {
     "com.github.siccity.xnode": {
-      "version": "https://github.com/Siccity/xNode.git",
+      "version": "https://github.com/siccity/xNode.git",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "8046e6e0bfb17f645ad9663e805bde843aa91313"
+      "hash": "93615e7722eea5ff0c38193d41e183d80ccbe524"
     },
     "com.malee.reorderablelist": {
       "version": "https://github.com/cfoulston/Unity-Reorderable-List.git",
@@ -15,6 +15,12 @@
       "hash": "ac1f508240fb752b1f9d7c222c231d7f2a33df87"
     },
     "com.unity.2d.sprite": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
+    "com.unity.2d.tilemap": {
       "version": "1.0.0",
       "depth": 0,
       "source": "builtin",
@@ -72,7 +78,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.textmeshpro": {
-      "version": "2.0.1",
+      "version": "2.1.4",
       "depth": 0,
       "source": "registry",
       "dependencies": {

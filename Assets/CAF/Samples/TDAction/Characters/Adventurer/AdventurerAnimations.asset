@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e172d295d3e22f4e9145b67d5340f4a, type: 3}
+  m_Name: AdventurerAnimations
+  m_EditorClassIdentifier: 
+  animations:
+  - animationName: Idle
+    animation: {fileID: 7400000, guid: c42d5ef8290fc69478df8acc08fcf4e9, type: 2}
+  - animationName: Ground-A
+    animation: {fileID: 7400000, guid: fec2350115ca14f4d95b2cc4dba6465f, type: 2}

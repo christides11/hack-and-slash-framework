@@ -8,6 +8,7 @@ namespace TDAction.Entities
 {
     public class EntityHurtboxManager : CAF.Fighters.FighterHurtboxManager
     {
+
         protected override void SetHurtboxInfo(int groupID, int hurtboxIndex)
         {
             BoxDefinition bd = (BoxDefinition)currentHurtboxDefinition.hurtboxGroups[groupID].boxes[hurtboxIndex];

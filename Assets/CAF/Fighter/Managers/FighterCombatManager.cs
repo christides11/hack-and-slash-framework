@@ -41,7 +41,7 @@ namespace CAF.Fighters
         public FighterBase manager;
         public FighterHitboxManager hitboxManager;
 
-
+        public LayerMask hitboxLayerMask;
 
         protected virtual void Awake()
         {
@@ -66,7 +66,6 @@ namespace CAF.Fighters
                     OnExitHitStun?.Invoke(manager);
                 }
             }
-            hitboxManager.TickBoxes();
         }
 
         public virtual void Cleanup()
@@ -77,8 +76,8 @@ namespace CAF.Fighters
             }
             CurrentChargeLevel = 0;
             CurrentChargeLevelCharge = 0;
-            hitboxManager.Reset();
             CurrentAttack = null;
+            hitboxManager.Reset();
         }
 
         public virtual void SetAttack(MovesetAttackNode attackNode)

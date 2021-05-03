@@ -179,7 +179,7 @@ public class CharacterController2D : MonoBehaviour
 
 	#region Monobehaviour
 
-	void Awake()
+	public void Awake()
 	{
 		// add our one-way platforms to our normal platform mask so that we can land on them from above
 		platformMask |= oneWayPlatformMask;
@@ -242,6 +242,7 @@ public class CharacterController2D : MonoBehaviour
 	/// <param name="deltaMovement">Delta movement.</param>
 	public void move( Vector3 deltaMovement )
 	{
+			deltaMovement *= Time.fixedDeltaTime;
 		// save off our current grounded state which we will use for wasGroundedLastFrame and becameGroundedThisFrame
 		collisionState.wasGroundedLastFrame = collisionState.below;
 
@@ -270,9 +271,10 @@ public class CharacterController2D : MonoBehaviour
 		deltaMovement.z = 0;
 		transform.Translate( deltaMovement, Space.World );
 
-		// only calculate velocity if we have a non-zero deltaTime
-		if( Time.deltaTime > 0f )
-			velocity = deltaMovement / Time.deltaTime;
+			// only calculate velocity if we have a non-zero deltaTime
+			//if( Time.deltaTime > 0f )
+			//	velocity = deltaMovement / Time.fixed
+			velocity = deltaMovement;
 
 		// set our becameGrounded state based on the previous and current collision state
 		if( !collisionState.wasGroundedLastFrame && collisionState.below )

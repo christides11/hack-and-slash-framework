@@ -1,7 +1,9 @@
 {
     "name": "TDAction_CSharp_Editor",
     "references": [
-        "GUID:abe1bbd337772054c8b0c8af2068ad0a"
+        "GUID:abe1bbd337772054c8b0c8af2068ad0a",
+        "GUID:a788ad91fc7f3c2468c2e84d79716fdd",
+        "GUID:60e386f2aae2e3745835ad13422e215a"
     ],
     "includePlatforms": [
         "Editor"

@@ -18,10 +18,10 @@ namespace CAF.Combat
         /// <param name="manager">The manager using this event.</param>
         /// <param name="variables"></param>
         /// <returns>True if the attack state should cancel.</returns>
-        public virtual bool Evaluate(uint frame, uint endFrame, FighterBase manager,
+        public virtual AttackEventReturnType Evaluate(int frame, int endFrame, FighterBase manager,
             AttackEventVariables variables)
         {
-            return false;
+            return AttackEventReturnType.NONE;
         }
 
         public virtual void DrawEventVariables(AttackEventDefinition eventDefinition)

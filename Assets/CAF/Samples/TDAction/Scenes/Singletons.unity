@@ -165,14 +165,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameHandler:
+    simulationObjectManager:
+      id: 0
     currentPlayerEntity: {fileID: 0}
     playerHUD: {fileID: 0}
     frameByFrameMode: 0
+    damageValue: 10
   playerEntity: {fileID: 8147816337253296054, guid: 566a2b9082a19f54d9a11fabf7eb2be8,
     type: 3}
   playerSpawnPosition: {x: 0, y: 3, z: 0}
   hurtboxPrefab: {fileID: 2747298569749429077, guid: 631bb67845b849b4fafde0e2f658062f,
     type: 3}
+  references:
+    version: 1
+    00000000:
+      type: {class: , ns: , asm: }
 --- !u!1 &1254264089
 GameObject:
   m_ObjectHideFlags: 0

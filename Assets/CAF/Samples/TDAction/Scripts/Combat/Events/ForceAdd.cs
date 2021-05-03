@@ -19,7 +19,7 @@ namespace TDAction.Combat.Events
             return "Add Forces";
         }
 
-        public override bool Evaluate(uint frame, uint endFrame,
+        public override AttackEventReturnType Evaluate(int frame, int endFrame,
             CAF.Fighters.FighterBase controller, AttackEventVariables variables)
         {
             FighterManager e = (FighterManager)controller;
@@ -43,7 +43,7 @@ namespace TDAction.Combat.Events
                 f.y = 0;
                 physicsManager.forceMovement += f;
             }
-            return false;
+            return AttackEventReturnType.NONE;
         }
 
 #if UNITY_EDITOR

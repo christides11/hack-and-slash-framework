@@ -28,12 +28,7 @@ namespace TDAction.Entities.Characters
             GetPhysicsManager().ApplyMovementFriction(stats.groundFriction);
 
             CheckInterrupt();
-
             c.StateManager.IncrementFrame();
-            if(c.StateManager.CurrentStateFrame > 60)
-            {
-                c.StateManager.SetFrame(1);
-            }
         }
 
         public override bool CheckInterrupt()

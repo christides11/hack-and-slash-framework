@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace TDAction.Inputs
+﻿namespace TDAction.Inputs
 {
     public enum EntityInputs
     {
@@ -10,6 +6,9 @@ namespace TDAction.Inputs
         CAMERA = 1,
         JUMP = 2,
         ATTACK = 3,
-        DASH = 4
+        DASH = 4,
+        SPECIAL = 5,
+        SHOOT = 6,
+        UNIQUE = 7
     }
 }

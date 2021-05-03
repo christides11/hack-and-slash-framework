@@ -10,13 +10,11 @@ namespace CAF.Fighters
     /// </summary>
     public class FighterHitboxManager
     {
-        public delegate void HitboxGroupEventAction(GameObject hurtableHit, int hitboxGroupIndex, MovesetAttackNode attack);
-        public event HitboxGroupEventAction OnHitboxHit;
+        public delegate void HitboxGroupEventAction(HitboxGroup hitboxGroup, int hitboxIndex, Hurtbox hurtbox);
+        public event HitboxGroupEventAction OnHitHurtbox;
 
-        // Hitbox Group : Hitboxes
-        protected Dictionary<int, List<HitboxBase>> hitboxGroups = new Dictionary<int, List<HitboxBase>>();
-        // Hitbox ID : Hit IHurtables
-        protected Dictionary<int, List<IHurtable>> hurtablesHit = new Dictionary<int, List<IHurtable>>();
+        // ID Group : Owners Hit
+        public Dictionary<int, List<GameObject>> collidedIHurtables = new Dictionary<int, List<GameObject>>();
 
         public FighterCombatManager combatManager;
         public FighterBase manager;
@@ -27,197 +25,75 @@ namespace CAF.Fighters
             this.manager = manager;
         }
 
-        public virtual List<IHurtable> GetHitList(int group)
-        {
-            if (!hurtablesHit.ContainsKey(group))
-            {
-                return null;
-            }
-            return hurtablesHit[group];
-        }
-
-        /// <summary>
-        /// Destroys all boxes and clears variables.
-        /// </summary>
         public virtual void Reset()
         {
-            CleanupAllHitboxes();
-            hurtablesHit.Clear();
+            collidedIHurtables.Clear();
         }
 
-        /// <summary>
-        /// Destroy all the boxes and clears the dictionary.
-        /// </summary>
-        protected virtual void CleanupAllHitboxes()
+        public virtual bool CheckForCollision(HitboxGroup hitboxGroup)
         {
-            foreach (int key in hitboxGroups.Keys)
+            Hurtbox[] hurtboxes = null;
+            for(int i = 0; i < hitboxGroup.boxes.Count; i++)
             {
-                for (int i = 0; i < hitboxGroups[key].Count; i++)
-                {
-                    GameObject.Destroy(hitboxGroups[key][i].gameObject);
-                }
-            }
-            hitboxGroups.Clear();
-        }
+                hurtboxes = CheckBoxCollision(hitboxGroup, i);
 
-        /// <summary>
-        /// Checks the hitboxes to see what they hit this frame.
-        /// This should be called in late update, as physics update right after update.
-        /// </summary>
-        public virtual void TickBoxes()
-        {
-            foreach(List<HitboxBase> hitboxGroup in hitboxGroups.Values)
-            {
-                for(int i = 0; i < hitboxGroup.Count; i++)
-                {
-                    hitboxGroup[i].Tick();
-                }
-            }
-        }
-
-        /// <summary>
-        /// Activate the hitbox group with the given index.
-        /// </summary>
-        /// <param name="index">The index of the hitbox group.</param>
-        public virtual void ActivateHitboxGroup(int index)
-        {
-            if (!hitboxGroups.ContainsKey(index))
-            {
-                return;
-            }
-
-            for (int i = 0; i < hitboxGroups[index].Count; i++)
-            {
-                hitboxGroups[index][i].Activate();
-            }
-        }
-
-        public virtual void ReactivateHitboxGroup(int index)
-        {
-            if (!hitboxGroups.ContainsKey(index))
-            {
-                return;
-            }
-
-            BoxGroup currentGroup = combatManager.CurrentAttack.attackDefinition.boxGroups[index];
-            // Keep track of what the hitbox ID has hit.
-            if (hurtablesHit.ContainsKey(currentGroup.ID) == false)
-            {
-                hurtablesHit.Add(currentGroup.ID, new List<IHurtable>());
-            }
-            hurtablesHit[currentGroup.ID].Clear();
-            hurtablesHit[currentGroup.ID].Add(combatManager);
-
-            for (int i = 0; i < hitboxGroups[index].Count; i++)
-            {
-                hitboxGroups[index][i].ReActivate(hurtablesHit[currentGroup.ID]);
-            }
-        }
-
-        /// <summary>
-        /// Deactivate the hitbox group with the given index.
-        /// </summary>
-        /// <param name="index">The index of the hitbox group.</param>
-        public virtual void DeactivateHitboxGroup(int index)
-        {
-            if (!hitboxGroups.ContainsKey(index))
-            {
-                return;
-            }
-
-            for (int i = 0; i < hitboxGroups[index].Count; i++)
-            {
-                hitboxGroups[index][i].Deactivate();
-            }
-        }
-
-        #region Hitboxes
-        /// <summary>
-        /// Create the hitbox group of the given index.
-        /// </summary>
-        /// <param name="index">The index of the hitbox group.</param>
-        public virtual void CreateHitboxGroup(int index)
-        {
-            // Group was already created.
-            if (hitboxGroups.ContainsKey(index))
-            {
-                return;
-            }
-
-            // Variables.
-            BoxGroup currentGroup = combatManager.CurrentAttack.attackDefinition.boxGroups[index];
-            List<HitboxBase> groupHitboxList = new List<HitboxBase>(currentGroup.boxes.Count);
-
-            // Keep track of what the hitbox ID has hit.
-            if (!hurtablesHit.ContainsKey(currentGroup.ID))
-            {
-                hurtablesHit.Add(currentGroup.ID, new List<IHurtable>());
-                hurtablesHit[currentGroup.ID].Add(combatManager);
-            }
-
-            // Loop through all the hitboxes in the group.
-            for (int i = 0; i < currentGroup.boxes.Count; i++)
-            {
-                // Instantiate the hitbox with the correct position and rotation.
-                BoxDefinitionBase hitboxDefinition = currentGroup.boxes[i];
-                HitboxBase hitbox = InstantiateHitbox(hitboxDefinition);
-
-                // Attach the hitbox if neccessary.
-                if (currentGroup.attachToEntity)
-                {
-                    hitbox.transform.SetParent(manager.transform, true);
-                }
-
-                // Create the hitbox and activate it.
-                hitbox.Initialize(manager.gameObject, manager.visual.transform, manager.CombatManager.GetTeam(),
-                    currentGroup.boxes[i].shape, currentGroup.hitboxHitInfo, hitboxDefinition, hurtablesHit[currentGroup.ID]);
-                int cID = currentGroup.ID;
-                int groupIndex = index;
-                hitbox.OnHurt += (hurtable, hitInfo) => { OnHitboxHurt(hurtable, hitInfo, cID, groupIndex); };
-                hitbox.Activate();
-                groupHitboxList.Add(hitbox);
-            }
-            // Add the hitbox group to our list.
-            hitboxGroups.Add(index, groupHitboxList);
-        }
-
-        protected virtual HitboxBase InstantiateHitbox(BoxDefinitionBase hitboxDefinitionBase)
-        {
-            throw new NotImplementedException("InstantiateHitbox in EntityHitboxManager must be overriden!");
-        }
-
-        /// <summary>
-        /// Called whenever a hitbox hits a hurtbox successfully.
-        /// </summary>
-        /// <param name="hurtableHit">The hurtable that was hit.</param>
-        /// <param name="hitInfo">The hitInfo of the hitbox.</param>
-        /// <param name="hitboxID">The hitbox ID of the hitbox.</param>
-        protected virtual void OnHitboxHurt(GameObject hurtableHit, HitInfoBase hitInfo, int hitboxID, int hitboxGroup)
-        {
-            hurtablesHit[hitboxID].Add(hurtableHit.GetComponent<IHurtable>());
-            combatManager.SetHitStop(hitInfo.attackerHitstop);
-            UpdateHitboxIDIgnoreList(hitboxID);
-            OnHitboxHit?.Invoke(hurtableHit, hitboxGroup, combatManager.CurrentAttack);
-        }
-
-        /// <summary>
-        /// Updates the ignore/hit list of all hitboxes with the given ID.
-        /// </summary>
-        /// <param name="hitboxID">The ID to update the hitboxes for.</param>
-        protected virtual void UpdateHitboxIDIgnoreList(int hitboxID)
-        {
-            foreach (int key in hitboxGroups.Keys)
-            {
-                if(combatManager.CurrentAttack.attackDefinition.boxGroups[key].ID != hitboxID)
+                // This hitbox hit nothing.
+                if(hurtboxes == null || hurtboxes.Length == 0)
                 {
                     continue;
                 }
-                for (int i = 0; i < hitboxGroups[key].Count; i++)
+
+                // Hit thing(s). Check if we should actually hurt them.
+                if (!collidedIHurtables.ContainsKey(hitboxGroup.ID))
                 {
-                    hitboxGroups[key][i].ignoreList = hurtablesHit[hitboxID];
+                    collidedIHurtables.Add(hitboxGroup.ID, new List<GameObject>());
+                }
+                for(int j = 0; j < hurtboxes.Length; j++)
+                {
+                    // Owner was already hit by this ID group or is null, ignore it.
+                    if (hurtboxes[j] == null || collidedIHurtables[hitboxGroup.ID].Contains(hurtboxes[j].Owner))
+                    {
+                        continue;
+                    }
+                    // Additional filtering.
+                    if (ShouldHurt(hitboxGroup, i, hurtboxes[j]) == false)
+                    {
+                        continue;
+                    }
+                    HurtHurtbox(hitboxGroup, i, hurtboxes[j]);
+                    collidedIHurtables[hitboxGroup.ID].Add(hurtboxes[j].Owner);
                 }
             }
+            return false;
         }
-        #endregion
+
+        /// <summary>
+        /// Determines if this hurtbox should be hit.
+        /// </summary>
+        /// <param name="hitboxGroup">The hitbox group of the hitbox.</param>
+        /// <param name="hitboxIndex">The index of the hitbox.</param>
+        /// <param name="hurtbox">The hurtbox that was hit.</param>
+        /// <returns>If the hurtbox should be hurt.</returns>
+        protected virtual bool ShouldHurt(HitboxGroup hitboxGroup, int hitboxIndex, Hurtbox hurtbox)
+        {
+            return true;
+        }
+
+        protected virtual void HurtHurtbox(HitboxGroup hitboxGroup, int hitboxIndex, Hurtbox hurtbox)
+        {
+            combatManager.SetHitStop(hitboxGroup.hitboxHitInfo.attackerHitstop);
+            hurtbox.Hurtable.Hurt(BuildHurtInfo(hitboxGroup, hitboxIndex, hurtbox));
+            OnHitHurtbox?.Invoke(hitboxGroup, hitboxIndex, hurtbox);
+        }
+
+        protected virtual HurtInfoBase BuildHurtInfo(HitboxGroup hitboxGroup, int hitboxIndex, Hurtbox hurtbox)
+        {
+            return new HurtInfoBase();
+        }
+
+        protected virtual Hurtbox[] CheckBoxCollision(HitboxGroup hitboxGroup, int boxIndex)
+        {
+            return null;
+        }
     }
 }

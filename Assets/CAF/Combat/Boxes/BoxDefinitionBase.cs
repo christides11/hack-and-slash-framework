@@ -11,7 +11,7 @@ namespace CAF.Combat
     public class BoxDefinitionBase
     {
 
-        public BoxShapes shape;
+        public BoxShape shape;
 
         public BoxDefinitionBase()
         {
@@ -26,7 +26,7 @@ namespace CAF.Combat
         public virtual void DrawInspector()
         {
 #if UNITY_EDITOR
-            shape = (BoxShapes)EditorGUILayout.EnumPopup("Shape", shape);
+            shape = (BoxShape)EditorGUILayout.EnumPopup("Shape", shape);
 #endif
         }
     }

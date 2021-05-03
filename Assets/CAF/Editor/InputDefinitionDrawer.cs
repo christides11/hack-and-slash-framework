@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace CAF.Input
 {
+#if CAFDefaults
     [CustomPropertyDrawer(typeof(InputDefinition))]
     public class InputDefinitionDrawer : PropertyDrawer
     {
@@ -39,4 +40,5 @@ namespace CAF.Input
             return enumType == InputDefinitionType.Button ? 45 : 70;
         }
     }
+#endif
 }
