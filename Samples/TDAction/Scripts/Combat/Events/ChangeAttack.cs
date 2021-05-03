@@ -19,18 +19,18 @@ namespace TDAction.Combat.Events
             return "Change Attack";
         }
 
-        public override bool Evaluate(uint frame, uint endFrame,
+        public override AttackEventReturnType Evaluate(int frame, int endFrame,
             CAF.Fighters.FighterBase controller, AttackEventVariables variables)
         {
             if(lastFrameExecution && frame != endFrame)
             {
-                return false;
+                return AttackEventReturnType.NONE;
             }
             FighterManager e = (FighterManager)controller;
             EntityCombatManager combatManager = (EntityCombatManager)controller.CombatManager;
 
             e.TryAttack((MovesetAttackNode)variables.objectVars[0]);
-            return true;
+            return AttackEventReturnType.STALL;
         }
 
 #if UNITY_EDITOR

@@ -26,7 +26,7 @@ namespace TDAction.Entities
             EntityPhysicsManager physicsManager = (EntityPhysicsManager)manager.PhysicsManager;
 
             HurtInfo2D hurtInfo2D = (HurtInfo2D)hurtInfoBase;
-            HitInfo hInfo = (HitInfo)hurtInfo2D.hitInfo;
+            HitInfo hInfo = hurtInfo2D.hitInfo as HitInfo;
 
             HitReaction hitReaction = new HitReaction();
             hitReaction.reactionType = HitReactionType.Hit;
@@ -48,9 +48,7 @@ namespace TDAction.Entities
                 case HitboxForceType.SET:
                     Vector2 baseForce = hInfo.opponentForceDir * hInfo.opponentForceMagnitude;
                     Vector3 forces = new Vector3(baseForce.x * hurtInfo2D.faceDirection, 0, 0);
-                    forces.y = baseForce.y;
                     physicsManager.forceGravity.y = baseForce.y;
-                    forces.y = 0;
                     physicsManager.forceMovement = forces;
                     break;
                 case HitboxForceType.PULL:

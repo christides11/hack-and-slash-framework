@@ -59,16 +59,16 @@ namespace CAF.Simulation
         /// After that, it ticks the physics engine.
         /// </summary>
         /// <param name="deltaTime">The time between this and the last frame.</param>
-        public virtual void Update()
+        public virtual void Tick()
         {
-            UpdateSimObjects();
+            TickSimObjects();
             SimulatePhysics();
         }
 
         /// <summary>
         /// Calls every object's SimUpdate method that is in the simulation.
         /// </summary>
-        protected virtual void UpdateSimObjects()
+        protected virtual void TickSimObjects()
         {
             for (int i = 0; i < simObjects.Count; i++)
             {
@@ -87,15 +87,15 @@ namespace CAF.Simulation
         /// <summary>
         /// Calls every object's SimLateUpate method that is in the simulation.
         /// </summary>
-        public virtual void LateUpdate()
+        public virtual void LateTick()
         {
-            LateUpdateSimObjects();
+            LateTickSimObjects();
         }
 
         /// <summary>
         /// Calls every object's SimLateUpate method that is in the simulation.
         /// </summary>
-        protected virtual void LateUpdateSimObjects()
+        protected virtual void LateTickSimObjects()
         {
             for (int i = 0; i < simObjects.Count; i++)
             {

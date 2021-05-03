@@ -1,38 +1,87 @@
 ﻿using CAF.Combat;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace TDAction.Entities
 {
     public class EntityHitboxManager : CAF.Fighters.FighterHitboxManager
     {
+        public Vector3 referencePosition;
+
         public EntityHitboxManager(EntityCombatManager combatManager, FighterManager manager) 
             : base(combatManager, manager)
         {
             
         }
 
-        protected override HitboxBase InstantiateHitbox(BoxDefinitionBase hitboxDefinitionBase)
+        public override void Reset()
         {
-            return GameObject.Instantiate(((FighterManager)manager).hitboxPrefab, 
-                GetHitboxPosition(hitboxDefinitionBase), 
-                GetHitboxRotation(hitboxDefinitionBase));
+            base.Reset();
+            referencePosition = manager.transform.position;
         }
 
-        protected virtual Vector3 GetHitboxPosition(BoxDefinitionBase hitboxDefinitionBase)
+        protected override bool ShouldHurt(HitboxGroup hitboxGroup, int hitboxIndex, Hurtbox hurtbox)
         {
-            BoxDefinition hitboxDefinition = (BoxDefinition)hitboxDefinitionBase;
-            return manager.transform.position
-                + manager.GetVisualBasedDirection(Vector3.right) * hitboxDefinition.offset.x * ((FighterManager)manager).FaceDirection
-                + manager.GetVisualBasedDirection(Vector3.up) * hitboxDefinition.offset.y;
+            if(hurtbox.Owner.TryGetComponent(out IHurtable ih))
+            {
+                TDAction.Combat.TeamTypes team = (TDAction.Combat.TeamTypes)ih.GetTeam();
+                if(team == Combat.TeamTypes.FFA)
+                {
+                    // Enemy in free for all team, hurt them.
+                    return true;
+                }else if(team != (Combat.TeamTypes)combatManager.GetTeam())
+                {
+                    // Enemy is not in our team, hurt them.
+                    return true;
+                }
+                // Enemy is on our team.
+                return false;
+            }
+            // Not hurtable. Ignore.
+            return false;
         }
 
-        protected virtual Quaternion GetHitboxRotation(BoxDefinitionBase hitboxDefinitionBase)
+        Collider2D[] raycastHitList = new Collider2D[0];
+        protected override Hurtbox[] CheckBoxCollision(HitboxGroup hitboxGroup, int boxIndex)
         {
-            BoxDefinition hitboxDefinition = (BoxDefinition)hitboxDefinitionBase;
-            return Quaternion.Euler(new Vector3(0, 0, manager.visual.transform.localScale.x < 0 ? 180 : 0)
-                + hitboxDefinition.rotation);
+            Vector2 position = hitboxGroup.attachToEntity ? (Vector2)manager.transform.position + (Vector2)(hitboxGroup.boxes[boxIndex] as CAF.Combat.BoxDefinition).offset
+                : (Vector2)referencePosition + (Vector2)(hitboxGroup.boxes[boxIndex] as CAF.Combat.BoxDefinition).offset;
+            Vector2 size = (Vector2)(hitboxGroup.boxes[boxIndex] as CAF.Combat.BoxDefinition).size;
+            raycastHitList = Physics2D.OverlapBoxAll(position, size, 0, combatManager.hitboxLayerMask);
+
+            Hurtbox[] hurtboxes = new Hurtbox[raycastHitList.Length];
+            for (int i = 0; i < raycastHitList.Length; i++)
+            {
+                Hurtbox h = raycastHitList[i].GetComponent<Hurtbox>();
+                if(h.Owner != manager.gameObject)
+                {
+                    hurtboxes[i] = h;
+                }
+            }
+            return hurtboxes;
+        }
+
+        protected override HurtInfoBase BuildHurtInfo(HitboxGroup hitboxGroup, int hitboxIndex, Hurtbox hurtbox)
+        {
+            HurtInfo2D hi2d;
+            TDAction.Entities.FighterManager fm = manager as TDAction.Entities.FighterManager;
+            switch (hitboxGroup.hitboxHitInfo.forceRelation)
+            {
+                case HitboxForceRelation.ATTACKER:
+                    hi2d = new HurtInfo2D(hitboxGroup.hitboxHitInfo, manager.transform.position, fm.FaceDirection);
+                    break;
+                case HitboxForceRelation.HITBOX:
+                    Vector2 position = hitboxGroup.attachToEntity ? (Vector2)manager.transform.position + (Vector2)(hitboxGroup.boxes[hitboxIndex] as CAF.Combat.BoxDefinition).offset
+                : (Vector2)referencePosition + (Vector2)(hitboxGroup.boxes[hitboxIndex] as CAF.Combat.BoxDefinition).offset;
+                    hi2d = new HurtInfo2D(hitboxGroup.hitboxHitInfo, position, fm.FaceDirection);
+                    break;
+                case HitboxForceRelation.WORLD:
+                    hi2d = new HurtInfo2D(hitboxGroup.hitboxHitInfo, hurtbox.transform.position, fm.FaceDirection);
+                    break;
+                default:
+                    hi2d = new HurtInfo2D();
+                    break;
+            }
+            return hi2d;
         }
     }
 }

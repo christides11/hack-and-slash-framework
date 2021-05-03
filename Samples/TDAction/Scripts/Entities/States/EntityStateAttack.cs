@@ -27,6 +27,10 @@ namespace TDAction.Entities.States
                 return;
             }
             charging = true;
+            if (String.IsNullOrEmpty(currentAttack.animationName) == false)
+            {
+                (Manager as FighterManager).entityAnimator.SetAnimation(currentAttack.animationName);
+            }
         }
 
         public override void OnUpdate()
@@ -36,16 +40,9 @@ namespace TDAction.Entities.States
                 (TDAction.Combat.AttackDefinition)entityManager.CombatManager.CurrentAttack.attackDefinition;
 
             // Handle lifetime of box groups.
-            for (int i = 0; i < currentAttack.boxGroups.Count; i++)
+            for (int i = 0; i < currentAttack.hitboxGroups.Count; i++)
             {
-                HandleBoxGroup(i, currentAttack.boxGroups[i]);
-            }
-
-            // Check if we should cancel the attack with something else.
-            if (CheckCancelWindows(currentAttack))
-            {
-                entityManager.CombatManager.Cleanup();
-                return;
+                HandleHitboxGroup(i, currentAttack.hitboxGroups[i]);
             }
 
             if (TryCommandAttackCancel(currentAttack))
@@ -55,14 +52,25 @@ namespace TDAction.Entities.States
 
             // Process events.
             bool eventCancel = false;
+            bool interrupted = false;
             for (int i = 0; i < currentAttack.events.Count; i++)
             {
-                if (HandleEvents(currentAttack.events[i]))
+                switch(HandleEvents(currentAttack.events[i]))
                 {
-                    // Event wants us to stall on the current frame.
-                    eventCancel = true;
-                    return;
+                    case CAF.Combat.AttackEventReturnType.STALL:
+                        // Event wants us to stall on the current frame.
+                        eventCancel = true;
+                        break;
+                    case CAF.Combat.AttackEventReturnType.INTERRUPT:
+                        interrupted = true;
+                        break;
                 }
+            }
+
+            if (interrupted)
+            {
+                entityManager.CombatManager.Cleanup();
+                return;
             }
 
             if (CheckInterrupt())
@@ -73,6 +81,7 @@ namespace TDAction.Entities.States
             {
                 entityManager.StateManager.IncrementFrame();
             }
+            (Manager as FighterManager).entityAnimator.SetFrame((int)entityManager.StateManager.CurrentStateFrame);
         }
 
         /// <summary>
@@ -105,11 +114,11 @@ namespace TDAction.Entities.States
         /// </summary>
         /// <param name="currentEvent">The event being processed.</param>
         /// <returns>True if the current attack state was canceled by the event.</returns>
-        protected virtual bool HandleEvents(CAF.Combat.AttackEventDefinition currentEvent)
+        protected virtual CAF.Combat.AttackEventReturnType HandleEvents(CAF.Combat.AttackEventDefinition currentEvent)
         {
             if (!currentEvent.active)
             {
-                return false;
+                return CAF.Combat.AttackEventReturnType.NONE;
             }
             FighterManager e = GetEntityManager();
 
@@ -135,31 +144,32 @@ namespace TDAction.Entities.States
             if(currentEvent.inputCheckTiming != CAF.Combat.AttackEventInputCheckTiming.NONE
                 && !currentEvent.inputCheckProcessed)
             {
-                return false;
+                return CAF.Combat.AttackEventReturnType.NONE;
             }
 
             if (e.StateManager.CurrentStateFrame >= currentEvent.startFrame
                 && e.StateManager.CurrentStateFrame <= currentEvent.endFrame)
             {
+                /*
                 if (currentEvent.onHit)
                 {
                     List<CAF.Combat.IHurtable> ihList = 
                         ((EntityHitboxManager)e.CombatManager.hitboxManager).GetHitList(currentEvent.onHitHitboxGroup);
                     if (ihList == null)
                     {
-                        return false;
+                        return CAF.Combat.AttackEventReturnType.NONE;
                     }
                     if (ihList.Count <= 1)
                     {
-                        return false;
+                        return CAF.Combat.AttackEventReturnType.NONE;
                     }
-                }
-                return currentEvent.attackEvent.Evaluate(e.StateManager.CurrentStateFrame - currentEvent.startFrame,
+                }*/
+                return currentEvent.attackEvent.Evaluate((int)(e.StateManager.CurrentStateFrame - currentEvent.startFrame),
                     currentEvent.endFrame - currentEvent.startFrame,
                     e,
                     currentEvent.variables);
             }
-            return false;
+            return CAF.Combat.AttackEventReturnType.NONE;
         }
 
         /// <summary>
@@ -186,7 +196,7 @@ namespace TDAction.Entities.States
             for(int i = 0; i < currentAttack.chargeWindows.Count; i++)
             {
                 // Not on the correct frame.
-                if(entityManager.StateManager.CurrentStateFrame != currentAttack.chargeWindows[i].frame)
+                if(entityManager.StateManager.CurrentStateFrame != currentAttack.chargeWindows[i].startFrame)
                 {
                     continue;
                 }
@@ -217,8 +227,35 @@ namespace TDAction.Entities.States
         /// </summary>
         /// <param name="groupIndex">The group number being processed.</param>
         /// <param name="boxGroup">The group being processed.</param>
-        protected virtual void HandleBoxGroup(int groupIndex, CAF.Combat.BoxGroup boxGroup)
+        protected virtual void HandleHitboxGroup(int groupIndex, CAF.Combat.HitboxGroup boxGroup)
         {
+            FighterManager entityManager = GetEntityManager();
+            // Make sure we're in the frame window of the box.
+            if (entityManager.StateManager.CurrentStateFrame < boxGroup.activeFramesStart
+                || entityManager.StateManager.CurrentStateFrame > boxGroup.activeFramesEnd)
+            {
+                return;
+            }
+
+            // Check if the charge level requirement was met.
+            if (boxGroup.chargeLevelNeeded >= 0)
+            {
+                int currentChargeLevel = entityManager.CombatManager.CurrentChargeLevel;
+                if (currentChargeLevel <= boxGroup.chargeLevelNeeded
+                    || currentChargeLevel > boxGroup.chargeLevelMax)
+                {
+                    return;
+                }
+            }
+
+            // Hit check.
+            switch (boxGroup.hitGroupType)
+            {
+                case CAF.Combat.HitboxType.HIT:
+                    entityManager.CombatManager.hitboxManager.CheckForCollision(boxGroup);
+                    break;
+            }
+            /*
             FighterManager entityManager = GetEntityManager();
             // Cleanup the box if it's active frames are over.
             if(entityManager.StateManager.CurrentStateFrame == boxGroup.activeFramesEnd + 1)
@@ -247,72 +284,10 @@ namespace TDAction.Entities.States
             // Create the box.
             switch (boxGroup.hitGroupType)
             {
-                case CAF.Combat.BoxGroupType.HIT:
+                case CAF.Combat.HitboxType.HIT:
                     entityManager.CombatManager.hitboxManager.CreateHitboxGroup(groupIndex);
                     break;
-            }
-        }
-
-        protected virtual bool CheckCancelWindows(AttackDefinition currentAttack)
-        {
-            if (CheckEnemyStepWindows(currentAttack)
-                || CheckJumpCancelWindows(currentAttack)
-                || CheckLandCancelWindows(currentAttack))
-            {
-                return true;
-            }
-            return false;
-        }
-
-        private bool CheckLandCancelWindows(AttackDefinition currentAttack)
-        {
-            FighterManager entityManager = GetEntityManager();
-            for (int i = 0; i < currentAttack.landCancelWindows.Count; i++)
-            {
-                if (entityManager.StateManager.CurrentStateFrame >= currentAttack.landCancelWindows[i].x
-                    || entityManager.StateManager.CurrentStateFrame <= currentAttack.landCancelWindows[i].y)
-                {
-                    if (entityManager.TryLandCancel())
-                    {
-                        return true;
-                    }
-                }
-            }
-            return false;
-        }
-
-        private bool CheckJumpCancelWindows(AttackDefinition currentAttack)
-        {
-            FighterManager entityManager = GetEntityManager();
-            for (int i = 0; i < currentAttack.jumpCancelWindows.Count; i++)
-            {
-                if (entityManager.StateManager.CurrentStateFrame >= currentAttack.jumpCancelWindows[i].x
-                    && entityManager.StateManager.CurrentStateFrame <= currentAttack.jumpCancelWindows[i].y)
-                {
-                    if (entityManager.TryJump())
-                    {
-                        return true;
-                    }
-                }
-            }
-            return false;
-        }
-
-        private bool CheckEnemyStepWindows(AttackDefinition currentAttack)
-        {
-            FighterManager e = GetEntityManager();
-            for(int i = 0; i < currentAttack.enemyStepWindows.Count; i++)
-            {
-                if(e.StateManager.CurrentStateFrame >= currentAttack.enemyStepWindows[i].x
-                    && e.StateManager.CurrentStateFrame <= currentAttack.enemyStepWindows[i].y)
-                {
-                    if (e.TryEnemyStep())
-                    {
-                        return true;
-                    }
-                }
-            }
-            return false;
+            }*/
         }
     }
 }

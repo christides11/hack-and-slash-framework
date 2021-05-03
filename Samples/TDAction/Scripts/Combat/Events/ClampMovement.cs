@@ -17,13 +17,13 @@ namespace TDAction.Combat.Events
             return "Clamp Movement";
         }
 
-        public override bool Evaluate(uint frame, uint endFrame,
+        public override AttackEventReturnType Evaluate(int frame, int endFrame,
             CAF.Fighters.FighterBase controller, AttackEventVariables variables)
         {
             EntityPhysicsManager physicsManager = (EntityPhysicsManager)controller.PhysicsManager;
             physicsManager.forceMovement.x = Mathf.Clamp(physicsManager.forceMovement.x,
                 -variables.floatVars[0], variables.floatVars[0]);
-            return false;
+            return AttackEventReturnType.NONE;
         }
 
 #if UNITY_EDITOR

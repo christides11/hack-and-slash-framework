@@ -49,7 +49,7 @@ namespace CAF.Combat
             EditorGUILayout.EndHorizontal();
             switch (shape)
             {
-                case BoxShapes.Rectangle:
+                case BoxShape.Rectangle:
                     EditorGUILayout.BeginHorizontal();
                     EditorGUILayout.LabelField("Size", GUILayout.Width(135));
                     size.x = EditorGUILayout.FloatField(size.x, GUILayout.Width(60));
@@ -57,11 +57,11 @@ namespace CAF.Combat
                     size.z = EditorGUILayout.FloatField(size.z, GUILayout.Width(60));
                     EditorGUILayout.EndHorizontal();
                     break;
-                case BoxShapes.Circle:
+                case BoxShape.Circle:
                     radius
                         = EditorGUILayout.FloatField("Radius", radius);
                     break;
-                case BoxShapes.Capsule:
+                case BoxShape.Capsule:
                     radius = EditorGUILayout.FloatField("Radius", radius);
                     height = EditorGUILayout.FloatField("Height", height);
                     break;

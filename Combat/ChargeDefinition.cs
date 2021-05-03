@@ -7,7 +7,8 @@ namespace CAF.Combat
     [System.Serializable]
     public class ChargeDefinition
     {
-        public int frame = 1;
+        public int startFrame = 1;
+        public int endFrame = 1;
         public bool releaseOnCompletion = true;
         public List<ChargeLevel> chargeLevels = new List<ChargeLevel>();
     }

@@ -16,11 +16,11 @@ namespace TDAction.Entities
 
 
         protected int faceDirection = 1;
+        public EntityAnimator entityAnimator;
         public CharacterController2D charController2D;
         public Collider2D coll;
         public EntityDefinition entityDefinition;
         public HealthManager healthManager;
-        public HitboxBase hitboxPrefab;
         public LayerMask enemyStepLayerMask;
         public float enemyStepRadius = 2;
 

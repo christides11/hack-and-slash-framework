@@ -20,6 +20,8 @@ namespace TDAction.Managers
         [SerializeField] private PlayerHUD playerHUD;
         [SerializeField] private bool frameByFrameMode;
 
+        public float damageValue = 10;
+
         public GameHandler(PlayerHUD playerHUD)
         {
             simulationObjectManager = new SimObjectManager();
@@ -39,6 +41,15 @@ namespace TDAction.Managers
                     UpdateSimulation();
                 }
             }
+
+            if (Input.GetKeyDown(KeyCode.F6))
+            {
+                currentPlayerEntity.GetComponent<HealthManager>().Hurt(damageValue);
+            }
+            if (Input.GetKeyDown(KeyCode.F7))
+            {
+                currentPlayerEntity.GetComponent<HealthManager>().Heal(damageValue);
+            }
         }
 
         /// <summary>
@@ -55,8 +66,8 @@ namespace TDAction.Managers
 
         private void UpdateSimulation()
         {
-            simulationObjectManager.Update();
-            simulationObjectManager.LateUpdate();
+            simulationObjectManager.Tick();
+            simulationObjectManager.LateTick();
         }
 
         /// <summary>
@@ -72,12 +83,14 @@ namespace TDAction.Managers
 
             simulationObjectManager.RegisterObject(currentPlayerEntity);
 
-            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraHandler>().SetLookAtTarget(currentPlayerEntity.transform);
+            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraHandler>().SetLookAtTarget(currentPlayerEntity.visual.transform);
 
             if (playerHUD)
             {
                 currentPlayerEntity.GetComponent<HealthManager>().OnHurt += (source, oldHealth, currentHealth) 
-                    => { playerHUD.SetHealthValue(currentHealth, source.MaxHealth); };
+                    => { playerHUD.Damage(currentHealth, source.MaxHealth); };
+                currentPlayerEntity.GetComponent<HealthManager>().OnHeal += (source, oldHealth, currentHealth)
+                    => { playerHUD.Heal(currentHealth, source.MaxHealth); };
             }
         }
     }

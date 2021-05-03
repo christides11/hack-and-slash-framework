@@ -2,58 +2,223 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 namespace CAF.Combat
 {
     public class AttackDefinitionEditorWindow : EditorWindow
     {
+        PreviewRenderUtility renderUtils;
         protected AttackDefinition attack;
-        protected int currentMenu = 0;
+        protected Fighters.FighterBase visualFighterPrefab;
+
+        protected GameObject visualFighterSceneReference;
+
+        bool autoplay;
+
+        double playInterval;
+        double nextPlayTime = 0;
 
         public static void Init(AttackDefinition attack)
         {
-            AttackDefinitionEditorWindow window =
-                ScriptableObject.CreateInstance<AttackDefinitionEditorWindow>();
+            AttackDefinitionEditorWindow window = ScriptableObject.CreateInstance<AttackDefinitionEditorWindow>();
             window.attack = attack;
             window.Show();
         }
 
-        protected Dictionary<string, Type> attackEventTypes = new Dictionary<string, Type>();
-        protected Dictionary<string, Type> hitInfoTypes = new Dictionary<string, Type>();
-        protected Dictionary<string, Type> boxDefinitionTypes = new Dictionary<string, Type>();
-        protected virtual void OnFocus()
+        protected virtual void OnEnable()
         {
-            attackEventTypes.Clear();
-            hitInfoTypes.Clear();
-            boxDefinitionTypes.Clear();
-            foreach (var a in AppDomain.CurrentDomain.GetAssemblies())
+            playInterval = Time.fixedDeltaTime;
+            nextPlayTime = EditorApplication.timeSinceStartup+playInterval;
+            if (renderUtils == null)
             {
-                foreach (var givenType in a.GetTypes())
-                {
-                    if (givenType.IsSubclassOf(typeof(AttackEvent)))
-                    {
-                        attackEventTypes.Add(givenType.FullName, givenType);
-                    }
-                    if (givenType.IsSubclassOf(typeof(HitInfoBase)))
-                    {
-                        hitInfoTypes.Add(givenType.FullName, givenType);
-                    }
-                    if (givenType.IsSubclassOf(typeof(BoxDefinitionBase)))
-                    {
-                        boxDefinitionTypes.Add(givenType.FullName, givenType);
-                    }
-                }
+                renderUtils = new PreviewRenderUtility(true);
+            }
+            renderUtils.camera.cameraType = CameraType.SceneView;
+            renderUtils.camera.transform.position = new Vector3(0, 1, -10);
+            renderUtils.camera.transform.LookAt(new Vector3(0, 1, 0));
+            renderUtils.camera.farClipPlane = 100;
+        }
+
+        protected virtual void OnDisable()
+        {
+            if (renderUtils != null)
+            {
+                renderUtils.Cleanup();
             }
         }
 
+        protected virtual void Update()
+        {
+            Repaint();
+        }
+
+        protected Vector2 scroll;
+        protected int timelineFrame = 0;
+        protected bool rotationMode = false;
+        protected Vector2 mousePos = new Vector2(0, 0);
+        protected Vector2 diff = Vector2.zero;
+        protected float rotSpeed = 1;
+        protected float scrollWheel = 0;
+        protected float scrollSpeed = 0.5f;
+
         protected virtual void OnGUI()
         {
-            attack = (AttackDefinition)EditorGUILayout.ObjectField("Attack", attack, typeof(AttackDefinition), false);
+            var pos = position;
+            pos.x = 0;
+            pos.y = 0;
+            pos.height /= 2.75f;
+            pos.height = Mathf.Min(250, pos.height);
+
+            Event e = Event.current;
+            switch (e.type)
+            {
+                case EventType.MouseDown:
+                    if (Event.current.button == 1)
+                    {
+                        if (pos.Contains(Event.current.mousePosition))
+                        {
+                            mousePos = Event.current.mousePosition;
+                            rotationMode = true;
+                        }
+                    }
+                    break;
+                case EventType.MouseUp:
+                    if (Event.current.button == 1)
+                    {
+                        rotationMode = false;
+                    }
+                    break;
+                case EventType.MouseDrag:
+                    if (rotationMode)
+                    {
+                        diff = Event.current.mousePosition - mousePos;
+                        mousePos = Event.current.mousePosition;
+                    }
+                    break;
+                case EventType.ScrollWheel:
+                    if (rotationMode)
+                    {
+                        scrollWheel = Event.current.delta.y;
+                    }
+                    break;
+            }
+
+            renderUtils.BeginPreview(pos, EditorStyles.helpBox);
+            DrawGround();
+            DrawHurtboxes();
+            DrawHitboxes();
+            renderUtils.Render(false, false);
+            renderUtils.EndAndDrawPreview(pos);
+
+            if (scrollWheel != 0)
+            {
+                renderUtils.camera.transform.position += renderUtils.camera.transform.forward * scrollWheel * scrollSpeed;
+                scrollWheel = 0;
+            }
+
+            if (diff.magnitude > 0)
+            {
+                renderUtils.camera.transform.RotateAround(Vector3.zero, Vector3.up, diff.x * rotSpeed);
+                diff = Vector2.zero;
+            }
 
             EditorGUILayout.BeginHorizontal();
-            DrawMenuBar();
+            GUILayout.Label("fr:", GUILayout.Width(15));
+            GUILayout.Label(timelineFrame.ToString(), GUILayout.Width(20));
+            GUILayout.Label("/", GUILayout.Width(10));
+            GUILayout.Label(attack.length.ToString(), GUILayout.Width(55));
             EditorGUILayout.EndHorizontal();
-            DrawMenu();
+            if (visualFighterSceneReference)
+            {
+                EditorGUILayout.BeginHorizontal();
+                GUILayout.Label("x:", GUILayout.Width(13));
+                GUILayout.Label(visualFighterSceneReference.transform.position.x.ToString("F1"), GUILayout.Width(25));
+                GUILayout.Label("y:", GUILayout.Width(13));
+                GUILayout.Label(visualFighterSceneReference.transform.position.y.ToString("F1"), GUILayout.Width(25));
+                GUILayout.Label("z:", GUILayout.Width(13));
+                GUILayout.Label(visualFighterSceneReference.transform.position.z.ToString("F1"), GUILayout.Width(25));
+                EditorGUILayout.EndHorizontal();
+            }
+
+            GUILayout.BeginArea(new Rect(pos.x, pos.y + pos.height, pos.width, position.height - pos.height));
+            DrawGeneralOptions();
+            if (attack.useState)
+            {
+                GUILayout.EndArea();
+                return;
+            }
+            MenuBar();
+            GUILayout.Space(10);
+            if (visualFighterSceneReference)
+            {
+                if (GUILayout.Button("Open Fighter Inspector"))
+                {
+                    Selection.activeGameObject = visualFighterSceneReference.gameObject;
+                }
+            }
+            EditorGUILayout.BeginHorizontal();
+            if (GUILayout.Button(EditorGUIUtility.IconContent("d_Profiler.PrevFrame"), GUILayout.Width(30)))
+            {
+                timelineFrame = Mathf.Max(0, timelineFrame - 1);
+                FastForward();
+            }
+            if (GUILayout.Button(EditorGUIUtility.IconContent("d_Profiler.NextFrame"), GUILayout.Width(30)))
+            {
+                IncrementForward();
+            }
+            if (GUILayout.Button(EditorGUIUtility.IconContent("d_preAudioAutoPlayOff"), GUILayout.Width(30), GUILayout.Height(18)))
+            {
+                FastForward();
+            }
+            if (GUILayout.Button(EditorGUIUtility.IconContent("d_Profiler.LastFrame"), GUILayout.Width(30)))
+            {
+                autoplay = !autoplay;
+                if (autoplay)
+                {
+                    nextPlayTime = EditorApplication.timeSinceStartup + playInterval;
+                }
+            }
+            if (autoplay && visualFighterSceneReference != null && EditorApplication.timeSinceStartup >= nextPlayTime)
+            {
+                if (timelineFrame + 1 > attack.length)
+                {
+                    timelineFrame = 0;
+                    FastForward();
+                }
+                else
+                {
+                    IncrementForward();
+                }
+                nextPlayTime = EditorApplication.timeSinceStartup + playInterval;
+            }
+            timelineFrame = (int)EditorGUILayout.Slider(timelineFrame, 0, attack.length);
+            EditorGUILayout.EndHorizontal();
+            GUILayout.Space(10);
+
+            scroll = EditorGUILayout.BeginScrollView(scroll);
+            if (showHitboxGroups)
+            {
+                DrawHitboxGroupBars();
+            }
+            GUILayout.Space(10);
+            if (showHurtboxGroups)
+            {
+                DrawHurtboxGroupBars();
+            }
+            GUILayout.Space(10);
+            if (showEvents)
+            {
+                DrawEventBars();
+            }
+            GUILayout.Space(10);
+            if (showCharges)
+            {
+                DrawChargeBars();
+            }
+            EditorGUILayout.EndScrollView();
+            GUILayout.EndArea();
 
             if (GUI.changed)
             {
@@ -61,539 +226,339 @@ namespace CAF.Combat
             }
         }
 
-        protected virtual void DrawMenuBar()
+        protected virtual void DrawHitboxes()
         {
-            if (GUILayout.Button("General"))
+
+        }
+
+        protected virtual void DrawHurtboxes()
+        {
+
+        }
+
+        protected virtual void DrawGround()
+        {
+            Handles.SetCamera(renderUtils.camera);
+            Handles.color = Color.grey;
+            for (int i = -10; i <= 10; i++)
             {
-                currentMenu = 0;
+                Handles.color = i == 0 ? Color.red : Color.grey;
+                Handles.DrawLine(new Vector3(i, 0, -10), new Vector3(i, 0, 10));
+                Handles.color = i == 0 ? Color.green : Color.grey;
+                Handles.DrawLine(new Vector3(-10, 0, i), new Vector3(10, 0, i));
             }
-            if (GUILayout.Button("Windows"))
+            Handles.color = Color.cyan;
+            Handles.DrawLine(Vector3.zero, new Vector3(0, 10, 0));
+        }
+
+        protected virtual void FastForward()
+        {
+            if (visualFighterSceneReference == null)
             {
-                currentMenu = 1;
+                return;
             }
-            if (GUILayout.Button("Boxes"))
+
+            ResetFighterVariables();
+
+            if(timelineFrame == 0)
             {
-                currentMenu = 2;
+                return;
             }
-            if (GUILayout.Button("Events"))
+            int oldFrame = timelineFrame;
+            timelineFrame = 0;
+
+            for (int i = 0; i < oldFrame; i++)
             {
-                currentMenu = 3;
+                IncrementForward();
             }
         }
 
-        protected virtual void DrawMenu()
+        protected virtual void IncrementForward()
         {
-            if(currentMenu == 0)
+            timelineFrame = Mathf.Min(timelineFrame + 1, attack.length);
+
+            if (visualFighterSceneReference == null)
             {
-                DrawGeneralMenu();
+                return;
             }
-            if (currentMenu == 1)
+            for(int i = 0; i < attack.hitboxGroups.Count; i++)
             {
-                DrawWindowsMenu();
+                HandleHitboxGroup(i, attack.hitboxGroups[i]);
             }
-            if(currentMenu == 2)
+            for(int i = 0; i < attack.hurtboxGroups.Count; i++)
             {
-                DrawBoxesMenu();
+                HandleHurtboxGroup(i, attack.hurtboxGroups[i]);
             }
-            if(currentMenu == 3)
+            for (int i = 0; i < attack.events.Count; i++)
             {
-                DrawEventsWindow();
+                HandleEvent(attack.events[i]);
             }
+
+            MoveEntity();
         }
 
-        protected virtual void DrawGeneralMenu()
+        protected virtual void HandleHurtboxGroup(int index, HurtboxGroup hurtboxGroup)
         {
-            EditorGUI.BeginChangeCheck();
 
-            string attackName = EditorGUILayout.TextField("Name", attack.attackName);
-            EditorGUILayout.LabelField("Description");
-            string description = EditorGUILayout.TextArea(attack.description, GUILayout.Height(50));
+        }
 
-            bool useState = EditorGUILayout.Toggle("Use State", attack.useState);
-            EditorGUI.BeginDisabledGroup(useState == false);
-            ushort stateOverride = (ushort)EditorGUILayout.IntField("State Override", attack.stateOverride);
+        protected virtual void HandleHitboxGroup(int index, HitboxGroup hitboxGroup)
+        {
+
+        }
+
+        protected virtual AttackEventReturnType HandleEvent(AttackEventDefinition attackEventDefinition)
+        {
+            if (!attackEventDefinition.active)
+            {
+                return AttackEventReturnType.NONE;
+            }
+            Fighters.FighterBase e = visualFighterSceneReference.GetComponent<Fighters.FighterBase>();
+
+            if (timelineFrame >= attackEventDefinition.startFrame
+                && timelineFrame <= attackEventDefinition.endFrame)
+            {
+                return attackEventDefinition.attackEvent.Evaluate((int)(timelineFrame - attackEventDefinition.startFrame),
+                    attackEventDefinition.endFrame - attackEventDefinition.startFrame,
+                    e,
+                    attackEventDefinition.variables);
+            }
+            return AttackEventReturnType.NONE;
+        }
+
+        protected virtual void MoveEntity()
+        {
+            Vector2 mov = visualFighterSceneReference.GetComponent<Fighters.FighterPhysicsManager2D>().GetOverallForce();
+            Vector3 finalMove = new Vector3(mov.x, mov.y, 0);
+            finalMove *= Time.fixedDeltaTime;
+
+            visualFighterSceneReference.transform.position += finalMove;
+        }
+
+        int tempLength = 0;
+        Fighters.FighterBase tempFighter;
+        protected virtual void DrawGeneralOptions()
+        {
+            attack.name = EditorGUILayout.TextField("Name", attack.name);
+            EditorGUILayout.BeginHorizontal();
+            tempLength = Mathf.Clamp(EditorGUILayout.IntField("Length", tempLength), 1, int.MaxValue);
+            if (GUILayout.Button("Apply"))
+            {
+                attack.length = tempLength;
+            }
+            EditorGUILayout.EndHorizontal();
+            EditorGUILayout.BeginHorizontal();
+            tempFighter = (Fighters.FighterBase)EditorGUILayout.ObjectField("Character", tempFighter, typeof(Fighters.FighterBase), false);
+            if (GUILayout.Button("Apply"))
+            {
+                CreateFighter();
+            }
+            EditorGUILayout.EndHorizontal();
+            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.LabelField("State Override", GUILayout.Width(150));
+            attack.useState = EditorGUILayout.Toggle(attack.useState, GUILayout.Width(20));
+            EditorGUI.BeginDisabledGroup(!attack.useState);
+            attack.stateOverride = (ushort)EditorGUILayout.IntField(attack.stateOverride);
             EditorGUI.EndDisabledGroup();
-
-            int length = attack.length;
-            AnimationClip animationGround = attack.animationGround;
-            AnimationClip animationAir = attack.animationAir;
-            WrapMode wrapMode = attack.wrapMode;
-
-            GUILayout.Space(15);
-            if (useState == false)
-            {
-                length = Mathf.Clamp(EditorGUILayout.IntField("Length", attack.length), 1, int.MaxValue);
-
-                GUILayout.Space(15);
-
-                EditorGUILayout.LabelField("ANIMATION", EditorStyles.boldLabel);
-                animationGround = (AnimationClip)EditorGUILayout.ObjectField("Animation (Ground)", attack.animationGround,
-                        typeof(AnimationClip), false);
-                animationAir = (AnimationClip)EditorGUILayout.ObjectField("Animation (Air)", attack.animationAir,
-                        typeof(AnimationClip), false);
-                wrapMode = (WrapMode)EditorGUILayout.EnumPopup("Wrap Mode", attack.wrapMode);
-            }
-
-            if (EditorGUI.EndChangeCheck())
-            {
-                Undo.RecordObject(attack, "Changed General Property.");
-                attack.attackName = attackName;
-                attack.description = description;
-                attack.useState = useState;
-                attack.stateOverride = stateOverride;
-                attack.length = length;
-                attack.animationGround = animationGround;
-                attack.animationAir = animationAir;
-                attack.wrapMode = wrapMode;
-            }
+            EditorGUILayout.EndHorizontal();
         }
 
-        protected bool jumpCancelWindowsFoldout;
-        protected bool enemyStepWindowsFoldout;
-        protected bool landCancelWindowsFoldout;
-        protected bool commandAttackCancelWindowsFoldout;
-        protected bool chargeWindowsFoldout;
-        protected bool cancelWindowsFoldout;
-
-        protected virtual void DrawWindowsMenu()
+        protected virtual void CreateFighter()
         {
-            scrollPos = EditorGUILayout.BeginScrollView(scrollPos);
-            chargeWindowsFoldout = EditorGUILayout.Foldout(chargeWindowsFoldout, "CHARGE WINDOWS", true, EditorStyles.boldLabel);
-            if (chargeWindowsFoldout)
+            if(visualFighterSceneReference != null)
             {
-                EditorGUI.indentLevel++;
-                EditorGUI.BeginChangeCheck();
-                if (GUILayout.Button("Add Window"))
-                {
-                    attack.chargeWindows.Add(CreateChargeDefinition());
-                }
-                for(int i = 0; i < attack.chargeWindows.Count; i++)
-                {
-                    DrawChargeWindow(i);
-                    EditorGUILayout.Space();
-                }
-                if (EditorGUI.EndChangeCheck())
-                {
-                    Undo.RecordObject(attack, "Changed Charge Window.");
-                }
-                EditorGUI.indentLevel--;
+                DestroyImmediate(visualFighterSceneReference);
+                visualFighterSceneReference = null;
             }
-
-            cancelWindowsFoldout = EditorGUILayout.Foldout(cancelWindowsFoldout, "CANCEL WINDOWS", true, EditorStyles.boldLabel);
-            List<Vector2Int> jumpCancelWindows = new List<Vector2Int>(attack.jumpCancelWindows);
-            List<Vector2Int> enemyStepWindows = new List<Vector2Int>(attack.enemyStepWindows);
-            List<Vector2Int> landCancelWindows = new List<Vector2Int>(attack.landCancelWindows);
-            List<Vector2Int> commandAttackCancelWindows = new List<Vector2Int>(attack.commandAttackCancelWindows);
-            if (cancelWindowsFoldout)
-            {
-                EditorGUI.indentLevel++;
-                EditorGUI.BeginChangeCheck();
-                DrawCancelWindow("Jump Cancel Windows", ref jumpCancelWindowsFoldout, ref jumpCancelWindows, 180);
-                DrawCancelWindow("Enemy Step Windows", ref enemyStepWindowsFoldout, ref enemyStepWindows, 180);
-                DrawCancelWindow("Land Cancel Windows", ref landCancelWindowsFoldout, ref landCancelWindows, 180);
-                DrawCancelWindow("Command Attack Cancel Windows", ref commandAttackCancelWindowsFoldout, ref commandAttackCancelWindows, 230);
-                if (EditorGUI.EndChangeCheck())
-                {
-                    Undo.RecordObject(attack, "Changed Cancel Window.");
-                    attack.jumpCancelWindows = jumpCancelWindows;
-                    attack.enemyStepWindows = enemyStepWindows;
-                    attack.landCancelWindows = landCancelWindows;
-                    attack.commandAttackCancelWindows = commandAttackCancelWindows;
-                }
-                EditorGUI.indentLevel--;
-            }
-            EditorGUILayout.EndScrollView();
+            visualFighterPrefab = tempFighter;
+            visualFighterSceneReference = renderUtils.InstantiatePrefabInScene(visualFighterPrefab.gameObject);
+            ResetFighterVariables();
         }
 
-        protected virtual void DrawChargeWindow(int i)
+        protected virtual void ResetFighterVariables()
+        {
+            visualFighterSceneReference.transform.position = new Vector3(0, 0, 0);
+            visualFighterSceneReference.GetComponent<Fighters.FighterPhysicsManager2D>().forceMovement = Vector2.zero;
+        }
+
+        protected bool showHitboxGroups = true;
+        protected bool showHurtboxGroups = true;
+        protected bool showEvents = true;
+        protected bool showCharges = true;
+        protected virtual void MenuBar()
+        {
+            GUILayout.BeginHorizontal();
+            showHitboxGroups = GUILayout.Toggle(showHitboxGroups, "Hitbox Grops", "Button");
+            showHurtboxGroups = GUILayout.Toggle(showHurtboxGroups, "Hurtbox Groups", "Button");
+            showEvents = GUILayout.Toggle(showEvents, "Events", "Button");
+            showCharges = GUILayout.Toggle(showCharges, "Charges", "Button");
+            GUILayout.EndHorizontal();
+        }
+
+        #region Timeline Elements
+        protected virtual void DrawHitboxGroupBars()
         {
             EditorGUILayout.BeginHorizontal();
-            if (GUILayout.Button("X", GUILayout.Width(30)))
+            GUILayout.Label("Hitbox Groups", EditorStyles.boldLabel);
+            if(GUILayout.Button("+", GUILayout.Width(30), GUILayout.MaxWidth(30)))
             {
-                attack.chargeWindows.RemoveAt(i);
-                return;
+                AddHitboxGroup();
             }
-            GUILayout.Label($"{i}.");
             EditorGUILayout.EndHorizontal();
-            EditorGUI.indentLevel++;
-            attack.chargeWindows[i].frame = EditorGUILayout.IntField("Frame", attack.chargeWindows[i].frame);
-            attack.chargeWindows[i].releaseOnCompletion = EditorGUILayout.Toggle("Auto Release?", 
-                attack.chargeWindows[i].releaseOnCompletion);
-
-            using (var cHorizontalScope = new GUILayout.HorizontalScope())
+            DrawUILine(Color.gray);
+            for(int i = 0; i < attack.hitboxGroups.Count; i++)
             {
-                GUILayout.Space(30f); // horizontal indent size od 20 (pixels?)
-
-                using (var cVerticalScope = new GUILayout.VerticalScope())
+                EditorGUILayout.BeginHorizontal();
+                GUILayout.Space(25);
+                if(GUILayout.Button("-", GUILayout.Width(20)))
                 {
-                    if (GUILayout.Button("Add Charge Level"))
-                    {
-                        attack.chargeWindows[i].chargeLevels.Add(CreateChargeLevelInstance());
-                    }
-
-                    for (int w = 0; w < attack.chargeWindows[i].chargeLevels.Count; w++)
-                    {
-                        DrawChargeLevel(i, w);
-                        EditorGUILayout.Space();
-                    }
+                    attack.hitboxGroups.RemoveAt(i);
+                    return;
                 }
+                float activeFrameStart = attack.hitboxGroups[i].activeFramesStart;
+                float activeFrameEnd = attack.hitboxGroups[i].activeFramesEnd;
+                EditorGUILayout.LabelField($"{activeFrameStart.ToString("F0")}~{activeFrameEnd.ToString("F0")}", GUILayout.Width(55));
+                if (GUILayout.Button("Info", GUILayout.Width(100)))
+                {
+                    HitboxGroupEditorWindow.Init(attack.hitboxGroups[i]);
+                }
+                EditorGUILayout.MinMaxSlider(ref activeFrameStart,
+                    ref activeFrameEnd,
+                    1,
+                    attack.length);
+                attack.hitboxGroups[i].activeFramesStart = (int)activeFrameStart;
+                attack.hitboxGroups[i].activeFramesEnd = (int)activeFrameEnd;
+                EditorGUILayout.EndHorizontal();
             }
-            EditorGUI.indentLevel--;
         }
 
-        protected virtual void DrawChargeLevel(int chargeWindowIndex, int index)
+        protected virtual void DrawHurtboxGroupBars()
         {
             EditorGUILayout.BeginHorizontal();
-            if (GUILayout.Button("X", GUILayout.Width(30)))
+            GUILayout.Label("Hurtbox Groups", EditorStyles.boldLabel);
+            if (GUILayout.Button("+", GUILayout.Width(30), GUILayout.MaxWidth(30)))
             {
-                attack.chargeWindows[chargeWindowIndex].chargeLevels.RemoveAt(index);
-                return;
-            }
-            GUILayout.Label($"Level {index+1}");
-            EditorGUILayout.EndHorizontal();
-            attack.chargeWindows[chargeWindowIndex].chargeLevels[index].maxChargeFrames =
-                EditorGUILayout.IntField("Max Charge Frames", attack.chargeWindows[chargeWindowIndex].chargeLevels[index].maxChargeFrames);
-        }
-
-        protected virtual ChargeLevel CreateChargeLevelInstance()
-        {
-            return new ChargeLevel();
-        }
-
-        protected virtual ChargeDefinition CreateChargeDefinition()
-        {
-            return new ChargeDefinition();
-        }
-
-        protected virtual void DrawCancelWindow(string foldoutName, ref bool foldout, ref List<Vector2Int> windows, float width)
-        {
-            EditorGUILayout.BeginHorizontal(GUILayout.Width(width));
-            foldout = EditorGUILayout.Foldout(foldout, foldoutName, true);
-            if (GUILayout.Button("+", GUILayout.Width(20)))
-            {
-                windows.Add(new Vector2Int());
+                AddHurtboxGroup();
             }
             EditorGUILayout.EndHorizontal();
-            if (foldout)
+            DrawUILine(Color.gray);
+            for (int i = 0; i < attack.hurtboxGroups.Count; i++)
             {
-                EditorGUI.indentLevel++;
-                for (int i = 0; i < windows.Count; i++)
+                EditorGUILayout.BeginHorizontal();
+                GUILayout.Space(25);
+                if (GUILayout.Button("-", GUILayout.Width(20)))
                 {
-                    EditorGUILayout.BeginHorizontal();
-                    if (GUILayout.Button("-", GUILayout.Width(20)))
-                    {
-                        windows.RemoveAt(i);
-                        continue;
-                    }
-                    windows[i] = EditorGUILayout.Vector2IntField("", windows[i]);
-                    EditorGUILayout.EndHorizontal();
+                    attack.hurtboxGroups.RemoveAt(i);
+                    return;
                 }
-                EditorGUI.indentLevel--;
+                float activeFrameStart = attack.hurtboxGroups[i].activeFramesStart;
+                float activeFrameEnd = attack.hurtboxGroups[i].activeFramesEnd;
+                EditorGUILayout.LabelField($"{activeFrameStart.ToString("F0")}~{activeFrameEnd.ToString("F0")}", GUILayout.Width(55));
+                if (GUILayout.Button("Info", GUILayout.Width(100)))
+                {
+                    HurtboxGroupEditorWindow.Init(attack.hurtboxGroups[i]);
+                }
+                EditorGUILayout.MinMaxSlider(ref activeFrameStart,
+                    ref activeFrameEnd,
+                    1,
+                    attack.length);
+                attack.hurtboxGroups[i].activeFramesStart = (int)activeFrameStart;
+                attack.hurtboxGroups[i].activeFramesEnd = (int)activeFrameEnd;
+                EditorGUILayout.EndHorizontal();
             }
         }
 
-        protected int currentHitboxGroupIndex;
-        protected Vector2 scrollPos;
-        protected virtual void DrawBoxesMenu()
+        protected virtual void DrawEventBars()
         {
             EditorGUILayout.BeginHorizontal();
-            BoxesMenuNavigationBar();
-            EditorGUILayout.EndHorizontal();
-
-            GUILayout.Space(30);
-
-            if (attack.boxGroups.Count == 0)
+            GUILayout.Label("Events", EditorStyles.boldLabel);
+            if (GUILayout.Button("+", GUILayout.Width(30), GUILayout.MaxWidth(30)))
             {
-                return;
-            }
-            BoxGroup currentGroup = attack.boxGroups[currentHitboxGroupIndex];
-
-            scrollPos = EditorGUILayout.BeginScrollView(scrollPos);
-            DrawBoxGroup(currentGroup);
-            EditorGUILayout.EndScrollView();
-        }
-
-        protected virtual void BoxesMenuNavigationBar()
-        {
-            if (GUILayout.Button("<", GUILayout.Width(40)))
-            {
-                currentHitboxGroupIndex--;
-                if (currentHitboxGroupIndex < 0)
-                {
-                    currentHitboxGroupIndex = Mathf.Clamp(attack.boxGroups.Count - 1, 0, attack.boxGroups.Count);
-                }
-            }
-            EditorGUILayout.LabelField($"{currentHitboxGroupIndex + 1}/{attack.boxGroups.Count}", GUILayout.Width(50));
-            GUILayout.Width(50);
-            if (GUILayout.Button(">", GUILayout.Width(40)))
-            {
-                currentHitboxGroupIndex++;
-                if (currentHitboxGroupIndex >= attack.boxGroups.Count)
-                {
-                    currentHitboxGroupIndex = 0;
-                }
-            }
-
-            if (GUILayout.Button("Add", GUILayout.Width(50)))
-            {
-                Undo.RecordObject(attack, "Added Box Group");
-                AddBoxGroup();
-            }
-            if (GUILayout.Button("Remove", GUILayout.Width(60)))
-            {
-                Undo.RecordObject(attack, "Removed Box Group");
-                attack.boxGroups.RemoveAt(currentHitboxGroupIndex);
-                currentHitboxGroupIndex--; 
-            }
-        }
-
-        protected virtual void AddBoxGroup()
-        {
-            attack.boxGroups.Add(new BoxGroup());
-        }
-
-        protected bool boxesFoldout;
-        protected virtual void DrawBoxGroup(BoxGroup currentGroup)
-        {
-            EditorGUILayout.LabelField("GENERAL", EditorStyles.boldLabel);
-            EditorGUI.indentLevel++;
-            currentGroup.ID = EditorGUILayout.IntField("Group ID", currentGroup.ID);
-
-            float activeFramesStart = currentGroup.activeFramesStart;
-            float activeFramesEnd = currentGroup.activeFramesEnd;
-            EditorGUILayout.BeginHorizontal();
-            EditorGUILayout.LabelField(currentGroup.activeFramesStart.ToString(), GUILayout.Width(30));
-            EditorGUILayout.MinMaxSlider(ref activeFramesStart,
-                ref activeFramesEnd, 1, (float)attack.length);
-            EditorGUILayout.LabelField(currentGroup.activeFramesEnd.ToString(), GUILayout.Width(30));
-            EditorGUILayout.EndHorizontal();
-            currentGroup.activeFramesStart = (int)activeFramesStart;
-            currentGroup.activeFramesEnd = (int)activeFramesEnd;
-
-            currentGroup.chargeLevelNeeded = EditorGUILayout.IntField("Charge Level Needed", currentGroup.chargeLevelNeeded);
-            if(currentGroup.chargeLevelNeeded >= 0)
-            {
-                currentGroup.chargeLevelMax = EditorGUILayout.IntField("Charge Level Max", currentGroup.chargeLevelMax);
-            }
-
-            currentGroup.hitGroupType = (BoxGroupType)EditorGUILayout.EnumPopup("Hit Type", currentGroup.hitGroupType);
-            currentGroup.attachToEntity = EditorGUILayout.Toggle("Attach to Entity", currentGroup.attachToEntity);
-
-            EditorGUILayout.BeginHorizontal(GUILayout.Width(300));
-            boxesFoldout = EditorGUILayout.Foldout(boxesFoldout, "Boxes", true);
-            if (GUILayout.Button("Add"))
-            {
-                GenericMenu menu = new GenericMenu();
-
-                foreach (string t in boxDefinitionTypes.Keys)
-                {
-                    string destination = t.Replace('.', '/');
-                    menu.AddItem(new GUIContent(destination), true, OnBoxDefinitionSelected, t);
-                }
-                menu.ShowAsContext();
+                attack.events.Add(new AttackEventDefinition());
             }
             EditorGUILayout.EndHorizontal();
-
-            if (boxesFoldout)
-            {
-                EditorGUI.indentLevel++;
-                for (int i = 0; i < currentGroup.boxes.Count; i++)
-                {
-                    DrawHitboxOptions(currentGroup, i);
-                    GUILayout.Space(5);
-                }
-                EditorGUI.indentLevel--;
-            }
-            EditorGUI.indentLevel--;
-            EditorGUILayout.Space(10);
-
-            if (GUILayout.Button("Set HitInfo Type"))
-            {
-                GenericMenu menu = new GenericMenu();
-
-                foreach (string t in hitInfoTypes.Keys)
-                {
-                    string destination = t.Replace('.', '/');
-                    menu.AddItem(new GUIContent(destination), true, OnHitInfoSelected, t);
-                }
-
-                menu.ShowAsContext();
-            }
-
-            if(currentGroup.hitboxHitInfo == null)
-            {
-                return;
-            }
-
-            switch (currentGroup.hitGroupType)
-            {
-                case BoxGroupType.HIT:
-                    currentGroup.hitboxHitInfo.DrawInspectorHitInfo();
-                    break;
-                case BoxGroupType.GRAB:
-                    currentGroup.hitboxHitInfo.DrawInspectorGrabInfo();
-                    break;
-            }
-        }
-
-        protected void OnHitInfoSelected(object t)
-        {
-            attack.boxGroups[currentHitboxGroupIndex].hitboxHitInfo = (HitInfoBase)Activator.CreateInstance(hitInfoTypes[(string)t]);
-        }
-
-        protected void OnBoxDefinitionSelected(object t)
-        {
-            attack.boxGroups[currentHitboxGroupIndex].boxes.Add((BoxDefinitionBase)Activator.CreateInstance(boxDefinitionTypes[(string)t]));
-        }
-
-        protected virtual void DrawHitboxOptions(BoxGroup currentGroup, int index)
-        {
-            EditorGUILayout.BeginHorizontal();
-            if (GUILayout.Button("X", GUILayout.Width(20)))
-            {
-                currentGroup.boxes.RemoveAt(index);
-                return;
-            }
-            GUILayout.Label($"Group {index}");
-            EditorGUILayout.EndHorizontal();
-            currentGroup.boxes[index].DrawInspector();
-        }
-
-        #region Events
-        protected int eventSelected = -1;
-        protected virtual void DrawEventsWindow()
-        {
-            EditorGUILayout.BeginHorizontal();
-            if (GUILayout.Button("Add", GUILayout.Width(100)))
-            {
-                AddAttackEventDefinition();
-            }
-            GUILayout.Space(20);
-            EditorGUILayout.EndHorizontal();
-            EditorGUILayout.BeginHorizontal();
-
-            EditorGUILayout.BeginVertical(GUILayout.MaxWidth(110));
+            DrawUILine(Color.gray);
             for (int i = 0; i < attack.events.Count; i++)
             {
                 EditorGUILayout.BeginHorizontal();
-                if (GUILayout.Button("X", GUILayout.Width(15)))
+                GUILayout.Space(25);
+                if (GUILayout.Button("-", GUILayout.Width(20)))
                 {
                     attack.events.RemoveAt(i);
-                    continue;
+                    return;
                 }
-                if (GUILayout.Button($"{attack.events[i].nickname}",
-                    GUILayout.Height(25), GUILayout.Width(95)))
+                float activeFrameStart = attack.events[i].startFrame;
+                float activeFrameEnd = attack.events[i].endFrame;
+                EditorGUILayout.LabelField($"{activeFrameStart.ToString("F0")}~{activeFrameEnd.ToString("F0")}", GUILayout.Width(55));
+                if (GUILayout.Button(attack.events[i].nickname, GUILayout.Width(100)))
                 {
-                    eventSelected = eventSelected == i ? -1 : i;
+                    EventEditorWindow.Init(attack, attack.events[i]);
                 }
+                EditorGUILayout.MinMaxSlider(ref activeFrameStart,
+                    ref activeFrameEnd,
+                    1,
+                    attack.length);
+                attack.events[i].startFrame = (int)activeFrameStart;
+                attack.events[i].endFrame = (int)activeFrameEnd;
                 EditorGUILayout.EndHorizontal();
             }
-            EditorGUILayout.EndVertical();
-
-            if (eventSelected == -1)
-            {
-                EditorGUILayout.BeginVertical();
-                for (int i = 0; i < attack.events.Count; i++)
-                {
-                    EditorGUILayout.BeginHorizontal();
-                    EditorGUILayout.LabelField(attack.events[i].startFrame.ToString(), GUILayout.Width(20));
-                    float eventStart = attack.events[i].startFrame;
-                    float eventEnd = attack.events[i].endFrame;
-                    EditorGUILayout.MinMaxSlider(ref eventStart, ref eventEnd, 1, attack.length, GUILayout.Height(25));
-                    attack.events[i].startFrame = (uint)eventStart;
-                    attack.events[i].endFrame = (uint)eventEnd;
-                    EditorGUILayout.LabelField(attack.events[i].endFrame.ToString(), GUILayout.Width(20));
-                    EditorGUILayout.EndHorizontal();
-                }
-                EditorGUILayout.EndVertical();
-            }
-            else
-            {
-                EditorGUILayout.BeginVertical();
-                ShowEventInfo(eventSelected);
-                EditorGUILayout.EndVertical();
-            }
-            EditorGUILayout.EndHorizontal();
         }
 
-        protected virtual void AddAttackEventDefinition()
+        protected virtual void DrawChargeBars()
         {
-            attack.events.Add(new AttackEventDefinition());
-        }
-
-        protected bool eventVariablesFoldout;
-        protected virtual void ShowEventInfo(int eventSelected)
-        {
-            if (attack.events[eventSelected] == null)
-            {
-                return;
-            }
-            attack.events[eventSelected].nickname = EditorGUILayout.TextField("Name", attack.events[eventSelected].nickname);
-            attack.events[eventSelected].active = EditorGUILayout.Toggle("Active", attack.events[eventSelected].active);
-            attack.events[eventSelected].onHit = EditorGUILayout.Toggle("On Hit?", attack.events[eventSelected].onHit);
-            if (attack.events[eventSelected].onHit)
-            {
-                attack.events[eventSelected].onHitHitboxGroup = EditorGUILayout.IntField("Hitbox Group",
-                    attack.events[eventSelected].onHitHitboxGroup);
-            }
             EditorGUILayout.BeginHorizontal();
-            EditorGUILayout.LabelField("Charge Required", GUILayout.Width(150));
-            EditorGUILayout.LabelField("min", GUILayout.Width(25));
-            attack.events[eventSelected].chargeLevelMin = EditorGUILayout.IntField(attack.events[eventSelected].chargeLevelMin, GUILayout.Width(30));
-            EditorGUILayout.LabelField("max", GUILayout.Width(25));
-            attack.events[eventSelected].chargeLevelMax = EditorGUILayout.IntField(attack.events[eventSelected].chargeLevelMax, GUILayout.Width(30));
+            GUILayout.Label("Charge Groups", EditorStyles.boldLabel);
+            if (GUILayout.Button("+", GUILayout.Width(30), GUILayout.MaxWidth(30)))
+            {
+                attack.chargeWindows.Add(new ChargeDefinition());
+            }
             EditorGUILayout.EndHorizontal();
-            attack.events[eventSelected].inputCheckTiming = (AttackEventInputCheckTiming)EditorGUILayout.EnumPopup("Input Requirement", 
-                attack.events[eventSelected].inputCheckTiming);
-            EditorGUI.indentLevel++;
-            if(attack.events[eventSelected].inputCheckTiming != AttackEventInputCheckTiming.NONE)
+            DrawUILine(Color.gray);
+            for(int i = 0; i < attack.chargeWindows.Count; i++)
             {
-                SerializedObject serializedObject = new UnityEditor.SerializedObject(attack);
-                serializedObject.Update();
-                attack.events[eventSelected].inputCheckStartFrame = (uint)EditorGUILayout.IntField("Start Frame", (int)attack.events[eventSelected].inputCheckStartFrame);
-                attack.events[eventSelected].inputCheckEndFrame = (uint)EditorGUILayout.IntField("End Frame", (int)attack.events[eventSelected].inputCheckEndFrame);
-                EditorGUILayout.Space();
-                EditorGUILayout.LabelField("Input");
-                /*attack.events[eventSelected].input.DrawInspector(
-                    serializedObject.FindProperty("events").GetArrayElementAtIndex(eventSelected).FindPropertyRelative("input").FindPropertyRelative("executeInputs"),
-                    serializedObject.FindProperty("events").GetArrayElementAtIndex(eventSelected).FindPropertyRelative("input").FindPropertyRelative("sequenceInputs")
-                    );*/
-                attack.events[eventSelected].input.DrawInspector();
-                serializedObject.ApplyModifiedProperties();
-            }
-            EditorGUI.indentLevel--;
-
-            EditorGUILayout.Space();
-
-            EditorGUILayout.LabelField(attack.events[eventSelected].attackEvent == null ? "..." 
-                : attack.events[eventSelected].attackEvent.GetName());
-            if (GUILayout.Button("Set Event"))
-            {
-                GenericMenu menu = new GenericMenu();
-
-                foreach (string t in attackEventTypes.Keys)
+                EditorGUILayout.BeginHorizontal();
+                GUILayout.Space(25);
+                if (GUILayout.Button("-", GUILayout.Width(20)))
                 {
-                    string destination = t.Replace('.', '/');
-                    menu.AddItem(new GUIContent(destination), true, OnAttackEventSelected, t);
+                    attack.chargeWindows.RemoveAt(i);
+                    return;
                 }
-                menu.ShowAsContext();
-            }
-            eventVariablesFoldout = EditorGUILayout.Foldout(eventVariablesFoldout, "Variables", true);
-            if (eventVariablesFoldout)
-            {
-                EditorGUI.indentLevel++;
-                if (attack.events[eventSelected].attackEvent != null)
+                float frameStart = attack.chargeWindows[i].startFrame;
+                float frameEnd = attack.chargeWindows[i].endFrame;
+                EditorGUILayout.LabelField($"{frameStart.ToString("F0")}~{frameEnd.ToString("F0")}", GUILayout.Width(55));
+                if (GUILayout.Button("Info", GUILayout.Width(100)))
                 {
-                    attack.events[eventSelected].attackEvent.DrawEventVariables(attack.events[eventSelected]);
+                    ChargeGroupEditorWindow.Init(attack, attack.chargeWindows[i]);
                 }
-                EditorGUI.indentLevel--;
+                EditorGUILayout.MinMaxSlider(ref frameStart,
+                    ref frameEnd,
+                    1,
+                    attack.length);
+                attack.chargeWindows[i].startFrame = (int)frameStart;
+                attack.chargeWindows[i].endFrame = (int)frameEnd;
+                EditorGUILayout.EndHorizontal();
             }
-        }
-
-        protected void OnAttackEventSelected(object t)
-        {
-            attack.events[eventSelected].attackEvent = (AttackEvent)Activator.CreateInstance(attackEventTypes[(string)t]);
         }
         #endregion
+
+        protected virtual void AddHitboxGroup()
+        {
+            attack.hitboxGroups.Add(new HitboxGroup());
+        }
+
+        protected virtual void AddHurtboxGroup()
+        {
+            attack.hurtboxGroups.Add(new HurtboxGroup());
+        }
+
+        public static void DrawUILine(Color color, int thickness = 2, int padding = 10)
+        {
+            Rect r = EditorGUILayout.GetControlRect(GUILayout.Height(padding + thickness));
+            r.height = thickness;
+            r.y += padding / 2;
+            r.x -= 2;
+            r.width += 6;
+            EditorGUI.DrawRect(r, color);
+        }
     }
 }

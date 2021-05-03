@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 543368f64fa67f740999c0c9dc949cb3, type: 3}
+  m_Name: AdventurerStats
+  m_EditorClassIdentifier: 
+  health: 100
+  enemyStepLength: 6
+  hitstunFrictionGround: 0.4
+  hitstunFrictionAir: 0.1
+  gravity: 0.5
+  hitstunGravity: 0.008
+  maxFallSpeed: 10
+  hitstunMaxFallSpeed: 0.1
+  jumpSquatFrames: 4
+  groundFriction: 0.6
+  walkBaseAcceleration: 0.3
+  walkAcceleration: 0.5
+  walkMaxSpeed: 6
+  runBaseAcceleration: 0.075
+  runAcceleration: 0.1
+  runMaxSpeed: 0.2
+  airBaseAcceleration: 0.05
+  airAcceleration: 0.05
+  airMaxSpeed: 0.1
+  aerialFriction: 0.01
+  shortHopForce: 9
+  fullHopForce: 13
+  airJumpForce: 0.2

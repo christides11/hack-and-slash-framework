@@ -19,14 +19,14 @@ namespace TDAction.Combat.Events
             return "Apply Gravity";
         }
 
-        public override bool Evaluate(uint frame, uint endFrame,
+        public override AttackEventReturnType Evaluate(int frame, int endFrame,
             CAF.Fighters.FighterBase controller, AttackEventVariables variables)
         {
             EntityPhysicsManager physicsManager = (EntityPhysicsManager)controller.PhysicsManager;
             if (controller.IsGrounded)
             {
                 physicsManager.forceGravity = Vector3.zero;
-                return false;
+                return AttackEventReturnType.NONE;
             }
             EntityStats entityStats = ((TDAction.Entities.FighterManager)controller).entityDefinition.GetEntityStats();
             float percent = (float)frame / (float)endFrame;
@@ -53,7 +53,7 @@ namespace TDAction.Combat.Events
             }
 
             physicsManager.HandleGravity(maxFallSpeed, gravity, gravityScale);
-            return false;
+            return AttackEventReturnType.NONE;
         }
 
 #if UNITY_EDITOR

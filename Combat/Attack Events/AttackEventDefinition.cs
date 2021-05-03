@@ -10,13 +10,13 @@ namespace CAF.Combat
         public bool active = true;
         public bool onHit;
         public int onHitHitboxGroup;
-        public uint startFrame = 1;
-        public uint endFrame = 1;
+        public int startFrame = 1;
+        public int endFrame = 1;
         [SerializeReference] public AttackEvent attackEvent;
         public AttackEventVariables variables = new AttackEventVariables();
         public AttackEventInputCheckTiming inputCheckTiming = AttackEventInputCheckTiming.NONE;
-        public uint inputCheckStartFrame = 1;
-        public uint inputCheckEndFrame = 1;
+        public int inputCheckStartFrame = 1;
+        public int inputCheckEndFrame = 1;
         public InputSequence input = new InputSequence();
 
         public int chargeLevelMin = 0;
