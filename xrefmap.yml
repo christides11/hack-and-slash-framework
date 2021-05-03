@@ -128,30 +128,12 @@ references:
   commentId: T:CAF.Combat.AttackDefinition
   fullName: CAF.Combat.AttackDefinition
   nameWithType: AttackDefinition
-- uid: CAF.Combat.AttackDefinition.animationAir
-  name: animationAir
-  href: api/CAF.Combat.AttackDefinition.html#CAF_Combat_AttackDefinition_animationAir
-  commentId: F:CAF.Combat.AttackDefinition.animationAir
-  fullName: CAF.Combat.AttackDefinition.animationAir
-  nameWithType: AttackDefinition.animationAir
-- uid: CAF.Combat.AttackDefinition.animationGround
-  name: animationGround
-  href: api/CAF.Combat.AttackDefinition.html#CAF_Combat_AttackDefinition_animationGround
-  commentId: F:CAF.Combat.AttackDefinition.animationGround
-  fullName: CAF.Combat.AttackDefinition.animationGround
-  nameWithType: AttackDefinition.animationGround
 - uid: CAF.Combat.AttackDefinition.attackName
   name: attackName
   href: api/CAF.Combat.AttackDefinition.html#CAF_Combat_AttackDefinition_attackName
   commentId: F:CAF.Combat.AttackDefinition.attackName
   fullName: CAF.Combat.AttackDefinition.attackName
   nameWithType: AttackDefinition.attackName
-- uid: CAF.Combat.AttackDefinition.boxGroups
-  name: boxGroups
-  href: api/CAF.Combat.AttackDefinition.html#CAF_Combat_AttackDefinition_boxGroups
-  commentId: F:CAF.Combat.AttackDefinition.boxGroups
-  fullName: CAF.Combat.AttackDefinition.boxGroups
-  nameWithType: AttackDefinition.boxGroups
 - uid: CAF.Combat.AttackDefinition.chargeWindows
   name: chargeWindows
   href: api/CAF.Combat.AttackDefinition.html#CAF_Combat_AttackDefinition_chargeWindows
@@ -170,30 +152,24 @@ references:
   commentId: F:CAF.Combat.AttackDefinition.description
   fullName: CAF.Combat.AttackDefinition.description
   nameWithType: AttackDefinition.description
-- uid: CAF.Combat.AttackDefinition.enemyStepWindows
-  name: enemyStepWindows
-  href: api/CAF.Combat.AttackDefinition.html#CAF_Combat_AttackDefinition_enemyStepWindows
-  commentId: F:CAF.Combat.AttackDefinition.enemyStepWindows
-  fullName: CAF.Combat.AttackDefinition.enemyStepWindows
-  nameWithType: AttackDefinition.enemyStepWindows
 - uid: CAF.Combat.AttackDefinition.events
   name: events
   href: api/CAF.Combat.AttackDefinition.html#CAF_Combat_AttackDefinition_events
   commentId: F:CAF.Combat.AttackDefinition.events
   fullName: CAF.Combat.AttackDefinition.events
   nameWithType: AttackDefinition.events
-- uid: CAF.Combat.AttackDefinition.jumpCancelWindows
-  name: jumpCancelWindows
-  href: api/CAF.Combat.AttackDefinition.html#CAF_Combat_AttackDefinition_jumpCancelWindows
-  commentId: F:CAF.Combat.AttackDefinition.jumpCancelWindows
-  fullName: CAF.Combat.AttackDefinition.jumpCancelWindows
-  nameWithType: AttackDefinition.jumpCancelWindows
-- uid: CAF.Combat.AttackDefinition.landCancelWindows
-  name: landCancelWindows
-  href: api/CAF.Combat.AttackDefinition.html#CAF_Combat_AttackDefinition_landCancelWindows
-  commentId: F:CAF.Combat.AttackDefinition.landCancelWindows
-  fullName: CAF.Combat.AttackDefinition.landCancelWindows
-  nameWithType: AttackDefinition.landCancelWindows
+- uid: CAF.Combat.AttackDefinition.hitboxGroups
+  name: hitboxGroups
+  href: api/CAF.Combat.AttackDefinition.html#CAF_Combat_AttackDefinition_hitboxGroups
+  commentId: F:CAF.Combat.AttackDefinition.hitboxGroups
+  fullName: CAF.Combat.AttackDefinition.hitboxGroups
+  nameWithType: AttackDefinition.hitboxGroups
+- uid: CAF.Combat.AttackDefinition.hurtboxGroups
+  name: hurtboxGroups
+  href: api/CAF.Combat.AttackDefinition.html#CAF_Combat_AttackDefinition_hurtboxGroups
+  commentId: F:CAF.Combat.AttackDefinition.hurtboxGroups
+  fullName: CAF.Combat.AttackDefinition.hurtboxGroups
+  nameWithType: AttackDefinition.hurtboxGroups
 - uid: CAF.Combat.AttackDefinition.length
   name: length
   href: api/CAF.Combat.AttackDefinition.html#CAF_Combat_AttackDefinition_length
@@ -212,12 +188,6 @@ references:
   commentId: F:CAF.Combat.AttackDefinition.useState
   fullName: CAF.Combat.AttackDefinition.useState
   nameWithType: AttackDefinition.useState
-- uid: CAF.Combat.AttackDefinition.wrapMode
-  name: wrapMode
-  href: api/CAF.Combat.AttackDefinition.html#CAF_Combat_AttackDefinition_wrapMode
-  commentId: F:CAF.Combat.AttackDefinition.wrapMode
-  fullName: CAF.Combat.AttackDefinition.wrapMode
-  nameWithType: AttackDefinition.wrapMode
 - uid: CAF.Combat.AttackDefinitionEditor
   name: AttackDefinitionEditor
   href: api/CAF.Combat.AttackDefinitionEditor.html
@@ -243,295 +213,239 @@ references:
   commentId: T:CAF.Combat.AttackDefinitionEditorWindow
   fullName: CAF.Combat.AttackDefinitionEditorWindow
   nameWithType: AttackDefinitionEditorWindow
-- uid: CAF.Combat.AttackDefinitionEditorWindow.AddAttackEventDefinition
-  name: AddAttackEventDefinition()
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_AddAttackEventDefinition
-  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.AddAttackEventDefinition
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.AddAttackEventDefinition()
-  nameWithType: AttackDefinitionEditorWindow.AddAttackEventDefinition()
-- uid: CAF.Combat.AttackDefinitionEditorWindow.AddAttackEventDefinition*
-  name: AddAttackEventDefinition
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_AddAttackEventDefinition_
-  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.AddAttackEventDefinition
+- uid: CAF.Combat.AttackDefinitionEditorWindow.AddHitboxGroup
+  name: AddHitboxGroup()
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_AddHitboxGroup
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.AddHitboxGroup
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.AddHitboxGroup()
+  nameWithType: AttackDefinitionEditorWindow.AddHitboxGroup()
+- uid: CAF.Combat.AttackDefinitionEditorWindow.AddHitboxGroup*
+  name: AddHitboxGroup
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_AddHitboxGroup_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.AddHitboxGroup
   isSpec: "True"
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.AddAttackEventDefinition
-  nameWithType: AttackDefinitionEditorWindow.AddAttackEventDefinition
-- uid: CAF.Combat.AttackDefinitionEditorWindow.AddBoxGroup
-  name: AddBoxGroup()
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_AddBoxGroup
-  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.AddBoxGroup
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.AddBoxGroup()
-  nameWithType: AttackDefinitionEditorWindow.AddBoxGroup()
-- uid: CAF.Combat.AttackDefinitionEditorWindow.AddBoxGroup*
-  name: AddBoxGroup
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_AddBoxGroup_
-  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.AddBoxGroup
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.AddHitboxGroup
+  nameWithType: AttackDefinitionEditorWindow.AddHitboxGroup
+- uid: CAF.Combat.AttackDefinitionEditorWindow.AddHurtboxGroup
+  name: AddHurtboxGroup()
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_AddHurtboxGroup
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.AddHurtboxGroup
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.AddHurtboxGroup()
+  nameWithType: AttackDefinitionEditorWindow.AddHurtboxGroup()
+- uid: CAF.Combat.AttackDefinitionEditorWindow.AddHurtboxGroup*
+  name: AddHurtboxGroup
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_AddHurtboxGroup_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.AddHurtboxGroup
   isSpec: "True"
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.AddBoxGroup
-  nameWithType: AttackDefinitionEditorWindow.AddBoxGroup
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.AddHurtboxGroup
+  nameWithType: AttackDefinitionEditorWindow.AddHurtboxGroup
 - uid: CAF.Combat.AttackDefinitionEditorWindow.attack
   name: attack
   href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_attack
   commentId: F:CAF.Combat.AttackDefinitionEditorWindow.attack
   fullName: CAF.Combat.AttackDefinitionEditorWindow.attack
   nameWithType: AttackDefinitionEditorWindow.attack
-- uid: CAF.Combat.AttackDefinitionEditorWindow.attackEventTypes
-  name: attackEventTypes
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_attackEventTypes
-  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.attackEventTypes
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.attackEventTypes
-  nameWithType: AttackDefinitionEditorWindow.attackEventTypes
-- uid: CAF.Combat.AttackDefinitionEditorWindow.boxDefinitionTypes
-  name: boxDefinitionTypes
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_boxDefinitionTypes
-  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.boxDefinitionTypes
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.boxDefinitionTypes
-  nameWithType: AttackDefinitionEditorWindow.boxDefinitionTypes
-- uid: CAF.Combat.AttackDefinitionEditorWindow.boxesFoldout
-  name: boxesFoldout
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_boxesFoldout
-  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.boxesFoldout
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.boxesFoldout
-  nameWithType: AttackDefinitionEditorWindow.boxesFoldout
-- uid: CAF.Combat.AttackDefinitionEditorWindow.BoxesMenuNavigationBar
-  name: BoxesMenuNavigationBar()
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_BoxesMenuNavigationBar
-  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.BoxesMenuNavigationBar
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.BoxesMenuNavigationBar()
-  nameWithType: AttackDefinitionEditorWindow.BoxesMenuNavigationBar()
-- uid: CAF.Combat.AttackDefinitionEditorWindow.BoxesMenuNavigationBar*
-  name: BoxesMenuNavigationBar
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_BoxesMenuNavigationBar_
-  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.BoxesMenuNavigationBar
+- uid: CAF.Combat.AttackDefinitionEditorWindow.CreateFighter
+  name: CreateFighter()
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_CreateFighter
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.CreateFighter
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.CreateFighter()
+  nameWithType: AttackDefinitionEditorWindow.CreateFighter()
+- uid: CAF.Combat.AttackDefinitionEditorWindow.CreateFighter*
+  name: CreateFighter
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_CreateFighter_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.CreateFighter
   isSpec: "True"
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.BoxesMenuNavigationBar
-  nameWithType: AttackDefinitionEditorWindow.BoxesMenuNavigationBar
-- uid: CAF.Combat.AttackDefinitionEditorWindow.cancelWindowsFoldout
-  name: cancelWindowsFoldout
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_cancelWindowsFoldout
-  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.cancelWindowsFoldout
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.cancelWindowsFoldout
-  nameWithType: AttackDefinitionEditorWindow.cancelWindowsFoldout
-- uid: CAF.Combat.AttackDefinitionEditorWindow.chargeWindowsFoldout
-  name: chargeWindowsFoldout
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_chargeWindowsFoldout
-  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.chargeWindowsFoldout
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.chargeWindowsFoldout
-  nameWithType: AttackDefinitionEditorWindow.chargeWindowsFoldout
-- uid: CAF.Combat.AttackDefinitionEditorWindow.commandAttackCancelWindowsFoldout
-  name: commandAttackCancelWindowsFoldout
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_commandAttackCancelWindowsFoldout
-  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.commandAttackCancelWindowsFoldout
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.commandAttackCancelWindowsFoldout
-  nameWithType: AttackDefinitionEditorWindow.commandAttackCancelWindowsFoldout
-- uid: CAF.Combat.AttackDefinitionEditorWindow.CreateChargeDefinition
-  name: CreateChargeDefinition()
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_CreateChargeDefinition
-  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.CreateChargeDefinition
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.CreateChargeDefinition()
-  nameWithType: AttackDefinitionEditorWindow.CreateChargeDefinition()
-- uid: CAF.Combat.AttackDefinitionEditorWindow.CreateChargeDefinition*
-  name: CreateChargeDefinition
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_CreateChargeDefinition_
-  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.CreateChargeDefinition
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.CreateFighter
+  nameWithType: AttackDefinitionEditorWindow.CreateFighter
+- uid: CAF.Combat.AttackDefinitionEditorWindow.diff
+  name: diff
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_diff
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.diff
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.diff
+  nameWithType: AttackDefinitionEditorWindow.diff
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawChargeBars
+  name: DrawChargeBars()
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawChargeBars
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawChargeBars
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawChargeBars()
+  nameWithType: AttackDefinitionEditorWindow.DrawChargeBars()
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawChargeBars*
+  name: DrawChargeBars
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawChargeBars_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawChargeBars
   isSpec: "True"
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.CreateChargeDefinition
-  nameWithType: AttackDefinitionEditorWindow.CreateChargeDefinition
-- uid: CAF.Combat.AttackDefinitionEditorWindow.CreateChargeLevelInstance
-  name: CreateChargeLevelInstance()
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_CreateChargeLevelInstance
-  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.CreateChargeLevelInstance
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.CreateChargeLevelInstance()
-  nameWithType: AttackDefinitionEditorWindow.CreateChargeLevelInstance()
-- uid: CAF.Combat.AttackDefinitionEditorWindow.CreateChargeLevelInstance*
-  name: CreateChargeLevelInstance
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_CreateChargeLevelInstance_
-  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.CreateChargeLevelInstance
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawChargeBars
+  nameWithType: AttackDefinitionEditorWindow.DrawChargeBars
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawEventBars
+  name: DrawEventBars()
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawEventBars
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawEventBars
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawEventBars()
+  nameWithType: AttackDefinitionEditorWindow.DrawEventBars()
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawEventBars*
+  name: DrawEventBars
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawEventBars_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawEventBars
   isSpec: "True"
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.CreateChargeLevelInstance
-  nameWithType: AttackDefinitionEditorWindow.CreateChargeLevelInstance
-- uid: CAF.Combat.AttackDefinitionEditorWindow.currentHitboxGroupIndex
-  name: currentHitboxGroupIndex
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_currentHitboxGroupIndex
-  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.currentHitboxGroupIndex
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.currentHitboxGroupIndex
-  nameWithType: AttackDefinitionEditorWindow.currentHitboxGroupIndex
-- uid: CAF.Combat.AttackDefinitionEditorWindow.currentMenu
-  name: currentMenu
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_currentMenu
-  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.currentMenu
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.currentMenu
-  nameWithType: AttackDefinitionEditorWindow.currentMenu
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxesMenu
-  name: DrawBoxesMenu()
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawBoxesMenu
-  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawBoxesMenu
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxesMenu()
-  nameWithType: AttackDefinitionEditorWindow.DrawBoxesMenu()
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxesMenu*
-  name: DrawBoxesMenu
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawBoxesMenu_
-  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawBoxesMenu
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawEventBars
+  nameWithType: AttackDefinitionEditorWindow.DrawEventBars
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawGeneralOptions
+  name: DrawGeneralOptions()
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawGeneralOptions
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawGeneralOptions
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawGeneralOptions()
+  nameWithType: AttackDefinitionEditorWindow.DrawGeneralOptions()
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawGeneralOptions*
+  name: DrawGeneralOptions
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawGeneralOptions_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawGeneralOptions
   isSpec: "True"
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxesMenu
-  nameWithType: AttackDefinitionEditorWindow.DrawBoxesMenu
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroup(CAF.Combat.BoxGroup)
-  name: DrawBoxGroup(BoxGroup)
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawBoxGroup_CAF_Combat_BoxGroup_
-  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroup(CAF.Combat.BoxGroup)
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroup(CAF.Combat.BoxGroup)
-  nameWithType: AttackDefinitionEditorWindow.DrawBoxGroup(BoxGroup)
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroup*
-  name: DrawBoxGroup
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawBoxGroup_
-  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroup
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawGeneralOptions
+  nameWithType: AttackDefinitionEditorWindow.DrawGeneralOptions
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawGround
+  name: DrawGround()
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawGround
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawGround
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawGround()
+  nameWithType: AttackDefinitionEditorWindow.DrawGround()
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawGround*
+  name: DrawGround
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawGround_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawGround
   isSpec: "True"
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawBoxGroup
-  nameWithType: AttackDefinitionEditorWindow.DrawBoxGroup
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindow(System.String,System.Boolean@,System.Collections.Generic.List{Vector2Int}@,System.Single)
-  name: DrawCancelWindow(String, ref Boolean, ref List<Vector2Int>, Single)
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawCancelWindow_System_String_System_Boolean__System_Collections_Generic_List_Vector2Int___System_Single_
-  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindow(System.String,System.Boolean@,System.Collections.Generic.List{Vector2Int}@,System.Single)
-  name.vb: DrawCancelWindow(String, ByRef Boolean, ByRef List(Of Vector2Int), Single)
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindow(System.String, ref System.Boolean, ref System.Collections.Generic.List<Vector2Int>, System.Single)
-  fullName.vb: CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindow(System.String, ByRef System.Boolean, ByRef System.Collections.Generic.List(Of Vector2Int), System.Single)
-  nameWithType: AttackDefinitionEditorWindow.DrawCancelWindow(String, ref Boolean, ref List<Vector2Int>, Single)
-  nameWithType.vb: AttackDefinitionEditorWindow.DrawCancelWindow(String, ByRef Boolean, ByRef List(Of Vector2Int), Single)
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindow*
-  name: DrawCancelWindow
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawCancelWindow_
-  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindow
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawGround
+  nameWithType: AttackDefinitionEditorWindow.DrawGround
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxes
+  name: DrawHitboxes()
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawHitboxes
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxes
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxes()
+  nameWithType: AttackDefinitionEditorWindow.DrawHitboxes()
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxes*
+  name: DrawHitboxes
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawHitboxes_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxes
   isSpec: "True"
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawCancelWindow
-  nameWithType: AttackDefinitionEditorWindow.DrawCancelWindow
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawChargeLevel(System.Int32,System.Int32)
-  name: DrawChargeLevel(Int32, Int32)
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawChargeLevel_System_Int32_System_Int32_
-  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawChargeLevel(System.Int32,System.Int32)
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawChargeLevel(System.Int32, System.Int32)
-  nameWithType: AttackDefinitionEditorWindow.DrawChargeLevel(Int32, Int32)
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawChargeLevel*
-  name: DrawChargeLevel
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawChargeLevel_
-  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawChargeLevel
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxes
+  nameWithType: AttackDefinitionEditorWindow.DrawHitboxes
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxGroupBars
+  name: DrawHitboxGroupBars()
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawHitboxGroupBars
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxGroupBars
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxGroupBars()
+  nameWithType: AttackDefinitionEditorWindow.DrawHitboxGroupBars()
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxGroupBars*
+  name: DrawHitboxGroupBars
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawHitboxGroupBars_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxGroupBars
   isSpec: "True"
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawChargeLevel
-  nameWithType: AttackDefinitionEditorWindow.DrawChargeLevel
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawChargeWindow(System.Int32)
-  name: DrawChargeWindow(Int32)
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawChargeWindow_System_Int32_
-  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawChargeWindow(System.Int32)
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawChargeWindow(System.Int32)
-  nameWithType: AttackDefinitionEditorWindow.DrawChargeWindow(Int32)
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawChargeWindow*
-  name: DrawChargeWindow
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawChargeWindow_
-  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawChargeWindow
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxGroupBars
+  nameWithType: AttackDefinitionEditorWindow.DrawHitboxGroupBars
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawHurtboxes
+  name: DrawHurtboxes()
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawHurtboxes
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawHurtboxes
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawHurtboxes()
+  nameWithType: AttackDefinitionEditorWindow.DrawHurtboxes()
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawHurtboxes*
+  name: DrawHurtboxes
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawHurtboxes_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawHurtboxes
   isSpec: "True"
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawChargeWindow
-  nameWithType: AttackDefinitionEditorWindow.DrawChargeWindow
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawEventsWindow
-  name: DrawEventsWindow()
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawEventsWindow
-  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawEventsWindow
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawEventsWindow()
-  nameWithType: AttackDefinitionEditorWindow.DrawEventsWindow()
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawEventsWindow*
-  name: DrawEventsWindow
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawEventsWindow_
-  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawEventsWindow
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawHurtboxes
+  nameWithType: AttackDefinitionEditorWindow.DrawHurtboxes
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawHurtboxGroupBars
+  name: DrawHurtboxGroupBars()
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawHurtboxGroupBars
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawHurtboxGroupBars
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawHurtboxGroupBars()
+  nameWithType: AttackDefinitionEditorWindow.DrawHurtboxGroupBars()
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawHurtboxGroupBars*
+  name: DrawHurtboxGroupBars
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawHurtboxGroupBars_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawHurtboxGroupBars
   isSpec: "True"
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawEventsWindow
-  nameWithType: AttackDefinitionEditorWindow.DrawEventsWindow
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawGeneralMenu
-  name: DrawGeneralMenu()
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawGeneralMenu
-  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawGeneralMenu
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawGeneralMenu()
-  nameWithType: AttackDefinitionEditorWindow.DrawGeneralMenu()
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawGeneralMenu*
-  name: DrawGeneralMenu
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawGeneralMenu_
-  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawGeneralMenu
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawHurtboxGroupBars
+  nameWithType: AttackDefinitionEditorWindow.DrawHurtboxGroupBars
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawUILine(Color,System.Int32,System.Int32)
+  name: DrawUILine(Color, Int32, Int32)
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawUILine_Color_System_Int32_System_Int32_
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawUILine(Color,System.Int32,System.Int32)
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawUILine(Color, System.Int32, System.Int32)
+  nameWithType: AttackDefinitionEditorWindow.DrawUILine(Color, Int32, Int32)
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawUILine*
+  name: DrawUILine
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawUILine_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawUILine
   isSpec: "True"
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawGeneralMenu
-  nameWithType: AttackDefinitionEditorWindow.DrawGeneralMenu
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxOptions(CAF.Combat.BoxGroup,System.Int32)
-  name: DrawHitboxOptions(BoxGroup, Int32)
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawHitboxOptions_CAF_Combat_BoxGroup_System_Int32_
-  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxOptions(CAF.Combat.BoxGroup,System.Int32)
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxOptions(CAF.Combat.BoxGroup, System.Int32)
-  nameWithType: AttackDefinitionEditorWindow.DrawHitboxOptions(BoxGroup, Int32)
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxOptions*
-  name: DrawHitboxOptions
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawHitboxOptions_
-  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxOptions
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawUILine
+  nameWithType: AttackDefinitionEditorWindow.DrawUILine
+- uid: CAF.Combat.AttackDefinitionEditorWindow.FastForward
+  name: FastForward()
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_FastForward
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.FastForward
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.FastForward()
+  nameWithType: AttackDefinitionEditorWindow.FastForward()
+- uid: CAF.Combat.AttackDefinitionEditorWindow.FastForward*
+  name: FastForward
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_FastForward_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.FastForward
   isSpec: "True"
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawHitboxOptions
-  nameWithType: AttackDefinitionEditorWindow.DrawHitboxOptions
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawMenu
-  name: DrawMenu()
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawMenu
-  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawMenu
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawMenu()
-  nameWithType: AttackDefinitionEditorWindow.DrawMenu()
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawMenu*
-  name: DrawMenu
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawMenu_
-  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawMenu
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.FastForward
+  nameWithType: AttackDefinitionEditorWindow.FastForward
+- uid: CAF.Combat.AttackDefinitionEditorWindow.HandleEvent(CAF.Combat.AttackEventDefinition)
+  name: HandleEvent(AttackEventDefinition)
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_HandleEvent_CAF_Combat_AttackEventDefinition_
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.HandleEvent(CAF.Combat.AttackEventDefinition)
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.HandleEvent(CAF.Combat.AttackEventDefinition)
+  nameWithType: AttackDefinitionEditorWindow.HandleEvent(AttackEventDefinition)
+- uid: CAF.Combat.AttackDefinitionEditorWindow.HandleEvent*
+  name: HandleEvent
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_HandleEvent_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.HandleEvent
   isSpec: "True"
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawMenu
-  nameWithType: AttackDefinitionEditorWindow.DrawMenu
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawMenuBar
-  name: DrawMenuBar()
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawMenuBar
-  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawMenuBar
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawMenuBar()
-  nameWithType: AttackDefinitionEditorWindow.DrawMenuBar()
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawMenuBar*
-  name: DrawMenuBar
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawMenuBar_
-  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawMenuBar
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.HandleEvent
+  nameWithType: AttackDefinitionEditorWindow.HandleEvent
+- uid: CAF.Combat.AttackDefinitionEditorWindow.HandleHitboxGroup(System.Int32,CAF.Combat.HitboxGroup)
+  name: HandleHitboxGroup(Int32, HitboxGroup)
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_HandleHitboxGroup_System_Int32_CAF_Combat_HitboxGroup_
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.HandleHitboxGroup(System.Int32,CAF.Combat.HitboxGroup)
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.HandleHitboxGroup(System.Int32, CAF.Combat.HitboxGroup)
+  nameWithType: AttackDefinitionEditorWindow.HandleHitboxGroup(Int32, HitboxGroup)
+- uid: CAF.Combat.AttackDefinitionEditorWindow.HandleHitboxGroup*
+  name: HandleHitboxGroup
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_HandleHitboxGroup_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.HandleHitboxGroup
   isSpec: "True"
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawMenuBar
-  nameWithType: AttackDefinitionEditorWindow.DrawMenuBar
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawWindowsMenu
-  name: DrawWindowsMenu()
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawWindowsMenu
-  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawWindowsMenu
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawWindowsMenu()
-  nameWithType: AttackDefinitionEditorWindow.DrawWindowsMenu()
-- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawWindowsMenu*
-  name: DrawWindowsMenu
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawWindowsMenu_
-  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawWindowsMenu
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.HandleHitboxGroup
+  nameWithType: AttackDefinitionEditorWindow.HandleHitboxGroup
+- uid: CAF.Combat.AttackDefinitionEditorWindow.HandleHurtboxGroup(System.Int32,CAF.Combat.HurtboxGroup)
+  name: HandleHurtboxGroup(Int32, HurtboxGroup)
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_HandleHurtboxGroup_System_Int32_CAF_Combat_HurtboxGroup_
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.HandleHurtboxGroup(System.Int32,CAF.Combat.HurtboxGroup)
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.HandleHurtboxGroup(System.Int32, CAF.Combat.HurtboxGroup)
+  nameWithType: AttackDefinitionEditorWindow.HandleHurtboxGroup(Int32, HurtboxGroup)
+- uid: CAF.Combat.AttackDefinitionEditorWindow.HandleHurtboxGroup*
+  name: HandleHurtboxGroup
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_HandleHurtboxGroup_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.HandleHurtboxGroup
   isSpec: "True"
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawWindowsMenu
-  nameWithType: AttackDefinitionEditorWindow.DrawWindowsMenu
-- uid: CAF.Combat.AttackDefinitionEditorWindow.enemyStepWindowsFoldout
-  name: enemyStepWindowsFoldout
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_enemyStepWindowsFoldout
-  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.enemyStepWindowsFoldout
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.enemyStepWindowsFoldout
-  nameWithType: AttackDefinitionEditorWindow.enemyStepWindowsFoldout
-- uid: CAF.Combat.AttackDefinitionEditorWindow.eventSelected
-  name: eventSelected
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_eventSelected
-  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.eventSelected
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.eventSelected
-  nameWithType: AttackDefinitionEditorWindow.eventSelected
-- uid: CAF.Combat.AttackDefinitionEditorWindow.eventVariablesFoldout
-  name: eventVariablesFoldout
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_eventVariablesFoldout
-  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.eventVariablesFoldout
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.eventVariablesFoldout
-  nameWithType: AttackDefinitionEditorWindow.eventVariablesFoldout
-- uid: CAF.Combat.AttackDefinitionEditorWindow.hitInfoTypes
-  name: hitInfoTypes
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_hitInfoTypes
-  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.hitInfoTypes
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.hitInfoTypes
-  nameWithType: AttackDefinitionEditorWindow.hitInfoTypes
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.HandleHurtboxGroup
+  nameWithType: AttackDefinitionEditorWindow.HandleHurtboxGroup
+- uid: CAF.Combat.AttackDefinitionEditorWindow.IncrementForward
+  name: IncrementForward()
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_IncrementForward
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.IncrementForward
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.IncrementForward()
+  nameWithType: AttackDefinitionEditorWindow.IncrementForward()
+- uid: CAF.Combat.AttackDefinitionEditorWindow.IncrementForward*
+  name: IncrementForward
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_IncrementForward_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.IncrementForward
+  isSpec: "True"
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.IncrementForward
+  nameWithType: AttackDefinitionEditorWindow.IncrementForward
 - uid: CAF.Combat.AttackDefinitionEditorWindow.Init(CAF.Combat.AttackDefinition)
   name: Init(AttackDefinition)
   href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_Init_CAF_Combat_AttackDefinition_
@@ -545,57 +459,64 @@ references:
   isSpec: "True"
   fullName: CAF.Combat.AttackDefinitionEditorWindow.Init
   nameWithType: AttackDefinitionEditorWindow.Init
-- uid: CAF.Combat.AttackDefinitionEditorWindow.jumpCancelWindowsFoldout
-  name: jumpCancelWindowsFoldout
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_jumpCancelWindowsFoldout
-  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.jumpCancelWindowsFoldout
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.jumpCancelWindowsFoldout
-  nameWithType: AttackDefinitionEditorWindow.jumpCancelWindowsFoldout
-- uid: CAF.Combat.AttackDefinitionEditorWindow.landCancelWindowsFoldout
-  name: landCancelWindowsFoldout
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_landCancelWindowsFoldout
-  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.landCancelWindowsFoldout
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.landCancelWindowsFoldout
-  nameWithType: AttackDefinitionEditorWindow.landCancelWindowsFoldout
-- uid: CAF.Combat.AttackDefinitionEditorWindow.OnAttackEventSelected(System.Object)
-  name: OnAttackEventSelected(Object)
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_OnAttackEventSelected_System_Object_
-  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.OnAttackEventSelected(System.Object)
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.OnAttackEventSelected(System.Object)
-  nameWithType: AttackDefinitionEditorWindow.OnAttackEventSelected(Object)
-- uid: CAF.Combat.AttackDefinitionEditorWindow.OnAttackEventSelected*
-  name: OnAttackEventSelected
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_OnAttackEventSelected_
-  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.OnAttackEventSelected
+- uid: CAF.Combat.AttackDefinitionEditorWindow.MenuBar
+  name: MenuBar()
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_MenuBar
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.MenuBar
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.MenuBar()
+  nameWithType: AttackDefinitionEditorWindow.MenuBar()
+- uid: CAF.Combat.AttackDefinitionEditorWindow.MenuBar*
+  name: MenuBar
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_MenuBar_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.MenuBar
   isSpec: "True"
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.OnAttackEventSelected
-  nameWithType: AttackDefinitionEditorWindow.OnAttackEventSelected
-- uid: CAF.Combat.AttackDefinitionEditorWindow.OnBoxDefinitionSelected(System.Object)
-  name: OnBoxDefinitionSelected(Object)
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_OnBoxDefinitionSelected_System_Object_
-  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.OnBoxDefinitionSelected(System.Object)
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.OnBoxDefinitionSelected(System.Object)
-  nameWithType: AttackDefinitionEditorWindow.OnBoxDefinitionSelected(Object)
-- uid: CAF.Combat.AttackDefinitionEditorWindow.OnBoxDefinitionSelected*
-  name: OnBoxDefinitionSelected
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_OnBoxDefinitionSelected_
-  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.OnBoxDefinitionSelected
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.MenuBar
+  nameWithType: AttackDefinitionEditorWindow.MenuBar
+- uid: CAF.Combat.AttackDefinitionEditorWindow.mousePos
+  name: mousePos
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_mousePos
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.mousePos
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.mousePos
+  nameWithType: AttackDefinitionEditorWindow.mousePos
+- uid: CAF.Combat.AttackDefinitionEditorWindow.MoveEntity
+  name: MoveEntity()
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_MoveEntity
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.MoveEntity
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.MoveEntity()
+  nameWithType: AttackDefinitionEditorWindow.MoveEntity()
+- uid: CAF.Combat.AttackDefinitionEditorWindow.MoveEntity*
+  name: MoveEntity
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_MoveEntity_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.MoveEntity
   isSpec: "True"
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.OnBoxDefinitionSelected
-  nameWithType: AttackDefinitionEditorWindow.OnBoxDefinitionSelected
-- uid: CAF.Combat.AttackDefinitionEditorWindow.OnFocus
-  name: OnFocus()
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_OnFocus
-  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.OnFocus
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.OnFocus()
-  nameWithType: AttackDefinitionEditorWindow.OnFocus()
-- uid: CAF.Combat.AttackDefinitionEditorWindow.OnFocus*
-  name: OnFocus
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_OnFocus_
-  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.OnFocus
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.MoveEntity
+  nameWithType: AttackDefinitionEditorWindow.MoveEntity
+- uid: CAF.Combat.AttackDefinitionEditorWindow.OnDisable
+  name: OnDisable()
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_OnDisable
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.OnDisable
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.OnDisable()
+  nameWithType: AttackDefinitionEditorWindow.OnDisable()
+- uid: CAF.Combat.AttackDefinitionEditorWindow.OnDisable*
+  name: OnDisable
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_OnDisable_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.OnDisable
   isSpec: "True"
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.OnFocus
-  nameWithType: AttackDefinitionEditorWindow.OnFocus
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.OnDisable
+  nameWithType: AttackDefinitionEditorWindow.OnDisable
+- uid: CAF.Combat.AttackDefinitionEditorWindow.OnEnable
+  name: OnEnable()
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_OnEnable
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.OnEnable
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.OnEnable()
+  nameWithType: AttackDefinitionEditorWindow.OnEnable()
+- uid: CAF.Combat.AttackDefinitionEditorWindow.OnEnable*
+  name: OnEnable
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_OnEnable_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.OnEnable
+  isSpec: "True"
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.OnEnable
+  nameWithType: AttackDefinitionEditorWindow.OnEnable
 - uid: CAF.Combat.AttackDefinitionEditorWindow.OnGUI
   name: OnGUI()
   href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_OnGUI
@@ -609,38 +530,104 @@ references:
   isSpec: "True"
   fullName: CAF.Combat.AttackDefinitionEditorWindow.OnGUI
   nameWithType: AttackDefinitionEditorWindow.OnGUI
-- uid: CAF.Combat.AttackDefinitionEditorWindow.OnHitInfoSelected(System.Object)
-  name: OnHitInfoSelected(Object)
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_OnHitInfoSelected_System_Object_
-  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.OnHitInfoSelected(System.Object)
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.OnHitInfoSelected(System.Object)
-  nameWithType: AttackDefinitionEditorWindow.OnHitInfoSelected(Object)
-- uid: CAF.Combat.AttackDefinitionEditorWindow.OnHitInfoSelected*
-  name: OnHitInfoSelected
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_OnHitInfoSelected_
-  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.OnHitInfoSelected
+- uid: CAF.Combat.AttackDefinitionEditorWindow.ResetFighterVariables
+  name: ResetFighterVariables()
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_ResetFighterVariables
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.ResetFighterVariables
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.ResetFighterVariables()
+  nameWithType: AttackDefinitionEditorWindow.ResetFighterVariables()
+- uid: CAF.Combat.AttackDefinitionEditorWindow.ResetFighterVariables*
+  name: ResetFighterVariables
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_ResetFighterVariables_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.ResetFighterVariables
   isSpec: "True"
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.OnHitInfoSelected
-  nameWithType: AttackDefinitionEditorWindow.OnHitInfoSelected
-- uid: CAF.Combat.AttackDefinitionEditorWindow.scrollPos
-  name: scrollPos
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_scrollPos
-  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.scrollPos
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.scrollPos
-  nameWithType: AttackDefinitionEditorWindow.scrollPos
-- uid: CAF.Combat.AttackDefinitionEditorWindow.ShowEventInfo(System.Int32)
-  name: ShowEventInfo(Int32)
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_ShowEventInfo_System_Int32_
-  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.ShowEventInfo(System.Int32)
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.ShowEventInfo(System.Int32)
-  nameWithType: AttackDefinitionEditorWindow.ShowEventInfo(Int32)
-- uid: CAF.Combat.AttackDefinitionEditorWindow.ShowEventInfo*
-  name: ShowEventInfo
-  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_ShowEventInfo_
-  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.ShowEventInfo
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.ResetFighterVariables
+  nameWithType: AttackDefinitionEditorWindow.ResetFighterVariables
+- uid: CAF.Combat.AttackDefinitionEditorWindow.rotationMode
+  name: rotationMode
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_rotationMode
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.rotationMode
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.rotationMode
+  nameWithType: AttackDefinitionEditorWindow.rotationMode
+- uid: CAF.Combat.AttackDefinitionEditorWindow.rotSpeed
+  name: rotSpeed
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_rotSpeed
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.rotSpeed
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.rotSpeed
+  nameWithType: AttackDefinitionEditorWindow.rotSpeed
+- uid: CAF.Combat.AttackDefinitionEditorWindow.scroll
+  name: scroll
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_scroll
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.scroll
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.scroll
+  nameWithType: AttackDefinitionEditorWindow.scroll
+- uid: CAF.Combat.AttackDefinitionEditorWindow.scrollSpeed
+  name: scrollSpeed
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_scrollSpeed
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.scrollSpeed
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.scrollSpeed
+  nameWithType: AttackDefinitionEditorWindow.scrollSpeed
+- uid: CAF.Combat.AttackDefinitionEditorWindow.scrollWheel
+  name: scrollWheel
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_scrollWheel
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.scrollWheel
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.scrollWheel
+  nameWithType: AttackDefinitionEditorWindow.scrollWheel
+- uid: CAF.Combat.AttackDefinitionEditorWindow.showCharges
+  name: showCharges
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_showCharges
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.showCharges
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.showCharges
+  nameWithType: AttackDefinitionEditorWindow.showCharges
+- uid: CAF.Combat.AttackDefinitionEditorWindow.showEvents
+  name: showEvents
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_showEvents
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.showEvents
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.showEvents
+  nameWithType: AttackDefinitionEditorWindow.showEvents
+- uid: CAF.Combat.AttackDefinitionEditorWindow.showHitboxGroups
+  name: showHitboxGroups
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_showHitboxGroups
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.showHitboxGroups
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.showHitboxGroups
+  nameWithType: AttackDefinitionEditorWindow.showHitboxGroups
+- uid: CAF.Combat.AttackDefinitionEditorWindow.showHurtboxGroups
+  name: showHurtboxGroups
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_showHurtboxGroups
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.showHurtboxGroups
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.showHurtboxGroups
+  nameWithType: AttackDefinitionEditorWindow.showHurtboxGroups
+- uid: CAF.Combat.AttackDefinitionEditorWindow.timelineFrame
+  name: timelineFrame
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_timelineFrame
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.timelineFrame
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.timelineFrame
+  nameWithType: AttackDefinitionEditorWindow.timelineFrame
+- uid: CAF.Combat.AttackDefinitionEditorWindow.Update
+  name: Update()
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_Update
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.Update
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.Update()
+  nameWithType: AttackDefinitionEditorWindow.Update()
+- uid: CAF.Combat.AttackDefinitionEditorWindow.Update*
+  name: Update
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_Update_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.Update
   isSpec: "True"
-  fullName: CAF.Combat.AttackDefinitionEditorWindow.ShowEventInfo
-  nameWithType: AttackDefinitionEditorWindow.ShowEventInfo
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.Update
+  nameWithType: AttackDefinitionEditorWindow.Update
+- uid: CAF.Combat.AttackDefinitionEditorWindow.visualFighterPrefab
+  name: visualFighterPrefab
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_visualFighterPrefab
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.visualFighterPrefab
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.visualFighterPrefab
+  nameWithType: AttackDefinitionEditorWindow.visualFighterPrefab
+- uid: CAF.Combat.AttackDefinitionEditorWindow.visualFighterSceneReference
+  name: visualFighterSceneReference
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_visualFighterSceneReference
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.visualFighterSceneReference
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.visualFighterSceneReference
+  nameWithType: AttackDefinitionEditorWindow.visualFighterSceneReference
 - uid: CAF.Combat.AttackEvent
   name: AttackEvent
   href: api/CAF.Combat.AttackEvent.html
@@ -660,12 +647,12 @@ references:
   isSpec: "True"
   fullName: CAF.Combat.AttackEvent.DrawEventVariables
   nameWithType: AttackEvent.DrawEventVariables
-- uid: CAF.Combat.AttackEvent.Evaluate(System.UInt32,System.UInt32,CAF.Fighters.FighterBase,CAF.Combat.AttackEventVariables)
-  name: Evaluate(UInt32, UInt32, FighterBase, AttackEventVariables)
-  href: api/CAF.Combat.AttackEvent.html#CAF_Combat_AttackEvent_Evaluate_System_UInt32_System_UInt32_CAF_Fighters_FighterBase_CAF_Combat_AttackEventVariables_
-  commentId: M:CAF.Combat.AttackEvent.Evaluate(System.UInt32,System.UInt32,CAF.Fighters.FighterBase,CAF.Combat.AttackEventVariables)
-  fullName: CAF.Combat.AttackEvent.Evaluate(System.UInt32, System.UInt32, CAF.Fighters.FighterBase, CAF.Combat.AttackEventVariables)
-  nameWithType: AttackEvent.Evaluate(UInt32, UInt32, FighterBase, AttackEventVariables)
+- uid: CAF.Combat.AttackEvent.Evaluate(System.Int32,System.Int32,CAF.Fighters.FighterBase,CAF.Combat.AttackEventVariables)
+  name: Evaluate(Int32, Int32, FighterBase, AttackEventVariables)
+  href: api/CAF.Combat.AttackEvent.html#CAF_Combat_AttackEvent_Evaluate_System_Int32_System_Int32_CAF_Fighters_FighterBase_CAF_Combat_AttackEventVariables_
+  commentId: M:CAF.Combat.AttackEvent.Evaluate(System.Int32,System.Int32,CAF.Fighters.FighterBase,CAF.Combat.AttackEventVariables)
+  fullName: CAF.Combat.AttackEvent.Evaluate(System.Int32, System.Int32, CAF.Fighters.FighterBase, CAF.Combat.AttackEventVariables)
+  nameWithType: AttackEvent.Evaluate(Int32, Int32, FighterBase, AttackEventVariables)
 - uid: CAF.Combat.AttackEvent.Evaluate*
   name: Evaluate
   href: api/CAF.Combat.AttackEvent.html#CAF_Combat_AttackEvent_Evaluate_
@@ -806,6 +793,30 @@ references:
   commentId: F:CAF.Combat.AttackEventInputCheckTiming.ONCE
   fullName: CAF.Combat.AttackEventInputCheckTiming.ONCE
   nameWithType: AttackEventInputCheckTiming.ONCE
+- uid: CAF.Combat.AttackEventReturnType
+  name: AttackEventReturnType
+  href: api/CAF.Combat.AttackEventReturnType.html
+  commentId: T:CAF.Combat.AttackEventReturnType
+  fullName: CAF.Combat.AttackEventReturnType
+  nameWithType: AttackEventReturnType
+- uid: CAF.Combat.AttackEventReturnType.INTERRUPT
+  name: INTERRUPT
+  href: api/CAF.Combat.AttackEventReturnType.html#CAF_Combat_AttackEventReturnType_INTERRUPT
+  commentId: F:CAF.Combat.AttackEventReturnType.INTERRUPT
+  fullName: CAF.Combat.AttackEventReturnType.INTERRUPT
+  nameWithType: AttackEventReturnType.INTERRUPT
+- uid: CAF.Combat.AttackEventReturnType.NONE
+  name: NONE
+  href: api/CAF.Combat.AttackEventReturnType.html#CAF_Combat_AttackEventReturnType_NONE
+  commentId: F:CAF.Combat.AttackEventReturnType.NONE
+  fullName: CAF.Combat.AttackEventReturnType.NONE
+  nameWithType: AttackEventReturnType.NONE
+- uid: CAF.Combat.AttackEventReturnType.STALL
+  name: STALL
+  href: api/CAF.Combat.AttackEventReturnType.html#CAF_Combat_AttackEventReturnType_STALL
+  commentId: F:CAF.Combat.AttackEventReturnType.STALL
+  fullName: CAF.Combat.AttackEventReturnType.STALL
+  nameWithType: AttackEventReturnType.STALL
 - uid: CAF.Combat.AttackEventVariables
   name: AttackEventVariables
   href: api/CAF.Combat.AttackEventVariables.html
@@ -948,127 +959,30 @@ references:
   commentId: F:CAF.Combat.BoxDefinitionBase.shape
   fullName: CAF.Combat.BoxDefinitionBase.shape
   nameWithType: BoxDefinitionBase.shape
-- uid: CAF.Combat.BoxGroup
-  name: BoxGroup
-  href: api/CAF.Combat.BoxGroup.html
-  commentId: T:CAF.Combat.BoxGroup
-  fullName: CAF.Combat.BoxGroup
-  nameWithType: BoxGroup
-- uid: CAF.Combat.BoxGroup.#ctor
-  name: BoxGroup()
-  href: api/CAF.Combat.BoxGroup.html#CAF_Combat_BoxGroup__ctor
-  commentId: M:CAF.Combat.BoxGroup.#ctor
-  fullName: CAF.Combat.BoxGroup.BoxGroup()
-  nameWithType: BoxGroup.BoxGroup()
-- uid: CAF.Combat.BoxGroup.#ctor(CAF.Combat.BoxGroup)
-  name: BoxGroup(BoxGroup)
-  href: api/CAF.Combat.BoxGroup.html#CAF_Combat_BoxGroup__ctor_CAF_Combat_BoxGroup_
-  commentId: M:CAF.Combat.BoxGroup.#ctor(CAF.Combat.BoxGroup)
-  fullName: CAF.Combat.BoxGroup.BoxGroup(CAF.Combat.BoxGroup)
-  nameWithType: BoxGroup.BoxGroup(BoxGroup)
-- uid: CAF.Combat.BoxGroup.#ctor*
-  name: BoxGroup
-  href: api/CAF.Combat.BoxGroup.html#CAF_Combat_BoxGroup__ctor_
-  commentId: Overload:CAF.Combat.BoxGroup.#ctor
-  isSpec: "True"
-  fullName: CAF.Combat.BoxGroup.BoxGroup
-  nameWithType: BoxGroup.BoxGroup
-- uid: CAF.Combat.BoxGroup.activeFramesEnd
-  name: activeFramesEnd
-  href: api/CAF.Combat.BoxGroup.html#CAF_Combat_BoxGroup_activeFramesEnd
-  commentId: F:CAF.Combat.BoxGroup.activeFramesEnd
-  fullName: CAF.Combat.BoxGroup.activeFramesEnd
-  nameWithType: BoxGroup.activeFramesEnd
-- uid: CAF.Combat.BoxGroup.activeFramesStart
-  name: activeFramesStart
-  href: api/CAF.Combat.BoxGroup.html#CAF_Combat_BoxGroup_activeFramesStart
-  commentId: F:CAF.Combat.BoxGroup.activeFramesStart
-  fullName: CAF.Combat.BoxGroup.activeFramesStart
-  nameWithType: BoxGroup.activeFramesStart
-- uid: CAF.Combat.BoxGroup.attachToEntity
-  name: attachToEntity
-  href: api/CAF.Combat.BoxGroup.html#CAF_Combat_BoxGroup_attachToEntity
-  commentId: F:CAF.Combat.BoxGroup.attachToEntity
-  fullName: CAF.Combat.BoxGroup.attachToEntity
-  nameWithType: BoxGroup.attachToEntity
-- uid: CAF.Combat.BoxGroup.boxes
-  name: boxes
-  href: api/CAF.Combat.BoxGroup.html#CAF_Combat_BoxGroup_boxes
-  commentId: F:CAF.Combat.BoxGroup.boxes
-  fullName: CAF.Combat.BoxGroup.boxes
-  nameWithType: BoxGroup.boxes
-- uid: CAF.Combat.BoxGroup.chargeLevelMax
-  name: chargeLevelMax
-  href: api/CAF.Combat.BoxGroup.html#CAF_Combat_BoxGroup_chargeLevelMax
-  commentId: F:CAF.Combat.BoxGroup.chargeLevelMax
-  fullName: CAF.Combat.BoxGroup.chargeLevelMax
-  nameWithType: BoxGroup.chargeLevelMax
-- uid: CAF.Combat.BoxGroup.chargeLevelNeeded
-  name: chargeLevelNeeded
-  href: api/CAF.Combat.BoxGroup.html#CAF_Combat_BoxGroup_chargeLevelNeeded
-  commentId: F:CAF.Combat.BoxGroup.chargeLevelNeeded
-  fullName: CAF.Combat.BoxGroup.chargeLevelNeeded
-  nameWithType: BoxGroup.chargeLevelNeeded
-- uid: CAF.Combat.BoxGroup.hitboxHitInfo
-  name: hitboxHitInfo
-  href: api/CAF.Combat.BoxGroup.html#CAF_Combat_BoxGroup_hitboxHitInfo
-  commentId: F:CAF.Combat.BoxGroup.hitboxHitInfo
-  fullName: CAF.Combat.BoxGroup.hitboxHitInfo
-  nameWithType: BoxGroup.hitboxHitInfo
-- uid: CAF.Combat.BoxGroup.hitGroupType
-  name: hitGroupType
-  href: api/CAF.Combat.BoxGroup.html#CAF_Combat_BoxGroup_hitGroupType
-  commentId: F:CAF.Combat.BoxGroup.hitGroupType
-  fullName: CAF.Combat.BoxGroup.hitGroupType
-  nameWithType: BoxGroup.hitGroupType
-- uid: CAF.Combat.BoxGroup.ID
-  name: ID
-  href: api/CAF.Combat.BoxGroup.html#CAF_Combat_BoxGroup_ID
-  commentId: F:CAF.Combat.BoxGroup.ID
-  fullName: CAF.Combat.BoxGroup.ID
-  nameWithType: BoxGroup.ID
-- uid: CAF.Combat.BoxGroupType
-  name: BoxGroupType
-  href: api/CAF.Combat.BoxGroupType.html
-  commentId: T:CAF.Combat.BoxGroupType
-  fullName: CAF.Combat.BoxGroupType
-  nameWithType: BoxGroupType
-- uid: CAF.Combat.BoxGroupType.GRAB
-  name: GRAB
-  href: api/CAF.Combat.BoxGroupType.html#CAF_Combat_BoxGroupType_GRAB
-  commentId: F:CAF.Combat.BoxGroupType.GRAB
-  fullName: CAF.Combat.BoxGroupType.GRAB
-  nameWithType: BoxGroupType.GRAB
-- uid: CAF.Combat.BoxGroupType.HIT
-  name: HIT
-  href: api/CAF.Combat.BoxGroupType.html#CAF_Combat_BoxGroupType_HIT
-  commentId: F:CAF.Combat.BoxGroupType.HIT
-  fullName: CAF.Combat.BoxGroupType.HIT
-  nameWithType: BoxGroupType.HIT
-- uid: CAF.Combat.BoxShapes
-  name: BoxShapes
-  href: api/CAF.Combat.BoxShapes.html
-  commentId: T:CAF.Combat.BoxShapes
-  fullName: CAF.Combat.BoxShapes
-  nameWithType: BoxShapes
-- uid: CAF.Combat.BoxShapes.Capsule
+- uid: CAF.Combat.BoxShape
+  name: BoxShape
+  href: api/CAF.Combat.BoxShape.html
+  commentId: T:CAF.Combat.BoxShape
+  fullName: CAF.Combat.BoxShape
+  nameWithType: BoxShape
+- uid: CAF.Combat.BoxShape.Capsule
   name: Capsule
-  href: api/CAF.Combat.BoxShapes.html#CAF_Combat_BoxShapes_Capsule
-  commentId: F:CAF.Combat.BoxShapes.Capsule
-  fullName: CAF.Combat.BoxShapes.Capsule
-  nameWithType: BoxShapes.Capsule
-- uid: CAF.Combat.BoxShapes.Circle
+  href: api/CAF.Combat.BoxShape.html#CAF_Combat_BoxShape_Capsule
+  commentId: F:CAF.Combat.BoxShape.Capsule
+  fullName: CAF.Combat.BoxShape.Capsule
+  nameWithType: BoxShape.Capsule
+- uid: CAF.Combat.BoxShape.Circle
   name: Circle
-  href: api/CAF.Combat.BoxShapes.html#CAF_Combat_BoxShapes_Circle
-  commentId: F:CAF.Combat.BoxShapes.Circle
-  fullName: CAF.Combat.BoxShapes.Circle
-  nameWithType: BoxShapes.Circle
-- uid: CAF.Combat.BoxShapes.Rectangle
+  href: api/CAF.Combat.BoxShape.html#CAF_Combat_BoxShape_Circle
+  commentId: F:CAF.Combat.BoxShape.Circle
+  fullName: CAF.Combat.BoxShape.Circle
+  nameWithType: BoxShape.Circle
+- uid: CAF.Combat.BoxShape.Rectangle
   name: Rectangle
-  href: api/CAF.Combat.BoxShapes.html#CAF_Combat_BoxShapes_Rectangle
-  commentId: F:CAF.Combat.BoxShapes.Rectangle
-  fullName: CAF.Combat.BoxShapes.Rectangle
-  nameWithType: BoxShapes.Rectangle
+  href: api/CAF.Combat.BoxShape.html#CAF_Combat_BoxShape_Rectangle
+  commentId: F:CAF.Combat.BoxShape.Rectangle
+  fullName: CAF.Combat.BoxShape.Rectangle
+  nameWithType: BoxShape.Rectangle
 - uid: CAF.Combat.ChargeDefinition
   name: ChargeDefinition
   href: api/CAF.Combat.ChargeDefinition.html
@@ -1081,18 +995,107 @@ references:
   commentId: F:CAF.Combat.ChargeDefinition.chargeLevels
   fullName: CAF.Combat.ChargeDefinition.chargeLevels
   nameWithType: ChargeDefinition.chargeLevels
-- uid: CAF.Combat.ChargeDefinition.frame
-  name: frame
-  href: api/CAF.Combat.ChargeDefinition.html#CAF_Combat_ChargeDefinition_frame
-  commentId: F:CAF.Combat.ChargeDefinition.frame
-  fullName: CAF.Combat.ChargeDefinition.frame
-  nameWithType: ChargeDefinition.frame
+- uid: CAF.Combat.ChargeDefinition.endFrame
+  name: endFrame
+  href: api/CAF.Combat.ChargeDefinition.html#CAF_Combat_ChargeDefinition_endFrame
+  commentId: F:CAF.Combat.ChargeDefinition.endFrame
+  fullName: CAF.Combat.ChargeDefinition.endFrame
+  nameWithType: ChargeDefinition.endFrame
 - uid: CAF.Combat.ChargeDefinition.releaseOnCompletion
   name: releaseOnCompletion
   href: api/CAF.Combat.ChargeDefinition.html#CAF_Combat_ChargeDefinition_releaseOnCompletion
   commentId: F:CAF.Combat.ChargeDefinition.releaseOnCompletion
   fullName: CAF.Combat.ChargeDefinition.releaseOnCompletion
   nameWithType: ChargeDefinition.releaseOnCompletion
+- uid: CAF.Combat.ChargeDefinition.startFrame
+  name: startFrame
+  href: api/CAF.Combat.ChargeDefinition.html#CAF_Combat_ChargeDefinition_startFrame
+  commentId: F:CAF.Combat.ChargeDefinition.startFrame
+  fullName: CAF.Combat.ChargeDefinition.startFrame
+  nameWithType: ChargeDefinition.startFrame
+- uid: CAF.Combat.ChargeGroupEditorWindow
+  name: ChargeGroupEditorWindow
+  href: api/CAF.Combat.ChargeGroupEditorWindow.html
+  commentId: T:CAF.Combat.ChargeGroupEditorWindow
+  fullName: CAF.Combat.ChargeGroupEditorWindow
+  nameWithType: ChargeGroupEditorWindow
+- uid: CAF.Combat.ChargeGroupEditorWindow.attack
+  name: attack
+  href: api/CAF.Combat.ChargeGroupEditorWindow.html#CAF_Combat_ChargeGroupEditorWindow_attack
+  commentId: F:CAF.Combat.ChargeGroupEditorWindow.attack
+  fullName: CAF.Combat.ChargeGroupEditorWindow.attack
+  nameWithType: ChargeGroupEditorWindow.attack
+- uid: CAF.Combat.ChargeGroupEditorWindow.chargeGroup
+  name: chargeGroup
+  href: api/CAF.Combat.ChargeGroupEditorWindow.html#CAF_Combat_ChargeGroupEditorWindow_chargeGroup
+  commentId: F:CAF.Combat.ChargeGroupEditorWindow.chargeGroup
+  fullName: CAF.Combat.ChargeGroupEditorWindow.chargeGroup
+  nameWithType: ChargeGroupEditorWindow.chargeGroup
+- uid: CAF.Combat.ChargeGroupEditorWindow.CreateChargeLevelInstance
+  name: CreateChargeLevelInstance()
+  href: api/CAF.Combat.ChargeGroupEditorWindow.html#CAF_Combat_ChargeGroupEditorWindow_CreateChargeLevelInstance
+  commentId: M:CAF.Combat.ChargeGroupEditorWindow.CreateChargeLevelInstance
+  fullName: CAF.Combat.ChargeGroupEditorWindow.CreateChargeLevelInstance()
+  nameWithType: ChargeGroupEditorWindow.CreateChargeLevelInstance()
+- uid: CAF.Combat.ChargeGroupEditorWindow.CreateChargeLevelInstance*
+  name: CreateChargeLevelInstance
+  href: api/CAF.Combat.ChargeGroupEditorWindow.html#CAF_Combat_ChargeGroupEditorWindow_CreateChargeLevelInstance_
+  commentId: Overload:CAF.Combat.ChargeGroupEditorWindow.CreateChargeLevelInstance
+  isSpec: "True"
+  fullName: CAF.Combat.ChargeGroupEditorWindow.CreateChargeLevelInstance
+  nameWithType: ChargeGroupEditorWindow.CreateChargeLevelInstance
+- uid: CAF.Combat.ChargeGroupEditorWindow.DrawChargeGroupInfo
+  name: DrawChargeGroupInfo()
+  href: api/CAF.Combat.ChargeGroupEditorWindow.html#CAF_Combat_ChargeGroupEditorWindow_DrawChargeGroupInfo
+  commentId: M:CAF.Combat.ChargeGroupEditorWindow.DrawChargeGroupInfo
+  fullName: CAF.Combat.ChargeGroupEditorWindow.DrawChargeGroupInfo()
+  nameWithType: ChargeGroupEditorWindow.DrawChargeGroupInfo()
+- uid: CAF.Combat.ChargeGroupEditorWindow.DrawChargeGroupInfo*
+  name: DrawChargeGroupInfo
+  href: api/CAF.Combat.ChargeGroupEditorWindow.html#CAF_Combat_ChargeGroupEditorWindow_DrawChargeGroupInfo_
+  commentId: Overload:CAF.Combat.ChargeGroupEditorWindow.DrawChargeGroupInfo
+  isSpec: "True"
+  fullName: CAF.Combat.ChargeGroupEditorWindow.DrawChargeGroupInfo
+  nameWithType: ChargeGroupEditorWindow.DrawChargeGroupInfo
+- uid: CAF.Combat.ChargeGroupEditorWindow.DrawChargeLevel(System.Int32)
+  name: DrawChargeLevel(Int32)
+  href: api/CAF.Combat.ChargeGroupEditorWindow.html#CAF_Combat_ChargeGroupEditorWindow_DrawChargeLevel_System_Int32_
+  commentId: M:CAF.Combat.ChargeGroupEditorWindow.DrawChargeLevel(System.Int32)
+  fullName: CAF.Combat.ChargeGroupEditorWindow.DrawChargeLevel(System.Int32)
+  nameWithType: ChargeGroupEditorWindow.DrawChargeLevel(Int32)
+- uid: CAF.Combat.ChargeGroupEditorWindow.DrawChargeLevel*
+  name: DrawChargeLevel
+  href: api/CAF.Combat.ChargeGroupEditorWindow.html#CAF_Combat_ChargeGroupEditorWindow_DrawChargeLevel_
+  commentId: Overload:CAF.Combat.ChargeGroupEditorWindow.DrawChargeLevel
+  isSpec: "True"
+  fullName: CAF.Combat.ChargeGroupEditorWindow.DrawChargeLevel
+  nameWithType: ChargeGroupEditorWindow.DrawChargeLevel
+- uid: CAF.Combat.ChargeGroupEditorWindow.Init(CAF.Combat.AttackDefinition,CAF.Combat.ChargeDefinition)
+  name: Init(AttackDefinition, ChargeDefinition)
+  href: api/CAF.Combat.ChargeGroupEditorWindow.html#CAF_Combat_ChargeGroupEditorWindow_Init_CAF_Combat_AttackDefinition_CAF_Combat_ChargeDefinition_
+  commentId: M:CAF.Combat.ChargeGroupEditorWindow.Init(CAF.Combat.AttackDefinition,CAF.Combat.ChargeDefinition)
+  fullName: CAF.Combat.ChargeGroupEditorWindow.Init(CAF.Combat.AttackDefinition, CAF.Combat.ChargeDefinition)
+  nameWithType: ChargeGroupEditorWindow.Init(AttackDefinition, ChargeDefinition)
+- uid: CAF.Combat.ChargeGroupEditorWindow.Init*
+  name: Init
+  href: api/CAF.Combat.ChargeGroupEditorWindow.html#CAF_Combat_ChargeGroupEditorWindow_Init_
+  commentId: Overload:CAF.Combat.ChargeGroupEditorWindow.Init
+  isSpec: "True"
+  fullName: CAF.Combat.ChargeGroupEditorWindow.Init
+  nameWithType: ChargeGroupEditorWindow.Init
+- uid: CAF.Combat.ChargeGroupEditorWindow.OnGUI
+  name: OnGUI()
+  href: api/CAF.Combat.ChargeGroupEditorWindow.html#CAF_Combat_ChargeGroupEditorWindow_OnGUI
+  commentId: M:CAF.Combat.ChargeGroupEditorWindow.OnGUI
+  fullName: CAF.Combat.ChargeGroupEditorWindow.OnGUI()
+  nameWithType: ChargeGroupEditorWindow.OnGUI()
+- uid: CAF.Combat.ChargeGroupEditorWindow.OnGUI*
+  name: OnGUI
+  href: api/CAF.Combat.ChargeGroupEditorWindow.html#CAF_Combat_ChargeGroupEditorWindow_OnGUI_
+  commentId: Overload:CAF.Combat.ChargeGroupEditorWindow.OnGUI
+  isSpec: "True"
+  fullName: CAF.Combat.ChargeGroupEditorWindow.OnGUI
+  nameWithType: ChargeGroupEditorWindow.OnGUI
 - uid: CAF.Combat.ChargeLevel
   name: ChargeLevel
   href: api/CAF.Combat.ChargeLevel.html
@@ -1105,6 +1108,88 @@ references:
   commentId: F:CAF.Combat.ChargeLevel.maxChargeFrames
   fullName: CAF.Combat.ChargeLevel.maxChargeFrames
   nameWithType: ChargeLevel.maxChargeFrames
+- uid: CAF.Combat.EventEditorWindow
+  name: EventEditorWindow
+  href: api/CAF.Combat.EventEditorWindow.html
+  commentId: T:CAF.Combat.EventEditorWindow
+  fullName: CAF.Combat.EventEditorWindow
+  nameWithType: EventEditorWindow
+- uid: CAF.Combat.EventEditorWindow.attack
+  name: attack
+  href: api/CAF.Combat.EventEditorWindow.html#CAF_Combat_EventEditorWindow_attack
+  commentId: F:CAF.Combat.EventEditorWindow.attack
+  fullName: CAF.Combat.EventEditorWindow.attack
+  nameWithType: EventEditorWindow.attack
+- uid: CAF.Combat.EventEditorWindow.attackEvent
+  name: attackEvent
+  href: api/CAF.Combat.EventEditorWindow.html#CAF_Combat_EventEditorWindow_attackEvent
+  commentId: F:CAF.Combat.EventEditorWindow.attackEvent
+  fullName: CAF.Combat.EventEditorWindow.attackEvent
+  nameWithType: EventEditorWindow.attackEvent
+- uid: CAF.Combat.EventEditorWindow.attackEventTypes
+  name: attackEventTypes
+  href: api/CAF.Combat.EventEditorWindow.html#CAF_Combat_EventEditorWindow_attackEventTypes
+  commentId: F:CAF.Combat.EventEditorWindow.attackEventTypes
+  fullName: CAF.Combat.EventEditorWindow.attackEventTypes
+  nameWithType: EventEditorWindow.attackEventTypes
+- uid: CAF.Combat.EventEditorWindow.eventVariablesFoldout
+  name: eventVariablesFoldout
+  href: api/CAF.Combat.EventEditorWindow.html#CAF_Combat_EventEditorWindow_eventVariablesFoldout
+  commentId: F:CAF.Combat.EventEditorWindow.eventVariablesFoldout
+  fullName: CAF.Combat.EventEditorWindow.eventVariablesFoldout
+  nameWithType: EventEditorWindow.eventVariablesFoldout
+- uid: CAF.Combat.EventEditorWindow.Init(CAF.Combat.AttackDefinition,CAF.Combat.AttackEventDefinition)
+  name: Init(AttackDefinition, AttackEventDefinition)
+  href: api/CAF.Combat.EventEditorWindow.html#CAF_Combat_EventEditorWindow_Init_CAF_Combat_AttackDefinition_CAF_Combat_AttackEventDefinition_
+  commentId: M:CAF.Combat.EventEditorWindow.Init(CAF.Combat.AttackDefinition,CAF.Combat.AttackEventDefinition)
+  fullName: CAF.Combat.EventEditorWindow.Init(CAF.Combat.AttackDefinition, CAF.Combat.AttackEventDefinition)
+  nameWithType: EventEditorWindow.Init(AttackDefinition, AttackEventDefinition)
+- uid: CAF.Combat.EventEditorWindow.Init*
+  name: Init
+  href: api/CAF.Combat.EventEditorWindow.html#CAF_Combat_EventEditorWindow_Init_
+  commentId: Overload:CAF.Combat.EventEditorWindow.Init
+  isSpec: "True"
+  fullName: CAF.Combat.EventEditorWindow.Init
+  nameWithType: EventEditorWindow.Init
+- uid: CAF.Combat.EventEditorWindow.OnAttackEventSelected(System.Object)
+  name: OnAttackEventSelected(Object)
+  href: api/CAF.Combat.EventEditorWindow.html#CAF_Combat_EventEditorWindow_OnAttackEventSelected_System_Object_
+  commentId: M:CAF.Combat.EventEditorWindow.OnAttackEventSelected(System.Object)
+  fullName: CAF.Combat.EventEditorWindow.OnAttackEventSelected(System.Object)
+  nameWithType: EventEditorWindow.OnAttackEventSelected(Object)
+- uid: CAF.Combat.EventEditorWindow.OnAttackEventSelected*
+  name: OnAttackEventSelected
+  href: api/CAF.Combat.EventEditorWindow.html#CAF_Combat_EventEditorWindow_OnAttackEventSelected_
+  commentId: Overload:CAF.Combat.EventEditorWindow.OnAttackEventSelected
+  isSpec: "True"
+  fullName: CAF.Combat.EventEditorWindow.OnAttackEventSelected
+  nameWithType: EventEditorWindow.OnAttackEventSelected
+- uid: CAF.Combat.EventEditorWindow.OnFocus
+  name: OnFocus()
+  href: api/CAF.Combat.EventEditorWindow.html#CAF_Combat_EventEditorWindow_OnFocus
+  commentId: M:CAF.Combat.EventEditorWindow.OnFocus
+  fullName: CAF.Combat.EventEditorWindow.OnFocus()
+  nameWithType: EventEditorWindow.OnFocus()
+- uid: CAF.Combat.EventEditorWindow.OnFocus*
+  name: OnFocus
+  href: api/CAF.Combat.EventEditorWindow.html#CAF_Combat_EventEditorWindow_OnFocus_
+  commentId: Overload:CAF.Combat.EventEditorWindow.OnFocus
+  isSpec: "True"
+  fullName: CAF.Combat.EventEditorWindow.OnFocus
+  nameWithType: EventEditorWindow.OnFocus
+- uid: CAF.Combat.EventEditorWindow.OnGUI
+  name: OnGUI()
+  href: api/CAF.Combat.EventEditorWindow.html#CAF_Combat_EventEditorWindow_OnGUI
+  commentId: M:CAF.Combat.EventEditorWindow.OnGUI
+  fullName: CAF.Combat.EventEditorWindow.OnGUI()
+  nameWithType: EventEditorWindow.OnGUI()
+- uid: CAF.Combat.EventEditorWindow.OnGUI*
+  name: OnGUI
+  href: api/CAF.Combat.EventEditorWindow.html#CAF_Combat_EventEditorWindow_OnGUI_
+  commentId: Overload:CAF.Combat.EventEditorWindow.OnGUI
+  isSpec: "True"
+  fullName: CAF.Combat.EventEditorWindow.OnGUI
+  nameWithType: EventEditorWindow.OnGUI
 - uid: CAF.Combat.ForceType
   name: ForceType
   href: api/CAF.Combat.ForceType.html
@@ -1129,574 +1214,6 @@ references:
   commentId: T:CAF.Combat.HealInfoBase
   fullName: CAF.Combat.HealInfoBase
   nameWithType: HealInfoBase
-- uid: CAF.Combat.Hitbox2D
-  name: Hitbox2D
-  href: api/CAF.Combat.Hitbox2D.html
-  commentId: T:CAF.Combat.Hitbox2D
-  fullName: CAF.Combat.Hitbox2D
-  nameWithType: Hitbox2D
-- uid: CAF.Combat.Hitbox2D.Activate
-  name: Activate()
-  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_Activate
-  commentId: M:CAF.Combat.Hitbox2D.Activate
-  fullName: CAF.Combat.Hitbox2D.Activate()
-  nameWithType: Hitbox2D.Activate()
-- uid: CAF.Combat.Hitbox2D.Activate*
-  name: Activate
-  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_Activate_
-  commentId: Overload:CAF.Combat.Hitbox2D.Activate
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox2D.Activate
-  nameWithType: Hitbox2D.Activate
-- uid: CAF.Combat.Hitbox2D.BuildHurtInfo
-  name: BuildHurtInfo()
-  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_BuildHurtInfo
-  commentId: M:CAF.Combat.Hitbox2D.BuildHurtInfo
-  fullName: CAF.Combat.Hitbox2D.BuildHurtInfo()
-  nameWithType: Hitbox2D.BuildHurtInfo()
-- uid: CAF.Combat.Hitbox2D.BuildHurtInfo*
-  name: BuildHurtInfo
-  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_BuildHurtInfo_
-  commentId: Overload:CAF.Combat.Hitbox2D.BuildHurtInfo
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox2D.BuildHurtInfo
-  nameWithType: Hitbox2D.BuildHurtInfo
-- uid: CAF.Combat.Hitbox2D.CheckForHurtboxes(Collider2D)
-  name: CheckForHurtboxes(Collider2D)
-  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_CheckForHurtboxes_Collider2D_
-  commentId: M:CAF.Combat.Hitbox2D.CheckForHurtboxes(Collider2D)
-  fullName: CAF.Combat.Hitbox2D.CheckForHurtboxes(Collider2D)
-  nameWithType: Hitbox2D.CheckForHurtboxes(Collider2D)
-- uid: CAF.Combat.Hitbox2D.CheckForHurtboxes*
-  name: CheckForHurtboxes
-  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_CheckForHurtboxes_
-  commentId: Overload:CAF.Combat.Hitbox2D.CheckForHurtboxes
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox2D.CheckForHurtboxes
-  nameWithType: Hitbox2D.CheckForHurtboxes
-- uid: CAF.Combat.Hitbox2D.coll
-  name: coll
-  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_coll
-  commentId: F:CAF.Combat.Hitbox2D.coll
-  fullName: CAF.Combat.Hitbox2D.coll
-  nameWithType: Hitbox2D.coll
-- uid: CAF.Combat.Hitbox2D.CreateCapsule(System.Single,System.Single)
-  name: CreateCapsule(Single, Single)
-  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_CreateCapsule_System_Single_System_Single_
-  commentId: M:CAF.Combat.Hitbox2D.CreateCapsule(System.Single,System.Single)
-  fullName: CAF.Combat.Hitbox2D.CreateCapsule(System.Single, System.Single)
-  nameWithType: Hitbox2D.CreateCapsule(Single, Single)
-- uid: CAF.Combat.Hitbox2D.CreateCapsule*
-  name: CreateCapsule
-  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_CreateCapsule_
-  commentId: Overload:CAF.Combat.Hitbox2D.CreateCapsule
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox2D.CreateCapsule
-  nameWithType: Hitbox2D.CreateCapsule
-- uid: CAF.Combat.Hitbox2D.CreateCircle(System.Single)
-  name: CreateCircle(Single)
-  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_CreateCircle_System_Single_
-  commentId: M:CAF.Combat.Hitbox2D.CreateCircle(System.Single)
-  fullName: CAF.Combat.Hitbox2D.CreateCircle(System.Single)
-  nameWithType: Hitbox2D.CreateCircle(Single)
-- uid: CAF.Combat.Hitbox2D.CreateCircle*
-  name: CreateCircle
-  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_CreateCircle_
-  commentId: Overload:CAF.Combat.Hitbox2D.CreateCircle
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox2D.CreateCircle
-  nameWithType: Hitbox2D.CreateCircle
-- uid: CAF.Combat.Hitbox2D.CreateRectangle(Vector2)
-  name: CreateRectangle(Vector2)
-  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_CreateRectangle_Vector2_
-  commentId: M:CAF.Combat.Hitbox2D.CreateRectangle(Vector2)
-  fullName: CAF.Combat.Hitbox2D.CreateRectangle(Vector2)
-  nameWithType: Hitbox2D.CreateRectangle(Vector2)
-- uid: CAF.Combat.Hitbox2D.CreateRectangle*
-  name: CreateRectangle
-  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_CreateRectangle_
-  commentId: Overload:CAF.Combat.Hitbox2D.CreateRectangle
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox2D.CreateRectangle
-  nameWithType: Hitbox2D.CreateRectangle
-- uid: CAF.Combat.Hitbox2D.Deactivate
-  name: Deactivate()
-  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_Deactivate
-  commentId: M:CAF.Combat.Hitbox2D.Deactivate
-  fullName: CAF.Combat.Hitbox2D.Deactivate()
-  nameWithType: Hitbox2D.Deactivate()
-- uid: CAF.Combat.Hitbox2D.Deactivate*
-  name: Deactivate
-  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_Deactivate_
-  commentId: Overload:CAF.Combat.Hitbox2D.Deactivate
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox2D.Deactivate
-  nameWithType: Hitbox2D.Deactivate
-- uid: CAF.Combat.Hitbox2D.HurtHurtable(CAF.Combat.IHurtable)
-  name: HurtHurtable(IHurtable)
-  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_HurtHurtable_CAF_Combat_IHurtable_
-  commentId: M:CAF.Combat.Hitbox2D.HurtHurtable(CAF.Combat.IHurtable)
-  fullName: CAF.Combat.Hitbox2D.HurtHurtable(CAF.Combat.IHurtable)
-  nameWithType: Hitbox2D.HurtHurtable(IHurtable)
-- uid: CAF.Combat.Hitbox2D.HurtHurtable*
-  name: HurtHurtable
-  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_HurtHurtable_
-  commentId: Overload:CAF.Combat.Hitbox2D.HurtHurtable
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox2D.HurtHurtable
-  nameWithType: Hitbox2D.HurtHurtable
-- uid: CAF.Combat.Hitbox2D.Initialize(GameObject,Transform,System.Int32,CAF.Combat.BoxShapes,CAF.Combat.HitInfoBase,CAF.Combat.BoxDefinitionBase,System.Collections.Generic.List{CAF.Combat.IHurtable})
-  name: Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinitionBase, List<IHurtable>)
-  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_Initialize_GameObject_Transform_System_Int32_CAF_Combat_BoxShapes_CAF_Combat_HitInfoBase_CAF_Combat_BoxDefinitionBase_System_Collections_Generic_List_CAF_Combat_IHurtable__
-  commentId: M:CAF.Combat.Hitbox2D.Initialize(GameObject,Transform,System.Int32,CAF.Combat.BoxShapes,CAF.Combat.HitInfoBase,CAF.Combat.BoxDefinitionBase,System.Collections.Generic.List{CAF.Combat.IHurtable})
-  name.vb: Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinitionBase, List(Of IHurtable))
-  fullName: CAF.Combat.Hitbox2D.Initialize(GameObject, Transform, System.Int32, CAF.Combat.BoxShapes, CAF.Combat.HitInfoBase, CAF.Combat.BoxDefinitionBase, System.Collections.Generic.List<CAF.Combat.IHurtable>)
-  fullName.vb: CAF.Combat.Hitbox2D.Initialize(GameObject, Transform, System.Int32, CAF.Combat.BoxShapes, CAF.Combat.HitInfoBase, CAF.Combat.BoxDefinitionBase, System.Collections.Generic.List(Of CAF.Combat.IHurtable))
-  nameWithType: Hitbox2D.Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinitionBase, List<IHurtable>)
-  nameWithType.vb: Hitbox2D.Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinitionBase, List(Of IHurtable))
-- uid: CAF.Combat.Hitbox2D.Initialize(GameObject,Transform,System.Int32,CAF.Combat.HitInfoBase,System.Collections.Generic.List{CAF.Combat.IHurtable})
-  name: Initialize(GameObject, Transform, Int32, HitInfoBase, List<IHurtable>)
-  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_Initialize_GameObject_Transform_System_Int32_CAF_Combat_HitInfoBase_System_Collections_Generic_List_CAF_Combat_IHurtable__
-  commentId: M:CAF.Combat.Hitbox2D.Initialize(GameObject,Transform,System.Int32,CAF.Combat.HitInfoBase,System.Collections.Generic.List{CAF.Combat.IHurtable})
-  name.vb: Initialize(GameObject, Transform, Int32, HitInfoBase, List(Of IHurtable))
-  fullName: CAF.Combat.Hitbox2D.Initialize(GameObject, Transform, System.Int32, CAF.Combat.HitInfoBase, System.Collections.Generic.List<CAF.Combat.IHurtable>)
-  fullName.vb: CAF.Combat.Hitbox2D.Initialize(GameObject, Transform, System.Int32, CAF.Combat.HitInfoBase, System.Collections.Generic.List(Of CAF.Combat.IHurtable))
-  nameWithType: Hitbox2D.Initialize(GameObject, Transform, Int32, HitInfoBase, List<IHurtable>)
-  nameWithType.vb: Hitbox2D.Initialize(GameObject, Transform, Int32, HitInfoBase, List(Of IHurtable))
-- uid: CAF.Combat.Hitbox2D.Initialize*
-  name: Initialize
-  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_Initialize_
-  commentId: Overload:CAF.Combat.Hitbox2D.Initialize
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox2D.Initialize
-  nameWithType: Hitbox2D.Initialize
-- uid: CAF.Combat.Hitbox2D.OnTriggerStay2D(Collider2D)
-  name: OnTriggerStay2D(Collider2D)
-  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_OnTriggerStay2D_Collider2D_
-  commentId: M:CAF.Combat.Hitbox2D.OnTriggerStay2D(Collider2D)
-  fullName: CAF.Combat.Hitbox2D.OnTriggerStay2D(Collider2D)
-  nameWithType: Hitbox2D.OnTriggerStay2D(Collider2D)
-- uid: CAF.Combat.Hitbox2D.OnTriggerStay2D*
-  name: OnTriggerStay2D
-  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_OnTriggerStay2D_
-  commentId: Overload:CAF.Combat.Hitbox2D.OnTriggerStay2D
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox2D.OnTriggerStay2D
-  nameWithType: Hitbox2D.OnTriggerStay2D
-- uid: CAF.Combat.Hitbox2D.ReActivate(System.Collections.Generic.List{CAF.Combat.IHurtable})
-  name: ReActivate(List<IHurtable>)
-  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_ReActivate_System_Collections_Generic_List_CAF_Combat_IHurtable__
-  commentId: M:CAF.Combat.Hitbox2D.ReActivate(System.Collections.Generic.List{CAF.Combat.IHurtable})
-  name.vb: ReActivate(List(Of IHurtable))
-  fullName: CAF.Combat.Hitbox2D.ReActivate(System.Collections.Generic.List<CAF.Combat.IHurtable>)
-  fullName.vb: CAF.Combat.Hitbox2D.ReActivate(System.Collections.Generic.List(Of CAF.Combat.IHurtable))
-  nameWithType: Hitbox2D.ReActivate(List<IHurtable>)
-  nameWithType.vb: Hitbox2D.ReActivate(List(Of IHurtable))
-- uid: CAF.Combat.Hitbox2D.ReActivate*
-  name: ReActivate
-  href: api/CAF.Combat.Hitbox2D.html#CAF_Combat_Hitbox2D_ReActivate_
-  commentId: Overload:CAF.Combat.Hitbox2D.ReActivate
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox2D.ReActivate
-  nameWithType: Hitbox2D.ReActivate
-- uid: CAF.Combat.Hitbox3D
-  name: Hitbox3D
-  href: api/CAF.Combat.Hitbox3D.html
-  commentId: T:CAF.Combat.Hitbox3D
-  fullName: CAF.Combat.Hitbox3D
-  nameWithType: Hitbox3D
-- uid: CAF.Combat.Hitbox3D.Activate
-  name: Activate()
-  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_Activate
-  commentId: M:CAF.Combat.Hitbox3D.Activate
-  fullName: CAF.Combat.Hitbox3D.Activate()
-  nameWithType: Hitbox3D.Activate()
-- uid: CAF.Combat.Hitbox3D.Activate*
-  name: Activate
-  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_Activate_
-  commentId: Overload:CAF.Combat.Hitbox3D.Activate
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox3D.Activate
-  nameWithType: Hitbox3D.Activate
-- uid: CAF.Combat.Hitbox3D.BuildHurtInfo
-  name: BuildHurtInfo()
-  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_BuildHurtInfo
-  commentId: M:CAF.Combat.Hitbox3D.BuildHurtInfo
-  fullName: CAF.Combat.Hitbox3D.BuildHurtInfo()
-  nameWithType: Hitbox3D.BuildHurtInfo()
-- uid: CAF.Combat.Hitbox3D.BuildHurtInfo*
-  name: BuildHurtInfo
-  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_BuildHurtInfo_
-  commentId: Overload:CAF.Combat.Hitbox3D.BuildHurtInfo
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox3D.BuildHurtInfo
-  nameWithType: Hitbox3D.BuildHurtInfo
-- uid: CAF.Combat.Hitbox3D.CheckForHurtboxes(Collider)
-  name: CheckForHurtboxes(Collider)
-  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_CheckForHurtboxes_Collider_
-  commentId: M:CAF.Combat.Hitbox3D.CheckForHurtboxes(Collider)
-  fullName: CAF.Combat.Hitbox3D.CheckForHurtboxes(Collider)
-  nameWithType: Hitbox3D.CheckForHurtboxes(Collider)
-- uid: CAF.Combat.Hitbox3D.CheckForHurtboxes*
-  name: CheckForHurtboxes
-  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_CheckForHurtboxes_
-  commentId: Overload:CAF.Combat.Hitbox3D.CheckForHurtboxes
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox3D.CheckForHurtboxes
-  nameWithType: Hitbox3D.CheckForHurtboxes
-- uid: CAF.Combat.Hitbox3D.coll
-  name: coll
-  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_coll
-  commentId: F:CAF.Combat.Hitbox3D.coll
-  fullName: CAF.Combat.Hitbox3D.coll
-  nameWithType: Hitbox3D.coll
-- uid: CAF.Combat.Hitbox3D.CreateCapsule(System.Single,System.Single)
-  name: CreateCapsule(Single, Single)
-  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_CreateCapsule_System_Single_System_Single_
-  commentId: M:CAF.Combat.Hitbox3D.CreateCapsule(System.Single,System.Single)
-  fullName: CAF.Combat.Hitbox3D.CreateCapsule(System.Single, System.Single)
-  nameWithType: Hitbox3D.CreateCapsule(Single, Single)
-- uid: CAF.Combat.Hitbox3D.CreateCapsule*
-  name: CreateCapsule
-  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_CreateCapsule_
-  commentId: Overload:CAF.Combat.Hitbox3D.CreateCapsule
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox3D.CreateCapsule
-  nameWithType: Hitbox3D.CreateCapsule
-- uid: CAF.Combat.Hitbox3D.CreateRectangle(Vector3)
-  name: CreateRectangle(Vector3)
-  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_CreateRectangle_Vector3_
-  commentId: M:CAF.Combat.Hitbox3D.CreateRectangle(Vector3)
-  fullName: CAF.Combat.Hitbox3D.CreateRectangle(Vector3)
-  nameWithType: Hitbox3D.CreateRectangle(Vector3)
-- uid: CAF.Combat.Hitbox3D.CreateRectangle*
-  name: CreateRectangle
-  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_CreateRectangle_
-  commentId: Overload:CAF.Combat.Hitbox3D.CreateRectangle
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox3D.CreateRectangle
-  nameWithType: Hitbox3D.CreateRectangle
-- uid: CAF.Combat.Hitbox3D.CreateSphere(System.Single)
-  name: CreateSphere(Single)
-  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_CreateSphere_System_Single_
-  commentId: M:CAF.Combat.Hitbox3D.CreateSphere(System.Single)
-  fullName: CAF.Combat.Hitbox3D.CreateSphere(System.Single)
-  nameWithType: Hitbox3D.CreateSphere(Single)
-- uid: CAF.Combat.Hitbox3D.CreateSphere*
-  name: CreateSphere
-  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_CreateSphere_
-  commentId: Overload:CAF.Combat.Hitbox3D.CreateSphere
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox3D.CreateSphere
-  nameWithType: Hitbox3D.CreateSphere
-- uid: CAF.Combat.Hitbox3D.Deactivate
-  name: Deactivate()
-  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_Deactivate
-  commentId: M:CAF.Combat.Hitbox3D.Deactivate
-  fullName: CAF.Combat.Hitbox3D.Deactivate()
-  nameWithType: Hitbox3D.Deactivate()
-- uid: CAF.Combat.Hitbox3D.Deactivate*
-  name: Deactivate
-  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_Deactivate_
-  commentId: Overload:CAF.Combat.Hitbox3D.Deactivate
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox3D.Deactivate
-  nameWithType: Hitbox3D.Deactivate
-- uid: CAF.Combat.Hitbox3D.HurtHurtable(CAF.Combat.IHurtable)
-  name: HurtHurtable(IHurtable)
-  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_HurtHurtable_CAF_Combat_IHurtable_
-  commentId: M:CAF.Combat.Hitbox3D.HurtHurtable(CAF.Combat.IHurtable)
-  fullName: CAF.Combat.Hitbox3D.HurtHurtable(CAF.Combat.IHurtable)
-  nameWithType: Hitbox3D.HurtHurtable(IHurtable)
-- uid: CAF.Combat.Hitbox3D.HurtHurtable*
-  name: HurtHurtable
-  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_HurtHurtable_
-  commentId: Overload:CAF.Combat.Hitbox3D.HurtHurtable
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox3D.HurtHurtable
-  nameWithType: Hitbox3D.HurtHurtable
-- uid: CAF.Combat.Hitbox3D.Initialize(GameObject,Transform,System.Int32,CAF.Combat.BoxShapes,CAF.Combat.HitInfoBase,CAF.Combat.BoxDefinitionBase,System.Collections.Generic.List{CAF.Combat.IHurtable})
-  name: Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinitionBase, List<IHurtable>)
-  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_Initialize_GameObject_Transform_System_Int32_CAF_Combat_BoxShapes_CAF_Combat_HitInfoBase_CAF_Combat_BoxDefinitionBase_System_Collections_Generic_List_CAF_Combat_IHurtable__
-  commentId: M:CAF.Combat.Hitbox3D.Initialize(GameObject,Transform,System.Int32,CAF.Combat.BoxShapes,CAF.Combat.HitInfoBase,CAF.Combat.BoxDefinitionBase,System.Collections.Generic.List{CAF.Combat.IHurtable})
-  name.vb: Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinitionBase, List(Of IHurtable))
-  fullName: CAF.Combat.Hitbox3D.Initialize(GameObject, Transform, System.Int32, CAF.Combat.BoxShapes, CAF.Combat.HitInfoBase, CAF.Combat.BoxDefinitionBase, System.Collections.Generic.List<CAF.Combat.IHurtable>)
-  fullName.vb: CAF.Combat.Hitbox3D.Initialize(GameObject, Transform, System.Int32, CAF.Combat.BoxShapes, CAF.Combat.HitInfoBase, CAF.Combat.BoxDefinitionBase, System.Collections.Generic.List(Of CAF.Combat.IHurtable))
-  nameWithType: Hitbox3D.Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinitionBase, List<IHurtable>)
-  nameWithType.vb: Hitbox3D.Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinitionBase, List(Of IHurtable))
-- uid: CAF.Combat.Hitbox3D.Initialize(GameObject,Transform,System.Int32,CAF.Combat.HitInfoBase,System.Collections.Generic.List{CAF.Combat.IHurtable})
-  name: Initialize(GameObject, Transform, Int32, HitInfoBase, List<IHurtable>)
-  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_Initialize_GameObject_Transform_System_Int32_CAF_Combat_HitInfoBase_System_Collections_Generic_List_CAF_Combat_IHurtable__
-  commentId: M:CAF.Combat.Hitbox3D.Initialize(GameObject,Transform,System.Int32,CAF.Combat.HitInfoBase,System.Collections.Generic.List{CAF.Combat.IHurtable})
-  name.vb: Initialize(GameObject, Transform, Int32, HitInfoBase, List(Of IHurtable))
-  fullName: CAF.Combat.Hitbox3D.Initialize(GameObject, Transform, System.Int32, CAF.Combat.HitInfoBase, System.Collections.Generic.List<CAF.Combat.IHurtable>)
-  fullName.vb: CAF.Combat.Hitbox3D.Initialize(GameObject, Transform, System.Int32, CAF.Combat.HitInfoBase, System.Collections.Generic.List(Of CAF.Combat.IHurtable))
-  nameWithType: Hitbox3D.Initialize(GameObject, Transform, Int32, HitInfoBase, List<IHurtable>)
-  nameWithType.vb: Hitbox3D.Initialize(GameObject, Transform, Int32, HitInfoBase, List(Of IHurtable))
-- uid: CAF.Combat.Hitbox3D.Initialize*
-  name: Initialize
-  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_Initialize_
-  commentId: Overload:CAF.Combat.Hitbox3D.Initialize
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox3D.Initialize
-  nameWithType: Hitbox3D.Initialize
-- uid: CAF.Combat.Hitbox3D.OnTriggerStay(Collider)
-  name: OnTriggerStay(Collider)
-  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_OnTriggerStay_Collider_
-  commentId: M:CAF.Combat.Hitbox3D.OnTriggerStay(Collider)
-  fullName: CAF.Combat.Hitbox3D.OnTriggerStay(Collider)
-  nameWithType: Hitbox3D.OnTriggerStay(Collider)
-- uid: CAF.Combat.Hitbox3D.OnTriggerStay*
-  name: OnTriggerStay
-  href: api/CAF.Combat.Hitbox3D.html#CAF_Combat_Hitbox3D_OnTriggerStay_
-  commentId: Overload:CAF.Combat.Hitbox3D.OnTriggerStay
-  isSpec: "True"
-  fullName: CAF.Combat.Hitbox3D.OnTriggerStay
-  nameWithType: Hitbox3D.OnTriggerStay
-- uid: CAF.Combat.HitboxBase
-  name: HitboxBase
-  href: api/CAF.Combat.HitboxBase.html
-  commentId: T:CAF.Combat.HitboxBase
-  fullName: CAF.Combat.HitboxBase
-  nameWithType: HitboxBase
-- uid: CAF.Combat.HitboxBase.Activate
-  name: Activate()
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_Activate
-  commentId: M:CAF.Combat.HitboxBase.Activate
-  fullName: CAF.Combat.HitboxBase.Activate()
-  nameWithType: HitboxBase.Activate()
-- uid: CAF.Combat.HitboxBase.Activate*
-  name: Activate
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_Activate_
-  commentId: Overload:CAF.Combat.HitboxBase.Activate
-  isSpec: "True"
-  fullName: CAF.Combat.HitboxBase.Activate
-  nameWithType: HitboxBase.Activate
-- uid: CAF.Combat.HitboxBase.activated
-  name: activated
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_activated
-  commentId: F:CAF.Combat.HitboxBase.activated
-  fullName: CAF.Combat.HitboxBase.activated
-  nameWithType: HitboxBase.activated
-- uid: CAF.Combat.HitboxBase.BuildHurtInfo
-  name: BuildHurtInfo()
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_BuildHurtInfo
-  commentId: M:CAF.Combat.HitboxBase.BuildHurtInfo
-  fullName: CAF.Combat.HitboxBase.BuildHurtInfo()
-  nameWithType: HitboxBase.BuildHurtInfo()
-- uid: CAF.Combat.HitboxBase.BuildHurtInfo*
-  name: BuildHurtInfo
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_BuildHurtInfo_
-  commentId: Overload:CAF.Combat.HitboxBase.BuildHurtInfo
-  isSpec: "True"
-  fullName: CAF.Combat.HitboxBase.BuildHurtInfo
-  nameWithType: HitboxBase.BuildHurtInfo
-- uid: CAF.Combat.HitboxBase.CheckHurtables
-  name: CheckHurtables()
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_CheckHurtables
-  commentId: M:CAF.Combat.HitboxBase.CheckHurtables
-  fullName: CAF.Combat.HitboxBase.CheckHurtables()
-  nameWithType: HitboxBase.CheckHurtables()
-- uid: CAF.Combat.HitboxBase.CheckHurtables*
-  name: CheckHurtables
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_CheckHurtables_
-  commentId: Overload:CAF.Combat.HitboxBase.CheckHurtables
-  isSpec: "True"
-  fullName: CAF.Combat.HitboxBase.CheckHurtables
-  nameWithType: HitboxBase.CheckHurtables
-- uid: CAF.Combat.HitboxBase.Deactivate
-  name: Deactivate()
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_Deactivate
-  commentId: M:CAF.Combat.HitboxBase.Deactivate
-  fullName: CAF.Combat.HitboxBase.Deactivate()
-  nameWithType: HitboxBase.Deactivate()
-- uid: CAF.Combat.HitboxBase.Deactivate*
-  name: Deactivate
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_Deactivate_
-  commentId: Overload:CAF.Combat.HitboxBase.Deactivate
-  isSpec: "True"
-  fullName: CAF.Combat.HitboxBase.Deactivate
-  nameWithType: HitboxBase.Deactivate
-- uid: CAF.Combat.HitboxBase.directionOwner
-  name: directionOwner
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_directionOwner
-  commentId: F:CAF.Combat.HitboxBase.directionOwner
-  fullName: CAF.Combat.HitboxBase.directionOwner
-  nameWithType: HitboxBase.directionOwner
-- uid: CAF.Combat.HitboxBase.hitHurtables
-  name: hitHurtables
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_hitHurtables
-  commentId: F:CAF.Combat.HitboxBase.hitHurtables
-  fullName: CAF.Combat.HitboxBase.hitHurtables
-  nameWithType: HitboxBase.hitHurtables
-- uid: CAF.Combat.HitboxBase.hitInfo
-  name: hitInfo
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_hitInfo
-  commentId: F:CAF.Combat.HitboxBase.hitInfo
-  fullName: CAF.Combat.HitboxBase.hitInfo
-  nameWithType: HitboxBase.hitInfo
-- uid: CAF.Combat.HitboxBase.HurtAction
-  name: HitboxBase.HurtAction
-  href: api/CAF.Combat.HitboxBase.HurtAction.html
-  commentId: T:CAF.Combat.HitboxBase.HurtAction
-  fullName: CAF.Combat.HitboxBase.HurtAction
-  nameWithType: HitboxBase.HurtAction
-- uid: CAF.Combat.HitboxBase.HurtHurtable(CAF.Combat.IHurtable)
-  name: HurtHurtable(IHurtable)
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_HurtHurtable_CAF_Combat_IHurtable_
-  commentId: M:CAF.Combat.HitboxBase.HurtHurtable(CAF.Combat.IHurtable)
-  fullName: CAF.Combat.HitboxBase.HurtHurtable(CAF.Combat.IHurtable)
-  nameWithType: HitboxBase.HurtHurtable(IHurtable)
-- uid: CAF.Combat.HitboxBase.HurtHurtable*
-  name: HurtHurtable
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_HurtHurtable_
-  commentId: Overload:CAF.Combat.HitboxBase.HurtHurtable
-  isSpec: "True"
-  fullName: CAF.Combat.HitboxBase.HurtHurtable
-  nameWithType: HitboxBase.HurtHurtable
-- uid: CAF.Combat.HitboxBase.ignoreList
-  name: ignoreList
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_ignoreList
-  commentId: F:CAF.Combat.HitboxBase.ignoreList
-  fullName: CAF.Combat.HitboxBase.ignoreList
-  nameWithType: HitboxBase.ignoreList
-- uid: CAF.Combat.HitboxBase.Initialize(GameObject,Transform,System.Int32,CAF.Combat.BoxShapes,CAF.Combat.HitInfoBase,CAF.Combat.BoxDefinitionBase,System.Collections.Generic.List{CAF.Combat.IHurtable})
-  name: Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinitionBase, List<IHurtable>)
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_Initialize_GameObject_Transform_System_Int32_CAF_Combat_BoxShapes_CAF_Combat_HitInfoBase_CAF_Combat_BoxDefinitionBase_System_Collections_Generic_List_CAF_Combat_IHurtable__
-  commentId: M:CAF.Combat.HitboxBase.Initialize(GameObject,Transform,System.Int32,CAF.Combat.BoxShapes,CAF.Combat.HitInfoBase,CAF.Combat.BoxDefinitionBase,System.Collections.Generic.List{CAF.Combat.IHurtable})
-  name.vb: Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinitionBase, List(Of IHurtable))
-  fullName: CAF.Combat.HitboxBase.Initialize(GameObject, Transform, System.Int32, CAF.Combat.BoxShapes, CAF.Combat.HitInfoBase, CAF.Combat.BoxDefinitionBase, System.Collections.Generic.List<CAF.Combat.IHurtable>)
-  fullName.vb: CAF.Combat.HitboxBase.Initialize(GameObject, Transform, System.Int32, CAF.Combat.BoxShapes, CAF.Combat.HitInfoBase, CAF.Combat.BoxDefinitionBase, System.Collections.Generic.List(Of CAF.Combat.IHurtable))
-  nameWithType: HitboxBase.Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinitionBase, List<IHurtable>)
-  nameWithType.vb: HitboxBase.Initialize(GameObject, Transform, Int32, BoxShapes, HitInfoBase, BoxDefinitionBase, List(Of IHurtable))
-- uid: CAF.Combat.HitboxBase.Initialize(GameObject,Transform,System.Int32,CAF.Combat.HitInfoBase,System.Collections.Generic.List{CAF.Combat.IHurtable})
-  name: Initialize(GameObject, Transform, Int32, HitInfoBase, List<IHurtable>)
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_Initialize_GameObject_Transform_System_Int32_CAF_Combat_HitInfoBase_System_Collections_Generic_List_CAF_Combat_IHurtable__
-  commentId: M:CAF.Combat.HitboxBase.Initialize(GameObject,Transform,System.Int32,CAF.Combat.HitInfoBase,System.Collections.Generic.List{CAF.Combat.IHurtable})
-  name.vb: Initialize(GameObject, Transform, Int32, HitInfoBase, List(Of IHurtable))
-  fullName: CAF.Combat.HitboxBase.Initialize(GameObject, Transform, System.Int32, CAF.Combat.HitInfoBase, System.Collections.Generic.List<CAF.Combat.IHurtable>)
-  fullName.vb: CAF.Combat.HitboxBase.Initialize(GameObject, Transform, System.Int32, CAF.Combat.HitInfoBase, System.Collections.Generic.List(Of CAF.Combat.IHurtable))
-  nameWithType: HitboxBase.Initialize(GameObject, Transform, Int32, HitInfoBase, List<IHurtable>)
-  nameWithType.vb: HitboxBase.Initialize(GameObject, Transform, Int32, HitInfoBase, List(Of IHurtable))
-- uid: CAF.Combat.HitboxBase.Initialize*
-  name: Initialize
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_Initialize_
-  commentId: Overload:CAF.Combat.HitboxBase.Initialize
-  isSpec: "True"
-  fullName: CAF.Combat.HitboxBase.Initialize
-  nameWithType: HitboxBase.Initialize
-- uid: CAF.Combat.HitboxBase.OnHurt
-  name: OnHurt
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_OnHurt
-  commentId: E:CAF.Combat.HitboxBase.OnHurt
-  fullName: CAF.Combat.HitboxBase.OnHurt
-  nameWithType: HitboxBase.OnHurt
-- uid: CAF.Combat.HitboxBase.owner
-  name: owner
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_owner
-  commentId: F:CAF.Combat.HitboxBase.owner
-  fullName: CAF.Combat.HitboxBase.owner
-  nameWithType: HitboxBase.owner
-- uid: CAF.Combat.HitboxBase.ReActivate(System.Collections.Generic.List{CAF.Combat.IHurtable})
-  name: ReActivate(List<IHurtable>)
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_ReActivate_System_Collections_Generic_List_CAF_Combat_IHurtable__
-  commentId: M:CAF.Combat.HitboxBase.ReActivate(System.Collections.Generic.List{CAF.Combat.IHurtable})
-  name.vb: ReActivate(List(Of IHurtable))
-  fullName: CAF.Combat.HitboxBase.ReActivate(System.Collections.Generic.List<CAF.Combat.IHurtable>)
-  fullName.vb: CAF.Combat.HitboxBase.ReActivate(System.Collections.Generic.List(Of CAF.Combat.IHurtable))
-  nameWithType: HitboxBase.ReActivate(List<IHurtable>)
-  nameWithType.vb: HitboxBase.ReActivate(List(Of IHurtable))
-- uid: CAF.Combat.HitboxBase.ReActivate*
-  name: ReActivate
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_ReActivate_
-  commentId: Overload:CAF.Combat.HitboxBase.ReActivate
-  isSpec: "True"
-  fullName: CAF.Combat.HitboxBase.ReActivate
-  nameWithType: HitboxBase.ReActivate
-- uid: CAF.Combat.HitboxBase.ShouldHurt(CAF.Combat.IHurtable)
-  name: ShouldHurt(IHurtable)
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_ShouldHurt_CAF_Combat_IHurtable_
-  commentId: M:CAF.Combat.HitboxBase.ShouldHurt(CAF.Combat.IHurtable)
-  fullName: CAF.Combat.HitboxBase.ShouldHurt(CAF.Combat.IHurtable)
-  nameWithType: HitboxBase.ShouldHurt(IHurtable)
-- uid: CAF.Combat.HitboxBase.ShouldHurt*
-  name: ShouldHurt
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_ShouldHurt_
-  commentId: Overload:CAF.Combat.HitboxBase.ShouldHurt
-  isSpec: "True"
-  fullName: CAF.Combat.HitboxBase.ShouldHurt
-  nameWithType: HitboxBase.ShouldHurt
-- uid: CAF.Combat.HitboxBase.SimAwake
-  name: SimAwake()
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_SimAwake
-  commentId: M:CAF.Combat.HitboxBase.SimAwake
-  fullName: CAF.Combat.HitboxBase.SimAwake()
-  nameWithType: HitboxBase.SimAwake()
-- uid: CAF.Combat.HitboxBase.SimAwake*
-  name: SimAwake
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_SimAwake_
-  commentId: Overload:CAF.Combat.HitboxBase.SimAwake
-  isSpec: "True"
-  fullName: CAF.Combat.HitboxBase.SimAwake
-  nameWithType: HitboxBase.SimAwake
-- uid: CAF.Combat.HitboxBase.SimLateUpdate
-  name: SimLateUpdate()
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_SimLateUpdate
-  commentId: M:CAF.Combat.HitboxBase.SimLateUpdate
-  fullName: CAF.Combat.HitboxBase.SimLateUpdate()
-  nameWithType: HitboxBase.SimLateUpdate()
-- uid: CAF.Combat.HitboxBase.SimLateUpdate*
-  name: SimLateUpdate
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_SimLateUpdate_
-  commentId: Overload:CAF.Combat.HitboxBase.SimLateUpdate
-  isSpec: "True"
-  fullName: CAF.Combat.HitboxBase.SimLateUpdate
-  nameWithType: HitboxBase.SimLateUpdate
-- uid: CAF.Combat.HitboxBase.SimStart
-  name: SimStart()
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_SimStart
-  commentId: M:CAF.Combat.HitboxBase.SimStart
-  fullName: CAF.Combat.HitboxBase.SimStart()
-  nameWithType: HitboxBase.SimStart()
-- uid: CAF.Combat.HitboxBase.SimStart*
-  name: SimStart
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_SimStart_
-  commentId: Overload:CAF.Combat.HitboxBase.SimStart
-  isSpec: "True"
-  fullName: CAF.Combat.HitboxBase.SimStart
-  nameWithType: HitboxBase.SimStart
-- uid: CAF.Combat.HitboxBase.SimUpdate
-  name: SimUpdate()
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_SimUpdate
-  commentId: M:CAF.Combat.HitboxBase.SimUpdate
-  fullName: CAF.Combat.HitboxBase.SimUpdate()
-  nameWithType: HitboxBase.SimUpdate()
-- uid: CAF.Combat.HitboxBase.SimUpdate*
-  name: SimUpdate
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_SimUpdate_
-  commentId: Overload:CAF.Combat.HitboxBase.SimUpdate
-  isSpec: "True"
-  fullName: CAF.Combat.HitboxBase.SimUpdate
-  nameWithType: HitboxBase.SimUpdate
-- uid: CAF.Combat.HitboxBase.team
-  name: team
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_team
-  commentId: F:CAF.Combat.HitboxBase.team
-  fullName: CAF.Combat.HitboxBase.team
-  nameWithType: HitboxBase.team
-- uid: CAF.Combat.HitboxBase.Tick
-  name: Tick()
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_Tick
-  commentId: M:CAF.Combat.HitboxBase.Tick
-  fullName: CAF.Combat.HitboxBase.Tick()
-  nameWithType: HitboxBase.Tick()
-- uid: CAF.Combat.HitboxBase.Tick*
-  name: Tick
-  href: api/CAF.Combat.HitboxBase.html#CAF_Combat_HitboxBase_Tick_
-  commentId: Overload:CAF.Combat.HitboxBase.Tick
-  isSpec: "True"
-  fullName: CAF.Combat.HitboxBase.Tick
-  nameWithType: HitboxBase.Tick
 - uid: CAF.Combat.HitboxForceRelation
   name: HitboxForceRelation
   href: api/CAF.Combat.HitboxForceRelation.html
@@ -1745,6 +1262,223 @@ references:
   commentId: F:CAF.Combat.HitboxForceType.SET
   fullName: CAF.Combat.HitboxForceType.SET
   nameWithType: HitboxForceType.SET
+- uid: CAF.Combat.HitboxGroup
+  name: HitboxGroup
+  href: api/CAF.Combat.HitboxGroup.html
+  commentId: T:CAF.Combat.HitboxGroup
+  fullName: CAF.Combat.HitboxGroup
+  nameWithType: HitboxGroup
+- uid: CAF.Combat.HitboxGroup.#ctor
+  name: HitboxGroup()
+  href: api/CAF.Combat.HitboxGroup.html#CAF_Combat_HitboxGroup__ctor
+  commentId: M:CAF.Combat.HitboxGroup.#ctor
+  fullName: CAF.Combat.HitboxGroup.HitboxGroup()
+  nameWithType: HitboxGroup.HitboxGroup()
+- uid: CAF.Combat.HitboxGroup.#ctor(CAF.Combat.HitboxGroup)
+  name: HitboxGroup(HitboxGroup)
+  href: api/CAF.Combat.HitboxGroup.html#CAF_Combat_HitboxGroup__ctor_CAF_Combat_HitboxGroup_
+  commentId: M:CAF.Combat.HitboxGroup.#ctor(CAF.Combat.HitboxGroup)
+  fullName: CAF.Combat.HitboxGroup.HitboxGroup(CAF.Combat.HitboxGroup)
+  nameWithType: HitboxGroup.HitboxGroup(HitboxGroup)
+- uid: CAF.Combat.HitboxGroup.#ctor*
+  name: HitboxGroup
+  href: api/CAF.Combat.HitboxGroup.html#CAF_Combat_HitboxGroup__ctor_
+  commentId: Overload:CAF.Combat.HitboxGroup.#ctor
+  isSpec: "True"
+  fullName: CAF.Combat.HitboxGroup.HitboxGroup
+  nameWithType: HitboxGroup.HitboxGroup
+- uid: CAF.Combat.HitboxGroup.activeFramesEnd
+  name: activeFramesEnd
+  href: api/CAF.Combat.HitboxGroup.html#CAF_Combat_HitboxGroup_activeFramesEnd
+  commentId: F:CAF.Combat.HitboxGroup.activeFramesEnd
+  fullName: CAF.Combat.HitboxGroup.activeFramesEnd
+  nameWithType: HitboxGroup.activeFramesEnd
+- uid: CAF.Combat.HitboxGroup.activeFramesStart
+  name: activeFramesStart
+  href: api/CAF.Combat.HitboxGroup.html#CAF_Combat_HitboxGroup_activeFramesStart
+  commentId: F:CAF.Combat.HitboxGroup.activeFramesStart
+  fullName: CAF.Combat.HitboxGroup.activeFramesStart
+  nameWithType: HitboxGroup.activeFramesStart
+- uid: CAF.Combat.HitboxGroup.attachTo
+  name: attachTo
+  href: api/CAF.Combat.HitboxGroup.html#CAF_Combat_HitboxGroup_attachTo
+  commentId: F:CAF.Combat.HitboxGroup.attachTo
+  fullName: CAF.Combat.HitboxGroup.attachTo
+  nameWithType: HitboxGroup.attachTo
+- uid: CAF.Combat.HitboxGroup.attachToEntity
+  name: attachToEntity
+  href: api/CAF.Combat.HitboxGroup.html#CAF_Combat_HitboxGroup_attachToEntity
+  commentId: F:CAF.Combat.HitboxGroup.attachToEntity
+  fullName: CAF.Combat.HitboxGroup.attachToEntity
+  nameWithType: HitboxGroup.attachToEntity
+- uid: CAF.Combat.HitboxGroup.boxes
+  name: boxes
+  href: api/CAF.Combat.HitboxGroup.html#CAF_Combat_HitboxGroup_boxes
+  commentId: F:CAF.Combat.HitboxGroup.boxes
+  fullName: CAF.Combat.HitboxGroup.boxes
+  nameWithType: HitboxGroup.boxes
+- uid: CAF.Combat.HitboxGroup.chargeLevelMax
+  name: chargeLevelMax
+  href: api/CAF.Combat.HitboxGroup.html#CAF_Combat_HitboxGroup_chargeLevelMax
+  commentId: F:CAF.Combat.HitboxGroup.chargeLevelMax
+  fullName: CAF.Combat.HitboxGroup.chargeLevelMax
+  nameWithType: HitboxGroup.chargeLevelMax
+- uid: CAF.Combat.HitboxGroup.chargeLevelNeeded
+  name: chargeLevelNeeded
+  href: api/CAF.Combat.HitboxGroup.html#CAF_Combat_HitboxGroup_chargeLevelNeeded
+  commentId: F:CAF.Combat.HitboxGroup.chargeLevelNeeded
+  fullName: CAF.Combat.HitboxGroup.chargeLevelNeeded
+  nameWithType: HitboxGroup.chargeLevelNeeded
+- uid: CAF.Combat.HitboxGroup.hitboxHitInfo
+  name: hitboxHitInfo
+  href: api/CAF.Combat.HitboxGroup.html#CAF_Combat_HitboxGroup_hitboxHitInfo
+  commentId: F:CAF.Combat.HitboxGroup.hitboxHitInfo
+  fullName: CAF.Combat.HitboxGroup.hitboxHitInfo
+  nameWithType: HitboxGroup.hitboxHitInfo
+- uid: CAF.Combat.HitboxGroup.hitGroupType
+  name: hitGroupType
+  href: api/CAF.Combat.HitboxGroup.html#CAF_Combat_HitboxGroup_hitGroupType
+  commentId: F:CAF.Combat.HitboxGroup.hitGroupType
+  fullName: CAF.Combat.HitboxGroup.hitGroupType
+  nameWithType: HitboxGroup.hitGroupType
+- uid: CAF.Combat.HitboxGroup.ID
+  name: ID
+  href: api/CAF.Combat.HitboxGroup.html#CAF_Combat_HitboxGroup_ID
+  commentId: F:CAF.Combat.HitboxGroup.ID
+  fullName: CAF.Combat.HitboxGroup.ID
+  nameWithType: HitboxGroup.ID
+- uid: CAF.Combat.HitboxGroupEditorWindow
+  name: HitboxGroupEditorWindow
+  href: api/CAF.Combat.HitboxGroupEditorWindow.html
+  commentId: T:CAF.Combat.HitboxGroupEditorWindow
+  fullName: CAF.Combat.HitboxGroupEditorWindow
+  nameWithType: HitboxGroupEditorWindow
+- uid: CAF.Combat.HitboxGroupEditorWindow.boxDefinitionTypes
+  name: boxDefinitionTypes
+  href: api/CAF.Combat.HitboxGroupEditorWindow.html#CAF_Combat_HitboxGroupEditorWindow_boxDefinitionTypes
+  commentId: F:CAF.Combat.HitboxGroupEditorWindow.boxDefinitionTypes
+  fullName: CAF.Combat.HitboxGroupEditorWindow.boxDefinitionTypes
+  nameWithType: HitboxGroupEditorWindow.boxDefinitionTypes
+- uid: CAF.Combat.HitboxGroupEditorWindow.boxesFoldout
+  name: boxesFoldout
+  href: api/CAF.Combat.HitboxGroupEditorWindow.html#CAF_Combat_HitboxGroupEditorWindow_boxesFoldout
+  commentId: F:CAF.Combat.HitboxGroupEditorWindow.boxesFoldout
+  fullName: CAF.Combat.HitboxGroupEditorWindow.boxesFoldout
+  nameWithType: HitboxGroupEditorWindow.boxesFoldout
+- uid: CAF.Combat.HitboxGroupEditorWindow.DrawHitboxGroupInfo
+  name: DrawHitboxGroupInfo()
+  href: api/CAF.Combat.HitboxGroupEditorWindow.html#CAF_Combat_HitboxGroupEditorWindow_DrawHitboxGroupInfo
+  commentId: M:CAF.Combat.HitboxGroupEditorWindow.DrawHitboxGroupInfo
+  fullName: CAF.Combat.HitboxGroupEditorWindow.DrawHitboxGroupInfo()
+  nameWithType: HitboxGroupEditorWindow.DrawHitboxGroupInfo()
+- uid: CAF.Combat.HitboxGroupEditorWindow.DrawHitboxGroupInfo*
+  name: DrawHitboxGroupInfo
+  href: api/CAF.Combat.HitboxGroupEditorWindow.html#CAF_Combat_HitboxGroupEditorWindow_DrawHitboxGroupInfo_
+  commentId: Overload:CAF.Combat.HitboxGroupEditorWindow.DrawHitboxGroupInfo
+  isSpec: "True"
+  fullName: CAF.Combat.HitboxGroupEditorWindow.DrawHitboxGroupInfo
+  nameWithType: HitboxGroupEditorWindow.DrawHitboxGroupInfo
+- uid: CAF.Combat.HitboxGroupEditorWindow.DrawHitboxOptions(System.Int32)
+  name: DrawHitboxOptions(Int32)
+  href: api/CAF.Combat.HitboxGroupEditorWindow.html#CAF_Combat_HitboxGroupEditorWindow_DrawHitboxOptions_System_Int32_
+  commentId: M:CAF.Combat.HitboxGroupEditorWindow.DrawHitboxOptions(System.Int32)
+  fullName: CAF.Combat.HitboxGroupEditorWindow.DrawHitboxOptions(System.Int32)
+  nameWithType: HitboxGroupEditorWindow.DrawHitboxOptions(Int32)
+- uid: CAF.Combat.HitboxGroupEditorWindow.DrawHitboxOptions*
+  name: DrawHitboxOptions
+  href: api/CAF.Combat.HitboxGroupEditorWindow.html#CAF_Combat_HitboxGroupEditorWindow_DrawHitboxOptions_
+  commentId: Overload:CAF.Combat.HitboxGroupEditorWindow.DrawHitboxOptions
+  isSpec: "True"
+  fullName: CAF.Combat.HitboxGroupEditorWindow.DrawHitboxOptions
+  nameWithType: HitboxGroupEditorWindow.DrawHitboxOptions
+- uid: CAF.Combat.HitboxGroupEditorWindow.hitboxGroup
+  name: hitboxGroup
+  href: api/CAF.Combat.HitboxGroupEditorWindow.html#CAF_Combat_HitboxGroupEditorWindow_hitboxGroup
+  commentId: F:CAF.Combat.HitboxGroupEditorWindow.hitboxGroup
+  fullName: CAF.Combat.HitboxGroupEditorWindow.hitboxGroup
+  nameWithType: HitboxGroupEditorWindow.hitboxGroup
+- uid: CAF.Combat.HitboxGroupEditorWindow.hitInfoTypes
+  name: hitInfoTypes
+  href: api/CAF.Combat.HitboxGroupEditorWindow.html#CAF_Combat_HitboxGroupEditorWindow_hitInfoTypes
+  commentId: F:CAF.Combat.HitboxGroupEditorWindow.hitInfoTypes
+  fullName: CAF.Combat.HitboxGroupEditorWindow.hitInfoTypes
+  nameWithType: HitboxGroupEditorWindow.hitInfoTypes
+- uid: CAF.Combat.HitboxGroupEditorWindow.Init(CAF.Combat.HitboxGroup)
+  name: Init(HitboxGroup)
+  href: api/CAF.Combat.HitboxGroupEditorWindow.html#CAF_Combat_HitboxGroupEditorWindow_Init_CAF_Combat_HitboxGroup_
+  commentId: M:CAF.Combat.HitboxGroupEditorWindow.Init(CAF.Combat.HitboxGroup)
+  fullName: CAF.Combat.HitboxGroupEditorWindow.Init(CAF.Combat.HitboxGroup)
+  nameWithType: HitboxGroupEditorWindow.Init(HitboxGroup)
+- uid: CAF.Combat.HitboxGroupEditorWindow.Init*
+  name: Init
+  href: api/CAF.Combat.HitboxGroupEditorWindow.html#CAF_Combat_HitboxGroupEditorWindow_Init_
+  commentId: Overload:CAF.Combat.HitboxGroupEditorWindow.Init
+  isSpec: "True"
+  fullName: CAF.Combat.HitboxGroupEditorWindow.Init
+  nameWithType: HitboxGroupEditorWindow.Init
+- uid: CAF.Combat.HitboxGroupEditorWindow.OnBoxDefinitionSelected(System.Object)
+  name: OnBoxDefinitionSelected(Object)
+  href: api/CAF.Combat.HitboxGroupEditorWindow.html#CAF_Combat_HitboxGroupEditorWindow_OnBoxDefinitionSelected_System_Object_
+  commentId: M:CAF.Combat.HitboxGroupEditorWindow.OnBoxDefinitionSelected(System.Object)
+  fullName: CAF.Combat.HitboxGroupEditorWindow.OnBoxDefinitionSelected(System.Object)
+  nameWithType: HitboxGroupEditorWindow.OnBoxDefinitionSelected(Object)
+- uid: CAF.Combat.HitboxGroupEditorWindow.OnBoxDefinitionSelected*
+  name: OnBoxDefinitionSelected
+  href: api/CAF.Combat.HitboxGroupEditorWindow.html#CAF_Combat_HitboxGroupEditorWindow_OnBoxDefinitionSelected_
+  commentId: Overload:CAF.Combat.HitboxGroupEditorWindow.OnBoxDefinitionSelected
+  isSpec: "True"
+  fullName: CAF.Combat.HitboxGroupEditorWindow.OnBoxDefinitionSelected
+  nameWithType: HitboxGroupEditorWindow.OnBoxDefinitionSelected
+- uid: CAF.Combat.HitboxGroupEditorWindow.OnGUI
+  name: OnGUI()
+  href: api/CAF.Combat.HitboxGroupEditorWindow.html#CAF_Combat_HitboxGroupEditorWindow_OnGUI
+  commentId: M:CAF.Combat.HitboxGroupEditorWindow.OnGUI
+  fullName: CAF.Combat.HitboxGroupEditorWindow.OnGUI()
+  nameWithType: HitboxGroupEditorWindow.OnGUI()
+- uid: CAF.Combat.HitboxGroupEditorWindow.OnGUI*
+  name: OnGUI
+  href: api/CAF.Combat.HitboxGroupEditorWindow.html#CAF_Combat_HitboxGroupEditorWindow_OnGUI_
+  commentId: Overload:CAF.Combat.HitboxGroupEditorWindow.OnGUI
+  isSpec: "True"
+  fullName: CAF.Combat.HitboxGroupEditorWindow.OnGUI
+  nameWithType: HitboxGroupEditorWindow.OnGUI
+- uid: CAF.Combat.HitboxGroupEditorWindow.OnHitInfoSelected(System.Object)
+  name: OnHitInfoSelected(Object)
+  href: api/CAF.Combat.HitboxGroupEditorWindow.html#CAF_Combat_HitboxGroupEditorWindow_OnHitInfoSelected_System_Object_
+  commentId: M:CAF.Combat.HitboxGroupEditorWindow.OnHitInfoSelected(System.Object)
+  fullName: CAF.Combat.HitboxGroupEditorWindow.OnHitInfoSelected(System.Object)
+  nameWithType: HitboxGroupEditorWindow.OnHitInfoSelected(Object)
+- uid: CAF.Combat.HitboxGroupEditorWindow.OnHitInfoSelected*
+  name: OnHitInfoSelected
+  href: api/CAF.Combat.HitboxGroupEditorWindow.html#CAF_Combat_HitboxGroupEditorWindow_OnHitInfoSelected_
+  commentId: Overload:CAF.Combat.HitboxGroupEditorWindow.OnHitInfoSelected
+  isSpec: "True"
+  fullName: CAF.Combat.HitboxGroupEditorWindow.OnHitInfoSelected
+  nameWithType: HitboxGroupEditorWindow.OnHitInfoSelected
+- uid: CAF.Combat.HitboxType
+  name: HitboxType
+  href: api/CAF.Combat.HitboxType.html
+  commentId: T:CAF.Combat.HitboxType
+  fullName: CAF.Combat.HitboxType
+  nameWithType: HitboxType
+- uid: CAF.Combat.HitboxType.DETECT
+  name: DETECT
+  href: api/CAF.Combat.HitboxType.html#CAF_Combat_HitboxType_DETECT
+  commentId: F:CAF.Combat.HitboxType.DETECT
+  fullName: CAF.Combat.HitboxType.DETECT
+  nameWithType: HitboxType.DETECT
+- uid: CAF.Combat.HitboxType.GRAB
+  name: GRAB
+  href: api/CAF.Combat.HitboxType.html#CAF_Combat_HitboxType_GRAB
+  commentId: F:CAF.Combat.HitboxType.GRAB
+  fullName: CAF.Combat.HitboxType.GRAB
+  nameWithType: HitboxType.GRAB
+- uid: CAF.Combat.HitboxType.HIT
+  name: HIT
+  href: api/CAF.Combat.HitboxType.html#CAF_Combat_HitboxType_HIT
+  commentId: F:CAF.Combat.HitboxType.HIT
+  fullName: CAF.Combat.HitboxType.HIT
+  nameWithType: HitboxType.HIT
 - uid: CAF.Combat.HitInfo
   name: HitInfo
   href: api/CAF.Combat.HitInfo.html
@@ -2227,6 +1961,82 @@ references:
   isSpec: "True"
   fullName: CAF.Combat.HurtboxGroup.OnBoxDefinitionTypeSelected
   nameWithType: HurtboxGroup.OnBoxDefinitionTypeSelected
+- uid: CAF.Combat.HurtboxGroupEditorWindow
+  name: HurtboxGroupEditorWindow
+  href: api/CAF.Combat.HurtboxGroupEditorWindow.html
+  commentId: T:CAF.Combat.HurtboxGroupEditorWindow
+  fullName: CAF.Combat.HurtboxGroupEditorWindow
+  nameWithType: HurtboxGroupEditorWindow
+- uid: CAF.Combat.HurtboxGroupEditorWindow.boxDefinitionTypes
+  name: boxDefinitionTypes
+  href: api/CAF.Combat.HurtboxGroupEditorWindow.html#CAF_Combat_HurtboxGroupEditorWindow_boxDefinitionTypes
+  commentId: F:CAF.Combat.HurtboxGroupEditorWindow.boxDefinitionTypes
+  fullName: CAF.Combat.HurtboxGroupEditorWindow.boxDefinitionTypes
+  nameWithType: HurtboxGroupEditorWindow.boxDefinitionTypes
+- uid: CAF.Combat.HurtboxGroupEditorWindow.boxesFoldout
+  name: boxesFoldout
+  href: api/CAF.Combat.HurtboxGroupEditorWindow.html#CAF_Combat_HurtboxGroupEditorWindow_boxesFoldout
+  commentId: F:CAF.Combat.HurtboxGroupEditorWindow.boxesFoldout
+  fullName: CAF.Combat.HurtboxGroupEditorWindow.boxesFoldout
+  nameWithType: HurtboxGroupEditorWindow.boxesFoldout
+- uid: CAF.Combat.HurtboxGroupEditorWindow.DrawHitboxOptions(System.Int32)
+  name: DrawHitboxOptions(Int32)
+  href: api/CAF.Combat.HurtboxGroupEditorWindow.html#CAF_Combat_HurtboxGroupEditorWindow_DrawHitboxOptions_System_Int32_
+  commentId: M:CAF.Combat.HurtboxGroupEditorWindow.DrawHitboxOptions(System.Int32)
+  fullName: CAF.Combat.HurtboxGroupEditorWindow.DrawHitboxOptions(System.Int32)
+  nameWithType: HurtboxGroupEditorWindow.DrawHitboxOptions(Int32)
+- uid: CAF.Combat.HurtboxGroupEditorWindow.DrawHitboxOptions*
+  name: DrawHitboxOptions
+  href: api/CAF.Combat.HurtboxGroupEditorWindow.html#CAF_Combat_HurtboxGroupEditorWindow_DrawHitboxOptions_
+  commentId: Overload:CAF.Combat.HurtboxGroupEditorWindow.DrawHitboxOptions
+  isSpec: "True"
+  fullName: CAF.Combat.HurtboxGroupEditorWindow.DrawHitboxOptions
+  nameWithType: HurtboxGroupEditorWindow.DrawHitboxOptions
+- uid: CAF.Combat.HurtboxGroupEditorWindow.hurtboxGroup
+  name: hurtboxGroup
+  href: api/CAF.Combat.HurtboxGroupEditorWindow.html#CAF_Combat_HurtboxGroupEditorWindow_hurtboxGroup
+  commentId: F:CAF.Combat.HurtboxGroupEditorWindow.hurtboxGroup
+  fullName: CAF.Combat.HurtboxGroupEditorWindow.hurtboxGroup
+  nameWithType: HurtboxGroupEditorWindow.hurtboxGroup
+- uid: CAF.Combat.HurtboxGroupEditorWindow.Init(CAF.Combat.HurtboxGroup)
+  name: Init(HurtboxGroup)
+  href: api/CAF.Combat.HurtboxGroupEditorWindow.html#CAF_Combat_HurtboxGroupEditorWindow_Init_CAF_Combat_HurtboxGroup_
+  commentId: M:CAF.Combat.HurtboxGroupEditorWindow.Init(CAF.Combat.HurtboxGroup)
+  fullName: CAF.Combat.HurtboxGroupEditorWindow.Init(CAF.Combat.HurtboxGroup)
+  nameWithType: HurtboxGroupEditorWindow.Init(HurtboxGroup)
+- uid: CAF.Combat.HurtboxGroupEditorWindow.Init*
+  name: Init
+  href: api/CAF.Combat.HurtboxGroupEditorWindow.html#CAF_Combat_HurtboxGroupEditorWindow_Init_
+  commentId: Overload:CAF.Combat.HurtboxGroupEditorWindow.Init
+  isSpec: "True"
+  fullName: CAF.Combat.HurtboxGroupEditorWindow.Init
+  nameWithType: HurtboxGroupEditorWindow.Init
+- uid: CAF.Combat.HurtboxGroupEditorWindow.OnBoxDefinitionSelected(System.Object)
+  name: OnBoxDefinitionSelected(Object)
+  href: api/CAF.Combat.HurtboxGroupEditorWindow.html#CAF_Combat_HurtboxGroupEditorWindow_OnBoxDefinitionSelected_System_Object_
+  commentId: M:CAF.Combat.HurtboxGroupEditorWindow.OnBoxDefinitionSelected(System.Object)
+  fullName: CAF.Combat.HurtboxGroupEditorWindow.OnBoxDefinitionSelected(System.Object)
+  nameWithType: HurtboxGroupEditorWindow.OnBoxDefinitionSelected(Object)
+- uid: CAF.Combat.HurtboxGroupEditorWindow.OnBoxDefinitionSelected*
+  name: OnBoxDefinitionSelected
+  href: api/CAF.Combat.HurtboxGroupEditorWindow.html#CAF_Combat_HurtboxGroupEditorWindow_OnBoxDefinitionSelected_
+  commentId: Overload:CAF.Combat.HurtboxGroupEditorWindow.OnBoxDefinitionSelected
+  isSpec: "True"
+  fullName: CAF.Combat.HurtboxGroupEditorWindow.OnBoxDefinitionSelected
+  nameWithType: HurtboxGroupEditorWindow.OnBoxDefinitionSelected
+- uid: CAF.Combat.HurtboxGroupEditorWindow.OnGUI
+  name: OnGUI()
+  href: api/CAF.Combat.HurtboxGroupEditorWindow.html#CAF_Combat_HurtboxGroupEditorWindow_OnGUI
+  commentId: M:CAF.Combat.HurtboxGroupEditorWindow.OnGUI
+  fullName: CAF.Combat.HurtboxGroupEditorWindow.OnGUI()
+  nameWithType: HurtboxGroupEditorWindow.OnGUI()
+- uid: CAF.Combat.HurtboxGroupEditorWindow.OnGUI*
+  name: OnGUI
+  href: api/CAF.Combat.HurtboxGroupEditorWindow.html#CAF_Combat_HurtboxGroupEditorWindow_OnGUI_
+  commentId: Overload:CAF.Combat.HurtboxGroupEditorWindow.OnGUI
+  isSpec: "True"
+  fullName: CAF.Combat.HurtboxGroupEditorWindow.OnGUI
+  nameWithType: HurtboxGroupEditorWindow.OnGUI
 - uid: CAF.Combat.HurtboxState
   name: HurtboxState
   href: api/CAF.Combat.HurtboxState.html
@@ -3128,6 +2938,12 @@ references:
   commentId: T:CAF.Fighters.FighterCombatManager.HealthChangedAction
   fullName: CAF.Fighters.FighterCombatManager.HealthChangedAction
   nameWithType: FighterCombatManager.HealthChangedAction
+- uid: CAF.Fighters.FighterCombatManager.hitboxLayerMask
+  name: hitboxLayerMask
+  href: api/CAF.Fighters.FighterCombatManager.html#CAF_Fighters_FighterCombatManager_hitboxLayerMask
+  commentId: F:CAF.Fighters.FighterCombatManager.hitboxLayerMask
+  fullName: CAF.Fighters.FighterCombatManager.hitboxLayerMask
+  nameWithType: FighterCombatManager.hitboxLayerMask
 - uid: CAF.Fighters.FighterCombatManager.hitboxManager
   name: hitboxManager
   href: api/CAF.Fighters.FighterCombatManager.html#CAF_Fighters_FighterCombatManager_hitboxManager
@@ -3418,146 +3234,88 @@ references:
   isSpec: "True"
   fullName: CAF.Fighters.FighterHitboxManager.FighterHitboxManager
   nameWithType: FighterHitboxManager.FighterHitboxManager
-- uid: CAF.Fighters.FighterHitboxManager.ActivateHitboxGroup(System.Int32)
-  name: ActivateHitboxGroup(Int32)
-  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_ActivateHitboxGroup_System_Int32_
-  commentId: M:CAF.Fighters.FighterHitboxManager.ActivateHitboxGroup(System.Int32)
-  fullName: CAF.Fighters.FighterHitboxManager.ActivateHitboxGroup(System.Int32)
-  nameWithType: FighterHitboxManager.ActivateHitboxGroup(Int32)
-- uid: CAF.Fighters.FighterHitboxManager.ActivateHitboxGroup*
-  name: ActivateHitboxGroup
-  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_ActivateHitboxGroup_
-  commentId: Overload:CAF.Fighters.FighterHitboxManager.ActivateHitboxGroup
+- uid: CAF.Fighters.FighterHitboxManager.BuildHurtInfo(CAF.Combat.HitboxGroup,System.Int32,CAF.Combat.Hurtbox)
+  name: BuildHurtInfo(HitboxGroup, Int32, Hurtbox)
+  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_BuildHurtInfo_CAF_Combat_HitboxGroup_System_Int32_CAF_Combat_Hurtbox_
+  commentId: M:CAF.Fighters.FighterHitboxManager.BuildHurtInfo(CAF.Combat.HitboxGroup,System.Int32,CAF.Combat.Hurtbox)
+  fullName: CAF.Fighters.FighterHitboxManager.BuildHurtInfo(CAF.Combat.HitboxGroup, System.Int32, CAF.Combat.Hurtbox)
+  nameWithType: FighterHitboxManager.BuildHurtInfo(HitboxGroup, Int32, Hurtbox)
+- uid: CAF.Fighters.FighterHitboxManager.BuildHurtInfo*
+  name: BuildHurtInfo
+  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_BuildHurtInfo_
+  commentId: Overload:CAF.Fighters.FighterHitboxManager.BuildHurtInfo
   isSpec: "True"
-  fullName: CAF.Fighters.FighterHitboxManager.ActivateHitboxGroup
-  nameWithType: FighterHitboxManager.ActivateHitboxGroup
-- uid: CAF.Fighters.FighterHitboxManager.CleanupAllHitboxes
-  name: CleanupAllHitboxes()
-  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_CleanupAllHitboxes
-  commentId: M:CAF.Fighters.FighterHitboxManager.CleanupAllHitboxes
-  fullName: CAF.Fighters.FighterHitboxManager.CleanupAllHitboxes()
-  nameWithType: FighterHitboxManager.CleanupAllHitboxes()
-- uid: CAF.Fighters.FighterHitboxManager.CleanupAllHitboxes*
-  name: CleanupAllHitboxes
-  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_CleanupAllHitboxes_
-  commentId: Overload:CAF.Fighters.FighterHitboxManager.CleanupAllHitboxes
+  fullName: CAF.Fighters.FighterHitboxManager.BuildHurtInfo
+  nameWithType: FighterHitboxManager.BuildHurtInfo
+- uid: CAF.Fighters.FighterHitboxManager.CheckBoxCollision(CAF.Combat.HitboxGroup,System.Int32)
+  name: CheckBoxCollision(HitboxGroup, Int32)
+  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_CheckBoxCollision_CAF_Combat_HitboxGroup_System_Int32_
+  commentId: M:CAF.Fighters.FighterHitboxManager.CheckBoxCollision(CAF.Combat.HitboxGroup,System.Int32)
+  fullName: CAF.Fighters.FighterHitboxManager.CheckBoxCollision(CAF.Combat.HitboxGroup, System.Int32)
+  nameWithType: FighterHitboxManager.CheckBoxCollision(HitboxGroup, Int32)
+- uid: CAF.Fighters.FighterHitboxManager.CheckBoxCollision*
+  name: CheckBoxCollision
+  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_CheckBoxCollision_
+  commentId: Overload:CAF.Fighters.FighterHitboxManager.CheckBoxCollision
   isSpec: "True"
-  fullName: CAF.Fighters.FighterHitboxManager.CleanupAllHitboxes
-  nameWithType: FighterHitboxManager.CleanupAllHitboxes
+  fullName: CAF.Fighters.FighterHitboxManager.CheckBoxCollision
+  nameWithType: FighterHitboxManager.CheckBoxCollision
+- uid: CAF.Fighters.FighterHitboxManager.CheckForCollision(CAF.Combat.HitboxGroup)
+  name: CheckForCollision(HitboxGroup)
+  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_CheckForCollision_CAF_Combat_HitboxGroup_
+  commentId: M:CAF.Fighters.FighterHitboxManager.CheckForCollision(CAF.Combat.HitboxGroup)
+  fullName: CAF.Fighters.FighterHitboxManager.CheckForCollision(CAF.Combat.HitboxGroup)
+  nameWithType: FighterHitboxManager.CheckForCollision(HitboxGroup)
+- uid: CAF.Fighters.FighterHitboxManager.CheckForCollision*
+  name: CheckForCollision
+  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_CheckForCollision_
+  commentId: Overload:CAF.Fighters.FighterHitboxManager.CheckForCollision
+  isSpec: "True"
+  fullName: CAF.Fighters.FighterHitboxManager.CheckForCollision
+  nameWithType: FighterHitboxManager.CheckForCollision
+- uid: CAF.Fighters.FighterHitboxManager.collidedIHurtables
+  name: collidedIHurtables
+  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_collidedIHurtables
+  commentId: F:CAF.Fighters.FighterHitboxManager.collidedIHurtables
+  fullName: CAF.Fighters.FighterHitboxManager.collidedIHurtables
+  nameWithType: FighterHitboxManager.collidedIHurtables
 - uid: CAF.Fighters.FighterHitboxManager.combatManager
   name: combatManager
   href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_combatManager
   commentId: F:CAF.Fighters.FighterHitboxManager.combatManager
   fullName: CAF.Fighters.FighterHitboxManager.combatManager
   nameWithType: FighterHitboxManager.combatManager
-- uid: CAF.Fighters.FighterHitboxManager.CreateHitboxGroup(System.Int32)
-  name: CreateHitboxGroup(Int32)
-  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_CreateHitboxGroup_System_Int32_
-  commentId: M:CAF.Fighters.FighterHitboxManager.CreateHitboxGroup(System.Int32)
-  fullName: CAF.Fighters.FighterHitboxManager.CreateHitboxGroup(System.Int32)
-  nameWithType: FighterHitboxManager.CreateHitboxGroup(Int32)
-- uid: CAF.Fighters.FighterHitboxManager.CreateHitboxGroup*
-  name: CreateHitboxGroup
-  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_CreateHitboxGroup_
-  commentId: Overload:CAF.Fighters.FighterHitboxManager.CreateHitboxGroup
-  isSpec: "True"
-  fullName: CAF.Fighters.FighterHitboxManager.CreateHitboxGroup
-  nameWithType: FighterHitboxManager.CreateHitboxGroup
-- uid: CAF.Fighters.FighterHitboxManager.DeactivateHitboxGroup(System.Int32)
-  name: DeactivateHitboxGroup(Int32)
-  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_DeactivateHitboxGroup_System_Int32_
-  commentId: M:CAF.Fighters.FighterHitboxManager.DeactivateHitboxGroup(System.Int32)
-  fullName: CAF.Fighters.FighterHitboxManager.DeactivateHitboxGroup(System.Int32)
-  nameWithType: FighterHitboxManager.DeactivateHitboxGroup(Int32)
-- uid: CAF.Fighters.FighterHitboxManager.DeactivateHitboxGroup*
-  name: DeactivateHitboxGroup
-  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_DeactivateHitboxGroup_
-  commentId: Overload:CAF.Fighters.FighterHitboxManager.DeactivateHitboxGroup
-  isSpec: "True"
-  fullName: CAF.Fighters.FighterHitboxManager.DeactivateHitboxGroup
-  nameWithType: FighterHitboxManager.DeactivateHitboxGroup
-- uid: CAF.Fighters.FighterHitboxManager.GetHitList(System.Int32)
-  name: GetHitList(Int32)
-  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_GetHitList_System_Int32_
-  commentId: M:CAF.Fighters.FighterHitboxManager.GetHitList(System.Int32)
-  fullName: CAF.Fighters.FighterHitboxManager.GetHitList(System.Int32)
-  nameWithType: FighterHitboxManager.GetHitList(Int32)
-- uid: CAF.Fighters.FighterHitboxManager.GetHitList*
-  name: GetHitList
-  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_GetHitList_
-  commentId: Overload:CAF.Fighters.FighterHitboxManager.GetHitList
-  isSpec: "True"
-  fullName: CAF.Fighters.FighterHitboxManager.GetHitList
-  nameWithType: FighterHitboxManager.GetHitList
 - uid: CAF.Fighters.FighterHitboxManager.HitboxGroupEventAction
   name: FighterHitboxManager.HitboxGroupEventAction
   href: api/CAF.Fighters.FighterHitboxManager.HitboxGroupEventAction.html
   commentId: T:CAF.Fighters.FighterHitboxManager.HitboxGroupEventAction
   fullName: CAF.Fighters.FighterHitboxManager.HitboxGroupEventAction
   nameWithType: FighterHitboxManager.HitboxGroupEventAction
-- uid: CAF.Fighters.FighterHitboxManager.hitboxGroups
-  name: hitboxGroups
-  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_hitboxGroups
-  commentId: F:CAF.Fighters.FighterHitboxManager.hitboxGroups
-  fullName: CAF.Fighters.FighterHitboxManager.hitboxGroups
-  nameWithType: FighterHitboxManager.hitboxGroups
-- uid: CAF.Fighters.FighterHitboxManager.hurtablesHit
-  name: hurtablesHit
-  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_hurtablesHit
-  commentId: F:CAF.Fighters.FighterHitboxManager.hurtablesHit
-  fullName: CAF.Fighters.FighterHitboxManager.hurtablesHit
-  nameWithType: FighterHitboxManager.hurtablesHit
-- uid: CAF.Fighters.FighterHitboxManager.InstantiateHitbox(CAF.Combat.BoxDefinitionBase)
-  name: InstantiateHitbox(BoxDefinitionBase)
-  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_InstantiateHitbox_CAF_Combat_BoxDefinitionBase_
-  commentId: M:CAF.Fighters.FighterHitboxManager.InstantiateHitbox(CAF.Combat.BoxDefinitionBase)
-  fullName: CAF.Fighters.FighterHitboxManager.InstantiateHitbox(CAF.Combat.BoxDefinitionBase)
-  nameWithType: FighterHitboxManager.InstantiateHitbox(BoxDefinitionBase)
-- uid: CAF.Fighters.FighterHitboxManager.InstantiateHitbox*
-  name: InstantiateHitbox
-  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_InstantiateHitbox_
-  commentId: Overload:CAF.Fighters.FighterHitboxManager.InstantiateHitbox
+- uid: CAF.Fighters.FighterHitboxManager.HurtHurtbox(CAF.Combat.HitboxGroup,System.Int32,CAF.Combat.Hurtbox)
+  name: HurtHurtbox(HitboxGroup, Int32, Hurtbox)
+  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_HurtHurtbox_CAF_Combat_HitboxGroup_System_Int32_CAF_Combat_Hurtbox_
+  commentId: M:CAF.Fighters.FighterHitboxManager.HurtHurtbox(CAF.Combat.HitboxGroup,System.Int32,CAF.Combat.Hurtbox)
+  fullName: CAF.Fighters.FighterHitboxManager.HurtHurtbox(CAF.Combat.HitboxGroup, System.Int32, CAF.Combat.Hurtbox)
+  nameWithType: FighterHitboxManager.HurtHurtbox(HitboxGroup, Int32, Hurtbox)
+- uid: CAF.Fighters.FighterHitboxManager.HurtHurtbox*
+  name: HurtHurtbox
+  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_HurtHurtbox_
+  commentId: Overload:CAF.Fighters.FighterHitboxManager.HurtHurtbox
   isSpec: "True"
-  fullName: CAF.Fighters.FighterHitboxManager.InstantiateHitbox
-  nameWithType: FighterHitboxManager.InstantiateHitbox
+  fullName: CAF.Fighters.FighterHitboxManager.HurtHurtbox
+  nameWithType: FighterHitboxManager.HurtHurtbox
 - uid: CAF.Fighters.FighterHitboxManager.manager
   name: manager
   href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_manager
   commentId: F:CAF.Fighters.FighterHitboxManager.manager
   fullName: CAF.Fighters.FighterHitboxManager.manager
   nameWithType: FighterHitboxManager.manager
-- uid: CAF.Fighters.FighterHitboxManager.OnHitboxHit
-  name: OnHitboxHit
-  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_OnHitboxHit
-  commentId: E:CAF.Fighters.FighterHitboxManager.OnHitboxHit
-  fullName: CAF.Fighters.FighterHitboxManager.OnHitboxHit
-  nameWithType: FighterHitboxManager.OnHitboxHit
-- uid: CAF.Fighters.FighterHitboxManager.OnHitboxHurt(GameObject,CAF.Combat.HitInfoBase,System.Int32,System.Int32)
-  name: OnHitboxHurt(GameObject, HitInfoBase, Int32, Int32)
-  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_OnHitboxHurt_GameObject_CAF_Combat_HitInfoBase_System_Int32_System_Int32_
-  commentId: M:CAF.Fighters.FighterHitboxManager.OnHitboxHurt(GameObject,CAF.Combat.HitInfoBase,System.Int32,System.Int32)
-  fullName: CAF.Fighters.FighterHitboxManager.OnHitboxHurt(GameObject, CAF.Combat.HitInfoBase, System.Int32, System.Int32)
-  nameWithType: FighterHitboxManager.OnHitboxHurt(GameObject, HitInfoBase, Int32, Int32)
-- uid: CAF.Fighters.FighterHitboxManager.OnHitboxHurt*
-  name: OnHitboxHurt
-  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_OnHitboxHurt_
-  commentId: Overload:CAF.Fighters.FighterHitboxManager.OnHitboxHurt
-  isSpec: "True"
-  fullName: CAF.Fighters.FighterHitboxManager.OnHitboxHurt
-  nameWithType: FighterHitboxManager.OnHitboxHurt
-- uid: CAF.Fighters.FighterHitboxManager.ReactivateHitboxGroup(System.Int32)
-  name: ReactivateHitboxGroup(Int32)
-  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_ReactivateHitboxGroup_System_Int32_
-  commentId: M:CAF.Fighters.FighterHitboxManager.ReactivateHitboxGroup(System.Int32)
-  fullName: CAF.Fighters.FighterHitboxManager.ReactivateHitboxGroup(System.Int32)
-  nameWithType: FighterHitboxManager.ReactivateHitboxGroup(Int32)
-- uid: CAF.Fighters.FighterHitboxManager.ReactivateHitboxGroup*
-  name: ReactivateHitboxGroup
-  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_ReactivateHitboxGroup_
-  commentId: Overload:CAF.Fighters.FighterHitboxManager.ReactivateHitboxGroup
-  isSpec: "True"
-  fullName: CAF.Fighters.FighterHitboxManager.ReactivateHitboxGroup
-  nameWithType: FighterHitboxManager.ReactivateHitboxGroup
+- uid: CAF.Fighters.FighterHitboxManager.OnHitHurtbox
+  name: OnHitHurtbox
+  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_OnHitHurtbox
+  commentId: E:CAF.Fighters.FighterHitboxManager.OnHitHurtbox
+  fullName: CAF.Fighters.FighterHitboxManager.OnHitHurtbox
+  nameWithType: FighterHitboxManager.OnHitHurtbox
 - uid: CAF.Fighters.FighterHitboxManager.Reset
   name: Reset()
   href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_Reset
@@ -3571,32 +3329,19 @@ references:
   isSpec: "True"
   fullName: CAF.Fighters.FighterHitboxManager.Reset
   nameWithType: FighterHitboxManager.Reset
-- uid: CAF.Fighters.FighterHitboxManager.TickBoxes
-  name: TickBoxes()
-  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_TickBoxes
-  commentId: M:CAF.Fighters.FighterHitboxManager.TickBoxes
-  fullName: CAF.Fighters.FighterHitboxManager.TickBoxes()
-  nameWithType: FighterHitboxManager.TickBoxes()
-- uid: CAF.Fighters.FighterHitboxManager.TickBoxes*
-  name: TickBoxes
-  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_TickBoxes_
-  commentId: Overload:CAF.Fighters.FighterHitboxManager.TickBoxes
+- uid: CAF.Fighters.FighterHitboxManager.ShouldHurt(CAF.Combat.HitboxGroup,System.Int32,CAF.Combat.Hurtbox)
+  name: ShouldHurt(HitboxGroup, Int32, Hurtbox)
+  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_ShouldHurt_CAF_Combat_HitboxGroup_System_Int32_CAF_Combat_Hurtbox_
+  commentId: M:CAF.Fighters.FighterHitboxManager.ShouldHurt(CAF.Combat.HitboxGroup,System.Int32,CAF.Combat.Hurtbox)
+  fullName: CAF.Fighters.FighterHitboxManager.ShouldHurt(CAF.Combat.HitboxGroup, System.Int32, CAF.Combat.Hurtbox)
+  nameWithType: FighterHitboxManager.ShouldHurt(HitboxGroup, Int32, Hurtbox)
+- uid: CAF.Fighters.FighterHitboxManager.ShouldHurt*
+  name: ShouldHurt
+  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_ShouldHurt_
+  commentId: Overload:CAF.Fighters.FighterHitboxManager.ShouldHurt
   isSpec: "True"
-  fullName: CAF.Fighters.FighterHitboxManager.TickBoxes
-  nameWithType: FighterHitboxManager.TickBoxes
-- uid: CAF.Fighters.FighterHitboxManager.UpdateHitboxIDIgnoreList(System.Int32)
-  name: UpdateHitboxIDIgnoreList(Int32)
-  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_UpdateHitboxIDIgnoreList_System_Int32_
-  commentId: M:CAF.Fighters.FighterHitboxManager.UpdateHitboxIDIgnoreList(System.Int32)
-  fullName: CAF.Fighters.FighterHitboxManager.UpdateHitboxIDIgnoreList(System.Int32)
-  nameWithType: FighterHitboxManager.UpdateHitboxIDIgnoreList(Int32)
-- uid: CAF.Fighters.FighterHitboxManager.UpdateHitboxIDIgnoreList*
-  name: UpdateHitboxIDIgnoreList
-  href: api/CAF.Fighters.FighterHitboxManager.html#CAF_Fighters_FighterHitboxManager_UpdateHitboxIDIgnoreList_
-  commentId: Overload:CAF.Fighters.FighterHitboxManager.UpdateHitboxIDIgnoreList
-  isSpec: "True"
-  fullName: CAF.Fighters.FighterHitboxManager.UpdateHitboxIDIgnoreList
-  nameWithType: FighterHitboxManager.UpdateHitboxIDIgnoreList
+  fullName: CAF.Fighters.FighterHitboxManager.ShouldHurt
+  nameWithType: FighterHitboxManager.ShouldHurt
 - uid: CAF.Fighters.FighterHurtboxManager
   name: FighterHurtboxManager
   href: api/CAF.Fighters.FighterHurtboxManager.html
@@ -4748,38 +4493,6 @@ references:
   commentId: F:CAF.Input.InputDefinition.stickDirection
   fullName: CAF.Input.InputDefinition.stickDirection
   nameWithType: InputDefinition.stickDirection
-- uid: CAF.Input.InputDefinitionDrawer
-  name: InputDefinitionDrawer
-  href: api/CAF.Input.InputDefinitionDrawer.html
-  commentId: T:CAF.Input.InputDefinitionDrawer
-  fullName: CAF.Input.InputDefinitionDrawer
-  nameWithType: InputDefinitionDrawer
-- uid: CAF.Input.InputDefinitionDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
-  name: GetPropertyHeight(SerializedProperty, GUIContent)
-  href: api/CAF.Input.InputDefinitionDrawer.html#CAF_Input_InputDefinitionDrawer_GetPropertyHeight_SerializedProperty_GUIContent_
-  commentId: M:CAF.Input.InputDefinitionDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
-  fullName: CAF.Input.InputDefinitionDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
-  nameWithType: InputDefinitionDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
-- uid: CAF.Input.InputDefinitionDrawer.GetPropertyHeight*
-  name: GetPropertyHeight
-  href: api/CAF.Input.InputDefinitionDrawer.html#CAF_Input_InputDefinitionDrawer_GetPropertyHeight_
-  commentId: Overload:CAF.Input.InputDefinitionDrawer.GetPropertyHeight
-  isSpec: "True"
-  fullName: CAF.Input.InputDefinitionDrawer.GetPropertyHeight
-  nameWithType: InputDefinitionDrawer.GetPropertyHeight
-- uid: CAF.Input.InputDefinitionDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
-  name: OnGUI(Rect, SerializedProperty, GUIContent)
-  href: api/CAF.Input.InputDefinitionDrawer.html#CAF_Input_InputDefinitionDrawer_OnGUI_Rect_SerializedProperty_GUIContent_
-  commentId: M:CAF.Input.InputDefinitionDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
-  fullName: CAF.Input.InputDefinitionDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
-  nameWithType: InputDefinitionDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
-- uid: CAF.Input.InputDefinitionDrawer.OnGUI*
-  name: OnGUI
-  href: api/CAF.Input.InputDefinitionDrawer.html#CAF_Input_InputDefinitionDrawer_OnGUI_
-  commentId: Overload:CAF.Input.InputDefinitionDrawer.OnGUI
-  isSpec: "True"
-  fullName: CAF.Input.InputDefinitionDrawer.OnGUI
-  nameWithType: InputDefinitionDrawer.OnGUI
 - uid: CAF.Input.InputDefinitionType
   name: InputDefinitionType
   href: api/CAF.Input.InputDefinitionType.html
@@ -5165,32 +4878,32 @@ references:
   commentId: T:CAF.Simulation.SimObjectManager
   fullName: CAF.Simulation.SimObjectManager
   nameWithType: SimObjectManager
-- uid: CAF.Simulation.SimObjectManager.LateUpdate
-  name: LateUpdate()
-  href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_LateUpdate
-  commentId: M:CAF.Simulation.SimObjectManager.LateUpdate
-  fullName: CAF.Simulation.SimObjectManager.LateUpdate()
-  nameWithType: SimObjectManager.LateUpdate()
-- uid: CAF.Simulation.SimObjectManager.LateUpdate*
-  name: LateUpdate
-  href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_LateUpdate_
-  commentId: Overload:CAF.Simulation.SimObjectManager.LateUpdate
+- uid: CAF.Simulation.SimObjectManager.LateTick
+  name: LateTick()
+  href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_LateTick
+  commentId: M:CAF.Simulation.SimObjectManager.LateTick
+  fullName: CAF.Simulation.SimObjectManager.LateTick()
+  nameWithType: SimObjectManager.LateTick()
+- uid: CAF.Simulation.SimObjectManager.LateTick*
+  name: LateTick
+  href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_LateTick_
+  commentId: Overload:CAF.Simulation.SimObjectManager.LateTick
   isSpec: "True"
-  fullName: CAF.Simulation.SimObjectManager.LateUpdate
-  nameWithType: SimObjectManager.LateUpdate
-- uid: CAF.Simulation.SimObjectManager.LateUpdateSimObjects
-  name: LateUpdateSimObjects()
-  href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_LateUpdateSimObjects
-  commentId: M:CAF.Simulation.SimObjectManager.LateUpdateSimObjects
-  fullName: CAF.Simulation.SimObjectManager.LateUpdateSimObjects()
-  nameWithType: SimObjectManager.LateUpdateSimObjects()
-- uid: CAF.Simulation.SimObjectManager.LateUpdateSimObjects*
-  name: LateUpdateSimObjects
-  href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_LateUpdateSimObjects_
-  commentId: Overload:CAF.Simulation.SimObjectManager.LateUpdateSimObjects
+  fullName: CAF.Simulation.SimObjectManager.LateTick
+  nameWithType: SimObjectManager.LateTick
+- uid: CAF.Simulation.SimObjectManager.LateTickSimObjects
+  name: LateTickSimObjects()
+  href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_LateTickSimObjects
+  commentId: M:CAF.Simulation.SimObjectManager.LateTickSimObjects
+  fullName: CAF.Simulation.SimObjectManager.LateTickSimObjects()
+  nameWithType: SimObjectManager.LateTickSimObjects()
+- uid: CAF.Simulation.SimObjectManager.LateTickSimObjects*
+  name: LateTickSimObjects
+  href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_LateTickSimObjects_
+  commentId: Overload:CAF.Simulation.SimObjectManager.LateTickSimObjects
   isSpec: "True"
-  fullName: CAF.Simulation.SimObjectManager.LateUpdateSimObjects
-  nameWithType: SimObjectManager.LateUpdateSimObjects
+  fullName: CAF.Simulation.SimObjectManager.LateTickSimObjects
+  nameWithType: SimObjectManager.LateTickSimObjects
 - uid: CAF.Simulation.SimObjectManager.RegisterObject(CAF.Simulation.ISimObject)
   name: RegisterObject(ISimObject)
   href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_RegisterObject_CAF_Simulation_ISimObject_
@@ -5249,29 +4962,29 @@ references:
   isSpec: "True"
   fullName: CAF.Simulation.SimObjectManager.SpawnObject
   nameWithType: SimObjectManager.SpawnObject
-- uid: CAF.Simulation.SimObjectManager.Update
-  name: Update()
-  href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_Update
-  commentId: M:CAF.Simulation.SimObjectManager.Update
-  fullName: CAF.Simulation.SimObjectManager.Update()
-  nameWithType: SimObjectManager.Update()
-- uid: CAF.Simulation.SimObjectManager.Update*
-  name: Update
-  href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_Update_
-  commentId: Overload:CAF.Simulation.SimObjectManager.Update
+- uid: CAF.Simulation.SimObjectManager.Tick
+  name: Tick()
+  href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_Tick
+  commentId: M:CAF.Simulation.SimObjectManager.Tick
+  fullName: CAF.Simulation.SimObjectManager.Tick()
+  nameWithType: SimObjectManager.Tick()
+- uid: CAF.Simulation.SimObjectManager.Tick*
+  name: Tick
+  href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_Tick_
+  commentId: Overload:CAF.Simulation.SimObjectManager.Tick
   isSpec: "True"
-  fullName: CAF.Simulation.SimObjectManager.Update
-  nameWithType: SimObjectManager.Update
-- uid: CAF.Simulation.SimObjectManager.UpdateSimObjects
-  name: UpdateSimObjects()
-  href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_UpdateSimObjects
-  commentId: M:CAF.Simulation.SimObjectManager.UpdateSimObjects
-  fullName: CAF.Simulation.SimObjectManager.UpdateSimObjects()
-  nameWithType: SimObjectManager.UpdateSimObjects()
-- uid: CAF.Simulation.SimObjectManager.UpdateSimObjects*
-  name: UpdateSimObjects
-  href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_UpdateSimObjects_
-  commentId: Overload:CAF.Simulation.SimObjectManager.UpdateSimObjects
+  fullName: CAF.Simulation.SimObjectManager.Tick
+  nameWithType: SimObjectManager.Tick
+- uid: CAF.Simulation.SimObjectManager.TickSimObjects
+  name: TickSimObjects()
+  href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_TickSimObjects
+  commentId: M:CAF.Simulation.SimObjectManager.TickSimObjects
+  fullName: CAF.Simulation.SimObjectManager.TickSimObjects()
+  nameWithType: SimObjectManager.TickSimObjects()
+- uid: CAF.Simulation.SimObjectManager.TickSimObjects*
+  name: TickSimObjects
+  href: api/CAF.Simulation.SimObjectManager.html#CAF_Simulation_SimObjectManager_TickSimObjects_
+  commentId: Overload:CAF.Simulation.SimObjectManager.TickSimObjects
   isSpec: "True"
-  fullName: CAF.Simulation.SimObjectManager.UpdateSimObjects
-  nameWithType: SimObjectManager.UpdateSimObjects
+  fullName: CAF.Simulation.SimObjectManager.TickSimObjects
+  nameWithType: SimObjectManager.TickSimObjects

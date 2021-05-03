@@ -89,7 +89,7 @@
   <h6><strong>Assembly</strong>: CAF.dll</h6>
   <h5 id="CAF_Fighters_FighterHitboxManager_HitboxGroupEventAction_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public delegate void HitboxGroupEventAction(GameObject hurtableHit, int hitboxGroupIndex, MovesetAttackNode attack);</code></pre>
+    <pre><code class="lang-csharp hljs">public delegate void HitboxGroupEventAction(HitboxGroup hitboxGroup, int hitboxIndex, Hurtbox hurtbox);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -102,18 +102,18 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">GameObject</span></td>
-        <td><span class="parametername">hurtableHit</span></td>
+        <td><a class="xref" href="CAF.Combat.HitboxGroup.html">HitboxGroup</a></td>
+        <td><span class="parametername">hitboxGroup</span></td>
         <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">hitboxGroupIndex</span></td>
+        <td><span class="parametername">hitboxIndex</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="CAF.Combat.MovesetAttackNode.html">MovesetAttackNode</a></td>
-        <td><span class="parametername">attack</span></td>
+        <td><a class="xref" href="CAF.Combat.Hurtbox.html">Hurtbox</a></td>
+        <td><span class="parametername">hurtbox</span></td>
         <td></td>
       </tr>
     </tbody>

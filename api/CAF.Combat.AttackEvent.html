@@ -133,19 +133,19 @@ public class AttackEvent</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackEvent_Evaluate_System_UInt32_System_UInt32_CAF_Fighters_FighterBase_CAF_Combat_AttackEventVariables_.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackEvent.Evaluate(System.UInt32%2CSystem.UInt32%2CCAF.Fighters.FighterBase%2CCAF.Combat.AttackEventVariables)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_AttackEvent_Evaluate_System_Int32_System_Int32_CAF_Fighters_FighterBase_CAF_Combat_AttackEventVariables_.md&amp;value=---%0Auid%3A%20CAF.Combat.AttackEvent.Evaluate(System.Int32%2CSystem.Int32%2CCAF.Fighters.FighterBase%2CCAF.Combat.AttackEventVariables)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Combat/Attack Events/AttackEvent.cs/#L21">View Source</a>
   </span>
   <a id="CAF_Combat_AttackEvent_Evaluate_" data-uid="CAF.Combat.AttackEvent.Evaluate*"></a>
-  <h4 id="CAF_Combat_AttackEvent_Evaluate_System_UInt32_System_UInt32_CAF_Fighters_FighterBase_CAF_Combat_AttackEventVariables_" data-uid="CAF.Combat.AttackEvent.Evaluate(System.UInt32,System.UInt32,CAF.Fighters.FighterBase,CAF.Combat.AttackEventVariables)">Evaluate(UInt32, UInt32, FighterBase, AttackEventVariables)</h4>
+  <h4 id="CAF_Combat_AttackEvent_Evaluate_System_Int32_System_Int32_CAF_Fighters_FighterBase_CAF_Combat_AttackEventVariables_" data-uid="CAF.Combat.AttackEvent.Evaluate(System.Int32,System.Int32,CAF.Fighters.FighterBase,CAF.Combat.AttackEventVariables)">Evaluate(Int32, Int32, FighterBase, AttackEventVariables)</h4>
   <div class="markdown level1 summary"><p>Proceses the event.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual bool Evaluate(uint frame, uint endFrame, FighterBase manager, AttackEventVariables variables)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual AttackEventReturnType Evaluate(int frame, int endFrame, FighterBase manager, AttackEventVariables variables)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -158,13 +158,13 @@ public class AttackEvent</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">frame</span></td>
         <td><p>The frame the event is on relative to it&apos;s start.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">endFrame</span></td>
         <td><p>The last frame of the event, relative to it&apos;s start.</p>
 </td>
@@ -192,7 +192,7 @@ public class AttackEvent</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="CAF.Combat.AttackEventReturnType.html">AttackEventReturnType</a></td>
         <td><p>True if the attack state should cancel.</p>
 </td>
       </tr>
