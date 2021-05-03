@@ -1,3 +1,15 @@
+# [15.0.0](https://github.com/christides11/Character-Action-Framework/compare/v14.2.1...v15.0.0) (2021-05-03)
+
+
+### Code Refactoring
+
+* Better Attack Editor and hitbox handling ([bef7b2c](https://github.com/christides11/Character-Action-Framework/commit/bef7b2cf6128fd8fcfcf73b3e1f13d8a7e1e5004))
+
+
+### BREAKING CHANGES
+
+* Major refactor of the attack editor and how hitboxes are handled.
+
 ## [14.2.1](https://github.com/christides11/Character-Action-Framework/compare/v14.2.0...v14.2.1) (2021-04-30)
 
 
