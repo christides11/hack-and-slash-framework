@@ -16,79 +16,79 @@ TextureImporter:
     second: adventurer-idle-04
   - first:
       213: -4716468363168978379
-    second: adventurer-v1.5-Sheet_4
+    second: crouch-1
   - first:
       213: 5352652116806695986
-    second: adventurer-v1.5-Sheet_5
+    second: crouch-2
   - first:
       213: -2199296802102092023
-    second: adventurer-v1.5-Sheet_6
+    second: crouch-3
   - first:
       213: -7325812272228753660
-    second: adventurer-v1.5-Sheet_7
+    second: crouch-4
   - first:
       213: -3051788477456609919
-    second: adventurer-v1.5-Sheet_8
+    second: Run-1
   - first:
       213: 6812864027602333311
-    second: adventurer-v1.5-Sheet_9
+    second: Run-2
   - first:
       213: -7282547523972205124
-    second: adventurer-v1.5-Sheet_10
+    second: Run-3
   - first:
       213: 1062949542834640332
-    second: adventurer-v1.5-Sheet_11
+    second: Run-4
   - first:
       213: 4767782445854341248
-    second: adventurer-v1.5-Sheet_12
+    second: Run-5
   - first:
       213: -2021519671248309078
-    second: adventurer-v1.5-Sheet_13
+    second: Run-6
   - first:
       213: 101571700091508751
-    second: adventurer-v1.5-Sheet_14
+    second: jumpsquat-1
   - first:
       213: -6829922608690292844
-    second: adventurer-v1.5-Sheet_15
+    second: jumpsquat-2
   - first:
       213: 9007157022648109736
-    second: adventurer-v1.5-Sheet_16
+    second: jump-start-1
   - first:
       213: -1445968619721516053
-    second: adventurer-v1.5-Sheet_17
+    second: jump-start-2
   - first:
       213: -1394527152228223720
-    second: adventurer-v1.5-Sheet_18
+    second: jump-1
   - first:
       213: 3154423721751135380
-    second: adventurer-v1.5-Sheet_19
+    second: jump-2
   - first:
       213: -1099163315959880021
-    second: adventurer-v1.5-Sheet_20
+    second: jump-3
   - first:
       213: 5743002360071119732
-    second: adventurer-v1.5-Sheet_21
+    second: jump-4
   - first:
       213: 5695235962273761828
-    second: adventurer-v1.5-Sheet_22
+    second: fall-1
   - first:
       213: 8248592303025495236
-    second: adventurer-v1.5-Sheet_23
+    second: fall-2
   - first:
       213: 8427078801919675099
-    second: adventurer-v1.5-Sheet_24
+    second: slide-1
   - first:
       213: -2458887622680725957
-    second: adventurer-v1.5-Sheet_25
+    second: slide-2
   - first:
       213: 622860959154257170
-    second: adventurer-v1.5-Sheet_26
+    second: slide-3
   - first:
       213: -5769049464661738840
-    second: adventurer-v1.5-Sheet_27
+    second: slide-4
   - first:
       213: 8000613085043981434
-    second: adventurer-v1.5-Sheet_28
+    second: slide-5
   - first:
       213: 3771267384243845313
     second: adventurer-v1.5-Sheet_29
@@ -118,16 +118,16 @@ TextureImporter:
     second: adventurer-v1.5-Sheet_37
   - first:
       213: 5808025637508920791
-    second: adventurer-v1.5-Sheet_38
+    second: idle2-1
   - first:
       213: -2237402569225598170
-    second: adventurer-v1.5-Sheet_39
+    second: idle2-2
   - first:
       213: 6900313407354992353
-    second: adventurer-v1.5-Sheet_40
+    second: idle2-3
   - first:
       213: 4968957380249203935
-    second: adventurer-v1.5-Sheet_41
+    second: idle2-4
   - first:
       213: -5879861640036576305
     second: Ground-A-1
@@ -151,100 +151,100 @@ TextureImporter:
     second: Ground-A-7
   - first:
       213: 1460603255664568255
-    second: adventurer-v1.5-Sheet_49
+    second: Ground-AA-1
   - first:
       213: 6743096067385053398
-    second: adventurer-v1.5-Sheet_50
+    second: Ground-AA-2
   - first:
       213: -2549233721657181880
-    second: adventurer-v1.5-Sheet_51
+    second: Ground-AA-3
   - first:
       213: 7081805965666925738
-    second: adventurer-v1.5-Sheet_52
+    second: Ground-AA-4
   - first:
       213: -9013844846209147344
-    second: adventurer-v1.5-Sheet_53
+    second: Ground-AAA-1
   - first:
       213: -8615837943046799719
-    second: adventurer-v1.5-Sheet_54
+    second: Ground-AAA-2
   - first:
       213: -5253927435303738400
-    second: adventurer-v1.5-Sheet_55
+    second: Ground-AAA-3
   - first:
       213: -539368960687019306
-    second: adventurer-v1.5-Sheet_56
+    second: Ground-AAA-4
   - first:
       213: -7032205920181708771
-    second: adventurer-v1.5-Sheet_57
+    second: Ground-AAA-5
   - first:
       213: -3173507598410241640
-    second: adventurer-v1.5-Sheet_58
+    second: Ground-AAA-6
   - first:
       213: -7092784828369904500
-    second: adventurer-v1.5-Sheet_59
+    second: hurt-1
   - first:
       213: 5457910563689496721
-    second: adventurer-v1.5-Sheet_60
+    second: hurt-2
   - first:
       213: 4020093697899924549
-    second: adventurer-v1.5-Sheet_61
+    second: hurt-3
   - first:
       213: 5727431968332616976
-    second: adventurer-v1.5-Sheet_62
+    second: hurt-4
   - first:
       213: 2322306977092904692
-    second: adventurer-v1.5-Sheet_63
+    second: death-1
   - first:
       213: -5732853594353692590
-    second: adventurer-v1.5-Sheet_64
+    second: death-2
   - first:
       213: 3154456230993132333
-    second: adventurer-v1.5-Sheet_65
+    second: death-3
   - first:
       213: 2064600301687814877
-    second: adventurer-v1.5-Sheet_66
+    second: death-4
   - first:
       213: -1793489991093253315
-    second: adventurer-v1.5-Sheet_67
+    second: death-5
   - first:
       213: -7115898312809811634
-    second: adventurer-v1.5-Sheet_68
+    second: death-6
   - first:
       213: 8411943351174162674
-    second: adventurer-v1.5-Sheet_69
+    second: sword-draw-1
   - first:
       213: -572935638892792279
-    second: adventurer-v1.5-Sheet_70
+    second: sword-draw-2
   - first:
       213: -557010918586539719
-    second: adventurer-v1.5-Sheet_71
+    second: sword-draw-3
   - first:
       213: 1292223576449554274
-    second: adventurer-v1.5-Sheet_72
+    second: sword-draw-4
   - first:
       213: 3458805228374877273
-    second: adventurer-v1.5-Sheet_73
+    second: sword-draw-5
   - first:
       213: -6092153715207035312
-    second: adventurer-v1.5-Sheet_74
+    second: sword-sheathe-1
   - first:
       213: 8609885239257350908
-    second: adventurer-v1.5-Sheet_75
+    second: sword-sheathe-2
   - first:
       213: -337768029710342958
-    second: adventurer-v1.5-Sheet_76
+    second: sword-sheathe-3
   - first:
       213: -2999520307170388906
-    second: adventurer-v1.5-Sheet_77
+    second: wall-jump-1
   - first:
       213: -6091379090655602125
-    second: adventurer-v1.5-Sheet_78
+    second: wall-jump-2
   - first:
       213: -7195962820408333091
-    second: adventurer-v1.5-Sheet_79
+    second: wall-slide-1
   - first:
       213: -2066183305326779831
-    second: adventurer-v1.5-Sheet_80
+    second: wall-slide-2
   - first:
       213: -1587948146142584492
     second: adventurer-v1.5-Sheet_81
@@ -292,40 +292,40 @@ TextureImporter:
     second: adventurer-v1.5-Sheet_95
   - first:
       213: 7270062891368290615
-    second: adventurer-v1.5-Sheet_96
+    second: Air-A-1
   - first:
       213: -8824249870287036601
-    second: adventurer-v1.5-Sheet_97
+    second: Air-A-2
   - first:
       213: -7312278344557230603
-    second: adventurer-v1.5-Sheet_98
+    second: Air-A-3
   - first:
       213: 8632490420879095957
-    second: adventurer-v1.5-Sheet_99
+    second: Air-A-4
   - first:
       213: -2185112768862623970
-    second: adventurer-v1.5-Sheet_100
+    second: Air-AA-1
   - first:
       213: -1669581087827291848
-    second: adventurer-v1.5-Sheet_101
+    second: Air-AA-2
   - first:
       213: 1279282305892391521
-    second: adventurer-v1.5-Sheet_102
+    second: Air-AA-3
   - first:
       213: -773844512500955763
-    second: adventurer-v1.5-Sheet_103
+    second: Air-AAA-1
   - first:
       213: 8043192317792241512
-    second: adventurer-v1.5-Sheet_104
+    second: Air-AAA-2
   - first:
       213: 1228577793076202832
-    second: adventurer-v1.5-Sheet_105
+    second: Air-AAA-3
   - first:
       213: 6958489048758843142
     second: adventurer-v1.5-Sheet_106
   - first:
       213: -5727256042839303126
-    second: adventurer-v1.5-Sheet_107
+    second: Air-AAA-Land-1
   - first:
       213: 3252349530020607276
     second: adventurer-v1.5-Sheet_108
@@ -334,13 +334,13 @@ TextureImporter:
     second: adventurer-v1.5-Sheet_109
   - first:
       213: -2005489889676191732
-    second: adventurer-v1.5-Sheet_110
+    second: Air-AAA-Land-2
   - first:
       213: -6100427877554654322
     second: adventurer-v1.5-Sheet_111
   - first:
       213: 2979789710812743995
-    second: adventurer-v1.5-Sheet_112
+    second: Air-AAA-Land-3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -510,7 +510,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_4
+      name: crouch-1
       rect:
         serializedVersion: 2
         x: 216
@@ -531,7 +531,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_5
+      name: crouch-2
       rect:
         serializedVersion: 2
         x: 265
@@ -552,7 +552,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_6
+      name: crouch-3
       rect:
         serializedVersion: 2
         x: 315
@@ -573,7 +573,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_7
+      name: crouch-4
       rect:
         serializedVersion: 2
         x: 17
@@ -594,7 +594,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_8
+      name: Run-1
       rect:
         serializedVersion: 2
         x: 67
@@ -615,7 +615,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_9
+      name: Run-2
       rect:
         serializedVersion: 2
         x: 116
@@ -636,7 +636,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_10
+      name: Run-3
       rect:
         serializedVersion: 2
         x: 166
@@ -657,7 +657,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_11
+      name: Run-4
       rect:
         serializedVersion: 2
         x: 217
@@ -678,7 +678,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_12
+      name: Run-5
       rect:
         serializedVersion: 2
         x: 266
@@ -699,7 +699,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_13
+      name: Run-6
       rect:
         serializedVersion: 2
         x: 316
@@ -720,7 +720,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_14
+      name: jumpsquat-1
       rect:
         serializedVersion: 2
         x: 15
@@ -741,7 +741,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_15
+      name: jumpsquat-2
       rect:
         serializedVersion: 2
         x: 65
@@ -762,7 +762,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_16
+      name: jump-start-1
       rect:
         serializedVersion: 2
         x: 117
@@ -783,7 +783,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_17
+      name: jump-start-2
       rect:
         serializedVersion: 2
         x: 164
@@ -804,7 +804,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_18
+      name: jump-1
       rect:
         serializedVersion: 2
         x: 218
@@ -825,7 +825,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_19
+      name: jump-2
       rect:
         serializedVersion: 2
         x: 264
@@ -846,7 +846,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_20
+      name: jump-3
       rect:
         serializedVersion: 2
         x: 320
@@ -867,7 +867,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_21
+      name: jump-4
       rect:
         serializedVersion: 2
         x: 11
@@ -888,7 +888,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_22
+      name: fall-1
       rect:
         serializedVersion: 2
         x: 68
@@ -909,7 +909,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_23
+      name: fall-2
       rect:
         serializedVersion: 2
         x: 118
@@ -930,7 +930,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_24
+      name: slide-1
       rect:
         serializedVersion: 2
         x: 155
@@ -951,7 +951,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_25
+      name: slide-2
       rect:
         serializedVersion: 2
         x: 205
@@ -972,7 +972,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_26
+      name: slide-3
       rect:
         serializedVersion: 2
         x: 255
@@ -993,7 +993,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_27
+      name: slide-4
       rect:
         serializedVersion: 2
         x: 309
@@ -1014,7 +1014,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_28
+      name: slide-5
       rect:
         serializedVersion: 2
         x: 15
@@ -1224,7 +1224,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_38
+      name: idle2-1
       rect:
         serializedVersion: 2
         x: 160
@@ -1245,7 +1245,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_39
+      name: idle2-2
       rect:
         serializedVersion: 2
         x: 210
@@ -1266,7 +1266,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_40
+      name: idle2-3
       rect:
         serializedVersion: 2
         x: 259
@@ -1287,7 +1287,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_41
+      name: idle2-4
       rect:
         serializedVersion: 2
         x: 309
@@ -1420,7 +1420,7 @@ TextureImporter:
         y: 334
         width: 18
         height: 26
-      alignment: 7
+      alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1441,7 +1441,7 @@ TextureImporter:
         y: 334
         width: 18
         height: 27
-      alignment: 7
+      alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1455,15 +1455,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_49
+      name: Ground-AA-1
       rect:
         serializedVersion: 2
         x: 13
         y: 297
         width: 20
         height: 27
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1476,15 +1476,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_50
+      name: Ground-AA-2
       rect:
         serializedVersion: 2
         x: 60
         y: 297
         width: 37
         height: 29
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.4054054, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1497,15 +1497,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_51
+      name: Ground-AA-3
       rect:
         serializedVersion: 2
         x: 102
         y: 297
         width: 32
         height: 21
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.71875, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1518,15 +1518,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_52
+      name: Ground-AA-4
       rect:
         serializedVersion: 2
         x: 152
         y: 297
         width: 31
         height: 22
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.7419355, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1539,14 +1539,14 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_53
+      name: Ground-AAA-1
       rect:
         serializedVersion: 2
         x: 219
         y: 297
         width: 20
         height: 26
-      alignment: 7
+      alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1560,14 +1560,14 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_54
+      name: Ground-AAA-2
       rect:
         serializedVersion: 2
         x: 270
         y: 297
         width: 20
         height: 26
-      alignment: 7
+      alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1581,15 +1581,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_55
+      name: Ground-AAA-3
       rect:
         serializedVersion: 2
         x: 302
         y: 297
         width: 48
         height: 23
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.47916666, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1602,15 +1602,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_56
+      name: Ground-AAA-4
       rect:
         serializedVersion: 2
         x: 3
         y: 260
         width: 31
         height: 19
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.7419355, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1623,15 +1623,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_57
+      name: Ground-AAA-5
       rect:
         serializedVersion: 2
         x: 50
         y: 260
         width: 34
         height: 20
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.7647059, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1644,15 +1644,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_58
+      name: Ground-AAA-6
       rect:
         serializedVersion: 2
         x: 100
         y: 260
         width: 34
         height: 20
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.7647059, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1665,7 +1665,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_59
+      name: hurt-1
       rect:
         serializedVersion: 2
         x: 166
@@ -1686,7 +1686,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_60
+      name: hurt-2
       rect:
         serializedVersion: 2
         x: 217
@@ -1707,7 +1707,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_61
+      name: hurt-3
       rect:
         serializedVersion: 2
         x: 265
@@ -1728,7 +1728,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_62
+      name: hurt-4
       rect:
         serializedVersion: 2
         x: 316
@@ -1749,7 +1749,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_63
+      name: death-1
       rect:
         serializedVersion: 2
         x: 17
@@ -1770,7 +1770,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_64
+      name: death-2
       rect:
         serializedVersion: 2
         x: 65
@@ -1791,7 +1791,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_65
+      name: death-3
       rect:
         serializedVersion: 2
         x: 116
@@ -1812,7 +1812,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_66
+      name: death-4
       rect:
         serializedVersion: 2
         x: 168
@@ -1833,7 +1833,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_67
+      name: death-5
       rect:
         serializedVersion: 2
         x: 221
@@ -1854,7 +1854,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_68
+      name: death-6
       rect:
         serializedVersion: 2
         x: 268
@@ -1875,7 +1875,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_69
+      name: sword-draw-1
       rect:
         serializedVersion: 2
         x: 315
@@ -1896,7 +1896,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_70
+      name: sword-draw-2
       rect:
         serializedVersion: 2
         x: 15
@@ -1917,7 +1917,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_71
+      name: sword-draw-3
       rect:
         serializedVersion: 2
         x: 63
@@ -1938,7 +1938,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_72
+      name: sword-draw-4
       rect:
         serializedVersion: 2
         x: 108
@@ -1959,7 +1959,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_73
+      name: sword-draw-5
       rect:
         serializedVersion: 2
         x: 158
@@ -1980,7 +1980,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_74
+      name: sword-sheathe-1
       rect:
         serializedVersion: 2
         x: 213
@@ -2001,7 +2001,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_75
+      name: sword-sheathe-2
       rect:
         serializedVersion: 2
         x: 263
@@ -2022,7 +2022,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_76
+      name: sword-sheathe-3
       rect:
         serializedVersion: 2
         x: 316
@@ -2043,7 +2043,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_77
+      name: wall-jump-1
       rect:
         serializedVersion: 2
         x: 17
@@ -2064,7 +2064,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_78
+      name: wall-jump-2
       rect:
         serializedVersion: 2
         x: 68
@@ -2085,7 +2085,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_79
+      name: wall-slide-1
       rect:
         serializedVersion: 2
         x: 116
@@ -2106,7 +2106,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_80
+      name: wall-slide-2
       rect:
         serializedVersion: 2
         x: 166
@@ -2442,15 +2442,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_96
+      name: Air-A-1
       rect:
         serializedVersion: 2
         x: 265
         y: 76
         width: 18
         height: 26
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.44444445, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2463,14 +2463,14 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_97
+      name: Air-A-2
       rect:
         serializedVersion: 2
         x: 302
         y: 77
         width: 46
         height: 30
-      alignment: 7
+      alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -2484,15 +2484,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_98
+      name: Air-A-3
       rect:
         serializedVersion: 2
         x: 6
         y: 41
         width: 29
         height: 30
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.62068963, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2505,15 +2505,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_99
+      name: Air-A-4
       rect:
         serializedVersion: 2
         x: 55
         y: 41
         width: 27
         height: 31
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.6666667, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2526,15 +2526,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_100
+      name: Air-AA-1
       rect:
         serializedVersion: 2
         x: 115
         y: 39
         width: 34
         height: 31
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.2647059, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2547,15 +2547,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_101
+      name: Air-AA-2
       rect:
         serializedVersion: 2
         x: 166
         y: 40
         width: 23
         height: 31
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.3043478, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2568,7 +2568,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_102
+      name: Air-AA-3
       rect:
         serializedVersion: 2
         x: 215
@@ -2589,7 +2589,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_103
+      name: Air-AAA-1
       rect:
         serializedVersion: 2
         x: 258
@@ -2610,7 +2610,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_104
+      name: Air-AAA-2
       rect:
         serializedVersion: 2
         x: 308
@@ -2631,7 +2631,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_105
+      name: Air-AAA-3
       rect:
         serializedVersion: 2
         x: 8
@@ -2652,33 +2652,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_106
+      name: Air-AAA-Land-1
       rect:
         serializedVersion: 2
         x: 51
         y: 1
-        width: 8
-        height: 10
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 60777b41ce4819060800000000000000
-      internalID: 6958489048758843142
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_107
-      rect:
-        serializedVersion: 2
-        x: 54
-        y: 1
-        width: 34
+        width: 48
         height: 36
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -2694,54 +2673,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_108
-      rect:
-        serializedVersion: 2
-        x: 87
-        y: 2
-        width: 12
-        height: 12
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c2579467aaaa22d20800000000000000
-      internalID: 3252349530020607276
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_109
+      name: Air-AAA-Land-2
       rect:
         serializedVersion: 2
         x: 103
         y: 1
-        width: 4
-        height: 5
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0d5c0cee0f53d87a0800000000000000
-      internalID: -6373378588745349680
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_110
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 1
-        width: 30
+        width: 46
         height: 30
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -2757,28 +2694,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_111
-      rect:
-        serializedVersion: 2
-        x: 142
-        y: 1
-        width: 7
-        height: 8
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e83f674ba2de65ba0800000000000000
-      internalID: -6100427877554654322
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_112
+      name: Air-AAA-Land-3
       rect:
         serializedVersion: 2
         x: 152

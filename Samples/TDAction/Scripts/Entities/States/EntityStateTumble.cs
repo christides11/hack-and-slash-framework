@@ -39,7 +39,7 @@ namespace TDAction.Entities.States
                 e.StateManager.ChangeState((int)EntityStates.KNOCKDOWN);
                 return true;
             }
-            if(e.CombatManager.HitStun != 0)
+            if(e.StateManager.CurrentStateFrame < e.CombatManager.HitStun)
             {
                 return false;
             }

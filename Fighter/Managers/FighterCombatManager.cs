@@ -27,15 +27,15 @@ namespace CAF.Fighters
         public event ChargeLevelChargeChangedAction OnChargeLevelChargeChanged;
         public event ChargeLevelChargeChangedAction OnChargeLevelChargeMaxReached;
 
-        public int HitStun { get { return hitstun; } set { hitstun = value; } }
-        public int HitStop { get { return hitstop; } set { hitstop = value; } }
+        public int HitStun { get { return hitstun; } }
+        public int HitStop { get { return hitstop; } }
         public int CurrentChargeLevel { get; protected set; } = 0;
         public int CurrentChargeLevelCharge { get; protected set; } = 0;
         public MovesetAttackNode CurrentAttack { get; protected set; } = null;
         public MovesetDefinition CurrentMoveset { get; protected set; } = null;
         public HitInfoBase LastHitBy { get; protected set; }
 
-        protected int hitstun = 0;
+        protected int hitstun;
         protected int hitstop; 
 
         public FighterBase manager;
@@ -50,20 +50,12 @@ namespace CAF.Fighters
 
         public virtual void CLateUpdate()
         {
-            if (HitStop > 0)
+            if (hitstop > 0)
             {
-                HitStop--;
-                if(HitStop == 0)
+                hitstop--;
+                if(hitstop == 0)
                 {
                     OnExitHitStop?.Invoke(manager);
-                }
-            }
-            else if (HitStun > 0)
-            {
-                HitStun--;
-                if(HitStun == 0)
-                {
-                    OnExitHitStun?.Invoke(manager);
                 }
             }
         }
@@ -318,25 +310,35 @@ namespace CAF.Fighters
 
         public virtual void SetHitStop(int value)
         {
-            HitStop = value;
+            hitstop = value;
+            if(hitstop == 0)
+            {
+                OnExitHitStop?.Invoke(manager);
+                return;
+            }
             OnEnterHitStop?.Invoke(manager);
         }
 
         public virtual void AddHitStop(int value)
         {
-            HitStop += value;
+            hitstop += value;
             OnHitStopAdded?.Invoke(manager);
         }
 
         public virtual void SetHitStun(int value)
         {
-            HitStun = value;
+            hitstun = value;
+            if(hitstun == 0)
+            {
+                OnExitHitStun?.Invoke(manager);
+                return;
+            }
             OnEnterHitStun?.Invoke(manager);
          }
 
         public virtual void AddHitStun(int value)
         {
-            HitStun += value;
+            hitstun += value;
             OnHitStunAdded?.Invoke(manager);
         }
 

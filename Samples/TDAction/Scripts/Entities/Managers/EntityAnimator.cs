@@ -12,6 +12,8 @@ namespace TDAction.Entities
         PlayableGraph playableGraph;
         AnimationClipPlayable playableClip;
 
+        [SerializeField] private double currentClipTime = 0;
+
         public void SetAnimation(string animation)
         {
             AnimationClip clip = animations.GetAnimation(animation);
@@ -19,6 +21,14 @@ namespace TDAction.Entities
             {
                 Debug.LogError($"{animation} does not exist.");
                 return;
+            }
+            if (playableClip.IsValid())
+            {
+                playableClip.Destroy();
+            }
+            if (playableGraph.IsValid())
+            {
+                playableGraph.Destroy();
             }
             playableGraph = PlayableGraph.Create();
             var playableOutput = AnimationPlayableOutput.Create(playableGraph, "Animation", animator);
@@ -33,6 +43,7 @@ namespace TDAction.Entities
             if (playableClip.IsValid())
             {
                 playableClip.SetTime(frame * Time.fixedDeltaTime);
+                currentClipTime = playableClip.GetTime();
             }
         }
     }

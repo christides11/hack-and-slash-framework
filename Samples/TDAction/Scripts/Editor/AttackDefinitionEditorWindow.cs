@@ -36,15 +36,21 @@ namespace TDAction.Combat
         protected override void CreateFighter()
         {
             base.CreateFighter();
-            visualFighterSceneReference.GetComponent<Entities.EntityAnimator>().animations.OnEnable();
-            visualFighterSceneReference.GetComponent<Entities.EntityAnimator>().SetAnimation((attack as AttackDefinition).animationName);
-            visualFighterSceneReference.GetComponent<Prime31.CharacterController2D>().Awake();
+            if (visualFighterSceneReference)
+            {
+                visualFighterSceneReference.GetComponent<Entities.EntityAnimator>().animations.OnEnable();
+                visualFighterSceneReference.GetComponent<Entities.EntityAnimator>().SetAnimation((attack as AttackDefinition).animationName);
+                visualFighterSceneReference.GetComponent<Prime31.CharacterController2D>().Awake();
+            }
         }
 
         protected override void IncrementForward()
         {
             base.IncrementForward();
-            visualFighterSceneReference.GetComponent<Entities.EntityAnimator>().SetFrame(timelineFrame);
+            if (visualFighterSceneReference)
+            {
+                visualFighterSceneReference.GetComponent<Entities.EntityAnimator>().SetFrame(timelineFrame);
+            }
         }
 
         protected override void MoveEntity()
