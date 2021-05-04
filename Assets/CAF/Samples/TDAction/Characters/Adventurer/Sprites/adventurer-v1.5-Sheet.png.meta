@@ -322,7 +322,7 @@ TextureImporter:
     second: Air-AAA-3
   - first:
       213: 6958489048758843142
-    second: adventurer-v1.5-Sheet_106
+    second: Air-AAA-Land-4
   - first:
       213: -5727256042839303126
     second: Air-AAA-Land-1
@@ -2710,6 +2710,27 @@ TextureImporter:
       bones: []
       spriteID: b398b5254f65a5920800000000000000
       internalID: 2979789710812743995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air-AAA-Land-4
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 1
+        width: 31
+        height: 22
+      alignment: 9
+      pivot: {x: 0.7419355, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60777b41ce4819060800000000000000
+      internalID: 6958489048758843142
       vertices: []
       indices: 
       edges: []

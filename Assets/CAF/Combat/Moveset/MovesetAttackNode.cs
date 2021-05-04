@@ -12,8 +12,10 @@ namespace CAF.Combat
         public class nextNodeDefinition
         {
             public Vector2Int cancelWindow;
-            public MovesetAttackNode node;
+            public int nodeIdentifier;
         }
+
+        public int Identifier;
 
         [Input] public MovesetAttackNode lastNode;
 
@@ -27,7 +29,7 @@ namespace CAF.Combat
             base.OnCreateConnection(from, to);
             if(from.node == this)
             {
-                nextNode[(int)from.GetOutputValue()].node = (MovesetAttackNode)to.node;
+                nextNode[(int)from.GetOutputValue()].nodeIdentifier = ((MovesetAttackNode)to.node).Identifier;
             }
             if(to.node == this)
             {

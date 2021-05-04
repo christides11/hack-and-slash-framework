@@ -31,9 +31,11 @@ namespace CAF.Fighters
         public int HitStop { get { return hitstop; } }
         public int CurrentChargeLevel { get; protected set; } = 0;
         public int CurrentChargeLevelCharge { get; protected set; } = 0;
-        public MovesetAttackNode CurrentAttack { get; protected set; } = null;
         public MovesetDefinition CurrentMoveset { get; protected set; } = null;
+        public MovesetAttackNode CurrentAttack { get { if (currentAttack < 0) { return null; } return (MovesetAttackNode)CurrentMoveset.GetAttackNode(currentAttack); } }
         public HitInfoBase LastHitBy { get; protected set; }
+
+        protected int currentAttack = -1;
 
         protected int hitstun;
         protected int hitstop; 
@@ -68,21 +70,21 @@ namespace CAF.Fighters
             }
             CurrentChargeLevel = 0;
             CurrentChargeLevelCharge = 0;
-            CurrentAttack = null;
+            currentAttack = -1;
             hitboxManager.Reset();
         }
 
-        public virtual void SetAttack(MovesetAttackNode attackNode)
+        public virtual void SetAttack(int attackNodeIndex)
         {
             Cleanup();
-            CurrentAttack = attackNode;
+            currentAttack = attackNodeIndex;
         }
 
-        public virtual MovesetAttackNode TryAttack()
+        public virtual int TryAttack()
         {
             if(CurrentMoveset == null)
             {
-                return null;
+                return -1;
             }
             if(CurrentAttack == null)
             {
@@ -91,88 +93,89 @@ namespace CAF.Fighters
             return CheckCurrentAttackCancelWindows();
         }
 
-        public virtual MovesetAttackNode TryCommandAttack()
+        public virtual int TryCommandAttack()
         {
             switch (manager.IsGrounded)
             {
                 case true:
-                    MovesetAttackNode groundCommandNormal = CheckAttackNodes(ref CurrentMoveset.groundAttackCommandNormals);
-                    if (groundCommandNormal != null)
+                    int groundCommandNormal = CheckAttackNodes(ref CurrentMoveset.groundAttackCommandNormals);
+                    if (groundCommandNormal != -1)
                     {
                         return groundCommandNormal;
                     }
                     break;
                 case false:
-                    MovesetAttackNode airCommandNormal = CheckAttackNodes(ref CurrentMoveset.airAttackCommandNormals);
-                    if (airCommandNormal != null)
+                    int airCommandNormal = CheckAttackNodes(ref CurrentMoveset.airAttackCommandNormals);
+                    if (airCommandNormal != -1)
                     {
                         return airCommandNormal;
                     }
                     break;
             }
-            return null;
+            return -1;
         }
 
-        protected virtual MovesetAttackNode CheckStartingNodes()
+        protected virtual int CheckStartingNodes()
         {
             switch (manager.IsGrounded)
             {
                 case true:
-                    MovesetAttackNode groundCommandNormal = CheckAttackNodes(ref CurrentMoveset.groundAttackCommandNormals);
-                    if (groundCommandNormal != null)
+                    int groundCommandNormal = CheckAttackNodes(ref CurrentMoveset.groundAttackCommandNormals);
+                    if (groundCommandNormal != -1)
                     {
                         return groundCommandNormal;
                     }
-                    MovesetAttackNode groundNormal = CheckAttackNodes(ref CurrentMoveset.groundAttackStartNodes);
-                    if (groundNormal != null)
+                    int groundNormal = CheckAttackNodes(ref CurrentMoveset.groundAttackStartNodes);
+                    if (groundNormal != -1)
                     {
                         return groundNormal;
                     }
                     break;
                 case false:
-                    MovesetAttackNode airCommandNormal = CheckAttackNodes(ref CurrentMoveset.airAttackCommandNormals);
-                    if (airCommandNormal != null)
+                    int airCommandNormal = CheckAttackNodes(ref CurrentMoveset.airAttackCommandNormals);
+                    if (airCommandNormal != -1)
                     {
                         return airCommandNormal;
                     }
-                    MovesetAttackNode airNormal = CheckAttackNodes(ref CurrentMoveset.airAttackStartNodes);
-                    if (airNormal != null)
+                    int airNormal = CheckAttackNodes(ref CurrentMoveset.airAttackStartNodes);
+                    if (airNormal != -1)
                     {
                         return airNormal;
                     }
                     break;
             }
-            return null;
+            return -1;
         }
 
-        protected virtual MovesetAttackNode CheckCurrentAttackCancelWindows()
+        protected virtual int CheckCurrentAttackCancelWindows()
         {
             for (int i = 0; i < CurrentAttack.nextNode.Count; i++)
             {
                 if (manager.StateManager.CurrentStateFrame >= CurrentAttack.nextNode[i].cancelWindow.x &&
                     manager.StateManager.CurrentStateFrame <= CurrentAttack.nextNode[i].cancelWindow.y)
                 {
-                    MovesetAttackNode man = CheckAttackNode(CurrentAttack.nextNode[i].node);
+                    MovesetAttackNode currentNode = CurrentAttack;
+                    MovesetAttackNode man = CheckAttackNode((MovesetAttackNode)CurrentMoveset.GetAttackNode(currentNode.nextNode[i].nodeIdentifier));
                     if(man != null)
                     {
-                        return man;
+                        return currentNode.nextNode[i].nodeIdentifier;
                     }
                 }
             }
-            return null;
+            return -1;
         }
 
-        protected virtual MovesetAttackNode CheckAttackNodes<T>(ref List<T> nodes) where T : MovesetAttackNode
+        protected virtual int CheckAttackNodes<T>(ref List<T> nodes) where T : MovesetAttackNode
         {
             for (int i = 0; i < nodes.Count; i++)
             {
                 MovesetAttackNode man = CheckAttackNode(nodes[i]);
                 if(man != null)
                 {
-                    return man;
+                    return nodes[i].Identifier;
                 }
             }
-            return null;
+            return -1;
         }
 
         protected virtual MovesetAttackNode CheckAttackNode(MovesetAttackNode node)

@@ -51,6 +51,7 @@ namespace TDAction.Entities.States
             // Process events.
             bool eventCancel = false;
             bool interrupted = false;
+            bool cleanup = false;
             for (int i = 0; i < currentAttack.events.Count; i++)
             {
                 switch(HandleEvents(currentAttack, currentAttack.events[i]))
@@ -61,13 +62,20 @@ namespace TDAction.Entities.States
                         break;
                     case CAF.Combat.AttackEventReturnType.INTERRUPT:
                         interrupted = true;
+                        cleanup = true;
+                        break;
+                    case CAF.Combat.AttackEventReturnType.INTERRUPT_NO_CLEANUP:
+                        interrupted = true;
                         break;
                 }
             }
 
             if (interrupted)
             {
-                entityManager.CombatManager.Cleanup();
+                if (cleanup)
+                {
+                    entityManager.CombatManager.Cleanup();
+                }
                 return;
             }
 
@@ -95,8 +103,8 @@ namespace TDAction.Entities.States
                 if (e.StateManager.CurrentStateFrame >= currentAttack.commandAttackCancelWindows[i].x
                     && e.StateManager.CurrentStateFrame <= currentAttack.commandAttackCancelWindows[i].y)
                 {
-                    CAF.Combat.MovesetAttackNode man = (CAF.Combat.MovesetAttackNode)e.CombatManager.TryCommandAttack();
-                    if (man != null)
+                    int man = e.CombatManager.TryCommandAttack();
+                    if (man != -1)
                     {
                         e.CombatManager.SetAttack(man);
                         e.StateManager.ChangeState((int)EntityStates.ATTACK);

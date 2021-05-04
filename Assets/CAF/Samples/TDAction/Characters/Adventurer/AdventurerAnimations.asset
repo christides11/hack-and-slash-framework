@@ -29,3 +29,5 @@ MonoBehaviour:
     animation: {fileID: 7400000, guid: 0615e3bab4de6fe4687c4797495b04a6, type: 2}
   - animationName: sword-air-aaa
     animation: {fileID: 7400000, guid: 8fa5c1e58872c0c47a63b4de7bd1c8e7, type: 2}
+  - animationName: sword-air-aaaa
+    animation: {fileID: 7400000, guid: 7fb6cbc925fe7e34b8e451cf3f55ec40, type: 2}
