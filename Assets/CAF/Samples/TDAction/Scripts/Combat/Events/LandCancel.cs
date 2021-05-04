@@ -10,6 +10,16 @@ namespace TDAction.Combat.Events
 {
     public class LandCancel : AttackEvent
     {
+        public enum CancelType
+        {
+            DEFAULT = 0,
+            STATE = 1,
+            ATTACK = 2
+        }
+
+        public CancelType cancelType;
+        public EntityStates state;
+
         public override string GetName()
         {
             return "Land Cancel";
@@ -24,5 +34,30 @@ namespace TDAction.Combat.Events
             }
             return AttackEventReturnType.NONE;
         }
+
+#if UNITY_EDITOR
+        public override void DrawEventVariables(CAF.Combat.AttackEventDefinition eventDefinition)
+        {
+            cancelType = (CancelType)EditorGUILayout.EnumPopup("Cancel Type", (CancelType)cancelType);
+            switch (cancelType)
+            {
+                case CancelType.ATTACK:
+
+                    break;
+                case CancelType.STATE:
+                    state = (EntityStates)EditorGUILayout.EnumPopup("State", (EntityStates)state);
+                    break;
+            }
+            /*
+            if (eventDefinition.variables.floatVars == null
+                || eventDefinition.variables.floatVars.Count != 1)
+            {
+                eventDefinition.variables.floatVars = new List<float>(1);
+                eventDefinition.variables.floatVars.Add(0);
+            }
+
+            eventDefinition.variables.floatVars[0] = EditorGUILayout.FloatField("Max", eventDefinition.variables.floatVars[0]);*/
+        }
+#endif
     }
 }

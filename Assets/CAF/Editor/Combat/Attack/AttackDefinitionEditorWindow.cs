@@ -57,11 +57,13 @@ namespace CAF.Combat
         protected Vector2 scroll;
         protected int timelineFrame = 0;
         protected bool rotationMode = false;
+        protected bool moveMode = false;
         protected Vector2 mousePos = new Vector2(0, 0);
         protected Vector2 diff = Vector2.zero;
         protected float rotSpeed = 1;
         protected float scrollWheel = 0;
         protected float scrollSpeed = 0.5f;
+        protected float moveSpeed = 0.1f;
 
         protected virtual void OnGUI()
         {
@@ -75,9 +77,13 @@ namespace CAF.Combat
             switch (e.type)
             {
                 case EventType.MouseDown:
-                    if (Event.current.button == 1)
+                    if (pos.Contains(Event.current.mousePosition))
                     {
-                        if (pos.Contains(Event.current.mousePosition))
+                        if (Event.current.button == 0)
+                        {
+                            mousePos = Event.current.mousePosition;
+                            moveMode = true;
+                        } else if (Event.current.button == 1)
                         {
                             mousePos = Event.current.mousePosition;
                             rotationMode = true;
@@ -85,13 +91,17 @@ namespace CAF.Combat
                     }
                     break;
                 case EventType.MouseUp:
+                    if(Event.current.button == 0)
+                    {
+                        moveMode = false;
+                    }
                     if (Event.current.button == 1)
                     {
                         rotationMode = false;
                     }
                     break;
                 case EventType.MouseDrag:
-                    if (rotationMode)
+                    if (rotationMode || moveMode)
                     {
                         diff = Event.current.mousePosition - mousePos;
                         mousePos = Event.current.mousePosition;
@@ -120,7 +130,14 @@ namespace CAF.Combat
 
             if (diff.magnitude > 0)
             {
-                renderUtils.camera.transform.RotateAround(Vector3.zero, Vector3.up, diff.x * rotSpeed);
+                if (moveMode)
+                {
+                    renderUtils.camera.transform.position += new Vector3(0, diff.y * moveSpeed * Time.deltaTime, 0);
+                }
+                if (rotationMode)
+                {
+                    renderUtils.camera.transform.RotateAround(new Vector3(0, renderUtils.camera.transform.position.y, 0), Vector3.up, diff.x * rotSpeed);
+                }
                 diff = Vector2.zero;
             }
 

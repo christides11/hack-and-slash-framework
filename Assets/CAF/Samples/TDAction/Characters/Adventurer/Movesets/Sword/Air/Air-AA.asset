@@ -62,8 +62,9 @@ MonoBehaviour:
       data:
         nickname: event
         active: 1
-        onHit: 0
+        onHitCheck: 0
         onHitHitboxGroup: 0
+        onHitIDGroup: 0
         startFrame: 1
         endFrame: 1
         attackEvent:
@@ -91,8 +92,9 @@ MonoBehaviour:
       data:
         nickname: F.Friction
         active: 1
-        onHit: 0
+        onHitCheck: 0
         onHitHitboxGroup: 0
+        onHitIDGroup: 0
         startFrame: 5
         endFrame: 50
         attackEvent:
@@ -119,8 +121,9 @@ MonoBehaviour:
       data:
         nickname: U.Friction
         active: 1
-        onHit: 0
+        onHitCheck: 0
         onHitHitboxGroup: 0
+        onHitIDGroup: 0
         startFrame: 1
         endFrame: 6
         attackEvent:
@@ -147,8 +150,9 @@ MonoBehaviour:
       data:
         nickname: Gravity
         active: 1
-        onHit: 0
+        onHitCheck: 0
         onHitHitboxGroup: 0
+        onHitIDGroup: 0
         startFrame: 16
         endFrame: 50
         attackEvent:
@@ -192,8 +196,9 @@ MonoBehaviour:
       data:
         nickname: Land Cancel
         active: 1
-        onHit: 0
+        onHitCheck: 0
         onHitHitboxGroup: 0
+        onHitIDGroup: 0
         startFrame: 5
         endFrame: 50
         attackEvent:
