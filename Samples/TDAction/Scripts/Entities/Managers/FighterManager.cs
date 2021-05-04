@@ -132,7 +132,7 @@ namespace TDAction.Entities
             return false;
         }
 
-        public virtual bool TryLandCancel()
+        public virtual bool TryLandCancel(bool setState = true)
         {
             PhysicsManager.CheckIfGrounded();
             if (IsGrounded)

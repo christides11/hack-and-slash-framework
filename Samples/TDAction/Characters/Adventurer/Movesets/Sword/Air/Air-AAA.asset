@@ -16,12 +16,300 @@ MonoBehaviour:
   description: 
   useState: 0
   stateOverride: 0
-  length: 1
+  length: 60
   commandAttackCancelWindows: []
   chargeWindows: []
-  hitboxGroups: []
+  hitboxGroups:
+  - id: 0
+  - id: 1
   hurtboxGroups: []
-  events: []
-  animationName: 
+  events:
+  - id: 2
+  - id: 3
+  - id: 4
+  - id: 5
+  - id: 6
+  animationName: sword-air-aaa
   references:
     version: 1
+    00000000:
+      type: {class: HitboxGroup, ns: CAF.Combat, asm: CAF}
+      data:
+        ID: 0
+        activeFramesStart: 5
+        activeFramesEnd: 9
+        hitGroupType: 0
+        boxes:
+        - id: 7
+        attachToEntity: 1
+        attachTo: 
+        chargeLevelNeeded: -1
+        chargeLevelMax: 1
+        hitboxHitInfo:
+          id: 8
+    00000001:
+      type: {class: HitboxGroup, ns: CAF.Combat, asm: CAF}
+      data:
+        ID: 0
+        activeFramesStart: 10
+        activeFramesEnd: 60
+        hitGroupType: 0
+        boxes:
+        - id: 9
+        attachToEntity: 1
+        attachTo: 
+        chargeLevelNeeded: -1
+        chargeLevelMax: 1
+        hitboxHitInfo:
+          id: 10
+    00000002:
+      type: {class: AttackEventDefinition, ns: CAF.Combat, asm: CAF}
+      data:
+        nickname: Y.Friction
+        active: 1
+        onHitCheck: 0
+        onHitHitboxGroup: 0
+        onHitIDGroup: 0
+        startFrame: 1
+        endFrame: 3
+        attackEvent:
+          id: 11
+        variables:
+          intVars: 
+          floatVars:
+          - 1.5
+          objectVars: []
+          curveVars: []
+        inputCheckTiming: 0
+        inputCheckStartFrame: 1
+        inputCheckEndFrame: 1
+        input:
+          executeWindow: 3
+          executeInputs: []
+          sequenceWindow: 8
+          sequenceInputs: []
+        chargeLevelMin: 0
+        chargeLevelMax: 0
+        inputCheckProcessed: 0
+    00000003:
+      type: {class: AttackEventDefinition, ns: CAF.Combat, asm: CAF}
+      data:
+        nickname: Down Force
+        active: 1
+        onHitCheck: 0
+        onHitHitboxGroup: 0
+        onHitIDGroup: 0
+        startFrame: 5
+        endFrame: 5
+        attackEvent:
+          id: 12
+        variables:
+          intVars: 
+          floatVars:
+          - 0
+          - -12
+          objectVars: []
+          curveVars: []
+        inputCheckTiming: 0
+        inputCheckStartFrame: 1
+        inputCheckEndFrame: 1
+        input:
+          executeWindow: 3
+          executeInputs: []
+          sequenceWindow: 8
+          sequenceInputs: []
+        chargeLevelMin: 0
+        chargeLevelMax: 0
+        inputCheckProcessed: 0
+    00000004:
+      type: {class: AttackEventDefinition, ns: CAF.Combat, asm: CAF}
+      data:
+        nickname: Land Cancel
+        active: 1
+        onHitCheck: 0
+        onHitHitboxGroup: 0
+        onHitIDGroup: 0
+        startFrame: 10
+        endFrame: 60
+        attackEvent:
+          id: 13
+        variables:
+          intVars: 
+          floatVars: []
+          objectVars: []
+          curveVars: []
+        inputCheckTiming: 0
+        inputCheckStartFrame: 1
+        inputCheckEndFrame: 1
+        input:
+          executeWindow: 3
+          executeInputs: []
+          sequenceWindow: 8
+          sequenceInputs: []
+        chargeLevelMin: 0
+        chargeLevelMax: 0
+        inputCheckProcessed: 0
+    00000005:
+      type: {class: AttackEventDefinition, ns: CAF.Combat, asm: CAF}
+      data:
+        nickname: X.Friction
+        active: 1
+        onHitCheck: 0
+        onHitHitboxGroup: 0
+        onHitIDGroup: 0
+        startFrame: 1
+        endFrame: 3
+        attackEvent:
+          id: 14
+        variables:
+          intVars: 
+          floatVars:
+          - 0.4
+          objectVars: []
+          curveVars: []
+        inputCheckTiming: 0
+        inputCheckStartFrame: 1
+        inputCheckEndFrame: 1
+        input:
+          executeWindow: 3
+          executeInputs: []
+          sequenceWindow: 8
+          sequenceInputs: []
+        chargeLevelMin: 0
+        chargeLevelMax: 0
+        inputCheckProcessed: 0
+    00000006:
+      type: {class: AttackEventDefinition, ns: CAF.Combat, asm: CAF}
+      data:
+        nickname: Up Force
+        active: 1
+        onHitCheck: 0
+        onHitHitboxGroup: 0
+        onHitIDGroup: 0
+        startFrame: 1
+        endFrame: 1
+        attackEvent:
+          id: 15
+        variables:
+          intVars: 
+          floatVars:
+          - 0
+          - 4
+          objectVars: []
+          curveVars: []
+        inputCheckTiming: 0
+        inputCheckStartFrame: 1
+        inputCheckEndFrame: 1
+        input:
+          executeWindow: 3
+          executeInputs: []
+          sequenceWindow: 8
+          sequenceInputs: []
+        chargeLevelMin: 0
+        chargeLevelMax: 0
+        inputCheckProcessed: 0
+    00000007:
+      type: {class: BoxDefinition, ns: CAF.Combat, asm: CAF}
+      data:
+        shape: 0
+        offset: {x: 0.05, y: 0.9, z: 0}
+        size: {x: 1.7, y: 2.05, z: 0}
+        rotation: {x: 0, y: 0, z: 0}
+        radius: 0
+        height: 0
+    00000008:
+      type: {class: HitInfo, ns: TDAction.Combat, asm: TDAction_CSharp}
+      data:
+        airOnly: 0
+        groundOnly: 0
+        hitKills: 1
+        continuousHit: 0
+        spaceBetweenHits: 0
+        opponentResetXForce: 1
+        opponentResetYForce: 1
+        attackerHitstop: 9
+        hitstop: 9
+        hitstun: 60
+        forceType: 0
+        forceRelation: 0
+        breakArmor: 0
+        unblockable: 0
+        knockdown: 0
+        groundBounces: 0
+        groundBounceForce: 0
+        wallBounces: 0
+        wallBounceForce: 0
+        damageOnHit: 10
+        damageOnBlock: 10
+        causesTumble: 0
+        opponentForceMagnitude: 15
+        opponentForceDir: {x: 0, y: -1, z: 0}
+        forceIncludeYForce: 0
+        opponentMaxMagnitude: 1
+        opponentMinMagnitude: 1
+        throwConfirm: {fileID: 0}
+    00000009:
+      type: {class: BoxDefinition, ns: CAF.Combat, asm: CAF}
+      data:
+        shape: 0
+        offset: {x: 0.35, y: 0.95, z: 0}
+        size: {x: 1.2, y: 1.9, z: 0}
+        rotation: {x: 0, y: 0, z: 0}
+        radius: 0
+        height: 0
+    0000000A:
+      type: {class: HitInfo, ns: TDAction.Combat, asm: TDAction_CSharp}
+      data:
+        airOnly: 0
+        groundOnly: 0
+        hitKills: 1
+        continuousHit: 0
+        spaceBetweenHits: 0
+        opponentResetXForce: 1
+        opponentResetYForce: 1
+        attackerHitstop: 6
+        hitstop: 6
+        hitstun: 50
+        forceType: 0
+        forceRelation: 0
+        breakArmor: 0
+        unblockable: 0
+        knockdown: 0
+        groundBounces: 0
+        groundBounceForce: 0
+        wallBounces: 0
+        wallBounceForce: 0
+        damageOnHit: 10
+        damageOnBlock: 10
+        causesTumble: 0
+        opponentForceMagnitude: 5
+        opponentForceDir: {x: 1, y: 0, z: 0}
+        forceIncludeYForce: 0
+        opponentMaxMagnitude: 1
+        opponentMinMagnitude: 1
+        throwConfirm: {fileID: 0}
+    0000000B:
+      type: {class: ApplyFriction, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
+      data:
+        xFriction: 0
+        yFriction: 1
+    0000000C:
+      type: {class: ForceSet, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
+      data:
+        xForce: 0
+        yForce: 1
+    0000000D:
+      type: {class: LandCancel, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
+      data:
+        cancelType: 2
+        state: 0
+    0000000E:
+      type: {class: ApplyFriction, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
+      data:
+        xFriction: 1
+        yFriction: 0
+    0000000F:
+      type: {class: ForceAdd, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
+      data:
+        xForce: 0
+        yForce: 1
