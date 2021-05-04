@@ -28,6 +28,7 @@ MonoBehaviour:
   - id: 3
   - id: 4
   - id: 5
+  - id: 6
   animationName: sword-air-aa
   references:
     version: 1
@@ -39,13 +40,13 @@ MonoBehaviour:
         activeFramesEnd: 11
         hitGroupType: 0
         boxes:
-        - id: 6
+        - id: 7
         attachToEntity: 1
         attachTo: 
         chargeLevelNeeded: -1
         chargeLevelMax: 1
         hitboxHitInfo:
-          id: 7
+          id: 8
     00000001:
       type: {class: HurtboxGroup, ns: CAF.Combat, asm: CAF}
       data:
@@ -53,7 +54,7 @@ MonoBehaviour:
         activeFramesStart: 1
         activeFramesEnd: 50
         boxes:
-        - id: 8
+        - id: 9
         attachToEntity: 1
         attachTo: 
     00000002:
@@ -66,7 +67,7 @@ MonoBehaviour:
         startFrame: 1
         endFrame: 1
         attackEvent:
-          id: 9
+          id: 10
         variables:
           intVars: 
           floatVars:
@@ -95,7 +96,7 @@ MonoBehaviour:
         startFrame: 5
         endFrame: 50
         attackEvent:
-          id: 10
+          id: 11
         variables:
           intVars: 
           floatVars:
@@ -123,7 +124,7 @@ MonoBehaviour:
         startFrame: 1
         endFrame: 6
         attackEvent:
-          id: 11
+          id: 12
         variables:
           intVars: 
           floatVars:
@@ -151,7 +152,7 @@ MonoBehaviour:
         startFrame: 16
         endFrame: 50
         attackEvent:
-          id: 12
+          id: 13
         variables:
           intVars: 
           floatVars:
@@ -187,6 +188,33 @@ MonoBehaviour:
         chargeLevelMax: 0
         inputCheckProcessed: 0
     00000006:
+      type: {class: AttackEventDefinition, ns: CAF.Combat, asm: CAF}
+      data:
+        nickname: Land Cancel
+        active: 1
+        onHit: 0
+        onHitHitboxGroup: 0
+        startFrame: 5
+        endFrame: 50
+        attackEvent:
+          id: 14
+        variables:
+          intVars: 
+          floatVars: []
+          objectVars: []
+          curveVars: []
+        inputCheckTiming: 0
+        inputCheckStartFrame: 1
+        inputCheckEndFrame: 1
+        input:
+          executeWindow: 3
+          executeInputs: []
+          sequenceWindow: 8
+          sequenceInputs: []
+        chargeLevelMin: 0
+        chargeLevelMax: 0
+        inputCheckProcessed: 0
+    00000007:
       type: {class: BoxDefinition, ns: CAF.Combat, asm: CAF}
       data:
         shape: 0
@@ -195,8 +223,8 @@ MonoBehaviour:
         rotation: {x: 0, y: 0, z: 0}
         radius: 0
         height: 0
-    00000007:
-      type: {class: HitInfo, ns: CAF.Combat, asm: CAF}
+    00000008:
+      type: {class: HitInfo, ns: TDAction.Combat, asm: TDAction_CSharp}
       data:
         airOnly: 0
         groundOnly: 0
@@ -226,7 +254,7 @@ MonoBehaviour:
         opponentMaxMagnitude: 1
         opponentMinMagnitude: 1
         throwConfirm: {fileID: 0}
-    00000008:
+    00000009:
       type: {class: BoxDefinition, ns: CAF.Combat, asm: CAF}
       data:
         shape: 0
@@ -235,24 +263,26 @@ MonoBehaviour:
         rotation: {x: 0, y: 0, z: 0}
         radius: 0
         height: 0
-    00000009:
+    0000000A:
       type: {class: ForceSet, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
         xForce: 1
         yForce: 0
-    0000000A:
+    0000000B:
       type: {class: ApplyFriction, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
         xFriction: 1
         yFriction: 0
-    0000000B:
+    0000000C:
       type: {class: ApplyFriction, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
         xFriction: 0
         yFriction: 1
-    0000000C:
+    0000000D:
       type: {class: ApplyGravity, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
         useEntityMaxFallSpeed: 1
         useEntityGravity: 1
         useEntityGravityScale: 1
+    0000000E:
+      type: {class: LandCancel, ns: TDAction.Combat.Events, asm: TDAction_CSharp}

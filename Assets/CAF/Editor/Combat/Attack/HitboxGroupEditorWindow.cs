@@ -113,6 +113,7 @@ namespace CAF.Combat
             {
                 return;
             }
+            EditorGUILayout.LabelField($"Type: {hitboxGroup.hitboxHitInfo.GetType().FullName}");
 
             switch (hitboxGroup.hitGroupType)
             {
@@ -140,6 +141,11 @@ namespace CAF.Combat
 
         protected void OnHitInfoSelected(object t)
         {
+            if(hitboxGroup.hitboxHitInfo != null)
+            {
+                hitboxGroup.hitboxHitInfo = (HitInfoBase)Activator.CreateInstance(hitInfoTypes[(string)t], new object[] { hitboxGroup.hitboxHitInfo });
+                return;
+            }
             hitboxGroup.hitboxHitInfo = (HitInfoBase)Activator.CreateInstance(hitInfoTypes[(string)t]);
         }
 

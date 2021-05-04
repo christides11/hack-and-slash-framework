@@ -10,11 +10,16 @@ namespace CAF.Fighters
     /// </summary>
     public class FighterHitboxManager
     {
+        protected class IDGroupCollisionInfo{
+            public List<GameObject> hitIHurtables = new List<GameObject>();
+            public HashSet<int> hitboxGroups = new HashSet<int>();
+        }
+
         public delegate void HitboxGroupEventAction(HitboxGroup hitboxGroup, int hitboxIndex, Hurtbox hurtbox);
         public event HitboxGroupEventAction OnHitHurtbox;
 
         // ID Group : Owners Hit
-        public Dictionary<int, List<GameObject>> collidedIHurtables = new Dictionary<int, List<GameObject>>();
+        protected Dictionary<int, IDGroupCollisionInfo> collidedIHurtables = new Dictionary<int, IDGroupCollisionInfo>();
 
         public FighterCombatManager combatManager;
         public FighterBase manager;
@@ -30,7 +35,48 @@ namespace CAF.Fighters
             collidedIHurtables.Clear();
         }
 
-        public virtual bool CheckForCollision(HitboxGroup hitboxGroup)
+        public virtual GameObject[] GetIDGroupCollisions(int IDGroup)
+        {
+            if(collidedIHurtables.ContainsKey(IDGroup) == false)
+            {
+                return null;
+            }
+            return collidedIHurtables[IDGroup].hitIHurtables.ToArray();
+        }
+
+        /// <summary>
+        /// If the given ID group has hit anything.
+        /// </summary>
+        /// <param name="IDGroup">The ID group.</param>
+        /// <returns>True if the ID group has hit something.</returns>
+        public virtual bool IDGroupHasHurt(int IDGroup)
+        {
+            if (collidedIHurtables.ContainsKey(IDGroup) && collidedIHurtables[IDGroup].hitIHurtables.Count > 0)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// If the given hitbox group has hit anything.
+        /// </summary>
+        /// <param name="IDGroup">The ID group the hitbox group belongs to.</param>
+        /// <param name="hitboxGroupID">The hitbox group's identifier.</param>
+        /// <returns>True if the hitbox group has hit something.</returns>
+        public virtual bool HitboxGroupHasHurt(int IDGroup, int hitboxGroupID)
+        {
+            if (collidedIHurtables.ContainsKey(IDGroup))
+            {
+                if (collidedIHurtables[IDGroup].hitboxGroups.Count > 0 && collidedIHurtables[IDGroup].hitboxGroups.Contains(hitboxGroupID))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public virtual bool CheckForCollision(int hitboxGroupIndex, HitboxGroup hitboxGroup)
         {
             Hurtbox[] hurtboxes = null;
             for(int i = 0; i < hitboxGroup.boxes.Count; i++)
@@ -46,12 +92,12 @@ namespace CAF.Fighters
                 // Hit thing(s). Check if we should actually hurt them.
                 if (!collidedIHurtables.ContainsKey(hitboxGroup.ID))
                 {
-                    collidedIHurtables.Add(hitboxGroup.ID, new List<GameObject>());
+                    collidedIHurtables.Add(hitboxGroup.ID, new IDGroupCollisionInfo());
                 }
                 for(int j = 0; j < hurtboxes.Length; j++)
                 {
                     // Owner was already hit by this ID group or is null, ignore it.
-                    if (hurtboxes[j] == null || collidedIHurtables[hitboxGroup.ID].Contains(hurtboxes[j].Owner))
+                    if (hurtboxes[j] == null || collidedIHurtables[hitboxGroup.ID].hitIHurtables.Contains(hurtboxes[j].Owner))
                     {
                         continue;
                     }
@@ -61,7 +107,8 @@ namespace CAF.Fighters
                         continue;
                     }
                     HurtHurtbox(hitboxGroup, i, hurtboxes[j]);
-                    collidedIHurtables[hitboxGroup.ID].Add(hurtboxes[j].Owner);
+                    collidedIHurtables[hitboxGroup.ID].hitIHurtables.Add(hurtboxes[j].Owner);
+                    collidedIHurtables[hitboxGroup.ID].hitboxGroups.Add(hitboxGroupIndex);
                 }
             }
             return false;

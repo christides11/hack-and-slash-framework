@@ -8,8 +8,9 @@ namespace CAF.Combat
     {
         public string nickname = "event";
         public bool active = true;
-        public bool onHit;
+        public OnHitType onHitCheck;
         public int onHitHitboxGroup;
+        public int onHitIDGroup;
         public int startFrame = 1;
         public int endFrame = 1;
         [SerializeReference] public AttackEvent attackEvent;

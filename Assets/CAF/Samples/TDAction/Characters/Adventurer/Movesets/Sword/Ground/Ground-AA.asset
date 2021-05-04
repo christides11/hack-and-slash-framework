@@ -149,7 +149,7 @@ MonoBehaviour:
         radius: 0
         height: 0
     00000006:
-      type: {class: HitInfo, ns: CAF.Combat, asm: CAF}
+      type: {class: HitInfo, ns: TDAction.Combat, asm: TDAction_CSharp}
       data:
         airOnly: 0
         groundOnly: 0

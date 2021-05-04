@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TDAction.Combat;
 using TDAction.Inputs;
 using UnityEngine;
+using HitInfo = TDAction.Combat.HitInfo;
 
 namespace TDAction.Entities
 {

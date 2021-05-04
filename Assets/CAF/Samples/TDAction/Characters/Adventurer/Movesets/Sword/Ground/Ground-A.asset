@@ -71,8 +71,9 @@ MonoBehaviour:
       data:
         nickname: F.Move
         active: 1
-        onHit: 0
+        onHitCheck: 0
         onHitHitboxGroup: 0
+        onHitIDGroup: 0
         startFrame: 3
         endFrame: 3
         attackEvent:
@@ -100,8 +101,9 @@ MonoBehaviour:
       data:
         nickname: Friction
         active: 1
-        onHit: 0
+        onHitCheck: 0
         onHitHitboxGroup: 0
+        onHitIDGroup: 0
         startFrame: 6
         endFrame: 60
         attackEvent:
@@ -128,9 +130,10 @@ MonoBehaviour:
       data:
         nickname: Jump Cancel
         active: 1
-        onHit: 0
+        onHitCheck: 0
         onHitHitboxGroup: 0
-        startFrame: 15
+        onHitIDGroup: 0
+        startFrame: 12
         endFrame: 60
         attackEvent:
           id: 12
@@ -160,10 +163,10 @@ MonoBehaviour:
         radius: 0
         height: 0
     00000007:
-      type: {class: HitInfo, ns: CAF.Combat, asm: CAF}
+      type: {class: HitInfo, ns: TDAction.Combat, asm: TDAction_CSharp}
       data:
         airOnly: 0
-        groundOnly: 0
+        groundOnly: 1
         hitKills: 1
         continuousHit: 0
         spaceBetweenHits: 0
@@ -171,7 +174,7 @@ MonoBehaviour:
         opponentResetYForce: 1
         attackerHitstop: 4
         hitstop: 4
-        hitstun: 50
+        hitstun: 40
         forceType: 0
         forceRelation: 0
         breakArmor: 0

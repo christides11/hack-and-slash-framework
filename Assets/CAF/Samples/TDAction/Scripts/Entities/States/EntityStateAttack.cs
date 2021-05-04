@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using TDAction.Combat;
 using TDAction.Inputs;
 using UnityEngine;
@@ -55,7 +53,7 @@ namespace TDAction.Entities.States
             bool interrupted = false;
             for (int i = 0; i < currentAttack.events.Count; i++)
             {
-                switch(HandleEvents(currentAttack.events[i]))
+                switch(HandleEvents(currentAttack, currentAttack.events[i]))
                 {
                     case CAF.Combat.AttackEventReturnType.STALL:
                         // Event wants us to stall on the current frame.
@@ -114,7 +112,7 @@ namespace TDAction.Entities.States
         /// </summary>
         /// <param name="currentEvent">The event being processed.</param>
         /// <returns>True if the current attack state was canceled by the event.</returns>
-        protected virtual CAF.Combat.AttackEventReturnType HandleEvents(CAF.Combat.AttackEventDefinition currentEvent)
+        protected virtual CAF.Combat.AttackEventReturnType HandleEvents(AttackDefinition currentAttack, CAF.Combat.AttackEventDefinition currentEvent)
         {
             if (!currentEvent.active)
             {
@@ -150,20 +148,25 @@ namespace TDAction.Entities.States
             if (e.StateManager.CurrentStateFrame >= currentEvent.startFrame
                 && e.StateManager.CurrentStateFrame <= currentEvent.endFrame)
             {
-                /*
-                if (currentEvent.onHit)
+                
+                if (currentEvent.onHitCheck != CAF.Combat.OnHitType.NONE)
                 {
-                    List<CAF.Combat.IHurtable> ihList = 
-                        ((EntityHitboxManager)e.CombatManager.hitboxManager).GetHitList(currentEvent.onHitHitboxGroup);
-                    if (ihList == null)
+                    if(currentEvent.onHitCheck == CAF.Combat.OnHitType.ID_GROUP)
                     {
-                        return CAF.Combat.AttackEventReturnType.NONE;
+                        if (((EntityHitboxManager)e.CombatManager.hitboxManager).IDGroupHasHurt(currentEvent.onHitIDGroup) == false)
+                        {
+                            return CAF.Combat.AttackEventReturnType.NONE;
+                        }
                     }
-                    if (ihList.Count <= 1)
+                    else if(currentEvent.onHitCheck == CAF.Combat.OnHitType.HITBOX_GROUP)
                     {
-                        return CAF.Combat.AttackEventReturnType.NONE;
+                        if (((EntityHitboxManager)e.CombatManager.hitboxManager).HitboxGroupHasHurt(currentAttack.hitboxGroups[currentEvent.onHitHitboxGroup].ID, 
+                            currentEvent.onHitHitboxGroup) == false)
+                        {
+                            return CAF.Combat.AttackEventReturnType.NONE;
+                        }
                     }
-                }*/
+                }
                 return currentEvent.attackEvent.Evaluate((int)(e.StateManager.CurrentStateFrame - currentEvent.startFrame),
                     currentEvent.endFrame - currentEvent.startFrame,
                     e,
@@ -252,42 +255,9 @@ namespace TDAction.Entities.States
             switch (boxGroup.hitGroupType)
             {
                 case CAF.Combat.HitboxType.HIT:
-                    entityManager.CombatManager.hitboxManager.CheckForCollision(boxGroup);
+                    entityManager.CombatManager.hitboxManager.CheckForCollision(groupIndex, boxGroup);
                     break;
             }
-            /*
-            FighterManager entityManager = GetEntityManager();
-            // Cleanup the box if it's active frames are over.
-            if(entityManager.StateManager.CurrentStateFrame == boxGroup.activeFramesEnd + 1)
-            {
-                entityManager.CombatManager.hitboxManager.DeactivateHitboxGroup(groupIndex);
-            }
-
-            // Make sure we're in the frame window of the box.
-            if(entityManager.StateManager.CurrentStateFrame < boxGroup.activeFramesStart
-                || entityManager.StateManager.CurrentStateFrame > boxGroup.activeFramesEnd)
-            {
-                return;
-            }
-
-            // Check if the charge level requirement was met.
-            if(boxGroup.chargeLevelNeeded >= 0)
-            {
-                int currentChargeLevel = entityManager.CombatManager.CurrentChargeLevel;
-                if (currentChargeLevel <= boxGroup.chargeLevelNeeded
-                    || currentChargeLevel > boxGroup.chargeLevelMax)
-                {
-                    return;
-                }
-            }
-
-            // Create the box.
-            switch (boxGroup.hitGroupType)
-            {
-                case CAF.Combat.HitboxType.HIT:
-                    entityManager.CombatManager.hitboxManager.CreateHitboxGroup(groupIndex);
-                    break;
-            }*/
         }
     }
 }

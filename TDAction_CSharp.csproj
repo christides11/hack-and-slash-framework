@@ -95,6 +95,8 @@
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\ForceAdd.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\ForceSet.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\JumpCancel.cs" />
+    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\LandCancel.cs" />
+    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\HitInfo.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Moveset\MovesetDefinition.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\TeamTypes.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Entities\CharacterController2D.cs" />

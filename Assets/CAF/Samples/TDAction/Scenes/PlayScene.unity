@@ -4412,7 +4412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 927051212}
-  parallaxEffect: 0.1
+  parallaxEffect: 0.4
 --- !u!1 &1465072301
 GameObject:
   m_ObjectHideFlags: 0

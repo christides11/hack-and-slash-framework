@@ -48,7 +48,6 @@ namespace CAF.Combat
             }
             scrollPos = EditorGUILayout.BeginScrollView(scrollPos);
             DrawEventInfo();
-            //DrawHurtboxGroupInfo();
             EditorGUILayout.EndScrollView();
         }
 
@@ -57,11 +56,15 @@ namespace CAF.Combat
         {
             attackEvent.nickname = EditorGUILayout.TextField("Name", attackEvent.nickname);
             attackEvent.active = EditorGUILayout.Toggle("Active", attackEvent.active);
-            attackEvent.onHit = EditorGUILayout.Toggle("On Hit?", attackEvent.onHit);
-            if (attackEvent.onHit)
+            attackEvent.onHitCheck = (OnHitType)EditorGUILayout.EnumPopup("On Hit Check", attackEvent.onHitCheck);
+            switch (attackEvent.onHitCheck)
             {
-                attackEvent.onHitHitboxGroup = EditorGUILayout.IntField("Hitbox Group",
-                    attackEvent.onHitHitboxGroup);
+                case OnHitType.ID_GROUP:
+                    attackEvent.onHitIDGroup = EditorGUILayout.IntField("ID Group", attackEvent.onHitIDGroup);
+                    break;
+                case OnHitType.HITBOX_GROUP:
+                    attackEvent.onHitHitboxGroup = EditorGUILayout.IntField("Hitbox Group", attackEvent.onHitHitboxGroup);
+                    break;
             }
 
             EditorGUILayout.BeginHorizontal();
