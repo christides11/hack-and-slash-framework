@@ -134,6 +134,7 @@ namespace TDAction.Entities
 
         public virtual bool TryLandCancel()
         {
+            PhysicsManager.CheckIfGrounded();
             if (IsGrounded)
             {
                 StateManager.ChangeState((ushort)EntityStates.IDLE);

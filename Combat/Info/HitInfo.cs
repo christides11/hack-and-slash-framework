@@ -35,40 +35,33 @@ namespace CAF.Combat
 
         }
 
-        public HitInfo(HitInfo other)
+        public HitInfo(HitInfoBase other): base(other)
         {
-            airOnly = other.airOnly;
-            groundOnly = other.groundOnly;
+            if(other.GetType() != typeof(HitInfo)
+                && other.GetType().IsSubclassOf(typeof(HitInfo)) == false)
+            {
+                return;
+            }
+            HitInfo otherHitInfo = (HitInfo)other;
+            breakArmor = otherHitInfo.breakArmor;
+            unblockable = otherHitInfo.unblockable;
+            knockdown = otherHitInfo.knockdown;
 
-            continuousHit = other.continuousHit;
-            spaceBetweenHits = other.spaceBetweenHits;
-            breakArmor = other.breakArmor;
-            unblockable = other.unblockable;
-            knockdown = other.knockdown;
+            groundBounces = otherHitInfo.groundBounces;
+            groundBounceForce = otherHitInfo.groundBounceForce;
+            wallBounces = otherHitInfo.wallBounces;
+            wallBounceForce = otherHitInfo.wallBounceForce;
 
-            groundBounces = other.groundBounces;
-            groundBounceForce = other.groundBounceForce;
-            wallBounces = other.wallBounces;
-            wallBounceForce = other.wallBounceForce;
+            damageOnHit = otherHitInfo.damageOnHit;
+            damageOnBlock = otherHitInfo.damageOnBlock;
 
-            damageOnHit = other.damageOnHit;
-            damageOnBlock = other.damageOnBlock;
-            hitKills = other.hitKills;
-            attackerHitstop = other.attackerHitstop;
-            hitstop = other.hitstop;
-            hitstun = other.hitstun;
+            causesTumble = otherHitInfo.causesTumble;
 
-            opponentResetXForce = other.opponentResetXForce;
-            opponentResetYForce = other.opponentResetYForce;
-            forceType = other.forceType;
-            forceRelation = other.forceRelation;
-            causesTumble = other.causesTumble;
+            opponentForceDir = otherHitInfo.opponentForceDir;
+            opponentForceMagnitude = otherHitInfo.opponentForceMagnitude;
 
-            opponentForceDir = other.opponentForceDir;
-            opponentForceMagnitude = other.opponentForceMagnitude;
-
-            forceIncludeYForce = other.forceIncludeYForce;
-            opponentMaxMagnitude = other.opponentMaxMagnitude;
+            forceIncludeYForce = otherHitInfo.forceIncludeYForce;
+            opponentMaxMagnitude = otherHitInfo.opponentMaxMagnitude;
         }
 
         [NonSerialized] bool drawHitEffectsDropdown;
