@@ -17,9 +17,9 @@ MonoBehaviour:
   hitstunFrictionGround: 0.4
   hitstunFrictionAir: 0.1
   gravity: 0.5
-  hitstunGravity: 0.008
+  hitstunGravity: 0.3
   maxFallSpeed: 10
-  hitstunMaxFallSpeed: 0.1
+  hitstunMaxFallSpeed: 10
   jumpSquatFrames: 4
   groundFriction: 0.6
   walkBaseAcceleration: 0.3

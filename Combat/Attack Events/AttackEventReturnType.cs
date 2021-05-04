@@ -4,6 +4,7 @@
     {
         NONE = 0,
         STALL = 1,
-        INTERRUPT = 2
+        INTERRUPT = 2,
+        INTERRUPT_NO_CLEANUP = 3
     }
 }

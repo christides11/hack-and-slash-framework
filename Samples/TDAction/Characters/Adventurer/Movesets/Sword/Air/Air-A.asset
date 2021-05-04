@@ -63,8 +63,9 @@ MonoBehaviour:
       data:
         nickname: F.Force
         active: 1
-        onHit: 0
+        onHitCheck: 0
         onHitHitboxGroup: 0
+        onHitIDGroup: 0
         startFrame: 1
         endFrame: 1
         attackEvent:
@@ -92,8 +93,9 @@ MonoBehaviour:
       data:
         nickname: X.Friction
         active: 1
-        onHit: 0
+        onHitCheck: 0
         onHitHitboxGroup: 0
+        onHitIDGroup: 0
         startFrame: 8
         endFrame: 50
         attackEvent:
@@ -120,8 +122,9 @@ MonoBehaviour:
       data:
         nickname: Jump Cancel
         active: 1
-        onHit: 0
+        onHitCheck: 0
         onHitHitboxGroup: 0
+        onHitIDGroup: 0
         startFrame: 10
         endFrame: 50
         attackEvent:
@@ -147,8 +150,9 @@ MonoBehaviour:
       data:
         nickname: Gravity
         active: 1
-        onHit: 0
+        onHitCheck: 0
         onHitHitboxGroup: 0
+        onHitIDGroup: 0
         startFrame: 17
         endFrame: 50
         attackEvent:
@@ -192,8 +196,9 @@ MonoBehaviour:
       data:
         nickname: Y.Friction
         active: 1
-        onHit: 0
+        onHitCheck: 0
         onHitHitboxGroup: 0
+        onHitIDGroup: 0
         startFrame: 1
         endFrame: 7
         attackEvent:
@@ -220,8 +225,9 @@ MonoBehaviour:
       data:
         nickname: Land Cancel
         active: 1
-        onHit: 0
+        onHitCheck: 0
         onHitHitboxGroup: 0
+        onHitIDGroup: 0
         startFrame: 4
         endFrame: 50
         attackEvent:
@@ -316,3 +322,6 @@ MonoBehaviour:
         yFriction: 1
     00000010:
       type: {class: LandCancel, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
+      data:
+        cancelType: 0
+        state: 0

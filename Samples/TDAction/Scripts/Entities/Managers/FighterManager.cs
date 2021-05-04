@@ -79,8 +79,8 @@ namespace TDAction.Entities
 
         public virtual bool TryAttack()
         {
-            MovesetAttackNode man = CombatManager.TryAttack();
-            if (man != null)
+            int man = CombatManager.TryAttack();
+            if (man != -1)
             {
                 CombatManager.SetAttack(man);
                 StateManager.ChangeState((int)EntityStates.ATTACK);
@@ -89,11 +89,11 @@ namespace TDAction.Entities
             return false;
         }
 
-        public virtual bool TryAttack(MovesetAttackNode man, bool resetFrameCounter = true)
+        public virtual bool TryAttack(int attackIdentifier, bool resetFrameCounter = true)
         {
-            if(man != null)
+            if(attackIdentifier != -1)
             {
-                CombatManager.SetAttack(man);
+                CombatManager.SetAttack(attackIdentifier);
                 StateManager.ChangeState((int)EntityStates.ATTACK, resetFrameCounter ? 0 : StateManager.CurrentStateFrame);
                 return true;
             }
@@ -137,7 +137,10 @@ namespace TDAction.Entities
             PhysicsManager.CheckIfGrounded();
             if (IsGrounded)
             {
-                StateManager.ChangeState((ushort)EntityStates.IDLE);
+                if (setState)
+                {
+                    StateManager.ChangeState((ushort)EntityStates.IDLE);
+                }
                 return true;
             }
             return false;

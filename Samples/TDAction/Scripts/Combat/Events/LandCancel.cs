@@ -19,6 +19,7 @@ namespace TDAction.Combat.Events
 
         public CancelType cancelType;
         public EntityStates state;
+        public int attackIdentifier;
 
         public override string GetName()
         {
@@ -28,9 +29,18 @@ namespace TDAction.Combat.Events
         public override AttackEventReturnType Evaluate(int frame, int endFrame,
             CAF.Fighters.FighterBase controller, AttackEventVariables variables)
         {
-            if ((controller as TDAction.Entities.FighterManager).TryLandCancel())
+            if ((controller as TDAction.Entities.FighterManager).TryLandCancel(cancelType == CancelType.DEFAULT ? true : false))
             {
-                return AttackEventReturnType.INTERRUPT;
+                if(cancelType == CancelType.STATE)
+                {
+                    controller.StateManager.ChangeState((ushort)state);
+                    return AttackEventReturnType.INTERRUPT;
+                }else if(cancelType == CancelType.ATTACK)
+                {
+                    controller.CombatManager.Cleanup();
+                    (controller as TDAction.Entities.FighterManager).TryAttack(attackIdentifier);
+                    return AttackEventReturnType.INTERRUPT_NO_CLEANUP;
+                }
             }
             return AttackEventReturnType.NONE;
         }
@@ -42,21 +52,12 @@ namespace TDAction.Combat.Events
             switch (cancelType)
             {
                 case CancelType.ATTACK:
-
+                    attackIdentifier = EditorGUILayout.IntField("Attack Identifier", attackIdentifier);
                     break;
                 case CancelType.STATE:
                     state = (EntityStates)EditorGUILayout.EnumPopup("State", (EntityStates)state);
                     break;
             }
-            /*
-            if (eventDefinition.variables.floatVars == null
-                || eventDefinition.variables.floatVars.Count != 1)
-            {
-                eventDefinition.variables.floatVars = new List<float>(1);
-                eventDefinition.variables.floatVars.Add(0);
-            }
-
-            eventDefinition.variables.floatVars[0] = EditorGUILayout.FloatField("Max", eventDefinition.variables.floatVars[0]);*/
         }
 #endif
     }

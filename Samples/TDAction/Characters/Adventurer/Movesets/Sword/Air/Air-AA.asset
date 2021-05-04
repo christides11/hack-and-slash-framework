@@ -291,3 +291,6 @@ MonoBehaviour:
         useEntityGravityScale: 1
     0000000E:
       type: {class: LandCancel, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
+      data:
+        cancelType: 0
+        state: 0

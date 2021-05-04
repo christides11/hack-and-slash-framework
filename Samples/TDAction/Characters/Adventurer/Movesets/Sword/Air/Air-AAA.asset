@@ -303,6 +303,7 @@ MonoBehaviour:
       data:
         cancelType: 2
         state: 0
+        attackIdentifier: 7
     0000000E:
       type: {class: ApplyFriction, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:

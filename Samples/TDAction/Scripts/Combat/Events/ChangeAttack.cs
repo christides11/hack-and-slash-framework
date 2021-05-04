@@ -29,24 +29,23 @@ namespace TDAction.Combat.Events
             FighterManager e = (FighterManager)controller;
             EntityCombatManager combatManager = (EntityCombatManager)controller.CombatManager;
 
-            e.TryAttack((MovesetAttackNode)variables.objectVars[0]);
+            e.TryAttack(variables.intVars[0]);
             return AttackEventReturnType.STALL;
         }
 
 #if UNITY_EDITOR
         public override void DrawEventVariables(CAF.Combat.AttackEventDefinition eventDefinition)
         {
-            if (eventDefinition.variables.objectVars == null
-                || eventDefinition.variables.objectVars.Count != 1)
+            if (eventDefinition.variables.intVars== null
+                || eventDefinition.variables.intVars.Count != 1)
             {
-                eventDefinition.variables.objectVars = new List<Object>(1);
-                eventDefinition.variables.objectVars.Add(null);
+                eventDefinition.variables.intVars = new List<int>(1);
+                eventDefinition.variables.intVars.Add(-1);
             }
 
             resetCurrentFrame = EditorGUILayout.Toggle("Reset Current Frame Counter", resetCurrentFrame);
 
-            eventDefinition.variables.objectVars[0] =
-                EditorGUILayout.ObjectField("Attack", eventDefinition.variables.objectVars[0], typeof(MovesetAttackNode), false);
+            eventDefinition.variables.intVars[0] = EditorGUILayout.IntField("Attack", eventDefinition.variables.intVars[0]);
 
             lastFrameExecution = EditorGUILayout.Toggle("Execute on Last Frame", lastFrameExecution);
         }
