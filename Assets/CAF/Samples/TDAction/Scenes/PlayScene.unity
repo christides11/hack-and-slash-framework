@@ -710,7 +710,12 @@ PrefabInstance:
     - target: {fileID: 6667267786158460212, guid: 566a2b9082a19f54d9a11fabf7eb2be8,
         type: 3}
       propertyPath: m_Name
-      value: Boxer
+      value: Adventurer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667267786158460212, guid: 566a2b9082a19f54d9a11fabf7eb2be8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6667267786158460213, guid: 566a2b9082a19f54d9a11fabf7eb2be8,
         type: 3}
@@ -782,7 +787,9 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6300165297845272074, guid: 566a2b9082a19f54d9a11fabf7eb2be8, type: 3}
+    - {fileID: 4981262455273057824, guid: 566a2b9082a19f54d9a11fabf7eb2be8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 566a2b9082a19f54d9a11fabf7eb2be8, type: 3}
 --- !u!1 &685427466
 GameObject:

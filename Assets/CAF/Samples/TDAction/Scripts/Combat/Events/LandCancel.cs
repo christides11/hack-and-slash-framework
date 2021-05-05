@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using CAF.Combat;
-using TDAction.Entities;
+using TDAction.Fighter;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -18,7 +18,7 @@ namespace TDAction.Combat.Events
         }
 
         public CancelType cancelType;
-        public EntityStates state;
+        public FighterStates state;
         public int attackIdentifier;
 
         public override string GetName()
@@ -29,7 +29,7 @@ namespace TDAction.Combat.Events
         public override AttackEventReturnType Evaluate(int frame, int endFrame,
             CAF.Fighters.FighterBase controller, AttackEventVariables variables)
         {
-            if ((controller as TDAction.Entities.FighterManager).TryLandCancel(cancelType == CancelType.DEFAULT ? true : false))
+            if ((controller as TDAction.Fighter.FighterManager).TryLandCancel(cancelType == CancelType.DEFAULT ? true : false))
             {
                 if(cancelType == CancelType.STATE)
                 {
@@ -38,7 +38,7 @@ namespace TDAction.Combat.Events
                 }else if(cancelType == CancelType.ATTACK)
                 {
                     controller.CombatManager.Cleanup();
-                    (controller as TDAction.Entities.FighterManager).TryAttack(attackIdentifier);
+                    (controller as TDAction.Fighter.FighterManager).TryAttack(attackIdentifier);
                     return AttackEventReturnType.INTERRUPT_NO_CLEANUP;
                 }
             }
@@ -55,7 +55,7 @@ namespace TDAction.Combat.Events
                     attackIdentifier = EditorGUILayout.IntField("Attack Identifier", attackIdentifier);
                     break;
                 case CancelType.STATE:
-                    state = (EntityStates)EditorGUILayout.EnumPopup("State", (EntityStates)state);
+                    state = (FighterStates)EditorGUILayout.EnumPopup("State", (FighterStates)state);
                     break;
             }
         }

@@ -38,8 +38,8 @@ namespace TDAction.Combat
             base.CreateFighter();
             if (visualFighterSceneReference)
             {
-                visualFighterSceneReference.GetComponent<Entities.EntityAnimator>().animations.OnEnable();
-                visualFighterSceneReference.GetComponent<Entities.EntityAnimator>().SetAnimation((attack as AttackDefinition).animationName);
+                visualFighterSceneReference.GetComponent<Fighter.FighterAnimator>().Animations.OnEnable();
+                visualFighterSceneReference.GetComponent<Fighter.FighterAnimator>().SetAnimation((attack as AttackDefinition).animationName);
                 visualFighterSceneReference.GetComponent<Prime31.CharacterController2D>().Awake();
             }
         }
@@ -49,14 +49,14 @@ namespace TDAction.Combat
             base.IncrementForward();
             if (visualFighterSceneReference)
             {
-                visualFighterSceneReference.GetComponent<Entities.EntityAnimator>().SetFrame(timelineFrame);
+                visualFighterSceneReference.GetComponent<Fighter.FighterAnimator>().SetFrame(timelineFrame);
             }
         }
 
         protected override void MoveEntity()
         {
-            //base.MoveEntity();
-            TDAction.Entities.CharacterPhysicsManager pm = visualFighterSceneReference.GetComponent<TDAction.Entities.CharacterPhysicsManager>();
+            base.MoveEntity();
+            TDAction.Fighter.FighterPhysicsManager pm = visualFighterSceneReference.GetComponent<TDAction.Fighter.FighterPhysicsManager>();
             pm.Tick();
         }
 
@@ -67,8 +67,8 @@ namespace TDAction.Combat
             hurtboxes.Clear();
             if (string.IsNullOrEmpty((attack as AttackDefinition).animationName) == false)
             {
-                visualFighterSceneReference.GetComponent<Entities.EntityAnimator>().SetAnimation((attack as AttackDefinition).animationName);
-                visualFighterSceneReference.GetComponent<Entities.EntityAnimator>().SetFrame(0);
+                visualFighterSceneReference.GetComponent<Fighter.FighterAnimator>().SetAnimation((attack as AttackDefinition).animationName);
+                visualFighterSceneReference.GetComponent<Fighter.FighterAnimator>().SetFrame(0);
             }
         }
 
