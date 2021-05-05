@@ -1,5 +1,5 @@
 ﻿using TDAction.Camera;
-using TDAction.Entities;
+using TDAction.Fighter;
 using TDAction.Simulation;
 using TDAction.UI;
 using UnityEngine;

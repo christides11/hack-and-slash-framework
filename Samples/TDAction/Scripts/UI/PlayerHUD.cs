@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using TDAction.Entities;
+using TDAction.Fighter;
 using UnityEngine;
 using UnityEngine.UI;
 

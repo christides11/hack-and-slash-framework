@@ -16,7 +16,7 @@ namespace TDAction.Managers
         public GameHandler GameHandler { get { return gameHandler; } }
 
         [SerializeField] private GameHandler gameHandler = null;
-        [SerializeField] private TDAction.Entities.FighterManager playerEntity;
+        [SerializeField] private TDAction.Fighter.FighterManager playerEntity;
         [SerializeField] private Vector3 playerSpawnPosition;
         public Hurtbox hurtboxPrefab;
 

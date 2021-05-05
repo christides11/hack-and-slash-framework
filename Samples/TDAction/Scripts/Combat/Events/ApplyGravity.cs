@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using CAF.Combat;
-using TDAction.Entities;
+using TDAction.Fighter;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -22,16 +22,16 @@ namespace TDAction.Combat.Events
         public override AttackEventReturnType Evaluate(int frame, int endFrame,
             CAF.Fighters.FighterBase controller, AttackEventVariables variables)
         {
-            EntityPhysicsManager physicsManager = (EntityPhysicsManager)controller.PhysicsManager;
+            FighterStatsManager statsManager = (controller as FighterManager).statManager;
+            FighterPhysicsManager physicsManager = (FighterPhysicsManager)controller.PhysicsManager;
             if (controller.IsGrounded)
             {
                 physicsManager.forceGravity = Vector3.zero;
                 return AttackEventReturnType.NONE;
             }
-            EntityStats entityStats = ((TDAction.Entities.FighterManager)controller).entityDefinition.GetEntityStats();
             float percent = (float)frame / (float)endFrame;
 
-            float gravity = entityStats.gravity;
+            float gravity = statsManager.CurrentStats.gravity.GetCurrentValue();
             if (!useEntityGravity)
             {
                 gravity = variables.curveVars[0].Evaluate(percent)
@@ -45,7 +45,7 @@ namespace TDAction.Combat.Events
                     * variables.floatVars[1];
             }
 
-            float maxFallSpeed = entityStats.maxFallSpeed;
+            float maxFallSpeed = statsManager.CurrentStats.maxFallSpeed.GetCurrentValue();
             if (!useEntityMaxFallSpeed)
             {
                 maxFallSpeed = variables.curveVars[2].Evaluate(percent)

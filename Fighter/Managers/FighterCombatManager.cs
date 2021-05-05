@@ -11,7 +11,7 @@ namespace CAF.Fighters
     {
         public delegate void EmptyAction(FighterBase self);
         public delegate void HealthChangedAction(FighterBase initializer, FighterBase self, HitInfoBase hitInfo);
-        public delegate void MovesetChangedAction(FighterBase self, MovesetDefinition lastMoveset);
+        public delegate void MovesetChangedAction(FighterBase self, int lastMoveset);
         public delegate void ChargeLevelChangedAction(FighterBase self, int lastChargeLevel);
         public delegate void ChargeLevelChargeChangedAction(FighterBase self, int lastChargeLevelCharge);
         public event HealthChangedAction OnHit;
@@ -31,10 +31,11 @@ namespace CAF.Fighters
         public int HitStop { get { return hitstop; } }
         public int CurrentChargeLevel { get; protected set; } = 0;
         public int CurrentChargeLevelCharge { get; protected set; } = 0;
-        public MovesetDefinition CurrentMoveset { get; protected set; } = null;
+        public virtual MovesetDefinition CurrentMoveset { get; }
         public MovesetAttackNode CurrentAttack { get { if (currentAttack < 0) { return null; } return (MovesetAttackNode)CurrentMoveset.GetAttackNode(currentAttack); } }
         public HitInfoBase LastHitBy { get; protected set; }
 
+        protected int currentMoveset = 0;
         protected int currentAttack = -1;
 
         protected int hitstun;
@@ -345,10 +346,10 @@ namespace CAF.Fighters
             OnHitStunAdded?.Invoke(manager);
         }
 
-        public virtual void SetMoveset(MovesetDefinition moveset)
+        public virtual void SetMoveset(int movesetIndex)
         {
-            MovesetDefinition oldMoveset = CurrentMoveset;
-            CurrentMoveset = moveset;
+            int oldMoveset = currentMoveset;
+            currentMoveset = movesetIndex;
             OnMovesetChanged?.Invoke(manager, oldMoveset);
         }
 

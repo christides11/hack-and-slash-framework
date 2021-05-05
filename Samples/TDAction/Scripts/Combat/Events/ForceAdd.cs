@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using CAF.Combat;
-using TDAction.Entities;
+using TDAction.Fighter;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -23,7 +23,7 @@ namespace TDAction.Combat.Events
             CAF.Fighters.FighterBase controller, AttackEventVariables variables)
         {
             FighterManager e = (FighterManager)controller;
-            EntityPhysicsManager physicsManager = (EntityPhysicsManager)controller.PhysicsManager;
+            FighterPhysicsManager physicsManager = (FighterPhysicsManager)controller.PhysicsManager;
             Vector2 f = Vector2.zero;
             if (xForce)
             {

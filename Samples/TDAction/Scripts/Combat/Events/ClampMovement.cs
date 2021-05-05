@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using CAF.Combat;
-using TDAction.Entities;
+using TDAction.Fighter;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -20,7 +20,7 @@ namespace TDAction.Combat.Events
         public override AttackEventReturnType Evaluate(int frame, int endFrame,
             CAF.Fighters.FighterBase controller, AttackEventVariables variables)
         {
-            EntityPhysicsManager physicsManager = (EntityPhysicsManager)controller.PhysicsManager;
+            FighterPhysicsManager physicsManager = (FighterPhysicsManager)controller.PhysicsManager;
             physicsManager.forceMovement.x = Mathf.Clamp(physicsManager.forceMovement.x,
                 -variables.floatVars[0], variables.floatVars[0]);
             return AttackEventReturnType.NONE;

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using CAF.Combat;
-using TDAction.Entities;
+using TDAction.Fighter;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -27,7 +27,7 @@ namespace TDAction.Combat.Events
                 return AttackEventReturnType.NONE;
             }
             FighterManager e = (FighterManager)controller;
-            EntityCombatManager combatManager = (EntityCombatManager)controller.CombatManager;
+            FighterCombatManager combatManager = (FighterCombatManager)controller.CombatManager;
 
             e.TryAttack(variables.intVars[0]);
             return AttackEventReturnType.STALL;
