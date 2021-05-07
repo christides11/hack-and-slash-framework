@@ -6,9 +6,13 @@
 
 CAF's goal is to create a framework that handles most of the code that works similarly between games of this type, while also providing the ability to change any part of the framework easily. 
 
+## Roadmap
+CAF is currently in **pre-alpha**, expect things to change constantly and for code to break.
+The current roadmap/project board can be viewed [here](https://open.codecks.io/christides11-hns-framework).
+
 ## Getting Started
 
-TO get started, follow the guide [here](https://christides11.github.io/Character-Action-Framework/guides/index.html). This guide will walk you through installing the framework all the way to having a functional game running.
+To get started, follow the guide [here](https://christides11.github.io/Character-Action-Framework/guides/index.html). This guide will walk you through installing the framework all the way to having a functional game running.
 
 ## Examples
 
