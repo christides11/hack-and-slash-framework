@@ -31,3 +31,15 @@ MonoBehaviour:
     animation: {fileID: 7400000, guid: 8fa5c1e58872c0c47a63b4de7bd1c8e7, type: 2}
   - animationName: sword-air-aaaa
     animation: {fileID: 7400000, guid: 7fb6cbc925fe7e34b8e451cf3f55ec40, type: 2}
+  - animationName: walk
+    animation: {fileID: 7400000, guid: 33415d6d25cf318489dee5f991742a2a, type: 2}
+  - animationName: ground-slide
+    animation: {fileID: 7400000, guid: d18d08ac0faaf2341b27703e9cdbba3a, type: 2}
+  - animationName: ground-slide-end
+    animation: {fileID: 7400000, guid: eec540fc5c0d61a41ae16d3809ab6591, type: 2}
+  - animationName: run
+    animation: {fileID: 7400000, guid: 6151497e3329a5b43bf03aa8a66844c5, type: 2}
+  - animationName: bow-ground-startup
+    animation: {fileID: 7400000, guid: 568bbb081b9426b469d6b232cfc4afe6, type: 2}
+  - animationName: bow-ground-release
+    animation: {fileID: 7400000, guid: 963ccfc8660608248a5bacf8892838df, type: 2}

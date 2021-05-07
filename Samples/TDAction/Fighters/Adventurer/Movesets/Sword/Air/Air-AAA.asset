@@ -291,13 +291,17 @@ MonoBehaviour:
     0000000B:
       type: {class: ApplyFriction, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
+        useXFriction: 0
+        useYFriction: 1
         xFriction: 0
-        yFriction: 1
+        yFriction: 0.6
     0000000C:
       type: {class: ForceSet, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
+        applyXForce: 0
+        applyYForce: 1
         xForce: 0
-        yForce: 1
+        yForce: -13
     0000000D:
       type: {class: LandCancel, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
@@ -307,10 +311,14 @@ MonoBehaviour:
     0000000E:
       type: {class: ApplyFriction, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
+        useXFriction: 1
+        useYFriction: 0
         xFriction: 1
         yFriction: 0
     0000000F:
-      type: {class: ForceAdd, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
+      type: {class: ForceSet, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
+        applyXForce: 0
+        applyYForce: 1
         xForce: 0
         yForce: 1

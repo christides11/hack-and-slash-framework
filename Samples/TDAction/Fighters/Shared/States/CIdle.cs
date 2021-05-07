@@ -26,8 +26,10 @@ namespace TDAction.Fighter
 
             GetPhysicsManager().ApplyMovementFriction(c.statManager.CurrentStats.groundFriction.GetCurrentValue());
 
-            CheckInterrupt();
-            c.StateManager.IncrementFrame();
+            if (CheckInterrupt() == false)
+            {
+                c.StateManager.IncrementFrame();
+            }
         }
 
         public override bool CheckInterrupt()

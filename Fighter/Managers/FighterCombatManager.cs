@@ -235,7 +235,7 @@ namespace CAF.Fighters
             if (sequence.executeInputs.Count <= 0)
             {
                 currentOffset++;
-                if (!processSequenceButtons)
+                if (processSequenceButtons == false)
                 {
                     pressedExecuteInputs = false;
                 }

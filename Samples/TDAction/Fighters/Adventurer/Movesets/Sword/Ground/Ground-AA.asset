@@ -60,8 +60,9 @@ MonoBehaviour:
       data:
         nickname: F.Force
         active: 1
-        onHit: 0
+        onHitCheck: 0
         onHitHitboxGroup: 0
+        onHitIDGroup: 0
         startFrame: 3
         endFrame: 3
         attackEvent:
@@ -89,8 +90,9 @@ MonoBehaviour:
       data:
         nickname: Friction
         active: 1
-        onHit: 0
+        onHitCheck: 0
         onHitHitboxGroup: 0
+        onHitIDGroup: 0
         startFrame: 7
         endFrame: 60
         attackEvent:
@@ -117,8 +119,9 @@ MonoBehaviour:
       data:
         nickname: Jump Cancel
         active: 1
-        onHit: 0
+        onHitCheck: 0
         onHitHitboxGroup: 0
+        onHitIDGroup: 0
         startFrame: 11
         endFrame: 60
         attackEvent:
@@ -191,12 +194,16 @@ MonoBehaviour:
     00000008:
       type: {class: ForceSet, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
-        xForce: 1
+        applyXForce: 1
+        applyYForce: 0
+        xForce: 5
         yForce: 0
     00000009:
       type: {class: ApplyFriction, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
-        xFriction: 1
+        useXFriction: 1
+        useYFriction: 0
+        xFriction: 0.5
         yFriction: 0
     0000000A:
       type: {class: JumpCancel, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
