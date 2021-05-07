@@ -1,3 +1,26 @@
+# [16.0.0](https://github.com/christides11/Character-Action-Framework/compare/v15.0.0...v16.0.0) (2021-05-07)
+
+
+### Code Refactoring
+
+*  CurrentMoveset now referred to by it's index. ([15d20f6](https://github.com/christides11/Character-Action-Framework/commit/15d20f6b3237e69b47c576376cfbf0291b98be04))
+* Changed to using PropertyDrawers and SerializedObjects for editors. ([12c9483](https://github.com/christides11/Character-Action-Framework/commit/12c9483f81c4c50a0c007fbd87fa32b0955556d9))
+* Hitstun/Hitstop handling changes ([faa02a6](https://github.com/christides11/Character-Action-Framework/commit/faa02a6bd3781ff790ab148647a24b45a330883e))
+* MovesetAttackNodes now refered to by their ID. ([8a595df](https://github.com/christides11/Character-Action-Framework/commit/8a595dfd7e960e85fa6387aff515bf09fb048e11))
+
+
+### Features
+
+* Attack Editor now allows you to move the visual horizontally. ([9b81cf3](https://github.com/christides11/Character-Action-Framework/commit/9b81cf33aaec1079ec3073bbb07542a2a930d7f5))
+
+
+### BREAKING CHANGES
+
+* Now using propertydrawers and serializedobjects for editor. Makes undoing/redoing changes possible, and makes code for attack event editors able to be separate from the class itself.
+* Current moveset tracked by it's index now for networking purposes.
+* The current attack is now tracked by it's identifier instead of a direct reference to it. This was done to make it easier to send and receive the current attack through the network.
+* Hitstun/hitstop can not be set directly in FighterCombatManager, use the methods instead.
+
 # [15.0.0](https://github.com/christides11/Character-Action-Framework/compare/v14.2.1...v15.0.0) (2021-05-03)
 
 
