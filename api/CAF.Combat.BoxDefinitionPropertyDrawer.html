@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class StateHurtboxDefinitionEditor
+    <title>Class BoxDefinitionPropertyDrawer
    | Character Action Framework Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class StateHurtboxDefinitionEditor
+    <meta name="title" content="Class BoxDefinitionPropertyDrawer
    | Character Action Framework Documentation ">
     <meta name="generator" content="docfx 2.57.2.0">
     
@@ -78,41 +78,64 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CAF.Combat.StateHurtboxDefinitionEditor">
+            <article class="content wrap" id="_content" data-uid="CAF.Combat.BoxDefinitionPropertyDrawer">
   
   
-  <h1 id="CAF_Combat_StateHurtboxDefinitionEditor" data-uid="CAF.Combat.StateHurtboxDefinitionEditor" class="text-break">Class StateHurtboxDefinitionEditor
+  <h1 id="CAF_Combat_BoxDefinitionPropertyDrawer" data-uid="CAF.Combat.BoxDefinitionPropertyDrawer" class="text-break">Class BoxDefinitionPropertyDrawer
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">StateHurtboxDefinitionEditor</span></div>
+    <div class="level1"><span class="xref">BoxDefinitionPropertyDrawer</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="CAF.Combat.html">CAF.Combat</a></h6>
   <h6><strong>Assembly</strong>: CAF.Editor.dll</h6>
-  <h5 id="CAF_Combat_StateHurtboxDefinitionEditor_syntax">Syntax</h5>
+  <h5 id="CAF_Combat_BoxDefinitionPropertyDrawer_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class StateHurtboxDefinitionEditor : Editor</code></pre>
+    <pre><code class="lang-csharp hljs">public class BoxDefinitionPropertyDrawer : PropertyDrawer</code></pre>
   </div>
-  <h3 id="fields">Fields
+  <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_StateHurtboxDefinitionEditor_hurtboxGroupTypes.md&amp;value=---%0Auid%3A%20CAF.Combat.StateHurtboxDefinitionEditor.hurtboxGroupTypes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_BoxDefinitionPropertyDrawer_GetPropertyHeight_SerializedProperty_GUIContent_.md&amp;value=---%0Auid%3A%20CAF.Combat.BoxDefinitionPropertyDrawer.GetPropertyHeight(SerializedProperty%2CGUIContent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/StateHurtboxDefinitionEditor.cs/#L11">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/BoxDefinitionPropertyDrawer.cs/#L13">View Source</a>
   </span>
-  <h4 id="CAF_Combat_StateHurtboxDefinitionEditor_hurtboxGroupTypes" data-uid="CAF.Combat.StateHurtboxDefinitionEditor.hurtboxGroupTypes">hurtboxGroupTypes</h4>
+  <a id="CAF_Combat_BoxDefinitionPropertyDrawer_GetPropertyHeight_" data-uid="CAF.Combat.BoxDefinitionPropertyDrawer.GetPropertyHeight*"></a>
+  <h4 id="CAF_Combat_BoxDefinitionPropertyDrawer_GetPropertyHeight_SerializedProperty_GUIContent_" data-uid="CAF.Combat.BoxDefinitionPropertyDrawer.GetPropertyHeight(SerializedProperty,GUIContent)">GetPropertyHeight(SerializedProperty, GUIContent)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Dictionary&lt;string, Type&gt; hurtboxGroupTypes</code></pre>
+    <pre><code class="lang-csharp hljs">public override float GetPropertyHeight(SerializedProperty property, GUIContent label)</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SerializedProperty</span></td>
+        <td><span class="parametername">property</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">GUIContent</span></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -122,28 +145,53 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="methods">Methods
-  </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_StateHurtboxDefinitionEditor_OnInspectorGUI.md&amp;value=---%0Auid%3A%20CAF.Combat.StateHurtboxDefinitionEditor.OnInspectorGUI%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_BoxDefinitionPropertyDrawer_OnGUI_Rect_SerializedProperty_GUIContent_.md&amp;value=---%0Auid%3A%20CAF.Combat.BoxDefinitionPropertyDrawer.OnGUI(Rect%2CSerializedProperty%2CGUIContent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/StateHurtboxDefinitionEditor.cs/#L28">View Source</a>
+    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/BoxDefinitionPropertyDrawer.cs/#L25">View Source</a>
   </span>
-  <a id="CAF_Combat_StateHurtboxDefinitionEditor_OnInspectorGUI_" data-uid="CAF.Combat.StateHurtboxDefinitionEditor.OnInspectorGUI*"></a>
-  <h4 id="CAF_Combat_StateHurtboxDefinitionEditor_OnInspectorGUI" data-uid="CAF.Combat.StateHurtboxDefinitionEditor.OnInspectorGUI">OnInspectorGUI()</h4>
+  <a id="CAF_Combat_BoxDefinitionPropertyDrawer_OnGUI_" data-uid="CAF.Combat.BoxDefinitionPropertyDrawer.OnGUI*"></a>
+  <h4 id="CAF_Combat_BoxDefinitionPropertyDrawer_OnGUI_Rect_SerializedProperty_GUIContent_" data-uid="CAF.Combat.BoxDefinitionPropertyDrawer.OnGUI(Rect,SerializedProperty,GUIContent)">OnGUI(Rect, SerializedProperty, GUIContent)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void OnInspectorGUI()</code></pre>
+    <pre><code class="lang-csharp hljs">public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Rect</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">SerializedProperty</span></td>
+        <td><span class="parametername">property</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">GUIContent</span></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
@@ -152,10 +200,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_StateHurtboxDefinitionEditor.md&amp;value=---%0Auid%3A%20CAF.Combat.StateHurtboxDefinitionEditor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/christides11/Character-Action-Framework/new/master/apiSpec/new?filename=CAF_Combat_BoxDefinitionPropertyDrawer.md&amp;value=---%0Auid%3A%20CAF.Combat.BoxDefinitionPropertyDrawer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/Combat/StateHurtboxDefinitionEditor.cs/#L8" class="contribution-link">View Source</a>
+                    <a href="https://github.com/christides11/Character-Action-Framework/blob/master/Assets/CAF/Editor/BoxDefinitionPropertyDrawer.cs/#L8" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
