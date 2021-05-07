@@ -25,6 +25,7 @@ namespace CAF.Combat
 
         }
 
+        /*
         [NonSerialized] protected Dictionary<string, Type> boxDefinitionTypes = new Dictionary<string, Type>();
         [NonSerialized] protected bool boxesDropdown = false;
         public virtual void DrawInspector(float indentLevel)
@@ -86,6 +87,6 @@ namespace CAF.Combat
         protected virtual void OnBoxDefinitionTypeSelected(object t)
         {
             boxes.Add((BoxDefinitionBase)Activator.CreateInstance(boxDefinitionTypes[(string)t]));
-        }
+        }*/
     }
 }

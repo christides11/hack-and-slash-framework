@@ -36,8 +36,8 @@ MonoBehaviour:
       type: {class: HitboxGroup, ns: CAF.Combat, asm: CAF}
       data:
         ID: 0
-        activeFramesStart: 7
-        activeFramesEnd: 12
+        activeFramesStart: 9
+        activeFramesEnd: 14
         hitGroupType: 0
         boxes:
         - id: 6
@@ -215,7 +215,9 @@ MonoBehaviour:
     0000000A:
       type: {class: ForceSet, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
-        xForce: 1
+        applyXForce: 0
+        applyYForce: 0
+        xForce: 0
         yForce: 0
     0000000B:
       type: {class: ApplyFriction, ns: TDAction.Combat.Events, asm: TDAction_CSharp}

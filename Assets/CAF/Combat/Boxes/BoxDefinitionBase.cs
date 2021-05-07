@@ -10,7 +10,6 @@ namespace CAF.Combat
     [System.Serializable]
     public class BoxDefinitionBase
     {
-
         public BoxShape shape;
 
         public BoxDefinitionBase()

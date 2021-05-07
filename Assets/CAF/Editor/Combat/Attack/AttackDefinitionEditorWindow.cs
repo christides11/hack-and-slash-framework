@@ -67,6 +67,11 @@ namespace CAF.Combat
 
         protected virtual void OnGUI()
         {
+            if(attack == null)
+            {
+                Close();
+                return;
+            }
             var pos = position;
             pos.x = 0;
             pos.y = 0;
@@ -159,20 +164,29 @@ namespace CAF.Combat
                 EditorGUILayout.EndHorizontal();
             }
 
+            if (attack == null)
+            {
+                return;
+            }
+
+            SerializedObject serializedObject = new SerializedObject(attack);
+            serializedObject.Update();
             GUILayout.BeginArea(new Rect(pos.x, pos.y + pos.height, pos.width, position.height - pos.height));
-            DrawGeneralOptions();
+
+            DrawGeneralOptions(serializedObject);
             if (attack.useState)
             {
                 GUILayout.EndArea();
+                serializedObject.ApplyModifiedProperties();
                 return;
             }
-            MenuBar();
+            MenuBar(serializedObject);
             GUILayout.Space(10);
             if (visualFighterSceneReference)
             {
-                if (GUILayout.Button("Open Fighter Inspector"))
+                if(GUILayout.Button("Open Fighter Inspector"))
                 {
-                    Selection.activeGameObject = visualFighterSceneReference.gameObject;
+                    Selection.activeObject = visualFighterSceneReference.gameObject;
                 }
             }
             EditorGUILayout.BeginHorizontal();
@@ -213,34 +227,29 @@ namespace CAF.Combat
             timelineFrame = (int)EditorGUILayout.Slider(timelineFrame, 0, attack.length);
             EditorGUILayout.EndHorizontal();
             GUILayout.Space(10);
-
             scroll = EditorGUILayout.BeginScrollView(scroll);
             if (showHitboxGroups)
             {
-                DrawHitboxGroupBars();
+                DrawHitboxGroupBars(serializedObject);
             }
             GUILayout.Space(10);
             if (showHurtboxGroups)
             {
-                DrawHurtboxGroupBars();
+                DrawHurtboxGroupBars(serializedObject);
             }
             GUILayout.Space(10);
             if (showEvents)
             {
-                DrawEventBars();
+                DrawEventBars(serializedObject);
             }
             GUILayout.Space(10);
             if (showCharges)
             {
-                DrawChargeBars();
+                DrawChargeBars(serializedObject);
             }
             EditorGUILayout.EndScrollView();
             GUILayout.EndArea();
-
-            if (GUI.changed)
-            {
-                EditorUtility.SetDirty(attack);
-            }
+            serializedObject.ApplyModifiedProperties();
         }
 
         protected virtual void DrawHitboxes()
@@ -352,18 +361,11 @@ namespace CAF.Combat
             visualFighterSceneReference.transform.position += finalMove;
         }
 
-        int tempLength = 0;
         Fighters.FighterBase tempFighter;
-        protected virtual void DrawGeneralOptions()
+        protected virtual void DrawGeneralOptions(SerializedObject serializedObject)
         {
-            attack.name = EditorGUILayout.TextField("Name", attack.name);
-            EditorGUILayout.BeginHorizontal();
-            tempLength = Mathf.Clamp(EditorGUILayout.IntField("Length", tempLength), 1, int.MaxValue);
-            if (GUILayout.Button("Apply"))
-            {
-                attack.length = tempLength;
-            }
-            EditorGUILayout.EndHorizontal();
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("attackName"), new GUIContent("Name"));
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("length"));
             EditorGUILayout.BeginHorizontal();
             tempFighter = (Fighters.FighterBase)EditorGUILayout.ObjectField("Character", tempFighter, typeof(Fighters.FighterBase), false);
             if (GUILayout.Button("Apply"))
@@ -372,10 +374,9 @@ namespace CAF.Combat
             }
             EditorGUILayout.EndHorizontal();
             EditorGUILayout.BeginHorizontal();
-            EditorGUILayout.LabelField("State Override", GUILayout.Width(150));
-            attack.useState = EditorGUILayout.Toggle(attack.useState, GUILayout.Width(20));
-            EditorGUI.BeginDisabledGroup(!attack.useState);
-            attack.stateOverride = (ushort)EditorGUILayout.IntField(attack.stateOverride);
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("useState"), new GUIContent("State Override"));
+            EditorGUI.BeginDisabledGroup(!serializedObject.FindProperty("useState").boolValue);
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("stateOverride"), GUIContent.none);
             EditorGUI.EndDisabledGroup();
             EditorGUILayout.EndHorizontal();
         }
@@ -402,7 +403,7 @@ namespace CAF.Combat
         protected bool showHurtboxGroups = true;
         protected bool showEvents = true;
         protected bool showCharges = true;
-        protected virtual void MenuBar()
+        protected virtual void MenuBar(SerializedObject serializedObject)
         {
             GUILayout.BeginHorizontal();
             showHitboxGroups = GUILayout.Toggle(showHitboxGroups, "Hitbox Grops", "Button");
@@ -413,159 +414,186 @@ namespace CAF.Combat
         }
 
         #region Timeline Elements
-        protected virtual void DrawHitboxGroupBars()
+        protected virtual void DrawHitboxGroupBars(SerializedObject serializedObject)
         {
             EditorGUILayout.BeginHorizontal();
             GUILayout.Label("Hitbox Groups", EditorStyles.boldLabel);
-            if(GUILayout.Button("+", GUILayout.Width(30), GUILayout.MaxWidth(30)))
+            if (GUILayout.Button("+", GUILayout.Width(30), GUILayout.MaxWidth(30)))
             {
-                AddHitboxGroup();
+                AddHitboxGroup(serializedObject);
             }
             EditorGUILayout.EndHorizontal();
             DrawUILine(Color.gray);
-            for(int i = 0; i < attack.hitboxGroups.Count; i++)
+            var hitboxGroupProperty = serializedObject.FindProperty("hitboxGroups");
+            for(int i = 0; i < hitboxGroupProperty.arraySize; i++)
             {
                 EditorGUILayout.BeginHorizontal();
                 GUILayout.Space(25);
                 if(GUILayout.Button("-", GUILayout.Width(20)))
                 {
-                    attack.hitboxGroups.RemoveAt(i);
+                    hitboxGroupProperty.DeleteArrayElementAtIndex(i);
                     return;
                 }
-                float activeFrameStart = attack.hitboxGroups[i].activeFramesStart;
-                float activeFrameEnd = attack.hitboxGroups[i].activeFramesEnd;
-                EditorGUILayout.LabelField($"{activeFrameStart.ToString("F0")}~{activeFrameEnd.ToString("F0")}", GUILayout.Width(55));
-                if (GUILayout.Button("Info", GUILayout.Width(100)))
+                SerializedProperty arrayElement = hitboxGroupProperty.GetArrayElementAtIndex(i);
+                float activeFramesStart = arrayElement.FindPropertyRelative("activeFramesStart").intValue;
+                float activeFramesEnd = arrayElement.FindPropertyRelative("activeFramesEnd").intValue;
+                EditorGUILayout.LabelField($"{activeFramesStart.ToString("F0")}~{activeFramesEnd.ToString("F0")}", GUILayout.Width(55));
+                if(GUILayout.Button("Info", GUILayout.Width(100)))
                 {
                     HitboxGroupEditorWindow.Init(attack.hitboxGroups[i]);
                 }
-                EditorGUILayout.MinMaxSlider(ref activeFrameStart,
-                    ref activeFrameEnd,
+                EditorGUILayout.MinMaxSlider(ref activeFramesStart,
+                    ref activeFramesEnd,
                     1,
-                    attack.length);
-                attack.hitboxGroups[i].activeFramesStart = (int)activeFrameStart;
-                attack.hitboxGroups[i].activeFramesEnd = (int)activeFrameEnd;
+                    serializedObject.FindProperty("length").intValue);
+                arrayElement.FindPropertyRelative("activeFramesStart").intValue = (int)activeFramesStart;
+                arrayElement.FindPropertyRelative("activeFramesEnd").intValue = (int)activeFramesEnd;
                 EditorGUILayout.EndHorizontal();
             }
         }
 
-        protected virtual void DrawHurtboxGroupBars()
+        protected virtual void DrawHurtboxGroupBars(SerializedObject serializedObject)
         {
             EditorGUILayout.BeginHorizontal();
             GUILayout.Label("Hurtbox Groups", EditorStyles.boldLabel);
             if (GUILayout.Button("+", GUILayout.Width(30), GUILayout.MaxWidth(30)))
             {
-                AddHurtboxGroup();
+                AddHurtboxGroup(serializedObject);
             }
             EditorGUILayout.EndHorizontal();
             DrawUILine(Color.gray);
-            for (int i = 0; i < attack.hurtboxGroups.Count; i++)
+            var hurtboxGroupProperty = serializedObject.FindProperty("hurtboxGroups");
+            for (int i = 0; i < hurtboxGroupProperty.arraySize; i++)
             {
                 EditorGUILayout.BeginHorizontal();
                 GUILayout.Space(25);
-                if (GUILayout.Button("-", GUILayout.Width(20)))
+                if(GUILayout.Button("-", GUILayout.Width(20)))
                 {
-                    attack.hurtboxGroups.RemoveAt(i);
+                    hurtboxGroupProperty.DeleteArrayElementAtIndex(i);
                     return;
                 }
-                float activeFrameStart = attack.hurtboxGroups[i].activeFramesStart;
-                float activeFrameEnd = attack.hurtboxGroups[i].activeFramesEnd;
-                EditorGUILayout.LabelField($"{activeFrameStart.ToString("F0")}~{activeFrameEnd.ToString("F0")}", GUILayout.Width(55));
+                SerializedProperty arrayElement = hurtboxGroupProperty.GetArrayElementAtIndex(i);
+                float activeFramesStart = arrayElement.FindPropertyRelative("activeFramesStart").intValue;
+                float activeFramesEnd = arrayElement.FindPropertyRelative("activeFramesEnd").intValue;
+                EditorGUILayout.LabelField($"{activeFramesStart.ToString("F0")}~{activeFramesEnd.ToString("F0")}", GUILayout.Width(55));
                 if (GUILayout.Button("Info", GUILayout.Width(100)))
                 {
                     HurtboxGroupEditorWindow.Init(attack.hurtboxGroups[i]);
                 }
-                EditorGUILayout.MinMaxSlider(ref activeFrameStart,
-                    ref activeFrameEnd,
+                EditorGUILayout.MinMaxSlider(ref activeFramesStart,
+                    ref activeFramesEnd,
                     1,
-                    attack.length);
-                attack.hurtboxGroups[i].activeFramesStart = (int)activeFrameStart;
-                attack.hurtboxGroups[i].activeFramesEnd = (int)activeFrameEnd;
+                    serializedObject.FindProperty("length").intValue);
+                arrayElement.FindPropertyRelative("activeFramesStart").intValue = (int)activeFramesStart;
+                arrayElement.FindPropertyRelative("activeFramesEnd").intValue = (int)activeFramesEnd;
                 EditorGUILayout.EndHorizontal();
             }
         }
 
-        protected virtual void DrawEventBars()
+        protected virtual void DrawEventBars(SerializedObject serializedObject)
         {
             EditorGUILayout.BeginHorizontal();
             GUILayout.Label("Events", EditorStyles.boldLabel);
-            if (GUILayout.Button("+", GUILayout.Width(30), GUILayout.MaxWidth(30)))
+            if(GUILayout.Button("+", GUILayout.Width(30), GUILayout.MaxWidth(30)))
             {
-                attack.events.Add(new AttackEventDefinition());
+                AddEventDefinition(serializedObject);
             }
             EditorGUILayout.EndHorizontal();
             DrawUILine(Color.gray);
-            for (int i = 0; i < attack.events.Count; i++)
+            var eventsProperty = serializedObject.FindProperty("events");
+            for (int i = 0; i < eventsProperty.arraySize; i++)
             {
                 EditorGUILayout.BeginHorizontal();
                 GUILayout.Space(25);
                 if (GUILayout.Button("-", GUILayout.Width(20)))
                 {
-                    attack.events.RemoveAt(i);
+                    eventsProperty.DeleteArrayElementAtIndex(i);
                     return;
                 }
-                float activeFrameStart = attack.events[i].startFrame;
-                float activeFrameEnd = attack.events[i].endFrame;
-                EditorGUILayout.LabelField($"{activeFrameStart.ToString("F0")}~{activeFrameEnd.ToString("F0")}", GUILayout.Width(55));
-                if (GUILayout.Button(attack.events[i].nickname, GUILayout.Width(100)))
+                SerializedProperty arrayElement = eventsProperty.GetArrayElementAtIndex(i);
+                float activeFramesStart = arrayElement.FindPropertyRelative("startFrame").intValue;
+                float activeFramesEnd = arrayElement.FindPropertyRelative("endFrame").intValue;
+                EditorGUILayout.LabelField($"{activeFramesStart.ToString("F0")}~{activeFramesEnd.ToString("F0")}", GUILayout.Width(55));
+                if (GUILayout.Button(arrayElement.FindPropertyRelative("nickname").stringValue, GUILayout.Width(100)))
                 {
-                    EventEditorWindow.Init(attack, attack.events[i]);
+                    AttackEventDefinitionEditorWindow.Init(attack, i);
                 }
-                EditorGUILayout.MinMaxSlider(ref activeFrameStart,
-                    ref activeFrameEnd,
+                EditorGUILayout.MinMaxSlider(ref activeFramesStart,
+                    ref activeFramesEnd,
                     1,
-                    attack.length);
-                attack.events[i].startFrame = (int)activeFrameStart;
-                attack.events[i].endFrame = (int)activeFrameEnd;
+                    serializedObject.FindProperty("length").intValue);
+                arrayElement.FindPropertyRelative("startFrame").intValue = (int)activeFramesStart;
+                arrayElement.FindPropertyRelative("endFrame").intValue = (int)activeFramesEnd;
                 EditorGUILayout.EndHorizontal();
             }
         }
 
-        protected virtual void DrawChargeBars()
+        protected virtual void DrawChargeBars(SerializedObject serializedObject)
         {
             EditorGUILayout.BeginHorizontal();
             GUILayout.Label("Charge Groups", EditorStyles.boldLabel);
-            if (GUILayout.Button("+", GUILayout.Width(30), GUILayout.MaxWidth(30)))
+            if(GUILayout.Button("+", GUILayout.Width(30), GUILayout.MaxWidth(30)))
             {
-                attack.chargeWindows.Add(new ChargeDefinition());
+                AddChargeGroup(serializedObject);
             }
             EditorGUILayout.EndHorizontal();
             DrawUILine(Color.gray);
-            for(int i = 0; i < attack.chargeWindows.Count; i++)
+            var chargeWindowsProperty = serializedObject.FindProperty("chargeWindows");
+            for (int i = 0; i < chargeWindowsProperty.arraySize; i++)
             {
                 EditorGUILayout.BeginHorizontal();
                 GUILayout.Space(25);
-                if (GUILayout.Button("-", GUILayout.Width(20)))
+                if(GUILayout.Button("-", GUILayout.Width(20)))
                 {
-                    attack.chargeWindows.RemoveAt(i);
+                    chargeWindowsProperty.DeleteArrayElementAtIndex(i);
                     return;
                 }
-                float frameStart = attack.chargeWindows[i].startFrame;
-                float frameEnd = attack.chargeWindows[i].endFrame;
-                EditorGUILayout.LabelField($"{frameStart.ToString("F0")}~{frameEnd.ToString("F0")}", GUILayout.Width(55));
+                SerializedProperty arrayElement = chargeWindowsProperty.GetArrayElementAtIndex(i);
+                float activeFramesStart = arrayElement.FindPropertyRelative("startFrame").intValue;
+                float activeFramesEnd = arrayElement.FindPropertyRelative("endFrame").intValue;
+                EditorGUILayout.LabelField($"{activeFramesStart.ToString("F0")}~{activeFramesEnd.ToString("F0")}", GUILayout.Width(55));
                 if (GUILayout.Button("Info", GUILayout.Width(100)))
                 {
-                    ChargeGroupEditorWindow.Init(attack, attack.chargeWindows[i]);
+                    AttackEventDefinitionEditorWindow.Init(attack, i);
                 }
-                EditorGUILayout.MinMaxSlider(ref frameStart,
-                    ref frameEnd,
+                EditorGUILayout.MinMaxSlider(ref activeFramesStart,
+                    ref activeFramesEnd,
                     1,
-                    attack.length);
-                attack.chargeWindows[i].startFrame = (int)frameStart;
-                attack.chargeWindows[i].endFrame = (int)frameEnd;
+                    serializedObject.FindProperty("length").intValue);
+                arrayElement.FindPropertyRelative("startFrame").intValue = (int)activeFramesStart;
+                arrayElement.FindPropertyRelative("endFrame").intValue = (int)activeFramesEnd;
                 EditorGUILayout.EndHorizontal();
             }
         }
         #endregion
 
-        protected virtual void AddHitboxGroup()
+        protected virtual void AddHitboxGroup(SerializedObject serializedObject)
         {
-            attack.hitboxGroups.Add(new HitboxGroup());
+            serializedObject.FindProperty("hitboxGroups").InsertArrayElementAtIndex(serializedObject.FindProperty("hitboxGroups").arraySize);
+            serializedObject.FindProperty("hitboxGroups").GetArrayElementAtIndex(serializedObject.FindProperty("hitboxGroups").arraySize - 1)
+                .managedReferenceValue = new HitboxGroup();
         }
 
-        protected virtual void AddHurtboxGroup()
+        protected virtual void AddHurtboxGroup(SerializedObject serializedObject)
         {
-            attack.hurtboxGroups.Add(new HurtboxGroup());
+            SerializedProperty hurtboxGroupsProperty = serializedObject.FindProperty("hurtboxGroups");
+            hurtboxGroupsProperty.InsertArrayElementAtIndex(hurtboxGroupsProperty.arraySize);
+            hurtboxGroupsProperty.GetArrayElementAtIndex(hurtboxGroupsProperty.arraySize - 1)
+                .managedReferenceValue = new HurtboxGroup();
+        }
+
+        protected virtual void AddEventDefinition(SerializedObject serializedObject)
+        {
+            SerializedProperty eventProperty = serializedObject.FindProperty("events");
+            eventProperty.InsertArrayElementAtIndex(eventProperty.arraySize);
+            eventProperty.GetArrayElementAtIndex(eventProperty.arraySize - 1).managedReferenceValue = new AttackEventDefinition();
+        }
+
+        protected virtual void AddChargeGroup(SerializedObject serializedObject)
+        {
+            SerializedProperty chargeWindowsProperty = serializedObject.FindProperty("chargeWindows");
+            chargeWindowsProperty.InsertArrayElementAtIndex(chargeWindowsProperty.arraySize);
+            chargeWindowsProperty.GetArrayElementAtIndex(chargeWindowsProperty.arraySize - 1).managedReferenceValue = new AttackEventDefinition();
         }
 
         public static void DrawUILine(Color color, int thickness = 2, int padding = 10)

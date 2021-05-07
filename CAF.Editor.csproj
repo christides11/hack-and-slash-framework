@@ -64,14 +64,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CAF\Editor\BoxDefinitionPropertyDrawer.cs" />
     <Compile Include="Assets\CAF\Editor\Combat\Attack\AttackDefinitionEditor.cs" />
     <Compile Include="Assets\CAF\Editor\Combat\Attack\AttackDefinitionEditorWindow.cs" />
+    <Compile Include="Assets\CAF\Editor\Combat\Attack\AttackEventDefinitionEditorWindow.cs" />
+    <Compile Include="Assets\CAF\Editor\Combat\Attack\AttackEventPropertyDrawer.cs" />
     <Compile Include="Assets\CAF\Editor\Combat\Attack\ChargeGroupEditorWindow.cs" />
-    <Compile Include="Assets\CAF\Editor\Combat\Attack\EventEditorWindow.cs" />
     <Compile Include="Assets\CAF\Editor\Combat\Attack\HitboxGroupEditorWindow.cs" />
     <Compile Include="Assets\CAF\Editor\Combat\Attack\HurtboxGroupEditorWindow.cs" />
     <Compile Include="Assets\CAF\Editor\Combat\Moveset\MovesetAttackNodeEditor.cs" />
     <Compile Include="Assets\CAF\Editor\Combat\StateHurtboxDefinitionEditor.cs" />
+    <Compile Include="Assets\CAF\Editor\HurtboxGroupPropertyDrawer.cs" />
     <Compile Include="Assets\CAF\Editor\InputDefinitionDrawer.cs" />
     <None Include="Assets\CAF\Editor\CAF.Editor.asmdef" />
     <Reference Include="UnityEngine">
