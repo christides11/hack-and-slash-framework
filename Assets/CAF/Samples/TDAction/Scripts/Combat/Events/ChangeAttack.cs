@@ -11,8 +11,10 @@ namespace TDAction.Combat.Events
 {
     public class ChangeAttack : AttackEvent
     {
-        public bool resetCurrentFrame = true;
+        public bool resetFrameCounter = true;
         public bool lastFrameExecution = false;
+
+        public int attackID = -1;
 
         public override string GetName()
         {
@@ -29,26 +31,8 @@ namespace TDAction.Combat.Events
             FighterManager e = (FighterManager)controller;
             FighterCombatManager combatManager = (FighterCombatManager)controller.CombatManager;
 
-            e.TryAttack(variables.intVars[0]);
+            e.TryAttack(attackID, resetFrameCounter);
             return AttackEventReturnType.STALL;
         }
-
-#if UNITY_EDITOR
-        public override void DrawEventVariables(CAF.Combat.AttackEventDefinition eventDefinition)
-        {
-            if (eventDefinition.variables.intVars== null
-                || eventDefinition.variables.intVars.Count != 1)
-            {
-                eventDefinition.variables.intVars = new List<int>(1);
-                eventDefinition.variables.intVars.Add(-1);
-            }
-
-            resetCurrentFrame = EditorGUILayout.Toggle("Reset Current Frame Counter", resetCurrentFrame);
-
-            eventDefinition.variables.intVars[0] = EditorGUILayout.IntField("Attack", eventDefinition.variables.intVars[0]);
-
-            lastFrameExecution = EditorGUILayout.Toggle("Execute on Last Frame", lastFrameExecution);
-        }
-#endif
     }
 }

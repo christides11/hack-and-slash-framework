@@ -10,8 +10,11 @@ namespace TDAction.Combat.Events
 {
     public class ApplyFriction : AttackEvent
     {
-        public bool xFriction;
-        public bool yFriction;
+        public bool useXFriction;
+        public bool useYFriction;
+
+        public float xFriction;
+        public float yFriction;
 
         public override string GetName()
         {
@@ -22,33 +25,15 @@ namespace TDAction.Combat.Events
             CAF.Fighters.FighterBase controller, AttackEventVariables variables)
         {
             FighterPhysicsManager physicsManager = (FighterPhysicsManager)controller.PhysicsManager;
-            if (xFriction)
+            if (useXFriction)
             {
-                physicsManager.ApplyMovementFriction(variables.floatVars[0]);
+                physicsManager.ApplyMovementFriction(xFriction);
             }
-            if (yFriction)
+            if (useYFriction)
             {
-                physicsManager.ApplyGravityFriction(variables.floatVars[0]);
+                physicsManager.ApplyGravityFriction(yFriction);
             }
             return AttackEventReturnType.NONE;
         }
-
-#if UNITY_EDITOR
-        public override void DrawEventVariables(CAF.Combat.AttackEventDefinition eventDefinition)
-        {
-            if (eventDefinition.variables.floatVars == null
-                || eventDefinition.variables.floatVars.Count != 1)
-            {
-                eventDefinition.variables.floatVars = new List<float>(1);
-                eventDefinition.variables.floatVars.Add(0);
-            }
-
-            xFriction = EditorGUILayout.Toggle("X-Axis", xFriction);
-            yFriction = EditorGUILayout.Toggle("Y-Axis", yFriction);
-
-            eventDefinition.variables.floatVars[0] = EditorGUILayout.FloatField("Friction",
-                eventDefinition.variables.floatVars[0]);
-        }
-#endif
     }
 }

@@ -64,9 +64,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Editor\AnimationReferenceHolderEditor.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Editor\AttackDefinitionEditor.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Editor\AttackDefinitionEditorWindow.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Editor\AttackEvents\ForceSetPropertyDrawer.cs" />
     <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Editor\InputDefinitionDrawer.cs" />
     <None Include="Assets\CAF\Samples\TDAction\Scripts\Editor\TDAction_CSharp_Editor.asmdef" />
     <Reference Include="UnityEngine">

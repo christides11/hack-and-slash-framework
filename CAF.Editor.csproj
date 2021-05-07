@@ -68,7 +68,6 @@
     <Compile Include="Assets\CAF\Editor\Combat\Attack\AttackDefinitionEditor.cs" />
     <Compile Include="Assets\CAF\Editor\Combat\Attack\AttackDefinitionEditorWindow.cs" />
     <Compile Include="Assets\CAF\Editor\Combat\Attack\AttackEventDefinitionEditorWindow.cs" />
-    <Compile Include="Assets\CAF\Editor\Combat\Attack\AttackEventPropertyDrawer.cs" />
     <Compile Include="Assets\CAF\Editor\Combat\Attack\ChargeGroupEditorWindow.cs" />
     <Compile Include="Assets\CAF\Editor\Combat\Attack\HitboxGroupEditorWindow.cs" />
     <Compile Include="Assets\CAF\Editor\Combat\Attack\HurtboxGroupEditorWindow.cs" />

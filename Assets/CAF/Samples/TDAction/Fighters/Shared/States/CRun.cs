@@ -12,6 +12,12 @@ namespace TDAction.Fighter
             return "Run";
         }
 
+        public override void Initialize()
+        {
+            base.Initialize();
+            (Manager as FighterManager).entityAnimator.SetAnimation("run");
+        }
+
         public override void OnUpdate()
         {
             FighterManager c = Manager as FighterManager;
@@ -42,7 +48,11 @@ namespace TDAction.Fighter
 
             c.SetFaceDirection((int)Mathf.Sign(movementAxis.x));
 
-            CheckInterrupt();
+            if(CheckInterrupt() == false)
+            {
+                c.StateManager.IncrementFrame();
+                (Manager as FighterManager).entityAnimator.SetFrame((int)Manager.StateManager.CurrentStateFrame);
+            }
         }
 
         public override bool CheckInterrupt()

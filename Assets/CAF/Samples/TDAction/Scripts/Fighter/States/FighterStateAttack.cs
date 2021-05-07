@@ -16,7 +16,6 @@ namespace TDAction.Fighter
 
         public override void Initialize()
         {
-            base.Initialize();
             AttackDefinition currentAttack = 
                 (TDAction.Combat.AttackDefinition)GetEntityManager().CombatManager.CurrentAttack.attackDefinition;
             if (currentAttack.useState)

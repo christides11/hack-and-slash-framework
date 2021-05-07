@@ -28,22 +28,22 @@ TextureImporter:
     second: crouch-4
   - first:
       213: -3051788477456609919
-    second: Run-1
+    second: walk-1
   - first:
       213: 6812864027602333311
-    second: Run-2
+    second: walk-2
   - first:
       213: -7282547523972205124
-    second: Run-3
+    second: walk-3
   - first:
       213: 1062949542834640332
-    second: Run-4
+    second: walk-4
   - first:
       213: 4767782445854341248
-    second: Run-5
+    second: walk-5
   - first:
       213: -2021519671248309078
-    second: Run-6
+    second: walk-6
   - first:
       213: 101571700091508751
     second: jumpsquat-1
@@ -91,16 +91,16 @@ TextureImporter:
     second: slide-5
   - first:
       213: 3771267384243845313
-    second: adventurer-v1.5-Sheet_29
+    second: ledge-hang-1
   - first:
       213: -4670524627354225690
-    second: adventurer-v1.5-Sheet_30
+    second: ledge-hang-2
   - first:
       213: -3691666962754819948
-    second: adventurer-v1.5-Sheet_31
+    second: ledge-hang-3
   - first:
       213: 6304556023490750544
-    second: adventurer-v1.5-Sheet_32
+    second: ledge-hang-4
   - first:
       213: -3428362339425429463
     second: adventurer-v1.5-Sheet_33
@@ -259,31 +259,31 @@ TextureImporter:
     second: adventurer-v1.5-Sheet_84
   - first:
       213: 1867614440103027997
-    second: adventurer-v1.5-Sheet_85
+    second: sword-punch-1
   - first:
       213: -5516172988903973048
-    second: adventurer-v1.5-Sheet_86
+    second: sword-punch-2
   - first:
       213: -4341356872245263088
-    second: adventurer-v1.5-Sheet_87
+    second: sword-punch-3
   - first:
       213: 1767457240126523544
-    second: adventurer-v1.5-Sheet_88
+    second: sword-punch-4
   - first:
       213: -4075373463826780061
-    second: adventurer-v1.5-Sheet_89
+    second: sword-punch-5
   - first:
       213: -3585722546115978389
-    second: adventurer-v1.5-Sheet_90
+    second: sword-punch-6
   - first:
       213: 2729851271774367765
-    second: adventurer-v1.5-Sheet_91
+    second: sword-punch-7
   - first:
       213: -1245805177388227614
-    second: adventurer-v1.5-Sheet_92
+    second: sword-punch-8
   - first:
       213: -6787540193282983219
-    second: adventurer-v1.5-Sheet_93
+    second: sword-punch-9
   - first:
       213: 8686480909226747678
     second: adventurer-v1.5-Sheet_94
@@ -594,15 +594,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run-1
+      name: walk-1
       rect:
         serializedVersion: 2
         x: 67
         y: 519
         width: 20
         height: 28
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -615,15 +615,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run-2
+      name: walk-2
       rect:
         serializedVersion: 2
         x: 116
         y: 519
         width: 20
         height: 27
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -636,15 +636,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run-3
+      name: walk-3
       rect:
         serializedVersion: 2
         x: 166
         y: 519
         width: 20
         height: 25
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -657,15 +657,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run-4
+      name: walk-4
       rect:
         serializedVersion: 2
         x: 217
         y: 519
         width: 23
         height: 28
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5217391, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -678,15 +678,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run-5
+      name: walk-5
       rect:
         serializedVersion: 2
         x: 266
         y: 519
         width: 20
         height: 27
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -699,15 +699,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run-6
+      name: walk-6
       rect:
         serializedVersion: 2
         x: 316
         y: 519
         width: 20
         height: 25
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1035,7 +1035,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_29
+      name: ledge-hang-1
       rect:
         serializedVersion: 2
         x: 71
@@ -1056,7 +1056,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_30
+      name: ledge-hang-2
       rect:
         serializedVersion: 2
         x: 121
@@ -1077,7 +1077,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_31
+      name: ledge-hang-3
       rect:
         serializedVersion: 2
         x: 170
@@ -1098,7 +1098,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_32
+      name: ledge-hang-4
       rect:
         serializedVersion: 2
         x: 221
@@ -2211,7 +2211,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_85
+      name: sword-punch-1
       rect:
         serializedVersion: 2
         x: 65
@@ -2232,7 +2232,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_86
+      name: sword-punch-2
       rect:
         serializedVersion: 2
         x: 115
@@ -2253,7 +2253,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_87
+      name: sword-punch-3
       rect:
         serializedVersion: 2
         x: 166
@@ -2274,7 +2274,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_88
+      name: sword-punch-4
       rect:
         serializedVersion: 2
         x: 215
@@ -2295,7 +2295,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_89
+      name: sword-punch-5
       rect:
         serializedVersion: 2
         x: 265
@@ -2316,7 +2316,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_90
+      name: sword-punch-6
       rect:
         serializedVersion: 2
         x: 313
@@ -2337,7 +2337,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_91
+      name: sword-punch-7
       rect:
         serializedVersion: 2
         x: 15
@@ -2358,7 +2358,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_92
+      name: sword-punch-8
       rect:
         serializedVersion: 2
         x: 63
@@ -2379,7 +2379,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-v1.5-Sheet_93
+      name: sword-punch-9
       rect:
         serializedVersion: 2
         x: 117

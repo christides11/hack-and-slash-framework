@@ -41,6 +41,7 @@ namespace TDAction.Combat.Events
                     (controller as TDAction.Fighter.FighterManager).TryAttack(attackIdentifier);
                     return AttackEventReturnType.INTERRUPT_NO_CLEANUP;
                 }
+                return AttackEventReturnType.INTERRUPT;
             }
             return AttackEventReturnType.NONE;
         }

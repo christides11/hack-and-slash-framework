@@ -30,13 +30,13 @@ namespace TDAction.Managers
 
         public virtual void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Alpha1))
+            if (Input.GetKeyDown(KeyCode.F1))
             {
                 frameByFrameMode = !frameByFrameMode;
             }
             if (frameByFrameMode)
             {
-                if (Input.GetKeyDown(KeyCode.Alpha2))
+                if (Input.GetKeyDown(KeyCode.F2))
                 {
                     UpdateSimulation();
                 }

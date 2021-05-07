@@ -4,217 +4,217 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -5386529939198198453
-    second: adventurer-hand-combat-Sheet_0
+    second: ground-A-1
   - first:
       213: 1273228121180341589
-    second: adventurer-hand-combat-Sheet_1
+    second: ground-A-2
   - first:
       213: 9142745663229125269
-    second: adventurer-hand-combat-Sheet_2
+    second: ground-A-3
   - first:
       213: -3607894272285253048
-    second: adventurer-hand-combat-Sheet_3
+    second: ground-A-4
   - first:
       213: 4831023161945834769
-    second: adventurer-hand-combat-Sheet_4
+    second: ground-A-5
   - first:
       213: -7650562442584911264
-    second: adventurer-hand-combat-Sheet_5
+    second: ground-AA-1
   - first:
       213: 1540147999494199438
-    second: adventurer-hand-combat-Sheet_6
+    second: ground-AA-2
   - first:
       213: -6539086957710928809
-    second: adventurer-hand-combat-Sheet_7
+    second: ground-AA-3
   - first:
       213: 1229414202548701797
-    second: adventurer-hand-combat-Sheet_8
+    second: ground-AA-4
   - first:
       213: 5786369175074538867
-    second: adventurer-hand-combat-Sheet_9
+    second: ground-AAA-1
   - first:
       213: -7254858885707781038
-    second: adventurer-hand-combat-Sheet_10
+    second: ground-AAA-2
   - first:
       213: -5753902088655397014
-    second: adventurer-hand-combat-Sheet_11
+    second: ground-AAA-3
   - first:
       213: 6883649767763624468
-    second: adventurer-hand-combat-Sheet_12
+    second: ground-AAA-4
   - first:
       213: -2982899363698674500
-    second: adventurer-hand-combat-Sheet_13
+    second: ground-AAA-5
   - first:
       213: -3346777124972237222
-    second: adventurer-hand-combat-Sheet_14
+    second: ground-AAAA-1
   - first:
       213: 9001029792471018263
-    second: adventurer-hand-combat-Sheet_15
+    second: ground-AAAA-2
   - first:
       213: 6012183768171743953
-    second: adventurer-hand-combat-Sheet_16
+    second: ground-AAAA-3
   - first:
       213: 5783222419053190964
-    second: adventurer-hand-combat-Sheet_17
+    second: ground-AAAA-4
   - first:
       213: 2100648968803027718
-    second: adventurer-hand-combat-Sheet_18
+    second: ground-AAAA-5
   - first:
       213: -3947616794413005867
-    second: adventurer-hand-combat-Sheet_19
+    second: ground-AAAA-6
   - first:
       213: -2310565169104533243
-    second: adventurer-hand-combat-Sheet_20
+    second: air-A-1
   - first:
       213: 1233400854106465098
-    second: adventurer-hand-combat-Sheet_21
+    second: air-A-2
   - first:
       213: 2218429760197279633
-    second: adventurer-hand-combat-Sheet_22
+    second: air-A-3
   - first:
       213: -5542610401167228509
-    second: adventurer-hand-combat-Sheet_23
+    second: air-A-4
   - first:
       213: -4771714130840708690
     second: adventurer-hand-combat-Sheet_24
   - first:
       213: 8172224212020343262
-    second: adventurer-hand-combat-Sheet_25
+    second: air-AA-1
   - first:
       213: -4928136152477334611
-    second: adventurer-hand-combat-Sheet_26
+    second: air-AA-2
   - first:
       213: -6230457068238554093
-    second: adventurer-hand-combat-Sheet_27
+    second: air-AA-3
   - first:
       213: -2563215146315945537
-    second: adventurer-hand-combat-Sheet_28
+    second: air-AA-4
   - first:
       213: -5184760852799578719
-    second: adventurer-hand-combat-Sheet_29
+    second: divekick-3
   - first:
       213: -8531217124644698028
-    second: adventurer-hand-combat-Sheet_30
+    second: divekick-4
   - first:
       213: -3450760691050667238
-    second: adventurer-hand-combat-Sheet_31
+    second: divekick-3
   - first:
       213: -4027152198663914978
-    second: adventurer-hand-combat-Sheet_32
+    second: divekick-4
   - first:
       213: -4814382645412803061
-    second: adventurer-hand-combat-Sheet_33
+    second: knockdown-1
   - first:
       213: 7262281910742715959
-    second: adventurer-hand-combat-Sheet_34
+    second: knockdown-2
   - first:
       213: -7487200133939627908
-    second: adventurer-hand-combat-Sheet_35
+    second: knockdown-3
   - first:
       213: 4799969548750566988
-    second: adventurer-hand-combat-Sheet_36
+    second: knockdown-4
   - first:
       213: 8213592837877116732
-    second: adventurer-hand-combat-Sheet_37
+    second: knockdown-5
   - first:
       213: 5673996010147210823
-    second: adventurer-hand-combat-Sheet_38
+    second: knockdown-6
   - first:
       213: 2254164507850628731
-    second: adventurer-hand-combat-Sheet_39
+    second: floor-lay
   - first:
       213: 6908173641822896433
-    second: adventurer-hand-combat-Sheet_40
+    second: getup-0
   - first:
       213: -4302088642870107126
-    second: adventurer-hand-combat-Sheet_41
+    second: getup-1
   - first:
       213: 860179648227416621
-    second: adventurer-hand-combat-Sheet_42
+    second: getup-2
   - first:
       213: -7196634605062739957
-    second: adventurer-hand-combat-Sheet_43
+    second: getup-3
   - first:
       213: -6536962669552080376
-    second: adventurer-hand-combat-Sheet_44
+    second: getup-4
   - first:
       213: 1335364984876884081
-    second: adventurer-hand-combat-Sheet_45
+    second: getup-5
   - first:
       213: -655559450451249629
-    second: adventurer-hand-combat-Sheet_46
+    second: getup-6
   - first:
       213: 8304275114618252246
-    second: adventurer-hand-combat-Sheet_47
+    second: fist-walk-1
   - first:
       213: 4943407379630324322
-    second: adventurer-hand-combat-Sheet_48
+    second: fist-walk-2
   - first:
       213: -3881510681625422725
-    second: adventurer-hand-combat-Sheet_49
+    second: fist-walk-3
   - first:
       213: -813388202268234843
-    second: adventurer-hand-combat-Sheet_50
+    second: fist-walk-4
   - first:
       213: -6378917665334056695
-    second: adventurer-hand-combat-Sheet_51
+    second: fist-walk-5
   - first:
       213: 7754146814281732677
-    second: adventurer-hand-combat-Sheet_52
+    second: fist-walk-6
   - first:
       213: 3114310232047011756
-    second: adventurer-hand-combat-Sheet_53
+    second: crouch-walk-1
   - first:
       213: 225600174465340648
-    second: adventurer-hand-combat-Sheet_54
+    second: crouch-walk-2
   - first:
       213: -1137912257356829142
-    second: adventurer-hand-combat-Sheet_55
+    second: crouch-walk-3
   - first:
       213: 1295381224068955176
-    second: adventurer-hand-combat-Sheet_56
+    second: crouch-walk-4
   - first:
       213: 8151188102254789685
-    second: adventurer-hand-combat-Sheet_57
+    second: crouch-walk-5
   - first:
       213: 8867790020313015533
-    second: adventurer-hand-combat-Sheet_58
+    second: crouch-walk-6
   - first:
       213: 2350206900481180209
-    second: adventurer-hand-combat-Sheet_59
+    second: run-1
   - first:
       213: 5316992090525869856
-    second: adventurer-hand-combat-Sheet_60
+    second: run-2
   - first:
       213: 3398982377631050149
-    second: adventurer-hand-combat-Sheet_61
+    second: run-3
   - first:
       213: 6642689230245490894
-    second: adventurer-hand-combat-Sheet_62
+    second: run-4
   - first:
       213: 8301849999584586328
-    second: adventurer-hand-combat-Sheet_63
+    second: run-5
   - first:
       213: -2025671240564813261
-    second: adventurer-hand-combat-Sheet_64
+    second: run-6
   - first:
       213: -2055075495721555288
-    second: adventurer-hand-combat-Sheet_65
+    second: wall-run-1
   - first:
       213: 2420110236368611339
-    second: adventurer-hand-combat-Sheet_66
+    second: wall-run-2
   - first:
       213: 8328652160821579077
-    second: adventurer-hand-combat-Sheet_67
+    second: wall-run-3
   - first:
       213: -3663765790963761374
-    second: adventurer-hand-combat-Sheet_68
+    second: wall-run-4
   - first:
       213: -7329322558568863050
-    second: adventurer-hand-combat-Sheet_69
+    second: wall-run-5
   - first:
       213: 3599967374834248798
-    second: adventurer-hand-combat-Sheet_70
+    second: wall-run-6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -258,7 +258,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -300,7 +300,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_0
+      name: ground-A-1
       rect:
         serializedVersion: 2
         x: 15
@@ -321,7 +321,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_1
+      name: ground-A-2
       rect:
         serializedVersion: 2
         x: 63
@@ -342,7 +342,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_2
+      name: ground-A-3
       rect:
         serializedVersion: 2
         x: 114
@@ -363,7 +363,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_3
+      name: ground-A-4
       rect:
         serializedVersion: 2
         x: 166
@@ -384,7 +384,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_4
+      name: ground-A-5
       rect:
         serializedVersion: 2
         x: 215
@@ -405,7 +405,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_5
+      name: ground-AA-1
       rect:
         serializedVersion: 2
         x: 265
@@ -426,7 +426,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_6
+      name: ground-AA-2
       rect:
         serializedVersion: 2
         x: 311
@@ -447,7 +447,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_7
+      name: ground-AA-3
       rect:
         serializedVersion: 2
         x: 16
@@ -468,7 +468,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_8
+      name: ground-AA-4
       rect:
         serializedVersion: 2
         x: 65
@@ -489,7 +489,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_9
+      name: ground-AAA-1
       rect:
         serializedVersion: 2
         x: 115
@@ -510,7 +510,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_10
+      name: ground-AAA-2
       rect:
         serializedVersion: 2
         x: 166
@@ -531,7 +531,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_11
+      name: ground-AAA-3
       rect:
         serializedVersion: 2
         x: 216
@@ -552,7 +552,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_12
+      name: ground-AAA-4
       rect:
         serializedVersion: 2
         x: 266
@@ -573,7 +573,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_13
+      name: ground-AAA-5
       rect:
         serializedVersion: 2
         x: 313
@@ -594,7 +594,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_14
+      name: ground-AAAA-1
       rect:
         serializedVersion: 2
         x: 15
@@ -615,7 +615,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_15
+      name: ground-AAAA-2
       rect:
         serializedVersion: 2
         x: 65
@@ -636,7 +636,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_16
+      name: ground-AAAA-3
       rect:
         serializedVersion: 2
         x: 104
@@ -657,7 +657,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_17
+      name: ground-AAAA-4
       rect:
         serializedVersion: 2
         x: 167
@@ -678,7 +678,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_18
+      name: ground-AAAA-5
       rect:
         serializedVersion: 2
         x: 218
@@ -699,7 +699,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_19
+      name: ground-AAAA-6
       rect:
         serializedVersion: 2
         x: 269
@@ -720,7 +720,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_20
+      name: air-A-1
       rect:
         serializedVersion: 2
         x: 315
@@ -741,7 +741,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_21
+      name: air-A-2
       rect:
         serializedVersion: 2
         x: 18
@@ -762,7 +762,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_22
+      name: air-A-3
       rect:
         serializedVersion: 2
         x: 64
@@ -783,12 +783,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_23
+      name: air-A-4
       rect:
         serializedVersion: 2
         x: 121
         y: 223
-        width: 18
+        width: 22
         height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -804,28 +804,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_24
-      rect:
-        serializedVersion: 2
-        x: 139
-        y: 236
-        width: 4
-        height: 5
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea91785974777cdb0800000000000000
-      internalID: -4771714130840708690
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_25
+      name: air-AA-1
       rect:
         serializedVersion: 2
         x: 168
@@ -846,7 +825,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_26
+      name: air-AA-2
       rect:
         serializedVersion: 2
         x: 211
@@ -867,7 +846,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_27
+      name: air-AA-3
       rect:
         serializedVersion: 2
         x: 264
@@ -888,7 +867,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_28
+      name: air-AA-4
       rect:
         serializedVersion: 2
         x: 316
@@ -909,7 +888,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_29
+      name: divekick-1
       rect:
         serializedVersion: 2
         x: 15
@@ -930,7 +909,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_30
+      name: divekick-2
       rect:
         serializedVersion: 2
         x: 68
@@ -951,7 +930,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_31
+      name: divekick-3
       rect:
         serializedVersion: 2
         x: 111
@@ -972,7 +951,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_32
+      name: divekick-4
       rect:
         serializedVersion: 2
         x: 161
@@ -993,7 +972,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_33
+      name: knockdown-1
       rect:
         serializedVersion: 2
         x: 215
@@ -1014,7 +993,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_34
+      name: knockdown-2
       rect:
         serializedVersion: 2
         x: 260
@@ -1035,7 +1014,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_35
+      name: knockdown-3
       rect:
         serializedVersion: 2
         x: 304
@@ -1056,7 +1035,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_36
+      name: knockdown-4
       rect:
         serializedVersion: 2
         x: 5
@@ -1077,7 +1056,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_37
+      name: knockdown-5
       rect:
         serializedVersion: 2
         x: 51
@@ -1098,7 +1077,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_38
+      name: knockdown-6
       rect:
         serializedVersion: 2
         x: 104
@@ -1119,7 +1098,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_39
+      name: floor-lay
       rect:
         serializedVersion: 2
         x: 154
@@ -1140,7 +1119,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_40
+      name: getup-0
       rect:
         serializedVersion: 2
         x: 204
@@ -1161,7 +1140,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_41
+      name: getup-1
       rect:
         serializedVersion: 2
         x: 253
@@ -1182,7 +1161,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_42
+      name: getup-2
       rect:
         serializedVersion: 2
         x: 303
@@ -1203,7 +1182,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_43
+      name: getup-3
       rect:
         serializedVersion: 2
         x: 4
@@ -1224,7 +1203,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_44
+      name: getup-4
       rect:
         serializedVersion: 2
         x: 59
@@ -1245,7 +1224,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_45
+      name: getup-5
       rect:
         serializedVersion: 2
         x: 109
@@ -1266,7 +1245,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_46
+      name: getup-6
       rect:
         serializedVersion: 2
         x: 161
@@ -1287,7 +1266,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_47
+      name: fist-walk-1
       rect:
         serializedVersion: 2
         x: 221
@@ -1308,7 +1287,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_48
+      name: fist-walk-2
       rect:
         serializedVersion: 2
         x: 272
@@ -1329,7 +1308,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_49
+      name: fist-walk-3
       rect:
         serializedVersion: 2
         x: 320
@@ -1350,7 +1329,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_50
+      name: fist-walk-4
       rect:
         serializedVersion: 2
         x: 19
@@ -1371,7 +1350,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_51
+      name: fist-walk-5
       rect:
         serializedVersion: 2
         x: 69
@@ -1392,7 +1371,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_52
+      name: fist-walk-6
       rect:
         serializedVersion: 2
         x: 120
@@ -1413,7 +1392,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_53
+      name: crouch-walk-1
       rect:
         serializedVersion: 2
         x: 166
@@ -1434,7 +1413,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_54
+      name: crouch-walk-2
       rect:
         serializedVersion: 2
         x: 215
@@ -1455,7 +1434,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_55
+      name: crouch-walk-3
       rect:
         serializedVersion: 2
         x: 265
@@ -1476,7 +1455,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_56
+      name: crouch-walk-4
       rect:
         serializedVersion: 2
         x: 316
@@ -1497,7 +1476,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_57
+      name: crouch-walk-5
       rect:
         serializedVersion: 2
         x: 15
@@ -1518,7 +1497,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_58
+      name: crouch-walk-6
       rect:
         serializedVersion: 2
         x: 65
@@ -1539,15 +1518,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_59
+      name: run-1
       rect:
         serializedVersion: 2
         x: 118
         y: 38
         width: 26
         height: 25
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.3846154, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1560,7 +1539,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_60
+      name: run-2
       rect:
         serializedVersion: 2
         x: 166
@@ -1581,7 +1560,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_61
+      name: run-3
       rect:
         serializedVersion: 2
         x: 219
@@ -1602,15 +1581,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_62
+      name: run-4
       rect:
         serializedVersion: 2
         x: 267
         y: 39
         width: 26
         height: 23
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.3846154, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1623,7 +1602,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_63
+      name: run-5
       rect:
         serializedVersion: 2
         x: 316
@@ -1644,7 +1623,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_64
+      name: run-6
       rect:
         serializedVersion: 2
         x: 18
@@ -1665,7 +1644,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_65
+      name: wall-run-1
       rect:
         serializedVersion: 2
         x: 66
@@ -1686,7 +1665,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_66
+      name: wall-run-2
       rect:
         serializedVersion: 2
         x: 117
@@ -1707,7 +1686,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_67
+      name: wall-run-3
       rect:
         serializedVersion: 2
         x: 163
@@ -1728,7 +1707,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_68
+      name: wall-run-4
       rect:
         serializedVersion: 2
         x: 215
@@ -1749,7 +1728,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_69
+      name: wall-run-5
       rect:
         serializedVersion: 2
         x: 267
@@ -1770,7 +1749,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-hand-combat-Sheet_70
+      name: wall-run-6
       rect:
         serializedVersion: 2
         x: 314

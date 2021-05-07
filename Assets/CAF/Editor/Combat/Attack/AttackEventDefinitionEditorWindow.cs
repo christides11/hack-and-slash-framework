@@ -119,7 +119,7 @@ namespace CAF.Combat
                 EditorGUI.indentLevel++;
                 if (attack.events[eventIndex].attackEvent != null)
                 {
-                    EditorGUILayout.PropertyField(attackEventProperty);
+                    EditorGUILayout.PropertyField(attackEventProperty, true);
                 }
                 EditorGUI.indentLevel--;
             }

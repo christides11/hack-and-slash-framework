@@ -14,6 +14,15 @@ namespace TDAction.Combat.Events
         public bool useEntityGravity;
         public bool useEntityGravityScale;
 
+        public float gravityCurveMultiplier = 1;
+        public AnimationCurve gravityCurve = new AnimationCurve();
+
+        public float gravityScaleCurveMultiplier = 1;
+        public AnimationCurve gravityScaleCurve = new AnimationCurve();
+
+        public float maxFallSpeedCurveMultiplier = 1;
+        public AnimationCurve maxFallSpeedCurve = new AnimationCurve();
+
         public override string GetName()
         {
             return "Apply Gravity";
@@ -34,76 +43,26 @@ namespace TDAction.Combat.Events
             float gravity = statsManager.CurrentStats.gravity.GetCurrentValue();
             if (!useEntityGravity)
             {
-                gravity = variables.curveVars[0].Evaluate(percent)
-                    * variables.floatVars[0];
+                gravity = gravityCurve.Evaluate(percent)
+                    * gravityCurveMultiplier;
             }
 
             float gravityScale = physicsManager.GravityScale;
             if (!useEntityGravityScale)
             {
-                gravityScale = variables.curveVars[1].Evaluate(percent)
-                    * variables.floatVars[1];
+                gravityScale = gravityScaleCurve.Evaluate(percent)
+                    * gravityScaleCurveMultiplier;
             }
 
             float maxFallSpeed = statsManager.CurrentStats.maxFallSpeed.GetCurrentValue();
             if (!useEntityMaxFallSpeed)
             {
-                maxFallSpeed = variables.curveVars[2].Evaluate(percent)
-                    * variables.floatVars[2];
+                maxFallSpeed = maxFallSpeedCurve.Evaluate(percent)
+                    * maxFallSpeedCurveMultiplier;
             }
 
             physicsManager.HandleGravity(maxFallSpeed, gravity, gravityScale);
             return AttackEventReturnType.NONE;
         }
-
-#if UNITY_EDITOR
-        public override void DrawEventVariables(CAF.Combat.AttackEventDefinition eventDefinition)
-        {
-            if (eventDefinition.variables.floatVars == null
-                || eventDefinition.variables.floatVars.Count != 3)
-            {
-                eventDefinition.variables.floatVars = new List<float>(3);
-                eventDefinition.variables.floatVars.Add(0);
-                eventDefinition.variables.floatVars.Add(0);
-                eventDefinition.variables.floatVars.Add(0);
-            }
-            if (eventDefinition.variables.curveVars == null
-                || eventDefinition.variables.curveVars.Count != 3)
-            {
-                eventDefinition.variables.curveVars = new List<AnimationCurve>(3);
-                eventDefinition.variables.curveVars.Add(new AnimationCurve());
-                eventDefinition.variables.curveVars.Add(new AnimationCurve());
-                eventDefinition.variables.curveVars.Add(new AnimationCurve());
-            }
-
-            useEntityGravity = EditorGUILayout.Toggle("Use Entity Gravity?", useEntityGravity);
-            useEntityGravityScale = EditorGUILayout.Toggle("Use Entity Gravity Scale?", useEntityGravityScale);
-            useEntityMaxFallSpeed = EditorGUILayout.Toggle("Use Entity Max Fall Speed?", useEntityMaxFallSpeed);
-
-            EditorGUILayout.Space();
-
-            if (!useEntityGravity)
-            {
-                eventDefinition.variables.floatVars[0] = EditorGUILayout.FloatField("Gravity Curve Multiplier",
-                    eventDefinition.variables.floatVars[0]);
-                eventDefinition.variables.curveVars[0] = EditorGUILayout.CurveField("Gravity Curve",
-                    eventDefinition.variables.curveVars[0]);
-            }
-            if (!useEntityGravityScale)
-            {
-                eventDefinition.variables.floatVars[1] = EditorGUILayout.FloatField("Gravity Scale Curve Multiplier",
-                    eventDefinition.variables.floatVars[1]);
-                eventDefinition.variables.curveVars[1] = EditorGUILayout.CurveField("Gravity Scale Curve",
-                    eventDefinition.variables.curveVars[1]);
-            }
-            if (!useEntityMaxFallSpeed)
-            {
-                eventDefinition.variables.floatVars[2] = EditorGUILayout.FloatField("Max Fall Speed Multiplier",
-                    eventDefinition.variables.floatVars[2]);
-                eventDefinition.variables.curveVars[2] = EditorGUILayout.CurveField("Max Fall Speed Curve",
-                    eventDefinition.variables.curveVars[2]);
-            }
-        }
-#endif
     }
 }

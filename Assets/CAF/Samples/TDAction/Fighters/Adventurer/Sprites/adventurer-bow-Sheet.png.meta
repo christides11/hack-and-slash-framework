@@ -4,55 +4,55 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 1666524579342694678
-    second: adventurer-bow-Sheet_0
+    second: ground-bow-1
   - first:
       213: 7857034630884573844
-    second: adventurer-bow-Sheet_1
+    second: ground-bow-2
   - first:
       213: -3200728795191552080
-    second: adventurer-bow-Sheet_2
+    second: ground-bow-3
   - first:
       213: 619827367763544734
-    second: adventurer-bow-Sheet_3
+    second: ground-bow-4
   - first:
       213: 2125615309657423943
-    second: adventurer-bow-Sheet_4
+    second: ground-bow-5
   - first:
       213: 4099995591874192779
-    second: adventurer-bow-Sheet_5
+    second: ground-bow-6
   - first:
       213: -7680887924448093368
-    second: adventurer-bow-Sheet_6
+    second: ground-bow-release-0
   - first:
       213: 669994489986345836
-    second: adventurer-bow-Sheet_7
+    second: ground-bow-release-1
   - first:
       213: 7907835855639380184
     second: adventurer-bow-Sheet_8
   - first:
       213: -1447164232496687691
-    second: adventurer-bow-Sheet_9
+    second: ground-bow-release-2
   - first:
       213: -9124528570138552911
-    second: adventurer-bow-Sheet_10
+    second: air-bow-1
   - first:
       213: -1161511019554064880
-    second: adventurer-bow-Sheet_11
+    second: air-bow-2
   - first:
       213: 6894554002697834952
-    second: adventurer-bow-Sheet_12
+    second: air-bow-3
   - first:
       213: -6758516136580503451
-    second: adventurer-bow-Sheet_13
+    second: air-bow-hold-1
   - first:
       213: -7464150445050142963
-    second: adventurer-bow-Sheet_14
+    second: air-bow-release-1
   - first:
       213: -1883682340704291595
     second: adventurer-bow-Sheet_15
   - first:
       213: -66505831252142998
-    second: adventurer-bow-Sheet_16
+    second: air-bow-release-2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -96,7 +96,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -138,7 +138,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: adventurer-bow-Sheet_0
+      name: ground-bow-1
       rect:
         serializedVersion: 2
         x: 14
@@ -159,7 +159,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-bow-Sheet_1
+      name: ground-bow-2
       rect:
         serializedVersion: 2
         x: 65
@@ -180,7 +180,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-bow-Sheet_2
+      name: ground-bow-3
       rect:
         serializedVersion: 2
         x: 117
@@ -201,7 +201,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-bow-Sheet_3
+      name: ground-bow-4
       rect:
         serializedVersion: 2
         x: 164
@@ -222,7 +222,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-bow-Sheet_4
+      name: ground-bow-5
       rect:
         serializedVersion: 2
         x: 14
@@ -243,7 +243,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-bow-Sheet_5
+      name: ground-bow-6
       rect:
         serializedVersion: 2
         x: 65
@@ -264,7 +264,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-bow-Sheet_6
+      name: ground-bow-release-0
       rect:
         serializedVersion: 2
         x: 114
@@ -285,12 +285,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-bow-Sheet_7
+      name: ground-bow-release-1
       rect:
         serializedVersion: 2
         x: 161
         y: 75
-        width: 28
+        width: 36
         height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -306,28 +306,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-bow-Sheet_8
-      rect:
-        serializedVersion: 2
-        x: 190
-        y: 86
-        width: 7
-        height: 8
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d08b7d20d64ebd60800000000000000
-      internalID: 7907835855639380184
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: adventurer-bow-Sheet_9
+      name: ground-bow-release-2
       rect:
         serializedVersion: 2
         x: 15
@@ -348,7 +327,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-bow-Sheet_10
+      name: air-bow-1
       rect:
         serializedVersion: 2
         x: 68
@@ -369,7 +348,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-bow-Sheet_11
+      name: air-bow-2
       rect:
         serializedVersion: 2
         x: 114
@@ -390,7 +369,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-bow-Sheet_12
+      name: air-bow-3
       rect:
         serializedVersion: 2
         x: 163
@@ -411,7 +390,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-bow-Sheet_13
+      name: air-bow-hold-1
       rect:
         serializedVersion: 2
         x: 11
@@ -432,12 +411,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-bow-Sheet_14
+      name: air-bow-release-1
       rect:
         serializedVersion: 2
         x: 61
         y: 4
-        width: 26
+        width: 36
         height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -453,28 +432,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer-bow-Sheet_15
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 15
-        width: 7
-        height: 8
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5f4f4ac24e0dbd5e0800000000000000
-      internalID: -1883682340704291595
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: adventurer-bow-Sheet_16
+      name: air-bow-release-2
       rect:
         serializedVersion: 2
         x: 110

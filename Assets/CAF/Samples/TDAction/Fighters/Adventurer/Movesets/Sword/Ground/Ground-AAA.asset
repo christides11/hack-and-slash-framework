@@ -279,12 +279,16 @@ MonoBehaviour:
     0000000E:
       type: {class: ForceSet, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
+        applyXForce: 1
+        applyYForce: 0
         xForce: 1
         yForce: 0
     0000000F:
       type: {class: ApplyFriction, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
-        xFriction: 1
+        useXFriction: 1
+        useYFriction: 0
+        xFriction: 0.5
         yFriction: 0
     00000010:
       type: {class: JumpCancel, ns: TDAction.Combat.Events, asm: TDAction_CSharp}

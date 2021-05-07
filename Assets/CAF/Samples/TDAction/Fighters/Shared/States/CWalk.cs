@@ -47,6 +47,7 @@ namespace TDAction.Fighter
             }
 
             CheckInterrupt();
+            fManager.StateManager.IncrementFrame();
         }
 
         public override bool CheckInterrupt()
