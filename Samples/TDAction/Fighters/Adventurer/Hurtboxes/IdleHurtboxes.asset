@@ -20,7 +20,7 @@ MonoBehaviour:
       type: {class: HurtboxGroup, ns: CAF.Combat, asm: CAF}
       data:
         ID: 0
-        activeFramesStart: 1
+        activeFramesStart: 0
         activeFramesEnd: 60
         boxes:
         - id: 1
