@@ -36,7 +36,7 @@ jobs:
         fi
         git push -f -u origin upm
       env:
-        PKG_ROOT: Assets/CAF
+        PKG_ROOT: Assets/HnSF
     - name: Create upm git tag
       if: steps.semantic.outputs.new_release_published == 'true'
       run: |
