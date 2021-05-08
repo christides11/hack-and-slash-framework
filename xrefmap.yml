@@ -134,6 +134,12 @@ references:
   commentId: F:CAF.Combat.AttackDefinition.attackName
   fullName: CAF.Combat.AttackDefinition.attackName
   nameWithType: AttackDefinition.attackName
+- uid: CAF.Combat.AttackDefinition.cancels
+  name: cancels
+  href: api/CAF.Combat.AttackDefinition.html#CAF_Combat_AttackDefinition_cancels
+  commentId: F:CAF.Combat.AttackDefinition.cancels
+  fullName: CAF.Combat.AttackDefinition.cancels
+  nameWithType: AttackDefinition.cancels
 - uid: CAF.Combat.AttackDefinition.chargeWindows
   name: chargeWindows
   href: api/CAF.Combat.AttackDefinition.html#CAF_Combat_AttackDefinition_chargeWindows
@@ -213,6 +219,19 @@ references:
   commentId: T:CAF.Combat.AttackDefinitionEditorWindow
   fullName: CAF.Combat.AttackDefinitionEditorWindow
   nameWithType: AttackDefinitionEditorWindow
+- uid: CAF.Combat.AttackDefinitionEditorWindow.AddCancelListDefinition(SerializedObject)
+  name: AddCancelListDefinition(SerializedObject)
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_AddCancelListDefinition_SerializedObject_
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.AddCancelListDefinition(SerializedObject)
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.AddCancelListDefinition(SerializedObject)
+  nameWithType: AttackDefinitionEditorWindow.AddCancelListDefinition(SerializedObject)
+- uid: CAF.Combat.AttackDefinitionEditorWindow.AddCancelListDefinition*
+  name: AddCancelListDefinition
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_AddCancelListDefinition_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.AddCancelListDefinition
+  isSpec: "True"
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.AddCancelListDefinition
+  nameWithType: AttackDefinitionEditorWindow.AddCancelListDefinition
 - uid: CAF.Combat.AttackDefinitionEditorWindow.AddChargeGroup(SerializedObject)
   name: AddChargeGroup(SerializedObject)
   href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_AddChargeGroup_SerializedObject_
@@ -290,6 +309,19 @@ references:
   commentId: F:CAF.Combat.AttackDefinitionEditorWindow.diff
   fullName: CAF.Combat.AttackDefinitionEditorWindow.diff
   nameWithType: AttackDefinitionEditorWindow.diff
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawCancelBars(SerializedObject)
+  name: DrawCancelBars(SerializedObject)
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawCancelBars_SerializedObject_
+  commentId: M:CAF.Combat.AttackDefinitionEditorWindow.DrawCancelBars(SerializedObject)
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawCancelBars(SerializedObject)
+  nameWithType: AttackDefinitionEditorWindow.DrawCancelBars(SerializedObject)
+- uid: CAF.Combat.AttackDefinitionEditorWindow.DrawCancelBars*
+  name: DrawCancelBars
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawCancelBars_
+  commentId: Overload:CAF.Combat.AttackDefinitionEditorWindow.DrawCancelBars
+  isSpec: "True"
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.DrawCancelBars
+  nameWithType: AttackDefinitionEditorWindow.DrawCancelBars
 - uid: CAF.Combat.AttackDefinitionEditorWindow.DrawChargeBars(SerializedObject)
   name: DrawChargeBars(SerializedObject)
   href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_DrawChargeBars_SerializedObject_
@@ -611,6 +643,12 @@ references:
   commentId: F:CAF.Combat.AttackDefinitionEditorWindow.scrollWheel
   fullName: CAF.Combat.AttackDefinitionEditorWindow.scrollWheel
   nameWithType: AttackDefinitionEditorWindow.scrollWheel
+- uid: CAF.Combat.AttackDefinitionEditorWindow.showCancels
+  name: showCancels
+  href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_showCancels
+  commentId: F:CAF.Combat.AttackDefinitionEditorWindow.showCancels
+  fullName: CAF.Combat.AttackDefinitionEditorWindow.showCancels
+  nameWithType: AttackDefinitionEditorWindow.showCancels
 - uid: CAF.Combat.AttackDefinitionEditorWindow.showCharges
   name: showCharges
   href: api/CAF.Combat.AttackDefinitionEditorWindow.html#CAF_Combat_AttackDefinitionEditorWindow_showCharges
@@ -919,38 +957,6 @@ references:
   commentId: F:CAF.Combat.AttackEventInputCheckTiming.ONCE
   fullName: CAF.Combat.AttackEventInputCheckTiming.ONCE
   nameWithType: AttackEventInputCheckTiming.ONCE
-- uid: CAF.Combat.AttackEventPropertyDrawer
-  name: AttackEventPropertyDrawer
-  href: api/CAF.Combat.AttackEventPropertyDrawer.html
-  commentId: T:CAF.Combat.AttackEventPropertyDrawer
-  fullName: CAF.Combat.AttackEventPropertyDrawer
-  nameWithType: AttackEventPropertyDrawer
-- uid: CAF.Combat.AttackEventPropertyDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
-  name: GetPropertyHeight(SerializedProperty, GUIContent)
-  href: api/CAF.Combat.AttackEventPropertyDrawer.html#CAF_Combat_AttackEventPropertyDrawer_GetPropertyHeight_SerializedProperty_GUIContent_
-  commentId: M:CAF.Combat.AttackEventPropertyDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
-  fullName: CAF.Combat.AttackEventPropertyDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
-  nameWithType: AttackEventPropertyDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
-- uid: CAF.Combat.AttackEventPropertyDrawer.GetPropertyHeight*
-  name: GetPropertyHeight
-  href: api/CAF.Combat.AttackEventPropertyDrawer.html#CAF_Combat_AttackEventPropertyDrawer_GetPropertyHeight_
-  commentId: Overload:CAF.Combat.AttackEventPropertyDrawer.GetPropertyHeight
-  isSpec: "True"
-  fullName: CAF.Combat.AttackEventPropertyDrawer.GetPropertyHeight
-  nameWithType: AttackEventPropertyDrawer.GetPropertyHeight
-- uid: CAF.Combat.AttackEventPropertyDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
-  name: OnGUI(Rect, SerializedProperty, GUIContent)
-  href: api/CAF.Combat.AttackEventPropertyDrawer.html#CAF_Combat_AttackEventPropertyDrawer_OnGUI_Rect_SerializedProperty_GUIContent_
-  commentId: M:CAF.Combat.AttackEventPropertyDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
-  fullName: CAF.Combat.AttackEventPropertyDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
-  nameWithType: AttackEventPropertyDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
-- uid: CAF.Combat.AttackEventPropertyDrawer.OnGUI*
-  name: OnGUI
-  href: api/CAF.Combat.AttackEventPropertyDrawer.html#CAF_Combat_AttackEventPropertyDrawer_OnGUI_
-  commentId: Overload:CAF.Combat.AttackEventPropertyDrawer.OnGUI
-  isSpec: "True"
-  fullName: CAF.Combat.AttackEventPropertyDrawer.OnGUI
-  nameWithType: AttackEventPropertyDrawer.OnGUI
 - uid: CAF.Combat.AttackEventReturnType
   name: AttackEventReturnType
   href: api/CAF.Combat.AttackEventReturnType.html
@@ -1179,6 +1185,105 @@ references:
   commentId: F:CAF.Combat.BoxShape.Rectangle
   fullName: CAF.Combat.BoxShape.Rectangle
   nameWithType: BoxShape.Rectangle
+- uid: CAF.Combat.CancelList
+  name: CancelList
+  href: api/CAF.Combat.CancelList.html
+  commentId: T:CAF.Combat.CancelList
+  fullName: CAF.Combat.CancelList
+  nameWithType: CancelList
+- uid: CAF.Combat.CancelList.nickname
+  name: nickname
+  href: api/CAF.Combat.CancelList.html#CAF_Combat_CancelList_nickname
+  commentId: F:CAF.Combat.CancelList.nickname
+  fullName: CAF.Combat.CancelList.nickname
+  nameWithType: CancelList.nickname
+- uid: CAF.Combat.CancelList.nodes
+  name: nodes
+  href: api/CAF.Combat.CancelList.html#CAF_Combat_CancelList_nodes
+  commentId: F:CAF.Combat.CancelList.nodes
+  fullName: CAF.Combat.CancelList.nodes
+  nameWithType: CancelList.nodes
+- uid: CAF.Combat.CancelListDefinition
+  name: CancelListDefinition
+  href: api/CAF.Combat.CancelListDefinition.html
+  commentId: T:CAF.Combat.CancelListDefinition
+  fullName: CAF.Combat.CancelListDefinition
+  nameWithType: CancelListDefinition
+- uid: CAF.Combat.CancelListDefinition.cancelListID
+  name: cancelListID
+  href: api/CAF.Combat.CancelListDefinition.html#CAF_Combat_CancelListDefinition_cancelListID
+  commentId: F:CAF.Combat.CancelListDefinition.cancelListID
+  fullName: CAF.Combat.CancelListDefinition.cancelListID
+  nameWithType: CancelListDefinition.cancelListID
+- uid: CAF.Combat.CancelListDefinition.endFrame
+  name: endFrame
+  href: api/CAF.Combat.CancelListDefinition.html#CAF_Combat_CancelListDefinition_endFrame
+  commentId: F:CAF.Combat.CancelListDefinition.endFrame
+  fullName: CAF.Combat.CancelListDefinition.endFrame
+  nameWithType: CancelListDefinition.endFrame
+- uid: CAF.Combat.CancelListDefinition.startFrame
+  name: startFrame
+  href: api/CAF.Combat.CancelListDefinition.html#CAF_Combat_CancelListDefinition_startFrame
+  commentId: F:CAF.Combat.CancelListDefinition.startFrame
+  fullName: CAF.Combat.CancelListDefinition.startFrame
+  nameWithType: CancelListDefinition.startFrame
+- uid: CAF.Combat.CancelListDefinitionEditorWindow
+  name: CancelListDefinitionEditorWindow
+  href: api/CAF.Combat.CancelListDefinitionEditorWindow.html
+  commentId: T:CAF.Combat.CancelListDefinitionEditorWindow
+  fullName: CAF.Combat.CancelListDefinitionEditorWindow
+  nameWithType: CancelListDefinitionEditorWindow
+- uid: CAF.Combat.CancelListDefinitionEditorWindow.attack
+  name: attack
+  href: api/CAF.Combat.CancelListDefinitionEditorWindow.html#CAF_Combat_CancelListDefinitionEditorWindow_attack
+  commentId: F:CAF.Combat.CancelListDefinitionEditorWindow.attack
+  fullName: CAF.Combat.CancelListDefinitionEditorWindow.attack
+  nameWithType: CancelListDefinitionEditorWindow.attack
+- uid: CAF.Combat.CancelListDefinitionEditorWindow.DrawCancelListInfo
+  name: DrawCancelListInfo()
+  href: api/CAF.Combat.CancelListDefinitionEditorWindow.html#CAF_Combat_CancelListDefinitionEditorWindow_DrawCancelListInfo
+  commentId: M:CAF.Combat.CancelListDefinitionEditorWindow.DrawCancelListInfo
+  fullName: CAF.Combat.CancelListDefinitionEditorWindow.DrawCancelListInfo()
+  nameWithType: CancelListDefinitionEditorWindow.DrawCancelListInfo()
+- uid: CAF.Combat.CancelListDefinitionEditorWindow.DrawCancelListInfo*
+  name: DrawCancelListInfo
+  href: api/CAF.Combat.CancelListDefinitionEditorWindow.html#CAF_Combat_CancelListDefinitionEditorWindow_DrawCancelListInfo_
+  commentId: Overload:CAF.Combat.CancelListDefinitionEditorWindow.DrawCancelListInfo
+  isSpec: "True"
+  fullName: CAF.Combat.CancelListDefinitionEditorWindow.DrawCancelListInfo
+  nameWithType: CancelListDefinitionEditorWindow.DrawCancelListInfo
+- uid: CAF.Combat.CancelListDefinitionEditorWindow.index
+  name: index
+  href: api/CAF.Combat.CancelListDefinitionEditorWindow.html#CAF_Combat_CancelListDefinitionEditorWindow_index
+  commentId: F:CAF.Combat.CancelListDefinitionEditorWindow.index
+  fullName: CAF.Combat.CancelListDefinitionEditorWindow.index
+  nameWithType: CancelListDefinitionEditorWindow.index
+- uid: CAF.Combat.CancelListDefinitionEditorWindow.Init(CAF.Combat.AttackDefinition,System.Int32)
+  name: Init(AttackDefinition, Int32)
+  href: api/CAF.Combat.CancelListDefinitionEditorWindow.html#CAF_Combat_CancelListDefinitionEditorWindow_Init_CAF_Combat_AttackDefinition_System_Int32_
+  commentId: M:CAF.Combat.CancelListDefinitionEditorWindow.Init(CAF.Combat.AttackDefinition,System.Int32)
+  fullName: CAF.Combat.CancelListDefinitionEditorWindow.Init(CAF.Combat.AttackDefinition, System.Int32)
+  nameWithType: CancelListDefinitionEditorWindow.Init(AttackDefinition, Int32)
+- uid: CAF.Combat.CancelListDefinitionEditorWindow.Init*
+  name: Init
+  href: api/CAF.Combat.CancelListDefinitionEditorWindow.html#CAF_Combat_CancelListDefinitionEditorWindow_Init_
+  commentId: Overload:CAF.Combat.CancelListDefinitionEditorWindow.Init
+  isSpec: "True"
+  fullName: CAF.Combat.CancelListDefinitionEditorWindow.Init
+  nameWithType: CancelListDefinitionEditorWindow.Init
+- uid: CAF.Combat.CancelListDefinitionEditorWindow.OnGUI
+  name: OnGUI()
+  href: api/CAF.Combat.CancelListDefinitionEditorWindow.html#CAF_Combat_CancelListDefinitionEditorWindow_OnGUI
+  commentId: M:CAF.Combat.CancelListDefinitionEditorWindow.OnGUI
+  fullName: CAF.Combat.CancelListDefinitionEditorWindow.OnGUI()
+  nameWithType: CancelListDefinitionEditorWindow.OnGUI()
+- uid: CAF.Combat.CancelListDefinitionEditorWindow.OnGUI*
+  name: OnGUI
+  href: api/CAF.Combat.CancelListDefinitionEditorWindow.html#CAF_Combat_CancelListDefinitionEditorWindow_OnGUI_
+  commentId: Overload:CAF.Combat.CancelListDefinitionEditorWindow.OnGUI
+  isSpec: "True"
+  fullName: CAF.Combat.CancelListDefinitionEditorWindow.OnGUI
+  nameWithType: CancelListDefinitionEditorWindow.OnGUI
 - uid: CAF.Combat.ChargeDefinition
   name: ChargeDefinition
   href: api/CAF.Combat.ChargeDefinition.html
@@ -2520,18 +2625,42 @@ references:
   isSpec: "True"
   fullName: CAF.Combat.MovesetDefinition.AddNode
   nameWithType: MovesetDefinition.AddNode
-- uid: CAF.Combat.MovesetDefinition.airAttackCommandNormals
-  name: airAttackCommandNormals
-  href: api/CAF.Combat.MovesetDefinition.html#CAF_Combat_MovesetDefinition_airAttackCommandNormals
-  commentId: F:CAF.Combat.MovesetDefinition.airAttackCommandNormals
-  fullName: CAF.Combat.MovesetDefinition.airAttackCommandNormals
-  nameWithType: MovesetDefinition.airAttackCommandNormals
 - uid: CAF.Combat.MovesetDefinition.airAttackStartNodes
   name: airAttackStartNodes
   href: api/CAF.Combat.MovesetDefinition.html#CAF_Combat_MovesetDefinition_airAttackStartNodes
   commentId: F:CAF.Combat.MovesetDefinition.airAttackStartNodes
   fullName: CAF.Combat.MovesetDefinition.airAttackStartNodes
   nameWithType: MovesetDefinition.airAttackStartNodes
+- uid: CAF.Combat.MovesetDefinition.airIdleCancelListID
+  name: airIdleCancelListID
+  href: api/CAF.Combat.MovesetDefinition.html#CAF_Combat_MovesetDefinition_airIdleCancelListID
+  commentId: F:CAF.Combat.MovesetDefinition.airIdleCancelListID
+  fullName: CAF.Combat.MovesetDefinition.airIdleCancelListID
+  nameWithType: MovesetDefinition.airIdleCancelListID
+- uid: CAF.Combat.MovesetDefinition.CancelListConnection
+  name: MovesetDefinition.CancelListConnection
+  href: api/CAF.Combat.MovesetDefinition.CancelListConnection.html
+  commentId: T:CAF.Combat.MovesetDefinition.CancelListConnection
+  fullName: CAF.Combat.MovesetDefinition.CancelListConnection
+  nameWithType: MovesetDefinition.CancelListConnection
+- uid: CAF.Combat.MovesetDefinition.CancelListConnection.ID
+  name: ID
+  href: api/CAF.Combat.MovesetDefinition.CancelListConnection.html#CAF_Combat_MovesetDefinition_CancelListConnection_ID
+  commentId: F:CAF.Combat.MovesetDefinition.CancelListConnection.ID
+  fullName: CAF.Combat.MovesetDefinition.CancelListConnection.ID
+  nameWithType: MovesetDefinition.CancelListConnection.ID
+- uid: CAF.Combat.MovesetDefinition.CancelListConnection.list
+  name: list
+  href: api/CAF.Combat.MovesetDefinition.CancelListConnection.html#CAF_Combat_MovesetDefinition_CancelListConnection_list
+  commentId: F:CAF.Combat.MovesetDefinition.CancelListConnection.list
+  fullName: CAF.Combat.MovesetDefinition.CancelListConnection.list
+  nameWithType: MovesetDefinition.CancelListConnection.list
+- uid: CAF.Combat.MovesetDefinition.cancelLists
+  name: cancelLists
+  href: api/CAF.Combat.MovesetDefinition.html#CAF_Combat_MovesetDefinition_cancelLists
+  commentId: F:CAF.Combat.MovesetDefinition.cancelLists
+  fullName: CAF.Combat.MovesetDefinition.cancelLists
+  nameWithType: MovesetDefinition.cancelLists
 - uid: CAF.Combat.MovesetDefinition.GetAttackNode(System.Int32)
   name: GetAttackNode(Int32)
   href: api/CAF.Combat.MovesetDefinition.html#CAF_Combat_MovesetDefinition_GetAttackNode_System_Int32_
@@ -2545,18 +2674,31 @@ references:
   isSpec: "True"
   fullName: CAF.Combat.MovesetDefinition.GetAttackNode
   nameWithType: MovesetDefinition.GetAttackNode
-- uid: CAF.Combat.MovesetDefinition.groundAttackCommandNormals
-  name: groundAttackCommandNormals
-  href: api/CAF.Combat.MovesetDefinition.html#CAF_Combat_MovesetDefinition_groundAttackCommandNormals
-  commentId: F:CAF.Combat.MovesetDefinition.groundAttackCommandNormals
-  fullName: CAF.Combat.MovesetDefinition.groundAttackCommandNormals
-  nameWithType: MovesetDefinition.groundAttackCommandNormals
+- uid: CAF.Combat.MovesetDefinition.GetCancelList(System.Int32)
+  name: GetCancelList(Int32)
+  href: api/CAF.Combat.MovesetDefinition.html#CAF_Combat_MovesetDefinition_GetCancelList_System_Int32_
+  commentId: M:CAF.Combat.MovesetDefinition.GetCancelList(System.Int32)
+  fullName: CAF.Combat.MovesetDefinition.GetCancelList(System.Int32)
+  nameWithType: MovesetDefinition.GetCancelList(Int32)
+- uid: CAF.Combat.MovesetDefinition.GetCancelList*
+  name: GetCancelList
+  href: api/CAF.Combat.MovesetDefinition.html#CAF_Combat_MovesetDefinition_GetCancelList_
+  commentId: Overload:CAF.Combat.MovesetDefinition.GetCancelList
+  isSpec: "True"
+  fullName: CAF.Combat.MovesetDefinition.GetCancelList
+  nameWithType: MovesetDefinition.GetCancelList
 - uid: CAF.Combat.MovesetDefinition.groundAttackStartNodes
   name: groundAttackStartNodes
   href: api/CAF.Combat.MovesetDefinition.html#CAF_Combat_MovesetDefinition_groundAttackStartNodes
   commentId: F:CAF.Combat.MovesetDefinition.groundAttackStartNodes
   fullName: CAF.Combat.MovesetDefinition.groundAttackStartNodes
   nameWithType: MovesetDefinition.groundAttackStartNodes
+- uid: CAF.Combat.MovesetDefinition.groundIdleCancelListID
+  name: groundIdleCancelListID
+  href: api/CAF.Combat.MovesetDefinition.html#CAF_Combat_MovesetDefinition_groundIdleCancelListID
+  commentId: F:CAF.Combat.MovesetDefinition.groundIdleCancelListID
+  fullName: CAF.Combat.MovesetDefinition.groundIdleCancelListID
+  nameWithType: MovesetDefinition.groundIdleCancelListID
 - uid: CAF.Combat.MovesetDefinition.OnEnable
   name: OnEnable()
   href: api/CAF.Combat.MovesetDefinition.html#CAF_Combat_MovesetDefinition_OnEnable
@@ -3429,19 +3571,19 @@ references:
   isSpec: "True"
   fullName: CAF.Fighters.FighterCombatManager.TryAttack
   nameWithType: FighterCombatManager.TryAttack
-- uid: CAF.Fighters.FighterCombatManager.TryCommandAttack
-  name: TryCommandAttack()
-  href: api/CAF.Fighters.FighterCombatManager.html#CAF_Fighters_FighterCombatManager_TryCommandAttack
-  commentId: M:CAF.Fighters.FighterCombatManager.TryCommandAttack
-  fullName: CAF.Fighters.FighterCombatManager.TryCommandAttack()
-  nameWithType: FighterCombatManager.TryCommandAttack()
-- uid: CAF.Fighters.FighterCombatManager.TryCommandAttack*
-  name: TryCommandAttack
-  href: api/CAF.Fighters.FighterCombatManager.html#CAF_Fighters_FighterCombatManager_TryCommandAttack_
-  commentId: Overload:CAF.Fighters.FighterCombatManager.TryCommandAttack
+- uid: CAF.Fighters.FighterCombatManager.TryCancelList(System.Int32)
+  name: TryCancelList(Int32)
+  href: api/CAF.Fighters.FighterCombatManager.html#CAF_Fighters_FighterCombatManager_TryCancelList_System_Int32_
+  commentId: M:CAF.Fighters.FighterCombatManager.TryCancelList(System.Int32)
+  fullName: CAF.Fighters.FighterCombatManager.TryCancelList(System.Int32)
+  nameWithType: FighterCombatManager.TryCancelList(Int32)
+- uid: CAF.Fighters.FighterCombatManager.TryCancelList*
+  name: TryCancelList
+  href: api/CAF.Fighters.FighterCombatManager.html#CAF_Fighters_FighterCombatManager_TryCancelList_
+  commentId: Overload:CAF.Fighters.FighterCombatManager.TryCancelList
   isSpec: "True"
-  fullName: CAF.Fighters.FighterCombatManager.TryCommandAttack
-  nameWithType: FighterCombatManager.TryCommandAttack
+  fullName: CAF.Fighters.FighterCombatManager.TryCancelList
+  nameWithType: FighterCombatManager.TryCancelList
 - uid: CAF.Fighters.FighterHitboxManager
   name: FighterHitboxManager
   href: api/CAF.Fighters.FighterHitboxManager.html

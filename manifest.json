@@ -52,7 +52,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.AttackDefinition.html",
-          "hash": "WsyWiKvkeuY49ZXW6lGQyCF5weNwRQFnI6nLo1LS69A="
+          "hash": "lKBbIgtUnLcSxQgEYw0PNjgjBsJDEcKWyrExqUrRuXA="
         }
       },
       "is_incremental": false,
@@ -76,7 +76,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.AttackDefinitionEditorWindow.html",
-          "hash": "Kb6CRHtyF2wQTyTT2wJCnUAn0tOpadvPXxT7B7PpNIo="
+          "hash": "kTVno+HD5Mj68lCoqghgRD+Fw0MDamUxIRxY07UPkJY="
         }
       },
       "is_incremental": false,
@@ -125,18 +125,6 @@
         ".html": {
           "relative_path": "api/CAF.Combat.AttackEventInputCheckTiming.html",
           "hash": "WviBQww/51KfsHK1UMMaMnT05yh9w8BLbYf2c7hahF8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.AttackEventPropertyDrawer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CAF.Combat.AttackEventPropertyDrawer.html",
-          "hash": "LDtAwhxRSEb9K8PKgo8r+X0U6c92f3PiqGqfIYNb9BA="
         }
       },
       "is_incremental": false,
@@ -209,6 +197,42 @@
         ".html": {
           "relative_path": "api/CAF.Combat.BoxShape.html",
           "hash": "76c9yQ+lVPousllK5JnVL9ZMEZIZRkqMJptLxNCWCtM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.CancelList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.CancelList.html",
+          "hash": "Ju37KO2Zv8HZR+VDcjvRr2B+dyK/WHJvV6DsGljroqw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.CancelListDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.CancelListDefinition.html",
+          "hash": "UkUnv9FOY3ILsb/U8gxnmTD2/5lS2DrPWdoLs+N2zio="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.CancelListDefinitionEditorWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.CancelListDefinitionEditorWindow.html",
+          "hash": "KfQgB+zpdI3XOgEQHow9c3LcywnSj92Gc2xrBuW7SyE="
         }
       },
       "is_incremental": false,
@@ -540,11 +564,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CAF.Combat.MovesetDefinition.CancelListConnection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CAF.Combat.MovesetDefinition.CancelListConnection.html",
+          "hash": "sNtPTY5/NsxW0Hm/jt9fPy79rpqY5+SLaMW7Yi8Hshw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CAF.Combat.MovesetDefinition.yml",
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.MovesetDefinition.html",
-          "hash": "VXKVuBm0XZ7/gKQmceC3R3Gwmws3rW6INUFjnO/tWto="
+          "hash": "V8FPkfeo53gQNqG9aEUcZ4m79IHIgQ3Ahk89RQwkhM8="
         }
       },
       "is_incremental": false,
@@ -592,7 +628,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Combat.html",
-          "hash": "owfM45r//h40efsn5wDY9DSVvcNKzDH09VSe5SNGu4g="
+          "hash": "zlXCb++TdsiwCm7TlmTXy68ovSCE3boTzryBHvB+zvs="
         }
       },
       "is_incremental": false,
@@ -676,7 +712,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CAF.Fighters.FighterCombatManager.html",
-          "hash": "c2kLC0OBk3iW/8S8Y08nCztdAaduIjklPkPUYEsHTW0="
+          "hash": "JfLhHgRt3dwAdcV3aT/EkPtZaRtdDGNN6XhmoOKu7W8="
         }
       },
       "is_incremental": false,
@@ -1060,7 +1096,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "SW+9DieTd/hgjkrUzyHVc4UXwRMhu/BOTqxo2ab5ETE="
+          "hash": "VuLOOjw1mygI4Kzkrof1AJMJ+EFyJVx4nghP5FdP71M="
         }
       },
       "is_incremental": false,
@@ -1181,7 +1217,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 86,
+          "total_file_count": 89,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
