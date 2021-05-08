@@ -44,13 +44,18 @@ namespace HnSF.Fighters
         protected int hitstop; 
 
         public FighterBase manager;
-        public FighterHitboxManager hitboxManager;
+        public HitboxManager hitboxManager;
 
         public LayerMask hitboxLayerMask;
 
         protected virtual void Awake()
         {
-            hitboxManager = new FighterHitboxManager(this, manager);
+            hitboxManager.OnHitHurtbox += OnHitEnemy;
+        }
+
+        protected virtual void OnHitEnemy(HitboxGroup hitboxGroup, int hitboxIndex, Hurtbox hurtbox)
+        {
+            SetHitStop(hitboxGroup.hitboxHitInfo.attackerHitstop);
         }
 
         public virtual void CLateUpdate()

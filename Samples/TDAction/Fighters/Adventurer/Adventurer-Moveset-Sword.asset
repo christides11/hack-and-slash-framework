@@ -22,7 +22,7 @@ MonoBehaviour:
     values:
     - _fieldName: lastNode
       _node: {fileID: -5643821420690420119}
-      _typeQualifiedName: CAF.Combat.MovesetAttackNode, CAF, Version=0.0.0.0, Culture=neutral,
+      _typeQualifiedName: HnSF.Combat.MovesetAttackNode, HnSF, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
       _direction: 0
@@ -31,9 +31,9 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: nextNode
       _node: {fileID: -5643821420690420119}
-      _typeQualifiedName: System.Collections.Generic.List`1[[CAF.Combat.MovesetAttackNode+nextNodeDefinition,
-        CAF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
-        Culture=neutral, PublicKeyToken=b77a5c561934e089
+      _typeQualifiedName: System.Collections.Generic.List`1[[HnSF.Combat.MovesetAttackNode+nextNodeDefinition,
+        HnSF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+        Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections: []
       _direction: 1
       _connectionType: 0
@@ -41,8 +41,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: nextNode 0
       _node: {fileID: -5643821420690420119}
-      _typeQualifiedName: CAF.Combat.MovesetAttackNode+nextNodeDefinition, CAF, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: HnSF.Combat.MovesetAttackNode+nextNodeDefinition, HnSF,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: lastNode
         node: {fileID: 9114004853129973337}
@@ -62,7 +62,7 @@ MonoBehaviour:
       directionDeviation: 0
     sequenceWindow: 8
     sequenceInputs: []
-  attackDefinition: {fileID: 11400000, guid: 849aa00a6b4a6664e962a829155d2396, type: 2}
+  attackDefinition: {fileID: 11400000, guid: 1ef03b19721d2364fb7a682eb49ca651, type: 2}
   nextNode:
   - cancelWindow: {x: 18, y: 100}
     nodeIdentifier: 1
@@ -88,7 +88,7 @@ MonoBehaviour:
     values:
     - _fieldName: lastNode
       _node: {fileID: -5525483137107342573}
-      _typeQualifiedName: CAF.Combat.MovesetAttackNode, CAF, Version=0.0.0.0, Culture=neutral,
+      _typeQualifiedName: HnSF.Combat.MovesetAttackNode, HnSF, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
       _direction: 0
@@ -97,9 +97,9 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: nextNode
       _node: {fileID: -5525483137107342573}
-      _typeQualifiedName: System.Collections.Generic.List`1[[CAF.Combat.MovesetAttackNode+nextNodeDefinition,
-        CAF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
-        Culture=neutral, PublicKeyToken=b77a5c561934e089
+      _typeQualifiedName: System.Collections.Generic.List`1[[HnSF.Combat.MovesetAttackNode+nextNodeDefinition,
+        HnSF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+        Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections: []
       _direction: 1
       _connectionType: 0
@@ -107,8 +107,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: nextNode 0
       _node: {fileID: -5525483137107342573}
-      _typeQualifiedName: CAF.Combat.MovesetAttackNode+nextNodeDefinition, CAF, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: HnSF.Combat.MovesetAttackNode+nextNodeDefinition, HnSF,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: lastNode
         node: {fileID: -4757520578208058736}
@@ -132,7 +132,7 @@ MonoBehaviour:
       directionDeviation: 0.85
     sequenceWindow: 8
     sequenceInputs: []
-  attackDefinition: {fileID: 11400000, guid: 78376fdd41fc464419341a8063617538, type: 2}
+  attackDefinition: {fileID: 0}
   nextNode:
   - cancelWindow: {x: 24, y: 25}
     nodeIdentifier: 10
@@ -157,7 +157,7 @@ MonoBehaviour:
     values:
     - _fieldName: lastNode
       _node: {fileID: -4757520578208058736}
-      _typeQualifiedName: CAF.Combat.MovesetAttackNode, CAF, Version=0.0.0.0, Culture=neutral,
+      _typeQualifiedName: HnSF.Combat.MovesetAttackNode, HnSF, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: nextNode 0
@@ -169,9 +169,9 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: nextNode
       _node: {fileID: -4757520578208058736}
-      _typeQualifiedName: System.Collections.Generic.List`1[[CAF.Combat.MovesetAttackNode+nextNodeDefinition,
-        CAF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
-        Culture=neutral, PublicKeyToken=b77a5c561934e089
+      _typeQualifiedName: System.Collections.Generic.List`1[[HnSF.Combat.MovesetAttackNode+nextNodeDefinition,
+        HnSF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+        Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections: []
       _direction: 1
       _connectionType: 0
@@ -184,7 +184,7 @@ MonoBehaviour:
     executeInputs: []
     sequenceWindow: 8
     sequenceInputs: []
-  attackDefinition: {fileID: 11400000, guid: cb0e5e21400a9554d91d48fa61ffa177, type: 2}
+  attackDefinition: {fileID: 0}
   nextNode: []
 --- !u!114 &-983140450533531057
 MonoBehaviour:
@@ -208,7 +208,7 @@ MonoBehaviour:
     values:
     - _fieldName: lastNode
       _node: {fileID: -983140450533531057}
-      _typeQualifiedName: CAF.Combat.MovesetAttackNode, CAF, Version=0.0.0.0, Culture=neutral,
+      _typeQualifiedName: HnSF.Combat.MovesetAttackNode, HnSF, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
       _direction: 0
@@ -217,9 +217,9 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: nextNode
       _node: {fileID: -983140450533531057}
-      _typeQualifiedName: System.Collections.Generic.List`1[[CAF.Combat.MovesetAttackNode+nextNodeDefinition,
-        CAF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
-        Culture=neutral, PublicKeyToken=b77a5c561934e089
+      _typeQualifiedName: System.Collections.Generic.List`1[[HnSF.Combat.MovesetAttackNode+nextNodeDefinition,
+        HnSF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+        Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections: []
       _direction: 1
       _connectionType: 0
@@ -227,8 +227,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: nextNode 0
       _node: {fileID: -983140450533531057}
-      _typeQualifiedName: CAF.Combat.MovesetAttackNode+nextNodeDefinition, CAF, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: HnSF.Combat.MovesetAttackNode+nextNodeDefinition, HnSF,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: lastNode
         node: {fileID: 4885143848734555283}
@@ -248,7 +248,7 @@ MonoBehaviour:
       directionDeviation: 0
     sequenceWindow: 8
     sequenceInputs: []
-  attackDefinition: {fileID: 11400000, guid: 56fdc05c975fd214c9ba670041dde2f0, type: 2}
+  attackDefinition: {fileID: 0}
   nextNode:
   - cancelWindow: {x: 10, y: 60}
     nodeIdentifier: 4
@@ -310,7 +310,7 @@ MonoBehaviour:
     values:
     - _fieldName: lastNode
       _node: {fileID: 3137730514045308653}
-      _typeQualifiedName: CAF.Combat.MovesetAttackNode, CAF, Version=0.0.0.0, Culture=neutral,
+      _typeQualifiedName: HnSF.Combat.MovesetAttackNode, HnSF, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: nextNode 0
@@ -322,9 +322,9 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: nextNode
       _node: {fileID: 3137730514045308653}
-      _typeQualifiedName: System.Collections.Generic.List`1[[CAF.Combat.MovesetAttackNode+nextNodeDefinition,
-        CAF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
-        Culture=neutral, PublicKeyToken=b77a5c561934e089
+      _typeQualifiedName: System.Collections.Generic.List`1[[HnSF.Combat.MovesetAttackNode+nextNodeDefinition,
+        HnSF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+        Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections: []
       _direction: 1
       _connectionType: 0
@@ -337,7 +337,7 @@ MonoBehaviour:
     executeInputs: []
     sequenceWindow: 8
     sequenceInputs: []
-  attackDefinition: {fileID: 11400000, guid: f838c723b98abf342bdcf4e626178872, type: 2}
+  attackDefinition: {fileID: 0}
   nextNode: []
 --- !u!114 &3592734775047778898
 MonoBehaviour:
@@ -360,7 +360,7 @@ MonoBehaviour:
     values:
     - _fieldName: lastNode
       _node: {fileID: 3592734775047778898}
-      _typeQualifiedName: CAF.Combat.MovesetAttackNode, CAF, Version=0.0.0.0, Culture=neutral,
+      _typeQualifiedName: HnSF.Combat.MovesetAttackNode, HnSF, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
       _direction: 0
@@ -369,9 +369,9 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: nextNode
       _node: {fileID: 3592734775047778898}
-      _typeQualifiedName: System.Collections.Generic.List`1[[CAF.Combat.MovesetAttackNode+nextNodeDefinition,
-        CAF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
-        Culture=neutral, PublicKeyToken=b77a5c561934e089
+      _typeQualifiedName: System.Collections.Generic.List`1[[HnSF.Combat.MovesetAttackNode+nextNodeDefinition,
+        HnSF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+        Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections: []
       _direction: 1
       _connectionType: 0
@@ -388,7 +388,7 @@ MonoBehaviour:
       directionDeviation: 0
     sequenceWindow: 8
     sequenceInputs: []
-  attackDefinition: {fileID: 11400000, guid: 3747051c7a4160944aa5ca75de7d3724, type: 2}
+  attackDefinition: {fileID: 0}
   nextNode: []
 --- !u!114 &4760208819052927873
 MonoBehaviour:
@@ -411,7 +411,7 @@ MonoBehaviour:
     values:
     - _fieldName: lastNode
       _node: {fileID: 4760208819052927873}
-      _typeQualifiedName: CAF.Combat.MovesetAttackNode, CAF, Version=0.0.0.0, Culture=neutral,
+      _typeQualifiedName: HnSF.Combat.MovesetAttackNode, HnSF, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: nextNode 0
@@ -423,9 +423,9 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: nextNode
       _node: {fileID: 4760208819052927873}
-      _typeQualifiedName: System.Collections.Generic.List`1[[CAF.Combat.MovesetAttackNode+nextNodeDefinition,
-        CAF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
-        Culture=neutral, PublicKeyToken=b77a5c561934e089
+      _typeQualifiedName: System.Collections.Generic.List`1[[HnSF.Combat.MovesetAttackNode+nextNodeDefinition,
+        HnSF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+        Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections: []
       _direction: 1
       _connectionType: 0
@@ -442,7 +442,7 @@ MonoBehaviour:
       directionDeviation: 0
     sequenceWindow: 8
     sequenceInputs: []
-  attackDefinition: {fileID: 11400000, guid: f00dce1bc1f20f34799a98379a389753, type: 2}
+  attackDefinition: {fileID: 0}
   nextNode: []
 --- !u!114 &4885143848734555283
 MonoBehaviour:
@@ -466,7 +466,7 @@ MonoBehaviour:
     values:
     - _fieldName: lastNode
       _node: {fileID: 4885143848734555283}
-      _typeQualifiedName: CAF.Combat.MovesetAttackNode, CAF, Version=0.0.0.0, Culture=neutral,
+      _typeQualifiedName: HnSF.Combat.MovesetAttackNode, HnSF, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: nextNode 0
@@ -478,9 +478,9 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: nextNode
       _node: {fileID: 4885143848734555283}
-      _typeQualifiedName: System.Collections.Generic.List`1[[CAF.Combat.MovesetAttackNode+nextNodeDefinition,
-        CAF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
-        Culture=neutral, PublicKeyToken=b77a5c561934e089
+      _typeQualifiedName: System.Collections.Generic.List`1[[HnSF.Combat.MovesetAttackNode+nextNodeDefinition,
+        HnSF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+        Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections: []
       _direction: 1
       _connectionType: 0
@@ -488,8 +488,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: nextNode 0
       _node: {fileID: 4885143848734555283}
-      _typeQualifiedName: CAF.Combat.MovesetAttackNode+nextNodeDefinition, CAF, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: HnSF.Combat.MovesetAttackNode+nextNodeDefinition, HnSF,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: lastNode
         node: {fileID: 8391355352623108013}
@@ -509,7 +509,7 @@ MonoBehaviour:
       directionDeviation: 0
     sequenceWindow: 8
     sequenceInputs: []
-  attackDefinition: {fileID: 11400000, guid: 1fea95f86bddbbb41b8181e356e0ab5f, type: 2}
+  attackDefinition: {fileID: 0}
   nextNode:
   - cancelWindow: {x: 12, y: 60}
     nodeIdentifier: 5
@@ -535,7 +535,7 @@ MonoBehaviour:
     values:
     - _fieldName: lastNode
       _node: {fileID: 7363264386863927894}
-      _typeQualifiedName: CAF.Combat.MovesetAttackNode, CAF, Version=0.0.0.0, Culture=neutral,
+      _typeQualifiedName: HnSF.Combat.MovesetAttackNode, HnSF, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
       _direction: 0
@@ -544,9 +544,9 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: nextNode
       _node: {fileID: 7363264386863927894}
-      _typeQualifiedName: System.Collections.Generic.List`1[[CAF.Combat.MovesetAttackNode+nextNodeDefinition,
-        CAF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
-        Culture=neutral, PublicKeyToken=b77a5c561934e089
+      _typeQualifiedName: System.Collections.Generic.List`1[[HnSF.Combat.MovesetAttackNode+nextNodeDefinition,
+        HnSF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+        Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections: []
       _direction: 1
       _connectionType: 0
@@ -554,8 +554,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: nextNode 0
       _node: {fileID: 7363264386863927894}
-      _typeQualifiedName: CAF.Combat.MovesetAttackNode+nextNodeDefinition, CAF, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: HnSF.Combat.MovesetAttackNode+nextNodeDefinition, HnSF,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: lastNode
         node: {fileID: 3137730514045308653}
@@ -575,7 +575,7 @@ MonoBehaviour:
       directionDeviation: 0
     sequenceWindow: 8
     sequenceInputs: []
-  attackDefinition: {fileID: 11400000, guid: d65e5ee39e5451a45b3af78aefbc6711, type: 2}
+  attackDefinition: {fileID: 0}
   nextNode:
   - cancelWindow: {x: 0, y: 0}
     nodeIdentifier: 12
@@ -600,7 +600,7 @@ MonoBehaviour:
     values:
     - _fieldName: lastNode
       _node: {fileID: 8391355352623108013}
-      _typeQualifiedName: CAF.Combat.MovesetAttackNode, CAF, Version=0.0.0.0, Culture=neutral,
+      _typeQualifiedName: HnSF.Combat.MovesetAttackNode, HnSF, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: nextNode 0
@@ -612,9 +612,9 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: nextNode
       _node: {fileID: 8391355352623108013}
-      _typeQualifiedName: System.Collections.Generic.List`1[[CAF.Combat.MovesetAttackNode+nextNodeDefinition,
-        CAF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
-        Culture=neutral, PublicKeyToken=b77a5c561934e089
+      _typeQualifiedName: System.Collections.Generic.List`1[[HnSF.Combat.MovesetAttackNode+nextNodeDefinition,
+        HnSF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+        Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections: []
       _direction: 1
       _connectionType: 0
@@ -631,7 +631,7 @@ MonoBehaviour:
       directionDeviation: 0
     sequenceWindow: 8
     sequenceInputs: []
-  attackDefinition: {fileID: 11400000, guid: 01232b571c9a08443a071cc322efd719, type: 2}
+  attackDefinition: {fileID: 0}
   nextNode: []
 --- !u!114 &8472129357820581468
 MonoBehaviour:
@@ -654,7 +654,7 @@ MonoBehaviour:
     values:
     - _fieldName: lastNode
       _node: {fileID: 8472129357820581468}
-      _typeQualifiedName: CAF.Combat.MovesetAttackNode, CAF, Version=0.0.0.0, Culture=neutral,
+      _typeQualifiedName: HnSF.Combat.MovesetAttackNode, HnSF, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections: []
       _direction: 0
@@ -663,9 +663,9 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: nextNode
       _node: {fileID: 8472129357820581468}
-      _typeQualifiedName: System.Collections.Generic.List`1[[CAF.Combat.MovesetAttackNode+nextNodeDefinition,
-        CAF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
-        Culture=neutral, PublicKeyToken=b77a5c561934e089
+      _typeQualifiedName: System.Collections.Generic.List`1[[HnSF.Combat.MovesetAttackNode+nextNodeDefinition,
+        HnSF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+        Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections: []
       _direction: 1
       _connectionType: 0
@@ -686,7 +686,7 @@ MonoBehaviour:
       directionDeviation: 0.85
     sequenceWindow: 8
     sequenceInputs: []
-  attackDefinition: {fileID: 11400000, guid: cb2e8ba5c7c079348ac38e5719915287, type: 2}
+  attackDefinition: {fileID: 0}
   nextNode: []
 --- !u!114 &9114004853129973337
 MonoBehaviour:
@@ -710,7 +710,7 @@ MonoBehaviour:
     values:
     - _fieldName: lastNode
       _node: {fileID: 9114004853129973337}
-      _typeQualifiedName: CAF.Combat.MovesetAttackNode, CAF, Version=0.0.0.0, Culture=neutral,
+      _typeQualifiedName: HnSF.Combat.MovesetAttackNode, HnSF, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: nextNode 0
@@ -722,9 +722,9 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: nextNode
       _node: {fileID: 9114004853129973337}
-      _typeQualifiedName: System.Collections.Generic.List`1[[CAF.Combat.MovesetAttackNode+nextNodeDefinition,
-        CAF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
-        Culture=neutral, PublicKeyToken=b77a5c561934e089
+      _typeQualifiedName: System.Collections.Generic.List`1[[HnSF.Combat.MovesetAttackNode+nextNodeDefinition,
+        HnSF, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+        Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections: []
       _direction: 1
       _connectionType: 0
@@ -732,8 +732,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: nextNode 0
       _node: {fileID: 9114004853129973337}
-      _typeQualifiedName: CAF.Combat.MovesetAttackNode+nextNodeDefinition, CAF, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: HnSF.Combat.MovesetAttackNode+nextNodeDefinition, HnSF,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: lastNode
         node: {fileID: 4760208819052927873}
@@ -753,7 +753,7 @@ MonoBehaviour:
       directionDeviation: 0
     sequenceWindow: 8
     sequenceInputs: []
-  attackDefinition: {fileID: 11400000, guid: 92e355c499aa4744c8c50ac12b54f4bb, type: 2}
+  attackDefinition: {fileID: 0}
   nextNode:
   - cancelWindow: {x: 18, y: 100}
     nodeIdentifier: 2

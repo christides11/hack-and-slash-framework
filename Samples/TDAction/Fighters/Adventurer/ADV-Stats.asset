@@ -30,17 +30,17 @@ MonoBehaviour:
       baseValue: 0.5
     runMaxSpeed:
       baseValue: 11.4
-    jumpSquatFrames: 4
+    jumpSquatFrames: 5
     gravity:
       baseValue: 0.5
     maxFallSpeed:
       baseValue: 10
     airBaseAcceleration:
-      baseValue: 0.2
+      baseValue: 0.1
     airAcceleration:
-      baseValue: 0.2
+      baseValue: 0.1
     airMaxSpeed:
-      baseValue: 12
+      baseValue: 10
     aerialFriction:
       baseValue: 0.2
     shortHopForce:
