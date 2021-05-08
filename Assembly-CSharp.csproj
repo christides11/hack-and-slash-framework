@@ -673,13 +673,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="CAF.Editor.csproj">
-      <Project>{C0385C2B-581C-1CDD-ACA3-6BB14EC4BADE}</Project>
-      <Name>CAF.Editor</Name>
+    <ProjectReference Include="HnSF.Editor.csproj">
+      <Project>{F7721E56-D093-9352-0BC5-0D176DEF8AF3}</Project>
+      <Name>HnSF.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="CAF.csproj">
-      <Project>{E7FF6E62-E5A6-B85B-528D-A4166D40D5DF}</Project>
-      <Name>CAF</Name>
+    <ProjectReference Include="HnSF.csproj">
+      <Project>{36D6BD7F-B12B-741C-F7C1-B5F5E67E3676}</Project>
+      <Name>HnSF</Name>
     </ProjectReference>
     <ProjectReference Include="TDAction_CSharp.csproj">
       <Project>{BE79325F-6A6A-3B05-2AE4-841EBFC3C2AF}</Project>

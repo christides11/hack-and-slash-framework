@@ -64,11 +64,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Editor\AnimationReferenceHolderEditor.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Editor\AttackDefinitionEditor.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Editor\AttackDefinitionEditorWindow.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Editor\InputDefinitionDrawer.cs" />
-    <None Include="Assets\CAF\Samples\TDAction\Scripts\Editor\TDAction_CSharp_Editor.asmdef" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Editor\AnimationReferenceHolderEditor.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Editor\AttackDefinitionEditor.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Editor\AttackDefinitionEditorWindow.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Editor\InputDefinitionDrawer.cs" />
+    <None Include="Assets\HnSF\Samples\TDAction\Scripts\Editor\TDAction_CSharp_Editor.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/2019.4.25f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -260,6 +260,9 @@
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:/Program Files/Unity/2019.4.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>C:/Program Files/Unity/2019.4.25f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
@@ -633,13 +636,13 @@
       <Project>{BE79325F-6A6A-3B05-2AE4-841EBFC3C2AF}</Project>
       <Name>TDAction_CSharp</Name>
     </ProjectReference>
-    <ProjectReference Include="CAF.Editor.csproj">
-      <Project>{C0385C2B-581C-1CDD-ACA3-6BB14EC4BADE}</Project>
-      <Name>CAF.Editor</Name>
+    <ProjectReference Include="HnSF.Editor.csproj">
+      <Project>{F7721E56-D093-9352-0BC5-0D176DEF8AF3}</Project>
+      <Name>HnSF.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="CAF.csproj">
-      <Project>{E7FF6E62-E5A6-B85B-528D-A4166D40D5DF}</Project>
-      <Name>CAF</Name>
+    <ProjectReference Include="HnSF.csproj">
+      <Project>{36D6BD7F-B12B-741C-F7C1-B5F5E67E3676}</Project>
+      <Name>HnSF</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

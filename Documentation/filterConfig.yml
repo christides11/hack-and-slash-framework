@@ -1,6 +1,6 @@
 apiRules:
 - include:
-    uidRegex: ^CAF
+    uidRegex: ^HnSF
     type: Namespace
 - exclude:
     uidRegex: .*
