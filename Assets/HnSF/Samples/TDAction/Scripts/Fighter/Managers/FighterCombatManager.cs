@@ -44,8 +44,8 @@ namespace TDAction.Fighter
             HitReaction hitReaction = new HitReaction();
             hitReaction.reactionType = HitReactionType.Hit;
             // Check if the box can hit this entity.
-            if(hInfo.groundOnly && !manager.IsGrounded
-                || hInfo.airOnly && !manager.IsGrounded)
+            if(hInfo.groundOnly && !physicsManager.IsGrounded
+                || hInfo.airOnly && !physicsManager.IsGrounded)
             {
                 hitReaction.reactionType = HitReactionType.Avoided;
                 return hitReaction;
@@ -83,13 +83,13 @@ namespace TDAction.Fighter
 
             if (physicsManager.forceGravity.y > 0)
             {
-                manager.IsGrounded = false;
+                physicsManager.SetGrounded(false);
             }
 
             ((FighterManager)manager).healthManager.Hurt(hInfo.damageOnHit);
 
             // Change into the correct state.
-            if (hInfo.groundBounces && manager.IsGrounded)
+            if (hInfo.groundBounces && physicsManager.IsGrounded)
             {
                 //manager.StateManager.ChangeState((int)EntityStates);
             }else if (hInfo.causesTumble)
@@ -98,7 +98,7 @@ namespace TDAction.Fighter
             }
             else
             {
-                manager.StateManager.ChangeState((ushort)(manager.IsGrounded ? FighterStates.FLINCH_GROUND : FighterStates.FLINCH_AIR));
+                manager.StateManager.ChangeState((ushort)(physicsManager.IsGrounded ? FighterStates.FLINCH_GROUND : FighterStates.FLINCH_AIR));
             }
             return hitReaction;
         }

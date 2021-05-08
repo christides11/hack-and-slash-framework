@@ -1,11 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace HnSF.Fighters
 {
     public class FighterPhysicsManagerBase : MonoBehaviour
     {
+        public bool IsGrounded { get; protected set; } = false;
 
         [SerializeField] protected FighterBase manager;
 
@@ -30,6 +29,11 @@ namespace HnSF.Fighters
         public virtual void CheckIfGrounded()
         {
 
+        }
+
+        public virtual void SetGrounded(bool value)
+        {
+            IsGrounded = value;
         }
     }
 }

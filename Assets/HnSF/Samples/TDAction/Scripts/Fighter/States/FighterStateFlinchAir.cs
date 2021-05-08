@@ -36,7 +36,7 @@ namespace TDAction.Fighter
             {
                 e.CombatManager.SetHitStun(0);
                 // Hitstun finished.
-                if (e.IsGrounded)
+                if (e.PhysicsManager.IsGrounded)
                 {
                     e.StateManager.ChangeState((int)FighterStates.IDLE);
                 }
@@ -45,7 +45,7 @@ namespace TDAction.Fighter
                     e.StateManager.ChangeState((int)FighterStates.FALL);
                 }
             }
-            else if (e.IsGrounded == true)
+            else if (e.PhysicsManager.IsGrounded == true)
             {
                 e.StateManager.ChangeState((int)FighterStates.FLINCH_GROUND, e.StateManager.CurrentStateFrame, false);
                 return true;

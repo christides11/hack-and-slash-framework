@@ -16,7 +16,7 @@ namespace TDAction.Fighter
             if (entityManager.StateManager.CurrentStateFrame >
                 entityManager.CombatManager.CurrentAttack.attackDefinition.length)
             {
-                if (entityManager.IsGrounded)
+                if (entityManager.PhysicsManager.IsGrounded)
                 {
                     entityManager.StateManager.ChangeState((int)FighterStates.IDLE);
                 }

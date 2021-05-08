@@ -16,7 +16,6 @@ namespace HnSF.Fighters
         public FighterHurtboxManager HurtboxManager { get { return hurtboxManager; } }
 
         public virtual bool Targetable { get { return targetable; } }
-        public bool IsGrounded { get; set; } = false;
 
         protected bool targetable = true;
 
