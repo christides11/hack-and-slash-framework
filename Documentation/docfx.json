@@ -14,8 +14,8 @@
     ],
     "build": {
         "globalMetadata": {
-            "_appTitle": "Character Action Framework Documentation",
-            "_appFooter": "Character Action Framework Documentation",
+            "_appTitle": "Hack and Slash Framework Documentation",
+            "_appFooter": "Hack and Slash Framework Documentation",
             "_enableSearch": true
         },
         "content": [
@@ -46,7 +46,7 @@
         ],
         "sitemap":
         {
-            "baseUrl": "https://christides11.github.io/Character-Action-Framework",
+            "baseUrl": "https://christides11.github.io/hack-and-slash-framework",
             "changefreq": "weekly",
             "fileOptions": {
                 "api/*": {

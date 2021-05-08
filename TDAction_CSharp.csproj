@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_2019_4_25;UNITY_2019_4;UNITY_2019;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_WEBGL;UNITY_WEBGL;UNITY_WEBGL_API;UNITY_DISABLE_WEB_VERIFICATION;UNITY_GFX_USE_PLATFORM_VSYNC;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_SPATIALTRACKING;ENABLE_MONO;NET_4_6;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_2019_4_25;UNITY_2019_4;UNITY_2019;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_4_6;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -49,7 +49,7 @@
     <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>4.9.1.0</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
-    <UnityBuildTarget>WebGL:20</UnityBuildTarget>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2019.4.25f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
@@ -64,77 +64,80 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CAF\Samples\TDAction\Fighters\Adventurer\Scripts\ADVStats.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Fighters\Adventurer\Scripts\AdventurerManager.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Fighters\Adventurer\States\ADVAttack.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Fighters\Adventurer\States\ADVFall.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Fighters\Adventurer\States\ADVIdle.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Fighters\Adventurer\States\ADVWalk.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Fighters\Shared\States\CEnemyStep.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Fighters\Shared\States\CFall.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Fighters\Shared\States\CIdle.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Fighters\Shared\States\CJump.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Fighters\Shared\States\CJumpAir.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Fighters\Shared\States\CJumpSquat.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Fighters\Shared\States\CRun.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Fighters\Shared\States\CWalk.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\AnimationReferenceHolder.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Camera\CameraHandler.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Camera\Parallax.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Attack\AttackDefinition.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\ApplyFriction.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\ApplyGravity.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\ChangeAttack.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\ClampGravity.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\ClampMovement.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\ForceAdd.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\ForceSet.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\JumpCancel.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Events\LandCancel.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\HitInfo.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Moveset\MovesetDefinition.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Projectile\Projectile.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Projectile\ProjectileFollowModule.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\Projectile\ProjectileSubModule.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Combat\TeamTypes.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Fighter\CharacterController2D.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Fighter\FighterDefinition.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Fighter\FighterState.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Fighter\FighterStates.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Fighter\FighterStatsHolder.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Fighter\HealthManager.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Fighter\Managers\FighterAnimator.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Fighter\Managers\FighterCombatManager.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Fighter\Managers\FighterHitboxManager.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Fighter\Managers\FighterHurtboxManager.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Fighter\Managers\FighterInputManager.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Fighter\Managers\FighterManager.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Fighter\Managers\FighterPhysicsManager.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Fighter\Managers\FighterStateManager.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Fighter\Managers\FighterStatsManager.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Fighter\States\FighterStateAttack.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Fighter\States\FighterStateFlinchAir.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Fighter\States\FighterStateFlinchGround.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Fighter\States\FighterStateKnockdown.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Fighter\States\FighterStateTumble.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Fighter\Stats\FighterStat.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Fighter\Stats\FighterStatFloat.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Fighter\Stats\FighterStats.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Inputs\EntityInputs.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Inputs\InputConstants.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Managers\BootLoader.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Managers\GameHandler.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Managers\GameManager.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Simulation\SimObjectManager.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\Simulation\SimObjectRegister.cs" />
-    <Compile Include="Assets\CAF\Samples\TDAction\Scripts\UI\PlayerHUD.cs" />
-    <None Include="Assets\CAF\Samples\TDAction\Textures\Kauzz Forest Tiles\Read me.txt" />
-    <None Include="Assets\CAF\Samples\TDAction\TDAction_CSharp.asmdef" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Fighters\Adventurer\Scripts\ADVStats.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Fighters\Adventurer\Scripts\AdventurerManager.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Fighters\Adventurer\States\ADVAttack.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Fighters\Adventurer\States\ADVFall.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Fighters\Adventurer\States\ADVIdle.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Fighters\Adventurer\States\ADVWalk.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Fighters\Shared\States\CEnemyStep.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Fighters\Shared\States\CFall.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Fighters\Shared\States\CIdle.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Fighters\Shared\States\CJump.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Fighters\Shared\States\CJumpAir.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Fighters\Shared\States\CJumpSquat.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Fighters\Shared\States\CRun.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Fighters\Shared\States\CWalk.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\AnimationReferenceHolder.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Camera\CameraHandler.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Camera\Parallax.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Combat\Attack\AttackDefinition.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Combat\Events\ApplyFriction.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Combat\Events\ApplyGravity.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Combat\Events\ChangeAttack.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Combat\Events\ClampGravity.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Combat\Events\ClampMovement.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Combat\Events\ForceAdd.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Combat\Events\ForceSet.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Combat\Events\JumpCancel.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Combat\Events\LandCancel.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Combat\HitInfo.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Combat\Moveset\MovesetDefinition.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Combat\Projectile\Projectile.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Combat\Projectile\ProjectileFollowModule.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Combat\Projectile\ProjectileSubModule.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Combat\TeamTypes.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\CharacterController2D.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\FighterDefinition.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\FighterState.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\FighterStates.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\FighterStatsHolder.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\HealthManager.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\Managers\FighterAnimator.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\Managers\FighterCombatManager.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\Managers\FighterHitboxManager.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\Managers\FighterHurtboxManager.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\Managers\FighterInputManager.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\Managers\FighterManager.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\Managers\FighterPhysicsManager.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\Managers\FighterStateManager.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\Managers\FighterStatsManager.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\States\FighterStateAttack.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\States\FighterStateFlinchAir.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\States\FighterStateFlinchGround.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\States\FighterStateKnockdown.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\States\FighterStateTumble.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\Stats\FighterStat.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\Stats\FighterStatFloat.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\Stats\FighterStats.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Inputs\EntityInputs.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Inputs\InputConstants.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Managers\BootLoader.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Managers\GameHandler.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Managers\GameManager.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Simulation\SimObjectManager.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Simulation\SimObjectRegister.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\UI\PlayerHUD.cs" />
+    <None Include="Assets\HnSF\Samples\TDAction\Textures\Kauzz Forest Tiles\Read me.txt" />
+    <None Include="Assets\HnSF\Samples\TDAction\TDAction_CSharp.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/2019.4.25f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/2019.4.25f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>C:/Program Files/Unity/2019.4.25f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AccessibilityModule">
       <HintPath>C:/Program Files/Unity/2019.4.25f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
@@ -153,6 +156,12 @@
     </Reference>
     <Reference Include="UnityEngine.ClothModule">
       <HintPath>C:/Program Files/Unity/2019.4.25f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>C:/Program Files/Unity/2019.4.25f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>C:/Program Files/Unity/2019.4.25f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>C:/Program Files/Unity/2019.4.25f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
@@ -294,9 +303,6 @@
     </Reference>
     <Reference Include="UnityEngine.VideoModule">
       <HintPath>C:/Program Files/Unity/2019.4.25f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.WebGLModule">
-      <HintPath>C:/Program Files/Unity/2019.4.25f1/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.WebGLModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.WindModule">
       <HintPath>C:/Program Files/Unity/2019.4.25f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
@@ -693,9 +699,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="CAF.csproj">
-      <Project>{E7FF6E62-E5A6-B85B-528D-A4166D40D5DF}</Project>
-      <Name>CAF</Name>
+    <ProjectReference Include="HnSF.csproj">
+      <Project>{36D6BD7F-B12B-741C-F7C1-B5F5E67E3676}</Project>
+      <Name>HnSF</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
