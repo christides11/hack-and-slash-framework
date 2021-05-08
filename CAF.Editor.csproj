@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\CAF\Editor\BoxDefinitionPropertyDrawer.cs" />
+    <Compile Include="Assets\CAF\Editor\CancelListDefinitionEditorWindow.cs" />
     <Compile Include="Assets\CAF\Editor\Combat\Attack\AttackDefinitionEditor.cs" />
     <Compile Include="Assets\CAF\Editor\Combat\Attack\AttackDefinitionEditorWindow.cs" />
     <Compile Include="Assets\CAF\Editor\Combat\Attack\AttackEventDefinitionEditorWindow.cs" />

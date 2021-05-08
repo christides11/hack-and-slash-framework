@@ -94,51 +94,51 @@ namespace CAF.Fighters
             return CheckCurrentAttackCancelWindows();
         }
 
-        public virtual int TryCommandAttack()
+        public virtual int TryCancelList(int cancelListID)
         {
-            switch (manager.IsGrounded)
+            CancelList cl = CurrentMoveset.GetCancelList(cancelListID);
+            if (cl == null)
             {
-                case true:
-                    int groundCommandNormal = CheckAttackNodes(ref CurrentMoveset.groundAttackCommandNormals);
-                    if (groundCommandNormal != -1)
-                    {
-                        return groundCommandNormal;
-                    }
-                    break;
-                case false:
-                    int airCommandNormal = CheckAttackNodes(ref CurrentMoveset.airAttackCommandNormals);
-                    if (airCommandNormal != -1)
-                    {
-                        return airCommandNormal;
-                    }
-                    break;
+                return -1;
+            }
+            int attack = CheckAttackNodes(ref cl.nodes);
+            if(attack != -1)
+            {
+                return attack;
             }
             return -1;
         }
 
         protected virtual int CheckStartingNodes()
         {
+            MovesetDefinition moveset = CurrentMoveset;
             switch (manager.IsGrounded)
             {
                 case true:
-                    int groundCommandNormal = CheckAttackNodes(ref CurrentMoveset.groundAttackCommandNormals);
-                    if (groundCommandNormal != -1)
+                    if(moveset.groundIdleCancelListID != -1)
                     {
-                        return groundCommandNormal;
+                        int cancel = TryCancelList(moveset.groundIdleCancelListID);
+                        if(cancel != -1)
+                        {
+                            return cancel;
+                        }
                     }
-                    int groundNormal = CheckAttackNodes(ref CurrentMoveset.groundAttackStartNodes);
+                    int groundNormal = CheckAttackNodes(ref moveset.groundAttackStartNodes);
                     if (groundNormal != -1)
                     {
                         return groundNormal;
                     }
                     break;
                 case false:
-                    int airCommandNormal = CheckAttackNodes(ref CurrentMoveset.airAttackCommandNormals);
-                    if (airCommandNormal != -1)
+                    if (moveset.airIdleCancelListID != -1)
                     {
-                        return airCommandNormal;
+                        int cancel = TryCancelList(moveset.airIdleCancelListID);
+                        if (cancel != -1)
+                        {
+                            return cancel;
+                        }
                     }
-                    int airNormal = CheckAttackNodes(ref CurrentMoveset.airAttackStartNodes);
+                    int airNormal = CheckAttackNodes(ref moveset.airAttackStartNodes);
                     if (airNormal != -1)
                     {
                         return airNormal;

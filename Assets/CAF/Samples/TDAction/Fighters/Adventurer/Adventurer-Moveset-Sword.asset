@@ -278,12 +278,13 @@ MonoBehaviour:
   - {fileID: 7363264386863927894}
   - {fileID: 3137730514045308653}
   nodeIDCounter: 13
-  groundAttackCommandNormals:
-  - {fileID: 8472129357820581468}
-  - {fileID: -5525483137107342573}
+  cancelLists:
+  - ID: 0
+    list: {fileID: 11400000, guid: 26ab2d474cccc10409872480b1c67880, type: 2}
+  groundIdleCancelListID: 0
   groundAttackStartNodes:
   - {fileID: -5643821420690420119}
-  airAttackCommandNormals: []
+  airIdleCancelListID: -1
   airAttackStartNodes:
   - {fileID: -983140450533531057}
   fighterStats: {fileID: 11400000, guid: 1630f8195ec1d2c46a07b9a8f315398b, type: 2}

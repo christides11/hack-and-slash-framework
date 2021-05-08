@@ -82,6 +82,8 @@
     <Compile Include="Assets\CAF\Combat\Boxes\Hurtbox\Hurtbox.cs" />
     <Compile Include="Assets\CAF\Combat\Boxes\Hurtbox\HurtboxGroup.cs" />
     <Compile Include="Assets\CAF\Combat\Boxes\Hurtbox\HurtboxState.cs" />
+    <Compile Include="Assets\CAF\Combat\CancelList.cs" />
+    <Compile Include="Assets\CAF\Combat\CancelListDefinition.cs" />
     <Compile Include="Assets\CAF\Combat\ChargeDefinition.cs" />
     <Compile Include="Assets\CAF\Combat\ChargeLevel.cs" />
     <Compile Include="Assets\CAF\Combat\ForceType.cs" />
