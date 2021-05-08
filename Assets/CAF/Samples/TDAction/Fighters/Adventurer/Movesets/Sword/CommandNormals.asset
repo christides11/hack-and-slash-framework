@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nickname: CmdNormals
   nodes:
+  - {fileID: 7363264386863927894, guid: 40b8b877a52554b4d887f89ff043c88d, type: 2}
   - {fileID: 8472129357820581468, guid: 40b8b877a52554b4d887f89ff043c88d, type: 2}
   - {fileID: -5525483137107342573, guid: 40b8b877a52554b4d887f89ff043c88d, type: 2}

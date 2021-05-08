@@ -43,8 +43,13 @@ namespace TDAction.Fighter
         Collider2D[] raycastHitList = new Collider2D[0];
         protected override Hurtbox[] CheckBoxCollision(HitboxGroup hitboxGroup, int boxIndex)
         {
-            Vector2 position = hitboxGroup.attachToEntity ? (Vector2)manager.transform.position + (Vector2)(hitboxGroup.boxes[boxIndex] as CAF.Combat.BoxDefinition).offset
-                : (Vector2)referencePosition + (Vector2)(hitboxGroup.boxes[boxIndex] as CAF.Combat.BoxDefinition).offset;
+            TDAction.Fighter.FighterManager fm = manager as TDAction.Fighter.FighterManager;
+
+            Vector3 modifiedOffset = (hitboxGroup.boxes[boxIndex] as CAF.Combat.BoxDefinition).offset;
+            modifiedOffset = new Vector3(modifiedOffset.x * fm.FaceDirection, modifiedOffset.y, 0);
+
+            Vector2 position = hitboxGroup.attachToEntity ? (Vector2)manager.transform.position + (Vector2)modifiedOffset
+                : (Vector2)referencePosition + (Vector2)modifiedOffset;
             Vector2 size = (Vector2)(hitboxGroup.boxes[boxIndex] as CAF.Combat.BoxDefinition).size;
             raycastHitList = Physics2D.OverlapBoxAll(position, size, 0, combatManager.hitboxLayerMask);
 

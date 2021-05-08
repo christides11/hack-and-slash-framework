@@ -24,6 +24,7 @@ MonoBehaviour:
   events:
   - id: 0
   - id: 1
+  cancels: []
   animationName: bow-ground-startup
   references:
     version: 1
@@ -63,7 +64,7 @@ MonoBehaviour:
         onHitCheck: 0
         onHitHitboxGroup: 0
         onHitIDGroup: 0
-        startFrame: 12
+        startFrame: 11
         endFrame: 12
         attackEvent:
           id: 3
@@ -95,4 +96,4 @@ MonoBehaviour:
       data:
         resetFrameCounter: 1
         lastFrameExecution: 0
-        attackID: -1
+        attackID: 12
