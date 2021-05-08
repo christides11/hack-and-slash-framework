@@ -461,7 +461,7 @@
   },
   "index.html": {
     "href": "index.html",
-    "title": "Character Action Framework | Character Action Framework Documentation",
-    "keywords": "Character Action Framework Character Action Framework (or CAF) is a Unity-focused framework designed for making character action games. CAF's goal is to create a framework that handles most of the code that works similarly between games of this type, while also providing the ability to change any part of the framework easily. Roadmap CAF is currently in pre-alpha , expect things to change constantly and for code to break. The current roadmap/project board can be viewed here . Getting Started To get started, follow the guide here . This guide will walk you through installing the framework all the way to having a functional game running. Examples Right now the project come with a 2D action game example, but it's a WIP. Other than that, you can look at Touhou Unlimited Fantasies for an example too. Contributing Any contributions are appriciated, please create pull request or issues detailing wanted features/bug reports. If this project has helped you in any way, please consider donating ."
+    "title": "Hack and Slash Framework | Character Action Framework Documentation",
+    "keywords": "Hack and Slash Framework Hack and Slash Framework (or HnSF) is a Unity-focused framework designed for making hack and slash games. Roadmap HnSF is currently in pre-alpha , expect things to change constantly and for code to break. The current roadmap/project board can be viewed here . Getting Started To get started, follow the guide here . This guide will walk you through installing the framework all the way to having a functional game running. Examples 2D Action Example (included in Samples folder) Touhou Unlimited Fantasies Mahou Contributing Any contributions are appriciated, please create pull request or issues detailing wanted features/bug reports."
   }
 }
