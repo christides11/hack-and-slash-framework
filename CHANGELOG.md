@@ -1,3 +1,15 @@
+# [18.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v17.0.0...v18.0.0) (2021-05-08)
+
+
+### Code Refactoring
+
+* Changed name to HnSF ([f13b8be](https://github.com/christides11/hack-and-slash-framework/commit/f13b8be0daeb5e814ff818a2b3cdbe9fd849eea5))
+
+
+### BREAKING CHANGES
+
+* Changed name from character action framework to hack and slash framework, since it is a much more well known term and easier to say.
+
 # [17.0.0](https://github.com/christides11/Character-Action-Framework/compare/v16.0.0...v17.0.0) (2021-05-08)
 
 
