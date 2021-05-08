@@ -42,7 +42,7 @@ namespace TDAction.Fighter
                 HandleHitboxGroup(i, currentAttack.hitboxGroups[i]);
             }
 
-            if (TryCommandAttackCancel(currentAttack))
+            if (TryCancelWindow(currentAttack))
             {
                 return;
             }
@@ -89,21 +89,16 @@ namespace TDAction.Fighter
             (Manager as FighterManager).entityAnimator.SetFrame((int)entityManager.StateManager.CurrentStateFrame);
         }
 
-        /// <summary>
-        /// Tries to cancel into a command attack.
-        /// </summary>
-        /// <param name="currentAttack">The current attack's information.</param>
-        /// <returns>True if we attack canceled.</returns>
-        protected virtual bool TryCommandAttackCancel(AttackDefinition currentAttack)
+        protected virtual bool TryCancelWindow(AttackDefinition currentAttack)
         {
             FighterManager e = GetEntityManager();
-            for (int i = 0; i < currentAttack.commandAttackCancelWindows.Count; i++)
+            for(int i = 0; i < currentAttack.cancels.Count; i++)
             {
-                if (e.StateManager.CurrentStateFrame >= currentAttack.commandAttackCancelWindows[i].x
-                    && e.StateManager.CurrentStateFrame <= currentAttack.commandAttackCancelWindows[i].y)
+                if (e.StateManager.CurrentStateFrame >= currentAttack.cancels[i].startFrame
+                    && e.StateManager.CurrentStateFrame <= currentAttack.cancels[i].endFrame)
                 {
-                    int man = e.CombatManager.TryCommandAttack();
-                    if (man != -1)
+                    int man = e.CombatManager.TryCancelList(currentAttack.cancels[i].cancelListID);
+                    if(man != -1)
                     {
                         e.CombatManager.SetAttack(man);
                         e.StateManager.ChangeState((int)FighterStates.ATTACK);

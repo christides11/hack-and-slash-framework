@@ -20,6 +20,12 @@ namespace CAF.Combat
         double playInterval;
         double nextPlayTime = 0;
 
+        protected bool showHitboxGroups = true;
+        protected bool showHurtboxGroups = true;
+        protected bool showEvents = true;
+        protected bool showCharges = true;
+        protected bool showCancels = true;
+
         public static void Init(AttackDefinition attack)
         {
             AttackDefinitionEditorWindow window = ScriptableObject.CreateInstance<AttackDefinitionEditorWindow>();
@@ -180,7 +186,9 @@ namespace CAF.Combat
                 serializedObject.ApplyModifiedProperties();
                 return;
             }
+            GUILayout.BeginHorizontal();
             MenuBar(serializedObject);
+            GUILayout.EndHorizontal();
             GUILayout.Space(10);
             if (visualFighterSceneReference)
             {
@@ -246,6 +254,11 @@ namespace CAF.Combat
             if (showCharges)
             {
                 DrawChargeBars(serializedObject);
+            }
+            GUILayout.Space(10);
+            if (showCancels)
+            {
+                DrawCancelBars(serializedObject);
             }
             EditorGUILayout.EndScrollView();
             GUILayout.EndArea();
@@ -399,18 +412,13 @@ namespace CAF.Combat
             visualFighterSceneReference.GetComponent<Fighters.FighterPhysicsManager2D>().forceMovement = Vector2.zero;
         }
 
-        protected bool showHitboxGroups = true;
-        protected bool showHurtboxGroups = true;
-        protected bool showEvents = true;
-        protected bool showCharges = true;
         protected virtual void MenuBar(SerializedObject serializedObject)
         {
-            GUILayout.BeginHorizontal();
             showHitboxGroups = GUILayout.Toggle(showHitboxGroups, "Hitbox Grops", "Button");
             showHurtboxGroups = GUILayout.Toggle(showHurtboxGroups, "Hurtbox Groups", "Button");
             showEvents = GUILayout.Toggle(showEvents, "Events", "Button");
             showCharges = GUILayout.Toggle(showCharges, "Charges", "Button");
-            GUILayout.EndHorizontal();
+            showCancels = GUILayout.Toggle(showCancels, "Cancels", "Button");
         }
 
         #region Timeline Elements
@@ -554,7 +562,46 @@ namespace CAF.Combat
                 EditorGUILayout.LabelField($"{activeFramesStart.ToString("F0")}~{activeFramesEnd.ToString("F0")}", GUILayout.Width(55));
                 if (GUILayout.Button("Info", GUILayout.Width(100)))
                 {
-                    AttackEventDefinitionEditorWindow.Init(attack, i);
+                    ChargeGroupEditorWindow.Init(attack, attack.chargeWindows[i]);
+                    //AttackEventDefinitionEditorWindow.Init(attack, i);
+                }
+                EditorGUILayout.MinMaxSlider(ref activeFramesStart,
+                    ref activeFramesEnd,
+                    1,
+                    serializedObject.FindProperty("length").intValue);
+                arrayElement.FindPropertyRelative("startFrame").intValue = (int)activeFramesStart;
+                arrayElement.FindPropertyRelative("endFrame").intValue = (int)activeFramesEnd;
+                EditorGUILayout.EndHorizontal();
+            }
+        }
+
+        protected virtual void DrawCancelBars(SerializedObject serializedObject)
+        {
+            EditorGUILayout.BeginHorizontal();
+            GUILayout.Label("Cancels", EditorStyles.boldLabel);
+            if (GUILayout.Button("+", GUILayout.Width(30), GUILayout.MaxWidth(30)))
+            {
+                AddCancelListDefinition(serializedObject);
+            }
+            EditorGUILayout.EndHorizontal();
+            DrawUILine(Color.gray);
+            var cancelsProperty = serializedObject.FindProperty("cancels");
+            for(int i = 0; i < cancelsProperty.arraySize; i++)
+            {
+                EditorGUILayout.BeginHorizontal();
+                GUILayout.Space(25);
+                if(GUILayout.Button("-", GUILayout.Width(20)))
+                {
+                    cancelsProperty.DeleteArrayElementAtIndex(i);
+                    return;
+                }
+                SerializedProperty arrayElement = cancelsProperty.GetArrayElementAtIndex(i);
+                float activeFramesStart = arrayElement.FindPropertyRelative("startFrame").intValue;
+                float activeFramesEnd = arrayElement.FindPropertyRelative("endFrame").intValue;
+                EditorGUILayout.LabelField($"{activeFramesStart.ToString("F0")}~{activeFramesEnd.ToString("F0")}", GUILayout.Width(55));
+                if (GUILayout.Button("Info", GUILayout.Width(100)))
+                {
+                    CancelListDefinitionEditorWindow.Init(attack, i);
                 }
                 EditorGUILayout.MinMaxSlider(ref activeFramesStart,
                     ref activeFramesEnd,
@@ -594,6 +641,13 @@ namespace CAF.Combat
             SerializedProperty chargeWindowsProperty = serializedObject.FindProperty("chargeWindows");
             chargeWindowsProperty.InsertArrayElementAtIndex(chargeWindowsProperty.arraySize);
             chargeWindowsProperty.GetArrayElementAtIndex(chargeWindowsProperty.arraySize - 1).managedReferenceValue = new AttackEventDefinition();
+        }
+
+        protected virtual void AddCancelListDefinition(SerializedObject serializedObject)
+        {
+            SerializedProperty cancelListProperty = serializedObject.FindProperty("cancels");
+            cancelListProperty.InsertArrayElementAtIndex(cancelListProperty.arraySize);
+            cancelListProperty.GetArrayElementAtIndex(cancelListProperty.arraySize - 1).managedReferenceValue = new CancelListDefinition();
         }
 
         public static void DrawUILine(Color color, int thickness = 2, int padding = 10)

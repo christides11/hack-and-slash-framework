@@ -25,5 +25,6 @@ namespace CAF.Combat
         [SerializeReference] public List<HitboxGroup> hitboxGroups = new List<HitboxGroup>();
         [SerializeReference] public List<HurtboxGroup> hurtboxGroups = new List<HurtboxGroup>(); 
         [SerializeReference] public List<AttackEventDefinition> events = new List<AttackEventDefinition>();
+        [SerializeReference] public List<CancelListDefinition> cancels = new List<CancelListDefinition>();
     }
 }
