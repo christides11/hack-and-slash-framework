@@ -1,27 +1,25 @@
-![Documentation](https://github.com/christides11/Character-Action-Framework/workflows/Documentation/badge.svg)
+![docs](https://github.com/christides11/hack-n-slash-framework/workflows/Documentation/badge.svg)
+[![release](https://img.shields.io/github/release/christides11/hack-n-slash-framework.svg)](https://github.com/christides11/hack-n-slash-framework/releases)
+[![roadmap](https://img.shields.io/badge/roadmap-blue.svg)](https://open.codecks.io/christides11-hns-framework)
 
-## Character Action Framework
+## Hack and Slash Framework
 
-**Character Action Framework** (or CAF) is a Unity-focused framework designed for making character action games. 
-
-CAF's goal is to create a framework that handles most of the code that works similarly between games of this type, while also providing the ability to change any part of the framework easily. 
+**Hack and Slash Framework** (or HnSF) is a Unity-focused framework designed for making hack and slash games.
 
 ## Roadmap
-CAF is currently in **pre-alpha**, expect things to change constantly and for code to break.
+HnSF is currently in **pre-alpha**, expect things to change constantly and for code to break.
 The current roadmap/project board can be viewed [here](https://open.codecks.io/christides11-hns-framework).
 
 ## Getting Started
 
-To get started, follow the guide [here](https://christides11.github.io/Character-Action-Framework/guides/index.html). This guide will walk you through installing the framework all the way to having a functional game running.
+To get started, follow the guide [here](https://christides11.github.io/hack-n-slash-framework/guides/index.html). This guide will walk you through installing the framework all the way to having a functional game running.
 
 ## Examples
 
-Right now the project come with a 2D action game example, but it's a WIP.
-
-Other than that, you can look at [Touhou Unlimited Fantasies](https://github.com/christides11/touhou-unlimited-fantasies) for an example too.    
+* 2D Action Example (included in Samples folder)
+* [Touhou Unlimited Fantasies](https://github.com/christides11/touhou-unlimited-fantasies)
+* [Mahou](https://github.com/christides11/Mahou)
 
 ## Contributing
 
 Any contributions are appriciated, please create pull request or issues detailing wanted features/bug reports.
-
-If this project has helped you in any way, please consider [donating](https://paypal.me/ChrisTides11?locale.x=en_US).
