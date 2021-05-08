@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e172d295d3e22f4e9145b67d5340f4a, type: 3}
+  m_Name: AdventurerAnimations
+  m_EditorClassIdentifier: 
+  animations:
+  - animationName: Idle
+    animation: {fileID: 7400000, guid: c42d5ef8290fc69478df8acc08fcf4e9, type: 2}
+  - animationName: sword-ground-a
+    animation: {fileID: 7400000, guid: fec2350115ca14f4d95b2cc4dba6465f, type: 2}
+  - animationName: sword-ground-aa
+    animation: {fileID: 7400000, guid: 2c6218a2e4df0d24685a64b6458072e9, type: 2}
+  - animationName: sword-ground-aaa
+    animation: {fileID: 7400000, guid: a2b2791841cc7d141af6b997bbd0b2e6, type: 2}
+  - animationName: hurt
+    animation: {fileID: 7400000, guid: 671e07c7c1aecff4bb4c0d85e7d7109c, type: 2}
+  - animationName: sword-air-a
+    animation: {fileID: 7400000, guid: 99e3b27e4fd450542a8e50005c79ed91, type: 2}
+  - animationName: sword-air-aa
+    animation: {fileID: 7400000, guid: 0615e3bab4de6fe4687c4797495b04a6, type: 2}
+  - animationName: sword-air-aaa
+    animation: {fileID: 7400000, guid: 8fa5c1e58872c0c47a63b4de7bd1c8e7, type: 2}
+  - animationName: sword-air-aaaa
+    animation: {fileID: 7400000, guid: 7fb6cbc925fe7e34b8e451cf3f55ec40, type: 2}
+  - animationName: walk
+    animation: {fileID: 7400000, guid: 33415d6d25cf318489dee5f991742a2a, type: 2}
+  - animationName: ground-slide
+    animation: {fileID: 7400000, guid: d18d08ac0faaf2341b27703e9cdbba3a, type: 2}
+  - animationName: ground-slide-end
+    animation: {fileID: 7400000, guid: eec540fc5c0d61a41ae16d3809ab6591, type: 2}
+  - animationName: run
+    animation: {fileID: 7400000, guid: 6151497e3329a5b43bf03aa8a66844c5, type: 2}
+  - animationName: bow-ground-startup
+    animation: {fileID: 7400000, guid: 568bbb081b9426b469d6b232cfc4afe6, type: 2}
+  - animationName: bow-ground-release
+    animation: {fileID: 7400000, guid: 963ccfc8660608248a5bacf8892838df, type: 2}

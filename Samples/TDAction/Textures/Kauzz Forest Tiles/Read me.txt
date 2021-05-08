@@ -1,0 +1,19 @@
+This is my first pixel art pack, and my first plataform tileset too. I've made this pack because recently I've started to work with GMS2, and downloaded the SunnyLand Forest​, by Ansimuz. I love that style and started to redraw the tiles, using the same palette. I've took a lot of references from this pack on my first tiles (trees and bushes), and actually I'm able to make the tiles on my own.
+
+This pack contains tiles like: Trees, rocks, wines, bushes (a lot), walls, roofs, floors, water, mine carts, rails, tables, bookshelfs, tall grass, bridges, stairs, signs, farm stuff, mushrooms and more. You be able to make at least 3 different maps with those tiles, like: Forest, Caves, Lakes/Underwater, and Interior maps
+
+Pack includes:
+
+• At least 100 tiles
+• 2 Trees 
+• 2 Backgrounds
+• An frog, an snake and a fish
+• Smoke and fire particles
+• Animated Seaweed, Tree and Bush
+• Bubbles, Coins and some other animated stuff​
+
+=======================================================================
+* ANIMATIONS
+=======================================================================
+
+The animations are in the folders, and you can see how much frames each animation have looking for the final number. For example: "Coin_strip4" means that sprite have 4 frames of animation. Particles have a lot of frames, since I've used the PixelFX Editor and the JuicyFX to animate.
