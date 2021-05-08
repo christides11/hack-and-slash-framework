@@ -159,7 +159,7 @@ MonoBehaviour:
     00000006:
       type: {class: CancelListDefinition, ns: CAF.Combat, asm: CAF}
       data:
-        startFrame: 1
+        startFrame: 18
         endFrame: 45
         cancelListID: 0
     00000007:

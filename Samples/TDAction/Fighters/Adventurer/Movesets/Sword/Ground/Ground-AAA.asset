@@ -30,6 +30,8 @@ MonoBehaviour:
   - id: 5
   - id: 6
   - id: 7
+  cancels:
+  - id: 8
   animationName: sword-ground-aaa
   references:
     version: 1
@@ -49,13 +51,13 @@ MonoBehaviour:
         activeFramesEnd: 17
         hitGroupType: 0
         boxes:
-        - id: 8
+        - id: 9
         attachToEntity: 1
         attachTo: 
         chargeLevelNeeded: 0
         chargeLevelMax: 0
         hitboxHitInfo:
-          id: 9
+          id: 10
     00000002:
       type: {class: HitboxGroup, ns: CAF.Combat, asm: CAF}
       data:
@@ -64,13 +66,13 @@ MonoBehaviour:
         activeFramesEnd: 17
         hitGroupType: 0
         boxes:
-        - id: 10
+        - id: 11
         attachToEntity: 1
         attachTo: 
         chargeLevelNeeded: 1
         chargeLevelMax: 1
         hitboxHitInfo:
-          id: 11
+          id: 12
     00000003:
       type: {class: HurtboxGroup, ns: CAF.Combat, asm: CAF}
       data:
@@ -78,7 +80,7 @@ MonoBehaviour:
         activeFramesStart: 1
         activeFramesEnd: 11
         boxes:
-        - id: 12
+        - id: 13
         attachToEntity: 1
         attachTo: 
     00000004:
@@ -88,7 +90,7 @@ MonoBehaviour:
         activeFramesStart: 12
         activeFramesEnd: 40
         boxes:
-        - id: 13
+        - id: 14
         attachToEntity: 1
         attachTo: 
     00000005:
@@ -102,7 +104,7 @@ MonoBehaviour:
         startFrame: 5
         endFrame: 5
         attackEvent:
-          id: 14
+          id: 15
         variables:
           intVars: 
           floatVars:
@@ -132,7 +134,7 @@ MonoBehaviour:
         startFrame: 9
         endFrame: 40
         attackEvent:
-          id: 15
+          id: 16
         variables:
           intVars: 
           floatVars:
@@ -161,7 +163,7 @@ MonoBehaviour:
         startFrame: 18
         endFrame: 40
         attackEvent:
-          id: 16
+          id: 17
         variables:
           intVars: 
           floatVars: []
@@ -179,6 +181,12 @@ MonoBehaviour:
         chargeLevelMax: 0
         inputCheckProcessed: 0
     00000008:
+      type: {class: CancelListDefinition, ns: CAF.Combat, asm: CAF}
+      data:
+        startFrame: 20
+        endFrame: 40
+        cancelListID: 0
+    00000009:
       type: {class: BoxDefinition, ns: CAF.Combat, asm: CAF}
       data:
         shape: 0
@@ -187,7 +195,7 @@ MonoBehaviour:
         rotation: {x: 0, y: 0, z: 0}
         radius: 0
         height: 0
-    00000009:
+    0000000A:
       type: {class: HitInfo, ns: TDAction.Combat, asm: TDAction_CSharp}
       data:
         airOnly: 0
@@ -218,7 +226,7 @@ MonoBehaviour:
         opponentMaxMagnitude: 1
         opponentMinMagnitude: 1
         throwConfirm: {fileID: 0}
-    0000000A:
+    0000000B:
       type: {class: BoxDefinition, ns: CAF.Combat, asm: CAF}
       data:
         shape: 0
@@ -227,7 +235,7 @@ MonoBehaviour:
         rotation: {x: 0, y: 0, z: 0}
         radius: 0
         height: 0
-    0000000B:
+    0000000C:
       type: {class: HitInfo, ns: TDAction.Combat, asm: TDAction_CSharp}
       data:
         airOnly: 0
@@ -258,7 +266,7 @@ MonoBehaviour:
         opponentMaxMagnitude: 1
         opponentMinMagnitude: 1
         throwConfirm: {fileID: 0}
-    0000000C:
+    0000000D:
       type: {class: BoxDefinition, ns: CAF.Combat, asm: CAF}
       data:
         shape: 0
@@ -267,7 +275,7 @@ MonoBehaviour:
         rotation: {x: 0, y: 0, z: 0}
         radius: 0
         height: 0
-    0000000D:
+    0000000E:
       type: {class: BoxDefinition, ns: CAF.Combat, asm: CAF}
       data:
         shape: 0
@@ -276,19 +284,19 @@ MonoBehaviour:
         rotation: {x: 0, y: 0, z: 0}
         radius: 0
         height: 0
-    0000000E:
+    0000000F:
       type: {class: ForceSet, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
         applyXForce: 1
         applyYForce: 0
         xForce: 1
         yForce: 0
-    0000000F:
+    00000010:
       type: {class: ApplyFriction, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
         useXFriction: 1
         useYFriction: 0
         xFriction: 0.5
         yFriction: 0
-    00000010:
+    00000011:
       type: {class: JumpCancel, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
