@@ -14,11 +14,6 @@ namespace TDAction.Fighter
 
         public TeamTypes team = TeamTypes.FFA;
 
-        protected override void Awake()
-        {
-            hitboxManager = new FighterHitboxManager(this, (FighterManager)manager);
-        }
-
         public override int GetTeam()
         {
             return (int)team; 

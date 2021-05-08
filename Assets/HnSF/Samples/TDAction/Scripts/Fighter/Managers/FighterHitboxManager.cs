@@ -7,12 +7,6 @@ namespace TDAction.Fighter
     {
         public Vector3 referencePosition;
 
-        public FighterHitboxManager(FighterCombatManager combatManager, FighterManager manager) 
-            : base(combatManager, manager)
-        {
-            
-        }
-
         public override void Reset()
         {
             base.Reset();

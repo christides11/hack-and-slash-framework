@@ -89,6 +89,7 @@
     <Compile Include="Assets\HnSF\Combat\ForceType.cs" />
     <Compile Include="Assets\HnSF\Combat\HitReaction.cs" />
     <Compile Include="Assets\HnSF\Combat\HitReactionType.cs" />
+    <Compile Include="Assets\HnSF\Combat\HitboxManager.cs" />
     <Compile Include="Assets\HnSF\Combat\Info\HealInfoBase.cs" />
     <Compile Include="Assets\HnSF\Combat\Info\HitInfo.cs" />
     <Compile Include="Assets\HnSF\Combat\Info\HitInfoBase.cs" />

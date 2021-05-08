@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 1715174515004957371}
   - component: {fileID: -2960863564831657620}
   - component: {fileID: 1114219689411391712}
+  - component: {fileID: -4049206082768371998}
   - component: {fileID: 1476823324951731080}
   - component: {fileID: 8397132135231897326}
   - component: {fileID: 9088644778624345784}
@@ -246,10 +247,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 8147816337253296054}
+  hitboxManager: {fileID: -4049206082768371998}
   hitboxLayerMask:
     serializedVersion: 2
     m_Bits: 2048
   team: 0
+--- !u!114 &-4049206082768371998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6667267786158460212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3e1f20b15e010e42a832468ae5f2067, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  combatManager: {fileID: 1114219689411391712}
+  manager: {fileID: 8147816337253296054}
+  referencePosition: {x: 0, y: 0, z: 0}
 --- !u!114 &1476823324951731080
 MonoBehaviour:
   m_ObjectHideFlags: 0
