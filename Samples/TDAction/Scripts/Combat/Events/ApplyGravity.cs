@@ -33,7 +33,7 @@ namespace TDAction.Combat.Events
         {
             FighterStatsManager statsManager = (controller as FighterManager).statManager;
             FighterPhysicsManager physicsManager = (FighterPhysicsManager)controller.PhysicsManager;
-            if (controller.IsGrounded)
+            if (physicsManager.IsGrounded)
             {
                 physicsManager.forceGravity = Vector3.zero;
                 return AttackEventReturnType.NONE;

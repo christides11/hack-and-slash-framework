@@ -131,7 +131,7 @@ namespace TDAction.Fighter
         {
             if (InputManager.GetButton((int)EntityInputs.JUMP).firstPress)
             {
-                StateManager.ChangeState(IsGrounded ? (ushort)FighterStates.JUMP_SQUAT : (ushort)FighterStates.JUMP);
+                StateManager.ChangeState(physicsManager.IsGrounded ? (ushort)FighterStates.JUMP_SQUAT : (ushort)FighterStates.JUMP);
                 return true;
             }
             return false;
@@ -139,8 +139,8 @@ namespace TDAction.Fighter
 
         public virtual bool TryLandCancel(bool setState = true)
         {
-            PhysicsManager.CheckIfGrounded();
-            if (IsGrounded)
+            physicsManager.CheckIfGrounded();
+            if (physicsManager.IsGrounded)
             {
                 if (setState)
                 {

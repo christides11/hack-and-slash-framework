@@ -34,7 +34,7 @@ namespace TDAction.Fighter
         {
             FighterManager e = GetEntityManager();
             // Landed, go into knockdown state.
-            if (e.IsGrounded)
+            if (e.PhysicsManager.IsGrounded)
             {
                 e.StateManager.ChangeState((int)FighterStates.KNOCKDOWN);
                 return true;
@@ -44,7 +44,7 @@ namespace TDAction.Fighter
                 return false;
             }
             // Hitstun finished.
-            if (e.IsGrounded)
+            if (e.PhysicsManager.IsGrounded)
             {
                 e.StateManager.ChangeState((int)FighterStates.IDLE);
             }

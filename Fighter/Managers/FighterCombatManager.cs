@@ -126,7 +126,7 @@ namespace HnSF.Fighters
         protected virtual int CheckStartingNodes()
         {
             MovesetDefinition moveset = CurrentMoveset;
-            switch (manager.IsGrounded)
+            switch (manager.PhysicsManager.IsGrounded)
             {
                 case true:
                     if(moveset.groundIdleCancelListID != -1)

@@ -34,7 +34,7 @@ namespace TDAction.Fighter
 
         public override void CheckIfGrounded()
         {
-            ((FighterManager)manager).IsGrounded = ((FighterManager)manager).charController2D.isGrounded;
+            IsGrounded = ((FighterManager)manager).charController2D.isGrounded;
         }
 
         public virtual void HandleGravity()

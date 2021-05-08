@@ -26,7 +26,7 @@ namespace TDAction.Fighter
             {
                 return true;
             }
-            if (Manager.IsGrounded)
+            if (Manager.PhysicsManager.IsGrounded)
             {
                 Manager.StateManager.ChangeState((int)FighterStates.IDLE);
                 return true;
