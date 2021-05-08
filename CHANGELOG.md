@@ -1,3 +1,15 @@
+# [17.0.0](https://github.com/christides11/Character-Action-Framework/compare/v16.0.0...v17.0.0) (2021-05-08)
+
+
+### Features
+
+* Added cancel list. ([2cccac8](https://github.com/christides11/Character-Action-Framework/commit/2cccac8f5dc95b7b8a591b78d9137fa6325caf29))
+
+
+### BREAKING CHANGES
+
+* Attacks can now refer to a cancel list on what they are able to cancel into and when, instead of a standardized "CommandNormals" list. This gives much more flexibility.
+
 # [16.0.0](https://github.com/christides11/Character-Action-Framework/compare/v15.0.0...v16.0.0) (2021-05-07)
 
 
