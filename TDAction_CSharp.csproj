@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{BE79325F-6A6A-3B05-2AE4-841EBFC3C2AF}</ProjectGuid>
+    <ProjectGuid>{81DBEF9F-0932-0C5C-ED3C-0AE7B9A63529}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>TDAction_CSharp</AssemblyName>
@@ -329,7 +329,7 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory">
-      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/PackageCache/com.unity.render-pipelines.core@7.3.1/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
+      <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/PackageCache/com.unity.render-pipelines.core@7.3.1/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/2019.4.25f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -686,21 +686,21 @@
       <HintPath>C:/Program Files/Unity/2019.4.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="XNode">
-      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/XNode.dll</HintPath>
+      <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/XNode.dll</HintPath>
     </Reference>
     <Reference Include="Cinemachine">
-      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+      <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="HnSF.csproj">
-      <Project>{36D6BD7F-B12B-741C-F7C1-B5F5E67E3676}</Project>
+      <Project>{2F2B7619-58DC-0D62-4737-B881AF539594}</Project>
       <Name>HnSF</Name>
     </ProjectReference>
   </ItemGroup>

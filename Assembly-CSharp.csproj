@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D53DDF27-8A99-78EE-B6FE-8589810F249C}</ProjectGuid>
+    <ProjectGuid>{49271E8E-1788-6EC2-66A7-B41B6050580C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -603,90 +603,90 @@
       <HintPath>C:/Program Files/Unity/2019.4.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+      <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Cinemachine">
-      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+      <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+      <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
     <Reference Include="XNode">
-      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/XNode.dll</HintPath>
+      <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/XNode.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids">
-      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+      <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
     </Reference>
     <Reference Include="Malee.ReorderableList.Editor">
-      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/Malee.ReorderableList.Editor.dll</HintPath>
+      <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Malee.ReorderableList.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+      <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids.Editor">
-      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
+      <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+      <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
-      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+      <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+      <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Malee.ReorderableList">
-      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/Malee.ReorderableList.dll</HintPath>
+      <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Malee.ReorderableList.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+      <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+      <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="XNodeEditor">
-      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/XNodeEditor.dll</HintPath>
+      <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/XNodeEditor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Projects/Unity/Character-Action-Framework/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="HnSF.Editor.csproj">
-      <Project>{F7721E56-D093-9352-0BC5-0D176DEF8AF3}</Project>
+      <Project>{85D63DB0-6010-8952-A6A8-18E0D09226FF}</Project>
       <Name>HnSF.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="HnSF.csproj">
-      <Project>{36D6BD7F-B12B-741C-F7C1-B5F5E67E3676}</Project>
+      <Project>{2F2B7619-58DC-0D62-4737-B881AF539594}</Project>
       <Name>HnSF</Name>
     </ProjectReference>
     <ProjectReference Include="TDAction_CSharp.csproj">
-      <Project>{BE79325F-6A6A-3B05-2AE4-841EBFC3C2AF}</Project>
+      <Project>{81DBEF9F-0932-0C5C-ED3C-0AE7B9A63529}</Project>
       <Name>TDAction_CSharp</Name>
     </ProjectReference>
     <ProjectReference Include="TDAction_CSharp_Editor.csproj">
-      <Project>{4C3C166A-BA8B-ED6C-B5C1-A80F1F243B46}</Project>
+      <Project>{B5F8CAC2-00E7-67C1-06C7-23A5CB062F89}</Project>
       <Name>TDAction_CSharp_Editor</Name>
     </ProjectReference>
   </ItemGroup>

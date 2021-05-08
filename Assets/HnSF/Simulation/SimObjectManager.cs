@@ -63,6 +63,7 @@ namespace HnSF.Simulation
         {
             TickSimObjects();
             SimulatePhysics();
+            LateTickSimObjects();
         }
 
         /// <summary>
@@ -82,14 +83,6 @@ namespace HnSF.Simulation
         protected virtual void SimulatePhysics()
         {
             Physics.Simulate(Time.fixedDeltaTime);
-        }
-
-        /// <summary>
-        /// Calls every object's SimLateUpate method that is in the simulation.
-        /// </summary>
-        public virtual void LateTick()
-        {
-            LateTickSimObjects();
         }
 
         /// <summary>
