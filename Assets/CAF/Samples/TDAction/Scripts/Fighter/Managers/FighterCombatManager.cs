@@ -24,6 +24,16 @@ namespace TDAction.Fighter
             return (int)team; 
         }
 
+        public override int GetMovesetCount()
+        {
+            return (manager as FighterManager).entityDefinition.movesets.Count;
+        }
+
+        public override CAF.Combat.MovesetDefinition GetMoveset(int index)
+        {
+            return (manager as FighterManager).entityDefinition.movesets[index];
+        }
+
         public override HitReaction Hurt(HurtInfoBase hurtInfoBase)
         {
             FighterPhysicsManager physicsManager = (FighterPhysicsManager)manager.PhysicsManager;

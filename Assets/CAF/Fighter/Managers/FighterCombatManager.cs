@@ -32,11 +32,13 @@ namespace CAF.Fighters
         public int CurrentChargeLevel { get; protected set; } = 0;
         public int CurrentChargeLevelCharge { get; protected set; } = 0;
         public virtual MovesetDefinition CurrentMoveset { get; }
-        public MovesetAttackNode CurrentAttack { get { if (currentAttack < 0) { return null; } return (MovesetAttackNode)CurrentMoveset.GetAttackNode(currentAttack); } }
+        public virtual MovesetAttackNode CurrentAttack { get { if (currentAttackNode < 0) { return null; } 
+                return (MovesetAttackNode)GetMoveset(currentAttackMoveset).GetAttackNode(currentAttackNode); } }
         public HitInfoBase LastHitBy { get; protected set; }
 
         protected int currentMoveset = 0;
-        protected int currentAttack = -1;
+        protected int currentAttackMoveset = -1;
+        protected int currentAttackNode = -1;
 
         protected int hitstun;
         protected int hitstop; 
@@ -63,6 +65,16 @@ namespace CAF.Fighters
             }
         }
 
+        public virtual int GetMovesetCount()
+        {
+            throw new NotImplementedException();
+        }
+
+        public virtual MovesetDefinition GetMoveset(int index)
+        {
+            throw new NotImplementedException();
+        }
+
         public virtual void Cleanup()
         {
             if (CurrentAttack == null)
@@ -71,14 +83,16 @@ namespace CAF.Fighters
             }
             CurrentChargeLevel = 0;
             CurrentChargeLevelCharge = 0;
-            currentAttack = -1;
+            currentAttackMoveset = -1;
+            currentAttackNode = -1;
             hitboxManager.Reset();
         }
 
         public virtual void SetAttack(int attackNodeIndex)
         {
             Cleanup();
-            currentAttack = attackNodeIndex;
+            currentAttackMoveset = currentMoveset;
+            currentAttackNode = attackNodeIndex;
         }
 
         public virtual int TryAttack()

@@ -16,7 +16,7 @@ MonoBehaviour:
   description: 
   useState: 0
   stateOverride: 0
-  length: 15
+  length: 10
   commandAttackCancelWindows: []
   chargeWindows: []
   hitboxGroups: []
@@ -24,6 +24,7 @@ MonoBehaviour:
   events:
   - id: 0
   - id: 1
+  cancels: []
   animationName: ground-slide-end
   references:
     version: 1

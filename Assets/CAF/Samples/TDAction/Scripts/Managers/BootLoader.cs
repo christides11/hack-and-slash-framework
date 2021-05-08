@@ -19,8 +19,9 @@ namespace TDAction.Managers
 
         private void Awake()
         {
-            OnPlaySceneLoaded += StartGame;
+            gameManager.SetupGame();
 
+            OnPlaySceneLoaded += StartGame;
             // Play scene is already loaded.
             if (SceneManager.GetSceneByName(playScene).IsValid())
             {
@@ -32,7 +33,7 @@ namespace TDAction.Managers
 
         private void StartGame()
         {
-            gameManager.SetupGame();
+            gameManager.StartGame();
         }
 
         /// <summary>

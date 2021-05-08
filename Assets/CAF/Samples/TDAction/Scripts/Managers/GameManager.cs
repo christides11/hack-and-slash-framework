@@ -39,6 +39,14 @@ namespace TDAction.Managers
         public void SetupGame()
         {
             gameHandler = new GameHandler(GameObject.FindObjectOfType<PlayerHUD>());
+        }
+
+        public void StartGame()
+        {
+            if(gameHandler == null)
+            {
+                return;
+            }
             gameHandler.SpawnPlayer(playerEntity, playerSpawnPosition);
         }
 

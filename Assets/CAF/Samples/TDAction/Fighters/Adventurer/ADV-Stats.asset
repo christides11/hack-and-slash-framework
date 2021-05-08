@@ -36,19 +36,19 @@ MonoBehaviour:
     maxFallSpeed:
       baseValue: 10
     airBaseAcceleration:
-      baseValue: 0.05
+      baseValue: 0.2
     airAcceleration:
-      baseValue: 0.05
+      baseValue: 0.2
     airMaxSpeed:
-      baseValue: 0.1
+      baseValue: 12
     aerialFriction:
-      baseValue: 0.01
+      baseValue: 0.2
     shortHopForce:
       baseValue: 9
     fullHopForce:
       baseValue: 13
     airJumpForce:
-      baseValue: 0.2
+      baseValue: 10
     hitstunGravity:
       baseValue: 0.5
     hitstunMaxFallSpeed:
