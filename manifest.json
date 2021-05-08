@@ -2,15 +2,15 @@
   "sitemap": {
     "fileOptions": {
       "api/*": {
-        "baseUrl": "https://christides11.github.io/Character-Action-Framework/",
+        "baseUrl": "https://christides11.github.io/hack-and-slash-framework/",
         "changefreq": "daily"
       }
     },
-    "baseUrl": "https://christides11.github.io/Character-Action-Framework/",
+    "baseUrl": "https://christides11.github.io/hack-and-slash-framework/",
     "changefreq": "weekly"
   },
   "homepages": [],
-  "source_base_path": "D:/a/hack-n-slash-framework/hack-n-slash-framework/Documentation",
+  "source_base_path": "D:/a/hack-and-slash-framework/hack-and-slash-framework/Documentation",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -24,11 +24,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Camera.LookHandler.yml",
+      "source_relative_path": "api/HnSF.Camera.LookHandler.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Camera.LookHandler.html",
-          "hash": "S23Z1OPCfNvugd42gn2qq8ZlPfnHKm8hzqQVhnO3UVY="
+          "relative_path": "api/HnSF.Camera.LookHandler.html",
+          "hash": "iGmBN/MyANOdBhzpwdACRpB4fo/2wHeYYvAjKk3kuqs="
         }
       },
       "is_incremental": false,
@@ -36,11 +36,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Camera.yml",
+      "source_relative_path": "api/HnSF.Camera.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Camera.html",
-          "hash": "ew/RBilV7SqJMQqYnOIKfoKUh+IrUrwjnNLABhiTa1s="
+          "relative_path": "api/HnSF.Camera.html",
+          "hash": "laC32eSh+j1BlrJCCykVM2xMT0q/TU6UoJxnceCjGME="
         }
       },
       "is_incremental": false,
@@ -48,11 +48,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.AttackDefinition.yml",
+      "source_relative_path": "api/HnSF.Combat.AttackDefinition.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.AttackDefinition.html",
-          "hash": "nTqg81Vw186OVXrtNFe/j5CBwL5kLUmktteTwOzBcrQ="
+          "relative_path": "api/HnSF.Combat.AttackDefinition.html",
+          "hash": "Ucq82OAt/lyvb7MxuJjqB1ra7U4wDL5UcFaVGqCt22w="
         }
       },
       "is_incremental": false,
@@ -60,11 +60,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.AttackDefinitionEditor.yml",
+      "source_relative_path": "api/HnSF.Combat.AttackDefinitionEditor.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.AttackDefinitionEditor.html",
-          "hash": "Aev2ui9AI8TKc49hPbnrse/xmjGkKW6e7tRM9OlvMzk="
+          "relative_path": "api/HnSF.Combat.AttackDefinitionEditor.html",
+          "hash": "eGb8A/05IutvX+Me2AMQaU6rT/MBxnhwgheBdm5ovuI="
         }
       },
       "is_incremental": false,
@@ -72,11 +72,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.AttackDefinitionEditorWindow.yml",
+      "source_relative_path": "api/HnSF.Combat.AttackDefinitionEditorWindow.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.AttackDefinitionEditorWindow.html",
-          "hash": "nt5AL84RBj2bf319N4DBHhivLgKXDMz86qAGbWxVDC0="
+          "relative_path": "api/HnSF.Combat.AttackDefinitionEditorWindow.html",
+          "hash": "7wpP6zDCJ89djF2rbWaKUT2uuH8sMvwBr1G7mkHygk0="
         }
       },
       "is_incremental": false,
@@ -84,11 +84,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.AttackEvent.yml",
+      "source_relative_path": "api/HnSF.Combat.AttackEvent.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.AttackEvent.html",
-          "hash": "y3ewbuaef1uW39OC2G/eH30lF6+EOw0Xjg2MbUiBiwg="
+          "relative_path": "api/HnSF.Combat.AttackEvent.html",
+          "hash": "q3BacM+OUeb1jNyHDN30Bwe644yir4PNOs73b6riLmM="
         }
       },
       "is_incremental": false,
@@ -96,11 +96,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.AttackEventDefinition.yml",
+      "source_relative_path": "api/HnSF.Combat.AttackEventDefinition.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.AttackEventDefinition.html",
-          "hash": "10jD1DKMgDYuHAOFaTw8HMzUGMdm5q9tDp+FP0/Aaqk="
+          "relative_path": "api/HnSF.Combat.AttackEventDefinition.html",
+          "hash": "AQhTXdARtkTcR7qZveLIhPABGjBVlojiMyZd8msVdNY="
         }
       },
       "is_incremental": false,
@@ -108,11 +108,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.AttackEventDefinitionEditorWindow.yml",
+      "source_relative_path": "api/HnSF.Combat.AttackEventDefinitionEditorWindow.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.AttackEventDefinitionEditorWindow.html",
-          "hash": "N0KgMMPBXdXsDLDqWJIxNQSzmjldSQe2gqUYSlwYh3s="
+          "relative_path": "api/HnSF.Combat.AttackEventDefinitionEditorWindow.html",
+          "hash": "FpeDOkL2URkemxO43HkuBo02icfyqNCKxUFXbDf/WhY="
         }
       },
       "is_incremental": false,
@@ -120,11 +120,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.AttackEventInputCheckTiming.yml",
+      "source_relative_path": "api/HnSF.Combat.AttackEventInputCheckTiming.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.AttackEventInputCheckTiming.html",
-          "hash": "QPrL8L/hbZpiZ87LwbnCZuBA+iZailRW17xFgcKT0S0="
+          "relative_path": "api/HnSF.Combat.AttackEventInputCheckTiming.html",
+          "hash": "N06/+uMaI24gafZRT+O+6cJyeWYIgWCGPq3KC1RzrKA="
         }
       },
       "is_incremental": false,
@@ -132,11 +132,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.AttackEventReturnType.yml",
+      "source_relative_path": "api/HnSF.Combat.AttackEventReturnType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.AttackEventReturnType.html",
-          "hash": "oe2jXZcUvTdIxC27bHQ9bG0OrzPo7t45tE0ss+iWtlQ="
+          "relative_path": "api/HnSF.Combat.AttackEventReturnType.html",
+          "hash": "Fhoq56nX+hCaoEBJk8qC0197cLlgEqeABy+DkrfN/rY="
         }
       },
       "is_incremental": false,
@@ -144,11 +144,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.AttackEventVariables.yml",
+      "source_relative_path": "api/HnSF.Combat.AttackEventVariables.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.AttackEventVariables.html",
-          "hash": "6RVUUME7ipRlahVgO17IRa+t3av7diQqoQDe/uctF8w="
+          "relative_path": "api/HnSF.Combat.AttackEventVariables.html",
+          "hash": "ec09kH9FzXKeeQjCeTMQjht96RL02EFR+tk37qjE3HI="
         }
       },
       "is_incremental": false,
@@ -156,11 +156,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.BoxDefinition.yml",
+      "source_relative_path": "api/HnSF.Combat.BoxDefinition.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.BoxDefinition.html",
-          "hash": "Hk8Mx/ZZjuxItSmR29OrUsLXPZsbOezHrUEbKol2nOs="
+          "relative_path": "api/HnSF.Combat.BoxDefinition.html",
+          "hash": "FUqmvqB4cz54YGprwrOSswnK4MuvgX7jVh5Fd7lcwm0="
         }
       },
       "is_incremental": false,
@@ -168,11 +168,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.BoxDefinitionBase.yml",
+      "source_relative_path": "api/HnSF.Combat.BoxDefinitionBase.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.BoxDefinitionBase.html",
-          "hash": "dwFFv7V6aINEmZWcm6ldWtYnhiXYm2oNtZoyCm81P1o="
+          "relative_path": "api/HnSF.Combat.BoxDefinitionBase.html",
+          "hash": "+XyIebF+VoK/HbQ6KYCuiIniI9KVsxyWvL8qw/TblMs="
         }
       },
       "is_incremental": false,
@@ -180,11 +180,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.BoxDefinitionPropertyDrawer.yml",
+      "source_relative_path": "api/HnSF.Combat.BoxDefinitionPropertyDrawer.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.BoxDefinitionPropertyDrawer.html",
-          "hash": "J9uNwsM6UKP4VMCiK7OjAoGAs0JM6DhTdzvo9Zza4KM="
+          "relative_path": "api/HnSF.Combat.BoxDefinitionPropertyDrawer.html",
+          "hash": "ufAPHV7ZYhep1zdC+aQ6aHZfdbWTTA7+lTOG7M9U6wA="
         }
       },
       "is_incremental": false,
@@ -192,11 +192,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.BoxShape.yml",
+      "source_relative_path": "api/HnSF.Combat.BoxShape.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.BoxShape.html",
-          "hash": "kFW/50hvF6WzcdRXY37xDImLXORU3I9A9ITaSo9sbQs="
+          "relative_path": "api/HnSF.Combat.BoxShape.html",
+          "hash": "xCspnDLMflQqe4xNQHcrhKrk+KzFXSN/th8607J0hQw="
         }
       },
       "is_incremental": false,
@@ -204,11 +204,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.CancelList.yml",
+      "source_relative_path": "api/HnSF.Combat.CancelList.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.CancelList.html",
-          "hash": "3j7U8bQPgUSWhP+oq8vANkVv9d7T5u7lFMqNGHa0uzI="
+          "relative_path": "api/HnSF.Combat.CancelList.html",
+          "hash": "nhKoKcMgEWkRhI0RqpA+yCGyp+N3TdS8UEU05dXG37k="
         }
       },
       "is_incremental": false,
@@ -216,11 +216,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.CancelListDefinition.yml",
+      "source_relative_path": "api/HnSF.Combat.CancelListDefinition.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.CancelListDefinition.html",
-          "hash": "LLtlwzfgQc0Gmp7TvXNsFSU98uk4SgdtwuhevP3FMiM="
+          "relative_path": "api/HnSF.Combat.CancelListDefinition.html",
+          "hash": "F9p5hrcbbD9yoz9gwi4SjDjsEKKm/y4hvB/qa7yoHEs="
         }
       },
       "is_incremental": false,
@@ -228,11 +228,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.CancelListDefinitionEditorWindow.yml",
+      "source_relative_path": "api/HnSF.Combat.CancelListDefinitionEditorWindow.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.CancelListDefinitionEditorWindow.html",
-          "hash": "6h0mR1199wNIxAs6Lma9VCvSUPS5i8bLQa4nLVd2ySo="
+          "relative_path": "api/HnSF.Combat.CancelListDefinitionEditorWindow.html",
+          "hash": "x3DBtFiwx78Wcndv8w9RixPSgqcR43MOWGSJKwoW3Zs="
         }
       },
       "is_incremental": false,
@@ -240,11 +240,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.ChargeDefinition.yml",
+      "source_relative_path": "api/HnSF.Combat.ChargeDefinition.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.ChargeDefinition.html",
-          "hash": "jFI1UbQzD9CZU6p+tKR9PmjVLO9vbfqwIC1vLTWcK8E="
+          "relative_path": "api/HnSF.Combat.ChargeDefinition.html",
+          "hash": "WkXQVdKtFEs+Het+ZpgfLt4ZK4KIvIz9o74NqiDrIUU="
         }
       },
       "is_incremental": false,
@@ -252,11 +252,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.ChargeGroupEditorWindow.yml",
+      "source_relative_path": "api/HnSF.Combat.ChargeGroupEditorWindow.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.ChargeGroupEditorWindow.html",
-          "hash": "TmZrAD87KWFSTVVXW74TOGcwlaTpqoT50Wr2zeS7PxY="
+          "relative_path": "api/HnSF.Combat.ChargeGroupEditorWindow.html",
+          "hash": "VD3PRBqxYCtP/Lug8EekPnJ56flRgtBJp7aasZwpQ/8="
         }
       },
       "is_incremental": false,
@@ -264,11 +264,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.ChargeLevel.yml",
+      "source_relative_path": "api/HnSF.Combat.ChargeLevel.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.ChargeLevel.html",
-          "hash": "lng5Sm0labNI44dW+zN56RUBiYyRL4PdeJQzy+Vq/9c="
+          "relative_path": "api/HnSF.Combat.ChargeLevel.html",
+          "hash": "4Df2YOeNmbNQCy8hEvtVpL9PkDIzSCgztCC+JtPt+4A="
         }
       },
       "is_incremental": false,
@@ -276,11 +276,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.ForceType.yml",
+      "source_relative_path": "api/HnSF.Combat.ForceType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.ForceType.html",
-          "hash": "TOWujpLjufcqpNsaklGaTTHvhKJ1qBo1WloXxNtwAEA="
+          "relative_path": "api/HnSF.Combat.ForceType.html",
+          "hash": "sICX2XfBWwa4DJ+L+j3JTod7NXZfjN4vaQQsjPAaWjM="
         }
       },
       "is_incremental": false,
@@ -288,11 +288,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.HealInfoBase.yml",
+      "source_relative_path": "api/HnSF.Combat.HealInfoBase.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.HealInfoBase.html",
-          "hash": "C5jwM08KmNFQ/sQ51+02AKqYOlV0SA5epVpDfv73rG4="
+          "relative_path": "api/HnSF.Combat.HealInfoBase.html",
+          "hash": "MN0/hcql/x9COUErYV/cxqhl6GkKArcF7n+34C06t/k="
         }
       },
       "is_incremental": false,
@@ -300,11 +300,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.HitInfo.yml",
+      "source_relative_path": "api/HnSF.Combat.HitInfo.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.HitInfo.html",
-          "hash": "wQJSDsjwvXia2Vf2adA4T4sGd2N9P0M0s0fsdD7JsoY="
+          "relative_path": "api/HnSF.Combat.HitInfo.html",
+          "hash": "KGmyl2zwf5/8VRFCbPfZflr5vW1jxtWSYc22+WzwNYo="
         }
       },
       "is_incremental": false,
@@ -312,11 +312,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.HitInfoBase.yml",
+      "source_relative_path": "api/HnSF.Combat.HitInfoBase.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.HitInfoBase.html",
-          "hash": "jlQbDuRcDmfgPojjj25xue4XRNNc/vwyy+aBLIVpnP8="
+          "relative_path": "api/HnSF.Combat.HitInfoBase.html",
+          "hash": "XThvdYuAXdLDgyWuaxShNDfd+16LdnnG/N6mFNzicdE="
         }
       },
       "is_incremental": false,
@@ -324,11 +324,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.HitReaction.yml",
+      "source_relative_path": "api/HnSF.Combat.HitReaction.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.HitReaction.html",
-          "hash": "ftdzadROlcZlPtseuHpMhi/oOiJnbRZPPLW9aDpH6bI="
+          "relative_path": "api/HnSF.Combat.HitReaction.html",
+          "hash": "yiNLdHoA9AblA+CzROLHf055Ovs7CVPASG14hYXjkYw="
         }
       },
       "is_incremental": false,
@@ -336,11 +336,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.HitReactionType.yml",
+      "source_relative_path": "api/HnSF.Combat.HitReactionType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.HitReactionType.html",
-          "hash": "8cl6mysBqr8q4gY5j5D34C1VQlNQJPP8GqcOFG6sj3c="
+          "relative_path": "api/HnSF.Combat.HitReactionType.html",
+          "hash": "XFyznrY4Aq0T2kLWMe0yhauJuv8T1syqIP5SSBDlB9E="
         }
       },
       "is_incremental": false,
@@ -348,11 +348,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.HitboxForceRelation.yml",
+      "source_relative_path": "api/HnSF.Combat.HitboxForceRelation.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.HitboxForceRelation.html",
-          "hash": "E6EV4dexXL+kicku5cu95EXX5IrGBnMyM28fZiVXJFs="
+          "relative_path": "api/HnSF.Combat.HitboxForceRelation.html",
+          "hash": "RYNWb+FdC4ZNuHhQJjzKRDGj1yaKK+v1WVjL3wAPFKU="
         }
       },
       "is_incremental": false,
@@ -360,11 +360,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.HitboxForceType.yml",
+      "source_relative_path": "api/HnSF.Combat.HitboxForceType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.HitboxForceType.html",
-          "hash": "wY1lKt9NScLLEMxZ3HP563Nykn2YPlMMZfrQWBIzzo0="
+          "relative_path": "api/HnSF.Combat.HitboxForceType.html",
+          "hash": "SGt10tCd4FcnSaroyn2gzZ6MeNNy79v63qlYJz48iAs="
         }
       },
       "is_incremental": false,
@@ -372,11 +372,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.HitboxGroup.yml",
+      "source_relative_path": "api/HnSF.Combat.HitboxGroup.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.HitboxGroup.html",
-          "hash": "me3YruHBKadbjqe3KW5WWHrpiKgx5/nXcx1k4QP9bIs="
+          "relative_path": "api/HnSF.Combat.HitboxGroup.html",
+          "hash": "9/aN4ceti8KiJG699nBqPy5vUXI/dc4lFwvF792UUPo="
         }
       },
       "is_incremental": false,
@@ -384,11 +384,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.HitboxGroupEditorWindow.yml",
+      "source_relative_path": "api/HnSF.Combat.HitboxGroupEditorWindow.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.HitboxGroupEditorWindow.html",
-          "hash": "CCkrqzeY7I2IPS2c1pchpYcDeaUg7kdm9dwdUWkheUY="
+          "relative_path": "api/HnSF.Combat.HitboxGroupEditorWindow.html",
+          "hash": "SOF7xhOMuM4WdkF9RpdjWtJS3Ss53b+FiNvXS83faR4="
         }
       },
       "is_incremental": false,
@@ -396,11 +396,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.HitboxType.yml",
+      "source_relative_path": "api/HnSF.Combat.HitboxType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.HitboxType.html",
-          "hash": "cXPDfy+6t5mpyy9IdnblAedv+3oc828/Q/1vqyr97ok="
+          "relative_path": "api/HnSF.Combat.HitboxType.html",
+          "hash": "L6Smn0iHVUx/E6+EB46o6/FYP0Q4E0wQZB29PN8oA1k="
         }
       },
       "is_incremental": false,
@@ -408,11 +408,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.HurtInfo2D.yml",
+      "source_relative_path": "api/HnSF.Combat.HurtInfo2D.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.HurtInfo2D.html",
-          "hash": "qCik5PVLfuP9ILMpnRX+H52yVz0Yxuwh8ajy6e50CIo="
+          "relative_path": "api/HnSF.Combat.HurtInfo2D.html",
+          "hash": "cNU6mPxStmoVVSuebtkLphhxthv2O2yLnepA08KpdHY="
         }
       },
       "is_incremental": false,
@@ -420,11 +420,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.HurtInfo3D.yml",
+      "source_relative_path": "api/HnSF.Combat.HurtInfo3D.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.HurtInfo3D.html",
-          "hash": "qexhtwr6/edYsTUZoaZIRLDcaHT0jZ+NEg/MGTG3i+w="
+          "relative_path": "api/HnSF.Combat.HurtInfo3D.html",
+          "hash": "phohcr7yLDstcpbmZoUlpMFEEhQnLRHZn20nDJKGKyQ="
         }
       },
       "is_incremental": false,
@@ -432,11 +432,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.HurtInfoBase.yml",
+      "source_relative_path": "api/HnSF.Combat.HurtInfoBase.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.HurtInfoBase.html",
-          "hash": "y5dePwyEXHUbsbUbP6K5Y5Vu9JU73uxqZo1zrW7BPN0="
+          "relative_path": "api/HnSF.Combat.HurtInfoBase.html",
+          "hash": "U1bhsqKHLr/av32Zcy2e1PPR9yVHvlM1+fCU/bPlYi4="
         }
       },
       "is_incremental": false,
@@ -444,11 +444,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.Hurtbox.yml",
+      "source_relative_path": "api/HnSF.Combat.Hurtbox.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.Hurtbox.html",
-          "hash": "SUtwxLDm23+Q2+OvnpdX+2xT3VkalpCypDk7fTtRvPw="
+          "relative_path": "api/HnSF.Combat.Hurtbox.html",
+          "hash": "IahFrW2z3/ZOaVf6KJhsChUb9Aidm3z35e1kTDIiEss="
         }
       },
       "is_incremental": false,
@@ -456,11 +456,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.HurtboxGroup.yml",
+      "source_relative_path": "api/HnSF.Combat.HurtboxGroup.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.HurtboxGroup.html",
-          "hash": "Ra5MsyrVLobFLcGMweT/ypLhFaoetYwX5nQKNCXtmig="
+          "relative_path": "api/HnSF.Combat.HurtboxGroup.html",
+          "hash": "FxTHdUnUfU5JosHegIuHbZ5IRToY/AWUjxfUkvjdwTE="
         }
       },
       "is_incremental": false,
@@ -468,11 +468,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.HurtboxGroupEditorWindow.yml",
+      "source_relative_path": "api/HnSF.Combat.HurtboxGroupEditorWindow.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.HurtboxGroupEditorWindow.html",
-          "hash": "Gm40ffbIrJ+DYxvUyiR0CJe2I6j2aw5vUroLhKihH4I="
+          "relative_path": "api/HnSF.Combat.HurtboxGroupEditorWindow.html",
+          "hash": "O5oV1JrIaM9NvDgdJG/Wtr+uqWnpxwKq20rMnbUrcQk="
         }
       },
       "is_incremental": false,
@@ -480,11 +480,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.HurtboxGroupPropertyDrawer.yml",
+      "source_relative_path": "api/HnSF.Combat.HurtboxGroupPropertyDrawer.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.HurtboxGroupPropertyDrawer.html",
-          "hash": "XyOOZ13qxpZoLLcIN9JmQXemOt3cgB1oAxTXyLdyYm8="
+          "relative_path": "api/HnSF.Combat.HurtboxGroupPropertyDrawer.html",
+          "hash": "Wb8ur1z6bTYCG2lZg3xRGC71855WdV0bWlHTATlS0Lk="
         }
       },
       "is_incremental": false,
@@ -492,11 +492,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.HurtboxState.yml",
+      "source_relative_path": "api/HnSF.Combat.HurtboxState.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.HurtboxState.html",
-          "hash": "6iHNxOjEGRWioUU7QEag6UuWbQXUFyAxjTKg+cpq6tk="
+          "relative_path": "api/HnSF.Combat.HurtboxState.html",
+          "hash": "TA7/eIXYSEbt4LlzlbEeGPuflb27uWW7fn8IySC+RbE="
         }
       },
       "is_incremental": false,
@@ -504,11 +504,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.IHurtable.yml",
+      "source_relative_path": "api/HnSF.Combat.IHurtable.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.IHurtable.html",
-          "hash": "PFosTTWJbWd+ZelAuV0Ouo7F8aO5VlzgqPrkWD1ZTk8="
+          "relative_path": "api/HnSF.Combat.IHurtable.html",
+          "hash": "baqg1J59IlRl3Zww/9Ah1r0BpS8swNfdhGBUi/q5xVE="
         }
       },
       "is_incremental": false,
@@ -516,11 +516,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.ITargetable.yml",
+      "source_relative_path": "api/HnSF.Combat.ITargetable.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.ITargetable.html",
-          "hash": "h6g9Q4jAWSz9UTzHj+P+hiznF/iHkRwEbbhxQ+H0pd8="
+          "relative_path": "api/HnSF.Combat.ITargetable.html",
+          "hash": "TC8A0r5a01uU52uWZsJrGoaTeAy18VA5HOwWx6KE1Ic="
         }
       },
       "is_incremental": false,
@@ -528,11 +528,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.MovesetAttackNode.nextNodeDefinition.yml",
+      "source_relative_path": "api/HnSF.Combat.MovesetAttackNode.nextNodeDefinition.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.MovesetAttackNode.nextNodeDefinition.html",
-          "hash": "FmP1OjU8P+lCSg9UdppJvL4UtuiWQuctb/BZuu8yk7k="
+          "relative_path": "api/HnSF.Combat.MovesetAttackNode.nextNodeDefinition.html",
+          "hash": "cynZHHrDBhXCUKubqSj4xxMIG5sa3KQ0kkIJiJ2gDK8="
         }
       },
       "is_incremental": false,
@@ -540,11 +540,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.MovesetAttackNode.yml",
+      "source_relative_path": "api/HnSF.Combat.MovesetAttackNode.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.MovesetAttackNode.html",
-          "hash": "HTmlBRuDFduGIRBGDlkCCbQcV2cSpZfs7+nxOzhJ5RM="
+          "relative_path": "api/HnSF.Combat.MovesetAttackNode.html",
+          "hash": "5iSXpcAv8xf/mzEP3z3WpSOLiW1pVt9chIfaqzK3PZ4="
         }
       },
       "is_incremental": false,
@@ -552,11 +552,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.MovesetAttackNodeEditor.yml",
+      "source_relative_path": "api/HnSF.Combat.MovesetAttackNodeEditor.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.MovesetAttackNodeEditor.html",
-          "hash": "V0yXWhKyPyqycEC5AhTebJiC+iYfUqRi/HFRZ43tY6Y="
+          "relative_path": "api/HnSF.Combat.MovesetAttackNodeEditor.html",
+          "hash": "QCqlcoZQTys/IEIIDasmO/ztR2FYDvoRPIGYDcfGKpI="
         }
       },
       "is_incremental": false,
@@ -564,11 +564,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.MovesetDefinition.CancelListConnection.yml",
+      "source_relative_path": "api/HnSF.Combat.MovesetDefinition.CancelListConnection.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.MovesetDefinition.CancelListConnection.html",
-          "hash": "2XS0g7/UuBlsD7sYmHHtnzQAY7Qs00bp1MiApFRqz6Q="
+          "relative_path": "api/HnSF.Combat.MovesetDefinition.CancelListConnection.html",
+          "hash": "7QCEARhtrVQkLMxahqcXSUDZV3vvh0JM+Ef3unnc7aA="
         }
       },
       "is_incremental": false,
@@ -576,11 +576,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.MovesetDefinition.yml",
+      "source_relative_path": "api/HnSF.Combat.MovesetDefinition.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.MovesetDefinition.html",
-          "hash": "2zVjcAeCfe2wzfo0+WiLoS331HzXrlCuAaYABad0f1E="
+          "relative_path": "api/HnSF.Combat.MovesetDefinition.html",
+          "hash": "0ZUta6msRbQN1qpb4EvLBoi0/FCEnMTLjmivHKEupW8="
         }
       },
       "is_incremental": false,
@@ -588,11 +588,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.OnHitType.yml",
+      "source_relative_path": "api/HnSF.Combat.OnHitType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.OnHitType.html",
-          "hash": "McPp4LPM7XjNNgwEhu1+Ixfg6/hMMETREmhg/B2tBzM="
+          "relative_path": "api/HnSF.Combat.OnHitType.html",
+          "hash": "tUTe+ZuolzaWOvYAqbNosuK8U9aGa+RqapxAp90gjkU="
         }
       },
       "is_incremental": false,
@@ -600,11 +600,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.StateHurtboxDefinition.yml",
+      "source_relative_path": "api/HnSF.Combat.StateHurtboxDefinition.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.StateHurtboxDefinition.html",
-          "hash": "QLlDDMA1vhFhA4XuRV4DLWcaQvCXIuRymDbknNlbchk="
+          "relative_path": "api/HnSF.Combat.StateHurtboxDefinition.html",
+          "hash": "1oPgnoVLZtMYqu2CDXxbp7pC4X2sOlx1lzFHEM2Xvbc="
         }
       },
       "is_incremental": false,
@@ -612,11 +612,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.StateHurtboxDefinitionEditor.yml",
+      "source_relative_path": "api/HnSF.Combat.StateHurtboxDefinitionEditor.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.StateHurtboxDefinitionEditor.html",
-          "hash": "wh2gZ0tzka2Pr/krbvdAc79ZqpWIq4pmH/ySxA6th6g="
+          "relative_path": "api/HnSF.Combat.StateHurtboxDefinitionEditor.html",
+          "hash": "cuYOs2RxPr262nPXYzfhdD3904UyMvqki31MsKPmlJU="
         }
       },
       "is_incremental": false,
@@ -624,11 +624,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Combat.yml",
+      "source_relative_path": "api/HnSF.Combat.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Combat.html",
-          "hash": "zlXCb++TdsiwCm7TlmTXy68ovSCE3boTzryBHvB+zvs="
+          "relative_path": "api/HnSF.Combat.html",
+          "hash": "yEix1iZyVXdrlj+U79U32fVMU+FYCdsi/f8QcsnZs84="
         }
       },
       "is_incremental": false,
@@ -636,11 +636,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Fighters.FighterBase.yml",
+      "source_relative_path": "api/HnSF.Fighters.FighterBase.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Fighters.FighterBase.html",
-          "hash": "O4e1GClZImMONPjzesDkrWwj8IT2OfvhTY3lMIVfyoE="
+          "relative_path": "api/HnSF.Fighters.FighterBase.html",
+          "hash": "mDUaZQjv/B2SKTZLuIc+jbig40KxlMeoO7qe/KYAZnU="
         }
       },
       "is_incremental": false,
@@ -648,11 +648,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Fighters.FighterCombatManager.ChargeLevelChangedAction.yml",
+      "source_relative_path": "api/HnSF.Fighters.FighterCombatManager.ChargeLevelChangedAction.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Fighters.FighterCombatManager.ChargeLevelChangedAction.html",
-          "hash": "6HP5AXQqSexOP2TJKJdQos8ogry8OCUM9eGO12uiZiM="
+          "relative_path": "api/HnSF.Fighters.FighterCombatManager.ChargeLevelChangedAction.html",
+          "hash": "8g6F/cMdN7D/wevbQqWdNUQoZ781rRL4zau3jIovu9E="
         }
       },
       "is_incremental": false,
@@ -660,11 +660,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Fighters.FighterCombatManager.ChargeLevelChargeChangedAction.yml",
+      "source_relative_path": "api/HnSF.Fighters.FighterCombatManager.ChargeLevelChargeChangedAction.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Fighters.FighterCombatManager.ChargeLevelChargeChangedAction.html",
-          "hash": "4xmMp6yfJIwxeSUejyq7J+7zGmxugSB7f0G/BOHG3Yw="
+          "relative_path": "api/HnSF.Fighters.FighterCombatManager.ChargeLevelChargeChangedAction.html",
+          "hash": "6RkVN4irE3QatTia5cIn9kILywVHVDz4LAy5YkVzLmk="
         }
       },
       "is_incremental": false,
@@ -672,11 +672,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Fighters.FighterCombatManager.EmptyAction.yml",
+      "source_relative_path": "api/HnSF.Fighters.FighterCombatManager.EmptyAction.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Fighters.FighterCombatManager.EmptyAction.html",
-          "hash": "JffZg2OJnrdNseYbUXfBjIwU7eAvkbeoPH7rUI1lnw4="
+          "relative_path": "api/HnSF.Fighters.FighterCombatManager.EmptyAction.html",
+          "hash": "Z4+b+Ib/pEGxxzNV4HPITKwMYr7+iPS5Dcv2mOtt9E0="
         }
       },
       "is_incremental": false,
@@ -684,11 +684,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Fighters.FighterCombatManager.HealthChangedAction.yml",
+      "source_relative_path": "api/HnSF.Fighters.FighterCombatManager.HealthChangedAction.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Fighters.FighterCombatManager.HealthChangedAction.html",
-          "hash": "zpxWVootNs4CMmVrck3mesy4OADcui+SMVw2suYS6QI="
+          "relative_path": "api/HnSF.Fighters.FighterCombatManager.HealthChangedAction.html",
+          "hash": "Oh7IxPjPG9T7FgymtbxqfgxeC5xE+/1cmhyQ3qsJI50="
         }
       },
       "is_incremental": false,
@@ -696,11 +696,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Fighters.FighterCombatManager.MovesetChangedAction.yml",
+      "source_relative_path": "api/HnSF.Fighters.FighterCombatManager.MovesetChangedAction.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Fighters.FighterCombatManager.MovesetChangedAction.html",
-          "hash": "94F+gJm5wTHSEDni0ECjDs+P9Pl8tCXE5zDdgXs9Oqk="
+          "relative_path": "api/HnSF.Fighters.FighterCombatManager.MovesetChangedAction.html",
+          "hash": "QxMMPo990DXT8vu0ouvT6mogUL+XEuJXYuq/ybe8N0A="
         }
       },
       "is_incremental": false,
@@ -708,11 +708,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Fighters.FighterCombatManager.yml",
+      "source_relative_path": "api/HnSF.Fighters.FighterCombatManager.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Fighters.FighterCombatManager.html",
-          "hash": "DFDPFfQF5Sht5/jogfeuJC84G7Of1jsc90C/6NtL1+Q="
+          "relative_path": "api/HnSF.Fighters.FighterCombatManager.html",
+          "hash": "DLcZ0uoTpYbLKSSloOHCJBeRisxW4PcOe5E8zf5gCuE="
         }
       },
       "is_incremental": false,
@@ -720,11 +720,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Fighters.FighterHitboxManager.HitboxGroupEventAction.yml",
+      "source_relative_path": "api/HnSF.Fighters.FighterHitboxManager.HitboxGroupEventAction.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Fighters.FighterHitboxManager.HitboxGroupEventAction.html",
-          "hash": "2/uW4lvOaviYcXqoSsqvkXoEPkBJzSkRZM8zpvy7yuE="
+          "relative_path": "api/HnSF.Fighters.FighterHitboxManager.HitboxGroupEventAction.html",
+          "hash": "kkuqVow5dZlHMnVVCfVHaGhe/cbO89VWrHlpGq02Y8s="
         }
       },
       "is_incremental": false,
@@ -732,11 +732,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Fighters.FighterHitboxManager.IDGroupCollisionInfo.yml",
+      "source_relative_path": "api/HnSF.Fighters.FighterHitboxManager.IDGroupCollisionInfo.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Fighters.FighterHitboxManager.IDGroupCollisionInfo.html",
-          "hash": "pLI/jlVJ2yWZx+BwrtucvWIioascuqg8iOWsdyW0sEI="
+          "relative_path": "api/HnSF.Fighters.FighterHitboxManager.IDGroupCollisionInfo.html",
+          "hash": "ovhsFo44QVdgxpQZ7wpn373undJKVgEB43af+PT4boc="
         }
       },
       "is_incremental": false,
@@ -744,11 +744,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Fighters.FighterHitboxManager.yml",
+      "source_relative_path": "api/HnSF.Fighters.FighterHitboxManager.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Fighters.FighterHitboxManager.html",
-          "hash": "/o4L1QDT2f/slhuqQuELKftA4+HO+EAR1d9IF53XxnY="
+          "relative_path": "api/HnSF.Fighters.FighterHitboxManager.html",
+          "hash": "30/f9ckJsLbJZ12I4oQslnvwTPEV4rygtFVb0UPal/o="
         }
       },
       "is_incremental": false,
@@ -756,11 +756,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Fighters.FighterHurtboxManager.yml",
+      "source_relative_path": "api/HnSF.Fighters.FighterHurtboxManager.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Fighters.FighterHurtboxManager.html",
-          "hash": "6Im5A+jIFLK5RiGPodR7x2jx8qTa36mLMT4sCmfRCk0="
+          "relative_path": "api/HnSF.Fighters.FighterHurtboxManager.html",
+          "hash": "VNg+EcJ91x/8hOsMLq2knqgW/4w5E1YL/fX1faYsHl4="
         }
       },
       "is_incremental": false,
@@ -768,11 +768,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Fighters.FighterInputManager.yml",
+      "source_relative_path": "api/HnSF.Fighters.FighterInputManager.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Fighters.FighterInputManager.html",
-          "hash": "tWF254vPEabGwQrhuJbVq2LTO2FXucRJnEZh1KWyPvg="
+          "relative_path": "api/HnSF.Fighters.FighterInputManager.html",
+          "hash": "WUjoGiMpC1Q728RqaUv3WZUrMuWZUlNL9x6nx87tFbI="
         }
       },
       "is_incremental": false,
@@ -780,11 +780,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Fighters.FighterPhysicsManager2D.yml",
+      "source_relative_path": "api/HnSF.Fighters.FighterPhysicsManager2D.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Fighters.FighterPhysicsManager2D.html",
-          "hash": "FT2MVFNLDtvWLDK53oJqoOyxa8PQkir6dsq5sUgu2w4="
+          "relative_path": "api/HnSF.Fighters.FighterPhysicsManager2D.html",
+          "hash": "KB0k5RuBqMKqkiclBaAnhbhP8VsEC4NecPJEhYuAknc="
         }
       },
       "is_incremental": false,
@@ -792,11 +792,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Fighters.FighterPhysicsManager3D.yml",
+      "source_relative_path": "api/HnSF.Fighters.FighterPhysicsManager3D.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Fighters.FighterPhysicsManager3D.html",
-          "hash": "rmf1hjjaqqugKmOHU7lvnp20eq7Ie8VfKOuaEsJa9SE="
+          "relative_path": "api/HnSF.Fighters.FighterPhysicsManager3D.html",
+          "hash": "3fNrXY4zx4+V78DWOJkBriPQyx+d5JHbch2Icf0rnGE="
         }
       },
       "is_incremental": false,
@@ -804,11 +804,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Fighters.FighterPhysicsManagerBase.yml",
+      "source_relative_path": "api/HnSF.Fighters.FighterPhysicsManagerBase.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Fighters.FighterPhysicsManagerBase.html",
-          "hash": "jsaR1nCsFDCmQcS2EvU5tro21u8wI6CCcMgKX1FwvJI="
+          "relative_path": "api/HnSF.Fighters.FighterPhysicsManagerBase.html",
+          "hash": "40fjJgpnMoKzJNiHttYfhabJkOPPLFqfU/WyIcGFgNA="
         }
       },
       "is_incremental": false,
@@ -816,11 +816,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Fighters.FighterState.yml",
+      "source_relative_path": "api/HnSF.Fighters.FighterState.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Fighters.FighterState.html",
-          "hash": "PjaPXBv91mC9BOJoPQ9T5/tCmaOBVHA5HcgAyjUhfV0="
+          "relative_path": "api/HnSF.Fighters.FighterState.html",
+          "hash": "291/Kl0CY0Qp3y4+Uif7QbeqxdZenfL4E9wGoQMcY3g="
         }
       },
       "is_incremental": false,
@@ -828,11 +828,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Fighters.FighterStateManager.StateAction.yml",
+      "source_relative_path": "api/HnSF.Fighters.FighterStateManager.StateAction.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Fighters.FighterStateManager.StateAction.html",
-          "hash": "NazvRkAzVxx6SD+nUVtRfU01kAH0goL949BNbEPHPs8="
+          "relative_path": "api/HnSF.Fighters.FighterStateManager.StateAction.html",
+          "hash": "vA0orWjLKHLifQwYhcLIdzpQdzjKWcWhy2sOUG6IRts="
         }
       },
       "is_incremental": false,
@@ -840,11 +840,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Fighters.FighterStateManager.StateFrameAction.yml",
+      "source_relative_path": "api/HnSF.Fighters.FighterStateManager.StateFrameAction.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Fighters.FighterStateManager.StateFrameAction.html",
-          "hash": "cZNb86W7PjAHJwNSfmQOXVR5tCBkqQFF7QMW3+StsVo="
+          "relative_path": "api/HnSF.Fighters.FighterStateManager.StateFrameAction.html",
+          "hash": "QOX65OUnLawtfBCpb/fb2Zkd17zklHbQLCX1zIWS0XE="
         }
       },
       "is_incremental": false,
@@ -852,11 +852,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Fighters.FighterStateManager.yml",
+      "source_relative_path": "api/HnSF.Fighters.FighterStateManager.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Fighters.FighterStateManager.html",
-          "hash": "+/PE8OrWq/AjEWI6kDTKVoGeFxSH8nukbkD9E2eH6Fk="
+          "relative_path": "api/HnSF.Fighters.FighterStateManager.html",
+          "hash": "lY+lCMbCz8Ynaa6ITxrgzl7PplHV8MGAxxfwdcftzDw="
         }
       },
       "is_incremental": false,
@@ -864,11 +864,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Fighters.yml",
+      "source_relative_path": "api/HnSF.Fighters.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Fighters.html",
-          "hash": "mBakUxcdwAzdGQS/m2WRsT5H3N3VCBNk597gHvQw5xY="
+          "relative_path": "api/HnSF.Fighters.html",
+          "hash": "N8esV3ZOWoiw4Pfg95HoiwLud8TuZlKpaMOZFi3GDaQ="
         }
       },
       "is_incremental": false,
@@ -876,11 +876,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.HelperFunctions.yml",
+      "source_relative_path": "api/HnSF.HelperFunctions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.HelperFunctions.html",
-          "hash": "xcqqW4gsxD0ZyK40na6unvWJUUiR6/LYFZEgC9abY2o="
+          "relative_path": "api/HnSF.HelperFunctions.html",
+          "hash": "S5JkmSzFfuwfqhaMutD9wnYeEV3eAise5xqPRwIB1Z4="
         }
       },
       "is_incremental": false,
@@ -888,11 +888,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Input.GlobalInputManager.yml",
+      "source_relative_path": "api/HnSF.Input.GlobalInputManager.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Input.GlobalInputManager.html",
-          "hash": "UC9OrzrN0P4iNmyWE8u4wsP8L2QpIBY9ZxlEZahPv+c="
+          "relative_path": "api/HnSF.Input.GlobalInputManager.html",
+          "hash": "rsUq4N5ZLhRP4F+PJCJ9rLz8RTdtIK1QMTkvKVIb4jA="
         }
       },
       "is_incremental": false,
@@ -900,11 +900,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Input.InputButtonStates.yml",
+      "source_relative_path": "api/HnSF.Input.InputButtonStates.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Input.InputButtonStates.html",
-          "hash": "PT8DrcFGEGPZe8CkNxJhjZ6lSgsR2hmhPGTFJq2IwuI="
+          "relative_path": "api/HnSF.Input.InputButtonStates.html",
+          "hash": "JGJ0/U8e7QR3EtyKadhmt17EQ96Wt+CSGAhnFmI3U24="
         }
       },
       "is_incremental": false,
@@ -912,11 +912,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Input.InputControlType.yml",
+      "source_relative_path": "api/HnSF.Input.InputControlType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Input.InputControlType.html",
-          "hash": "nL87hbvtXdX6c6WtLhYUNsSJHgqb+EiSDmZe/Pofyl0="
+          "relative_path": "api/HnSF.Input.InputControlType.html",
+          "hash": "Fj0lfFn74163O7m3F/sJjdw7vctZglO8ChB1CbTeIj0="
         }
       },
       "is_incremental": false,
@@ -924,11 +924,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Input.InputDefinition.yml",
+      "source_relative_path": "api/HnSF.Input.InputDefinition.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Input.InputDefinition.html",
-          "hash": "xpL5Xnlv3FSg5s6p7Xitd4PFTwVfFuRl31lP/BgRcOI="
+          "relative_path": "api/HnSF.Input.InputDefinition.html",
+          "hash": "9ni7d1T5xqQRqU3EB/DnY8KmQH05sE+sZpp0Kf25CBM="
         }
       },
       "is_incremental": false,
@@ -936,11 +936,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Input.InputDefinitionType.yml",
+      "source_relative_path": "api/HnSF.Input.InputDefinitionType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Input.InputDefinitionType.html",
-          "hash": "zegi5iajVA8SO7zfxSaZz1ger9TvsNoqxczBEWUogd8="
+          "relative_path": "api/HnSF.Input.InputDefinitionType.html",
+          "hash": "luHSrdnZPRrOGzuxsZfCeeiC7lw1L1QTK4NwtyTXDhU="
         }
       },
       "is_incremental": false,
@@ -948,11 +948,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Input.InputRecordAxis.yml",
+      "source_relative_path": "api/HnSF.Input.InputRecordAxis.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Input.InputRecordAxis.html",
-          "hash": "FohIbU2CqW5ivM1g5DWHKdzG/OD2uuOcF2MkUTx//HY="
+          "relative_path": "api/HnSF.Input.InputRecordAxis.html",
+          "hash": "S0tLFSqcm47UVT2iLPSAJR9Ia4iczbuqZZ3o0xry2Go="
         }
       },
       "is_incremental": false,
@@ -960,11 +960,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Input.InputRecordAxis2D.yml",
+      "source_relative_path": "api/HnSF.Input.InputRecordAxis2D.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Input.InputRecordAxis2D.html",
-          "hash": "97rjf/CtfEalSgBoU+BCg3uvAc59+Fa9/Ip2VRlLS/w="
+          "relative_path": "api/HnSF.Input.InputRecordAxis2D.html",
+          "hash": "vT4Moo5r+dMDT5LL5qHFFXeMOG+eSR/SH+n19l+YXNs="
         }
       },
       "is_incremental": false,
@@ -972,11 +972,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Input.InputRecordButton.yml",
+      "source_relative_path": "api/HnSF.Input.InputRecordButton.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Input.InputRecordButton.html",
-          "hash": "CQuEepVli1tbJzgLOTcBdsGSglLIBbD1riGRuaEBODY="
+          "relative_path": "api/HnSF.Input.InputRecordButton.html",
+          "hash": "AuLTERy1JCwVCva3fBTS/foQtfnZRE5/2crcvorJpGQ="
         }
       },
       "is_incremental": false,
@@ -984,11 +984,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Input.InputRecordInput.yml",
+      "source_relative_path": "api/HnSF.Input.InputRecordInput.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Input.InputRecordInput.html",
-          "hash": "wiwIVycZLKaJvP7fKXgvmjGTph+6O7Mve9cKtAT5wMw="
+          "relative_path": "api/HnSF.Input.InputRecordInput.html",
+          "hash": "y9I/z49H+zL6OQ1hMtZloVoc5WvHa9Q0QwM+9Kmjp2Q="
         }
       },
       "is_incremental": false,
@@ -996,11 +996,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Input.InputRecordItem.yml",
+      "source_relative_path": "api/HnSF.Input.InputRecordItem.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Input.InputRecordItem.html",
-          "hash": "JCLCLbduLyiBadlmVRmOYtg7+WdBvqqawH+tt8brsiE="
+          "relative_path": "api/HnSF.Input.InputRecordItem.html",
+          "hash": "np+9fiigBJk3ZJSm2UwhOEkJ0fe/XfU/g7dOcVJB6is="
         }
       },
       "is_incremental": false,
@@ -1008,11 +1008,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Input.InputSequence.yml",
+      "source_relative_path": "api/HnSF.Input.InputSequence.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Input.InputSequence.html",
-          "hash": "8sdKCYov5dseawz2Z0nk5+NzwhHqNHz/b96LOBuHx/I="
+          "relative_path": "api/HnSF.Input.InputSequence.html",
+          "hash": "uJZ/TjrQ9SCHu5BjFkfJo07qtTDVV5m05lQFxc8dBhI="
         }
       },
       "is_incremental": false,
@@ -1020,11 +1020,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Input.yml",
+      "source_relative_path": "api/HnSF.Input.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Input.html",
-          "hash": "GtCVchsPQia5o20UctHK/ZPBL294nWL88vaAbT/ksII="
+          "relative_path": "api/HnSF.Input.html",
+          "hash": "GY07bX6iBEKoIIaaFuyo0YF+am058E4HUAL+/YiROH0="
         }
       },
       "is_incremental": false,
@@ -1032,11 +1032,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Simulation.ISimObject.yml",
+      "source_relative_path": "api/HnSF.Simulation.ISimObject.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Simulation.ISimObject.html",
-          "hash": "QKc37HxI4vpMNY5MA1+jrRtrt7FDKkODKVul7QPNf0M="
+          "relative_path": "api/HnSF.Simulation.ISimObject.html",
+          "hash": "tZZl3bhbd8gU14n1dea07CGgpC9sLrtsduFuJ6qAT+g="
         }
       },
       "is_incremental": false,
@@ -1044,11 +1044,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Simulation.ISimObjectManager.yml",
+      "source_relative_path": "api/HnSF.Simulation.ISimObjectManager.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Simulation.ISimObjectManager.html",
-          "hash": "5jBUsY4gwDpnn05lEuJFXiUZcHxjMXd3rRoFgxNvQ88="
+          "relative_path": "api/HnSF.Simulation.ISimObjectManager.html",
+          "hash": "llJdhP25aUYeM6+O/JQJ3O9K3Q+qZFLgXtF8CTcUmxA="
         }
       },
       "is_incremental": false,
@@ -1056,11 +1056,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Simulation.SimObjectManager.yml",
+      "source_relative_path": "api/HnSF.Simulation.SimObjectManager.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Simulation.SimObjectManager.html",
-          "hash": "t2iPdyPoj/YCagHqnKvDykWBUReajOTuHf5AEh7KgWY="
+          "relative_path": "api/HnSF.Simulation.SimObjectManager.html",
+          "hash": "0HOCuCKlOcV5q0fcE9OHgY1rySNUmGjb7taf5uTLOhs="
         }
       },
       "is_incremental": false,
@@ -1068,11 +1068,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.Simulation.yml",
+      "source_relative_path": "api/HnSF.Simulation.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.Simulation.html",
-          "hash": "ORbuU2ELBzSKjYQHaoO03JSmd40K0TJlDBgB2fO9FBE="
+          "relative_path": "api/HnSF.Simulation.html",
+          "hash": "JSlR+2mJNaDW74UNrzBA56yo0gkGUbZk0HCjXWfZ/bk="
         }
       },
       "is_incremental": false,
@@ -1080,11 +1080,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CAF.yml",
+      "source_relative_path": "api/HnSF.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CAF.html",
-          "hash": "YlsF+zEQ1q2tMzEwXk2xDY5a+YpRiqSCemHO1JyASHM="
+          "relative_path": "api/HnSF.html",
+          "hash": "rDTiHzv8NrL/ugFPatMxQq7yavPlVep7voUlKkB81mQ="
         }
       },
       "is_incremental": false,
@@ -1096,7 +1096,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "VuLOOjw1mygI4Kzkrof1AJMJ+EFyJVx4nghP5FdP71M="
+          "hash": "06n2tIUe6QoOIqxJZcEM3oSr7jY6FmquypIH6fE+wDY="
         }
       },
       "is_incremental": false,
@@ -1108,7 +1108,7 @@
       "output": {
         ".html": {
           "relative_path": "guides/createchara.html",
-          "hash": "O+fYFrh8rBiCndvRyvvggSXMkTT9ulcY6/3zsBTCACc="
+          "hash": "5UguiOk486VQyjdxZb1dwLLX65HHzwAEvdQm4eova3k="
         }
       },
       "is_incremental": false,
@@ -1120,7 +1120,7 @@
       "output": {
         ".html": {
           "relative_path": "guides/index.html",
-          "hash": "PKJnWU+fVO+rND6e++hcYKpp5lDqzWt6HpbZblb3Dhs="
+          "hash": "3SDfPARd3Ef/fWdE7ey1P2HbAnQnQl9ilhJbTBWbi/o="
         }
       },
       "is_incremental": false,
@@ -1132,7 +1132,7 @@
       "output": {
         ".html": {
           "relative_path": "guides/setup.html",
-          "hash": "UCmqomQcpKuelMwMuVZ1nmlfZSnBy7oIGSk6wEJDxT8="
+          "hash": "JSQWxLkgBHdSsEy03xTha/B1427DGAfhxOD7KDeoX4E="
         }
       },
       "is_incremental": false,
@@ -1156,7 +1156,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "6aTN6tXhpBt2OKrs+TKZzaIW/xTtZprPKUjKwihsI5A="
+          "hash": "UyqepEu7towiX6B1AYPvbpMLNtcmtsr0OsxlDa61Tww="
         }
       },
       "is_incremental": false,
@@ -1190,7 +1190,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "Z62Au7Fn4VUFUqpFRhD3QsRVT407/P6yi5PfUlj4Gmo="
+          "hash": "YaKBdGHcCYJs8nxMzik9xkBhnsKcqZaRh25Wag+GsHE="
         }
       },
       "is_incremental": false,

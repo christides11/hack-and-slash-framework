@@ -5,9 +5,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Entity Setup | Hack and Slash Framework Documentation </title>
+    <title>Namespace HnSF.Fighters
+   | Hack and Slash Framework Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Entity Setup | Hack and Slash Framework Documentation ">
+    <meta name="title" content="Namespace HnSF.Fighters
+   | Hack and Slash Framework Documentation ">
     <meta name="generator" content="docfx 2.57.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -76,16 +78,56 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="entity-setup">Entity Setup</h1>
-
-<h2 id="overview">Overview</h2>
-<p>In CAF, an Entity refers to objects that take in input (weither it be from the player or from AI) to decide what state it should be in/transition into. It has helpers for physics force handling, combat related task such as hitbox creation and attack processing, and other various methods. 
-All of these combine to create an Entity, which will usually be either a player controlled character or an enemy. Here we&#39;ll walk through the components required for a entity along with what they do.</p>
-<h2 id="gameobject-setup">GameObject Setup</h2>
-<p>First let&#39;s set up the GameObject that will contain all our scripts. 
-Create a GameObject and attach a collider and a Rigidbody (or whatever you use to control the character&#39;s forces, such as a <a href="https://docs.unity3d.com/ScriptReference/CharacterController.html">Character Controller</a>). Turn off the Rigidbody&#39;s gravity and set it&#39;s Angular Drag to 0. It should look like this.</p>
-<p>For the model or sprite of the Entity, you should assign it as a child of this GameObject. You should end up with a hierarchy like so.</p>
+            <article class="content wrap" id="_content" data-uid="HnSF.Fighters">
+  
+  <h1 id="HnSF_Fighters" data-uid="HnSF.Fighters" class="text-break">Namespace HnSF.Fighters
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="HnSF.Fighters.FighterBase.html">FighterBase</a></h4>
+      <section></section>
+      <h4><a class="xref" href="HnSF.Fighters.FighterCombatManager.html">FighterCombatManager</a></h4>
+      <section></section>
+      <h4><a class="xref" href="HnSF.Fighters.FighterHitboxManager.html">FighterHitboxManager</a></h4>
+      <section><p>Handles the hitboxes and other boxes used by entities for combat.</p>
+</section>
+      <h4><a class="xref" href="HnSF.Fighters.FighterHitboxManager.IDGroupCollisionInfo.html">FighterHitboxManager.IDGroupCollisionInfo</a></h4>
+      <section></section>
+      <h4><a class="xref" href="HnSF.Fighters.FighterHurtboxManager.html">FighterHurtboxManager</a></h4>
+      <section></section>
+      <h4><a class="xref" href="HnSF.Fighters.FighterInputManager.html">FighterInputManager</a></h4>
+      <section></section>
+      <h4><a class="xref" href="HnSF.Fighters.FighterPhysicsManager2D.html">FighterPhysicsManager2D</a></h4>
+      <section></section>
+      <h4><a class="xref" href="HnSF.Fighters.FighterPhysicsManager3D.html">FighterPhysicsManager3D</a></h4>
+      <section></section>
+      <h4><a class="xref" href="HnSF.Fighters.FighterPhysicsManagerBase.html">FighterPhysicsManagerBase</a></h4>
+      <section></section>
+      <h4><a class="xref" href="HnSF.Fighters.FighterState.html">FighterState</a></h4>
+      <section></section>
+      <h4><a class="xref" href="HnSF.Fighters.FighterStateManager.html">FighterStateManager</a></h4>
+      <section></section>
+    <h3 id="delegates">Delegates
+  </h3>
+      <h4><a class="xref" href="HnSF.Fighters.FighterCombatManager.ChargeLevelChangedAction.html">FighterCombatManager.ChargeLevelChangedAction</a></h4>
+      <section></section>
+      <h4><a class="xref" href="HnSF.Fighters.FighterCombatManager.ChargeLevelChargeChangedAction.html">FighterCombatManager.ChargeLevelChargeChangedAction</a></h4>
+      <section></section>
+      <h4><a class="xref" href="HnSF.Fighters.FighterCombatManager.EmptyAction.html">FighterCombatManager.EmptyAction</a></h4>
+      <section></section>
+      <h4><a class="xref" href="HnSF.Fighters.FighterCombatManager.HealthChangedAction.html">FighterCombatManager.HealthChangedAction</a></h4>
+      <section></section>
+      <h4><a class="xref" href="HnSF.Fighters.FighterCombatManager.MovesetChangedAction.html">FighterCombatManager.MovesetChangedAction</a></h4>
+      <section></section>
+      <h4><a class="xref" href="HnSF.Fighters.FighterHitboxManager.HitboxGroupEventAction.html">FighterHitboxManager.HitboxGroupEventAction</a></h4>
+      <section></section>
+      <h4><a class="xref" href="HnSF.Fighters.FighterStateManager.StateAction.html">FighterStateManager.StateAction</a></h4>
+      <section></section>
+      <h4><a class="xref" href="HnSF.Fighters.FighterStateManager.StateFrameAction.html">FighterStateManager.StateFrameAction</a></h4>
+      <section></section>
 </article>
           </div>
           
@@ -93,9 +135,6 @@ Create a GameObject and attach a collider and a Rigidbody (or whatever you use t
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
-                  <li>
-                    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Documentation/guides/createchara.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

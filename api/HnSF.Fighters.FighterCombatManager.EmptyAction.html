@@ -5,9 +5,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Entity Setup | Hack and Slash Framework Documentation </title>
+    <title>Delegate FighterCombatManager.EmptyAction
+   | Hack and Slash Framework Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Entity Setup | Hack and Slash Framework Documentation ">
+    <meta name="title" content="Delegate FighterCombatManager.EmptyAction
+   | Hack and Slash Framework Documentation ">
     <meta name="generator" content="docfx 2.57.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -76,16 +78,36 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="entity-setup">Entity Setup</h1>
-
-<h2 id="overview">Overview</h2>
-<p>In CAF, an Entity refers to objects that take in input (weither it be from the player or from AI) to decide what state it should be in/transition into. It has helpers for physics force handling, combat related task such as hitbox creation and attack processing, and other various methods. 
-All of these combine to create an Entity, which will usually be either a player controlled character or an enemy. Here we&#39;ll walk through the components required for a entity along with what they do.</p>
-<h2 id="gameobject-setup">GameObject Setup</h2>
-<p>First let&#39;s set up the GameObject that will contain all our scripts. 
-Create a GameObject and attach a collider and a Rigidbody (or whatever you use to control the character&#39;s forces, such as a <a href="https://docs.unity3d.com/ScriptReference/CharacterController.html">Character Controller</a>). Turn off the Rigidbody&#39;s gravity and set it&#39;s Angular Drag to 0. It should look like this.</p>
-<p>For the model or sprite of the Entity, you should assign it as a child of this GameObject. You should end up with a hierarchy like so.</p>
+            <article class="content wrap" id="_content" data-uid="HnSF.Fighters.FighterCombatManager.EmptyAction">
+  
+  
+  <h1 id="HnSF_Fighters_FighterCombatManager_EmptyAction" data-uid="HnSF.Fighters.FighterCombatManager.EmptyAction" class="text-break">Delegate FighterCombatManager.EmptyAction
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HnSF.Fighters.html">HnSF.Fighters</a></h6>
+  <h6><strong>Assembly</strong>: HnSF.dll</h6>
+  <h5 id="HnSF_Fighters_FighterCombatManager_EmptyAction_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public delegate void EmptyAction(FighterBase self);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HnSF.Fighters.FighterBase.html">FighterBase</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
@@ -94,7 +116,10 @@ Create a GameObject and attach a collider and a Rigidbody (or whatever you use t
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Documentation/guides/createchara.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Fighters_FighterCombatManager_EmptyAction.md&amp;value=---%0Auid%3A%20HnSF.Fighters.FighterCombatManager.EmptyAction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterCombatManager.cs/#L12" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
