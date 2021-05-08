@@ -67,7 +67,6 @@ namespace TDAction.Managers
         private void UpdateSimulation()
         {
             simulationObjectManager.Tick();
-            simulationObjectManager.LateTick();
         }
 
         /// <summary>
