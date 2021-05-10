@@ -15,10 +15,6 @@ namespace TDAction.Fighter
         public override void OnUpdate()
         {
             base.OnUpdate();
-            if((int)Manager.StateManager.CurrentStateFrame > 60)
-            {
-                Manager.StateManager.SetFrame(0);
-            }
             (Manager as FighterManager).entityAnimator.SetFrame((int)Manager.StateManager.CurrentStateFrame);
         }
     }

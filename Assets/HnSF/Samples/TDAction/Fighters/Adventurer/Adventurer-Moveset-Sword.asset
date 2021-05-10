@@ -248,7 +248,7 @@ MonoBehaviour:
       directionDeviation: 0
     sequenceWindow: 8
     sequenceInputs: []
-  attackDefinition: {fileID: 0}
+  attackDefinition: {fileID: 11400000, guid: db82a124eb03edf44869b7caa1235b6d, type: 2}
   nextNode:
   - cancelWindow: {x: 10, y: 60}
     nodeIdentifier: 4
@@ -388,7 +388,7 @@ MonoBehaviour:
       directionDeviation: 0
     sequenceWindow: 8
     sequenceInputs: []
-  attackDefinition: {fileID: 0}
+  attackDefinition: {fileID: 11400000, guid: aaf90a012ec5bd646b151536268e0a32, type: 2}
   nextNode: []
 --- !u!114 &4760208819052927873
 MonoBehaviour:
@@ -442,7 +442,7 @@ MonoBehaviour:
       directionDeviation: 0
     sequenceWindow: 8
     sequenceInputs: []
-  attackDefinition: {fileID: 0}
+  attackDefinition: {fileID: 11400000, guid: 5557566f3f61fde4e8eeaed0e9d86bfd, type: 2}
   nextNode: []
 --- !u!114 &4885143848734555283
 MonoBehaviour:
@@ -509,7 +509,7 @@ MonoBehaviour:
       directionDeviation: 0
     sequenceWindow: 8
     sequenceInputs: []
-  attackDefinition: {fileID: 0}
+  attackDefinition: {fileID: 11400000, guid: 9ca1ba7149a1fe948b828105d1940c04, type: 2}
   nextNode:
   - cancelWindow: {x: 12, y: 60}
     nodeIdentifier: 5
@@ -631,7 +631,7 @@ MonoBehaviour:
       directionDeviation: 0
     sequenceWindow: 8
     sequenceInputs: []
-  attackDefinition: {fileID: 0}
+  attackDefinition: {fileID: 11400000, guid: b874810f058d691438fe28f0a1a26f12, type: 2}
   nextNode: []
 --- !u!114 &8472129357820581468
 MonoBehaviour:
@@ -686,7 +686,7 @@ MonoBehaviour:
       directionDeviation: 0.85
     sequenceWindow: 8
     sequenceInputs: []
-  attackDefinition: {fileID: 0}
+  attackDefinition: {fileID: 11400000, guid: eac7b6b6d2fb1d445b2fb580f76a76c0, type: 2}
   nextNode: []
 --- !u!114 &9114004853129973337
 MonoBehaviour:
@@ -753,7 +753,7 @@ MonoBehaviour:
       directionDeviation: 0
     sequenceWindow: 8
     sequenceInputs: []
-  attackDefinition: {fileID: 0}
+  attackDefinition: {fileID: 11400000, guid: a405ba1967c6ad346a16a1ae88a8401d, type: 2}
   nextNode:
   - cancelWindow: {x: 18, y: 100}
     nodeIdentifier: 2

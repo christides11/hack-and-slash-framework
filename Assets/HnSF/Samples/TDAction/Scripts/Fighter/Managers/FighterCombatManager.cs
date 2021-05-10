@@ -54,8 +54,9 @@ namespace TDAction.Fighter
             switch (hInfo.forceType)
             {
                 case HitboxForceType.SET:
-                    Vector2 baseForce = hInfo.opponentForceDir * hInfo.opponentForceMagnitude;
+                    Vector2 baseForce = hInfo.opponentForceDir;
                     Vector3 forces = new Vector3(baseForce.x * hurtInfo2D.faceDirection, 0, 0);
+                    Debug.Log(baseForce.y);
                     physicsManager.forceGravity.y = baseForce.y;
                     physicsManager.forceMovement = forces;
                     break;

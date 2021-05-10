@@ -20,11 +20,11 @@ namespace HnSF.Combat
         public float damageOnBlock;
 
         public bool causesTumble;
-        public float opponentForceMagnitude = 1;
         // Set ForceType.
         public Vector3 opponentForceDir = Vector3.forward;
         // Push/Pull ForceType.
         public bool forceIncludeYForce = false;
+        public float opponentForceMagnitude = 1;
         public float opponentMaxMagnitude = 1;
         public float opponentMinMagnitude = 1;
 
@@ -156,7 +156,6 @@ namespace HnSF.Combat
             switch (forceType)
             {
                 case HitboxForceType.SET:
-                    opponentForceMagnitude = EditorGUILayout.FloatField("Force Magnitude", opponentForceMagnitude);
                     opponentForceDir = EditorGUILayout.Vector3Field("Force Direction", opponentForceDir);
                     break;
                 case HitboxForceType.PUSH:

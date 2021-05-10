@@ -10,7 +10,7 @@ namespace TDAction.Combat.Events
 {
     public class ClampMovement : AttackEvent
     {
-        public bool dmy;
+        public float max;
 
         public override string GetName()
         {
@@ -22,22 +22,8 @@ namespace TDAction.Combat.Events
         {
             FighterPhysicsManager physicsManager = (FighterPhysicsManager)controller.PhysicsManager;
             physicsManager.forceMovement.x = Mathf.Clamp(physicsManager.forceMovement.x,
-                -variables.floatVars[0], variables.floatVars[0]);
+                -max, max);
             return AttackEventReturnType.NONE;
         }
-
-#if UNITY_EDITOR
-        public override void DrawEventVariables(HnSF.Combat.AttackEventDefinition eventDefinition)
-        {
-            if (eventDefinition.variables.floatVars == null
-                || eventDefinition.variables.floatVars.Count != 1)
-            {
-                eventDefinition.variables.floatVars = new List<float>(1);
-                eventDefinition.variables.floatVars.Add(0);
-            }
-
-            eventDefinition.variables.floatVars[0] = EditorGUILayout.FloatField("Max", eventDefinition.variables.floatVars[0]);
-        }
-#endif
     }
 }
