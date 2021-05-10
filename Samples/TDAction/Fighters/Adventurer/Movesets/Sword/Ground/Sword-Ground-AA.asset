@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b727ab7513f07da4ab8ca7d2f6d52cc9, type: 3}
-  m_Name: Sword-Ground-A
+  m_Name: Sword-Ground-AA
   m_EditorClassIdentifier: 
-  attackName: Sword A (Ground)
+  attackName: Sword AA (Ground)
   description: 
   useState: 0
   stateOverride: 0
-  length: 33
+  length: 50
   commandAttackCancelWindows: []
   chargeWindows: []
   hitboxGroups:
@@ -25,41 +25,38 @@ MonoBehaviour:
   events:
   - id: 1
   - id: 2
-  - id: 3
-  - id: 4
-  - id: 5
   cancels:
-  - id: 6
-  animationName: sword-ground-a
+  - id: 3
+  animationName: sword-ground-aa
   references:
     version: 1
     00000000:
       type: {class: HitboxGroup, ns: HnSF.Combat, asm: HnSF}
       data:
         ID: 0
-        activeFramesStart: 8
-        activeFramesEnd: 11
+        activeFramesStart: 5
+        activeFramesEnd: 9
         hitGroupType: 0
         boxes:
-        - id: 7
+        - id: 4
         attachToEntity: 1
         attachTo: 
         chargeLevelNeeded: -1
         chargeLevelMax: 1
         hitboxHitInfo:
-          id: 8
+          id: 5
     00000001:
       type: {class: AttackEventDefinition, ns: HnSF.Combat, asm: HnSF}
       data:
-        nickname: X.Friction
+        nickname: F.Force
         active: 1
         onHitCheck: 0
         onHitHitboxGroup: 0
         onHitIDGroup: 0
         startFrame: 1
-        endFrame: 2
+        endFrame: 1
         attackEvent:
-          id: 9
+          id: 6
         variables:
           intVars: 
           floatVars: []
@@ -79,15 +76,15 @@ MonoBehaviour:
     00000002:
       type: {class: AttackEventDefinition, ns: HnSF.Combat, asm: HnSF}
       data:
-        nickname: F.Force
+        nickname: X.Friction
         active: 1
         onHitCheck: 0
         onHitHitboxGroup: 0
         onHitIDGroup: 0
-        startFrame: 4
-        endFrame: 4
+        startFrame: 5
+        endFrame: 60
         attackEvent:
-          id: 10
+          id: 7
         variables:
           intVars: 
           floatVars: []
@@ -105,105 +102,21 @@ MonoBehaviour:
         chargeLevelMax: 0
         inputCheckProcessed: 0
     00000003:
-      type: {class: AttackEventDefinition, ns: HnSF.Combat, asm: HnSF}
-      data:
-        nickname: X.Friction
-        active: 1
-        onHitCheck: 0
-        onHitHitboxGroup: 0
-        onHitIDGroup: 0
-        startFrame: 6
-        endFrame: 40
-        attackEvent:
-          id: 11
-        variables:
-          intVars: 
-          floatVars: []
-          objectVars: []
-          curveVars: []
-        inputCheckTiming: 0
-        inputCheckStartFrame: 1
-        inputCheckEndFrame: 1
-        input:
-          executeWindow: 3
-          executeInputs: []
-          sequenceWindow: 8
-          sequenceInputs: []
-        chargeLevelMin: 0
-        chargeLevelMax: 0
-        inputCheckProcessed: 0
-    00000004:
-      type: {class: AttackEventDefinition, ns: HnSF.Combat, asm: HnSF}
-      data:
-        nickname: J.Cancel
-        active: 1
-        onHitCheck: 0
-        onHitHitboxGroup: 0
-        onHitIDGroup: 0
-        startFrame: 15
-        endFrame: 40
-        attackEvent:
-          id: 12
-        variables:
-          intVars: 
-          floatVars: []
-          objectVars: []
-          curveVars: []
-        inputCheckTiming: 0
-        inputCheckStartFrame: 1
-        inputCheckEndFrame: 1
-        input:
-          executeWindow: 3
-          executeInputs: []
-          sequenceWindow: 8
-          sequenceInputs: []
-        chargeLevelMin: 0
-        chargeLevelMax: 0
-        inputCheckProcessed: 0
-    00000005:
-      type: {class: AttackEventDefinition, ns: HnSF.Combat, asm: HnSF}
-      data:
-        nickname: X.Force.Clamp
-        active: 1
-        onHitCheck: 0
-        onHitHitboxGroup: 0
-        onHitIDGroup: 0
-        startFrame: 1
-        endFrame: 2
-        attackEvent:
-          id: 13
-        variables:
-          intVars: 
-          floatVars: []
-          objectVars: []
-          curveVars: []
-        inputCheckTiming: 0
-        inputCheckStartFrame: 1
-        inputCheckEndFrame: 1
-        input:
-          executeWindow: 3
-          executeInputs: []
-          sequenceWindow: 8
-          sequenceInputs: []
-        chargeLevelMin: 0
-        chargeLevelMax: 0
-        inputCheckProcessed: 0
-    00000006:
       type: {class: CancelListDefinition, ns: HnSF.Combat, asm: HnSF}
       data:
         startFrame: 15
-        endFrame: 33
+        endFrame: 60
         cancelListID: 0
-    00000007:
+    00000004:
       type: {class: BoxDefinition, ns: HnSF.Combat, asm: HnSF}
       data:
         shape: 0
-        offset: {x: 0.5, y: 1.2, z: 0}
-        size: {x: 2, y: 2.4, z: 0}
+        offset: {x: 0.22, y: 1, z: 0}
+        size: {x: 2.4, y: 2, z: 0}
         rotation: {x: 0, y: 0, z: 0}
         radius: 0
         height: 0
-    00000008:
+    00000005:
       type: {class: HitInfo, ns: TDAction.Combat, asm: TDAction_CSharp}
       data:
         airOnly: 0
@@ -215,7 +128,7 @@ MonoBehaviour:
         opponentResetYForce: 1
         attackerHitstop: 4
         hitstop: 4
-        hitstun: 35
+        hitstun: 60
         forceType: 0
         forceRelation: 0
         breakArmor: 0
@@ -228,36 +141,23 @@ MonoBehaviour:
         damageOnHit: 10
         damageOnBlock: 10
         causesTumble: 0
-        opponentForceMagnitude: 4.5
+        opponentForceMagnitude: 5
         opponentForceDir: {x: 1, y: 0, z: 0}
         forceIncludeYForce: 0
         opponentMaxMagnitude: 1
         opponentMinMagnitude: 1
         throwConfirm: {fileID: 0}
-    00000009:
-      type: {class: ApplyFriction, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
-      data:
-        useXFriction: 1
-        useYFriction: 0
-        xFriction: 0.7
-        yFriction: 0
-    0000000A:
+    00000006:
       type: {class: ForceAdd, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
         addXForce: 1
         addYForce: 0
         xForce: 3
         yForce: 0
-    0000000B:
+    00000007:
       type: {class: ApplyFriction, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
         useXFriction: 1
         useYFriction: 0
-        xFriction: 0.25
+        xFriction: 0.2
         yFriction: 0
-    0000000C:
-      type: {class: JumpCancel, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
-    0000000D:
-      type: {class: ClampMovement, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
-      data:
-        max: 3

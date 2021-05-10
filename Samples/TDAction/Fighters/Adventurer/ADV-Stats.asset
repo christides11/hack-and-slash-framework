@@ -25,11 +25,11 @@ MonoBehaviour:
     walkMaxSpeed:
       baseValue: 7
     runBaseAcceleration:
-      baseValue: 0.5
+      baseValue: 0.6
     runAcceleration:
-      baseValue: 0.5
+      baseValue: 0.6
     runMaxSpeed:
-      baseValue: 11.4
+      baseValue: 10.4
     jumpSquatFrames: 5
     gravity:
       baseValue: 0.5
@@ -50,7 +50,7 @@ MonoBehaviour:
     airJumpForce:
       baseValue: 10
     hitstunGravity:
-      baseValue: 0.5
+      baseValue: 0.3
     hitstunMaxFallSpeed:
       baseValue: 10
     hitstunFrictionGround:

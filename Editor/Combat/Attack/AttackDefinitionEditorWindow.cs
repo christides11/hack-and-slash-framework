@@ -640,7 +640,7 @@ namespace HnSF.Combat
         {
             SerializedProperty chargeWindowsProperty = serializedObject.FindProperty("chargeWindows");
             chargeWindowsProperty.InsertArrayElementAtIndex(chargeWindowsProperty.arraySize);
-            chargeWindowsProperty.GetArrayElementAtIndex(chargeWindowsProperty.arraySize - 1).managedReferenceValue = new AttackEventDefinition();
+            chargeWindowsProperty.GetArrayElementAtIndex(chargeWindowsProperty.arraySize - 1).managedReferenceValue = new ChargeDefinition();
         }
 
         protected virtual void AddCancelListDefinition(SerializedObject serializedObject)

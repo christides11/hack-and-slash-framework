@@ -30,6 +30,10 @@ namespace TDAction.Fighter
             {
                 c.StateManager.IncrementFrame();
             }
+            if(c.StateManager.CurrentStateFrame > 59)
+            {
+                c.StateManager.SetFrame(0);
+            }
         }
 
         public override bool CheckInterrupt()

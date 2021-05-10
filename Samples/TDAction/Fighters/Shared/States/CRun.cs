@@ -46,7 +46,10 @@ namespace TDAction.Fighter
 
             physicsManager.forceMovement = currentSpeed;
 
-            c.SetFaceDirection((int)Mathf.Sign(movementAxis.x));
+            if (movementAxis.magnitude >= InputConstants.moveDeadzone)
+            {
+                c.SetFaceDirection((int)Mathf.Sign(movementAxis.x));
+            }
 
             if(CheckInterrupt() == false)
             {
@@ -58,6 +61,10 @@ namespace TDAction.Fighter
         public override bool CheckInterrupt()
         {
             FighterManager c = Manager as FighterManager;
+            if (c.TryAttack())
+            {
+                return true;
+            }
             if (c.InputManager.GetButton((int)EntityInputs.JUMP).firstPress)
             {
                 c.StateManager.ChangeState((int)FighterStates.JUMP_SQUAT);

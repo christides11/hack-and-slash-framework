@@ -242,7 +242,7 @@ public class CharacterController2D : MonoBehaviour
 	/// <param name="deltaMovement">Delta movement.</param>
 	public void move( Vector3 deltaMovement )
 	{
-			deltaMovement *= Time.fixedDeltaTime;
+		deltaMovement *= Time.fixedDeltaTime;
 		// save off our current grounded state which we will use for wasGroundedLastFrame and becameGroundedThisFrame
 		collisionState.wasGroundedLastFrame = collisionState.below;
 
@@ -274,7 +274,7 @@ public class CharacterController2D : MonoBehaviour
 			// only calculate velocity if we have a non-zero deltaTime
 			//if( Time.deltaTime > 0f )
 			//	velocity = deltaMovement / Time.fixed
-			velocity = deltaMovement;
+		velocity = deltaMovement;
 
 		// set our becameGrounded state based on the previous and current collision state
 		if( !collisionState.wasGroundedLastFrame && collisionState.below )
