@@ -132,7 +132,7 @@ MonoBehaviour:
       directionDeviation: 0.85
     sequenceWindow: 8
     sequenceInputs: []
-  attackDefinition: {fileID: 0}
+  attackDefinition: {fileID: 11400000, guid: 8b5ac6b4303c4cb4b8497caa0b6e91ce, type: 2}
   nextNode:
   - cancelWindow: {x: 24, y: 25}
     nodeIdentifier: 10
@@ -184,7 +184,7 @@ MonoBehaviour:
     executeInputs: []
     sequenceWindow: 8
     sequenceInputs: []
-  attackDefinition: {fileID: 0}
+  attackDefinition: {fileID: 11400000, guid: cfdc6cc99d448ae45988d8e5a7d978b4, type: 2}
   nextNode: []
 --- !u!114 &-983140450533531057
 MonoBehaviour:

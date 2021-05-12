@@ -252,6 +252,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2048
   team: 0
+  pForcePercentage: 0.5
 --- !u!114 &-4049206082768371998
 MonoBehaviour:
   m_ObjectHideFlags: 0

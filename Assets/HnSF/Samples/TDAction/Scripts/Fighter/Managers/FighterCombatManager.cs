@@ -29,6 +29,7 @@ namespace TDAction.Fighter
             return (manager as FighterManager).entityDefinition.movesets[index];
         }
 
+        public float pForcePercentage = 1.0f;
         public override HitReaction Hurt(HurtInfoBase hurtInfoBase)
         {
             FighterPhysicsManager physicsManager = (FighterPhysicsManager)manager.PhysicsManager;
@@ -54,9 +55,8 @@ namespace TDAction.Fighter
             switch (hInfo.forceType)
             {
                 case HitboxForceType.SET:
-                    Vector2 baseForce = hInfo.opponentForceDir;
+                    Vector2 baseForce = hInfo.opponentForce;
                     Vector3 forces = new Vector3(baseForce.x * hurtInfo2D.faceDirection, 0, 0);
-                    Debug.Log(baseForce.y);
                     physicsManager.forceGravity.y = baseForce.y;
                     physicsManager.forceMovement = forces;
                     break;
@@ -66,7 +66,7 @@ namespace TDAction.Fighter
                     {
                         dir.y = 0;
                     }
-                    Vector2 forceDir = Vector2.ClampMagnitude((dir) * hInfo.opponentForceMagnitude, hInfo.opponentMaxMagnitude);
+                    Vector2 forceDir = Vector2.ClampMagnitude((dir) * hInfo.opponentForceMultiplier, hInfo.opponentMaxMagnitude);
                     float yForce = forceDir.y;
                     forceDir.y = 0;
                     if (hInfo.forceIncludeYForce)
@@ -75,6 +75,12 @@ namespace TDAction.Fighter
                     }
                     physicsManager.forceMovement = forceDir;
                     break;
+            }
+
+            if (hInfo.autoLink)
+            {
+                physicsManager.forceGravity.y += hurtInfo2D.attackerVelocity.y * pForcePercentage;
+                physicsManager.forceMovement.x += hurtInfo2D.attackerVelocity.x * pForcePercentage;
             }
 
             if (physicsManager.forceGravity.y > 0)

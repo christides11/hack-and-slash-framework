@@ -9,7 +9,6 @@ namespace HnSF.Combat
         public int ID;
         public int activeFramesStart = 1;
         public int activeFramesEnd = 1;
-        public HitboxType hitGroupType;
         [SerializeReference] public List<BoxDefinitionBase> boxes = new List<BoxDefinitionBase>();
         public bool attachToEntity = true;
         public string attachTo;
@@ -28,7 +27,6 @@ namespace HnSF.Combat
             ID = other.ID;
             activeFramesStart = other.activeFramesStart;
             activeFramesEnd = other.activeFramesEnd;
-            hitGroupType = other.hitGroupType;
             attachToEntity = other.attachToEntity;
             chargeLevelNeeded = other.chargeLevelNeeded;
             chargeLevelMax = other.chargeLevelMax;

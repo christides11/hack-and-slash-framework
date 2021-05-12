@@ -448,7 +448,7 @@ namespace HnSF.Combat
                 EditorGUILayout.LabelField($"{activeFramesStart.ToString("F0")}~{activeFramesEnd.ToString("F0")}", GUILayout.Width(55));
                 if(GUILayout.Button("Info", GUILayout.Width(100)))
                 {
-                    HitboxGroupEditorWindow.Init(attack.hitboxGroups[i]);
+                    HitboxGroupEditorWindow.Init(attack, attack.hitboxGroups[i], "hitboxGroups", i);//attack.hitboxGroups[i]);
                 }
                 EditorGUILayout.MinMaxSlider(ref activeFramesStart,
                     ref activeFramesEnd,

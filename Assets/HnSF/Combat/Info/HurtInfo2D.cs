@@ -6,6 +6,7 @@ namespace HnSF.Combat
 {
     public class HurtInfo2D : HurtInfoBase
     {
+        public Vector2 attackerVelocity;
         public Vector2 center;
         public int faceDirection = 1;
 
@@ -14,8 +15,9 @@ namespace HnSF.Combat
 
         }
 
-        public HurtInfo2D(HitInfoBase hitInfo, Vector2 center, int faceDirection)
+        public HurtInfo2D(HitInfoBase hitInfo, Vector2 attackerVelocity, Vector2 center, int faceDirection)
         {
+            this.attackerVelocity = attackerVelocity;
             this.hitInfo = hitInfo;
             this.center = center;
             this.faceDirection = faceDirection;

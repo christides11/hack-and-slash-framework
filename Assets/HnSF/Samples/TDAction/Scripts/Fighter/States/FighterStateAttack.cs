@@ -255,7 +255,7 @@ namespace TDAction.Fighter
             }
 
             // Hit check.
-            switch (boxGroup.hitGroupType)
+            switch (boxGroup.hitboxHitInfo.hitType)
             {
                 case HnSF.Combat.HitboxType.HIT:
                     entityManager.CombatManager.hitboxManager.CheckForCollision(groupIndex, boxGroup);

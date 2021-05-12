@@ -66,15 +66,18 @@ namespace TDAction.Fighter
             switch (hitboxGroup.hitboxHitInfo.forceRelation)
             {
                 case HitboxForceRelation.ATTACKER:
-                    hi2d = new HurtInfo2D(hitboxGroup.hitboxHitInfo, manager.transform.position, fm.FaceDirection);
+                    hi2d = new HurtInfo2D(hitboxGroup.hitboxHitInfo, (manager.PhysicsManager as FighterPhysicsManager).GetOverallForce(), 
+                        manager.transform.position, fm.FaceDirection);
                     break;
                 case HitboxForceRelation.HITBOX:
                     Vector2 position = hitboxGroup.attachToEntity ? (Vector2)manager.transform.position + (Vector2)(hitboxGroup.boxes[hitboxIndex] as HnSF.Combat.BoxDefinition).offset
                 : (Vector2)referencePosition + (Vector2)(hitboxGroup.boxes[hitboxIndex] as HnSF.Combat.BoxDefinition).offset;
-                    hi2d = new HurtInfo2D(hitboxGroup.hitboxHitInfo, position, fm.FaceDirection);
+                    hi2d = new HurtInfo2D(hitboxGroup.hitboxHitInfo, (manager.PhysicsManager as FighterPhysicsManager).GetOverallForce(), 
+                        position, fm.FaceDirection);
                     break;
                 case HitboxForceRelation.WORLD:
-                    hi2d = new HurtInfo2D(hitboxGroup.hitboxHitInfo, hurtbox.transform.position, fm.FaceDirection);
+                    hi2d = new HurtInfo2D(hitboxGroup.hitboxHitInfo, (manager.PhysicsManager as FighterPhysicsManager).GetOverallForce(), 
+                        hurtbox.transform.position, fm.FaceDirection);
                     break;
                 default:
                     hi2d = new HurtInfo2D();

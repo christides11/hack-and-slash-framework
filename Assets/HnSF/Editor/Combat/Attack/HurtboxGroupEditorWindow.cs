@@ -97,7 +97,7 @@ namespace HnSF.Combat
             }
             GUILayout.Label($"Group {index}");
             EditorGUILayout.EndHorizontal();
-            hurtboxGroup.boxes[index].DrawInspector();
+            //hurtboxGroup.boxes[index].DrawInspector();
         }
 
         protected void OnBoxDefinitionSelected(object t)

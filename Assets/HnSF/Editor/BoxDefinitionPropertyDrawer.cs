@@ -31,30 +31,41 @@ namespace HnSF.Combat
             float yPosition = position.y;
             var shapeRect = new Rect(position.x, yPosition, position.width, lineHeight);
             yPosition += lineSpacing;
-            var offsetRect = new Rect(position.x, yPosition, position.width, lineHeight);
+            var offsetLabelRect = new Rect(position.x, yPosition, 100, lineHeight);
+            var offsetRect = new Rect(position.x+120, yPosition, position.width-120, lineHeight);
             yPosition += lineSpacing;
-            var rotationRect = new Rect(position.x, yPosition, position.width, lineHeight);
+            var rotationLabelRect = new Rect(position.x, yPosition, 100, lineHeight);
+            var rotationRect = new Rect(position.x+120, yPosition, position.width-120, lineHeight);
             yPosition += lineSpacing;
-            var sizeRect = new Rect(position.x, yPosition, position.width, lineHeight);
-            var radiusRect = new Rect(position.x, yPosition, position.width, lineHeight);
+            var sizeRadiusLabelRect = new Rect(position.x, yPosition, 100, lineHeight);
+            var sizeRect = new Rect(position.x+120, yPosition, position.width-120, lineHeight);
+            var radiusRect = new Rect(position.x+120, yPosition, position.width-120, lineHeight);
             yPosition += lineSpacing;
-            var heightRect = new Rect(position.x, yPosition, position.width, lineHeight);
+            var heightLabelRect = new Rect(position.x, yPosition, 100, lineHeight);
+            var heightRect = new Rect(position.x+120, yPosition, position.width-120, lineHeight);
 
             EditorGUI.PropertyField(shapeRect, property.FindPropertyRelative("shape"), new GUIContent("Shape"));
-            EditorGUI.PropertyField(offsetRect, property.FindPropertyRelative("offset"), new GUIContent("Offset"));
-            EditorGUI.PropertyField(rotationRect, property.FindPropertyRelative("rotation"), new GUIContent("Rotation"));
+            EditorGUI.LabelField(offsetLabelRect, new GUIContent("Offset"));
+            EditorGUI.PropertyField(offsetRect, property.FindPropertyRelative("offset"), GUIContent.none);
+            EditorGUI.LabelField(rotationLabelRect, new GUIContent("Rotation"));
+            EditorGUI.PropertyField(rotationRect, property.FindPropertyRelative("rotation"), GUIContent.none);
+            
+            
             int shapeEnumValue = property.FindPropertyRelative("shape").enumValueIndex;
             if(shapeEnumValue == (int)BoxShape.Rectangle)
             {
-                EditorGUI.PropertyField(sizeRect, property.FindPropertyRelative("size"), new GUIContent("Size"));
+                EditorGUI.LabelField(sizeRadiusLabelRect, new GUIContent("Size"));
+                EditorGUI.PropertyField(sizeRect, property.FindPropertyRelative("size"), GUIContent.none);
             }
             if (shapeEnumValue == (int)BoxShape.Circle || shapeEnumValue == (int)BoxShape.Capsule)
             {
-                EditorGUI.PropertyField(radiusRect, property.FindPropertyRelative("radius"), new GUIContent("Radius"));
+                EditorGUI.LabelField(sizeRadiusLabelRect, new GUIContent("Radius"));
+                EditorGUI.PropertyField(radiusRect, property.FindPropertyRelative("radius"), GUIContent.none);
             }
             if (shapeEnumValue == (int)BoxShape.Capsule)
             {
-                EditorGUI.PropertyField(heightRect, property.FindPropertyRelative("height"), new GUIContent("Height"));
+                EditorGUI.LabelField(heightLabelRect, new GUIContent("Height"));
+                EditorGUI.PropertyField(heightRect, property.FindPropertyRelative("height"), GUIContent.none);
             }
 
             EditorGUI.EndProperty();
