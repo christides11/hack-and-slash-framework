@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 614433fabc5ce7a4990f8289f605e813, type: 3}
-  m_Name: ADV-Stats
+  m_Name: ADV-Fists-Stats
   m_EditorClassIdentifier: 
   stats:
     health:
@@ -23,7 +23,7 @@ MonoBehaviour:
     walkAcceleration:
       baseValue: 0.5
     walkMaxSpeed:
-      baseValue: 7
+      baseValue: 4
     runBaseAcceleration:
       baseValue: 0.6
     runAcceleration:

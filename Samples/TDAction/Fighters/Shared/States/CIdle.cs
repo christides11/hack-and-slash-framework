@@ -48,6 +48,11 @@ namespace TDAction.Fighter
                 fManager.StateManager.ChangeState((int)FighterStates.JUMP_SQUAT);
                 return true;
             }
+            if (fManager.PhysicsManager.IsGrounded == false)
+            {
+                fManager.StateManager.ChangeState((int)FighterStates.FALL);
+                return true;
+            }
             if (Mathf.Abs(fManager.InputManager.GetAxis2D((int)EntityInputs.MOVEMENT).x) > InputConstants.moveDeadzone)
             {
                 fManager.StateManager.ChangeState((int)FighterStates.WALK);

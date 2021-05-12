@@ -19,5 +19,6 @@ namespace TDAction.Fighter
         [SerializeField] protected FighterManager entityPrefab;
         public List<Combat.MovesetDefinition> movesets = new List<Combat.MovesetDefinition>();
         public List<HurtboxDefinitionItem> hurtboxDefinitions = new List<HurtboxDefinitionItem>();
+        public AnimationReferenceHolder sharedAnimations;
     }
 }

@@ -19,6 +19,7 @@ namespace TDAction.Combat.Events
 
         public CancelType cancelType;
         public FighterStates state;
+        public int movesetIdentifier = -1;
         public int attackIdentifier;
 
         public override string GetName()
@@ -38,7 +39,7 @@ namespace TDAction.Combat.Events
                 }else if(cancelType == CancelType.ATTACK)
                 {
                     controller.CombatManager.Cleanup();
-                    (controller as TDAction.Fighter.FighterManager).TryAttack(attackIdentifier);
+                    (controller as TDAction.Fighter.FighterManager).TryAttack(attackIdentifier, movesetIdentifier);
                     return AttackEventReturnType.INTERRUPT_NO_CLEANUP;
                 }
                 return AttackEventReturnType.INTERRUPT;

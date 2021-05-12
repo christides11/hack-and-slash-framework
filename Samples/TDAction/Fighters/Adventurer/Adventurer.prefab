@@ -355,9 +355,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf85740085f8f93458f527aab3ba05fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animations: {fileID: 11400000, guid: 52412b08965475a409d99c5e42b1c348, type: 2}
+  manager: {fileID: 8147816337253296054}
+  animations:
+  - {fileID: 0}
+  - {fileID: 0}
   animator: {fileID: 734958788}
   currentClipTime: 0
+  currentClipIdentifier: 
 --- !u!1 &8500522958957405919
 GameObject:
   m_ObjectHideFlags: 0

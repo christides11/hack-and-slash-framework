@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e172d295d3e22f4e9145b67d5340f4a, type: 3}
+  m_Name: ADV-Fist-Anims
+  m_EditorClassIdentifier: 
+  animations:
+  - animationName: Idle
+    animation: {fileID: 7400000, guid: c4ee75264f0031b40964ffa2b20d0906, type: 2}
+  - animationName: walk
+    animation: {fileID: 7400000, guid: 214e3f2f3aa329546898450a0de47254, type: 2}
+  - animationName: ground-a
+    animation: {fileID: 7400000, guid: 51691b2b8bceaef4ab9e39f3b8eab7ac, type: 2}

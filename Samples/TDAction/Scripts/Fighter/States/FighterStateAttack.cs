@@ -9,7 +9,7 @@ namespace TDAction.Fighter
     {
         public override string GetName()
         {
-            return $"Attack ({GetEntityManager().CombatManager.CurrentAttack?.name})";
+            return $"Attack ({GetEntityManager().CombatManager.CurrentAttackNode?.name})";
         }
 
         protected bool charging = true;
@@ -17,7 +17,7 @@ namespace TDAction.Fighter
         public override void Initialize()
         {
             AttackDefinition currentAttack = 
-                (TDAction.Combat.AttackDefinition)GetEntityManager().CombatManager.CurrentAttack.attackDefinition;
+                (TDAction.Combat.AttackDefinition)GetEntityManager().CombatManager.CurrentAttackNode.attackDefinition;
             if (currentAttack.useState)
             {
                 GetEntityManager().StateManager.ChangeState(currentAttack.stateOverride);
@@ -34,7 +34,7 @@ namespace TDAction.Fighter
         {
             FighterManager entityManager = GetEntityManager();
             AttackDefinition currentAttack =
-                (TDAction.Combat.AttackDefinition)entityManager.CombatManager.CurrentAttack.attackDefinition;
+                (TDAction.Combat.AttackDefinition)entityManager.CombatManager.CurrentAttackNode.attackDefinition;
 
             // Handle lifetime of box groups.
             for (int i = 0; i < currentAttack.hitboxGroups.Count; i++)

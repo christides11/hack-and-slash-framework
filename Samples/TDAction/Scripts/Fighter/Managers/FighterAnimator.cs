@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using HnSF.Fighters;
+using System;
+using TDAction.Combat;
+using UnityEngine;
 using UnityEngine.Animations;
 using UnityEngine.Playables;
 
@@ -6,29 +9,43 @@ namespace TDAction.Fighter
 {
     public class FighterAnimator : MonoBehaviour
     {
-        public AnimationReferenceHolder Animations { get { return animations; } }
+        public AnimationReferenceHolder[] AnimationReferences { get { return animations; } }
 
-        [SerializeField] private AnimationReferenceHolder animations;
+        [SerializeField] private FighterManager manager;
+        [SerializeField] private AnimationReferenceHolder[] animations = new AnimationReferenceHolder[2];
         public Animator animator;
 
         PlayableGraph playableGraph;
         AnimationClipPlayable playableClip;
 
         [SerializeField] private double currentClipTime = 0;
+        [SerializeField] private string currentClipIdentifier;
 
-        public void SetAnimations(AnimationReferenceHolder animations)
+        public void SetMovesetAnimations(AnimationReferenceHolder animations)
         {
-            this.animations = animations;
+            this.animations[0] = animations;
         }
 
-        public void SetAnimation(string animation)
+        public void SetSharedAnimations(AnimationReferenceHolder animations)
         {
-            AnimationClip clip = animations.GetAnimation(animation);
+            this.animations[1] = animations;
+        }
+
+        public void Refresh()
+        {
+            SetAnimation(currentClipIdentifier);
+            SetTime(currentClipTime);
+        }
+
+        public void SetAnimation(string animationName)
+        {
+            AnimationClip clip = FindAnimation(animationName);
             if(clip == null)
             {
-                Debug.LogError($"{animation} does not exist.");
+                //Debug.LogError($"FighterAnimator: {animation} does not exist.");
                 return;
             }
+            currentClipIdentifier = animationName;
             if (playableClip.IsValid())
             {
                 playableClip.Destroy();
@@ -45,11 +62,33 @@ namespace TDAction.Fighter
             playableClip.Pause();
         }
 
+        private AnimationClip FindAnimation(string animationName)
+        {
+            if (animations[0].TryGetAnimation(animationName, out AnimationClip movesetAnimation))
+            {
+                return movesetAnimation;
+            }
+            if(animations[1].TryGetAnimation(animationName, out AnimationClip sharedAnimation))
+            {
+                return sharedAnimation;
+            }
+            return null;
+        }
+
         public void SetFrame(int frame)
         {
             if (playableClip.IsValid())
             {
                 playableClip.SetTime(frame * Time.fixedDeltaTime);
+                currentClipTime = playableClip.GetTime();
+            }
+        }
+
+        public void SetTime(double time)
+        {
+            if (playableClip.IsValid())
+            {
+                playableClip.SetTime(time);
                 currentClipTime = playableClip.GetTime();
             }
         }

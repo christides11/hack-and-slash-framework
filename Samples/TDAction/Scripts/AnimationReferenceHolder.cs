@@ -43,5 +43,15 @@ namespace TDAction
             }
             return null;
         }
+
+        public bool TryGetAnimation(string animationName, out AnimationClip animation)
+        {
+            animation = null;
+            if (animationDictionary.TryGetValue(animationName, out animation))
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

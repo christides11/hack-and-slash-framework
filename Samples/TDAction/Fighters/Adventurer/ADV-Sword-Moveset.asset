@@ -262,7 +262,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5b5ef80cc04a834c9d7c41314184dc1, type: 3}
-  m_Name: Adventurer-Moveset-Sword
+  m_Name: ADV-Sword-Moveset
   m_EditorClassIdentifier: 
   nodes:
   - {fileID: -5643821420690420119}
