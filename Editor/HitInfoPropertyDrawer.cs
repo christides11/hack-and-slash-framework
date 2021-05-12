@@ -30,7 +30,7 @@ namespace HnSF.Combat
         protected virtual float DrawDamageGroup(Rect position, SerializedProperty property, float yPosition)
         {
             EditorGUI.PropertyField(new Rect(position.x, yPosition, position.width, lineHeight), property.FindPropertyRelative("damageOnHit"));
-
+            yPosition += lineSpacing;
             return yPosition;
         }
 
@@ -41,6 +41,7 @@ namespace HnSF.Combat
             EditorGUI.PropertyField(new Rect(position.x, yPosition, position.width, lineHeight), property.FindPropertyRelative("causesTumble"));
             yPosition += lineSpacing;
             EditorGUI.PropertyField(new Rect(position.x, yPosition, position.width, lineHeight), property.FindPropertyRelative("knockdown"));
+            yPosition += lineSpacing;
             return yPosition;
         }
 

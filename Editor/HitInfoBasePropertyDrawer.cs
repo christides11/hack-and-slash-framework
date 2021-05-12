@@ -13,18 +13,21 @@ namespace HnSF.Combat
 
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
         {
-            return base.GetPropertyHeight(property, label);
+            return calcHeight;
         }
 
+        float calcHeight = 100;
         bool generalFoldoutGroup = false;
         bool forcesFoldoutGroup = false;
         bool stunFoldoutGroup = false;
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
             EditorGUI.BeginProperty(position, label, property);
+            float startHeight = position.y;
             lineHeight = EditorGUIUtility.singleLineHeight;
             float yPosition = position.y;
             DrawProperty(ref position, property, ref yPosition);
+            calcHeight = yPosition - startHeight;
             EditorGUI.EndProperty();
         }
 

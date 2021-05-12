@@ -54,9 +54,9 @@ namespace HnSF.Combat
             {
                 Close();
             }
-            scrollPos = EditorGUILayout.BeginScrollView(scrollPos);
+            //scrollPos = EditorGUILayout.BeginScrollView(scrollPos);
             DrawHitboxGroupInfo();
-            EditorGUILayout.EndScrollView();
+            //EditorGUILayout.EndScrollView();
         }
 
         protected bool boxesFoldout;
@@ -138,8 +138,9 @@ namespace HnSF.Combat
             }
 
             EditorGUILayout.LabelField($"Type: {hitboxGroupProperty.FindPropertyRelative("hitboxHitInfo").managedReferenceFullTypename}");
+            scrollPos = EditorGUILayout.BeginScrollView(scrollPos);
             EditorGUILayout.PropertyField(hitboxGroupProperty.FindPropertyRelative("hitboxHitInfo"), true);
-
+            EditorGUILayout.EndScrollView();
             so.ApplyModifiedProperties();
         }
 
