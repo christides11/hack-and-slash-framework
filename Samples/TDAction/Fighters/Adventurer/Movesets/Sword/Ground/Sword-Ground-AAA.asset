@@ -64,7 +64,7 @@ MonoBehaviour:
         onHitCheck: 0
         onHitHitboxGroup: 0
         onHitIDGroup: 0
-        startFrame: 4
+        startFrame: 3
         endFrame: 50
         attackEvent:
           id: 7
@@ -152,9 +152,9 @@ MonoBehaviour:
         damageOnHit: 10
         damageOnBlock: 10
         causesTumble: 0
-        opponentForceMagnitude: 10
-        opponentForceDir: {x: 1, y: 0, z: 0}
+        opponentForceDir: {x: 10, y: 0, z: 0}
         forceIncludeYForce: 0
+        opponentForceMagnitude: 10
         opponentMaxMagnitude: 1
         opponentMinMagnitude: 1
         throwConfirm: {fileID: 0}
@@ -170,5 +170,5 @@ MonoBehaviour:
       data:
         addXForce: 1
         addYForce: 0
-        xForce: 0.3
+        xForce: 4
         yForce: 0

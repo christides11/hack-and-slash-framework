@@ -209,6 +209,7 @@ MonoBehaviour:
         attackerHitstop: 4
         hitstop: 4
         hitstun: 40
+        considerPlayerForce: 1
         forceType: 0
         forceRelation: 0
         breakArmor: 0
@@ -221,9 +222,9 @@ MonoBehaviour:
         damageOnHit: 10
         damageOnBlock: 10
         causesTumble: 0
-        opponentForceMagnitude: 6
-        opponentForceDir: {x: 0.9, y: 0.1, z: 0}
+        opponentForceDir: {x: 2, y: 1, z: 0}
         forceIncludeYForce: 0
+        opponentForceMagnitude: 6
         opponentMaxMagnitude: 1
         opponentMinMagnitude: 1
         throwConfirm: {fileID: 0}
@@ -268,7 +269,7 @@ MonoBehaviour:
       data:
         addXForce: 1
         addYForce: 0
-        xForce: 3
+        xForce: 3.5
         yForce: 0
     0000000C:
       type: {class: ApplyFriction, ns: TDAction.Combat.Events, asm: TDAction_CSharp}

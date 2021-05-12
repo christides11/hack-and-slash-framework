@@ -11,12 +11,19 @@ namespace HnSF.Combat
     {
         public static Dictionary<string, Type> boxDefinitionTypes = new Dictionary<string, Type>();
         public static Dictionary<string, Type> hitInfoTypes = new Dictionary<string, Type>();
-        public HitboxGroup hitboxGroup;
 
-        public static void Init(HitboxGroup hitboxGroup)
+        public HitboxGroup hGroup;
+        public UnityEngine.Object hitboxGroupObject;
+        public string hitboxGroupPropertyName;
+        public int hitboxGroupPropertyIndex = -1;
+
+        public static void Init(UnityEngine.Object obj, HitboxGroup hGroup, string hitboxGroupPropertyName, int propertyIndex = -1)
         {
-            HitboxGroupEditorWindow window = (HitboxGroupEditorWindow)EditorWindow.GetWindow(typeof(HitboxGroupEditorWindow), true, $"Hitbox {hitboxGroup.activeFramesStart}~{hitboxGroup.activeFramesEnd}");
-            window.hitboxGroup = hitboxGroup;
+            HitboxGroupEditorWindow window = (HitboxGroupEditorWindow)EditorWindow.GetWindow(typeof(HitboxGroupEditorWindow), true, $"Hitbox");
+            window.hGroup = hGroup;
+            window.hitboxGroupObject = obj;
+            window.hitboxGroupPropertyName = hitboxGroupPropertyName;
+            window.hitboxGroupPropertyIndex = propertyIndex;
             window.Show();
         }
 
@@ -43,7 +50,7 @@ namespace HnSF.Combat
         Vector2 scrollPos;
         protected virtual void OnGUI()
         {
-            if(hitboxGroup == null)
+            if(hitboxGroupObject == null)
             {
                 Close();
             }
@@ -53,20 +60,34 @@ namespace HnSF.Combat
         }
 
         protected bool boxesFoldout;
+        protected SerializedObject so;
         protected virtual void DrawHitboxGroupInfo()
         {
-            EditorGUILayout.LabelField("GENERAL", EditorStyles.boldLabel);
-            EditorGUI.indentLevel++;
-            hitboxGroup.ID = EditorGUILayout.IntField("Group ID", hitboxGroup.ID);
-
-            hitboxGroup.chargeLevelNeeded = EditorGUILayout.IntField("Charge Level Needed", hitboxGroup.chargeLevelNeeded);
-            if (hitboxGroup.chargeLevelNeeded >= 0)
+            so = new SerializedObject(hitboxGroupObject);
+            if (so == null)
             {
-                hitboxGroup.chargeLevelMax = EditorGUILayout.IntField("Charge Level Max", hitboxGroup.chargeLevelMax);
+                Close();
+                return;
+            }
+            so.Update();
+            SerializedProperty hitboxGroupProperty = null;
+            hitboxGroupProperty = GetHitboxGroupProperty();
+            if (hitboxGroupProperty == null)
+            {
+                Close();
+                return;
             }
 
-            hitboxGroup.hitGroupType = (HitboxType)EditorGUILayout.EnumPopup("Hit Type", hitboxGroup.hitGroupType);
-            hitboxGroup.attachToEntity = EditorGUILayout.Toggle("Attach to Entity", hitboxGroup.attachToEntity);
+            EditorGUILayout.LabelField("GENERAL", EditorStyles.boldLabel);
+            EditorGUI.indentLevel++;
+            EditorGUILayout.PropertyField(hitboxGroupProperty.FindPropertyRelative("ID"), new GUIContent("ID"));
+
+            EditorGUILayout.PropertyField(hitboxGroupProperty.FindPropertyRelative("chargeLevelNeeded"), new GUIContent("Charge Level Needed"));
+            if (hitboxGroupProperty.FindPropertyRelative("chargeLevelNeeded").intValue >= 0)
+            {
+                EditorGUILayout.PropertyField(hitboxGroupProperty.FindPropertyRelative("chargeLevelMax"), new GUIContent("Charge Level Max"));
+            }
+            EditorGUILayout.PropertyField(hitboxGroupProperty.FindPropertyRelative("attachToEntity"), new GUIContent("attachToEntity"));
 
             EditorGUILayout.BeginHorizontal(GUILayout.Width(300));
             boxesFoldout = EditorGUILayout.Foldout(boxesFoldout, "Boxes", true);
@@ -82,13 +103,20 @@ namespace HnSF.Combat
                 menu.ShowAsContext();
             }
             EditorGUILayout.EndHorizontal();
-
             if (boxesFoldout)
             {
                 EditorGUI.indentLevel++;
-                for (int i = 0; i < hitboxGroup.boxes.Count; i++)
+                for (int i = 0; i < hitboxGroupProperty.FindPropertyRelative("boxes").arraySize; i++)
                 {
-                    DrawHitboxOptions(i);
+                    EditorGUILayout.BeginHorizontal();
+                    if (GUILayout.Button("X", GUILayout.Width(20)))
+                    {
+                        hitboxGroupProperty.FindPropertyRelative("boxes").DeleteArrayElementAtIndex(i);
+                        break;
+                    }
+                    GUILayout.Label($"Box {i}");
+                    EditorGUILayout.EndHorizontal();
+                    EditorGUILayout.PropertyField(hitboxGroupProperty.FindPropertyRelative("boxes").GetArrayElementAtIndex(i), GUIContent.none, true);
                     GUILayout.Space(5);
                 }
                 EditorGUI.indentLevel--;
@@ -109,49 +137,48 @@ namespace HnSF.Combat
                 menu.ShowAsContext();
             }
 
-            if (hitboxGroup.hitboxHitInfo == null)
-            {
-                return;
-            }
-            EditorGUILayout.LabelField($"Type: {hitboxGroup.hitboxHitInfo.GetType().FullName}");
+            EditorGUILayout.LabelField($"Type: {hitboxGroupProperty.FindPropertyRelative("hitboxHitInfo").managedReferenceFullTypename}");
+            EditorGUILayout.PropertyField(hitboxGroupProperty.FindPropertyRelative("hitboxHitInfo"), true);
 
-            switch (hitboxGroup.hitGroupType)
-            {
-                case HitboxType.HIT:
-                    hitboxGroup.hitboxHitInfo.DrawInspectorHitInfo();
-                    break;
-                case HitboxType.GRAB:
-                    hitboxGroup.hitboxHitInfo.DrawInspectorGrabInfo();
-                    break;
-            }
+            so.ApplyModifiedProperties();
         }
 
-        protected virtual void DrawHitboxOptions(int index)
+        protected virtual SerializedProperty GetHitboxGroupProperty()
         {
-            EditorGUILayout.BeginHorizontal();
-            if (GUILayout.Button("X", GUILayout.Width(20)))
+            SerializedProperty hitboxGroupProperty;
+            if (hitboxGroupPropertyIndex != -1)
             {
-                hitboxGroup.boxes.RemoveAt(index);
-                return;
+                hitboxGroupProperty = so.FindProperty(hitboxGroupPropertyName).GetArrayElementAtIndex(hitboxGroupPropertyIndex);
             }
-            GUILayout.Label($"Group {index}");
-            EditorGUILayout.EndHorizontal();
-            hitboxGroup.boxes[index].DrawInspector();
+            else
+            {
+                hitboxGroupProperty = so.FindProperty(hitboxGroupPropertyName);
+            }
+
+            return hitboxGroupProperty;
         }
 
         protected void OnHitInfoSelected(object t)
         {
-            if(hitboxGroup.hitboxHitInfo != null)
+            so.Update();
+            SerializedProperty chargeWindowsProperty = GetHitboxGroupProperty().FindPropertyRelative("hitboxHitInfo");
+            if (hGroup.hitboxHitInfo != null)
             {
-                hitboxGroup.hitboxHitInfo = (HitInfoBase)Activator.CreateInstance(hitInfoTypes[(string)t], new object[] { hitboxGroup.hitboxHitInfo });
+                chargeWindowsProperty.managedReferenceValue = (HitInfoBase)Activator.CreateInstance(hitInfoTypes[(string)t], 
+                    new object[] { hGroup.hitboxHitInfo });
                 return;
             }
-            hitboxGroup.hitboxHitInfo = (HitInfoBase)Activator.CreateInstance(hitInfoTypes[(string)t]);
+            chargeWindowsProperty.managedReferenceValue = (HitInfoBase)Activator.CreateInstance(hitInfoTypes[(string)t]);
+            so.ApplyModifiedProperties();
         }
 
         protected void OnBoxDefinitionSelected(object t)
         {
-            hitboxGroup.boxes.Add((BoxDefinitionBase)Activator.CreateInstance(boxDefinitionTypes[(string)t]));
+            so.Update();
+            var boxesProperty = GetHitboxGroupProperty().FindPropertyRelative("boxes");
+            boxesProperty.InsertArrayElementAtIndex(boxesProperty.arraySize);
+            boxesProperty.GetArrayElementAtIndex(boxesProperty.arraySize - 1).managedReferenceValue = Activator.CreateInstance(boxDefinitionTypes[(string)t]);
+            so.ApplyModifiedProperties();
         }
     }
 }

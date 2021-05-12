@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b727ab7513f07da4ab8ca7d2f6d52cc9, type: 3}
-  m_Name: Sword-Air-AA
+  m_Name: Sword-Ground-Slide
   m_EditorClassIdentifier: 
-  attackName: Sword AA (Air)
+  attackName: Slide
   description: 
   useState: 0
   stateOverride: 0
-  length: 40
+  length: 20
   commandAttackCancelWindows: []
   chargeWindows: []
   hitboxGroups:
@@ -28,15 +28,15 @@ MonoBehaviour:
   - id: 3
   - id: 4
   cancels: []
-  animationName: sword-air-aa
+  animationName: ground-slide
   references:
     version: 1
     00000000:
       type: {class: HitboxGroup, ns: HnSF.Combat, asm: HnSF}
       data:
         ID: 0
-        activeFramesStart: 6
-        activeFramesEnd: 11
+        activeFramesStart: 1
+        activeFramesEnd: 40
         hitGroupType: 0
         boxes:
         - id: 5
@@ -49,13 +49,13 @@ MonoBehaviour:
     00000001:
       type: {class: AttackEventDefinition, ns: HnSF.Combat, asm: HnSF}
       data:
-        nickname: Clamp Gravity
+        nickname: F.Force
         active: 1
         onHitCheck: 0
         onHitHitboxGroup: 0
         onHitIDGroup: 0
         startFrame: 1
-        endFrame: 2
+        endFrame: 1
         attackEvent:
           id: 7
         variables:
@@ -77,12 +77,12 @@ MonoBehaviour:
     00000002:
       type: {class: AttackEventDefinition, ns: HnSF.Combat, asm: HnSF}
       data:
-        nickname: Gravity
+        nickname: Jump Cancel
         active: 1
         onHitCheck: 0
         onHitHitboxGroup: 0
         onHitIDGroup: 0
-        startFrame: 10
+        startFrame: 5
         endFrame: 40
         attackEvent:
           id: 8
@@ -105,13 +105,13 @@ MonoBehaviour:
     00000003:
       type: {class: AttackEventDefinition, ns: HnSF.Combat, asm: HnSF}
       data:
-        nickname: Up.Force
+        nickname: X.Friction
         active: 1
         onHitCheck: 0
         onHitHitboxGroup: 0
         onHitIDGroup: 0
         startFrame: 3
-        endFrame: 5
+        endFrame: 40
         attackEvent:
           id: 9
         variables:
@@ -133,13 +133,13 @@ MonoBehaviour:
     00000004:
       type: {class: AttackEventDefinition, ns: HnSF.Combat, asm: HnSF}
       data:
-        nickname: F.Force
+        nickname: Slide End
         active: 1
         onHitCheck: 0
         onHitHitboxGroup: 0
         onHitIDGroup: 0
-        startFrame: 1
-        endFrame: 1
+        startFrame: 20
+        endFrame: 20
         attackEvent:
           id: 10
         variables:
@@ -162,8 +162,8 @@ MonoBehaviour:
       type: {class: BoxDefinition, ns: HnSF.Combat, asm: HnSF}
       data:
         shape: 0
-        offset: {x: 0.52, y: 1, z: 0}
-        size: {x: 2.12, y: 2, z: 0}
+        offset: {x: 0, y: 0.5, z: 0}
+        size: {x: 2.2, y: 1, z: 0}
         rotation: {x: 0, y: 0, z: 0}
         radius: 0
         height: 0
@@ -179,7 +179,7 @@ MonoBehaviour:
         opponentResetYForce: 1
         attackerHitstop: 4
         hitstop: 4
-        hitstun: 40
+        hitstun: 45
         considerPlayerForce: 0
         forceType: 0
         forceRelation: 0
@@ -193,55 +193,31 @@ MonoBehaviour:
         damageOnHit: 10
         damageOnBlock: 10
         causesTumble: 0
-        opponentForceDir: {x: 5, y: 3, z: 0}
+        opponentForceDir: {x: 0, y: 5, z: 0}
         forceIncludeYForce: 0
-        opponentForceMagnitude: 5
+        opponentForceMagnitude: 1
         opponentMaxMagnitude: 1
         opponentMinMagnitude: 1
         throwConfirm: {fileID: 0}
     00000007:
-      type: {class: ClampGravityEvent, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
+      type: {class: ForceSet, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
-        minClamp: -0.5
-        maxClamp: 5
-    00000008:
-      type: {class: ApplyGravity, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
-      data:
-        useEntityMaxFallSpeed: 1
-        useEntityGravity: 1
-        useEntityGravityScale: 1
-        gravityCurveMultiplier: 1
-        gravityCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        gravityScaleCurveMultiplier: 1
-        gravityScaleCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        maxFallSpeedCurveMultiplier: 1
-        maxFallSpeedCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-    00000009:
-      type: {class: ForceAdd, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
-      data:
-        addXForce: 0
-        addYForce: 1
-        xForce: 0
-        yForce: 1
-    0000000A:
-      type: {class: ForceAdd, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
-      data:
-        addXForce: 1
-        addYForce: 0
-        xForce: 2
+        applyXForce: 1
+        applyYForce: 0
+        xForce: 15
         yForce: 0
+    00000008:
+      type: {class: JumpCancel, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
+    00000009:
+      type: {class: ApplyFriction, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
+      data:
+        useXFriction: 1
+        useYFriction: 0
+        xFriction: 0.8
+        yFriction: 0
+    0000000A:
+      type: {class: ChangeAttack, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
+      data:
+        resetFrameCounter: 1
+        lastFrameExecution: 0
+        attackID: 10

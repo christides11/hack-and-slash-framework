@@ -21,12 +21,5 @@ namespace HnSF.Combat
         {
 
         }
-
-        public virtual void DrawInspector()
-        {
-#if UNITY_EDITOR
-            shape = (BoxShape)EditorGUILayout.EnumPopup("Shape", shape);
-#endif
-        }
     }
 }
