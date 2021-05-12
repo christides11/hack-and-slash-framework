@@ -31,8 +31,26 @@ namespace HnSF.Fighters
         public int HitStop { get { return hitstop; } }
         public int CurrentChargeLevel { get; protected set; } = 0;
         public int CurrentChargeLevelCharge { get; protected set; } = 0;
+        /// <summary>
+        /// The current moveset we are assigned.
+        /// </summary>
         public virtual MovesetDefinition CurrentMoveset { get; }
-        public virtual MovesetAttackNode CurrentAttack { get { if (currentAttackNode < 0) { return null; } 
+        /// <summary>
+        /// The identifier of the current moveset.
+        /// </summary>
+        public virtual int CurrentMovesetIdentifier { get { return currentMoveset; } }
+        /// <summary>
+        /// The moveset that the current attack belongs to. Not the same as our current moveset.
+        /// </summary>
+        public virtual MovesetDefinition CurrentAttackMoveset { get { return GetMoveset(currentAttackMoveset); } }
+        /// <summary>
+        /// The identifier of the moveset that the current attack belongs to. Not the same as our current moveset.
+        /// </summary>
+        public virtual int CurrentAttackMovesetIdentifier { get { return currentAttackMoveset; } }
+        /// <summary>
+        /// The attack node of the current attack.
+        /// </summary>
+        public virtual MovesetAttackNode CurrentAttackNode { get { if (currentAttackNode < 0) { return null; } 
                 return (MovesetAttackNode)GetMoveset(currentAttackMoveset).GetAttackNode(currentAttackNode); } }
         public HitInfoBase LastHitBy { get; protected set; }
 
@@ -72,17 +90,17 @@ namespace HnSF.Fighters
 
         public virtual int GetMovesetCount()
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException("GetMovesetCount must be overriden.");
         }
 
         public virtual MovesetDefinition GetMoveset(int index)
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException("GetMoveset must be overriden.");
         }
 
         public virtual void Cleanup()
         {
-            if (CurrentAttack == null)
+            if (CurrentAttackNode == null)
             {
                 return;
             }
@@ -93,26 +111,53 @@ namespace HnSF.Fighters
             hitboxManager.Reset();
         }
 
-        public virtual void SetAttack(int attackNodeIndex)
+        /// <summary>
+        /// Resets anything having to do with the current attack and sets a new one. This method assumes that the attack node is in the current moveset.
+        /// </summary>
+        /// <param name="attackNodeIdentifier">The identifier of the attack node.</param>
+        public virtual void SetAttack(int attackNodeIdentifier)
         {
             Cleanup();
             currentAttackMoveset = currentMoveset;
-            currentAttackNode = attackNodeIndex;
+            currentAttackNode = attackNodeIdentifier;
         }
 
+        /// <summary>
+        /// Resets anything having to do with the current attack and sets a new one. 
+        /// </summary>
+        /// <param name="attackNodeIdentifier"></param>
+        /// <param name="attackMovesetIdentifier"></param>
+        public virtual void SetAttack(int attackNodeIdentifier, int attackMovesetIdentifier)
+        {
+            Cleanup();
+            currentAttackMoveset = attackMovesetIdentifier;
+            currentAttackNode = attackNodeIdentifier;
+        }
+
+        /// <summary>
+        /// Checks if we can attack based on our current attack state.
+        /// </summary>
+        /// <returns>The identifier of the attack node that can be done. If none, returns -1.</returns>
         public virtual int TryAttack()
         {
             if(CurrentMoveset == null)
             {
                 return -1;
             }
-            if(CurrentAttack == null)
+            // We are currently not doing an attack, so check the starting nodes instead.
+            if(CurrentAttackNode == null)
             {
                 return CheckStartingNodes();
             }
+            // We are doing an attack, check it's cancel windows.
             return CheckCurrentAttackCancelWindows();
         }
 
+        /// <summary>
+        /// Check a cancel list in the current moveset to see if an attack can be canceled into.
+        /// </summary>
+        /// <param name="cancelListID"></param>
+        /// <returns>The identifier of the attack node if found. Otherwise -1.</returns>
         public virtual int TryCancelList(int cancelListID)
         {
             CancelList cl = CurrentMoveset.GetCancelList(cancelListID);
@@ -167,15 +212,24 @@ namespace HnSF.Fighters
             return -1;
         }
 
+        /// <summary>
+        /// Checks the cancel windows of the current attack to see if we should transition to the next attack.
+        /// </summary>
+        /// <returns>The identifier of the attack if the transition conditions are met. Otherwise -1.</returns>
         protected virtual int CheckCurrentAttackCancelWindows()
         {
-            for (int i = 0; i < CurrentAttack.nextNode.Count; i++)
+            // Our current moveset is not the same as our current attack's, ignore it's cancel windows.
+            if(currentMoveset != currentAttackMoveset)
             {
-                if (manager.StateManager.CurrentStateFrame >= CurrentAttack.nextNode[i].cancelWindow.x &&
-                    manager.StateManager.CurrentStateFrame <= CurrentAttack.nextNode[i].cancelWindow.y)
+                return -1;
+            }
+            for (int i = 0; i < CurrentAttackNode.nextNode.Count; i++)
+            {
+                if (manager.StateManager.CurrentStateFrame >= CurrentAttackNode.nextNode[i].cancelWindow.x &&
+                    manager.StateManager.CurrentStateFrame <= CurrentAttackNode.nextNode[i].cancelWindow.y)
                 {
-                    MovesetAttackNode currentNode = CurrentAttack;
-                    MovesetAttackNode man = CheckAttackNode((MovesetAttackNode)CurrentMoveset.GetAttackNode(currentNode.nextNode[i].nodeIdentifier));
+                    MovesetAttackNode currentNode = CurrentAttackNode;
+                    MovesetAttackNode man = CheckAttackNode((MovesetAttackNode)GetMoveset(currentAttackMoveset).GetAttackNode(currentNode.nextNode[i].nodeIdentifier));
                     if(man != null)
                     {
                         return currentNode.nextNode[i].nodeIdentifier;
@@ -327,8 +381,7 @@ namespace HnSF.Fighters
 
         protected virtual bool CheckStickDirection(InputDefinition sequenceInput, uint framesBack)
         {
-            Debug.LogError("CheckStickDirection has to be overrided for command inputs to work.");
-            return false;
+            throw new NotImplementedException("CheckStickDirection has to be overrided for command inputs to work.");
         }
 
         public virtual void SetHitStop(int value)

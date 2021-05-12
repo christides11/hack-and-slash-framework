@@ -38,7 +38,6 @@ MonoBehaviour:
         ID: 0
         activeFramesStart: 5
         activeFramesEnd: 9
-        hitGroupType: 0
         boxes:
         - id: 6
         attachToEntity: 1
@@ -199,32 +198,30 @@ MonoBehaviour:
     00000007:
       type: {class: HitInfo, ns: TDAction.Combat, asm: TDAction_CSharp}
       data:
-        airOnly: 0
-        groundOnly: 0
+        hitType: 0
         hitKills: 1
         continuousHit: 0
         spaceBetweenHits: 0
         opponentResetXForce: 1
         opponentResetYForce: 1
+        autoLink: 1
+        forceType: 0
+        forceRelation: 0
         attackerHitstop: 4
         hitstop: 4
         hitstun: 40
-        considerPlayerForce: 1
-        forceType: 0
-        forceRelation: 0
-        breakArmor: 0
-        unblockable: 0
+        airOnly: 0
+        groundOnly: 0
+        causesTumble: 0
         knockdown: 0
         groundBounces: 0
         groundBounceForce: 0
         wallBounces: 0
         wallBounceForce: 0
         damageOnHit: 10
-        damageOnBlock: 10
-        causesTumble: 0
-        opponentForceDir: {x: 2, y: 1, z: 0}
+        opponentForce: {x: 3, y: 2, z: 0}
         forceIncludeYForce: 0
-        opponentForceMagnitude: 6
+        opponentForceMultiplier: 0
         opponentMaxMagnitude: 1
         opponentMinMagnitude: 1
         throwConfirm: {fileID: 0}

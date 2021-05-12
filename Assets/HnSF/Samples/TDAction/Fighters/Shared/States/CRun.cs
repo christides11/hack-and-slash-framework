@@ -30,6 +30,7 @@ namespace TDAction.Fighter
             if (Mathf.Abs(physicsManager.forceMovement.x) > Mathf.Abs(maxSpeed))
             {
                 physicsManager.ApplyMovementFriction(c.statManager.CurrentStats.groundFriction.GetCurrentValue());
+                currentSpeed = physicsManager.forceMovement;
             }
             else
             {
@@ -68,6 +69,11 @@ namespace TDAction.Fighter
             if (c.InputManager.GetButton((int)EntityInputs.JUMP).firstPress)
             {
                 c.StateManager.ChangeState((int)FighterStates.JUMP_SQUAT);
+                return true;
+            }
+            if (c.PhysicsManager.IsGrounded == false)
+            {
+                c.StateManager.ChangeState((int)FighterStates.FALL);
                 return true;
             }
             if (Mathf.Abs(c.InputManager.GetAxis2D((int)EntityInputs.MOVEMENT).x) <= InputConstants.moveDeadzone)

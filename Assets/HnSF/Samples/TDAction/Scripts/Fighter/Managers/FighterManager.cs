@@ -30,9 +30,10 @@ namespace TDAction.Fighter
 
         public void Start()
         {
+            entityAnimator.SetMovesetAnimations(entityDefinition.movesets[0].animations);
+            entityAnimator.SetSharedAnimations(entityDefinition.sharedAnimations);
             CombatManager.SetMoveset(0);
             statManager.SetStats(entityDefinition.movesets[0].fighterStats);
-            entityAnimator.SetAnimations(entityDefinition.movesets[0].animations);
             SetupStates();
             CombatManager.OnExitHitStop += (self) => { visual.transform.localPosition = Vector3.zero; };
             if (healthManager.MaxHealth == 0)
@@ -94,11 +95,18 @@ namespace TDAction.Fighter
             return false;
         }
 
-        public virtual bool TryAttack(int attackIdentifier, bool resetFrameCounter = true)
+        public virtual bool TryAttack(int attackIdentifier, int attackMoveset = -1, bool resetFrameCounter = true)
         {
             if(attackIdentifier != -1)
             {
-                CombatManager.SetAttack(attackIdentifier);
+                if (attackMoveset != -1)
+                {
+                    CombatManager.SetAttack(attackIdentifier, attackMoveset);
+                }
+                else
+                {
+                    CombatManager.SetAttack(attackIdentifier);
+                }
                 StateManager.ChangeState((int)FighterStates.ATTACK, resetFrameCounter ? 0 : StateManager.CurrentStateFrame);
                 return true;
             }

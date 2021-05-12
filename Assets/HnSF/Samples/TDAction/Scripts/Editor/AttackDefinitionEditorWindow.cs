@@ -38,7 +38,10 @@ namespace TDAction.Combat
             base.CreateFighter();
             if (visualFighterSceneReference)
             {
-                visualFighterSceneReference.GetComponent<Fighter.FighterAnimator>().Animations.OnEnable();
+                foreach(AnimationReferenceHolder referenceHolder in visualFighterSceneReference.GetComponent<Fighter.FighterAnimator>().AnimationReferences)
+                {
+                    referenceHolder.OnEnable();
+                }
                 visualFighterSceneReference.GetComponent<Fighter.FighterAnimator>().SetAnimation((attack as AttackDefinition).animationName);
                 visualFighterSceneReference.GetComponent<Prime31.CharacterController2D>().Awake();
             }

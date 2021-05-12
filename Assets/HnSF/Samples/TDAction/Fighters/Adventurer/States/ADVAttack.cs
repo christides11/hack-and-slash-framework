@@ -14,7 +14,7 @@ namespace TDAction.Fighter
                 return true;
             }
             if (entityManager.StateManager.CurrentStateFrame >
-                entityManager.CombatManager.CurrentAttack.attackDefinition.length)
+                entityManager.CombatManager.CurrentAttackNode.attackDefinition.length)
             {
                 if (entityManager.PhysicsManager.IsGrounded)
                 {

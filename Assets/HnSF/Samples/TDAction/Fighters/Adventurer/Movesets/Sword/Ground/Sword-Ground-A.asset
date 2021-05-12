@@ -211,7 +211,7 @@ MonoBehaviour:
         spaceBetweenHits: 0
         opponentResetXForce: 1
         opponentResetYForce: 1
-        autoLink: 0
+        autoLink: 1
         forceType: 0
         forceRelation: 0
         attackerHitstop: 4
@@ -226,8 +226,7 @@ MonoBehaviour:
         wallBounces: 0
         wallBounceForce: 0
         damageOnHit: 10
-        damageOnBlock: 10
-        opponentForce: {x: 0, y: 0, z: 0}
+        opponentForce: {x: 4, y: 0, z: 0}
         forceIncludeYForce: 0
         opponentForceMultiplier: 0
         opponentMaxMagnitude: 1

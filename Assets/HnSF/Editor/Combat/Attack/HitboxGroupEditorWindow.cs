@@ -54,9 +54,7 @@ namespace HnSF.Combat
             {
                 Close();
             }
-            //scrollPos = EditorGUILayout.BeginScrollView(scrollPos);
             DrawHitboxGroupInfo();
-            //EditorGUILayout.EndScrollView();
         }
 
         protected bool boxesFoldout;
@@ -167,6 +165,7 @@ namespace HnSF.Combat
             {
                 chargeWindowsProperty.managedReferenceValue = (HitInfoBase)Activator.CreateInstance(hitInfoTypes[(string)t], 
                     new object[] { hGroup.hitboxHitInfo });
+                so.ApplyModifiedProperties();
                 return;
             }
             chargeWindowsProperty.managedReferenceValue = (HitInfoBase)Activator.CreateInstance(hitInfoTypes[(string)t]);

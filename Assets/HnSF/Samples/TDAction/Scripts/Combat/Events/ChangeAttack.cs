@@ -31,7 +31,7 @@ namespace TDAction.Combat.Events
             FighterManager e = (FighterManager)controller;
             FighterCombatManager combatManager = (FighterCombatManager)controller.CombatManager;
 
-            e.TryAttack(attackID, resetFrameCounter);
+            e.TryAttack(attackID, -1, resetFrameCounter);
             return AttackEventReturnType.STALL;
         }
     }

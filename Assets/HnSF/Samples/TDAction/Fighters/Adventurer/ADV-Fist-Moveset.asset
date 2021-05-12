@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b5ef80cc04a834c9d7c41314184dc1, type: 3}
+  m_Name: ADV-Fist-Moveset
+  m_EditorClassIdentifier: 
+  nodes: []
+  nodeIDCounter: 0
+  cancelLists: []
+  groundIdleCancelListID: -1
+  groundAttackStartNodes: []
+  airIdleCancelListID: -1
+  airAttackStartNodes: []
+  fighterStats: {fileID: 11400000, guid: b7dd548b225b9414f9906ba4940fdaff, type: 2}
+  animations: {fileID: 11400000, guid: 90551797d19e9ef419ba044b69ff0df9, type: 2}

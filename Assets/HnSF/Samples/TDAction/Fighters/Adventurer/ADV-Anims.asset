@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5b5ef80cc04a834c9d7c41314184dc1, type: 3}
-  m_Name: Adventurer-Moveset-Fist
+  m_Script: {fileID: 11500000, guid: 6e172d295d3e22f4e9145b67d5340f4a, type: 3}
+  m_Name: ADV-Anims
   m_EditorClassIdentifier: 
-  nodes: []
-  groundAttackCommandNormals: []
-  groundAttackStartNodes: []
-  airAttackCommandNormals: []
-  airAttackStartNodes: []
+  animations:
+  - animationName: jumpsquat
+    animation: {fileID: 7400000, guid: 8b3ee0676c2054449b5903d20cccf0c5, type: 2}
