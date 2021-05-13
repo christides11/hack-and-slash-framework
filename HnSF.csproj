@@ -64,7 +64,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\HnSF\Camera\LookHandler.cs" />
     <Compile Include="Assets\HnSF\Combat\Attack Events\AttackEvent.cs" />
     <Compile Include="Assets\HnSF\Combat\Attack Events\AttackEventDefinition.cs" />
     <Compile Include="Assets\HnSF\Combat\Attack Events\AttackEventInputCheckTiming.cs" />
@@ -103,6 +102,7 @@
     <Compile Include="Assets\HnSF\Combat\StateHurtboxDefinition.cs" />
     <Compile Include="Assets\HnSF\Fighter\FighterBase.cs" />
     <Compile Include="Assets\HnSF\Fighter\FighterState.cs" />
+    <Compile Include="Assets\HnSF\Fighter\LookHandler.cs" />
     <Compile Include="Assets\HnSF\Fighter\Managers\FighterCombatManager.cs" />
     <Compile Include="Assets\HnSF\Fighter\Managers\FighterHitboxManager.cs" />
     <Compile Include="Assets\HnSF\Fighter\Managers\FighterHurtboxManager.cs" />
@@ -111,6 +111,7 @@
     <Compile Include="Assets\HnSF\Fighter\Managers\FighterPhysicsManager3D.cs" />
     <Compile Include="Assets\HnSF\Fighter\Managers\FighterPhysicsManagerBase.cs" />
     <Compile Include="Assets\HnSF\Fighter\Managers\FighterStateManager.cs" />
+    <Compile Include="Assets\HnSF\Helpers\HelperFunctions.cs" />
     <Compile Include="Assets\HnSF\Input\GlobalInputManager.cs" />
     <Compile Include="Assets\HnSF\Input\Input Record\InputRecordAxis.cs" />
     <Compile Include="Assets\HnSF\Input\Input Record\InputRecordAxis2D.cs" />
@@ -121,7 +122,6 @@
     <Compile Include="Assets\HnSF\Input\InputControlType.cs" />
     <Compile Include="Assets\HnSF\Input\InputDefinition.cs" />
     <Compile Include="Assets\HnSF\Input\InputSequence.cs" />
-    <Compile Include="Assets\HnSF\Other\HelperFunctions.cs" />
     <Compile Include="Assets\HnSF\Simulation\ISimObject.cs" />
     <Compile Include="Assets\HnSF\Simulation\ISimObjectManager.cs" />
     <Compile Include="Assets\HnSF\Simulation\SimObjectManager.cs" />

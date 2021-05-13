@@ -30,8 +30,6 @@ namespace TDAction.Fighter
 
         public void Start()
         {
-            entityAnimator.SetMovesetAnimations(entityDefinition.movesets[0].animations);
-            entityAnimator.SetSharedAnimations(entityDefinition.sharedAnimations);
             CombatManager.SetMoveset(0);
             statManager.SetStats(entityDefinition.movesets[0].fighterStats);
             SetupStates();
@@ -162,6 +160,26 @@ namespace TDAction.Fighter
         public FighterPhysicsManager GetPhysicsManager()
         {
             return (FighterPhysicsManager)PhysicsManager;
+        }
+
+        public AnimationClip GetAnimationClip(string animationName, int movesetIdentifier = -1)
+        {
+            if(movesetIdentifier == -1)
+            {
+                return entityDefinition.sharedAnimations.GetAnimation(animationName);
+            }
+            else
+            {
+                if(entityDefinition.movesets.Count <= movesetIdentifier)
+                {
+                    return null;
+                }
+                if (entityDefinition.movesets[movesetIdentifier].animations.TryGetAnimation(animationName, out AnimationClip movesetClip))
+                {
+                    return movesetClip;
+                }
+                return entityDefinition.sharedAnimations.GetAnimation(animationName);
+            }
         }
     }
 }

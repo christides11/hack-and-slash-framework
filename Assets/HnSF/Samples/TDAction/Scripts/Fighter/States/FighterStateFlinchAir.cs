@@ -11,7 +11,7 @@ namespace TDAction.Fighter
 
         public override void Initialize()
         {
-            (Manager as FighterManager).entityAnimator.SetAnimation("hurt");
+            (Manager as FighterManager).entityAnimator.PlayAnimation((Manager as FighterManager).GetAnimationClip("hurt"));
         }
 
         public override void OnUpdate()

@@ -26,7 +26,8 @@ namespace TDAction.Fighter
             charging = true;
             if (String.IsNullOrEmpty(currentAttack.animationName) == false)
             {
-                (Manager as FighterManager).entityAnimator.SetAnimation(currentAttack.animationName);
+                (Manager as FighterManager).entityAnimator.PlayAnimation((Manager as FighterManager).GetAnimationClip(currentAttack.animationName, 
+                    GetEntityManager().CombatManager.CurrentAttackMovesetIdentifier));
             }
         }
 

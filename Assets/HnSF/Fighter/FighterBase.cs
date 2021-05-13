@@ -1,5 +1,4 @@
-﻿using HnSF.Camera;
-using HnSF.Combat;
+﻿using HnSF.Combat;
 using HnSF.Simulation;
 using System;
 using System.Collections.Generic;

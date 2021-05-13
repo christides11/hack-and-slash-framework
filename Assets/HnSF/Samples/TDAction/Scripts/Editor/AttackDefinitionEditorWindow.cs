@@ -38,11 +38,12 @@ namespace TDAction.Combat
             base.CreateFighter();
             if (visualFighterSceneReference)
             {
-                foreach(AnimationReferenceHolder referenceHolder in visualFighterSceneReference.GetComponent<Fighter.FighterAnimator>().AnimationReferences)
+                visualFighterSceneReference.GetComponent<Fighter.FighterManager>().entityDefinition.sharedAnimations.OnEnable();
+                foreach(var moveset in visualFighterSceneReference.GetComponent<Fighter.FighterManager>().entityDefinition.movesets)
                 {
-                    referenceHolder.OnEnable();
+                    moveset.animations.OnEnable();
                 }
-                visualFighterSceneReference.GetComponent<Fighter.FighterAnimator>().SetAnimation((attack as AttackDefinition).animationName);
+                //visualFighterSceneReference.GetComponent<Fighter.FighterAnimator>().PlayAnimation((attack as AttackDefinition).animationName);
                 visualFighterSceneReference.GetComponent<Prime31.CharacterController2D>().Awake();
             }
         }
@@ -70,7 +71,7 @@ namespace TDAction.Combat
             hurtboxes.Clear();
             if (string.IsNullOrEmpty((attack as AttackDefinition).animationName) == false)
             {
-                visualFighterSceneReference.GetComponent<Fighter.FighterAnimator>().SetAnimation((attack as AttackDefinition).animationName);
+                //visualFighterSceneReference.GetComponent<Fighter.FighterAnimator>().PlayAnimation((attack as AttackDefinition).animationName);
                 visualFighterSceneReference.GetComponent<Fighter.FighterAnimator>().SetFrame(0);
             }
         }

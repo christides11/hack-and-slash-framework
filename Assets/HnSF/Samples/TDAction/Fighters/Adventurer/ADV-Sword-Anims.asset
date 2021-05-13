@@ -21,8 +21,6 @@ MonoBehaviour:
     animation: {fileID: 7400000, guid: 2c6218a2e4df0d24685a64b6458072e9, type: 2}
   - animationName: sword-ground-aaa
     animation: {fileID: 7400000, guid: a2b2791841cc7d141af6b997bbd0b2e6, type: 2}
-  - animationName: hurt
-    animation: {fileID: 7400000, guid: 671e07c7c1aecff4bb4c0d85e7d7109c, type: 2}
   - animationName: sword-air-a
     animation: {fileID: 7400000, guid: 99e3b27e4fd450542a8e50005c79ed91, type: 2}
   - animationName: sword-air-aa
@@ -39,7 +37,3 @@ MonoBehaviour:
     animation: {fileID: 7400000, guid: eec540fc5c0d61a41ae16d3809ab6591, type: 2}
   - animationName: run
     animation: {fileID: 7400000, guid: 6151497e3329a5b43bf03aa8a66844c5, type: 2}
-  - animationName: bow-ground-startup
-    animation: {fileID: 7400000, guid: 568bbb081b9426b469d6b232cfc4afe6, type: 2}
-  - animationName: bow-ground-release
-    animation: {fileID: 7400000, guid: 963ccfc8660608248a5bacf8892838df, type: 2}

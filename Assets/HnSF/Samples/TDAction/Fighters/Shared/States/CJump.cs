@@ -17,6 +17,11 @@ namespace TDAction.Fighter
             FighterManager c = Manager as FighterManager;
 
             GetPhysicsManager().forceGravity.y = c.statManager.CurrentStats.fullHopForce.GetCurrentValue();
+
+            (Manager as FighterManager).entityAnimator.PlayAnimation((Manager as FighterManager).GetAnimationClip("jump-init")).onEnd += () => 
+            {
+                (Manager as FighterManager).entityAnimator.PlayAnimation((Manager as FighterManager).GetAnimationClip("jump"));
+            };
         }
 
         public override void OnUpdate()
@@ -26,6 +31,9 @@ namespace TDAction.Fighter
             ((FighterPhysicsManager)c.PhysicsManager).HandleGravity();
 
             ((FighterPhysicsManager)c.PhysicsManager).AirDrift();
+
+            (Manager as FighterManager).entityAnimator.SetFrame((int)c.StateManager.CurrentStateFrame);
+            c.StateManager.IncrementFrame();
 
             CheckInterrupt();
         }

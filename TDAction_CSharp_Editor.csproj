@@ -624,6 +624,9 @@
     <Reference Include="Boo.Lang">
       <HintPath>C:/Program Files/Unity/2019.4.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
+    <Reference Include="XNode">
+      <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/XNode.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>

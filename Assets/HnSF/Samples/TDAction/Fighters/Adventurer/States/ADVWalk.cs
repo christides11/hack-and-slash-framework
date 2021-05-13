@@ -9,7 +9,7 @@ namespace TDAction.Fighter
         public override void Initialize()
         {
             base.Initialize();
-            (Manager as FighterManager).entityAnimator.SetAnimation("walk");
+            (Manager as FighterManager).entityAnimator.PlayAnimation((Manager as FighterManager).GetAnimationClip("walk", Manager.CombatManager.CurrentMovesetIdentifier));
         }
 
         public override void OnUpdate()
