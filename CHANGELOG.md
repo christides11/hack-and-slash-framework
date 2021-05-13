@@ -1,3 +1,27 @@
+# [19.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v18.0.0...v19.0.0) (2021-05-13)
+
+
+### Code Refactoring
+
+* Hitbox editor improvements ([affa0dc](https://github.com/christides11/hack-and-slash-framework/commit/affa0dcae31a36c102f03d8500e178b347ff4f45))
+* IsGrounded moved from FighterBase to FighterPhysicsManager. ([5d9a763](https://github.com/christides11/hack-and-slash-framework/commit/5d9a76387e2a494502ce8701f04d73ffa996787a))
+* LateTickSimObjects handled directly in Tick ([d100bd5](https://github.com/christides11/hack-and-slash-framework/commit/d100bd56a9c45c66e77e37b122da57d466a6c419))
+* Moved LookHandler into Fighters namespace ([2205ef6](https://github.com/christides11/hack-and-slash-framework/commit/2205ef66d3d0e02ee85faeeb685dd33255dde9d3))
+
+
+### Features
+
+* Created HitboxManager class. ([2578004](https://github.com/christides11/hack-and-slash-framework/commit/2578004c14252ae83b478674c0a92aebc6ed8200))
+
+
+### BREAKING CHANGES
+
+* Moved LookHandler since it was the only script in it's namespace and it's usage is for fighters.
+* Improved editors and got rid of hitinfo variables that aren't necessary.
+* Separated out the functionality in FighterHitboxManager into a HitboxManager class. Now you can use the logic for anything that may want to handle hitboxes, and just have to override the methods that have to be changed. Also changed it to a monobehaviour.
+* Moved IsGrounded to FighterPhysicsManager, as it makes more sense to be there.
+* Removed LateTick method. The method it calls should be called right after SimulatePhysics anyway.
+
 # [18.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v17.0.0...v18.0.0) (2021-05-08)
 
 
