@@ -9,87 +9,77 @@ namespace TDAction.Fighter
 {
     public class FighterAnimator : MonoBehaviour
     {
-        public AnimationReferenceHolder[] AnimationReferences { get { return animations; } }
+        public delegate void AnimationEmptyAction();
 
-        [SerializeField] private FighterManager manager;
-        [SerializeField] private AnimationReferenceHolder[] animations = new AnimationReferenceHolder[2];
-        public Animator animator;
-
-        PlayableGraph playableGraph;
-        AnimationClipPlayable playableClip;
-
-        [SerializeField] private double currentClipTime = 0;
-        [SerializeField] private string currentClipIdentifier;
-
-        public void SetMovesetAnimations(AnimationReferenceHolder animations)
+        public class AnimationState
         {
-            this.animations[0] = animations;
-        }
+            public double Time { get { return playableClip.GetTime(); } }
 
-        public void SetSharedAnimations(AnimationReferenceHolder animations)
-        {
-            this.animations[1] = animations;
-        }
+            public PlayableGraph playableGraph;
+            public AnimationClipPlayable playableClip;
+            public AnimationEmptyAction onEnd;
+            public AnimationClip clip;
 
-        public void Refresh()
-        {
-            SetAnimation(currentClipIdentifier);
-            SetTime(currentClipTime);
-        }
-
-        public void SetAnimation(string animationName)
-        {
-            AnimationClip clip = FindAnimation(animationName);
-            if(clip == null)
-            {
-                //Debug.LogError($"FighterAnimator: {animation} does not exist.");
-                return;
-            }
-            currentClipIdentifier = animationName;
-            if (playableClip.IsValid())
+            public void Cleanup()
             {
                 playableClip.Destroy();
-            }
-            if (playableGraph.IsValid())
-            {
                 playableGraph.Destroy();
             }
-            playableGraph = PlayableGraph.Create();
-            var playableOutput = AnimationPlayableOutput.Create(playableGraph, "Animation", animator);
-            playableClip = AnimationClipPlayable.Create(playableGraph, clip);
-            playableOutput.SetSourcePlayable(playableClip);
-            playableGraph.Play();
-            playableClip.Pause();
+
+            public void SetTime(double value)
+            {
+                playableClip.SetTime(value);
+                if (playableClip.GetTime() >= clip.length)
+                {
+                    switch (clip.wrapMode)
+                    {
+                        case WrapMode.ClampForever:
+                            playableClip.SetTime(clip.length);
+                            break;
+                    }
+                    onEnd?.Invoke();
+                }
+            }
         }
 
-        private AnimationClip FindAnimation(string animationName)
+        [SerializeField] private FighterManager manager;
+        public Animator animator;
+        public AnimationState currentAnimationState;
+
+        public AnimationState PlayAnimation(AnimationClip animationClip)
         {
-            if (animations[0].TryGetAnimation(animationName, out AnimationClip movesetAnimation))
+            if(animationClip == null)
             {
-                return movesetAnimation;
+                return null;
             }
-            if(animations[1].TryGetAnimation(animationName, out AnimationClip sharedAnimation))
+            if (currentAnimationState != null)
             {
-                return sharedAnimation;
+                currentAnimationState.Cleanup();
             }
-            return null;
+            currentAnimationState = new AnimationState();
+            currentAnimationState.playableGraph = PlayableGraph.Create();
+            var playableOutput = AnimationPlayableOutput.Create(currentAnimationState.playableGraph, "Animation", animator);
+            currentAnimationState.playableClip = AnimationClipPlayable.Create(currentAnimationState.playableGraph, animationClip);
+            playableOutput.SetSourcePlayable(currentAnimationState.playableClip);
+            currentAnimationState.playableGraph.Play();
+            currentAnimationState.playableClip.Pause();
+            currentAnimationState.clip = animationClip;
+            return currentAnimationState;
         }
 
         public void SetFrame(int frame)
         {
-            if (playableClip.IsValid())
+            if(currentAnimationState != null)
             {
-                playableClip.SetTime(frame * Time.fixedDeltaTime);
-                currentClipTime = playableClip.GetTime();
+                currentAnimationState.SetTime(frame * Time.fixedDeltaTime);
             }
         }
 
-        public void SetTime(double time)
+        public void SetTime(float time)
         {
-            if (playableClip.IsValid())
+            if (currentAnimationState != null)
             {
-                playableClip.SetTime(time);
-                currentClipTime = playableClip.GetTime();
+                currentAnimationState.SetTime(time);
             }
         }
     }

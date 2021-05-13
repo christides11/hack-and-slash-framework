@@ -1,7 +1,6 @@
-﻿using HnSF.Fighters;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace HnSF.Camera
+namespace HnSF.Fighters
 {
 
     /// <summary>

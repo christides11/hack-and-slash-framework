@@ -10,7 +10,7 @@ namespace TDAction.Fighter
         public override void Initialize()
         {
             base.Initialize();
-            (Manager as FighterManager).entityAnimator.SetAnimation("jumpsquat");
+            (Manager as FighterManager).entityAnimator.PlayAnimation((Manager as FighterManager).GetAnimationClip("jumpsquat"));
         }
 
         public override void OnUpdate()

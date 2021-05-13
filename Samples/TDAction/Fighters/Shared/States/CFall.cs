@@ -16,6 +16,9 @@ namespace TDAction.Fighter
 
             ((FighterPhysicsManager)Manager.PhysicsManager).AirDrift();
 
+            (Manager as FighterManager).entityAnimator.SetFrame((int)Manager.StateManager.CurrentStateFrame);
+            Manager.StateManager.IncrementFrame();
+
             CheckInterrupt();
         }
 

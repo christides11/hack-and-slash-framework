@@ -17,5 +17,7 @@ MonoBehaviour:
     animation: {fileID: 7400000, guid: c4ee75264f0031b40964ffa2b20d0906, type: 2}
   - animationName: walk
     animation: {fileID: 7400000, guid: 214e3f2f3aa329546898450a0de47254, type: 2}
-  - animationName: ground-a
+  - animationName: fist-ground-a
     animation: {fileID: 7400000, guid: 51691b2b8bceaef4ab9e39f3b8eab7ac, type: 2}
+  - animationName: run
+    animation: {fileID: 7400000, guid: 6151497e3329a5b43bf03aa8a66844c5, type: 2}

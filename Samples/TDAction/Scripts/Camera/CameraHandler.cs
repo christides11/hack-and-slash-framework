@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
-using HnSF.Camera;
 using HnSF.Fighters;
 
 namespace TDAction.Camera

@@ -15,11 +15,10 @@ namespace TDAction.Fighter
 
         private void HandleMovesetChange(FighterBase self, int lastMoveset)
         {
-            entityAnimator.SetMovesetAnimations((combatManager.CurrentMoveset as MovesetDefinition).animations);
             // Only refresh current animation if it's not an attack.
             if (combatManager.CurrentAttackNode == null)
             {
-                entityAnimator.Refresh();
+                //entityAnimator.RefreshAnimation();
             }
             statManager.SetStats((combatManager.CurrentMoveset as MovesetDefinition).fighterStats);
         }

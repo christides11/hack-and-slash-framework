@@ -23,7 +23,7 @@ MonoBehaviour:
     walkAcceleration:
       baseValue: 0.5
     walkMaxSpeed:
-      baseValue: 4
+      baseValue: 5
     runBaseAcceleration:
       baseValue: 0.6
     runAcceleration:
