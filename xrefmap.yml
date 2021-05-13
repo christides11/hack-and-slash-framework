@@ -7,115 +7,6 @@ references:
   commentId: N:HnSF
   fullName: HnSF
   nameWithType: HnSF
-- uid: HnSF.Camera
-  name: HnSF.Camera
-  href: api/HnSF.Camera.html
-  commentId: N:HnSF.Camera
-  fullName: HnSF.Camera
-  nameWithType: HnSF.Camera
-- uid: HnSF.Camera.LookHandler
-  name: LookHandler
-  href: api/HnSF.Camera.LookHandler.html
-  commentId: T:HnSF.Camera.LookHandler
-  fullName: HnSF.Camera.LookHandler
-  nameWithType: LookHandler
-- uid: HnSF.Camera.LookHandler.LookAt(Vector3)
-  name: LookAt(Vector3)
-  href: api/HnSF.Camera.LookHandler.html#HnSF_Camera_LookHandler_LookAt_Vector3_
-  commentId: M:HnSF.Camera.LookHandler.LookAt(Vector3)
-  fullName: HnSF.Camera.LookHandler.LookAt(Vector3)
-  nameWithType: LookHandler.LookAt(Vector3)
-- uid: HnSF.Camera.LookHandler.LookAt*
-  name: LookAt
-  href: api/HnSF.Camera.LookHandler.html#HnSF_Camera_LookHandler_LookAt_
-  commentId: Overload:HnSF.Camera.LookHandler.LookAt
-  isSpec: "True"
-  fullName: HnSF.Camera.LookHandler.LookAt
-  nameWithType: LookHandler.LookAt
-- uid: HnSF.Camera.LookHandler.LookTransform
-  name: LookTransform()
-  href: api/HnSF.Camera.LookHandler.html#HnSF_Camera_LookHandler_LookTransform
-  commentId: M:HnSF.Camera.LookHandler.LookTransform
-  fullName: HnSF.Camera.LookHandler.LookTransform()
-  nameWithType: LookHandler.LookTransform()
-- uid: HnSF.Camera.LookHandler.LookTransform*
-  name: LookTransform
-  href: api/HnSF.Camera.LookHandler.html#HnSF_Camera_LookHandler_LookTransform_
-  commentId: Overload:HnSF.Camera.LookHandler.LookTransform
-  isSpec: "True"
-  fullName: HnSF.Camera.LookHandler.LookTransform
-  nameWithType: LookHandler.LookTransform
-- uid: HnSF.Camera.LookHandler.Reset
-  name: Reset()
-  href: api/HnSF.Camera.LookHandler.html#HnSF_Camera_LookHandler_Reset
-  commentId: M:HnSF.Camera.LookHandler.Reset
-  fullName: HnSF.Camera.LookHandler.Reset()
-  nameWithType: LookHandler.Reset()
-- uid: HnSF.Camera.LookHandler.Reset*
-  name: Reset
-  href: api/HnSF.Camera.LookHandler.html#HnSF_Camera_LookHandler_Reset_
-  commentId: Overload:HnSF.Camera.LookHandler.Reset
-  isSpec: "True"
-  fullName: HnSF.Camera.LookHandler.Reset
-  nameWithType: LookHandler.Reset
-- uid: HnSF.Camera.LookHandler.SetLockOnTarget(HnSF.Fighters.FighterBase)
-  name: SetLockOnTarget(FighterBase)
-  href: api/HnSF.Camera.LookHandler.html#HnSF_Camera_LookHandler_SetLockOnTarget_HnSF_Fighters_FighterBase_
-  commentId: M:HnSF.Camera.LookHandler.SetLockOnTarget(HnSF.Fighters.FighterBase)
-  fullName: HnSF.Camera.LookHandler.SetLockOnTarget(HnSF.Fighters.FighterBase)
-  nameWithType: LookHandler.SetLockOnTarget(FighterBase)
-- uid: HnSF.Camera.LookHandler.SetLockOnTarget*
-  name: SetLockOnTarget
-  href: api/HnSF.Camera.LookHandler.html#HnSF_Camera_LookHandler_SetLockOnTarget_
-  commentId: Overload:HnSF.Camera.LookHandler.SetLockOnTarget
-  isSpec: "True"
-  fullName: HnSF.Camera.LookHandler.SetLockOnTarget
-  nameWithType: LookHandler.SetLockOnTarget
-- uid: HnSF.Camera.LookHandler.SetLookAtTarget(Transform)
-  name: SetLookAtTarget(Transform)
-  href: api/HnSF.Camera.LookHandler.html#HnSF_Camera_LookHandler_SetLookAtTarget_Transform_
-  commentId: M:HnSF.Camera.LookHandler.SetLookAtTarget(Transform)
-  fullName: HnSF.Camera.LookHandler.SetLookAtTarget(Transform)
-  nameWithType: LookHandler.SetLookAtTarget(Transform)
-- uid: HnSF.Camera.LookHandler.SetLookAtTarget*
-  name: SetLookAtTarget
-  href: api/HnSF.Camera.LookHandler.html#HnSF_Camera_LookHandler_SetLookAtTarget_
-  commentId: Overload:HnSF.Camera.LookHandler.SetLookAtTarget
-  isSpec: "True"
-  fullName: HnSF.Camera.LookHandler.SetLookAtTarget
-  nameWithType: LookHandler.SetLookAtTarget
-- uid: HnSF.Camera.LookHandler.SetPosition(Vector3)
-  name: SetPosition(Vector3)
-  href: api/HnSF.Camera.LookHandler.html#HnSF_Camera_LookHandler_SetPosition_Vector3_
-  commentId: M:HnSF.Camera.LookHandler.SetPosition(Vector3)
-  fullName: HnSF.Camera.LookHandler.SetPosition(Vector3)
-  nameWithType: LookHandler.SetPosition(Vector3)
-- uid: HnSF.Camera.LookHandler.SetPosition*
-  name: SetPosition
-  href: api/HnSF.Camera.LookHandler.html#HnSF_Camera_LookHandler_SetPosition_
-  commentId: Overload:HnSF.Camera.LookHandler.SetPosition
-  isSpec: "True"
-  fullName: HnSF.Camera.LookHandler.SetPosition
-  nameWithType: LookHandler.SetPosition
-- uid: HnSF.Camera.LookHandler.SetRotation(Quaternion)
-  name: SetRotation(Quaternion)
-  href: api/HnSF.Camera.LookHandler.html#HnSF_Camera_LookHandler_SetRotation_Quaternion_
-  commentId: M:HnSF.Camera.LookHandler.SetRotation(Quaternion)
-  fullName: HnSF.Camera.LookHandler.SetRotation(Quaternion)
-  nameWithType: LookHandler.SetRotation(Quaternion)
-- uid: HnSF.Camera.LookHandler.SetRotation(Vector3)
-  name: SetRotation(Vector3)
-  href: api/HnSF.Camera.LookHandler.html#HnSF_Camera_LookHandler_SetRotation_Vector3_
-  commentId: M:HnSF.Camera.LookHandler.SetRotation(Vector3)
-  fullName: HnSF.Camera.LookHandler.SetRotation(Vector3)
-  nameWithType: LookHandler.SetRotation(Vector3)
-- uid: HnSF.Camera.LookHandler.SetRotation*
-  name: SetRotation
-  href: api/HnSF.Camera.LookHandler.html#HnSF_Camera_LookHandler_SetRotation_
-  commentId: Overload:HnSF.Camera.LookHandler.SetRotation
-  isSpec: "True"
-  fullName: HnSF.Camera.LookHandler.SetRotation
-  nameWithType: LookHandler.SetRotation
 - uid: HnSF.Combat
   name: HnSF.Combat
   href: api/HnSF.Combat.html
@@ -1042,19 +933,6 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.BoxDefinition.BoxDefinition
   nameWithType: BoxDefinition.BoxDefinition
-- uid: HnSF.Combat.BoxDefinition.DrawInspector
-  name: DrawInspector()
-  href: api/HnSF.Combat.BoxDefinition.html#HnSF_Combat_BoxDefinition_DrawInspector
-  commentId: M:HnSF.Combat.BoxDefinition.DrawInspector
-  fullName: HnSF.Combat.BoxDefinition.DrawInspector()
-  nameWithType: BoxDefinition.DrawInspector()
-- uid: HnSF.Combat.BoxDefinition.DrawInspector*
-  name: DrawInspector
-  href: api/HnSF.Combat.BoxDefinition.html#HnSF_Combat_BoxDefinition_DrawInspector_
-  commentId: Overload:HnSF.Combat.BoxDefinition.DrawInspector
-  isSpec: "True"
-  fullName: HnSF.Combat.BoxDefinition.DrawInspector
-  nameWithType: BoxDefinition.DrawInspector
 - uid: HnSF.Combat.BoxDefinition.height
   name: height
   href: api/HnSF.Combat.BoxDefinition.html#HnSF_Combat_BoxDefinition_height
@@ -1110,19 +988,6 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.BoxDefinitionBase.BoxDefinitionBase
   nameWithType: BoxDefinitionBase.BoxDefinitionBase
-- uid: HnSF.Combat.BoxDefinitionBase.DrawInspector
-  name: DrawInspector()
-  href: api/HnSF.Combat.BoxDefinitionBase.html#HnSF_Combat_BoxDefinitionBase_DrawInspector
-  commentId: M:HnSF.Combat.BoxDefinitionBase.DrawInspector
-  fullName: HnSF.Combat.BoxDefinitionBase.DrawInspector()
-  nameWithType: BoxDefinitionBase.DrawInspector()
-- uid: HnSF.Combat.BoxDefinitionBase.DrawInspector*
-  name: DrawInspector
-  href: api/HnSF.Combat.BoxDefinitionBase.html#HnSF_Combat_BoxDefinitionBase_DrawInspector_
-  commentId: Overload:HnSF.Combat.BoxDefinitionBase.DrawInspector
-  isSpec: "True"
-  fullName: HnSF.Combat.BoxDefinitionBase.DrawInspector
-  nameWithType: BoxDefinitionBase.DrawInspector
 - uid: HnSF.Combat.BoxDefinitionBase.shape
   name: shape
   href: api/HnSF.Combat.BoxDefinitionBase.html#HnSF_Combat_BoxDefinitionBase_shape
@@ -1554,12 +1419,6 @@ references:
   commentId: F:HnSF.Combat.HitboxGroup.hitboxHitInfo
   fullName: HnSF.Combat.HitboxGroup.hitboxHitInfo
   nameWithType: HitboxGroup.hitboxHitInfo
-- uid: HnSF.Combat.HitboxGroup.hitGroupType
-  name: hitGroupType
-  href: api/HnSF.Combat.HitboxGroup.html#HnSF_Combat_HitboxGroup_hitGroupType
-  commentId: F:HnSF.Combat.HitboxGroup.hitGroupType
-  fullName: HnSF.Combat.HitboxGroup.hitGroupType
-  nameWithType: HitboxGroup.hitGroupType
 - uid: HnSF.Combat.HitboxGroup.ID
   name: ID
   href: api/HnSF.Combat.HitboxGroup.html#HnSF_Combat_HitboxGroup_ID
@@ -1597,37 +1456,55 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.HitboxGroupEditorWindow.DrawHitboxGroupInfo
   nameWithType: HitboxGroupEditorWindow.DrawHitboxGroupInfo
-- uid: HnSF.Combat.HitboxGroupEditorWindow.DrawHitboxOptions(System.Int32)
-  name: DrawHitboxOptions(Int32)
-  href: api/HnSF.Combat.HitboxGroupEditorWindow.html#HnSF_Combat_HitboxGroupEditorWindow_DrawHitboxOptions_System_Int32_
-  commentId: M:HnSF.Combat.HitboxGroupEditorWindow.DrawHitboxOptions(System.Int32)
-  fullName: HnSF.Combat.HitboxGroupEditorWindow.DrawHitboxOptions(System.Int32)
-  nameWithType: HitboxGroupEditorWindow.DrawHitboxOptions(Int32)
-- uid: HnSF.Combat.HitboxGroupEditorWindow.DrawHitboxOptions*
-  name: DrawHitboxOptions
-  href: api/HnSF.Combat.HitboxGroupEditorWindow.html#HnSF_Combat_HitboxGroupEditorWindow_DrawHitboxOptions_
-  commentId: Overload:HnSF.Combat.HitboxGroupEditorWindow.DrawHitboxOptions
+- uid: HnSF.Combat.HitboxGroupEditorWindow.GetHitboxGroupProperty
+  name: GetHitboxGroupProperty()
+  href: api/HnSF.Combat.HitboxGroupEditorWindow.html#HnSF_Combat_HitboxGroupEditorWindow_GetHitboxGroupProperty
+  commentId: M:HnSF.Combat.HitboxGroupEditorWindow.GetHitboxGroupProperty
+  fullName: HnSF.Combat.HitboxGroupEditorWindow.GetHitboxGroupProperty()
+  nameWithType: HitboxGroupEditorWindow.GetHitboxGroupProperty()
+- uid: HnSF.Combat.HitboxGroupEditorWindow.GetHitboxGroupProperty*
+  name: GetHitboxGroupProperty
+  href: api/HnSF.Combat.HitboxGroupEditorWindow.html#HnSF_Combat_HitboxGroupEditorWindow_GetHitboxGroupProperty_
+  commentId: Overload:HnSF.Combat.HitboxGroupEditorWindow.GetHitboxGroupProperty
   isSpec: "True"
-  fullName: HnSF.Combat.HitboxGroupEditorWindow.DrawHitboxOptions
-  nameWithType: HitboxGroupEditorWindow.DrawHitboxOptions
-- uid: HnSF.Combat.HitboxGroupEditorWindow.hitboxGroup
-  name: hitboxGroup
-  href: api/HnSF.Combat.HitboxGroupEditorWindow.html#HnSF_Combat_HitboxGroupEditorWindow_hitboxGroup
-  commentId: F:HnSF.Combat.HitboxGroupEditorWindow.hitboxGroup
-  fullName: HnSF.Combat.HitboxGroupEditorWindow.hitboxGroup
-  nameWithType: HitboxGroupEditorWindow.hitboxGroup
+  fullName: HnSF.Combat.HitboxGroupEditorWindow.GetHitboxGroupProperty
+  nameWithType: HitboxGroupEditorWindow.GetHitboxGroupProperty
+- uid: HnSF.Combat.HitboxGroupEditorWindow.hGroup
+  name: hGroup
+  href: api/HnSF.Combat.HitboxGroupEditorWindow.html#HnSF_Combat_HitboxGroupEditorWindow_hGroup
+  commentId: F:HnSF.Combat.HitboxGroupEditorWindow.hGroup
+  fullName: HnSF.Combat.HitboxGroupEditorWindow.hGroup
+  nameWithType: HitboxGroupEditorWindow.hGroup
+- uid: HnSF.Combat.HitboxGroupEditorWindow.hitboxGroupObject
+  name: hitboxGroupObject
+  href: api/HnSF.Combat.HitboxGroupEditorWindow.html#HnSF_Combat_HitboxGroupEditorWindow_hitboxGroupObject
+  commentId: F:HnSF.Combat.HitboxGroupEditorWindow.hitboxGroupObject
+  fullName: HnSF.Combat.HitboxGroupEditorWindow.hitboxGroupObject
+  nameWithType: HitboxGroupEditorWindow.hitboxGroupObject
+- uid: HnSF.Combat.HitboxGroupEditorWindow.hitboxGroupPropertyIndex
+  name: hitboxGroupPropertyIndex
+  href: api/HnSF.Combat.HitboxGroupEditorWindow.html#HnSF_Combat_HitboxGroupEditorWindow_hitboxGroupPropertyIndex
+  commentId: F:HnSF.Combat.HitboxGroupEditorWindow.hitboxGroupPropertyIndex
+  fullName: HnSF.Combat.HitboxGroupEditorWindow.hitboxGroupPropertyIndex
+  nameWithType: HitboxGroupEditorWindow.hitboxGroupPropertyIndex
+- uid: HnSF.Combat.HitboxGroupEditorWindow.hitboxGroupPropertyName
+  name: hitboxGroupPropertyName
+  href: api/HnSF.Combat.HitboxGroupEditorWindow.html#HnSF_Combat_HitboxGroupEditorWindow_hitboxGroupPropertyName
+  commentId: F:HnSF.Combat.HitboxGroupEditorWindow.hitboxGroupPropertyName
+  fullName: HnSF.Combat.HitboxGroupEditorWindow.hitboxGroupPropertyName
+  nameWithType: HitboxGroupEditorWindow.hitboxGroupPropertyName
 - uid: HnSF.Combat.HitboxGroupEditorWindow.hitInfoTypes
   name: hitInfoTypes
   href: api/HnSF.Combat.HitboxGroupEditorWindow.html#HnSF_Combat_HitboxGroupEditorWindow_hitInfoTypes
   commentId: F:HnSF.Combat.HitboxGroupEditorWindow.hitInfoTypes
   fullName: HnSF.Combat.HitboxGroupEditorWindow.hitInfoTypes
   nameWithType: HitboxGroupEditorWindow.hitInfoTypes
-- uid: HnSF.Combat.HitboxGroupEditorWindow.Init(HnSF.Combat.HitboxGroup)
-  name: Init(HitboxGroup)
-  href: api/HnSF.Combat.HitboxGroupEditorWindow.html#HnSF_Combat_HitboxGroupEditorWindow_Init_HnSF_Combat_HitboxGroup_
-  commentId: M:HnSF.Combat.HitboxGroupEditorWindow.Init(HnSF.Combat.HitboxGroup)
-  fullName: HnSF.Combat.HitboxGroupEditorWindow.Init(HnSF.Combat.HitboxGroup)
-  nameWithType: HitboxGroupEditorWindow.Init(HitboxGroup)
+- uid: HnSF.Combat.HitboxGroupEditorWindow.Init(UnityEngine.Object,HnSF.Combat.HitboxGroup,System.String,System.Int32)
+  name: Init(UnityEngine.Object, HitboxGroup, String, Int32)
+  href: api/HnSF.Combat.HitboxGroupEditorWindow.html#HnSF_Combat_HitboxGroupEditorWindow_Init_UnityEngine_Object_HnSF_Combat_HitboxGroup_System_String_System_Int32_
+  commentId: M:HnSF.Combat.HitboxGroupEditorWindow.Init(UnityEngine.Object,HnSF.Combat.HitboxGroup,System.String,System.Int32)
+  fullName: HnSF.Combat.HitboxGroupEditorWindow.Init(UnityEngine.Object, HnSF.Combat.HitboxGroup, System.String, System.Int32)
+  nameWithType: HitboxGroupEditorWindow.Init(UnityEngine.Object, HitboxGroup, String, Int32)
 - uid: HnSF.Combat.HitboxGroupEditorWindow.Init*
   name: Init
   href: api/HnSF.Combat.HitboxGroupEditorWindow.html#HnSF_Combat_HitboxGroupEditorWindow_Init_
@@ -1674,6 +1551,171 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.HitboxGroupEditorWindow.OnHitInfoSelected
   nameWithType: HitboxGroupEditorWindow.OnHitInfoSelected
+- uid: HnSF.Combat.HitboxGroupEditorWindow.so
+  name: so
+  href: api/HnSF.Combat.HitboxGroupEditorWindow.html#HnSF_Combat_HitboxGroupEditorWindow_so
+  commentId: F:HnSF.Combat.HitboxGroupEditorWindow.so
+  fullName: HnSF.Combat.HitboxGroupEditorWindow.so
+  nameWithType: HitboxGroupEditorWindow.so
+- uid: HnSF.Combat.HitboxManager
+  name: HitboxManager
+  href: api/HnSF.Combat.HitboxManager.html
+  commentId: T:HnSF.Combat.HitboxManager
+  fullName: HnSF.Combat.HitboxManager
+  nameWithType: HitboxManager
+- uid: HnSF.Combat.HitboxManager.BuildHurtInfo(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox)
+  name: BuildHurtInfo(HitboxGroup, Int32, Hurtbox)
+  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_BuildHurtInfo_HnSF_Combat_HitboxGroup_System_Int32_HnSF_Combat_Hurtbox_
+  commentId: M:HnSF.Combat.HitboxManager.BuildHurtInfo(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox)
+  fullName: HnSF.Combat.HitboxManager.BuildHurtInfo(HnSF.Combat.HitboxGroup, System.Int32, HnSF.Combat.Hurtbox)
+  nameWithType: HitboxManager.BuildHurtInfo(HitboxGroup, Int32, Hurtbox)
+- uid: HnSF.Combat.HitboxManager.BuildHurtInfo*
+  name: BuildHurtInfo
+  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_BuildHurtInfo_
+  commentId: Overload:HnSF.Combat.HitboxManager.BuildHurtInfo
+  isSpec: "True"
+  fullName: HnSF.Combat.HitboxManager.BuildHurtInfo
+  nameWithType: HitboxManager.BuildHurtInfo
+- uid: HnSF.Combat.HitboxManager.CheckBoxCollision(HnSF.Combat.HitboxGroup,System.Int32)
+  name: CheckBoxCollision(HitboxGroup, Int32)
+  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_CheckBoxCollision_HnSF_Combat_HitboxGroup_System_Int32_
+  commentId: M:HnSF.Combat.HitboxManager.CheckBoxCollision(HnSF.Combat.HitboxGroup,System.Int32)
+  fullName: HnSF.Combat.HitboxManager.CheckBoxCollision(HnSF.Combat.HitboxGroup, System.Int32)
+  nameWithType: HitboxManager.CheckBoxCollision(HitboxGroup, Int32)
+- uid: HnSF.Combat.HitboxManager.CheckBoxCollision*
+  name: CheckBoxCollision
+  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_CheckBoxCollision_
+  commentId: Overload:HnSF.Combat.HitboxManager.CheckBoxCollision
+  isSpec: "True"
+  fullName: HnSF.Combat.HitboxManager.CheckBoxCollision
+  nameWithType: HitboxManager.CheckBoxCollision
+- uid: HnSF.Combat.HitboxManager.CheckForCollision(System.Int32,HnSF.Combat.HitboxGroup)
+  name: CheckForCollision(Int32, HitboxGroup)
+  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_CheckForCollision_System_Int32_HnSF_Combat_HitboxGroup_
+  commentId: M:HnSF.Combat.HitboxManager.CheckForCollision(System.Int32,HnSF.Combat.HitboxGroup)
+  fullName: HnSF.Combat.HitboxManager.CheckForCollision(System.Int32, HnSF.Combat.HitboxGroup)
+  nameWithType: HitboxManager.CheckForCollision(Int32, HitboxGroup)
+- uid: HnSF.Combat.HitboxManager.CheckForCollision*
+  name: CheckForCollision
+  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_CheckForCollision_
+  commentId: Overload:HnSF.Combat.HitboxManager.CheckForCollision
+  isSpec: "True"
+  fullName: HnSF.Combat.HitboxManager.CheckForCollision
+  nameWithType: HitboxManager.CheckForCollision
+- uid: HnSF.Combat.HitboxManager.collidedIHurtables
+  name: collidedIHurtables
+  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_collidedIHurtables
+  commentId: F:HnSF.Combat.HitboxManager.collidedIHurtables
+  fullName: HnSF.Combat.HitboxManager.collidedIHurtables
+  nameWithType: HitboxManager.collidedIHurtables
+- uid: HnSF.Combat.HitboxManager.GetIDGroupCollisions(System.Int32)
+  name: GetIDGroupCollisions(Int32)
+  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_GetIDGroupCollisions_System_Int32_
+  commentId: M:HnSF.Combat.HitboxManager.GetIDGroupCollisions(System.Int32)
+  fullName: HnSF.Combat.HitboxManager.GetIDGroupCollisions(System.Int32)
+  nameWithType: HitboxManager.GetIDGroupCollisions(Int32)
+- uid: HnSF.Combat.HitboxManager.GetIDGroupCollisions*
+  name: GetIDGroupCollisions
+  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_GetIDGroupCollisions_
+  commentId: Overload:HnSF.Combat.HitboxManager.GetIDGroupCollisions
+  isSpec: "True"
+  fullName: HnSF.Combat.HitboxManager.GetIDGroupCollisions
+  nameWithType: HitboxManager.GetIDGroupCollisions
+- uid: HnSF.Combat.HitboxManager.HitboxGroupEventAction
+  name: HitboxManager.HitboxGroupEventAction
+  href: api/HnSF.Combat.HitboxManager.HitboxGroupEventAction.html
+  commentId: T:HnSF.Combat.HitboxManager.HitboxGroupEventAction
+  fullName: HnSF.Combat.HitboxManager.HitboxGroupEventAction
+  nameWithType: HitboxManager.HitboxGroupEventAction
+- uid: HnSF.Combat.HitboxManager.HitboxGroupHasHurt(System.Int32,System.Int32)
+  name: HitboxGroupHasHurt(Int32, Int32)
+  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_HitboxGroupHasHurt_System_Int32_System_Int32_
+  commentId: M:HnSF.Combat.HitboxManager.HitboxGroupHasHurt(System.Int32,System.Int32)
+  fullName: HnSF.Combat.HitboxManager.HitboxGroupHasHurt(System.Int32, System.Int32)
+  nameWithType: HitboxManager.HitboxGroupHasHurt(Int32, Int32)
+- uid: HnSF.Combat.HitboxManager.HitboxGroupHasHurt*
+  name: HitboxGroupHasHurt
+  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_HitboxGroupHasHurt_
+  commentId: Overload:HnSF.Combat.HitboxManager.HitboxGroupHasHurt
+  isSpec: "True"
+  fullName: HnSF.Combat.HitboxManager.HitboxGroupHasHurt
+  nameWithType: HitboxManager.HitboxGroupHasHurt
+- uid: HnSF.Combat.HitboxManager.HurtHurtbox(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox)
+  name: HurtHurtbox(HitboxGroup, Int32, Hurtbox)
+  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_HurtHurtbox_HnSF_Combat_HitboxGroup_System_Int32_HnSF_Combat_Hurtbox_
+  commentId: M:HnSF.Combat.HitboxManager.HurtHurtbox(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox)
+  fullName: HnSF.Combat.HitboxManager.HurtHurtbox(HnSF.Combat.HitboxGroup, System.Int32, HnSF.Combat.Hurtbox)
+  nameWithType: HitboxManager.HurtHurtbox(HitboxGroup, Int32, Hurtbox)
+- uid: HnSF.Combat.HitboxManager.HurtHurtbox*
+  name: HurtHurtbox
+  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_HurtHurtbox_
+  commentId: Overload:HnSF.Combat.HitboxManager.HurtHurtbox
+  isSpec: "True"
+  fullName: HnSF.Combat.HitboxManager.HurtHurtbox
+  nameWithType: HitboxManager.HurtHurtbox
+- uid: HnSF.Combat.HitboxManager.IDGroupCollisionInfo
+  name: HitboxManager.IDGroupCollisionInfo
+  href: api/HnSF.Combat.HitboxManager.IDGroupCollisionInfo.html
+  commentId: T:HnSF.Combat.HitboxManager.IDGroupCollisionInfo
+  fullName: HnSF.Combat.HitboxManager.IDGroupCollisionInfo
+  nameWithType: HitboxManager.IDGroupCollisionInfo
+- uid: HnSF.Combat.HitboxManager.IDGroupCollisionInfo.hitboxGroups
+  name: hitboxGroups
+  href: api/HnSF.Combat.HitboxManager.IDGroupCollisionInfo.html#HnSF_Combat_HitboxManager_IDGroupCollisionInfo_hitboxGroups
+  commentId: F:HnSF.Combat.HitboxManager.IDGroupCollisionInfo.hitboxGroups
+  fullName: HnSF.Combat.HitboxManager.IDGroupCollisionInfo.hitboxGroups
+  nameWithType: HitboxManager.IDGroupCollisionInfo.hitboxGroups
+- uid: HnSF.Combat.HitboxManager.IDGroupCollisionInfo.hitIHurtables
+  name: hitIHurtables
+  href: api/HnSF.Combat.HitboxManager.IDGroupCollisionInfo.html#HnSF_Combat_HitboxManager_IDGroupCollisionInfo_hitIHurtables
+  commentId: F:HnSF.Combat.HitboxManager.IDGroupCollisionInfo.hitIHurtables
+  fullName: HnSF.Combat.HitboxManager.IDGroupCollisionInfo.hitIHurtables
+  nameWithType: HitboxManager.IDGroupCollisionInfo.hitIHurtables
+- uid: HnSF.Combat.HitboxManager.IDGroupHasHurt(System.Int32)
+  name: IDGroupHasHurt(Int32)
+  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_IDGroupHasHurt_System_Int32_
+  commentId: M:HnSF.Combat.HitboxManager.IDGroupHasHurt(System.Int32)
+  fullName: HnSF.Combat.HitboxManager.IDGroupHasHurt(System.Int32)
+  nameWithType: HitboxManager.IDGroupHasHurt(Int32)
+- uid: HnSF.Combat.HitboxManager.IDGroupHasHurt*
+  name: IDGroupHasHurt
+  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_IDGroupHasHurt_
+  commentId: Overload:HnSF.Combat.HitboxManager.IDGroupHasHurt
+  isSpec: "True"
+  fullName: HnSF.Combat.HitboxManager.IDGroupHasHurt
+  nameWithType: HitboxManager.IDGroupHasHurt
+- uid: HnSF.Combat.HitboxManager.OnHitHurtbox
+  name: OnHitHurtbox
+  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_OnHitHurtbox
+  commentId: E:HnSF.Combat.HitboxManager.OnHitHurtbox
+  fullName: HnSF.Combat.HitboxManager.OnHitHurtbox
+  nameWithType: HitboxManager.OnHitHurtbox
+- uid: HnSF.Combat.HitboxManager.Reset
+  name: Reset()
+  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_Reset
+  commentId: M:HnSF.Combat.HitboxManager.Reset
+  fullName: HnSF.Combat.HitboxManager.Reset()
+  nameWithType: HitboxManager.Reset()
+- uid: HnSF.Combat.HitboxManager.Reset*
+  name: Reset
+  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_Reset_
+  commentId: Overload:HnSF.Combat.HitboxManager.Reset
+  isSpec: "True"
+  fullName: HnSF.Combat.HitboxManager.Reset
+  nameWithType: HitboxManager.Reset
+- uid: HnSF.Combat.HitboxManager.ShouldHurt(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox)
+  name: ShouldHurt(HitboxGroup, Int32, Hurtbox)
+  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_ShouldHurt_HnSF_Combat_HitboxGroup_System_Int32_HnSF_Combat_Hurtbox_
+  commentId: M:HnSF.Combat.HitboxManager.ShouldHurt(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox)
+  fullName: HnSF.Combat.HitboxManager.ShouldHurt(HnSF.Combat.HitboxGroup, System.Int32, HnSF.Combat.Hurtbox)
+  nameWithType: HitboxManager.ShouldHurt(HitboxGroup, Int32, Hurtbox)
+- uid: HnSF.Combat.HitboxManager.ShouldHurt*
+  name: ShouldHurt
+  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_ShouldHurt_
+  commentId: Overload:HnSF.Combat.HitboxManager.ShouldHurt
+  isSpec: "True"
+  fullName: HnSF.Combat.HitboxManager.ShouldHurt
+  nameWithType: HitboxManager.ShouldHurt
 - uid: HnSF.Combat.HitboxType
   name: HitboxType
   href: api/HnSF.Combat.HitboxType.html
@@ -1723,108 +1765,24 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.HitInfo.HitInfo
   nameWithType: HitInfo.HitInfo
-- uid: HnSF.Combat.HitInfo.breakArmor
-  name: breakArmor
-  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_breakArmor
-  commentId: F:HnSF.Combat.HitInfo.breakArmor
-  fullName: HnSF.Combat.HitInfo.breakArmor
-  nameWithType: HitInfo.breakArmor
+- uid: HnSF.Combat.HitInfo.airOnly
+  name: airOnly
+  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_airOnly
+  commentId: F:HnSF.Combat.HitInfo.airOnly
+  fullName: HnSF.Combat.HitInfo.airOnly
+  nameWithType: HitInfo.airOnly
 - uid: HnSF.Combat.HitInfo.causesTumble
   name: causesTumble
   href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_causesTumble
   commentId: F:HnSF.Combat.HitInfo.causesTumble
   fullName: HnSF.Combat.HitInfo.causesTumble
   nameWithType: HitInfo.causesTumble
-- uid: HnSF.Combat.HitInfo.damageOnBlock
-  name: damageOnBlock
-  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_damageOnBlock
-  commentId: F:HnSF.Combat.HitInfo.damageOnBlock
-  fullName: HnSF.Combat.HitInfo.damageOnBlock
-  nameWithType: HitInfo.damageOnBlock
 - uid: HnSF.Combat.HitInfo.damageOnHit
   name: damageOnHit
   href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_damageOnHit
   commentId: F:HnSF.Combat.HitInfo.damageOnHit
   fullName: HnSF.Combat.HitInfo.damageOnHit
   nameWithType: HitInfo.damageOnHit
-- uid: HnSF.Combat.HitInfo.DrawHitDamageOptions
-  name: DrawHitDamageOptions()
-  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_DrawHitDamageOptions
-  commentId: M:HnSF.Combat.HitInfo.DrawHitDamageOptions
-  fullName: HnSF.Combat.HitInfo.DrawHitDamageOptions()
-  nameWithType: HitInfo.DrawHitDamageOptions()
-- uid: HnSF.Combat.HitInfo.DrawHitDamageOptions*
-  name: DrawHitDamageOptions
-  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_DrawHitDamageOptions_
-  commentId: Overload:HnSF.Combat.HitInfo.DrawHitDamageOptions
-  isSpec: "True"
-  fullName: HnSF.Combat.HitInfo.DrawHitDamageOptions
-  nameWithType: HitInfo.DrawHitDamageOptions
-- uid: HnSF.Combat.HitInfo.DrawHitEffectsOptions
-  name: DrawHitEffectsOptions()
-  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_DrawHitEffectsOptions
-  commentId: M:HnSF.Combat.HitInfo.DrawHitEffectsOptions
-  fullName: HnSF.Combat.HitInfo.DrawHitEffectsOptions()
-  nameWithType: HitInfo.DrawHitEffectsOptions()
-- uid: HnSF.Combat.HitInfo.DrawHitEffectsOptions*
-  name: DrawHitEffectsOptions
-  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_DrawHitEffectsOptions_
-  commentId: Overload:HnSF.Combat.HitInfo.DrawHitEffectsOptions
-  isSpec: "True"
-  fullName: HnSF.Combat.HitInfo.DrawHitEffectsOptions
-  nameWithType: HitInfo.DrawHitEffectsOptions
-- uid: HnSF.Combat.HitInfo.DrawHitForcesOptions
-  name: DrawHitForcesOptions()
-  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_DrawHitForcesOptions
-  commentId: M:HnSF.Combat.HitInfo.DrawHitForcesOptions
-  fullName: HnSF.Combat.HitInfo.DrawHitForcesOptions()
-  nameWithType: HitInfo.DrawHitForcesOptions()
-- uid: HnSF.Combat.HitInfo.DrawHitForcesOptions*
-  name: DrawHitForcesOptions
-  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_DrawHitForcesOptions_
-  commentId: Overload:HnSF.Combat.HitInfo.DrawHitForcesOptions
-  isSpec: "True"
-  fullName: HnSF.Combat.HitInfo.DrawHitForcesOptions
-  nameWithType: HitInfo.DrawHitForcesOptions
-- uid: HnSF.Combat.HitInfo.DrawHitStunOptions
-  name: DrawHitStunOptions()
-  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_DrawHitStunOptions
-  commentId: M:HnSF.Combat.HitInfo.DrawHitStunOptions
-  fullName: HnSF.Combat.HitInfo.DrawHitStunOptions()
-  nameWithType: HitInfo.DrawHitStunOptions()
-- uid: HnSF.Combat.HitInfo.DrawHitStunOptions*
-  name: DrawHitStunOptions
-  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_DrawHitStunOptions_
-  commentId: Overload:HnSF.Combat.HitInfo.DrawHitStunOptions
-  isSpec: "True"
-  fullName: HnSF.Combat.HitInfo.DrawHitStunOptions
-  nameWithType: HitInfo.DrawHitStunOptions
-- uid: HnSF.Combat.HitInfo.DrawInspectorGrabInfo
-  name: DrawInspectorGrabInfo()
-  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_DrawInspectorGrabInfo
-  commentId: M:HnSF.Combat.HitInfo.DrawInspectorGrabInfo
-  fullName: HnSF.Combat.HitInfo.DrawInspectorGrabInfo()
-  nameWithType: HitInfo.DrawInspectorGrabInfo()
-- uid: HnSF.Combat.HitInfo.DrawInspectorGrabInfo*
-  name: DrawInspectorGrabInfo
-  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_DrawInspectorGrabInfo_
-  commentId: Overload:HnSF.Combat.HitInfo.DrawInspectorGrabInfo
-  isSpec: "True"
-  fullName: HnSF.Combat.HitInfo.DrawInspectorGrabInfo
-  nameWithType: HitInfo.DrawInspectorGrabInfo
-- uid: HnSF.Combat.HitInfo.DrawInspectorHitInfo
-  name: DrawInspectorHitInfo()
-  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_DrawInspectorHitInfo
-  commentId: M:HnSF.Combat.HitInfo.DrawInspectorHitInfo
-  fullName: HnSF.Combat.HitInfo.DrawInspectorHitInfo()
-  nameWithType: HitInfo.DrawInspectorHitInfo()
-- uid: HnSF.Combat.HitInfo.DrawInspectorHitInfo*
-  name: DrawInspectorHitInfo
-  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_DrawInspectorHitInfo_
-  commentId: Overload:HnSF.Combat.HitInfo.DrawInspectorHitInfo
-  isSpec: "True"
-  fullName: HnSF.Combat.HitInfo.DrawInspectorHitInfo
-  nameWithType: HitInfo.DrawInspectorHitInfo
 - uid: HnSF.Combat.HitInfo.forceIncludeYForce
   name: forceIncludeYForce
   href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_forceIncludeYForce
@@ -1843,24 +1801,30 @@ references:
   commentId: F:HnSF.Combat.HitInfo.groundBounces
   fullName: HnSF.Combat.HitInfo.groundBounces
   nameWithType: HitInfo.groundBounces
+- uid: HnSF.Combat.HitInfo.groundOnly
+  name: groundOnly
+  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_groundOnly
+  commentId: F:HnSF.Combat.HitInfo.groundOnly
+  fullName: HnSF.Combat.HitInfo.groundOnly
+  nameWithType: HitInfo.groundOnly
 - uid: HnSF.Combat.HitInfo.knockdown
   name: knockdown
   href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_knockdown
   commentId: F:HnSF.Combat.HitInfo.knockdown
   fullName: HnSF.Combat.HitInfo.knockdown
   nameWithType: HitInfo.knockdown
-- uid: HnSF.Combat.HitInfo.opponentForceDir
-  name: opponentForceDir
-  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_opponentForceDir
-  commentId: F:HnSF.Combat.HitInfo.opponentForceDir
-  fullName: HnSF.Combat.HitInfo.opponentForceDir
-  nameWithType: HitInfo.opponentForceDir
-- uid: HnSF.Combat.HitInfo.opponentForceMagnitude
-  name: opponentForceMagnitude
-  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_opponentForceMagnitude
-  commentId: F:HnSF.Combat.HitInfo.opponentForceMagnitude
-  fullName: HnSF.Combat.HitInfo.opponentForceMagnitude
-  nameWithType: HitInfo.opponentForceMagnitude
+- uid: HnSF.Combat.HitInfo.opponentForce
+  name: opponentForce
+  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_opponentForce
+  commentId: F:HnSF.Combat.HitInfo.opponentForce
+  fullName: HnSF.Combat.HitInfo.opponentForce
+  nameWithType: HitInfo.opponentForce
+- uid: HnSF.Combat.HitInfo.opponentForceMultiplier
+  name: opponentForceMultiplier
+  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_opponentForceMultiplier
+  commentId: F:HnSF.Combat.HitInfo.opponentForceMultiplier
+  fullName: HnSF.Combat.HitInfo.opponentForceMultiplier
+  nameWithType: HitInfo.opponentForceMultiplier
 - uid: HnSF.Combat.HitInfo.opponentMaxMagnitude
   name: opponentMaxMagnitude
   href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_opponentMaxMagnitude
@@ -1879,12 +1843,6 @@ references:
   commentId: F:HnSF.Combat.HitInfo.throwConfirm
   fullName: HnSF.Combat.HitInfo.throwConfirm
   nameWithType: HitInfo.throwConfirm
-- uid: HnSF.Combat.HitInfo.unblockable
-  name: unblockable
-  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_unblockable
-  commentId: F:HnSF.Combat.HitInfo.unblockable
-  fullName: HnSF.Combat.HitInfo.unblockable
-  nameWithType: HitInfo.unblockable
 - uid: HnSF.Combat.HitInfo.wallBounceForce
   name: wallBounceForce
   href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_wallBounceForce
@@ -1922,18 +1880,18 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.HitInfoBase.HitInfoBase
   nameWithType: HitInfoBase.HitInfoBase
-- uid: HnSF.Combat.HitInfoBase.airOnly
-  name: airOnly
-  href: api/HnSF.Combat.HitInfoBase.html#HnSF_Combat_HitInfoBase_airOnly
-  commentId: F:HnSF.Combat.HitInfoBase.airOnly
-  fullName: HnSF.Combat.HitInfoBase.airOnly
-  nameWithType: HitInfoBase.airOnly
 - uid: HnSF.Combat.HitInfoBase.attackerHitstop
   name: attackerHitstop
   href: api/HnSF.Combat.HitInfoBase.html#HnSF_Combat_HitInfoBase_attackerHitstop
   commentId: F:HnSF.Combat.HitInfoBase.attackerHitstop
   fullName: HnSF.Combat.HitInfoBase.attackerHitstop
   nameWithType: HitInfoBase.attackerHitstop
+- uid: HnSF.Combat.HitInfoBase.autoLink
+  name: autoLink
+  href: api/HnSF.Combat.HitInfoBase.html#HnSF_Combat_HitInfoBase_autoLink
+  commentId: F:HnSF.Combat.HitInfoBase.autoLink
+  fullName: HnSF.Combat.HitInfoBase.autoLink
+  nameWithType: HitInfoBase.autoLink
 - uid: HnSF.Combat.HitInfoBase.continuousHit
   name: continuousHit
   href: api/HnSF.Combat.HitInfoBase.html#HnSF_Combat_HitInfoBase_continuousHit
@@ -1978,12 +1936,6 @@ references:
   commentId: F:HnSF.Combat.HitInfoBase.forceType
   fullName: HnSF.Combat.HitInfoBase.forceType
   nameWithType: HitInfoBase.forceType
-- uid: HnSF.Combat.HitInfoBase.groundOnly
-  name: groundOnly
-  href: api/HnSF.Combat.HitInfoBase.html#HnSF_Combat_HitInfoBase_groundOnly
-  commentId: F:HnSF.Combat.HitInfoBase.groundOnly
-  fullName: HnSF.Combat.HitInfoBase.groundOnly
-  nameWithType: HitInfoBase.groundOnly
 - uid: HnSF.Combat.HitInfoBase.hitKills
   name: hitKills
   href: api/HnSF.Combat.HitInfoBase.html#HnSF_Combat_HitInfoBase_hitKills
@@ -2002,6 +1954,12 @@ references:
   commentId: F:HnSF.Combat.HitInfoBase.hitstun
   fullName: HnSF.Combat.HitInfoBase.hitstun
   nameWithType: HitInfoBase.hitstun
+- uid: HnSF.Combat.HitInfoBase.hitType
+  name: hitType
+  href: api/HnSF.Combat.HitInfoBase.html#HnSF_Combat_HitInfoBase_hitType
+  commentId: F:HnSF.Combat.HitInfoBase.hitType
+  fullName: HnSF.Combat.HitInfoBase.hitType
+  nameWithType: HitInfoBase.hitType
 - uid: HnSF.Combat.HitInfoBase.opponentResetXForce
   name: opponentResetXForce
   href: api/HnSF.Combat.HitInfoBase.html#HnSF_Combat_HitInfoBase_opponentResetXForce
@@ -2020,6 +1978,178 @@ references:
   commentId: F:HnSF.Combat.HitInfoBase.spaceBetweenHits
   fullName: HnSF.Combat.HitInfoBase.spaceBetweenHits
   nameWithType: HitInfoBase.spaceBetweenHits
+- uid: HnSF.Combat.HitInfoBasePropertyDrawer
+  name: HitInfoBasePropertyDrawer
+  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html
+  commentId: T:HnSF.Combat.HitInfoBasePropertyDrawer
+  fullName: HnSF.Combat.HitInfoBasePropertyDrawer
+  nameWithType: HitInfoBasePropertyDrawer
+- uid: HnSF.Combat.HitInfoBasePropertyDrawer.DrawForcesGroup(Rect@,SerializedProperty,System.Single)
+  name: DrawForcesGroup(ref Rect, SerializedProperty, Single)
+  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_DrawForcesGroup_Rect__SerializedProperty_System_Single_
+  commentId: M:HnSF.Combat.HitInfoBasePropertyDrawer.DrawForcesGroup(Rect@,SerializedProperty,System.Single)
+  name.vb: DrawForcesGroup(ByRef Rect, SerializedProperty, Single)
+  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.DrawForcesGroup(ref Rect, SerializedProperty, System.Single)
+  fullName.vb: HnSF.Combat.HitInfoBasePropertyDrawer.DrawForcesGroup(ByRef Rect, SerializedProperty, System.Single)
+  nameWithType: HitInfoBasePropertyDrawer.DrawForcesGroup(ref Rect, SerializedProperty, Single)
+  nameWithType.vb: HitInfoBasePropertyDrawer.DrawForcesGroup(ByRef Rect, SerializedProperty, Single)
+- uid: HnSF.Combat.HitInfoBasePropertyDrawer.DrawForcesGroup*
+  name: DrawForcesGroup
+  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_DrawForcesGroup_
+  commentId: Overload:HnSF.Combat.HitInfoBasePropertyDrawer.DrawForcesGroup
+  isSpec: "True"
+  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.DrawForcesGroup
+  nameWithType: HitInfoBasePropertyDrawer.DrawForcesGroup
+- uid: HnSF.Combat.HitInfoBasePropertyDrawer.DrawGeneralGroup(Rect@,SerializedProperty,System.Single)
+  name: DrawGeneralGroup(ref Rect, SerializedProperty, Single)
+  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_DrawGeneralGroup_Rect__SerializedProperty_System_Single_
+  commentId: M:HnSF.Combat.HitInfoBasePropertyDrawer.DrawGeneralGroup(Rect@,SerializedProperty,System.Single)
+  name.vb: DrawGeneralGroup(ByRef Rect, SerializedProperty, Single)
+  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.DrawGeneralGroup(ref Rect, SerializedProperty, System.Single)
+  fullName.vb: HnSF.Combat.HitInfoBasePropertyDrawer.DrawGeneralGroup(ByRef Rect, SerializedProperty, System.Single)
+  nameWithType: HitInfoBasePropertyDrawer.DrawGeneralGroup(ref Rect, SerializedProperty, Single)
+  nameWithType.vb: HitInfoBasePropertyDrawer.DrawGeneralGroup(ByRef Rect, SerializedProperty, Single)
+- uid: HnSF.Combat.HitInfoBasePropertyDrawer.DrawGeneralGroup*
+  name: DrawGeneralGroup
+  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_DrawGeneralGroup_
+  commentId: Overload:HnSF.Combat.HitInfoBasePropertyDrawer.DrawGeneralGroup
+  isSpec: "True"
+  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.DrawGeneralGroup
+  nameWithType: HitInfoBasePropertyDrawer.DrawGeneralGroup
+- uid: HnSF.Combat.HitInfoBasePropertyDrawer.DrawProperty(Rect@,SerializedProperty,System.Single@)
+  name: DrawProperty(ref Rect, SerializedProperty, ref Single)
+  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_DrawProperty_Rect__SerializedProperty_System_Single__
+  commentId: M:HnSF.Combat.HitInfoBasePropertyDrawer.DrawProperty(Rect@,SerializedProperty,System.Single@)
+  name.vb: DrawProperty(ByRef Rect, SerializedProperty, ByRef Single)
+  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.DrawProperty(ref Rect, SerializedProperty, ref System.Single)
+  fullName.vb: HnSF.Combat.HitInfoBasePropertyDrawer.DrawProperty(ByRef Rect, SerializedProperty, ByRef System.Single)
+  nameWithType: HitInfoBasePropertyDrawer.DrawProperty(ref Rect, SerializedProperty, ref Single)
+  nameWithType.vb: HitInfoBasePropertyDrawer.DrawProperty(ByRef Rect, SerializedProperty, ByRef Single)
+- uid: HnSF.Combat.HitInfoBasePropertyDrawer.DrawProperty*
+  name: DrawProperty
+  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_DrawProperty_
+  commentId: Overload:HnSF.Combat.HitInfoBasePropertyDrawer.DrawProperty
+  isSpec: "True"
+  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.DrawProperty
+  nameWithType: HitInfoBasePropertyDrawer.DrawProperty
+- uid: HnSF.Combat.HitInfoBasePropertyDrawer.DrawStunGroup(Rect,SerializedProperty,System.Single)
+  name: DrawStunGroup(Rect, SerializedProperty, Single)
+  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_DrawStunGroup_Rect_SerializedProperty_System_Single_
+  commentId: M:HnSF.Combat.HitInfoBasePropertyDrawer.DrawStunGroup(Rect,SerializedProperty,System.Single)
+  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.DrawStunGroup(Rect, SerializedProperty, System.Single)
+  nameWithType: HitInfoBasePropertyDrawer.DrawStunGroup(Rect, SerializedProperty, Single)
+- uid: HnSF.Combat.HitInfoBasePropertyDrawer.DrawStunGroup*
+  name: DrawStunGroup
+  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_DrawStunGroup_
+  commentId: Overload:HnSF.Combat.HitInfoBasePropertyDrawer.DrawStunGroup
+  isSpec: "True"
+  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.DrawStunGroup
+  nameWithType: HitInfoBasePropertyDrawer.DrawStunGroup
+- uid: HnSF.Combat.HitInfoBasePropertyDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  name: GetPropertyHeight(SerializedProperty, GUIContent)
+  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_GetPropertyHeight_SerializedProperty_GUIContent_
+  commentId: M:HnSF.Combat.HitInfoBasePropertyDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+  nameWithType: HitInfoBasePropertyDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+- uid: HnSF.Combat.HitInfoBasePropertyDrawer.GetPropertyHeight*
+  name: GetPropertyHeight
+  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_GetPropertyHeight_
+  commentId: Overload:HnSF.Combat.HitInfoBasePropertyDrawer.GetPropertyHeight
+  isSpec: "True"
+  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.GetPropertyHeight
+  nameWithType: HitInfoBasePropertyDrawer.GetPropertyHeight
+- uid: HnSF.Combat.HitInfoBasePropertyDrawer.lineHeight
+  name: lineHeight
+  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_lineHeight
+  commentId: F:HnSF.Combat.HitInfoBasePropertyDrawer.lineHeight
+  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.lineHeight
+  nameWithType: HitInfoBasePropertyDrawer.lineHeight
+- uid: HnSF.Combat.HitInfoBasePropertyDrawer.lineSpacing
+  name: lineSpacing
+  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_lineSpacing
+  commentId: F:HnSF.Combat.HitInfoBasePropertyDrawer.lineSpacing
+  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.lineSpacing
+  nameWithType: HitInfoBasePropertyDrawer.lineSpacing
+- uid: HnSF.Combat.HitInfoBasePropertyDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_OnGUI_Rect_SerializedProperty_GUIContent_
+  commentId: M:HnSF.Combat.HitInfoBasePropertyDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: HitInfoBasePropertyDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+- uid: HnSF.Combat.HitInfoBasePropertyDrawer.OnGUI*
+  name: OnGUI
+  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_OnGUI_
+  commentId: Overload:HnSF.Combat.HitInfoBasePropertyDrawer.OnGUI
+  isSpec: "True"
+  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.OnGUI
+  nameWithType: HitInfoBasePropertyDrawer.OnGUI
+- uid: HnSF.Combat.HitInfoPropertyDrawer
+  name: HitInfoPropertyDrawer
+  href: api/HnSF.Combat.HitInfoPropertyDrawer.html
+  commentId: T:HnSF.Combat.HitInfoPropertyDrawer
+  fullName: HnSF.Combat.HitInfoPropertyDrawer
+  nameWithType: HitInfoPropertyDrawer
+- uid: HnSF.Combat.HitInfoPropertyDrawer.DrawDamageGroup(Rect,SerializedProperty,System.Single)
+  name: DrawDamageGroup(Rect, SerializedProperty, Single)
+  href: api/HnSF.Combat.HitInfoPropertyDrawer.html#HnSF_Combat_HitInfoPropertyDrawer_DrawDamageGroup_Rect_SerializedProperty_System_Single_
+  commentId: M:HnSF.Combat.HitInfoPropertyDrawer.DrawDamageGroup(Rect,SerializedProperty,System.Single)
+  fullName: HnSF.Combat.HitInfoPropertyDrawer.DrawDamageGroup(Rect, SerializedProperty, System.Single)
+  nameWithType: HitInfoPropertyDrawer.DrawDamageGroup(Rect, SerializedProperty, Single)
+- uid: HnSF.Combat.HitInfoPropertyDrawer.DrawDamageGroup*
+  name: DrawDamageGroup
+  href: api/HnSF.Combat.HitInfoPropertyDrawer.html#HnSF_Combat_HitInfoPropertyDrawer_DrawDamageGroup_
+  commentId: Overload:HnSF.Combat.HitInfoPropertyDrawer.DrawDamageGroup
+  isSpec: "True"
+  fullName: HnSF.Combat.HitInfoPropertyDrawer.DrawDamageGroup
+  nameWithType: HitInfoPropertyDrawer.DrawDamageGroup
+- uid: HnSF.Combat.HitInfoPropertyDrawer.DrawForcesGroup(Rect@,SerializedProperty,System.Single)
+  name: DrawForcesGroup(ref Rect, SerializedProperty, Single)
+  href: api/HnSF.Combat.HitInfoPropertyDrawer.html#HnSF_Combat_HitInfoPropertyDrawer_DrawForcesGroup_Rect__SerializedProperty_System_Single_
+  commentId: M:HnSF.Combat.HitInfoPropertyDrawer.DrawForcesGroup(Rect@,SerializedProperty,System.Single)
+  name.vb: DrawForcesGroup(ByRef Rect, SerializedProperty, Single)
+  fullName: HnSF.Combat.HitInfoPropertyDrawer.DrawForcesGroup(ref Rect, SerializedProperty, System.Single)
+  fullName.vb: HnSF.Combat.HitInfoPropertyDrawer.DrawForcesGroup(ByRef Rect, SerializedProperty, System.Single)
+  nameWithType: HitInfoPropertyDrawer.DrawForcesGroup(ref Rect, SerializedProperty, Single)
+  nameWithType.vb: HitInfoPropertyDrawer.DrawForcesGroup(ByRef Rect, SerializedProperty, Single)
+- uid: HnSF.Combat.HitInfoPropertyDrawer.DrawForcesGroup*
+  name: DrawForcesGroup
+  href: api/HnSF.Combat.HitInfoPropertyDrawer.html#HnSF_Combat_HitInfoPropertyDrawer_DrawForcesGroup_
+  commentId: Overload:HnSF.Combat.HitInfoPropertyDrawer.DrawForcesGroup
+  isSpec: "True"
+  fullName: HnSF.Combat.HitInfoPropertyDrawer.DrawForcesGroup
+  nameWithType: HitInfoPropertyDrawer.DrawForcesGroup
+- uid: HnSF.Combat.HitInfoPropertyDrawer.DrawGeneralGroup(Rect@,SerializedProperty,System.Single)
+  name: DrawGeneralGroup(ref Rect, SerializedProperty, Single)
+  href: api/HnSF.Combat.HitInfoPropertyDrawer.html#HnSF_Combat_HitInfoPropertyDrawer_DrawGeneralGroup_Rect__SerializedProperty_System_Single_
+  commentId: M:HnSF.Combat.HitInfoPropertyDrawer.DrawGeneralGroup(Rect@,SerializedProperty,System.Single)
+  name.vb: DrawGeneralGroup(ByRef Rect, SerializedProperty, Single)
+  fullName: HnSF.Combat.HitInfoPropertyDrawer.DrawGeneralGroup(ref Rect, SerializedProperty, System.Single)
+  fullName.vb: HnSF.Combat.HitInfoPropertyDrawer.DrawGeneralGroup(ByRef Rect, SerializedProperty, System.Single)
+  nameWithType: HitInfoPropertyDrawer.DrawGeneralGroup(ref Rect, SerializedProperty, Single)
+  nameWithType.vb: HitInfoPropertyDrawer.DrawGeneralGroup(ByRef Rect, SerializedProperty, Single)
+- uid: HnSF.Combat.HitInfoPropertyDrawer.DrawGeneralGroup*
+  name: DrawGeneralGroup
+  href: api/HnSF.Combat.HitInfoPropertyDrawer.html#HnSF_Combat_HitInfoPropertyDrawer_DrawGeneralGroup_
+  commentId: Overload:HnSF.Combat.HitInfoPropertyDrawer.DrawGeneralGroup
+  isSpec: "True"
+  fullName: HnSF.Combat.HitInfoPropertyDrawer.DrawGeneralGroup
+  nameWithType: HitInfoPropertyDrawer.DrawGeneralGroup
+- uid: HnSF.Combat.HitInfoPropertyDrawer.DrawProperty(Rect@,SerializedProperty,System.Single@)
+  name: DrawProperty(ref Rect, SerializedProperty, ref Single)
+  href: api/HnSF.Combat.HitInfoPropertyDrawer.html#HnSF_Combat_HitInfoPropertyDrawer_DrawProperty_Rect__SerializedProperty_System_Single__
+  commentId: M:HnSF.Combat.HitInfoPropertyDrawer.DrawProperty(Rect@,SerializedProperty,System.Single@)
+  name.vb: DrawProperty(ByRef Rect, SerializedProperty, ByRef Single)
+  fullName: HnSF.Combat.HitInfoPropertyDrawer.DrawProperty(ref Rect, SerializedProperty, ref System.Single)
+  fullName.vb: HnSF.Combat.HitInfoPropertyDrawer.DrawProperty(ByRef Rect, SerializedProperty, ByRef System.Single)
+  nameWithType: HitInfoPropertyDrawer.DrawProperty(ref Rect, SerializedProperty, ref Single)
+  nameWithType.vb: HitInfoPropertyDrawer.DrawProperty(ByRef Rect, SerializedProperty, ByRef Single)
+- uid: HnSF.Combat.HitInfoPropertyDrawer.DrawProperty*
+  name: DrawProperty
+  href: api/HnSF.Combat.HitInfoPropertyDrawer.html#HnSF_Combat_HitInfoPropertyDrawer_DrawProperty_
+  commentId: Overload:HnSF.Combat.HitInfoPropertyDrawer.DrawProperty
+  isSpec: "True"
+  fullName: HnSF.Combat.HitInfoPropertyDrawer.DrawProperty
+  nameWithType: HitInfoPropertyDrawer.DrawProperty
 - uid: HnSF.Combat.HitReaction
   name: HitReaction
   href: api/HnSF.Combat.HitReaction.html
@@ -2318,12 +2448,12 @@ references:
   commentId: M:HnSF.Combat.HurtInfo2D.#ctor
   fullName: HnSF.Combat.HurtInfo2D.HurtInfo2D()
   nameWithType: HurtInfo2D.HurtInfo2D()
-- uid: HnSF.Combat.HurtInfo2D.#ctor(HnSF.Combat.HitInfoBase,Vector2,System.Int32)
-  name: HurtInfo2D(HitInfoBase, Vector2, Int32)
-  href: api/HnSF.Combat.HurtInfo2D.html#HnSF_Combat_HurtInfo2D__ctor_HnSF_Combat_HitInfoBase_Vector2_System_Int32_
-  commentId: M:HnSF.Combat.HurtInfo2D.#ctor(HnSF.Combat.HitInfoBase,Vector2,System.Int32)
-  fullName: HnSF.Combat.HurtInfo2D.HurtInfo2D(HnSF.Combat.HitInfoBase, Vector2, System.Int32)
-  nameWithType: HurtInfo2D.HurtInfo2D(HitInfoBase, Vector2, Int32)
+- uid: HnSF.Combat.HurtInfo2D.#ctor(HnSF.Combat.HitInfoBase,Vector2,Vector2,System.Int32)
+  name: HurtInfo2D(HitInfoBase, Vector2, Vector2, Int32)
+  href: api/HnSF.Combat.HurtInfo2D.html#HnSF_Combat_HurtInfo2D__ctor_HnSF_Combat_HitInfoBase_Vector2_Vector2_System_Int32_
+  commentId: M:HnSF.Combat.HurtInfo2D.#ctor(HnSF.Combat.HitInfoBase,Vector2,Vector2,System.Int32)
+  fullName: HnSF.Combat.HurtInfo2D.HurtInfo2D(HnSF.Combat.HitInfoBase, Vector2, Vector2, System.Int32)
+  nameWithType: HurtInfo2D.HurtInfo2D(HitInfoBase, Vector2, Vector2, Int32)
 - uid: HnSF.Combat.HurtInfo2D.#ctor*
   name: HurtInfo2D
   href: api/HnSF.Combat.HurtInfo2D.html#HnSF_Combat_HurtInfo2D__ctor_
@@ -2331,6 +2461,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.HurtInfo2D.HurtInfo2D
   nameWithType: HurtInfo2D.HurtInfo2D
+- uid: HnSF.Combat.HurtInfo2D.attackerVelocity
+  name: attackerVelocity
+  href: api/HnSF.Combat.HurtInfo2D.html#HnSF_Combat_HurtInfo2D_attackerVelocity
+  commentId: F:HnSF.Combat.HurtInfo2D.attackerVelocity
+  fullName: HnSF.Combat.HurtInfo2D.attackerVelocity
+  nameWithType: HurtInfo2D.attackerVelocity
 - uid: HnSF.Combat.HurtInfo2D.center
   name: center
   href: api/HnSF.Combat.HurtInfo2D.html#HnSF_Combat_HurtInfo2D_center
@@ -2894,19 +3030,6 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.FighterBase.InputManager
   nameWithType: FighterBase.InputManager
-- uid: HnSF.Fighters.FighterBase.IsGrounded
-  name: IsGrounded
-  href: api/HnSF.Fighters.FighterBase.html#HnSF_Fighters_FighterBase_IsGrounded
-  commentId: P:HnSF.Fighters.FighterBase.IsGrounded
-  fullName: HnSF.Fighters.FighterBase.IsGrounded
-  nameWithType: FighterBase.IsGrounded
-- uid: HnSF.Fighters.FighterBase.IsGrounded*
-  name: IsGrounded
-  href: api/HnSF.Fighters.FighterBase.html#HnSF_Fighters_FighterBase_IsGrounded_
-  commentId: Overload:HnSF.Fighters.FighterBase.IsGrounded
-  isSpec: "True"
-  fullName: HnSF.Fighters.FighterBase.IsGrounded
-  nameWithType: FighterBase.IsGrounded
 - uid: HnSF.Fighters.FighterBase.LateTick
   name: LateTick()
   href: api/HnSF.Fighters.FighterBase.html#HnSF_Fighters_FighterBase_LateTick
@@ -3205,31 +3328,57 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.FighterCombatManager.Cleanup
   nameWithType: FighterCombatManager.Cleanup
-- uid: HnSF.Fighters.FighterCombatManager.CurrentAttack
-  name: CurrentAttack
-  href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_CurrentAttack
-  commentId: P:HnSF.Fighters.FighterCombatManager.CurrentAttack
-  fullName: HnSF.Fighters.FighterCombatManager.CurrentAttack
-  nameWithType: FighterCombatManager.CurrentAttack
-- uid: HnSF.Fighters.FighterCombatManager.CurrentAttack*
-  name: CurrentAttack
-  href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_CurrentAttack_
-  commentId: Overload:HnSF.Fighters.FighterCombatManager.CurrentAttack
-  isSpec: "True"
-  fullName: HnSF.Fighters.FighterCombatManager.CurrentAttack
-  nameWithType: FighterCombatManager.CurrentAttack
 - uid: HnSF.Fighters.FighterCombatManager.currentAttackMoveset
   name: currentAttackMoveset
   href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_currentAttackMoveset
   commentId: F:HnSF.Fighters.FighterCombatManager.currentAttackMoveset
   fullName: HnSF.Fighters.FighterCombatManager.currentAttackMoveset
   nameWithType: FighterCombatManager.currentAttackMoveset
+- uid: HnSF.Fighters.FighterCombatManager.CurrentAttackMoveset
+  name: CurrentAttackMoveset
+  href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_CurrentAttackMoveset
+  commentId: P:HnSF.Fighters.FighterCombatManager.CurrentAttackMoveset
+  fullName: HnSF.Fighters.FighterCombatManager.CurrentAttackMoveset
+  nameWithType: FighterCombatManager.CurrentAttackMoveset
+- uid: HnSF.Fighters.FighterCombatManager.CurrentAttackMoveset*
+  name: CurrentAttackMoveset
+  href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_CurrentAttackMoveset_
+  commentId: Overload:HnSF.Fighters.FighterCombatManager.CurrentAttackMoveset
+  isSpec: "True"
+  fullName: HnSF.Fighters.FighterCombatManager.CurrentAttackMoveset
+  nameWithType: FighterCombatManager.CurrentAttackMoveset
+- uid: HnSF.Fighters.FighterCombatManager.CurrentAttackMovesetIdentifier
+  name: CurrentAttackMovesetIdentifier
+  href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_CurrentAttackMovesetIdentifier
+  commentId: P:HnSF.Fighters.FighterCombatManager.CurrentAttackMovesetIdentifier
+  fullName: HnSF.Fighters.FighterCombatManager.CurrentAttackMovesetIdentifier
+  nameWithType: FighterCombatManager.CurrentAttackMovesetIdentifier
+- uid: HnSF.Fighters.FighterCombatManager.CurrentAttackMovesetIdentifier*
+  name: CurrentAttackMovesetIdentifier
+  href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_CurrentAttackMovesetIdentifier_
+  commentId: Overload:HnSF.Fighters.FighterCombatManager.CurrentAttackMovesetIdentifier
+  isSpec: "True"
+  fullName: HnSF.Fighters.FighterCombatManager.CurrentAttackMovesetIdentifier
+  nameWithType: FighterCombatManager.CurrentAttackMovesetIdentifier
 - uid: HnSF.Fighters.FighterCombatManager.currentAttackNode
   name: currentAttackNode
   href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_currentAttackNode
   commentId: F:HnSF.Fighters.FighterCombatManager.currentAttackNode
   fullName: HnSF.Fighters.FighterCombatManager.currentAttackNode
   nameWithType: FighterCombatManager.currentAttackNode
+- uid: HnSF.Fighters.FighterCombatManager.CurrentAttackNode
+  name: CurrentAttackNode
+  href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_CurrentAttackNode
+  commentId: P:HnSF.Fighters.FighterCombatManager.CurrentAttackNode
+  fullName: HnSF.Fighters.FighterCombatManager.CurrentAttackNode
+  nameWithType: FighterCombatManager.CurrentAttackNode
+- uid: HnSF.Fighters.FighterCombatManager.CurrentAttackNode*
+  name: CurrentAttackNode
+  href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_CurrentAttackNode_
+  commentId: Overload:HnSF.Fighters.FighterCombatManager.CurrentAttackNode
+  isSpec: "True"
+  fullName: HnSF.Fighters.FighterCombatManager.CurrentAttackNode
+  nameWithType: FighterCombatManager.CurrentAttackNode
 - uid: HnSF.Fighters.FighterCombatManager.CurrentChargeLevel
   name: CurrentChargeLevel
   href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_CurrentChargeLevel
@@ -3275,6 +3424,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.FighterCombatManager.CurrentMoveset
   nameWithType: FighterCombatManager.CurrentMoveset
+- uid: HnSF.Fighters.FighterCombatManager.CurrentMovesetIdentifier
+  name: CurrentMovesetIdentifier
+  href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_CurrentMovesetIdentifier
+  commentId: P:HnSF.Fighters.FighterCombatManager.CurrentMovesetIdentifier
+  fullName: HnSF.Fighters.FighterCombatManager.CurrentMovesetIdentifier
+  nameWithType: FighterCombatManager.CurrentMovesetIdentifier
+- uid: HnSF.Fighters.FighterCombatManager.CurrentMovesetIdentifier*
+  name: CurrentMovesetIdentifier
+  href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_CurrentMovesetIdentifier_
+  commentId: Overload:HnSF.Fighters.FighterCombatManager.CurrentMovesetIdentifier
+  isSpec: "True"
+  fullName: HnSF.Fighters.FighterCombatManager.CurrentMovesetIdentifier
+  nameWithType: FighterCombatManager.CurrentMovesetIdentifier
 - uid: HnSF.Fighters.FighterCombatManager.EmptyAction
   name: FighterCombatManager.EmptyAction
   href: api/HnSF.Fighters.FighterCombatManager.EmptyAction.html
@@ -3494,6 +3656,19 @@ references:
   commentId: E:HnSF.Fighters.FighterCombatManager.OnHit
   fullName: HnSF.Fighters.FighterCombatManager.OnHit
   nameWithType: FighterCombatManager.OnHit
+- uid: HnSF.Fighters.FighterCombatManager.OnHitEnemy(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox)
+  name: OnHitEnemy(HitboxGroup, Int32, Hurtbox)
+  href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_OnHitEnemy_HnSF_Combat_HitboxGroup_System_Int32_HnSF_Combat_Hurtbox_
+  commentId: M:HnSF.Fighters.FighterCombatManager.OnHitEnemy(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox)
+  fullName: HnSF.Fighters.FighterCombatManager.OnHitEnemy(HnSF.Combat.HitboxGroup, System.Int32, HnSF.Combat.Hurtbox)
+  nameWithType: FighterCombatManager.OnHitEnemy(HitboxGroup, Int32, Hurtbox)
+- uid: HnSF.Fighters.FighterCombatManager.OnHitEnemy*
+  name: OnHitEnemy
+  href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_OnHitEnemy_
+  commentId: Overload:HnSF.Fighters.FighterCombatManager.OnHitEnemy
+  isSpec: "True"
+  fullName: HnSF.Fighters.FighterCombatManager.OnHitEnemy
+  nameWithType: FighterCombatManager.OnHitEnemy
 - uid: HnSF.Fighters.FighterCombatManager.OnHitStopAdded
   name: OnHitStopAdded
   href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_OnHitStopAdded
@@ -3518,6 +3693,12 @@ references:
   commentId: M:HnSF.Fighters.FighterCombatManager.SetAttack(System.Int32)
   fullName: HnSF.Fighters.FighterCombatManager.SetAttack(System.Int32)
   nameWithType: FighterCombatManager.SetAttack(Int32)
+- uid: HnSF.Fighters.FighterCombatManager.SetAttack(System.Int32,System.Int32)
+  name: SetAttack(Int32, Int32)
+  href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_SetAttack_System_Int32_System_Int32_
+  commentId: M:HnSF.Fighters.FighterCombatManager.SetAttack(System.Int32,System.Int32)
+  fullName: HnSF.Fighters.FighterCombatManager.SetAttack(System.Int32, System.Int32)
+  nameWithType: FighterCombatManager.SetAttack(Int32, Int32)
 - uid: HnSF.Fighters.FighterCombatManager.SetAttack*
   name: SetAttack
   href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_SetAttack_
@@ -3622,184 +3803,18 @@ references:
   commentId: T:HnSF.Fighters.FighterHitboxManager
   fullName: HnSF.Fighters.FighterHitboxManager
   nameWithType: FighterHitboxManager
-- uid: HnSF.Fighters.FighterHitboxManager.#ctor(HnSF.Fighters.FighterCombatManager,HnSF.Fighters.FighterBase)
-  name: FighterHitboxManager(FighterCombatManager, FighterBase)
-  href: api/HnSF.Fighters.FighterHitboxManager.html#HnSF_Fighters_FighterHitboxManager__ctor_HnSF_Fighters_FighterCombatManager_HnSF_Fighters_FighterBase_
-  commentId: M:HnSF.Fighters.FighterHitboxManager.#ctor(HnSF.Fighters.FighterCombatManager,HnSF.Fighters.FighterBase)
-  fullName: HnSF.Fighters.FighterHitboxManager.FighterHitboxManager(HnSF.Fighters.FighterCombatManager, HnSF.Fighters.FighterBase)
-  nameWithType: FighterHitboxManager.FighterHitboxManager(FighterCombatManager, FighterBase)
-- uid: HnSF.Fighters.FighterHitboxManager.#ctor*
-  name: FighterHitboxManager
-  href: api/HnSF.Fighters.FighterHitboxManager.html#HnSF_Fighters_FighterHitboxManager__ctor_
-  commentId: Overload:HnSF.Fighters.FighterHitboxManager.#ctor
-  isSpec: "True"
-  fullName: HnSF.Fighters.FighterHitboxManager.FighterHitboxManager
-  nameWithType: FighterHitboxManager.FighterHitboxManager
-- uid: HnSF.Fighters.FighterHitboxManager.BuildHurtInfo(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox)
-  name: BuildHurtInfo(HitboxGroup, Int32, Hurtbox)
-  href: api/HnSF.Fighters.FighterHitboxManager.html#HnSF_Fighters_FighterHitboxManager_BuildHurtInfo_HnSF_Combat_HitboxGroup_System_Int32_HnSF_Combat_Hurtbox_
-  commentId: M:HnSF.Fighters.FighterHitboxManager.BuildHurtInfo(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox)
-  fullName: HnSF.Fighters.FighterHitboxManager.BuildHurtInfo(HnSF.Combat.HitboxGroup, System.Int32, HnSF.Combat.Hurtbox)
-  nameWithType: FighterHitboxManager.BuildHurtInfo(HitboxGroup, Int32, Hurtbox)
-- uid: HnSF.Fighters.FighterHitboxManager.BuildHurtInfo*
-  name: BuildHurtInfo
-  href: api/HnSF.Fighters.FighterHitboxManager.html#HnSF_Fighters_FighterHitboxManager_BuildHurtInfo_
-  commentId: Overload:HnSF.Fighters.FighterHitboxManager.BuildHurtInfo
-  isSpec: "True"
-  fullName: HnSF.Fighters.FighterHitboxManager.BuildHurtInfo
-  nameWithType: FighterHitboxManager.BuildHurtInfo
-- uid: HnSF.Fighters.FighterHitboxManager.CheckBoxCollision(HnSF.Combat.HitboxGroup,System.Int32)
-  name: CheckBoxCollision(HitboxGroup, Int32)
-  href: api/HnSF.Fighters.FighterHitboxManager.html#HnSF_Fighters_FighterHitboxManager_CheckBoxCollision_HnSF_Combat_HitboxGroup_System_Int32_
-  commentId: M:HnSF.Fighters.FighterHitboxManager.CheckBoxCollision(HnSF.Combat.HitboxGroup,System.Int32)
-  fullName: HnSF.Fighters.FighterHitboxManager.CheckBoxCollision(HnSF.Combat.HitboxGroup, System.Int32)
-  nameWithType: FighterHitboxManager.CheckBoxCollision(HitboxGroup, Int32)
-- uid: HnSF.Fighters.FighterHitboxManager.CheckBoxCollision*
-  name: CheckBoxCollision
-  href: api/HnSF.Fighters.FighterHitboxManager.html#HnSF_Fighters_FighterHitboxManager_CheckBoxCollision_
-  commentId: Overload:HnSF.Fighters.FighterHitboxManager.CheckBoxCollision
-  isSpec: "True"
-  fullName: HnSF.Fighters.FighterHitboxManager.CheckBoxCollision
-  nameWithType: FighterHitboxManager.CheckBoxCollision
-- uid: HnSF.Fighters.FighterHitboxManager.CheckForCollision(System.Int32,HnSF.Combat.HitboxGroup)
-  name: CheckForCollision(Int32, HitboxGroup)
-  href: api/HnSF.Fighters.FighterHitboxManager.html#HnSF_Fighters_FighterHitboxManager_CheckForCollision_System_Int32_HnSF_Combat_HitboxGroup_
-  commentId: M:HnSF.Fighters.FighterHitboxManager.CheckForCollision(System.Int32,HnSF.Combat.HitboxGroup)
-  fullName: HnSF.Fighters.FighterHitboxManager.CheckForCollision(System.Int32, HnSF.Combat.HitboxGroup)
-  nameWithType: FighterHitboxManager.CheckForCollision(Int32, HitboxGroup)
-- uid: HnSF.Fighters.FighterHitboxManager.CheckForCollision*
-  name: CheckForCollision
-  href: api/HnSF.Fighters.FighterHitboxManager.html#HnSF_Fighters_FighterHitboxManager_CheckForCollision_
-  commentId: Overload:HnSF.Fighters.FighterHitboxManager.CheckForCollision
-  isSpec: "True"
-  fullName: HnSF.Fighters.FighterHitboxManager.CheckForCollision
-  nameWithType: FighterHitboxManager.CheckForCollision
-- uid: HnSF.Fighters.FighterHitboxManager.collidedIHurtables
-  name: collidedIHurtables
-  href: api/HnSF.Fighters.FighterHitboxManager.html#HnSF_Fighters_FighterHitboxManager_collidedIHurtables
-  commentId: F:HnSF.Fighters.FighterHitboxManager.collidedIHurtables
-  fullName: HnSF.Fighters.FighterHitboxManager.collidedIHurtables
-  nameWithType: FighterHitboxManager.collidedIHurtables
 - uid: HnSF.Fighters.FighterHitboxManager.combatManager
   name: combatManager
   href: api/HnSF.Fighters.FighterHitboxManager.html#HnSF_Fighters_FighterHitboxManager_combatManager
   commentId: F:HnSF.Fighters.FighterHitboxManager.combatManager
   fullName: HnSF.Fighters.FighterHitboxManager.combatManager
   nameWithType: FighterHitboxManager.combatManager
-- uid: HnSF.Fighters.FighterHitboxManager.GetIDGroupCollisions(System.Int32)
-  name: GetIDGroupCollisions(Int32)
-  href: api/HnSF.Fighters.FighterHitboxManager.html#HnSF_Fighters_FighterHitboxManager_GetIDGroupCollisions_System_Int32_
-  commentId: M:HnSF.Fighters.FighterHitboxManager.GetIDGroupCollisions(System.Int32)
-  fullName: HnSF.Fighters.FighterHitboxManager.GetIDGroupCollisions(System.Int32)
-  nameWithType: FighterHitboxManager.GetIDGroupCollisions(Int32)
-- uid: HnSF.Fighters.FighterHitboxManager.GetIDGroupCollisions*
-  name: GetIDGroupCollisions
-  href: api/HnSF.Fighters.FighterHitboxManager.html#HnSF_Fighters_FighterHitboxManager_GetIDGroupCollisions_
-  commentId: Overload:HnSF.Fighters.FighterHitboxManager.GetIDGroupCollisions
-  isSpec: "True"
-  fullName: HnSF.Fighters.FighterHitboxManager.GetIDGroupCollisions
-  nameWithType: FighterHitboxManager.GetIDGroupCollisions
-- uid: HnSF.Fighters.FighterHitboxManager.HitboxGroupEventAction
-  name: FighterHitboxManager.HitboxGroupEventAction
-  href: api/HnSF.Fighters.FighterHitboxManager.HitboxGroupEventAction.html
-  commentId: T:HnSF.Fighters.FighterHitboxManager.HitboxGroupEventAction
-  fullName: HnSF.Fighters.FighterHitboxManager.HitboxGroupEventAction
-  nameWithType: FighterHitboxManager.HitboxGroupEventAction
-- uid: HnSF.Fighters.FighterHitboxManager.HitboxGroupHasHurt(System.Int32,System.Int32)
-  name: HitboxGroupHasHurt(Int32, Int32)
-  href: api/HnSF.Fighters.FighterHitboxManager.html#HnSF_Fighters_FighterHitboxManager_HitboxGroupHasHurt_System_Int32_System_Int32_
-  commentId: M:HnSF.Fighters.FighterHitboxManager.HitboxGroupHasHurt(System.Int32,System.Int32)
-  fullName: HnSF.Fighters.FighterHitboxManager.HitboxGroupHasHurt(System.Int32, System.Int32)
-  nameWithType: FighterHitboxManager.HitboxGroupHasHurt(Int32, Int32)
-- uid: HnSF.Fighters.FighterHitboxManager.HitboxGroupHasHurt*
-  name: HitboxGroupHasHurt
-  href: api/HnSF.Fighters.FighterHitboxManager.html#HnSF_Fighters_FighterHitboxManager_HitboxGroupHasHurt_
-  commentId: Overload:HnSF.Fighters.FighterHitboxManager.HitboxGroupHasHurt
-  isSpec: "True"
-  fullName: HnSF.Fighters.FighterHitboxManager.HitboxGroupHasHurt
-  nameWithType: FighterHitboxManager.HitboxGroupHasHurt
-- uid: HnSF.Fighters.FighterHitboxManager.HurtHurtbox(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox)
-  name: HurtHurtbox(HitboxGroup, Int32, Hurtbox)
-  href: api/HnSF.Fighters.FighterHitboxManager.html#HnSF_Fighters_FighterHitboxManager_HurtHurtbox_HnSF_Combat_HitboxGroup_System_Int32_HnSF_Combat_Hurtbox_
-  commentId: M:HnSF.Fighters.FighterHitboxManager.HurtHurtbox(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox)
-  fullName: HnSF.Fighters.FighterHitboxManager.HurtHurtbox(HnSF.Combat.HitboxGroup, System.Int32, HnSF.Combat.Hurtbox)
-  nameWithType: FighterHitboxManager.HurtHurtbox(HitboxGroup, Int32, Hurtbox)
-- uid: HnSF.Fighters.FighterHitboxManager.HurtHurtbox*
-  name: HurtHurtbox
-  href: api/HnSF.Fighters.FighterHitboxManager.html#HnSF_Fighters_FighterHitboxManager_HurtHurtbox_
-  commentId: Overload:HnSF.Fighters.FighterHitboxManager.HurtHurtbox
-  isSpec: "True"
-  fullName: HnSF.Fighters.FighterHitboxManager.HurtHurtbox
-  nameWithType: FighterHitboxManager.HurtHurtbox
-- uid: HnSF.Fighters.FighterHitboxManager.IDGroupCollisionInfo
-  name: FighterHitboxManager.IDGroupCollisionInfo
-  href: api/HnSF.Fighters.FighterHitboxManager.IDGroupCollisionInfo.html
-  commentId: T:HnSF.Fighters.FighterHitboxManager.IDGroupCollisionInfo
-  fullName: HnSF.Fighters.FighterHitboxManager.IDGroupCollisionInfo
-  nameWithType: FighterHitboxManager.IDGroupCollisionInfo
-- uid: HnSF.Fighters.FighterHitboxManager.IDGroupCollisionInfo.hitboxGroups
-  name: hitboxGroups
-  href: api/HnSF.Fighters.FighterHitboxManager.IDGroupCollisionInfo.html#HnSF_Fighters_FighterHitboxManager_IDGroupCollisionInfo_hitboxGroups
-  commentId: F:HnSF.Fighters.FighterHitboxManager.IDGroupCollisionInfo.hitboxGroups
-  fullName: HnSF.Fighters.FighterHitboxManager.IDGroupCollisionInfo.hitboxGroups
-  nameWithType: FighterHitboxManager.IDGroupCollisionInfo.hitboxGroups
-- uid: HnSF.Fighters.FighterHitboxManager.IDGroupCollisionInfo.hitIHurtables
-  name: hitIHurtables
-  href: api/HnSF.Fighters.FighterHitboxManager.IDGroupCollisionInfo.html#HnSF_Fighters_FighterHitboxManager_IDGroupCollisionInfo_hitIHurtables
-  commentId: F:HnSF.Fighters.FighterHitboxManager.IDGroupCollisionInfo.hitIHurtables
-  fullName: HnSF.Fighters.FighterHitboxManager.IDGroupCollisionInfo.hitIHurtables
-  nameWithType: FighterHitboxManager.IDGroupCollisionInfo.hitIHurtables
-- uid: HnSF.Fighters.FighterHitboxManager.IDGroupHasHurt(System.Int32)
-  name: IDGroupHasHurt(Int32)
-  href: api/HnSF.Fighters.FighterHitboxManager.html#HnSF_Fighters_FighterHitboxManager_IDGroupHasHurt_System_Int32_
-  commentId: M:HnSF.Fighters.FighterHitboxManager.IDGroupHasHurt(System.Int32)
-  fullName: HnSF.Fighters.FighterHitboxManager.IDGroupHasHurt(System.Int32)
-  nameWithType: FighterHitboxManager.IDGroupHasHurt(Int32)
-- uid: HnSF.Fighters.FighterHitboxManager.IDGroupHasHurt*
-  name: IDGroupHasHurt
-  href: api/HnSF.Fighters.FighterHitboxManager.html#HnSF_Fighters_FighterHitboxManager_IDGroupHasHurt_
-  commentId: Overload:HnSF.Fighters.FighterHitboxManager.IDGroupHasHurt
-  isSpec: "True"
-  fullName: HnSF.Fighters.FighterHitboxManager.IDGroupHasHurt
-  nameWithType: FighterHitboxManager.IDGroupHasHurt
 - uid: HnSF.Fighters.FighterHitboxManager.manager
   name: manager
   href: api/HnSF.Fighters.FighterHitboxManager.html#HnSF_Fighters_FighterHitboxManager_manager
   commentId: F:HnSF.Fighters.FighterHitboxManager.manager
   fullName: HnSF.Fighters.FighterHitboxManager.manager
   nameWithType: FighterHitboxManager.manager
-- uid: HnSF.Fighters.FighterHitboxManager.OnHitHurtbox
-  name: OnHitHurtbox
-  href: api/HnSF.Fighters.FighterHitboxManager.html#HnSF_Fighters_FighterHitboxManager_OnHitHurtbox
-  commentId: E:HnSF.Fighters.FighterHitboxManager.OnHitHurtbox
-  fullName: HnSF.Fighters.FighterHitboxManager.OnHitHurtbox
-  nameWithType: FighterHitboxManager.OnHitHurtbox
-- uid: HnSF.Fighters.FighterHitboxManager.Reset
-  name: Reset()
-  href: api/HnSF.Fighters.FighterHitboxManager.html#HnSF_Fighters_FighterHitboxManager_Reset
-  commentId: M:HnSF.Fighters.FighterHitboxManager.Reset
-  fullName: HnSF.Fighters.FighterHitboxManager.Reset()
-  nameWithType: FighterHitboxManager.Reset()
-- uid: HnSF.Fighters.FighterHitboxManager.Reset*
-  name: Reset
-  href: api/HnSF.Fighters.FighterHitboxManager.html#HnSF_Fighters_FighterHitboxManager_Reset_
-  commentId: Overload:HnSF.Fighters.FighterHitboxManager.Reset
-  isSpec: "True"
-  fullName: HnSF.Fighters.FighterHitboxManager.Reset
-  nameWithType: FighterHitboxManager.Reset
-- uid: HnSF.Fighters.FighterHitboxManager.ShouldHurt(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox)
-  name: ShouldHurt(HitboxGroup, Int32, Hurtbox)
-  href: api/HnSF.Fighters.FighterHitboxManager.html#HnSF_Fighters_FighterHitboxManager_ShouldHurt_HnSF_Combat_HitboxGroup_System_Int32_HnSF_Combat_Hurtbox_
-  commentId: M:HnSF.Fighters.FighterHitboxManager.ShouldHurt(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox)
-  fullName: HnSF.Fighters.FighterHitboxManager.ShouldHurt(HnSF.Combat.HitboxGroup, System.Int32, HnSF.Combat.Hurtbox)
-  nameWithType: FighterHitboxManager.ShouldHurt(HitboxGroup, Int32, Hurtbox)
-- uid: HnSF.Fighters.FighterHitboxManager.ShouldHurt*
-  name: ShouldHurt
-  href: api/HnSF.Fighters.FighterHitboxManager.html#HnSF_Fighters_FighterHitboxManager_ShouldHurt_
-  commentId: Overload:HnSF.Fighters.FighterHitboxManager.ShouldHurt
-  isSpec: "True"
-  fullName: HnSF.Fighters.FighterHitboxManager.ShouldHurt
-  nameWithType: FighterHitboxManager.ShouldHurt
 - uid: HnSF.Fighters.FighterHurtboxManager
   name: FighterHurtboxManager
   href: api/HnSF.Fighters.FighterHurtboxManager.html
@@ -4429,6 +4444,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.FighterPhysicsManagerBase.Freeze
   nameWithType: FighterPhysicsManagerBase.Freeze
+- uid: HnSF.Fighters.FighterPhysicsManagerBase.IsGrounded
+  name: IsGrounded
+  href: api/HnSF.Fighters.FighterPhysicsManagerBase.html#HnSF_Fighters_FighterPhysicsManagerBase_IsGrounded
+  commentId: P:HnSF.Fighters.FighterPhysicsManagerBase.IsGrounded
+  fullName: HnSF.Fighters.FighterPhysicsManagerBase.IsGrounded
+  nameWithType: FighterPhysicsManagerBase.IsGrounded
+- uid: HnSF.Fighters.FighterPhysicsManagerBase.IsGrounded*
+  name: IsGrounded
+  href: api/HnSF.Fighters.FighterPhysicsManagerBase.html#HnSF_Fighters_FighterPhysicsManagerBase_IsGrounded_
+  commentId: Overload:HnSF.Fighters.FighterPhysicsManagerBase.IsGrounded
+  isSpec: "True"
+  fullName: HnSF.Fighters.FighterPhysicsManagerBase.IsGrounded
+  nameWithType: FighterPhysicsManagerBase.IsGrounded
 - uid: HnSF.Fighters.FighterPhysicsManagerBase.manager
   name: manager
   href: api/HnSF.Fighters.FighterPhysicsManagerBase.html#HnSF_Fighters_FighterPhysicsManagerBase_manager
@@ -4448,6 +4476,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.FighterPhysicsManagerBase.ResetForces
   nameWithType: FighterPhysicsManagerBase.ResetForces
+- uid: HnSF.Fighters.FighterPhysicsManagerBase.SetGrounded(System.Boolean)
+  name: SetGrounded(Boolean)
+  href: api/HnSF.Fighters.FighterPhysicsManagerBase.html#HnSF_Fighters_FighterPhysicsManagerBase_SetGrounded_System_Boolean_
+  commentId: M:HnSF.Fighters.FighterPhysicsManagerBase.SetGrounded(System.Boolean)
+  fullName: HnSF.Fighters.FighterPhysicsManagerBase.SetGrounded(System.Boolean)
+  nameWithType: FighterPhysicsManagerBase.SetGrounded(Boolean)
+- uid: HnSF.Fighters.FighterPhysicsManagerBase.SetGrounded*
+  name: SetGrounded
+  href: api/HnSF.Fighters.FighterPhysicsManagerBase.html#HnSF_Fighters_FighterPhysicsManagerBase_SetGrounded_
+  commentId: Overload:HnSF.Fighters.FighterPhysicsManagerBase.SetGrounded
+  isSpec: "True"
+  fullName: HnSF.Fighters.FighterPhysicsManagerBase.SetGrounded
+  nameWithType: FighterPhysicsManagerBase.SetGrounded
 - uid: HnSF.Fighters.FighterPhysicsManagerBase.Tick
   name: Tick()
   href: api/HnSF.Fighters.FighterPhysicsManagerBase.html#HnSF_Fighters_FighterPhysicsManagerBase_Tick
@@ -4715,6 +4756,109 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.FighterStateManager.Tick
   nameWithType: FighterStateManager.Tick
+- uid: HnSF.Fighters.LookHandler
+  name: LookHandler
+  href: api/HnSF.Fighters.LookHandler.html
+  commentId: T:HnSF.Fighters.LookHandler
+  fullName: HnSF.Fighters.LookHandler
+  nameWithType: LookHandler
+- uid: HnSF.Fighters.LookHandler.LookAt(Vector3)
+  name: LookAt(Vector3)
+  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_LookAt_Vector3_
+  commentId: M:HnSF.Fighters.LookHandler.LookAt(Vector3)
+  fullName: HnSF.Fighters.LookHandler.LookAt(Vector3)
+  nameWithType: LookHandler.LookAt(Vector3)
+- uid: HnSF.Fighters.LookHandler.LookAt*
+  name: LookAt
+  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_LookAt_
+  commentId: Overload:HnSF.Fighters.LookHandler.LookAt
+  isSpec: "True"
+  fullName: HnSF.Fighters.LookHandler.LookAt
+  nameWithType: LookHandler.LookAt
+- uid: HnSF.Fighters.LookHandler.LookTransform
+  name: LookTransform()
+  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_LookTransform
+  commentId: M:HnSF.Fighters.LookHandler.LookTransform
+  fullName: HnSF.Fighters.LookHandler.LookTransform()
+  nameWithType: LookHandler.LookTransform()
+- uid: HnSF.Fighters.LookHandler.LookTransform*
+  name: LookTransform
+  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_LookTransform_
+  commentId: Overload:HnSF.Fighters.LookHandler.LookTransform
+  isSpec: "True"
+  fullName: HnSF.Fighters.LookHandler.LookTransform
+  nameWithType: LookHandler.LookTransform
+- uid: HnSF.Fighters.LookHandler.Reset
+  name: Reset()
+  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_Reset
+  commentId: M:HnSF.Fighters.LookHandler.Reset
+  fullName: HnSF.Fighters.LookHandler.Reset()
+  nameWithType: LookHandler.Reset()
+- uid: HnSF.Fighters.LookHandler.Reset*
+  name: Reset
+  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_Reset_
+  commentId: Overload:HnSF.Fighters.LookHandler.Reset
+  isSpec: "True"
+  fullName: HnSF.Fighters.LookHandler.Reset
+  nameWithType: LookHandler.Reset
+- uid: HnSF.Fighters.LookHandler.SetLockOnTarget(HnSF.Fighters.FighterBase)
+  name: SetLockOnTarget(FighterBase)
+  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_SetLockOnTarget_HnSF_Fighters_FighterBase_
+  commentId: M:HnSF.Fighters.LookHandler.SetLockOnTarget(HnSF.Fighters.FighterBase)
+  fullName: HnSF.Fighters.LookHandler.SetLockOnTarget(HnSF.Fighters.FighterBase)
+  nameWithType: LookHandler.SetLockOnTarget(FighterBase)
+- uid: HnSF.Fighters.LookHandler.SetLockOnTarget*
+  name: SetLockOnTarget
+  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_SetLockOnTarget_
+  commentId: Overload:HnSF.Fighters.LookHandler.SetLockOnTarget
+  isSpec: "True"
+  fullName: HnSF.Fighters.LookHandler.SetLockOnTarget
+  nameWithType: LookHandler.SetLockOnTarget
+- uid: HnSF.Fighters.LookHandler.SetLookAtTarget(Transform)
+  name: SetLookAtTarget(Transform)
+  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_SetLookAtTarget_Transform_
+  commentId: M:HnSF.Fighters.LookHandler.SetLookAtTarget(Transform)
+  fullName: HnSF.Fighters.LookHandler.SetLookAtTarget(Transform)
+  nameWithType: LookHandler.SetLookAtTarget(Transform)
+- uid: HnSF.Fighters.LookHandler.SetLookAtTarget*
+  name: SetLookAtTarget
+  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_SetLookAtTarget_
+  commentId: Overload:HnSF.Fighters.LookHandler.SetLookAtTarget
+  isSpec: "True"
+  fullName: HnSF.Fighters.LookHandler.SetLookAtTarget
+  nameWithType: LookHandler.SetLookAtTarget
+- uid: HnSF.Fighters.LookHandler.SetPosition(Vector3)
+  name: SetPosition(Vector3)
+  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_SetPosition_Vector3_
+  commentId: M:HnSF.Fighters.LookHandler.SetPosition(Vector3)
+  fullName: HnSF.Fighters.LookHandler.SetPosition(Vector3)
+  nameWithType: LookHandler.SetPosition(Vector3)
+- uid: HnSF.Fighters.LookHandler.SetPosition*
+  name: SetPosition
+  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_SetPosition_
+  commentId: Overload:HnSF.Fighters.LookHandler.SetPosition
+  isSpec: "True"
+  fullName: HnSF.Fighters.LookHandler.SetPosition
+  nameWithType: LookHandler.SetPosition
+- uid: HnSF.Fighters.LookHandler.SetRotation(Quaternion)
+  name: SetRotation(Quaternion)
+  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_SetRotation_Quaternion_
+  commentId: M:HnSF.Fighters.LookHandler.SetRotation(Quaternion)
+  fullName: HnSF.Fighters.LookHandler.SetRotation(Quaternion)
+  nameWithType: LookHandler.SetRotation(Quaternion)
+- uid: HnSF.Fighters.LookHandler.SetRotation(Vector3)
+  name: SetRotation(Vector3)
+  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_SetRotation_Vector3_
+  commentId: M:HnSF.Fighters.LookHandler.SetRotation(Vector3)
+  fullName: HnSF.Fighters.LookHandler.SetRotation(Vector3)
+  nameWithType: LookHandler.SetRotation(Vector3)
+- uid: HnSF.Fighters.LookHandler.SetRotation*
+  name: SetRotation
+  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_SetRotation_
+  commentId: Overload:HnSF.Fighters.LookHandler.SetRotation
+  isSpec: "True"
+  fullName: HnSF.Fighters.LookHandler.SetRotation
+  nameWithType: LookHandler.SetRotation
 - uid: HnSF.HelperFunctions
   name: HelperFunctions
   href: api/HnSF.HelperFunctions.html
@@ -5336,19 +5480,6 @@ references:
   commentId: T:HnSF.Simulation.SimObjectManager
   fullName: HnSF.Simulation.SimObjectManager
   nameWithType: SimObjectManager
-- uid: HnSF.Simulation.SimObjectManager.LateTick
-  name: LateTick()
-  href: api/HnSF.Simulation.SimObjectManager.html#HnSF_Simulation_SimObjectManager_LateTick
-  commentId: M:HnSF.Simulation.SimObjectManager.LateTick
-  fullName: HnSF.Simulation.SimObjectManager.LateTick()
-  nameWithType: SimObjectManager.LateTick()
-- uid: HnSF.Simulation.SimObjectManager.LateTick*
-  name: LateTick
-  href: api/HnSF.Simulation.SimObjectManager.html#HnSF_Simulation_SimObjectManager_LateTick_
-  commentId: Overload:HnSF.Simulation.SimObjectManager.LateTick
-  isSpec: "True"
-  fullName: HnSF.Simulation.SimObjectManager.LateTick
-  nameWithType: SimObjectManager.LateTick
 - uid: HnSF.Simulation.SimObjectManager.LateTickSimObjects
   name: LateTickSimObjects()
   href: api/HnSF.Simulation.SimObjectManager.html#HnSF_Simulation_SimObjectManager_LateTickSimObjects
