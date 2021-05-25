@@ -9,16 +9,16 @@ namespace HnSF.Combat
 {
     public class AttackDefinitionEditorWindow : EditorWindow
     {
-        PreviewRenderUtility renderUtils;
+        protected PreviewRenderUtility renderUtils;
         protected AttackDefinition attack;
         protected Fighters.FighterBase visualFighterPrefab;
 
         protected GameObject visualFighterSceneReference;
 
-        bool autoplay;
+        protected bool autoplay;
 
-        double playInterval;
-        double nextPlayTime = 0;
+        protected double playInterval;
+        protected double nextPlayTime = 0;
 
         protected bool showHitboxGroups = true;
         protected bool showHurtboxGroups = true;

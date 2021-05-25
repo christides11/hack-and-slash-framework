@@ -9,7 +9,7 @@ namespace HnSF.Combat
     public class HitInfoPropertyDrawer : HitInfoBasePropertyDrawer
     {
 
-        bool damageFoldoutGroup;
+        protected bool damageFoldoutGroup;
         protected override void DrawProperty(ref Rect position, SerializedProperty property, ref float yPosition)
         {
             base.DrawProperty(ref position, property, ref yPosition);
