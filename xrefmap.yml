@@ -181,6 +181,12 @@ references:
   commentId: F:HnSF.Combat.AttackDefinitionEditorWindow.attack
   fullName: HnSF.Combat.AttackDefinitionEditorWindow.attack
   nameWithType: AttackDefinitionEditorWindow.attack
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.autoplay
+  name: autoplay
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_autoplay
+  commentId: F:HnSF.Combat.AttackDefinitionEditorWindow.autoplay
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.autoplay
+  nameWithType: AttackDefinitionEditorWindow.autoplay
 - uid: HnSF.Combat.AttackDefinitionEditorWindow.CreateFighter
   name: CreateFighter()
   href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_CreateFighter
@@ -452,6 +458,12 @@ references:
   commentId: F:HnSF.Combat.AttackDefinitionEditorWindow.moveSpeed
   fullName: HnSF.Combat.AttackDefinitionEditorWindow.moveSpeed
   nameWithType: AttackDefinitionEditorWindow.moveSpeed
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.nextPlayTime
+  name: nextPlayTime
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_nextPlayTime
+  commentId: F:HnSF.Combat.AttackDefinitionEditorWindow.nextPlayTime
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.nextPlayTime
+  nameWithType: AttackDefinitionEditorWindow.nextPlayTime
 - uid: HnSF.Combat.AttackDefinitionEditorWindow.OnDisable
   name: OnDisable()
   href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_OnDisable
@@ -491,6 +503,18 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.AttackDefinitionEditorWindow.OnGUI
   nameWithType: AttackDefinitionEditorWindow.OnGUI
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.playInterval
+  name: playInterval
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_playInterval
+  commentId: F:HnSF.Combat.AttackDefinitionEditorWindow.playInterval
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.playInterval
+  nameWithType: AttackDefinitionEditorWindow.playInterval
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.renderUtils
+  name: renderUtils
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_renderUtils
+  commentId: F:HnSF.Combat.AttackDefinitionEditorWindow.renderUtils
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.renderUtils
+  nameWithType: AttackDefinitionEditorWindow.renderUtils
 - uid: HnSF.Combat.AttackDefinitionEditorWindow.ResetFighterVariables
   name: ResetFighterVariables()
   href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_ResetFighterVariables
@@ -1013,6 +1037,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.BoxDefinitionPropertyDrawer.GetPropertyHeight
   nameWithType: BoxDefinitionPropertyDrawer.GetPropertyHeight
+- uid: HnSF.Combat.BoxDefinitionPropertyDrawer.lineSpacing
+  name: lineSpacing
+  href: api/HnSF.Combat.BoxDefinitionPropertyDrawer.html#HnSF_Combat_BoxDefinitionPropertyDrawer_lineSpacing
+  commentId: F:HnSF.Combat.BoxDefinitionPropertyDrawer.lineSpacing
+  fullName: HnSF.Combat.BoxDefinitionPropertyDrawer.lineSpacing
+  nameWithType: BoxDefinitionPropertyDrawer.lineSpacing
 - uid: HnSF.Combat.BoxDefinitionPropertyDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
   name: OnGUI(Rect, SerializedProperty, GUIContent)
   href: api/HnSF.Combat.BoxDefinitionPropertyDrawer.html#HnSF_Combat_BoxDefinitionPropertyDrawer_OnGUI_Rect_SerializedProperty_GUIContent_
@@ -2089,6 +2119,12 @@ references:
   commentId: T:HnSF.Combat.HitInfoPropertyDrawer
   fullName: HnSF.Combat.HitInfoPropertyDrawer
   nameWithType: HitInfoPropertyDrawer
+- uid: HnSF.Combat.HitInfoPropertyDrawer.damageFoldoutGroup
+  name: damageFoldoutGroup
+  href: api/HnSF.Combat.HitInfoPropertyDrawer.html#HnSF_Combat_HitInfoPropertyDrawer_damageFoldoutGroup
+  commentId: F:HnSF.Combat.HitInfoPropertyDrawer.damageFoldoutGroup
+  fullName: HnSF.Combat.HitInfoPropertyDrawer.damageFoldoutGroup
+  nameWithType: HitInfoPropertyDrawer.damageFoldoutGroup
 - uid: HnSF.Combat.HitInfoPropertyDrawer.DrawDamageGroup(Rect,SerializedProperty,System.Single)
   name: DrawDamageGroup(Rect, SerializedProperty, Single)
   href: api/HnSF.Combat.HitInfoPropertyDrawer.html#HnSF_Combat_HitInfoPropertyDrawer_DrawDamageGroup_Rect_SerializedProperty_System_Single_
@@ -2716,6 +2752,30 @@ references:
   commentId: T:HnSF.Combat.MovesetAttackNodeEditor
   fullName: HnSF.Combat.MovesetAttackNodeEditor
   nameWithType: MovesetAttackNodeEditor
+- uid: HnSF.Combat.MovesetAttackNodeEditor.executeInputsDropdown
+  name: executeInputsDropdown
+  href: api/HnSF.Combat.MovesetAttackNodeEditor.html#HnSF_Combat_MovesetAttackNodeEditor_executeInputsDropdown
+  commentId: F:HnSF.Combat.MovesetAttackNodeEditor.executeInputsDropdown
+  fullName: HnSF.Combat.MovesetAttackNodeEditor.executeInputsDropdown
+  nameWithType: MovesetAttackNodeEditor.executeInputsDropdown
+- uid: HnSF.Combat.MovesetAttackNodeEditor.executeList
+  name: executeList
+  href: api/HnSF.Combat.MovesetAttackNodeEditor.html#HnSF_Combat_MovesetAttackNodeEditor_executeList
+  commentId: F:HnSF.Combat.MovesetAttackNodeEditor.executeList
+  fullName: HnSF.Combat.MovesetAttackNodeEditor.executeList
+  nameWithType: MovesetAttackNodeEditor.executeList
+- uid: HnSF.Combat.MovesetAttackNodeEditor.inputSequence
+  name: inputSequence
+  href: api/HnSF.Combat.MovesetAttackNodeEditor.html#HnSF_Combat_MovesetAttackNodeEditor_inputSequence
+  commentId: F:HnSF.Combat.MovesetAttackNodeEditor.inputSequence
+  fullName: HnSF.Combat.MovesetAttackNodeEditor.inputSequence
+  nameWithType: MovesetAttackNodeEditor.inputSequence
+- uid: HnSF.Combat.MovesetAttackNodeEditor.node
+  name: node
+  href: api/HnSF.Combat.MovesetAttackNodeEditor.html#HnSF_Combat_MovesetAttackNodeEditor_node
+  commentId: F:HnSF.Combat.MovesetAttackNodeEditor.node
+  fullName: HnSF.Combat.MovesetAttackNodeEditor.node
+  nameWithType: MovesetAttackNodeEditor.node
 - uid: HnSF.Combat.MovesetAttackNodeEditor.OnBodyGUI
   name: OnBodyGUI()
   href: api/HnSF.Combat.MovesetAttackNodeEditor.html#HnSF_Combat_MovesetAttackNodeEditor_OnBodyGUI

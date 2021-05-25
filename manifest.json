@@ -52,7 +52,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.AttackDefinitionEditorWindow.html",
-          "hash": "7wpP6zDCJ89djF2rbWaKUT2uuH8sMvwBr1G7mkHygk0="
+          "hash": "3+/stUbD2Sl0qIQ/1vG/2UvkBDtrTncGAhTWhN6B9EM="
         }
       },
       "is_incremental": false,
@@ -160,7 +160,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.BoxDefinitionPropertyDrawer.html",
-          "hash": "ufAPHV7ZYhep1zdC+aQ6aHZfdbWTTA7+lTOG7M9U6wA="
+          "hash": "rDurocZ6y0CV8GKYtEu7h0G7VrSxh03nOP0r4GprPiw="
         }
       },
       "is_incremental": false,
@@ -316,7 +316,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.HitInfoPropertyDrawer.html",
-          "hash": "AxnWTgTiTBSGwcYJhP7SwrzN0AKP5L01Pt5+6O3+HYA="
+          "hash": "vCm1AJKO03fEQCr7uozf/p4P7f1ouAHYjhyrN9tEiv4="
         }
       },
       "is_incremental": false,
@@ -592,7 +592,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.MovesetAttackNodeEditor.html",
-          "hash": "QCqlcoZQTys/IEIIDasmO/ztR2FYDvoRPIGYDcfGKpI="
+          "hash": "XyeQEkFsydRk+QgK8neHPuAphX4/AVw2Dv8aZ4xCLrY="
         }
       },
       "is_incremental": false,
