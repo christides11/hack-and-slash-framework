@@ -59,7 +59,12 @@ namespace TDAction.Combat
 
         protected override void MoveEntity()
         {
-            base.MoveEntity();
+            Vector2 mov = visualFighterSceneReference.GetComponent<TDAction.Fighter.FighterPhysicsManager>().GetOverallForce();
+            Vector3 finalMove = new Vector3(mov.x, mov.y, 0);
+            finalMove *= Time.fixedDeltaTime;
+
+            visualFighterSceneReference.transform.position += finalMove;
+
             TDAction.Fighter.FighterPhysicsManager pm = visualFighterSceneReference.GetComponent<TDAction.Fighter.FighterPhysicsManager>();
             pm.Tick();
         }
@@ -67,6 +72,7 @@ namespace TDAction.Combat
         protected override void ResetFighterVariables()
         {
             base.ResetFighterVariables();
+            visualFighterSceneReference.GetComponent<TDAction.Fighter.FighterPhysicsManager>().forceMovement = Vector2.zero;
             hitboxes.Clear();
             hurtboxes.Clear();
             if (string.IsNullOrEmpty((attack as AttackDefinition).animationName) == false)

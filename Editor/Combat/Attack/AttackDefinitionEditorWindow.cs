@@ -367,11 +367,7 @@ namespace HnSF.Combat
 
         protected virtual void MoveEntity()
         {
-            Vector2 mov = visualFighterSceneReference.GetComponent<Fighters.FighterPhysicsManager2D>().GetOverallForce();
-            Vector3 finalMove = new Vector3(mov.x, mov.y, 0);
-            finalMove *= Time.fixedDeltaTime;
 
-            visualFighterSceneReference.transform.position += finalMove;
         }
 
         Fighters.FighterBase tempFighter;
@@ -409,7 +405,6 @@ namespace HnSF.Combat
         protected virtual void ResetFighterVariables()
         {
             visualFighterSceneReference.transform.position = new Vector3(0, 0, 0);
-            visualFighterSceneReference.GetComponent<Fighters.FighterPhysicsManager2D>().forceMovement = Vector2.zero;
         }
 
         protected virtual void MenuBar(SerializedObject serializedObject)
