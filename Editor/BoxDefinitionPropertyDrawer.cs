@@ -8,7 +8,7 @@ namespace HnSF.Combat
     [CustomPropertyDrawer(typeof(BoxDefinition), true)]
     public class BoxDefinitionPropertyDrawer : PropertyDrawer
     {
-        float lineSpacing = 20;
+        protected float lineSpacing = 20;
 
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
         {

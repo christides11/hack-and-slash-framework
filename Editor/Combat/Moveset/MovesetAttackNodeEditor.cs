@@ -13,12 +13,12 @@ namespace HnSF.Combat
     [CustomNodeEditor(typeof(MovesetAttackNode))]
     public class MovesetAttackNodeEditor : NodeEditor
     {
-        MovesetAttackNode node;
+        protected MovesetAttackNode node;
 
-        bool executeInputsDropdown;
+        protected bool executeInputsDropdown;
 
-        private ReorderableList executeList;
-        private ReorderableList inputSequence;
+        protected ReorderableList executeList;
+        protected ReorderableList inputSequence;
 
         public override void OnCreate()
         {
