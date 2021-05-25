@@ -1,3 +1,10 @@
+## [19.0.1](https://github.com/christides11/hack-and-slash-framework/compare/v19.0.0...v19.0.1) (2021-05-25)
+
+
+### Bug Fixes
+
+* Attack editor movement changes ([cea8e76](https://github.com/christides11/hack-and-slash-framework/commit/cea8e7650efd6ef6481118b6480cac88953f31e8))
+
 # [19.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v18.0.0...v19.0.0) (2021-05-13)
 
 
