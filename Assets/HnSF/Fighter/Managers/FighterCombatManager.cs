@@ -52,6 +52,7 @@ namespace HnSF.Fighters
         /// </summary>
         public virtual MovesetAttackNode CurrentAttackNode { get { if (currentAttackNode < 0) { return null; } 
                 return (MovesetAttackNode)GetMoveset(currentAttackMoveset).GetAttackNode(currentAttackNode); } }
+        public virtual int CurrentAttackNodeIdentifier { get { return currentAttackNode; } }
         public HitInfoBase LastHitBy { get; protected set; }
 
         protected int currentMoveset = 0;
