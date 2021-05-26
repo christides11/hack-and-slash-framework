@@ -3439,6 +3439,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.FighterCombatManager.CurrentAttackNode
   nameWithType: FighterCombatManager.CurrentAttackNode
+- uid: HnSF.Fighters.FighterCombatManager.CurrentAttackNodeIdentifier
+  name: CurrentAttackNodeIdentifier
+  href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_CurrentAttackNodeIdentifier
+  commentId: P:HnSF.Fighters.FighterCombatManager.CurrentAttackNodeIdentifier
+  fullName: HnSF.Fighters.FighterCombatManager.CurrentAttackNodeIdentifier
+  nameWithType: FighterCombatManager.CurrentAttackNodeIdentifier
+- uid: HnSF.Fighters.FighterCombatManager.CurrentAttackNodeIdentifier*
+  name: CurrentAttackNodeIdentifier
+  href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_CurrentAttackNodeIdentifier_
+  commentId: Overload:HnSF.Fighters.FighterCombatManager.CurrentAttackNodeIdentifier
+  isSpec: "True"
+  fullName: HnSF.Fighters.FighterCombatManager.CurrentAttackNodeIdentifier
+  nameWithType: FighterCombatManager.CurrentAttackNodeIdentifier
 - uid: HnSF.Fighters.FighterCombatManager.CurrentChargeLevel
   name: CurrentChargeLevel
   href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_CurrentChargeLevel
