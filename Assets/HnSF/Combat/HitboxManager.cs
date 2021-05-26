@@ -9,7 +9,7 @@ namespace HnSF.Combat
     /// </summary>
     public class HitboxManager: MonoBehaviour
     {
-        protected class IDGroupCollisionInfo
+        public class IDGroupCollisionInfo
         {
             public List<GameObject> hitIHurtables = new List<GameObject>();
             public HashSet<int> hitboxGroups = new HashSet<int>();
@@ -19,7 +19,7 @@ namespace HnSF.Combat
         public event HitboxGroupEventAction OnHitHurtbox;
 
         // ID Group : Owners Hit
-        protected Dictionary<int, IDGroupCollisionInfo> collidedIHurtables = new Dictionary<int, IDGroupCollisionInfo>();
+        public Dictionary<int, IDGroupCollisionInfo> collidedIHurtables = new Dictionary<int, IDGroupCollisionInfo>();
 
         public virtual void Reset()
         {
