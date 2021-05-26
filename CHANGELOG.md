@@ -1,3 +1,10 @@
+# [19.1.0](https://github.com/christides11/hack-and-slash-framework/compare/v19.0.2...v19.1.0) (2021-05-26)
+
+
+### Features
+
+* Added getter for attack identifier ([af3c1ef](https://github.com/christides11/hack-and-slash-framework/commit/af3c1ef87f9541af6d1a2932da0517d4cb7db63c))
+
 ## [19.0.2](https://github.com/christides11/hack-and-slash-framework/compare/v19.0.1...v19.0.2) (2021-05-26)
 
 
