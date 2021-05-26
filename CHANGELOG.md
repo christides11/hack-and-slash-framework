@@ -1,3 +1,10 @@
+## [19.0.2](https://github.com/christides11/hack-and-slash-framework/compare/v19.0.1...v19.0.2) (2021-05-26)
+
+
+### Bug Fixes
+
+* Changed hitboxmanager variables to public ([951083e](https://github.com/christides11/hack-and-slash-framework/commit/951083e5ff3510657d614e9e34dc62fadd4e52db))
+
 ## [19.0.1](https://github.com/christides11/hack-and-slash-framework/compare/v19.0.0...v19.0.1) (2021-05-25)
 
 
