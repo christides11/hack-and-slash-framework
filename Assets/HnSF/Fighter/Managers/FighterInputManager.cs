@@ -120,14 +120,13 @@ namespace HnSF.Fighters
             {
                 return new InputRecordButton();
             }
-            if (checkBuffer 
-                && inputTick - 1 >= (frameOffset + bufferFrames))
+            if (checkBuffer && inputTick - 1 >= (frameOffset + bufferFrames))
             {
                 for (uint i = 0; i < bufferFrames; i++)
                 {
-                    InputRecordButton b = ((InputRecordButton)InputRecord[(inputTick - 1 - (frameOffset + bufferFrames)) % inputRecordSize].inputs[buttonID]);
+                    InputRecordButton b = ((InputRecordButton)InputRecord[(inputTick - 1 - (frameOffset + i)) % inputRecordSize].inputs[buttonID]);
                     //Can't go further, already used buffer past here.
-                    if (UsedInBuffer(buttonID, (inputTick - 1 - (frameOffset+bufferFrames))))
+                    if (UsedInBuffer(buttonID, (inputTick - 1 - (frameOffset + i))))
                     {
                         break;
                     }
