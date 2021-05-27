@@ -29,6 +29,11 @@ namespace HnSF.Fighters
             states[currentState].OnUpdate();
         }
 
+        public virtual void LateTick()
+        {
+            states[currentState].OnLateUpdate();
+        }
+
         /// <summary>
         /// Adds a state to the entity's state list.
         /// </summary>
