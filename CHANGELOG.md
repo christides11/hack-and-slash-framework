@@ -1,3 +1,10 @@
+# [19.2.0](https://github.com/christides11/hack-and-slash-framework/compare/v19.1.1...v19.2.0) (2021-05-27)
+
+
+### Features
+
+* Added LateUpdate for states. ([7643802](https://github.com/christides11/hack-and-slash-framework/commit/76438021281ed71556d438f7eb2682973c07480d))
+
 ## [19.1.1](https://github.com/christides11/hack-and-slash-framework/compare/v19.1.0...v19.1.1) (2021-05-27)
 
 
