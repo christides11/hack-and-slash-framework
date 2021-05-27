@@ -47,6 +47,7 @@ namespace HnSF.Fighters
 
         public virtual void LateTick()
         {
+            StateManager.LateTick();
             CombatManager.CLateUpdate();
         }
 

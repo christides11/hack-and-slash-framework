@@ -30,6 +30,14 @@
         }
 
         /// <summary>
+        /// Called every late update tick.
+        /// </summary>
+        public virtual void OnLateUpdate()
+        {
+
+        }
+
+        /// <summary>
         /// Called during OnUpdate to check if we should transition into another state.
         /// </summary>
         /// <returns>Returns true if we transitioned into another state.</returns>
