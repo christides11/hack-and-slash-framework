@@ -4646,6 +4646,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.FighterState.OnInterrupted
   nameWithType: FighterState.OnInterrupted
+- uid: HnSF.Fighters.FighterState.OnLateUpdate
+  name: OnLateUpdate()
+  href: api/HnSF.Fighters.FighterState.html#HnSF_Fighters_FighterState_OnLateUpdate
+  commentId: M:HnSF.Fighters.FighterState.OnLateUpdate
+  fullName: HnSF.Fighters.FighterState.OnLateUpdate()
+  nameWithType: FighterState.OnLateUpdate()
+- uid: HnSF.Fighters.FighterState.OnLateUpdate*
+  name: OnLateUpdate
+  href: api/HnSF.Fighters.FighterState.html#HnSF_Fighters_FighterState_OnLateUpdate_
+  commentId: Overload:HnSF.Fighters.FighterState.OnLateUpdate
+  isSpec: "True"
+  fullName: HnSF.Fighters.FighterState.OnLateUpdate
+  nameWithType: FighterState.OnLateUpdate
 - uid: HnSF.Fighters.FighterState.OnUpdate
   name: OnUpdate()
   href: api/HnSF.Fighters.FighterState.html#HnSF_Fighters_FighterState_OnUpdate
@@ -4761,6 +4774,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.FighterStateManager.IncrementFrame
   nameWithType: FighterStateManager.IncrementFrame
+- uid: HnSF.Fighters.FighterStateManager.LateTick
+  name: LateTick()
+  href: api/HnSF.Fighters.FighterStateManager.html#HnSF_Fighters_FighterStateManager_LateTick
+  commentId: M:HnSF.Fighters.FighterStateManager.LateTick
+  fullName: HnSF.Fighters.FighterStateManager.LateTick()
+  nameWithType: FighterStateManager.LateTick()
+- uid: HnSF.Fighters.FighterStateManager.LateTick*
+  name: LateTick
+  href: api/HnSF.Fighters.FighterStateManager.html#HnSF_Fighters_FighterStateManager_LateTick_
+  commentId: Overload:HnSF.Fighters.FighterStateManager.LateTick
+  isSpec: "True"
+  fullName: HnSF.Fighters.FighterStateManager.LateTick
+  nameWithType: FighterStateManager.LateTick
 - uid: HnSF.Fighters.FighterStateManager.manager
   name: manager
   href: api/HnSF.Fighters.FighterStateManager.html#HnSF_Fighters_FighterStateManager_manager
