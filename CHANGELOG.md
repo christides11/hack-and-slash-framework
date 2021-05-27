@@ -1,3 +1,10 @@
+## [19.1.1](https://github.com/christides11/hack-and-slash-framework/compare/v19.1.0...v19.1.1) (2021-05-27)
+
+
+### Bug Fixes
+
+* Input buffer check now works correctly. ([fd52b15](https://github.com/christides11/hack-and-slash-framework/commit/fd52b1525d5c3983a6922dafa94cf76bf1a72f9e))
+
 # [19.1.0](https://github.com/christides11/hack-and-slash-framework/compare/v19.0.2...v19.1.0) (2021-05-26)
 
 
