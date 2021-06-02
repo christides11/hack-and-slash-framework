@@ -1,3 +1,15 @@
+# [20.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v19.2.0...v20.0.0) (2021-06-02)
+
+
+### Code Refactoring
+
+* Hurtbox manager changes ([62e910d](https://github.com/christides11/hack-and-slash-framework/commit/62e910d349e48e1a97b18551571adae787fe02f7))
+
+
+### BREAKING CHANGES
+
+* Fixed issues with hurtbox manager, and allow a window to be infinite with a -1 end frame.
+
 # [19.2.0](https://github.com/christides11/hack-and-slash-framework/compare/v19.1.1...v19.2.0) (2021-05-27)
 
 
