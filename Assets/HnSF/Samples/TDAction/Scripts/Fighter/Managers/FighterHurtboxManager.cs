@@ -11,7 +11,7 @@ namespace TDAction.Fighter
 
         protected override void SetHurtboxInfo(int groupID, int hurtboxIndex)
         {
-            BoxDefinition bd = (BoxDefinition)currentHurtboxDefinition.hurtboxGroups[groupID].boxes[hurtboxIndex];
+            BoxDefinition bd = (BoxDefinition)hurtboxDefinition.hurtboxGroups[groupID].boxes[hurtboxIndex];
             BoxCollider2D bc = hurtboxGroups[groupID][hurtboxIndex].GetComponent<BoxCollider2D>();
             bc.size = bd.size;
             bc.transform.localPosition = bd.offset;

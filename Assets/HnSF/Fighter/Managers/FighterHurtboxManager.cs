@@ -11,18 +11,18 @@ namespace HnSF.Fighters
     {
         [SerializeField] protected FighterBase manager;
 
-        protected StateHurtboxDefinition currentHurtboxDefinition;
+        protected StateHurtboxDefinition hurtboxDefinition;
 
         protected List<Hurtbox> hurtboxPool = new List<Hurtbox>();
         protected Dictionary<int, List<Hurtbox>> hurtboxGroups = new Dictionary<int, List<Hurtbox>>();
 
         public virtual void Tick()
         {
-            CreateHurtboxes(manager.StateManager.CurrentStateFrame);
+            CreateHurtboxes(hurtboxDefinition, manager.StateManager.CurrentStateFrame);
         }
 
         List<int> hurtboxGroupsToDelete = new List<int>();
-        public virtual void CreateHurtboxes(uint frame)
+        public virtual void CreateHurtboxes(StateHurtboxDefinition currentHurtboxDefinition, uint frame)
         {
             if(currentHurtboxDefinition == null)
             {
@@ -44,8 +44,7 @@ namespace HnSF.Fighters
                 }
 
                 // CHECK CLEANUP WINDOW //
-                if (manager.StateManager.CurrentStateFrame > currentHurtboxDefinition.hurtboxGroups[i].activeFramesEnd
-                    || manager.StateManager.CurrentStateFrame < currentHurtboxDefinition.hurtboxGroups[i].activeFramesStart)
+                if(CheckWithinHurtboxWindow(currentHurtboxDefinition, i, frame) == false)
                 {
                     CleanupHurtboxGroup(i);
                     continue;
@@ -90,7 +89,21 @@ namespace HnSF.Fighters
             hurtboxGroupsToDelete.Clear();
         }
 
-        private void CleanupHurtboxGroup(int groupID)
+        protected virtual bool CheckWithinHurtboxWindow(StateHurtboxDefinition currentHurtboxDefinition, int groupIndex, uint frame)
+        {
+            if (currentHurtboxDefinition.hurtboxGroups[groupIndex].activeFramesEnd == -1)
+            {
+                return true;
+            }
+            if (frame > currentHurtboxDefinition.hurtboxGroups[groupIndex].activeFramesEnd
+                || frame < currentHurtboxDefinition.hurtboxGroups[groupIndex].activeFramesStart)
+            {
+                return false;
+            }
+            return true;
+        }
+
+        protected virtual void CleanupHurtboxGroup(int groupID)
         {
             for(int i = 0; i < hurtboxGroups[groupID].Count; i++)
             {
@@ -121,7 +134,7 @@ namespace HnSF.Fighters
 
         public virtual void SetHurtboxDefinition(StateHurtboxDefinition stateHurtboxDefinition)
         {
-            currentHurtboxDefinition = stateHurtboxDefinition;
+            hurtboxDefinition = stateHurtboxDefinition;
         }
     }
 }

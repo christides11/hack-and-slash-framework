@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e2d6707a247737643a7bd6e502f646ef, type: 3}
-  m_Name: StateHurtbox
+  m_Name: Hurtbox-Idle
   m_EditorClassIdentifier: 
   hurtboxGroups:
   - id: 0
@@ -20,8 +20,8 @@ MonoBehaviour:
       type: {class: HurtboxGroup, ns: HnSF.Combat, asm: HnSF}
       data:
         ID: 0
-        activeFramesStart: 0
-        activeFramesEnd: 100
+        activeFramesStart: -1
+        activeFramesEnd: -1
         boxes:
         - id: 1
         attachToEntity: 1
