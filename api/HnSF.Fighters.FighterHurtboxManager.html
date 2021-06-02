@@ -100,17 +100,17 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Fighters_FighterHurtboxManager_currentHurtboxDefinition.md&amp;value=---%0Auid%3A%20HnSF.Fighters.FighterHurtboxManager.currentHurtboxDefinition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Fighters_FighterHurtboxManager_hurtboxDefinition.md&amp;value=---%0Auid%3A%20HnSF.Fighters.FighterHurtboxManager.hurtboxDefinition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterHurtboxManager.cs/#L14">View Source</a>
   </span>
-  <h4 id="HnSF_Fighters_FighterHurtboxManager_currentHurtboxDefinition" data-uid="HnSF.Fighters.FighterHurtboxManager.currentHurtboxDefinition">currentHurtboxDefinition</h4>
+  <h4 id="HnSF_Fighters_FighterHurtboxManager_hurtboxDefinition" data-uid="HnSF.Fighters.FighterHurtboxManager.hurtboxDefinition">hurtboxDefinition</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected StateHurtboxDefinition currentHurtboxDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">protected StateHurtboxDefinition hurtboxDefinition</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -218,10 +218,99 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Fighters_FighterHurtboxManager_CheckWithinHurtboxWindow_HnSF_Combat_StateHurtboxDefinition_System_Int32_System_UInt32_.md&amp;value=---%0Auid%3A%20HnSF.Fighters.FighterHurtboxManager.CheckWithinHurtboxWindow(HnSF.Combat.StateHurtboxDefinition%2CSystem.Int32%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterHurtboxManager.cs/#L92">View Source</a>
+  </span>
+  <a id="HnSF_Fighters_FighterHurtboxManager_CheckWithinHurtboxWindow_" data-uid="HnSF.Fighters.FighterHurtboxManager.CheckWithinHurtboxWindow*"></a>
+  <h4 id="HnSF_Fighters_FighterHurtboxManager_CheckWithinHurtboxWindow_HnSF_Combat_StateHurtboxDefinition_System_Int32_System_UInt32_" data-uid="HnSF.Fighters.FighterHurtboxManager.CheckWithinHurtboxWindow(HnSF.Combat.StateHurtboxDefinition,System.Int32,System.UInt32)">CheckWithinHurtboxWindow(StateHurtboxDefinition, Int32, UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool CheckWithinHurtboxWindow(StateHurtboxDefinition currentHurtboxDefinition, int groupIndex, uint frame)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HnSF.Combat.StateHurtboxDefinition.html">StateHurtboxDefinition</a></td>
+        <td><span class="parametername">currentHurtboxDefinition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">groupIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Fighters_FighterHurtboxManager_CleanupHurtboxGroup_System_Int32_.md&amp;value=---%0Auid%3A%20HnSF.Fighters.FighterHurtboxManager.CleanupHurtboxGroup(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterHurtboxManager.cs/#L106">View Source</a>
+  </span>
+  <a id="HnSF_Fighters_FighterHurtboxManager_CleanupHurtboxGroup_" data-uid="HnSF.Fighters.FighterHurtboxManager.CleanupHurtboxGroup*"></a>
+  <h4 id="HnSF_Fighters_FighterHurtboxManager_CleanupHurtboxGroup_System_Int32_" data-uid="HnSF.Fighters.FighterHurtboxManager.CleanupHurtboxGroup(System.Int32)">CleanupHurtboxGroup(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CleanupHurtboxGroup(int groupID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">groupID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Fighters_FighterHurtboxManager_CreateHurtbox.md&amp;value=---%0Auid%3A%20HnSF.Fighters.FighterHurtboxManager.CreateHurtbox%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterHurtboxManager.cs/#L107">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterHurtboxManager.cs/#L120">View Source</a>
   </span>
   <a id="HnSF_Fighters_FighterHurtboxManager_CreateHurtbox_" data-uid="HnSF.Fighters.FighterHurtboxManager.CreateHurtbox*"></a>
   <h4 id="HnSF_Fighters_FighterHurtboxManager_CreateHurtbox" data-uid="HnSF.Fighters.FighterHurtboxManager.CreateHurtbox">CreateHurtbox()</h4>
@@ -248,18 +337,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Fighters_FighterHurtboxManager_CreateHurtboxes_System_UInt32_.md&amp;value=---%0Auid%3A%20HnSF.Fighters.FighterHurtboxManager.CreateHurtboxes(System.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Fighters_FighterHurtboxManager_CreateHurtboxes_HnSF_Combat_StateHurtboxDefinition_System_UInt32_.md&amp;value=---%0Auid%3A%20HnSF.Fighters.FighterHurtboxManager.CreateHurtboxes(HnSF.Combat.StateHurtboxDefinition%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterHurtboxManager.cs/#L25">View Source</a>
   </span>
   <a id="HnSF_Fighters_FighterHurtboxManager_CreateHurtboxes_" data-uid="HnSF.Fighters.FighterHurtboxManager.CreateHurtboxes*"></a>
-  <h4 id="HnSF_Fighters_FighterHurtboxManager_CreateHurtboxes_System_UInt32_" data-uid="HnSF.Fighters.FighterHurtboxManager.CreateHurtboxes(System.UInt32)">CreateHurtboxes(UInt32)</h4>
+  <h4 id="HnSF_Fighters_FighterHurtboxManager_CreateHurtboxes_HnSF_Combat_StateHurtboxDefinition_System_UInt32_" data-uid="HnSF.Fighters.FighterHurtboxManager.CreateHurtboxes(HnSF.Combat.StateHurtboxDefinition,System.UInt32)">CreateHurtboxes(StateHurtboxDefinition, UInt32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void CreateHurtboxes(uint frame)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void CreateHurtboxes(StateHurtboxDefinition currentHurtboxDefinition, uint frame)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -272,6 +361,11 @@
     </thead>
     <tbody>
       <tr>
+        <td><a class="xref" href="HnSF.Combat.StateHurtboxDefinition.html">StateHurtboxDefinition</a></td>
+        <td><span class="parametername">currentHurtboxDefinition</span></td>
+        <td></td>
+      </tr>
+      <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
         <td><span class="parametername">frame</span></td>
         <td></td>
@@ -283,7 +377,7 @@
     <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Fighters_FighterHurtboxManager_DestroyHurtbox_HnSF_Combat_Hurtbox_.md&amp;value=---%0Auid%3A%20HnSF.Fighters.FighterHurtboxManager.DestroyHurtbox(HnSF.Combat.Hurtbox)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterHurtboxManager.cs/#L116">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterHurtboxManager.cs/#L129">View Source</a>
   </span>
   <a id="HnSF_Fighters_FighterHurtboxManager_DestroyHurtbox_" data-uid="HnSF.Fighters.FighterHurtboxManager.DestroyHurtbox*"></a>
   <h4 id="HnSF_Fighters_FighterHurtboxManager_DestroyHurtbox_HnSF_Combat_Hurtbox_" data-uid="HnSF.Fighters.FighterHurtboxManager.DestroyHurtbox(HnSF.Combat.Hurtbox)">DestroyHurtbox(Hurtbox)</h4>
@@ -317,7 +411,7 @@
     <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Fighters_FighterHurtboxManager_SetHurtboxDefinition_HnSF_Combat_StateHurtboxDefinition_.md&amp;value=---%0Auid%3A%20HnSF.Fighters.FighterHurtboxManager.SetHurtboxDefinition(HnSF.Combat.StateHurtboxDefinition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterHurtboxManager.cs/#L122">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterHurtboxManager.cs/#L135">View Source</a>
   </span>
   <a id="HnSF_Fighters_FighterHurtboxManager_SetHurtboxDefinition_" data-uid="HnSF.Fighters.FighterHurtboxManager.SetHurtboxDefinition*"></a>
   <h4 id="HnSF_Fighters_FighterHurtboxManager_SetHurtboxDefinition_HnSF_Combat_StateHurtboxDefinition_" data-uid="HnSF.Fighters.FighterHurtboxManager.SetHurtboxDefinition(HnSF.Combat.StateHurtboxDefinition)">SetHurtboxDefinition(StateHurtboxDefinition)</h4>
@@ -349,7 +443,7 @@
     <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Fighters_FighterHurtboxManager_SetHurtboxInfo_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20HnSF.Fighters.FighterHurtboxManager.SetHurtboxInfo(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterHurtboxManager.cs/#L102">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterHurtboxManager.cs/#L115">View Source</a>
   </span>
   <a id="HnSF_Fighters_FighterHurtboxManager_SetHurtboxInfo_" data-uid="HnSF.Fighters.FighterHurtboxManager.SetHurtboxInfo*"></a>
   <h4 id="HnSF_Fighters_FighterHurtboxManager_SetHurtboxInfo_System_Int32_System_Int32_" data-uid="HnSF.Fighters.FighterHurtboxManager.SetHurtboxInfo(System.Int32,System.Int32)">SetHurtboxInfo(Int32, Int32)</h4>

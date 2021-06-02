@@ -3894,6 +3894,32 @@ references:
   commentId: T:HnSF.Fighters.FighterHurtboxManager
   fullName: HnSF.Fighters.FighterHurtboxManager
   nameWithType: FighterHurtboxManager
+- uid: HnSF.Fighters.FighterHurtboxManager.CheckWithinHurtboxWindow(HnSF.Combat.StateHurtboxDefinition,System.Int32,System.UInt32)
+  name: CheckWithinHurtboxWindow(StateHurtboxDefinition, Int32, UInt32)
+  href: api/HnSF.Fighters.FighterHurtboxManager.html#HnSF_Fighters_FighterHurtboxManager_CheckWithinHurtboxWindow_HnSF_Combat_StateHurtboxDefinition_System_Int32_System_UInt32_
+  commentId: M:HnSF.Fighters.FighterHurtboxManager.CheckWithinHurtboxWindow(HnSF.Combat.StateHurtboxDefinition,System.Int32,System.UInt32)
+  fullName: HnSF.Fighters.FighterHurtboxManager.CheckWithinHurtboxWindow(HnSF.Combat.StateHurtboxDefinition, System.Int32, System.UInt32)
+  nameWithType: FighterHurtboxManager.CheckWithinHurtboxWindow(StateHurtboxDefinition, Int32, UInt32)
+- uid: HnSF.Fighters.FighterHurtboxManager.CheckWithinHurtboxWindow*
+  name: CheckWithinHurtboxWindow
+  href: api/HnSF.Fighters.FighterHurtboxManager.html#HnSF_Fighters_FighterHurtboxManager_CheckWithinHurtboxWindow_
+  commentId: Overload:HnSF.Fighters.FighterHurtboxManager.CheckWithinHurtboxWindow
+  isSpec: "True"
+  fullName: HnSF.Fighters.FighterHurtboxManager.CheckWithinHurtboxWindow
+  nameWithType: FighterHurtboxManager.CheckWithinHurtboxWindow
+- uid: HnSF.Fighters.FighterHurtboxManager.CleanupHurtboxGroup(System.Int32)
+  name: CleanupHurtboxGroup(Int32)
+  href: api/HnSF.Fighters.FighterHurtboxManager.html#HnSF_Fighters_FighterHurtboxManager_CleanupHurtboxGroup_System_Int32_
+  commentId: M:HnSF.Fighters.FighterHurtboxManager.CleanupHurtboxGroup(System.Int32)
+  fullName: HnSF.Fighters.FighterHurtboxManager.CleanupHurtboxGroup(System.Int32)
+  nameWithType: FighterHurtboxManager.CleanupHurtboxGroup(Int32)
+- uid: HnSF.Fighters.FighterHurtboxManager.CleanupHurtboxGroup*
+  name: CleanupHurtboxGroup
+  href: api/HnSF.Fighters.FighterHurtboxManager.html#HnSF_Fighters_FighterHurtboxManager_CleanupHurtboxGroup_
+  commentId: Overload:HnSF.Fighters.FighterHurtboxManager.CleanupHurtboxGroup
+  isSpec: "True"
+  fullName: HnSF.Fighters.FighterHurtboxManager.CleanupHurtboxGroup
+  nameWithType: FighterHurtboxManager.CleanupHurtboxGroup
 - uid: HnSF.Fighters.FighterHurtboxManager.CreateHurtbox
   name: CreateHurtbox()
   href: api/HnSF.Fighters.FighterHurtboxManager.html#HnSF_Fighters_FighterHurtboxManager_CreateHurtbox
@@ -3907,12 +3933,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.FighterHurtboxManager.CreateHurtbox
   nameWithType: FighterHurtboxManager.CreateHurtbox
-- uid: HnSF.Fighters.FighterHurtboxManager.CreateHurtboxes(System.UInt32)
-  name: CreateHurtboxes(UInt32)
-  href: api/HnSF.Fighters.FighterHurtboxManager.html#HnSF_Fighters_FighterHurtboxManager_CreateHurtboxes_System_UInt32_
-  commentId: M:HnSF.Fighters.FighterHurtboxManager.CreateHurtboxes(System.UInt32)
-  fullName: HnSF.Fighters.FighterHurtboxManager.CreateHurtboxes(System.UInt32)
-  nameWithType: FighterHurtboxManager.CreateHurtboxes(UInt32)
+- uid: HnSF.Fighters.FighterHurtboxManager.CreateHurtboxes(HnSF.Combat.StateHurtboxDefinition,System.UInt32)
+  name: CreateHurtboxes(StateHurtboxDefinition, UInt32)
+  href: api/HnSF.Fighters.FighterHurtboxManager.html#HnSF_Fighters_FighterHurtboxManager_CreateHurtboxes_HnSF_Combat_StateHurtboxDefinition_System_UInt32_
+  commentId: M:HnSF.Fighters.FighterHurtboxManager.CreateHurtboxes(HnSF.Combat.StateHurtboxDefinition,System.UInt32)
+  fullName: HnSF.Fighters.FighterHurtboxManager.CreateHurtboxes(HnSF.Combat.StateHurtboxDefinition, System.UInt32)
+  nameWithType: FighterHurtboxManager.CreateHurtboxes(StateHurtboxDefinition, UInt32)
 - uid: HnSF.Fighters.FighterHurtboxManager.CreateHurtboxes*
   name: CreateHurtboxes
   href: api/HnSF.Fighters.FighterHurtboxManager.html#HnSF_Fighters_FighterHurtboxManager_CreateHurtboxes_
@@ -3920,12 +3946,6 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.FighterHurtboxManager.CreateHurtboxes
   nameWithType: FighterHurtboxManager.CreateHurtboxes
-- uid: HnSF.Fighters.FighterHurtboxManager.currentHurtboxDefinition
-  name: currentHurtboxDefinition
-  href: api/HnSF.Fighters.FighterHurtboxManager.html#HnSF_Fighters_FighterHurtboxManager_currentHurtboxDefinition
-  commentId: F:HnSF.Fighters.FighterHurtboxManager.currentHurtboxDefinition
-  fullName: HnSF.Fighters.FighterHurtboxManager.currentHurtboxDefinition
-  nameWithType: FighterHurtboxManager.currentHurtboxDefinition
 - uid: HnSF.Fighters.FighterHurtboxManager.DestroyHurtbox(HnSF.Combat.Hurtbox)
   name: DestroyHurtbox(Hurtbox)
   href: api/HnSF.Fighters.FighterHurtboxManager.html#HnSF_Fighters_FighterHurtboxManager_DestroyHurtbox_HnSF_Combat_Hurtbox_
@@ -3939,6 +3959,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.FighterHurtboxManager.DestroyHurtbox
   nameWithType: FighterHurtboxManager.DestroyHurtbox
+- uid: HnSF.Fighters.FighterHurtboxManager.hurtboxDefinition
+  name: hurtboxDefinition
+  href: api/HnSF.Fighters.FighterHurtboxManager.html#HnSF_Fighters_FighterHurtboxManager_hurtboxDefinition
+  commentId: F:HnSF.Fighters.FighterHurtboxManager.hurtboxDefinition
+  fullName: HnSF.Fighters.FighterHurtboxManager.hurtboxDefinition
+  nameWithType: FighterHurtboxManager.hurtboxDefinition
 - uid: HnSF.Fighters.FighterHurtboxManager.hurtboxGroups
   name: hurtboxGroups
   href: api/HnSF.Fighters.FighterHurtboxManager.html#HnSF_Fighters_FighterHurtboxManager_hurtboxGroups
