@@ -55,6 +55,7 @@ namespace HnSF.Combat
             EditorGUI.PropertyField(activeFramesEndRect, property.FindPropertyRelative("activeFramesEnd"), GUIContent.none);
             yPosition += lineSpacing;
             EditorGUI.PropertyField(new Rect(position.x, yPosition, position.width, lineHeight), property.FindPropertyRelative("attachToEntity"));
+            yPosition += lineSpacing;
             EditorGUI.PropertyField(new Rect(position.x, yPosition, position.width, lineHeight), property.FindPropertyRelative("attachTo"));
             return yPosition;
         }
