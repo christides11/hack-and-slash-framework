@@ -21,7 +21,6 @@ namespace HnSF.Combat
         protected double nextPlayTime = 0;
 
         protected bool showHitboxGroups = true;
-        protected bool showHurtboxGroups = true;
         protected bool showEvents = true;
         protected bool showCharges = true;
         protected bool showCancels = true;
@@ -241,11 +240,6 @@ namespace HnSF.Combat
                 DrawHitboxGroupBars(serializedObject);
             }
             GUILayout.Space(10);
-            if (showHurtboxGroups)
-            {
-                DrawHurtboxGroupBars(serializedObject);
-            }
-            GUILayout.Space(10);
             if (showEvents)
             {
                 DrawEventBars(serializedObject);
@@ -322,12 +316,9 @@ namespace HnSF.Combat
             }
             for(int i = 0; i < attack.hitboxGroups.Count; i++)
             {
-                HandleHitboxGroup(i, attack.hitboxGroups[i]);
+                DrawHitboxGroup(i, attack.hitboxGroups[i]);
             }
-            for(int i = 0; i < attack.hurtboxGroups.Count; i++)
-            {
-                HandleHurtboxGroup(i, attack.hurtboxGroups[i]);
-            }
+            DrawHurtboxDefinition(attack.hurtboxDefinition);
             for (int i = 0; i < attack.events.Count; i++)
             {
                 HandleEvent(attack.events[i]);
@@ -336,12 +327,12 @@ namespace HnSF.Combat
             MoveEntity();
         }
 
-        protected virtual void HandleHurtboxGroup(int index, HurtboxGroup hurtboxGroup)
+        protected virtual void DrawHurtboxDefinition(StateHurtboxDefinition hurtboxDefinition)
         {
 
         }
 
-        protected virtual void HandleHitboxGroup(int index, HitboxGroup hitboxGroup)
+        protected virtual void DrawHitboxGroup(int index, HitboxGroup hitboxGroup)
         {
 
         }
@@ -383,6 +374,13 @@ namespace HnSF.Combat
             }
             EditorGUILayout.EndHorizontal();
             EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("hurtboxDefinition"));
+            if (GUILayout.Button("Open"))
+            {
+                Selection.activeObject = serializedObject.FindProperty("hurtboxDefinition").objectReferenceValue;
+            }
+            EditorGUILayout.EndHorizontal();
+            EditorGUILayout.BeginHorizontal();
             EditorGUILayout.PropertyField(serializedObject.FindProperty("useState"), new GUIContent("State Override"));
             EditorGUI.BeginDisabledGroup(!serializedObject.FindProperty("useState").boolValue);
             EditorGUILayout.PropertyField(serializedObject.FindProperty("stateOverride"), GUIContent.none);
@@ -410,7 +408,6 @@ namespace HnSF.Combat
         protected virtual void MenuBar(SerializedObject serializedObject)
         {
             showHitboxGroups = GUILayout.Toggle(showHitboxGroups, "Hitbox Grops", "Button");
-            showHurtboxGroups = GUILayout.Toggle(showHurtboxGroups, "Hurtbox Groups", "Button");
             showEvents = GUILayout.Toggle(showEvents, "Events", "Button");
             showCharges = GUILayout.Toggle(showCharges, "Charges", "Button");
             showCancels = GUILayout.Toggle(showCancels, "Cancels", "Button");
@@ -444,44 +441,6 @@ namespace HnSF.Combat
                 if(GUILayout.Button("Info", GUILayout.Width(100)))
                 {
                     HitboxGroupEditorWindow.Init(attack, attack.hitboxGroups[i], "hitboxGroups", i);//attack.hitboxGroups[i]);
-                }
-                EditorGUILayout.MinMaxSlider(ref activeFramesStart,
-                    ref activeFramesEnd,
-                    1,
-                    serializedObject.FindProperty("length").intValue);
-                arrayElement.FindPropertyRelative("activeFramesStart").intValue = (int)activeFramesStart;
-                arrayElement.FindPropertyRelative("activeFramesEnd").intValue = (int)activeFramesEnd;
-                EditorGUILayout.EndHorizontal();
-            }
-        }
-
-        protected virtual void DrawHurtboxGroupBars(SerializedObject serializedObject)
-        {
-            EditorGUILayout.BeginHorizontal();
-            GUILayout.Label("Hurtbox Groups", EditorStyles.boldLabel);
-            if (GUILayout.Button("+", GUILayout.Width(30), GUILayout.MaxWidth(30)))
-            {
-                AddHurtboxGroup(serializedObject);
-            }
-            EditorGUILayout.EndHorizontal();
-            DrawUILine(Color.gray);
-            var hurtboxGroupProperty = serializedObject.FindProperty("hurtboxGroups");
-            for (int i = 0; i < hurtboxGroupProperty.arraySize; i++)
-            {
-                EditorGUILayout.BeginHorizontal();
-                GUILayout.Space(25);
-                if(GUILayout.Button("-", GUILayout.Width(20)))
-                {
-                    hurtboxGroupProperty.DeleteArrayElementAtIndex(i);
-                    return;
-                }
-                SerializedProperty arrayElement = hurtboxGroupProperty.GetArrayElementAtIndex(i);
-                float activeFramesStart = arrayElement.FindPropertyRelative("activeFramesStart").intValue;
-                float activeFramesEnd = arrayElement.FindPropertyRelative("activeFramesEnd").intValue;
-                EditorGUILayout.LabelField($"{activeFramesStart.ToString("F0")}~{activeFramesEnd.ToString("F0")}", GUILayout.Width(55));
-                if (GUILayout.Button("Info", GUILayout.Width(100)))
-                {
-                    HurtboxGroupEditorWindow.Init(attack.hurtboxGroups[i]);
                 }
                 EditorGUILayout.MinMaxSlider(ref activeFramesStart,
                     ref activeFramesEnd,
@@ -618,10 +577,9 @@ namespace HnSF.Combat
 
         protected virtual void AddHurtboxGroup(SerializedObject serializedObject)
         {
-            SerializedProperty hurtboxGroupsProperty = serializedObject.FindProperty("hurtboxGroups");
+            SerializedProperty hurtboxGroupsProperty = serializedObject.FindProperty("hurtboxes");
             hurtboxGroupsProperty.InsertArrayElementAtIndex(hurtboxGroupsProperty.arraySize);
-            hurtboxGroupsProperty.GetArrayElementAtIndex(hurtboxGroupsProperty.arraySize - 1)
-                .managedReferenceValue = new HurtboxGroup();
+            hurtboxGroupsProperty.GetArrayElementAtIndex(hurtboxGroupsProperty.arraySize - 1).objectReferenceValue = null;
         }
 
         protected virtual void AddEventDefinition(SerializedObject serializedObject)

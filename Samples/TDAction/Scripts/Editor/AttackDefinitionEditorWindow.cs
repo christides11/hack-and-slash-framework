@@ -121,44 +121,55 @@ namespace TDAction.Combat
             }
         }
 
-        protected override void HandleHurtboxGroup(int index, HurtboxGroup hurtboxGroup)
+        protected override void DrawHurtboxDefinition(StateHurtboxDefinition hurtboxDefinition)
         {
             if (visualFighterSceneReference == null)
             {
                 return;
             }
 
-            if(timelineFrame == hurtboxGroup.activeFramesStart)
+            if (hurtboxDefinition == null)
             {
-                for(int i = 0; i < hurtboxGroup.boxes.Count; i++)
-                {
-                    Vector3 position = hurtboxGroup.attachToEntity ? ((HnSF.Combat.BoxDefinition)hurtboxGroup.boxes[i]).offset
-                        : visualFighterSceneReference.transform.position + ((HnSF.Combat.BoxDefinition)hurtboxGroup.boxes[i]).offset;
-
-                    hurtboxes.Add(new DrawnBoxDefinition()
-                    {
-                        attached = hurtboxGroup.attachToEntity,
-                        group = index,
-                        position = position,
-                        size = ((HnSF.Combat.BoxDefinition)hurtboxGroup.boxes[i]).size
-                    });
-                }
+                return;
             }
 
-            // Remove stray hitboxes
-            if (timelineFrame == hurtboxGroup.activeFramesEnd + 1)
+            for(int i = 0; i < hurtboxDefinition.hurtboxGroups.Count; i++)
             {
-                for (int i = 0; i < hurtboxes.Count; i++)
+                if(timelineFrame == hurtboxDefinition.hurtboxGroups[i].activeFramesStart
+                    || hurtboxDefinition.hurtboxGroups[i].activeFramesEnd == -1)
                 {
-                    if (hurtboxes[i].group == index)
+                    for (int w = 0; w < hurtboxDefinition.hurtboxGroups[i].boxes.Count; w++)
                     {
-                        hurtboxes.RemoveAt(i);
+                        
+                        Vector3 position = hurtboxDefinition.hurtboxGroups[i].attachToEntity 
+                            ? ((HnSF.Combat.BoxDefinition)hurtboxDefinition.hurtboxGroups[i].boxes[w]).offset
+                            : visualFighterSceneReference.transform.position + ((HnSF.Combat.BoxDefinition)hurtboxDefinition.hurtboxGroups[i].boxes[w]).offset;
+
+                        hurtboxes.Add(new DrawnBoxDefinition()
+                        {
+                            attached = hurtboxDefinition.hurtboxGroups[i].attachToEntity,
+                            group = i,
+                            position = position,
+                            size = ((HnSF.Combat.BoxDefinition)hurtboxDefinition.hurtboxGroups[i].boxes[w]).size
+                        });
+                    }
+                }
+
+                // Remove stray hitboxes
+                if (hurtboxDefinition.hurtboxGroups[i].activeFramesEnd != -1 && timelineFrame == hurtboxDefinition.hurtboxGroups[i].activeFramesEnd + 1)
+                {
+                    for (int w = 0; w < hurtboxes.Count; w++)
+                    {
+                        if (hurtboxes[w].group == i)
+                        {
+                            hurtboxes.RemoveAt(i);
+                        }
                     }
                 }
             }
         }
 
-        protected override void HandleHitboxGroup(int index, HitboxGroup hitboxGroup)
+        protected override void DrawHitboxGroup(int index, HitboxGroup hitboxGroup)
         {
             if (visualFighterSceneReference == null)
             {

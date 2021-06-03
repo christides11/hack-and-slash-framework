@@ -17,11 +17,11 @@ MonoBehaviour:
   useState: 0
   stateOverride: 0
   length: 33
+  hurtboxDefinition: {fileID: 11400000, guid: 30ac046a864dbe7469cd7fd75c4219e1, type: 2}
   commandAttackCancelWindows: []
   chargeWindows: []
   hitboxGroups:
   - id: 0
-  hurtboxGroups: []
   events:
   - id: 1
   - id: 2

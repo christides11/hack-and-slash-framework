@@ -13,6 +13,7 @@ namespace HnSF.Combat
         public bool useState = false;
         public ushort stateOverride = 0;
         public int length = 1; //In frames
+        public StateHurtboxDefinition hurtboxDefinition;
         #endregion
 
         [Header("Cancel Windows")]
@@ -23,7 +24,6 @@ namespace HnSF.Combat
         [Header("Groups")]
         [SerializeReference] public List<ChargeDefinition> chargeWindows = new List<ChargeDefinition>();
         [SerializeReference] public List<HitboxGroup> hitboxGroups = new List<HitboxGroup>();
-        [SerializeReference] public List<HurtboxGroup> hurtboxGroups = new List<HurtboxGroup>(); 
         [SerializeReference] public List<AttackEventDefinition> events = new List<AttackEventDefinition>();
         [SerializeReference] public List<CancelListDefinition> cancels = new List<CancelListDefinition>();
     }
