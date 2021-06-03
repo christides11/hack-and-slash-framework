@@ -21,7 +21,7 @@ namespace HnSF.Combat
             window.Show();
         }
 
-        Vector2 scrollPos;
+        protected Vector2 scrollPos;
         protected virtual void OnGUI()
         {
             if (chargeGroup == null)

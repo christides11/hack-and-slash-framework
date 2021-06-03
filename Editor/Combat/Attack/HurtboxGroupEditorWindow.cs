@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-using UnityEditor.SceneManagement;
-using UnityEngine.SceneManagement;
 
 namespace HnSF.Combat
 {
@@ -17,12 +15,12 @@ namespace HnSF.Combat
             HurtboxGroupEditorWindow window =
                 (HurtboxGroupEditorWindow)EditorWindow.GetWindow(typeof(HurtboxGroupEditorWindow),
                 true,
-                $"Hitbox {hurtboxGroup.activeFramesStart}~{hurtboxGroup.activeFramesEnd}");
+                $"Hurtbox {hurtboxGroup.activeFramesStart}~{hurtboxGroup.activeFramesEnd}");
             window.hurtboxGroup = hurtboxGroup;
             window.Show();
         }
 
-        private void OnEnable()
+        protected virtual void OnEnable()
         {
             boxDefinitionTypes.Clear();
             foreach (var a in AppDomain.CurrentDomain.GetAssemblies())
@@ -37,7 +35,7 @@ namespace HnSF.Combat
             }
         }
 
-        Vector2 scrollPos;
+        protected Vector2 scrollPos;
         protected virtual void OnGUI()
         {
             if (hurtboxGroup == null)
@@ -50,7 +48,7 @@ namespace HnSF.Combat
         }
 
         protected bool boxesFoldout;
-        private void DrawHurtboxGroupInfo()
+        protected virtual void DrawHurtboxGroupInfo()
         {
             EditorGUILayout.LabelField("GENERAL", EditorStyles.boldLabel);
             EditorGUI.indentLevel++;
@@ -100,7 +98,7 @@ namespace HnSF.Combat
             //hurtboxGroup.boxes[index].DrawInspector();
         }
 
-        protected void OnBoxDefinitionSelected(object t)
+        protected virtual void OnBoxDefinitionSelected(object t)
         {
             hurtboxGroup.boxes.Add((BoxDefinitionBase)Activator.CreateInstance(boxDefinitionTypes[(string)t]));
         }

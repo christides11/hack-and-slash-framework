@@ -1,8 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEditor;
-using System;
 
 namespace HnSF.Combat
 {
@@ -21,7 +18,7 @@ namespace HnSF.Combat
             window.Show();
         }
 
-        Vector2 scrollPos;
+        protected Vector2 scrollPos;
         protected virtual void OnGUI()
         {
             if(attack == null || attack.cancels.Count <= index)

@@ -16,10 +16,10 @@ namespace HnSF.Combat
             return calcHeight;
         }
 
-        float calcHeight = 100;
-        bool generalFoldoutGroup = false;
-        bool forcesFoldoutGroup = false;
-        bool stunFoldoutGroup = false;
+        protected float calcHeight = 100;
+        protected bool generalFoldoutGroup = false;
+        protected bool forcesFoldoutGroup = false;
+        protected bool stunFoldoutGroup = false;
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
             EditorGUI.BeginProperty(position, label, property);
