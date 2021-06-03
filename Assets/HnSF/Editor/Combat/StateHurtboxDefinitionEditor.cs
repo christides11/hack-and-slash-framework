@@ -10,7 +10,7 @@ namespace HnSF.Combat
     {
         protected Dictionary<string, Type> hurtboxGroupTypes = new Dictionary<string, Type>();
 
-        private void OnEnable()
+        public virtual void OnEnable()
         {
             hurtboxGroupTypes.Clear();
             foreach (var a in AppDomain.CurrentDomain.GetAssemblies())
@@ -59,40 +59,9 @@ namespace HnSF.Combat
                 EditorGUI.indentLevel--;
             }
             serializedObject.ApplyModifiedProperties();
-
-            //this.DrawDefaultInspector();
-            /*
-            t = target as StateHurtboxDefinition;
-
-            if (GUILayout.Button("Add Hurtbox Group"))
-            {
-                GenericMenu menu = new GenericMenu();
-
-                foreach (string hType in hurtboxGroupTypes.Keys)
-                {
-                    string destination = hType.Replace('.', '/');
-                    menu.AddItem(new GUIContent(destination), true, OnHurtboxGroupTypeSelected, hType);
-                }
-                menu.ShowAsContext();
-            }
-
-            for(int i = 0; i < t.hurtboxGroups.Count; i++)
-            {
-                EditorGUILayout.BeginHorizontal();
-                EditorGUILayout.LabelField($"Hurtbox Group {i}", GUILayout.MaxWidth(100));
-                if (GUILayout.Button("X", GUILayout.Width(30)))
-                {
-                    t.hurtboxGroups.RemoveAt(i);
-                    break;
-                }
-                EditorGUILayout.EndHorizontal();
-                EditorGUI.indentLevel++;
-                t.hurtboxGroups[i].DrawInspector(15);
-                EditorGUI.indentLevel--;
-            }*/
         }
 
-        private void OnHurtboxGroupTypeSelected(object type)
+        protected virtual void OnHurtboxGroupTypeSelected(object type)
         {
             serializedObject.Update();
             SerializedProperty property = serializedObject.FindProperty("hurtboxGroups");

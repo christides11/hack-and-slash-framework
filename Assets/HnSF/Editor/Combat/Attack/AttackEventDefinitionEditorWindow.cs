@@ -39,7 +39,7 @@ namespace HnSF.Combat
             }
         }
 
-        Vector2 scrollPos;
+        protected Vector2 scrollPos;
         protected virtual void OnGUI()
         {
             if (attack == null || attack.events.Count <= eventIndex)
@@ -53,7 +53,7 @@ namespace HnSF.Combat
         }
 
         protected bool eventVariablesFoldout;
-        private void DrawEventInfo()
+        protected virtual void DrawEventInfo()
         {
             SerializedObject attackObject = new SerializedObject(attack);
             attackObject.Update();

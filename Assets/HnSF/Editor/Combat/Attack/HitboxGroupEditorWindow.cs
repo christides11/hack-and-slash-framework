@@ -27,7 +27,7 @@ namespace HnSF.Combat
             window.Show();
         }
 
-        private void OnEnable()
+        protected virtual void OnEnable()
         {
             boxDefinitionTypes.Clear();
             hitInfoTypes.Clear();
@@ -47,7 +47,7 @@ namespace HnSF.Combat
             }
         }
 
-        Vector2 scrollPos;
+        protected Vector2 scrollPos;
         protected virtual void OnGUI()
         {
             if(hitboxGroupObject == null)
@@ -157,7 +157,7 @@ namespace HnSF.Combat
             return hitboxGroupProperty;
         }
 
-        protected void OnHitInfoSelected(object t)
+        protected virtual void OnHitInfoSelected(object t)
         {
             so.Update();
             SerializedProperty chargeWindowsProperty = GetHitboxGroupProperty().FindPropertyRelative("hitboxHitInfo");
@@ -172,7 +172,7 @@ namespace HnSF.Combat
             so.ApplyModifiedProperties();
         }
 
-        protected void OnBoxDefinitionSelected(object t)
+        protected virtual void OnBoxDefinitionSelected(object t)
         {
             so.Update();
             var boxesProperty = GetHitboxGroupProperty().FindPropertyRelative("boxes");

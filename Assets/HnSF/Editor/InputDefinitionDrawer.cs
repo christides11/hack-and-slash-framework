@@ -3,8 +3,7 @@ using UnityEngine;
 
 namespace HnSF.Input
 {
-#if CAFDefaults
-    [CustomPropertyDrawer(typeof(InputDefinition))]
+    //[CustomPropertyDrawer(typeof(InputDefinition))]
     public class InputDefinitionDrawer : PropertyDrawer
     {
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
@@ -40,5 +39,4 @@ namespace HnSF.Input
             return enumType == InputDefinitionType.Button ? 45 : 70;
         }
     }
-#endif
 }

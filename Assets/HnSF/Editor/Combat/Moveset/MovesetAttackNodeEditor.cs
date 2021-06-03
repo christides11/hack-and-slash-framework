@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using XNodeEditor;
-using UnityEditor;
+﻿using XNodeEditor;
 using static HnSF.Combat.MovesetAttackNode;
 using XNode;
 using Malee.List;
