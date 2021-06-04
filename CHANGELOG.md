@@ -1,3 +1,22 @@
+# [21.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v20.0.0...v21.0.0) (2021-06-04)
+
+
+### Bug Fixes
+
+* Fixed HitboxGroupPropertyDrawer overlap ([3aa186a](https://github.com/christides11/hack-and-slash-framework/commit/3aa186ac3341be54fcf42b5e6787fbe030296d2f))
+
+
+### Features
+
+* Hurtboxes now have an ID priority. ([59c9fe8](https://github.com/christides11/hack-and-slash-framework/commit/59c9fe810996e43575fde030c74ea82645bbff8a))
+* Improved extendibility of editors scripts ([faca53e](https://github.com/christides11/hack-and-slash-framework/commit/faca53e86837826ac8320e50d208c28d858db340))
+
+
+### BREAKING CHANGES
+
+* Hitboxes now go through hurtboxes with the lowest IDs first.
+* Adjusted editor scripts to make it easier to extend and replace parts.
+
 # [20.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v19.2.0...v20.0.0) (2021-06-02)
 
 
