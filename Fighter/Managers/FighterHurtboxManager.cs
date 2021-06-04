@@ -21,7 +21,7 @@ namespace HnSF.Fighters
             CreateHurtboxes(hurtboxDefinition, manager.StateManager.CurrentStateFrame);
         }
 
-        List<int> hurtboxGroupsToDelete = new List<int>();
+        protected List<int> hurtboxGroupsToDelete = new List<int>();
         public virtual void CreateHurtboxes(StateHurtboxDefinition currentHurtboxDefinition, uint frame)
         {
             if(currentHurtboxDefinition == null)
@@ -65,6 +65,7 @@ namespace HnSF.Fighters
                         // Group has a hurtbox here already.
                         hurtbox = hurtboxGroups[i][w];
                     }
+                    hurtbox.Initialize(gameObject, currentHurtboxDefinition.hurtboxGroups[i]);
                     hurtbox.gameObject.SetActive(true);
 
                     // Set the hurtbox's position/rotation/etc.
@@ -103,6 +104,18 @@ namespace HnSF.Fighters
             return true;
         }
 
+        protected virtual void CleanupHurtboxGroups()
+        {
+            foreach (int id in hurtboxGroups.Keys)
+            {
+                for (int i = 0; i < hurtboxGroups[id].Count; i++)
+                {
+                    DestroyHurtbox(hurtboxGroups[id][i]);
+                }
+            }
+            hurtboxGroups.Clear();
+        }
+
         protected virtual void CleanupHurtboxGroup(int groupID)
         {
             for(int i = 0; i < hurtboxGroups[groupID].Count; i++)
@@ -134,6 +147,7 @@ namespace HnSF.Fighters
 
         public virtual void SetHurtboxDefinition(StateHurtboxDefinition stateHurtboxDefinition)
         {
+            CleanupHurtboxGroups();
             hurtboxDefinition = stateHurtboxDefinition;
         }
     }

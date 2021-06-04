@@ -35,7 +35,7 @@ namespace TDAction.Fighter
         }
 
         Collider2D[] raycastHitList = new Collider2D[0];
-        protected override Hurtbox[] CheckBoxCollision(HitboxGroup hitboxGroup, int boxIndex)
+        protected override void CheckBoxCollision(HitboxGroup hitboxGroup, int boxIndex)
         {
             TDAction.Fighter.FighterManager fm = manager as TDAction.Fighter.FighterManager;
 
@@ -47,7 +47,10 @@ namespace TDAction.Fighter
             Vector2 size = (Vector2)(hitboxGroup.boxes[boxIndex] as HnSF.Combat.BoxDefinition).size;
             raycastHitList = Physics2D.OverlapBoxAll(position, size, 0, combatManager.hitboxLayerMask);
 
-            Hurtbox[] hurtboxes = new Hurtbox[raycastHitList.Length];
+            if(hurtboxes.Count < raycastHitList.Length)
+            {
+                hurtboxes.AddRange(new Hurtbox[raycastHitList.Length - hurtboxes.Count]);
+            }
             for (int i = 0; i < raycastHitList.Length; i++)
             {
                 Hurtbox h = raycastHitList[i].GetComponent<Hurtbox>();
@@ -56,7 +59,6 @@ namespace TDAction.Fighter
                     hurtboxes[i] = h;
                 }
             }
-            return hurtboxes;
         }
 
         protected override HurtInfoBase BuildHurtInfo(HitboxGroup hitboxGroup, int hitboxIndex, Hurtbox hurtbox)

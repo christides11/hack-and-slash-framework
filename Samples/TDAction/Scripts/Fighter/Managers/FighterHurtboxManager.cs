@@ -29,7 +29,6 @@ namespace TDAction.Fighter
             else
             {
                 hurtbox = GameObject.Instantiate(GameManager.instance.hurtboxPrefab, gameObject.transform, false);
-                hurtbox.Owner = gameObject;
             }
             hurtbox.gameObject.SetActive(false);
             return hurtbox;
