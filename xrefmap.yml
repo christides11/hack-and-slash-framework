@@ -61,12 +61,12 @@ references:
   commentId: F:HnSF.Combat.AttackDefinition.hitboxGroups
   fullName: HnSF.Combat.AttackDefinition.hitboxGroups
   nameWithType: AttackDefinition.hitboxGroups
-- uid: HnSF.Combat.AttackDefinition.hurtboxGroups
-  name: hurtboxGroups
-  href: api/HnSF.Combat.AttackDefinition.html#HnSF_Combat_AttackDefinition_hurtboxGroups
-  commentId: F:HnSF.Combat.AttackDefinition.hurtboxGroups
-  fullName: HnSF.Combat.AttackDefinition.hurtboxGroups
-  nameWithType: AttackDefinition.hurtboxGroups
+- uid: HnSF.Combat.AttackDefinition.hurtboxDefinition
+  name: hurtboxDefinition
+  href: api/HnSF.Combat.AttackDefinition.html#HnSF_Combat_AttackDefinition_hurtboxDefinition
+  commentId: F:HnSF.Combat.AttackDefinition.hurtboxDefinition
+  fullName: HnSF.Combat.AttackDefinition.hurtboxDefinition
+  nameWithType: AttackDefinition.hurtboxDefinition
 - uid: HnSF.Combat.AttackDefinition.length
   name: length
   href: api/HnSF.Combat.AttackDefinition.html#HnSF_Combat_AttackDefinition_length
@@ -284,6 +284,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.AttackDefinitionEditorWindow.DrawHitboxes
   nameWithType: AttackDefinitionEditorWindow.DrawHitboxes
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.DrawHitboxGroup(System.Int32,HnSF.Combat.HitboxGroup)
+  name: DrawHitboxGroup(Int32, HitboxGroup)
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_DrawHitboxGroup_System_Int32_HnSF_Combat_HitboxGroup_
+  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.DrawHitboxGroup(System.Int32,HnSF.Combat.HitboxGroup)
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.DrawHitboxGroup(System.Int32, HnSF.Combat.HitboxGroup)
+  nameWithType: AttackDefinitionEditorWindow.DrawHitboxGroup(Int32, HitboxGroup)
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.DrawHitboxGroup*
+  name: DrawHitboxGroup
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_DrawHitboxGroup_
+  commentId: Overload:HnSF.Combat.AttackDefinitionEditorWindow.DrawHitboxGroup
+  isSpec: "True"
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.DrawHitboxGroup
+  nameWithType: AttackDefinitionEditorWindow.DrawHitboxGroup
 - uid: HnSF.Combat.AttackDefinitionEditorWindow.DrawHitboxGroupBars(SerializedObject)
   name: DrawHitboxGroupBars(SerializedObject)
   href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_DrawHitboxGroupBars_SerializedObject_
@@ -297,6 +310,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.AttackDefinitionEditorWindow.DrawHitboxGroupBars
   nameWithType: AttackDefinitionEditorWindow.DrawHitboxGroupBars
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxDefinition(HnSF.Combat.StateHurtboxDefinition)
+  name: DrawHurtboxDefinition(StateHurtboxDefinition)
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_DrawHurtboxDefinition_HnSF_Combat_StateHurtboxDefinition_
+  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxDefinition(HnSF.Combat.StateHurtboxDefinition)
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxDefinition(HnSF.Combat.StateHurtboxDefinition)
+  nameWithType: AttackDefinitionEditorWindow.DrawHurtboxDefinition(StateHurtboxDefinition)
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxDefinition*
+  name: DrawHurtboxDefinition
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_DrawHurtboxDefinition_
+  commentId: Overload:HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxDefinition
+  isSpec: "True"
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxDefinition
+  nameWithType: AttackDefinitionEditorWindow.DrawHurtboxDefinition
 - uid: HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxes
   name: DrawHurtboxes()
   href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_DrawHurtboxes
@@ -310,19 +336,6 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxes
   nameWithType: AttackDefinitionEditorWindow.DrawHurtboxes
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxGroupBars(SerializedObject)
-  name: DrawHurtboxGroupBars(SerializedObject)
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_DrawHurtboxGroupBars_SerializedObject_
-  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxGroupBars(SerializedObject)
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxGroupBars(SerializedObject)
-  nameWithType: AttackDefinitionEditorWindow.DrawHurtboxGroupBars(SerializedObject)
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxGroupBars*
-  name: DrawHurtboxGroupBars
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_DrawHurtboxGroupBars_
-  commentId: Overload:HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxGroupBars
-  isSpec: "True"
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxGroupBars
-  nameWithType: AttackDefinitionEditorWindow.DrawHurtboxGroupBars
 - uid: HnSF.Combat.AttackDefinitionEditorWindow.DrawUILine(Color,System.Int32,System.Int32)
   name: DrawUILine(Color, Int32, Int32)
   href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_DrawUILine_Color_System_Int32_System_Int32_
@@ -362,32 +375,6 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.AttackDefinitionEditorWindow.HandleEvent
   nameWithType: AttackDefinitionEditorWindow.HandleEvent
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.HandleHitboxGroup(System.Int32,HnSF.Combat.HitboxGroup)
-  name: HandleHitboxGroup(Int32, HitboxGroup)
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_HandleHitboxGroup_System_Int32_HnSF_Combat_HitboxGroup_
-  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.HandleHitboxGroup(System.Int32,HnSF.Combat.HitboxGroup)
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.HandleHitboxGroup(System.Int32, HnSF.Combat.HitboxGroup)
-  nameWithType: AttackDefinitionEditorWindow.HandleHitboxGroup(Int32, HitboxGroup)
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.HandleHitboxGroup*
-  name: HandleHitboxGroup
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_HandleHitboxGroup_
-  commentId: Overload:HnSF.Combat.AttackDefinitionEditorWindow.HandleHitboxGroup
-  isSpec: "True"
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.HandleHitboxGroup
-  nameWithType: AttackDefinitionEditorWindow.HandleHitboxGroup
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.HandleHurtboxGroup(System.Int32,HnSF.Combat.HurtboxGroup)
-  name: HandleHurtboxGroup(Int32, HurtboxGroup)
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_HandleHurtboxGroup_System_Int32_HnSF_Combat_HurtboxGroup_
-  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.HandleHurtboxGroup(System.Int32,HnSF.Combat.HurtboxGroup)
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.HandleHurtboxGroup(System.Int32, HnSF.Combat.HurtboxGroup)
-  nameWithType: AttackDefinitionEditorWindow.HandleHurtboxGroup(Int32, HurtboxGroup)
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.HandleHurtboxGroup*
-  name: HandleHurtboxGroup
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_HandleHurtboxGroup_
-  commentId: Overload:HnSF.Combat.AttackDefinitionEditorWindow.HandleHurtboxGroup
-  isSpec: "True"
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.HandleHurtboxGroup
-  nameWithType: AttackDefinitionEditorWindow.HandleHurtboxGroup
 - uid: HnSF.Combat.AttackDefinitionEditorWindow.IncrementForward
   name: IncrementForward()
   href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_IncrementForward
@@ -582,12 +569,6 @@ references:
   commentId: F:HnSF.Combat.AttackDefinitionEditorWindow.showHitboxGroups
   fullName: HnSF.Combat.AttackDefinitionEditorWindow.showHitboxGroups
   nameWithType: AttackDefinitionEditorWindow.showHitboxGroups
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.showHurtboxGroups
-  name: showHurtboxGroups
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_showHurtboxGroups
-  commentId: F:HnSF.Combat.AttackDefinitionEditorWindow.showHurtboxGroups
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.showHurtboxGroups
-  nameWithType: AttackDefinitionEditorWindow.showHurtboxGroups
 - uid: HnSF.Combat.AttackDefinitionEditorWindow.timelineFrame
   name: timelineFrame
   href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_timelineFrame
@@ -784,6 +765,19 @@ references:
   commentId: F:HnSF.Combat.AttackEventDefinitionEditorWindow.attackEventTypes
   fullName: HnSF.Combat.AttackEventDefinitionEditorWindow.attackEventTypes
   nameWithType: AttackEventDefinitionEditorWindow.attackEventTypes
+- uid: HnSF.Combat.AttackEventDefinitionEditorWindow.DrawEventInfo
+  name: DrawEventInfo()
+  href: api/HnSF.Combat.AttackEventDefinitionEditorWindow.html#HnSF_Combat_AttackEventDefinitionEditorWindow_DrawEventInfo
+  commentId: M:HnSF.Combat.AttackEventDefinitionEditorWindow.DrawEventInfo
+  fullName: HnSF.Combat.AttackEventDefinitionEditorWindow.DrawEventInfo()
+  nameWithType: AttackEventDefinitionEditorWindow.DrawEventInfo()
+- uid: HnSF.Combat.AttackEventDefinitionEditorWindow.DrawEventInfo*
+  name: DrawEventInfo
+  href: api/HnSF.Combat.AttackEventDefinitionEditorWindow.html#HnSF_Combat_AttackEventDefinitionEditorWindow_DrawEventInfo_
+  commentId: Overload:HnSF.Combat.AttackEventDefinitionEditorWindow.DrawEventInfo
+  isSpec: "True"
+  fullName: HnSF.Combat.AttackEventDefinitionEditorWindow.DrawEventInfo
+  nameWithType: AttackEventDefinitionEditorWindow.DrawEventInfo
 - uid: HnSF.Combat.AttackEventDefinitionEditorWindow.eventIndex
   name: eventIndex
   href: api/HnSF.Combat.AttackEventDefinitionEditorWindow.html#HnSF_Combat_AttackEventDefinitionEditorWindow_eventIndex
@@ -848,6 +842,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.AttackEventDefinitionEditorWindow.OnGUI
   nameWithType: AttackEventDefinitionEditorWindow.OnGUI
+- uid: HnSF.Combat.AttackEventDefinitionEditorWindow.scrollPos
+  name: scrollPos
+  href: api/HnSF.Combat.AttackEventDefinitionEditorWindow.html#HnSF_Combat_AttackEventDefinitionEditorWindow_scrollPos
+  commentId: F:HnSF.Combat.AttackEventDefinitionEditorWindow.scrollPos
+  fullName: HnSF.Combat.AttackEventDefinitionEditorWindow.scrollPos
+  nameWithType: AttackEventDefinitionEditorWindow.scrollPos
 - uid: HnSF.Combat.AttackEventInputCheckTiming
   name: AttackEventInputCheckTiming
   href: api/HnSF.Combat.AttackEventInputCheckTiming.html
@@ -1024,6 +1024,32 @@ references:
   commentId: T:HnSF.Combat.BoxDefinitionPropertyDrawer
   fullName: HnSF.Combat.BoxDefinitionPropertyDrawer
   nameWithType: BoxDefinitionPropertyDrawer
+- uid: HnSF.Combat.BoxDefinitionPropertyDrawer.DrawShapeProperties(Rect,SerializedProperty,System.Single,System.Single)
+  name: DrawShapeProperties(Rect, SerializedProperty, Single, Single)
+  href: api/HnSF.Combat.BoxDefinitionPropertyDrawer.html#HnSF_Combat_BoxDefinitionPropertyDrawer_DrawShapeProperties_Rect_SerializedProperty_System_Single_System_Single_
+  commentId: M:HnSF.Combat.BoxDefinitionPropertyDrawer.DrawShapeProperties(Rect,SerializedProperty,System.Single,System.Single)
+  fullName: HnSF.Combat.BoxDefinitionPropertyDrawer.DrawShapeProperties(Rect, SerializedProperty, System.Single, System.Single)
+  nameWithType: BoxDefinitionPropertyDrawer.DrawShapeProperties(Rect, SerializedProperty, Single, Single)
+- uid: HnSF.Combat.BoxDefinitionPropertyDrawer.DrawShapeProperties*
+  name: DrawShapeProperties
+  href: api/HnSF.Combat.BoxDefinitionPropertyDrawer.html#HnSF_Combat_BoxDefinitionPropertyDrawer_DrawShapeProperties_
+  commentId: Overload:HnSF.Combat.BoxDefinitionPropertyDrawer.DrawShapeProperties
+  isSpec: "True"
+  fullName: HnSF.Combat.BoxDefinitionPropertyDrawer.DrawShapeProperties
+  nameWithType: BoxDefinitionPropertyDrawer.DrawShapeProperties
+- uid: HnSF.Combat.BoxDefinitionPropertyDrawer.DrawSharedProperties(Rect,SerializedProperty,System.Single,System.Single)
+  name: DrawSharedProperties(Rect, SerializedProperty, Single, Single)
+  href: api/HnSF.Combat.BoxDefinitionPropertyDrawer.html#HnSF_Combat_BoxDefinitionPropertyDrawer_DrawSharedProperties_Rect_SerializedProperty_System_Single_System_Single_
+  commentId: M:HnSF.Combat.BoxDefinitionPropertyDrawer.DrawSharedProperties(Rect,SerializedProperty,System.Single,System.Single)
+  fullName: HnSF.Combat.BoxDefinitionPropertyDrawer.DrawSharedProperties(Rect, SerializedProperty, System.Single, System.Single)
+  nameWithType: BoxDefinitionPropertyDrawer.DrawSharedProperties(Rect, SerializedProperty, Single, Single)
+- uid: HnSF.Combat.BoxDefinitionPropertyDrawer.DrawSharedProperties*
+  name: DrawSharedProperties
+  href: api/HnSF.Combat.BoxDefinitionPropertyDrawer.html#HnSF_Combat_BoxDefinitionPropertyDrawer_DrawSharedProperties_
+  commentId: Overload:HnSF.Combat.BoxDefinitionPropertyDrawer.DrawSharedProperties
+  isSpec: "True"
+  fullName: HnSF.Combat.BoxDefinitionPropertyDrawer.DrawSharedProperties
+  nameWithType: BoxDefinitionPropertyDrawer.DrawSharedProperties
 - uid: HnSF.Combat.BoxDefinitionPropertyDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
   name: GetPropertyHeight(SerializedProperty, GUIContent)
   href: api/HnSF.Combat.BoxDefinitionPropertyDrawer.html#HnSF_Combat_BoxDefinitionPropertyDrawer_GetPropertyHeight_SerializedProperty_GUIContent_
@@ -1179,6 +1205,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.CancelListDefinitionEditorWindow.OnGUI
   nameWithType: CancelListDefinitionEditorWindow.OnGUI
+- uid: HnSF.Combat.CancelListDefinitionEditorWindow.scrollPos
+  name: scrollPos
+  href: api/HnSF.Combat.CancelListDefinitionEditorWindow.html#HnSF_Combat_CancelListDefinitionEditorWindow_scrollPos
+  commentId: F:HnSF.Combat.CancelListDefinitionEditorWindow.scrollPos
+  fullName: HnSF.Combat.CancelListDefinitionEditorWindow.scrollPos
+  nameWithType: CancelListDefinitionEditorWindow.scrollPos
 - uid: HnSF.Combat.ChargeDefinition
   name: ChargeDefinition
   href: api/HnSF.Combat.ChargeDefinition.html
@@ -1292,6 +1324,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.ChargeGroupEditorWindow.OnGUI
   nameWithType: ChargeGroupEditorWindow.OnGUI
+- uid: HnSF.Combat.ChargeGroupEditorWindow.scrollPos
+  name: scrollPos
+  href: api/HnSF.Combat.ChargeGroupEditorWindow.html#HnSF_Combat_ChargeGroupEditorWindow_scrollPos
+  commentId: F:HnSF.Combat.ChargeGroupEditorWindow.scrollPos
+  fullName: HnSF.Combat.ChargeGroupEditorWindow.scrollPos
+  nameWithType: ChargeGroupEditorWindow.scrollPos
 - uid: HnSF.Combat.ChargeLevel
   name: ChargeLevel
   href: api/HnSF.Combat.ChargeLevel.html
@@ -1555,6 +1593,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.HitboxGroupEditorWindow.OnBoxDefinitionSelected
   nameWithType: HitboxGroupEditorWindow.OnBoxDefinitionSelected
+- uid: HnSF.Combat.HitboxGroupEditorWindow.OnEnable
+  name: OnEnable()
+  href: api/HnSF.Combat.HitboxGroupEditorWindow.html#HnSF_Combat_HitboxGroupEditorWindow_OnEnable
+  commentId: M:HnSF.Combat.HitboxGroupEditorWindow.OnEnable
+  fullName: HnSF.Combat.HitboxGroupEditorWindow.OnEnable()
+  nameWithType: HitboxGroupEditorWindow.OnEnable()
+- uid: HnSF.Combat.HitboxGroupEditorWindow.OnEnable*
+  name: OnEnable
+  href: api/HnSF.Combat.HitboxGroupEditorWindow.html#HnSF_Combat_HitboxGroupEditorWindow_OnEnable_
+  commentId: Overload:HnSF.Combat.HitboxGroupEditorWindow.OnEnable
+  isSpec: "True"
+  fullName: HnSF.Combat.HitboxGroupEditorWindow.OnEnable
+  nameWithType: HitboxGroupEditorWindow.OnEnable
 - uid: HnSF.Combat.HitboxGroupEditorWindow.OnGUI
   name: OnGUI()
   href: api/HnSF.Combat.HitboxGroupEditorWindow.html#HnSF_Combat_HitboxGroupEditorWindow_OnGUI
@@ -1581,6 +1632,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.HitboxGroupEditorWindow.OnHitInfoSelected
   nameWithType: HitboxGroupEditorWindow.OnHitInfoSelected
+- uid: HnSF.Combat.HitboxGroupEditorWindow.scrollPos
+  name: scrollPos
+  href: api/HnSF.Combat.HitboxGroupEditorWindow.html#HnSF_Combat_HitboxGroupEditorWindow_scrollPos
+  commentId: F:HnSF.Combat.HitboxGroupEditorWindow.scrollPos
+  fullName: HnSF.Combat.HitboxGroupEditorWindow.scrollPos
+  nameWithType: HitboxGroupEditorWindow.scrollPos
 - uid: HnSF.Combat.HitboxGroupEditorWindow.so
   name: so
   href: api/HnSF.Combat.HitboxGroupEditorWindow.html#HnSF_Combat_HitboxGroupEditorWindow_so
@@ -1670,6 +1727,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.HitboxManager.HitboxGroupHasHurt
   nameWithType: HitboxManager.HitboxGroupHasHurt
+- uid: HnSF.Combat.HitboxManager.hurtboxes
+  name: hurtboxes
+  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_hurtboxes
+  commentId: F:HnSF.Combat.HitboxManager.hurtboxes
+  fullName: HnSF.Combat.HitboxManager.hurtboxes
+  nameWithType: HitboxManager.hurtboxes
 - uid: HnSF.Combat.HitboxManager.HurtHurtbox(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox)
   name: HurtHurtbox(HitboxGroup, Int32, Hurtbox)
   href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_HurtHurtbox_HnSF_Combat_HitboxGroup_System_Int32_HnSF_Combat_Hurtbox_
@@ -1746,6 +1809,32 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.HitboxManager.ShouldHurt
   nameWithType: HitboxManager.ShouldHurt
+- uid: HnSF.Combat.HitboxManager.SortHitHurtboxes
+  name: SortHitHurtboxes()
+  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_SortHitHurtboxes
+  commentId: M:HnSF.Combat.HitboxManager.SortHitHurtboxes
+  fullName: HnSF.Combat.HitboxManager.SortHitHurtboxes()
+  nameWithType: HitboxManager.SortHitHurtboxes()
+- uid: HnSF.Combat.HitboxManager.SortHitHurtboxes*
+  name: SortHitHurtboxes
+  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_SortHitHurtboxes_
+  commentId: Overload:HnSF.Combat.HitboxManager.SortHitHurtboxes
+  isSpec: "True"
+  fullName: HnSF.Combat.HitboxManager.SortHitHurtboxes
+  nameWithType: HitboxManager.SortHitHurtboxes
+- uid: HnSF.Combat.HitboxManager.TryHitHurtbox(HnSF.Combat.HitboxGroup,System.Int32,System.Int32,System.Int32)
+  name: TryHitHurtbox(HitboxGroup, Int32, Int32, Int32)
+  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_TryHitHurtbox_HnSF_Combat_HitboxGroup_System_Int32_System_Int32_System_Int32_
+  commentId: M:HnSF.Combat.HitboxManager.TryHitHurtbox(HnSF.Combat.HitboxGroup,System.Int32,System.Int32,System.Int32)
+  fullName: HnSF.Combat.HitboxManager.TryHitHurtbox(HnSF.Combat.HitboxGroup, System.Int32, System.Int32, System.Int32)
+  nameWithType: HitboxManager.TryHitHurtbox(HitboxGroup, Int32, Int32, Int32)
+- uid: HnSF.Combat.HitboxManager.TryHitHurtbox*
+  name: TryHitHurtbox
+  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_TryHitHurtbox_
+  commentId: Overload:HnSF.Combat.HitboxManager.TryHitHurtbox
+  isSpec: "True"
+  fullName: HnSF.Combat.HitboxManager.TryHitHurtbox
+  nameWithType: HitboxManager.TryHitHurtbox
 - uid: HnSF.Combat.HitboxType
   name: HitboxType
   href: api/HnSF.Combat.HitboxType.html
@@ -2014,6 +2103,12 @@ references:
   commentId: T:HnSF.Combat.HitInfoBasePropertyDrawer
   fullName: HnSF.Combat.HitInfoBasePropertyDrawer
   nameWithType: HitInfoBasePropertyDrawer
+- uid: HnSF.Combat.HitInfoBasePropertyDrawer.calcHeight
+  name: calcHeight
+  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_calcHeight
+  commentId: F:HnSF.Combat.HitInfoBasePropertyDrawer.calcHeight
+  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.calcHeight
+  nameWithType: HitInfoBasePropertyDrawer.calcHeight
 - uid: HnSF.Combat.HitInfoBasePropertyDrawer.DrawForcesGroup(Rect@,SerializedProperty,System.Single)
   name: DrawForcesGroup(ref Rect, SerializedProperty, Single)
   href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_DrawForcesGroup_Rect__SerializedProperty_System_Single_
@@ -2075,6 +2170,18 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.HitInfoBasePropertyDrawer.DrawStunGroup
   nameWithType: HitInfoBasePropertyDrawer.DrawStunGroup
+- uid: HnSF.Combat.HitInfoBasePropertyDrawer.forcesFoldoutGroup
+  name: forcesFoldoutGroup
+  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_forcesFoldoutGroup
+  commentId: F:HnSF.Combat.HitInfoBasePropertyDrawer.forcesFoldoutGroup
+  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.forcesFoldoutGroup
+  nameWithType: HitInfoBasePropertyDrawer.forcesFoldoutGroup
+- uid: HnSF.Combat.HitInfoBasePropertyDrawer.generalFoldoutGroup
+  name: generalFoldoutGroup
+  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_generalFoldoutGroup
+  commentId: F:HnSF.Combat.HitInfoBasePropertyDrawer.generalFoldoutGroup
+  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.generalFoldoutGroup
+  nameWithType: HitInfoBasePropertyDrawer.generalFoldoutGroup
 - uid: HnSF.Combat.HitInfoBasePropertyDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
   name: GetPropertyHeight(SerializedProperty, GUIContent)
   href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_GetPropertyHeight_SerializedProperty_GUIContent_
@@ -2113,6 +2220,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.HitInfoBasePropertyDrawer.OnGUI
   nameWithType: HitInfoBasePropertyDrawer.OnGUI
+- uid: HnSF.Combat.HitInfoBasePropertyDrawer.stunFoldoutGroup
+  name: stunFoldoutGroup
+  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_stunFoldoutGroup
+  commentId: F:HnSF.Combat.HitInfoBasePropertyDrawer.stunFoldoutGroup
+  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.stunFoldoutGroup
+  nameWithType: HitInfoBasePropertyDrawer.stunFoldoutGroup
 - uid: HnSF.Combat.HitInfoPropertyDrawer
   name: HitInfoPropertyDrawer
   href: api/HnSF.Combat.HitInfoPropertyDrawer.html
@@ -2234,6 +2347,12 @@ references:
   commentId: T:HnSF.Combat.Hurtbox
   fullName: HnSF.Combat.Hurtbox
   nameWithType: Hurtbox
+- uid: HnSF.Combat.Hurtbox.hurtable
+  name: hurtable
+  href: api/HnSF.Combat.Hurtbox.html#HnSF_Combat_Hurtbox_hurtable
+  commentId: F:HnSF.Combat.Hurtbox.hurtable
+  fullName: HnSF.Combat.Hurtbox.hurtable
+  nameWithType: Hurtbox.hurtable
 - uid: HnSF.Combat.Hurtbox.Hurtable
   name: Hurtable
   href: api/HnSF.Combat.Hurtbox.html#HnSF_Combat_Hurtbox_Hurtable
@@ -2247,6 +2366,38 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.Hurtbox.Hurtable
   nameWithType: Hurtbox.Hurtable
+- uid: HnSF.Combat.Hurtbox.hurtboxGroup
+  name: hurtboxGroup
+  href: api/HnSF.Combat.Hurtbox.html#HnSF_Combat_Hurtbox_hurtboxGroup
+  commentId: F:HnSF.Combat.Hurtbox.hurtboxGroup
+  fullName: HnSF.Combat.Hurtbox.hurtboxGroup
+  nameWithType: Hurtbox.hurtboxGroup
+- uid: HnSF.Combat.Hurtbox.HurtboxGroup
+  name: HurtboxGroup
+  href: api/HnSF.Combat.Hurtbox.html#HnSF_Combat_Hurtbox_HurtboxGroup
+  commentId: P:HnSF.Combat.Hurtbox.HurtboxGroup
+  fullName: HnSF.Combat.Hurtbox.HurtboxGroup
+  nameWithType: Hurtbox.HurtboxGroup
+- uid: HnSF.Combat.Hurtbox.HurtboxGroup*
+  name: HurtboxGroup
+  href: api/HnSF.Combat.Hurtbox.html#HnSF_Combat_Hurtbox_HurtboxGroup_
+  commentId: Overload:HnSF.Combat.Hurtbox.HurtboxGroup
+  isSpec: "True"
+  fullName: HnSF.Combat.Hurtbox.HurtboxGroup
+  nameWithType: Hurtbox.HurtboxGroup
+- uid: HnSF.Combat.Hurtbox.Initialize(GameObject,HnSF.Combat.HurtboxGroup)
+  name: Initialize(GameObject, HurtboxGroup)
+  href: api/HnSF.Combat.Hurtbox.html#HnSF_Combat_Hurtbox_Initialize_GameObject_HnSF_Combat_HurtboxGroup_
+  commentId: M:HnSF.Combat.Hurtbox.Initialize(GameObject,HnSF.Combat.HurtboxGroup)
+  fullName: HnSF.Combat.Hurtbox.Initialize(GameObject, HnSF.Combat.HurtboxGroup)
+  nameWithType: Hurtbox.Initialize(GameObject, HurtboxGroup)
+- uid: HnSF.Combat.Hurtbox.Initialize*
+  name: Initialize
+  href: api/HnSF.Combat.Hurtbox.html#HnSF_Combat_Hurtbox_Initialize_
+  commentId: Overload:HnSF.Combat.Hurtbox.Initialize
+  isSpec: "True"
+  fullName: HnSF.Combat.Hurtbox.Initialize
+  nameWithType: Hurtbox.Initialize
 - uid: HnSF.Combat.Hurtbox.owner
   name: owner
   href: api/HnSF.Combat.Hurtbox.html#HnSF_Combat_Hurtbox_owner
@@ -2358,6 +2509,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.HurtboxGroupEditorWindow.DrawHitboxOptions
   nameWithType: HurtboxGroupEditorWindow.DrawHitboxOptions
+- uid: HnSF.Combat.HurtboxGroupEditorWindow.DrawHurtboxGroupInfo
+  name: DrawHurtboxGroupInfo()
+  href: api/HnSF.Combat.HurtboxGroupEditorWindow.html#HnSF_Combat_HurtboxGroupEditorWindow_DrawHurtboxGroupInfo
+  commentId: M:HnSF.Combat.HurtboxGroupEditorWindow.DrawHurtboxGroupInfo
+  fullName: HnSF.Combat.HurtboxGroupEditorWindow.DrawHurtboxGroupInfo()
+  nameWithType: HurtboxGroupEditorWindow.DrawHurtboxGroupInfo()
+- uid: HnSF.Combat.HurtboxGroupEditorWindow.DrawHurtboxGroupInfo*
+  name: DrawHurtboxGroupInfo
+  href: api/HnSF.Combat.HurtboxGroupEditorWindow.html#HnSF_Combat_HurtboxGroupEditorWindow_DrawHurtboxGroupInfo_
+  commentId: Overload:HnSF.Combat.HurtboxGroupEditorWindow.DrawHurtboxGroupInfo
+  isSpec: "True"
+  fullName: HnSF.Combat.HurtboxGroupEditorWindow.DrawHurtboxGroupInfo
+  nameWithType: HurtboxGroupEditorWindow.DrawHurtboxGroupInfo
 - uid: HnSF.Combat.HurtboxGroupEditorWindow.hurtboxGroup
   name: hurtboxGroup
   href: api/HnSF.Combat.HurtboxGroupEditorWindow.html#HnSF_Combat_HurtboxGroupEditorWindow_hurtboxGroup
@@ -2390,6 +2554,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.HurtboxGroupEditorWindow.OnBoxDefinitionSelected
   nameWithType: HurtboxGroupEditorWindow.OnBoxDefinitionSelected
+- uid: HnSF.Combat.HurtboxGroupEditorWindow.OnEnable
+  name: OnEnable()
+  href: api/HnSF.Combat.HurtboxGroupEditorWindow.html#HnSF_Combat_HurtboxGroupEditorWindow_OnEnable
+  commentId: M:HnSF.Combat.HurtboxGroupEditorWindow.OnEnable
+  fullName: HnSF.Combat.HurtboxGroupEditorWindow.OnEnable()
+  nameWithType: HurtboxGroupEditorWindow.OnEnable()
+- uid: HnSF.Combat.HurtboxGroupEditorWindow.OnEnable*
+  name: OnEnable
+  href: api/HnSF.Combat.HurtboxGroupEditorWindow.html#HnSF_Combat_HurtboxGroupEditorWindow_OnEnable_
+  commentId: Overload:HnSF.Combat.HurtboxGroupEditorWindow.OnEnable
+  isSpec: "True"
+  fullName: HnSF.Combat.HurtboxGroupEditorWindow.OnEnable
+  nameWithType: HurtboxGroupEditorWindow.OnEnable
 - uid: HnSF.Combat.HurtboxGroupEditorWindow.OnGUI
   name: OnGUI()
   href: api/HnSF.Combat.HurtboxGroupEditorWindow.html#HnSF_Combat_HurtboxGroupEditorWindow_OnGUI
@@ -2403,6 +2580,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.HurtboxGroupEditorWindow.OnGUI
   nameWithType: HurtboxGroupEditorWindow.OnGUI
+- uid: HnSF.Combat.HurtboxGroupEditorWindow.scrollPos
+  name: scrollPos
+  href: api/HnSF.Combat.HurtboxGroupEditorWindow.html#HnSF_Combat_HurtboxGroupEditorWindow_scrollPos
+  commentId: F:HnSF.Combat.HurtboxGroupEditorWindow.scrollPos
+  fullName: HnSF.Combat.HurtboxGroupEditorWindow.scrollPos
+  nameWithType: HurtboxGroupEditorWindow.scrollPos
 - uid: HnSF.Combat.HurtboxGroupPropertyDrawer
   name: HurtboxGroupPropertyDrawer
   href: api/HnSF.Combat.HurtboxGroupPropertyDrawer.html
@@ -2415,6 +2598,45 @@ references:
   commentId: F:HnSF.Combat.HurtboxGroupPropertyDrawer.boxDefinitionTypes
   fullName: HnSF.Combat.HurtboxGroupPropertyDrawer.boxDefinitionTypes
   nameWithType: HurtboxGroupPropertyDrawer.boxDefinitionTypes
+- uid: HnSF.Combat.HurtboxGroupPropertyDrawer.DrawAddBoxButton(Rect,SerializedProperty,System.Single,System.Single,System.Single)
+  name: DrawAddBoxButton(Rect, SerializedProperty, Single, Single, Single)
+  href: api/HnSF.Combat.HurtboxGroupPropertyDrawer.html#HnSF_Combat_HurtboxGroupPropertyDrawer_DrawAddBoxButton_Rect_SerializedProperty_System_Single_System_Single_System_Single_
+  commentId: M:HnSF.Combat.HurtboxGroupPropertyDrawer.DrawAddBoxButton(Rect,SerializedProperty,System.Single,System.Single,System.Single)
+  fullName: HnSF.Combat.HurtboxGroupPropertyDrawer.DrawAddBoxButton(Rect, SerializedProperty, System.Single, System.Single, System.Single)
+  nameWithType: HurtboxGroupPropertyDrawer.DrawAddBoxButton(Rect, SerializedProperty, Single, Single, Single)
+- uid: HnSF.Combat.HurtboxGroupPropertyDrawer.DrawAddBoxButton*
+  name: DrawAddBoxButton
+  href: api/HnSF.Combat.HurtboxGroupPropertyDrawer.html#HnSF_Combat_HurtboxGroupPropertyDrawer_DrawAddBoxButton_
+  commentId: Overload:HnSF.Combat.HurtboxGroupPropertyDrawer.DrawAddBoxButton
+  isSpec: "True"
+  fullName: HnSF.Combat.HurtboxGroupPropertyDrawer.DrawAddBoxButton
+  nameWithType: HurtboxGroupPropertyDrawer.DrawAddBoxButton
+- uid: HnSF.Combat.HurtboxGroupPropertyDrawer.DrawBoxProperties(Rect,SerializedProperty,System.Single,System.Single,System.Single)
+  name: DrawBoxProperties(Rect, SerializedProperty, Single, Single, Single)
+  href: api/HnSF.Combat.HurtboxGroupPropertyDrawer.html#HnSF_Combat_HurtboxGroupPropertyDrawer_DrawBoxProperties_Rect_SerializedProperty_System_Single_System_Single_System_Single_
+  commentId: M:HnSF.Combat.HurtboxGroupPropertyDrawer.DrawBoxProperties(Rect,SerializedProperty,System.Single,System.Single,System.Single)
+  fullName: HnSF.Combat.HurtboxGroupPropertyDrawer.DrawBoxProperties(Rect, SerializedProperty, System.Single, System.Single, System.Single)
+  nameWithType: HurtboxGroupPropertyDrawer.DrawBoxProperties(Rect, SerializedProperty, Single, Single, Single)
+- uid: HnSF.Combat.HurtboxGroupPropertyDrawer.DrawBoxProperties*
+  name: DrawBoxProperties
+  href: api/HnSF.Combat.HurtboxGroupPropertyDrawer.html#HnSF_Combat_HurtboxGroupPropertyDrawer_DrawBoxProperties_
+  commentId: Overload:HnSF.Combat.HurtboxGroupPropertyDrawer.DrawBoxProperties
+  isSpec: "True"
+  fullName: HnSF.Combat.HurtboxGroupPropertyDrawer.DrawBoxProperties
+  nameWithType: HurtboxGroupPropertyDrawer.DrawBoxProperties
+- uid: HnSF.Combat.HurtboxGroupPropertyDrawer.DrawHurtboxGroupGeneralProperties(Rect,SerializedProperty,System.Single,System.Single,System.Single)
+  name: DrawHurtboxGroupGeneralProperties(Rect, SerializedProperty, Single, Single, Single)
+  href: api/HnSF.Combat.HurtboxGroupPropertyDrawer.html#HnSF_Combat_HurtboxGroupPropertyDrawer_DrawHurtboxGroupGeneralProperties_Rect_SerializedProperty_System_Single_System_Single_System_Single_
+  commentId: M:HnSF.Combat.HurtboxGroupPropertyDrawer.DrawHurtboxGroupGeneralProperties(Rect,SerializedProperty,System.Single,System.Single,System.Single)
+  fullName: HnSF.Combat.HurtboxGroupPropertyDrawer.DrawHurtboxGroupGeneralProperties(Rect, SerializedProperty, System.Single, System.Single, System.Single)
+  nameWithType: HurtboxGroupPropertyDrawer.DrawHurtboxGroupGeneralProperties(Rect, SerializedProperty, Single, Single, Single)
+- uid: HnSF.Combat.HurtboxGroupPropertyDrawer.DrawHurtboxGroupGeneralProperties*
+  name: DrawHurtboxGroupGeneralProperties
+  href: api/HnSF.Combat.HurtboxGroupPropertyDrawer.html#HnSF_Combat_HurtboxGroupPropertyDrawer_DrawHurtboxGroupGeneralProperties_
+  commentId: Overload:HnSF.Combat.HurtboxGroupPropertyDrawer.DrawHurtboxGroupGeneralProperties
+  isSpec: "True"
+  fullName: HnSF.Combat.HurtboxGroupPropertyDrawer.DrawHurtboxGroupGeneralProperties
+  nameWithType: HurtboxGroupPropertyDrawer.DrawHurtboxGroupGeneralProperties
 - uid: HnSF.Combat.HurtboxGroupPropertyDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
   name: GetPropertyHeight(SerializedProperty, GUIContent)
   href: api/HnSF.Combat.HurtboxGroupPropertyDrawer.html#HnSF_Combat_HurtboxGroupPropertyDrawer_GetPropertyHeight_SerializedProperty_GUIContent_
@@ -2956,6 +3178,32 @@ references:
   commentId: F:HnSF.Combat.StateHurtboxDefinitionEditor.hurtboxGroupTypes
   fullName: HnSF.Combat.StateHurtboxDefinitionEditor.hurtboxGroupTypes
   nameWithType: StateHurtboxDefinitionEditor.hurtboxGroupTypes
+- uid: HnSF.Combat.StateHurtboxDefinitionEditor.OnEnable
+  name: OnEnable()
+  href: api/HnSF.Combat.StateHurtboxDefinitionEditor.html#HnSF_Combat_StateHurtboxDefinitionEditor_OnEnable
+  commentId: M:HnSF.Combat.StateHurtboxDefinitionEditor.OnEnable
+  fullName: HnSF.Combat.StateHurtboxDefinitionEditor.OnEnable()
+  nameWithType: StateHurtboxDefinitionEditor.OnEnable()
+- uid: HnSF.Combat.StateHurtboxDefinitionEditor.OnEnable*
+  name: OnEnable
+  href: api/HnSF.Combat.StateHurtboxDefinitionEditor.html#HnSF_Combat_StateHurtboxDefinitionEditor_OnEnable_
+  commentId: Overload:HnSF.Combat.StateHurtboxDefinitionEditor.OnEnable
+  isSpec: "True"
+  fullName: HnSF.Combat.StateHurtboxDefinitionEditor.OnEnable
+  nameWithType: StateHurtboxDefinitionEditor.OnEnable
+- uid: HnSF.Combat.StateHurtboxDefinitionEditor.OnHurtboxGroupTypeSelected(System.Object)
+  name: OnHurtboxGroupTypeSelected(Object)
+  href: api/HnSF.Combat.StateHurtboxDefinitionEditor.html#HnSF_Combat_StateHurtboxDefinitionEditor_OnHurtboxGroupTypeSelected_System_Object_
+  commentId: M:HnSF.Combat.StateHurtboxDefinitionEditor.OnHurtboxGroupTypeSelected(System.Object)
+  fullName: HnSF.Combat.StateHurtboxDefinitionEditor.OnHurtboxGroupTypeSelected(System.Object)
+  nameWithType: StateHurtboxDefinitionEditor.OnHurtboxGroupTypeSelected(Object)
+- uid: HnSF.Combat.StateHurtboxDefinitionEditor.OnHurtboxGroupTypeSelected*
+  name: OnHurtboxGroupTypeSelected
+  href: api/HnSF.Combat.StateHurtboxDefinitionEditor.html#HnSF_Combat_StateHurtboxDefinitionEditor_OnHurtboxGroupTypeSelected_
+  commentId: Overload:HnSF.Combat.StateHurtboxDefinitionEditor.OnHurtboxGroupTypeSelected
+  isSpec: "True"
+  fullName: HnSF.Combat.StateHurtboxDefinitionEditor.OnHurtboxGroupTypeSelected
+  nameWithType: StateHurtboxDefinitionEditor.OnHurtboxGroupTypeSelected
 - uid: HnSF.Combat.StateHurtboxDefinitionEditor.OnInspectorGUI
   name: OnInspectorGUI()
   href: api/HnSF.Combat.StateHurtboxDefinitionEditor.html#HnSF_Combat_StateHurtboxDefinitionEditor_OnInspectorGUI
@@ -3920,6 +4168,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.FighterHurtboxManager.CleanupHurtboxGroup
   nameWithType: FighterHurtboxManager.CleanupHurtboxGroup
+- uid: HnSF.Fighters.FighterHurtboxManager.CleanupHurtboxGroups
+  name: CleanupHurtboxGroups()
+  href: api/HnSF.Fighters.FighterHurtboxManager.html#HnSF_Fighters_FighterHurtboxManager_CleanupHurtboxGroups
+  commentId: M:HnSF.Fighters.FighterHurtboxManager.CleanupHurtboxGroups
+  fullName: HnSF.Fighters.FighterHurtboxManager.CleanupHurtboxGroups()
+  nameWithType: FighterHurtboxManager.CleanupHurtboxGroups()
+- uid: HnSF.Fighters.FighterHurtboxManager.CleanupHurtboxGroups*
+  name: CleanupHurtboxGroups
+  href: api/HnSF.Fighters.FighterHurtboxManager.html#HnSF_Fighters_FighterHurtboxManager_CleanupHurtboxGroups_
+  commentId: Overload:HnSF.Fighters.FighterHurtboxManager.CleanupHurtboxGroups
+  isSpec: "True"
+  fullName: HnSF.Fighters.FighterHurtboxManager.CleanupHurtboxGroups
+  nameWithType: FighterHurtboxManager.CleanupHurtboxGroups
 - uid: HnSF.Fighters.FighterHurtboxManager.CreateHurtbox
   name: CreateHurtbox()
   href: api/HnSF.Fighters.FighterHurtboxManager.html#HnSF_Fighters_FighterHurtboxManager_CreateHurtbox
@@ -3971,6 +4232,12 @@ references:
   commentId: F:HnSF.Fighters.FighterHurtboxManager.hurtboxGroups
   fullName: HnSF.Fighters.FighterHurtboxManager.hurtboxGroups
   nameWithType: FighterHurtboxManager.hurtboxGroups
+- uid: HnSF.Fighters.FighterHurtboxManager.hurtboxGroupsToDelete
+  name: hurtboxGroupsToDelete
+  href: api/HnSF.Fighters.FighterHurtboxManager.html#HnSF_Fighters_FighterHurtboxManager_hurtboxGroupsToDelete
+  commentId: F:HnSF.Fighters.FighterHurtboxManager.hurtboxGroupsToDelete
+  fullName: HnSF.Fighters.FighterHurtboxManager.hurtboxGroupsToDelete
+  nameWithType: FighterHurtboxManager.hurtboxGroupsToDelete
 - uid: HnSF.Fighters.FighterHurtboxManager.hurtboxPool
   name: hurtboxPool
   href: api/HnSF.Fighters.FighterHurtboxManager.html#HnSF_Fighters_FighterHurtboxManager_hurtboxPool
@@ -5220,6 +5487,38 @@ references:
   commentId: F:HnSF.Input.InputDefinition.stickDirection
   fullName: HnSF.Input.InputDefinition.stickDirection
   nameWithType: InputDefinition.stickDirection
+- uid: HnSF.Input.InputDefinitionDrawer
+  name: InputDefinitionDrawer
+  href: api/HnSF.Input.InputDefinitionDrawer.html
+  commentId: T:HnSF.Input.InputDefinitionDrawer
+  fullName: HnSF.Input.InputDefinitionDrawer
+  nameWithType: InputDefinitionDrawer
+- uid: HnSF.Input.InputDefinitionDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  name: GetPropertyHeight(SerializedProperty, GUIContent)
+  href: api/HnSF.Input.InputDefinitionDrawer.html#HnSF_Input_InputDefinitionDrawer_GetPropertyHeight_SerializedProperty_GUIContent_
+  commentId: M:HnSF.Input.InputDefinitionDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  fullName: HnSF.Input.InputDefinitionDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+  nameWithType: InputDefinitionDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+- uid: HnSF.Input.InputDefinitionDrawer.GetPropertyHeight*
+  name: GetPropertyHeight
+  href: api/HnSF.Input.InputDefinitionDrawer.html#HnSF_Input_InputDefinitionDrawer_GetPropertyHeight_
+  commentId: Overload:HnSF.Input.InputDefinitionDrawer.GetPropertyHeight
+  isSpec: "True"
+  fullName: HnSF.Input.InputDefinitionDrawer.GetPropertyHeight
+  nameWithType: InputDefinitionDrawer.GetPropertyHeight
+- uid: HnSF.Input.InputDefinitionDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  href: api/HnSF.Input.InputDefinitionDrawer.html#HnSF_Input_InputDefinitionDrawer_OnGUI_Rect_SerializedProperty_GUIContent_
+  commentId: M:HnSF.Input.InputDefinitionDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  fullName: HnSF.Input.InputDefinitionDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: InputDefinitionDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+- uid: HnSF.Input.InputDefinitionDrawer.OnGUI*
+  name: OnGUI
+  href: api/HnSF.Input.InputDefinitionDrawer.html#HnSF_Input_InputDefinitionDrawer_OnGUI_
+  commentId: Overload:HnSF.Input.InputDefinitionDrawer.OnGUI
+  isSpec: "True"
+  fullName: HnSF.Input.InputDefinitionDrawer.OnGUI
+  nameWithType: InputDefinitionDrawer.OnGUI
 - uid: HnSF.Input.InputDefinitionType
   name: InputDefinitionType
   href: api/HnSF.Input.InputDefinitionType.html
