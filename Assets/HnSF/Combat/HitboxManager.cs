@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace HnSF.Combat
@@ -67,15 +68,16 @@ namespace HnSF.Combat
             return false;
         }
 
+        protected List<Hurtbox> hurtboxes = new List<Hurtbox>();
         public virtual bool CheckForCollision(int hitboxGroupIndex, HitboxGroup hitboxGroup)
         {
-            Hurtbox[] hurtboxes = null;
+            hurtboxes.Clear();
             for (int i = 0; i < hitboxGroup.boxes.Count; i++)
             {
-                hurtboxes = CheckBoxCollision(hitboxGroup, i);
+                CheckBoxCollision(hitboxGroup, i);
 
                 // This hitbox hit nothing.
-                if (hurtboxes == null || hurtboxes.Length == 0)
+                if (hurtboxes.Count == 0)
                 {
                     continue;
                 }
@@ -85,24 +87,38 @@ namespace HnSF.Combat
                 {
                     collidedIHurtables.Add(hitboxGroup.ID, new IDGroupCollisionInfo());
                 }
-                for (int j = 0; j < hurtboxes.Length; j++)
+
+                SortHitHurtboxes();
+
+                for (int j = 0; j < hurtboxes.Count; j++)
                 {
-                    // Owner was already hit by this ID group or is null, ignore it.
-                    if (hurtboxes[j] == null || collidedIHurtables[hitboxGroup.ID].hitIHurtables.Contains(hurtboxes[j].Owner))
-                    {
-                        continue;
-                    }
-                    // Additional filtering.
-                    if (ShouldHurt(hitboxGroup, i, hurtboxes[j]) == false)
-                    {
-                        continue;
-                    }
-                    HurtHurtbox(hitboxGroup, i, hurtboxes[j]);
-                    collidedIHurtables[hitboxGroup.ID].hitIHurtables.Add(hurtboxes[j].Owner);
-                    collidedIHurtables[hitboxGroup.ID].hitboxGroups.Add(hitboxGroupIndex);
+                    TryHitHurtbox(hitboxGroup, i, j, hitboxGroupIndex);
                 }
             }
             return false;
+        }
+
+        protected virtual void SortHitHurtboxes()
+        {
+            hurtboxes = hurtboxes.OrderBy(x=>x?.HurtboxGroup.ID).ToList();
+        }
+
+        protected virtual bool TryHitHurtbox(HitboxGroup hitboxGroup, int hitboxIndex, int hurtboxIndex, int hitboxGroupIndex)
+        {
+            // Owner was already hit by this ID group or is null, ignore it.
+            if (hurtboxes[hurtboxIndex] == null || collidedIHurtables[hitboxGroup.ID].hitIHurtables.Contains(hurtboxes[hurtboxIndex].Owner))
+            {
+                return false;
+            }
+            // Additional filtering.
+            if (ShouldHurt(hitboxGroup, hitboxIndex, hurtboxes[hurtboxIndex]) == false)
+            {
+                return false;
+            }
+            collidedIHurtables[hitboxGroup.ID].hitIHurtables.Add(hurtboxes[hurtboxIndex].Owner);
+            collidedIHurtables[hitboxGroup.ID].hitboxGroups.Add(hitboxGroupIndex);
+            HurtHurtbox(hitboxGroup, hitboxIndex, hurtboxes[hurtboxIndex]);
+            return true;
         }
 
         /// <summary>
@@ -128,9 +144,9 @@ namespace HnSF.Combat
             return new HurtInfoBase();
         }
 
-        protected virtual Hurtbox[] CheckBoxCollision(HitboxGroup hitboxGroup, int boxIndex)
+        protected virtual void CheckBoxCollision(HitboxGroup hitboxGroup, int boxIndex)
         {
-            return null;
+
         }
     }
 }

@@ -53,6 +53,14 @@ namespace HnSF.Combat
                     hurtboxGroupProperty.DeleteArrayElementAtIndex(i);
                     break;
                 }
+                if(GUILayout.Button("∨", GUILayout.Width(30)))
+                {
+                    hurtboxGroupProperty.MoveArrayElement(i, i+1);
+                }
+                if(GUILayout.Button("∧", GUILayout.Width(30)))
+                {
+                    hurtboxGroupProperty.MoveArrayElement(i, i-1);
+                }
                 EditorGUILayout.EndHorizontal();
                 EditorGUI.indentLevel++;
                 EditorGUILayout.PropertyField(hurtboxGroupProperty.GetArrayElementAtIndex(i));

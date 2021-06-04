@@ -24,7 +24,7 @@ MonoBehaviour:
         activeFramesEnd: 33
         boxes:
         - id: 1
-        attachToEntity: 0
+        attachToEntity: 1
         attachTo: 
     00000001:
       type: {class: BoxDefinition, ns: HnSF.Combat, asm: HnSF}

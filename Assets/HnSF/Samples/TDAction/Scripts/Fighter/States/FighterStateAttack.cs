@@ -29,6 +29,8 @@ namespace TDAction.Fighter
                 (Manager as FighterManager).entityAnimator.PlayAnimation((Manager as FighterManager).GetAnimationClip(currentAttack.animationName, 
                     GetEntityManager().CombatManager.CurrentAttackMovesetIdentifier));
             }
+
+            GetEntityManager().HurtboxManager.SetHurtboxDefinition(currentAttack.hurtboxDefinition);
         }
 
         public override void OnUpdate()

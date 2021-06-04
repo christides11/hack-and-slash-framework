@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hurtboxGroups:
   - id: 0
+  - id: 1
   references:
     version: 1
     00000000:
@@ -23,15 +24,34 @@ MonoBehaviour:
         activeFramesStart: -1
         activeFramesEnd: -1
         boxes:
-        - id: 1
+        - id: 2
         attachToEntity: 1
         attachTo: 
     00000001:
+      type: {class: HurtboxGroup, ns: HnSF.Combat, asm: HnSF}
+      data:
+        ID: 1
+        activeFramesStart: -1
+        activeFramesEnd: -1
+        boxes:
+        - id: 3
+        attachToEntity: 1
+        attachTo: 
+    00000002:
       type: {class: BoxDefinition, ns: HnSF.Combat, asm: HnSF}
       data:
         shape: 0
         offset: {x: 0, y: 1, z: 0}
         size: {x: 1, y: 2, z: 0}
+        rotation: {x: 0, y: 0, z: 0}
+        radius: 0
+        height: 0
+    00000003:
+      type: {class: BoxDefinition, ns: HnSF.Combat, asm: HnSF}
+      data:
+        shape: 0
+        offset: {x: 0, y: 1, z: 0}
+        size: {x: 5, y: 5, z: 0}
         rotation: {x: 0, y: 0, z: 0}
         radius: 0
         height: 0
