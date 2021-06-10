@@ -71,6 +71,7 @@ namespace HnSF.Combat
         protected List<Hurtbox> hurtboxes = new List<Hurtbox>();
         public virtual bool CheckForCollision(int hitboxGroupIndex, HitboxGroup hitboxGroup)
         {
+            bool hurtboxHit = false;
             hurtboxes.Clear();
             for (int i = 0; i < hitboxGroup.boxes.Count; i++)
             {
@@ -92,10 +93,13 @@ namespace HnSF.Combat
 
                 for (int j = 0; j < hurtboxes.Count; j++)
                 {
-                    TryHitHurtbox(hitboxGroup, i, j, hitboxGroupIndex);
+                    if(TryHitHurtbox(hitboxGroup, i, j, hitboxGroupIndex))
+                    {
+                        hurtboxHit = true;
+                    }
                 }
             }
-            return false;
+            return hurtboxHit;
         }
 
         protected virtual void SortHitHurtboxes()
@@ -135,7 +139,7 @@ namespace HnSF.Combat
 
         protected virtual void HurtHurtbox(HitboxGroup hitboxGroup, int hitboxIndex, Hurtbox hurtbox)
         {
-            hurtbox.Hurtable.Hurt(BuildHurtInfo(hitboxGroup, hitboxIndex, hurtbox));
+            HitReaction reaction = hurtbox.Hurtable.Hurt(BuildHurtInfo(hitboxGroup, hitboxIndex, hurtbox));
             OnHitHurtbox?.Invoke(hitboxGroup, hitboxIndex, hurtbox);
         }
 
