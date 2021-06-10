@@ -713,20 +713,6 @@ namespace HnSF.Combat
         }
         #endregion
 
-        protected virtual void AddHurtboxGroup(SerializedObject serializedObject)
-        {
-            SerializedProperty hurtboxGroupsProperty = serializedObject.FindProperty("hurtboxes");
-            hurtboxGroupsProperty.InsertArrayElementAtIndex(hurtboxGroupsProperty.arraySize);
-            hurtboxGroupsProperty.GetArrayElementAtIndex(hurtboxGroupsProperty.arraySize - 1).objectReferenceValue = null;
-        }
-
-        protected virtual void AddEventDefinition(SerializedObject serializedObject)
-        {
-            SerializedProperty eventProperty = serializedObject.FindProperty("events");
-            eventProperty.InsertArrayElementAtIndex(eventProperty.arraySize);
-            eventProperty.GetArrayElementAtIndex(eventProperty.arraySize - 1).managedReferenceValue = new AttackEventDefinition();
-        }
-
         protected virtual void OnHitboxGroupSelected(object t)
         {
             SerializedObject attackObject = new SerializedObject(attack);
@@ -765,20 +751,6 @@ namespace HnSF.Combat
             eventProperty.InsertArrayElementAtIndex(eventProperty.arraySize);
             eventProperty.GetArrayElementAtIndex(eventProperty.arraySize - 1).managedReferenceValue = Activator.CreateInstance(cancelListDefinitionTypes[(string)t]);
             attackObject.ApplyModifiedProperties();
-        }
-
-        protected virtual void AddChargeGroup(SerializedObject serializedObject)
-        {
-            SerializedProperty chargeWindowsProperty = serializedObject.FindProperty("chargeWindows");
-            chargeWindowsProperty.InsertArrayElementAtIndex(chargeWindowsProperty.arraySize);
-            chargeWindowsProperty.GetArrayElementAtIndex(chargeWindowsProperty.arraySize - 1).managedReferenceValue = new ChargeDefinition();
-        }
-
-        protected virtual void AddCancelListDefinition(SerializedObject serializedObject)
-        {
-            SerializedProperty cancelListProperty = serializedObject.FindProperty("cancels");
-            cancelListProperty.InsertArrayElementAtIndex(cancelListProperty.arraySize);
-            cancelListProperty.GetArrayElementAtIndex(cancelListProperty.arraySize - 1).managedReferenceValue = new CancelListDefinition();
         }
 
         public void DrawUILine(Color color, int thickness = 2, int padding = 10)
