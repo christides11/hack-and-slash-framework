@@ -57,6 +57,7 @@ MonoBehaviour:
         endFrame: 1
         attackEvent:
           id: 7
+        conditions: []
         variables:
           intVars: 
           floatVars: []
@@ -85,6 +86,7 @@ MonoBehaviour:
         endFrame: 20
         attackEvent:
           id: 8
+        conditions: []
         variables:
           intVars: 
           floatVars: []
@@ -113,6 +115,7 @@ MonoBehaviour:
         endFrame: 1
         attackEvent:
           id: 9
+        conditions: []
         variables:
           intVars: 
           floatVars: []
@@ -141,6 +144,7 @@ MonoBehaviour:
         endFrame: 20
         attackEvent:
           id: 10
+        conditions: []
         variables:
           intVars: 
           floatVars: []

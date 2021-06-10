@@ -32,6 +32,40 @@ namespace HnSF.Combat
             window.Show();
         }
 
+        protected Dictionary<string, Type> attackEventDefinitionTypes = new Dictionary<string, Type>();
+        protected Dictionary<string, Type> hitboxGroupTypes = new Dictionary<string, Type>();
+        protected Dictionary<string, Type> chargeGroupTypes = new Dictionary<string, Type>();
+        protected Dictionary<string, Type> cancelListDefinitionTypes = new Dictionary<string, Type>();
+        protected virtual void OnFocus()
+        {
+            attackEventDefinitionTypes.Clear();
+            hitboxGroupTypes.Clear();
+            chargeGroupTypes.Clear();
+            cancelListDefinitionTypes.Clear();
+            foreach (var a in AppDomain.CurrentDomain.GetAssemblies())
+            {
+                foreach (var givenType in a.GetTypes())
+                {
+                    if (givenType == typeof(AttackEventDefinition) || givenType.IsSubclassOf(typeof(AttackEventDefinition)))
+                    {
+                        attackEventDefinitionTypes.Add(givenType.FullName, givenType);
+                    }
+                    if(givenType == typeof(HitboxGroup) || givenType.IsSubclassOf(typeof(HitboxGroup)))
+                    {
+                        hitboxGroupTypes.Add(givenType.FullName, givenType);
+                    }
+                    if (givenType == typeof(ChargeDefinition) || givenType.IsSubclassOf(typeof(ChargeDefinition)))
+                    {
+                        chargeGroupTypes.Add(givenType.FullName, givenType);
+                    }
+                    if (givenType == typeof(CancelListDefinition) || givenType.IsSubclassOf(typeof(CancelListDefinition)))
+                    {
+                        cancelListDefinitionTypes.Add(givenType.FullName, givenType);
+                    }
+                }
+            }
+        }
+
         protected virtual void OnEnable()
         {
             playInterval = Time.fixedDeltaTime;
@@ -420,7 +454,14 @@ namespace HnSF.Combat
             GUILayout.Label("Hitbox Groups", EditorStyles.boldLabel);
             if (GUILayout.Button("+", GUILayout.Width(30), GUILayout.MaxWidth(30)))
             {
-                AddHitboxGroup(serializedObject);
+                GenericMenu menu = new GenericMenu();
+
+                foreach (string t in hitboxGroupTypes.Keys)
+                {
+                    string destination = t.Replace('.', '/');
+                    menu.AddItem(new GUIContent(destination), true, OnHitboxGroupSelected, t);
+                }
+                menu.ShowAsContext();
             }
             EditorGUILayout.EndHorizontal();
             DrawUILine(Color.gray);
@@ -434,13 +475,29 @@ namespace HnSF.Combat
                     hitboxGroupProperty.DeleteArrayElementAtIndex(i);
                     return;
                 }
+                if (GUILayout.Button("↑", GUILayout.Width(20)))
+                {
+                    if (i != 0)
+                    {
+                        hitboxGroupProperty.MoveArrayElement(i, i - 1);
+                        return;
+                    }
+                }
+                if (GUILayout.Button("↓", GUILayout.Width(20)))
+                {
+                    if (i != hitboxGroupProperty.arraySize - 1)
+                    {
+                        hitboxGroupProperty.MoveArrayElement(i, i + 1);
+                        return;
+                    }
+                }
                 SerializedProperty arrayElement = hitboxGroupProperty.GetArrayElementAtIndex(i);
                 float activeFramesStart = arrayElement.FindPropertyRelative("activeFramesStart").intValue;
                 float activeFramesEnd = arrayElement.FindPropertyRelative("activeFramesEnd").intValue;
                 EditorGUILayout.LabelField($"{activeFramesStart.ToString("F0")}~{activeFramesEnd.ToString("F0")}", GUILayout.Width(55));
                 if(GUILayout.Button("Info", GUILayout.Width(100)))
                 {
-                    HitboxGroupEditorWindow.Init(attack, attack.hitboxGroups[i], "hitboxGroups", i);//attack.hitboxGroups[i]);
+                    OpenHitboxGroupWindow(attack, attack.hitboxGroups[i], "hitboxGroups", i);
                 }
                 EditorGUILayout.MinMaxSlider(ref activeFramesStart,
                     ref activeFramesEnd,
@@ -452,13 +509,25 @@ namespace HnSF.Combat
             }
         }
 
+        protected virtual void OpenHitboxGroupWindow(AttackDefinition attack, HitboxGroup hitboxGroup, string v, int i)
+        {
+            HitboxGroupEditorWindow.Init(attack, hitboxGroup, v, i);
+        }
+
         protected virtual void DrawEventBars(SerializedObject serializedObject)
         {
             EditorGUILayout.BeginHorizontal();
             GUILayout.Label("Events", EditorStyles.boldLabel);
             if(GUILayout.Button("+", GUILayout.Width(30), GUILayout.MaxWidth(30)))
             {
-                AddEventDefinition(serializedObject);
+                GenericMenu menu = new GenericMenu();
+
+                foreach (string t in attackEventDefinitionTypes.Keys)
+                {
+                    string destination = t.Replace('.', '/');
+                    menu.AddItem(new GUIContent(destination), true, OnAttackConditionSelected, t);
+                }
+                menu.ShowAsContext();
             }
             EditorGUILayout.EndHorizontal();
             DrawUILine(Color.gray);
@@ -472,13 +541,29 @@ namespace HnSF.Combat
                     eventsProperty.DeleteArrayElementAtIndex(i);
                     return;
                 }
+                if (GUILayout.Button("↑", GUILayout.Width(20)))
+                {
+                    if (i != 0)
+                    {
+                        eventsProperty.MoveArrayElement(i, i - 1);
+                        return;
+                    }
+                }
+                if (GUILayout.Button("↓", GUILayout.Width(20)))
+                {
+                    if (i != eventsProperty.arraySize - 1)
+                    {
+                        eventsProperty.MoveArrayElement(i, i + 1);
+                        return;
+                    }
+                }
                 SerializedProperty arrayElement = eventsProperty.GetArrayElementAtIndex(i);
                 float activeFramesStart = arrayElement.FindPropertyRelative("startFrame").intValue;
                 float activeFramesEnd = arrayElement.FindPropertyRelative("endFrame").intValue;
                 EditorGUILayout.LabelField($"{activeFramesStart.ToString("F0")}~{activeFramesEnd.ToString("F0")}", GUILayout.Width(55));
                 if (GUILayout.Button(arrayElement.FindPropertyRelative("nickname").stringValue, GUILayout.Width(100)))
                 {
-                    AttackEventDefinitionEditorWindow.Init(attack, i);
+                    OpenAttackEventDefinitionWindow(attack, i);
                 }
                 EditorGUILayout.MinMaxSlider(ref activeFramesStart,
                     ref activeFramesEnd,
@@ -490,13 +575,25 @@ namespace HnSF.Combat
             }
         }
 
+        protected virtual void OpenAttackEventDefinitionWindow(AttackDefinition attack, int i)
+        {
+            AttackEventDefinitionEditorWindow.Init(attack, i);
+        }
+
         protected virtual void DrawChargeBars(SerializedObject serializedObject)
         {
             EditorGUILayout.BeginHorizontal();
             GUILayout.Label("Charge Groups", EditorStyles.boldLabel);
             if(GUILayout.Button("+", GUILayout.Width(30), GUILayout.MaxWidth(30)))
             {
-                AddChargeGroup(serializedObject);
+                GenericMenu menu = new GenericMenu();
+
+                foreach (string t in chargeGroupTypes.Keys)
+                {
+                    string destination = t.Replace('.', '/');
+                    menu.AddItem(new GUIContent(destination), true, OnChargeGroupSelected, t);
+                }
+                menu.ShowAsContext();
             }
             EditorGUILayout.EndHorizontal();
             DrawUILine(Color.gray);
@@ -510,14 +607,29 @@ namespace HnSF.Combat
                     chargeWindowsProperty.DeleteArrayElementAtIndex(i);
                     return;
                 }
+                if (GUILayout.Button("↑", GUILayout.Width(20)))
+                {
+                    if (i != 0)
+                    {
+                        chargeWindowsProperty.MoveArrayElement(i, i - 1);
+                        return;
+                    }
+                }
+                if (GUILayout.Button("↓", GUILayout.Width(20)))
+                {
+                    if (i != chargeWindowsProperty.arraySize - 1)
+                    {
+                        chargeWindowsProperty.MoveArrayElement(i, i + 1);
+                        return;
+                    }
+                }
                 SerializedProperty arrayElement = chargeWindowsProperty.GetArrayElementAtIndex(i);
                 float activeFramesStart = arrayElement.FindPropertyRelative("startFrame").intValue;
                 float activeFramesEnd = arrayElement.FindPropertyRelative("endFrame").intValue;
                 EditorGUILayout.LabelField($"{activeFramesStart.ToString("F0")}~{activeFramesEnd.ToString("F0")}", GUILayout.Width(55));
                 if (GUILayout.Button("Info", GUILayout.Width(100)))
                 {
-                    ChargeGroupEditorWindow.Init(attack, attack.chargeWindows[i]);
-                    //AttackEventDefinitionEditorWindow.Init(attack, i);
+                    OpenChargeGroupEditorWindow(attack, attack.chargeWindows[i]);
                 }
                 EditorGUILayout.MinMaxSlider(ref activeFramesStart,
                     ref activeFramesEnd,
@@ -529,13 +641,25 @@ namespace HnSF.Combat
             }
         }
 
+        protected virtual void OpenChargeGroupEditorWindow(AttackDefinition attack, ChargeDefinition chargeDefinition)
+        {
+            ChargeGroupEditorWindow.Init(attack, chargeDefinition);
+        }
+
         protected virtual void DrawCancelBars(SerializedObject serializedObject)
         {
             EditorGUILayout.BeginHorizontal();
             GUILayout.Label("Cancels", EditorStyles.boldLabel);
             if (GUILayout.Button("+", GUILayout.Width(30), GUILayout.MaxWidth(30)))
             {
-                AddCancelListDefinition(serializedObject);
+                GenericMenu menu = new GenericMenu();
+
+                foreach (string t in cancelListDefinitionTypes.Keys)
+                {
+                    string destination = t.Replace('.', '/');
+                    menu.AddItem(new GUIContent(destination), true, OnCancelListDefinitionSelected, t);
+                }
+                menu.ShowAsContext();
             }
             EditorGUILayout.EndHorizontal();
             DrawUILine(Color.gray);
@@ -549,13 +673,29 @@ namespace HnSF.Combat
                     cancelsProperty.DeleteArrayElementAtIndex(i);
                     return;
                 }
+                if (GUILayout.Button("↑", GUILayout.Width(20)))
+                {
+                    if (i != 0)
+                    {
+                        cancelsProperty.MoveArrayElement(i, i - 1);
+                        return;
+                    }
+                }
+                if (GUILayout.Button("↓", GUILayout.Width(20)))
+                {
+                    if (i != cancelsProperty.arraySize - 1)
+                    {
+                        cancelsProperty.MoveArrayElement(i, i + 1);
+                        return;
+                    }
+                }
                 SerializedProperty arrayElement = cancelsProperty.GetArrayElementAtIndex(i);
                 float activeFramesStart = arrayElement.FindPropertyRelative("startFrame").intValue;
                 float activeFramesEnd = arrayElement.FindPropertyRelative("endFrame").intValue;
                 EditorGUILayout.LabelField($"{activeFramesStart.ToString("F0")}~{activeFramesEnd.ToString("F0")}", GUILayout.Width(55));
                 if (GUILayout.Button("Info", GUILayout.Width(100)))
                 {
-                    CancelListDefinitionEditorWindow.Init(attack, i);
+                    OpenCancelListDefinitionEditorWindow(attack, i);
                 }
                 EditorGUILayout.MinMaxSlider(ref activeFramesStart,
                     ref activeFramesEnd,
@@ -566,14 +706,12 @@ namespace HnSF.Combat
                 EditorGUILayout.EndHorizontal();
             }
         }
-        #endregion
 
-        protected virtual void AddHitboxGroup(SerializedObject serializedObject)
+        protected virtual void OpenCancelListDefinitionEditorWindow(AttackDefinition attack, int i)
         {
-            serializedObject.FindProperty("hitboxGroups").InsertArrayElementAtIndex(serializedObject.FindProperty("hitboxGroups").arraySize);
-            serializedObject.FindProperty("hitboxGroups").GetArrayElementAtIndex(serializedObject.FindProperty("hitboxGroups").arraySize - 1)
-                .managedReferenceValue = new HitboxGroup();
+            CancelListDefinitionEditorWindow.Init(attack, i);
         }
+        #endregion
 
         protected virtual void AddHurtboxGroup(SerializedObject serializedObject)
         {
@@ -587,6 +725,46 @@ namespace HnSF.Combat
             SerializedProperty eventProperty = serializedObject.FindProperty("events");
             eventProperty.InsertArrayElementAtIndex(eventProperty.arraySize);
             eventProperty.GetArrayElementAtIndex(eventProperty.arraySize - 1).managedReferenceValue = new AttackEventDefinition();
+        }
+
+        protected virtual void OnHitboxGroupSelected(object t)
+        {
+            SerializedObject attackObject = new SerializedObject(attack);
+            attackObject.Update();
+            SerializedProperty hitboxGroupsProperty = attackObject.FindProperty("hitboxGroups");
+            hitboxGroupsProperty.InsertArrayElementAtIndex(hitboxGroupsProperty.arraySize);
+            hitboxGroupsProperty.GetArrayElementAtIndex(hitboxGroupsProperty.arraySize - 1).managedReferenceValue = Activator.CreateInstance(hitboxGroupTypes[(string)t]);
+            attackObject.ApplyModifiedProperties();
+        }
+
+        protected virtual void OnAttackConditionSelected(object t)
+        {
+            SerializedObject attackObject = new SerializedObject(attack);
+            attackObject.Update();
+            SerializedProperty eventProperty = attackObject.FindProperty("events");
+            eventProperty.InsertArrayElementAtIndex(eventProperty.arraySize);
+            eventProperty.GetArrayElementAtIndex(eventProperty.arraySize - 1).managedReferenceValue = Activator.CreateInstance(attackEventDefinitionTypes[(string)t]);
+            attackObject.ApplyModifiedProperties();
+        }
+
+        protected virtual void OnChargeGroupSelected(object t)
+        {
+            SerializedObject attackObject = new SerializedObject(attack);
+            attackObject.Update();
+            SerializedProperty eventProperty = attackObject.FindProperty("chargeWindows");
+            eventProperty.InsertArrayElementAtIndex(eventProperty.arraySize);
+            eventProperty.GetArrayElementAtIndex(eventProperty.arraySize - 1).managedReferenceValue = Activator.CreateInstance(chargeGroupTypes[(string)t]);
+            attackObject.ApplyModifiedProperties();
+        }
+
+        protected virtual void OnCancelListDefinitionSelected(object t)
+        {
+            SerializedObject attackObject = new SerializedObject(attack);
+            attackObject.Update();
+            SerializedProperty eventProperty = attackObject.FindProperty("cancels");
+            eventProperty.InsertArrayElementAtIndex(eventProperty.arraySize);
+            eventProperty.GetArrayElementAtIndex(eventProperty.arraySize - 1).managedReferenceValue = Activator.CreateInstance(cancelListDefinitionTypes[(string)t]);
+            attackObject.ApplyModifiedProperties();
         }
 
         protected virtual void AddChargeGroup(SerializedObject serializedObject)
@@ -603,8 +781,9 @@ namespace HnSF.Combat
             cancelListProperty.GetArrayElementAtIndex(cancelListProperty.arraySize - 1).managedReferenceValue = new CancelListDefinition();
         }
 
-        public static void DrawUILine(Color color, int thickness = 2, int padding = 10)
+        public void DrawUILine(Color color, int thickness = 2, int padding = 10)
         {
+            return;
             Rect r = EditorGUILayout.GetControlRect(GUILayout.Height(padding + thickness));
             r.height = thickness;
             r.y += padding / 2;
