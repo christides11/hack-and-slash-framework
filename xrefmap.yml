@@ -783,6 +783,19 @@ references:
   commentId: F:HnSF.Combat.AttackEventDefinition.chargeLevelMin
   fullName: HnSF.Combat.AttackEventDefinition.chargeLevelMin
   nameWithType: AttackEventDefinition.chargeLevelMin
+- uid: HnSF.Combat.AttackEventDefinition.CheckConditions(HnSF.Fighters.FighterBase)
+  name: CheckConditions(FighterBase)
+  href: api/HnSF.Combat.AttackEventDefinition.html#HnSF_Combat_AttackEventDefinition_CheckConditions_HnSF_Fighters_FighterBase_
+  commentId: M:HnSF.Combat.AttackEventDefinition.CheckConditions(HnSF.Fighters.FighterBase)
+  fullName: HnSF.Combat.AttackEventDefinition.CheckConditions(HnSF.Fighters.FighterBase)
+  nameWithType: AttackEventDefinition.CheckConditions(FighterBase)
+- uid: HnSF.Combat.AttackEventDefinition.CheckConditions*
+  name: CheckConditions
+  href: api/HnSF.Combat.AttackEventDefinition.html#HnSF_Combat_AttackEventDefinition_CheckConditions_
+  commentId: Overload:HnSF.Combat.AttackEventDefinition.CheckConditions
+  isSpec: "True"
+  fullName: HnSF.Combat.AttackEventDefinition.CheckConditions
+  nameWithType: AttackEventDefinition.CheckConditions
 - uid: HnSF.Combat.AttackEventDefinition.conditions
   name: conditions
   href: api/HnSF.Combat.AttackEventDefinition.html#HnSF_Combat_AttackEventDefinition_conditions
