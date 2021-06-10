@@ -4,10 +4,10 @@ using UnityEngine;
 
 namespace HnSF.Input
 {
-    public enum InputControlType
+    public enum FighterControlType
     {
         None = 0,
-        Direct = 1,
+        Player = 1,
         AI = 2
     }
 }

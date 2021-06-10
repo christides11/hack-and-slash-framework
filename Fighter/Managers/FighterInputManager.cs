@@ -10,19 +10,18 @@ namespace HnSF.Fighters
     {
         [SerializeField] protected FighterBase manager;
 
-        public InputControlType ControlType { get; protected set; } = InputControlType.None;
+        public FighterControlType ControlType { get; protected set; } = FighterControlType.None;
         public uint inputRecordSize { get; protected set; } = 1024;
         public InputRecordItem[] InputRecord { get; protected set; } = null;
         public uint inputTick { get; protected set; } = 0;
-
-        public Dictionary<int, uint> bufferLimitAtTick = new Dictionary<int, uint>();
+        public uint inputBufferTick { get; protected set; } = 0;
 
         public virtual void Awake()
         {
             InputRecord = new InputRecordItem[inputRecordSize];
         }
 
-        public virtual void SetControlType(InputControlType controlType)
+        public virtual void SetControlType(FighterControlType controlType)
         {
             ControlType = controlType;
         }
@@ -30,7 +29,7 @@ namespace HnSF.Fighters
         public virtual void Tick()
         {
             switch (ControlType) {
-                case InputControlType.Direct:
+                case FighterControlType.Player:
                     GetInputs();
                     ProcessInput();
                     break;
@@ -126,7 +125,7 @@ namespace HnSF.Fighters
                 {
                     InputRecordButton b = ((InputRecordButton)InputRecord[(inputTick - 1 - (frameOffset + i)) % inputRecordSize].inputs[buttonID]);
                     //Can't go further, already used buffer past here.
-                    if (UsedInBuffer(buttonID, (inputTick - 1 - (frameOffset + i))))
+                    if (inputBufferTick >= (inputTick - 1 - (frameOffset + i)))
                     {
                         break;
                     }
@@ -140,31 +139,13 @@ namespace HnSF.Fighters
             return (InputRecordButton)InputRecord[(inputTick - 1 - frameOffset) % inputRecordSize].inputs[buttonID];
         }
 
-        public virtual bool UsedInBuffer(int inputID, uint tick)
-        {
-            if (!bufferLimitAtTick.ContainsKey(inputID))
-            {
-                return false;
-            }
-            if (bufferLimitAtTick[inputID] < tick)
-            {
-                return false;
-            }
-            return true;
-        }
-
         /// <summary>
         /// Clear a specific buffer.
         /// </summary>
         /// <param name="inputID">The input to clear the buffer for.</param>
-        public virtual void ClearBuffer(int inputID)
+        public virtual void ClearBuffer()
         {
-            if (!bufferLimitAtTick.ContainsKey(inputID))
-            {
-                bufferLimitAtTick.Add(inputID, inputTick);
-                return;
-            }
-            bufferLimitAtTick[inputID] = inputTick;
+            inputBufferTick = inputTick;
         }
     }
 }

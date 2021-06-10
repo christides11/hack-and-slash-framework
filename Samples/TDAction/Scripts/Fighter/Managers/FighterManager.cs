@@ -23,7 +23,7 @@ namespace TDAction.Fighter
         public LayerMask enemyStepLayerMask;
         public float enemyStepRadius = 2;
 
-        public virtual void Initialize(InputControlType controlType)
+        public virtual void Initialize(FighterControlType controlType)
         {
             InputManager.SetControlType(controlType);
         }

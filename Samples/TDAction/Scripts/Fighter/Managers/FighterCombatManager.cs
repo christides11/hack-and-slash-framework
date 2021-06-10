@@ -47,7 +47,6 @@ namespace TDAction.Fighter
                 return hitReaction;
             }
             // Got hit, apply stun, damage, and forces.
-            LastHitBy = hInfo;
             SetHitStop(hInfo.hitstop);
             SetHitStun(hInfo.hitstun);
 

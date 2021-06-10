@@ -53,7 +53,6 @@ namespace HnSF.Fighters
         public virtual MovesetAttackNode CurrentAttackNode { get { if (currentAttackNode < 0) { return null; } 
                 return (MovesetAttackNode)GetMoveset(currentAttackMoveset).GetAttackNode(currentAttackNode); } }
         public virtual int CurrentAttackNodeIdentifier { get { return currentAttackNode; } }
-        public HitInfoBase LastHitBy { get; protected set; }
 
         protected int currentMoveset = 0;
         protected int currentAttackMoveset = -1;
@@ -320,11 +319,7 @@ namespace HnSF.Fighters
                 return false;
             }
             
-            // Execute inputs where used, make them unusable to stop them from being read twice.
-            for(int a = 0; a < sequence.executeInputs.Count; a++)
-            {
-                manager.InputManager.ClearBuffer(sequence.executeInputs[a].buttonID);
-            }
+            manager.InputManager.ClearBuffer();
             // Check sequence button(s).
             bool pressedSequenceButtons = true;
             for (int s = 0; s < sequence.sequenceInputs.Count; s++)
