@@ -8,6 +8,7 @@ namespace HnSF.Combat
 {
     public class AttackEventDefinitionEditorWindow : EditorWindow
     {
+        protected Dictionary<string, Type> attackConditionTypes = new Dictionary<string, Type>();
         protected Dictionary<string, Type> attackEventTypes = new Dictionary<string, Type>();
         public AttackDefinition attack;
         public int eventIndex;
@@ -27,6 +28,7 @@ namespace HnSF.Combat
         protected virtual void OnFocus()
         {
             attackEventTypes.Clear();
+            attackConditionTypes.Clear();
             foreach (var a in AppDomain.CurrentDomain.GetAssemblies())
             {
                 foreach (var givenType in a.GetTypes())
@@ -34,6 +36,10 @@ namespace HnSF.Combat
                     if (givenType.IsSubclassOf(typeof(AttackEvent)))
                     {
                         attackEventTypes.Add(givenType.FullName, givenType);
+                    }
+                    if (givenType.IsSubclassOf(typeof(AttackCondition)))
+                    {
+                        attackConditionTypes.Add(givenType.FullName, givenType);
                     }
                 }
             }
@@ -53,6 +59,7 @@ namespace HnSF.Combat
         }
 
         protected bool eventVariablesFoldout;
+        protected bool conditionsFoldout;
         protected virtual void DrawEventInfo()
         {
             SerializedObject attackObject = new SerializedObject(attack);
@@ -99,7 +106,39 @@ namespace HnSF.Combat
             }
             EditorGUI.indentLevel--;
 
-            EditorGUILayout.LabelField(attack.events[eventIndex].attackEvent == null ? "..." : attack.events[eventIndex].attackEvent.GetName());
+            if (GUILayout.Button("Add Condition"))
+            {
+                GenericMenu menu = new GenericMenu();
+
+                foreach (string t in attackConditionTypes.Keys)
+                {
+                    string destination = t.Replace('.', '/');
+                    menu.AddItem(new GUIContent(destination), true, OnAttackConditionSelected, t);
+                }
+                menu.ShowAsContext();
+            }
+
+            conditionsFoldout = EditorGUILayout.Foldout(conditionsFoldout, "Conditions");
+            if (conditionsFoldout)
+            {
+                SerializedProperty conditionsProperty = eventProperty.FindPropertyRelative("conditions");
+                EditorGUI.indentLevel++;
+                for(int i = 0; i < conditionsProperty.arraySize; i++)
+                {
+                    AttackCondition ac = attack.events[eventIndex].conditions[i];
+                    EditorGUILayout.BeginHorizontal();
+                    if(GUILayout.Button("-", GUILayout.Width(20)) || ac == null)
+                    {
+                        conditionsProperty.DeleteArrayElementAtIndex(i);
+                        EditorGUILayout.EndHorizontal();
+                        break;
+                    }
+                    EditorGUILayout.PropertyField(conditionsProperty.GetArrayElementAtIndex(i), new GUIContent(ac.GetName()), true);
+                    EditorGUILayout.EndHorizontal();
+                }
+                EditorGUI.indentLevel--;
+            }
+
             var attackEventProperty = eventProperty.FindPropertyRelative("attackEvent");
             if (GUILayout.Button("Set Event"))
             {
@@ -112,28 +151,36 @@ namespace HnSF.Combat
                 }
                 menu.ShowAsContext();
             }
+            EditorGUILayout.LabelField(attack.events[eventIndex].attackEvent == null ? "..." : attack.events[eventIndex].attackEvent.GetName());
+            GUILayout.Space(5);
 
-            eventVariablesFoldout = EditorGUILayout.Foldout(eventVariablesFoldout, "Variables", true);
-            if (eventVariablesFoldout)
+            if (attack.events[eventIndex].attackEvent != null)
             {
-                EditorGUI.indentLevel++;
-                if (attack.events[eventIndex].attackEvent != null)
-                {
-                    EditorGUILayout.PropertyField(attackEventProperty, true);
-                }
-                EditorGUI.indentLevel--;
+                EditorGUILayout.PropertyField(attackEventProperty, true);
+
             }
 
             attackObject.ApplyModifiedProperties();
         }
 
-        protected void OnAttackEventSelected(object t)
+        protected virtual void OnAttackEventSelected(object t)
         {
             SerializedObject attackObject = new SerializedObject(attack);
             attackObject.Update();
             SerializedProperty eventProperty = attackObject.FindProperty("events").GetArrayElementAtIndex(eventIndex);
             var attackEventProperty = eventProperty.FindPropertyRelative("attackEvent");
             attackEventProperty.managedReferenceValue = Activator.CreateInstance(attackEventTypes[(string)t]);
+            attackObject.ApplyModifiedProperties();
+        }
+
+        protected virtual void OnAttackConditionSelected(object t)
+        {
+            SerializedObject attackObject = new SerializedObject(attack);
+            attackObject.Update();
+            SerializedProperty eventProperty = attackObject.FindProperty("events").GetArrayElementAtIndex(eventIndex);
+            eventProperty.FindPropertyRelative("conditions").InsertArrayElementAtIndex(eventProperty.FindPropertyRelative("conditions").arraySize);
+            var conditionProperty = eventProperty.FindPropertyRelative("conditions").GetArrayElementAtIndex(eventProperty.FindPropertyRelative("conditions").arraySize-1);
+            conditionProperty.managedReferenceValue = Activator.CreateInstance(attackConditionTypes[(string)t]);
             attackObject.ApplyModifiedProperties();
         }
     }

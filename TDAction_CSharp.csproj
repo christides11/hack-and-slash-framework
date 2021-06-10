@@ -82,6 +82,7 @@
     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Camera\CameraHandler.cs" />
     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Camera\Parallax.cs" />
     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Combat\Attack\AttackDefinition.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Combat\Conditions\Meter.cs" />
     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Combat\Events\ApplyFriction.cs" />
     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Combat\Events\ApplyGravity.cs" />
     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Combat\Events\ChangeAttack.cs" />

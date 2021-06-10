@@ -71,6 +71,7 @@
     <Compile Include="Assets\HnSF\Combat\Attack Events\AttackEventVariables.cs" />
     <Compile Include="Assets\HnSF\Combat\Attack Events\OnHitType.cs" />
     <Compile Include="Assets\HnSF\Combat\Attack\AttackDefinition.cs" />
+    <Compile Include="Assets\HnSF\Combat\AttackCondition.cs" />
     <Compile Include="Assets\HnSF\Combat\Boxes\BoxDefinition.cs" />
     <Compile Include="Assets\HnSF\Combat\Boxes\BoxDefinitionBase.cs" />
     <Compile Include="Assets\HnSF\Combat\Boxes\BoxShape.cs" />
