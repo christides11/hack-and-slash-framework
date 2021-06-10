@@ -16,7 +16,7 @@ namespace HnSF.Combat
             public HashSet<int> hitboxGroups = new HashSet<int>();
         }
 
-        public delegate void HitboxGroupEventAction(HitboxGroup hitboxGroup, int hitboxIndex, Hurtbox hurtbox);
+        public delegate void HitboxGroupEventAction(HitboxGroup hitboxGroup, int hitboxIndex, Hurtbox hurtbox, HitReactionBase hitReaction);
         public event HitboxGroupEventAction OnHitHurtbox;
 
         // ID Group : Owners Hit
@@ -139,8 +139,8 @@ namespace HnSF.Combat
 
         protected virtual void HurtHurtbox(HitboxGroup hitboxGroup, int hitboxIndex, Hurtbox hurtbox)
         {
-            HitReaction reaction = hurtbox.Hurtable.Hurt(BuildHurtInfo(hitboxGroup, hitboxIndex, hurtbox));
-            OnHitHurtbox?.Invoke(hitboxGroup, hitboxIndex, hurtbox);
+            HitReactionBase reaction = hurtbox.Hurtable.Hurt(BuildHurtInfo(hitboxGroup, hitboxIndex, hurtbox));
+            OnHitHurtbox?.Invoke(hitboxGroup, hitboxIndex, hurtbox, reaction);
         }
 
         protected virtual HurtInfoBase BuildHurtInfo(HitboxGroup hitboxGroup, int hitboxIndex, Hurtbox hurtbox)
