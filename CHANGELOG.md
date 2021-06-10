@@ -1,3 +1,10 @@
+# [22.1.0](https://github.com/christides11/hack-and-slash-framework/compare/v22.0.0...v22.1.0) (2021-06-10)
+
+
+### Features
+
+* Added CheckConditions method to AttackEventDefinition ([7b56098](https://github.com/christides11/hack-and-slash-framework/commit/7b56098d4f7eadddedd420a5b95fcababdcb2778))
+
 # [22.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v21.0.0...v22.0.0) (2021-06-10)
 
 
