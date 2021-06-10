@@ -1,3 +1,20 @@
+# [23.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v22.1.0...v23.0.0) (2021-06-10)
+
+
+### Bug Fixes
+
+* HitboxManager's CheckForCollision now properly returns true/false. ([a3baebb](https://github.com/christides11/hack-and-slash-framework/commit/a3baebbd31a8ccc49d935fb2a86810e568787762))
+
+
+### Features
+
+* HitboxManager event now includes the hit reaction ([06973b4](https://github.com/christides11/hack-and-slash-framework/commit/06973b4ecb576f43aceaf9d2f0c744dbfa8ce17f))
+
+
+### BREAKING CHANGES
+
+* HitReaction changed to HitReactionBase, and is not a class instead of a struct. Move the responsibility of possible needed hitreaction variables from me to the user.
+
 # [22.1.0](https://github.com/christides11/hack-and-slash-framework/compare/v22.0.0...v22.1.0) (2021-06-10)
 
 
