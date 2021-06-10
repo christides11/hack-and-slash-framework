@@ -87,8 +87,7 @@
     <Compile Include="Assets\HnSF\Combat\ChargeDefinition.cs" />
     <Compile Include="Assets\HnSF\Combat\ChargeLevel.cs" />
     <Compile Include="Assets\HnSF\Combat\ForceType.cs" />
-    <Compile Include="Assets\HnSF\Combat\HitReaction.cs" />
-    <Compile Include="Assets\HnSF\Combat\HitReactionType.cs" />
+    <Compile Include="Assets\HnSF\Combat\HitReactionBase.cs" />
     <Compile Include="Assets\HnSF\Combat\HitboxManager.cs" />
     <Compile Include="Assets\HnSF\Combat\Info\HealInfoBase.cs" />
     <Compile Include="Assets\HnSF\Combat\Info\HitInfo.cs" />

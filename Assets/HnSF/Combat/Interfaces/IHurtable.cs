@@ -7,7 +7,7 @@ namespace HnSF.Combat
     public interface IHurtable
     {
         int GetTeam();
-        HitReaction Hurt(HurtInfoBase hurtInfo);
+        HitReactionBase Hurt(HurtInfoBase hurtInfo);
         void Heal(HealInfoBase healInfo);
     }
 }

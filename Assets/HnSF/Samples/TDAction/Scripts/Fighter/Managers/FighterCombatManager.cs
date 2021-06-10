@@ -30,21 +30,18 @@ namespace TDAction.Fighter
         }
 
         public float pForcePercentage = 1.0f;
-        public override HitReaction Hurt(HurtInfoBase hurtInfoBase)
+        public override HitReactionBase Hurt(HurtInfoBase hurtInfoBase)
         {
             FighterPhysicsManager physicsManager = (FighterPhysicsManager)manager.PhysicsManager;
 
             HurtInfo2D hurtInfo2D = (HurtInfo2D)hurtInfoBase;
             HitInfo hInfo = hurtInfo2D.hitInfo as HitInfo;
 
-            HitReaction hitReaction = new HitReaction();
-            hitReaction.reactionType = HitReactionType.Hit;
             // Check if the box can hit this entity.
             if(hInfo.groundOnly && !physicsManager.IsGrounded
                 || hInfo.airOnly && !physicsManager.IsGrounded)
             {
-                hitReaction.reactionType = HitReactionType.Avoided;
-                return hitReaction;
+                return new HitReactionBase();
             }
             // Got hit, apply stun, damage, and forces.
             SetHitStop(hInfo.hitstop);
@@ -101,7 +98,7 @@ namespace TDAction.Fighter
             {
                 manager.StateManager.ChangeState((ushort)(physicsManager.IsGrounded ? FighterStates.FLINCH_GROUND : FighterStates.FLINCH_AIR));
             }
-            return hitReaction;
+            return new HitReactionBase();
         }
 
         protected override bool CheckStickDirection(HnSF.Input.InputDefinition sequenceInput, uint framesBack)

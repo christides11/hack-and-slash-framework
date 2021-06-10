@@ -71,7 +71,7 @@ namespace HnSF.Fighters
             hitboxManager.OnHitHurtbox += OnHitEnemy;
         }
 
-        protected virtual void OnHitEnemy(HitboxGroup hitboxGroup, int hitboxIndex, Hurtbox hurtbox)
+        protected virtual void OnHitEnemy(HitboxGroup hitboxGroup, int hitboxIndex, Hurtbox hurtbox, HitReactionBase hitReaction)
         {
             SetHitStop(hitboxGroup.hitboxHitInfo.attackerHitstop);
         }
@@ -445,10 +445,10 @@ namespace HnSF.Fighters
             }
         }
 
-        public virtual HitReaction Hurt(HurtInfoBase hurtInfoBase)
+        public virtual HitReactionBase Hurt(HurtInfoBase hurtInfoBase)
         {
-            HitReaction hr = new HitReaction();
-            hr.reactionType = HitReactionType.Hit;
+            HitReactionBase hr = new HitReactionBase();
+            //hr.reactionType = HitReactionType.Hit;
             OnHit?.Invoke(null, manager, hurtInfoBase.hitInfo);
             return hr;
         }
