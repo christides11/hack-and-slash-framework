@@ -122,14 +122,14 @@ MonoBehaviour:
   inputSequence:
     executeWindow: 3
     executeInputs:
-    - inputType: 0
-      buttonID: 3
-      stickDirection: {x: 0, y: 0}
-      directionDeviation: 0
     - inputType: 1
       buttonID: 3
       stickDirection: {x: 0, y: -1}
       directionDeviation: 0.85
+    - inputType: 0
+      buttonID: 3
+      stickDirection: {x: 0, y: 0}
+      directionDeviation: 0
     sequenceWindow: 8
     sequenceInputs: []
   attackDefinition: {fileID: 11400000, guid: 8b5ac6b4303c4cb4b8497caa0b6e91ce, type: 2}
@@ -676,14 +676,14 @@ MonoBehaviour:
   inputSequence:
     executeWindow: 3
     executeInputs:
-    - inputType: 0
-      buttonID: 3
-      stickDirection: {x: 0, y: 0}
-      directionDeviation: 0
     - inputType: 1
       buttonID: 3
       stickDirection: {x: 0, y: 1}
       directionDeviation: 0.85
+    - inputType: 0
+      buttonID: 3
+      stickDirection: {x: 0, y: 0}
+      directionDeviation: 0
     sequenceWindow: 8
     sequenceInputs:
     - inputType: 1
