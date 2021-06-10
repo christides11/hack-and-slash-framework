@@ -1,3 +1,22 @@
+# [22.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v21.0.0...v22.0.0) (2021-06-10)
+
+
+### Code Refactoring
+
+* Input buffer clearing, changed InputControlType to FighterControlType ([b3bcf69](https://github.com/christides11/hack-and-slash-framework/commit/b3bcf69b4c6569fd8ae25e4be390eadec3e0065a))
+* Removed old editor methods ([5673935](https://github.com/christides11/hack-and-slash-framework/commit/567393574bcf3cbc9985e4b6faf709279915fe1c))
+
+
+### Features
+
+* Conditions for Attack Events. ([6c2b5ac](https://github.com/christides11/hack-and-slash-framework/commit/6c2b5ac4403c3deca024490d470d3681f216bff8))
+
+
+### BREAKING CHANGES
+
+* Replaced methods with new ones to work with the type selection menu.
+* Input buffer clearing is now for all buttons, instead of being done on a button by button basis. Also changed InputControlType to FighterControlType to better represent what it's for.
+
 # [21.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v20.0.0...v21.0.0) (2021-06-04)
 
 
