@@ -56,6 +56,10 @@ namespace TDAction.Fighter
             bool cleanup = false;
             for (int i = 0; i < currentAttack.events.Count; i++)
             {
+                if (currentAttack.events[i].CheckConditions(Manager) == false)
+                {
+                    continue;
+                }
                 switch(HandleEvents(currentAttack, currentAttack.events[i]))
                 {
                     case HnSF.Combat.AttackEventReturnType.STALL:

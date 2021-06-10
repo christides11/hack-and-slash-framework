@@ -26,5 +26,17 @@ namespace HnSF.Combat
         public int chargeLevelMax = 0;
 
         public bool inputCheckProcessed;
+
+        public bool CheckConditions(Fighters.FighterBase manager)
+        {
+            for(int i = 0; i < conditions.Count; i++)
+            {
+                if(conditions[i].Result(manager) == false)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
     }
 }
