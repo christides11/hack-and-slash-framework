@@ -100,35 +100,6 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Fighters_FighterInputManager_bufferLimitAtTick.md&amp;value=---%0Auid%3A%20HnSF.Fighters.FighterInputManager.bufferLimitAtTick%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterInputManager.cs/#L18">View Source</a>
-  </span>
-  <h4 id="HnSF_Fighters_FighterInputManager_bufferLimitAtTick" data-uid="HnSF.Fighters.FighterInputManager.bufferLimitAtTick">bufferLimitAtTick</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Dictionary&lt;int, uint&gt; bufferLimitAtTick</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Fighters_FighterInputManager_manager.md&amp;value=---%0Auid%3A%20HnSF.Fighters.FighterInputManager.manager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -171,7 +142,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public InputControlType ControlType { get; protected set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public FighterControlType ControlType { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -183,7 +154,37 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="HnSF.Input.InputControlType.html">InputControlType</a></td>
+        <td><a class="xref" href="HnSF.Input.FighterControlType.html">FighterControlType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Fighters_FighterInputManager_inputBufferTick.md&amp;value=---%0Auid%3A%20HnSF.Fighters.FighterInputManager.inputBufferTick%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterInputManager.cs/#L17">View Source</a>
+  </span>
+  <a id="HnSF_Fighters_FighterInputManager_inputBufferTick_" data-uid="HnSF.Fighters.FighterInputManager.inputBufferTick*"></a>
+  <h4 id="HnSF_Fighters_FighterInputManager_inputBufferTick" data-uid="HnSF.Fighters.FighterInputManager.inputBufferTick">inputBufferTick</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint inputBufferTick { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -285,7 +286,7 @@
     <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Fighters_FighterInputManager_Awake.md&amp;value=---%0Auid%3A%20HnSF.Fighters.FighterInputManager.Awake%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterInputManager.cs/#L20">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterInputManager.cs/#L19">View Source</a>
   </span>
   <a id="HnSF_Fighters_FighterInputManager_Awake_" data-uid="HnSF.Fighters.FighterInputManager.Awake*"></a>
   <h4 id="HnSF_Fighters_FighterInputManager_Awake" data-uid="HnSF.Fighters.FighterInputManager.Awake">Awake()</h4>
@@ -297,44 +298,26 @@
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Fighters_FighterInputManager_ClearBuffer_System_Int32_.md&amp;value=---%0Auid%3A%20HnSF.Fighters.FighterInputManager.ClearBuffer(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Fighters_FighterInputManager_ClearBuffer.md&amp;value=---%0Auid%3A%20HnSF.Fighters.FighterInputManager.ClearBuffer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterInputManager.cs/#L160">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterInputManager.cs/#L146">View Source</a>
   </span>
   <a id="HnSF_Fighters_FighterInputManager_ClearBuffer_" data-uid="HnSF.Fighters.FighterInputManager.ClearBuffer*"></a>
-  <h4 id="HnSF_Fighters_FighterInputManager_ClearBuffer_System_Int32_" data-uid="HnSF.Fighters.FighterInputManager.ClearBuffer(System.Int32)">ClearBuffer(Int32)</h4>
+  <h4 id="HnSF_Fighters_FighterInputManager_ClearBuffer" data-uid="HnSF.Fighters.FighterInputManager.ClearBuffer">ClearBuffer()</h4>
   <div class="markdown level1 summary"><p>Clear a specific buffer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void ClearBuffer(int inputID)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void ClearBuffer()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">inputID</span></td>
-        <td><p>The input to clear the buffer for.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Fighters_FighterInputManager_GetAxis_System_Int32_System_UInt32_.md&amp;value=---%0Auid%3A%20HnSF.Fighters.FighterInputManager.GetAxis(System.Int32%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterInputManager.cs/#L67">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterInputManager.cs/#L66">View Source</a>
   </span>
   <a id="HnSF_Fighters_FighterInputManager_GetAxis_" data-uid="HnSF.Fighters.FighterInputManager.GetAxis*"></a>
   <h4 id="HnSF_Fighters_FighterInputManager_GetAxis_System_Int32_System_UInt32_" data-uid="HnSF.Fighters.FighterInputManager.GetAxis(System.Int32,System.UInt32)">GetAxis(Int32, UInt32)</h4>
@@ -390,7 +373,7 @@
     <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Fighters_FighterInputManager_GetAxis2D_System_Int32_System_UInt32_.md&amp;value=---%0Auid%3A%20HnSF.Fighters.FighterInputManager.GetAxis2D(System.Int32%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterInputManager.cs/#L82">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterInputManager.cs/#L81">View Source</a>
   </span>
   <a id="HnSF_Fighters_FighterInputManager_GetAxis2D_" data-uid="HnSF.Fighters.FighterInputManager.GetAxis2D*"></a>
   <h4 id="HnSF_Fighters_FighterInputManager_GetAxis2D_System_Int32_System_UInt32_" data-uid="HnSF.Fighters.FighterInputManager.GetAxis2D(System.Int32,System.UInt32)">GetAxis2D(Int32, UInt32)</h4>
@@ -446,7 +429,7 @@
     <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Fighters_FighterInputManager_GetButton_System_Int32_System_UInt32_System_Boolean_System_UInt32_.md&amp;value=---%0Auid%3A%20HnSF.Fighters.FighterInputManager.GetButton(System.Int32%2CSystem.UInt32%2CSystem.Boolean%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterInputManager.cs/#L101">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterInputManager.cs/#L100">View Source</a>
   </span>
   <a id="HnSF_Fighters_FighterInputManager_GetButton_" data-uid="HnSF.Fighters.FighterInputManager.GetButton*"></a>
   <h4 id="HnSF_Fighters_FighterInputManager_GetButton_System_Int32_System_UInt32_System_Boolean_System_UInt32_" data-uid="HnSF.Fighters.FighterInputManager.GetButton(System.Int32,System.UInt32,System.Boolean,System.UInt32)">GetButton(Int32, UInt32, Boolean, UInt32)</h4>
@@ -516,7 +499,7 @@ Otherwise, the button at the offset is given.</p>
     <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Fighters_FighterInputManager_GetButton_System_Int32_System_UInt32__System_UInt32_System_Boolean_System_UInt32_.md&amp;value=---%0Auid%3A%20HnSF.Fighters.FighterInputManager.GetButton(System.Int32%2CSystem.UInt32%40%2CSystem.UInt32%2CSystem.Boolean%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterInputManager.cs/#L116">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterInputManager.cs/#L115">View Source</a>
   </span>
   <a id="HnSF_Fighters_FighterInputManager_GetButton_" data-uid="HnSF.Fighters.FighterInputManager.GetButton*"></a>
   <h4 id="HnSF_Fighters_FighterInputManager_GetButton_System_Int32_System_UInt32__System_UInt32_System_Boolean_System_UInt32_" data-uid="HnSF.Fighters.FighterInputManager.GetButton(System.Int32,System.UInt32@,System.UInt32,System.Boolean,System.UInt32)">GetButton(Int32, out UInt32, UInt32, Boolean, UInt32)</h4>
@@ -591,7 +574,7 @@ Otherwise, the button at the offset is given.</p>
     <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Fighters_FighterInputManager_GetInputs.md&amp;value=---%0Auid%3A%20HnSF.Fighters.FighterInputManager.GetInputs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterInputManager.cs/#L43">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterInputManager.cs/#L42">View Source</a>
   </span>
   <a id="HnSF_Fighters_FighterInputManager_GetInputs_" data-uid="HnSF.Fighters.FighterInputManager.GetInputs*"></a>
   <h4 id="HnSF_Fighters_FighterInputManager_GetInputs" data-uid="HnSF.Fighters.FighterInputManager.GetInputs">GetInputs()</h4>
@@ -607,7 +590,7 @@ Otherwise, the button at the offset is given.</p>
     <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Fighters_FighterInputManager_ProcessInput.md&amp;value=---%0Auid%3A%20HnSF.Fighters.FighterInputManager.ProcessInput%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterInputManager.cs/#L47">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterInputManager.cs/#L46">View Source</a>
   </span>
   <a id="HnSF_Fighters_FighterInputManager_ProcessInput_" data-uid="HnSF.Fighters.FighterInputManager.ProcessInput*"></a>
   <h4 id="HnSF_Fighters_FighterInputManager_ProcessInput" data-uid="HnSF.Fighters.FighterInputManager.ProcessInput">ProcessInput()</h4>
@@ -619,18 +602,18 @@ Otherwise, the button at the offset is given.</p>
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Fighters_FighterInputManager_SetControlType_HnSF_Input_InputControlType_.md&amp;value=---%0Auid%3A%20HnSF.Fighters.FighterInputManager.SetControlType(HnSF.Input.InputControlType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Fighters_FighterInputManager_SetControlType_HnSF_Input_FighterControlType_.md&amp;value=---%0Auid%3A%20HnSF.Fighters.FighterInputManager.SetControlType(HnSF.Input.FighterControlType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterInputManager.cs/#L25">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterInputManager.cs/#L24">View Source</a>
   </span>
   <a id="HnSF_Fighters_FighterInputManager_SetControlType_" data-uid="HnSF.Fighters.FighterInputManager.SetControlType*"></a>
-  <h4 id="HnSF_Fighters_FighterInputManager_SetControlType_HnSF_Input_InputControlType_" data-uid="HnSF.Fighters.FighterInputManager.SetControlType(HnSF.Input.InputControlType)">SetControlType(InputControlType)</h4>
+  <h4 id="HnSF_Fighters_FighterInputManager_SetControlType_HnSF_Input_FighterControlType_" data-uid="HnSF.Fighters.FighterInputManager.SetControlType(HnSF.Input.FighterControlType)">SetControlType(FighterControlType)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void SetControlType(InputControlType controlType)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void SetControlType(FighterControlType controlType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -643,7 +626,7 @@ Otherwise, the button at the offset is given.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="HnSF.Input.InputControlType.html">InputControlType</a></td>
+        <td><a class="xref" href="HnSF.Input.FighterControlType.html">FighterControlType</a></td>
         <td><span class="parametername">controlType</span></td>
         <td></td>
       </tr>
@@ -654,7 +637,7 @@ Otherwise, the button at the offset is given.</p>
     <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Fighters_FighterInputManager_Tick.md&amp;value=---%0Auid%3A%20HnSF.Fighters.FighterInputManager.Tick%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterInputManager.cs/#L30">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterInputManager.cs/#L29">View Source</a>
   </span>
   <a id="HnSF_Fighters_FighterInputManager_Tick_" data-uid="HnSF.Fighters.FighterInputManager.Tick*"></a>
   <h4 id="HnSF_Fighters_FighterInputManager_Tick" data-uid="HnSF.Fighters.FighterInputManager.Tick">Tick()</h4>
@@ -664,58 +647,6 @@ Otherwise, the button at the offset is given.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void Tick()</code></pre>
   </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Fighters_FighterInputManager_UsedInBuffer_System_Int32_System_UInt32_.md&amp;value=---%0Auid%3A%20HnSF.Fighters.FighterInputManager.UsedInBuffer(System.Int32%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterInputManager.cs/#L143">View Source</a>
-  </span>
-  <a id="HnSF_Fighters_FighterInputManager_UsedInBuffer_" data-uid="HnSF.Fighters.FighterInputManager.UsedInBuffer*"></a>
-  <h4 id="HnSF_Fighters_FighterInputManager_UsedInBuffer_System_Int32_System_UInt32_" data-uid="HnSF.Fighters.FighterInputManager.UsedInBuffer(System.Int32,System.UInt32)">UsedInBuffer(Int32, UInt32)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual bool UsedInBuffer(int inputID, uint tick)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">inputID</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
-        <td><span class="parametername">tick</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 </article>
           </div>
           

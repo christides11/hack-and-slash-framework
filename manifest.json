@@ -24,6 +24,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.AttackCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.AttackCondition.html",
+          "hash": "HxmKj2dLTOZJSHKH/f+vptaM0luS/meel/7zSWfTL2Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/HnSF.Combat.AttackDefinition.yml",
       "output": {
         ".html": {
@@ -52,7 +64,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.AttackDefinitionEditorWindow.html",
-          "hash": "QLHeb+yTsIRQqSdVbb+STMVU7rekOiA/ZtcuOARElUs="
+          "hash": "OgEQE9/8dn9mzf+rKIpPk3XqHKyrQRZ004J8m0SkDlk="
         }
       },
       "is_incremental": false,
@@ -76,7 +88,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.AttackEventDefinition.html",
-          "hash": "AQhTXdARtkTcR7qZveLIhPABGjBVlojiMyZd8msVdNY="
+          "hash": "uhtZyFu8MU5E2otnAoPsL31VGkHO8H8t779/b+GSuew="
         }
       },
       "is_incremental": false,
@@ -88,7 +100,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.AttackEventDefinitionEditorWindow.html",
-          "hash": "ry8gO7cnZNHcjQNpBR4YNqJeXiXihtAgT2xtBYgTXI8="
+          "hash": "X2sAqUcsCTsAqPKPz8UrxFFY8MK31B8DmXiqgIGzMcI="
         }
       },
       "is_incremental": false,
@@ -748,7 +760,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.FighterCombatManager.html",
-          "hash": "Gk9hyxtKFUEQjVZd4Rv9QEPC6+fggiAlt01fkb7/idA="
+          "hash": "DPWaDQiFFo493igFkDy/eIv3v78IlhaG7ZtDGqCyOAo="
         }
       },
       "is_incremental": false,
@@ -784,7 +796,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.FighterInputManager.html",
-          "hash": "UEpIY8Qzm+RPLy7IS7Jmmc2xPMBa8RTgy8AoJ+2JM/I="
+          "hash": "HQJZaPYMh0CDKyzF4o0osVoV/yc+z3458fz4WH9hILw="
         }
       },
       "is_incremental": false,
@@ -912,6 +924,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Input.FighterControlType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Input.FighterControlType.html",
+          "hash": "UAW6AX09jmlXrie1fDFjldnImIx3FuNHjIp+T7pA/jY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/HnSF.Input.GlobalInputManager.yml",
       "output": {
         ".html": {
@@ -929,18 +953,6 @@
         ".html": {
           "relative_path": "api/HnSF.Input.InputButtonStates.html",
           "hash": "JGJ0/U8e7QR3EtyKadhmt17EQ96Wt+CSGAhnFmI3U24="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Input.InputControlType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/HnSF.Input.InputControlType.html",
-          "hash": "Fj0lfFn74163O7m3F/sJjdw7vctZglO8ChB1CbTeIj0="
         }
       },
       "is_incremental": false,
@@ -1060,7 +1072,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Input.html",
-          "hash": "Nmozpi2mfi4fofm7gt+7PkEZrZags03JrRhAdmawXpY="
+          "hash": "y3CFzAe5VIfe1w5AZlLCI4S4N9goSP2cTQ77T6Y3ljY="
         }
       },
       "is_incremental": false,
@@ -1120,7 +1132,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.html",
-          "hash": "rDTiHzv8NrL/ugFPatMxQq7yavPlVep7voUlKkB81mQ="
+          "hash": "gYwQWMsJKo+3BZZHf+pNRWwami/vUNztBQunsThwPrc="
         }
       },
       "is_incremental": false,
@@ -1132,7 +1144,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "TEp8rMaueEOA23ICNzC5cNEnGbuNrDnLBi4uMLU5OmI="
+          "hash": "N4ldlk/QjZWnYOQX+vM8fsaAUu0XLOeP30aHArNN/hw="
         }
       },
       "is_incremental": false,
@@ -1253,7 +1265,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 92,
+          "total_file_count": 93,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

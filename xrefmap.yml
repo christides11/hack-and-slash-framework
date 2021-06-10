@@ -7,6 +7,38 @@ references:
   commentId: N:HnSF
   fullName: HnSF
   nameWithType: HnSF
+- uid: HnSF.AttackCondition
+  name: AttackCondition
+  href: api/HnSF.AttackCondition.html
+  commentId: T:HnSF.AttackCondition
+  fullName: HnSF.AttackCondition
+  nameWithType: AttackCondition
+- uid: HnSF.AttackCondition.GetName
+  name: GetName()
+  href: api/HnSF.AttackCondition.html#HnSF_AttackCondition_GetName
+  commentId: M:HnSF.AttackCondition.GetName
+  fullName: HnSF.AttackCondition.GetName()
+  nameWithType: AttackCondition.GetName()
+- uid: HnSF.AttackCondition.GetName*
+  name: GetName
+  href: api/HnSF.AttackCondition.html#HnSF_AttackCondition_GetName_
+  commentId: Overload:HnSF.AttackCondition.GetName
+  isSpec: "True"
+  fullName: HnSF.AttackCondition.GetName
+  nameWithType: AttackCondition.GetName
+- uid: HnSF.AttackCondition.Result(HnSF.Fighters.FighterBase)
+  name: Result(FighterBase)
+  href: api/HnSF.AttackCondition.html#HnSF_AttackCondition_Result_HnSF_Fighters_FighterBase_
+  commentId: M:HnSF.AttackCondition.Result(HnSF.Fighters.FighterBase)
+  fullName: HnSF.AttackCondition.Result(HnSF.Fighters.FighterBase)
+  nameWithType: AttackCondition.Result(FighterBase)
+- uid: HnSF.AttackCondition.Result*
+  name: Result
+  href: api/HnSF.AttackCondition.html#HnSF_AttackCondition_Result_
+  commentId: Overload:HnSF.AttackCondition.Result
+  isSpec: "True"
+  fullName: HnSF.AttackCondition.Result
+  nameWithType: AttackCondition.Result
 - uid: HnSF.Combat
   name: HnSF.Combat
   href: api/HnSF.Combat.html
@@ -110,83 +142,36 @@ references:
   commentId: T:HnSF.Combat.AttackDefinitionEditorWindow
   fullName: HnSF.Combat.AttackDefinitionEditorWindow
   nameWithType: AttackDefinitionEditorWindow
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.AddCancelListDefinition(SerializedObject)
-  name: AddCancelListDefinition(SerializedObject)
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_AddCancelListDefinition_SerializedObject_
-  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.AddCancelListDefinition(SerializedObject)
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.AddCancelListDefinition(SerializedObject)
-  nameWithType: AttackDefinitionEditorWindow.AddCancelListDefinition(SerializedObject)
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.AddCancelListDefinition*
-  name: AddCancelListDefinition
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_AddCancelListDefinition_
-  commentId: Overload:HnSF.Combat.AttackDefinitionEditorWindow.AddCancelListDefinition
-  isSpec: "True"
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.AddCancelListDefinition
-  nameWithType: AttackDefinitionEditorWindow.AddCancelListDefinition
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.AddChargeGroup(SerializedObject)
-  name: AddChargeGroup(SerializedObject)
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_AddChargeGroup_SerializedObject_
-  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.AddChargeGroup(SerializedObject)
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.AddChargeGroup(SerializedObject)
-  nameWithType: AttackDefinitionEditorWindow.AddChargeGroup(SerializedObject)
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.AddChargeGroup*
-  name: AddChargeGroup
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_AddChargeGroup_
-  commentId: Overload:HnSF.Combat.AttackDefinitionEditorWindow.AddChargeGroup
-  isSpec: "True"
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.AddChargeGroup
-  nameWithType: AttackDefinitionEditorWindow.AddChargeGroup
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.AddEventDefinition(SerializedObject)
-  name: AddEventDefinition(SerializedObject)
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_AddEventDefinition_SerializedObject_
-  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.AddEventDefinition(SerializedObject)
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.AddEventDefinition(SerializedObject)
-  nameWithType: AttackDefinitionEditorWindow.AddEventDefinition(SerializedObject)
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.AddEventDefinition*
-  name: AddEventDefinition
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_AddEventDefinition_
-  commentId: Overload:HnSF.Combat.AttackDefinitionEditorWindow.AddEventDefinition
-  isSpec: "True"
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.AddEventDefinition
-  nameWithType: AttackDefinitionEditorWindow.AddEventDefinition
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.AddHitboxGroup(SerializedObject)
-  name: AddHitboxGroup(SerializedObject)
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_AddHitboxGroup_SerializedObject_
-  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.AddHitboxGroup(SerializedObject)
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.AddHitboxGroup(SerializedObject)
-  nameWithType: AttackDefinitionEditorWindow.AddHitboxGroup(SerializedObject)
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.AddHitboxGroup*
-  name: AddHitboxGroup
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_AddHitboxGroup_
-  commentId: Overload:HnSF.Combat.AttackDefinitionEditorWindow.AddHitboxGroup
-  isSpec: "True"
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.AddHitboxGroup
-  nameWithType: AttackDefinitionEditorWindow.AddHitboxGroup
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.AddHurtboxGroup(SerializedObject)
-  name: AddHurtboxGroup(SerializedObject)
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_AddHurtboxGroup_SerializedObject_
-  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.AddHurtboxGroup(SerializedObject)
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.AddHurtboxGroup(SerializedObject)
-  nameWithType: AttackDefinitionEditorWindow.AddHurtboxGroup(SerializedObject)
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.AddHurtboxGroup*
-  name: AddHurtboxGroup
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_AddHurtboxGroup_
-  commentId: Overload:HnSF.Combat.AttackDefinitionEditorWindow.AddHurtboxGroup
-  isSpec: "True"
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.AddHurtboxGroup
-  nameWithType: AttackDefinitionEditorWindow.AddHurtboxGroup
 - uid: HnSF.Combat.AttackDefinitionEditorWindow.attack
   name: attack
   href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_attack
   commentId: F:HnSF.Combat.AttackDefinitionEditorWindow.attack
   fullName: HnSF.Combat.AttackDefinitionEditorWindow.attack
   nameWithType: AttackDefinitionEditorWindow.attack
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.attackEventDefinitionTypes
+  name: attackEventDefinitionTypes
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_attackEventDefinitionTypes
+  commentId: F:HnSF.Combat.AttackDefinitionEditorWindow.attackEventDefinitionTypes
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.attackEventDefinitionTypes
+  nameWithType: AttackDefinitionEditorWindow.attackEventDefinitionTypes
 - uid: HnSF.Combat.AttackDefinitionEditorWindow.autoplay
   name: autoplay
   href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_autoplay
   commentId: F:HnSF.Combat.AttackDefinitionEditorWindow.autoplay
   fullName: HnSF.Combat.AttackDefinitionEditorWindow.autoplay
   nameWithType: AttackDefinitionEditorWindow.autoplay
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.cancelListDefinitionTypes
+  name: cancelListDefinitionTypes
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_cancelListDefinitionTypes
+  commentId: F:HnSF.Combat.AttackDefinitionEditorWindow.cancelListDefinitionTypes
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.cancelListDefinitionTypes
+  nameWithType: AttackDefinitionEditorWindow.cancelListDefinitionTypes
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.chargeGroupTypes
+  name: chargeGroupTypes
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_chargeGroupTypes
+  commentId: F:HnSF.Combat.AttackDefinitionEditorWindow.chargeGroupTypes
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.chargeGroupTypes
+  nameWithType: AttackDefinitionEditorWindow.chargeGroupTypes
 - uid: HnSF.Combat.AttackDefinitionEditorWindow.CreateFighter
   name: CreateFighter()
   href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_CreateFighter
@@ -375,6 +360,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.AttackDefinitionEditorWindow.HandleEvent
   nameWithType: AttackDefinitionEditorWindow.HandleEvent
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.hitboxGroupTypes
+  name: hitboxGroupTypes
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_hitboxGroupTypes
+  commentId: F:HnSF.Combat.AttackDefinitionEditorWindow.hitboxGroupTypes
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.hitboxGroupTypes
+  nameWithType: AttackDefinitionEditorWindow.hitboxGroupTypes
 - uid: HnSF.Combat.AttackDefinitionEditorWindow.IncrementForward
   name: IncrementForward()
   href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_IncrementForward
@@ -451,6 +442,45 @@ references:
   commentId: F:HnSF.Combat.AttackDefinitionEditorWindow.nextPlayTime
   fullName: HnSF.Combat.AttackDefinitionEditorWindow.nextPlayTime
   nameWithType: AttackDefinitionEditorWindow.nextPlayTime
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.OnAttackConditionSelected(System.Object)
+  name: OnAttackConditionSelected(Object)
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_OnAttackConditionSelected_System_Object_
+  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.OnAttackConditionSelected(System.Object)
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.OnAttackConditionSelected(System.Object)
+  nameWithType: AttackDefinitionEditorWindow.OnAttackConditionSelected(Object)
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.OnAttackConditionSelected*
+  name: OnAttackConditionSelected
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_OnAttackConditionSelected_
+  commentId: Overload:HnSF.Combat.AttackDefinitionEditorWindow.OnAttackConditionSelected
+  isSpec: "True"
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.OnAttackConditionSelected
+  nameWithType: AttackDefinitionEditorWindow.OnAttackConditionSelected
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.OnCancelListDefinitionSelected(System.Object)
+  name: OnCancelListDefinitionSelected(Object)
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_OnCancelListDefinitionSelected_System_Object_
+  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.OnCancelListDefinitionSelected(System.Object)
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.OnCancelListDefinitionSelected(System.Object)
+  nameWithType: AttackDefinitionEditorWindow.OnCancelListDefinitionSelected(Object)
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.OnCancelListDefinitionSelected*
+  name: OnCancelListDefinitionSelected
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_OnCancelListDefinitionSelected_
+  commentId: Overload:HnSF.Combat.AttackDefinitionEditorWindow.OnCancelListDefinitionSelected
+  isSpec: "True"
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.OnCancelListDefinitionSelected
+  nameWithType: AttackDefinitionEditorWindow.OnCancelListDefinitionSelected
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.OnChargeGroupSelected(System.Object)
+  name: OnChargeGroupSelected(Object)
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_OnChargeGroupSelected_System_Object_
+  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.OnChargeGroupSelected(System.Object)
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.OnChargeGroupSelected(System.Object)
+  nameWithType: AttackDefinitionEditorWindow.OnChargeGroupSelected(Object)
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.OnChargeGroupSelected*
+  name: OnChargeGroupSelected
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_OnChargeGroupSelected_
+  commentId: Overload:HnSF.Combat.AttackDefinitionEditorWindow.OnChargeGroupSelected
+  isSpec: "True"
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.OnChargeGroupSelected
+  nameWithType: AttackDefinitionEditorWindow.OnChargeGroupSelected
 - uid: HnSF.Combat.AttackDefinitionEditorWindow.OnDisable
   name: OnDisable()
   href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_OnDisable
@@ -477,6 +507,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.AttackDefinitionEditorWindow.OnEnable
   nameWithType: AttackDefinitionEditorWindow.OnEnable
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.OnFocus
+  name: OnFocus()
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_OnFocus
+  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.OnFocus
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.OnFocus()
+  nameWithType: AttackDefinitionEditorWindow.OnFocus()
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.OnFocus*
+  name: OnFocus
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_OnFocus_
+  commentId: Overload:HnSF.Combat.AttackDefinitionEditorWindow.OnFocus
+  isSpec: "True"
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.OnFocus
+  nameWithType: AttackDefinitionEditorWindow.OnFocus
 - uid: HnSF.Combat.AttackDefinitionEditorWindow.OnGUI
   name: OnGUI()
   href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_OnGUI
@@ -490,6 +533,71 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.AttackDefinitionEditorWindow.OnGUI
   nameWithType: AttackDefinitionEditorWindow.OnGUI
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.OnHitboxGroupSelected(System.Object)
+  name: OnHitboxGroupSelected(Object)
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_OnHitboxGroupSelected_System_Object_
+  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.OnHitboxGroupSelected(System.Object)
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.OnHitboxGroupSelected(System.Object)
+  nameWithType: AttackDefinitionEditorWindow.OnHitboxGroupSelected(Object)
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.OnHitboxGroupSelected*
+  name: OnHitboxGroupSelected
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_OnHitboxGroupSelected_
+  commentId: Overload:HnSF.Combat.AttackDefinitionEditorWindow.OnHitboxGroupSelected
+  isSpec: "True"
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.OnHitboxGroupSelected
+  nameWithType: AttackDefinitionEditorWindow.OnHitboxGroupSelected
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.OpenAttackEventDefinitionWindow(HnSF.Combat.AttackDefinition,System.Int32)
+  name: OpenAttackEventDefinitionWindow(AttackDefinition, Int32)
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_OpenAttackEventDefinitionWindow_HnSF_Combat_AttackDefinition_System_Int32_
+  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.OpenAttackEventDefinitionWindow(HnSF.Combat.AttackDefinition,System.Int32)
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.OpenAttackEventDefinitionWindow(HnSF.Combat.AttackDefinition, System.Int32)
+  nameWithType: AttackDefinitionEditorWindow.OpenAttackEventDefinitionWindow(AttackDefinition, Int32)
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.OpenAttackEventDefinitionWindow*
+  name: OpenAttackEventDefinitionWindow
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_OpenAttackEventDefinitionWindow_
+  commentId: Overload:HnSF.Combat.AttackDefinitionEditorWindow.OpenAttackEventDefinitionWindow
+  isSpec: "True"
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.OpenAttackEventDefinitionWindow
+  nameWithType: AttackDefinitionEditorWindow.OpenAttackEventDefinitionWindow
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.OpenCancelListDefinitionEditorWindow(HnSF.Combat.AttackDefinition,System.Int32)
+  name: OpenCancelListDefinitionEditorWindow(AttackDefinition, Int32)
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_OpenCancelListDefinitionEditorWindow_HnSF_Combat_AttackDefinition_System_Int32_
+  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.OpenCancelListDefinitionEditorWindow(HnSF.Combat.AttackDefinition,System.Int32)
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.OpenCancelListDefinitionEditorWindow(HnSF.Combat.AttackDefinition, System.Int32)
+  nameWithType: AttackDefinitionEditorWindow.OpenCancelListDefinitionEditorWindow(AttackDefinition, Int32)
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.OpenCancelListDefinitionEditorWindow*
+  name: OpenCancelListDefinitionEditorWindow
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_OpenCancelListDefinitionEditorWindow_
+  commentId: Overload:HnSF.Combat.AttackDefinitionEditorWindow.OpenCancelListDefinitionEditorWindow
+  isSpec: "True"
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.OpenCancelListDefinitionEditorWindow
+  nameWithType: AttackDefinitionEditorWindow.OpenCancelListDefinitionEditorWindow
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.OpenChargeGroupEditorWindow(HnSF.Combat.AttackDefinition,HnSF.Combat.ChargeDefinition)
+  name: OpenChargeGroupEditorWindow(AttackDefinition, ChargeDefinition)
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_OpenChargeGroupEditorWindow_HnSF_Combat_AttackDefinition_HnSF_Combat_ChargeDefinition_
+  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.OpenChargeGroupEditorWindow(HnSF.Combat.AttackDefinition,HnSF.Combat.ChargeDefinition)
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.OpenChargeGroupEditorWindow(HnSF.Combat.AttackDefinition, HnSF.Combat.ChargeDefinition)
+  nameWithType: AttackDefinitionEditorWindow.OpenChargeGroupEditorWindow(AttackDefinition, ChargeDefinition)
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.OpenChargeGroupEditorWindow*
+  name: OpenChargeGroupEditorWindow
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_OpenChargeGroupEditorWindow_
+  commentId: Overload:HnSF.Combat.AttackDefinitionEditorWindow.OpenChargeGroupEditorWindow
+  isSpec: "True"
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.OpenChargeGroupEditorWindow
+  nameWithType: AttackDefinitionEditorWindow.OpenChargeGroupEditorWindow
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.OpenHitboxGroupWindow(HnSF.Combat.AttackDefinition,HnSF.Combat.HitboxGroup,System.String,System.Int32)
+  name: OpenHitboxGroupWindow(AttackDefinition, HitboxGroup, String, Int32)
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_OpenHitboxGroupWindow_HnSF_Combat_AttackDefinition_HnSF_Combat_HitboxGroup_System_String_System_Int32_
+  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.OpenHitboxGroupWindow(HnSF.Combat.AttackDefinition,HnSF.Combat.HitboxGroup,System.String,System.Int32)
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.OpenHitboxGroupWindow(HnSF.Combat.AttackDefinition, HnSF.Combat.HitboxGroup, System.String, System.Int32)
+  nameWithType: AttackDefinitionEditorWindow.OpenHitboxGroupWindow(AttackDefinition, HitboxGroup, String, Int32)
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.OpenHitboxGroupWindow*
+  name: OpenHitboxGroupWindow
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_OpenHitboxGroupWindow_
+  commentId: Overload:HnSF.Combat.AttackDefinitionEditorWindow.OpenHitboxGroupWindow
+  isSpec: "True"
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.OpenHitboxGroupWindow
+  nameWithType: AttackDefinitionEditorWindow.OpenHitboxGroupWindow
 - uid: HnSF.Combat.AttackDefinitionEditorWindow.playInterval
   name: playInterval
   href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_playInterval
@@ -675,6 +783,12 @@ references:
   commentId: F:HnSF.Combat.AttackEventDefinition.chargeLevelMin
   fullName: HnSF.Combat.AttackEventDefinition.chargeLevelMin
   nameWithType: AttackEventDefinition.chargeLevelMin
+- uid: HnSF.Combat.AttackEventDefinition.conditions
+  name: conditions
+  href: api/HnSF.Combat.AttackEventDefinition.html#HnSF_Combat_AttackEventDefinition_conditions
+  commentId: F:HnSF.Combat.AttackEventDefinition.conditions
+  fullName: HnSF.Combat.AttackEventDefinition.conditions
+  nameWithType: AttackEventDefinition.conditions
 - uid: HnSF.Combat.AttackEventDefinition.endFrame
   name: endFrame
   href: api/HnSF.Combat.AttackEventDefinition.html#HnSF_Combat_AttackEventDefinition_endFrame
@@ -759,12 +873,24 @@ references:
   commentId: F:HnSF.Combat.AttackEventDefinitionEditorWindow.attack
   fullName: HnSF.Combat.AttackEventDefinitionEditorWindow.attack
   nameWithType: AttackEventDefinitionEditorWindow.attack
+- uid: HnSF.Combat.AttackEventDefinitionEditorWindow.attackConditionTypes
+  name: attackConditionTypes
+  href: api/HnSF.Combat.AttackEventDefinitionEditorWindow.html#HnSF_Combat_AttackEventDefinitionEditorWindow_attackConditionTypes
+  commentId: F:HnSF.Combat.AttackEventDefinitionEditorWindow.attackConditionTypes
+  fullName: HnSF.Combat.AttackEventDefinitionEditorWindow.attackConditionTypes
+  nameWithType: AttackEventDefinitionEditorWindow.attackConditionTypes
 - uid: HnSF.Combat.AttackEventDefinitionEditorWindow.attackEventTypes
   name: attackEventTypes
   href: api/HnSF.Combat.AttackEventDefinitionEditorWindow.html#HnSF_Combat_AttackEventDefinitionEditorWindow_attackEventTypes
   commentId: F:HnSF.Combat.AttackEventDefinitionEditorWindow.attackEventTypes
   fullName: HnSF.Combat.AttackEventDefinitionEditorWindow.attackEventTypes
   nameWithType: AttackEventDefinitionEditorWindow.attackEventTypes
+- uid: HnSF.Combat.AttackEventDefinitionEditorWindow.conditionsFoldout
+  name: conditionsFoldout
+  href: api/HnSF.Combat.AttackEventDefinitionEditorWindow.html#HnSF_Combat_AttackEventDefinitionEditorWindow_conditionsFoldout
+  commentId: F:HnSF.Combat.AttackEventDefinitionEditorWindow.conditionsFoldout
+  fullName: HnSF.Combat.AttackEventDefinitionEditorWindow.conditionsFoldout
+  nameWithType: AttackEventDefinitionEditorWindow.conditionsFoldout
 - uid: HnSF.Combat.AttackEventDefinitionEditorWindow.DrawEventInfo
   name: DrawEventInfo()
   href: api/HnSF.Combat.AttackEventDefinitionEditorWindow.html#HnSF_Combat_AttackEventDefinitionEditorWindow_DrawEventInfo
@@ -803,6 +929,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.AttackEventDefinitionEditorWindow.Init
   nameWithType: AttackEventDefinitionEditorWindow.Init
+- uid: HnSF.Combat.AttackEventDefinitionEditorWindow.OnAttackConditionSelected(System.Object)
+  name: OnAttackConditionSelected(Object)
+  href: api/HnSF.Combat.AttackEventDefinitionEditorWindow.html#HnSF_Combat_AttackEventDefinitionEditorWindow_OnAttackConditionSelected_System_Object_
+  commentId: M:HnSF.Combat.AttackEventDefinitionEditorWindow.OnAttackConditionSelected(System.Object)
+  fullName: HnSF.Combat.AttackEventDefinitionEditorWindow.OnAttackConditionSelected(System.Object)
+  nameWithType: AttackEventDefinitionEditorWindow.OnAttackConditionSelected(Object)
+- uid: HnSF.Combat.AttackEventDefinitionEditorWindow.OnAttackConditionSelected*
+  name: OnAttackConditionSelected
+  href: api/HnSF.Combat.AttackEventDefinitionEditorWindow.html#HnSF_Combat_AttackEventDefinitionEditorWindow_OnAttackConditionSelected_
+  commentId: Overload:HnSF.Combat.AttackEventDefinitionEditorWindow.OnAttackConditionSelected
+  isSpec: "True"
+  fullName: HnSF.Combat.AttackEventDefinitionEditorWindow.OnAttackConditionSelected
+  nameWithType: AttackEventDefinitionEditorWindow.OnAttackConditionSelected
 - uid: HnSF.Combat.AttackEventDefinitionEditorWindow.OnAttackEventSelected(System.Object)
   name: OnAttackEventSelected(Object)
   href: api/HnSF.Combat.AttackEventDefinitionEditorWindow.html#HnSF_Combat_AttackEventDefinitionEditorWindow_OnAttackEventSelected_System_Object_
@@ -3898,19 +4037,6 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.FighterCombatManager.IncrementChargeLevelCharge
   nameWithType: FighterCombatManager.IncrementChargeLevelCharge
-- uid: HnSF.Fighters.FighterCombatManager.LastHitBy
-  name: LastHitBy
-  href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_LastHitBy
-  commentId: P:HnSF.Fighters.FighterCombatManager.LastHitBy
-  fullName: HnSF.Fighters.FighterCombatManager.LastHitBy
-  nameWithType: FighterCombatManager.LastHitBy
-- uid: HnSF.Fighters.FighterCombatManager.LastHitBy*
-  name: LastHitBy
-  href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_LastHitBy_
-  commentId: Overload:HnSF.Fighters.FighterCombatManager.LastHitBy
-  isSpec: "True"
-  fullName: HnSF.Fighters.FighterCombatManager.LastHitBy
-  nameWithType: FighterCombatManager.LastHitBy
 - uid: HnSF.Fighters.FighterCombatManager.manager
   name: manager
   href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_manager
@@ -4308,18 +4434,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.FighterInputManager.Awake
   nameWithType: FighterInputManager.Awake
-- uid: HnSF.Fighters.FighterInputManager.bufferLimitAtTick
-  name: bufferLimitAtTick
-  href: api/HnSF.Fighters.FighterInputManager.html#HnSF_Fighters_FighterInputManager_bufferLimitAtTick
-  commentId: F:HnSF.Fighters.FighterInputManager.bufferLimitAtTick
-  fullName: HnSF.Fighters.FighterInputManager.bufferLimitAtTick
-  nameWithType: FighterInputManager.bufferLimitAtTick
-- uid: HnSF.Fighters.FighterInputManager.ClearBuffer(System.Int32)
-  name: ClearBuffer(Int32)
-  href: api/HnSF.Fighters.FighterInputManager.html#HnSF_Fighters_FighterInputManager_ClearBuffer_System_Int32_
-  commentId: M:HnSF.Fighters.FighterInputManager.ClearBuffer(System.Int32)
-  fullName: HnSF.Fighters.FighterInputManager.ClearBuffer(System.Int32)
-  nameWithType: FighterInputManager.ClearBuffer(Int32)
+- uid: HnSF.Fighters.FighterInputManager.ClearBuffer
+  name: ClearBuffer()
+  href: api/HnSF.Fighters.FighterInputManager.html#HnSF_Fighters_FighterInputManager_ClearBuffer
+  commentId: M:HnSF.Fighters.FighterInputManager.ClearBuffer
+  fullName: HnSF.Fighters.FighterInputManager.ClearBuffer()
+  nameWithType: FighterInputManager.ClearBuffer()
 - uid: HnSF.Fighters.FighterInputManager.ClearBuffer*
   name: ClearBuffer
   href: api/HnSF.Fighters.FighterInputManager.html#HnSF_Fighters_FighterInputManager_ClearBuffer_
@@ -4401,6 +4521,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.FighterInputManager.GetInputs
   nameWithType: FighterInputManager.GetInputs
+- uid: HnSF.Fighters.FighterInputManager.inputBufferTick
+  name: inputBufferTick
+  href: api/HnSF.Fighters.FighterInputManager.html#HnSF_Fighters_FighterInputManager_inputBufferTick
+  commentId: P:HnSF.Fighters.FighterInputManager.inputBufferTick
+  fullName: HnSF.Fighters.FighterInputManager.inputBufferTick
+  nameWithType: FighterInputManager.inputBufferTick
+- uid: HnSF.Fighters.FighterInputManager.inputBufferTick*
+  name: inputBufferTick
+  href: api/HnSF.Fighters.FighterInputManager.html#HnSF_Fighters_FighterInputManager_inputBufferTick_
+  commentId: Overload:HnSF.Fighters.FighterInputManager.inputBufferTick
+  isSpec: "True"
+  fullName: HnSF.Fighters.FighterInputManager.inputBufferTick
+  nameWithType: FighterInputManager.inputBufferTick
 - uid: HnSF.Fighters.FighterInputManager.InputRecord
   name: InputRecord
   href: api/HnSF.Fighters.FighterInputManager.html#HnSF_Fighters_FighterInputManager_InputRecord
@@ -4459,12 +4592,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.FighterInputManager.ProcessInput
   nameWithType: FighterInputManager.ProcessInput
-- uid: HnSF.Fighters.FighterInputManager.SetControlType(HnSF.Input.InputControlType)
-  name: SetControlType(InputControlType)
-  href: api/HnSF.Fighters.FighterInputManager.html#HnSF_Fighters_FighterInputManager_SetControlType_HnSF_Input_InputControlType_
-  commentId: M:HnSF.Fighters.FighterInputManager.SetControlType(HnSF.Input.InputControlType)
-  fullName: HnSF.Fighters.FighterInputManager.SetControlType(HnSF.Input.InputControlType)
-  nameWithType: FighterInputManager.SetControlType(InputControlType)
+- uid: HnSF.Fighters.FighterInputManager.SetControlType(HnSF.Input.FighterControlType)
+  name: SetControlType(FighterControlType)
+  href: api/HnSF.Fighters.FighterInputManager.html#HnSF_Fighters_FighterInputManager_SetControlType_HnSF_Input_FighterControlType_
+  commentId: M:HnSF.Fighters.FighterInputManager.SetControlType(HnSF.Input.FighterControlType)
+  fullName: HnSF.Fighters.FighterInputManager.SetControlType(HnSF.Input.FighterControlType)
+  nameWithType: FighterInputManager.SetControlType(FighterControlType)
 - uid: HnSF.Fighters.FighterInputManager.SetControlType*
   name: SetControlType
   href: api/HnSF.Fighters.FighterInputManager.html#HnSF_Fighters_FighterInputManager_SetControlType_
@@ -4485,19 +4618,6 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.FighterInputManager.Tick
   nameWithType: FighterInputManager.Tick
-- uid: HnSF.Fighters.FighterInputManager.UsedInBuffer(System.Int32,System.UInt32)
-  name: UsedInBuffer(Int32, UInt32)
-  href: api/HnSF.Fighters.FighterInputManager.html#HnSF_Fighters_FighterInputManager_UsedInBuffer_System_Int32_System_UInt32_
-  commentId: M:HnSF.Fighters.FighterInputManager.UsedInBuffer(System.Int32,System.UInt32)
-  fullName: HnSF.Fighters.FighterInputManager.UsedInBuffer(System.Int32, System.UInt32)
-  nameWithType: FighterInputManager.UsedInBuffer(Int32, UInt32)
-- uid: HnSF.Fighters.FighterInputManager.UsedInBuffer*
-  name: UsedInBuffer
-  href: api/HnSF.Fighters.FighterInputManager.html#HnSF_Fighters_FighterInputManager_UsedInBuffer_
-  commentId: Overload:HnSF.Fighters.FighterInputManager.UsedInBuffer
-  isSpec: "True"
-  fullName: HnSF.Fighters.FighterInputManager.UsedInBuffer
-  nameWithType: FighterInputManager.UsedInBuffer
 - uid: HnSF.Fighters.FighterPhysicsManager2D
   name: FighterPhysicsManager2D
   href: api/HnSF.Fighters.FighterPhysicsManager2D.html
@@ -5289,6 +5409,30 @@ references:
   commentId: N:HnSF.Input
   fullName: HnSF.Input
   nameWithType: HnSF.Input
+- uid: HnSF.Input.FighterControlType
+  name: FighterControlType
+  href: api/HnSF.Input.FighterControlType.html
+  commentId: T:HnSF.Input.FighterControlType
+  fullName: HnSF.Input.FighterControlType
+  nameWithType: FighterControlType
+- uid: HnSF.Input.FighterControlType.AI
+  name: AI
+  href: api/HnSF.Input.FighterControlType.html#HnSF_Input_FighterControlType_AI
+  commentId: F:HnSF.Input.FighterControlType.AI
+  fullName: HnSF.Input.FighterControlType.AI
+  nameWithType: FighterControlType.AI
+- uid: HnSF.Input.FighterControlType.None
+  name: None
+  href: api/HnSF.Input.FighterControlType.html#HnSF_Input_FighterControlType_None
+  commentId: F:HnSF.Input.FighterControlType.None
+  fullName: HnSF.Input.FighterControlType.None
+  nameWithType: FighterControlType.None
+- uid: HnSF.Input.FighterControlType.Player
+  name: Player
+  href: api/HnSF.Input.FighterControlType.html#HnSF_Input_FighterControlType_Player
+  commentId: F:HnSF.Input.FighterControlType.Player
+  fullName: HnSF.Input.FighterControlType.Player
+  nameWithType: FighterControlType.Player
 - uid: HnSF.Input.GlobalInputManager
   name: GlobalInputManager
   href: api/HnSF.Input.GlobalInputManager.html
@@ -5420,30 +5564,6 @@ references:
   commentId: F:HnSF.Input.InputButtonStates.RELEASED
   fullName: HnSF.Input.InputButtonStates.RELEASED
   nameWithType: InputButtonStates.RELEASED
-- uid: HnSF.Input.InputControlType
-  name: InputControlType
-  href: api/HnSF.Input.InputControlType.html
-  commentId: T:HnSF.Input.InputControlType
-  fullName: HnSF.Input.InputControlType
-  nameWithType: InputControlType
-- uid: HnSF.Input.InputControlType.AI
-  name: AI
-  href: api/HnSF.Input.InputControlType.html#HnSF_Input_InputControlType_AI
-  commentId: F:HnSF.Input.InputControlType.AI
-  fullName: HnSF.Input.InputControlType.AI
-  nameWithType: InputControlType.AI
-- uid: HnSF.Input.InputControlType.Direct
-  name: Direct
-  href: api/HnSF.Input.InputControlType.html#HnSF_Input_InputControlType_Direct
-  commentId: F:HnSF.Input.InputControlType.Direct
-  fullName: HnSF.Input.InputControlType.Direct
-  nameWithType: InputControlType.Direct
-- uid: HnSF.Input.InputControlType.None
-  name: None
-  href: api/HnSF.Input.InputControlType.html#HnSF_Input_InputControlType_None
-  commentId: F:HnSF.Input.InputControlType.None
-  fullName: HnSF.Input.InputControlType.None
-  nameWithType: InputControlType.None
 - uid: HnSF.Input.InputDefinition
   name: InputDefinition
   href: api/HnSF.Input.InputDefinition.html
