@@ -113,6 +113,7 @@
     <Compile Include="Assets\HnSF\Fighter\Managers\FighterPhysicsManagerBase.cs" />
     <Compile Include="Assets\HnSF\Fighter\Managers\FighterStateManager.cs" />
     <Compile Include="Assets\HnSF\Helpers\HelperFunctions.cs" />
+    <Compile Include="Assets\HnSF\Input\FighterControlType.cs" />
     <Compile Include="Assets\HnSF\Input\GlobalInputManager.cs" />
     <Compile Include="Assets\HnSF\Input\Input Record\InputRecordAxis.cs" />
     <Compile Include="Assets\HnSF\Input\Input Record\InputRecordAxis2D.cs" />
@@ -120,7 +121,6 @@
     <Compile Include="Assets\HnSF\Input\Input Record\InputRecordInput.cs" />
     <Compile Include="Assets\HnSF\Input\Input Record\InputRecordItem.cs" />
     <Compile Include="Assets\HnSF\Input\InputButtonStates.cs" />
-    <Compile Include="Assets\HnSF\Input\InputControlType.cs" />
     <Compile Include="Assets\HnSF\Input\InputDefinition.cs" />
     <Compile Include="Assets\HnSF\Input\InputSequence.cs" />
     <Compile Include="Assets\HnSF\Simulation\ISimObject.cs" />

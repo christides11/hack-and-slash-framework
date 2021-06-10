@@ -78,7 +78,7 @@ namespace TDAction.Managers
         {
             currentPlayerEntity = GameObject.Instantiate(entity.gameObject, spawnPosition, Quaternion.identity)
                 .GetComponent<FighterManager>();
-            currentPlayerEntity.Initialize(HnSF.Input.InputControlType.Direct);
+            currentPlayerEntity.Initialize(HnSF.Input.FighterControlType.Player);
 
             simulationObjectManager.RegisterObject(currentPlayerEntity);
 
