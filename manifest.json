@@ -336,23 +336,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Combat.HitReaction.yml",
+      "source_relative_path": "api/HnSF.Combat.HitReactionBase.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HnSF.Combat.HitReaction.html",
-          "hash": "yiNLdHoA9AblA+CzROLHf055Ovs7CVPASG14hYXjkYw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Combat.HitReactionType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/HnSF.Combat.HitReactionType.html",
-          "hash": "XFyznrY4Aq0T2kLWMe0yhauJuv8T1syqIP5SSBDlB9E="
+          "relative_path": "api/HnSF.Combat.HitReactionBase.html",
+          "hash": "Cn9QQP6S8Gav7pL5A6W/5X3W6FIvSUNk4Em+1+Ey0Rs="
         }
       },
       "is_incremental": false,
@@ -412,7 +400,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.HitboxManager.HitboxGroupEventAction.html",
-          "hash": "FxYchb9zNCqNShDx59rMHI3vRdBoorVHEiS22ccar0Q="
+          "hash": "qey8udis6sVZr3cH+Oi2z4TbORE8YhyuDtwTJTfLV+I="
         }
       },
       "is_incremental": false,
@@ -436,7 +424,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.HitboxManager.html",
-          "hash": "86VyafoYRJzXuCM8khLk3aV3XFTl9HRpMwKM0NP1IPQ="
+          "hash": "1IuWD8APciM+YRW7tYoXofn3vKAIkStRmkLTeQaj4sM="
         }
       },
       "is_incremental": false,
@@ -556,7 +544,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.IHurtable.html",
-          "hash": "baqg1J59IlRl3Zww/9Ah1r0BpS8swNfdhGBUi/q5xVE="
+          "hash": "i8rZVKT6aiQF/1OOcKq1w65mb7p3WyjnMvQpOzK/6d8="
         }
       },
       "is_incremental": false,
@@ -676,7 +664,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.html",
-          "hash": "6Spr9jGjCHlLiBzaccmLLqFAOj1qC06y7PWatGQyRRI="
+          "hash": "/PRJE12dnLLDooYKhucZbkp7yzR/jQHe4baW73uUfCk="
         }
       },
       "is_incremental": false,
@@ -760,7 +748,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.FighterCombatManager.html",
-          "hash": "DPWaDQiFFo493igFkDy/eIv3v78IlhaG7ZtDGqCyOAo="
+          "hash": "/tUMmXVaXmsBmk+vevM/kh6tKjZ4Sc3eQ+6c51q1Lq0="
         }
       },
       "is_incremental": false,
@@ -1144,7 +1132,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "N4ldlk/QjZWnYOQX+vM8fsaAUu0XLOeP30aHArNN/hw="
+          "hash": "cxQupEAJt9szO3vguM6+qtbenEjX2DaPaV9lSPQwCnc="
         }
       },
       "is_incremental": false,
@@ -1265,7 +1253,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 93,
+          "total_file_count": 92,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

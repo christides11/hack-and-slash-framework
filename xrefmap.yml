@@ -2451,48 +2451,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.HitInfoPropertyDrawer.DrawProperty
   nameWithType: HitInfoPropertyDrawer.DrawProperty
-- uid: HnSF.Combat.HitReaction
-  name: HitReaction
-  href: api/HnSF.Combat.HitReaction.html
-  commentId: T:HnSF.Combat.HitReaction
-  fullName: HnSF.Combat.HitReaction
-  nameWithType: HitReaction
-- uid: HnSF.Combat.HitReaction.reactionType
-  name: reactionType
-  href: api/HnSF.Combat.HitReaction.html#HnSF_Combat_HitReaction_reactionType
-  commentId: F:HnSF.Combat.HitReaction.reactionType
-  fullName: HnSF.Combat.HitReaction.reactionType
-  nameWithType: HitReaction.reactionType
-- uid: HnSF.Combat.HitReactionType
-  name: HitReactionType
-  href: api/HnSF.Combat.HitReactionType.html
-  commentId: T:HnSF.Combat.HitReactionType
-  fullName: HnSF.Combat.HitReactionType
-  nameWithType: HitReactionType
-- uid: HnSF.Combat.HitReactionType.Armored
-  name: Armored
-  href: api/HnSF.Combat.HitReactionType.html#HnSF_Combat_HitReactionType_Armored
-  commentId: F:HnSF.Combat.HitReactionType.Armored
-  fullName: HnSF.Combat.HitReactionType.Armored
-  nameWithType: HitReactionType.Armored
-- uid: HnSF.Combat.HitReactionType.Avoided
-  name: Avoided
-  href: api/HnSF.Combat.HitReactionType.html#HnSF_Combat_HitReactionType_Avoided
-  commentId: F:HnSF.Combat.HitReactionType.Avoided
-  fullName: HnSF.Combat.HitReactionType.Avoided
-  nameWithType: HitReactionType.Avoided
-- uid: HnSF.Combat.HitReactionType.Blocked
-  name: Blocked
-  href: api/HnSF.Combat.HitReactionType.html#HnSF_Combat_HitReactionType_Blocked
-  commentId: F:HnSF.Combat.HitReactionType.Blocked
-  fullName: HnSF.Combat.HitReactionType.Blocked
-  nameWithType: HitReactionType.Blocked
-- uid: HnSF.Combat.HitReactionType.Hit
-  name: Hit
-  href: api/HnSF.Combat.HitReactionType.html#HnSF_Combat_HitReactionType_Hit
-  commentId: F:HnSF.Combat.HitReactionType.Hit
-  fullName: HnSF.Combat.HitReactionType.Hit
-  nameWithType: HitReactionType.Hit
+- uid: HnSF.Combat.HitReactionBase
+  name: HitReactionBase
+  href: api/HnSF.Combat.HitReactionBase.html
+  commentId: T:HnSF.Combat.HitReactionBase
+  fullName: HnSF.Combat.HitReactionBase
+  nameWithType: HitReactionBase
 - uid: HnSF.Combat.Hurtbox
   name: Hurtbox
   href: api/HnSF.Combat.Hurtbox.html
@@ -4116,12 +4080,12 @@ references:
   commentId: E:HnSF.Fighters.FighterCombatManager.OnHit
   fullName: HnSF.Fighters.FighterCombatManager.OnHit
   nameWithType: FighterCombatManager.OnHit
-- uid: HnSF.Fighters.FighterCombatManager.OnHitEnemy(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox)
-  name: OnHitEnemy(HitboxGroup, Int32, Hurtbox)
-  href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_OnHitEnemy_HnSF_Combat_HitboxGroup_System_Int32_HnSF_Combat_Hurtbox_
-  commentId: M:HnSF.Fighters.FighterCombatManager.OnHitEnemy(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox)
-  fullName: HnSF.Fighters.FighterCombatManager.OnHitEnemy(HnSF.Combat.HitboxGroup, System.Int32, HnSF.Combat.Hurtbox)
-  nameWithType: FighterCombatManager.OnHitEnemy(HitboxGroup, Int32, Hurtbox)
+- uid: HnSF.Fighters.FighterCombatManager.OnHitEnemy(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox,HnSF.Combat.HitReactionBase)
+  name: OnHitEnemy(HitboxGroup, Int32, Hurtbox, HitReactionBase)
+  href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_OnHitEnemy_HnSF_Combat_HitboxGroup_System_Int32_HnSF_Combat_Hurtbox_HnSF_Combat_HitReactionBase_
+  commentId: M:HnSF.Fighters.FighterCombatManager.OnHitEnemy(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox,HnSF.Combat.HitReactionBase)
+  fullName: HnSF.Fighters.FighterCombatManager.OnHitEnemy(HnSF.Combat.HitboxGroup, System.Int32, HnSF.Combat.Hurtbox, HnSF.Combat.HitReactionBase)
+  nameWithType: FighterCombatManager.OnHitEnemy(HitboxGroup, Int32, Hurtbox, HitReactionBase)
 - uid: HnSF.Fighters.FighterCombatManager.OnHitEnemy*
   name: OnHitEnemy
   href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_OnHitEnemy_

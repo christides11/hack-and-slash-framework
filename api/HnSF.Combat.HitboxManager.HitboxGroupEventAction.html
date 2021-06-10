@@ -89,7 +89,7 @@
   <h6><strong>Assembly</strong>: HnSF.dll</h6>
   <h5 id="HnSF_Combat_HitboxManager_HitboxGroupEventAction_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public delegate void HitboxGroupEventAction(HitboxGroup hitboxGroup, int hitboxIndex, Hurtbox hurtbox);</code></pre>
+    <pre><code class="lang-csharp hljs">public delegate void HitboxGroupEventAction(HitboxGroup hitboxGroup, int hitboxIndex, Hurtbox hurtbox, HitReactionBase hitReaction);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -114,6 +114,11 @@
       <tr>
         <td><a class="xref" href="HnSF.Combat.Hurtbox.html">Hurtbox</a></td>
         <td><span class="parametername">hurtbox</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HnSF.Combat.HitReactionBase.html">HitReactionBase</a></td>
+        <td><span class="parametername">hitReaction</span></td>
         <td></td>
       </tr>
     </tbody>
