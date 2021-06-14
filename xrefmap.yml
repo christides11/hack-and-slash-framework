@@ -3658,6 +3658,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.FighterCombatManager.CheckAttackNode
   nameWithType: FighterCombatManager.CheckAttackNode
+- uid: HnSF.Fighters.FighterCombatManager.CheckAttackNodeConditions(HnSF.Combat.MovesetAttackNode)
+  name: CheckAttackNodeConditions(MovesetAttackNode)
+  href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_CheckAttackNodeConditions_HnSF_Combat_MovesetAttackNode_
+  commentId: M:HnSF.Fighters.FighterCombatManager.CheckAttackNodeConditions(HnSF.Combat.MovesetAttackNode)
+  fullName: HnSF.Fighters.FighterCombatManager.CheckAttackNodeConditions(HnSF.Combat.MovesetAttackNode)
+  nameWithType: FighterCombatManager.CheckAttackNodeConditions(MovesetAttackNode)
+- uid: HnSF.Fighters.FighterCombatManager.CheckAttackNodeConditions*
+  name: CheckAttackNodeConditions
+  href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_CheckAttackNodeConditions_
+  commentId: Overload:HnSF.Fighters.FighterCombatManager.CheckAttackNodeConditions
+  isSpec: "True"
+  fullName: HnSF.Fighters.FighterCombatManager.CheckAttackNodeConditions
+  nameWithType: FighterCombatManager.CheckAttackNodeConditions
 - uid: HnSF.Fighters.FighterCombatManager.CheckAttackNodes*
   name: CheckAttackNodes
   href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_CheckAttackNodes_
@@ -3687,6 +3700,22 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.FighterCombatManager.CheckCurrentAttackCancelWindows
   nameWithType: FighterCombatManager.CheckCurrentAttackCancelWindows
+- uid: HnSF.Fighters.FighterCombatManager.CheckExecuteInputs(HnSF.Input.InputSequence,System.UInt32,System.UInt32@)
+  name: CheckExecuteInputs(InputSequence, UInt32, ref UInt32)
+  href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_CheckExecuteInputs_HnSF_Input_InputSequence_System_UInt32_System_UInt32__
+  commentId: M:HnSF.Fighters.FighterCombatManager.CheckExecuteInputs(HnSF.Input.InputSequence,System.UInt32,System.UInt32@)
+  name.vb: CheckExecuteInputs(InputSequence, UInt32, ByRef UInt32)
+  fullName: HnSF.Fighters.FighterCombatManager.CheckExecuteInputs(HnSF.Input.InputSequence, System.UInt32, ref System.UInt32)
+  fullName.vb: HnSF.Fighters.FighterCombatManager.CheckExecuteInputs(HnSF.Input.InputSequence, System.UInt32, ByRef System.UInt32)
+  nameWithType: FighterCombatManager.CheckExecuteInputs(InputSequence, UInt32, ref UInt32)
+  nameWithType.vb: FighterCombatManager.CheckExecuteInputs(InputSequence, UInt32, ByRef UInt32)
+- uid: HnSF.Fighters.FighterCombatManager.CheckExecuteInputs*
+  name: CheckExecuteInputs
+  href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_CheckExecuteInputs_
+  commentId: Overload:HnSF.Fighters.FighterCombatManager.CheckExecuteInputs
+  isSpec: "True"
+  fullName: HnSF.Fighters.FighterCombatManager.CheckExecuteInputs
+  nameWithType: FighterCombatManager.CheckExecuteInputs
 - uid: HnSF.Fighters.FighterCombatManager.CheckForInputSequence(HnSF.Input.InputSequence,System.UInt32,System.Boolean,System.Boolean)
   name: CheckForInputSequence(InputSequence, UInt32, Boolean, Boolean)
   href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_CheckForInputSequence_HnSF_Input_InputSequence_System_UInt32_System_Boolean_System_Boolean_
@@ -3700,6 +3729,22 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.FighterCombatManager.CheckForInputSequence
   nameWithType: FighterCombatManager.CheckForInputSequence
+- uid: HnSF.Fighters.FighterCombatManager.CheckSequenceInputs(HnSF.Input.InputSequence,System.Boolean,System.UInt32@)
+  name: CheckSequenceInputs(InputSequence, Boolean, ref UInt32)
+  href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_CheckSequenceInputs_HnSF_Input_InputSequence_System_Boolean_System_UInt32__
+  commentId: M:HnSF.Fighters.FighterCombatManager.CheckSequenceInputs(HnSF.Input.InputSequence,System.Boolean,System.UInt32@)
+  name.vb: CheckSequenceInputs(InputSequence, Boolean, ByRef UInt32)
+  fullName: HnSF.Fighters.FighterCombatManager.CheckSequenceInputs(HnSF.Input.InputSequence, System.Boolean, ref System.UInt32)
+  fullName.vb: HnSF.Fighters.FighterCombatManager.CheckSequenceInputs(HnSF.Input.InputSequence, System.Boolean, ByRef System.UInt32)
+  nameWithType: FighterCombatManager.CheckSequenceInputs(InputSequence, Boolean, ref UInt32)
+  nameWithType.vb: FighterCombatManager.CheckSequenceInputs(InputSequence, Boolean, ByRef UInt32)
+- uid: HnSF.Fighters.FighterCombatManager.CheckSequenceInputs*
+  name: CheckSequenceInputs
+  href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_CheckSequenceInputs_
+  commentId: Overload:HnSF.Fighters.FighterCombatManager.CheckSequenceInputs
+  isSpec: "True"
+  fullName: HnSF.Fighters.FighterCombatManager.CheckSequenceInputs
+  nameWithType: FighterCombatManager.CheckSequenceInputs
 - uid: HnSF.Fighters.FighterCombatManager.CheckStartingNodes
   name: CheckStartingNodes()
   href: api/HnSF.Fighters.FighterCombatManager.html#HnSF_Fighters_FighterCombatManager_CheckStartingNodes
