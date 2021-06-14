@@ -1,3 +1,10 @@
+# [23.1.0](https://github.com/christides11/hack-and-slash-framework/compare/v23.0.0...v23.1.0) (2021-06-14)
+
+
+### Features
+
+* Added method to check attack node conditions ([f8f8710](https://github.com/christides11/hack-and-slash-framework/commit/f8f8710cc6812bbf3abf9c8162ff975fae10fb5a))
+
 # [23.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v22.1.0...v23.0.0) (2021-06-10)
 
 
