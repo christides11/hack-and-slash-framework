@@ -259,6 +259,11 @@ namespace HnSF.Fighters
                 return null;
             }
 
+            if (CheckAttackNodeConditions(node) == false)
+            {
+                return null;
+            }
+
             if (CheckForInputSequence(node.inputSequence))
             {
                 return node;
@@ -266,36 +271,65 @@ namespace HnSF.Fighters
             return null;
         }
 
+        protected virtual bool CheckAttackNodeConditions(MovesetAttackNode node)
+        {
+            return true;
+        }
+
         /// <summary>
         /// Checks to see if a given input sequence was inputted.
         /// </summary>
         /// <param name="sequence">The sequence we're looking for.</param>
         /// <param name="baseOffset">How far back we want to start the sequence check. 0 = current frame, 1 = 1 frame back, etc.</param>
-        /// <param name="processSequenceButtons">If the sequence buttons should be checked, even if the execute buttons were not pressed.</param>
+        /// <param name="processSequenceButtons">If the sequence buttons should be checked, even if the execute buttons were not pressed or don't exist.</param>
         /// <param name="holdInput">If the sequence check should check for the buttons being held down instead of their first prcess.</param>
         /// <returns>True if the input sequence was inputted.</returns>
         public virtual bool CheckForInputSequence(InputSequence sequence, uint baseOffset = 0, bool processSequenceButtons = false, bool holdInput = false)
         {
             uint currentOffset = 0;
-            // Check execute button(s)
-            bool pressedExecuteInputs = true;
+            bool executeInputsSuccessful = CheckExecuteInputs(sequence, baseOffset, ref currentOffset);
+
+            if (sequence.executeInputs.Count == 0)
+            {
+                currentOffset++;
+                if (processSequenceButtons == false)
+                {
+                    executeInputsSuccessful = false;
+                }
+            }
+
+            // We did not press the buttons required for this move.
+            if (executeInputsSuccessful == false)
+            {
+                return false;
+            }
+            manager.InputManager.ClearBuffer();
+
+            bool sequenceInputsSuccessful = CheckSequenceInputs(sequence, holdInput, ref currentOffset);
+
+            if (sequenceInputsSuccessful == false)
+            {
+                return false;
+            }
+            return true;
+        }
+        protected virtual bool CheckExecuteInputs(InputSequence sequence, uint baseOffset, ref uint currentOffset)
+        {
             for (int e = 0; e < sequence.executeInputs.Count; e++)
             {
                 switch (sequence.executeInputs[e].inputType)
                 {
                     case Input.InputDefinitionType.Stick:
-                        if (!CheckStickDirection(sequence.executeInputs[e], baseOffset))
+                        if (CheckStickDirection(sequence.executeInputs[e], baseOffset) == false)
                         {
-                            pressedExecuteInputs = false;
-                            break;
+                            return false;
                         }
                         break;
                     case Input.InputDefinitionType.Button:
-                        if (!manager.InputManager.GetButton(sequence.executeInputs[e].buttonID, out uint gotOffset, baseOffset, 
-                            true, sequence.executeWindow).firstPress)
+                        if (manager.InputManager.GetButton(sequence.executeInputs[e].buttonID, out uint gotOffset, baseOffset,
+                            true, sequence.executeWindow).firstPress == false)
                         {
-                            pressedExecuteInputs = false;
-                            break;
+                            return false;
                         }
                         if (gotOffset >= currentOffset)
                         {
@@ -304,73 +338,48 @@ namespace HnSF.Fighters
                         break;
                 }
             }
+            return true;
+        }
 
-            if (sequence.executeInputs.Count <= 0)
-            {
-                currentOffset++;
-                if (processSequenceButtons == false)
-                {
-                    pressedExecuteInputs = false;
-                }
-            }
-            // We did not press the buttons required for this move.
-            if (!pressedExecuteInputs)
-            {
-                return false;
-            }
-            
-            manager.InputManager.ClearBuffer();
-            // Check sequence button(s).
-            bool pressedSequenceButtons = true;
+        protected virtual bool CheckSequenceInputs(InputSequence sequence, bool holdInput, ref uint currentOffset)
+        {
             for (int s = 0; s < sequence.sequenceInputs.Count; s++)
             {
+                bool foundInput = false;
                 switch (sequence.sequenceInputs[s].inputType)
                 {
                     case Input.InputDefinitionType.Stick:
-                        bool foundDir = false;
                         for (uint f = currentOffset; f < currentOffset + sequence.sequenceWindow; f++)
                         {
                             if (CheckStickDirection(sequence.sequenceInputs[s], f))
                             {
-                                foundDir = true;
+                                foundInput = true;
                                 currentOffset = f;
                                 break;
                             }
                         }
-                        if (!foundDir)
+                        if (foundInput == false)
                         {
-                            pressedSequenceButtons = false;
-                            break;
+                            return false;
                         }
                         break;
                     case Input.InputDefinitionType.Button:
-                        bool foundButton = false;
                         for (uint f = currentOffset; f < currentOffset + sequence.sequenceWindow; f++)
                         {
-                            if ( (!holdInput && manager.InputManager.GetButton(sequence.sequenceInputs[s].buttonID, out uint gotOffset, f, false).firstPress)
-                                || (holdInput && manager.InputManager.GetButton(sequence.sequenceInputs[s].buttonID, out uint gotOffsetTwo, f, false).isDown) )
+                            if ((!holdInput && manager.InputManager.GetButton(sequence.sequenceInputs[s].buttonID, out uint gotOffset, f, false).firstPress)
+                                || (holdInput && manager.InputManager.GetButton(sequence.sequenceInputs[s].buttonID, out uint gotOffsetTwo, f, false).isDown))
                             {
-                                foundButton = true;
+                                foundInput = true;
                                 currentOffset = f;
                                 break;
                             }
                         }
-                        if (!foundButton)
+                        if (foundInput == false)
                         {
-                            pressedSequenceButtons = false;
-                            break;
+                            return false;
                         }
                         break;
                 }
-                if (!pressedSequenceButtons)
-                {
-                    break;
-                }
-            }
-
-            if (!pressedSequenceButtons)
-            {
-                return false;
             }
             return true;
         }
@@ -448,7 +457,6 @@ namespace HnSF.Fighters
         public virtual HitReactionBase Hurt(HurtInfoBase hurtInfoBase)
         {
             HitReactionBase hr = new HitReactionBase();
-            //hr.reactionType = HitReactionType.Hit;
             OnHit?.Invoke(null, manager, hurtInfoBase.hitInfo);
             return hr;
         }
