@@ -69,7 +69,7 @@ namespace HnSF.Combat
         }
 
         protected List<Hurtbox> hurtboxes = new List<Hurtbox>();
-        public virtual bool CheckForCollision(int hitboxGroupIndex, HitboxGroup hitboxGroup)
+        public virtual bool CheckForCollision(int hitboxGroupIndex, HitboxGroup hitboxGroup, GameObject attacker, List<GameObject> ignoreList = null)
         {
             bool hurtboxHit = false;
             hurtboxes.Clear();
@@ -93,7 +93,11 @@ namespace HnSF.Combat
 
                 for (int j = 0; j < hurtboxes.Count; j++)
                 {
-                    if(TryHitHurtbox(hitboxGroup, i, j, hitboxGroupIndex))
+                    if(ignoreList != null && ignoreList.Contains(hurtboxes[j].Owner))
+                    {
+                        continue;
+                    }
+                    if(TryHitHurtbox(hitboxGroup, i, j, hitboxGroupIndex, attacker))
                     {
                         hurtboxHit = true;
                     }
@@ -107,7 +111,7 @@ namespace HnSF.Combat
             hurtboxes = hurtboxes.OrderBy(x=>x?.HurtboxGroup.ID).ToList();
         }
 
-        protected virtual bool TryHitHurtbox(HitboxGroup hitboxGroup, int hitboxIndex, int hurtboxIndex, int hitboxGroupIndex)
+        protected virtual bool TryHitHurtbox(HitboxGroup hitboxGroup, int hitboxIndex, int hurtboxIndex, int hitboxGroupIndex, GameObject attacker)
         {
             // Owner was already hit by this ID group or is null, ignore it.
             if (hurtboxes[hurtboxIndex] == null || collidedIHurtables[hitboxGroup.ID].hitIHurtables.Contains(hurtboxes[hurtboxIndex].Owner))
@@ -121,7 +125,7 @@ namespace HnSF.Combat
             }
             collidedIHurtables[hitboxGroup.ID].hitIHurtables.Add(hurtboxes[hurtboxIndex].Owner);
             collidedIHurtables[hitboxGroup.ID].hitboxGroups.Add(hitboxGroupIndex);
-            HurtHurtbox(hitboxGroup, hitboxIndex, hurtboxes[hurtboxIndex]);
+            HurtHurtbox(hitboxGroup, hitboxIndex, hurtboxes[hurtboxIndex], attacker);
             return true;
         }
 
@@ -137,13 +141,13 @@ namespace HnSF.Combat
             return true;
         }
 
-        protected virtual void HurtHurtbox(HitboxGroup hitboxGroup, int hitboxIndex, Hurtbox hurtbox)
+        protected virtual void HurtHurtbox(HitboxGroup hitboxGroup, int hitboxIndex, Hurtbox hurtbox, GameObject attacker)
         {
-            HitReactionBase reaction = hurtbox.Hurtable.Hurt(BuildHurtInfo(hitboxGroup, hitboxIndex, hurtbox));
+            HitReactionBase reaction = hurtbox.Hurtable.Hurt(BuildHurtInfo(hitboxGroup, hitboxIndex, hurtbox, attacker));
             OnHitHurtbox?.Invoke(hitboxGroup, hitboxIndex, hurtbox, reaction);
         }
 
-        protected virtual HurtInfoBase BuildHurtInfo(HitboxGroup hitboxGroup, int hitboxIndex, Hurtbox hurtbox)
+        protected virtual HurtInfoBase BuildHurtInfo(HitboxGroup hitboxGroup, int hitboxIndex, Hurtbox hurtbox, GameObject attacker)
         {
             return new HurtInfoBase();
         }

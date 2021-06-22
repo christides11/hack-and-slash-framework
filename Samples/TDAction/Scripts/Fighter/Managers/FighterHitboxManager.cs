@@ -61,7 +61,7 @@ namespace TDAction.Fighter
             }
         }
 
-        protected override HurtInfoBase BuildHurtInfo(HitboxGroup hitboxGroup, int hitboxIndex, Hurtbox hurtbox)
+        protected override HurtInfoBase BuildHurtInfo(HitboxGroup hitboxGroup, int hitboxIndex, Hurtbox hurtbox, GameObject attacker)
         {
             HurtInfo2D hi2d;
             TDAction.Fighter.FighterManager fm = manager as TDAction.Fighter.FighterManager;
@@ -69,7 +69,7 @@ namespace TDAction.Fighter
             {
                 case HitboxForceRelation.ATTACKER:
                     hi2d = new HurtInfo2D(hitboxGroup.hitboxHitInfo, (manager.PhysicsManager as FighterPhysicsManager).GetOverallForce(), 
-                        manager.transform.position, fm.FaceDirection);
+                        attacker.transform.position, fm.FaceDirection);
                     break;
                 case HitboxForceRelation.HITBOX:
                     Vector2 position = hitboxGroup.attachToEntity ? (Vector2)manager.transform.position + (Vector2)(hitboxGroup.boxes[hitboxIndex] as HnSF.Combat.BoxDefinition).offset
