@@ -1802,12 +1802,12 @@ references:
   commentId: T:HnSF.Combat.HitboxManager
   fullName: HnSF.Combat.HitboxManager
   nameWithType: HitboxManager
-- uid: HnSF.Combat.HitboxManager.BuildHurtInfo(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox)
-  name: BuildHurtInfo(HitboxGroup, Int32, Hurtbox)
-  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_BuildHurtInfo_HnSF_Combat_HitboxGroup_System_Int32_HnSF_Combat_Hurtbox_
-  commentId: M:HnSF.Combat.HitboxManager.BuildHurtInfo(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox)
-  fullName: HnSF.Combat.HitboxManager.BuildHurtInfo(HnSF.Combat.HitboxGroup, System.Int32, HnSF.Combat.Hurtbox)
-  nameWithType: HitboxManager.BuildHurtInfo(HitboxGroup, Int32, Hurtbox)
+- uid: HnSF.Combat.HitboxManager.BuildHurtInfo(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox,GameObject)
+  name: BuildHurtInfo(HitboxGroup, Int32, Hurtbox, GameObject)
+  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_BuildHurtInfo_HnSF_Combat_HitboxGroup_System_Int32_HnSF_Combat_Hurtbox_GameObject_
+  commentId: M:HnSF.Combat.HitboxManager.BuildHurtInfo(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox,GameObject)
+  fullName: HnSF.Combat.HitboxManager.BuildHurtInfo(HnSF.Combat.HitboxGroup, System.Int32, HnSF.Combat.Hurtbox, GameObject)
+  nameWithType: HitboxManager.BuildHurtInfo(HitboxGroup, Int32, Hurtbox, GameObject)
 - uid: HnSF.Combat.HitboxManager.BuildHurtInfo*
   name: BuildHurtInfo
   href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_BuildHurtInfo_
@@ -1828,12 +1828,15 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.HitboxManager.CheckBoxCollision
   nameWithType: HitboxManager.CheckBoxCollision
-- uid: HnSF.Combat.HitboxManager.CheckForCollision(System.Int32,HnSF.Combat.HitboxGroup)
-  name: CheckForCollision(Int32, HitboxGroup)
-  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_CheckForCollision_System_Int32_HnSF_Combat_HitboxGroup_
-  commentId: M:HnSF.Combat.HitboxManager.CheckForCollision(System.Int32,HnSF.Combat.HitboxGroup)
-  fullName: HnSF.Combat.HitboxManager.CheckForCollision(System.Int32, HnSF.Combat.HitboxGroup)
-  nameWithType: HitboxManager.CheckForCollision(Int32, HitboxGroup)
+- uid: HnSF.Combat.HitboxManager.CheckForCollision(System.Int32,HnSF.Combat.HitboxGroup,GameObject,System.Collections.Generic.List{GameObject})
+  name: CheckForCollision(Int32, HitboxGroup, GameObject, List<GameObject>)
+  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_CheckForCollision_System_Int32_HnSF_Combat_HitboxGroup_GameObject_System_Collections_Generic_List_GameObject__
+  commentId: M:HnSF.Combat.HitboxManager.CheckForCollision(System.Int32,HnSF.Combat.HitboxGroup,GameObject,System.Collections.Generic.List{GameObject})
+  name.vb: CheckForCollision(Int32, HitboxGroup, GameObject, List(Of GameObject))
+  fullName: HnSF.Combat.HitboxManager.CheckForCollision(System.Int32, HnSF.Combat.HitboxGroup, GameObject, System.Collections.Generic.List<GameObject>)
+  fullName.vb: HnSF.Combat.HitboxManager.CheckForCollision(System.Int32, HnSF.Combat.HitboxGroup, GameObject, System.Collections.Generic.List(Of GameObject))
+  nameWithType: HitboxManager.CheckForCollision(Int32, HitboxGroup, GameObject, List<GameObject>)
+  nameWithType.vb: HitboxManager.CheckForCollision(Int32, HitboxGroup, GameObject, List(Of GameObject))
 - uid: HnSF.Combat.HitboxManager.CheckForCollision*
   name: CheckForCollision
   href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_CheckForCollision_
@@ -1885,12 +1888,12 @@ references:
   commentId: F:HnSF.Combat.HitboxManager.hurtboxes
   fullName: HnSF.Combat.HitboxManager.hurtboxes
   nameWithType: HitboxManager.hurtboxes
-- uid: HnSF.Combat.HitboxManager.HurtHurtbox(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox)
-  name: HurtHurtbox(HitboxGroup, Int32, Hurtbox)
-  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_HurtHurtbox_HnSF_Combat_HitboxGroup_System_Int32_HnSF_Combat_Hurtbox_
-  commentId: M:HnSF.Combat.HitboxManager.HurtHurtbox(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox)
-  fullName: HnSF.Combat.HitboxManager.HurtHurtbox(HnSF.Combat.HitboxGroup, System.Int32, HnSF.Combat.Hurtbox)
-  nameWithType: HitboxManager.HurtHurtbox(HitboxGroup, Int32, Hurtbox)
+- uid: HnSF.Combat.HitboxManager.HurtHurtbox(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox,GameObject)
+  name: HurtHurtbox(HitboxGroup, Int32, Hurtbox, GameObject)
+  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_HurtHurtbox_HnSF_Combat_HitboxGroup_System_Int32_HnSF_Combat_Hurtbox_GameObject_
+  commentId: M:HnSF.Combat.HitboxManager.HurtHurtbox(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox,GameObject)
+  fullName: HnSF.Combat.HitboxManager.HurtHurtbox(HnSF.Combat.HitboxGroup, System.Int32, HnSF.Combat.Hurtbox, GameObject)
+  nameWithType: HitboxManager.HurtHurtbox(HitboxGroup, Int32, Hurtbox, GameObject)
 - uid: HnSF.Combat.HitboxManager.HurtHurtbox*
   name: HurtHurtbox
   href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_HurtHurtbox_
@@ -1974,12 +1977,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.HitboxManager.SortHitHurtboxes
   nameWithType: HitboxManager.SortHitHurtboxes
-- uid: HnSF.Combat.HitboxManager.TryHitHurtbox(HnSF.Combat.HitboxGroup,System.Int32,System.Int32,System.Int32)
-  name: TryHitHurtbox(HitboxGroup, Int32, Int32, Int32)
-  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_TryHitHurtbox_HnSF_Combat_HitboxGroup_System_Int32_System_Int32_System_Int32_
-  commentId: M:HnSF.Combat.HitboxManager.TryHitHurtbox(HnSF.Combat.HitboxGroup,System.Int32,System.Int32,System.Int32)
-  fullName: HnSF.Combat.HitboxManager.TryHitHurtbox(HnSF.Combat.HitboxGroup, System.Int32, System.Int32, System.Int32)
-  nameWithType: HitboxManager.TryHitHurtbox(HitboxGroup, Int32, Int32, Int32)
+- uid: HnSF.Combat.HitboxManager.TryHitHurtbox(HnSF.Combat.HitboxGroup,System.Int32,System.Int32,System.Int32,GameObject)
+  name: TryHitHurtbox(HitboxGroup, Int32, Int32, Int32, GameObject)
+  href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_TryHitHurtbox_HnSF_Combat_HitboxGroup_System_Int32_System_Int32_System_Int32_GameObject_
+  commentId: M:HnSF.Combat.HitboxManager.TryHitHurtbox(HnSF.Combat.HitboxGroup,System.Int32,System.Int32,System.Int32,GameObject)
+  fullName: HnSF.Combat.HitboxManager.TryHitHurtbox(HnSF.Combat.HitboxGroup, System.Int32, System.Int32, System.Int32, GameObject)
+  nameWithType: HitboxManager.TryHitHurtbox(HitboxGroup, Int32, Int32, Int32, GameObject)
 - uid: HnSF.Combat.HitboxManager.TryHitHurtbox*
   name: TryHitHurtbox
   href: api/HnSF.Combat.HitboxManager.html#HnSF_Combat_HitboxManager_TryHitHurtbox_
