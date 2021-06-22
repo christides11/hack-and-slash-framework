@@ -1,3 +1,15 @@
+# [24.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v23.1.0...v24.0.0) (2021-06-22)
+
+
+### Features
+
+* Hitbox attacker can be defined, along with an ignore list. ([6a2942a](https://github.com/christides11/hack-and-slash-framework/commit/6a2942a1b5a9d04c7dddf56339ba25aa418917b0))
+
+
+### BREAKING CHANGES
+
+* HitboxManager's CheckForCollision now has the attacker and an ignorelist as parameters. Useful when the attacker is not the one with the HitboxManager script attached.
+
 # [23.1.0](https://github.com/christides11/hack-and-slash-framework/compare/v23.0.0...v23.1.0) (2021-06-14)
 
 
