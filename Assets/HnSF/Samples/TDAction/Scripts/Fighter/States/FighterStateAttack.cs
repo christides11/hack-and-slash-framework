@@ -265,7 +265,7 @@ namespace TDAction.Fighter
             switch (boxGroup.hitboxHitInfo.hitType)
             {
                 case HnSF.Combat.HitboxType.HIT:
-                    entityManager.CombatManager.hitboxManager.CheckForCollision(groupIndex, boxGroup);
+                    entityManager.CombatManager.hitboxManager.CheckForCollision(groupIndex, boxGroup, entityManager.gameObject);
                     break;
             }
         }
