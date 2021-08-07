@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDAction_CSharp", "TDAction_CSharp.csproj", "{81DBEF9F-0932-0C5C-ED3C-0AE7B9A63529}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HnSF", "HnSF.csproj", "{2F2B7619-58DC-0D62-4737-B881AF539594}"

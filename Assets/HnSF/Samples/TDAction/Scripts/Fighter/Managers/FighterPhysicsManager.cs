@@ -50,7 +50,7 @@ namespace TDAction.Fighter
         public void AirDrift()
         {
             FighterStatsManager statsManager = (manager as FighterManager).statManager;
-            Vector2 movement = manager.InputManager.GetAxis2D((int)EntityInputs.MOVEMENT);
+            Vector2 movement = (manager as FighterManager).InputManager.GetAxis2D((int)EntityInputs.MOVEMENT);
             float tempMax;
             if (Mathf.Abs(movement.x) < InputConstants.moveDeadzone)
             {
