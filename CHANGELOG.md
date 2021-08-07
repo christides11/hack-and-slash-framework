@@ -1,3 +1,15 @@
+# [25.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v24.0.0...v25.0.0) (2021-08-07)
+
+
+### Code Refactoring
+
+* Removed input handling. ([90200c6](https://github.com/christides11/hack-and-slash-framework/commit/90200c675b1e8f9aecde0afc813c032ff61f1395))
+
+
+### BREAKING CHANGES
+
+* Removed input handling. How input is handled is dependent on the game, so there is no good general way of doing it.
+
 # [24.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v23.1.0...v24.0.0) (2021-06-22)
 
 
