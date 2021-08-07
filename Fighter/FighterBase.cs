@@ -8,7 +8,6 @@ namespace HnSF.Fighters
 {
     public class FighterBase : MonoBehaviour, ITargetable
     {
-        public FighterInputManager InputManager { get { return inputManager; } }
         public FighterStateManager StateManager { get { return stateManager; } }
         public FighterCombatManager CombatManager { get { return combatManager; } }
         public FighterPhysicsManagerBase PhysicsManager { get { return physicsManager; } }
@@ -19,7 +18,6 @@ namespace HnSF.Fighters
         protected bool targetable = true;
 
         [Header("References")]
-        [SerializeField] protected FighterInputManager inputManager;
         [SerializeField] protected FighterStateManager stateManager;
         [SerializeField] protected FighterCombatManager combatManager;
         [SerializeField] protected FighterPhysicsManagerBase physicsManager;
@@ -29,8 +27,6 @@ namespace HnSF.Fighters
 
         public virtual void Tick()
         {
-            InputManager.Tick();
-
             if (CombatManager.HitStop == 0)
             {
                 HandleLockon();

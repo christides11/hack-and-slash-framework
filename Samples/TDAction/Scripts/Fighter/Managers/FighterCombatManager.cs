@@ -1,4 +1,5 @@
 ﻿using HnSF.Combat;
+using HnSF.Input;
 using System.Collections;
 using System.Collections.Generic;
 using TDAction.Combat;
@@ -103,7 +104,7 @@ namespace TDAction.Fighter
 
         protected override bool CheckStickDirection(HnSF.Input.InputDefinition sequenceInput, uint framesBack)
         {
-            Vector2 stickDir = manager.InputManager.GetAxis2D((int)EntityInputs.MOVEMENT, framesBack);
+            Vector2 stickDir = (manager as FighterManager).InputManager.GetAxis2D((int)EntityInputs.MOVEMENT, framesBack);
             if (stickDir.magnitude < 0.2f)
             {
                 return false;
@@ -114,6 +115,77 @@ namespace TDAction.Fighter
                 return true;
             }
             return false;
+        }
+
+        protected override bool CheckExecuteInputs(InputSequence sequence, uint baseOffset, ref uint currentOffset)
+        {
+            for (int e = 0; e < sequence.executeInputs.Count; e++)
+            {
+                switch (sequence.executeInputs[e].inputType)
+                {
+                    case HnSF.Input.InputDefinitionType.Stick:
+                        if (CheckStickDirection(sequence.executeInputs[e], baseOffset) == false)
+                        {
+                            return false;
+                        }
+                        break;
+                    case HnSF.Input.InputDefinitionType.Button:
+                        if ((manager as FighterManager).InputManager.GetButton(sequence.executeInputs[e].buttonID, out uint gotOffset, baseOffset,
+                            true, sequence.executeWindow).firstPress == false)
+                        {
+                            return false;
+                        }
+                        if (gotOffset >= currentOffset)
+                        {
+                            currentOffset = gotOffset;
+                        }
+                        break;
+                }
+            }
+            return true;
+        }
+
+        protected override bool CheckSequenceInputs(InputSequence sequence, bool holdInput, ref uint currentOffset)
+        {
+            for (int s = 0; s < sequence.sequenceInputs.Count; s++)
+            {
+                bool foundInput = false;
+                switch (sequence.sequenceInputs[s].inputType)
+                {
+                    case HnSF.Input.InputDefinitionType.Stick:
+                        for (uint f = currentOffset; f < currentOffset + sequence.sequenceWindow; f++)
+                        {
+                            if (CheckStickDirection(sequence.sequenceInputs[s], f))
+                            {
+                                foundInput = true;
+                                currentOffset = f;
+                                break;
+                            }
+                        }
+                        if (foundInput == false)
+                        {
+                            return false;
+                        }
+                        break;
+                    case HnSF.Input.InputDefinitionType.Button:
+                        for (uint f = currentOffset; f < currentOffset + sequence.sequenceWindow; f++)
+                        {
+                            if ((!holdInput && (manager as FighterManager).InputManager.GetButton(sequence.sequenceInputs[s].buttonID, out uint gotOffset, f, false).firstPress)
+                                || (holdInput && (manager as FighterManager).InputManager.GetButton(sequence.sequenceInputs[s].buttonID, out uint gotOffsetTwo, f, false).isDown))
+                            {
+                                foundInput = true;
+                                currentOffset = f;
+                                break;
+                            }
+                        }
+                        if (foundInput == false)
+                        {
+                            return false;
+                        }
+                        break;
+                }
+            }
+            return true;
         }
     }
 }

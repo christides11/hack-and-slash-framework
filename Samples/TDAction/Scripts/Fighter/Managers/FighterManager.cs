@@ -11,8 +11,10 @@ namespace TDAction.Fighter
 {
     public class FighterManager : HnSF.Fighters.FighterBase, ISimObject
     {
+        public FighterInputManager InputManager { get { return inputManager; } }
         public int FaceDirection { get { return faceDirection; } }
 
+        public FighterInputManager inputManager;
         public FighterStatsManager statManager;
         protected int faceDirection = 1;
         public FighterAnimator entityAnimator;
@@ -25,7 +27,7 @@ namespace TDAction.Fighter
 
         public virtual void Initialize(FighterControlType controlType)
         {
-            InputManager.SetControlType(controlType);
+            inputManager.SetControlType(controlType);
         }
 
         public void Start()
@@ -53,6 +55,8 @@ namespace TDAction.Fighter
 
         public override void Tick()
         {
+            inputManager.Tick();
+
             // Shake during hitstop (only when you got hit by an attack).
             if(CombatManager.HitStop > 0
                 && CombatManager.HitStun > 0)
