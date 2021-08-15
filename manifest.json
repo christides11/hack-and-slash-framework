@@ -28,7 +28,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.AttackCondition.html",
-          "hash": "UkjVN8r16v/pkXyBNWvrbrwHfxft6iwItA98Y9zObq0="
+          "hash": "Ft6UcWDiksqOh3JZKaFURwtrbMl6dWd/1J+RtEh9dh8="
         }
       },
       "is_incremental": false,
@@ -64,7 +64,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.AttackDefinitionEditorWindow.html",
-          "hash": "C0MtASmZpNKnml0WKYzeO5D7XBjcQjjBs6Pw8EtDzeg="
+          "hash": "SDMDrVM/PeiKq+2r3vX8DALO6fDD1C2Y1/AcamMiGgE="
         }
       },
       "is_incremental": false,
@@ -76,7 +76,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.AttackEvent.html",
-          "hash": "n3HlYZSLfaTHNN/oLBCB8MzDybRZY324KiZD2fn5FJE="
+          "hash": "qRZ53gtPNuSfMgi9TtKlFuMfEIa3C++thNPRE5DUn1Q="
         }
       },
       "is_incremental": false,
@@ -88,7 +88,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.AttackEventDefinition.html",
-          "hash": "vReoHZMT0NuuGPks8PMNtHgYRkWXzStCQ5/BHVlSCUs="
+          "hash": "FZKUXZ+Iv6PSOe1RDFPaw3o/SJ+TOGM2Hy3MiEZqojs="
         }
       },
       "is_incremental": false,
@@ -424,7 +424,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.HitboxManager.html",
-          "hash": "+MNl2PQNFVXO0Z4FR/YmRtGfIjTepzX/Uddbnco/MFU="
+          "hash": "z0icV8MEKRTKKqVPZ4g1q9fhNuiheUeOmvdjNzl4mwk="
         }
       },
       "is_incremental": false,
@@ -672,23 +672,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Fighters.FighterBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/HnSF.Fighters.FighterBase.html",
-          "hash": "REQi8NKvVQvL4MTkaKNAS9JgNM1gRpoxRSZObi6c2Bo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/HnSF.Fighters.FighterCombatManager.ChargeLevelChangedAction.yml",
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.FighterCombatManager.ChargeLevelChangedAction.html",
-          "hash": "em4mOwjsDE1yeqCeGpDAPNYz9q0J2Zm0FCX+05agPag="
+          "hash": "PiftiTeGiftUmm8XbxE6M1n2Eu3dSGhnUiP/MeB0WpM="
         }
       },
       "is_incremental": false,
@@ -700,7 +688,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.FighterCombatManager.ChargeLevelChargeChangedAction.html",
-          "hash": "gKRZ/QM6/+SjDIeoR0w26TEXjS5AFivl9ItbjF4Ie2c="
+          "hash": "yFZJn7F85XDCB0jpbExGgwDLwotqF+wqxQJPpel7kPk="
         }
       },
       "is_incremental": false,
@@ -712,7 +700,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.FighterCombatManager.EmptyAction.html",
-          "hash": "zYWj10L2oZsjzOFwoO8dqUoHBg+bziPpePk+RkjqJXs="
+          "hash": "xHyZ77xth9ohz9lTu/rH+7kAtXKxuwgn4mirsqsk6eE="
         }
       },
       "is_incremental": false,
@@ -724,7 +712,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.FighterCombatManager.HealthChangedAction.html",
-          "hash": "HRPddSw+XMDmDtXDy4yDyEFAZJ8aL4nJQWUqIEYQl60="
+          "hash": "knWU3vhkLa7+BQXdWDDtZ3fj5Ee2LcMUWJngWLpjTQ8="
         }
       },
       "is_incremental": false,
@@ -736,7 +724,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.FighterCombatManager.MovesetChangedAction.html",
-          "hash": "jBu45kNDwEakUDsIHrQPNO0WBZ8GzlgztBrjJI0Ynas="
+          "hash": "3wcpzhsIpvF/DIiu9kVGtaT3SgxUyA3zwHN0zJry3FE="
         }
       },
       "is_incremental": false,
@@ -748,19 +736,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.FighterCombatManager.html",
-          "hash": "dxCp10iqsEUmpMHvxqWu1sGzb0bqVokX3rpFk2mjm5k="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Fighters.FighterHitboxManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/HnSF.Fighters.FighterHitboxManager.html",
-          "hash": "RRNLNN6PABSMO6/WM2m4VJOd2tCgVeF5DT90q7rRh28="
+          "hash": "D6S6xomA1wAQFmomsPCjyUXOO10e6ArlML0yGxxLneI="
         }
       },
       "is_incremental": false,
@@ -772,7 +748,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.FighterHurtboxManager.html",
-          "hash": "rL7JUgVGN+dA9Kp6l3jzISDW+6zvT95aQX/mjTAbq7Y="
+          "hash": "AFlOsKeCpaZk1P7M2Gpc09fZBnxs1NbSOP92iRru/JI="
         }
       },
       "is_incremental": false,
@@ -780,47 +756,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Fighters.FighterPhysicsManager2D.yml",
+      "source_relative_path": "api/HnSF.Fighters.FighterStateBase.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HnSF.Fighters.FighterPhysicsManager2D.html",
-          "hash": "cO8iD7lE8TofTTNYdrebitKVMOxdvgMHdlcx0b8X+wo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Fighters.FighterPhysicsManager3D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/HnSF.Fighters.FighterPhysicsManager3D.html",
-          "hash": "ZQONZriMkXPb1nAspnfXYQOBXkWXFMATP8Xvkbx/4KM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Fighters.FighterPhysicsManagerBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/HnSF.Fighters.FighterPhysicsManagerBase.html",
-          "hash": "TSPZm5DvA4WXtJd7qkt1CIwYMF/fl7a8VxXN4L38OM0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Fighters.FighterState.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/HnSF.Fighters.FighterState.html",
-          "hash": "b13ZuBKcV2egRVJKKRc51qzCsNgL2R5b+YWfJWmvkZ4="
+          "relative_path": "api/HnSF.Fighters.FighterStateBase.html",
+          "hash": "sg4Dg4UQLtp5GREOTLlb+f1e8Ls9lkby1/aP2mqp3e8="
         }
       },
       "is_incremental": false,
@@ -832,7 +772,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.FighterStateManager.StateAction.html",
-          "hash": "YMLsu28866astNB7wQpGn/Yqh1Xf4LNHB30azOcIBtY="
+          "hash": "ZDlNHTNaFIXfxS6Cda9E2Ielp34DdJlrZlzEfmBIe+Q="
         }
       },
       "is_incremental": false,
@@ -844,7 +784,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.FighterStateManager.StateFrameAction.html",
-          "hash": "qvPCdpsbJjxbsOVoLvfFfD66V6J4PdYIVO7ZIXXVPKE="
+          "hash": "HiiAEyxomeAm61iieTV0QHwaDYdjVKXDZsM3opa3Heg="
         }
       },
       "is_incremental": false,
@@ -856,7 +796,55 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.FighterStateManager.html",
-          "hash": "phYWwecRTDJMF7RkrM1WPn1q6JFC6bwgwayDqzIxESM="
+          "hash": "XCKG1DRooawok5mxY85Y79ttVsThZl9pgI57AdbvtLM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Fighters.IFighterBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Fighters.IFighterBase.html",
+          "hash": "b8OUQEa7sYVATMQPDQoJkqkhZKVgwT3Z6fuh1sYItKg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Fighters.IFighterCombatManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Fighters.IFighterCombatManager.html",
+          "hash": "F1znyhDxpWLCNfGcYKWNQBPDpPN9fVOP+YFn8CceJE0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Fighters.IFighterPhysicsManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Fighters.IFighterPhysicsManager.html",
+          "hash": "z0GaRjqVXnZyTEL/zwXDnmszHfnOk0tfrbnDkeWhcvk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Fighters.IFighterStateManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Fighters.IFighterStateManager.html",
+          "hash": "PalWrpGPs5Id4pYnNaUgzKyudd7Ifi1hqEtrzznVkNA="
         }
       },
       "is_incremental": false,
@@ -868,7 +856,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.LookHandler.html",
-          "hash": "f4TWgKdLgNwLPJ4trfxRU/R1W5G5tourvEnfRFSW19Q="
+          "hash": "c2KJcoHb3ISaYjLvqcBjW3QB/T7xdFVXWqMYlcgIEoA="
         }
       },
       "is_incremental": false,
@@ -880,7 +868,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.html",
-          "hash": "CQHqBm/ZpvaKpYl1W2sLeOnBmHu9Rk5YN6nLtuXgCcA="
+          "hash": "9gsM8tOMuAPWGvOBUS3DV9GQXffgZguOixd5Lnn7Y2k="
         }
       },
       "is_incremental": false,
@@ -1096,7 +1084,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "l9vaYz0p7NtNs5Opw6igzDotPgGMToQ+lHykg6kZu/0="
+          "hash": "zHzijI59gCnn7hq3cAcu40FU9H0dgs1QTIn/Kpnbj7w="
         }
       },
       "is_incremental": false,
@@ -1217,7 +1205,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 89,
+          "total_file_count": 88,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

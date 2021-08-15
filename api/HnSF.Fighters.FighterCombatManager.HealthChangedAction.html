@@ -89,7 +89,7 @@
   <h6><strong>Assembly</strong>: HnSF.dll</h6>
   <h5 id="HnSF_Fighters_FighterCombatManager_HealthChangedAction_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public delegate void HealthChangedAction(FighterBase initializer, FighterBase self, HitInfoBase hitInfo);</code></pre>
+    <pre><code class="lang-csharp hljs">public delegate void HealthChangedAction(IFighterBase initializer, IFighterBase self, HitInfoBase hitInfo);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -102,12 +102,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="HnSF.Fighters.FighterBase.html">FighterBase</a></td>
+        <td><a class="xref" href="HnSF.Fighters.IFighterBase.html">IFighterBase</a></td>
         <td><span class="parametername">initializer</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="HnSF.Fighters.FighterBase.html">FighterBase</a></td>
+        <td><a class="xref" href="HnSF.Fighters.IFighterBase.html">IFighterBase</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
