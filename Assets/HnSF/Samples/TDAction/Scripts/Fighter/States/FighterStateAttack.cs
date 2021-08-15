@@ -9,7 +9,7 @@ namespace TDAction.Fighter
     {
         public override string GetName()
         {
-            return $"Attack ({GetEntityManager().CombatManager.CurrentAttackNode?.name})";
+            return $"Attack ({Manager.CombatManager.CurrentAttackNode?.name})";
         }
 
         protected bool charging = true;
@@ -17,27 +17,26 @@ namespace TDAction.Fighter
         public override void Initialize()
         {
             AttackDefinition currentAttack = 
-                (TDAction.Combat.AttackDefinition)GetEntityManager().CombatManager.CurrentAttackNode.attackDefinition;
+                (TDAction.Combat.AttackDefinition)Manager.CombatManager.CurrentAttackNode.attackDefinition;
             if (currentAttack.useState)
             {
-                GetEntityManager().StateManager.ChangeState(currentAttack.stateOverride);
+                Manager.StateManager.ChangeState(currentAttack.stateOverride);
                 return;
             }
             charging = true;
             if (String.IsNullOrEmpty(currentAttack.animationName) == false)
             {
                 (Manager as FighterManager).entityAnimator.PlayAnimation((Manager as FighterManager).GetAnimationClip(currentAttack.animationName, 
-                    GetEntityManager().CombatManager.CurrentAttackMovesetIdentifier));
+                    Manager.CombatManager.CurrentAttackMovesetIdentifier));
             }
 
-            GetEntityManager().HurtboxManager.SetHurtboxDefinition(currentAttack.hurtboxDefinition);
+            (Manager as FighterManager).HurtboxManager.SetHurtboxDefinition(currentAttack.hurtboxDefinition);
         }
 
         public override void OnUpdate()
         {
-            FighterManager entityManager = GetEntityManager();
             AttackDefinition currentAttack =
-                (TDAction.Combat.AttackDefinition)entityManager.CombatManager.CurrentAttackNode.attackDefinition;
+                (TDAction.Combat.AttackDefinition)Manager.CombatManager.CurrentAttackNode.attackDefinition;
 
             // Handle lifetime of box groups.
             for (int i = 0; i < currentAttack.hitboxGroups.Count; i++)
@@ -80,7 +79,7 @@ namespace TDAction.Fighter
             {
                 if (cleanup)
                 {
-                    entityManager.CombatManager.Cleanup();
+                    Manager.CombatManager.Cleanup();
                 }
                 return;
             }
@@ -89,26 +88,25 @@ namespace TDAction.Fighter
             {
                 return;
             }
-            if (!eventCancel && !HandleChargeLevels(entityManager, currentAttack))
+            if (!eventCancel && !HandleChargeLevels(Manager, currentAttack))
             {
-                entityManager.StateManager.IncrementFrame();
+                Manager.StateManager.IncrementFrame();
             }
-            (Manager as FighterManager).entityAnimator.SetFrame((int)entityManager.StateManager.CurrentStateFrame);
+            (Manager as FighterManager).entityAnimator.SetFrame((int)Manager.StateManager.CurrentStateFrame);
         }
 
         protected virtual bool TryCancelWindow(AttackDefinition currentAttack)
         {
-            FighterManager e = GetEntityManager();
             for(int i = 0; i < currentAttack.cancels.Count; i++)
             {
-                if (e.StateManager.CurrentStateFrame >= currentAttack.cancels[i].startFrame
-                    && e.StateManager.CurrentStateFrame <= currentAttack.cancels[i].endFrame)
+                if (Manager.StateManager.CurrentStateFrame >= currentAttack.cancels[i].startFrame
+                    && Manager.StateManager.CurrentStateFrame <= currentAttack.cancels[i].endFrame)
                 {
-                    int man = e.CombatManager.TryCancelList(currentAttack.cancels[i].cancelListID);
+                    int man = Manager.CombatManager.TryCancelList(currentAttack.cancels[i].cancelListID);
                     if(man != -1)
                     {
-                        e.CombatManager.SetAttack(man);
-                        e.StateManager.ChangeState((int)FighterStates.ATTACK);
+                        Manager.CombatManager.SetAttack(man);
+                        Manager.StateManager.ChangeState((int)FighterStates.ATTACK);
                         return true;
                     }
                 }
@@ -127,11 +125,10 @@ namespace TDAction.Fighter
             {
                 return HnSF.Combat.AttackEventReturnType.NONE;
             }
-            FighterManager e = GetEntityManager();
 
             // Input Checking.
-            if(e.StateManager.CurrentStateFrame >= currentEvent.inputCheckStartFrame
-                && e.StateManager.CurrentStateFrame <= currentEvent.inputCheckEndFrame)
+            if(Manager.StateManager.CurrentStateFrame >= currentEvent.inputCheckStartFrame
+                && Manager.StateManager.CurrentStateFrame <= currentEvent.inputCheckEndFrame)
             {
                 switch (currentEvent.inputCheckTiming)
                 {
@@ -140,11 +137,11 @@ namespace TDAction.Fighter
                         {
                             break;
                         }
-                        currentEvent.inputCheckProcessed = e.CombatManager.CheckForInputSequence(currentEvent.input);
+                        currentEvent.inputCheckProcessed = Manager.CombatManager.CheckForInputSequence(currentEvent.input);
                         Debug.Log($"?{currentEvent.inputCheckProcessed}, ({currentEvent.input.executeInputs.Count})");
                         break;
                     case HnSF.Combat.AttackEventInputCheckTiming.CONTINUOUS:
-                        currentEvent.inputCheckProcessed = e.CombatManager.CheckForInputSequence(currentEvent.input, 0, true, true);
+                        currentEvent.inputCheckProcessed = Manager.CombatManager.CheckForInputSequence(currentEvent.input, 0, true, true);
                         break;
                 }
             }
@@ -155,31 +152,31 @@ namespace TDAction.Fighter
                 return HnSF.Combat.AttackEventReturnType.NONE;
             }
 
-            if (e.StateManager.CurrentStateFrame >= currentEvent.startFrame
-                && e.StateManager.CurrentStateFrame <= currentEvent.endFrame)
+            if (Manager.StateManager.CurrentStateFrame >= currentEvent.startFrame
+                && Manager.StateManager.CurrentStateFrame <= currentEvent.endFrame)
             {
                 // Hit Check.
                 if (currentEvent.onHitCheck != HnSF.Combat.OnHitType.NONE)
                 {
                     if(currentEvent.onHitCheck == HnSF.Combat.OnHitType.ID_GROUP)
                     {
-                        if (((FighterHitboxManager)e.CombatManager.hitboxManager).IDGroupHasHurt(currentEvent.onHitIDGroup) == false)
+                        if (((FighterHitboxManager)Manager.CombatManager.hitboxManager).IDGroupHasHurt(currentEvent.onHitIDGroup) == false)
                         {
                             return HnSF.Combat.AttackEventReturnType.NONE;
                         }
                     }
                     else if(currentEvent.onHitCheck == HnSF.Combat.OnHitType.HITBOX_GROUP)
                     {
-                        if (((FighterHitboxManager)e.CombatManager.hitboxManager).HitboxGroupHasHurt(currentAttack.hitboxGroups[currentEvent.onHitHitboxGroup].ID, 
+                        if (((FighterHitboxManager)Manager.CombatManager.hitboxManager).HitboxGroupHasHurt(currentAttack.hitboxGroups[currentEvent.onHitHitboxGroup].ID, 
                             currentEvent.onHitHitboxGroup) == false)
                         {
                             return HnSF.Combat.AttackEventReturnType.NONE;
                         }
                     }
                 }
-                return currentEvent.attackEvent.Evaluate((int)(e.StateManager.CurrentStateFrame - currentEvent.startFrame),
+                return currentEvent.attackEvent.Evaluate((int)(Manager.StateManager.CurrentStateFrame - currentEvent.startFrame),
                     currentEvent.endFrame - currentEvent.startFrame,
-                    e,
+                    Manager,
                     currentEvent.variables);
             }
             return HnSF.Combat.AttackEventReturnType.NONE;
@@ -242,10 +239,9 @@ namespace TDAction.Fighter
         /// <param name="boxGroup">The group being processed.</param>
         protected virtual void HandleHitboxGroup(int groupIndex, HnSF.Combat.HitboxGroup boxGroup)
         {
-            FighterManager entityManager = GetEntityManager();
             // Make sure we're in the frame window of the box.
-            if (entityManager.StateManager.CurrentStateFrame < boxGroup.activeFramesStart
-                || entityManager.StateManager.CurrentStateFrame > boxGroup.activeFramesEnd)
+            if (Manager.StateManager.CurrentStateFrame < boxGroup.activeFramesStart
+                || Manager.StateManager.CurrentStateFrame > boxGroup.activeFramesEnd)
             {
                 return;
             }
@@ -253,7 +249,7 @@ namespace TDAction.Fighter
             // Check if the charge level requirement was met.
             if (boxGroup.chargeLevelNeeded >= 0)
             {
-                int currentChargeLevel = entityManager.CombatManager.CurrentChargeLevel;
+                int currentChargeLevel = Manager.CombatManager.CurrentChargeLevel;
                 if (currentChargeLevel < boxGroup.chargeLevelNeeded
                     || currentChargeLevel > boxGroup.chargeLevelMax)
                 {
@@ -265,7 +261,7 @@ namespace TDAction.Fighter
             switch (boxGroup.hitboxHitInfo.hitType)
             {
                 case HnSF.Combat.HitboxType.HIT:
-                    entityManager.CombatManager.hitboxManager.CheckForCollision(groupIndex, boxGroup, entityManager.gameObject);
+                    Manager.CombatManager.hitboxManager.CheckForCollision(groupIndex, boxGroup, Manager.gameObject);
                     break;
             }
         }

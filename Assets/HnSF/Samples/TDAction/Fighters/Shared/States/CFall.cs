@@ -12,7 +12,7 @@ namespace TDAction.Fighter
         }
         public override void OnUpdate()
         {
-            ((FighterPhysicsManager)Manager.PhysicsManager).HandleGravity();
+            (Manager.PhysicsManager).HandleGravity();
 
             ((FighterPhysicsManager)Manager.PhysicsManager).AirDrift();
 

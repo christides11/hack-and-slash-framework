@@ -11,7 +11,7 @@ namespace HnSF.Combat
     {
         protected PreviewRenderUtility renderUtils;
         protected AttackDefinition attack;
-        protected Fighters.FighterBase visualFighterPrefab;
+        protected GameObject visualFighterPrefab;
 
         protected GameObject visualFighterSceneReference;
 
@@ -377,7 +377,7 @@ namespace HnSF.Combat
             {
                 return AttackEventReturnType.NONE;
             }
-            Fighters.FighterBase e = visualFighterSceneReference.GetComponent<Fighters.FighterBase>();
+            Fighters.IFighterBase e = visualFighterSceneReference.GetComponent<Fighters.IFighterBase>();
 
             if (timelineFrame >= attackEventDefinition.startFrame
                 && timelineFrame <= attackEventDefinition.endFrame)
@@ -395,17 +395,17 @@ namespace HnSF.Combat
 
         }
 
-        Fighters.FighterBase tempFighter;
+        Fighters.IFighterBase tempFighter;
         protected virtual void DrawGeneralOptions(SerializedObject serializedObject)
         {
             EditorGUILayout.PropertyField(serializedObject.FindProperty("attackName"), new GUIContent("Name"));
             EditorGUILayout.PropertyField(serializedObject.FindProperty("length"));
             EditorGUILayout.BeginHorizontal();
-            tempFighter = (Fighters.FighterBase)EditorGUILayout.ObjectField("Character", tempFighter, typeof(Fighters.FighterBase), false);
+            /*tempFighter = (Fighters.IFighterBase)EditorGUILayout.ObjectField("Character", tempFighter, typeof(Fighters.FighterBase), false);
             if (GUILayout.Button("Apply"))
             {
                 CreateFighter();
-            }
+            }*/
             EditorGUILayout.EndHorizontal();
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.PropertyField(serializedObject.FindProperty("hurtboxDefinition"));
@@ -424,6 +424,7 @@ namespace HnSF.Combat
 
         protected virtual void CreateFighter()
         {
+            /*
             if(visualFighterSceneReference != null)
             {
                 DestroyImmediate(visualFighterSceneReference);
@@ -431,7 +432,7 @@ namespace HnSF.Combat
             }
             visualFighterPrefab = tempFighter;
             visualFighterSceneReference = renderUtils.InstantiatePrefabInScene(visualFighterPrefab.gameObject);
-            ResetFighterVariables();
+            ResetFighterVariables();*/
         }
 
         protected virtual void ResetFighterVariables()

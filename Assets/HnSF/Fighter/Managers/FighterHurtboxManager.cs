@@ -9,7 +9,8 @@ namespace HnSF.Fighters
 {
     public class FighterHurtboxManager : MonoBehaviour
     {
-        [SerializeField] protected FighterBase manager;
+        public virtual IFighterBase Manager { get; }
+        public virtual IFighterStateManager StateManager { get; }
 
         protected StateHurtboxDefinition hurtboxDefinition;
 
@@ -18,7 +19,7 @@ namespace HnSF.Fighters
 
         public virtual void Tick()
         {
-            CreateHurtboxes(hurtboxDefinition, manager.StateManager.CurrentStateFrame);
+            CreateHurtboxes(hurtboxDefinition, StateManager.CurrentStateFrame);
         }
 
         protected List<int> hurtboxGroupsToDelete = new List<int>();

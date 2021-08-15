@@ -7,13 +7,13 @@ using UnityEngine;
 
 namespace HnSF.Fighters
 {
-    public class FighterCombatManager : MonoBehaviour, IHurtable
+    public class FighterCombatManager : MonoBehaviour, IHurtable, IFighterCombatManager
     {
-        public delegate void EmptyAction(FighterBase self);
-        public delegate void HealthChangedAction(FighterBase initializer, FighterBase self, HitInfoBase hitInfo);
-        public delegate void MovesetChangedAction(FighterBase self, int lastMoveset);
-        public delegate void ChargeLevelChangedAction(FighterBase self, int lastChargeLevel);
-        public delegate void ChargeLevelChargeChangedAction(FighterBase self, int lastChargeLevelCharge);
+        public delegate void EmptyAction(IFighterBase self);
+        public delegate void HealthChangedAction(IFighterBase initializer, IFighterBase self, HitInfoBase hitInfo);
+        public delegate void MovesetChangedAction(IFighterBase self, int lastMoveset);
+        public delegate void ChargeLevelChangedAction(IFighterBase self, int lastChargeLevel);
+        public delegate void ChargeLevelChargeChangedAction(IFighterBase self, int lastChargeLevelCharge);
         public event HealthChangedAction OnHit;
         public event HealthChangedAction OnHealed;
         public event EmptyAction OnEnterHitStop;
@@ -54,6 +54,10 @@ namespace HnSF.Fighters
                 return (MovesetAttackNode)GetMoveset(currentAttackMoveset).GetAttackNode(currentAttackNode); } }
         public virtual int CurrentAttackNodeIdentifier { get { return currentAttackNode; } }
 
+        public virtual IFighterBase Manager { get; }
+        public virtual IFighterPhysicsManager PhysicsManager { get; }
+        public virtual IFighterStateManager StateManager { get; }
+
         protected int currentMoveset = 0;
         protected int currentAttackMoveset = -1;
         protected int currentAttackNode = -1;
@@ -61,7 +65,6 @@ namespace HnSF.Fighters
         protected int hitstun;
         protected int hitstop; 
 
-        public FighterBase manager;
         public HitboxManager hitboxManager;
 
         public LayerMask hitboxLayerMask;
@@ -83,7 +86,7 @@ namespace HnSF.Fighters
                 hitstop--;
                 if(hitstop == 0)
                 {
-                    OnExitHitStop?.Invoke(manager);
+                    OnExitHitStop?.Invoke(Manager);
                 }
             }
         }
@@ -176,7 +179,7 @@ namespace HnSF.Fighters
         protected virtual int CheckStartingNodes()
         {
             MovesetDefinition moveset = CurrentMoveset;
-            switch (manager.PhysicsManager.IsGrounded)
+            switch (PhysicsManager.IsGrounded)
             {
                 case true:
                     if(moveset.groundIdleCancelListID != -1)
@@ -225,8 +228,8 @@ namespace HnSF.Fighters
             }
             for (int i = 0; i < CurrentAttackNode.nextNode.Count; i++)
             {
-                if (manager.StateManager.CurrentStateFrame >= CurrentAttackNode.nextNode[i].cancelWindow.x &&
-                    manager.StateManager.CurrentStateFrame <= CurrentAttackNode.nextNode[i].cancelWindow.y)
+                if (StateManager.CurrentStateFrame >= CurrentAttackNode.nextNode[i].cancelWindow.x &&
+                    StateManager.CurrentStateFrame <= CurrentAttackNode.nextNode[i].cancelWindow.y)
                 {
                     MovesetAttackNode currentNode = CurrentAttackNode;
                     MovesetAttackNode man = CheckAttackNode((MovesetAttackNode)GetMoveset(currentAttackMoveset).GetAttackNode(currentNode.nextNode[i].nodeIdentifier));
@@ -338,16 +341,16 @@ namespace HnSF.Fighters
             hitstop = value;
             if(hitstop == 0)
             {
-                OnExitHitStop?.Invoke(manager);
+                OnExitHitStop?.Invoke(Manager);
                 return;
             }
-            OnEnterHitStop?.Invoke(manager);
+            OnEnterHitStop?.Invoke(Manager);
         }
 
         public virtual void AddHitStop(int value)
         {
             hitstop += value;
-            OnHitStopAdded?.Invoke(manager);
+            OnHitStopAdded?.Invoke(Manager);
         }
 
         public virtual void SetHitStun(int value)
@@ -355,59 +358,59 @@ namespace HnSF.Fighters
             hitstun = value;
             if(hitstun == 0)
             {
-                OnExitHitStun?.Invoke(manager);
+                OnExitHitStun?.Invoke(Manager);
                 return;
             }
-            OnEnterHitStun?.Invoke(manager);
+            OnEnterHitStun?.Invoke(Manager);
          }
 
         public virtual void AddHitStun(int value)
         {
             hitstun += value;
-            OnHitStunAdded?.Invoke(manager);
+            OnHitStunAdded?.Invoke(Manager);
         }
 
         public virtual void SetMoveset(int movesetIndex)
         {
             int oldMoveset = currentMoveset;
             currentMoveset = movesetIndex;
-            OnMovesetChanged?.Invoke(manager, oldMoveset);
+            OnMovesetChanged?.Invoke(Manager, oldMoveset);
         }
 
         public virtual void SetChargeLevel(int value)
         {
             int lastChargeLevel = value;
             CurrentChargeLevel = value;
-            OnChargeLevelChanged?.Invoke(manager, lastChargeLevel);
+            OnChargeLevelChanged?.Invoke(Manager, lastChargeLevel);
         }
         
         public virtual void SetChargeLevelCharge(int value)
         {
             int oldValue = CurrentChargeLevelCharge;
             CurrentChargeLevelCharge = value;
-            OnChargeLevelChargeChanged?.Invoke(manager, oldValue);
+            OnChargeLevelChargeChanged?.Invoke(Manager, oldValue);
         }
 
         public virtual void IncrementChargeLevelCharge(int maxCharge)
         {
             CurrentChargeLevelCharge++;
-            OnChargeLevelChargeChanged?.Invoke(manager, CurrentChargeLevelCharge-1);
+            OnChargeLevelChargeChanged?.Invoke(Manager, CurrentChargeLevelCharge-1);
             if(CurrentChargeLevelCharge == maxCharge)
             {
-                OnChargeLevelChargeMaxReached?.Invoke(manager, CurrentChargeLevelCharge - 1);
+                OnChargeLevelChargeMaxReached?.Invoke(Manager, CurrentChargeLevelCharge - 1);
             }
         }
 
         public virtual HitReactionBase Hurt(HurtInfoBase hurtInfoBase)
         {
             HitReactionBase hr = new HitReactionBase();
-            OnHit?.Invoke(null, manager, hurtInfoBase.hitInfo);
+            OnHit?.Invoke(null, Manager, hurtInfoBase.hitInfo);
             return hr;
         }
 
         public virtual void Heal(HealInfoBase healInfo)
         {
-            OnHealed?.Invoke(null, manager, null);
+            OnHealed?.Invoke(null, Manager, null);
         }
 
         public virtual int GetTeam()

@@ -21,36 +21,33 @@ namespace TDAction.Fighter
 
         public override void OnUpdate()
         {
-            FighterManager e = GetEntityManager();
-
-            e.GetPhysicsManager().ApplyMovementFriction(e.statManager.CurrentStats.hitstunFrictionAir.GetCurrentValue());
-            e.GetPhysicsManager().HandleGravity();
-            e.StateManager.IncrementFrame();
+            Manager.GetPhysicsManager().ApplyMovementFriction(Manager.statManager.CurrentStats.hitstunFrictionAir.GetCurrentValue());
+            Manager.GetPhysicsManager().HandleGravity();
+            Manager.StateManager.IncrementFrame();
 
             CheckInterrupt();
         }
 
         public override bool CheckInterrupt()
         {
-            FighterManager e = GetEntityManager();
             // Landed, go into knockdown state.
-            if (e.PhysicsManager.IsGrounded)
+            if (Manager.PhysicsManager.IsGrounded)
             {
-                e.StateManager.ChangeState((int)FighterStates.KNOCKDOWN);
+                Manager.StateManager.ChangeState((int)FighterStates.KNOCKDOWN);
                 return true;
             }
-            if(e.StateManager.CurrentStateFrame < e.CombatManager.HitStun)
+            if(Manager.StateManager.CurrentStateFrame < Manager.CombatManager.HitStun)
             {
                 return false;
             }
             // Hitstun finished.
-            if (e.PhysicsManager.IsGrounded)
+            if (Manager.PhysicsManager.IsGrounded)
             {
-                e.StateManager.ChangeState((int)FighterStates.IDLE);
+                Manager.StateManager.ChangeState((int)FighterStates.IDLE);
             }
             else
             {
-                e.StateManager.ChangeState((int)FighterStates.FALL);
+                Manager.StateManager.ChangeState((int)FighterStates.FALL);
             }
             return true;
         }

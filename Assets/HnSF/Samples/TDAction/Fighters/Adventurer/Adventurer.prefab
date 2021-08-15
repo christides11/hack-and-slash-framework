@@ -164,11 +164,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputManager: {fileID: 5384823916746293231}
-  stateManager: {fileID: 1031207210466028850}
-  combatManager: {fileID: 1114219689411391712}
-  physicsManager: {fileID: 1476823324951731080}
-  hurtboxManager: {fileID: -2960863564831657620}
-  visual: {fileID: 8500522958957405919}
   statManager: {fileID: 8397132135231897326}
   entityAnimator: {fileID: 9088644778624345784}
   charController2D: {fileID: 5370282184306079421}
@@ -179,6 +174,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   enemyStepRadius: 1
+  visual: {fileID: 8500522958957405919}
+  combatManager: {fileID: 1114219689411391712}
+  stateManager: {fileID: 1031207210466028850}
+  physicsManager: {fileID: 1476823324951731080}
+  hurtboxManager: {fileID: -2960863564831657620}
 --- !u!114 &5384823916746293231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,7 +191,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbd9a02930101474f859ac388b9c7dc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 8147816337253296054}
 --- !u!114 &1031207210466028850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,9 +203,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83a9c22a51fa47a42ab796c663e79158, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 8147816337253296054}
   currentStateFrame: 0
   currentStateName: 
+  manager: {fileID: 8147816337253296054}
 --- !u!114 &1715174515004957371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,6 +233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 8147816337253296054}
+  stateManager: {fileID: 1031207210466028850}
 --- !u!114 &1114219689411391712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,11 +246,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af77f3696b3e5464d962d5c53f31a874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 8147816337253296054}
   hitboxManager: {fileID: -4049206082768371998}
   hitboxLayerMask:
     serializedVersion: 2
     m_Bits: 2048
+  manager: {fileID: 8147816337253296054}
+  physicsManager: {fileID: 1476823324951731080}
+  stateManager: {fileID: 1031207210466028850}
   team: 0
   pForcePercentage: 0.5
 --- !u!114 &-4049206082768371998
@@ -265,8 +267,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3e1f20b15e010e42a832468ae5f2067, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  combatManager: {fileID: 1114219689411391712}
   manager: {fileID: 8147816337253296054}
+  combatManager: {fileID: 1114219689411391712}
   referencePosition: {x: 0, y: 0, z: 0}
 --- !u!114 &1476823324951731080
 MonoBehaviour:
@@ -356,12 +358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 8147816337253296054}
-  animations:
-  - {fileID: 0}
-  - {fileID: 0}
   animator: {fileID: 734958788}
-  currentClipTime: 0
-  currentClipIdentifier: 
 --- !u!1 &8500522958957405919
 GameObject:
   m_ObjectHideFlags: 0

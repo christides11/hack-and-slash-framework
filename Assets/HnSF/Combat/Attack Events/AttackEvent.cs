@@ -18,7 +18,7 @@ namespace HnSF.Combat
         /// <param name="manager">The manager using this event.</param>
         /// <param name="variables"></param>
         /// <returns>True if the attack state should cancel.</returns>
-        public virtual AttackEventReturnType Evaluate(int frame, int endFrame, FighterBase manager,
+        public virtual AttackEventReturnType Evaluate(int frame, int endFrame, IFighterBase manager,
             AttackEventVariables variables)
         {
             return AttackEventReturnType.NONE;

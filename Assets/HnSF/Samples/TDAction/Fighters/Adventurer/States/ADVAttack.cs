@@ -8,21 +8,20 @@ namespace TDAction.Fighter
     {
         public override bool CheckInterrupt()
         {
-            FighterManager entityManager = GetEntityManager();
-            if (entityManager.TryAttack())
+            if (Manager.TryAttack())
             {
                 return true;
             }
-            if (entityManager.StateManager.CurrentStateFrame >
-                entityManager.CombatManager.CurrentAttackNode.attackDefinition.length)
+            if (Manager.StateManager.CurrentStateFrame >
+                Manager.CombatManager.CurrentAttackNode.attackDefinition.length)
             {
-                if (entityManager.PhysicsManager.IsGrounded)
+                if (Manager.PhysicsManager.IsGrounded)
                 {
-                    entityManager.StateManager.ChangeState((int)FighterStates.IDLE);
+                    Manager.StateManager.ChangeState((int)FighterStates.IDLE);
                 }
                 else
                 {
-                    entityManager.StateManager.ChangeState((int)FighterStates.FALL);
+                    Manager.StateManager.ChangeState((int)FighterStates.FALL);
                 }
                 Manager.CombatManager.Cleanup();
                 return true;

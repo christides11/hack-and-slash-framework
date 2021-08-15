@@ -3,8 +3,11 @@ using UnityEngine;
 
 namespace TDAction.Fighter
 {
-    public class FighterHitboxManager : HnSF.Fighters.FighterHitboxManager
+    public class FighterHitboxManager : HitboxManager
     {
+        [SerializeField] protected FighterManager manager;
+        [SerializeField] protected FighterCombatManager combatManager;
+
         public Vector3 referencePosition;
 
         public override void Reset()

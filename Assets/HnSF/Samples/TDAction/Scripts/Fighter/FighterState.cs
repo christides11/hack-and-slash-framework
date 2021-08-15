@@ -4,12 +4,9 @@ using UnityEngine;
 
 namespace TDAction.Fighter
 {
-    public class FighterState : HnSF.Fighters.FighterState
+    public class FighterState : HnSF.Fighters.FighterStateBase
     {
-        public virtual FighterManager GetEntityManager()
-        {
-            return (FighterManager)Manager;
-        }
+        public FighterManager Manager;
 
         public virtual FighterPhysicsManager GetPhysicsManager()
         {

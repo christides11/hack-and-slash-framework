@@ -1,4 +1,5 @@
 ﻿using HnSF.Combat;
+using HnSF.Fighters;
 using System.Collections;
 using System.Collections.Generic;
 using TDAction.Managers;
@@ -8,6 +9,11 @@ namespace TDAction.Fighter
 {
     public class FighterHurtboxManager : HnSF.Fighters.FighterHurtboxManager
     {
+        public override IFighterBase Manager { get { return manager; } }
+        public override IFighterStateManager StateManager { get { return stateManager; } }
+
+        [SerializeField] protected FighterManager manager;
+        [SerializeField] protected FighterStateManager stateManager;
 
         protected override void SetHurtboxInfo(int groupID, int hurtboxIndex)
         {

@@ -17,12 +17,10 @@ namespace TDAction.Fighter
 
         public override void OnUpdate()
         {
-            FighterManager e = GetEntityManager();
+            Manager.PhysicsManager.ApplyMovementFriction(Manager.statManager.CurrentStats.hitstunFrictionGround.GetCurrentValue());
+            Manager.StateManager.IncrementFrame();
 
-            e.GetPhysicsManager().ApplyMovementFriction(e.statManager.CurrentStats.hitstunFrictionGround.GetCurrentValue());
-            e.StateManager.IncrementFrame();
-
-            float f = (((float)e.StateManager.CurrentStateFrame / (float)e.CombatManager.HitStun) * 10.0f);
+            float f = (((float)Manager.StateManager.CurrentStateFrame / (float)Manager.CombatManager.HitStun) * 10.0f);
             (Manager as FighterManager).entityAnimator.SetFrame((int)f);
 
             CheckInterrupt();
@@ -30,24 +28,23 @@ namespace TDAction.Fighter
 
         public override bool CheckInterrupt()
         {
-            FighterManager e = GetEntityManager();
-            e.PhysicsManager.CheckIfGrounded();
-            if (e.StateManager.CurrentStateFrame >= e.CombatManager.HitStun)
+            Manager.PhysicsManager.CheckIfGrounded();
+            if (Manager.StateManager.CurrentStateFrame >= Manager.CombatManager.HitStun)
             {
-                e.CombatManager.SetHitStun(0);
+                Manager.CombatManager.SetHitStun(0);
                 // Hitstun finished.
-                if (e.PhysicsManager.IsGrounded)
+                if (Manager.PhysicsManager.IsGrounded)
                 {
-                    e.StateManager.ChangeState((int)FighterStates.IDLE);
+                    Manager.StateManager.ChangeState((int)FighterStates.IDLE);
                 }
                 else
                 {
-                    e.StateManager.ChangeState((int)FighterStates.FALL);
+                    Manager.StateManager.ChangeState((int)FighterStates.FALL);
                 }
             }
-            else if(e.PhysicsManager.IsGrounded == false)
+            else if(Manager.PhysicsManager.IsGrounded == false)
             {
-                e.StateManager.ChangeState((int)FighterStates.FLINCH_AIR, e.StateManager.CurrentStateFrame, false);
+                Manager.StateManager.ChangeState((int)FighterStates.FLINCH_AIR, Manager.StateManager.CurrentStateFrame, false);
                 return true;
             }
             return false;
