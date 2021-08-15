@@ -1,3 +1,15 @@
+# [26.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v25.0.0...v26.0.0) (2021-08-15)
+
+
+### Code Refactoring
+
+* Moved fighter managers to interfaces ([609cb84](https://github.com/christides11/hack-and-slash-framework/commit/609cb84593517b4960661e9b42652c150912d763))
+
+
+### BREAKING CHANGES
+
+* Changed to using interfaces so that the actual manager scripts can be modified more.
+
 # [25.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v24.0.0...v25.0.0) (2021-08-07)
 
 
