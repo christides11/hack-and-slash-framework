@@ -1,4 +1,5 @@
 ﻿using HnSF.Combat;
+using HnSF.Fighters;
 using HnSF.Input;
 using System.Collections;
 using System.Collections.Generic;
@@ -11,7 +12,15 @@ namespace TDAction.Fighter
 {
     public class FighterCombatManager : HnSF.Fighters.FighterCombatManager
     {
-        public override HnSF.Combat.MovesetDefinition CurrentMoveset { get { return (manager as FighterManager).entityDefinition.movesets[currentMoveset]; } }
+        public override IFighterBase Manager { get { return manager; } }
+        public override IFighterPhysicsManager PhysicsManager { get { return physicsManager; } }
+        public override IFighterStateManager StateManager { get { return stateManager; } }
+
+        [SerializeField] protected FighterManager manager;
+        [SerializeField] protected FighterPhysicsManager physicsManager;
+        [SerializeField] protected FighterStateManager stateManager;
+
+        public override HnSF.Combat.MovesetDefinition CurrentMoveset { get { return (Manager as FighterManager).entityDefinition.movesets[currentMoveset]; } }
 
         public TeamTypes team = TeamTypes.FFA;
 
@@ -22,18 +31,18 @@ namespace TDAction.Fighter
 
         public override int GetMovesetCount()
         {
-            return (manager as FighterManager).entityDefinition.movesets.Count;
+            return (Manager as FighterManager).entityDefinition.movesets.Count;
         }
 
         public override HnSF.Combat.MovesetDefinition GetMoveset(int index)
         {
-            return (manager as FighterManager).entityDefinition.movesets[index];
+            return (Manager as FighterManager).entityDefinition.movesets[index];
         }
 
         public float pForcePercentage = 1.0f;
         public override HitReactionBase Hurt(HurtInfoBase hurtInfoBase)
         {
-            FighterPhysicsManager physicsManager = (FighterPhysicsManager)manager.PhysicsManager;
+            FighterPhysicsManager physicsManager = (Manager as FighterManager).PhysicsManager;
 
             HurtInfo2D hurtInfo2D = (HurtInfo2D)hurtInfoBase;
             HitInfo hInfo = hurtInfo2D.hitInfo as HitInfo;
@@ -85,7 +94,7 @@ namespace TDAction.Fighter
                 physicsManager.SetGrounded(false);
             }
 
-            ((FighterManager)manager).healthManager.Hurt(hInfo.damageOnHit);
+            ((FighterManager)Manager).healthManager.Hurt(hInfo.damageOnHit);
 
             // Change into the correct state.
             if (hInfo.groundBounces && physicsManager.IsGrounded)
@@ -93,18 +102,18 @@ namespace TDAction.Fighter
                 //manager.StateManager.ChangeState((int)EntityStates);
             }else if (hInfo.causesTumble)
             {
-                manager.StateManager.ChangeState((int)FighterStates.TUMBLE);
+                (Manager as FighterManager).StateManager.ChangeState((int)FighterStates.TUMBLE);
             }
             else
             {
-                manager.StateManager.ChangeState((ushort)(physicsManager.IsGrounded ? FighterStates.FLINCH_GROUND : FighterStates.FLINCH_AIR));
+                (Manager as FighterManager).StateManager.ChangeState((ushort)(physicsManager.IsGrounded ? FighterStates.FLINCH_GROUND : FighterStates.FLINCH_AIR));
             }
             return new HitReactionBase();
         }
 
         protected override bool CheckStickDirection(HnSF.Input.InputDefinition sequenceInput, uint framesBack)
         {
-            Vector2 stickDir = (manager as FighterManager).InputManager.GetAxis2D((int)EntityInputs.MOVEMENT, framesBack);
+            Vector2 stickDir = (Manager as FighterManager).InputManager.GetAxis2D((int)EntityInputs.MOVEMENT, framesBack);
             if (stickDir.magnitude < 0.2f)
             {
                 return false;
@@ -130,7 +139,7 @@ namespace TDAction.Fighter
                         }
                         break;
                     case HnSF.Input.InputDefinitionType.Button:
-                        if ((manager as FighterManager).InputManager.GetButton(sequence.executeInputs[e].buttonID, out uint gotOffset, baseOffset,
+                        if ((Manager as FighterManager).InputManager.GetButton(sequence.executeInputs[e].buttonID, out uint gotOffset, baseOffset,
                             true, sequence.executeWindow).firstPress == false)
                         {
                             return false;
@@ -170,8 +179,8 @@ namespace TDAction.Fighter
                     case HnSF.Input.InputDefinitionType.Button:
                         for (uint f = currentOffset; f < currentOffset + sequence.sequenceWindow; f++)
                         {
-                            if ((!holdInput && (manager as FighterManager).InputManager.GetButton(sequence.sequenceInputs[s].buttonID, out uint gotOffset, f, false).firstPress)
-                                || (holdInput && (manager as FighterManager).InputManager.GetButton(sequence.sequenceInputs[s].buttonID, out uint gotOffsetTwo, f, false).isDown))
+                            if ((!holdInput && (Manager as FighterManager).InputManager.GetButton(sequence.sequenceInputs[s].buttonID, out uint gotOffset, f, false).firstPress)
+                                || (holdInput && (Manager as FighterManager).InputManager.GetButton(sequence.sequenceInputs[s].buttonID, out uint gotOffsetTwo, f, false).isDown))
                             {
                                 foundInput = true;
                                 currentOffset = f;

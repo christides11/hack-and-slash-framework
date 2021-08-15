@@ -1,4 +1,5 @@
-﻿using HnSF.Input;
+﻿using HnSF.Fighters;
+using HnSF.Input;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,7 +28,7 @@ namespace HnSF.Combat
 
         public bool inputCheckProcessed;
 
-        public bool CheckConditions(Fighters.FighterBase manager)
+        public bool CheckConditions(IFighterBase manager)
         {
             for(int i = 0; i < conditions.Count; i++)
             {

@@ -13,7 +13,7 @@ namespace TDAction.Fighter
             combatManager.OnMovesetChanged += HandleMovesetChange;
         }
 
-        private void HandleMovesetChange(FighterBase self, int lastMoveset)
+        private void HandleMovesetChange(IFighterBase self, int lastMoveset)
         {
             // Only refresh current animation if it's not an attack.
             if (combatManager.CurrentAttackNode == null)

@@ -9,9 +9,13 @@ using UnityEngine;
 
 namespace TDAction.Fighter
 {
-    public class FighterManager : HnSF.Fighters.FighterBase, ISimObject
+    public class FighterManager : MonoBehaviour, HnSF.Fighters.IFighterBase, ISimObject
     {
         public FighterInputManager InputManager { get { return inputManager; } }
+        public FighterCombatManager CombatManager { get { return combatManager; } }
+        public FighterStateManager StateManager { get { return stateManager; } }
+        public FighterPhysicsManager PhysicsManager { get { return physicsManager; } }
+        public FighterHurtboxManager HurtboxManager { get { return hurtboxManager; } }
         public int FaceDirection { get { return faceDirection; } }
 
         public FighterInputManager inputManager;
@@ -24,6 +28,12 @@ namespace TDAction.Fighter
         public HealthManager healthManager;
         public LayerMask enemyStepLayerMask;
         public float enemyStepRadius = 2;
+
+        public GameObject visual;
+        [SerializeField] protected FighterCombatManager combatManager;
+        [SerializeField] protected FighterStateManager stateManager;
+        [SerializeField] protected FighterPhysicsManager physicsManager;
+        [SerializeField] protected FighterHurtboxManager hurtboxManager;
 
         public virtual void Initialize(FighterControlType controlType)
         {
@@ -53,7 +63,7 @@ namespace TDAction.Fighter
             LateTick();
         }
 
-        public override void Tick()
+        public virtual void Tick()
         {
             inputManager.Tick();
 
@@ -66,15 +76,40 @@ namespace TDAction.Fighter
                 visual.transform.localPosition = pos;
             }
 
-            base.Tick();
+            if (CombatManager.HitStop == 0)
+            {
+                HandleLockon();
+                PhysicsManager.CheckIfGrounded();
+                StateManager.Tick();
+                PhysicsManager.Tick();
+            }
+            else
+            {
+                PhysicsManager.Freeze();
+            }
+            HurtboxManager.Tick();
+        }
+
+        public virtual void LateTick()
+        {
+            StateManager.LateTick();
+            CombatManager.CLateUpdate();
+        }
+
+        /// <summary>
+        /// Handles finding and locking on to targets.
+        /// </summary>
+        protected virtual void HandleLockon()
+        {
+
         }
 
         protected virtual void SetupStates()
         {
-            StateManager.AddState(new FighterStateFlinchAir(), (int)FighterStates.FLINCH_AIR);
-            StateManager.AddState(new FighterStateFlinchGround(), (int)FighterStates.FLINCH_GROUND);
-            StateManager.AddState(new FighterStateTumble(), (int)FighterStates.TUMBLE);
-            StateManager.AddState(new FighterStateKnockdown(), (int)FighterStates.KNOCKDOWN);
+            stateManager.AddState(new FighterStateFlinchAir(), (int)FighterStates.FLINCH_AIR);
+            stateManager.AddState(new FighterStateFlinchGround(), (int)FighterStates.FLINCH_GROUND);
+            stateManager.AddState(new FighterStateTumble(), (int)FighterStates.TUMBLE);
+            stateManager.AddState(new FighterStateKnockdown(), (int)FighterStates.KNOCKDOWN);
         }
 
         public void SetFaceDirection(int faceDirection)
@@ -184,6 +219,36 @@ namespace TDAction.Fighter
                 }
                 return entityDefinition.sharedAnimations.GetAnimation(animationName);
             }
+        }
+
+        public void SetTargetable(bool value)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Vector3 GetMovementVector(float horizontal, float vertical)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Vector3 GetVisualBasedDirection(Vector3 direction)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void RotateVisual(Vector3 direction, float speed)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void SetVisualRotation(Vector3 direction)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public GameObject GetGameObject()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

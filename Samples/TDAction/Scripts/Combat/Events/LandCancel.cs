@@ -28,17 +28,19 @@ namespace TDAction.Combat.Events
         }
 
         public override AttackEventReturnType Evaluate(int frame, int endFrame,
-            HnSF.Fighters.FighterBase controller, AttackEventVariables variables)
+            HnSF.Fighters.IFighterBase controller, AttackEventVariables variables)
         {
+            FighterManager manager = controller as FighterManager;
+
             if ((controller as TDAction.Fighter.FighterManager).TryLandCancel(cancelType == CancelType.DEFAULT ? true : false))
             {
                 if(cancelType == CancelType.STATE)
                 {
-                    controller.StateManager.ChangeState((ushort)state);
+                    manager.StateManager.ChangeState((ushort)state);
                     return AttackEventReturnType.INTERRUPT;
                 }else if(cancelType == CancelType.ATTACK)
                 {
-                    controller.CombatManager.Cleanup();
+                    manager.CombatManager.Cleanup();
                     (controller as TDAction.Fighter.FighterManager).TryAttack(attackIdentifier, movesetIdentifier);
                     return AttackEventReturnType.INTERRUPT_NO_CLEANUP;
                 }

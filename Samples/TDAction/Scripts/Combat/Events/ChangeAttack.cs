@@ -22,14 +22,14 @@ namespace TDAction.Combat.Events
         }
 
         public override AttackEventReturnType Evaluate(int frame, int endFrame,
-            HnSF.Fighters.FighterBase controller, AttackEventVariables variables)
+            HnSF.Fighters.IFighterBase controller, AttackEventVariables variables)
         {
             if(lastFrameExecution && frame != endFrame)
             {
                 return AttackEventReturnType.NONE;
             }
             FighterManager e = (FighterManager)controller;
-            FighterCombatManager combatManager = (FighterCombatManager)controller.CombatManager;
+            FighterCombatManager combatManager = (controller as FighterManager).CombatManager;
 
             e.TryAttack(attackID, -1, resetFrameCounter);
             return AttackEventReturnType.STALL;

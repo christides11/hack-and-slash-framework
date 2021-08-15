@@ -31,7 +31,7 @@ namespace TDAction.Camera
             followCamera.LookAt = target;
         }
 
-        public void SetLockOnTarget(FighterBase entityTarget)
+        public void SetLockOnTarget(IFighterBase entityTarget)
         {
 
         }

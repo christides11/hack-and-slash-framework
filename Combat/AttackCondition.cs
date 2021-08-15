@@ -8,7 +8,7 @@ namespace HnSF
     [System.Serializable]
     public class AttackCondition
     {
-        public virtual bool Result(FighterBase manager)
+        public virtual bool Result(IFighterBase manager)
         {
             return false;
         }

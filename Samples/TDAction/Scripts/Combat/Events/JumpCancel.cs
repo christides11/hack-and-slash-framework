@@ -16,7 +16,7 @@ namespace TDAction.Combat.Events
         }
 
         public override AttackEventReturnType Evaluate(int frame, int endFrame,
-            HnSF.Fighters.FighterBase controller, AttackEventVariables variables)
+            HnSF.Fighters.IFighterBase controller, AttackEventVariables variables)
         {
             if((controller as TDAction.Fighter.FighterManager).TryJump())
             {

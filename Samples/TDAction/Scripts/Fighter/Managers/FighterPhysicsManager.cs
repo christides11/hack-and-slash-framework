@@ -2,20 +2,117 @@
 using System.Collections.Generic;
 using TDAction.Inputs;
 using UnityEngine;
+using HnSF.Fighters;
 
 namespace TDAction.Fighter
 {
-    public class FighterPhysicsManager : HnSF.Fighters.FighterPhysicsManager2D
+    public class FighterPhysicsManager : MonoBehaviour, IFighterPhysicsManager
     {
+        public bool IsGrounded { get; protected set; } = false;
+        public float GravityScale { get; set; } = 1.0f;
 
-        public override void Tick()
+        protected float decelerationFactor = 0.97f;
+
+
+        [SerializeField] protected FighterManager manager;
+
+        [Header("Forces")]
+        public Vector2 forceMovement;
+        public Vector2 forceGravity;
+        public Vector2 forceDamage;
+        public Vector2 forcePushbox;
+
+        public virtual void ResetForces()
         {
-            ((FighterManager)manager).charController2D.move(GetOverallForce());
+            forceMovement = Vector2.zero;
+            forceGravity = Vector2.zero;
+            forceDamage = Vector2.zero;
+            forcePushbox = Vector2.zero;
         }
 
-        public override void Freeze()
+        public virtual Vector2 GetOverallForce()
         {
-            ((FighterManager)manager).charController2D.move(Vector3.zero);
+            return forceMovement + forceGravity + forceDamage;
+        }
+
+        public virtual void SetGrounded(bool value)
+        {
+            IsGrounded = value;
+        }
+
+        public virtual void Tick()
+        {
+            manager.charController2D.move(GetOverallForce());
+        }
+
+        public virtual void Freeze()
+        {
+            manager.charController2D.move(Vector3.zero);
+        }
+
+        public virtual void HandleGravity(float maxFallSpeed, float gravity, float gravityScale)
+        {
+            if (forceGravity.y > -(maxFallSpeed))
+            {
+                forceGravity.y -= gravity * gravityScale;
+                if (forceGravity.y < -(maxFallSpeed))
+                {
+                    forceGravity.y = -maxFallSpeed;
+                }
+            }
+            else if (forceGravity.y < -(maxFallSpeed))
+            {
+                forceGravity.y *= decelerationFactor;
+            }
+        }
+
+        public virtual void ApplyMovementFriction(float friction = -1)
+        {
+            if (friction == -1)
+            {
+                friction = 1;
+            }
+            Vector3 realFriction = forceMovement.normalized * friction;
+            forceMovement.x = ApplyFriction(forceMovement.x, Mathf.Abs(realFriction.x));
+        }
+
+        public virtual void ApplyGravityFriction(float friction)
+        {
+            forceGravity.y = ApplyFriction(forceGravity.y, friction);
+        }
+
+        /// <summary>
+        /// Applies friction on the given value based on the traction given.
+        /// </summary>
+        /// <param name="value">The value to apply traction to.</param>
+        /// <param name="traction">The traction to apply.</param>
+        /// <returns>The new value with the traction applied.</returns>
+        protected virtual float ApplyFriction(float value, float traction)
+        {
+            if (value > 0)
+            {
+                value -= traction;
+                if (value < 0)
+                {
+                    value = 0;
+                }
+            }
+            else if (value < 0)
+            {
+                value += traction;
+                if (value > 0)
+                {
+                    value = 0;
+                }
+            }
+            return value;
+        }
+
+        public virtual void RedirectInertia(float forceMovementX, Vector2 movementInput)
+        {
+            float redirectedMovement = Mathf.Sign(movementInput.x)
+                * forceMovementX;
+            this.forceMovement.x = redirectedMovement;
         }
 
         /// <summary>
@@ -32,7 +129,7 @@ namespace TDAction.Fighter
           */
         }
 
-        public override void CheckIfGrounded()
+        public virtual void CheckIfGrounded()
         {
             IsGrounded = ((FighterManager)manager).charController2D.isGrounded;
         }

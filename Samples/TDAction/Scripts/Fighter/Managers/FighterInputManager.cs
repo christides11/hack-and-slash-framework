@@ -9,7 +9,7 @@ namespace TDAction.Fighter
 {
     public class FighterInputManager : MonoBehaviour
     {
-        [SerializeField] protected FighterBase manager;
+        [SerializeField] protected IFighterBase manager;
         public FighterControlType ControlType { get; protected set; } = FighterControlType.None;
         public uint inputRecordSize { get; protected set; } = 1024;
         public InputRecordItem[] InputRecord { get; protected set; } = null;

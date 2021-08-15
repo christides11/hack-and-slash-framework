@@ -1,9 +1,7 @@
 ﻿namespace HnSF.Fighters
 {
-    public class FighterState
+    public class FighterStateBase
     {
-        public FighterBase Manager { get; set; } = null;
-
         /// <summary>
         /// Get the name of the state.
         /// </summary>

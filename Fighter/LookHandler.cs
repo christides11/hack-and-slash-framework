@@ -20,7 +20,7 @@ namespace HnSF.Fighters
         /// Set the target that we should lock on to.
         /// </summary>
         /// <param name="entityTarget"></param>
-        void SetLockOnTarget(FighterBase entityTarget);
+        void SetLockOnTarget(IFighterBase entityTarget);
 
         /// <summary>
         /// Set the rotation of the handler.

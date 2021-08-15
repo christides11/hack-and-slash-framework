@@ -29,10 +29,10 @@ namespace TDAction.Combat.Events
         }
 
         public override AttackEventReturnType Evaluate(int frame, int endFrame,
-            HnSF.Fighters.FighterBase controller, AttackEventVariables variables)
+            HnSF.Fighters.IFighterBase controller, AttackEventVariables variables)
         {
             FighterStatsManager statsManager = (controller as FighterManager).statManager;
-            FighterPhysicsManager physicsManager = (FighterPhysicsManager)controller.PhysicsManager;
+            FighterPhysicsManager physicsManager = (controller as FighterManager).PhysicsManager;
             if (physicsManager.IsGrounded)
             {
                 physicsManager.forceGravity = Vector3.zero;
