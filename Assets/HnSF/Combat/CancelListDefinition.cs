@@ -10,5 +10,6 @@ namespace HnSF.Combat
         public int startFrame = 1;
         public int endFrame = 1;
         public int cancelListID;
+        [SerializeReference] public List<AttackCondition> conditions = new List<AttackCondition>();
     }
 }
