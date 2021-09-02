@@ -8,6 +8,7 @@ namespace HnSF.Combat
         /// If this object is currently targetable.
         /// </summary>
         bool Targetable { get; }
+        Bounds GetBounds();
         /// <summary>
         /// The object that's being targeted.
         /// </summary>

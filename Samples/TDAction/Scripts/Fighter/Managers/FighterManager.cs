@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace TDAction.Fighter
 {
-    public class FighterManager : MonoBehaviour, HnSF.Fighters.IFighterBase, ISimObject
+    public class FighterManager : MonoBehaviour, HnSF.Fighters.IFighterBase, ISimObject, ITargetable
     {
         public FighterInputManager InputManager { get { return inputManager; } }
         public FighterCombatManager CombatManager { get { return combatManager; } }
@@ -17,6 +17,8 @@ namespace TDAction.Fighter
         public FighterPhysicsManager PhysicsManager { get { return physicsManager; } }
         public FighterHurtboxManager HurtboxManager { get { return hurtboxManager; } }
         public int FaceDirection { get { return faceDirection; } }
+
+        public bool Targetable { get; set; } = false;
 
         public FighterInputManager inputManager;
         public FighterStatsManager statManager;
@@ -247,6 +249,11 @@ namespace TDAction.Fighter
         }
 
         public GameObject GetGameObject()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Bounds GetBounds()
         {
             throw new System.NotImplementedException();
         }
