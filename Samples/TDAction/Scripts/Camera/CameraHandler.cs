@@ -6,7 +6,7 @@ using HnSF.Fighters;
 
 namespace TDAction.Camera
 {
-    public class CameraHandler : MonoBehaviour, LookHandler
+    public class CameraHandler : MonoBehaviour
     {
         [SerializeField] private CinemachineVirtualCamera followCamera;
 
