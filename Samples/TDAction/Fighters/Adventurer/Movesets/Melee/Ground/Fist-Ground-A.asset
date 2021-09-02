@@ -18,7 +18,6 @@ MonoBehaviour:
   stateOverride: 0
   length: 20
   hurtboxDefinition: {fileID: 0}
-  commandAttackCancelWindows: []
   chargeWindows: []
   hitboxGroups:
   - id: 0
@@ -27,7 +26,8 @@ MonoBehaviour:
   - id: 2
   - id: 3
   - id: 4
-  cancels: []
+  cancels:
+  - id: 5
   animationName: fist-ground-a
   references:
     version: 1
@@ -38,13 +38,13 @@ MonoBehaviour:
         activeFramesStart: 6
         activeFramesEnd: 9
         boxes:
-        - id: 5
+        - id: 6
         attachToEntity: 1
         attachTo: 
         chargeLevelNeeded: -1
         chargeLevelMax: 1
         hitboxHitInfo:
-          id: 6
+          id: 7
     00000001:
       type: {class: AttackEventDefinition, ns: HnSF.Combat, asm: HnSF}
       data:
@@ -56,13 +56,8 @@ MonoBehaviour:
         startFrame: 1
         endFrame: 1
         attackEvent:
-          id: 7
+          id: 8
         conditions: []
-        variables:
-          intVars: 
-          floatVars: []
-          objectVars: []
-          curveVars: []
         inputCheckTiming: 0
         inputCheckStartFrame: 1
         inputCheckEndFrame: 1
@@ -73,7 +68,6 @@ MonoBehaviour:
           sequenceInputs: []
         chargeLevelMin: 0
         chargeLevelMax: 0
-        inputCheckProcessed: 0
     00000002:
       type: {class: AttackEventDefinition, ns: HnSF.Combat, asm: HnSF}
       data:
@@ -85,13 +79,8 @@ MonoBehaviour:
         startFrame: 2
         endFrame: 20
         attackEvent:
-          id: 8
+          id: 9
         conditions: []
-        variables:
-          intVars: 
-          floatVars: []
-          objectVars: []
-          curveVars: []
         inputCheckTiming: 0
         inputCheckStartFrame: 1
         inputCheckEndFrame: 1
@@ -102,7 +91,6 @@ MonoBehaviour:
           sequenceInputs: []
         chargeLevelMin: 0
         chargeLevelMax: 0
-        inputCheckProcessed: 0
     00000003:
       type: {class: AttackEventDefinition, ns: HnSF.Combat, asm: HnSF}
       data:
@@ -114,13 +102,8 @@ MonoBehaviour:
         startFrame: 1
         endFrame: 1
         attackEvent:
-          id: 9
+          id: 10
         conditions: []
-        variables:
-          intVars: 
-          floatVars: []
-          objectVars: []
-          curveVars: []
         inputCheckTiming: 0
         inputCheckStartFrame: 1
         inputCheckEndFrame: 1
@@ -131,7 +114,6 @@ MonoBehaviour:
           sequenceInputs: []
         chargeLevelMin: 0
         chargeLevelMax: 0
-        inputCheckProcessed: 0
     00000004:
       type: {class: AttackEventDefinition, ns: HnSF.Combat, asm: HnSF}
       data:
@@ -143,13 +125,8 @@ MonoBehaviour:
         startFrame: 10
         endFrame: 20
         attackEvent:
-          id: 10
+          id: 11
         conditions: []
-        variables:
-          intVars: 
-          floatVars: []
-          objectVars: []
-          curveVars: []
         inputCheckTiming: 0
         inputCheckStartFrame: 1
         inputCheckEndFrame: 1
@@ -160,8 +137,14 @@ MonoBehaviour:
           sequenceInputs: []
         chargeLevelMin: 0
         chargeLevelMax: 0
-        inputCheckProcessed: 0
     00000005:
+      type: {class: CancelListDefinition, ns: HnSF.Combat, asm: HnSF}
+      data:
+        startFrame: 1
+        endFrame: 1
+        cancelListID: 0
+        conditions: []
+    00000006:
       type: {class: BoxDefinition, ns: HnSF.Combat, asm: HnSF}
       data:
         shape: 0
@@ -170,7 +153,7 @@ MonoBehaviour:
         rotation: {x: 0, y: 0, z: 0}
         radius: 0
         height: 0
-    00000006:
+    00000007:
       type: {class: HitInfo, ns: TDAction.Combat, asm: TDAction_CSharp}
       data:
         hitType: 0
@@ -200,23 +183,23 @@ MonoBehaviour:
         opponentMaxMagnitude: 1
         opponentMinMagnitude: 1
         throwConfirm: {fileID: 0}
-    00000007:
+    00000008:
       type: {class: ForceAdd, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
         addXForce: 1
         addYForce: 0
         xForce: 3
         yForce: 0
-    00000008:
+    00000009:
       type: {class: ApplyFriction, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
         useXFriction: 1
         useYFriction: 0
         xFriction: 0.13
         yFriction: 0
-    00000009:
+    0000000A:
       type: {class: ClampMovement, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
         max: 3
-    0000000A:
+    0000000B:
       type: {class: JumpCancel, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
