@@ -1,3 +1,27 @@
+# [28.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v27.0.0...v28.0.0) (2021-09-02)
+
+
+### Features
+
+* Added attack conditions to cancel list definition. ([7e027b7](https://github.com/christides11/hack-and-slash-framework/commit/7e027b7e2c864bad184769c78ccd6ce5785b7a58))
+* Added GetBounds to ITargetable ([08dd20c](https://github.com/christides11/hack-and-slash-framework/commit/08dd20cf41667b8b3e1a69a509c83fc0aa97867e))
+* Added IHealable ([824c0e0](https://github.com/christides11/hack-and-slash-framework/commit/824c0e055e44eb67c5a3f091554b8a2f2bf73b10))
+* FighterStateBase's OnUpdate doesn't call CheckInterrupt anymore. ([51e16f4](https://github.com/christides11/hack-and-slash-framework/commit/51e16f44d48d845f181442a51989e6c69b05b843))
+* Removed commandAttackCancelWindows ([28d5530](https://github.com/christides11/hack-and-slash-framework/commit/28d553056eee28f5b9688fde2398ecf4afa5d1f2))
+* Removed inputCheckProccessed ([b7ebb42](https://github.com/christides11/hack-and-slash-framework/commit/b7ebb42a8e4cf495201d765c183d22246d0acf04))
+* Removed LookHandler ([4af5e77](https://github.com/christides11/hack-and-slash-framework/commit/4af5e776b92b9f10e5a1733ded86e74542fd98c8))
+* Removed unnecessary IFighterBase methods ([739fca7](https://github.com/christides11/hack-and-slash-framework/commit/739fca7550c11f06dfbc5ede13b5915ebb85f63f))
+* Removed unnecessary IFighterStateManager methods and added RemoveState ([ac6dfa1](https://github.com/christides11/hack-and-slash-framework/commit/ac6dfa1b8ef442a9ee87b79d8cb3d9d6356543ef))
+
+
+### BREAKING CHANGES
+
+* Removed methods in IFighterBase that are not necessary.
+* Removed Tick and LateTick from IFighterStateManager, and added RemoveState.
+* Removed heal method from IHurtable and make an IHealable interface for it.
+* Removed inputCheckProccessed from AttackEventDefinition. This should be tracked in an actual script.
+* Removed commandAttackCancelWindows. Use the cancel list feature instead.
+
 # [27.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v26.0.0...v27.0.0) (2021-09-02)
 
 
