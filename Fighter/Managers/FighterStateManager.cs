@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using static HnSF.Fighters.IFighterStateManager;
 
 namespace HnSF.Fighters
 {

@@ -24,7 +24,7 @@
         /// </summary>
         public virtual void OnUpdate()
         {
-            CheckInterrupt();
+
         }
 
         /// <summary>
