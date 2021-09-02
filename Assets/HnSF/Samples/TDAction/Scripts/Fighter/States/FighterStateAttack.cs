@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using TDAction.Combat;
 using TDAction.Inputs;
 using UnityEngine;
@@ -14,8 +15,11 @@ namespace TDAction.Fighter
 
         protected bool charging = true;
 
+        public Dictionary<int, bool> eventInputThing = new Dictionary<int, bool>();
+
         public override void Initialize()
         {
+            eventInputThing.Clear();
             AttackDefinition currentAttack = 
                 (TDAction.Combat.AttackDefinition)Manager.CombatManager.CurrentAttackNode.attackDefinition;
             if (currentAttack.useState)
@@ -59,7 +63,7 @@ namespace TDAction.Fighter
                 {
                     continue;
                 }
-                switch(HandleEvents(currentAttack, currentAttack.events[i]))
+                switch(HandleEvents(i, currentAttack, currentAttack.events[i]))
                 {
                     case HnSF.Combat.AttackEventReturnType.STALL:
                         // Event wants us to stall on the current frame.
@@ -119,35 +123,45 @@ namespace TDAction.Fighter
         /// </summary>
         /// <param name="currentEvent">The event being processed.</param>
         /// <returns>True if the current attack state was canceled by the event.</returns>
-        protected virtual HnSF.Combat.AttackEventReturnType HandleEvents(AttackDefinition currentAttack, HnSF.Combat.AttackEventDefinition currentEvent)
+        protected virtual HnSF.Combat.AttackEventReturnType HandleEvents(int eventIndex, AttackDefinition currentAttack, HnSF.Combat.AttackEventDefinition currentEvent)
         {
             if (!currentEvent.active)
             {
                 return HnSF.Combat.AttackEventReturnType.NONE;
             }
 
+            if (Manager.CombatManager.CurrentChargeLevel < currentEvent.chargeLevelMin
+                || Manager.CombatManager.CurrentChargeLevel > currentEvent.chargeLevelMax)
+            {
+                return HnSF.Combat.AttackEventReturnType.NONE;
+            }
+
+            if (currentEvent.inputCheckTiming != HnSF.Combat.AttackEventInputCheckTiming.NONE
+                && eventInputThing.ContainsKey(eventIndex) == false)
+            {
+                eventInputThing.Add(eventIndex, false);
+            }
+
             // Input Checking.
-            if(Manager.StateManager.CurrentStateFrame >= currentEvent.inputCheckStartFrame
+            if (Manager.StateManager.CurrentStateFrame >= currentEvent.inputCheckStartFrame
                 && Manager.StateManager.CurrentStateFrame <= currentEvent.inputCheckEndFrame)
             {
                 switch (currentEvent.inputCheckTiming)
                 {
                     case HnSF.Combat.AttackEventInputCheckTiming.ONCE:
-                        if (currentEvent.inputCheckProcessed)
+                        if (eventInputThing[eventIndex] == false)
                         {
                             break;
                         }
-                        currentEvent.inputCheckProcessed = Manager.CombatManager.CheckForInputSequence(currentEvent.input);
-                        Debug.Log($"?{currentEvent.inputCheckProcessed}, ({currentEvent.input.executeInputs.Count})");
+                        eventInputThing[eventIndex] = Manager.CombatManager.CheckForInputSequence(currentEvent.input);
                         break;
                     case HnSF.Combat.AttackEventInputCheckTiming.CONTINUOUS:
-                        currentEvent.inputCheckProcessed = Manager.CombatManager.CheckForInputSequence(currentEvent.input, 0, true, true);
+                        eventInputThing[eventIndex] = Manager.CombatManager.CheckForInputSequence(currentEvent.input, 0, true, true);
                         break;
                 }
             }
 
-            if(currentEvent.inputCheckTiming != HnSF.Combat.AttackEventInputCheckTiming.NONE
-                && !currentEvent.inputCheckProcessed)
+            if(currentEvent.inputCheckTiming != HnSF.Combat.AttackEventInputCheckTiming.NONE && eventInputThing[eventIndex] == false)
             {
                 return HnSF.Combat.AttackEventReturnType.NONE;
             }
