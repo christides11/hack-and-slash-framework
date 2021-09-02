@@ -94,7 +94,6 @@
      <Compile Include="Assets\HnSF\Combat\StateHurtboxDefinition.cs" />
      <Compile Include="Assets\HnSF\Fighter\FighterStateBase.cs" />
      <Compile Include="Assets\HnSF\Fighter\IFighterBase.cs" />
-     <Compile Include="Assets\HnSF\Fighter\LookHandler.cs" />
      <Compile Include="Assets\HnSF\Fighter\Managers\FighterCombatManager.cs" />
      <Compile Include="Assets\HnSF\Fighter\Managers\FighterHurtboxManager.cs" />
      <Compile Include="Assets\HnSF\Fighter\Managers\FighterStateManager.cs" />
