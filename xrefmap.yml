@@ -727,12 +727,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.AttackEvent.DrawEventVariables
   nameWithType: AttackEvent.DrawEventVariables
-- uid: HnSF.Combat.AttackEvent.Evaluate(System.Int32,System.Int32,HnSF.Fighters.IFighterBase,HnSF.Combat.AttackEventVariables)
-  name: Evaluate(Int32, Int32, IFighterBase, AttackEventVariables)
-  href: api/HnSF.Combat.AttackEvent.html#HnSF_Combat_AttackEvent_Evaluate_System_Int32_System_Int32_HnSF_Fighters_IFighterBase_HnSF_Combat_AttackEventVariables_
-  commentId: M:HnSF.Combat.AttackEvent.Evaluate(System.Int32,System.Int32,HnSF.Fighters.IFighterBase,HnSF.Combat.AttackEventVariables)
-  fullName: HnSF.Combat.AttackEvent.Evaluate(System.Int32, System.Int32, HnSF.Fighters.IFighterBase, HnSF.Combat.AttackEventVariables)
-  nameWithType: AttackEvent.Evaluate(Int32, Int32, IFighterBase, AttackEventVariables)
+- uid: HnSF.Combat.AttackEvent.Evaluate(System.Int32,System.Int32,HnSF.Fighters.IFighterBase)
+  name: Evaluate(Int32, Int32, IFighterBase)
+  href: api/HnSF.Combat.AttackEvent.html#HnSF_Combat_AttackEvent_Evaluate_System_Int32_System_Int32_HnSF_Fighters_IFighterBase_
+  commentId: M:HnSF.Combat.AttackEvent.Evaluate(System.Int32,System.Int32,HnSF.Fighters.IFighterBase)
+  fullName: HnSF.Combat.AttackEvent.Evaluate(System.Int32, System.Int32, HnSF.Fighters.IFighterBase)
+  nameWithType: AttackEvent.Evaluate(Int32, Int32, IFighterBase)
 - uid: HnSF.Combat.AttackEvent.Evaluate*
   name: Evaluate
   href: api/HnSF.Combat.AttackEvent.html#HnSF_Combat_AttackEvent_Evaluate_
@@ -868,12 +868,6 @@ references:
   commentId: F:HnSF.Combat.AttackEventDefinition.startFrame
   fullName: HnSF.Combat.AttackEventDefinition.startFrame
   nameWithType: AttackEventDefinition.startFrame
-- uid: HnSF.Combat.AttackEventDefinition.variables
-  name: variables
-  href: api/HnSF.Combat.AttackEventDefinition.html#HnSF_Combat_AttackEventDefinition_variables
-  commentId: F:HnSF.Combat.AttackEventDefinition.variables
-  fullName: HnSF.Combat.AttackEventDefinition.variables
-  nameWithType: AttackEventDefinition.variables
 - uid: HnSF.Combat.AttackEventDefinitionEditorWindow
   name: AttackEventDefinitionEditorWindow
   href: api/HnSF.Combat.AttackEventDefinitionEditorWindow.html

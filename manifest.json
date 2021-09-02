@@ -28,7 +28,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.AttackCondition.html",
-          "hash": "Ft6UcWDiksqOh3JZKaFURwtrbMl6dWd/1J+RtEh9dh8="
+          "hash": "2wl8SmD0DMwiAOMU4gvOlXNfIbavlSxTjNNRalrKbhA="
         }
       },
       "is_incremental": false,
@@ -40,7 +40,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.AttackDefinition.html",
-          "hash": "7mgf4eKlVH3vcE/AHbgCYmVIEkzCO/piXFc/tTdLYLI="
+          "hash": "RJ3yCsHU1f0quQjID4iTq6Sa5z4+LUvZUK2IcLui+j4="
         }
       },
       "is_incremental": false,
@@ -52,7 +52,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.AttackDefinitionEditor.html",
-          "hash": "qyAX9aT3BPsiC94bCjcpYvxs9GnJDUvyNLsS0Ccq4b0="
+          "hash": "D3hkuQSrPAPYPg8fTYeqTRY67+yA/1E0V7p9dFcpTCo="
         }
       },
       "is_incremental": false,
@@ -64,7 +64,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.AttackDefinitionEditorWindow.html",
-          "hash": "SDMDrVM/PeiKq+2r3vX8DALO6fDD1C2Y1/AcamMiGgE="
+          "hash": "Ug+2jjkcoto1RAiiXniPd8x9T0yHGzZFfgbYxilSbdw="
         }
       },
       "is_incremental": false,
@@ -76,7 +76,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.AttackEvent.html",
-          "hash": "qRZ53gtPNuSfMgi9TtKlFuMfEIa3C++thNPRE5DUn1Q="
+          "hash": "1jjnoT5jQsIU3r2qDg4MHF8hSHenHJENBza+dZiAS1w="
         }
       },
       "is_incremental": false,
@@ -88,7 +88,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.AttackEventDefinition.html",
-          "hash": "FZKUXZ+Iv6PSOe1RDFPaw3o/SJ+TOGM2Hy3MiEZqojs="
+          "hash": "S4T6Qt32qksy/Ars8w+sNHttjR6kcUpyQ4bbw3Xzvpg="
         }
       },
       "is_incremental": false,
@@ -100,7 +100,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.AttackEventDefinitionEditorWindow.html",
-          "hash": "EBi3z0vD9obZVlAhKF/3c6b5n/3eb7LlDCCnTDPFySk="
+          "hash": "mCeOmvxwCrcAYwDDQshG+YtLZk60MGBesgylqSJq41Y="
         }
       },
       "is_incremental": false,
@@ -112,7 +112,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.AttackEventInputCheckTiming.html",
-          "hash": "3UOVf5un3UCD1Qu/PEHtj5YjHK12ykdPeDme/XWmWBI="
+          "hash": "O8di9lCs98xx8cO+EZmEO392IFZKXjydu8Sr1qZTvaQ="
         }
       },
       "is_incremental": false,
@@ -124,7 +124,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.AttackEventReturnType.html",
-          "hash": "oTpxLtFJ1pHbiYVXoDol/SB+FVwnv+vAhn+5efTwiKo="
+          "hash": "odai5qfh/xkhnjPL9UeIzUCWiutkia9JwCRgjB8o90s="
         }
       },
       "is_incremental": false,
@@ -136,7 +136,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.AttackEventVariables.html",
-          "hash": "qWlkodrOg6jVgAgbNC1vDtuO1mYJ3gCgpVXYa/14CrM="
+          "hash": "mxdkjJPR+EHt849LDtr/8wSe6iUch1ENMAwQLBTepWs="
         }
       },
       "is_incremental": false,
@@ -148,7 +148,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.BoxDefinition.html",
-          "hash": "mhykLuJhamqqMOGosfwwYJANjYyDtqfzYUqAzCq82qQ="
+          "hash": "3uXbNKueYf00582jtd+1APcdWUTzNno/ipQJ2o5OFd4="
         }
       },
       "is_incremental": false,
@@ -160,7 +160,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.BoxDefinitionBase.html",
-          "hash": "rPwtvaQ8J+XsrJSDJPb0fnqyatGUUYi5stUPvyieW7g="
+          "hash": "bOmMG6YCOY+fniBufkDr8Op7ATO402lR5WaZXenWnlw="
         }
       },
       "is_incremental": false,
@@ -172,7 +172,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.BoxDefinitionPropertyDrawer.html",
-          "hash": "Z1DiQyea1xCKfCRlwqD94GsNDlSf4K0WqSJ3kw6YxUU="
+          "hash": "LWi+cJYChOyRupYBkx3e+QKvJbYKvXBsR9O+9COtPpo="
         }
       },
       "is_incremental": false,
@@ -184,7 +184,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.BoxShape.html",
-          "hash": "5Lw5z38K1uL3P7dHLCXDQNTqkOz5HnyalzYYj5v898s="
+          "hash": "5NAM8Q5r3jjTmQNcfSmm7nHIruGB/3xTUtVrWSiUMyo="
         }
       },
       "is_incremental": false,
@@ -196,7 +196,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.CancelList.html",
-          "hash": "lWheGK6OVGKAao247sYG9H2UqbqaZinEiu4VnI+waT4="
+          "hash": "CDqi7yx/4ula7yplGJ56mD6MQGKzLCcGVzyNCLpjpTE="
         }
       },
       "is_incremental": false,
@@ -208,7 +208,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.CancelListDefinition.html",
-          "hash": "4oqLeQTO5VSuwFdYvGbtXg2Atv3haxET2b2wUMpYlzs="
+          "hash": "8Q4ZqR9XnUYHk9J7Xy7/FungXSzPf42/bvCnBQW6CyE="
         }
       },
       "is_incremental": false,
@@ -220,7 +220,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.CancelListDefinitionEditorWindow.html",
-          "hash": "yoPOBWnD9jT50R43aYjhoZDMmtEwaGSETM/vF/2PgYc="
+          "hash": "3xfP2kW9/AXbmclgzhqqf+yRsa7v9JTveYLnJWJjqwY="
         }
       },
       "is_incremental": false,
@@ -232,7 +232,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.ChargeDefinition.html",
-          "hash": "bVXLAyr1onxeOWU/8F9QMpMIcmLreYswcz39oX/uDhw="
+          "hash": "c5BJPiHzkwlwmuHVve/y05Zpzhext4td32A9ORGNQPQ="
         }
       },
       "is_incremental": false,
@@ -244,7 +244,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.ChargeGroupEditorWindow.html",
-          "hash": "VaUtF9oO8ygezJ0upxEDLia87/jBsYZ974Q+eIwGEPM="
+          "hash": "4Q2S0OKKqXstFFb2KjeCXFp3CPQU9d7e+eDMnqTzjv4="
         }
       },
       "is_incremental": false,
@@ -256,7 +256,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.ChargeLevel.html",
-          "hash": "zlgucZuVpMivDDXkSI00/VfVlGwa4Dm0TgQfXiWrVqQ="
+          "hash": "qHYrRzrVIbaAYtSmHYkcy92hSbtGxmmXG9b//owyIKI="
         }
       },
       "is_incremental": false,
@@ -268,7 +268,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.ForceType.html",
-          "hash": "kPkaACReZmvAGe60uHGhti5PrsaUujrKv0utxlyWwLQ="
+          "hash": "3W/nrCEDubRdSrQsEsu1LLUD+K5N29dVoQDhkPuoEc8="
         }
       },
       "is_incremental": false,
@@ -280,7 +280,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.HealInfoBase.html",
-          "hash": "kYTkiVUEv5+HFnDf3Sa//pisNe6wtSN7zSXf2l5dd00="
+          "hash": "+L3SkHpMF952vwXMy9oBy5eyLfq19A3Or5goEzExre8="
         }
       },
       "is_incremental": false,
@@ -292,7 +292,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.HitInfo.html",
-          "hash": "Jhls48qooZUlRrnlPh+ep6oQ+XDMOSyblg6M75bLuxM="
+          "hash": "xN632Ch16cTiCFm7JV6i9sVqbemtq8jYV/vdyCd1moY="
         }
       },
       "is_incremental": false,
@@ -304,7 +304,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.HitInfoBase.html",
-          "hash": "k9tyh9dvxWdUtPFkUN7xo12MWYO21/GiVPKtoDkx9ro="
+          "hash": "7THqXiCgGm43PtXzQtaUSkZAuN83oaZkfVqBRho/6BE="
         }
       },
       "is_incremental": false,
@@ -316,7 +316,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.HitInfoBasePropertyDrawer.html",
-          "hash": "Ml8wlQrXnSZiLvWvJXOaxIzW1iuWaUEnSW/Fi0Vz0W8="
+          "hash": "Xiv4DRilQrKYwOTFtsBjHDKwHrTx/RAyzICprVg1AeY="
         }
       },
       "is_incremental": false,
@@ -328,7 +328,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.HitInfoPropertyDrawer.html",
-          "hash": "Bd+StcGeAmLEAoxBUhS7gpnIHFZh4xSEGs9p2nnGDX8="
+          "hash": "zV8UKH+taK/lLp+56C5cItYuRFCFSUYuIj02vrnVorE="
         }
       },
       "is_incremental": false,
@@ -340,7 +340,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.HitReactionBase.html",
-          "hash": "kSDt9jFru5F98faa0/jkoOWPozaxn1R4CVjmhN6tY8g="
+          "hash": "4D5Epz1c78JOGZ/QiX1PC4JzmenFdihBgz0/k6Ygis8="
         }
       },
       "is_incremental": false,
@@ -352,7 +352,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.HitboxForceRelation.html",
-          "hash": "Lw+SGIkFy5enPRrbg4WX2Jk3qrY8nNfNh6IWF/KWBE0="
+          "hash": "cuPBHOIcC1gaWsFcsOk976KBdZDocXv8tXQg4Pj4rxM="
         }
       },
       "is_incremental": false,
@@ -364,7 +364,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.HitboxForceType.html",
-          "hash": "jE+GAYTiLY6FFv0WLb+u/USOhY/6tfdHgWqC14ug8g8="
+          "hash": "sQzwwTM3f0abeUknZDiP98Y9C4o65C7tiiruc3368os="
         }
       },
       "is_incremental": false,
@@ -376,7 +376,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.HitboxGroup.html",
-          "hash": "JCVgga8M6QCt21LDB3J+suyCdRyE2rcu88dcoCv9eWM="
+          "hash": "ZGhG4owaeNRIyokiywazZszi8R6WxBimMkITi7dyyNk="
         }
       },
       "is_incremental": false,
@@ -388,7 +388,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.HitboxGroupEditorWindow.html",
-          "hash": "c41ZFyjDI5lSScqVfObpefolttIJullO2SN7eATkhYE="
+          "hash": "CSO02IFNkmvaeAwB+kw01lM885low08CP9WUw0FJfzU="
         }
       },
       "is_incremental": false,
@@ -400,7 +400,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.HitboxManager.HitboxGroupEventAction.html",
-          "hash": "2qU8SNsXEsuqFxWYlvcCmwp7MC1efNUr+MG111jvRiM="
+          "hash": "TDMaET+hDaXC4nGtDyS8HxfhkBSSAt+Q1DxGHJIQqnY="
         }
       },
       "is_incremental": false,
@@ -412,7 +412,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.HitboxManager.IDGroupCollisionInfo.html",
-          "hash": "fkD6ziOG5TwfSfe1VUBo6/TyAQQJ2EDr8hlvOtvtx/E="
+          "hash": "4UeNXiy9gjvjkzHv86kTKXb6c+tNmJF32k3YGrYsjQo="
         }
       },
       "is_incremental": false,
@@ -424,7 +424,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.HitboxManager.html",
-          "hash": "z0icV8MEKRTKKqVPZ4g1q9fhNuiheUeOmvdjNzl4mwk="
+          "hash": "FP2EKOMKo0KPwNDgoaJsgMO0u81zMf7kgOOi2pPZ7Ew="
         }
       },
       "is_incremental": false,
@@ -436,7 +436,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.HitboxType.html",
-          "hash": "EDJQvl8Jof7H71s3E+Kmew0QawDTbj5WCBcYieZ/i6c="
+          "hash": "RfaJgOkMgpXdp1th52XjRMt3+sGyCGaEBvCmHh7X5ro="
         }
       },
       "is_incremental": false,
@@ -448,7 +448,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.HurtInfo2D.html",
-          "hash": "Oljsf2P1etSy9GSraRCtd8Ve8i84DN5ke/WEdfRp4CU="
+          "hash": "Qf2RfId6KbvNVh+HZ4OelX6Dm//9jzxanPQdi3ZPhKY="
         }
       },
       "is_incremental": false,
@@ -460,7 +460,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.HurtInfo3D.html",
-          "hash": "+AphfZy7XHWe2WH0l7jC56ueMTg2Ih+rTwyDLjRHd48="
+          "hash": "+fVsHGQ1peWECjnTjoFKHSt/OhCLwhN7tK/9iay3zIU="
         }
       },
       "is_incremental": false,
@@ -472,7 +472,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.HurtInfoBase.html",
-          "hash": "bNzOCVl9Iji9fWROIY+q82WIU3PDCOFQnlvhOY8Yfvs="
+          "hash": "+F1YwEQcEAbeboH7hEujx2xR0woBuhwE4QyfUR2DRVE="
         }
       },
       "is_incremental": false,
@@ -484,7 +484,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.Hurtbox.html",
-          "hash": "c5eaBrBcUtV5/Cnj5lJhb52ZlG6wuftzLSIvxh/xBEk="
+          "hash": "n4R7q8NtyDE8Snjw0XtS9sKiNOxrihbwobUyDu7k1IE="
         }
       },
       "is_incremental": false,
@@ -496,7 +496,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.HurtboxGroup.html",
-          "hash": "aWtVELHiT27Bz547gW1OCG2/Ylruh/QhvyYJ3mtJ5W4="
+          "hash": "QW7+c68VPrnmsBbLZ+IjAyEdPG2AbF+0IYeqQDUnaDk="
         }
       },
       "is_incremental": false,
@@ -508,7 +508,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.HurtboxGroupEditorWindow.html",
-          "hash": "+kHutACOPNESFeZn2q9/cTvAEfChpKC82O0AbrWiX+s="
+          "hash": "2lYnoHkCqxo7GWmEm12+KHLlakWl/o1J9rA1u0MI7po="
         }
       },
       "is_incremental": false,
@@ -520,7 +520,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.HurtboxGroupPropertyDrawer.html",
-          "hash": "3eW+jAOy99mwQQUBgWCsJVVsRWIaHsseetmVReQFyeA="
+          "hash": "V8h8gUBMD4D5XlXmIQNFEF0Y79f7p2yRH+mV8FHDyWw="
         }
       },
       "is_incremental": false,
@@ -532,7 +532,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.HurtboxState.html",
-          "hash": "poTBBlwzKnbfmiiWRZoQXgwNhx8WqZ9Bh4CPcj+EzKw="
+          "hash": "0CHjzuiTzNu+eG3HuoMZMPttnuTT9eRQi9acl8kG3rY="
         }
       },
       "is_incremental": false,
@@ -544,7 +544,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.IHurtable.html",
-          "hash": "gUsLuW+Wv1s5S1OxYdFUzrIcbo4tEZrYtHjgrDdVEDY="
+          "hash": "a1cVMdGQH/VojrUTJ9tsBSVv0bL6inQL5k++VpIV7ps="
         }
       },
       "is_incremental": false,
@@ -556,7 +556,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.ITargetable.html",
-          "hash": "SXC9wY+rj8TfYLQtjK7yj6TN84H+BEaGkC8DRcbAe5g="
+          "hash": "69Q9U8eS1EXs1V5dALQa5oml0s0VVJyfhIxhOdg8e9M="
         }
       },
       "is_incremental": false,
@@ -568,7 +568,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.MovesetAttackNode.nextNodeDefinition.html",
-          "hash": "FWiP/YW5CWdsTYg1B/sMCD4upbUf8us+eDI94ri1IdQ="
+          "hash": "63Lz/XDr1nwo56bKWQPlW8PpBeP1aqtQjgxhBczy8EI="
         }
       },
       "is_incremental": false,
@@ -580,7 +580,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.MovesetAttackNode.html",
-          "hash": "qo+vULE4zqm7UTu6FeoUPMwLN8V6LsGsKPvKFgdH+wQ="
+          "hash": "uji41PeAVV31LrI7q9sNp3FG6Xh8/guHYb4+8IfQQXg="
         }
       },
       "is_incremental": false,
@@ -592,7 +592,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.MovesetAttackNodeEditor.html",
-          "hash": "Iz8I8sX/gTj8UYDrc1FDND9mZAfkp6MD8KxraOppXZQ="
+          "hash": "hZ1JiDcA+NeTjfV3JTvuCBpT3KlqWvGc+WhtvdaPVdc="
         }
       },
       "is_incremental": false,
@@ -604,7 +604,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.MovesetDefinition.CancelListConnection.html",
-          "hash": "MdYWZ57CYcqEv47ExoZFm8Ru8k6K9E0n5UPIxzN5A0I="
+          "hash": "ZJkWiapNxTH//FupJYd9DObFJ9hP4H0GPN3w8Yk99Zk="
         }
       },
       "is_incremental": false,
@@ -616,7 +616,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.MovesetDefinition.html",
-          "hash": "uDe7EW+urxU+JZKnjxSZzzBbOQDBWfVLWi7VtyFBU4o="
+          "hash": "baELC1n7cesr2Vw5YV4zIR0bP1uDFmDkckkVmCgd5h8="
         }
       },
       "is_incremental": false,
@@ -628,7 +628,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.OnHitType.html",
-          "hash": "hHzq28va45/klsRJN2iahwdVPG5FgusfzxnAJVlovcM="
+          "hash": "3D8Xr56aXhbOkDB/hQRLBQvH6PIWUZgvsBXZoQNKXf4="
         }
       },
       "is_incremental": false,
@@ -640,7 +640,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.StateHurtboxDefinition.html",
-          "hash": "74DzNnRm5iyWn7wOHuQO70oO3dbF2QxawcHzp1vOZdU="
+          "hash": "o3qHJsg1Ry8EI4FjPGSbOUL4o3A1EGT6wIQCYIkUquY="
         }
       },
       "is_incremental": false,
@@ -652,7 +652,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.StateHurtboxDefinitionEditor.html",
-          "hash": "stBKdD2dogCPRt3HizRiqfaWdCvjdKAkAY4Fd4wOR34="
+          "hash": "1dHDdK1qEemJLPxie5wjNRcyEWfONrB/OfvJl3/PDBw="
         }
       },
       "is_incremental": false,
@@ -664,7 +664,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.html",
-          "hash": "i3V3GAXN0HCR7AdM4LfVj65YkYSBhFG1sIJt2rHtAAg="
+          "hash": "zz0Fd+Oy7T/DWZfJdLOAjG9ViDfd54rbvu1GdTufSTw="
         }
       },
       "is_incremental": false,
@@ -676,7 +676,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.FighterCombatManager.ChargeLevelChangedAction.html",
-          "hash": "PiftiTeGiftUmm8XbxE6M1n2Eu3dSGhnUiP/MeB0WpM="
+          "hash": "7Ih1QprEl8JSXuERBoBI8LkzmJSzygGlV9SajYoDwxE="
         }
       },
       "is_incremental": false,
@@ -688,7 +688,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.FighterCombatManager.ChargeLevelChargeChangedAction.html",
-          "hash": "yFZJn7F85XDCB0jpbExGgwDLwotqF+wqxQJPpel7kPk="
+          "hash": "MybuGzIepPmdhBMRRFhfp24IGBGCY1W3p4FDBQ+L348="
         }
       },
       "is_incremental": false,
@@ -700,7 +700,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.FighterCombatManager.EmptyAction.html",
-          "hash": "xHyZ77xth9ohz9lTu/rH+7kAtXKxuwgn4mirsqsk6eE="
+          "hash": "5UMlLR2PhUGEajKFi1ofV+Xs4+LJxJqKv3iL34V660E="
         }
       },
       "is_incremental": false,
@@ -712,7 +712,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.FighterCombatManager.HealthChangedAction.html",
-          "hash": "knWU3vhkLa7+BQXdWDDtZ3fj5Ee2LcMUWJngWLpjTQ8="
+          "hash": "QMYLMajIbOB5T07GPNnWZN76dp7u+kawB/xTcEwxC/g="
         }
       },
       "is_incremental": false,
@@ -724,7 +724,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.FighterCombatManager.MovesetChangedAction.html",
-          "hash": "3wcpzhsIpvF/DIiu9kVGtaT3SgxUyA3zwHN0zJry3FE="
+          "hash": "qyGByTUJWV3VWaT4FhSmSQZRpTEBkRZqJK3d2XvwXGk="
         }
       },
       "is_incremental": false,
@@ -736,7 +736,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.FighterCombatManager.html",
-          "hash": "D6S6xomA1wAQFmomsPCjyUXOO10e6ArlML0yGxxLneI="
+          "hash": "Zi/H06K21ZxulYl6ZohYszshdkk2rMEIsMsZ3T38aSM="
         }
       },
       "is_incremental": false,
@@ -748,7 +748,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.FighterHurtboxManager.html",
-          "hash": "AFlOsKeCpaZk1P7M2Gpc09fZBnxs1NbSOP92iRru/JI="
+          "hash": "Sn7QN+zmf5VY1zmHrn2bqSCdhLt52qJRfRnRQWITQqQ="
         }
       },
       "is_incremental": false,
@@ -760,7 +760,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.FighterStateBase.html",
-          "hash": "sg4Dg4UQLtp5GREOTLlb+f1e8Ls9lkby1/aP2mqp3e8="
+          "hash": "ngQOlbk6wzaegMprek3YaI+fiOTgn1V2XKj0YG/3DdA="
         }
       },
       "is_incremental": false,
@@ -772,7 +772,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.FighterStateManager.StateAction.html",
-          "hash": "ZDlNHTNaFIXfxS6Cda9E2Ielp34DdJlrZlzEfmBIe+Q="
+          "hash": "g036aGOUQrWUl/leQut4KFyPzisloy9mZKdFttabYRc="
         }
       },
       "is_incremental": false,
@@ -784,7 +784,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.FighterStateManager.StateFrameAction.html",
-          "hash": "HiiAEyxomeAm61iieTV0QHwaDYdjVKXDZsM3opa3Heg="
+          "hash": "p73WDI58wPwx+sZeZq4EQLQZP6e1hnS5zHEjK2OWEQE="
         }
       },
       "is_incremental": false,
@@ -796,7 +796,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.FighterStateManager.html",
-          "hash": "XCKG1DRooawok5mxY85Y79ttVsThZl9pgI57AdbvtLM="
+          "hash": "2KV/833C1JCzmSXEW4+bfz/bZRjAzC+x2eEjzqqMp0o="
         }
       },
       "is_incremental": false,
@@ -808,7 +808,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.IFighterBase.html",
-          "hash": "b8OUQEa7sYVATMQPDQoJkqkhZKVgwT3Z6fuh1sYItKg="
+          "hash": "TPnW6vxu3OhkC/yFtaK3oheFW3OKQ3JoU4uZ4tTCv9o="
         }
       },
       "is_incremental": false,
@@ -820,7 +820,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.IFighterCombatManager.html",
-          "hash": "F1znyhDxpWLCNfGcYKWNQBPDpPN9fVOP+YFn8CceJE0="
+          "hash": "D8tKvYU6bxWtxCnkgvmdvAty6hrO0oFfl7u9Ae7VmnA="
         }
       },
       "is_incremental": false,
@@ -832,7 +832,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.IFighterPhysicsManager.html",
-          "hash": "z0GaRjqVXnZyTEL/zwXDnmszHfnOk0tfrbnDkeWhcvk="
+          "hash": "JMwElL1cLZi9KEFUBTkENHdW/xI37xm6bGV6/4S4wYo="
         }
       },
       "is_incremental": false,
@@ -844,7 +844,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.IFighterStateManager.html",
-          "hash": "PalWrpGPs5Id4pYnNaUgzKyudd7Ifi1hqEtrzznVkNA="
+          "hash": "J+X1sdh4kDUfB6jBUz0QNRfjjKeIrCxoVFbN5o0wucg="
         }
       },
       "is_incremental": false,
@@ -856,7 +856,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.LookHandler.html",
-          "hash": "c2KJcoHb3ISaYjLvqcBjW3QB/T7xdFVXWqMYlcgIEoA="
+          "hash": "iLUWvS3Ze/T+6/DAhj2LJnOTkCPoTP2pjtCMPe3oPVk="
         }
       },
       "is_incremental": false,
@@ -868,7 +868,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.html",
-          "hash": "9gsM8tOMuAPWGvOBUS3DV9GQXffgZguOixd5Lnn7Y2k="
+          "hash": "y3PMo2yZbPEmZOzcxcNKzi8d0gLEvuyKJ1tv3TgAPDQ="
         }
       },
       "is_incremental": false,
@@ -880,7 +880,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.HelperFunctions.html",
-          "hash": "OwNGvlCNs2A7eWlLgivYMEXFaJzJEzgdCVxqN1ge1/A="
+          "hash": "QtAAVoU9Jpzv688kHj1MobSorAgDvye2lcPCXLs3/oo="
         }
       },
       "is_incremental": false,
@@ -892,7 +892,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Input.FighterControlType.html",
-          "hash": "Z/oAW+RaTLbmDuuOwZH+Wpp43bbsAOKQOyDdPdfxtX8="
+          "hash": "TqiFJxmaQcnOj0mrmwRZqNW3eLnY5lAjMUu+25i8yD4="
         }
       },
       "is_incremental": false,
@@ -904,7 +904,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Input.InputDefinition.html",
-          "hash": "bJZmDM46VYLzwd5tdMtLm/HAHMK24pf+2yb+6Qd0FRQ="
+          "hash": "JT0TzWlkgvEONhmua/Y/cC1FvAxlDuFbZCQPvKpZDYE="
         }
       },
       "is_incremental": false,
@@ -916,7 +916,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Input.InputDefinitionDrawer.html",
-          "hash": "E9J5HaHe/b25AJSBidLke7Jxb5iNkGbWkEb/4S8oPiI="
+          "hash": "0UGlIjcP+NW8reNwlIs6kim0oNYVtA7UdSCtJnoOV7I="
         }
       },
       "is_incremental": false,
@@ -928,7 +928,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Input.InputDefinitionType.html",
-          "hash": "CKU4b+k/VHX8M1l0GJ0vpceOJFgIuVZECVdFo+zunYY="
+          "hash": "BRp9s77rqrCwQEaFfOAaWreh1Xi+bRVI/ZgvXBqD8+c="
         }
       },
       "is_incremental": false,
@@ -940,7 +940,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Input.InputRecordAxis.html",
-          "hash": "JfZh5UEA4fKqVmMpDOcHgT8qwKiiQleh/v4U27Oa3x4="
+          "hash": "coKhZG17jjazpQFpDcQYCp8GuCXC/gBwJyUygU+qSBc="
         }
       },
       "is_incremental": false,
@@ -952,7 +952,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Input.InputRecordAxis2D.html",
-          "hash": "UJ9e89rWZNjtWIrOjLV2VNOikyqw9qoLfmjsw5ez1eM="
+          "hash": "96W2e1Vc6k7IJXu9Y0/2z+VUyBAfiYC4hXysigRLAoI="
         }
       },
       "is_incremental": false,
@@ -964,7 +964,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Input.InputRecordButton.html",
-          "hash": "U7Uwias1i2iB8LYuirPAb89oiF8NJdpdtVLBGgM1MNo="
+          "hash": "g+UvvKvL/i4wL5LisGD5ycYygn34IY2Z9B1EJg2BqFM="
         }
       },
       "is_incremental": false,
@@ -976,7 +976,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Input.InputRecordInput.html",
-          "hash": "RYwD9hHOJ6KgtwmBG3wkxym/UI9fEqU0Y+cRH81Vc6U="
+          "hash": "LuRso15eMTtdgGlLSbPLTauA/JoBF2/fgecDIdKvAVg="
         }
       },
       "is_incremental": false,
@@ -988,7 +988,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Input.InputRecordItem.html",
-          "hash": "AlMm8guLdpfzmjN5p1DQttF78x9281Hdp66GRMvabXQ="
+          "hash": "udQckuYK6F106f8qo8LMjqUjQiN2kriVxsIHGAkqGJo="
         }
       },
       "is_incremental": false,
@@ -1000,7 +1000,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Input.InputSequence.html",
-          "hash": "24Y1W04qFqwkSAqaPyWpjlHyte1DsuDSs2cH+LaHL2I="
+          "hash": "pkdtEtPjSFyE5MUMnrg2b2DiHHKXvyvcXrQPicggqj8="
         }
       },
       "is_incremental": false,
@@ -1012,7 +1012,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Input.html",
-          "hash": "U2x5Gii+8rUr1Xyd2C6+yfGkEhcFa3v2MAtAw3AxkQQ="
+          "hash": "cpAa23iE3fTEovo21DhauQH1wSacy0cAmGWOG8hfxf8="
         }
       },
       "is_incremental": false,
@@ -1024,7 +1024,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Simulation.ISimObject.html",
-          "hash": "2+pqjPa9xrogKe9vBcMjvhx7eLaN1vILF8lo3Z7fz6w="
+          "hash": "nr7gVPNV+KUYwxZFtOzzyE3VFx72ckBmIigAzuedwS0="
         }
       },
       "is_incremental": false,
@@ -1036,7 +1036,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Simulation.ISimObjectManager.html",
-          "hash": "/kSxsQULp0aT1LTFp9PPlyylO++rI5DamvpaW5g+U4A="
+          "hash": "e/F0V5qr5wbiKSve5nMjOOvrytqCGVa+fTn7LvctKYs="
         }
       },
       "is_incremental": false,
@@ -1048,7 +1048,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Simulation.SimObjectManager.html",
-          "hash": "5QdqRDsRk2/y+icpgtLvPCa+9uAxcYN/WUul0oxQ+4c="
+          "hash": "5HYVI+8/qAIHAPFCAfb8JDoEE+USdt6fqJZlgIsmd2s="
         }
       },
       "is_incremental": false,
@@ -1060,7 +1060,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Simulation.html",
-          "hash": "lV1Y+VcpwGu2c0IS/dxOe7ngPTOMEX8Ds78SlUXpzxs="
+          "hash": "RPJU8aa+vTmoDp/jdi4LWLRaVxL/WnnSwPO5qOtxuOw="
         }
       },
       "is_incremental": false,
@@ -1072,7 +1072,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.html",
-          "hash": "4bdRgPjrmYc/aYXrcuz8cJfyzAJf68bUe6a+u79grq0="
+          "hash": "hEanVHuTKVuBouLIgYYhjIRG49S9SZzuI5r22tmOOq0="
         }
       },
       "is_incremental": false,
@@ -1096,7 +1096,7 @@
       "output": {
         ".html": {
           "relative_path": "guides/createchara.html",
-          "hash": "JK7UQreAef1ZtAa9m1o49FEXxIkNiqo6/+fOiKa+NNo="
+          "hash": "farCRP8qhAomEmVOSO5eOQmjIuUBufFXzma6loFGsCs="
         }
       },
       "is_incremental": false,
@@ -1108,7 +1108,7 @@
       "output": {
         ".html": {
           "relative_path": "guides/index.html",
-          "hash": "USfi1vw7+ljinKuzueyOAZwzPfOZ+AG7pNvgJDcI96M="
+          "hash": "XhVz3vHqROJFWvzlUOHDqTz0uJzkuhnasK/on1h6giQ="
         }
       },
       "is_incremental": false,
@@ -1120,7 +1120,7 @@
       "output": {
         ".html": {
           "relative_path": "guides/setup.html",
-          "hash": "Btz6iKtnaPrI6Nes3otfecF3hVCEFts9C+iHdJvnn+g="
+          "hash": "UPQ99kIfTKAZHlEIXxHkY1dJqjbTSYWA7DtcVs2HHuQ="
         }
       },
       "is_incremental": false,
@@ -1144,7 +1144,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "QNmf2P3ws0p0qXE8qetfywOgRROcCLiVcIRbjR8E1cc="
+          "hash": "lKzCSs6jjlSKKgKNAwmxobn3EXm3kMcCGtQQR305aCA="
         }
       },
       "is_incremental": false,
