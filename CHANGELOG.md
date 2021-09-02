@@ -1,3 +1,15 @@
+# [27.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v26.0.0...v27.0.0) (2021-09-02)
+
+
+### Features
+
+* removed attack event variables ([6049c15](https://github.com/christides11/hack-and-slash-framework/commit/6049c1512d232037fbaf801230201661223da549))
+
+
+### BREAKING CHANGES
+
+* Removed attack event variables since they are now useless.
+
 # [26.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v25.0.0...v26.0.0) (2021-08-15)
 
 
