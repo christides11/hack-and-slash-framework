@@ -86,6 +86,7 @@
      <Compile Include="Assets\HnSF\Combat\Info\HurtInfo2D.cs" />
      <Compile Include="Assets\HnSF\Combat\Info\HurtInfo3D.cs" />
      <Compile Include="Assets\HnSF\Combat\Info\HurtInfoBase.cs" />
+     <Compile Include="Assets\HnSF\Combat\Interfaces\IHealable.cs" />
      <Compile Include="Assets\HnSF\Combat\Interfaces\IHurtable.cs" />
      <Compile Include="Assets\HnSF\Combat\Interfaces\ITargetable.cs" />
      <Compile Include="Assets\HnSF\Combat\Moveset\MovesetAttackNode.cs" />
