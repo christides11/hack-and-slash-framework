@@ -18,7 +18,7 @@ namespace TDAction.Combat.Events
         }
 
         public override AttackEventReturnType Evaluate(int frame, int endFrame,
-            HnSF.Fighters.IFighterBase controller, AttackEventVariables variables)
+            HnSF.Fighters.IFighterBase controller)
         {
             FighterPhysicsManager physicsManager = (controller as FighterManager).PhysicsManager;
             physicsManager.forceMovement.x = Mathf.Clamp(physicsManager.forceMovement.x,

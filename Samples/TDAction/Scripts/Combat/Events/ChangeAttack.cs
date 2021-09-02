@@ -22,7 +22,7 @@ namespace TDAction.Combat.Events
         }
 
         public override AttackEventReturnType Evaluate(int frame, int endFrame,
-            HnSF.Fighters.IFighterBase controller, AttackEventVariables variables)
+            HnSF.Fighters.IFighterBase controller)
         {
             if(lastFrameExecution && frame != endFrame)
             {

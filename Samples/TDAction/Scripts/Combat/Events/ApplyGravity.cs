@@ -29,7 +29,7 @@ namespace TDAction.Combat.Events
         }
 
         public override AttackEventReturnType Evaluate(int frame, int endFrame,
-            HnSF.Fighters.IFighterBase controller, AttackEventVariables variables)
+            HnSF.Fighters.IFighterBase controller)
         {
             FighterStatsManager statsManager = (controller as FighterManager).statManager;
             FighterPhysicsManager physicsManager = (controller as FighterManager).PhysicsManager;
