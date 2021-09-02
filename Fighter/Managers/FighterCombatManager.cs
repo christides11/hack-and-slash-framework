@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace HnSF.Fighters
 {
-    public class FighterCombatManager : MonoBehaviour, IHurtable, IFighterCombatManager
+    public class FighterCombatManager : MonoBehaviour, IHurtable, IHealable, IFighterCombatManager
     {
         public delegate void EmptyAction(IFighterBase self);
         public delegate void HealthChangedAction(IFighterBase initializer, IFighterBase self, HitInfoBase hitInfo);
