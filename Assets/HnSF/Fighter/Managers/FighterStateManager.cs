@@ -45,6 +45,15 @@ namespace HnSF.Fighters
             states.Add(stateNumber, state);
         }
 
+        public void RemoveState(ushort stateNumber)
+        {
+            if (CurrentState == stateNumber)
+            {
+                return;
+            }
+            states.Remove(stateNumber);
+        }
+
         /// <summary>
         /// Changes the state to the given one.
         /// </summary>
