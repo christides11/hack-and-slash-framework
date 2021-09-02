@@ -69,12 +69,6 @@ references:
   commentId: F:HnSF.Combat.AttackDefinition.chargeWindows
   fullName: HnSF.Combat.AttackDefinition.chargeWindows
   nameWithType: AttackDefinition.chargeWindows
-- uid: HnSF.Combat.AttackDefinition.commandAttackCancelWindows
-  name: commandAttackCancelWindows
-  href: api/HnSF.Combat.AttackDefinition.html#HnSF_Combat_AttackDefinition_commandAttackCancelWindows
-  commentId: F:HnSF.Combat.AttackDefinition.commandAttackCancelWindows
-  fullName: HnSF.Combat.AttackDefinition.commandAttackCancelWindows
-  nameWithType: AttackDefinition.commandAttackCancelWindows
 - uid: HnSF.Combat.AttackDefinition.description
   name: description
   href: api/HnSF.Combat.AttackDefinition.html#HnSF_Combat_AttackDefinition_description
@@ -820,12 +814,6 @@ references:
   commentId: F:HnSF.Combat.AttackEventDefinition.inputCheckEndFrame
   fullName: HnSF.Combat.AttackEventDefinition.inputCheckEndFrame
   nameWithType: AttackEventDefinition.inputCheckEndFrame
-- uid: HnSF.Combat.AttackEventDefinition.inputCheckProcessed
-  name: inputCheckProcessed
-  href: api/HnSF.Combat.AttackEventDefinition.html#HnSF_Combat_AttackEventDefinition_inputCheckProcessed
-  commentId: F:HnSF.Combat.AttackEventDefinition.inputCheckProcessed
-  fullName: HnSF.Combat.AttackEventDefinition.inputCheckProcessed
-  nameWithType: AttackEventDefinition.inputCheckProcessed
 - uid: HnSF.Combat.AttackEventDefinition.inputCheckStartFrame
   name: inputCheckStartFrame
   href: api/HnSF.Combat.AttackEventDefinition.html#HnSF_Combat_AttackEventDefinition_inputCheckStartFrame
@@ -1282,6 +1270,12 @@ references:
   commentId: F:HnSF.Combat.CancelListDefinition.cancelListID
   fullName: HnSF.Combat.CancelListDefinition.cancelListID
   nameWithType: CancelListDefinition.cancelListID
+- uid: HnSF.Combat.CancelListDefinition.conditions
+  name: conditions
+  href: api/HnSF.Combat.CancelListDefinition.html#HnSF_Combat_CancelListDefinition_conditions
+  commentId: F:HnSF.Combat.CancelListDefinition.conditions
+  fullName: HnSF.Combat.CancelListDefinition.conditions
+  nameWithType: CancelListDefinition.conditions
 - uid: HnSF.Combat.CancelListDefinition.endFrame
   name: endFrame
   href: api/HnSF.Combat.CancelListDefinition.html#HnSF_Combat_CancelListDefinition_endFrame
@@ -1306,6 +1300,18 @@ references:
   commentId: F:HnSF.Combat.CancelListDefinitionEditorWindow.attack
   fullName: HnSF.Combat.CancelListDefinitionEditorWindow.attack
   nameWithType: CancelListDefinitionEditorWindow.attack
+- uid: HnSF.Combat.CancelListDefinitionEditorWindow.attackConditionTypes
+  name: attackConditionTypes
+  href: api/HnSF.Combat.CancelListDefinitionEditorWindow.html#HnSF_Combat_CancelListDefinitionEditorWindow_attackConditionTypes
+  commentId: F:HnSF.Combat.CancelListDefinitionEditorWindow.attackConditionTypes
+  fullName: HnSF.Combat.CancelListDefinitionEditorWindow.attackConditionTypes
+  nameWithType: CancelListDefinitionEditorWindow.attackConditionTypes
+- uid: HnSF.Combat.CancelListDefinitionEditorWindow.conditionsFoldout
+  name: conditionsFoldout
+  href: api/HnSF.Combat.CancelListDefinitionEditorWindow.html#HnSF_Combat_CancelListDefinitionEditorWindow_conditionsFoldout
+  commentId: F:HnSF.Combat.CancelListDefinitionEditorWindow.conditionsFoldout
+  fullName: HnSF.Combat.CancelListDefinitionEditorWindow.conditionsFoldout
+  nameWithType: CancelListDefinitionEditorWindow.conditionsFoldout
 - uid: HnSF.Combat.CancelListDefinitionEditorWindow.DrawCancelListInfo
   name: DrawCancelListInfo()
   href: api/HnSF.Combat.CancelListDefinitionEditorWindow.html#HnSF_Combat_CancelListDefinitionEditorWindow_DrawCancelListInfo
@@ -1338,6 +1344,32 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.CancelListDefinitionEditorWindow.Init
   nameWithType: CancelListDefinitionEditorWindow.Init
+- uid: HnSF.Combat.CancelListDefinitionEditorWindow.OnAttackConditionSelected(System.Object)
+  name: OnAttackConditionSelected(Object)
+  href: api/HnSF.Combat.CancelListDefinitionEditorWindow.html#HnSF_Combat_CancelListDefinitionEditorWindow_OnAttackConditionSelected_System_Object_
+  commentId: M:HnSF.Combat.CancelListDefinitionEditorWindow.OnAttackConditionSelected(System.Object)
+  fullName: HnSF.Combat.CancelListDefinitionEditorWindow.OnAttackConditionSelected(System.Object)
+  nameWithType: CancelListDefinitionEditorWindow.OnAttackConditionSelected(Object)
+- uid: HnSF.Combat.CancelListDefinitionEditorWindow.OnAttackConditionSelected*
+  name: OnAttackConditionSelected
+  href: api/HnSF.Combat.CancelListDefinitionEditorWindow.html#HnSF_Combat_CancelListDefinitionEditorWindow_OnAttackConditionSelected_
+  commentId: Overload:HnSF.Combat.CancelListDefinitionEditorWindow.OnAttackConditionSelected
+  isSpec: "True"
+  fullName: HnSF.Combat.CancelListDefinitionEditorWindow.OnAttackConditionSelected
+  nameWithType: CancelListDefinitionEditorWindow.OnAttackConditionSelected
+- uid: HnSF.Combat.CancelListDefinitionEditorWindow.OnFocus
+  name: OnFocus()
+  href: api/HnSF.Combat.CancelListDefinitionEditorWindow.html#HnSF_Combat_CancelListDefinitionEditorWindow_OnFocus
+  commentId: M:HnSF.Combat.CancelListDefinitionEditorWindow.OnFocus
+  fullName: HnSF.Combat.CancelListDefinitionEditorWindow.OnFocus()
+  nameWithType: CancelListDefinitionEditorWindow.OnFocus()
+- uid: HnSF.Combat.CancelListDefinitionEditorWindow.OnFocus*
+  name: OnFocus
+  href: api/HnSF.Combat.CancelListDefinitionEditorWindow.html#HnSF_Combat_CancelListDefinitionEditorWindow_OnFocus_
+  commentId: Overload:HnSF.Combat.CancelListDefinitionEditorWindow.OnFocus
+  isSpec: "True"
+  fullName: HnSF.Combat.CancelListDefinitionEditorWindow.OnFocus
+  nameWithType: CancelListDefinitionEditorWindow.OnFocus
 - uid: HnSF.Combat.CancelListDefinitionEditorWindow.OnGUI
   name: OnGUI()
   href: api/HnSF.Combat.CancelListDefinitionEditorWindow.html#HnSF_Combat_CancelListDefinitionEditorWindow_OnGUI
@@ -2924,6 +2956,38 @@ references:
   commentId: F:HnSF.Combat.HurtInfoBase.hitInfo
   fullName: HnSF.Combat.HurtInfoBase.hitInfo
   nameWithType: HurtInfoBase.hitInfo
+- uid: HnSF.Combat.IHealable
+  name: IHealable
+  href: api/HnSF.Combat.IHealable.html
+  commentId: T:HnSF.Combat.IHealable
+  fullName: HnSF.Combat.IHealable
+  nameWithType: IHealable
+- uid: HnSF.Combat.IHealable.GetTeam
+  name: GetTeam()
+  href: api/HnSF.Combat.IHealable.html#HnSF_Combat_IHealable_GetTeam
+  commentId: M:HnSF.Combat.IHealable.GetTeam
+  fullName: HnSF.Combat.IHealable.GetTeam()
+  nameWithType: IHealable.GetTeam()
+- uid: HnSF.Combat.IHealable.GetTeam*
+  name: GetTeam
+  href: api/HnSF.Combat.IHealable.html#HnSF_Combat_IHealable_GetTeam_
+  commentId: Overload:HnSF.Combat.IHealable.GetTeam
+  isSpec: "True"
+  fullName: HnSF.Combat.IHealable.GetTeam
+  nameWithType: IHealable.GetTeam
+- uid: HnSF.Combat.IHealable.Heal(HnSF.Combat.HealInfoBase)
+  name: Heal(HealInfoBase)
+  href: api/HnSF.Combat.IHealable.html#HnSF_Combat_IHealable_Heal_HnSF_Combat_HealInfoBase_
+  commentId: M:HnSF.Combat.IHealable.Heal(HnSF.Combat.HealInfoBase)
+  fullName: HnSF.Combat.IHealable.Heal(HnSF.Combat.HealInfoBase)
+  nameWithType: IHealable.Heal(HealInfoBase)
+- uid: HnSF.Combat.IHealable.Heal*
+  name: Heal
+  href: api/HnSF.Combat.IHealable.html#HnSF_Combat_IHealable_Heal_
+  commentId: Overload:HnSF.Combat.IHealable.Heal
+  isSpec: "True"
+  fullName: HnSF.Combat.IHealable.Heal
+  nameWithType: IHealable.Heal
 - uid: HnSF.Combat.IHurtable
   name: IHurtable
   href: api/HnSF.Combat.IHurtable.html
@@ -2943,19 +3007,6 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.IHurtable.GetTeam
   nameWithType: IHurtable.GetTeam
-- uid: HnSF.Combat.IHurtable.Heal(HnSF.Combat.HealInfoBase)
-  name: Heal(HealInfoBase)
-  href: api/HnSF.Combat.IHurtable.html#HnSF_Combat_IHurtable_Heal_HnSF_Combat_HealInfoBase_
-  commentId: M:HnSF.Combat.IHurtable.Heal(HnSF.Combat.HealInfoBase)
-  fullName: HnSF.Combat.IHurtable.Heal(HnSF.Combat.HealInfoBase)
-  nameWithType: IHurtable.Heal(HealInfoBase)
-- uid: HnSF.Combat.IHurtable.Heal*
-  name: Heal
-  href: api/HnSF.Combat.IHurtable.html#HnSF_Combat_IHurtable_Heal_
-  commentId: Overload:HnSF.Combat.IHurtable.Heal
-  isSpec: "True"
-  fullName: HnSF.Combat.IHurtable.Heal
-  nameWithType: IHurtable.Heal
 - uid: HnSF.Combat.IHurtable.Hurt(HnSF.Combat.HurtInfoBase)
   name: Hurt(HurtInfoBase)
   href: api/HnSF.Combat.IHurtable.html#HnSF_Combat_IHurtable_Hurt_HnSF_Combat_HurtInfoBase_
@@ -2975,6 +3026,19 @@ references:
   commentId: T:HnSF.Combat.ITargetable
   fullName: HnSF.Combat.ITargetable
   nameWithType: ITargetable
+- uid: HnSF.Combat.ITargetable.GetBounds
+  name: GetBounds()
+  href: api/HnSF.Combat.ITargetable.html#HnSF_Combat_ITargetable_GetBounds
+  commentId: M:HnSF.Combat.ITargetable.GetBounds
+  fullName: HnSF.Combat.ITargetable.GetBounds()
+  nameWithType: ITargetable.GetBounds()
+- uid: HnSF.Combat.ITargetable.GetBounds*
+  name: GetBounds
+  href: api/HnSF.Combat.ITargetable.html#HnSF_Combat_ITargetable_GetBounds_
+  commentId: Overload:HnSF.Combat.ITargetable.GetBounds
+  isSpec: "True"
+  fullName: HnSF.Combat.ITargetable.GetBounds
+  nameWithType: ITargetable.GetBounds
 - uid: HnSF.Combat.ITargetable.GetGameObject
   name: GetGameObject()
   href: api/HnSF.Combat.ITargetable.html#HnSF_Combat_ITargetable_GetGameObject
@@ -4463,6 +4527,19 @@ references:
   commentId: E:HnSF.Fighters.FighterStateManager.OnStatePreChange
   fullName: HnSF.Fighters.FighterStateManager.OnStatePreChange
   nameWithType: FighterStateManager.OnStatePreChange
+- uid: HnSF.Fighters.FighterStateManager.RemoveState(System.UInt16)
+  name: RemoveState(UInt16)
+  href: api/HnSF.Fighters.FighterStateManager.html#HnSF_Fighters_FighterStateManager_RemoveState_System_UInt16_
+  commentId: M:HnSF.Fighters.FighterStateManager.RemoveState(System.UInt16)
+  fullName: HnSF.Fighters.FighterStateManager.RemoveState(System.UInt16)
+  nameWithType: FighterStateManager.RemoveState(UInt16)
+- uid: HnSF.Fighters.FighterStateManager.RemoveState*
+  name: RemoveState
+  href: api/HnSF.Fighters.FighterStateManager.html#HnSF_Fighters_FighterStateManager_RemoveState_
+  commentId: Overload:HnSF.Fighters.FighterStateManager.RemoveState
+  isSpec: "True"
+  fullName: HnSF.Fighters.FighterStateManager.RemoveState
+  nameWithType: FighterStateManager.RemoveState
 - uid: HnSF.Fighters.FighterStateManager.SetFrame(System.UInt32)
   name: SetFrame(UInt32)
   href: api/HnSF.Fighters.FighterStateManager.html#HnSF_Fighters_FighterStateManager_SetFrame_System_UInt32_
@@ -4526,97 +4603,6 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.IFighterBase.GetGameObject
   nameWithType: IFighterBase.GetGameObject
-- uid: HnSF.Fighters.IFighterBase.GetMovementVector(System.Single,System.Single)
-  name: GetMovementVector(Single, Single)
-  href: api/HnSF.Fighters.IFighterBase.html#HnSF_Fighters_IFighterBase_GetMovementVector_System_Single_System_Single_
-  commentId: M:HnSF.Fighters.IFighterBase.GetMovementVector(System.Single,System.Single)
-  fullName: HnSF.Fighters.IFighterBase.GetMovementVector(System.Single, System.Single)
-  nameWithType: IFighterBase.GetMovementVector(Single, Single)
-- uid: HnSF.Fighters.IFighterBase.GetMovementVector*
-  name: GetMovementVector
-  href: api/HnSF.Fighters.IFighterBase.html#HnSF_Fighters_IFighterBase_GetMovementVector_
-  commentId: Overload:HnSF.Fighters.IFighterBase.GetMovementVector
-  isSpec: "True"
-  fullName: HnSF.Fighters.IFighterBase.GetMovementVector
-  nameWithType: IFighterBase.GetMovementVector
-- uid: HnSF.Fighters.IFighterBase.GetVisualBasedDirection(Vector3)
-  name: GetVisualBasedDirection(Vector3)
-  href: api/HnSF.Fighters.IFighterBase.html#HnSF_Fighters_IFighterBase_GetVisualBasedDirection_Vector3_
-  commentId: M:HnSF.Fighters.IFighterBase.GetVisualBasedDirection(Vector3)
-  fullName: HnSF.Fighters.IFighterBase.GetVisualBasedDirection(Vector3)
-  nameWithType: IFighterBase.GetVisualBasedDirection(Vector3)
-- uid: HnSF.Fighters.IFighterBase.GetVisualBasedDirection*
-  name: GetVisualBasedDirection
-  href: api/HnSF.Fighters.IFighterBase.html#HnSF_Fighters_IFighterBase_GetVisualBasedDirection_
-  commentId: Overload:HnSF.Fighters.IFighterBase.GetVisualBasedDirection
-  isSpec: "True"
-  fullName: HnSF.Fighters.IFighterBase.GetVisualBasedDirection
-  nameWithType: IFighterBase.GetVisualBasedDirection
-- uid: HnSF.Fighters.IFighterBase.LateTick
-  name: LateTick()
-  href: api/HnSF.Fighters.IFighterBase.html#HnSF_Fighters_IFighterBase_LateTick
-  commentId: M:HnSF.Fighters.IFighterBase.LateTick
-  fullName: HnSF.Fighters.IFighterBase.LateTick()
-  nameWithType: IFighterBase.LateTick()
-- uid: HnSF.Fighters.IFighterBase.LateTick*
-  name: LateTick
-  href: api/HnSF.Fighters.IFighterBase.html#HnSF_Fighters_IFighterBase_LateTick_
-  commentId: Overload:HnSF.Fighters.IFighterBase.LateTick
-  isSpec: "True"
-  fullName: HnSF.Fighters.IFighterBase.LateTick
-  nameWithType: IFighterBase.LateTick
-- uid: HnSF.Fighters.IFighterBase.RotateVisual(Vector3,System.Single)
-  name: RotateVisual(Vector3, Single)
-  href: api/HnSF.Fighters.IFighterBase.html#HnSF_Fighters_IFighterBase_RotateVisual_Vector3_System_Single_
-  commentId: M:HnSF.Fighters.IFighterBase.RotateVisual(Vector3,System.Single)
-  fullName: HnSF.Fighters.IFighterBase.RotateVisual(Vector3, System.Single)
-  nameWithType: IFighterBase.RotateVisual(Vector3, Single)
-- uid: HnSF.Fighters.IFighterBase.RotateVisual*
-  name: RotateVisual
-  href: api/HnSF.Fighters.IFighterBase.html#HnSF_Fighters_IFighterBase_RotateVisual_
-  commentId: Overload:HnSF.Fighters.IFighterBase.RotateVisual
-  isSpec: "True"
-  fullName: HnSF.Fighters.IFighterBase.RotateVisual
-  nameWithType: IFighterBase.RotateVisual
-- uid: HnSF.Fighters.IFighterBase.SetTargetable(System.Boolean)
-  name: SetTargetable(Boolean)
-  href: api/HnSF.Fighters.IFighterBase.html#HnSF_Fighters_IFighterBase_SetTargetable_System_Boolean_
-  commentId: M:HnSF.Fighters.IFighterBase.SetTargetable(System.Boolean)
-  fullName: HnSF.Fighters.IFighterBase.SetTargetable(System.Boolean)
-  nameWithType: IFighterBase.SetTargetable(Boolean)
-- uid: HnSF.Fighters.IFighterBase.SetTargetable*
-  name: SetTargetable
-  href: api/HnSF.Fighters.IFighterBase.html#HnSF_Fighters_IFighterBase_SetTargetable_
-  commentId: Overload:HnSF.Fighters.IFighterBase.SetTargetable
-  isSpec: "True"
-  fullName: HnSF.Fighters.IFighterBase.SetTargetable
-  nameWithType: IFighterBase.SetTargetable
-- uid: HnSF.Fighters.IFighterBase.SetVisualRotation(Vector3)
-  name: SetVisualRotation(Vector3)
-  href: api/HnSF.Fighters.IFighterBase.html#HnSF_Fighters_IFighterBase_SetVisualRotation_Vector3_
-  commentId: M:HnSF.Fighters.IFighterBase.SetVisualRotation(Vector3)
-  fullName: HnSF.Fighters.IFighterBase.SetVisualRotation(Vector3)
-  nameWithType: IFighterBase.SetVisualRotation(Vector3)
-- uid: HnSF.Fighters.IFighterBase.SetVisualRotation*
-  name: SetVisualRotation
-  href: api/HnSF.Fighters.IFighterBase.html#HnSF_Fighters_IFighterBase_SetVisualRotation_
-  commentId: Overload:HnSF.Fighters.IFighterBase.SetVisualRotation
-  isSpec: "True"
-  fullName: HnSF.Fighters.IFighterBase.SetVisualRotation
-  nameWithType: IFighterBase.SetVisualRotation
-- uid: HnSF.Fighters.IFighterBase.Tick
-  name: Tick()
-  href: api/HnSF.Fighters.IFighterBase.html#HnSF_Fighters_IFighterBase_Tick
-  commentId: M:HnSF.Fighters.IFighterBase.Tick
-  fullName: HnSF.Fighters.IFighterBase.Tick()
-  nameWithType: IFighterBase.Tick()
-- uid: HnSF.Fighters.IFighterBase.Tick*
-  name: Tick
-  href: api/HnSF.Fighters.IFighterBase.html#HnSF_Fighters_IFighterBase_Tick_
-  commentId: Overload:HnSF.Fighters.IFighterBase.Tick
-  isSpec: "True"
-  fullName: HnSF.Fighters.IFighterBase.Tick
-  nameWithType: IFighterBase.Tick
 - uid: HnSF.Fighters.IFighterCombatManager
   name: IFighterCombatManager
   href: api/HnSF.Fighters.IFighterCombatManager.html
@@ -5148,19 +5134,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.IFighterStateManager.IncrementFrame
   nameWithType: IFighterStateManager.IncrementFrame
-- uid: HnSF.Fighters.IFighterStateManager.LateTick
-  name: LateTick()
-  href: api/HnSF.Fighters.IFighterStateManager.html#HnSF_Fighters_IFighterStateManager_LateTick
-  commentId: M:HnSF.Fighters.IFighterStateManager.LateTick
-  fullName: HnSF.Fighters.IFighterStateManager.LateTick()
-  nameWithType: IFighterStateManager.LateTick()
-- uid: HnSF.Fighters.IFighterStateManager.LateTick*
-  name: LateTick
-  href: api/HnSF.Fighters.IFighterStateManager.html#HnSF_Fighters_IFighterStateManager_LateTick_
-  commentId: Overload:HnSF.Fighters.IFighterStateManager.LateTick
+- uid: HnSF.Fighters.IFighterStateManager.RemoveState(System.UInt16)
+  name: RemoveState(UInt16)
+  href: api/HnSF.Fighters.IFighterStateManager.html#HnSF_Fighters_IFighterStateManager_RemoveState_System_UInt16_
+  commentId: M:HnSF.Fighters.IFighterStateManager.RemoveState(System.UInt16)
+  fullName: HnSF.Fighters.IFighterStateManager.RemoveState(System.UInt16)
+  nameWithType: IFighterStateManager.RemoveState(UInt16)
+- uid: HnSF.Fighters.IFighterStateManager.RemoveState*
+  name: RemoveState
+  href: api/HnSF.Fighters.IFighterStateManager.html#HnSF_Fighters_IFighterStateManager_RemoveState_
+  commentId: Overload:HnSF.Fighters.IFighterStateManager.RemoveState
   isSpec: "True"
-  fullName: HnSF.Fighters.IFighterStateManager.LateTick
-  nameWithType: IFighterStateManager.LateTick
+  fullName: HnSF.Fighters.IFighterStateManager.RemoveState
+  nameWithType: IFighterStateManager.RemoveState
 - uid: HnSF.Fighters.IFighterStateManager.SetFrame(System.UInt32)
   name: SetFrame(UInt32)
   href: api/HnSF.Fighters.IFighterStateManager.html#HnSF_Fighters_IFighterStateManager_SetFrame_System_UInt32_
@@ -5174,122 +5160,6 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.IFighterStateManager.SetFrame
   nameWithType: IFighterStateManager.SetFrame
-- uid: HnSF.Fighters.IFighterStateManager.Tick
-  name: Tick()
-  href: api/HnSF.Fighters.IFighterStateManager.html#HnSF_Fighters_IFighterStateManager_Tick
-  commentId: M:HnSF.Fighters.IFighterStateManager.Tick
-  fullName: HnSF.Fighters.IFighterStateManager.Tick()
-  nameWithType: IFighterStateManager.Tick()
-- uid: HnSF.Fighters.IFighterStateManager.Tick*
-  name: Tick
-  href: api/HnSF.Fighters.IFighterStateManager.html#HnSF_Fighters_IFighterStateManager_Tick_
-  commentId: Overload:HnSF.Fighters.IFighterStateManager.Tick
-  isSpec: "True"
-  fullName: HnSF.Fighters.IFighterStateManager.Tick
-  nameWithType: IFighterStateManager.Tick
-- uid: HnSF.Fighters.LookHandler
-  name: LookHandler
-  href: api/HnSF.Fighters.LookHandler.html
-  commentId: T:HnSF.Fighters.LookHandler
-  fullName: HnSF.Fighters.LookHandler
-  nameWithType: LookHandler
-- uid: HnSF.Fighters.LookHandler.LookAt(Vector3)
-  name: LookAt(Vector3)
-  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_LookAt_Vector3_
-  commentId: M:HnSF.Fighters.LookHandler.LookAt(Vector3)
-  fullName: HnSF.Fighters.LookHandler.LookAt(Vector3)
-  nameWithType: LookHandler.LookAt(Vector3)
-- uid: HnSF.Fighters.LookHandler.LookAt*
-  name: LookAt
-  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_LookAt_
-  commentId: Overload:HnSF.Fighters.LookHandler.LookAt
-  isSpec: "True"
-  fullName: HnSF.Fighters.LookHandler.LookAt
-  nameWithType: LookHandler.LookAt
-- uid: HnSF.Fighters.LookHandler.LookTransform
-  name: LookTransform()
-  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_LookTransform
-  commentId: M:HnSF.Fighters.LookHandler.LookTransform
-  fullName: HnSF.Fighters.LookHandler.LookTransform()
-  nameWithType: LookHandler.LookTransform()
-- uid: HnSF.Fighters.LookHandler.LookTransform*
-  name: LookTransform
-  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_LookTransform_
-  commentId: Overload:HnSF.Fighters.LookHandler.LookTransform
-  isSpec: "True"
-  fullName: HnSF.Fighters.LookHandler.LookTransform
-  nameWithType: LookHandler.LookTransform
-- uid: HnSF.Fighters.LookHandler.Reset
-  name: Reset()
-  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_Reset
-  commentId: M:HnSF.Fighters.LookHandler.Reset
-  fullName: HnSF.Fighters.LookHandler.Reset()
-  nameWithType: LookHandler.Reset()
-- uid: HnSF.Fighters.LookHandler.Reset*
-  name: Reset
-  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_Reset_
-  commentId: Overload:HnSF.Fighters.LookHandler.Reset
-  isSpec: "True"
-  fullName: HnSF.Fighters.LookHandler.Reset
-  nameWithType: LookHandler.Reset
-- uid: HnSF.Fighters.LookHandler.SetLockOnTarget(HnSF.Fighters.IFighterBase)
-  name: SetLockOnTarget(IFighterBase)
-  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_SetLockOnTarget_HnSF_Fighters_IFighterBase_
-  commentId: M:HnSF.Fighters.LookHandler.SetLockOnTarget(HnSF.Fighters.IFighterBase)
-  fullName: HnSF.Fighters.LookHandler.SetLockOnTarget(HnSF.Fighters.IFighterBase)
-  nameWithType: LookHandler.SetLockOnTarget(IFighterBase)
-- uid: HnSF.Fighters.LookHandler.SetLockOnTarget*
-  name: SetLockOnTarget
-  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_SetLockOnTarget_
-  commentId: Overload:HnSF.Fighters.LookHandler.SetLockOnTarget
-  isSpec: "True"
-  fullName: HnSF.Fighters.LookHandler.SetLockOnTarget
-  nameWithType: LookHandler.SetLockOnTarget
-- uid: HnSF.Fighters.LookHandler.SetLookAtTarget(Transform)
-  name: SetLookAtTarget(Transform)
-  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_SetLookAtTarget_Transform_
-  commentId: M:HnSF.Fighters.LookHandler.SetLookAtTarget(Transform)
-  fullName: HnSF.Fighters.LookHandler.SetLookAtTarget(Transform)
-  nameWithType: LookHandler.SetLookAtTarget(Transform)
-- uid: HnSF.Fighters.LookHandler.SetLookAtTarget*
-  name: SetLookAtTarget
-  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_SetLookAtTarget_
-  commentId: Overload:HnSF.Fighters.LookHandler.SetLookAtTarget
-  isSpec: "True"
-  fullName: HnSF.Fighters.LookHandler.SetLookAtTarget
-  nameWithType: LookHandler.SetLookAtTarget
-- uid: HnSF.Fighters.LookHandler.SetPosition(Vector3)
-  name: SetPosition(Vector3)
-  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_SetPosition_Vector3_
-  commentId: M:HnSF.Fighters.LookHandler.SetPosition(Vector3)
-  fullName: HnSF.Fighters.LookHandler.SetPosition(Vector3)
-  nameWithType: LookHandler.SetPosition(Vector3)
-- uid: HnSF.Fighters.LookHandler.SetPosition*
-  name: SetPosition
-  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_SetPosition_
-  commentId: Overload:HnSF.Fighters.LookHandler.SetPosition
-  isSpec: "True"
-  fullName: HnSF.Fighters.LookHandler.SetPosition
-  nameWithType: LookHandler.SetPosition
-- uid: HnSF.Fighters.LookHandler.SetRotation(Quaternion)
-  name: SetRotation(Quaternion)
-  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_SetRotation_Quaternion_
-  commentId: M:HnSF.Fighters.LookHandler.SetRotation(Quaternion)
-  fullName: HnSF.Fighters.LookHandler.SetRotation(Quaternion)
-  nameWithType: LookHandler.SetRotation(Quaternion)
-- uid: HnSF.Fighters.LookHandler.SetRotation(Vector3)
-  name: SetRotation(Vector3)
-  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_SetRotation_Vector3_
-  commentId: M:HnSF.Fighters.LookHandler.SetRotation(Vector3)
-  fullName: HnSF.Fighters.LookHandler.SetRotation(Vector3)
-  nameWithType: LookHandler.SetRotation(Vector3)
-- uid: HnSF.Fighters.LookHandler.SetRotation*
-  name: SetRotation
-  href: api/HnSF.Fighters.LookHandler.html#HnSF_Fighters_LookHandler_SetRotation_
-  commentId: Overload:HnSF.Fighters.LookHandler.SetRotation
-  isSpec: "True"
-  fullName: HnSF.Fighters.LookHandler.SetRotation
-  nameWithType: LookHandler.SetRotation
 - uid: HnSF.HelperFunctions
   name: HelperFunctions
   href: api/HnSF.HelperFunctions.html
