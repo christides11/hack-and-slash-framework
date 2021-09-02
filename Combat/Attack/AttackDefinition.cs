@@ -16,11 +16,6 @@ namespace HnSF.Combat
         public StateHurtboxDefinition hurtboxDefinition;
         #endregion
 
-        [Header("Cancel Windows")]
-        #region Cancel Windows
-        public List<Vector2Int> commandAttackCancelWindows = new List<Vector2Int>();
-        #endregion
-
         [Header("Groups")]
         [SerializeReference] public List<ChargeDefinition> chargeWindows = new List<ChargeDefinition>();
         [SerializeReference] public List<HitboxGroup> hitboxGroups = new List<HitboxGroup>();
