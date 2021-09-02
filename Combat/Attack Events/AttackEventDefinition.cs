@@ -25,8 +25,6 @@ namespace HnSF.Combat
         public int chargeLevelMin = 0;
         public int chargeLevelMax = 0;
 
-        public bool inputCheckProcessed;
-
         public bool CheckConditions(IFighterBase manager)
         {
             for(int i = 0; i < conditions.Count; i++)
