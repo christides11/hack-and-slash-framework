@@ -176,8 +176,7 @@ namespace TDAction.Fighter
                 }
                 return currentEvent.attackEvent.Evaluate((int)(Manager.StateManager.CurrentStateFrame - currentEvent.startFrame),
                     currentEvent.endFrame - currentEvent.startFrame,
-                    Manager,
-                    currentEvent.variables);
+                    Manager);
             }
             return HnSF.Combat.AttackEventReturnType.NONE;
         }

@@ -384,8 +384,7 @@ namespace HnSF.Combat
             {
                 return attackEventDefinition.attackEvent.Evaluate((int)(timelineFrame - attackEventDefinition.startFrame),
                     attackEventDefinition.endFrame - attackEventDefinition.startFrame,
-                    e,
-                    attackEventDefinition.variables);
+                    e);
             }
             return AttackEventReturnType.NONE;
         }

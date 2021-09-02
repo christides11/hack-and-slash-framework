@@ -17,7 +17,6 @@ namespace HnSF.Combat
         public int endFrame = 1;
         [SerializeReference] public AttackEvent attackEvent;
         [SerializeReference] public List<AttackCondition> conditions = new List<AttackCondition>();
-        public AttackEventVariables variables = new AttackEventVariables();
         public AttackEventInputCheckTiming inputCheckTiming = AttackEventInputCheckTiming.NONE;
         public int inputCheckStartFrame = 1;
         public int inputCheckEndFrame = 1;
