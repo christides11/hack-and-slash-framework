@@ -1,3 +1,10 @@
+# [28.1.0](https://github.com/christides11/hack-and-slash-framework/compare/v28.0.0...v28.1.0) (2021-09-03)
+
+
+### Features
+
+* Added inverse option to AttackCondition ([9dc81f3](https://github.com/christides11/hack-and-slash-framework/commit/9dc81f3ac2ae4623611ce6a7cfc1803c70d94d18))
+
 # [28.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v27.0.0...v28.0.0) (2021-09-02)
 
 
