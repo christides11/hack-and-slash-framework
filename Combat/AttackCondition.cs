@@ -8,6 +8,8 @@ namespace HnSF
     [System.Serializable]
     public class AttackCondition
     {
+        public bool inverse;
+
         public virtual bool Result(IFighterBase manager)
         {
             return false;

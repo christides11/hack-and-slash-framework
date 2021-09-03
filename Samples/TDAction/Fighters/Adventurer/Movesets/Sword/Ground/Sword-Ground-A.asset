@@ -18,7 +18,6 @@ MonoBehaviour:
   stateOverride: 0
   length: 33
   hurtboxDefinition: {fileID: 11400000, guid: 30ac046a864dbe7469cd7fd75c4219e1, type: 2}
-  commandAttackCancelWindows: []
   chargeWindows: []
   hitboxGroups:
   - id: 0
@@ -59,11 +58,7 @@ MonoBehaviour:
         endFrame: 2
         attackEvent:
           id: 9
-        variables:
-          intVars: 
-          floatVars: []
-          objectVars: []
-          curveVars: []
+        conditions: []
         inputCheckTiming: 0
         inputCheckStartFrame: 1
         inputCheckEndFrame: 1
@@ -74,7 +69,6 @@ MonoBehaviour:
           sequenceInputs: []
         chargeLevelMin: 0
         chargeLevelMax: 0
-        inputCheckProcessed: 0
     00000002:
       type: {class: AttackEventDefinition, ns: HnSF.Combat, asm: HnSF}
       data:
@@ -87,11 +81,7 @@ MonoBehaviour:
         endFrame: 4
         attackEvent:
           id: 10
-        variables:
-          intVars: 
-          floatVars: []
-          objectVars: []
-          curveVars: []
+        conditions: []
         inputCheckTiming: 0
         inputCheckStartFrame: 1
         inputCheckEndFrame: 1
@@ -102,7 +92,6 @@ MonoBehaviour:
           sequenceInputs: []
         chargeLevelMin: 0
         chargeLevelMax: 0
-        inputCheckProcessed: 0
     00000003:
       type: {class: AttackEventDefinition, ns: HnSF.Combat, asm: HnSF}
       data:
@@ -115,11 +104,7 @@ MonoBehaviour:
         endFrame: 40
         attackEvent:
           id: 11
-        variables:
-          intVars: 
-          floatVars: []
-          objectVars: []
-          curveVars: []
+        conditions: []
         inputCheckTiming: 0
         inputCheckStartFrame: 1
         inputCheckEndFrame: 1
@@ -130,7 +115,6 @@ MonoBehaviour:
           sequenceInputs: []
         chargeLevelMin: 0
         chargeLevelMax: 0
-        inputCheckProcessed: 0
     00000004:
       type: {class: AttackEventDefinition, ns: HnSF.Combat, asm: HnSF}
       data:
@@ -143,11 +127,7 @@ MonoBehaviour:
         endFrame: 40
         attackEvent:
           id: 12
-        variables:
-          intVars: 
-          floatVars: []
-          objectVars: []
-          curveVars: []
+        conditions: []
         inputCheckTiming: 0
         inputCheckStartFrame: 1
         inputCheckEndFrame: 1
@@ -158,7 +138,6 @@ MonoBehaviour:
           sequenceInputs: []
         chargeLevelMin: 0
         chargeLevelMax: 0
-        inputCheckProcessed: 0
     00000005:
       type: {class: AttackEventDefinition, ns: HnSF.Combat, asm: HnSF}
       data:
@@ -171,11 +150,7 @@ MonoBehaviour:
         endFrame: 2
         attackEvent:
           id: 13
-        variables:
-          intVars: 
-          floatVars: []
-          objectVars: []
-          curveVars: []
+        conditions: []
         inputCheckTiming: 0
         inputCheckStartFrame: 1
         inputCheckEndFrame: 1
@@ -186,13 +161,14 @@ MonoBehaviour:
           sequenceInputs: []
         chargeLevelMin: 0
         chargeLevelMax: 0
-        inputCheckProcessed: 0
     00000006:
       type: {class: CancelListDefinition, ns: HnSF.Combat, asm: HnSF}
       data:
         startFrame: 15
         endFrame: 33
         cancelListID: 0
+        conditions:
+        - id: 14
     00000007:
       type: {class: BoxDefinition, ns: HnSF.Combat, asm: HnSF}
       data:
@@ -259,3 +235,8 @@ MonoBehaviour:
       type: {class: ClampMovement, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
       data:
         max: 3
+    0000000E:
+      type: {class: Meter, ns: TDAction.Combat.Conditions, asm: TDAction_CSharp}
+      data:
+        inverse: 0
+        tehe: 0
