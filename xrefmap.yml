@@ -26,6 +26,12 @@ references:
   isSpec: "True"
   fullName: HnSF.AttackCondition.GetName
   nameWithType: AttackCondition.GetName
+- uid: HnSF.AttackCondition.inverse
+  name: inverse
+  href: api/HnSF.AttackCondition.html#HnSF_AttackCondition_inverse
+  commentId: F:HnSF.AttackCondition.inverse
+  fullName: HnSF.AttackCondition.inverse
+  nameWithType: AttackCondition.inverse
 - uid: HnSF.AttackCondition.Result(HnSF.Fighters.IFighterBase)
   name: Result(IFighterBase)
   href: api/HnSF.AttackCondition.html#HnSF_AttackCondition_Result_HnSF_Fighters_IFighterBase_

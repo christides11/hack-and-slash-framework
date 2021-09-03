@@ -2,7 +2,7 @@
   "api/HnSF.AttackCondition.html": {
     "href": "api/HnSF.AttackCondition.html",
     "title": "Class AttackCondition | Hack and Slash Framework Documentation",
-    "keywords": "Class AttackCondition Inheritance Object AttackCondition Namespace : HnSF Assembly : HnSF.dll Syntax [Serializable] public class AttackCondition Methods | Improve this Doc View Source GetName() Declaration public virtual string GetName() Returns Type Description String | Improve this Doc View Source Result(IFighterBase) Declaration public virtual bool Result(IFighterBase manager) Parameters Type Name Description IFighterBase manager Returns Type Description Boolean"
+    "keywords": "Class AttackCondition Inheritance Object AttackCondition Namespace : HnSF Assembly : HnSF.dll Syntax [Serializable] public class AttackCondition Fields | Improve this Doc View Source inverse Declaration public bool inverse Field Value Type Description Boolean Methods | Improve this Doc View Source GetName() Declaration public virtual string GetName() Returns Type Description String | Improve this Doc View Source Result(IFighterBase) Declaration public virtual bool Result(IFighterBase manager) Parameters Type Name Description IFighterBase manager Returns Type Description Boolean"
   },
   "api/HnSF.Combat.AttackDefinition.html": {
     "href": "api/HnSF.Combat.AttackDefinition.html",
