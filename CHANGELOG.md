@@ -1,3 +1,10 @@
+# [28.2.0](https://github.com/christides11/hack-and-slash-framework/compare/v28.1.0...v28.2.0) (2021-10-09)
+
+
+### Features
+
+* Added autolinkPercentage to HitInfoBase ([f2f7035](https://github.com/christides11/hack-and-slash-framework/commit/f2f70355d8a4e9ecdaf738ff1f63546e372cfeac))
+
 # [28.1.0](https://github.com/christides11/hack-and-slash-framework/compare/v28.0.0...v28.1.0) (2021-09-03)
 
 
