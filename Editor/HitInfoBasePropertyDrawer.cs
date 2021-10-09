@@ -104,9 +104,7 @@ namespace HnSF.Combat
             yPosition += lineSpacing;
             if (property.FindPropertyRelative("autoLink").boolValue == true)
             {
-                float tempAutolinkPercentage = property.FindPropertyRelative("autoLinkPercentage").floatValue;
-                tempAutolinkPercentage = EditorGUI.Slider(new Rect(position.x, yPosition, position.width, lineHeight), tempAutolinkPercentage, 0.0f, 1.0f);
-                property.FindPropertyRelative("autoLinkPercentage").floatValue = tempAutolinkPercentage;
+                EditorGUI.PropertyField(new Rect(position.x, yPosition, position.width, lineHeight), property.FindPropertyRelative("autoLinkPercentage"));
                 yPosition += lineSpacing;
             }
             EditorGUI.PropertyField(new Rect(position.x, yPosition, position.width, lineHeight), property.FindPropertyRelative("forceType"));
