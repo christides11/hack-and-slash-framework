@@ -2143,6 +2143,12 @@ references:
   commentId: F:HnSF.Combat.HitInfo.opponentMinMagnitude
   fullName: HnSF.Combat.HitInfo.opponentMinMagnitude
   nameWithType: HitInfo.opponentMinMagnitude
+- uid: HnSF.Combat.HitInfo.pushPullCenterOffset
+  name: pushPullCenterOffset
+  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_pushPullCenterOffset
+  commentId: F:HnSF.Combat.HitInfo.pushPullCenterOffset
+  fullName: HnSF.Combat.HitInfo.pushPullCenterOffset
+  nameWithType: HitInfo.pushPullCenterOffset
 - uid: HnSF.Combat.HitInfo.throwConfirm
   name: throwConfirm
   href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_throwConfirm
