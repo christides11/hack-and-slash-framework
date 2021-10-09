@@ -1,3 +1,10 @@
+## [28.2.1](https://github.com/christides11/hack-and-slash-framework/compare/v28.2.0...v28.2.1) (2021-10-09)
+
+
+### Bug Fixes
+
+* Use PropertyField for autoLinkPercentage instead of Slider. ([85afe3c](https://github.com/christides11/hack-and-slash-framework/commit/85afe3ce47958a508a51a4fcbd8c8fd92b112463))
+
 # [28.2.0](https://github.com/christides11/hack-and-slash-framework/compare/v28.1.0...v28.2.0) (2021-10-09)
 
 
