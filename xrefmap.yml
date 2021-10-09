@@ -2198,6 +2198,12 @@ references:
   commentId: F:HnSF.Combat.HitInfoBase.autoLink
   fullName: HnSF.Combat.HitInfoBase.autoLink
   nameWithType: HitInfoBase.autoLink
+- uid: HnSF.Combat.HitInfoBase.autoLinkPercentage
+  name: autoLinkPercentage
+  href: api/HnSF.Combat.HitInfoBase.html#HnSF_Combat_HitInfoBase_autoLinkPercentage
+  commentId: F:HnSF.Combat.HitInfoBase.autoLinkPercentage
+  fullName: HnSF.Combat.HitInfoBase.autoLinkPercentage
+  nameWithType: HitInfoBase.autoLinkPercentage
 - uid: HnSF.Combat.HitInfoBase.continuousHit
   name: continuousHit
   href: api/HnSF.Combat.HitInfoBase.html#HnSF_Combat_HitInfoBase_continuousHit
