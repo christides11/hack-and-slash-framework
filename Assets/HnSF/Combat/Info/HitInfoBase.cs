@@ -13,6 +13,7 @@
         public bool opponentResetXForce = true;
         public bool opponentResetYForce = true;
         public bool autoLink = false;
+        public float autoLinkPercentage = 1;
         public HitboxForceType forceType = HitboxForceType.SET;
         public HitboxForceRelation forceRelation = HitboxForceRelation.ATTACKER;
 
@@ -36,6 +37,7 @@
             this.opponentResetXForce = copy.opponentResetXForce;
             this.opponentResetYForce = copy.opponentResetYForce;
             this.autoLink = copy.autoLink;
+            this.autoLinkPercentage = copy.autoLinkPercentage;
             this.forceType = copy.forceType;
             this.forceRelation = copy.forceRelation;
 
