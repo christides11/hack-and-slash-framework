@@ -1,3 +1,10 @@
+# [28.3.0](https://github.com/christides11/hack-and-slash-framework/compare/v28.2.1...v28.3.0) (2021-10-09)
+
+
+### Features
+
+* Added pushPullCenterOffset for HitInfo ([89c6209](https://github.com/christides11/hack-and-slash-framework/commit/89c62092e83a67ddae0a9dbcd5081d8fcabea106))
+
 ## [28.2.1](https://github.com/christides11/hack-and-slash-framework/compare/v28.2.0...v28.2.1) (2021-10-09)
 
 
