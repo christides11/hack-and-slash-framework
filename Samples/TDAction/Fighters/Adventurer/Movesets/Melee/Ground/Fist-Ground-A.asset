@@ -163,6 +163,7 @@ MonoBehaviour:
         opponentResetXForce: 1
         opponentResetYForce: 1
         autoLink: 0
+        autoLinkPercentage: 0
         forceType: 0
         forceRelation: 0
         attackerHitstop: 4
