@@ -27,6 +27,7 @@ namespace HnSF.Combat
         public float opponentForceMultiplier = 1;
         public float opponentMaxMagnitude = 1;
         public float opponentMinMagnitude = 1;
+        public Vector3 pushPullCenterOffset;
 
         public AttackDefinition throwConfirm;
 
@@ -54,10 +55,12 @@ namespace HnSF.Combat
             causesTumble = otherHitInfo.causesTumble;
 
             opponentForce = otherHitInfo.opponentForce;
-            opponentForceMultiplier = otherHitInfo.opponentForceMultiplier;
 
             forceIncludeYForce = otherHitInfo.forceIncludeYForce;
+            opponentForceMultiplier = otherHitInfo.opponentForceMultiplier;
+            opponentMinMagnitude = otherHitInfo.opponentMinMagnitude;
             opponentMaxMagnitude = otherHitInfo.opponentMaxMagnitude;
+            pushPullCenterOffset = otherHitInfo.pushPullCenterOffset;
         }
     }
 }

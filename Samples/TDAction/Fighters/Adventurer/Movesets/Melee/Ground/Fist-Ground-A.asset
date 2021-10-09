@@ -183,6 +183,7 @@ MonoBehaviour:
         opponentForceMultiplier: 1
         opponentMaxMagnitude: 1
         opponentMinMagnitude: 1
+        pushPullCenterOffset: {x: 0, y: 0, z: 0}
         throwConfirm: {fileID: 0}
     00000008:
       type: {class: ForceAdd, ns: TDAction.Combat.Events, asm: TDAction_CSharp}
