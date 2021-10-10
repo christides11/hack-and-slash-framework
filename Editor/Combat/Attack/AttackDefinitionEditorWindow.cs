@@ -215,9 +215,8 @@ namespace HnSF.Combat
             DrawGeneralOptions(serializedObject);
             if (attack.useState)
             {
-                GUILayout.EndArea();
+                //GUILayout.EndArea();
                 serializedObject.ApplyModifiedProperties();
-                return;
             }
             GUILayout.BeginHorizontal();
             MenuBar(serializedObject);
