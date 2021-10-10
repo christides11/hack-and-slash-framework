@@ -1,3 +1,10 @@
+## [28.3.1](https://github.com/christides11/hack-and-slash-framework/compare/v28.3.0...v28.3.1) (2021-10-10)
+
+
+### Bug Fixes
+
+* Attack useState doesn't block out all other properties ([baf0696](https://github.com/christides11/hack-and-slash-framework/commit/baf0696d13171a101f6988ee0e2ab268d27fb30e))
+
 # [28.3.0](https://github.com/christides11/hack-and-slash-framework/compare/v28.2.1...v28.3.0) (2021-10-09)
 
 
