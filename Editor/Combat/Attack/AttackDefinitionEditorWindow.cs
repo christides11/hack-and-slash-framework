@@ -360,7 +360,7 @@ namespace HnSF.Combat
             MoveEntity();
         }
 
-        protected virtual void DrawHurtboxDefinition(StateHurtboxDefinition hurtboxDefinition)
+        protected virtual void DrawHurtboxDefinition(BoxCollectionDefinition hurtboxDefinition)
         {
 
         }

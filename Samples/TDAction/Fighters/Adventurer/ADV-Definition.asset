@@ -19,6 +19,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 61fb025d138251a4fa2f6a9fbdbd6bb7, type: 2}
   hurtboxDefinitions:
   - name: idle
-    hurtboxDefinition: {fileID: 11400000, guid: c4420567ad1f3034e871c9f8076c9e5c,
+    hurtboxDefinition: {fileID: 11400000, guid: 4eb9359a3194427459ce6134a499160a,
       type: 2}
   sharedAnimations: {fileID: 11400000, guid: d793c51bb4c62cf429bda564327c6347, type: 2}
