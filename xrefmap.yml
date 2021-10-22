@@ -295,12 +295,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.AttackDefinitionEditorWindow.DrawHitboxGroupBars
   nameWithType: AttackDefinitionEditorWindow.DrawHitboxGroupBars
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxDefinition(HnSF.Combat.StateHurtboxDefinition)
-  name: DrawHurtboxDefinition(StateHurtboxDefinition)
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_DrawHurtboxDefinition_HnSF_Combat_StateHurtboxDefinition_
-  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxDefinition(HnSF.Combat.StateHurtboxDefinition)
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxDefinition(HnSF.Combat.StateHurtboxDefinition)
-  nameWithType: AttackDefinitionEditorWindow.DrawHurtboxDefinition(StateHurtboxDefinition)
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxDefinition(HnSF.Combat.BoxCollectionDefinition)
+  name: DrawHurtboxDefinition(BoxCollectionDefinition)
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_DrawHurtboxDefinition_HnSF_Combat_BoxCollectionDefinition_
+  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxDefinition(HnSF.Combat.BoxCollectionDefinition)
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxDefinition(HnSF.Combat.BoxCollectionDefinition)
+  nameWithType: AttackDefinitionEditorWindow.DrawHurtboxDefinition(BoxCollectionDefinition)
 - uid: HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxDefinition*
   name: DrawHurtboxDefinition
   href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_DrawHurtboxDefinition_
@@ -1072,6 +1072,104 @@ references:
   commentId: F:HnSF.Combat.AttackEventVariables.objectVars
   fullName: HnSF.Combat.AttackEventVariables.objectVars
   nameWithType: AttackEventVariables.objectVars
+- uid: HnSF.Combat.BoxCollectionDefinition
+  name: BoxCollectionDefinition
+  href: api/HnSF.Combat.BoxCollectionDefinition.html
+  commentId: T:HnSF.Combat.BoxCollectionDefinition
+  fullName: HnSF.Combat.BoxCollectionDefinition
+  nameWithType: BoxCollectionDefinition
+- uid: HnSF.Combat.BoxCollectionDefinition.hurtboxGroups
+  name: hurtboxGroups
+  href: api/HnSF.Combat.BoxCollectionDefinition.html#HnSF_Combat_BoxCollectionDefinition_hurtboxGroups
+  commentId: F:HnSF.Combat.BoxCollectionDefinition.hurtboxGroups
+  fullName: HnSF.Combat.BoxCollectionDefinition.hurtboxGroups
+  nameWithType: BoxCollectionDefinition.hurtboxGroups
+- uid: HnSF.Combat.BoxCollectionDefinitionEditor
+  name: BoxCollectionDefinitionEditor
+  href: api/HnSF.Combat.BoxCollectionDefinitionEditor.html
+  commentId: T:HnSF.Combat.BoxCollectionDefinitionEditor
+  fullName: HnSF.Combat.BoxCollectionDefinitionEditor
+  nameWithType: BoxCollectionDefinitionEditor
+- uid: HnSF.Combat.BoxCollectionDefinitionEditor.CreateMenus
+  name: CreateMenus()
+  href: api/HnSF.Combat.BoxCollectionDefinitionEditor.html#HnSF_Combat_BoxCollectionDefinitionEditor_CreateMenus
+  commentId: M:HnSF.Combat.BoxCollectionDefinitionEditor.CreateMenus
+  fullName: HnSF.Combat.BoxCollectionDefinitionEditor.CreateMenus()
+  nameWithType: BoxCollectionDefinitionEditor.CreateMenus()
+- uid: HnSF.Combat.BoxCollectionDefinitionEditor.CreateMenus*
+  name: CreateMenus
+  href: api/HnSF.Combat.BoxCollectionDefinitionEditor.html#HnSF_Combat_BoxCollectionDefinitionEditor_CreateMenus_
+  commentId: Overload:HnSF.Combat.BoxCollectionDefinitionEditor.CreateMenus
+  isSpec: "True"
+  fullName: HnSF.Combat.BoxCollectionDefinitionEditor.CreateMenus
+  nameWithType: BoxCollectionDefinitionEditor.CreateMenus
+- uid: HnSF.Combat.BoxCollectionDefinitionEditor.DrawBoxSection(GenericMenu,SerializedObject,System.String,System.String,System.Boolean@)
+  name: DrawBoxSection(GenericMenu, SerializedObject, String, String, ref Boolean)
+  href: api/HnSF.Combat.BoxCollectionDefinitionEditor.html#HnSF_Combat_BoxCollectionDefinitionEditor_DrawBoxSection_GenericMenu_SerializedObject_System_String_System_String_System_Boolean__
+  commentId: M:HnSF.Combat.BoxCollectionDefinitionEditor.DrawBoxSection(GenericMenu,SerializedObject,System.String,System.String,System.Boolean@)
+  name.vb: DrawBoxSection(GenericMenu, SerializedObject, String, String, ByRef Boolean)
+  fullName: HnSF.Combat.BoxCollectionDefinitionEditor.DrawBoxSection(GenericMenu, SerializedObject, System.String, System.String, ref System.Boolean)
+  fullName.vb: HnSF.Combat.BoxCollectionDefinitionEditor.DrawBoxSection(GenericMenu, SerializedObject, System.String, System.String, ByRef System.Boolean)
+  nameWithType: BoxCollectionDefinitionEditor.DrawBoxSection(GenericMenu, SerializedObject, String, String, ref Boolean)
+  nameWithType.vb: BoxCollectionDefinitionEditor.DrawBoxSection(GenericMenu, SerializedObject, String, String, ByRef Boolean)
+- uid: HnSF.Combat.BoxCollectionDefinitionEditor.DrawBoxSection*
+  name: DrawBoxSection
+  href: api/HnSF.Combat.BoxCollectionDefinitionEditor.html#HnSF_Combat_BoxCollectionDefinitionEditor_DrawBoxSection_
+  commentId: Overload:HnSF.Combat.BoxCollectionDefinitionEditor.DrawBoxSection
+  isSpec: "True"
+  fullName: HnSF.Combat.BoxCollectionDefinitionEditor.DrawBoxSection
+  nameWithType: BoxCollectionDefinitionEditor.DrawBoxSection
+- uid: HnSF.Combat.BoxCollectionDefinitionEditor.hurtboxGroupsDropdown
+  name: hurtboxGroupsDropdown
+  href: api/HnSF.Combat.BoxCollectionDefinitionEditor.html#HnSF_Combat_BoxCollectionDefinitionEditor_hurtboxGroupsDropdown
+  commentId: F:HnSF.Combat.BoxCollectionDefinitionEditor.hurtboxGroupsDropdown
+  fullName: HnSF.Combat.BoxCollectionDefinitionEditor.hurtboxGroupsDropdown
+  nameWithType: BoxCollectionDefinitionEditor.hurtboxGroupsDropdown
+- uid: HnSF.Combat.BoxCollectionDefinitionEditor.hurtboxGroupTypes
+  name: hurtboxGroupTypes
+  href: api/HnSF.Combat.BoxCollectionDefinitionEditor.html#HnSF_Combat_BoxCollectionDefinitionEditor_hurtboxGroupTypes
+  commentId: F:HnSF.Combat.BoxCollectionDefinitionEditor.hurtboxGroupTypes
+  fullName: HnSF.Combat.BoxCollectionDefinitionEditor.hurtboxGroupTypes
+  nameWithType: BoxCollectionDefinitionEditor.hurtboxGroupTypes
+- uid: HnSF.Combat.BoxCollectionDefinitionEditor.OnEnable
+  name: OnEnable()
+  href: api/HnSF.Combat.BoxCollectionDefinitionEditor.html#HnSF_Combat_BoxCollectionDefinitionEditor_OnEnable
+  commentId: M:HnSF.Combat.BoxCollectionDefinitionEditor.OnEnable
+  fullName: HnSF.Combat.BoxCollectionDefinitionEditor.OnEnable()
+  nameWithType: BoxCollectionDefinitionEditor.OnEnable()
+- uid: HnSF.Combat.BoxCollectionDefinitionEditor.OnEnable*
+  name: OnEnable
+  href: api/HnSF.Combat.BoxCollectionDefinitionEditor.html#HnSF_Combat_BoxCollectionDefinitionEditor_OnEnable_
+  commentId: Overload:HnSF.Combat.BoxCollectionDefinitionEditor.OnEnable
+  isSpec: "True"
+  fullName: HnSF.Combat.BoxCollectionDefinitionEditor.OnEnable
+  nameWithType: BoxCollectionDefinitionEditor.OnEnable
+- uid: HnSF.Combat.BoxCollectionDefinitionEditor.OnHurtboxGroupTypeSelected(System.Object)
+  name: OnHurtboxGroupTypeSelected(Object)
+  href: api/HnSF.Combat.BoxCollectionDefinitionEditor.html#HnSF_Combat_BoxCollectionDefinitionEditor_OnHurtboxGroupTypeSelected_System_Object_
+  commentId: M:HnSF.Combat.BoxCollectionDefinitionEditor.OnHurtboxGroupTypeSelected(System.Object)
+  fullName: HnSF.Combat.BoxCollectionDefinitionEditor.OnHurtboxGroupTypeSelected(System.Object)
+  nameWithType: BoxCollectionDefinitionEditor.OnHurtboxGroupTypeSelected(Object)
+- uid: HnSF.Combat.BoxCollectionDefinitionEditor.OnHurtboxGroupTypeSelected*
+  name: OnHurtboxGroupTypeSelected
+  href: api/HnSF.Combat.BoxCollectionDefinitionEditor.html#HnSF_Combat_BoxCollectionDefinitionEditor_OnHurtboxGroupTypeSelected_
+  commentId: Overload:HnSF.Combat.BoxCollectionDefinitionEditor.OnHurtboxGroupTypeSelected
+  isSpec: "True"
+  fullName: HnSF.Combat.BoxCollectionDefinitionEditor.OnHurtboxGroupTypeSelected
+  nameWithType: BoxCollectionDefinitionEditor.OnHurtboxGroupTypeSelected
+- uid: HnSF.Combat.BoxCollectionDefinitionEditor.OnInspectorGUI
+  name: OnInspectorGUI()
+  href: api/HnSF.Combat.BoxCollectionDefinitionEditor.html#HnSF_Combat_BoxCollectionDefinitionEditor_OnInspectorGUI
+  commentId: M:HnSF.Combat.BoxCollectionDefinitionEditor.OnInspectorGUI
+  fullName: HnSF.Combat.BoxCollectionDefinitionEditor.OnInspectorGUI()
+  nameWithType: BoxCollectionDefinitionEditor.OnInspectorGUI()
+- uid: HnSF.Combat.BoxCollectionDefinitionEditor.OnInspectorGUI*
+  name: OnInspectorGUI
+  href: api/HnSF.Combat.BoxCollectionDefinitionEditor.html#HnSF_Combat_BoxCollectionDefinitionEditor_OnInspectorGUI_
+  commentId: Overload:HnSF.Combat.BoxCollectionDefinitionEditor.OnInspectorGUI
+  isSpec: "True"
+  fullName: HnSF.Combat.BoxCollectionDefinitionEditor.OnInspectorGUI
+  nameWithType: BoxCollectionDefinitionEditor.OnInspectorGUI
 - uid: HnSF.Combat.BoxDefinition
   name: BoxDefinition
   href: api/HnSF.Combat.BoxDefinition.html
@@ -3349,69 +3447,6 @@ references:
   commentId: F:HnSF.Combat.OnHitType.NONE
   fullName: HnSF.Combat.OnHitType.NONE
   nameWithType: OnHitType.NONE
-- uid: HnSF.Combat.StateHurtboxDefinition
-  name: StateHurtboxDefinition
-  href: api/HnSF.Combat.StateHurtboxDefinition.html
-  commentId: T:HnSF.Combat.StateHurtboxDefinition
-  fullName: HnSF.Combat.StateHurtboxDefinition
-  nameWithType: StateHurtboxDefinition
-- uid: HnSF.Combat.StateHurtboxDefinition.hurtboxGroups
-  name: hurtboxGroups
-  href: api/HnSF.Combat.StateHurtboxDefinition.html#HnSF_Combat_StateHurtboxDefinition_hurtboxGroups
-  commentId: F:HnSF.Combat.StateHurtboxDefinition.hurtboxGroups
-  fullName: HnSF.Combat.StateHurtboxDefinition.hurtboxGroups
-  nameWithType: StateHurtboxDefinition.hurtboxGroups
-- uid: HnSF.Combat.StateHurtboxDefinitionEditor
-  name: StateHurtboxDefinitionEditor
-  href: api/HnSF.Combat.StateHurtboxDefinitionEditor.html
-  commentId: T:HnSF.Combat.StateHurtboxDefinitionEditor
-  fullName: HnSF.Combat.StateHurtboxDefinitionEditor
-  nameWithType: StateHurtboxDefinitionEditor
-- uid: HnSF.Combat.StateHurtboxDefinitionEditor.hurtboxGroupTypes
-  name: hurtboxGroupTypes
-  href: api/HnSF.Combat.StateHurtboxDefinitionEditor.html#HnSF_Combat_StateHurtboxDefinitionEditor_hurtboxGroupTypes
-  commentId: F:HnSF.Combat.StateHurtboxDefinitionEditor.hurtboxGroupTypes
-  fullName: HnSF.Combat.StateHurtboxDefinitionEditor.hurtboxGroupTypes
-  nameWithType: StateHurtboxDefinitionEditor.hurtboxGroupTypes
-- uid: HnSF.Combat.StateHurtboxDefinitionEditor.OnEnable
-  name: OnEnable()
-  href: api/HnSF.Combat.StateHurtboxDefinitionEditor.html#HnSF_Combat_StateHurtboxDefinitionEditor_OnEnable
-  commentId: M:HnSF.Combat.StateHurtboxDefinitionEditor.OnEnable
-  fullName: HnSF.Combat.StateHurtboxDefinitionEditor.OnEnable()
-  nameWithType: StateHurtboxDefinitionEditor.OnEnable()
-- uid: HnSF.Combat.StateHurtboxDefinitionEditor.OnEnable*
-  name: OnEnable
-  href: api/HnSF.Combat.StateHurtboxDefinitionEditor.html#HnSF_Combat_StateHurtboxDefinitionEditor_OnEnable_
-  commentId: Overload:HnSF.Combat.StateHurtboxDefinitionEditor.OnEnable
-  isSpec: "True"
-  fullName: HnSF.Combat.StateHurtboxDefinitionEditor.OnEnable
-  nameWithType: StateHurtboxDefinitionEditor.OnEnable
-- uid: HnSF.Combat.StateHurtboxDefinitionEditor.OnHurtboxGroupTypeSelected(System.Object)
-  name: OnHurtboxGroupTypeSelected(Object)
-  href: api/HnSF.Combat.StateHurtboxDefinitionEditor.html#HnSF_Combat_StateHurtboxDefinitionEditor_OnHurtboxGroupTypeSelected_System_Object_
-  commentId: M:HnSF.Combat.StateHurtboxDefinitionEditor.OnHurtboxGroupTypeSelected(System.Object)
-  fullName: HnSF.Combat.StateHurtboxDefinitionEditor.OnHurtboxGroupTypeSelected(System.Object)
-  nameWithType: StateHurtboxDefinitionEditor.OnHurtboxGroupTypeSelected(Object)
-- uid: HnSF.Combat.StateHurtboxDefinitionEditor.OnHurtboxGroupTypeSelected*
-  name: OnHurtboxGroupTypeSelected
-  href: api/HnSF.Combat.StateHurtboxDefinitionEditor.html#HnSF_Combat_StateHurtboxDefinitionEditor_OnHurtboxGroupTypeSelected_
-  commentId: Overload:HnSF.Combat.StateHurtboxDefinitionEditor.OnHurtboxGroupTypeSelected
-  isSpec: "True"
-  fullName: HnSF.Combat.StateHurtboxDefinitionEditor.OnHurtboxGroupTypeSelected
-  nameWithType: StateHurtboxDefinitionEditor.OnHurtboxGroupTypeSelected
-- uid: HnSF.Combat.StateHurtboxDefinitionEditor.OnInspectorGUI
-  name: OnInspectorGUI()
-  href: api/HnSF.Combat.StateHurtboxDefinitionEditor.html#HnSF_Combat_StateHurtboxDefinitionEditor_OnInspectorGUI
-  commentId: M:HnSF.Combat.StateHurtboxDefinitionEditor.OnInspectorGUI
-  fullName: HnSF.Combat.StateHurtboxDefinitionEditor.OnInspectorGUI()
-  nameWithType: StateHurtboxDefinitionEditor.OnInspectorGUI()
-- uid: HnSF.Combat.StateHurtboxDefinitionEditor.OnInspectorGUI*
-  name: OnInspectorGUI
-  href: api/HnSF.Combat.StateHurtboxDefinitionEditor.html#HnSF_Combat_StateHurtboxDefinitionEditor_OnInspectorGUI_
-  commentId: Overload:HnSF.Combat.StateHurtboxDefinitionEditor.OnInspectorGUI
-  isSpec: "True"
-  fullName: HnSF.Combat.StateHurtboxDefinitionEditor.OnInspectorGUI
-  nameWithType: StateHurtboxDefinitionEditor.OnInspectorGUI
 - uid: HnSF.Fighters
   name: HnSF.Fighters
   href: api/HnSF.Fighters.html
@@ -4148,12 +4183,12 @@ references:
   commentId: T:HnSF.Fighters.FighterHurtboxManager
   fullName: HnSF.Fighters.FighterHurtboxManager
   nameWithType: FighterHurtboxManager
-- uid: HnSF.Fighters.FighterHurtboxManager.CheckWithinHurtboxWindow(HnSF.Combat.StateHurtboxDefinition,System.Int32,System.UInt32)
-  name: CheckWithinHurtboxWindow(StateHurtboxDefinition, Int32, UInt32)
-  href: api/HnSF.Fighters.FighterHurtboxManager.html#HnSF_Fighters_FighterHurtboxManager_CheckWithinHurtboxWindow_HnSF_Combat_StateHurtboxDefinition_System_Int32_System_UInt32_
-  commentId: M:HnSF.Fighters.FighterHurtboxManager.CheckWithinHurtboxWindow(HnSF.Combat.StateHurtboxDefinition,System.Int32,System.UInt32)
-  fullName: HnSF.Fighters.FighterHurtboxManager.CheckWithinHurtboxWindow(HnSF.Combat.StateHurtboxDefinition, System.Int32, System.UInt32)
-  nameWithType: FighterHurtboxManager.CheckWithinHurtboxWindow(StateHurtboxDefinition, Int32, UInt32)
+- uid: HnSF.Fighters.FighterHurtboxManager.CheckWithinHurtboxWindow(HnSF.Combat.BoxCollectionDefinition,System.Int32,System.UInt32)
+  name: CheckWithinHurtboxWindow(BoxCollectionDefinition, Int32, UInt32)
+  href: api/HnSF.Fighters.FighterHurtboxManager.html#HnSF_Fighters_FighterHurtboxManager_CheckWithinHurtboxWindow_HnSF_Combat_BoxCollectionDefinition_System_Int32_System_UInt32_
+  commentId: M:HnSF.Fighters.FighterHurtboxManager.CheckWithinHurtboxWindow(HnSF.Combat.BoxCollectionDefinition,System.Int32,System.UInt32)
+  fullName: HnSF.Fighters.FighterHurtboxManager.CheckWithinHurtboxWindow(HnSF.Combat.BoxCollectionDefinition, System.Int32, System.UInt32)
+  nameWithType: FighterHurtboxManager.CheckWithinHurtboxWindow(BoxCollectionDefinition, Int32, UInt32)
 - uid: HnSF.Fighters.FighterHurtboxManager.CheckWithinHurtboxWindow*
   name: CheckWithinHurtboxWindow
   href: api/HnSF.Fighters.FighterHurtboxManager.html#HnSF_Fighters_FighterHurtboxManager_CheckWithinHurtboxWindow_
@@ -4200,12 +4235,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.FighterHurtboxManager.CreateHurtbox
   nameWithType: FighterHurtboxManager.CreateHurtbox
-- uid: HnSF.Fighters.FighterHurtboxManager.CreateHurtboxes(HnSF.Combat.StateHurtboxDefinition,System.UInt32)
-  name: CreateHurtboxes(StateHurtboxDefinition, UInt32)
-  href: api/HnSF.Fighters.FighterHurtboxManager.html#HnSF_Fighters_FighterHurtboxManager_CreateHurtboxes_HnSF_Combat_StateHurtboxDefinition_System_UInt32_
-  commentId: M:HnSF.Fighters.FighterHurtboxManager.CreateHurtboxes(HnSF.Combat.StateHurtboxDefinition,System.UInt32)
-  fullName: HnSF.Fighters.FighterHurtboxManager.CreateHurtboxes(HnSF.Combat.StateHurtboxDefinition, System.UInt32)
-  nameWithType: FighterHurtboxManager.CreateHurtboxes(StateHurtboxDefinition, UInt32)
+- uid: HnSF.Fighters.FighterHurtboxManager.CreateHurtboxes(HnSF.Combat.BoxCollectionDefinition,System.UInt32)
+  name: CreateHurtboxes(BoxCollectionDefinition, UInt32)
+  href: api/HnSF.Fighters.FighterHurtboxManager.html#HnSF_Fighters_FighterHurtboxManager_CreateHurtboxes_HnSF_Combat_BoxCollectionDefinition_System_UInt32_
+  commentId: M:HnSF.Fighters.FighterHurtboxManager.CreateHurtboxes(HnSF.Combat.BoxCollectionDefinition,System.UInt32)
+  fullName: HnSF.Fighters.FighterHurtboxManager.CreateHurtboxes(HnSF.Combat.BoxCollectionDefinition, System.UInt32)
+  nameWithType: FighterHurtboxManager.CreateHurtboxes(BoxCollectionDefinition, UInt32)
 - uid: HnSF.Fighters.FighterHurtboxManager.CreateHurtboxes*
   name: CreateHurtboxes
   href: api/HnSF.Fighters.FighterHurtboxManager.html#HnSF_Fighters_FighterHurtboxManager_CreateHurtboxes_
@@ -4263,12 +4298,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.FighterHurtboxManager.Manager
   nameWithType: FighterHurtboxManager.Manager
-- uid: HnSF.Fighters.FighterHurtboxManager.SetHurtboxDefinition(HnSF.Combat.StateHurtboxDefinition)
-  name: SetHurtboxDefinition(StateHurtboxDefinition)
-  href: api/HnSF.Fighters.FighterHurtboxManager.html#HnSF_Fighters_FighterHurtboxManager_SetHurtboxDefinition_HnSF_Combat_StateHurtboxDefinition_
-  commentId: M:HnSF.Fighters.FighterHurtboxManager.SetHurtboxDefinition(HnSF.Combat.StateHurtboxDefinition)
-  fullName: HnSF.Fighters.FighterHurtboxManager.SetHurtboxDefinition(HnSF.Combat.StateHurtboxDefinition)
-  nameWithType: FighterHurtboxManager.SetHurtboxDefinition(StateHurtboxDefinition)
+- uid: HnSF.Fighters.FighterHurtboxManager.SetHurtboxDefinition(HnSF.Combat.BoxCollectionDefinition)
+  name: SetHurtboxDefinition(BoxCollectionDefinition)
+  href: api/HnSF.Fighters.FighterHurtboxManager.html#HnSF_Fighters_FighterHurtboxManager_SetHurtboxDefinition_HnSF_Combat_BoxCollectionDefinition_
+  commentId: M:HnSF.Fighters.FighterHurtboxManager.SetHurtboxDefinition(HnSF.Combat.BoxCollectionDefinition)
+  fullName: HnSF.Fighters.FighterHurtboxManager.SetHurtboxDefinition(HnSF.Combat.BoxCollectionDefinition)
+  nameWithType: FighterHurtboxManager.SetHurtboxDefinition(BoxCollectionDefinition)
 - uid: HnSF.Fighters.FighterHurtboxManager.SetHurtboxDefinition*
   name: SetHurtboxDefinition
   href: api/HnSF.Fighters.FighterHurtboxManager.html#HnSF_Fighters_FighterHurtboxManager_SetHurtboxDefinition_

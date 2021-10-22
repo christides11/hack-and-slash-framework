@@ -40,7 +40,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.AttackDefinition.html",
-          "hash": "59KzFSXjD9+A5hx/bheI8FMxJXY3nqII+oGQ34MR0wg="
+          "hash": "oNBLqTQ5MzMaa0k6UZS0VZpYm+rRHUv6NhUNYoqwJiw="
         }
       },
       "is_incremental": false,
@@ -64,7 +64,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.AttackDefinitionEditorWindow.html",
-          "hash": "Et4uJNwY6ZJ0gtBXMbunpgQNmXPscETfAidq3tGVpRI="
+          "hash": "Yuidxl/1eZKhM8sIxYa6CUzk/EXqY7Q3wnoizpS8WCs="
         }
       },
       "is_incremental": false,
@@ -137,6 +137,30 @@
         ".html": {
           "relative_path": "api/HnSF.Combat.AttackEventVariables.html",
           "hash": "8M1UWY50zEoX472qF6x9xrzsuOfd+R+iuDlyxE2PdOQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Combat.BoxCollectionDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Combat.BoxCollectionDefinition.html",
+          "hash": "LIpbSjYzpEtSxL9oRdQHRT25mQH+oeGuf9w+K0c+4q4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Combat.BoxCollectionDefinitionEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Combat.BoxCollectionDefinitionEditor.html",
+          "hash": "Ix7Eb9sx7vh4sibqvU7Y7GolU3OEHdPMamS5+QFgVoQ="
         }
       },
       "is_incremental": false,
@@ -648,35 +672,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Combat.StateHurtboxDefinition.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/HnSF.Combat.StateHurtboxDefinition.html",
-          "hash": "y8UY+ndQCTZ6l/qqIyzY/7Rp0yw8FY5oxNKvaL/Q56U="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Combat.StateHurtboxDefinitionEditor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/HnSF.Combat.StateHurtboxDefinitionEditor.html",
-          "hash": "VUOZJyI2doBHRXQroM0LtZ9N1YZyMJt8q36bRlzmVbI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/HnSF.Combat.yml",
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.html",
-          "hash": "NDOSnzn3vMoLlt+jaq0nyefaE2dLBjr4WGDxAXuxzs4="
+          "hash": "otgwNrr94B0kBoMZidLkaphOO7gMMqNDoA2nwnWXFRY="
         }
       },
       "is_incremental": false,
@@ -760,7 +760,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.FighterHurtboxManager.html",
-          "hash": "mD7Iva1I+NzE1RcvmtflZsDvqcrhwLEM74IuJtZv7Ik="
+          "hash": "qjQ+yNgutfsqVFOWUBP9Mc7ajYixkpyp+CYYhDs7tS4="
         }
       },
       "is_incremental": false,
@@ -1084,7 +1084,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "xVUO4QWc3g8amYPAmgUAaAFIrrHFaEKEYJAlhBZqQNc="
+          "hash": "e44bFdjl9BQ2aoQO0V0VbFpXOzytR5fmvdZlZrkWOIU="
         }
       },
       "is_incremental": false,
