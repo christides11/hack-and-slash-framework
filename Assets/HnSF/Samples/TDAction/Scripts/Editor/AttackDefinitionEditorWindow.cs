@@ -121,7 +121,7 @@ namespace TDAction.Combat
             }
         }
 
-        protected override void DrawHurtboxDefinition(StateHurtboxDefinition hurtboxDefinition)
+        protected override void DrawHurtboxDefinition(BoxCollectionDefinition hurtboxDefinition)
         {
             if (visualFighterSceneReference == null)
             {

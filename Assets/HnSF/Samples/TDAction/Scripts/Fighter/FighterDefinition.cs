@@ -13,7 +13,7 @@ namespace TDAction.Fighter
         public class HurtboxDefinitionItem
         {
             public string name;
-            public StateHurtboxDefinition hurtboxDefinition;
+            public BoxCollectionDefinition hurtboxDefinition;
         }
 
         [SerializeField] protected FighterManager entityPrefab;

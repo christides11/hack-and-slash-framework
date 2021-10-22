@@ -63,8 +63,8 @@
      <Compile Include="Assets\HnSF\Editor\Combat\Attack\ChargeGroupEditorWindow.cs" />
      <Compile Include="Assets\HnSF\Editor\Combat\Attack\HitboxGroupEditorWindow.cs" />
      <Compile Include="Assets\HnSF\Editor\Combat\Attack\HurtboxGroupEditorWindow.cs" />
+     <Compile Include="Assets\HnSF\Editor\Combat\BoxCollectionDefinitionEditor.cs" />
      <Compile Include="Assets\HnSF\Editor\Combat\Moveset\MovesetAttackNodeEditor.cs" />
-     <Compile Include="Assets\HnSF\Editor\Combat\StateHurtboxDefinitionEditor.cs" />
      <Compile Include="Assets\HnSF\Editor\HitInfoBasePropertyDrawer.cs" />
      <Compile Include="Assets\HnSF\Editor\HitInfoPropertyDrawer.cs" />
      <Compile Include="Assets\HnSF\Editor\HurtboxGroupPropertyDrawer.cs" />

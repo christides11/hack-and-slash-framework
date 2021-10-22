@@ -12,7 +12,7 @@ namespace HnSF.Fighters
         public virtual IFighterBase Manager { get; }
         public virtual IFighterStateManager StateManager { get; }
 
-        protected StateHurtboxDefinition hurtboxDefinition;
+        protected BoxCollectionDefinition hurtboxDefinition;
 
         protected List<Hurtbox> hurtboxPool = new List<Hurtbox>();
         protected Dictionary<int, List<Hurtbox>> hurtboxGroups = new Dictionary<int, List<Hurtbox>>();
@@ -23,7 +23,7 @@ namespace HnSF.Fighters
         }
 
         protected List<int> hurtboxGroupsToDelete = new List<int>();
-        public virtual void CreateHurtboxes(StateHurtboxDefinition currentHurtboxDefinition, uint frame)
+        public virtual void CreateHurtboxes(BoxCollectionDefinition currentHurtboxDefinition, uint frame)
         {
             if(currentHurtboxDefinition == null)
             {
@@ -91,7 +91,7 @@ namespace HnSF.Fighters
             hurtboxGroupsToDelete.Clear();
         }
 
-        protected virtual bool CheckWithinHurtboxWindow(StateHurtboxDefinition currentHurtboxDefinition, int groupIndex, uint frame)
+        protected virtual bool CheckWithinHurtboxWindow(BoxCollectionDefinition currentHurtboxDefinition, int groupIndex, uint frame)
         {
             if (currentHurtboxDefinition.hurtboxGroups[groupIndex].activeFramesEnd == -1)
             {
@@ -146,7 +146,7 @@ namespace HnSF.Fighters
             hurtbox.gameObject.SetActive(false);
         }
 
-        public virtual void SetHurtboxDefinition(StateHurtboxDefinition stateHurtboxDefinition)
+        public virtual void SetHurtboxDefinition(BoxCollectionDefinition stateHurtboxDefinition)
         {
             CleanupHurtboxGroups();
             hurtboxDefinition = stateHurtboxDefinition;
