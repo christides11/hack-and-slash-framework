@@ -1,3 +1,15 @@
+# [29.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v28.3.1...v29.0.0) (2021-10-22)
+
+
+### Features
+
+* Changed StateHurtboxDefinition to BoxCollectionDefinition ([2fc6494](https://github.com/christides11/hack-and-slash-framework/commit/2fc64944d8cf218dd14b6ffabb3ae0bf46ea95f5))
+
+
+### BREAKING CHANGES
+
+* Changed StateHurtboxDefinition to BoxCollectionDefinition.
+
 ## [28.3.1](https://github.com/christides11/hack-and-slash-framework/compare/v28.3.0...v28.3.1) (2021-10-10)
 
 
