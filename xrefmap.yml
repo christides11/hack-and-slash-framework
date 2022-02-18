@@ -172,25 +172,6 @@ references:
   commentId: F:HnSF.Combat.AttackDefinitionEditorWindow.chargeGroupTypes
   fullName: HnSF.Combat.AttackDefinitionEditorWindow.chargeGroupTypes
   nameWithType: AttackDefinitionEditorWindow.chargeGroupTypes
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.CreateFighter
-  name: CreateFighter()
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_CreateFighter
-  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.CreateFighter
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.CreateFighter()
-  nameWithType: AttackDefinitionEditorWindow.CreateFighter()
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.CreateFighter*
-  name: CreateFighter
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_CreateFighter_
-  commentId: Overload:HnSF.Combat.AttackDefinitionEditorWindow.CreateFighter
-  isSpec: "True"
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.CreateFighter
-  nameWithType: AttackDefinitionEditorWindow.CreateFighter
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.diff
-  name: diff
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_diff
-  commentId: F:HnSF.Combat.AttackDefinitionEditorWindow.diff
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.diff
-  nameWithType: AttackDefinitionEditorWindow.diff
 - uid: HnSF.Combat.AttackDefinitionEditorWindow.DrawCancelBars(SerializedObject)
   name: DrawCancelBars(SerializedObject)
   href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_DrawCancelBars_SerializedObject_
@@ -243,45 +224,6 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.AttackDefinitionEditorWindow.DrawGeneralOptions
   nameWithType: AttackDefinitionEditorWindow.DrawGeneralOptions
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.DrawGround
-  name: DrawGround()
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_DrawGround
-  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.DrawGround
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.DrawGround()
-  nameWithType: AttackDefinitionEditorWindow.DrawGround()
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.DrawGround*
-  name: DrawGround
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_DrawGround_
-  commentId: Overload:HnSF.Combat.AttackDefinitionEditorWindow.DrawGround
-  isSpec: "True"
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.DrawGround
-  nameWithType: AttackDefinitionEditorWindow.DrawGround
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.DrawHitboxes
-  name: DrawHitboxes()
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_DrawHitboxes
-  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.DrawHitboxes
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.DrawHitboxes()
-  nameWithType: AttackDefinitionEditorWindow.DrawHitboxes()
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.DrawHitboxes*
-  name: DrawHitboxes
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_DrawHitboxes_
-  commentId: Overload:HnSF.Combat.AttackDefinitionEditorWindow.DrawHitboxes
-  isSpec: "True"
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.DrawHitboxes
-  nameWithType: AttackDefinitionEditorWindow.DrawHitboxes
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.DrawHitboxGroup(System.Int32,HnSF.Combat.HitboxGroup)
-  name: DrawHitboxGroup(Int32, HitboxGroup)
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_DrawHitboxGroup_System_Int32_HnSF_Combat_HitboxGroup_
-  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.DrawHitboxGroup(System.Int32,HnSF.Combat.HitboxGroup)
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.DrawHitboxGroup(System.Int32, HnSF.Combat.HitboxGroup)
-  nameWithType: AttackDefinitionEditorWindow.DrawHitboxGroup(Int32, HitboxGroup)
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.DrawHitboxGroup*
-  name: DrawHitboxGroup
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_DrawHitboxGroup_
-  commentId: Overload:HnSF.Combat.AttackDefinitionEditorWindow.DrawHitboxGroup
-  isSpec: "True"
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.DrawHitboxGroup
-  nameWithType: AttackDefinitionEditorWindow.DrawHitboxGroup
 - uid: HnSF.Combat.AttackDefinitionEditorWindow.DrawHitboxGroupBars(SerializedObject)
   name: DrawHitboxGroupBars(SerializedObject)
   href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_DrawHitboxGroupBars_SerializedObject_
@@ -295,32 +237,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.AttackDefinitionEditorWindow.DrawHitboxGroupBars
   nameWithType: AttackDefinitionEditorWindow.DrawHitboxGroupBars
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxDefinition(HnSF.Combat.BoxCollectionDefinition)
-  name: DrawHurtboxDefinition(BoxCollectionDefinition)
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_DrawHurtboxDefinition_HnSF_Combat_BoxCollectionDefinition_
-  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxDefinition(HnSF.Combat.BoxCollectionDefinition)
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxDefinition(HnSF.Combat.BoxCollectionDefinition)
-  nameWithType: AttackDefinitionEditorWindow.DrawHurtboxDefinition(BoxCollectionDefinition)
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxDefinition*
-  name: DrawHurtboxDefinition
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_DrawHurtboxDefinition_
-  commentId: Overload:HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxDefinition
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.DrawPlayControls
+  name: DrawPlayControls()
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_DrawPlayControls
+  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.DrawPlayControls
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.DrawPlayControls()
+  nameWithType: AttackDefinitionEditorWindow.DrawPlayControls()
+- uid: HnSF.Combat.AttackDefinitionEditorWindow.DrawPlayControls*
+  name: DrawPlayControls
+  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_DrawPlayControls_
+  commentId: Overload:HnSF.Combat.AttackDefinitionEditorWindow.DrawPlayControls
   isSpec: "True"
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxDefinition
-  nameWithType: AttackDefinitionEditorWindow.DrawHurtboxDefinition
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxes
-  name: DrawHurtboxes()
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_DrawHurtboxes
-  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxes
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxes()
-  nameWithType: AttackDefinitionEditorWindow.DrawHurtboxes()
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxes*
-  name: DrawHurtboxes
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_DrawHurtboxes_
-  commentId: Overload:HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxes
-  isSpec: "True"
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.DrawHurtboxes
-  nameWithType: AttackDefinitionEditorWindow.DrawHurtboxes
+  fullName: HnSF.Combat.AttackDefinitionEditorWindow.DrawPlayControls
+  nameWithType: AttackDefinitionEditorWindow.DrawPlayControls
 - uid: HnSF.Combat.AttackDefinitionEditorWindow.DrawUILine(Color,System.Int32,System.Int32)
   name: DrawUILine(Color, Int32, Int32)
   href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_DrawUILine_Color_System_Int32_System_Int32_
@@ -347,19 +276,6 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.AttackDefinitionEditorWindow.FastForward
   nameWithType: AttackDefinitionEditorWindow.FastForward
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.HandleEvent(HnSF.Combat.AttackEventDefinition)
-  name: HandleEvent(AttackEventDefinition)
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_HandleEvent_HnSF_Combat_AttackEventDefinition_
-  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.HandleEvent(HnSF.Combat.AttackEventDefinition)
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.HandleEvent(HnSF.Combat.AttackEventDefinition)
-  nameWithType: AttackDefinitionEditorWindow.HandleEvent(AttackEventDefinition)
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.HandleEvent*
-  name: HandleEvent
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_HandleEvent_
-  commentId: Overload:HnSF.Combat.AttackDefinitionEditorWindow.HandleEvent
-  isSpec: "True"
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.HandleEvent
-  nameWithType: AttackDefinitionEditorWindow.HandleEvent
 - uid: HnSF.Combat.AttackDefinitionEditorWindow.hitboxGroupTypes
   name: hitboxGroupTypes
   href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_hitboxGroupTypes
@@ -405,37 +321,6 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.AttackDefinitionEditorWindow.MenuBar
   nameWithType: AttackDefinitionEditorWindow.MenuBar
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.mousePos
-  name: mousePos
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_mousePos
-  commentId: F:HnSF.Combat.AttackDefinitionEditorWindow.mousePos
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.mousePos
-  nameWithType: AttackDefinitionEditorWindow.mousePos
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.MoveEntity
-  name: MoveEntity()
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_MoveEntity
-  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.MoveEntity
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.MoveEntity()
-  nameWithType: AttackDefinitionEditorWindow.MoveEntity()
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.MoveEntity*
-  name: MoveEntity
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_MoveEntity_
-  commentId: Overload:HnSF.Combat.AttackDefinitionEditorWindow.MoveEntity
-  isSpec: "True"
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.MoveEntity
-  nameWithType: AttackDefinitionEditorWindow.MoveEntity
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.moveMode
-  name: moveMode
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_moveMode
-  commentId: F:HnSF.Combat.AttackDefinitionEditorWindow.moveMode
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.moveMode
-  nameWithType: AttackDefinitionEditorWindow.moveMode
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.moveSpeed
-  name: moveSpeed
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_moveSpeed
-  commentId: F:HnSF.Combat.AttackDefinitionEditorWindow.moveSpeed
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.moveSpeed
-  nameWithType: AttackDefinitionEditorWindow.moveSpeed
 - uid: HnSF.Combat.AttackDefinitionEditorWindow.nextPlayTime
   name: nextPlayTime
   href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_nextPlayTime
@@ -610,49 +495,12 @@ references:
   commentId: F:HnSF.Combat.AttackDefinitionEditorWindow.renderUtils
   fullName: HnSF.Combat.AttackDefinitionEditorWindow.renderUtils
   nameWithType: AttackDefinitionEditorWindow.renderUtils
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.ResetFighterVariables
-  name: ResetFighterVariables()
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_ResetFighterVariables
-  commentId: M:HnSF.Combat.AttackDefinitionEditorWindow.ResetFighterVariables
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.ResetFighterVariables()
-  nameWithType: AttackDefinitionEditorWindow.ResetFighterVariables()
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.ResetFighterVariables*
-  name: ResetFighterVariables
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_ResetFighterVariables_
-  commentId: Overload:HnSF.Combat.AttackDefinitionEditorWindow.ResetFighterVariables
-  isSpec: "True"
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.ResetFighterVariables
-  nameWithType: AttackDefinitionEditorWindow.ResetFighterVariables
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.rotationMode
-  name: rotationMode
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_rotationMode
-  commentId: F:HnSF.Combat.AttackDefinitionEditorWindow.rotationMode
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.rotationMode
-  nameWithType: AttackDefinitionEditorWindow.rotationMode
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.rotSpeed
-  name: rotSpeed
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_rotSpeed
-  commentId: F:HnSF.Combat.AttackDefinitionEditorWindow.rotSpeed
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.rotSpeed
-  nameWithType: AttackDefinitionEditorWindow.rotSpeed
 - uid: HnSF.Combat.AttackDefinitionEditorWindow.scroll
   name: scroll
   href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_scroll
   commentId: F:HnSF.Combat.AttackDefinitionEditorWindow.scroll
   fullName: HnSF.Combat.AttackDefinitionEditorWindow.scroll
   nameWithType: AttackDefinitionEditorWindow.scroll
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.scrollSpeed
-  name: scrollSpeed
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_scrollSpeed
-  commentId: F:HnSF.Combat.AttackDefinitionEditorWindow.scrollSpeed
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.scrollSpeed
-  nameWithType: AttackDefinitionEditorWindow.scrollSpeed
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.scrollWheel
-  name: scrollWheel
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_scrollWheel
-  commentId: F:HnSF.Combat.AttackDefinitionEditorWindow.scrollWheel
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.scrollWheel
-  nameWithType: AttackDefinitionEditorWindow.scrollWheel
 - uid: HnSF.Combat.AttackDefinitionEditorWindow.showCancels
   name: showCancels
   href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_showCancels
@@ -696,18 +544,6 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.AttackDefinitionEditorWindow.Update
   nameWithType: AttackDefinitionEditorWindow.Update
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.visualFighterPrefab
-  name: visualFighterPrefab
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_visualFighterPrefab
-  commentId: F:HnSF.Combat.AttackDefinitionEditorWindow.visualFighterPrefab
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.visualFighterPrefab
-  nameWithType: AttackDefinitionEditorWindow.visualFighterPrefab
-- uid: HnSF.Combat.AttackDefinitionEditorWindow.visualFighterSceneReference
-  name: visualFighterSceneReference
-  href: api/HnSF.Combat.AttackDefinitionEditorWindow.html#HnSF_Combat_AttackDefinitionEditorWindow_visualFighterSceneReference
-  commentId: F:HnSF.Combat.AttackDefinitionEditorWindow.visualFighterSceneReference
-  fullName: HnSF.Combat.AttackDefinitionEditorWindow.visualFighterSceneReference
-  nameWithType: AttackDefinitionEditorWindow.visualFighterSceneReference
 - uid: HnSF.Combat.AttackEvent
   name: AttackEvent
   href: api/HnSF.Combat.AttackEvent.html
