@@ -2,18 +2,13 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-using UnityEditor.SceneManagement;
-using UnityEngine.SceneManagement;
 
 namespace HnSF.Combat
 {
     public class AttackDefinitionEditorWindow : EditorWindow
     {
         protected PreviewRenderUtility renderUtils;
-        protected AttackDefinition attack;
-        protected GameObject visualFighterPrefab;
-
-        protected GameObject visualFighterSceneReference;
+        [SerializeField] public AttackDefinition attack;
 
         protected bool autoplay;
 
@@ -94,19 +89,10 @@ namespace HnSF.Combat
         }
 
         protected Vector2 scroll;
-        protected int timelineFrame = 0;
-        protected bool rotationMode = false;
-        protected bool moveMode = false;
-        protected Vector2 mousePos = new Vector2(0, 0);
-        protected Vector2 diff = Vector2.zero;
-        protected float rotSpeed = 1;
-        protected float scrollWheel = 0;
-        protected float scrollSpeed = 0.5f;
-        protected float moveSpeed = 0.1f;
-
+        public int timelineFrame = 0;
         protected virtual void OnGUI()
         {
-            if(attack == null)
+            if (attack == null)
             {
                 Close();
                 return;
@@ -114,121 +100,47 @@ namespace HnSF.Combat
             var pos = position;
             pos.x = 0;
             pos.y = 0;
-            pos.height /= 2.75f;
-            pos.height = Mathf.Min(250, pos.height);
-
-            Event e = Event.current;
-            switch (e.type)
-            {
-                case EventType.MouseDown:
-                    if (pos.Contains(Event.current.mousePosition))
-                    {
-                        if (Event.current.button == 0)
-                        {
-                            mousePos = Event.current.mousePosition;
-                            moveMode = true;
-                        } else if (Event.current.button == 1)
-                        {
-                            mousePos = Event.current.mousePosition;
-                            rotationMode = true;
-                        }
-                    }
-                    break;
-                case EventType.MouseUp:
-                    if(Event.current.button == 0)
-                    {
-                        moveMode = false;
-                    }
-                    if (Event.current.button == 1)
-                    {
-                        rotationMode = false;
-                    }
-                    break;
-                case EventType.MouseDrag:
-                    if (rotationMode || moveMode)
-                    {
-                        diff = Event.current.mousePosition - mousePos;
-                        mousePos = Event.current.mousePosition;
-                    }
-                    break;
-                case EventType.ScrollWheel:
-                    if (rotationMode)
-                    {
-                        scrollWheel = Event.current.delta.y;
-                    }
-                    break;
-            }
-
-            renderUtils.BeginPreview(pos, EditorStyles.helpBox);
-            DrawGround();
-            DrawHurtboxes();
-            DrawHitboxes();
-            renderUtils.Render(false, false);
-            renderUtils.EndAndDrawPreview(pos);
-
-            if (scrollWheel != 0)
-            {
-                renderUtils.camera.transform.position += renderUtils.camera.transform.forward * scrollWheel * scrollSpeed;
-                scrollWheel = 0;
-            }
-
-            if (diff.magnitude > 0)
-            {
-                if (moveMode)
-                {
-                    renderUtils.camera.transform.position += new Vector3(0, diff.y * moveSpeed * Time.deltaTime, 0);
-                }
-                if (rotationMode)
-                {
-                    renderUtils.camera.transform.RotateAround(new Vector3(0, renderUtils.camera.transform.position.y, 0), Vector3.up, diff.x * rotSpeed);
-                }
-                diff = Vector2.zero;
-            }
-
-            EditorGUILayout.BeginHorizontal();
-            GUILayout.Label("fr:", GUILayout.Width(15));
-            GUILayout.Label(timelineFrame.ToString(), GUILayout.Width(20));
-            GUILayout.Label("/", GUILayout.Width(10));
-            GUILayout.Label(attack.length.ToString(), GUILayout.Width(55));
-            EditorGUILayout.EndHorizontal();
-            if (visualFighterSceneReference)
-            {
-                EditorGUILayout.BeginHorizontal();
-                GUILayout.Label("x:", GUILayout.Width(13));
-                GUILayout.Label(visualFighterSceneReference.transform.position.x.ToString("F1"), GUILayout.Width(25));
-                GUILayout.Label("y:", GUILayout.Width(13));
-                GUILayout.Label(visualFighterSceneReference.transform.position.y.ToString("F1"), GUILayout.Width(25));
-                GUILayout.Label("z:", GUILayout.Width(13));
-                GUILayout.Label(visualFighterSceneReference.transform.position.z.ToString("F1"), GUILayout.Width(25));
-                EditorGUILayout.EndHorizontal();
-            }
-
-            if (attack == null)
-            {
-                return;
-            }
 
             SerializedObject serializedObject = new SerializedObject(attack);
             serializedObject.Update();
-            GUILayout.BeginArea(new Rect(pos.x, pos.y + pos.height, pos.width, position.height - pos.height));
+
+            GUILayout.BeginArea(pos);
+            scroll = EditorGUILayout.BeginScrollView(scroll);
 
             DrawGeneralOptions(serializedObject);
-            if (attack.useState)
-            {
-                //GUILayout.EndArea();
-                serializedObject.ApplyModifiedProperties();
-            }
             GUILayout.BeginHorizontal();
             MenuBar(serializedObject);
             GUILayout.EndHorizontal();
             GUILayout.Space(10);
-            if (visualFighterSceneReference)
+            DrawPlayControls();
+            GUILayout.Space(10);
+            if (showHitboxGroups)
             {
-                if(GUILayout.Button("Open Fighter Inspector"))
-                {
-                    Selection.activeObject = visualFighterSceneReference.gameObject;
-                }
+                DrawHitboxGroupBars(serializedObject);
             }
+            GUILayout.Space(10);
+            if (showEvents)
+            {
+                DrawEventBars(serializedObject);
+            }
+            GUILayout.Space(10);
+            if (showCharges)
+            {
+                DrawChargeBars(serializedObject);
+            }
+            GUILayout.Space(10);
+            if (showCancels)
+            {
+                DrawCancelBars(serializedObject);
+            }
+            EditorGUILayout.EndScrollView();
+            GUILayout.EndArea();
+
+            serializedObject.ApplyModifiedProperties();
+        }
+
+        protected virtual void DrawPlayControls()
+        {
             EditorGUILayout.BeginHorizontal();
             if (GUILayout.Button(EditorGUIUtility.IconContent("d_Profiler.PrevFrame"), GUILayout.Width(30)))
             {
@@ -251,7 +163,7 @@ namespace HnSF.Combat
                     nextPlayTime = EditorApplication.timeSinceStartup + playInterval;
                 }
             }
-            if (autoplay && visualFighterSceneReference != null && EditorApplication.timeSinceStartup >= nextPlayTime)
+            if (autoplay && EditorApplication.timeSinceStartup >= nextPlayTime)
             {
                 if (timelineFrame + 1 > attack.length)
                 {
@@ -266,66 +178,10 @@ namespace HnSF.Combat
             }
             timelineFrame = (int)EditorGUILayout.Slider(timelineFrame, 0, attack.length);
             EditorGUILayout.EndHorizontal();
-            GUILayout.Space(10);
-            scroll = EditorGUILayout.BeginScrollView(scroll);
-            if (showHitboxGroups)
-            {
-                DrawHitboxGroupBars(serializedObject);
-            }
-            GUILayout.Space(10);
-            if (showEvents)
-            {
-                DrawEventBars(serializedObject);
-            }
-            GUILayout.Space(10);
-            if (showCharges)
-            {
-                DrawChargeBars(serializedObject);
-            }
-            GUILayout.Space(10);
-            if (showCancels)
-            {
-                DrawCancelBars(serializedObject);
-            }
-            EditorGUILayout.EndScrollView();
-            GUILayout.EndArea();
-            serializedObject.ApplyModifiedProperties();
-        }
-
-        protected virtual void DrawHitboxes()
-        {
-
-        }
-
-        protected virtual void DrawHurtboxes()
-        {
-
-        }
-
-        protected virtual void DrawGround()
-        {
-            Handles.SetCamera(renderUtils.camera);
-            Handles.color = Color.grey;
-            for (int i = -10; i <= 10; i++)
-            {
-                Handles.color = i == 0 ? Color.red : Color.grey;
-                Handles.DrawLine(new Vector3(i, 0, -10), new Vector3(i, 0, 10));
-                Handles.color = i == 0 ? Color.green : Color.grey;
-                Handles.DrawLine(new Vector3(-10, 0, i), new Vector3(10, 0, i));
-            }
-            Handles.color = Color.cyan;
-            Handles.DrawLine(Vector3.zero, new Vector3(0, 10, 0));
         }
 
         protected virtual void FastForward()
         {
-            if (visualFighterSceneReference == null)
-            {
-                return;
-            }
-
-            ResetFighterVariables();
-
             if(timelineFrame == 0)
             {
                 return;
@@ -342,69 +198,12 @@ namespace HnSF.Combat
         protected virtual void IncrementForward()
         {
             timelineFrame = Mathf.Min(timelineFrame + 1, attack.length);
-
-            if (visualFighterSceneReference == null)
-            {
-                return;
-            }
-            for(int i = 0; i < attack.hitboxGroups.Count; i++)
-            {
-                DrawHitboxGroup(i, attack.hitboxGroups[i]);
-            }
-            DrawHurtboxDefinition(attack.hurtboxDefinition);
-            for (int i = 0; i < attack.events.Count; i++)
-            {
-                HandleEvent(attack.events[i]);
-            }
-
-            MoveEntity();
         }
 
-        protected virtual void DrawHurtboxDefinition(BoxCollectionDefinition hurtboxDefinition)
-        {
-
-        }
-
-        protected virtual void DrawHitboxGroup(int index, HitboxGroup hitboxGroup)
-        {
-
-        }
-
-        protected virtual AttackEventReturnType HandleEvent(AttackEventDefinition attackEventDefinition)
-        {
-            if (!attackEventDefinition.active)
-            {
-                return AttackEventReturnType.NONE;
-            }
-            Fighters.IFighterBase e = visualFighterSceneReference.GetComponent<Fighters.IFighterBase>();
-
-            if (timelineFrame >= attackEventDefinition.startFrame
-                && timelineFrame <= attackEventDefinition.endFrame)
-            {
-                return attackEventDefinition.attackEvent.Evaluate((int)(timelineFrame - attackEventDefinition.startFrame),
-                    attackEventDefinition.endFrame - attackEventDefinition.startFrame,
-                    e);
-            }
-            return AttackEventReturnType.NONE;
-        }
-
-        protected virtual void MoveEntity()
-        {
-
-        }
-
-        Fighters.IFighterBase tempFighter;
         protected virtual void DrawGeneralOptions(SerializedObject serializedObject)
         {
             EditorGUILayout.PropertyField(serializedObject.FindProperty("attackName"), new GUIContent("Name"));
             EditorGUILayout.PropertyField(serializedObject.FindProperty("length"));
-            EditorGUILayout.BeginHorizontal();
-            /*tempFighter = (Fighters.IFighterBase)EditorGUILayout.ObjectField("Character", tempFighter, typeof(Fighters.FighterBase), false);
-            if (GUILayout.Button("Apply"))
-            {
-                CreateFighter();
-            }*/
-            EditorGUILayout.EndHorizontal();
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.PropertyField(serializedObject.FindProperty("hurtboxDefinition"));
             if (GUILayout.Button("Open"))
@@ -418,24 +217,6 @@ namespace HnSF.Combat
             EditorGUILayout.PropertyField(serializedObject.FindProperty("stateOverride"), GUIContent.none);
             EditorGUI.EndDisabledGroup();
             EditorGUILayout.EndHorizontal();
-        }
-
-        protected virtual void CreateFighter()
-        {
-            /*
-            if(visualFighterSceneReference != null)
-            {
-                DestroyImmediate(visualFighterSceneReference);
-                visualFighterSceneReference = null;
-            }
-            visualFighterPrefab = tempFighter;
-            visualFighterSceneReference = renderUtils.InstantiatePrefabInScene(visualFighterPrefab.gameObject);
-            ResetFighterVariables();*/
-        }
-
-        protected virtual void ResetFighterVariables()
-        {
-            visualFighterSceneReference.transform.position = new Vector3(0, 0, 0);
         }
 
         protected virtual void MenuBar(SerializedObject serializedObject)
