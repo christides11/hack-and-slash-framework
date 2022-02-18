@@ -33,6 +33,7 @@ namespace TDAction.Combat
             hurtboxes.Clear();
         }
 
+        /*
         protected override void CreateFighter()
         {
             base.CreateFighter();
@@ -204,6 +205,6 @@ namespace TDAction.Combat
                     }
                 }
             }
-        }
+        }*/
     }
 }
