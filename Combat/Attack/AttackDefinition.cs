@@ -13,7 +13,6 @@ namespace HnSF.Combat
         public bool useState = false;
         public ushort stateOverride = 0;
         public int length = 1; //In frames
-        public BoxCollectionDefinition hurtboxDefinition;
         #endregion
 
         [Header("Groups")]
