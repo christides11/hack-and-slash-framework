@@ -40,7 +40,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.AttackDefinition.html",
-          "hash": "0Bvr20hkYlh8A1KAnbBtzerpJEkd59anwt2FWbTGrjM="
+          "hash": "yDoLhCExMzZF1yYfVOAGgwUnzmkwQ9POI2dccoYSDkI="
         }
       },
       "is_incremental": false,
@@ -137,30 +137,6 @@
         ".html": {
           "relative_path": "api/HnSF.Combat.AttackEventVariables.html",
           "hash": "6cLvJY2lYrRKx7diXpSdeSbH681KzEEwWEKyA/GFMCo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Combat.BoxCollectionDefinition.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/HnSF.Combat.BoxCollectionDefinition.html",
-          "hash": "pZJ0gjAICJ+XnUnpmvmxxU67VgDXlysFhEHKH+gnS4o="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Combat.BoxCollectionDefinitionEditor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/HnSF.Combat.BoxCollectionDefinitionEditor.html",
-          "hash": "aOm0jGISfPylqe34dPiZS++pQsQLUGGybs0m/7PCz1M="
         }
       },
       "is_incremental": false,
@@ -676,7 +652,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.html",
-          "hash": "W4AqClFxkDxJR8LHJhe8LKSBu3xNuKQapUiZpHMHPtI="
+          "hash": "8tuqgH4KkR8ulb8FUkZ4m1J8kB4wRAs9i3doENDJqpQ="
         }
       },
       "is_incremental": false,
@@ -684,11 +660,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Fighters.FighterCombatManager.ChargeLevelChangedAction.yml",
+      "source_relative_path": "api/HnSF.FighterStateAsset.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HnSF.Fighters.FighterCombatManager.ChargeLevelChangedAction.html",
-          "hash": "WlEbFSB1OH45KARxPFkaV46V/pZxJNFxUm7I8rdy1mc="
+          "relative_path": "api/HnSF.FighterStateAsset.html",
+          "hash": "+FnhOa8QieyoSDRGaZrmcXYJ8ycY8jTY+KktMEcmV1g="
         }
       },
       "is_incremental": false,
@@ -696,119 +672,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Fighters.FighterCombatManager.ChargeLevelChargeChangedAction.yml",
+      "source_relative_path": "api/HnSF.FighterTrack.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HnSF.Fighters.FighterCombatManager.ChargeLevelChargeChangedAction.html",
-          "hash": "33U4Xzmn/KiWli+5M3DYINUn4J2Jn6KvC85SfmAQmPc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Fighters.FighterCombatManager.EmptyAction.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/HnSF.Fighters.FighterCombatManager.EmptyAction.html",
-          "hash": "fgPpycPXfAJ5rf92EldLTPiCWCGQVdj3fiMAPKcSEa8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Fighters.FighterCombatManager.HealthChangedAction.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/HnSF.Fighters.FighterCombatManager.HealthChangedAction.html",
-          "hash": "9Z+DbtLsgzw7mY9DnT40L1jP6Bl09KVtktP6RuzqpTA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Fighters.FighterCombatManager.MovesetChangedAction.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/HnSF.Fighters.FighterCombatManager.MovesetChangedAction.html",
-          "hash": "Yog803H/4Fz5RcQ8u259gRLT/kqHsu7BWafK6zS1K+E="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Fighters.FighterCombatManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/HnSF.Fighters.FighterCombatManager.html",
-          "hash": "C1tBB9+JnNCRfp+eSQ9wCOYs9g/677T/kuX6qyYhi5k="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Fighters.FighterHurtboxManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/HnSF.Fighters.FighterHurtboxManager.html",
-          "hash": "dVHfHCGLKi03UxOMPafmAJ5/Wepi2gDQayQ4sLMhxtc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Fighters.FighterStateBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/HnSF.Fighters.FighterStateBase.html",
-          "hash": "o56BNepGIoRH2WzM36rMjtLyjlcUZPaaum+hE9JXff8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Fighters.FighterStateManager.StateAction.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/HnSF.Fighters.FighterStateManager.StateAction.html",
-          "hash": "MQrKQ2ksZ6ydi8LA7BsKsUHXV9avVWm7/Tttbpk5yxI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Fighters.FighterStateManager.StateFrameAction.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/HnSF.Fighters.FighterStateManager.StateFrameAction.html",
-          "hash": "ryDx7wbyqojcRjBsHOzDfFwrt+VFFM1jtrVmcZeDG7g="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Fighters.FighterStateManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/HnSF.Fighters.FighterStateManager.html",
-          "hash": "qpbvovdLKScDZggqHWFEIqrudskCLkPDAalzw+1j2qY="
+          "relative_path": "api/HnSF.FighterTrack.html",
+          "hash": "p51jSbwKaYBbnrbWcfztFT7zvbV5Fql825TUMc33P3Q="
         }
       },
       "is_incremental": false,
@@ -820,7 +688,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.IFighterBase.html",
-          "hash": "4kKSWE9FqJseCOsjNMZt+6cXQeSO2KejTuwTNIYdycE="
+          "hash": "o0NAFucCGs2m5S/nkWvMX+G9VC6/zkYdbOF4TvxxGhk="
         }
       },
       "is_incremental": false,
@@ -832,7 +700,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.IFighterCombatManager.html",
-          "hash": "1VdG6OpIDmmeo3EuaMC78XH4eoSpXiceryKkVigacDM="
+          "hash": "mwKJ0aHVvphn3bhJfSqN6YiIs4nk6cQWpsGRQYQk9EU="
         }
       },
       "is_incremental": false,
@@ -844,7 +712,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.IFighterPhysicsManager.html",
-          "hash": "O+w9ae6kBa6sGb5XGhYYRGVAEjDRrbSSgGSx0oJOBJY="
+          "hash": "DvoxtXDT+ktFwQKpLhSqNVQJB28ZGVx8NKv4UOW3i/o="
         }
       },
       "is_incremental": false,
@@ -856,7 +724,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.IFighterStateManager.html",
-          "hash": "UUGzIc0sgkorOagdY2KdgPtCEGy8+1EnZndmsYjfnC4="
+          "hash": "OtQRNvkiRmZjXigpNshOAO/BSx4ECGAY2ybzIxgouKA="
         }
       },
       "is_incremental": false,
@@ -868,7 +736,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.html",
-          "hash": "JA3LeGGKJi7GQ6HQ/dV6NDp9352rY5KjddUS9NDCY3o="
+          "hash": "/arCvi5v3N+Wm4ZaxpLRU4+nwduyeS7hd1NBLz2Rh+I="
         }
       },
       "is_incremental": false,
@@ -880,19 +748,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.HelperFunctions.html",
-          "hash": "qLM/qAr90ZjzcFqgCNDNfnnxD8diofts9w3aDcyCFHM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Input.FighterControlType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/HnSF.Input.FighterControlType.html",
-          "hash": "Zn5Genvd7BvH/6DX8TI/yN4yuJ6hei+WNA87x7rlEMo="
+          "hash": "UG1VK2QWuxn8ZcW1bH0rqCxDk/vHnmf/9qw4t80agco="
         }
       },
       "is_incremental": false,
@@ -936,66 +792,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Input.InputRecordAxis.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/HnSF.Input.InputRecordAxis.html",
-          "hash": "cSj1vLketfJFPuCou67kBljhB9gXof+Lr6ppz8HkSUM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Input.InputRecordAxis2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/HnSF.Input.InputRecordAxis2D.html",
-          "hash": "FB69PWhRr43T6rAZ6Jwy6qapEZ3JPCVj7a0ZUj81iFg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Input.InputRecordButton.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/HnSF.Input.InputRecordButton.html",
-          "hash": "dwfjAYBktWPuQvXnQAR1rmLyLgwBnmnn0Igyoutoipk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Input.InputRecordInput.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/HnSF.Input.InputRecordInput.html",
-          "hash": "RqH/6Ux5XEld+UOxulaR4i0Snng81JIExfKw80ZIF84="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Input.InputRecordItem.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/HnSF.Input.InputRecordItem.html",
-          "hash": "o+myN1yhKc0lYSvzrLgV4HwMDb+nm2a6ZYr0ggP8gBA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/HnSF.Input.InputSequence.yml",
       "output": {
         ".html": {
@@ -1012,7 +808,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Input.html",
-          "hash": "//kbQSBocAaxErmkjH9eX0ADxRmTxKdyS4UImsqY6e4="
+          "hash": "dCOMOWED/Ix30R7u/CcA4bBrgorzLUbh8j0ktql7Fb8="
         }
       },
       "is_incremental": false,
@@ -1020,11 +816,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Simulation.ISimObject.yml",
+      "source_relative_path": "api/HnSF.Sample.TDAction.ADVEnumStateBinding.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HnSF.Simulation.ISimObject.html",
-          "hash": "7KLPi78yVdbxwaMWzVMn5lwuw3RzstKRzpKRxeISacY="
+          "relative_path": "api/HnSF.Sample.TDAction.ADVEnumStateBinding.html",
+          "hash": "pUGUUdu9AG/wKCvWT86sBmo9kJv1AcjZXXMUHfewH+I="
         }
       },
       "is_incremental": false,
@@ -1032,11 +828,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Simulation.ISimObjectManager.yml",
+      "source_relative_path": "api/HnSF.Sample.TDAction.ADVManager.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HnSF.Simulation.ISimObjectManager.html",
-          "hash": "J/HdPMgdZY7gO56PtfoVMf40hc15mXQWRNP+IOCA+bY="
+          "relative_path": "api/HnSF.Sample.TDAction.ADVManager.html",
+          "hash": "lLOYzZyW9XGnndO+WJvE5odNpL4/Wj7XithoVpQLlv4="
         }
       },
       "is_incremental": false,
@@ -1044,11 +840,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Simulation.SimObjectManager.yml",
+      "source_relative_path": "api/HnSF.Sample.TDAction.BootLoader.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HnSF.Simulation.SimObjectManager.html",
-          "hash": "a5gLZMSa/76FY3MCKlJGQOGPFFaFmaNukGBqsdOJ6b8="
+          "relative_path": "api/HnSF.Sample.TDAction.BootLoader.html",
+          "hash": "z8zAuDuXambbPM1CldxHYVheLQ36o1QzkHd0TZN+waM="
         }
       },
       "is_incremental": false,
@@ -1056,11 +852,407 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/HnSF.Simulation.yml",
+      "source_relative_path": "api/HnSF.Sample.TDAction.ChangeStateAsset.yml",
       "output": {
         ".html": {
-          "relative_path": "api/HnSF.Simulation.html",
-          "hash": "zy4nMd59l23z5iW+Un2/RzlUYXfAzBpyc9tMz3BGRLQ="
+          "relative_path": "api/HnSF.Sample.TDAction.ChangeStateAsset.html",
+          "hash": "3ux/Ryo+j4a1Jqb7B3r7G2EWuVZgg7SFfnlM+YGgXI4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Sample.TDAction.ChangeStateBehaviour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Sample.TDAction.ChangeStateBehaviour.html",
+          "hash": "BODuS4jFl+N5rXXocAWupfaf/wcVHNaInRvgzUkkIB0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Sample.TDAction.CharacterController2D.CharacterCollisionState2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Sample.TDAction.CharacterController2D.CharacterCollisionState2D.html",
+          "hash": "dJJE3TaA/fxQaqkIrP02DnoHwoB5MWLuLAVTBgbhIS8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Sample.TDAction.CharacterController2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Sample.TDAction.CharacterController2D.html",
+          "hash": "l/XHAfxK8TDrWHXXoULhYSMWvvV6kV4rcADbd/I43ig="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Sample.TDAction.EnumStateBinding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Sample.TDAction.EnumStateBinding.html",
+          "hash": "OmXZprC86VAVr0i+5C+DFdebaNEkCR0s/F3EMR+2VlQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Sample.TDAction.FighterCombatManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Sample.TDAction.FighterCombatManager.html",
+          "hash": "29VdLmmOoRDWqva7F2l+NxbpWKOInPECFxMaRt7fpv8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Sample.TDAction.FighterForceAsset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Sample.TDAction.FighterForceAsset.html",
+          "hash": "5Q22hlu/rvq2pjtE9zWJ3ROiFHNdo7kbloeTXFVHKfA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Sample.TDAction.FighterForceMixerBehaviour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Sample.TDAction.FighterForceMixerBehaviour.html",
+          "hash": "a0h5kBiHt0bv9XtjZ3iXjSzvoljF1amMt952vapHPlc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Sample.TDAction.FighterInputManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Sample.TDAction.FighterInputManager.html",
+          "hash": "fT5G8IGtcrAnGuX19VbtorkIXCkVKdkCkwH4janJ314="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Sample.TDAction.FighterManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Sample.TDAction.FighterManager.html",
+          "hash": "qCwx6Xsqb4THF6d1aJs757ReuvdYwsZdZ1egO2mgDZU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Sample.TDAction.FighterPhysicsManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Sample.TDAction.FighterPhysicsManager.html",
+          "hash": "VxN6nb0pYWV/p0+TA3VzqtK+shauO8dvhkKqoDf6cWU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Sample.TDAction.FighterStateBehaviour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Sample.TDAction.FighterStateBehaviour.html",
+          "hash": "u1xKosZeezWFMWGFgv+hpt7rQbxV8YqrjGF1D7gIoBQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Sample.TDAction.FighterStateEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Sample.TDAction.FighterStateEnum.html",
+          "hash": "TQVO/SbTyjYY3Uf74oeB5EgQpeVuk5wzEolP1q5Qr8g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Sample.TDAction.FighterStateManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Sample.TDAction.FighterStateManager.html",
+          "hash": "0arF4m5QFsmg1pafDvZPq4YGBNBg19w0YlH7/fYBOJk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Sample.TDAction.ForceForceTrack.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Sample.TDAction.ForceForceTrack.html",
+          "hash": "awnIIA7h2GgmgAutcV+VcGYgkH0ChUxlSn6WcElWoKI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Sample.TDAction.ForceSetBehaviour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Sample.TDAction.ForceSetBehaviour.html",
+          "hash": "tvIjCGWBDRMpko19w5D1tXTXTOaKrZphsBydbZg2Sgs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Sample.TDAction.ForceSetType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Sample.TDAction.ForceSetType.html",
+          "hash": "CGUmPr/qpKgtJdXXLPwGvbpyD5j2FLAtyXBAtqycm2w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Sample.TDAction.GameManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Sample.TDAction.GameManager.html",
+          "hash": "hD6B0oc6hoE0F4Tt0IsBhofnSowBsHWKxGOySpLAlBs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Sample.TDAction.GotoFrameAsset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Sample.TDAction.GotoFrameAsset.html",
+          "hash": "G8PI/IDU/29x4R2UQGOmW809nGIjlgQpQWq6F0FB6Ys="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Sample.TDAction.GotoFrameBehaviour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Sample.TDAction.GotoFrameBehaviour.html",
+          "hash": "p185phNs0dwzhKRYq914kftJGJMXB1TTGe7SyN6LHQw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Sample.TDAction.ISimulationObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Sample.TDAction.ISimulationObject.html",
+          "hash": "q8gqzfbVzALDtFaUHjj6XgVZG0SWze9EZ5aNynw22A8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Sample.TDAction.IncrementFrameAsset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Sample.TDAction.IncrementFrameAsset.html",
+          "hash": "02MJKO4z1hG5dSCqF5CGKR3K7taHT11+c8CBuEJhnR4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Sample.TDAction.IncrementFrameBehaviour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Sample.TDAction.IncrementFrameBehaviour.html",
+          "hash": "MP2q1SOpA6Y60ai5y2tfkAxWo2Wdri8T9fIT7//hXCU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Sample.TDAction.InputButtonData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Sample.TDAction.InputButtonData.html",
+          "hash": "FKEOCqQTYhg7IKWt4Iszv4TX5P51/wk2Xo2JUgB1GtE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Sample.TDAction.PlayerInputData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Sample.TDAction.PlayerInputData.html",
+          "hash": "eZH6qlizKzIwmsNSHndChr9tBzRVANrryOZ18UTdAJs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Sample.TDAction.SimulationManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Sample.TDAction.SimulationManager.html",
+          "hash": "fPDh8svYz9uwMi8UjTGtFqvaVsRTlQBqF3N2LdLy/wc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Sample.TDAction.StateTimeline.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Sample.TDAction.StateTimeline.html",
+          "hash": "adYRrAjJ5gihr4veck42oj/4+n9EsXFTwaL1xT6QuyA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Sample.TDAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Sample.TDAction.html",
+          "hash": "da7HzAEJfgikpSMnh9CiLVjubB3UnOIGTzUaWsZc4QM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.StateConditionAND.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.StateConditionAND.html",
+          "hash": "/JuLwq+RvYHHPCxCurx97AN7ETd6WP2W6kDpElX1Nos="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.StateConditionBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.StateConditionBase.html",
+          "hash": "DqDUtbLgFhNdtdlIj7JC+bVLIBWiFfBG0xOZ40g9vKM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.StateConditionBoolean.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.StateConditionBoolean.html",
+          "hash": "0Dha1o8AqEm+dglDcLEJ/8kfDx4b3p63STv6oGOfvl0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.StateConditionOR.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.StateConditionOR.html",
+          "hash": "LREeJwUZS1vfV15VIwv8i3P3KA7czwv1QSovd3oP1nU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.StateTimeline.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.StateTimeline.html",
+          "hash": "gWnYJc9ib7loOwqPpXB5hW8Ol6c0R6E/Pxx+d2GcriM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.StateTimelineEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.StateTimelineEditor.html",
+          "hash": "e+IqpHQguh83PSiTYI3KzEanRl8xMFpI6yUCVV579/Q="
         }
       },
       "is_incremental": false,
@@ -1072,7 +1264,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.html",
-          "hash": "kKbdjdy4fmdFL8p2BlkQbDBxZvCLT6ypJ1lomN0adbI="
+          "hash": "Zazu3JXX8MIn6n4RP96TGNf3K02Vw475KiCWCFNgyMQ="
         }
       },
       "is_incremental": false,
@@ -1084,7 +1276,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "e44bFdjl9BQ2aoQO0V0VbFpXOzytR5fmvdZlZrkWOIU="
+          "hash": "QGe+uJToZwLJSv4nCnE6WQ+teZP/qvjoURqMNok7aEc="
         }
       },
       "is_incremental": false,
@@ -1205,7 +1397,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 88,
+          "total_file_count": 104,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

@@ -1,0 +1,603 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FighterPhysicsManager
+   | Hack and Slash Framework Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FighterPhysicsManager
+   | Hack and Slash Framework Documentation ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager">
+  
+  
+  <h1 id="HnSF_Sample_TDAction_FighterPhysicsManager" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager" class="text-break">Class FighterPhysicsManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">FighterPhysicsManager</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="HnSF.Fighters.IFighterPhysicsManager.html">IFighterPhysicsManager</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HnSF.Sample.TDAction.html">HnSF.Sample.TDAction</a></h6>
+  <h6><strong>Assembly</strong>: HnSF.dll</h6>
+  <h5 id="HnSF_Sample_TDAction_FighterPhysicsManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FighterPhysicsManager : MonoBehaviour, IFighterPhysicsManager</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_FighterPhysicsManager_cc.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.FighterPhysicsManager.cc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/Fighter/Managers/FighterPhysicsManager.cs/#L16">View Source</a>
+  </span>
+  <h4 id="HnSF_Sample_TDAction_FighterPhysicsManager_cc" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.cc">cc</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharacterController2D cc</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HnSF.Sample.TDAction.CharacterController2D.html">CharacterController2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_FighterPhysicsManager_worldCollider.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.FighterPhysicsManager.worldCollider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/Fighter/Managers/FighterPhysicsManager.cs/#L15">View Source</a>
+  </span>
+  <h4 id="HnSF_Sample_TDAction_FighterPhysicsManager_worldCollider" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.worldCollider">worldCollider</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BoxCollider2D worldCollider</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BoxCollider2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_FighterPhysicsManager_forceDamage.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.FighterPhysicsManager.forceDamage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/Fighter/Managers/FighterPhysicsManager.cs/#L13">View Source</a>
+  </span>
+  <a id="HnSF_Sample_TDAction_FighterPhysicsManager_forceDamage_" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.forceDamage*"></a>
+  <h4 id="HnSF_Sample_TDAction_FighterPhysicsManager_forceDamage" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.forceDamage">forceDamage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 forceDamage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_FighterPhysicsManager_forceMovement.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.FighterPhysicsManager.forceMovement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/Fighter/Managers/FighterPhysicsManager.cs/#L12">View Source</a>
+  </span>
+  <a id="HnSF_Sample_TDAction_FighterPhysicsManager_forceMovement_" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.forceMovement*"></a>
+  <h4 id="HnSF_Sample_TDAction_FighterPhysicsManager_forceMovement" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.forceMovement">forceMovement</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 forceMovement { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_FighterPhysicsManager_IsGrounded.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.FighterPhysicsManager.IsGrounded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/Fighter/Managers/FighterPhysicsManager.cs/#L11">View Source</a>
+  </span>
+  <a id="HnSF_Sample_TDAction_FighterPhysicsManager_IsGrounded_" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.IsGrounded*"></a>
+  <h4 id="HnSF_Sample_TDAction_FighterPhysicsManager_IsGrounded" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.IsGrounded">IsGrounded</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGrounded { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_FighterPhysicsManager_ApplyFriction_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.FighterPhysicsManager.ApplyFriction(System.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/Fighter/Managers/FighterPhysicsManager.cs/#L86">View Source</a>
+  </span>
+  <a id="HnSF_Sample_TDAction_FighterPhysicsManager_ApplyFriction_" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.ApplyFriction*"></a>
+  <h4 id="HnSF_Sample_TDAction_FighterPhysicsManager_ApplyFriction_System_Single_System_Single_" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.ApplyFriction(System.Single,System.Single)">ApplyFriction(Single, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual float ApplyFriction(float value, float friction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">friction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_FighterPhysicsManager_ApplyGravity.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.FighterPhysicsManager.ApplyGravity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/Fighter/Managers/FighterPhysicsManager.cs/#L49">View Source</a>
+  </span>
+  <a id="HnSF_Sample_TDAction_FighterPhysicsManager_ApplyGravity_" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.ApplyGravity*"></a>
+  <h4 id="HnSF_Sample_TDAction_FighterPhysicsManager_ApplyGravity" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.ApplyGravity">ApplyGravity()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ApplyGravity()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_FighterPhysicsManager_ApplyGravity_System_Single_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.FighterPhysicsManager.ApplyGravity(System.Single%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/Fighter/Managers/FighterPhysicsManager.cs/#L60">View Source</a>
+  </span>
+  <a id="HnSF_Sample_TDAction_FighterPhysicsManager_ApplyGravity_" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.ApplyGravity*"></a>
+  <h4 id="HnSF_Sample_TDAction_FighterPhysicsManager_ApplyGravity_System_Single_System_Single_System_Single_" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.ApplyGravity(System.Single,System.Single,System.Single)">ApplyGravity(Single, Single, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ApplyGravity(float maxFallSpeed, float gravity, float gravityScale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">maxFallSpeed</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">gravity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">gravityScale</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_FighterPhysicsManager_ApplyMovementFriction_System_Single_.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.FighterPhysicsManager.ApplyMovementFriction(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/Fighter/Managers/FighterPhysicsManager.cs/#L79">View Source</a>
+  </span>
+  <a id="HnSF_Sample_TDAction_FighterPhysicsManager_ApplyMovementFriction_" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.ApplyMovementFriction*"></a>
+  <h4 id="HnSF_Sample_TDAction_FighterPhysicsManager_ApplyMovementFriction_System_Single_" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.ApplyMovementFriction(System.Single)">ApplyMovementFriction(Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ApplyMovementFriction(float friction = 1F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">friction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_FighterPhysicsManager_CheckIfGrounded.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.FighterPhysicsManager.CheckIfGrounded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/Fighter/Managers/FighterPhysicsManager.cs/#L39">View Source</a>
+  </span>
+  <a id="HnSF_Sample_TDAction_FighterPhysicsManager_CheckIfGrounded_" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.CheckIfGrounded*"></a>
+  <h4 id="HnSF_Sample_TDAction_FighterPhysicsManager_CheckIfGrounded" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.CheckIfGrounded">CheckIfGrounded()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CheckIfGrounded()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_FighterPhysicsManager_Freeze.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.FighterPhysicsManager.Freeze%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/Fighter/Managers/FighterPhysicsManager.cs/#L28">View Source</a>
+  </span>
+  <a id="HnSF_Sample_TDAction_FighterPhysicsManager_Freeze_" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.Freeze*"></a>
+  <h4 id="HnSF_Sample_TDAction_FighterPhysicsManager_Freeze" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.Freeze">Freeze()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Freeze()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_FighterPhysicsManager_GetOverallForce.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.FighterPhysicsManager.GetOverallForce%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/Fighter/Managers/FighterPhysicsManager.cs/#L23">View Source</a>
+  </span>
+  <a id="HnSF_Sample_TDAction_FighterPhysicsManager_GetOverallForce_" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.GetOverallForce*"></a>
+  <h4 id="HnSF_Sample_TDAction_FighterPhysicsManager_GetOverallForce" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.GetOverallForce">GetOverallForce()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Vector2 GetOverallForce()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_FighterPhysicsManager_RedirectInertia_System_Single_Vector2_.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.FighterPhysicsManager.RedirectInertia(System.Single%2CVector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/Fighter/Managers/FighterPhysicsManager.cs/#L107">View Source</a>
+  </span>
+  <a id="HnSF_Sample_TDAction_FighterPhysicsManager_RedirectInertia_" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.RedirectInertia*"></a>
+  <h4 id="HnSF_Sample_TDAction_FighterPhysicsManager_RedirectInertia_System_Single_Vector2_" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.RedirectInertia(System.Single,Vector2)">RedirectInertia(Single, Vector2)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RedirectInertia(float forceMovementX, Vector2 movementInput)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">forceMovementX</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">movementInput</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_FighterPhysicsManager_ResetForces.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.FighterPhysicsManager.ResetForces%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/Fighter/Managers/FighterPhysicsManager.cs/#L33">View Source</a>
+  </span>
+  <a id="HnSF_Sample_TDAction_FighterPhysicsManager_ResetForces_" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.ResetForces*"></a>
+  <h4 id="HnSF_Sample_TDAction_FighterPhysicsManager_ResetForces" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.ResetForces">ResetForces()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetForces()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_FighterPhysicsManager_SetGrounded_System_Boolean_.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.FighterPhysicsManager.SetGrounded(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/Fighter/Managers/FighterPhysicsManager.cs/#L44">View Source</a>
+  </span>
+  <a id="HnSF_Sample_TDAction_FighterPhysicsManager_SetGrounded_" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.SetGrounded*"></a>
+  <h4 id="HnSF_Sample_TDAction_FighterPhysicsManager_SetGrounded_System_Boolean_" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.SetGrounded(System.Boolean)">SetGrounded(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGrounded(bool value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_FighterPhysicsManager_Tick.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.FighterPhysicsManager.Tick%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/Fighter/Managers/FighterPhysicsManager.cs/#L18">View Source</a>
+  </span>
+  <a id="HnSF_Sample_TDAction_FighterPhysicsManager_Tick_" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.Tick*"></a>
+  <h4 id="HnSF_Sample_TDAction_FighterPhysicsManager_Tick" data-uid="HnSF.Sample.TDAction.FighterPhysicsManager.Tick">Tick()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Tick()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="HnSF.Fighters.IFighterPhysicsManager.html">IFighterPhysicsManager</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_FighterPhysicsManager.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.FighterPhysicsManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/Fighter/Managers/FighterPhysicsManager.cs/#L8" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Hack and Slash Framework Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

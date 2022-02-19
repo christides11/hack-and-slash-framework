@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Delegate FighterStateManager.StateFrameAction
+    <title>Class StateConditionBase
    | Hack and Slash Framework Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Delegate FighterStateManager.StateFrameAction
+    <meta name="title" content="Class StateConditionBase
    | Hack and Slash Framework Documentation ">
     <meta name="generator" content="docfx 2.59.0.0">
     
@@ -78,18 +78,75 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="HnSF.Fighters.FighterStateManager.StateFrameAction">
+            <article class="content wrap" id="_content" data-uid="HnSF.StateConditionBase">
   
   
-  <h1 id="HnSF_Fighters_FighterStateManager_StateFrameAction" data-uid="HnSF.Fighters.FighterStateManager.StateFrameAction" class="text-break">Delegate FighterStateManager.StateFrameAction
+  <h1 id="HnSF_StateConditionBase" data-uid="HnSF.StateConditionBase" class="text-break">Class StateConditionBase
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="HnSF.Fighters.html">HnSF.Fighters</a></h6>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">StateConditionBase</span></div>
+      <div class="level2"><a class="xref" href="HnSF.StateConditionAND.html">StateConditionAND</a></div>
+      <div class="level2"><a class="xref" href="HnSF.StateConditionBoolean.html">StateConditionBoolean</a></div>
+      <div class="level2"><a class="xref" href="HnSF.StateConditionOR.html">StateConditionOR</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HnSF.html">HnSF</a></h6>
   <h6><strong>Assembly</strong>: HnSF.dll</h6>
-  <h5 id="HnSF_Fighters_FighterStateManager_StateFrameAction_syntax">Syntax</h5>
+  <h5 id="HnSF_StateConditionBase_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public delegate void StateFrameAction(IFighterBase self, uint preChangeFrame);</code></pre>
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class StateConditionBase</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_StateConditionBase_inverse.md&amp;value=---%0Auid%3A%20HnSF.StateConditionBase.inverse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/Condition/StateConditionBase.cs/#L11">View Source</a>
+  </span>
+  <h4 id="HnSF_StateConditionBase_inverse" data-uid="HnSF.StateConditionBase.inverse">inverse</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool inverse</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_StateConditionBase_IsTrue_HnSF_Fighters_IFighterBase_.md&amp;value=---%0Auid%3A%20HnSF.StateConditionBase.IsTrue(HnSF.Fighters.IFighterBase)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/Condition/StateConditionBase.cs/#L13">View Source</a>
+  </span>
+  <a id="HnSF_StateConditionBase_IsTrue_" data-uid="HnSF.StateConditionBase.IsTrue*"></a>
+  <h4 id="HnSF_StateConditionBase_IsTrue_HnSF_Fighters_IFighterBase_" data-uid="HnSF.StateConditionBase.IsTrue(HnSF.Fighters.IFighterBase)">IsTrue(IFighterBase)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsTrue(IFighterBase fm)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -103,12 +160,22 @@
     <tbody>
       <tr>
         <td><a class="xref" href="HnSF.Fighters.IFighterBase.html">IFighterBase</a></td>
-        <td><span class="parametername">self</span></td>
+        <td><span class="parametername">fm</span></td>
         <td></td>
       </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
-        <td><span class="parametername">preChangeFrame</span></td>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -121,10 +188,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Fighters_FighterStateManager_StateFrameAction.md&amp;value=---%0Auid%3A%20HnSF.Fighters.FighterStateManager.StateFrameAction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_StateConditionBase.md&amp;value=---%0Auid%3A%20HnSF.StateConditionBase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Fighter/Managers/FighterStateManager.cs/#L9" class="contribution-link">View Source</a>
+                    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/Condition/StateConditionBase.cs/#L8" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

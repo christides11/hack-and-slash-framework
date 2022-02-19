@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class BoxCollectionDefinition
+    <title>Class ChangeStateBehaviour
    | Hack and Slash Framework Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class BoxCollectionDefinition
+    <meta name="title" content="Class ChangeStateBehaviour
    | Hack and Slash Framework Documentation ">
     <meta name="generator" content="docfx 2.59.0.0">
     
@@ -78,39 +78,47 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="HnSF.Combat.BoxCollectionDefinition">
+            <article class="content wrap" id="_content" data-uid="HnSF.Sample.TDAction.ChangeStateBehaviour">
   
   
-  <h1 id="HnSF_Combat_BoxCollectionDefinition" data-uid="HnSF.Combat.BoxCollectionDefinition" class="text-break">Class BoxCollectionDefinition
+  <h1 id="HnSF_Sample_TDAction_ChangeStateBehaviour" data-uid="HnSF.Sample.TDAction.ChangeStateBehaviour" class="text-break">Class ChangeStateBehaviour
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">BoxCollectionDefinition</span></div>
+    <div class="level1"><a class="xref" href="HnSF.Sample.TDAction.FighterStateBehaviour.html">FighterStateBehaviour</a></div>
+    <div class="level2"><span class="xref">ChangeStateBehaviour</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="HnSF.Combat.html">HnSF.Combat</a></h6>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="HnSF.Sample.TDAction.FighterStateBehaviour.html#HnSF_Sample_TDAction_FighterStateBehaviour_conditon">FighterStateBehaviour.conditon</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HnSF.Sample.TDAction.html">HnSF.Sample.TDAction</a></h6>
   <h6><strong>Assembly</strong>: HnSF.dll</h6>
-  <h5 id="HnSF_Combat_BoxCollectionDefinition_syntax">Syntax</h5>
+  <h5 id="HnSF_Sample_TDAction_ChangeStateBehaviour_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BoxCollectionDefinition : ScriptableObject</code></pre>
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class ChangeStateBehaviour : FighterStateBehaviour</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Combat_BoxCollectionDefinition_hurtboxGroups.md&amp;value=---%0Auid%3A%20HnSF.Combat.BoxCollectionDefinition.hurtboxGroups%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_ChangeStateBehaviour_state.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.ChangeStateBehaviour.state%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Combat/BoxCollectionDefinition.cs/#L9">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/State/Tracks/ChangeStateBehaviour.cs/#L8">View Source</a>
   </span>
-  <h4 id="HnSF_Combat_BoxCollectionDefinition_hurtboxGroups" data-uid="HnSF.Combat.BoxCollectionDefinition.hurtboxGroups">hurtboxGroups</h4>
+  <h4 id="HnSF_Sample_TDAction_ChangeStateBehaviour_state" data-uid="HnSF.Sample.TDAction.ChangeStateBehaviour.state">state</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;HurtboxGroup&gt; hurtboxGroups</code></pre>
+    <pre><code class="lang-csharp hljs">public int state</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -122,7 +130,51 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="HnSF.Combat.HurtboxGroup.html">HurtboxGroup</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_ChangeStateBehaviour_ProcessFrame_Playable_FrameData_System_Object_.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.ChangeStateBehaviour.ProcessFrame(Playable%2CFrameData%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/State/Tracks/ChangeStateBehaviour.cs/#L10">View Source</a>
+  </span>
+  <a id="HnSF_Sample_TDAction_ChangeStateBehaviour_ProcessFrame_" data-uid="HnSF.Sample.TDAction.ChangeStateBehaviour.ProcessFrame*"></a>
+  <h4 id="HnSF_Sample_TDAction_ChangeStateBehaviour_ProcessFrame_Playable_FrameData_System_Object_" data-uid="HnSF.Sample.TDAction.ChangeStateBehaviour.ProcessFrame(Playable,FrameData,System.Object)">ProcessFrame(Playable, FrameData, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ProcessFrame(Playable playable, FrameData info, object playerData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Playable</span></td>
+        <td><span class="parametername">playable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">FrameData</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">playerData</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -135,10 +187,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Combat_BoxCollectionDefinition.md&amp;value=---%0Auid%3A%20HnSF.Combat.BoxCollectionDefinition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_ChangeStateBehaviour.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.ChangeStateBehaviour%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Combat/BoxCollectionDefinition.cs/#L6" class="contribution-link">View Source</a>
+                    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/State/Tracks/ChangeStateBehaviour.cs/#L5" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
