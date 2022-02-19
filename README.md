@@ -12,7 +12,8 @@ The current roadmap/project board can be viewed [here](https://open.codecks.io/c
 
 ## Getting Started
 
-To get started, follow the guide [here](https://christides11.github.io/hack-n-slash-framework/guides/index.html). This guide will walk you through installing the framework all the way to having a functional game running.
+To get started, follow the guide [here](https://christides11.github.io/hack-n-slash-framework/guides/index.html). 
+This guide will walk you through installing the framework all the way to having a functional game running.
 
 ## Examples
 
