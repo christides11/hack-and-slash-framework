@@ -96,7 +96,6 @@
      <Compile Include="Assets\HnSF\Combat\Info\HealInfoBase.cs" />
      <Compile Include="Assets\HnSF\Combat\Moveset\MovesetDefinition.cs" />
      <Compile Include="Assets\HnSF\Input\InputDefinition.cs" />
-     <Compile Include="Assets\HnSF\Combat\BoxCollectionDefinition.cs" />
      <Compile Include="Assets\HnSF\State\StateTimeline.cs" />
      <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Managers\BootLoader.cs" />
      <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\Managers\FighterManager.cs" />
