@@ -4,7 +4,7 @@
 
 ## Hack and Slash Framework
 
-**Hack and Slash Framework** (or HnSF) is a Unity-focused framework designed for making hack and slash games.
+**Hack and Slash Framework** (or HnSF) is a Unity framework designed for making hack and slash games.
 
 ## Roadmap
 HnSF is currently in **pre-alpha**, expect things to change constantly and for code to break.
