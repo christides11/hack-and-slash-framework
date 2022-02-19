@@ -3,6 +3,7 @@ using UnityEngine.Playables;
 
 namespace HnSF.Sample.TDAction
 {
+    [System.Serializable]
     public class IncrementFrameAsset : FighterStateAsset
     {
         public IncrementFrameBehaviour template;

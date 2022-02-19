@@ -3,6 +3,7 @@ using UnityEngine.Playables;
 
 namespace HnSF.Sample.TDAction
 {
+    [System.Serializable]
     public class ChangeStateAsset : FighterStateAsset
     {
         public ChangeStateBehaviour template;

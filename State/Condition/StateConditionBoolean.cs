@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using HnSF.Fighters;
 using Juce.ImplementationSelector;
-using UnityEngine;
 
 namespace HnSF
 {
@@ -10,11 +7,11 @@ namespace HnSF
     [SelectImplementationCustomDisplayName("Menu/boolean")]
     public class StateConditionBoolean : StateConditionBase
     {
-        public bool trueFalse = true;
+        public bool value = true;
 
         public override bool IsTrue(IFighterBase fm)
         {
-            return trueFalse;
+            return value;
         }
     }
 }
