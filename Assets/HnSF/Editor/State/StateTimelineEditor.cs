@@ -14,7 +14,7 @@ namespace HnSF
 
             st.totalFrames = (int)(st.duration / (1.0f / 60.0f));
             GUILayout.Label($"Total Frames: {st.totalFrames}", EditorStyles.boldLabel);
-            //base.OnInspectorGUI();
+            base.OnInspectorGUI();
         }
     }
 }

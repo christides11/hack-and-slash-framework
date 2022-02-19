@@ -638,6 +638,12 @@
  <Reference Include="Unity.VisualStudio.Editor">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Juce.ImplementationSelector.Runtime">
+ <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Juce.ImplementationSelector.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Timeline">
+ <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
@@ -647,14 +653,17 @@
  <Reference Include="Unity.2D.Sprite.Editor">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Malee.ReorderableList.Editor">
+ <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Malee.ReorderableList.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.RenderPipelines.Core.Runtime">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
- <Reference Include="Malee.ReorderableList.Editor">
- <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Malee.ReorderableList.Editor.dll</HintPath>
+ <Reference Include="Juce.ImplementationSelector.Editor">
+ <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Juce.ImplementationSelector.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
@@ -695,32 +704,23 @@
  <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.Timeline.Editor">
+ <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="XNodeEditor">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/XNodeEditor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics.Editor">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Juce.ImplementationSelector.Examples">
+ <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Juce.ImplementationSelector.Examples.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.ProGrids">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.Editor">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Timeline">
- <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Juce.ImplementationSelector.Runtime">
- <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Juce.ImplementationSelector.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="Juce.ImplementationSelector.Editor">
- <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Juce.ImplementationSelector.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Juce.ImplementationSelector.Examples">
- <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Juce.ImplementationSelector.Examples.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
