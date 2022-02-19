@@ -52,7 +52,6 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\HnSF\Fighter\Managers\FighterStateManager.cs" />
      <Compile Include="Assets\HnSF\Combat\Interfaces\IHealable.cs" />
      <Compile Include="Assets\HnSF\Combat\CancelListDefinition.cs" />
      <Compile Include="Assets\HnSF\Combat\Info\HitInfo.cs" />
@@ -60,27 +59,25 @@
      <Compile Include="Assets\HnSF\Combat\ChargeLevel.cs" />
      <Compile Include="Assets\HnSF\Combat\Info\HitInfoBase.cs" />
      <Compile Include="Assets\HnSF\Combat\Boxes\Hurtbox\HurtboxState.cs" />
-     <Compile Include="Assets\HnSF\Fighter\Managers\IFighterCombatManager.cs" />
+     <Compile Include="Assets\HnSF\Fighter\IFighterCombatManager.cs" />
      <Compile Include="Assets\HnSF\Simulation\SimObjectManager.cs" />
      <Compile Include="Assets\HnSF\Combat\Attack Events\AttackEventDefinition.cs" />
      <Compile Include="Assets\HnSF\Combat\Attack Events\AttackEvent.cs" />
-     <Compile Include="Assets\HnSF\Fighter\Managers\FighterCombatManager.cs" />
      <Compile Include="Assets\HnSF\Combat\Boxes\Hitbox\HitboxGroup.cs" />
      <Compile Include="Assets\HnSF\Combat\Info\HurtInfoBase.cs" />
      <Compile Include="Assets\HnSF\Simulation\ISimObject.cs" />
      <Compile Include="Assets\HnSF\Combat\Attack Events\AttackEventInputCheckTiming.cs" />
-     <Compile Include="Assets\HnSF\Fighter\Managers\IFighterStateManager.cs" />
+     <Compile Include="Assets\HnSF\Fighter\IFighterStateManager.cs" />
      <Compile Include="Assets\HnSF\Combat\Boxes\BoxDefinitionBase.cs" />
      <Compile Include="Assets\HnSF\Combat\ForceType.cs" />
      <Compile Include="Assets\HnSF\Combat\Boxes\Hitbox\HitboxForceType.cs" />
      <Compile Include="Assets\HnSF\Combat\Info\HurtInfo3D.cs" />
-     <Compile Include="Assets\HnSF\Fighter\Managers\IFighterPhysicsManager.cs" />
+     <Compile Include="Assets\HnSF\Fighter\IFighterPhysicsManager.cs" />
      <Compile Include="Assets\HnSF\Combat\CancelList.cs" />
      <Compile Include="Assets\HnSF\Helpers\HelperFunctions.cs" />
      <Compile Include="Assets\HnSF\Combat\Info\HurtInfo2D.cs" />
      <Compile Include="Assets\HnSF\Combat\Boxes\Hitbox\HitboxType.cs" />
      <Compile Include="Assets\HnSF\Fighter\IFighterBase.cs" />
-     <Compile Include="Assets\HnSF\Fighter\FighterStateBase.cs" />
      <Compile Include="Assets\HnSF\Combat\ChargeDefinition.cs" />
      <Compile Include="Assets\HnSF\Combat\Attack\AttackDefinition.cs" />
      <Compile Include="Assets\HnSF\Combat\Boxes\Hitbox\HitboxForceRelation.cs" />
@@ -96,7 +93,6 @@
      <Compile Include="Assets\HnSF\Combat\Interfaces\IHurtable.cs" />
      <Compile Include="Assets\HnSF\Input\InputSequence.cs" />
      <Compile Include="Assets\HnSF\Combat\Attack Events\OnHitType.cs" />
-     <Compile Include="Assets\HnSF\Fighter\Managers\FighterHurtboxManager.cs" />
      <Compile Include="Assets\HnSF\Combat\Boxes\BoxDefinition.cs" />
      <Compile Include="Assets\HnSF\Combat\Attack Events\AttackEventVariables.cs" />
      <Compile Include="Assets\HnSF\Combat\Moveset\MovesetAttackNode.cs" />
@@ -104,6 +100,7 @@
      <Compile Include="Assets\HnSF\Combat\Moveset\MovesetDefinition.cs" />
      <Compile Include="Assets\HnSF\Input\InputDefinition.cs" />
      <Compile Include="Assets\HnSF\Combat\BoxCollectionDefinition.cs" />
+     <Compile Include="Assets\HnSF\State\StateTimeline.cs" />
      <None Include="Assets\HnSF\HnSF.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/2020.3.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -689,6 +686,9 @@
  </Reference>
  <Reference Include="Malee.ReorderableList">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Malee.ReorderableList.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Timeline">
+ <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>

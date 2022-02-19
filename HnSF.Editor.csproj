@@ -66,6 +66,7 @@
      <Compile Include="Assets\HnSF\Editor\HitInfoPropertyDrawer.cs" />
      <Compile Include="Assets\HnSF\Editor\Combat\Attack\ChargeGroupEditorWindow.cs" />
      <Compile Include="Assets\HnSF\Editor\Combat\BoxCollectionDefinitionEditor.cs" />
+     <Compile Include="Assets\HnSF\Editor\State\StateTimelineEditor.cs" />
      <None Include="Assets\HnSF\Editor\HnSF.Editor.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/2020.3.28f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -660,6 +661,12 @@
  </Reference>
  <Reference Include="Malee.ReorderableList">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Malee.ReorderableList.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Timeline">
+ <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Timeline.Editor">
+ <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>

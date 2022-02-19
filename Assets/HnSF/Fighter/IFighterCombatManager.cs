@@ -30,8 +30,7 @@ namespace HnSF.Fighters
         /// </summary>
         MovesetAttackNode CurrentAttackNode { get; }
         int CurrentAttackNodeIdentifier { get; }
-
-        void CLateUpdate();
+        
         int GetMovesetCount();
         MovesetDefinition GetMoveset(int index);
         void Cleanup();

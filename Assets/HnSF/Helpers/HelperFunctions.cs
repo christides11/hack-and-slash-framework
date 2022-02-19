@@ -2,9 +2,6 @@
 
 namespace HnSF
 {
-    /// <summary>
-    /// Random functions with different purposes.
-    /// </summary>
     public static class HelperFunctions
     {
         /// <summary>

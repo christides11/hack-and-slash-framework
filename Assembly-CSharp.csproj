@@ -707,6 +707,21 @@
  <Reference Include="Unity.RenderPipelines.Core.Editor">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.Timeline">
+ <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Timeline.Editor">
+ <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Juce.ImplementationSelector.Runtime">
+ <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Juce.ImplementationSelector.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Juce.ImplementationSelector.Editor">
+ <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Juce.ImplementationSelector.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Juce.ImplementationSelector.Examples">
+ <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Juce.ImplementationSelector.Examples.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="HnSF.Editor.csproj">
