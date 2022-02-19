@@ -60,12 +60,10 @@
      <Compile Include="Assets\HnSF\Combat\Info\HitInfoBase.cs" />
      <Compile Include="Assets\HnSF\Combat\Boxes\Hurtbox\HurtboxState.cs" />
      <Compile Include="Assets\HnSF\Fighter\IFighterCombatManager.cs" />
-     <Compile Include="Assets\HnSF\Simulation\SimObjectManager.cs" />
      <Compile Include="Assets\HnSF\Combat\Attack Events\AttackEventDefinition.cs" />
      <Compile Include="Assets\HnSF\Combat\Attack Events\AttackEvent.cs" />
      <Compile Include="Assets\HnSF\Combat\Boxes\Hitbox\HitboxGroup.cs" />
      <Compile Include="Assets\HnSF\Combat\Info\HurtInfoBase.cs" />
-     <Compile Include="Assets\HnSF\Simulation\ISimObject.cs" />
      <Compile Include="Assets\HnSF\Combat\Attack Events\AttackEventInputCheckTiming.cs" />
      <Compile Include="Assets\HnSF\Fighter\IFighterStateManager.cs" />
      <Compile Include="Assets\HnSF\Combat\Boxes\BoxDefinitionBase.cs" />
@@ -83,7 +81,6 @@
      <Compile Include="Assets\HnSF\Combat\Boxes\Hitbox\HitboxForceRelation.cs" />
      <Compile Include="Assets\HnSF\Combat\Attack Events\AttackEventReturnType.cs" />
      <Compile Include="Assets\HnSF\Input\InputDefinitionType.cs" />
-     <Compile Include="Assets\HnSF\Simulation\ISimObjectManager.cs" />
      <Compile Include="Assets\HnSF\Combat\AttackCondition.cs" />
      <Compile Include="Assets\HnSF\Combat\Boxes\BoxShape.cs" />
      <Compile Include="Assets\HnSF\Combat\HitboxManager.cs" />
