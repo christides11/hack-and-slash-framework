@@ -1,3 +1,36 @@
+# [30.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v29.0.0...v30.0.0) (2022-02-19)
+
+
+### Bug Fixes
+
+* Attempting to fix semantic release. ([b45fa00](https://github.com/christides11/hack-and-slash-framework/commit/b45fa008fc64cd1ac3f9578c95e30efbd2a8cbdb))
+
+
+### Code Refactoring
+
+* Removed implemented fighter classes. ([329c74a](https://github.com/christides11/hack-and-slash-framework/commit/329c74ad7457dec36f4f1d4bfa2d207fa670adb1))
+* Removed SImulation related scripts. ([e2f7ef8](https://github.com/christides11/hack-and-slash-framework/commit/e2f7ef8706ebe2cd478cd20606e7a5c92e2d515d))
+
+
+### Features
+
+* added base classes for state timeline tracks. ([77924d8](https://github.com/christides11/hack-and-slash-framework/commit/77924d873c30c3b585823f6cd9dbe71a31f162f0))
+* Added getters for fighter managers in IFighterBase. ([19af502](https://github.com/christides11/hack-and-slash-framework/commit/19af5028be34b514fd4ee27f489f831e53152d83))
+* Change to using timeline for states ([a7e01f3](https://github.com/christides11/hack-and-slash-framework/commit/a7e01f34ad1970f77159a6910580e44f0f1ccff0))
+* Change to using timeline for states. ([2716794](https://github.com/christides11/hack-and-slash-framework/commit/2716794848dcbac21077da1b3376760ebbd5036f))
+* Removed BoxCollectionDefinition ([115ce7b](https://github.com/christides11/hack-and-slash-framework/commit/115ce7b7601d37cfde00caad2c6edc3a9d54785b))
+* State Conditions ([5a80c8e](https://github.com/christides11/hack-and-slash-framework/commit/5a80c8ef3c5cd7cef25867c68e09c960bd35a858))
+* Upgraded to 2020.3.28f1. ([3d999d6](https://github.com/christides11/hack-and-slash-framework/commit/3d999d62a38385a22d995ab4ead2492a824dace3))
+
+
+### BREAKING CHANGES
+
+* fixing semantic release.
+* Changed to using timeline for states. Makes it easier to preview things in the editor, along with making attack states simpler to handle.
+* Removed BoxCollectionDefinition. Unnecessary due to how states now work.
+* Removed scripts relating to simulation.
+* Removed implemented fighter classes (hurtboxmanager, statemanager, etc.). Actual implementation depends from game to game, rather put things like this in a sample.
+
 # [29.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v28.3.1...v29.0.0) (2021-10-22)
 
 
