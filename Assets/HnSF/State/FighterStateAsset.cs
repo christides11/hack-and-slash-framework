@@ -8,7 +8,7 @@ namespace HnSF
     {
         public override Playable CreatePlayable(PlayableGraph graph, GameObject owner)
         {
-            throw new NotImplementedException($"{name} does not implement CreatePlayable.");
+            throw new NotImplementedException($"{name} does not implement CreatePlayable");
         }
     }
 }
