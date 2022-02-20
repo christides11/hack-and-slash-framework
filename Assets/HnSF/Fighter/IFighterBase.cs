@@ -4,9 +4,9 @@ namespace HnSF.Fighters
 {
     public interface IFighterBase
     {
-        public IFighterCombatManager combatManager { get; }
-        public IFighterStateManager stateManager { get;  }
-        public IFighterPhysicsManager physicsManager { get; }
+        public IFighterCombatManager CombatManager { get; }
+        public IFighterStateManager StateManager { get;  }
+        public IFighterPhysicsManager PhysicsManager { get; }
         
         GameObject GetGameObject();
     }

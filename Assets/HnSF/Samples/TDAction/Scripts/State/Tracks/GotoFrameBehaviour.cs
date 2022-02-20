@@ -12,7 +12,7 @@ namespace HnSF.Sample.TDAction
         {
             FighterManager cm = playerData as FighterManager;
             if (cm == null) return;
-            cm.stateManager.SetFrame(frame);
+            cm.StateManager.SetFrame(frame);
         }
     }
 }

@@ -12,7 +12,7 @@ namespace HnSF.Sample.TDAction
             FighterManager cm = playerData as FighterManager;
             if (cm == null) return;
             //if (conditon.IsTrue(cm) == false) return;
-            (cm.stateManager as FighterStateManager).MarkForStateChange((int)state);
+            (cm.StateManager as FighterStateManager).MarkForStateChange((int)state);
         }
     }
 }

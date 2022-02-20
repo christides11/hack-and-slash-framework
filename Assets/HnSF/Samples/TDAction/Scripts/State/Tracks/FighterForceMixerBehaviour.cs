@@ -56,8 +56,8 @@ namespace HnSF.Sample.TDAction
             finalWeights.Normalize();
 
             //assign the result to the bound object
-            (cm.physicsManager as FighterPhysicsManager).forceMovement = finalSetForce * finalWeights.x;
-            (cm.physicsManager as FighterPhysicsManager).forceMovement += finalAddForce * finalWeights.y;
+            (cm.PhysicsManager as FighterPhysicsManager).forceMovement = finalSetForce * finalWeights.x;
+            (cm.PhysicsManager as FighterPhysicsManager).forceMovement += finalAddForce * finalWeights.y;
         }
     }
 }
