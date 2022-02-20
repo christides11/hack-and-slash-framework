@@ -3191,19 +3191,19 @@ references:
   commentId: T:HnSF.Fighters.IFighterBase
   fullName: HnSF.Fighters.IFighterBase
   nameWithType: IFighterBase
-- uid: HnSF.Fighters.IFighterBase.combatManager
-  name: combatManager
-  href: api/HnSF.Fighters.IFighterBase.html#HnSF_Fighters_IFighterBase_combatManager
-  commentId: P:HnSF.Fighters.IFighterBase.combatManager
-  fullName: HnSF.Fighters.IFighterBase.combatManager
-  nameWithType: IFighterBase.combatManager
-- uid: HnSF.Fighters.IFighterBase.combatManager*
-  name: combatManager
-  href: api/HnSF.Fighters.IFighterBase.html#HnSF_Fighters_IFighterBase_combatManager_
-  commentId: Overload:HnSF.Fighters.IFighterBase.combatManager
+- uid: HnSF.Fighters.IFighterBase.CombatManager
+  name: CombatManager
+  href: api/HnSF.Fighters.IFighterBase.html#HnSF_Fighters_IFighterBase_CombatManager
+  commentId: P:HnSF.Fighters.IFighterBase.CombatManager
+  fullName: HnSF.Fighters.IFighterBase.CombatManager
+  nameWithType: IFighterBase.CombatManager
+- uid: HnSF.Fighters.IFighterBase.CombatManager*
+  name: CombatManager
+  href: api/HnSF.Fighters.IFighterBase.html#HnSF_Fighters_IFighterBase_CombatManager_
+  commentId: Overload:HnSF.Fighters.IFighterBase.CombatManager
   isSpec: "True"
-  fullName: HnSF.Fighters.IFighterBase.combatManager
-  nameWithType: IFighterBase.combatManager
+  fullName: HnSF.Fighters.IFighterBase.CombatManager
+  nameWithType: IFighterBase.CombatManager
 - uid: HnSF.Fighters.IFighterBase.GetGameObject
   name: GetGameObject()
   href: api/HnSF.Fighters.IFighterBase.html#HnSF_Fighters_IFighterBase_GetGameObject
@@ -3217,32 +3217,32 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.IFighterBase.GetGameObject
   nameWithType: IFighterBase.GetGameObject
-- uid: HnSF.Fighters.IFighterBase.physicsManager
-  name: physicsManager
-  href: api/HnSF.Fighters.IFighterBase.html#HnSF_Fighters_IFighterBase_physicsManager
-  commentId: P:HnSF.Fighters.IFighterBase.physicsManager
-  fullName: HnSF.Fighters.IFighterBase.physicsManager
-  nameWithType: IFighterBase.physicsManager
-- uid: HnSF.Fighters.IFighterBase.physicsManager*
-  name: physicsManager
-  href: api/HnSF.Fighters.IFighterBase.html#HnSF_Fighters_IFighterBase_physicsManager_
-  commentId: Overload:HnSF.Fighters.IFighterBase.physicsManager
+- uid: HnSF.Fighters.IFighterBase.PhysicsManager
+  name: PhysicsManager
+  href: api/HnSF.Fighters.IFighterBase.html#HnSF_Fighters_IFighterBase_PhysicsManager
+  commentId: P:HnSF.Fighters.IFighterBase.PhysicsManager
+  fullName: HnSF.Fighters.IFighterBase.PhysicsManager
+  nameWithType: IFighterBase.PhysicsManager
+- uid: HnSF.Fighters.IFighterBase.PhysicsManager*
+  name: PhysicsManager
+  href: api/HnSF.Fighters.IFighterBase.html#HnSF_Fighters_IFighterBase_PhysicsManager_
+  commentId: Overload:HnSF.Fighters.IFighterBase.PhysicsManager
   isSpec: "True"
-  fullName: HnSF.Fighters.IFighterBase.physicsManager
-  nameWithType: IFighterBase.physicsManager
-- uid: HnSF.Fighters.IFighterBase.stateManager
-  name: stateManager
-  href: api/HnSF.Fighters.IFighterBase.html#HnSF_Fighters_IFighterBase_stateManager
-  commentId: P:HnSF.Fighters.IFighterBase.stateManager
-  fullName: HnSF.Fighters.IFighterBase.stateManager
-  nameWithType: IFighterBase.stateManager
-- uid: HnSF.Fighters.IFighterBase.stateManager*
-  name: stateManager
-  href: api/HnSF.Fighters.IFighterBase.html#HnSF_Fighters_IFighterBase_stateManager_
-  commentId: Overload:HnSF.Fighters.IFighterBase.stateManager
+  fullName: HnSF.Fighters.IFighterBase.PhysicsManager
+  nameWithType: IFighterBase.PhysicsManager
+- uid: HnSF.Fighters.IFighterBase.StateManager
+  name: StateManager
+  href: api/HnSF.Fighters.IFighterBase.html#HnSF_Fighters_IFighterBase_StateManager
+  commentId: P:HnSF.Fighters.IFighterBase.StateManager
+  fullName: HnSF.Fighters.IFighterBase.StateManager
+  nameWithType: IFighterBase.StateManager
+- uid: HnSF.Fighters.IFighterBase.StateManager*
+  name: StateManager
+  href: api/HnSF.Fighters.IFighterBase.html#HnSF_Fighters_IFighterBase_StateManager_
+  commentId: Overload:HnSF.Fighters.IFighterBase.StateManager
   isSpec: "True"
-  fullName: HnSF.Fighters.IFighterBase.stateManager
-  nameWithType: IFighterBase.stateManager
+  fullName: HnSF.Fighters.IFighterBase.StateManager
+  nameWithType: IFighterBase.StateManager
 - uid: HnSF.Fighters.IFighterCombatManager
   name: IFighterCombatManager
   href: api/HnSF.Fighters.IFighterCombatManager.html
@@ -4994,19 +4994,19 @@ references:
   commentId: T:HnSF.Sample.TDAction.FighterManager
   fullName: HnSF.Sample.TDAction.FighterManager
   nameWithType: FighterManager
-- uid: HnSF.Sample.TDAction.FighterManager.combatManager
-  name: combatManager
-  href: api/HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_combatManager
-  commentId: P:HnSF.Sample.TDAction.FighterManager.combatManager
-  fullName: HnSF.Sample.TDAction.FighterManager.combatManager
-  nameWithType: FighterManager.combatManager
-- uid: HnSF.Sample.TDAction.FighterManager.combatManager*
-  name: combatManager
-  href: api/HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_combatManager_
-  commentId: Overload:HnSF.Sample.TDAction.FighterManager.combatManager
+- uid: HnSF.Sample.TDAction.FighterManager.CombatManager
+  name: CombatManager
+  href: api/HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_CombatManager
+  commentId: P:HnSF.Sample.TDAction.FighterManager.CombatManager
+  fullName: HnSF.Sample.TDAction.FighterManager.CombatManager
+  nameWithType: FighterManager.CombatManager
+- uid: HnSF.Sample.TDAction.FighterManager.CombatManager*
+  name: CombatManager
+  href: api/HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_CombatManager_
+  commentId: Overload:HnSF.Sample.TDAction.FighterManager.CombatManager
   isSpec: "True"
-  fullName: HnSF.Sample.TDAction.FighterManager.combatManager
-  nameWithType: FighterManager.combatManager
+  fullName: HnSF.Sample.TDAction.FighterManager.CombatManager
+  nameWithType: FighterManager.CombatManager
 - uid: HnSF.Sample.TDAction.FighterManager.GetGameObject
   name: GetGameObject()
   href: api/HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_GetGameObject
@@ -5033,19 +5033,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.FighterManager.inputManager
   nameWithType: FighterManager.inputManager
-- uid: HnSF.Sample.TDAction.FighterManager.physicsManager
-  name: physicsManager
-  href: api/HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_physicsManager
-  commentId: P:HnSF.Sample.TDAction.FighterManager.physicsManager
-  fullName: HnSF.Sample.TDAction.FighterManager.physicsManager
-  nameWithType: FighterManager.physicsManager
-- uid: HnSF.Sample.TDAction.FighterManager.physicsManager*
-  name: physicsManager
-  href: api/HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_physicsManager_
-  commentId: Overload:HnSF.Sample.TDAction.FighterManager.physicsManager
+- uid: HnSF.Sample.TDAction.FighterManager.PhysicsManager
+  name: PhysicsManager
+  href: api/HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_PhysicsManager
+  commentId: P:HnSF.Sample.TDAction.FighterManager.PhysicsManager
+  fullName: HnSF.Sample.TDAction.FighterManager.PhysicsManager
+  nameWithType: FighterManager.PhysicsManager
+- uid: HnSF.Sample.TDAction.FighterManager.PhysicsManager*
+  name: PhysicsManager
+  href: api/HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_PhysicsManager_
+  commentId: Overload:HnSF.Sample.TDAction.FighterManager.PhysicsManager
   isSpec: "True"
-  fullName: HnSF.Sample.TDAction.FighterManager.physicsManager
-  nameWithType: FighterManager.physicsManager
+  fullName: HnSF.Sample.TDAction.FighterManager.PhysicsManager
+  nameWithType: FighterManager.PhysicsManager
 - uid: HnSF.Sample.TDAction.FighterManager.ResetPreview
   name: ResetPreview()
   href: api/HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_ResetPreview
@@ -5072,19 +5072,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.FighterManager.SimUpdate
   nameWithType: FighterManager.SimUpdate
-- uid: HnSF.Sample.TDAction.FighterManager.stateManager
-  name: stateManager
-  href: api/HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_stateManager
-  commentId: P:HnSF.Sample.TDAction.FighterManager.stateManager
-  fullName: HnSF.Sample.TDAction.FighterManager.stateManager
-  nameWithType: FighterManager.stateManager
-- uid: HnSF.Sample.TDAction.FighterManager.stateManager*
-  name: stateManager
-  href: api/HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_stateManager_
-  commentId: Overload:HnSF.Sample.TDAction.FighterManager.stateManager
+- uid: HnSF.Sample.TDAction.FighterManager.StateManager
+  name: StateManager
+  href: api/HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_StateManager
+  commentId: P:HnSF.Sample.TDAction.FighterManager.StateManager
+  fullName: HnSF.Sample.TDAction.FighterManager.StateManager
+  nameWithType: FighterManager.StateManager
+- uid: HnSF.Sample.TDAction.FighterManager.StateManager*
+  name: StateManager
+  href: api/HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_StateManager_
+  commentId: Overload:HnSF.Sample.TDAction.FighterManager.StateManager
   isSpec: "True"
-  fullName: HnSF.Sample.TDAction.FighterManager.stateManager
-  nameWithType: FighterManager.stateManager
+  fullName: HnSF.Sample.TDAction.FighterManager.StateManager
+  nameWithType: FighterManager.StateManager
 - uid: HnSF.Sample.TDAction.FighterManager.visual
   name: visual
   href: api/HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_visual
