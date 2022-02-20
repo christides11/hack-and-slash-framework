@@ -1,3 +1,10 @@
+## [30.0.1](https://github.com/christides11/hack-and-slash-framework/compare/v30.0.0...v30.0.1) (2022-02-20)
+
+
+### Bug Fixes
+
+* CamelCase semantic push. ([2939914](https://github.com/christides11/hack-and-slash-framework/commit/2939914db50d0a6d8351a7616e5caeeeb15185cb))
+
 # [30.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v29.0.0...v30.0.0) (2022-02-19)
 
 
