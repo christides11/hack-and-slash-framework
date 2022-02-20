@@ -13,10 +13,10 @@ namespace HnSF.Sample.TDAction
         {
             foreach (var v in coreStates)
             {
-                stateManager.AddState(v.timeline, (int)v.state);
+                StateManager.AddState(v.timeline, (int)v.state);
             }
 
-            stateManager.ChangeState((int)FighterStateEnum.IDLE);
+            StateManager.ChangeState((int)FighterStateEnum.IDLE);
         }
     }
 }

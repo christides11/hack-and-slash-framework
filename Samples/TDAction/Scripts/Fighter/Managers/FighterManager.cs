@@ -7,15 +7,15 @@ namespace HnSF.Sample.TDAction
 {
     public class FighterManager : SimulationBehaviour, IFighterBase
     {
-        public IFighterCombatManager combatManager
+        public IFighterCombatManager CombatManager
         {
             get { return _combatManager; }
         }
-        public IFighterStateManager stateManager
+        public IFighterStateManager StateManager
         {
             get { return _stateManager; }
         }
-        public IFighterPhysicsManager physicsManager
+        public IFighterPhysicsManager PhysicsManager
         {
             get { return _physicsManager; }
         }
@@ -41,11 +41,11 @@ namespace HnSF.Sample.TDAction
         public override void SimUpdate()
         {
             base.SimUpdate();
-            if (combatManager.HitStop == 0)
+            if (CombatManager.HitStop == 0)
             {
                 _physicsManager.CheckIfGrounded();
                 _stateManager.Tick();
-                physicsManager.Tick();
+                PhysicsManager.Tick();
             }
             else
             {

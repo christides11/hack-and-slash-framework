@@ -9,7 +9,7 @@ namespace HnSF.Sample.TDAction
         {
             FighterManager fm = (FighterManager)playerData;
             if (fm == null) return;
-            fm.stateManager.IncrementFrame();
+            fm.StateManager.IncrementFrame();
         }
     }
 }
