@@ -1,3 +1,15 @@
+# [31.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v30.0.1...v31.0.0) (2022-03-07)
+
+
+### Code Refactoring
+
+* Changed implementation property drawer ([c09c0c5](https://github.com/christides11/hack-and-slash-framework/commit/c09c0c50c24772a2eeff0dac69d0f6cefe0e670a))
+
+
+### BREAKING CHANGES
+
+* Changed from Juce implementation selector to medvedya.
+
 ## [30.0.1](https://github.com/christides11/hack-and-slash-framework/compare/v30.0.0...v30.0.1) (2022-02-20)
 
 
