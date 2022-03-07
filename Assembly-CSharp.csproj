@@ -638,9 +638,6 @@
  <Reference Include="Unity.VisualStudio.Editor">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Juce.ImplementationSelector.Runtime">
- <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Juce.ImplementationSelector.Runtime.dll</HintPath>
- </Reference>
  <Reference Include="Unity.Timeline">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
@@ -661,9 +658,6 @@
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="Juce.ImplementationSelector.Editor">
- <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Juce.ImplementationSelector.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
@@ -713,14 +707,17 @@
  <Reference Include="Unity.Mathematics.Editor">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Juce.ImplementationSelector.Examples">
- <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Juce.ImplementationSelector.Examples.dll</HintPath>
- </Reference>
  <Reference Include="Unity.ProGrids">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.Editor">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="medvedya.select_implementation_property_drawer">
+ <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/medvedya.select_implementation_property_drawer.dll</HintPath>
+ </Reference>
+ <Reference Include="medvedya.select_implementation_property_drawer_editor">
+ <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/medvedya.select_implementation_property_drawer_editor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
