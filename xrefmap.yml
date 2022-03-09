@@ -3806,6 +3806,18 @@ references:
   isSpec: "True"
   fullName: HnSF.FighterStateAsset.CreatePlayable
   nameWithType: FighterStateAsset.CreatePlayable
+- uid: HnSF.FighterStateBehaviour
+  name: FighterStateBehaviour
+  href: api/HnSF.FighterStateBehaviour.html
+  commentId: T:HnSF.FighterStateBehaviour
+  fullName: HnSF.FighterStateBehaviour
+  nameWithType: FighterStateBehaviour
+- uid: HnSF.FighterStateBehaviour.conditon
+  name: conditon
+  href: api/HnSF.FighterStateBehaviour.html#HnSF_FighterStateBehaviour_conditon
+  commentId: F:HnSF.FighterStateBehaviour.conditon
+  fullName: HnSF.FighterStateBehaviour.conditon
+  nameWithType: FighterStateBehaviour.conditon
 - uid: HnSF.FighterTrack
   name: FighterTrack
   href: api/HnSF.FighterTrack.html
@@ -5284,18 +5296,6 @@ references:
   commentId: F:HnSF.Sample.TDAction.FighterPhysicsManager.worldCollider
   fullName: HnSF.Sample.TDAction.FighterPhysicsManager.worldCollider
   nameWithType: FighterPhysicsManager.worldCollider
-- uid: HnSF.Sample.TDAction.FighterStateBehaviour
-  name: FighterStateBehaviour
-  href: api/HnSF.Sample.TDAction.FighterStateBehaviour.html
-  commentId: T:HnSF.Sample.TDAction.FighterStateBehaviour
-  fullName: HnSF.Sample.TDAction.FighterStateBehaviour
-  nameWithType: FighterStateBehaviour
-- uid: HnSF.Sample.TDAction.FighterStateBehaviour.conditon
-  name: conditon
-  href: api/HnSF.Sample.TDAction.FighterStateBehaviour.html#HnSF_Sample_TDAction_FighterStateBehaviour_conditon
-  commentId: F:HnSF.Sample.TDAction.FighterStateBehaviour.conditon
-  fullName: HnSF.Sample.TDAction.FighterStateBehaviour.conditon
-  nameWithType: FighterStateBehaviour.conditon
 - uid: HnSF.Sample.TDAction.FighterStateEnum
   name: FighterStateEnum
   href: api/HnSF.Sample.TDAction.FighterStateEnum.html

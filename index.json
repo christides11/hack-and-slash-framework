@@ -294,6 +294,11 @@
     "title": "Class FighterStateAsset | Hack and Slash Framework Documentation",
     "keywords": "Class FighterStateAsset Inheritance Object FighterStateAsset ChangeStateAsset FighterForceAsset GotoFrameAsset IncrementFrameAsset Namespace : HnSF Assembly : HnSF.dll Syntax public class FighterStateAsset : PlayableAsset Methods | Improve this Doc View Source CreatePlayable(PlayableGraph, GameObject) Declaration public override Playable CreatePlayable(PlayableGraph graph, GameObject owner) Parameters Type Name Description PlayableGraph graph GameObject owner Returns Type Description Playable"
   },
+  "api/HnSF.FighterStateBehaviour.html": {
+    "href": "api/HnSF.FighterStateBehaviour.html",
+    "title": "Class FighterStateBehaviour | Hack and Slash Framework Documentation",
+    "keywords": "Class FighterStateBehaviour Inheritance Object FighterStateBehaviour ChangeStateBehaviour ForceSetBehaviour GotoFrameBehaviour IncrementFrameBehaviour Namespace : HnSF Assembly : HnSF.dll Syntax [Serializable] public class FighterStateBehaviour : PlayableBehaviour Fields | Improve this Doc View Source conditon Declaration public StateConditionBase conditon Field Value Type Description StateConditionBase"
+  },
   "api/HnSF.FighterTrack.html": {
     "href": "api/HnSF.FighterTrack.html",
     "title": "Class FighterTrack | Hack and Slash Framework Documentation",
@@ -307,7 +312,7 @@
   "api/HnSF.html": {
     "href": "api/HnSF.html",
     "title": "Namespace HnSF | Hack and Slash Framework Documentation",
-    "keywords": "Namespace HnSF Classes AttackCondition FighterStateAsset FighterTrack HelperFunctions StateConditionAND StateConditionBase StateConditionBoolean StateConditionOR StateTimeline StateTimelineEditor"
+    "keywords": "Namespace HnSF Classes AttackCondition FighterStateAsset FighterStateBehaviour FighterTrack HelperFunctions StateConditionAND StateConditionBase StateConditionBoolean StateConditionOR StateTimeline StateTimelineEditor"
   },
   "api/HnSF.Input.html": {
     "href": "api/HnSF.Input.html",
@@ -404,11 +409,6 @@
     "title": "Class FighterPhysicsManager | Hack and Slash Framework Documentation",
     "keywords": "Class FighterPhysicsManager Inheritance Object FighterPhysicsManager Implements IFighterPhysicsManager Namespace : HnSF.Sample.TDAction Assembly : HnSF.dll Syntax public class FighterPhysicsManager : MonoBehaviour, IFighterPhysicsManager Fields | Improve this Doc View Source cc Declaration public CharacterController2D cc Field Value Type Description CharacterController2D | Improve this Doc View Source worldCollider Declaration public BoxCollider2D worldCollider Field Value Type Description BoxCollider2D Properties | Improve this Doc View Source forceDamage Declaration public Vector2 forceDamage { get; set; } Property Value Type Description Vector2 | Improve this Doc View Source forceMovement Declaration public Vector2 forceMovement { get; set; } Property Value Type Description Vector2 | Improve this Doc View Source IsGrounded Declaration public bool IsGrounded { get; } Property Value Type Description Boolean Methods | Improve this Doc View Source ApplyFriction(Single, Single) Declaration protected virtual float ApplyFriction(float value, float friction) Parameters Type Name Description Single value Single friction Returns Type Description Single | Improve this Doc View Source ApplyGravity() Declaration public virtual void ApplyGravity() | Improve this Doc View Source ApplyGravity(Single, Single, Single) Declaration public virtual void ApplyGravity(float maxFallSpeed, float gravity, float gravityScale) Parameters Type Name Description Single maxFallSpeed Single gravity Single gravityScale | Improve this Doc View Source ApplyMovementFriction(Single) Declaration public virtual void ApplyMovementFriction(float friction = 1F) Parameters Type Name Description Single friction | Improve this Doc View Source CheckIfGrounded() Declaration public void CheckIfGrounded() | Improve this Doc View Source Freeze() Declaration public void Freeze() | Improve this Doc View Source GetOverallForce() Declaration public virtual Vector2 GetOverallForce() Returns Type Description Vector2 | Improve this Doc View Source RedirectInertia(Single, Vector2) Declaration public virtual void RedirectInertia(float forceMovementX, Vector2 movementInput) Parameters Type Name Description Single forceMovementX Vector2 movementInput | Improve this Doc View Source ResetForces() Declaration public void ResetForces() | Improve this Doc View Source SetGrounded(Boolean) Declaration public void SetGrounded(bool value) Parameters Type Name Description Boolean value | Improve this Doc View Source Tick() Declaration public void Tick() Implements IFighterPhysicsManager"
   },
-  "api/HnSF.Sample.TDAction.FighterStateBehaviour.html": {
-    "href": "api/HnSF.Sample.TDAction.FighterStateBehaviour.html",
-    "title": "Class FighterStateBehaviour | Hack and Slash Framework Documentation",
-    "keywords": "Class FighterStateBehaviour Inheritance Object FighterStateBehaviour ChangeStateBehaviour ForceSetBehaviour GotoFrameBehaviour IncrementFrameBehaviour Namespace : HnSF.Sample.TDAction Assembly : HnSF.dll Syntax [Serializable] public class FighterStateBehaviour : PlayableBehaviour Fields | Improve this Doc View Source conditon Declaration public StateConditionBase conditon Field Value Type Description StateConditionBase"
-  },
   "api/HnSF.Sample.TDAction.FighterStateEnum.html": {
     "href": "api/HnSF.Sample.TDAction.FighterStateEnum.html",
     "title": "Enum FighterStateEnum | Hack and Slash Framework Documentation",
@@ -452,7 +452,7 @@
   "api/HnSF.Sample.TDAction.html": {
     "href": "api/HnSF.Sample.TDAction.html",
     "title": "Namespace HnSF.Sample.TDAction | Hack and Slash Framework Documentation",
-    "keywords": "Namespace HnSF.Sample.TDAction Classes ADVManager BootLoader ChangeStateAsset ChangeStateBehaviour CharacterController2D CharacterController2D.CharacterCollisionState2D FighterCombatManager FighterForceAsset FighterForceMixerBehaviour FighterInputManager FighterManager FighterPhysicsManager FighterStateBehaviour FighterStateManager ForceForceTrack ForceSetBehaviour GameManager GotoFrameAsset GotoFrameBehaviour IncrementFrameAsset IncrementFrameBehaviour SimulationManager StateTimeline Structs ADVEnumStateBinding EnumStateBinding InputButtonData PlayerInputData Interfaces ISimulationObject Enums FighterStateEnum ForceSetType"
+    "keywords": "Namespace HnSF.Sample.TDAction Classes ADVManager BootLoader ChangeStateAsset ChangeStateBehaviour CharacterController2D CharacterController2D.CharacterCollisionState2D FighterCombatManager FighterForceAsset FighterForceMixerBehaviour FighterInputManager FighterManager FighterPhysicsManager FighterStateManager ForceForceTrack ForceSetBehaviour GameManager GotoFrameAsset GotoFrameBehaviour IncrementFrameAsset IncrementFrameBehaviour SimulationManager StateTimeline Structs ADVEnumStateBinding EnumStateBinding InputButtonData PlayerInputData Interfaces ISimulationObject Enums FighterStateEnum ForceSetType"
   },
   "api/HnSF.Sample.TDAction.IncrementFrameAsset.html": {
     "href": "api/HnSF.Sample.TDAction.IncrementFrameAsset.html",
