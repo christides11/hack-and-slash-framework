@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Playables;
 
-namespace HnSF.Sample.TDAction
+namespace HnSF
 {
     [System.Serializable]
     public class FighterStateBehaviour : PlayableBehaviour
