@@ -1,3 +1,10 @@
+## [31.0.1](https://github.com/christides11/hack-and-slash-framework/compare/v31.0.0...v31.0.1) (2022-03-09)
+
+
+### Bug Fixes
+
+* Changed FighterStateBehaviour namespace. ([96e26ec](https://github.com/christides11/hack-and-slash-framework/commit/96e26ecf80fc1dc1b0ff904316dd3ded2d072d46))
+
 # [31.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v30.0.1...v31.0.0) (2022-03-07)
 
 
