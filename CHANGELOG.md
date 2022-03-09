@@ -1,3 +1,10 @@
+# [31.1.0](https://github.com/christides11/hack-and-slash-framework/compare/v31.0.1...v31.1.0) (2022-03-09)
+
+
+### Features
+
+* TimelineClip passthrough. ([48ce5f0](https://github.com/christides11/hack-and-slash-framework/commit/48ce5f0fb545f38dfa19aee18d4165df404b0177))
+
 ## [31.0.1](https://github.com/christides11/hack-and-slash-framework/compare/v31.0.0...v31.0.1) (2022-03-09)
 
 
