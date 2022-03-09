@@ -1,3 +1,10 @@
+## [31.1.1](https://github.com/christides11/hack-and-slash-framework/compare/v31.1.0...v31.1.1) (2022-03-09)
+
+
+### Bug Fixes
+
+* Removed sample reference in StateConditionAND ([c8b65f7](https://github.com/christides11/hack-and-slash-framework/commit/c8b65f7e50ebed954d7a3e16718f9fa95b9e2b2a))
+
 # [31.1.0](https://github.com/christides11/hack-and-slash-framework/compare/v31.0.1...v31.1.0) (2022-03-09)
 
 
