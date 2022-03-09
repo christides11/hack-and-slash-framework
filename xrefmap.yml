@@ -3793,6 +3793,12 @@ references:
   commentId: T:HnSF.FighterStateAsset
   fullName: HnSF.FighterStateAsset
   nameWithType: FighterStateAsset
+- uid: HnSF.FighterStateAsset.clipPassthrough
+  name: clipPassthrough
+  href: api/HnSF.FighterStateAsset.html#HnSF_FighterStateAsset_clipPassthrough
+  commentId: F:HnSF.FighterStateAsset.clipPassthrough
+  fullName: HnSF.FighterStateAsset.clipPassthrough
+  nameWithType: FighterStateAsset.clipPassthrough
 - uid: HnSF.FighterStateAsset.CreatePlayable(PlayableGraph,GameObject)
   name: CreatePlayable(PlayableGraph, GameObject)
   href: api/HnSF.FighterStateAsset.html#HnSF_FighterStateAsset_CreatePlayable_PlayableGraph_GameObject_
@@ -3818,6 +3824,12 @@ references:
   commentId: F:HnSF.FighterStateBehaviour.conditon
   fullName: HnSF.FighterStateBehaviour.conditon
   nameWithType: FighterStateBehaviour.conditon
+- uid: HnSF.FighterStateBehaviour.timelineClip
+  name: timelineClip
+  href: api/HnSF.FighterStateBehaviour.html#HnSF_FighterStateBehaviour_timelineClip
+  commentId: F:HnSF.FighterStateBehaviour.timelineClip
+  fullName: HnSF.FighterStateBehaviour.timelineClip
+  nameWithType: FighterStateBehaviour.timelineClip
 - uid: HnSF.FighterTrack
   name: FighterTrack
   href: api/HnSF.FighterTrack.html

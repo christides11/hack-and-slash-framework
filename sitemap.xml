@@ -2,649 +2,649 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.AttackCondition.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.AttackDefinition.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.AttackDefinitionEditor.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.AttackDefinitionEditorWindow.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.AttackEvent.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.AttackEventDefinition.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.AttackEventDefinitionEditorWindow.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.AttackEventInputCheckTiming.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.AttackEventReturnType.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.AttackEventVariables.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.BoxDefinition.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.BoxDefinitionBase.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.BoxDefinitionPropertyDrawer.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.BoxShape.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.CancelList.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.CancelListDefinition.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.CancelListDefinitionEditorWindow.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.ChargeDefinition.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.ChargeGroupEditorWindow.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.ChargeLevel.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.ForceType.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.HealInfoBase.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.HitboxForceRelation.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.HitboxForceType.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.HitboxGroup.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.HitboxGroupEditorWindow.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.HitboxManager.HitboxGroupEventAction.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.HitboxManager.IDGroupCollisionInfo.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.HitboxManager.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.HitboxType.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.HitInfo.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.HitInfoBase.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.HitInfoBasePropertyDrawer.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.HitInfoPropertyDrawer.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.HitReactionBase.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.Hurtbox.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.HurtboxGroup.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.HurtboxGroupEditorWindow.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.HurtboxGroupPropertyDrawer.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.HurtboxState.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.HurtInfo2D.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.HurtInfo3D.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.HurtInfoBase.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.IHealable.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.IHurtable.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.ITargetable.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.MovesetAttackNode.nextNodeDefinition.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.MovesetAttackNode.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.MovesetAttackNodeEditor.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.MovesetDefinition.CancelListConnection.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.MovesetDefinition.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.OnHitType.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Combat.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Fighters.IFighterBase.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Fighters.IFighterCombatManager.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Fighters.IFighterPhysicsManager.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Fighters.IFighterStateManager.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Fighters.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.FighterStateAsset.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.FighterStateBehaviour.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.FighterTrack.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.HelperFunctions.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Input.InputDefinition.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Input.InputDefinitionDrawer.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Input.InputDefinitionType.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Input.InputSequence.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Input.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.ADVEnumStateBinding.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.ADVManager.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.BootLoader.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.ChangeStateAsset.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.ChangeStateBehaviour.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.CharacterController2D.CharacterCollisionState2D.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.CharacterController2D.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.EnumStateBinding.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.FighterCombatManager.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.FighterForceAsset.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.FighterForceMixerBehaviour.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.FighterInputManager.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.FighterManager.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.FighterPhysicsManager.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.FighterStateEnum.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.FighterStateManager.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.ForceForceTrack.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.ForceSetBehaviour.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.ForceSetType.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.GameManager.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.GotoFrameAsset.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.GotoFrameBehaviour.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.IncrementFrameAsset.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.IncrementFrameBehaviour.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.InputButtonData.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.ISimulationObject.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.PlayerInputData.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.SimulationManager.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.StateTimeline.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.Sample.TDAction.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.StateConditionAND.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.StateConditionBase.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.StateConditionBoolean.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.StateConditionOR.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.StateTimeline.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.StateTimelineEditor.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/api/HnSF.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/guides/createchara.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/guides/index.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/guides/setup.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://christides11.github.io/hack-and-slash-framework/index.html</loc>
-    <lastmod>2022-03-09T12:32:13+00:00</lastmod>
+    <lastmod>2022-03-09T12:42:22+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
