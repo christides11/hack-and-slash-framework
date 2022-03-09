@@ -638,6 +638,9 @@
  <Reference Include="Unity.VisualStudio.Editor">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="medvedya.select_implementation_property_drawer">
+ <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/medvedya.select_implementation_property_drawer.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Timeline">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
@@ -647,11 +650,14 @@
  <Reference Include="Unity.Searcher.Editor">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ <Reference Include="medvedya.select_implementation_property_drawer_editor">
+ <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/medvedya.select_implementation_property_drawer_editor.dll</HintPath>
  </Reference>
  <Reference Include="Malee.ReorderableList.Editor">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Malee.ReorderableList.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.2D.Sprite.Editor">
+ <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.Runtime">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
@@ -713,21 +719,15 @@
  <Reference Include="Unity.RenderPipelines.Core.Editor">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
  </Reference>
- <Reference Include="medvedya.select_implementation_property_drawer">
- <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/medvedya.select_implementation_property_drawer.dll</HintPath>
- </Reference>
- <Reference Include="medvedya.select_implementation_property_drawer_editor">
- <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/medvedya.select_implementation_property_drawer_editor.dll</HintPath>
- </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="HnSF.Editor.csproj">
-      <Project>{b03dd685-1060-5289-a6a8-18e0d09226ff}</Project>
-      <Name>HnSF.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="HnSF.csproj">
       <Project>{19762b2f-dc58-620d-4737-b881af539594}</Project>
       <Name>HnSF</Name>
+    </ProjectReference>
+    <ProjectReference Include="HnSF.Editor.csproj">
+      <Project>{b03dd685-1060-5289-a6a8-18e0d09226ff}</Project>
+      <Name>HnSF.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
