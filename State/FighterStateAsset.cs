@@ -5,8 +5,14 @@ using UnityEngine.Timeline;
 
 namespace HnSF
 {
-    public class FighterStateAsset : PlayableAsset
+    [System.Serializable]
+    public class FighterStateAsset : PlayableAsset, ITimelineClipAsset
     {
+        public ClipCaps clipCaps
+        {
+            get { return ClipCaps.None; }
+        }
+        
         [NonSerialized] public TimelineClip clipPassthrough = null;
         
         public override Playable CreatePlayable(PlayableGraph graph, GameObject owner)

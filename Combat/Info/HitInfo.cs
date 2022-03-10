@@ -29,8 +29,6 @@ namespace HnSF.Combat
         public float opponentMinMagnitude = 1;
         public Vector3 pushPullCenterOffset;
 
-        public AttackDefinition throwConfirm;
-
         public HitInfo()
         {
 
@@ -52,6 +50,8 @@ namespace HnSF.Combat
             wallBounceForce = otherHitInfo.wallBounceForce;
 
             damageOnHit = otherHitInfo.damageOnHit;
+            airOnly = otherHitInfo.airOnly;
+            groundOnly = otherHitInfo.groundOnly;
             causesTumble = otherHitInfo.causesTumble;
 
             opponentForce = otherHitInfo.opponentForce;

@@ -9,6 +9,9 @@ namespace HnSF.Sample.TDAction
 {
     public class FighterStateManager : MonoBehaviour, IFighterStateManager
     {
+        public int MovesetCount { get; }
+        public int CurrentStateMoveset { get; }
+
         public int CurrentState
         {
             get { return currentState; }
@@ -42,23 +45,18 @@ namespace HnSF.Sample.TDAction
             if (CurrentState == 0) return;
             director.Evaluate();
         }
-        
-        public void AddState(HnSF.StateTimeline state, int stateNumber)
-        {
-            states.Add((int)stateNumber, (StateTimeline)state);
-        }
-
-        public void RemoveState(int stateNumber)
-        {
-            throw new System.NotImplementedException();
-        }
 
         public void MarkForStateChange(int nextState)
         {
             markedForStateChange = true;
             this.nextState = nextState;
         }
-        
+
+        public Combat.MovesetDefinition GetMoveset(int index)
+        {
+            throw new NotImplementedException();
+        }
+
         public bool ChangeState(int state, int stateFrame = 0, bool callOnInterrupt = true)
         {
             markedForStateChange = false;
@@ -103,6 +101,16 @@ namespace HnSF.Sample.TDAction
         public HnSF.StateTimeline GetState(int state)
         {
             return states[state];
+        }
+
+        public HnSF.StateTimeline GetState(int moveset, int state)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void SetMoveset(int movesetIndex)
+        {
+            throw new NotImplementedException();
         }
 
         public void SetFrame(int frame)

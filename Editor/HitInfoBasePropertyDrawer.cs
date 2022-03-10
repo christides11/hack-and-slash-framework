@@ -72,6 +72,8 @@ namespace HnSF.Combat
 
         protected virtual float DrawGeneralGroup(ref Rect position, SerializedProperty property, float yPosition)
         {
+            EditorGUI.PropertyField(new Rect(position.x, yPosition, position.width, lineHeight), property.FindPropertyRelative("ID"));
+            yPosition += lineSpacing;
             EditorGUI.PropertyField(new Rect(position.x, yPosition, position.width, lineHeight), property.FindPropertyRelative("hitType"));
             yPosition += lineSpacing;
             EditorGUI.BeginDisabledGroup(property.FindPropertyRelative("groundOnly").boolValue);

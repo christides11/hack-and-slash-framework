@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using HnSF.Fighters;
-using UnityEngine;
 
 namespace HnSF
 {
