@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "com.github.siccity.xnode": "https://github.com/siccity/xNode.git",
     "com.malee.reorderablelist": "https://github.com/cfoulston/Unity-Reorderable-List.git",
     "com.medvedya.select_implementation_property_drawer": "https://github.com/medvedya/Select-implementation-property-drawer.git",
     "com.unity.2d.sprite": "1.0.0",

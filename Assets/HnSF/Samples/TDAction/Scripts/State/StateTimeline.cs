@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace HnSF.Sample.TDAction
 {
-    [CreateAssetMenu(fileName = "StateTimeline", menuName = "TDAction/StateTimeline")]
+    [CreateAssetMenu(fileName = "StateTimeline", menuName = "2dAction/StateTimeline")]
     public class StateTimeline : HnSF.StateTimeline
     {
         

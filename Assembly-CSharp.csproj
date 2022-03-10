@@ -677,9 +677,6 @@
  <Reference Include="Malee.ReorderableList">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Malee.ReorderableList.dll</HintPath>
  </Reference>
- <Reference Include="XNode">
- <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/XNode.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -706,9 +703,6 @@
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
- </Reference>
- <Reference Include="XNodeEditor">
- <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/XNodeEditor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics.Editor">
  <HintPath>C:/Projects/Unity/hack-and-slash-framework/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>

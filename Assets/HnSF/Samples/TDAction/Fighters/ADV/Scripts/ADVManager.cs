@@ -11,12 +11,7 @@ namespace HnSF.Sample.TDAction
 
         public override void SimAwake()
         {
-            foreach (var v in coreStates)
-            {
-                StateManager.AddState(v.timeline, (int)v.state);
-            }
-
-            StateManager.ChangeState((int)FighterStateEnum.IDLE);
+            //StateManager.ChangeState((int)FighterStateEnum.IDLE);
         }
     }
 }

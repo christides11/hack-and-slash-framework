@@ -2,13 +2,17 @@
 {
     public interface IFighterStateManager
     {
+        int MovesetCount { get; }
+        int CurrentStateMoveset { get; }
         int CurrentState { get; }
         int CurrentStateFrame { get; }
-
-        void AddState(StateTimeline state, int stateNumber);
-        void RemoveState(int stateNumber);
+        
+        
+        Combat.MovesetDefinition GetMoveset(int index);
         bool ChangeState(int state, int stateFrame = 0, bool callOnInterrupt = true);
         StateTimeline GetState(int state);
+        StateTimeline GetState(int moveset, int state);
+        void SetMoveset(int movesetIndex);
         void SetFrame(int frame);
         void IncrementFrame();
     }

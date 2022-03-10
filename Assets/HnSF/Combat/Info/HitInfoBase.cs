@@ -4,6 +4,7 @@
     public class HitInfoBase
     {
         // General
+        public int ID;
         public HitboxType hitType;
         public bool hitKills = true;
         public bool continuousHit;
@@ -29,6 +30,7 @@
 
         public HitInfoBase(HitInfoBase copy)
         {
+            this.ID = copy.ID;
             this.hitType = copy.hitType;
             this.hitKills = copy.hitKills;
             this.continuousHit = copy.continuousHit;

@@ -1,12 +1,5 @@
 {
   "dependencies": {
-    "com.github.siccity.xnode": {
-      "version": "https://github.com/siccity/xNode.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "93615e7722eea5ff0c38193d41e183d80ccbe524"
-    },
     "com.malee.reorderablelist": {
       "version": "https://github.com/cfoulston/Unity-Reorderable-List.git",
       "depth": 0,

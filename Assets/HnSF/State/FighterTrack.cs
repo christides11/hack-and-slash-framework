@@ -6,5 +6,5 @@ namespace HnSF
     [System.Serializable]
     [TrackBindingType(typeof(IFighterBase))]
     [TrackClipType(typeof(FighterStateAsset))]
-    public class FighterTrack : TrackAsset { }
+    public class FighterTrack : TrackAsset{ }
 }
