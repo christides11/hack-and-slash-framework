@@ -1,3 +1,15 @@
+# [32.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v31.1.1...v32.0.0) (2022-03-10)
+
+
+### Features
+
+* Removed old attack system. ([4e42389](https://github.com/christides11/hack-and-slash-framework/commit/4e423898b64723c4ff6c7cf4ffde49108c29719b))
+
+
+### BREAKING CHANGES
+
+* Moved to new state system based on timeline.
+
 ## [31.1.1](https://github.com/christides11/hack-and-slash-framework/compare/v31.1.0...v31.1.1) (2022-03-09)
 
 
