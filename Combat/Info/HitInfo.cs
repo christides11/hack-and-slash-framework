@@ -28,7 +28,24 @@ namespace HnSF.Combat
         public float opponentMaxMagnitude = 1;
         public float opponentMinMagnitude = 1;
         public Vector3 pushPullCenterOffset;
+        
+        public bool hitKills = true;
+        public bool continuousHit;
+        public int spaceBetweenHits;
 
+        // Forces
+        public bool opponentResetXForce = true;
+        public bool opponentResetYForce = true;
+        public bool autoLink = false;
+        public float autoLinkPercentage = 1;
+        public HitboxForceType forceType = HitboxForceType.SET;
+        public HitboxForceRelation forceRelation = HitboxForceRelation.ATTACKER;
+
+        // Stun
+        public ushort attackerHitstop;
+        public ushort hitstop;
+        public ushort hitstun;
+        
         public HitInfo()
         {
 

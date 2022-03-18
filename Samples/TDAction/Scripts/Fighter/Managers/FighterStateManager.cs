@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using HnSF.Combat;
 using HnSF.Fighters;
 using UnityEngine;
 using UnityEngine.Playables;
@@ -11,6 +12,10 @@ namespace HnSF.Sample.TDAction
     {
         public int MovesetCount { get; }
         public int CurrentStateMoveset { get; }
+
+        public HitInfoBase baseHitInfo;
+
+        public HitInfo coreHitInfo;
 
         public int CurrentState
         {
