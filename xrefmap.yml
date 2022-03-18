@@ -629,12 +629,36 @@ references:
   commentId: F:HnSF.Combat.HitInfo.airOnly
   fullName: HnSF.Combat.HitInfo.airOnly
   nameWithType: HitInfo.airOnly
+- uid: HnSF.Combat.HitInfo.attackerHitstop
+  name: attackerHitstop
+  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_attackerHitstop
+  commentId: F:HnSF.Combat.HitInfo.attackerHitstop
+  fullName: HnSF.Combat.HitInfo.attackerHitstop
+  nameWithType: HitInfo.attackerHitstop
+- uid: HnSF.Combat.HitInfo.autoLink
+  name: autoLink
+  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_autoLink
+  commentId: F:HnSF.Combat.HitInfo.autoLink
+  fullName: HnSF.Combat.HitInfo.autoLink
+  nameWithType: HitInfo.autoLink
+- uid: HnSF.Combat.HitInfo.autoLinkPercentage
+  name: autoLinkPercentage
+  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_autoLinkPercentage
+  commentId: F:HnSF.Combat.HitInfo.autoLinkPercentage
+  fullName: HnSF.Combat.HitInfo.autoLinkPercentage
+  nameWithType: HitInfo.autoLinkPercentage
 - uid: HnSF.Combat.HitInfo.causesTumble
   name: causesTumble
   href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_causesTumble
   commentId: F:HnSF.Combat.HitInfo.causesTumble
   fullName: HnSF.Combat.HitInfo.causesTumble
   nameWithType: HitInfo.causesTumble
+- uid: HnSF.Combat.HitInfo.continuousHit
+  name: continuousHit
+  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_continuousHit
+  commentId: F:HnSF.Combat.HitInfo.continuousHit
+  fullName: HnSF.Combat.HitInfo.continuousHit
+  nameWithType: HitInfo.continuousHit
 - uid: HnSF.Combat.HitInfo.damageOnHit
   name: damageOnHit
   href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_damageOnHit
@@ -647,6 +671,18 @@ references:
   commentId: F:HnSF.Combat.HitInfo.forceIncludeYForce
   fullName: HnSF.Combat.HitInfo.forceIncludeYForce
   nameWithType: HitInfo.forceIncludeYForce
+- uid: HnSF.Combat.HitInfo.forceRelation
+  name: forceRelation
+  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_forceRelation
+  commentId: F:HnSF.Combat.HitInfo.forceRelation
+  fullName: HnSF.Combat.HitInfo.forceRelation
+  nameWithType: HitInfo.forceRelation
+- uid: HnSF.Combat.HitInfo.forceType
+  name: forceType
+  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_forceType
+  commentId: F:HnSF.Combat.HitInfo.forceType
+  fullName: HnSF.Combat.HitInfo.forceType
+  nameWithType: HitInfo.forceType
 - uid: HnSF.Combat.HitInfo.groundBounceForce
   name: groundBounceForce
   href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_groundBounceForce
@@ -665,6 +701,24 @@ references:
   commentId: F:HnSF.Combat.HitInfo.groundOnly
   fullName: HnSF.Combat.HitInfo.groundOnly
   nameWithType: HitInfo.groundOnly
+- uid: HnSF.Combat.HitInfo.hitKills
+  name: hitKills
+  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_hitKills
+  commentId: F:HnSF.Combat.HitInfo.hitKills
+  fullName: HnSF.Combat.HitInfo.hitKills
+  nameWithType: HitInfo.hitKills
+- uid: HnSF.Combat.HitInfo.hitstop
+  name: hitstop
+  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_hitstop
+  commentId: F:HnSF.Combat.HitInfo.hitstop
+  fullName: HnSF.Combat.HitInfo.hitstop
+  nameWithType: HitInfo.hitstop
+- uid: HnSF.Combat.HitInfo.hitstun
+  name: hitstun
+  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_hitstun
+  commentId: F:HnSF.Combat.HitInfo.hitstun
+  fullName: HnSF.Combat.HitInfo.hitstun
+  nameWithType: HitInfo.hitstun
 - uid: HnSF.Combat.HitInfo.knockdown
   name: knockdown
   href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_knockdown
@@ -695,12 +749,30 @@ references:
   commentId: F:HnSF.Combat.HitInfo.opponentMinMagnitude
   fullName: HnSF.Combat.HitInfo.opponentMinMagnitude
   nameWithType: HitInfo.opponentMinMagnitude
+- uid: HnSF.Combat.HitInfo.opponentResetXForce
+  name: opponentResetXForce
+  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_opponentResetXForce
+  commentId: F:HnSF.Combat.HitInfo.opponentResetXForce
+  fullName: HnSF.Combat.HitInfo.opponentResetXForce
+  nameWithType: HitInfo.opponentResetXForce
+- uid: HnSF.Combat.HitInfo.opponentResetYForce
+  name: opponentResetYForce
+  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_opponentResetYForce
+  commentId: F:HnSF.Combat.HitInfo.opponentResetYForce
+  fullName: HnSF.Combat.HitInfo.opponentResetYForce
+  nameWithType: HitInfo.opponentResetYForce
 - uid: HnSF.Combat.HitInfo.pushPullCenterOffset
   name: pushPullCenterOffset
   href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_pushPullCenterOffset
   commentId: F:HnSF.Combat.HitInfo.pushPullCenterOffset
   fullName: HnSF.Combat.HitInfo.pushPullCenterOffset
   nameWithType: HitInfo.pushPullCenterOffset
+- uid: HnSF.Combat.HitInfo.spaceBetweenHits
+  name: spaceBetweenHits
+  href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_spaceBetweenHits
+  commentId: F:HnSF.Combat.HitInfo.spaceBetweenHits
+  fullName: HnSF.Combat.HitInfo.spaceBetweenHits
+  nameWithType: HitInfo.spaceBetweenHits
 - uid: HnSF.Combat.HitInfo.wallBounceForce
   name: wallBounceForce
   href: api/HnSF.Combat.HitInfo.html#HnSF_Combat_HitInfo_wallBounceForce
@@ -738,30 +810,6 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.HitInfoBase.HitInfoBase
   nameWithType: HitInfoBase.HitInfoBase
-- uid: HnSF.Combat.HitInfoBase.attackerHitstop
-  name: attackerHitstop
-  href: api/HnSF.Combat.HitInfoBase.html#HnSF_Combat_HitInfoBase_attackerHitstop
-  commentId: F:HnSF.Combat.HitInfoBase.attackerHitstop
-  fullName: HnSF.Combat.HitInfoBase.attackerHitstop
-  nameWithType: HitInfoBase.attackerHitstop
-- uid: HnSF.Combat.HitInfoBase.autoLink
-  name: autoLink
-  href: api/HnSF.Combat.HitInfoBase.html#HnSF_Combat_HitInfoBase_autoLink
-  commentId: F:HnSF.Combat.HitInfoBase.autoLink
-  fullName: HnSF.Combat.HitInfoBase.autoLink
-  nameWithType: HitInfoBase.autoLink
-- uid: HnSF.Combat.HitInfoBase.autoLinkPercentage
-  name: autoLinkPercentage
-  href: api/HnSF.Combat.HitInfoBase.html#HnSF_Combat_HitInfoBase_autoLinkPercentage
-  commentId: F:HnSF.Combat.HitInfoBase.autoLinkPercentage
-  fullName: HnSF.Combat.HitInfoBase.autoLinkPercentage
-  nameWithType: HitInfoBase.autoLinkPercentage
-- uid: HnSF.Combat.HitInfoBase.continuousHit
-  name: continuousHit
-  href: api/HnSF.Combat.HitInfoBase.html#HnSF_Combat_HitInfoBase_continuousHit
-  commentId: F:HnSF.Combat.HitInfoBase.continuousHit
-  fullName: HnSF.Combat.HitInfoBase.continuousHit
-  nameWithType: HitInfoBase.continuousHit
 - uid: HnSF.Combat.HitInfoBase.DrawInspectorGrabInfo
   name: DrawInspectorGrabInfo()
   href: api/HnSF.Combat.HitInfoBase.html#HnSF_Combat_HitInfoBase_DrawInspectorGrabInfo
@@ -788,103 +836,27 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.HitInfoBase.DrawInspectorHitInfo
   nameWithType: HitInfoBase.DrawInspectorHitInfo
-- uid: HnSF.Combat.HitInfoBase.forceRelation
-  name: forceRelation
-  href: api/HnSF.Combat.HitInfoBase.html#HnSF_Combat_HitInfoBase_forceRelation
-  commentId: F:HnSF.Combat.HitInfoBase.forceRelation
-  fullName: HnSF.Combat.HitInfoBase.forceRelation
-  nameWithType: HitInfoBase.forceRelation
-- uid: HnSF.Combat.HitInfoBase.forceType
-  name: forceType
-  href: api/HnSF.Combat.HitInfoBase.html#HnSF_Combat_HitInfoBase_forceType
-  commentId: F:HnSF.Combat.HitInfoBase.forceType
-  fullName: HnSF.Combat.HitInfoBase.forceType
-  nameWithType: HitInfoBase.forceType
-- uid: HnSF.Combat.HitInfoBase.hitKills
-  name: hitKills
-  href: api/HnSF.Combat.HitInfoBase.html#HnSF_Combat_HitInfoBase_hitKills
-  commentId: F:HnSF.Combat.HitInfoBase.hitKills
-  fullName: HnSF.Combat.HitInfoBase.hitKills
-  nameWithType: HitInfoBase.hitKills
-- uid: HnSF.Combat.HitInfoBase.hitstop
-  name: hitstop
-  href: api/HnSF.Combat.HitInfoBase.html#HnSF_Combat_HitInfoBase_hitstop
-  commentId: F:HnSF.Combat.HitInfoBase.hitstop
-  fullName: HnSF.Combat.HitInfoBase.hitstop
-  nameWithType: HitInfoBase.hitstop
-- uid: HnSF.Combat.HitInfoBase.hitstun
-  name: hitstun
-  href: api/HnSF.Combat.HitInfoBase.html#HnSF_Combat_HitInfoBase_hitstun
-  commentId: F:HnSF.Combat.HitInfoBase.hitstun
-  fullName: HnSF.Combat.HitInfoBase.hitstun
-  nameWithType: HitInfoBase.hitstun
-- uid: HnSF.Combat.HitInfoBase.hitType
-  name: hitType
-  href: api/HnSF.Combat.HitInfoBase.html#HnSF_Combat_HitInfoBase_hitType
-  commentId: F:HnSF.Combat.HitInfoBase.hitType
-  fullName: HnSF.Combat.HitInfoBase.hitType
-  nameWithType: HitInfoBase.hitType
 - uid: HnSF.Combat.HitInfoBase.ID
   name: ID
   href: api/HnSF.Combat.HitInfoBase.html#HnSF_Combat_HitInfoBase_ID
   commentId: F:HnSF.Combat.HitInfoBase.ID
   fullName: HnSF.Combat.HitInfoBase.ID
   nameWithType: HitInfoBase.ID
-- uid: HnSF.Combat.HitInfoBase.opponentResetXForce
-  name: opponentResetXForce
-  href: api/HnSF.Combat.HitInfoBase.html#HnSF_Combat_HitInfoBase_opponentResetXForce
-  commentId: F:HnSF.Combat.HitInfoBase.opponentResetXForce
-  fullName: HnSF.Combat.HitInfoBase.opponentResetXForce
-  nameWithType: HitInfoBase.opponentResetXForce
-- uid: HnSF.Combat.HitInfoBase.opponentResetYForce
-  name: opponentResetYForce
-  href: api/HnSF.Combat.HitInfoBase.html#HnSF_Combat_HitInfoBase_opponentResetYForce
-  commentId: F:HnSF.Combat.HitInfoBase.opponentResetYForce
-  fullName: HnSF.Combat.HitInfoBase.opponentResetYForce
-  nameWithType: HitInfoBase.opponentResetYForce
-- uid: HnSF.Combat.HitInfoBase.spaceBetweenHits
-  name: spaceBetweenHits
-  href: api/HnSF.Combat.HitInfoBase.html#HnSF_Combat_HitInfoBase_spaceBetweenHits
-  commentId: F:HnSF.Combat.HitInfoBase.spaceBetweenHits
-  fullName: HnSF.Combat.HitInfoBase.spaceBetweenHits
-  nameWithType: HitInfoBase.spaceBetweenHits
 - uid: HnSF.Combat.HitInfoBasePropertyDrawer
   name: HitInfoBasePropertyDrawer
   href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html
   commentId: T:HnSF.Combat.HitInfoBasePropertyDrawer
   fullName: HnSF.Combat.HitInfoBasePropertyDrawer
   nameWithType: HitInfoBasePropertyDrawer
-- uid: HnSF.Combat.HitInfoBasePropertyDrawer.calcHeight
-  name: calcHeight
-  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_calcHeight
-  commentId: F:HnSF.Combat.HitInfoBasePropertyDrawer.calcHeight
-  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.calcHeight
-  nameWithType: HitInfoBasePropertyDrawer.calcHeight
-- uid: HnSF.Combat.HitInfoBasePropertyDrawer.DrawForcesGroup(Rect@,SerializedProperty,System.Single)
-  name: DrawForcesGroup(ref Rect, SerializedProperty, Single)
-  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_DrawForcesGroup_Rect__SerializedProperty_System_Single_
-  commentId: M:HnSF.Combat.HitInfoBasePropertyDrawer.DrawForcesGroup(Rect@,SerializedProperty,System.Single)
-  name.vb: DrawForcesGroup(ByRef Rect, SerializedProperty, Single)
-  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.DrawForcesGroup(ref Rect, SerializedProperty, System.Single)
-  fullName.vb: HnSF.Combat.HitInfoBasePropertyDrawer.DrawForcesGroup(ByRef Rect, SerializedProperty, System.Single)
-  nameWithType: HitInfoBasePropertyDrawer.DrawForcesGroup(ref Rect, SerializedProperty, Single)
-  nameWithType.vb: HitInfoBasePropertyDrawer.DrawForcesGroup(ByRef Rect, SerializedProperty, Single)
-- uid: HnSF.Combat.HitInfoBasePropertyDrawer.DrawForcesGroup*
-  name: DrawForcesGroup
-  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_DrawForcesGroup_
-  commentId: Overload:HnSF.Combat.HitInfoBasePropertyDrawer.DrawForcesGroup
-  isSpec: "True"
-  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.DrawForcesGroup
-  nameWithType: HitInfoBasePropertyDrawer.DrawForcesGroup
-- uid: HnSF.Combat.HitInfoBasePropertyDrawer.DrawGeneralGroup(Rect@,SerializedProperty,System.Single)
-  name: DrawGeneralGroup(ref Rect, SerializedProperty, Single)
-  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_DrawGeneralGroup_Rect__SerializedProperty_System_Single_
-  commentId: M:HnSF.Combat.HitInfoBasePropertyDrawer.DrawGeneralGroup(Rect@,SerializedProperty,System.Single)
-  name.vb: DrawGeneralGroup(ByRef Rect, SerializedProperty, Single)
-  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.DrawGeneralGroup(ref Rect, SerializedProperty, System.Single)
-  fullName.vb: HnSF.Combat.HitInfoBasePropertyDrawer.DrawGeneralGroup(ByRef Rect, SerializedProperty, System.Single)
-  nameWithType: HitInfoBasePropertyDrawer.DrawGeneralGroup(ref Rect, SerializedProperty, Single)
-  nameWithType.vb: HitInfoBasePropertyDrawer.DrawGeneralGroup(ByRef Rect, SerializedProperty, Single)
+- uid: HnSF.Combat.HitInfoBasePropertyDrawer.DrawGeneralGroup(Rect@,SerializedProperty)
+  name: DrawGeneralGroup(ref Rect, SerializedProperty)
+  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_DrawGeneralGroup_Rect__SerializedProperty_
+  commentId: M:HnSF.Combat.HitInfoBasePropertyDrawer.DrawGeneralGroup(Rect@,SerializedProperty)
+  name.vb: DrawGeneralGroup(ByRef Rect, SerializedProperty)
+  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.DrawGeneralGroup(ref Rect, SerializedProperty)
+  fullName.vb: HnSF.Combat.HitInfoBasePropertyDrawer.DrawGeneralGroup(ByRef Rect, SerializedProperty)
+  nameWithType: HitInfoBasePropertyDrawer.DrawGeneralGroup(ref Rect, SerializedProperty)
+  nameWithType.vb: HitInfoBasePropertyDrawer.DrawGeneralGroup(ByRef Rect, SerializedProperty)
 - uid: HnSF.Combat.HitInfoBasePropertyDrawer.DrawGeneralGroup*
   name: DrawGeneralGroup
   href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_DrawGeneralGroup_
@@ -892,15 +864,15 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.HitInfoBasePropertyDrawer.DrawGeneralGroup
   nameWithType: HitInfoBasePropertyDrawer.DrawGeneralGroup
-- uid: HnSF.Combat.HitInfoBasePropertyDrawer.DrawProperty(Rect@,SerializedProperty,System.Single@)
-  name: DrawProperty(ref Rect, SerializedProperty, ref Single)
-  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_DrawProperty_Rect__SerializedProperty_System_Single__
-  commentId: M:HnSF.Combat.HitInfoBasePropertyDrawer.DrawProperty(Rect@,SerializedProperty,System.Single@)
-  name.vb: DrawProperty(ByRef Rect, SerializedProperty, ByRef Single)
-  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.DrawProperty(ref Rect, SerializedProperty, ref System.Single)
-  fullName.vb: HnSF.Combat.HitInfoBasePropertyDrawer.DrawProperty(ByRef Rect, SerializedProperty, ByRef System.Single)
-  nameWithType: HitInfoBasePropertyDrawer.DrawProperty(ref Rect, SerializedProperty, ref Single)
-  nameWithType.vb: HitInfoBasePropertyDrawer.DrawProperty(ByRef Rect, SerializedProperty, ByRef Single)
+- uid: HnSF.Combat.HitInfoBasePropertyDrawer.DrawProperty(Rect@,SerializedProperty)
+  name: DrawProperty(ref Rect, SerializedProperty)
+  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_DrawProperty_Rect__SerializedProperty_
+  commentId: M:HnSF.Combat.HitInfoBasePropertyDrawer.DrawProperty(Rect@,SerializedProperty)
+  name.vb: DrawProperty(ByRef Rect, SerializedProperty)
+  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.DrawProperty(ref Rect, SerializedProperty)
+  fullName.vb: HnSF.Combat.HitInfoBasePropertyDrawer.DrawProperty(ByRef Rect, SerializedProperty)
+  nameWithType: HitInfoBasePropertyDrawer.DrawProperty(ref Rect, SerializedProperty)
+  nameWithType.vb: HitInfoBasePropertyDrawer.DrawProperty(ByRef Rect, SerializedProperty)
 - uid: HnSF.Combat.HitInfoBasePropertyDrawer.DrawProperty*
   name: DrawProperty
   href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_DrawProperty_
@@ -908,19 +880,6 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.HitInfoBasePropertyDrawer.DrawProperty
   nameWithType: HitInfoBasePropertyDrawer.DrawProperty
-- uid: HnSF.Combat.HitInfoBasePropertyDrawer.DrawStunGroup(Rect,SerializedProperty,System.Single)
-  name: DrawStunGroup(Rect, SerializedProperty, Single)
-  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_DrawStunGroup_Rect_SerializedProperty_System_Single_
-  commentId: M:HnSF.Combat.HitInfoBasePropertyDrawer.DrawStunGroup(Rect,SerializedProperty,System.Single)
-  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.DrawStunGroup(Rect, SerializedProperty, System.Single)
-  nameWithType: HitInfoBasePropertyDrawer.DrawStunGroup(Rect, SerializedProperty, Single)
-- uid: HnSF.Combat.HitInfoBasePropertyDrawer.DrawStunGroup*
-  name: DrawStunGroup
-  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_DrawStunGroup_
-  commentId: Overload:HnSF.Combat.HitInfoBasePropertyDrawer.DrawStunGroup
-  isSpec: "True"
-  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.DrawStunGroup
-  nameWithType: HitInfoBasePropertyDrawer.DrawStunGroup
 - uid: HnSF.Combat.HitInfoBasePropertyDrawer.forcesFoldoutGroup
   name: forcesFoldoutGroup
   href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_forcesFoldoutGroup
@@ -933,6 +892,19 @@ references:
   commentId: F:HnSF.Combat.HitInfoBasePropertyDrawer.generalFoldoutGroup
   fullName: HnSF.Combat.HitInfoBasePropertyDrawer.generalFoldoutGroup
   nameWithType: HitInfoBasePropertyDrawer.generalFoldoutGroup
+- uid: HnSF.Combat.HitInfoBasePropertyDrawer.GetLineY
+  name: GetLineY()
+  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_GetLineY
+  commentId: M:HnSF.Combat.HitInfoBasePropertyDrawer.GetLineY
+  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.GetLineY()
+  nameWithType: HitInfoBasePropertyDrawer.GetLineY()
+- uid: HnSF.Combat.HitInfoBasePropertyDrawer.GetLineY*
+  name: GetLineY
+  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_GetLineY_
+  commentId: Overload:HnSF.Combat.HitInfoBasePropertyDrawer.GetLineY
+  isSpec: "True"
+  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.GetLineY
+  nameWithType: HitInfoBasePropertyDrawer.GetLineY
 - uid: HnSF.Combat.HitInfoBasePropertyDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
   name: GetPropertyHeight(SerializedProperty, GUIContent)
   href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_GetPropertyHeight_SerializedProperty_GUIContent_
@@ -952,12 +924,12 @@ references:
   commentId: F:HnSF.Combat.HitInfoBasePropertyDrawer.lineHeight
   fullName: HnSF.Combat.HitInfoBasePropertyDrawer.lineHeight
   nameWithType: HitInfoBasePropertyDrawer.lineHeight
-- uid: HnSF.Combat.HitInfoBasePropertyDrawer.lineSpacing
-  name: lineSpacing
-  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_lineSpacing
-  commentId: F:HnSF.Combat.HitInfoBasePropertyDrawer.lineSpacing
-  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.lineSpacing
-  nameWithType: HitInfoBasePropertyDrawer.lineSpacing
+- uid: HnSF.Combat.HitInfoBasePropertyDrawer.lines
+  name: lines
+  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_lines
+  commentId: F:HnSF.Combat.HitInfoBasePropertyDrawer.lines
+  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.lines
+  nameWithType: HitInfoBasePropertyDrawer.lines
 - uid: HnSF.Combat.HitInfoBasePropertyDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
   name: OnGUI(Rect, SerializedProperty, GUIContent)
   href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_OnGUI_Rect_SerializedProperty_GUIContent_
@@ -971,6 +943,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.HitInfoBasePropertyDrawer.OnGUI
   nameWithType: HitInfoBasePropertyDrawer.OnGUI
+- uid: HnSF.Combat.HitInfoBasePropertyDrawer.pos
+  name: pos
+  href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_pos
+  commentId: F:HnSF.Combat.HitInfoBasePropertyDrawer.pos
+  fullName: HnSF.Combat.HitInfoBasePropertyDrawer.pos
+  nameWithType: HitInfoBasePropertyDrawer.pos
 - uid: HnSF.Combat.HitInfoBasePropertyDrawer.stunFoldoutGroup
   name: stunFoldoutGroup
   href: api/HnSF.Combat.HitInfoBasePropertyDrawer.html#HnSF_Combat_HitInfoBasePropertyDrawer_stunFoldoutGroup
@@ -989,12 +967,12 @@ references:
   commentId: F:HnSF.Combat.HitInfoPropertyDrawer.damageFoldoutGroup
   fullName: HnSF.Combat.HitInfoPropertyDrawer.damageFoldoutGroup
   nameWithType: HitInfoPropertyDrawer.damageFoldoutGroup
-- uid: HnSF.Combat.HitInfoPropertyDrawer.DrawDamageGroup(Rect,SerializedProperty,System.Single)
-  name: DrawDamageGroup(Rect, SerializedProperty, Single)
-  href: api/HnSF.Combat.HitInfoPropertyDrawer.html#HnSF_Combat_HitInfoPropertyDrawer_DrawDamageGroup_Rect_SerializedProperty_System_Single_
-  commentId: M:HnSF.Combat.HitInfoPropertyDrawer.DrawDamageGroup(Rect,SerializedProperty,System.Single)
-  fullName: HnSF.Combat.HitInfoPropertyDrawer.DrawDamageGroup(Rect, SerializedProperty, System.Single)
-  nameWithType: HitInfoPropertyDrawer.DrawDamageGroup(Rect, SerializedProperty, Single)
+- uid: HnSF.Combat.HitInfoPropertyDrawer.DrawDamageGroup(Rect,SerializedProperty)
+  name: DrawDamageGroup(Rect, SerializedProperty)
+  href: api/HnSF.Combat.HitInfoPropertyDrawer.html#HnSF_Combat_HitInfoPropertyDrawer_DrawDamageGroup_Rect_SerializedProperty_
+  commentId: M:HnSF.Combat.HitInfoPropertyDrawer.DrawDamageGroup(Rect,SerializedProperty)
+  fullName: HnSF.Combat.HitInfoPropertyDrawer.DrawDamageGroup(Rect, SerializedProperty)
+  nameWithType: HitInfoPropertyDrawer.DrawDamageGroup(Rect, SerializedProperty)
 - uid: HnSF.Combat.HitInfoPropertyDrawer.DrawDamageGroup*
   name: DrawDamageGroup
   href: api/HnSF.Combat.HitInfoPropertyDrawer.html#HnSF_Combat_HitInfoPropertyDrawer_DrawDamageGroup_
@@ -1002,15 +980,15 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.HitInfoPropertyDrawer.DrawDamageGroup
   nameWithType: HitInfoPropertyDrawer.DrawDamageGroup
-- uid: HnSF.Combat.HitInfoPropertyDrawer.DrawForcesGroup(Rect@,SerializedProperty,System.Single)
-  name: DrawForcesGroup(ref Rect, SerializedProperty, Single)
-  href: api/HnSF.Combat.HitInfoPropertyDrawer.html#HnSF_Combat_HitInfoPropertyDrawer_DrawForcesGroup_Rect__SerializedProperty_System_Single_
-  commentId: M:HnSF.Combat.HitInfoPropertyDrawer.DrawForcesGroup(Rect@,SerializedProperty,System.Single)
-  name.vb: DrawForcesGroup(ByRef Rect, SerializedProperty, Single)
-  fullName: HnSF.Combat.HitInfoPropertyDrawer.DrawForcesGroup(ref Rect, SerializedProperty, System.Single)
-  fullName.vb: HnSF.Combat.HitInfoPropertyDrawer.DrawForcesGroup(ByRef Rect, SerializedProperty, System.Single)
-  nameWithType: HitInfoPropertyDrawer.DrawForcesGroup(ref Rect, SerializedProperty, Single)
-  nameWithType.vb: HitInfoPropertyDrawer.DrawForcesGroup(ByRef Rect, SerializedProperty, Single)
+- uid: HnSF.Combat.HitInfoPropertyDrawer.DrawForcesGroup(Rect@,SerializedProperty)
+  name: DrawForcesGroup(ref Rect, SerializedProperty)
+  href: api/HnSF.Combat.HitInfoPropertyDrawer.html#HnSF_Combat_HitInfoPropertyDrawer_DrawForcesGroup_Rect__SerializedProperty_
+  commentId: M:HnSF.Combat.HitInfoPropertyDrawer.DrawForcesGroup(Rect@,SerializedProperty)
+  name.vb: DrawForcesGroup(ByRef Rect, SerializedProperty)
+  fullName: HnSF.Combat.HitInfoPropertyDrawer.DrawForcesGroup(ref Rect, SerializedProperty)
+  fullName.vb: HnSF.Combat.HitInfoPropertyDrawer.DrawForcesGroup(ByRef Rect, SerializedProperty)
+  nameWithType: HitInfoPropertyDrawer.DrawForcesGroup(ref Rect, SerializedProperty)
+  nameWithType.vb: HitInfoPropertyDrawer.DrawForcesGroup(ByRef Rect, SerializedProperty)
 - uid: HnSF.Combat.HitInfoPropertyDrawer.DrawForcesGroup*
   name: DrawForcesGroup
   href: api/HnSF.Combat.HitInfoPropertyDrawer.html#HnSF_Combat_HitInfoPropertyDrawer_DrawForcesGroup_
@@ -1018,15 +996,15 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.HitInfoPropertyDrawer.DrawForcesGroup
   nameWithType: HitInfoPropertyDrawer.DrawForcesGroup
-- uid: HnSF.Combat.HitInfoPropertyDrawer.DrawGeneralGroup(Rect@,SerializedProperty,System.Single)
-  name: DrawGeneralGroup(ref Rect, SerializedProperty, Single)
-  href: api/HnSF.Combat.HitInfoPropertyDrawer.html#HnSF_Combat_HitInfoPropertyDrawer_DrawGeneralGroup_Rect__SerializedProperty_System_Single_
-  commentId: M:HnSF.Combat.HitInfoPropertyDrawer.DrawGeneralGroup(Rect@,SerializedProperty,System.Single)
-  name.vb: DrawGeneralGroup(ByRef Rect, SerializedProperty, Single)
-  fullName: HnSF.Combat.HitInfoPropertyDrawer.DrawGeneralGroup(ref Rect, SerializedProperty, System.Single)
-  fullName.vb: HnSF.Combat.HitInfoPropertyDrawer.DrawGeneralGroup(ByRef Rect, SerializedProperty, System.Single)
-  nameWithType: HitInfoPropertyDrawer.DrawGeneralGroup(ref Rect, SerializedProperty, Single)
-  nameWithType.vb: HitInfoPropertyDrawer.DrawGeneralGroup(ByRef Rect, SerializedProperty, Single)
+- uid: HnSF.Combat.HitInfoPropertyDrawer.DrawGeneralGroup(Rect@,SerializedProperty)
+  name: DrawGeneralGroup(ref Rect, SerializedProperty)
+  href: api/HnSF.Combat.HitInfoPropertyDrawer.html#HnSF_Combat_HitInfoPropertyDrawer_DrawGeneralGroup_Rect__SerializedProperty_
+  commentId: M:HnSF.Combat.HitInfoPropertyDrawer.DrawGeneralGroup(Rect@,SerializedProperty)
+  name.vb: DrawGeneralGroup(ByRef Rect, SerializedProperty)
+  fullName: HnSF.Combat.HitInfoPropertyDrawer.DrawGeneralGroup(ref Rect, SerializedProperty)
+  fullName.vb: HnSF.Combat.HitInfoPropertyDrawer.DrawGeneralGroup(ByRef Rect, SerializedProperty)
+  nameWithType: HitInfoPropertyDrawer.DrawGeneralGroup(ref Rect, SerializedProperty)
+  nameWithType.vb: HitInfoPropertyDrawer.DrawGeneralGroup(ByRef Rect, SerializedProperty)
 - uid: HnSF.Combat.HitInfoPropertyDrawer.DrawGeneralGroup*
   name: DrawGeneralGroup
   href: api/HnSF.Combat.HitInfoPropertyDrawer.html#HnSF_Combat_HitInfoPropertyDrawer_DrawGeneralGroup_
@@ -1034,15 +1012,15 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.HitInfoPropertyDrawer.DrawGeneralGroup
   nameWithType: HitInfoPropertyDrawer.DrawGeneralGroup
-- uid: HnSF.Combat.HitInfoPropertyDrawer.DrawProperty(Rect@,SerializedProperty,System.Single@)
-  name: DrawProperty(ref Rect, SerializedProperty, ref Single)
-  href: api/HnSF.Combat.HitInfoPropertyDrawer.html#HnSF_Combat_HitInfoPropertyDrawer_DrawProperty_Rect__SerializedProperty_System_Single__
-  commentId: M:HnSF.Combat.HitInfoPropertyDrawer.DrawProperty(Rect@,SerializedProperty,System.Single@)
-  name.vb: DrawProperty(ByRef Rect, SerializedProperty, ByRef Single)
-  fullName: HnSF.Combat.HitInfoPropertyDrawer.DrawProperty(ref Rect, SerializedProperty, ref System.Single)
-  fullName.vb: HnSF.Combat.HitInfoPropertyDrawer.DrawProperty(ByRef Rect, SerializedProperty, ByRef System.Single)
-  nameWithType: HitInfoPropertyDrawer.DrawProperty(ref Rect, SerializedProperty, ref Single)
-  nameWithType.vb: HitInfoPropertyDrawer.DrawProperty(ByRef Rect, SerializedProperty, ByRef Single)
+- uid: HnSF.Combat.HitInfoPropertyDrawer.DrawProperty(Rect@,SerializedProperty)
+  name: DrawProperty(ref Rect, SerializedProperty)
+  href: api/HnSF.Combat.HitInfoPropertyDrawer.html#HnSF_Combat_HitInfoPropertyDrawer_DrawProperty_Rect__SerializedProperty_
+  commentId: M:HnSF.Combat.HitInfoPropertyDrawer.DrawProperty(Rect@,SerializedProperty)
+  name.vb: DrawProperty(ByRef Rect, SerializedProperty)
+  fullName: HnSF.Combat.HitInfoPropertyDrawer.DrawProperty(ref Rect, SerializedProperty)
+  fullName.vb: HnSF.Combat.HitInfoPropertyDrawer.DrawProperty(ByRef Rect, SerializedProperty)
+  nameWithType: HitInfoPropertyDrawer.DrawProperty(ref Rect, SerializedProperty)
+  nameWithType.vb: HitInfoPropertyDrawer.DrawProperty(ByRef Rect, SerializedProperty)
 - uid: HnSF.Combat.HitInfoPropertyDrawer.DrawProperty*
   name: DrawProperty
   href: api/HnSF.Combat.HitInfoPropertyDrawer.html#HnSF_Combat_HitInfoPropertyDrawer_DrawProperty_
@@ -1050,6 +1028,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.HitInfoPropertyDrawer.DrawProperty
   nameWithType: HitInfoPropertyDrawer.DrawProperty
+- uid: HnSF.Combat.HitInfoPropertyDrawer.DrawStunGroup(Rect,SerializedProperty)
+  name: DrawStunGroup(Rect, SerializedProperty)
+  href: api/HnSF.Combat.HitInfoPropertyDrawer.html#HnSF_Combat_HitInfoPropertyDrawer_DrawStunGroup_Rect_SerializedProperty_
+  commentId: M:HnSF.Combat.HitInfoPropertyDrawer.DrawStunGroup(Rect,SerializedProperty)
+  fullName: HnSF.Combat.HitInfoPropertyDrawer.DrawStunGroup(Rect, SerializedProperty)
+  nameWithType: HitInfoPropertyDrawer.DrawStunGroup(Rect, SerializedProperty)
+- uid: HnSF.Combat.HitInfoPropertyDrawer.DrawStunGroup*
+  name: DrawStunGroup
+  href: api/HnSF.Combat.HitInfoPropertyDrawer.html#HnSF_Combat_HitInfoPropertyDrawer_DrawStunGroup_
+  commentId: Overload:HnSF.Combat.HitInfoPropertyDrawer.DrawStunGroup
+  isSpec: "True"
+  fullName: HnSF.Combat.HitInfoPropertyDrawer.DrawStunGroup
+  nameWithType: HitInfoPropertyDrawer.DrawStunGroup
 - uid: HnSF.Combat.HitReactionBase
   name: HitReactionBase
   href: api/HnSF.Combat.HitReactionBase.html
@@ -1717,19 +1708,6 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.IFighterCombatManager.CurrentChargeLevelCharge
   nameWithType: IFighterCombatManager.CurrentChargeLevelCharge
-- uid: HnSF.Fighters.IFighterCombatManager.GetTeam
-  name: GetTeam()
-  href: api/HnSF.Fighters.IFighterCombatManager.html#HnSF_Fighters_IFighterCombatManager_GetTeam
-  commentId: M:HnSF.Fighters.IFighterCombatManager.GetTeam
-  fullName: HnSF.Fighters.IFighterCombatManager.GetTeam()
-  nameWithType: IFighterCombatManager.GetTeam()
-- uid: HnSF.Fighters.IFighterCombatManager.GetTeam*
-  name: GetTeam
-  href: api/HnSF.Fighters.IFighterCombatManager.html#HnSF_Fighters_IFighterCombatManager_GetTeam_
-  commentId: Overload:HnSF.Fighters.IFighterCombatManager.GetTeam
-  isSpec: "True"
-  fullName: HnSF.Fighters.IFighterCombatManager.GetTeam
-  nameWithType: IFighterCombatManager.GetTeam
 - uid: HnSF.Fighters.IFighterCombatManager.HitStop
   name: HitStop
   href: api/HnSF.Fighters.IFighterCombatManager.html#HnSF_Fighters_IFighterCombatManager_HitStop
@@ -2320,6 +2298,25 @@ references:
   commentId: F:HnSF.IntStateMap.stateTimeline
   fullName: HnSF.IntStateMap.stateTimeline
   nameWithType: IntStateMap.stateTimeline
+- uid: HnSF.ITeamable
+  name: ITeamable
+  href: api/HnSF.ITeamable.html
+  commentId: T:HnSF.ITeamable
+  fullName: HnSF.ITeamable
+  nameWithType: ITeamable
+- uid: HnSF.ITeamable.GetTeam
+  name: GetTeam()
+  href: api/HnSF.ITeamable.html#HnSF_ITeamable_GetTeam
+  commentId: M:HnSF.ITeamable.GetTeam
+  fullName: HnSF.ITeamable.GetTeam()
+  nameWithType: ITeamable.GetTeam()
+- uid: HnSF.ITeamable.GetTeam*
+  name: GetTeam
+  href: api/HnSF.ITeamable.html#HnSF_ITeamable_GetTeam_
+  commentId: Overload:HnSF.ITeamable.GetTeam
+  isSpec: "True"
+  fullName: HnSF.ITeamable.GetTeam
+  nameWithType: ITeamable.GetTeam
 - uid: HnSF.Sample.TDAction
   name: HnSF.Sample.TDAction
   href: api/HnSF.Sample.TDAction.html
@@ -3522,6 +3519,12 @@ references:
   commentId: T:HnSF.Sample.TDAction.FighterStateManager
   fullName: HnSF.Sample.TDAction.FighterStateManager
   nameWithType: FighterStateManager
+- uid: HnSF.Sample.TDAction.FighterStateManager.baseHitInfo
+  name: baseHitInfo
+  href: api/HnSF.Sample.TDAction.FighterStateManager.html#HnSF_Sample_TDAction_FighterStateManager_baseHitInfo
+  commentId: F:HnSF.Sample.TDAction.FighterStateManager.baseHitInfo
+  fullName: HnSF.Sample.TDAction.FighterStateManager.baseHitInfo
+  nameWithType: FighterStateManager.baseHitInfo
 - uid: HnSF.Sample.TDAction.FighterStateManager.ChangeState(System.Int32,System.Int32,System.Boolean)
   name: ChangeState(Int32, Int32, Boolean)
   href: api/HnSF.Sample.TDAction.FighterStateManager.html#HnSF_Sample_TDAction_FighterStateManager_ChangeState_System_Int32_System_Int32_System_Boolean_
@@ -3535,6 +3538,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.FighterStateManager.ChangeState
   nameWithType: FighterStateManager.ChangeState
+- uid: HnSF.Sample.TDAction.FighterStateManager.coreHitInfo
+  name: coreHitInfo
+  href: api/HnSF.Sample.TDAction.FighterStateManager.html#HnSF_Sample_TDAction_FighterStateManager_coreHitInfo
+  commentId: F:HnSF.Sample.TDAction.FighterStateManager.coreHitInfo
+  fullName: HnSF.Sample.TDAction.FighterStateManager.coreHitInfo
+  nameWithType: FighterStateManager.coreHitInfo
 - uid: HnSF.Sample.TDAction.FighterStateManager.currentState
   name: currentState
   href: api/HnSF.Sample.TDAction.FighterStateManager.html#HnSF_Sample_TDAction_FighterStateManager_currentState
