@@ -1,3 +1,21 @@
+# [33.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v32.0.0...v33.0.0) (2022-03-18)
+
+
+### Code Refactoring
+
+* Moved unnecessary variables out of HitInfoBase ([d5c1d5a](https://github.com/christides11/hack-and-slash-framework/commit/d5c1d5abef557673e6b0af633a8ca55fab887e6c))
+
+
+### Features
+
+* Added ITeamable. ([085e332](https://github.com/christides11/hack-and-slash-framework/commit/085e33206d73ce723aa8f65f904c29f6c240946a))
+
+
+### BREAKING CHANGES
+
+* Moved GetTeam out of IFighterCombatManager to ITeamable.
+* HitInfoBase only has what is required by it.
+
 # [32.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v31.1.1...v32.0.0) (2022-03-10)
 
 
