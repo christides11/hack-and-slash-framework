@@ -1,5 +1,4 @@
-﻿using HnSF.Combat;
-using HnSF.Input;
+﻿using HnSF.Input;
 
 namespace HnSF.Fighters
 {
@@ -20,6 +19,5 @@ namespace HnSF.Fighters
         void SetChargeLevel(int value);
         void SetChargeLevelCharge(int value);
         void IncrementChargeLevelCharge(int maxCharge);
-        int GetTeam();
     }
 }
