@@ -127,6 +127,7 @@
      <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\EnumStateBinding.cs" />
      <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\Managers\FighterCombatManager.cs" />
      <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\StateTimeline.cs" />
+     <Compile Include="Assets\HnSF\Combat\ITeamable.cs" />
      <None Include="Assets\HnSF\HnSF.asmdef" />
      <None Include="Assets\HnSF\Samples\TDAction\Textures\Kauzz Forest Tiles\Read me.txt" />
  <Reference Include="UnityEngine">
