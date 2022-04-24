@@ -96,7 +96,6 @@ GameObject:
   - component: {fileID: 6164416680294650169}
   - component: {fileID: 3204139750782918213}
   - component: {fileID: 7070423521996889968}
-  - component: {fileID: 2446682337119611762}
   - component: {fileID: -473810435442433682}
   - component: {fileID: 1199271652}
   - component: {fileID: 1199271654}
@@ -173,23 +172,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8, y: 1.75}
   m_EdgeRadius: 0
---- !u!320 &2446682337119611762
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890948787661181835}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
-  m_InitialState: 0
-  m_WrapMode: 0
-  m_DirectorUpdateMode: 3
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
 --- !u!114 &-473810435442433682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,8 +188,8 @@ MonoBehaviour:
   _combatManager: {fileID: 1199271654}
   _physicsManager: {fileID: 1199271653}
   _inputManager: {fileID: 7836252275299144723}
-  visual: {fileID: 2309637557716152273}
   definition: {fileID: 11400000, guid: c380ee3a80157994caef3895f8ca8dde, type: 2}
+  visual: {fileID: 2309637557716152273}
 --- !u!114 &1199271652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,40 +202,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da649541cf321194e8b82f361c458e60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseHitInfo:
-    ID: 0
-  coreHitInfo:
-    ID: 0
-    airOnly: 0
-    groundOnly: 0
-    causesTumble: 0
-    knockdown: 0
-    groundBounces: 0
-    groundBounceForce: 0
-    wallBounces: 0
-    wallBounceForce: 0
-    damageOnHit: 0
-    opponentForce: {x: 0, y: 1, z: 0}
-    forceIncludeYForce: 0
-    opponentForceMultiplier: 1
-    opponentMaxMagnitude: 1
-    opponentMinMagnitude: 1
-    pushPullCenterOffset: {x: 0, y: 0, z: 0}
-    hitKills: 1
-    continuousHit: 0
-    spaceBetweenHits: 0
-    opponentResetXForce: 1
-    opponentResetYForce: 1
-    autoLink: 0
-    autoLinkPercentage: 1
-    forceType: 0
-    forceRelation: 0
-    attackerHitstop: 0
-    hitstop: 0
-    hitstun: 0
+  <CurrentStateMoveset>k__BackingField: 0
+  <CurrentState>k__BackingField: 0
+  <CurrentStateFrame>k__BackingField: 0
   fighterManager: {fileID: -473810435442433682}
-  currentState: 0
-  currentStateFrame: 0
 --- !u!114 &1199271654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,6 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27ad487a7dc3f04419ddca98540bb42a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  team: 0
 --- !u!114 &1199271653
 MonoBehaviour:
   m_ObjectHideFlags: 0

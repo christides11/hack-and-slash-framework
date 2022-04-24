@@ -45,34 +45,11 @@ namespace HnSF.Sample.TDAction
         {
             IsGrounded = value;
         }
-        
-        public virtual void ApplyGravity()
-        {
-            /*
-            FighterManager m = ((FighterManager)manager);
-            float maxFallSpeed = m.CombatManager.HitStun > 0 ? m.statManager.CurrentStats.hitstunMaxFallSpeed.GetCurrentValue() 
-                : m.statManager.CurrentStats.maxFallSpeed.GetCurrentValue();
-            float gravity = m.CombatManager.HitStun > 0 ?  m.statManager.CurrentStats.hitstunGravity.GetCurrentValue() 
-                : m.statManager.CurrentStats.gravity.GetCurrentValue();
-            HandleGravity(maxFallSpeed, gravity, GravityScale);*/
-        }
-        
-        public virtual void ApplyGravity(float maxFallSpeed, float gravity, float gravityScale)
+
+        public virtual void ApplyGravity(float maxFallSpeed, float gravity)
         {
             Vector2 tempMovement = this.forceMovement;
-            if (tempMovement.y > -(maxFallSpeed))
-            {
-                tempMovement.y -= gravity * gravityScale;
-                if (tempMovement.y < -(maxFallSpeed))
-                {
-                    tempMovement.y = -maxFallSpeed;
-                }
-            }
-            else if (tempMovement.y < -(maxFallSpeed))
-            {
-                tempMovement.y *= decelerationFactor;
-            }
-
+            tempMovement.y = Mathf.MoveTowards(tempMovement.y, maxFallSpeed, gravity * Time.fixedDeltaTime);
             this.forceMovement = tempMovement;
         }
         
