@@ -44,6 +44,36 @@ namespace HnSF.Sample.TDAction
             }
             if (CurrentState == 0) return;
         }
+        
+        private void ProcessState()
+        {
+            for (int i = 0; i < states[CurrentState].data.Length; i++)
+            {
+                var valid = true;
+                for (int j = 0; j < states[CurrentState].data[i].FrameRanges.Length; j++)
+                {
+                    if (CurrentStateFrame < states[CurrentState].data[i].FrameRanges[j].x
+                        || CurrentStateFrame > states[CurrentState].data[i].FrameRanges[j].y)
+                    {
+                        valid = false;
+                        break;
+                    }
+                }
+
+                if (!valid) continue;
+                if (!conditionMapper.TryCondition(states[CurrentState].data[i].Condition.FunctionMap, fighterManager, states[CurrentState].data[i].Condition)) continue;
+                functionMapper.functions[states[CurrentState].data[i].FunctionMap](fighterManager, states[CurrentState].data[i]);
+            }
+
+            if (states[CurrentState].autoIncrement)
+            {
+                IncrementFrame(1);
+                if (states[CurrentState].autoLoop && CurrentStateFrame > states[CurrentState].totalFrames)
+                {
+                    SetFrame(1);
+                }
+            }
+        }
 
         public void MarkForStateChange(int moveset, int nextState)
         {
@@ -92,7 +122,7 @@ namespace HnSF.Sample.TDAction
 
         public HnSF.StateTimeline GetState(int moveset, int state)
         {
-            throw new NotImplementedException();
+            return fighterManager.definition.movesets[moveset].stateMap[state];
         }
 
         public void SetMoveset(int movesetIndex)
@@ -105,9 +135,9 @@ namespace HnSF.Sample.TDAction
             CurrentStateFrame = frame;
         }
 
-        public void IncrementFrame()
+        public void IncrementFrame(int amt = 1)
         {
-            CurrentStateFrame++;
+            CurrentStateFrame += amt;
         }
     }
 }

@@ -38,9 +38,9 @@ namespace HnSF.Sample.TDAction.State
             functions.Remove(id);
         }
 
-        public virtual bool TryCondition(int id, IFighterBase cm, IConditionVariables variables)
+        public virtual bool TryCondition(int id, IFighterBase fighter, IConditionVariables variables)
         {
-            return functions[id](cm, variables);
+            return functions[id](fighter, variables);
         }
     }
 }
