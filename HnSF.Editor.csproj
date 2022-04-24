@@ -939,12 +939,6 @@
      <Reference Include="UnityEngine.UI">
      <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
      </Reference>
-     <Reference Include="UnityEngine.TestRunner">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEditor.TestRunner">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
-     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="HnSF.csproj">

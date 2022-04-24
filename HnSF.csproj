@@ -105,6 +105,13 @@
      <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\FighterDefinition.cs" />
      <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\BaseStateReference.cs" />
      <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\BaseStateEnum.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\Conditions\BaseConditionFunctions.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\Functions\BaseStateFunctions.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\Variables\ChangeState.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\Functions\BaseStateFunctionEnum.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\Conditions\BaseConditionFunctionEnum.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\StateConditionMapper.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\StateFunctionMapper.cs" />
      <None Include="Assets\HnSF\HnSF.asmdef" />
      <None Include="Assets\HnSF\Samples\TDAction\Textures\Kauzz Forest Tiles\Read me.txt" />
      <None Include="Assets\HnSF\package.json" />

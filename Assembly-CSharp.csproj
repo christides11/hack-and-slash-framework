@@ -918,9 +918,6 @@
      <Reference Include="Unity.TextMeshPro.Editor">
      <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VisualStudio.Editor">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="medvedya.select_implementation_property_drawer">
      <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\medvedya.select_implementation_property_drawer.dll</HintPath>
      </Reference>

@@ -10,21 +10,16 @@ namespace HnSF.Sample.TDAction
 {
     public class FighterStateManager : MonoBehaviour, IFighterStateManager
     {
-        public int MovesetCount { get; }
-        public int CurrentStateMoveset { get; }
-
-        public HitInfoBase baseHitInfo;
-
-        public HitInfo coreHitInfo;
-
-        public int CurrentState
+        public int MovesetCount
         {
-            get { return currentState; }
+            get { return fighterManager.definition.movesets.Length; }
         }
-        public int CurrentStateFrame
-        {
-            get { return currentStateFrame; }
-        }
+        [field: SerializeField]
+        public int CurrentStateMoveset { get; protected set; } = 0;
+        [field: SerializeField]
+        public int CurrentState { get; protected set; } = 0;
+        [field: SerializeField]
+        public int CurrentStateFrame { get; protected set; } = 0;
 
         protected Dictionary<int, StateTimeline> states = new Dictionary<int, StateTimeline>();
 
@@ -32,9 +27,6 @@ namespace HnSF.Sample.TDAction
         private int nextState = 0;
         public FighterManager fighterManager;
 
-        public int currentState = 0;
-        public int currentStateFrame = 0;
-        
         private void Awake()
         {
             
@@ -71,8 +63,8 @@ namespace HnSF.Sample.TDAction
                 SetFrame(states[CurrentState].totalFrames);
             }
 
-            currentStateFrame = stateFrame;
-            currentState = state;
+            CurrentStateFrame = stateFrame;
+            CurrentState = state;
             if(CurrentStateFrame == 0)
             {
                 InitState();
@@ -105,12 +97,12 @@ namespace HnSF.Sample.TDAction
 
         public void SetFrame(int frame)
         {
-            currentStateFrame = frame;
+            CurrentStateFrame = frame;
         }
 
         public void IncrementFrame()
         {
-            currentStateFrame++;
+            CurrentStateFrame++;
         }
     }
 }

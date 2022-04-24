@@ -9,14 +9,17 @@ namespace HnSF.Sample.TDAction
 {
     public class FighterCombatManager : MonoBehaviour, IFighterCombatManager
     {
-        public int HitStop { get; } = 0;
-        public int HitStun { get; } = 0;
-        public int CurrentChargeLevel { get; } = 0;
-        public int CurrentChargeLevelCharge { get; } = 0;
+        public int HitStop { get; protected set; } = 0;
+        public int HitStun { get; protected set; } = 0;
+        public int CurrentChargeLevel { get; protected set; } = 0;
+        public int CurrentChargeLevelCharge { get; protected set; } = 0;
 
+        public int team = 0;
+        
         public void Cleanup()
         {
-            throw new System.NotImplementedException();
+            CurrentChargeLevel = 0;
+            CurrentChargeLevelCharge = 0;
         }
 
         public bool CheckForInputSequence(InputSequence sequence, uint baseOffset = 0, bool processSequenceButtons = false,
@@ -27,42 +30,42 @@ namespace HnSF.Sample.TDAction
 
         public void SetHitStop(int value)
         {
-            throw new System.NotImplementedException();
+            HitStop = value;
         }
 
         public void AddHitStop(int value)
         {
-            throw new System.NotImplementedException();
+            HitStop += value;
         }
 
         public void SetHitStun(int value)
         {
-            throw new System.NotImplementedException();
+            HitStun = value;
         }
 
         public void AddHitStun(int value)
         {
-            throw new System.NotImplementedException();
+            HitStun += value;
         }
 
         public void SetChargeLevel(int value)
         {
-            throw new System.NotImplementedException();
+            CurrentChargeLevel = value;
         }
 
         public void SetChargeLevelCharge(int value)
         {
-            throw new System.NotImplementedException();
+            CurrentChargeLevelCharge = value;
         }
 
         public void IncrementChargeLevelCharge(int maxCharge)
         {
-            throw new System.NotImplementedException();
+            CurrentChargeLevelCharge = Mathf.Clamp(CurrentChargeLevelCharge+1, 0, maxCharge);
         }
 
         public int GetTeam()
         {
-            throw new System.NotImplementedException();
+            return team;
         }
     }
 }

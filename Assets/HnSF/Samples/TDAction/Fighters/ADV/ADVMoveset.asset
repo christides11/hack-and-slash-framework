@@ -15,7 +15,7 @@ MonoBehaviour:
   states:
   - state:
       rid: 1423070975590137858
-    stateTimeline: {fileID: 0}
+    stateTimeline: {fileID: 11400000, guid: 0ce685a764a7b84468d9883fa0fbe4c0, type: 2}
   references:
     version: 2
     RefIds:
