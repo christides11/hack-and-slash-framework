@@ -100,6 +100,11 @@
      <Compile Include="Assets\HnSF\State\FighterStateReferenceBase.cs" />
      <Compile Include="Assets\HnSF\Combat\Moveset\MovesetDefinition.cs" />
      <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\StateTimeline.cs" />
+     <Compile Include="Assets\HnSF\State\Variables\IStateVariables.cs" />
+     <Compile Include="Assets\HnSF\State\Conditions\IConditionVariables.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\FighterDefinition.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\BaseStateReference.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\BaseStateEnum.cs" />
      <None Include="Assets\HnSF\HnSF.asmdef" />
      <None Include="Assets\HnSF\Samples\TDAction\Textures\Kauzz Forest Tiles\Read me.txt" />
      <None Include="Assets\HnSF\package.json" />

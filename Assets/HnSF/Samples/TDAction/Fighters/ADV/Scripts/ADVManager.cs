@@ -7,7 +7,7 @@ namespace HnSF.Sample.TDAction
 {
     public class ADVManager : FighterManager
     {
-        public EnumStateBinding[] coreStates;
+        public FighterDefinition definition;
 
         public override void SimAwake()
         {
