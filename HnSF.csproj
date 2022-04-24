@@ -110,6 +110,8 @@
      <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\Variables\ChangeState.cs" />
      <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\Functions\BaseStateFunctionEnum.cs" />
      <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\Conditions\BaseConditionFunctionEnum.cs" />
+     <Compile Include="Assets\HnSF\State\StateConditionMapperBase.cs" />
+     <Compile Include="Assets\HnSF\State\StateFunctionMapperBase.cs" />
      <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\StateConditionMapper.cs" />
      <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\StateFunctionMapper.cs" />
      <None Include="Assets\HnSF\HnSF.asmdef" />

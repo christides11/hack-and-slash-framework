@@ -16,6 +16,7 @@ namespace HnSF.Sample.TDAction.State
         [SelectImplementation(typeof(IConditionVariables))] [SerializeField, SerializeReference] 
         public IConditionVariables condition;
 
+        public int stateMovesetID;
         public int stateID;
     }
 }

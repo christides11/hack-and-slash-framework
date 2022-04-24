@@ -28,8 +28,8 @@ namespace HnSF.Sample.TDAction
         private int nextState = 0;
         public FighterManager fighterManager;
 
-        [NonSerialized] public StateFunctionMapper functionMapper = new StateFunctionMapper(); 
-        [NonSerialized] public StateConditionMapper conditionMapper = new StateConditionMapper();
+        [NonSerialized] public StateFunctionMapper functionMapperBase = new StateFunctionMapper(); 
+        [NonSerialized] public StateConditionMapper conditionMapperBase = new StateConditionMapper();
 
         private void Awake()
         {
@@ -43,6 +43,7 @@ namespace HnSF.Sample.TDAction
                 ChangeState(nextState, 0, true);
             }
             if (CurrentState == 0) return;
+            ProcessState();
         }
         
         private void ProcessState()
@@ -61,8 +62,8 @@ namespace HnSF.Sample.TDAction
                 }
 
                 if (!valid) continue;
-                if (!conditionMapper.TryCondition(states[CurrentState].data[i].Condition.FunctionMap, fighterManager, states[CurrentState].data[i].Condition)) continue;
-                functionMapper.functions[states[CurrentState].data[i].FunctionMap](fighterManager, states[CurrentState].data[i]);
+                if (!conditionMapperBase.TryCondition(states[CurrentState].data[i].Condition.FunctionMap, fighterManager, states[CurrentState].data[i].Condition)) continue;
+                functionMapperBase.functions[states[CurrentState].data[i].FunctionMap](fighterManager, states[CurrentState].data[i]);
             }
 
             if (states[CurrentState].autoIncrement)
@@ -83,7 +84,7 @@ namespace HnSF.Sample.TDAction
 
         public Combat.MovesetDefinition GetMoveset(int index)
         {
-            throw new NotImplementedException();
+            return fighterManager.definition.movesets[index];
         }
 
         public bool ChangeState(int state, int stateFrame = 0, bool callOnInterrupt = true)
@@ -94,7 +95,7 @@ namespace HnSF.Sample.TDAction
             if(callOnInterrupt && CurrentState != (int)FighterStateEnum.NULL)
             {
                 SetFrame(states[CurrentState].totalFrames+1);
-                // ProcessState();
+                ProcessState();
             }
 
             CurrentStateFrame = stateFrame;
@@ -102,7 +103,7 @@ namespace HnSF.Sample.TDAction
             if(CurrentStateFrame == 0)
             {
                 SetFrame(0);
-                //ProcessState();
+                ProcessState();
                 SetFrame(1);
             }
 
