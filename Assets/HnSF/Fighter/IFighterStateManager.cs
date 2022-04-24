@@ -15,6 +15,6 @@
         StateTimeline GetState(int moveset, int state);
         void SetMoveset(int movesetIndex);
         void SetFrame(int frame);
-        void IncrementFrame();
+        void IncrementFrame(int amt = 1);
     }
 }
