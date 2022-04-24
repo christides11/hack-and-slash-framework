@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using HnSF.Combat;
 using HnSF.Fighters;
+using HnSF.Sample.TDAction.State;
 using UnityEngine;
 using UnityEngine.Playables;
 
@@ -27,6 +28,9 @@ namespace HnSF.Sample.TDAction
         private int nextState = 0;
         public FighterManager fighterManager;
 
+        [NonSerialized] public StateFunctionMapper functionMapper = new StateFunctionMapper(); 
+        [NonSerialized] public StateConditionMapper conditionMapper = new StateConditionMapper();
+
         private void Awake()
         {
             
@@ -41,7 +45,7 @@ namespace HnSF.Sample.TDAction
             if (CurrentState == 0) return;
         }
 
-        public void MarkForStateChange(int nextState)
+        public void MarkForStateChange(int moveset, int nextState)
         {
             markedForStateChange = true;
             this.nextState = nextState;
@@ -55,19 +59,20 @@ namespace HnSF.Sample.TDAction
         public bool ChangeState(int state, int stateFrame = 0, bool callOnInterrupt = true)
         {
             markedForStateChange = false;
-            int oldState = CurrentState;
-            int oldStateFrame = CurrentStateFrame;
+            if (!states.ContainsKey(state)) return false;
 
-            if(callOnInterrupt && oldState != 0)
+            if(callOnInterrupt && CurrentState != (int)FighterStateEnum.NULL)
             {
-                SetFrame(states[CurrentState].totalFrames);
+                SetFrame(states[CurrentState].totalFrames+1);
+                // ProcessState();
             }
 
             CurrentStateFrame = stateFrame;
             CurrentState = state;
             if(CurrentStateFrame == 0)
             {
-                InitState();
+                SetFrame(0);
+                //ProcessState();
                 SetFrame(1);
             }
 

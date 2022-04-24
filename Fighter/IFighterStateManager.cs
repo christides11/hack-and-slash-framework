@@ -9,7 +9,7 @@
         
         
         Combat.MovesetDefinition GetMoveset(int index);
-        void MarkForStateChange(int state);
+        void MarkForStateChange(int moveset, int state);
         bool ChangeState(int state, int stateFrame = 0, bool callOnInterrupt = true);
         StateTimeline GetState(int state);
         StateTimeline GetState(int moveset, int state);
