@@ -3,9 +3,11 @@ using UnityEngine.Timeline;
 
 namespace HnSF
 {
-    //[CreateAssetMenu(fileName = "State", menuName = "HnSF/State")]
     public class StateTimeline : ScriptableObject
     {
-        public int totalFrames = 0;
+        public StateTimeline baseState;
+        public int totalFrames = 10;
+        public bool autoIncrement = true;
+        public bool autoLoop = true;
     }
 }

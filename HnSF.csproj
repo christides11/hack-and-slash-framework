@@ -52,7 +52,6 @@
      <Compile Include="Assets\HnSF\Samples\TDAction\Fighters\ADV\Scripts\ADVEnumStateBinding.cs" />
      <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\Managers\FighterPhysicsManager.cs" />
      <Compile Include="Assets\HnSF\Combat\Boxes\Hitbox\HitboxGroup.cs" />
-     <Compile Include="Assets\HnSF\State\Condition\StateConditionOR.cs" />
      <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Simulation\ISimulationObject.cs" />
      <Compile Include="Assets\HnSF\Combat\ForceType.cs" />
      <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Simulation\SimulationBehaviour.cs" />
@@ -77,12 +76,10 @@
      <Compile Include="Assets\HnSF\Combat\Interfaces\IHurtable.cs" />
      <Compile Include="Assets\HnSF\Input\InputSequence.cs" />
      <Compile Include="Assets\HnSF\Combat\OnHitType.cs" />
-     <Compile Include="Assets\HnSF\State\Condition\StateConditionBase.cs" />
      <Compile Include="Assets\HnSF\Input\InputDefinition.cs" />
      <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\EnumStateBinding.cs" />
      <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\Managers\FighterCombatManager.cs" />
      <Compile Include="Assets\HnSF\Combat\Interfaces\IHealable.cs" />
-     <Compile Include="Assets\HnSF\State\Condition\StateConditionBoolean.cs" />
      <Compile Include="Assets\HnSF\Combat\ChargeLevel.cs" />
      <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Input\InputButtonData.cs" />
      <Compile Include="Assets\HnSF\Combat\Boxes\Hurtbox\HurtboxState.cs" />
@@ -94,11 +91,9 @@
      <Compile Include="Assets\HnSF\Combat\Info\HurtInfo3D.cs" />
      <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\FighterStateEnum.cs" />
      <Compile Include="Assets\HnSF\State\FighterStateAsset.cs" />
-     <Compile Include="Assets\HnSF\State\FighterStateBehaviour.cs" />
      <Compile Include="Assets\HnSF\Samples\TDAction\Fighters\ADV\Scripts\ADVManager.cs" />
      <Compile Include="Assets\HnSF\Combat\ChargeDefinition.cs" />
      <Compile Include="Assets\HnSF\Input\InputDefinitionType.cs" />
-     <Compile Include="Assets\HnSF\State\Condition\StateConditionAND.cs" />
      <Compile Include="Assets\HnSF\Combat\HitboxManager.cs" />
      <Compile Include="Assets\HnSF\Combat\Boxes\BoxDefinition.cs" />
      <Compile Include="Assets\HnSF\Combat\Info\HealInfoBase.cs" />
