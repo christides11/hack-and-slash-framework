@@ -236,6 +236,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -245,11 +247,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -267,9 +269,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -945,7 +950,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a132b053f6f6c10d0800000000000000
-      internalID: -3450760691050667238
+      internalID: -7709649304109886623
       vertices: []
       indices: 
       edges: []
@@ -966,7 +971,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e1a343e796eac18c0800000000000000
-      internalID: -4027152198663914978
+      internalID: -1218951902424216470
       vertices: []
       indices: 
       edges: []
@@ -1779,6 +1784,77 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      ground-AAAA-2: 9001029792471018263
+      floor-lay: 2254164507850628731
+      wall-run-4: -3663765790963761374
+      ground-AAA-4: 6883649767763624468
+      getup-2: 860179648227416621
+      getup-4: -6536962669552080376
+      crouch-walk-4: 1295381224068955176
+      ground-A-2: 1273228121180341589
+      ground-AAAA-1: -3346777124972237222
+      fist-walk-6: 7754146814281732677
+      ground-AAAA-5: 2100648968803027718
+      wall-run-2: 2420110236368611339
+      run-3: 3398982377631050149
+      run-2: 5316992090525869856
+      ground-AAAA-3: 6012183768171743953
+      wall-run-3: 8328652160821579077
+      air-A-4: -5542610401167228509
+      getup-5: 1335364984876884081
+      ground-A-5: 4831023161945834769
+      air-AA-3: -6230457068238554093
+      divekick-4: -1218951902424216470
+      knockdown-6: 5673996010147210823
+      air-AA-4: -2563215146315945537
+      fist-walk-3: -3881510681625422725
+      crouch-walk-3: -1137912257356829142
+      ground-AA-4: 1229414202548701797
+      knockdown-5: 8213592837877116732
+      ground-AAA-2: -7254858885707781038
+      wall-run-5: -7329322558568863050
+      getup-1: -4302088642870107126
+      run-5: 8301849999584586328
+      run-4: 6642689230245490894
+      ground-A-1: -5386529939198198453
+      knockdown-1: -4814382645412803061
+      air-AA-2: -4928136152477334611
+      fist-walk-4: -813388202268234843
+      crouch-walk-6: 8867790020313015533
+      crouch-walk-1: 3114310232047011756
+      fist-walk-1: 8304275114618252246
+      wall-run-6: 3599967374834248798
+      air-A-1: -2310565169104533243
+      divekick-2: -8531217124644698028
+      air-AA-1: 8172224212020343262
+      fist-walk-5: -6378917665334056695
+      fist-walk-2: 4943407379630324322
+      ground-AAAA-6: -3947616794413005867
+      crouch-walk-5: 8151188102254789685
+      air-A-3: 2218429760197279633
+      ground-A-3: 9142745663229125269
+      wall-run-1: -2055075495721555288
+      ground-AAAA-4: 5783222419053190964
+      air-A-2: 1233400854106465098
+      knockdown-2: 7262281910742715959
+      getup-6: -655559450451249629
+      ground-AA-3: -6539086957710928809
+      knockdown-4: 4799969548750566988
+      crouch-walk-2: 225600174465340648
+      ground-AAA-1: 5786369175074538867
+      run-6: -2025671240564813261
+      divekick-3: -7709649304109886623
+      run-1: 2350206900481180209
+      divekick-1: -5184760852799578719
+      ground-AAA-5: -2982899363698674500
+      knockdown-3: -7487200133939627908
+      ground-AA-1: -7650562442584911264
+      ground-AAA-3: -5753902088655397014
+      getup-3: -7196634605062739957
+      getup-0: 6908173641822896433
+      ground-A-4: -3607894272285253048
+      ground-AA-2: 1540147999494199438
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -362,6 +362,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -371,11 +373,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -393,9 +395,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -2745,6 +2750,117 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      walk-3: -7282547523972205124
+      walk-4: 1062949542834640332
+      wall-slide-1: -7195962820408333091
+      jump-3: -1099163315959880021
+      ledge-hang-2: -4670524627354225690
+      Air-AAA-3: 1228577793076202832
+      sword-punch-2: -5516172988903973048
+      hurt-2: 5457910563689496721
+      slide-5: 8000613085043981434
+      sword-draw-1: 8411943351174162674
+      Ground-AAA-5: -7032205920181708771
+      Ground-AA-2: 6743096067385053398
+      Ground-AAA-4: -539368960687019306
+      sword-punch-7: 2729851271774367765
+      Ground-A-7: 2121196686736080109
+      wall-jump-1: -2999520307170388906
+      sword-punch-1: 1867614440103027997
+      jump-1: -1394527152228223720
+      jump-2: 3154423721751135380
+      Ground-AAA-6: -3173507598410241640
+      Ground-AA-4: 7081805965666925738
+      sword-punch-9: -6787540193282983219
+      death-1: 2322306977092904692
+      Air-AAA-Land-1: -5727256042839303126
+      crouch-2: 5352652116806695986
+      adventurer-v1.5-Sheet_35: -55448408435447049
+      jumpsquat-1: 101571700091508751
+      sword-punch-8: -1245805177388227614
+      death-2: -5732853594353692590
+      ledge-hang-3: -3691666962754819948
+      adventurer-v1.5-Sheet_94: 8686480909226747678
+      death-4: 2064600301687814877
+      crouch-4: -7325812272228753660
+      jump-start-2: -1445968619721516053
+      sword-sheathe-3: -337768029710342958
+      Ground-A-4: 756061678156850320
+      Air-AAA-2: 8043192317792241512
+      idle2-3: 6900313407354992353
+      death-6: -7115898312809811634
+      Air-AA-3: 1279282305892391521
+      walk-6: -2021519671248309078
+      adventurer-idle-03: 5974857443207731813
+      sword-sheathe-2: 8609885239257350908
+      slide-4: -5769049464661738840
+      Air-A-3: -7312278344557230603
+      Air-A-1: 7270062891368290615
+      sword-punch-4: 1767457240126523544
+      adventurer-v1.5-Sheet_37: -2864484378095117669
+      adventurer-v1.5-Sheet_95: 3884523371282086033
+      sword-draw-3: -557010918586539719
+      crouch-3: -2199296802102092023
+      sword-draw-5: 3458805228374877273
+      Ground-A-6: 5394183733801526263
+      Ground-AAA-3: -5253927435303738400
+      idle2-2: -2237402569225598170
+      adventurer-v1.5-Sheet_36: 7004264473935265697
+      wall-jump-2: -6091379090655602125
+      ledge-hang-4: 6304556023490750544
+      ledge-hang-1: 3771267384243845313
+      sword-sheathe-1: -6092153715207035312
+      adventurer-idle-04: -1286846480614585512
+      adventurer-v1.5-Sheet_81: -1587948146142584492
+      Ground-AAA-1: -9013844846209147344
+      jump-start-1: 9007157022648109736
+      sword-punch-6: -3585722546115978389
+      Air-AAA-Land-3: 2979789710812743995
+      Ground-A-3: -7384182149723659870
+      walk-2: 6812864027602333311
+      adventurer-v1.5-Sheet_82: -6797026568485068343
+      sword-punch-3: -4341356872245263088
+      Ground-AA-3: -2549233721657181880
+      jumpsquat-2: -6829922608690292844
+      slide-1: 8427078801919675099
+      adventurer-v1.5-Sheet_83: -3793652580250871328
+      fall-2: 8248592303025495236
+      hurt-4: 5727431968332616976
+      Ground-AAA-2: -8615837943046799719
+      idle2-1: 5808025637508920791
+      wall-slide-2: -2066183305326779831
+      sword-draw-2: -572935638892792279
+      slide-2: -2458887622680725957
+      walk-5: 4767782445854341248
+      fall-1: 5695235962273761828
+      death-3: 3154456230993132333
+      idle2-4: 4968957380249203935
+      Air-AAA-Land-2: -2005489889676191732
+      Ground-AA-1: 1460603255664568255
+      hurt-1: -7092784828369904500
+      Air-A-2: -8824249870287036601
+      adventurer-v1.5-Sheet_84: 9173813048575503478
+      death-5: -1793489991093253315
+      Ground-A-5: 1075423825034056700
+      jump-4: 5743002360071119732
+      Air-AAA-1: -773844512500955763
+      adventurer-idle-02: 8990718453661354843
+      adventurer-v1.5-Sheet_33: -3428362339425429463
+      walk-1: -3051788477456609919
+      Ground-A-2: 413466564722158248
+      sword-draw-4: 1292223576449554274
+      Air-A-4: 8632490420879095957
+      adventurer-v1.5-Sheet_34: 3894427792011160454
+      Air-AA-2: -1669581087827291848
+      Ground-A-1: -5879861640036576305
+      crouch-1: -4716468363168978379
+      adventurer-idle-01: -3316437661583186769
+      hurt-3: 4020093697899924549
+      Air-AA-1: -2185112768862623970
+      Air-AAA-Land-4: 6958489048758843142
+      slide-3: 622860959154257170
+      sword-punch-5: -4075373463826780061
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

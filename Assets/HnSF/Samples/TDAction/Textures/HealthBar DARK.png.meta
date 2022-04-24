@@ -56,6 +56,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -65,11 +67,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -87,9 +89,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -360,6 +365,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      HealthBar DARK_6: 1619362953164096150
+      HealthBar DARK_0: 855109145746902920
+      HealthBar DARK_4: 6726147409594235419
+      HealthBar DARK_3: 6295436588568192482
+      HealthBar DARK_5: -4849256286079726575
+      HealthBar DARK_7: 1618141565392261821
+      HealthBar DARK_8: 3698687519408298393
+      HealthBar DARK_2: 8615672405087408359
+      HealthBar DARK_10: 3533116368258538092
+      HealthBar DARK_1: 1671030921758915942
+      HealthBar DARK_9: -6341650840503772354
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -74,6 +74,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -83,11 +85,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -105,9 +107,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -462,6 +467,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      ground-bow-release-0: -7680887924448093368
+      ground-bow-release-2: -1447164232496687691
+      air-bow-1: -9124528570138552911
+      air-bow-2: -1161511019554064880
+      ground-bow-2: 7857034630884573844
+      ground-bow-5: 2125615309657423943
+      ground-bow-4: 619827367763544734
+      ground-bow-1: 1666524579342694678
+      air-bow-release-1: -7464150445050142963
+      air-bow-hold-1: -6758516136580503451
+      air-bow-3: 6894554002697834952
+      ground-bow-6: 4099995591874192779
+      air-bow-release-2: -66505831252142998
+      ground-bow-release-1: 669994489986345836
+      ground-bow-3: -3200728795191552080
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
