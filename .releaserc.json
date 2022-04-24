@@ -1,7 +1,19 @@
 {
   "tagFormat": "v${version}",
   "plugins": [
-    ["@semantic-release/commit-analyzer", { "preset": "angular" }],
+    ["@semantic-release/commit-analyzer", { 
+		"preset": "angular",
+		"releaseRules": [
+			{"type": "breaking", "release": "major"},
+			{"type": "feat", "release": "minor"},
+			{"type": "fix", "release": "patch"},
+			{"type": "docs", "release": false},
+			{"scope": "no-release", "release": false}
+		],
+		"parserOpts": {
+		"noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
+		}
+	}],
     "@semantic-release/release-notes-generator",
     ["@semantic-release/changelog", { "preset": "angular" }],
     ["@semantic-release/npm", { "npmPublish": false, "pkgRoot": "Assets/HnSF" }],

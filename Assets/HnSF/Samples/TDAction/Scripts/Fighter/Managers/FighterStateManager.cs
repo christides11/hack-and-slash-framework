@@ -27,7 +27,6 @@ namespace HnSF.Sample.TDAction
         }
 
         protected Dictionary<int, StateTimeline> states = new Dictionary<int, StateTimeline>();
-        public PlayableDirector director;
 
         private bool markedForStateChange = false;
         private int nextState = 0;
@@ -38,7 +37,7 @@ namespace HnSF.Sample.TDAction
         
         private void Awake()
         {
-            director.timeUpdateMode = DirectorUpdateMode.Manual;
+            
         }
 
         public void Tick()
@@ -48,7 +47,6 @@ namespace HnSF.Sample.TDAction
                 ChangeState(nextState, 0, true);
             }
             if (CurrentState == 0) return;
-            director.Evaluate();
         }
 
         public void MarkForStateChange(int nextState)
@@ -71,7 +69,6 @@ namespace HnSF.Sample.TDAction
             if(callOnInterrupt && oldState != 0)
             {
                 SetFrame(states[CurrentState].totalFrames);
-                director.Evaluate();
             }
 
             currentStateFrame = stateFrame;
@@ -87,20 +84,8 @@ namespace HnSF.Sample.TDAction
         
         public void InitState()
         {
-            if (CurrentState == 0)
-            {
-                director.playableAsset = null;
-                return;
-            }
-        
-            director.playableAsset = states[CurrentState];
-            foreach (var pAO in director.playableAsset.outputs)
-            {
-                director.SetGenericBinding(pAO.sourceObject, fighterManager);
-            }
-            director.Play();
+            if (CurrentState == 0) return;
             SetFrame(0);
-            director.Evaluate();
         }
 
         public HnSF.StateTimeline GetState(int state)
@@ -121,13 +106,11 @@ namespace HnSF.Sample.TDAction
         public void SetFrame(int frame)
         {
             currentStateFrame = frame;
-            director.time = (float)CurrentStateFrame * fighterManager.Manager.Simulation.TickRate;
         }
 
         public void IncrementFrame()
         {
             currentStateFrame++;
-            director.time = (float)CurrentStateFrame * fighterManager.Manager.Simulation.TickRate;
         }
     }
 }
