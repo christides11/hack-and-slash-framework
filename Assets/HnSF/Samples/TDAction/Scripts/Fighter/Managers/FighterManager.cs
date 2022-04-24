@@ -30,6 +30,7 @@ namespace HnSF.Sample.TDAction
         [SerializeField] private FighterPhysicsManager _physicsManager;
         [SerializeField] private FighterInputManager _inputManager;
 
+        public FighterDefinition definition;
         public SpriteRenderer visual;
 
         public virtual void ResetPreview()
