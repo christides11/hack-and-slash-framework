@@ -4,6 +4,7 @@ using HnSF.Fighters;
 
 namespace HnSF.Sample.TDAction.State
 {
+    [System.Serializable]
     public class StateConditionMapper
     {
         public Dictionary<int, Func<IFighterBase, IConditionVariables, bool>> functions =
