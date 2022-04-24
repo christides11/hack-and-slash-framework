@@ -7,11 +7,5 @@ namespace HnSF.Sample.TDAction
 {
     public class ADVManager : FighterManager
     {
-        public FighterDefinition definition;
-
-        public override void SimAwake()
-        {
-            //StateManager.ChangeState((int)FighterStateEnum.IDLE);
-        }
     }
 }

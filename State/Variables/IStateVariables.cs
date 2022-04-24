@@ -1,8 +1,12 @@
 using UnityEngine;
 
-public interface IStateVariables
+namespace HnSF
 {
-    public int FunctionMap { get; }
-    public Vector2[] FrameRanges { get; set; }
-    //public IConditionVar Condition { get; }
+    public interface IStateVariables
+    {
+        public int FunctionMap { get; }
+
+        public Vector2[] FrameRanges { get; set; }
+        public IConditionVariables Condition { get; }
+    }
 }

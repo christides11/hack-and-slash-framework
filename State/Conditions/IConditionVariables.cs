@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public interface IConditionVariables
+namespace HnSF
 {
-    public int FunctionMap { get; }
+    public interface IConditionVariables
+    {
+        public int FunctionMap { get; }
+    }
 }

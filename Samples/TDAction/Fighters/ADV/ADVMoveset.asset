@@ -14,9 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   states:
   - state:
-      id: 0
+      rid: 1423070975590137858
     stateTimeline: {fileID: 0}
   references:
-    version: 1
-    00000000:
-      type: {class: , ns: , asm: }
+    version: 2
+    RefIds:
+    - rid: 1423070975590137858
+      type: {class: BaseStateReference, ns: HnSF.Sample.TDAction, asm: HnSF}
+      data:
+        state: 1
