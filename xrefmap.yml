@@ -1902,12 +1902,12 @@ references:
   commentId: T:HnSF.Fighters.IFighterStateManager
   fullName: HnSF.Fighters.IFighterStateManager
   nameWithType: IFighterStateManager
-- uid: HnSF.Fighters.IFighterStateManager.ChangeState(System.Int32,System.Int32,System.Boolean)
-  name: ChangeState(Int32, Int32, Boolean)
-  href: api/HnSF.Fighters.IFighterStateManager.html#HnSF_Fighters_IFighterStateManager_ChangeState_System_Int32_System_Int32_System_Boolean_
-  commentId: M:HnSF.Fighters.IFighterStateManager.ChangeState(System.Int32,System.Int32,System.Boolean)
-  fullName: HnSF.Fighters.IFighterStateManager.ChangeState(System.Int32, System.Int32, System.Boolean)
-  nameWithType: IFighterStateManager.ChangeState(Int32, Int32, Boolean)
+- uid: HnSF.Fighters.IFighterStateManager.ChangeState(System.Int32,System.Int32,System.Int32,System.Boolean)
+  name: ChangeState(Int32, Int32, Int32, Boolean)
+  href: api/HnSF.Fighters.IFighterStateManager.html#HnSF_Fighters_IFighterStateManager_ChangeState_System_Int32_System_Int32_System_Int32_System_Boolean_
+  commentId: M:HnSF.Fighters.IFighterStateManager.ChangeState(System.Int32,System.Int32,System.Int32,System.Boolean)
+  fullName: HnSF.Fighters.IFighterStateManager.ChangeState(System.Int32, System.Int32, System.Int32, System.Boolean)
+  nameWithType: IFighterStateManager.ChangeState(Int32, Int32, Int32, Boolean)
 - uid: HnSF.Fighters.IFighterStateManager.ChangeState*
   name: ChangeState
   href: api/HnSF.Fighters.IFighterStateManager.html#HnSF_Fighters_IFighterStateManager_ChangeState_
@@ -2394,6 +2394,19 @@ references:
   commentId: T:HnSF.Sample.TDAction.BaseConditionFunctions
   fullName: HnSF.Sample.TDAction.BaseConditionFunctions
   nameWithType: BaseConditionFunctions
+- uid: HnSF.Sample.TDAction.BaseConditionFunctions.GroundedState(HnSF.Fighters.IFighterBase,HnSF.IConditionVariables)
+  name: GroundedState(IFighterBase, IConditionVariables)
+  href: api/HnSF.Sample.TDAction.BaseConditionFunctions.html#HnSF_Sample_TDAction_BaseConditionFunctions_GroundedState_HnSF_Fighters_IFighterBase_HnSF_IConditionVariables_
+  commentId: M:HnSF.Sample.TDAction.BaseConditionFunctions.GroundedState(HnSF.Fighters.IFighterBase,HnSF.IConditionVariables)
+  fullName: HnSF.Sample.TDAction.BaseConditionFunctions.GroundedState(HnSF.Fighters.IFighterBase, HnSF.IConditionVariables)
+  nameWithType: BaseConditionFunctions.GroundedState(IFighterBase, IConditionVariables)
+- uid: HnSF.Sample.TDAction.BaseConditionFunctions.GroundedState*
+  name: GroundedState
+  href: api/HnSF.Sample.TDAction.BaseConditionFunctions.html#HnSF_Sample_TDAction_BaseConditionFunctions_GroundedState_
+  commentId: Overload:HnSF.Sample.TDAction.BaseConditionFunctions.GroundedState
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.BaseConditionFunctions.GroundedState
+  nameWithType: BaseConditionFunctions.GroundedState
 - uid: HnSF.Sample.TDAction.BaseConditionFunctions.MovementSqrMagnitude(HnSF.Fighters.IFighterBase,HnSF.IConditionVariables)
   name: MovementSqrMagnitude(IFighterBase, IConditionVariables)
   href: api/HnSF.Sample.TDAction.BaseConditionFunctions.html#HnSF_Sample_TDAction_BaseConditionFunctions_MovementSqrMagnitude_HnSF_Fighters_IFighterBase_HnSF_IConditionVariables_
@@ -3652,12 +3665,12 @@ references:
   commentId: T:HnSF.Sample.TDAction.FighterStateManager
   fullName: HnSF.Sample.TDAction.FighterStateManager
   nameWithType: FighterStateManager
-- uid: HnSF.Sample.TDAction.FighterStateManager.ChangeState(System.Int32,System.Int32,System.Boolean)
-  name: ChangeState(Int32, Int32, Boolean)
-  href: api/HnSF.Sample.TDAction.FighterStateManager.html#HnSF_Sample_TDAction_FighterStateManager_ChangeState_System_Int32_System_Int32_System_Boolean_
-  commentId: M:HnSF.Sample.TDAction.FighterStateManager.ChangeState(System.Int32,System.Int32,System.Boolean)
-  fullName: HnSF.Sample.TDAction.FighterStateManager.ChangeState(System.Int32, System.Int32, System.Boolean)
-  nameWithType: FighterStateManager.ChangeState(Int32, Int32, Boolean)
+- uid: HnSF.Sample.TDAction.FighterStateManager.ChangeState(System.Int32,System.Int32,System.Int32,System.Boolean)
+  name: ChangeState(Int32, Int32, Int32, Boolean)
+  href: api/HnSF.Sample.TDAction.FighterStateManager.html#HnSF_Sample_TDAction_FighterStateManager_ChangeState_System_Int32_System_Int32_System_Int32_System_Boolean_
+  commentId: M:HnSF.Sample.TDAction.FighterStateManager.ChangeState(System.Int32,System.Int32,System.Int32,System.Boolean)
+  fullName: HnSF.Sample.TDAction.FighterStateManager.ChangeState(System.Int32, System.Int32, System.Int32, System.Boolean)
+  nameWithType: FighterStateManager.ChangeState(Int32, Int32, Int32, Boolean)
 - uid: HnSF.Sample.TDAction.FighterStateManager.ChangeState*
   name: ChangeState
   href: api/HnSF.Sample.TDAction.FighterStateManager.html#HnSF_Sample_TDAction_FighterStateManager_ChangeState_
@@ -3851,6 +3864,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.FighterStateManager.Tick
   nameWithType: FighterStateManager.Tick
+- uid: HnSF.Sample.TDAction.FighterStatManager
+  name: FighterStatManager
+  href: api/HnSF.Sample.TDAction.FighterStatManager.html
+  commentId: T:HnSF.Sample.TDAction.FighterStatManager
+  fullName: HnSF.Sample.TDAction.FighterStatManager
+  nameWithType: FighterStatManager
 - uid: HnSF.Sample.TDAction.GameManager
   name: GameManager
   href: api/HnSF.Sample.TDAction.GameManager.html
@@ -4281,6 +4300,12 @@ references:
   commentId: F:HnSF.Sample.TDAction.State.ConditionFunctionEnum.BOOLEAN
   fullName: HnSF.Sample.TDAction.State.ConditionFunctionEnum.BOOLEAN
   nameWithType: ConditionFunctionEnum.BOOLEAN
+- uid: HnSF.Sample.TDAction.State.ConditionFunctionEnum.GROUND_STATE
+  name: GROUND_STATE
+  href: api/HnSF.Sample.TDAction.State.ConditionFunctionEnum.html#HnSF_Sample_TDAction_State_ConditionFunctionEnum_GROUND_STATE
+  commentId: F:HnSF.Sample.TDAction.State.ConditionFunctionEnum.GROUND_STATE
+  fullName: HnSF.Sample.TDAction.State.ConditionFunctionEnum.GROUND_STATE
+  nameWithType: ConditionFunctionEnum.GROUND_STATE
 - uid: HnSF.Sample.TDAction.State.ConditionFunctionEnum.MOVEMENT_MAGNITUDE
   name: MOVEMENT_MAGNITUDE
   href: api/HnSF.Sample.TDAction.State.ConditionFunctionEnum.html#HnSF_Sample_TDAction_State_ConditionFunctionEnum_MOVEMENT_MAGNITUDE
@@ -4293,6 +4318,31 @@ references:
   commentId: F:HnSF.Sample.TDAction.State.ConditionFunctionEnum.NONE
   fullName: HnSF.Sample.TDAction.State.ConditionFunctionEnum.NONE
   nameWithType: ConditionFunctionEnum.NONE
+- uid: HnSF.Sample.TDAction.State.ConditionGroundState
+  name: ConditionGroundState
+  href: api/HnSF.Sample.TDAction.State.ConditionGroundState.html
+  commentId: T:HnSF.Sample.TDAction.State.ConditionGroundState
+  fullName: HnSF.Sample.TDAction.State.ConditionGroundState
+  nameWithType: ConditionGroundState
+- uid: HnSF.Sample.TDAction.State.ConditionGroundState.FunctionMap
+  name: FunctionMap
+  href: api/HnSF.Sample.TDAction.State.ConditionGroundState.html#HnSF_Sample_TDAction_State_ConditionGroundState_FunctionMap
+  commentId: P:HnSF.Sample.TDAction.State.ConditionGroundState.FunctionMap
+  fullName: HnSF.Sample.TDAction.State.ConditionGroundState.FunctionMap
+  nameWithType: ConditionGroundState.FunctionMap
+- uid: HnSF.Sample.TDAction.State.ConditionGroundState.FunctionMap*
+  name: FunctionMap
+  href: api/HnSF.Sample.TDAction.State.ConditionGroundState.html#HnSF_Sample_TDAction_State_ConditionGroundState_FunctionMap_
+  commentId: Overload:HnSF.Sample.TDAction.State.ConditionGroundState.FunctionMap
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.ConditionGroundState.FunctionMap
+  nameWithType: ConditionGroundState.FunctionMap
+- uid: HnSF.Sample.TDAction.State.ConditionGroundState.inverse
+  name: inverse
+  href: api/HnSF.Sample.TDAction.State.ConditionGroundState.html#HnSF_Sample_TDAction_State_ConditionGroundState_inverse
+  commentId: F:HnSF.Sample.TDAction.State.ConditionGroundState.inverse
+  fullName: HnSF.Sample.TDAction.State.ConditionGroundState.inverse
+  nameWithType: ConditionGroundState.inverse
 - uid: HnSF.Sample.TDAction.State.ConditionMovementMagnitude
   name: ConditionMovementMagnitude
   href: api/HnSF.Sample.TDAction.State.ConditionMovementMagnitude.html
@@ -4455,6 +4505,18 @@ references:
   commentId: F:HnSF.Sample.TDAction.State.VarApplyGravity.maxFallSpeed
   fullName: HnSF.Sample.TDAction.State.VarApplyGravity.maxFallSpeed
   nameWithType: VarApplyGravity.maxFallSpeed
+- uid: HnSF.Sample.TDAction.State.VarApplyGravity.useGravityStat
+  name: useGravityStat
+  href: api/HnSF.Sample.TDAction.State.VarApplyGravity.html#HnSF_Sample_TDAction_State_VarApplyGravity_useGravityStat
+  commentId: F:HnSF.Sample.TDAction.State.VarApplyGravity.useGravityStat
+  fullName: HnSF.Sample.TDAction.State.VarApplyGravity.useGravityStat
+  nameWithType: VarApplyGravity.useGravityStat
+- uid: HnSF.Sample.TDAction.State.VarApplyGravity.useMaxFallSpeedStat
+  name: useMaxFallSpeedStat
+  href: api/HnSF.Sample.TDAction.State.VarApplyGravity.html#HnSF_Sample_TDAction_State_VarApplyGravity_useMaxFallSpeedStat
+  commentId: F:HnSF.Sample.TDAction.State.VarApplyGravity.useMaxFallSpeedStat
+  fullName: HnSF.Sample.TDAction.State.VarApplyGravity.useMaxFallSpeedStat
+  nameWithType: VarApplyGravity.useMaxFallSpeedStat
 - uid: HnSF.Sample.TDAction.StateFunctionMapper
   name: StateFunctionMapper
   href: api/HnSF.Sample.TDAction.StateFunctionMapper.html

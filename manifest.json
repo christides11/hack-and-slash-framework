@@ -472,7 +472,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Fighters.IFighterStateManager.html",
-          "hash": "dWLe4/6RXz2DvXE7rzNAOhrccmzNiE2Qqhgnwp/pYVY="
+          "hash": "sZQP8kAbE5ZFFL9cky/iJ4c6xcv2SxvJgrZ46PNonfM="
         }
       },
       "is_incremental": false,
@@ -580,7 +580,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Input.InputSequence.html",
-          "hash": "o1AkS/lz64Tk1p0hP2749x7fLzofrP0+SP/xIXqQ7Uw="
+          "hash": "vlf0SpcXuE26heCQhHyhNDXF0cA7C4FEMF7+X9x44c0="
         }
       },
       "is_incremental": false,
@@ -640,7 +640,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Sample.TDAction.BaseConditionFunctions.html",
-          "hash": "+fkgeYDmYd7BdWJM2t07/MN/AtcCWfm0dHgLqdoZTtw="
+          "hash": "tXdkrM3BpWDf3Kz3wQWY8ZfOFKh2yF/jt9TdJqYd/5k="
         }
       },
       "is_incremental": false,
@@ -792,6 +792,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Sample.TDAction.FighterStatManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Sample.TDAction.FighterStatManager.html",
+          "hash": "ddQIMsdx8cbDIdpHgFEb8ZDJM3dhM10XxijRpZbsNV8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/HnSF.Sample.TDAction.FighterStateEnum.yml",
       "output": {
         ".html": {
@@ -808,7 +820,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Sample.TDAction.FighterStateManager.html",
-          "hash": "m+MSAEjO4kZn89dXMUoM66zbsl1O2/pFMVXYJMj8kK0="
+          "hash": "O4OgtbbmU37MWzi+XOVxijoYaAjFlPRXlawghow2UUc="
         }
       },
       "is_incremental": false,
@@ -916,7 +928,19 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Sample.TDAction.State.ConditionFunctionEnum.html",
-          "hash": "3nn6w6mkZOMcB8Dz1vdoyfQGZx2Rkupm6UO3u+zUbWM="
+          "hash": "A4ghTtmjyyRRdHg+5Nq6gs32WY8IwpqJtOTmVIFZOsw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Sample.TDAction.State.ConditionGroundState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Sample.TDAction.State.ConditionGroundState.html",
+          "hash": "wTdMn8LSEE7scuXhinMCtEmL2BW5Gt6bPaN3l1EzQ8o="
         }
       },
       "is_incremental": false,
@@ -976,7 +1000,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Sample.TDAction.State.VarApplyGravity.html",
-          "hash": "jdY5wVEaec8Rxsy9qEsrvZOP4FlLvWiAmnWnAKUPsCY="
+          "hash": "2ryO/noOWKSmg9VLzGQ+2vvxIvCa33qq4X7UY0g/T2s="
         }
       },
       "is_incremental": false,
@@ -988,7 +1012,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Sample.TDAction.State.html",
-          "hash": "wMteuI/tSeq5DkBPY4IzrQ5ddiRoeUZKVtnYn3S29W8="
+          "hash": "EGY0qnT9ijWKcpVX4TVb1JeBDE+mfRjf4BrAFMMpc6M="
         }
       },
       "is_incremental": false,
@@ -1024,7 +1048,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Sample.TDAction.html",
-          "hash": "XfIjVpX6xPmDXLdEU2wL7Fq4MGiE1Jqb1yusyFsGC88="
+          "hash": "t0SKZLdHSC9C7DNRgJabDa+okd0gRvhDOgegReTPqHE="
         }
       },
       "is_incremental": false,
@@ -1096,7 +1120,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "KmqY04V9PAMuqbH+XfsqsupGIcMy0v1rF91MQxHjGbI="
+          "hash": "168JiKZLffL//qrxm9+wZlQ3VSbHQEZXeqepZiWWEtY="
         }
       },
       "is_incremental": false,
@@ -1217,7 +1241,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 89,
+          "total_file_count": 91,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
