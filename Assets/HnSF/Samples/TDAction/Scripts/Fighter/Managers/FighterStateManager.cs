@@ -31,11 +31,6 @@ namespace HnSF.Sample.TDAction
         [NonSerialized] public StateFunctionMapper functionMapperBase = new StateFunctionMapper(); 
         [NonSerialized] public StateConditionMapper conditionMapperBase = new StateConditionMapper();
 
-        private void Awake()
-        {
-            
-        }
-
         public void Tick()
         {
             if (markedForStateChange)
@@ -43,36 +38,40 @@ namespace HnSF.Sample.TDAction
                 ChangeState(nextState, 0, true);
             }
             if (CurrentState == 0) return;
-            ProcessState();
+            ProcessState(states[CurrentState], states[CurrentState].autoIncrement, states[CurrentState].autoLoop);
         }
-        
-        private void ProcessState()
+
+        private void ProcessState(StateTimeline state, bool onInterrupt = false, bool autoIncrement = false, bool autoLoop = false)
         {
-            for (int i = 0; i < states[CurrentState].data.Length; i++)
+            
+            while (true)
             {
-                var valid = true;
-                for (int j = 0; j < states[CurrentState].data[i].FrameRanges.Length; j++)
+                int realFrame = onInterrupt ? state.totalFrames+1 : Mathf.Clamp(CurrentStateFrame, 0, state.totalFrames);
+                foreach (var d in state.data)
                 {
-                    if (CurrentStateFrame < states[CurrentState].data[i].FrameRanges[j].x
-                        || CurrentStateFrame > states[CurrentState].data[i].FrameRanges[j].y)
+                    var valid = true;
+                    for (int j = 0; j < d.FrameRanges.Length; j++)
                     {
+                        if (!(realFrame < d.FrameRanges[j].x) &&
+                            !(realFrame > d.FrameRanges[j].y)) continue;
                         valid = false;
                         break;
                     }
+
+                    if (!valid) continue;
+                    if (!conditionMapperBase.TryCondition(d.Condition.FunctionMap, fighterManager, d.Condition)) continue;
+                    functionMapperBase.functions[d.FunctionMap](fighterManager, d);
                 }
 
-                if (!valid) continue;
-                if (!conditionMapperBase.TryCondition(states[CurrentState].data[i].Condition.FunctionMap, fighterManager, states[CurrentState].data[i].Condition)) continue;
-                functionMapperBase.functions[states[CurrentState].data[i].FunctionMap](fighterManager, states[CurrentState].data[i]);
+                if (!state.useBaseState) break;
+                state = (StateTimeline)state.baseState;
             }
 
-            if (states[CurrentState].autoIncrement)
+            if (onInterrupt != false || !autoIncrement) return;
+            IncrementFrame(1);
+            if (autoLoop && CurrentStateFrame > state.totalFrames)
             {
-                IncrementFrame(1);
-                if (states[CurrentState].autoLoop && CurrentStateFrame > states[CurrentState].totalFrames)
-                {
-                    SetFrame(1);
-                }
+                SetFrame(1);
             }
         }
 
@@ -95,7 +94,7 @@ namespace HnSF.Sample.TDAction
             if(callOnInterrupt && CurrentState != (int)FighterStateEnum.NULL)
             {
                 SetFrame(states[CurrentState].totalFrames+1);
-                ProcessState();
+                ProcessState(states[CurrentState], true);
             }
 
             CurrentStateFrame = stateFrame;
@@ -103,7 +102,7 @@ namespace HnSF.Sample.TDAction
             if(CurrentStateFrame == 0)
             {
                 SetFrame(0);
-                ProcessState();
+                ProcessState(states[CurrentState]);
                 SetFrame(1);
             }
 
@@ -128,7 +127,7 @@ namespace HnSF.Sample.TDAction
 
         public void SetMoveset(int movesetIndex)
         {
-            throw new NotImplementedException();
+            CurrentStateMoveset = movesetIndex;
         }
 
         public void SetFrame(int frame)
