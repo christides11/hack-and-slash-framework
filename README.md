@@ -1,5 +1,5 @@
-![docs](https://github.com/christides11/hack-n-slash-framework/workflows/Documentation/badge.svg)
-[![release](https://img.shields.io/github/release/christides11/hack-n-slash-framework.svg)](https://github.com/christides11/hack-n-slash-framework/releases)
+[![docs](https://github.com/christides11/hack-n-slash-framework/workflows/Documentation/badge.svg)](https://christides11.github.io/hack-and-slash-framework/)
+[![release](https://img.shields.io/github/release/christides11/hack-n-slash-framework.svg)](https://github.com/christides11/hack-and-slash-framework/releases)
 [![roadmap](https://img.shields.io/badge/roadmap-blue.svg)](https://trello.com/b/Zr16X01b/hnsf)
 
 ## Hack and Slash Framework
@@ -12,7 +12,7 @@ The current roadmap can be viewed [here](https://trello.com/b/Zr16X01b/hnsf).
 
 ## Getting Started
 
-To get started, follow the guide [here](https://christides11.github.io/hack-n-slash-framework/guides/index.html). 
+To get started, follow the guide [here](https://christides11.github.io/hack-and-slash-framework/guides/index.html). 
 This guide will walk you through installing the framework all the way to having a functional game running.
 
 ## Examples
