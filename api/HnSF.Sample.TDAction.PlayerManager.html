@@ -5,12 +5,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class FighterStateAsset
+    <title>Class PlayerManager
    | Hack and Slash Framework Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class FighterStateAsset
+    <meta name="title" content="Class PlayerManager
    | Hack and Slash Framework Documentation ">
-    <meta name="generator" content="docfx 2.59.0.0">
+    <meta name="generator" content="docfx 2.59.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -78,45 +78,44 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="HnSF.FighterStateAsset">
+            <article class="content wrap" id="_content" data-uid="HnSF.Sample.TDAction.PlayerManager">
   
   
-  <h1 id="HnSF_FighterStateAsset" data-uid="HnSF.FighterStateAsset" class="text-break">Class FighterStateAsset
+  <h1 id="HnSF_Sample_TDAction_PlayerManager" data-uid="HnSF.Sample.TDAction.PlayerManager" class="text-break">Class PlayerManager
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">FighterStateAsset</span></div>
-      <div class="level2"><a class="xref" href="HnSF.Sample.TDAction.ChangeStateAsset.html">ChangeStateAsset</a></div>
-      <div class="level2"><a class="xref" href="HnSF.Sample.TDAction.FighterForceAsset.html">FighterForceAsset</a></div>
-      <div class="level2"><a class="xref" href="HnSF.Sample.TDAction.GotoFrameAsset.html">GotoFrameAsset</a></div>
-      <div class="level2"><a class="xref" href="HnSF.Sample.TDAction.IncrementFrameAsset.html">IncrementFrameAsset</a></div>
+    <div class="level1"><span class="xref">SimulationBehaviour</span></div>
+    <div class="level2"><span class="xref">PlayerManager</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="HnSF.html">HnSF</a></h6>
-  <h6><strong>Assembly</strong>: HnSF.dll</h6>
-  <h5 id="HnSF_FighterStateAsset_syntax">Syntax</h5>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="HnSF.Sample.TDAction.ISimulationObject.html">ISimulationObject</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HnSF.Sample.TDAction.html">HnSF.Sample.TDAction</a></h6>
+  <h6><strong>Assembly</strong>: HnSF.TDAction.dll</h6>
+  <h5 id="HnSF_Sample_TDAction_PlayerManager_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Serializable]
-public class FighterStateAsset : PlayableAsset</code></pre>
+    <pre><code class="lang-csharp hljs">public class PlayerManager : SimulationBehaviour, ISimulationObject</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_FighterStateAsset_clipPassthrough.md&amp;value=---%0Auid%3A%20HnSF.FighterStateAsset.clipPassthrough%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_PlayerManager_movement.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.PlayerManager.movement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/FighterStateAsset.cs/#L16">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/Managers/PlayerManager.cs/#L12">View Source</a>
   </span>
-  <h4 id="HnSF_FighterStateAsset_clipPassthrough" data-uid="HnSF.FighterStateAsset.clipPassthrough">clipPassthrough</h4>
+  <h4 id="HnSF_Sample_TDAction_PlayerManager_movement" data-uid="HnSF.Sample.TDAction.PlayerManager.movement">movement</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NonSerialized]
-public TimelineClip clipPassthrough</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector2 movement</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -128,29 +127,26 @@ public TimelineClip clipPassthrough</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimelineClip</span></td>
+        <td><span class="xref">Vector2</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="properties">Properties
-  </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_FighterStateAsset_clipCaps.md&amp;value=---%0Auid%3A%20HnSF.FighterStateAsset.clipCaps%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_PlayerManager_player.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.PlayerManager.player%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/FighterStateAsset.cs/#L11">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/Managers/PlayerManager.cs/#L14">View Source</a>
   </span>
-  <a id="HnSF_FighterStateAsset_clipCaps_" data-uid="HnSF.FighterStateAsset.clipCaps*"></a>
-  <h4 id="HnSF_FighterStateAsset_clipCaps" data-uid="HnSF.FighterStateAsset.clipCaps">clipCaps</h4>
+  <h4 id="HnSF_Sample_TDAction_PlayerManager_player" data-uid="HnSF.Sample.TDAction.PlayerManager.player">player</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ClipCaps clipCaps { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public FighterManager player</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -160,7 +156,36 @@ public TimelineClip clipPassthrough</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ClipCaps</span></td>
+        <td><a class="xref" href="HnSF.Sample.TDAction.FighterManager.html">FighterManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_PlayerManager_playerInput.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.PlayerManager.playerInput%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/Managers/PlayerManager.cs/#L10">View Source</a>
+  </span>
+  <h4 id="HnSF_Sample_TDAction_PlayerManager_playerInput" data-uid="HnSF.Sample.TDAction.PlayerManager.playerInput">playerInput</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerInput playerInput</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlayerInput</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -169,56 +194,25 @@ public TimelineClip clipPassthrough</code></pre>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_FighterStateAsset_CreatePlayable_PlayableGraph_GameObject_.md&amp;value=---%0Auid%3A%20HnSF.FighterStateAsset.CreatePlayable(PlayableGraph%2CGameObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_PlayerManager_SimUpdate.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.PlayerManager.SimUpdate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/FighterStateAsset.cs/#L18">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/Managers/PlayerManager.cs/#L17">View Source</a>
   </span>
-  <a id="HnSF_FighterStateAsset_CreatePlayable_" data-uid="HnSF.FighterStateAsset.CreatePlayable*"></a>
-  <h4 id="HnSF_FighterStateAsset_CreatePlayable_PlayableGraph_GameObject_" data-uid="HnSF.FighterStateAsset.CreatePlayable(PlayableGraph,GameObject)">CreatePlayable(PlayableGraph, GameObject)</h4>
+  <a id="HnSF_Sample_TDAction_PlayerManager_SimUpdate_" data-uid="HnSF.Sample.TDAction.PlayerManager.SimUpdate*"></a>
+  <h4 id="HnSF_Sample_TDAction_PlayerManager_SimUpdate" data-uid="HnSF.Sample.TDAction.PlayerManager.SimUpdate">SimUpdate()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Playable CreatePlayable(PlayableGraph graph, GameObject owner)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void SimUpdate()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">PlayableGraph</span></td>
-        <td><span class="parametername">graph</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">GameObject</span></td>
-        <td><span class="parametername">owner</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Playable</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">SimulationBehaviour.SimUpdate()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="HnSF.Sample.TDAction.ISimulationObject.html">ISimulationObject</a>
+  </div>
 </article>
           </div>
           
@@ -227,10 +221,10 @@ public TimelineClip clipPassthrough</code></pre>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_FighterStateAsset.md&amp;value=---%0Auid%3A%20HnSF.FighterStateAsset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_PlayerManager.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.PlayerManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/FighterStateAsset.cs/#L8" class="contribution-link">View Source</a>
+                    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/Managers/PlayerManager.cs/#L8" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

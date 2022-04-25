@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ADVManager
    | Hack and Slash Framework Documentation ">
-    <meta name="generator" content="docfx 2.59.0.0">
+    <meta name="generator" content="docfx 2.59.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -109,10 +109,16 @@
       <a class="xref" href="HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_PhysicsManager">FighterManager.PhysicsManager</a>
     </div>
     <div>
-      <a class="xref" href="HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_inputManager">FighterManager.inputManager</a>
+      <a class="xref" href="HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_InputManager">FighterManager.InputManager</a>
+    </div>
+    <div>
+      <a class="xref" href="HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_definition">FighterManager.definition</a>
     </div>
     <div>
       <a class="xref" href="HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_visual">FighterManager.visual</a>
+    </div>
+    <div>
+      <a class="xref" href="HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_Awake">FighterManager.Awake()</a>
     </div>
     <div>
       <a class="xref" href="HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_ResetPreview">FighterManager.ResetPreview()</a>
@@ -125,61 +131,30 @@
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="HnSF.Sample.TDAction.html">HnSF.Sample.TDAction</a></h6>
-  <h6><strong>Assembly</strong>: HnSF.dll</h6>
+  <h6><strong>Assembly</strong>: HnSF.TDAction.dll</h6>
   <h5 id="HnSF_Sample_TDAction_ADVManager_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class ADVManager : FighterManager, ISimulationObject, IFighterBase</code></pre>
   </div>
-  <h3 id="fields">Fields
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_ADVManager_coreStates.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.ADVManager.coreStates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Fighters/ADV/Scripts/ADVManager.cs/#L10">View Source</a>
-  </span>
-  <h4 id="HnSF_Sample_TDAction_ADVManager_coreStates" data-uid="HnSF.Sample.TDAction.ADVManager.coreStates">coreStates</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EnumStateBinding[] coreStates</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="HnSF.Sample.TDAction.EnumStateBinding.html">EnumStateBinding</a>[]</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_ADVManager_SimAwake.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.ADVManager.SimAwake%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_ADVManager_Start.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.ADVManager.Start%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Fighters/ADV/Scripts/ADVManager.cs/#L12">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Fighters/ADV/Scripts/ADVManager.cs/#L10">View Source</a>
   </span>
-  <a id="HnSF_Sample_TDAction_ADVManager_SimAwake_" data-uid="HnSF.Sample.TDAction.ADVManager.SimAwake*"></a>
-  <h4 id="HnSF_Sample_TDAction_ADVManager_SimAwake" data-uid="HnSF.Sample.TDAction.ADVManager.SimAwake">SimAwake()</h4>
+  <a id="HnSF_Sample_TDAction_ADVManager_Start_" data-uid="HnSF.Sample.TDAction.ADVManager.Start*"></a>
+  <h4 id="HnSF_Sample_TDAction_ADVManager_Start" data-uid="HnSF.Sample.TDAction.ADVManager.Start">Start()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void SimAwake()</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Start()</code></pre>
   </div>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">SimulationBehaviour.SimAwake()</span></div>
+  <div><a class="xref" href="HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_Start">FighterManager.Start()</a></div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="HnSF.Sample.TDAction.ISimulationObject.html">ISimulationObject</a>
