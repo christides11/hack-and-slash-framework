@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3145a373833e2834aa79bff1cd77f924, type: 3}
-  m_Name: ADVDefinition
+  m_Script: {fileID: 11500000, guid: d21c1aad0b050cd49af47675fe1fbdf6, type: 3}
+  m_Name: ADV.Moveset.Fist
   m_EditorClassIdentifier: 
-  movesets:
-  - {fileID: 11400000, guid: c95facab2779787409040bad17bfecba, type: 2}
-  - {fileID: 11400000, guid: e0f15746a41355d4cbeb917841e19cc0, type: 2}
+  states: []
+  references:
+    version: 2
+    RefIds: []

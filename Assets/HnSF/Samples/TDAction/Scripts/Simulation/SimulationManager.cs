@@ -4,10 +4,12 @@ using UnityEngine;
 
 namespace HnSF.Sample.TDAction
 {
+    [System.Serializable]
     public class SimulationManager
     {
         public float TickRate { get; } = 1.0f / 60.0f;
-        public uint Tick { get; protected set; } = 0;
+        [field: SerializeField]
+        public int Tick { get; protected set; } = 0;
         
         public List<ISimulationObject> simObjects = new List<ISimulationObject>();
         public GameManager gameManager;

@@ -12,11 +12,11 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{8e1e2749-8817-c26e-66a7-b41b6050580c}</ProjectGuid>
+    <ProjectGuid>{bb6bc09c-d744-7528-775d-1d8f2f162357}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>HnSF.TDAction</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -25,7 +25,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>Temp\Bin\Debug\Assembly-CSharp\</OutputPath>
+    <OutputPath>Temp\Bin\Debug\HnSF.TDAction\</OutputPath>
     <DefineConstants>UNITY_2021_3_0;UNITY_2021_3;UNITY_2021;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;USE_SEARCH_TABLE;USE_SEARCH_MODULE;USE_PROPERTY_DATABASE;USE_SEARCH_EXTENSION_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_4_6;NET_UNITY_4_8;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -41,7 +41,38 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\EditorIcons.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\CharacterController2D.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\MovesetDefinition.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Simulation\SimulationManager.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\Functions\BaseStateFunctionEnum.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Input\PlayerInputData.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Fighters\ADV\Scripts\ADVEnumStateBinding.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\Variables\ChangeState.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\Managers\FighterPhysicsManager.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Simulation\ISimulationObject.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\Functions\BaseStateFunctions.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Simulation\SimulationBehaviour.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Managers\GameManager.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\Managers\FighterManager.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Managers\BootLoader.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\Managers\FighterInputManager.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\StateConditionMapper.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\EnumStateBinding.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\Managers\FighterCombatManager.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\Conditions\BaseConditionFunctions.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\BaseStateEnum.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Managers\PlayerManager.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Input\InputButtonData.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\Managers\FighterStateManager.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\FighterDefinition.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\Conditions\BaseConditionFunctionEnum.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\StateFunctionMapper.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\FighterStateEnum.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Fighters\ADV\Scripts\ADVManager.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\BaseStateReference.cs" />
+     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\StateTimeline.cs" />
+     <None Include="Assets\HnSF\Samples\TDAction\Textures\Kauzz Forest Tiles\Read me.txt" />
+     <None Include="Assets\HnSF\Samples\TDAction\HnSF.TDAction.asmdef" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\2021.3.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
@@ -284,6 +315,12 @@
      </Reference>
      <Reference Include="UnityEditor.UnityConnectModule">
      <HintPath>C:\Program Files\Unity\2021.3.0f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor.Graphs">
+     <HintPath>C:\Program Files\Unity\2021.3.0f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+     <HintPath>C:\Program Files\Unity\2021.3.0f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Unsafe">
      <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.Unsafe.dll</HintPath>
@@ -903,115 +940,20 @@
      <Reference Include="netstandard">
      <HintPath>C:\Program Files\Unity\2021.3.0f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\netstandard.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.2D.Tilemap.Editor">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="PPv2URPConverters">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.TextMeshPro.Editor">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="medvedya.select_implementation_property_drawer">
      <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\medvedya.select_implementation_property_drawer.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Timeline">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.TextMeshPro">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Burst.Editor">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Searcher.Editor">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="medvedya.select_implementation_property_drawer_editor">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\medvedya.select_implementation_property_drawer_editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Malee.ReorderableList.Editor">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Malee.ReorderableList.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.Sprite.Editor">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEditor.UI">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.InputSystem">
      <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Rider.Editor">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.ProGrids.Editor">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.ProGrids.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Malee.ReorderableList">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Malee.ReorderableList.dll</HintPath>
+     <Reference Include="UnityEditor.UI">
+     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.UI">
      <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Mathematics">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.ShaderGraph.Editor">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Cinemachine">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Burst">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
-     </Reference>
-     <Reference Include="com.unity.cinemachine.editor">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.RenderPipelines.Universal.Editor">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Timeline.Editor">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Mathematics.Editor">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.ProGrids">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.ProGrids.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.RenderPipelines.Core.Editor">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
-     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="HnSF.TDAction.csproj">
-      <Project>{bb6bc09c-d744-7528-775d-1d8f2f162357}</Project>
-      <Name>HnSF.TDAction</Name>
-    </ProjectReference>
-    <ProjectReference Include="HnSF.Editor.csproj">
-      <Project>{b03dd685-1060-5289-a6a8-18e0d09226ff}</Project>
-      <Name>HnSF.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="HnSF.csproj">
       <Project>{19762b2f-dc58-620d-4737-b881af539594}</Project>
       <Name>HnSF</Name>

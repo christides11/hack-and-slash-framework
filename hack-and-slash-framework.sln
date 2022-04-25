@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HnSF.TDAction", "HnSF.TDAction.csproj", "{bb6bc09c-d744-7528-775d-1d8f2f162357}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HnSF", "HnSF.csproj", "{19762b2f-dc58-620d-4737-b881af539594}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{8e1e2749-8817-c26e-66a7-b41b6050580c}"
@@ -12,6 +14,8 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{bb6bc09c-d744-7528-775d-1d8f2f162357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{bb6bc09c-d744-7528-775d-1d8f2f162357}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19762b2f-dc58-620d-4737-b881af539594}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{19762b2f-dc58-620d-4737-b881af539594}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8e1e2749-8817-c26e-66a7-b41b6050580c}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

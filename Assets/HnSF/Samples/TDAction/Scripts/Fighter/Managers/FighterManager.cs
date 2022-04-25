@@ -20,9 +20,9 @@ namespace HnSF.Sample.TDAction
             get { return _physicsManager; }
         }
         
-        public FighterInputManager inputManager
+        public FighterInputManager InputManager
         {
-            get { return inputManager; }
+            get { return _inputManager; }
         }
 
         [SerializeField] private FighterStateManager _stateManager;

@@ -11,4 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/HnSF/~Samples/TDAction/Scenes/PlayScene.unity
     guid: d31e3f5a1ca3df845a6ae3ff3cef03da
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 51df9e867a5f5ac44b310f7779783fdf,
+      type: 2}
