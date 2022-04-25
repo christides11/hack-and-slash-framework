@@ -22,14 +22,16 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
     - rid: 1423070993831428096
       type: {class: VarApplyGravity, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
       data:
         frameRanges:
         - {x: 1, y: 10}
         condition:
-          rid: -2
+          rid: 1423070994641453056
+        useMaxFallSpeedStat: 0
+        useGravityStat: 0
         maxFallSpeed: 0
         gravity: 0
+    - rid: 1423070994641453056
+      type: {class: ConditionNone, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
