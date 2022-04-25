@@ -5,6 +5,7 @@ namespace HnSF
 {
     public class StateTimeline : ScriptableObject
     {
+        public bool useBaseState = false;
         public StateTimeline baseState;
         public int totalFrames = 10;
         public bool autoIncrement = true;
