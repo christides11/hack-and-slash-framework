@@ -1,3 +1,15 @@
+# [35.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v34.0.0...v35.0.0) (2022-04-25)
+
+
+### Code Refactoring
+
+* Better moveset state change handling ([1904fad](https://github.com/christides11/hack-and-slash-framework/commit/1904fadf309f5a7d8bffd4a9682f85c553dc2b19))
+
+
+### BREAKING CHANGES
+
+* Settings moveset is optional for changing state.
+
 # [34.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v33.0.0...v34.0.0) (2022-04-25)
 
 
