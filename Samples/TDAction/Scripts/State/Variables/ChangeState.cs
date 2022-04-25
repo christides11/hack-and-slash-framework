@@ -6,6 +6,7 @@ namespace HnSF.Sample.TDAction.State
     {
         public int FunctionMap => (int)StateFunctionEnum.CHANGE_STATE;
         public IConditionVariables Condition => condition;
+        public IStateVariables[] Children => children;
         public Vector2[] FrameRanges
         {
             get => frameRanges;
@@ -18,5 +19,7 @@ namespace HnSF.Sample.TDAction.State
 
         public int stateMovesetID;
         public int stateID;
+        [SelectImplementation(typeof(IConditionVariables))] [SerializeField, SerializeReference] 
+        private IStateVariables[] children;
     }
 }
