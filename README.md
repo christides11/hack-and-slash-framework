@@ -1,14 +1,14 @@
 ![docs](https://github.com/christides11/hack-n-slash-framework/workflows/Documentation/badge.svg)
 [![release](https://img.shields.io/github/release/christides11/hack-n-slash-framework.svg)](https://github.com/christides11/hack-n-slash-framework/releases)
-[![roadmap](https://img.shields.io/badge/roadmap-blue.svg)](https://open.codecks.io/christides11-hns-framework)
+[![roadmap](https://img.shields.io/badge/roadmap-blue.svg)](https://trello.com/b/Zr16X01b/hnsf)
 
 ## Hack and Slash Framework
 
 **Hack and Slash Framework** (or HnSF) is a Unity framework designed for making hack and slash games.
 
-## Roadmap
-HnSF is currently in **pre-alpha**, expect things to change constantly and for code to break.
-The current roadmap/project board can be viewed [here](https://open.codecks.io/christides11-hns-framework).
+## Current Status: Pre-Alpha
+HnSF iis not stable currently, so expect things to change and break.
+The current roadmap can be viewed [here](https://trello.com/b/Zr16X01b/hnsf).
 
 ## Getting Started
 
@@ -18,8 +18,7 @@ This guide will walk you through installing the framework all the way to having 
 ## Examples
 
 * 2D Action Example (included in Samples folder)
-* [Touhou Unlimited Fantasies](https://github.com/christides11/touhou-unlimited-fantasies)
-* [Mahou](https://github.com/christides11/Mahou)
+* [RWBY Fan Game](https://github.com/christides11/rwby)
 
 ## Contributing
 
