@@ -7,7 +7,7 @@
 **Hack and Slash Framework** (or HnSF) is a Unity framework designed for making hack and slash games.
 
 ## Current Status: Pre-Alpha
-HnSF iis not stable currently, so expect things to change and break.
+HnSF is not stable currently, so expect things to change and break.
 The current roadmap can be viewed [here](https://trello.com/b/Zr16X01b/hnsf).
 
 ## Getting Started
