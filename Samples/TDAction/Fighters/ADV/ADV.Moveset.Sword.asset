@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d21c1aad0b050cd49af47675fe1fbdf6, type: 3}
-  m_Name: ADVMoveset
+  m_Name: ADV.Moveset.Sword
   m_EditorClassIdentifier: 
   states:
   - state:
-      rid: 1423070975590137858
+      rid: 1423070979367895040
     stateTimeline: {fileID: 11400000, guid: 0ce685a764a7b84468d9883fa0fbe4c0, type: 2}
   references:
     version: 2
     RefIds:
-    - rid: 1423070975590137858
-      type: {class: BaseStateReference, ns: HnSF.Sample.TDAction, asm: HnSF}
+    - rid: 1423070979367895040
+      type: {class: BaseStateReference, ns: HnSF.Sample.TDAction, asm: HnSF.TDAction}
       data:
         state: 1

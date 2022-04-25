@@ -17,6 +17,7 @@ namespace HnSF.Sample.TDAction
 
         public void FeedInput(int frame, PlayerInputData inputData)
         {
+            if(frame == 0) return;
             movement[frame % inputCapacity] = inputData.movement;
             lightAtk[frame % inputCapacity] = new InputButtonData(inputData.lightAtk, lightAtk[(frame-1) % inputCapacity]);
             jump[frame % inputCapacity] = new InputButtonData(inputData.jump, jump[(frame-1) % inputCapacity]);
