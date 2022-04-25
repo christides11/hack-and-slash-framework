@@ -1,3 +1,23 @@
+# [34.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v33.0.0...v34.0.0) (2022-04-25)
+
+
+### Bug Fixes
+
+* Removed timeline assembly reference ([d034a07](https://github.com/christides11/hack-and-slash-framework/commit/d034a07496fd1ee9cd3dae34f86a50cf241869a4))
+
+
+### Features
+
+* Added function MarkForStateChange. ([d69ac71](https://github.com/christides11/hack-and-slash-framework/commit/d69ac71ff2651398ba4ee72f6ff63a43b84f422d))
+* Added IStateVariables to StateTimeline. ([2e7316a](https://github.com/christides11/hack-and-slash-framework/commit/2e7316a5416f138243e03bb44a5afb1a47cb8860))
+* Added state & condition variables ([95e3c9b](https://github.com/christides11/hack-and-slash-framework/commit/95e3c9bca3aab6dcc46a220dc6cc47164d1d08c3))
+* Added useBaseState to StateTimeline ([244add5](https://github.com/christides11/hack-and-slash-framework/commit/244add5faaf1c21a707b18db487d59df9c28d241))
+* IncrementFrame amount parameter. ([615b961](https://github.com/christides11/hack-and-slash-framework/commit/615b961d2e916deabba11ea945fde762df2e0c1e))
+* MarkForStateChange moveset arg. ([5b2db98](https://github.com/christides11/hack-and-slash-framework/commit/5b2db98d7f996a5813dc155bffa17cbd71a0a5be))
+* MovesetDefinition init function. ([a40d31b](https://github.com/christides11/hack-and-slash-framework/commit/a40d31b92b8eb70c238edb4d602e4cec30e54dde))
+* State Condition & Function Mapper. ([0619794](https://github.com/christides11/hack-and-slash-framework/commit/0619794856441f9ba217185ae578d48262b1f5ed))
+* Upgraded to 2021.3.0 ([be25609](https://github.com/christides11/hack-and-slash-framework/commit/be2560931c09f6ce1a61d3ea75f2983523783a72))
+
 # [33.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v32.0.0...v33.0.0) (2022-03-18)
 
 
