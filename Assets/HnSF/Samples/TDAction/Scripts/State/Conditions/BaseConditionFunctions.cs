@@ -20,5 +20,14 @@ namespace HnSF.Sample.TDAction
             bool r = vars.inverse ? movement.sqrMagnitude < vars.sqrMagnitude : movement.sqrMagnitude > vars.sqrMagnitude;
             return r;
         }
+
+        public static bool GroundedState(IFighterBase fighter, IConditionVariables variables)
+        {
+            ConditionGroundState vars = (ConditionGroundState)variables;
+
+            bool r = fighter.PhysicsManager.IsGrounded;
+            if (vars.inverse) r = !r;
+            return r;
+        }
     }
 }

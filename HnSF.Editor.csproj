@@ -918,12 +918,6 @@
      <Reference Include="netstandard">
      <HintPath>C:\Program Files\Unity\2021.3.0f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\netstandard.dll</HintPath>
      </Reference>
-     <Reference Include="Malee.ReorderableList.Editor">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Malee.ReorderableList.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Malee.ReorderableList">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Malee.ReorderableList.dll</HintPath>
-     </Reference>
      <Reference Include="UnityEditor.UI">
      <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
      </Reference>

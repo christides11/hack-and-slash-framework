@@ -1,12 +1,5 @@
 {
   "dependencies": {
-    "com.malee.reorderablelist": {
-      "version": "https://github.com/cfoulston/Unity-Reorderable-List.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "ac1f508240fb752b1f9d7c222c231d7f2a33df87"
-    },
     "com.medvedya.select_implementation_property_drawer": {
       "version": "https://github.com/medvedya/Select-implementation-property-drawer.git",
       "depth": 0,

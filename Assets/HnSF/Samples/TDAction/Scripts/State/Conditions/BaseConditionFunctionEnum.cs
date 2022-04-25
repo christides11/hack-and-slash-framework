@@ -4,6 +4,7 @@ namespace HnSF.Sample.TDAction.State
     {
         NONE = 0,
         BOOLEAN,
-        MOVEMENT_MAGNITUDE
+        MOVEMENT_MAGNITUDE,
+        GROUND_STATE
     }
 }

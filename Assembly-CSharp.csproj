@@ -930,9 +930,6 @@
      <Reference Include="medvedya.select_implementation_property_drawer_editor">
      <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\medvedya.select_implementation_property_drawer_editor.dll</HintPath>
      </Reference>
-     <Reference Include="Malee.ReorderableList.Editor">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Malee.ReorderableList.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.2D.Sprite.Editor">
      <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
      </Reference>
@@ -953,9 +950,6 @@
      </Reference>
      <Reference Include="UnityEngine.UI">
      <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-     </Reference>
-     <Reference Include="Malee.ReorderableList">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Malee.ReorderableList.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Mathematics">
      <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>

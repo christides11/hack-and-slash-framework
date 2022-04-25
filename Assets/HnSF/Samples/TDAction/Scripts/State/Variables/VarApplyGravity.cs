@@ -16,6 +16,8 @@ namespace HnSF.Sample.TDAction.State
         [SelectImplementation(typeof(IConditionVariables))] [SerializeField, SerializeReference] 
         public IConditionVariables condition;
 
+        public bool useMaxFallSpeedStat;
+        public bool useGravityStat;
         public float maxFallSpeed;
         public float gravity;
     }

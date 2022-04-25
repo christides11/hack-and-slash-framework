@@ -23,6 +23,7 @@ namespace HnSF.Sample.TDAction
         public int CurrentStateFrame { get; protected set; } = 0;
 
         private bool markedForStateChange = false;
+        private int nextMoveset = -1;
         private int nextState = 0;
         public FighterManager fighterManager;
 
@@ -33,7 +34,7 @@ namespace HnSF.Sample.TDAction
         {
             if (markedForStateChange)
             {
-                ChangeState(nextState, 0, true);
+                ChangeState(state: nextState, moveset: nextMoveset, stateFrame: 0, callOnInterrupt: true);
             }
             if (CurrentState == 0) return;
             var stateTimeline = GetState();
@@ -74,9 +75,10 @@ namespace HnSF.Sample.TDAction
             }
         }
 
-        public void MarkForStateChange(int moveset, int nextState)
+        public void MarkForStateChange(int nextState, int moveset = -1)
         {
             markedForStateChange = true;
+            this.nextMoveset = moveset == -1 ? CurrentStateMoveset : moveset;
             this.nextState = nextState;
         }
 
@@ -85,7 +87,7 @@ namespace HnSF.Sample.TDAction
             return fighterManager.definition.movesets[index];
         }
 
-        public bool ChangeState(int state, int stateFrame = 0, bool callOnInterrupt = true)
+        public bool ChangeState(int state, int moveset = -1, int stateFrame = 0, bool callOnInterrupt = true)
         {
             markedForStateChange = false;
             
@@ -97,6 +99,7 @@ namespace HnSF.Sample.TDAction
             }
 
             CurrentStateFrame = stateFrame;
+            CurrentStateMoveset = moveset == -1 ? CurrentStateMoveset : moveset;
             CurrentState = state;
             if(CurrentStateFrame == 0)
             {
@@ -129,9 +132,9 @@ namespace HnSF.Sample.TDAction
             return fighterManager.definition.movesets[moveset].stateMap[state];
         }
 
-        public void SetMoveset(int movesetIndex)
+        public void SetMoveset(int index)
         {
-            CurrentStateMoveset = movesetIndex;
+            CurrentStateMoveset = index;
         }
 
         public void SetFrame(int frame)
