@@ -5,6 +5,7 @@ namespace HnSF.Sample.TDAction.State
         public StateConditionMapper()
         {
             functions.Add((int)ConditionFunctionEnum.NONE, BaseConditionFunctions.NoCondition);
+            functions.Add((int)ConditionFunctionEnum.MOVEMENT_MAGNITUDE, BaseConditionFunctions.MovementSqrMagnitude);
         }
     }
 }

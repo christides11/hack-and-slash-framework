@@ -7,8 +7,9 @@ namespace HnSF.Sample.TDAction
 {
     public class ADVManager : FighterManager
     {
-        private void Start()
+        public override void Start()
         {
+            base.Start();
             StateManager.ChangeState((int)BaseStateEnum.IDLE);
         }
     }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using HnSF.Fighters;
@@ -33,6 +34,19 @@ namespace HnSF.Sample.TDAction
         public FighterDefinition definition;
         public SpriteRenderer visual;
 
+        public void Awake()
+        {
+            foreach (MovesetDefinition md in definition.movesets)
+            {
+                md.Initialize();
+            }
+        }
+
+        public virtual void Start()
+        {
+            
+        }
+        
         public virtual void ResetPreview()
         {
             transform.position = Vector3.zero;

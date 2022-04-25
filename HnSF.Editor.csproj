@@ -42,11 +42,11 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\HnSF\Editor\HitInfoBasePropertyDrawer.cs" />
-     <Compile Include="Assets\HnSF\Editor\StateTimelineEditor.cs" />
      <Compile Include="Assets\HnSF\Editor\InputDefinitionDrawer.cs" />
      <Compile Include="Assets\HnSF\Editor\BoxDefinitionPropertyDrawer.cs" />
      <Compile Include="Assets\HnSF\Editor\HurtboxGroupPropertyDrawer.cs" />
      <Compile Include="Assets\HnSF\Editor\HitInfoPropertyDrawer.cs" />
+     <Compile Include="Assets\HnSF\Editor\StateTimelineEditor.cs" />
      <None Include="Assets\HnSF\Editor\HnSF.Editor.asmdef" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\2021.3.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
@@ -314,9 +314,6 @@
      </Reference>
      <Reference Include="Unity.Burst.Cecil.Rocks">
      <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
-     </Reference>
-     <Reference Include="clipper_library">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\PackageCache\com.unity.cinemachine@2.8.4\Runtime\ThirdParty\clipper_library.dll</HintPath>
      </Reference>
      <Reference Include="nunit.framework">
      <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -926,12 +923,6 @@
      </Reference>
      <Reference Include="Malee.ReorderableList">
      <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Malee.ReorderableList.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Timeline">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Timeline.Editor">
-     <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.UI">
      <HintPath>C:\Projects\Unity\hack-and-slash-framework\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
