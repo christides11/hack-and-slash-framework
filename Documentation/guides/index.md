@@ -1,10 +1,9 @@
 # Installation
-First you should install the required assets. These are
+First you should install the required assets.
 
- - [xNode](https://github.com/Siccity/xNode)
- - [Reorderable List](https://github.com/cfoulston/Unity-Reorderable-List)
+- [Select Implementation Property Drawer](https://github.com/medvedya/Select-implementation-property-drawer)
 
-After that, install using one of the methods below.
+After that, install HnSF using one of the methods below.
 
 ## Unity Package Manager
 To install this framework with the package manager, use this URL (replacing vX.X.X with the version you want):
