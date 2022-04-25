@@ -22,8 +22,6 @@ namespace HnSF.Sample.TDAction
         [field: SerializeField]
         public int CurrentStateFrame { get; protected set; } = 0;
 
-        protected Dictionary<int, StateTimeline> states = new Dictionary<int, StateTimeline>();
-
         private bool markedForStateChange = false;
         private int nextState = 0;
         public FighterManager fighterManager;
@@ -38,7 +36,8 @@ namespace HnSF.Sample.TDAction
                 ChangeState(nextState, 0, true);
             }
             if (CurrentState == 0) return;
-            ProcessState(states[CurrentState], states[CurrentState].autoIncrement, states[CurrentState].autoLoop);
+            var stateTimeline = GetState();
+            ProcessState(stateTimeline, onInterrupt: false, autoIncrement: stateTimeline.autoIncrement, autoLoop: stateTimeline.autoLoop);
         }
 
         private void ProcessState(StateTimeline state, bool onInterrupt = false, bool autoIncrement = false, bool autoLoop = false)
@@ -89,12 +88,12 @@ namespace HnSF.Sample.TDAction
         public bool ChangeState(int state, int stateFrame = 0, bool callOnInterrupt = true)
         {
             markedForStateChange = false;
-            if (!states.ContainsKey(state)) return false;
-
+            
             if(callOnInterrupt && CurrentState != (int)FighterStateEnum.NULL)
             {
-                SetFrame(states[CurrentState].totalFrames+1);
-                ProcessState(states[CurrentState], true);
+                StateTimeline currentStateTimeline = GetState();
+                SetFrame(currentStateTimeline.totalFrames+1);
+                ProcessState(currentStateTimeline, true);
             }
 
             CurrentStateFrame = stateFrame;
@@ -102,7 +101,7 @@ namespace HnSF.Sample.TDAction
             if(CurrentStateFrame == 0)
             {
                 SetFrame(0);
-                ProcessState(states[CurrentState]);
+                ProcessState(GetState());
                 SetFrame(1);
             }
 
@@ -115,9 +114,14 @@ namespace HnSF.Sample.TDAction
             SetFrame(0);
         }
 
+        public StateTimeline GetState()
+        {
+            return (StateTimeline)fighterManager.definition.movesets[CurrentStateMoveset].stateMap[CurrentState];
+        }
+        
         public HnSF.StateTimeline GetState(int state)
         {
-            return states[state];
+            return fighterManager.definition.movesets[CurrentStateMoveset].stateMap[state];
         }
 
         public HnSF.StateTimeline GetState(int moveset, int state)

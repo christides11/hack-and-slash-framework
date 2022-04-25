@@ -7,6 +7,7 @@ namespace HnSF.Sample.TDAction
         public StateFunctionMapper()
         {
             functions.Add((int)StateFunctionEnum.CHANGE_STATE, BaseStateFunctions.ChangeState);
+            functions.Add((int)StateFunctionEnum.APPLY_GRAVITY, BaseStateFunctions.ApplyGravity);
         }
     }
 }

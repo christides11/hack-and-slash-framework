@@ -12,11 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40f66a5b733e53543bcb2daa52776331, type: 3}
   m_Name: ADV.State.Idle
   m_EditorClassIdentifier: 
+  useBaseState: 1
   baseState: {fileID: 11400000, guid: fceb6f8f850145a48874671441bdf955, type: 2}
   totalFrames: 10
   autoIncrement: 1
   autoLoop: 1
-  data: []
+  data:
+  - rid: 1423070979367895042
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 1423070979367895042
+      type: {class: VarApplyGravity, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+      data:
+        frameRanges: []
+        condition:
+          rid: 1423070979367895043
+        maxFallSpeed: -10
+        gravity: 10
+    - rid: 1423070979367895043
+      type: {class: ConditionNone, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}

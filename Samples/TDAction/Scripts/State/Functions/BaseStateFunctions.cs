@@ -15,6 +15,8 @@ namespace HnSF.Sample.TDAction
         
         public static void ApplyGravity(IFighterBase fighter, IStateVariables variables)
         {
+            State.VarApplyGravity vars = (State.VarApplyGravity)variables;
+            ((FighterPhysicsManager)fighter.PhysicsManager).ApplyGravity(vars.maxFallSpeed, vars.gravity);
         }
     }
 }
