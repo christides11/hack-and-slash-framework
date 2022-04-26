@@ -5,6 +5,7 @@ namespace HnSF.Sample.TDAction.State
         NONE = 0,
         BOOLEAN,
         MOVEMENT_MAGNITUDE,
-        GROUND_STATE
+        GROUND_STATE,
+        FALL_SPEED
     }
 }

@@ -16,7 +16,30 @@ namespace HnSF.Sample.TDAction
         public static void ApplyGravity(IFighterBase fighter, IStateVariables variables)
         {
             State.VarApplyGravity vars = (State.VarApplyGravity)variables;
-            ((FighterPhysicsManager)fighter.PhysicsManager).ApplyGravity(vars.maxFallSpeed, vars.gravity);
+            FighterManager fm = (FighterManager)fighter;
+            fm.physicsManager.ApplyGravity(vars.useMaxFallSpeedStat ? fm.statManager.maxFallSpeed : vars.maxFallSpeed, 
+                vars.useGravityStat ? fm.statManager.gravity : vars.gravity);
+        }
+
+        public static void ApplyTraction(IFighterBase fighter, IStateVariables variables)
+        {
+            State.VarApplyTraction vars = (State.VarApplyTraction)variables;
+            FighterManager fm = (FighterManager)fighter;
+            if (vars.useTractionStat)
+            {
+                fm.physicsManager.ApplyFriction(vars.aerialTraction ? fm.statManager.aerialTraction : fm.statManager.groundTraction);
+            }
+            else
+            {
+                fm.physicsManager.ApplyFriction(vars.traction);
+            }
+        }
+
+        public static void SetFallSpeed(IFighterBase fighter, IStateVariables variables)
+        {
+            State.VarSetFallSpeed vars = (State.VarSetFallSpeed)variables;
+            FighterManager fm = (FighterManager)fighter;
+            fm.physicsManager.SetFallSpeed(vars.value);
         }
     }
 }

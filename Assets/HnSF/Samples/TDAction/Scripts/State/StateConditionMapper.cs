@@ -6,6 +6,8 @@ namespace HnSF.Sample.TDAction.State
         {
             functions.Add((int)ConditionFunctionEnum.NONE, BaseConditionFunctions.NoCondition);
             functions.Add((int)ConditionFunctionEnum.MOVEMENT_MAGNITUDE, BaseConditionFunctions.MovementSqrMagnitude);
+            functions.Add((int)ConditionFunctionEnum.GROUND_STATE, BaseConditionFunctions.GroundedState);
+            functions.Add((int)ConditionFunctionEnum.FALL_SPEED, BaseConditionFunctions.FallSpeed);
         }
     }
 }

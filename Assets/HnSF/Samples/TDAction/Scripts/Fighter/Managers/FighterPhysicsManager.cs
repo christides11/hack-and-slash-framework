@@ -52,11 +52,18 @@ namespace HnSF.Sample.TDAction
             tempMovement.y = Mathf.MoveTowards(tempMovement.y, maxFallSpeed, gravity * Time.fixedDeltaTime);
             this.forceMovement = tempMovement;
         }
+
+        public virtual void SetFallSpeed(float value)
+        {
+            Vector2 tempMovement = this.forceMovement;
+            tempMovement.y = value;
+            this.forceMovement = tempMovement;
+        }
         
-        public virtual void ApplyMovementFriction(float friction = 1)
+        public virtual void ApplyFriction(float friction)
         {
             Vector2 tempMovement = forceMovement;
-            tempMovement.x = ApplyFriction(forceMovement.x, Mathf.Abs(friction));
+            tempMovement.x = Mathf.MoveTowards(tempMovement.x, 0, friction * Time.fixedDeltaTime);
             forceMovement = tempMovement;
         }
         

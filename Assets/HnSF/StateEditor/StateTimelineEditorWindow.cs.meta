@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 3ba89e9a2ed2058428156283d8004c3b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_ViewDataDictionary: {instanceID: 0}
+  - tree: {fileID: 9197481963319205126, guid: 5c2157954decf1b4881c6d19036fad28, type: 3}
+  - dataBar: {fileID: 9197481963319205126, guid: 79092aff2091fd04ca4541d28627393b,
+      type: 3}
+  - mainFrameBarBG: {fileID: 9197481963319205126, guid: 45d6bb5ddcda2ac43b07361c08461dc8,
+      type: 3}
+  - topbarFrameLabel: {fileID: 9197481963319205126, guid: c687d031daf3ae244a7903dd28d57fdc,
+      type: 3}
+  - mainFrameBarLabel: {fileID: 9197481963319205126, guid: 057608949547e824687bebb31a0b8e8a,
+      type: 3}
+  - stateTimeline: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

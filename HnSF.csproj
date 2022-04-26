@@ -84,8 +84,15 @@
      <Compile Include="Assets\HnSF\State\FighterStateReferenceBase.cs" />
      <Compile Include="Assets\HnSF\Combat\Moveset\MovesetDefinition.cs" />
      <Compile Include="Assets\HnSF\Input\InputDefinition.cs" />
+     <Compile Include="Assets\HnSF\StateEditor\StateTimelineEditorWindow.cs" />
      <None Include="Assets\HnSF\HnSF.asmdef" />
      <None Include="Assets\HnSF\package.json" />
+     <None Include="Assets\HnSF\StateEditor\main-framebar-label.uxml" />
+     <None Include="Assets\HnSF\StateEditor\main-framebar-bg.uxml" />
+     <None Include="Assets\HnSF\StateEditor\topbar-frame-label.uxml" />
+     <None Include="Assets\HnSF\StateEditor\StateTimelineStyle.uss" />
+     <None Include="Assets\HnSF\StateEditor\sidebar-data-label.uxml" />
+     <None Include="Assets\HnSF\StateEditor\StateTimelineVisualTree.uxml" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\2021.3.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>

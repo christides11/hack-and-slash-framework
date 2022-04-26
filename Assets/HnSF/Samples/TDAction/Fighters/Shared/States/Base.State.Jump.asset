@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40f66a5b733e53543bcb2daa52776331, type: 3}
-  m_Name: Base.State.Idle
+  m_Name: Base.State.Jump
   m_EditorClassIdentifier: 
   useBaseState: 0
   baseState: {fileID: 0}
@@ -18,35 +18,33 @@ MonoBehaviour:
   autoIncrement: 1
   autoLoop: 1
   data:
-  - rid: 1423070996485636097
-  - rid: 1423070996485636102
+  - rid: 1423070996485636109
+  - rid: 1423070996485636110
   references:
     version: 2
     RefIds:
-    - rid: 1423070996485636097
-      type: {class: ChangeState, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+    - rid: 1423070996485636109
+      type: {class: VarSetFallSpeed, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+      data:
+        frameRanges:
+        - {x: 0, y: 0}
+        condition:
+          rid: 1423070996485636112
+        value: 10
+        children: []
+    - rid: 1423070996485636110
+      type: {class: VarApplyGravity, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
       data:
         frameRanges:
         - {x: 1, y: 10}
         condition:
-          rid: 1423070996485636098
-        stateMovesetID: -1
-        stateID: 8
+          rid: 1423070996485636111
+        useMaxFallSpeedStat: 1
+        useGravityStat: 1
+        maxFallSpeed: 0
+        gravity: 0
         children: []
-    - rid: 1423070996485636098
-      type: {class: ConditionGroundState, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
-      data:
-        inverse: 1
-    - rid: 1423070996485636102
-      type: {class: VarApplyTraction, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
-      data:
-        frameRanges:
-        - {x: 1, y: 10}
-        condition:
-          rid: 1423070996485636103
-        useTractionStat: 1
-        aerialTraction: 0
-        traction: 0
-        children: []
-    - rid: 1423070996485636103
+    - rid: 1423070996485636111
+      type: {class: ConditionNone, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+    - rid: 1423070996485636112
       type: {class: ConditionNone, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}

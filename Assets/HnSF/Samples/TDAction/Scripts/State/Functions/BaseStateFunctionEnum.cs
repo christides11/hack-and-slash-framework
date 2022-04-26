@@ -5,6 +5,8 @@ namespace HnSF.Sample.TDAction.State
     {
         NULL = 0,
         CHANGE_STATE,
-        APPLY_GRAVITY
+        APPLY_GRAVITY,
+        APPLY_TRACTION,
+        SET_FALL_SPEED
     }
 }

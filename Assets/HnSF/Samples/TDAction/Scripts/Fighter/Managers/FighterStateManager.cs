@@ -43,24 +43,12 @@ namespace HnSF.Sample.TDAction
 
         private void ProcessState(StateTimeline state, bool onInterrupt = false, bool autoIncrement = false, bool autoLoop = false)
         {
-            
             while (true)
             {
                 int realFrame = onInterrupt ? state.totalFrames+1 : Mathf.Clamp(CurrentStateFrame, 0, state.totalFrames);
                 foreach (var d in state.data)
                 {
-                    var valid = true;
-                    for (int j = 0; j < d.FrameRanges.Length; j++)
-                    {
-                        if (!(realFrame < d.FrameRanges[j].x) &&
-                            !(realFrame > d.FrameRanges[j].y)) continue;
-                        valid = false;
-                        break;
-                    }
-
-                    if (!valid) continue;
-                    if (!conditionMapperBase.TryCondition(d.Condition.FunctionMap, fighterManager, d.Condition)) continue;
-                    functionMapperBase.functions[d.FunctionMap](fighterManager, d);
+                    ProcessStateVariables(d, realFrame);
                 }
 
                 if (!state.useBaseState) break;
@@ -72,6 +60,27 @@ namespace HnSF.Sample.TDAction
             if (autoLoop && CurrentStateFrame > state.totalFrames)
             {
                 SetFrame(1);
+            }
+        }
+
+        private void ProcessStateVariables(IStateVariables d, int realFrame)
+        {
+            var valid = true;
+            for (int j = 0; j < d.FrameRanges.Length; j++)
+            {
+                if (!(realFrame < d.FrameRanges[j].x) &&
+                    !(realFrame > d.FrameRanges[j].y)) continue;
+                valid = false;
+                break;
+            }
+
+            if (!valid) return;
+            if (!conditionMapperBase.TryCondition(d.Condition.FunctionMap, fighterManager, d.Condition)) return;
+            functionMapperBase.functions[d.FunctionMap](fighterManager, d);
+
+            foreach (var t in d.Children)
+            {
+                ProcessStateVariables(t, realFrame);
             }
         }
 

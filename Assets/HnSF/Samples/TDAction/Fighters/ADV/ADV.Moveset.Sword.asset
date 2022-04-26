@@ -15,7 +15,16 @@ MonoBehaviour:
   states:
   - state:
       rid: 1423070979367895040
-    stateTimeline: {fileID: 11400000, guid: 0ce685a764a7b84468d9883fa0fbe4c0, type: 2}
+    stateTimeline: {fileID: 11400000, guid: fceb6f8f850145a48874671441bdf955, type: 2}
+  - state:
+      rid: 1423070996485636101
+    stateTimeline: {fileID: 11400000, guid: 96b3b9e51676bc74686ba3451f851a78, type: 2}
+  - state:
+      rid: 1423070996485636108
+    stateTimeline: {fileID: 11400000, guid: 29424c5f6def4f24590f164e65ca8801, type: 2}
+  - state:
+      rid: 1423070996485636116
+    stateTimeline: {fileID: 11400000, guid: 5f6390e1a685f2e43bc50d8954271243, type: 2}
   references:
     version: 2
     RefIds:
@@ -23,3 +32,15 @@ MonoBehaviour:
       type: {class: BaseStateReference, ns: HnSF.Sample.TDAction, asm: HnSF.TDAction}
       data:
         state: 1
+    - rid: 1423070996485636101
+      type: {class: BaseStateReference, ns: HnSF.Sample.TDAction, asm: HnSF.TDAction}
+      data:
+        state: 8
+    - rid: 1423070996485636108
+      type: {class: BaseStateReference, ns: HnSF.Sample.TDAction, asm: HnSF.TDAction}
+      data:
+        state: 5
+    - rid: 1423070996485636116
+      type: {class: BaseStateReference, ns: HnSF.Sample.TDAction, asm: HnSF.TDAction}
+      data:
+        state: 6
