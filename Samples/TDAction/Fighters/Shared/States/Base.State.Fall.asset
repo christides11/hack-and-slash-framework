@@ -19,6 +19,7 @@ MonoBehaviour:
   autoLoop: 1
   data:
   - rid: 1423070993831428096
+  - rid: 1423070996485636099
   references:
     version: 2
     RefIds:
@@ -29,9 +30,24 @@ MonoBehaviour:
         - {x: 1, y: 10}
         condition:
           rid: 1423070994641453056
-        useMaxFallSpeedStat: 0
-        useGravityStat: 0
-        maxFallSpeed: 0
-        gravity: 0
+        useMaxFallSpeedStat: 1
+        useGravityStat: 1
+        maxFallSpeed: -10
+        gravity: 1
+        children: []
     - rid: 1423070994641453056
       type: {class: ConditionNone, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+    - rid: 1423070996485636099
+      type: {class: ChangeState, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+      data:
+        frameRanges:
+        - {x: 1, y: 10}
+        condition:
+          rid: 1423070996485636100
+        stateMovesetID: -1
+        stateID: 1
+        children: []
+    - rid: 1423070996485636100
+      type: {class: ConditionGroundState, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+      data:
+        inverse: 0

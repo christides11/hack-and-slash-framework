@@ -102,6 +102,7 @@ GameObject:
   - component: {fileID: 1199271653}
   - component: {fileID: 7836252275299144723}
   - component: {fileID: -7738538331312116158}
+  - component: {fileID: -1240296848909671414}
   m_Layer: 8
   m_Name: ADV
   m_TagString: Untagged
@@ -184,10 +185,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 749ebc8d426ef24429d98e355d5b524c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _stateManager: {fileID: 1199271652}
-  _combatManager: {fileID: 1199271654}
-  _physicsManager: {fileID: 1199271653}
-  _inputManager: {fileID: 7836252275299144723}
+  stateManager: {fileID: 1199271652}
+  combatManager: {fileID: 1199271654}
+  physicsManager: {fileID: 1199271653}
+  inputManager: {fileID: 7836252275299144723}
+  statManager: {fileID: -1240296848909671414}
   definition: {fileID: 11400000, guid: c380ee3a80157994caef3895f8ca8dde, type: 2}
   visual: {fileID: 2309637557716152273}
 --- !u!114 &1199271652
@@ -1331,3 +1333,19 @@ MonoBehaviour:
     m_RotationOrder: 4
   totalHorizontalRays: 8
   totalVerticalRays: 4
+--- !u!114 &-1240296848909671414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890948787661181835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7304509fe28bd084cb66215135c7b301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundTraction: 1
+  aerialTraction: 1
+  maxFallSpeed: -10
+  gravity: 0.5

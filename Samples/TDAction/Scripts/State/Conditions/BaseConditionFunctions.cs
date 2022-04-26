@@ -21,6 +21,23 @@ namespace HnSF.Sample.TDAction
             return r;
         }
 
+        public static bool FallSpeed(IFighterBase fighter, IConditionVariables variables)
+        {
+            FighterPhysicsManager physicsManager = ((FighterManager)fighter).physicsManager;
+            ConditionFallSpeed vars = (ConditionFallSpeed)variables;
+
+            bool r = false;
+            if (vars.inverse)
+            {
+                r = physicsManager.forceMovement.y < vars.minValue || physicsManager.forceMovement.y > vars.maxValue;
+            }
+            else
+            {
+                r = physicsManager.forceMovement.y >= vars.minValue && physicsManager.forceMovement.y <= vars.maxValue;
+            }
+            return r;
+        }
+
         public static bool GroundedState(IFighterBase fighter, IConditionVariables variables)
         {
             ConditionGroundState vars = (ConditionGroundState)variables;

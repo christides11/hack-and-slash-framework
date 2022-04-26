@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40f66a5b733e53543bcb2daa52776331, type: 3}
+  m_Name: ADV.State.Jump
+  m_EditorClassIdentifier: 
+  useBaseState: 1
+  baseState: {fileID: 11400000, guid: 65f5e055426eb834a95aa16b8f725063, type: 2}
+  totalFrames: 10
+  autoIncrement: 1
+  autoLoop: 1
+  data:
+  - rid: 1423070996485636114
+  references:
+    version: 2
+    RefIds:
+    - rid: 1423070996485636114
+      type: {class: ChangeState, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+      data:
+        frameRanges:
+        - {x: 1, y: 10}
+        condition:
+          rid: 1423070996485636115
+        stateMovesetID: -1
+        stateID: 8
+        children: []
+    - rid: 1423070996485636115
+      type: {class: ConditionFallSpeed, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+      data:
+        minValue: -100
+        maxValue: 1
+        inverse: 0

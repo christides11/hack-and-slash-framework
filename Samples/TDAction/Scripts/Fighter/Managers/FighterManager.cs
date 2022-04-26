@@ -8,28 +8,17 @@ namespace HnSF.Sample.TDAction
 {
     public class FighterManager : SimulationBehaviour, IFighterBase
     {
-        public IFighterCombatManager CombatManager
-        {
-            get { return _combatManager; }
-        }
-        public IFighterStateManager StateManager
-        {
-            get { return _stateManager; }
-        }
-        public IFighterPhysicsManager PhysicsManager
-        {
-            get { return _physicsManager; }
-        }
-        
-        public FighterInputManager InputManager
-        {
-            get { return _inputManager; }
-        }
+        public IFighterCombatManager CombatManager => combatManager;
+        public IFighterStateManager StateManager => stateManager;
+        public IFighterPhysicsManager PhysicsManager => physicsManager;
+        public FighterInputManager InputManager => inputManager;
+        public FighterStatManager StatManager => statManager;
 
-        [SerializeField] private FighterStateManager _stateManager;
-        [SerializeField] private FighterCombatManager _combatManager;
-        [SerializeField] private FighterPhysicsManager _physicsManager;
-        [SerializeField] private FighterInputManager _inputManager;
+        public FighterStateManager stateManager;
+        public FighterCombatManager combatManager;
+        public FighterPhysicsManager physicsManager;
+        public FighterInputManager inputManager;
+        public FighterStatManager statManager;
 
         public FighterDefinition definition;
         public SpriteRenderer visual;
@@ -58,8 +47,8 @@ namespace HnSF.Sample.TDAction
             base.SimUpdate();
             if (CombatManager.HitStop == 0)
             {
-                _physicsManager.CheckIfGrounded();
-                _stateManager.Tick();
+                physicsManager.CheckIfGrounded();
+                stateManager.Tick();
                 PhysicsManager.Tick();
             }
             else

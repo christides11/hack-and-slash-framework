@@ -1,0 +1,3 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="main-framebar-bg" class="frame-bar" style="flex-direction: row; background-color: rgb(128, 128, 128); height: 25px; transform-origin: top; width: 700px; min-height: 25px; max-height: 25px; min-width: 0;" />
+</ui:UXML>
