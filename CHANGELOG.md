@@ -1,3 +1,11 @@
+# [35.1.0](https://github.com/christides11/hack-and-slash-framework/compare/v35.0.0...v35.1.0) (2022-04-27)
+
+
+### Features
+
+* Added StateTimeline editor. ([78b5362](https://github.com/christides11/hack-and-slash-framework/commit/78b5362ef7f5e407c9af9c724afad7d0b547f25c))
+* IStateVariable children. ([839baac](https://github.com/christides11/hack-and-slash-framework/commit/839baac930e2196f9cab392f8e92c105c8fdb814))
+
 # [35.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v34.0.0...v35.0.0) (2022-04-25)
 
 
