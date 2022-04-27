@@ -45,7 +45,6 @@
      <Compile Include="Assets\HnSF\State\Conditions\IConditionVariables.cs" />
      <Compile Include="Assets\HnSF\Combat\Info\HitInfo.cs" />
      <Compile Include="Assets\HnSF\Combat\Boxes\Hurtbox\Hurtbox.cs" />
-     <Compile Include="Assets\HnSF\Combat\ChargeLevel.cs" />
      <Compile Include="Assets\HnSF\Combat\Info\HitInfoBase.cs" />
      <Compile Include="Assets\HnSF\State\IntStateMap.cs" />
      <Compile Include="Assets\HnSF\Combat\Boxes\Hurtbox\HurtboxState.cs" />
@@ -65,7 +64,6 @@
      <Compile Include="Assets\HnSF\Combat\Boxes\Hitbox\HitboxType.cs" />
      <Compile Include="Assets\HnSF\Helpers\UDictionary.cs" />
      <Compile Include="Assets\HnSF\Fighter\IFighterBase.cs" />
-     <Compile Include="Assets\HnSF\Combat\ChargeDefinition.cs" />
      <Compile Include="Assets\HnSF\Combat\Boxes\Hitbox\HitboxForceRelation.cs" />
      <Compile Include="Assets\HnSF\State\Variables\IStateVariables.cs" />
      <Compile Include="Assets\HnSF\State\StateTimeline.cs" />
@@ -78,13 +76,13 @@
      <Compile Include="Assets\HnSF\Combat\Interfaces\IHurtable.cs" />
      <Compile Include="Assets\HnSF\Combat\HitReactionBase.cs" />
      <Compile Include="Assets\HnSF\Input\InputSequence.cs" />
+     <Compile Include="Assets\HnSF\StateEditor\StateTimelineEditorWindow.cs" />
      <Compile Include="Assets\HnSF\Combat\OnHitType.cs" />
      <Compile Include="Assets\HnSF\Combat\Boxes\BoxDefinition.cs" />
      <Compile Include="Assets\HnSF\Combat\Info\HealInfoBase.cs" />
      <Compile Include="Assets\HnSF\State\FighterStateReferenceBase.cs" />
-     <Compile Include="Assets\HnSF\Combat\Moveset\MovesetDefinition.cs" />
+     <Compile Include="Assets\HnSF\Combat\MovesetDefinition.cs" />
      <Compile Include="Assets\HnSF\Input\InputDefinition.cs" />
-     <Compile Include="Assets\HnSF\StateEditor\StateTimelineEditorWindow.cs" />
      <None Include="Assets\HnSF\HnSF.asmdef" />
      <None Include="Assets\HnSF\package.json" />
      <None Include="Assets\HnSF\StateEditor\main-framebar-label.uxml" />

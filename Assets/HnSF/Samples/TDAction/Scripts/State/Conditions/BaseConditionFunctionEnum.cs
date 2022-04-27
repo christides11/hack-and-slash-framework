@@ -6,6 +6,7 @@ namespace HnSF.Sample.TDAction.State
         BOOLEAN,
         MOVEMENT_MAGNITUDE,
         GROUND_STATE,
-        FALL_SPEED
+        FALL_SPEED,
+        BUTTON
     }
 }

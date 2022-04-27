@@ -2,7 +2,7 @@
     "name": "PlayerControls",
     "maps": [
         {
-            "name": "Player1",
+            "name": "Gameplay",
             "id": "3b9f6d57-f2b6-424d-ba14-b5eccabe6f15",
             "actions": [
                 {

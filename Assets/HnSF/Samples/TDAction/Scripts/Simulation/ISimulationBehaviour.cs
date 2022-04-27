@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace HnSF.Sample.TDAction
 {
-    public interface ISimulationObject
+    public interface ISimulationBehaviour
     {
         public GameManager Manager { get;  }
 
