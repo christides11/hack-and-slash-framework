@@ -187,48 +187,6 @@ references:
   commentId: F:HnSF.Combat.BoxShape.Rectangle
   fullName: HnSF.Combat.BoxShape.Rectangle
   nameWithType: BoxShape.Rectangle
-- uid: HnSF.Combat.ChargeDefinition
-  name: ChargeDefinition
-  href: api/HnSF.Combat.ChargeDefinition.html
-  commentId: T:HnSF.Combat.ChargeDefinition
-  fullName: HnSF.Combat.ChargeDefinition
-  nameWithType: ChargeDefinition
-- uid: HnSF.Combat.ChargeDefinition.chargeLevels
-  name: chargeLevels
-  href: api/HnSF.Combat.ChargeDefinition.html#HnSF_Combat_ChargeDefinition_chargeLevels
-  commentId: F:HnSF.Combat.ChargeDefinition.chargeLevels
-  fullName: HnSF.Combat.ChargeDefinition.chargeLevels
-  nameWithType: ChargeDefinition.chargeLevels
-- uid: HnSF.Combat.ChargeDefinition.endFrame
-  name: endFrame
-  href: api/HnSF.Combat.ChargeDefinition.html#HnSF_Combat_ChargeDefinition_endFrame
-  commentId: F:HnSF.Combat.ChargeDefinition.endFrame
-  fullName: HnSF.Combat.ChargeDefinition.endFrame
-  nameWithType: ChargeDefinition.endFrame
-- uid: HnSF.Combat.ChargeDefinition.releaseOnCompletion
-  name: releaseOnCompletion
-  href: api/HnSF.Combat.ChargeDefinition.html#HnSF_Combat_ChargeDefinition_releaseOnCompletion
-  commentId: F:HnSF.Combat.ChargeDefinition.releaseOnCompletion
-  fullName: HnSF.Combat.ChargeDefinition.releaseOnCompletion
-  nameWithType: ChargeDefinition.releaseOnCompletion
-- uid: HnSF.Combat.ChargeDefinition.startFrame
-  name: startFrame
-  href: api/HnSF.Combat.ChargeDefinition.html#HnSF_Combat_ChargeDefinition_startFrame
-  commentId: F:HnSF.Combat.ChargeDefinition.startFrame
-  fullName: HnSF.Combat.ChargeDefinition.startFrame
-  nameWithType: ChargeDefinition.startFrame
-- uid: HnSF.Combat.ChargeLevel
-  name: ChargeLevel
-  href: api/HnSF.Combat.ChargeLevel.html
-  commentId: T:HnSF.Combat.ChargeLevel
-  fullName: HnSF.Combat.ChargeLevel
-  nameWithType: ChargeLevel
-- uid: HnSF.Combat.ChargeLevel.maxChargeFrames
-  name: maxChargeFrames
-  href: api/HnSF.Combat.ChargeLevel.html#HnSF_Combat_ChargeLevel_maxChargeFrames
-  commentId: F:HnSF.Combat.ChargeLevel.maxChargeFrames
-  fullName: HnSF.Combat.ChargeLevel.maxChargeFrames
-  nameWithType: ChargeLevel.maxChargeFrames
 - uid: HnSF.Combat.ForceType
   name: ForceType
   href: api/HnSF.Combat.ForceType.html
@@ -2287,6 +2245,19 @@ references:
   commentId: T:HnSF.IStateVariables
   fullName: HnSF.IStateVariables
   nameWithType: IStateVariables
+- uid: HnSF.IStateVariables.Children
+  name: Children
+  href: api/HnSF.IStateVariables.html#HnSF_IStateVariables_Children
+  commentId: P:HnSF.IStateVariables.Children
+  fullName: HnSF.IStateVariables.Children
+  nameWithType: IStateVariables.Children
+- uid: HnSF.IStateVariables.Children*
+  name: Children
+  href: api/HnSF.IStateVariables.html#HnSF_IStateVariables_Children_
+  commentId: Overload:HnSF.IStateVariables.Children
+  isSpec: "True"
+  fullName: HnSF.IStateVariables.Children
+  nameWithType: IStateVariables.Children
 - uid: HnSF.IStateVariables.Condition
   name: Condition
   href: api/HnSF.IStateVariables.html#HnSF_IStateVariables_Condition
@@ -2394,6 +2365,32 @@ references:
   commentId: T:HnSF.Sample.TDAction.BaseConditionFunctions
   fullName: HnSF.Sample.TDAction.BaseConditionFunctions
   nameWithType: BaseConditionFunctions
+- uid: HnSF.Sample.TDAction.BaseConditionFunctions.CheckButton(HnSF.Fighters.IFighterBase,HnSF.IConditionVariables)
+  name: CheckButton(IFighterBase, IConditionVariables)
+  href: api/HnSF.Sample.TDAction.BaseConditionFunctions.html#HnSF_Sample_TDAction_BaseConditionFunctions_CheckButton_HnSF_Fighters_IFighterBase_HnSF_IConditionVariables_
+  commentId: M:HnSF.Sample.TDAction.BaseConditionFunctions.CheckButton(HnSF.Fighters.IFighterBase,HnSF.IConditionVariables)
+  fullName: HnSF.Sample.TDAction.BaseConditionFunctions.CheckButton(HnSF.Fighters.IFighterBase, HnSF.IConditionVariables)
+  nameWithType: BaseConditionFunctions.CheckButton(IFighterBase, IConditionVariables)
+- uid: HnSF.Sample.TDAction.BaseConditionFunctions.CheckButton*
+  name: CheckButton
+  href: api/HnSF.Sample.TDAction.BaseConditionFunctions.html#HnSF_Sample_TDAction_BaseConditionFunctions_CheckButton_
+  commentId: Overload:HnSF.Sample.TDAction.BaseConditionFunctions.CheckButton
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.BaseConditionFunctions.CheckButton
+  nameWithType: BaseConditionFunctions.CheckButton
+- uid: HnSF.Sample.TDAction.BaseConditionFunctions.FallSpeed(HnSF.Fighters.IFighterBase,HnSF.IConditionVariables)
+  name: FallSpeed(IFighterBase, IConditionVariables)
+  href: api/HnSF.Sample.TDAction.BaseConditionFunctions.html#HnSF_Sample_TDAction_BaseConditionFunctions_FallSpeed_HnSF_Fighters_IFighterBase_HnSF_IConditionVariables_
+  commentId: M:HnSF.Sample.TDAction.BaseConditionFunctions.FallSpeed(HnSF.Fighters.IFighterBase,HnSF.IConditionVariables)
+  fullName: HnSF.Sample.TDAction.BaseConditionFunctions.FallSpeed(HnSF.Fighters.IFighterBase, HnSF.IConditionVariables)
+  nameWithType: BaseConditionFunctions.FallSpeed(IFighterBase, IConditionVariables)
+- uid: HnSF.Sample.TDAction.BaseConditionFunctions.FallSpeed*
+  name: FallSpeed
+  href: api/HnSF.Sample.TDAction.BaseConditionFunctions.html#HnSF_Sample_TDAction_BaseConditionFunctions_FallSpeed_
+  commentId: Overload:HnSF.Sample.TDAction.BaseConditionFunctions.FallSpeed
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.BaseConditionFunctions.FallSpeed
+  nameWithType: BaseConditionFunctions.FallSpeed
 - uid: HnSF.Sample.TDAction.BaseConditionFunctions.GroundedState(HnSF.Fighters.IFighterBase,HnSF.IConditionVariables)
   name: GroundedState(IFighterBase, IConditionVariables)
   href: api/HnSF.Sample.TDAction.BaseConditionFunctions.html#HnSF_Sample_TDAction_BaseConditionFunctions_GroundedState_HnSF_Fighters_IFighterBase_HnSF_IConditionVariables_
@@ -2524,6 +2521,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.BaseStateFunctions.ApplyGravity
   nameWithType: BaseStateFunctions.ApplyGravity
+- uid: HnSF.Sample.TDAction.BaseStateFunctions.ApplyTraction(HnSF.Fighters.IFighterBase,HnSF.IStateVariables)
+  name: ApplyTraction(IFighterBase, IStateVariables)
+  href: api/HnSF.Sample.TDAction.BaseStateFunctions.html#HnSF_Sample_TDAction_BaseStateFunctions_ApplyTraction_HnSF_Fighters_IFighterBase_HnSF_IStateVariables_
+  commentId: M:HnSF.Sample.TDAction.BaseStateFunctions.ApplyTraction(HnSF.Fighters.IFighterBase,HnSF.IStateVariables)
+  fullName: HnSF.Sample.TDAction.BaseStateFunctions.ApplyTraction(HnSF.Fighters.IFighterBase, HnSF.IStateVariables)
+  nameWithType: BaseStateFunctions.ApplyTraction(IFighterBase, IStateVariables)
+- uid: HnSF.Sample.TDAction.BaseStateFunctions.ApplyTraction*
+  name: ApplyTraction
+  href: api/HnSF.Sample.TDAction.BaseStateFunctions.html#HnSF_Sample_TDAction_BaseStateFunctions_ApplyTraction_
+  commentId: Overload:HnSF.Sample.TDAction.BaseStateFunctions.ApplyTraction
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.BaseStateFunctions.ApplyTraction
+  nameWithType: BaseStateFunctions.ApplyTraction
 - uid: HnSF.Sample.TDAction.BaseStateFunctions.ChangeState(HnSF.Fighters.IFighterBase,HnSF.IStateVariables)
   name: ChangeState(IFighterBase, IStateVariables)
   href: api/HnSF.Sample.TDAction.BaseStateFunctions.html#HnSF_Sample_TDAction_BaseStateFunctions_ChangeState_HnSF_Fighters_IFighterBase_HnSF_IStateVariables_
@@ -2537,6 +2547,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.BaseStateFunctions.ChangeState
   nameWithType: BaseStateFunctions.ChangeState
+- uid: HnSF.Sample.TDAction.BaseStateFunctions.SetFallSpeed(HnSF.Fighters.IFighterBase,HnSF.IStateVariables)
+  name: SetFallSpeed(IFighterBase, IStateVariables)
+  href: api/HnSF.Sample.TDAction.BaseStateFunctions.html#HnSF_Sample_TDAction_BaseStateFunctions_SetFallSpeed_HnSF_Fighters_IFighterBase_HnSF_IStateVariables_
+  commentId: M:HnSF.Sample.TDAction.BaseStateFunctions.SetFallSpeed(HnSF.Fighters.IFighterBase,HnSF.IStateVariables)
+  fullName: HnSF.Sample.TDAction.BaseStateFunctions.SetFallSpeed(HnSF.Fighters.IFighterBase, HnSF.IStateVariables)
+  nameWithType: BaseStateFunctions.SetFallSpeed(IFighterBase, IStateVariables)
+- uid: HnSF.Sample.TDAction.BaseStateFunctions.SetFallSpeed*
+  name: SetFallSpeed
+  href: api/HnSF.Sample.TDAction.BaseStateFunctions.html#HnSF_Sample_TDAction_BaseStateFunctions_SetFallSpeed_
+  commentId: Overload:HnSF.Sample.TDAction.BaseStateFunctions.SetFallSpeed
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.BaseStateFunctions.SetFallSpeed
+  nameWithType: BaseStateFunctions.SetFallSpeed
 - uid: HnSF.Sample.TDAction.BaseStateReference
   name: BaseStateReference
   href: api/HnSF.Sample.TDAction.BaseStateReference.html
@@ -3122,6 +3145,18 @@ references:
   commentId: T:HnSF.Sample.TDAction.FighterInputManager
   fullName: HnSF.Sample.TDAction.FighterInputManager
   nameWithType: FighterInputManager
+- uid: HnSF.Sample.TDAction.FighterInputManager.attack
+  name: attack
+  href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_attack
+  commentId: F:HnSF.Sample.TDAction.FighterInputManager.attack
+  fullName: HnSF.Sample.TDAction.FighterInputManager.attack
+  nameWithType: FighterInputManager.attack
+- uid: HnSF.Sample.TDAction.FighterInputManager.attackHeld
+  name: attackHeld
+  href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_attackHeld
+  commentId: F:HnSF.Sample.TDAction.FighterInputManager.attackHeld
+  fullName: HnSF.Sample.TDAction.FighterInputManager.attackHeld
+  nameWithType: FighterInputManager.attackHeld
 - uid: HnSF.Sample.TDAction.FighterInputManager.BufferLimit
   name: BufferLimit
   href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_BufferLimit
@@ -3135,12 +3170,50 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.FighterInputManager.BufferLimit
   nameWithType: FighterInputManager.BufferLimit
+- uid: HnSF.Sample.TDAction.FighterInputManager.CreateButtonData(System.Boolean[]@,System.Int32)
+  name: CreateButtonData(ref Boolean[], Int32)
+  href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_CreateButtonData_System_Boolean____System_Int32_
+  commentId: M:HnSF.Sample.TDAction.FighterInputManager.CreateButtonData(System.Boolean[]@,System.Int32)
+  name.vb: CreateButtonData(ByRef Boolean(), Int32)
+  fullName: HnSF.Sample.TDAction.FighterInputManager.CreateButtonData(ref System.Boolean[], System.Int32)
+  fullName.vb: HnSF.Sample.TDAction.FighterInputManager.CreateButtonData(ByRef System.Boolean(), System.Int32)
+  nameWithType: FighterInputManager.CreateButtonData(ref Boolean[], Int32)
+  nameWithType.vb: FighterInputManager.CreateButtonData(ByRef Boolean(), Int32)
+- uid: HnSF.Sample.TDAction.FighterInputManager.CreateButtonData*
+  name: CreateButtonData
+  href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_CreateButtonData_
+  commentId: Overload:HnSF.Sample.TDAction.FighterInputManager.CreateButtonData
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.FighterInputManager.CreateButtonData
+  nameWithType: FighterInputManager.CreateButtonData
 - uid: HnSF.Sample.TDAction.FighterInputManager.dash
   name: dash
   href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_dash
   commentId: F:HnSF.Sample.TDAction.FighterInputManager.dash
   fullName: HnSF.Sample.TDAction.FighterInputManager.dash
   nameWithType: FighterInputManager.dash
+- uid: HnSF.Sample.TDAction.FighterInputManager.dashHeld
+  name: dashHeld
+  href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_dashHeld
+  commentId: F:HnSF.Sample.TDAction.FighterInputManager.dashHeld
+  fullName: HnSF.Sample.TDAction.FighterInputManager.dashHeld
+  nameWithType: FighterInputManager.dashHeld
+- uid: HnSF.Sample.TDAction.FighterInputManager.FeedButton(System.Int32,System.Boolean,System.Boolean[]@,System.UInt32@)
+  name: FeedButton(Int32, Boolean, ref Boolean[], ref UInt32)
+  href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_FeedButton_System_Int32_System_Boolean_System_Boolean____System_UInt32__
+  commentId: M:HnSF.Sample.TDAction.FighterInputManager.FeedButton(System.Int32,System.Boolean,System.Boolean[]@,System.UInt32@)
+  name.vb: FeedButton(Int32, Boolean, ByRef Boolean(), ByRef UInt32)
+  fullName: HnSF.Sample.TDAction.FighterInputManager.FeedButton(System.Int32, System.Boolean, ref System.Boolean[], ref System.UInt32)
+  fullName.vb: HnSF.Sample.TDAction.FighterInputManager.FeedButton(System.Int32, System.Boolean, ByRef System.Boolean(), ByRef System.UInt32)
+  nameWithType: FighterInputManager.FeedButton(Int32, Boolean, ref Boolean[], ref UInt32)
+  nameWithType.vb: FighterInputManager.FeedButton(Int32, Boolean, ByRef Boolean(), ByRef UInt32)
+- uid: HnSF.Sample.TDAction.FighterInputManager.FeedButton*
+  name: FeedButton
+  href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_FeedButton_
+  commentId: Overload:HnSF.Sample.TDAction.FighterInputManager.FeedButton
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.FighterInputManager.FeedButton
+  nameWithType: FighterInputManager.FeedButton
 - uid: HnSF.Sample.TDAction.FighterInputManager.FeedInput(System.Int32,HnSF.Sample.TDAction.PlayerInputData)
   name: FeedInput(Int32, PlayerInputData)
   href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_FeedInput_System_Int32_HnSF_Sample_TDAction_PlayerInputData_
@@ -3154,15 +3227,15 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.FighterInputManager.FeedInput
   nameWithType: FighterInputManager.FeedInput
-- uid: HnSF.Sample.TDAction.FighterInputManager.GetButton(HnSF.Sample.TDAction.InputButtonData[]@,System.Int32@,System.Int32,System.Int32)
-  name: GetButton(ref InputButtonData[], out Int32, Int32, Int32)
-  href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_GetButton_HnSF_Sample_TDAction_InputButtonData____System_Int32__System_Int32_System_Int32_
-  commentId: M:HnSF.Sample.TDAction.FighterInputManager.GetButton(HnSF.Sample.TDAction.InputButtonData[]@,System.Int32@,System.Int32,System.Int32)
-  name.vb: GetButton(ByRef InputButtonData(), ByRef Int32, Int32, Int32)
-  fullName: HnSF.Sample.TDAction.FighterInputManager.GetButton(ref HnSF.Sample.TDAction.InputButtonData[], out System.Int32, System.Int32, System.Int32)
-  fullName.vb: HnSF.Sample.TDAction.FighterInputManager.GetButton(ByRef HnSF.Sample.TDAction.InputButtonData(), ByRef System.Int32, System.Int32, System.Int32)
-  nameWithType: FighterInputManager.GetButton(ref InputButtonData[], out Int32, Int32, Int32)
-  nameWithType.vb: FighterInputManager.GetButton(ByRef InputButtonData(), ByRef Int32, Int32, Int32)
+- uid: HnSF.Sample.TDAction.FighterInputManager.GetButton(System.Boolean[]@,System.Int32@,System.Int32,System.Int32)
+  name: GetButton(ref Boolean[], out Int32, Int32, Int32)
+  href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_GetButton_System_Boolean____System_Int32__System_Int32_System_Int32_
+  commentId: M:HnSF.Sample.TDAction.FighterInputManager.GetButton(System.Boolean[]@,System.Int32@,System.Int32,System.Int32)
+  name.vb: GetButton(ByRef Boolean(), ByRef Int32, Int32, Int32)
+  fullName: HnSF.Sample.TDAction.FighterInputManager.GetButton(ref System.Boolean[], out System.Int32, System.Int32, System.Int32)
+  fullName.vb: HnSF.Sample.TDAction.FighterInputManager.GetButton(ByRef System.Boolean(), ByRef System.Int32, System.Int32, System.Int32)
+  nameWithType: FighterInputManager.GetButton(ref Boolean[], out Int32, Int32, Int32)
+  nameWithType.vb: FighterInputManager.GetButton(ByRef Boolean(), ByRef Int32, Int32, Int32)
 - uid: HnSF.Sample.TDAction.FighterInputManager.GetButton*
   name: GetButton
   href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_GetButton_
@@ -3253,30 +3326,132 @@ references:
   commentId: F:HnSF.Sample.TDAction.FighterInputManager.inputCapacity
   fullName: HnSF.Sample.TDAction.FighterInputManager.inputCapacity
   nameWithType: FighterInputManager.inputCapacity
+- uid: HnSF.Sample.TDAction.FighterInputManager.IsDown(System.Boolean[]@,System.Int32)
+  name: IsDown(ref Boolean[], Int32)
+  href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_IsDown_System_Boolean____System_Int32_
+  commentId: M:HnSF.Sample.TDAction.FighterInputManager.IsDown(System.Boolean[]@,System.Int32)
+  name.vb: IsDown(ByRef Boolean(), Int32)
+  fullName: HnSF.Sample.TDAction.FighterInputManager.IsDown(ref System.Boolean[], System.Int32)
+  fullName.vb: HnSF.Sample.TDAction.FighterInputManager.IsDown(ByRef System.Boolean(), System.Int32)
+  nameWithType: FighterInputManager.IsDown(ref Boolean[], Int32)
+  nameWithType.vb: FighterInputManager.IsDown(ByRef Boolean(), Int32)
+- uid: HnSF.Sample.TDAction.FighterInputManager.IsDown*
+  name: IsDown
+  href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_IsDown_
+  commentId: Overload:HnSF.Sample.TDAction.FighterInputManager.IsDown
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.FighterInputManager.IsDown
+  nameWithType: FighterInputManager.IsDown
+- uid: HnSF.Sample.TDAction.FighterInputManager.IsFirstPress(System.Boolean[]@,System.Int32)
+  name: IsFirstPress(ref Boolean[], Int32)
+  href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_IsFirstPress_System_Boolean____System_Int32_
+  commentId: M:HnSF.Sample.TDAction.FighterInputManager.IsFirstPress(System.Boolean[]@,System.Int32)
+  name.vb: IsFirstPress(ByRef Boolean(), Int32)
+  fullName: HnSF.Sample.TDAction.FighterInputManager.IsFirstPress(ref System.Boolean[], System.Int32)
+  fullName.vb: HnSF.Sample.TDAction.FighterInputManager.IsFirstPress(ByRef System.Boolean(), System.Int32)
+  nameWithType: FighterInputManager.IsFirstPress(ref Boolean[], Int32)
+  nameWithType.vb: FighterInputManager.IsFirstPress(ByRef Boolean(), Int32)
+- uid: HnSF.Sample.TDAction.FighterInputManager.IsFirstPress*
+  name: IsFirstPress
+  href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_IsFirstPress_
+  commentId: Overload:HnSF.Sample.TDAction.FighterInputManager.IsFirstPress
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.FighterInputManager.IsFirstPress
+  nameWithType: FighterInputManager.IsFirstPress
+- uid: HnSF.Sample.TDAction.FighterInputManager.IsRelease(System.Boolean[]@,System.Int32)
+  name: IsRelease(ref Boolean[], Int32)
+  href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_IsRelease_System_Boolean____System_Int32_
+  commentId: M:HnSF.Sample.TDAction.FighterInputManager.IsRelease(System.Boolean[]@,System.Int32)
+  name.vb: IsRelease(ByRef Boolean(), Int32)
+  fullName: HnSF.Sample.TDAction.FighterInputManager.IsRelease(ref System.Boolean[], System.Int32)
+  fullName.vb: HnSF.Sample.TDAction.FighterInputManager.IsRelease(ByRef System.Boolean(), System.Int32)
+  nameWithType: FighterInputManager.IsRelease(ref Boolean[], Int32)
+  nameWithType.vb: FighterInputManager.IsRelease(ByRef Boolean(), Int32)
+- uid: HnSF.Sample.TDAction.FighterInputManager.IsRelease*
+  name: IsRelease
+  href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_IsRelease_
+  commentId: Overload:HnSF.Sample.TDAction.FighterInputManager.IsRelease
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.FighterInputManager.IsRelease
+  nameWithType: FighterInputManager.IsRelease
 - uid: HnSF.Sample.TDAction.FighterInputManager.jump
   name: jump
   href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_jump
   commentId: F:HnSF.Sample.TDAction.FighterInputManager.jump
   fullName: HnSF.Sample.TDAction.FighterInputManager.jump
   nameWithType: FighterInputManager.jump
-- uid: HnSF.Sample.TDAction.FighterInputManager.lightAtk
-  name: lightAtk
-  href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_lightAtk
-  commentId: F:HnSF.Sample.TDAction.FighterInputManager.lightAtk
-  fullName: HnSF.Sample.TDAction.FighterInputManager.lightAtk
-  nameWithType: FighterInputManager.lightAtk
+- uid: HnSF.Sample.TDAction.FighterInputManager.jumpHeld
+  name: jumpHeld
+  href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_jumpHeld
+  commentId: F:HnSF.Sample.TDAction.FighterInputManager.jumpHeld
+  fullName: HnSF.Sample.TDAction.FighterInputManager.jumpHeld
+  nameWithType: FighterInputManager.jumpHeld
 - uid: HnSF.Sample.TDAction.FighterInputManager.lockOn
   name: lockOn
   href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_lockOn
   commentId: F:HnSF.Sample.TDAction.FighterInputManager.lockOn
   fullName: HnSF.Sample.TDAction.FighterInputManager.lockOn
   nameWithType: FighterInputManager.lockOn
+- uid: HnSF.Sample.TDAction.FighterInputManager.lockOnHeld
+  name: lockOnHeld
+  href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_lockOnHeld
+  commentId: F:HnSF.Sample.TDAction.FighterInputManager.lockOnHeld
+  fullName: HnSF.Sample.TDAction.FighterInputManager.lockOnHeld
+  nameWithType: FighterInputManager.lockOnHeld
 - uid: HnSF.Sample.TDAction.FighterInputManager.movement
   name: movement
   href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_movement
   commentId: F:HnSF.Sample.TDAction.FighterInputManager.movement
   fullName: HnSF.Sample.TDAction.FighterInputManager.movement
   nameWithType: FighterInputManager.movement
+- uid: HnSF.Sample.TDAction.FighterInputManager.shoot
+  name: shoot
+  href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_shoot
+  commentId: F:HnSF.Sample.TDAction.FighterInputManager.shoot
+  fullName: HnSF.Sample.TDAction.FighterInputManager.shoot
+  nameWithType: FighterInputManager.shoot
+- uid: HnSF.Sample.TDAction.FighterInputManager.shootHeld
+  name: shootHeld
+  href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_shootHeld
+  commentId: F:HnSF.Sample.TDAction.FighterInputManager.shootHeld
+  fullName: HnSF.Sample.TDAction.FighterInputManager.shootHeld
+  nameWithType: FighterInputManager.shootHeld
+- uid: HnSF.Sample.TDAction.FighterInputManager.special
+  name: special
+  href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_special
+  commentId: F:HnSF.Sample.TDAction.FighterInputManager.special
+  fullName: HnSF.Sample.TDAction.FighterInputManager.special
+  nameWithType: FighterInputManager.special
+- uid: HnSF.Sample.TDAction.FighterInputManager.specialHeld
+  name: specialHeld
+  href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_specialHeld
+  commentId: F:HnSF.Sample.TDAction.FighterInputManager.specialHeld
+  fullName: HnSF.Sample.TDAction.FighterInputManager.specialHeld
+  nameWithType: FighterInputManager.specialHeld
+- uid: HnSF.Sample.TDAction.FighterInputManager.taunt
+  name: taunt
+  href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_taunt
+  commentId: F:HnSF.Sample.TDAction.FighterInputManager.taunt
+  fullName: HnSF.Sample.TDAction.FighterInputManager.taunt
+  nameWithType: FighterInputManager.taunt
+- uid: HnSF.Sample.TDAction.FighterInputManager.tauntHeld
+  name: tauntHeld
+  href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_tauntHeld
+  commentId: F:HnSF.Sample.TDAction.FighterInputManager.tauntHeld
+  fullName: HnSF.Sample.TDAction.FighterInputManager.tauntHeld
+  nameWithType: FighterInputManager.tauntHeld
+- uid: HnSF.Sample.TDAction.FighterInputManager.unique
+  name: unique
+  href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_unique
+  commentId: F:HnSF.Sample.TDAction.FighterInputManager.unique
+  fullName: HnSF.Sample.TDAction.FighterInputManager.unique
+  nameWithType: FighterInputManager.unique
+- uid: HnSF.Sample.TDAction.FighterInputManager.uniqueHeld
+  name: uniqueHeld
+  href: api/HnSF.Sample.TDAction.FighterInputManager.html#HnSF_Sample_TDAction_FighterInputManager_uniqueHeld
+  commentId: F:HnSF.Sample.TDAction.FighterInputManager.uniqueHeld
+  fullName: HnSF.Sample.TDAction.FighterInputManager.uniqueHeld
+  nameWithType: FighterInputManager.uniqueHeld
 - uid: HnSF.Sample.TDAction.FighterManager
   name: FighterManager
   href: api/HnSF.Sample.TDAction.FighterManager.html
@@ -3296,6 +3471,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.FighterManager.Awake
   nameWithType: FighterManager.Awake
+- uid: HnSF.Sample.TDAction.FighterManager.combatManager
+  name: combatManager
+  href: api/HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_combatManager
+  commentId: F:HnSF.Sample.TDAction.FighterManager.combatManager
+  fullName: HnSF.Sample.TDAction.FighterManager.combatManager
+  nameWithType: FighterManager.combatManager
 - uid: HnSF.Sample.TDAction.FighterManager.CombatManager
   name: CombatManager
   href: api/HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_CombatManager
@@ -3328,6 +3509,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.FighterManager.GetGameObject
   nameWithType: FighterManager.GetGameObject
+- uid: HnSF.Sample.TDAction.FighterManager.inputManager
+  name: inputManager
+  href: api/HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_inputManager
+  commentId: F:HnSF.Sample.TDAction.FighterManager.inputManager
+  fullName: HnSF.Sample.TDAction.FighterManager.inputManager
+  nameWithType: FighterManager.inputManager
 - uid: HnSF.Sample.TDAction.FighterManager.InputManager
   name: InputManager
   href: api/HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_InputManager
@@ -3341,6 +3528,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.FighterManager.InputManager
   nameWithType: FighterManager.InputManager
+- uid: HnSF.Sample.TDAction.FighterManager.physicsManager
+  name: physicsManager
+  href: api/HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_physicsManager
+  commentId: F:HnSF.Sample.TDAction.FighterManager.physicsManager
+  fullName: HnSF.Sample.TDAction.FighterManager.physicsManager
+  nameWithType: FighterManager.physicsManager
 - uid: HnSF.Sample.TDAction.FighterManager.PhysicsManager
   name: PhysicsManager
   href: api/HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_PhysicsManager
@@ -3393,6 +3586,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.FighterManager.Start
   nameWithType: FighterManager.Start
+- uid: HnSF.Sample.TDAction.FighterManager.stateManager
+  name: stateManager
+  href: api/HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_stateManager
+  commentId: F:HnSF.Sample.TDAction.FighterManager.stateManager
+  fullName: HnSF.Sample.TDAction.FighterManager.stateManager
+  nameWithType: FighterManager.stateManager
 - uid: HnSF.Sample.TDAction.FighterManager.StateManager
   name: StateManager
   href: api/HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_StateManager
@@ -3406,6 +3605,25 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.FighterManager.StateManager
   nameWithType: FighterManager.StateManager
+- uid: HnSF.Sample.TDAction.FighterManager.statManager
+  name: statManager
+  href: api/HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_statManager
+  commentId: F:HnSF.Sample.TDAction.FighterManager.statManager
+  fullName: HnSF.Sample.TDAction.FighterManager.statManager
+  nameWithType: FighterManager.statManager
+- uid: HnSF.Sample.TDAction.FighterManager.StatManager
+  name: StatManager
+  href: api/HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_StatManager
+  commentId: P:HnSF.Sample.TDAction.FighterManager.StatManager
+  fullName: HnSF.Sample.TDAction.FighterManager.StatManager
+  nameWithType: FighterManager.StatManager
+- uid: HnSF.Sample.TDAction.FighterManager.StatManager*
+  name: StatManager
+  href: api/HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_StatManager_
+  commentId: Overload:HnSF.Sample.TDAction.FighterManager.StatManager
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.FighterManager.StatManager
+  nameWithType: FighterManager.StatManager
 - uid: HnSF.Sample.TDAction.FighterManager.visual
   name: visual
   href: api/HnSF.Sample.TDAction.FighterManager.html#HnSF_Sample_TDAction_FighterManager_visual
@@ -3418,6 +3636,12 @@ references:
   commentId: T:HnSF.Sample.TDAction.FighterPhysicsManager
   fullName: HnSF.Sample.TDAction.FighterPhysicsManager
   nameWithType: FighterPhysicsManager
+- uid: HnSF.Sample.TDAction.FighterPhysicsManager.ApplyFriction(System.Single)
+  name: ApplyFriction(Single)
+  href: api/HnSF.Sample.TDAction.FighterPhysicsManager.html#HnSF_Sample_TDAction_FighterPhysicsManager_ApplyFriction_System_Single_
+  commentId: M:HnSF.Sample.TDAction.FighterPhysicsManager.ApplyFriction(System.Single)
+  fullName: HnSF.Sample.TDAction.FighterPhysicsManager.ApplyFriction(System.Single)
+  nameWithType: FighterPhysicsManager.ApplyFriction(Single)
 - uid: HnSF.Sample.TDAction.FighterPhysicsManager.ApplyFriction(System.Single,System.Single)
   name: ApplyFriction(Single, Single)
   href: api/HnSF.Sample.TDAction.FighterPhysicsManager.html#HnSF_Sample_TDAction_FighterPhysicsManager_ApplyFriction_System_Single_System_Single_
@@ -3444,19 +3668,6 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.FighterPhysicsManager.ApplyGravity
   nameWithType: FighterPhysicsManager.ApplyGravity
-- uid: HnSF.Sample.TDAction.FighterPhysicsManager.ApplyMovementFriction(System.Single)
-  name: ApplyMovementFriction(Single)
-  href: api/HnSF.Sample.TDAction.FighterPhysicsManager.html#HnSF_Sample_TDAction_FighterPhysicsManager_ApplyMovementFriction_System_Single_
-  commentId: M:HnSF.Sample.TDAction.FighterPhysicsManager.ApplyMovementFriction(System.Single)
-  fullName: HnSF.Sample.TDAction.FighterPhysicsManager.ApplyMovementFriction(System.Single)
-  nameWithType: FighterPhysicsManager.ApplyMovementFriction(Single)
-- uid: HnSF.Sample.TDAction.FighterPhysicsManager.ApplyMovementFriction*
-  name: ApplyMovementFriction
-  href: api/HnSF.Sample.TDAction.FighterPhysicsManager.html#HnSF_Sample_TDAction_FighterPhysicsManager_ApplyMovementFriction_
-  commentId: Overload:HnSF.Sample.TDAction.FighterPhysicsManager.ApplyMovementFriction
-  isSpec: "True"
-  fullName: HnSF.Sample.TDAction.FighterPhysicsManager.ApplyMovementFriction
-  nameWithType: FighterPhysicsManager.ApplyMovementFriction
 - uid: HnSF.Sample.TDAction.FighterPhysicsManager.cc
   name: cc
   href: api/HnSF.Sample.TDAction.FighterPhysicsManager.html#HnSF_Sample_TDAction_FighterPhysicsManager_cc
@@ -3567,6 +3778,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.FighterPhysicsManager.ResetForces
   nameWithType: FighterPhysicsManager.ResetForces
+- uid: HnSF.Sample.TDAction.FighterPhysicsManager.SetFallSpeed(System.Single)
+  name: SetFallSpeed(Single)
+  href: api/HnSF.Sample.TDAction.FighterPhysicsManager.html#HnSF_Sample_TDAction_FighterPhysicsManager_SetFallSpeed_System_Single_
+  commentId: M:HnSF.Sample.TDAction.FighterPhysicsManager.SetFallSpeed(System.Single)
+  fullName: HnSF.Sample.TDAction.FighterPhysicsManager.SetFallSpeed(System.Single)
+  nameWithType: FighterPhysicsManager.SetFallSpeed(Single)
+- uid: HnSF.Sample.TDAction.FighterPhysicsManager.SetFallSpeed*
+  name: SetFallSpeed
+  href: api/HnSF.Sample.TDAction.FighterPhysicsManager.html#HnSF_Sample_TDAction_FighterPhysicsManager_SetFallSpeed_
+  commentId: Overload:HnSF.Sample.TDAction.FighterPhysicsManager.SetFallSpeed
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.FighterPhysicsManager.SetFallSpeed
+  nameWithType: FighterPhysicsManager.SetFallSpeed
 - uid: HnSF.Sample.TDAction.FighterPhysicsManager.SetGrounded(System.Boolean)
   name: SetGrounded(Boolean)
   href: api/HnSF.Sample.TDAction.FighterPhysicsManager.html#HnSF_Sample_TDAction_FighterPhysicsManager_SetGrounded_System_Boolean_
@@ -3870,6 +4094,30 @@ references:
   commentId: T:HnSF.Sample.TDAction.FighterStatManager
   fullName: HnSF.Sample.TDAction.FighterStatManager
   nameWithType: FighterStatManager
+- uid: HnSF.Sample.TDAction.FighterStatManager.aerialTraction
+  name: aerialTraction
+  href: api/HnSF.Sample.TDAction.FighterStatManager.html#HnSF_Sample_TDAction_FighterStatManager_aerialTraction
+  commentId: F:HnSF.Sample.TDAction.FighterStatManager.aerialTraction
+  fullName: HnSF.Sample.TDAction.FighterStatManager.aerialTraction
+  nameWithType: FighterStatManager.aerialTraction
+- uid: HnSF.Sample.TDAction.FighterStatManager.gravity
+  name: gravity
+  href: api/HnSF.Sample.TDAction.FighterStatManager.html#HnSF_Sample_TDAction_FighterStatManager_gravity
+  commentId: F:HnSF.Sample.TDAction.FighterStatManager.gravity
+  fullName: HnSF.Sample.TDAction.FighterStatManager.gravity
+  nameWithType: FighterStatManager.gravity
+- uid: HnSF.Sample.TDAction.FighterStatManager.groundTraction
+  name: groundTraction
+  href: api/HnSF.Sample.TDAction.FighterStatManager.html#HnSF_Sample_TDAction_FighterStatManager_groundTraction
+  commentId: F:HnSF.Sample.TDAction.FighterStatManager.groundTraction
+  fullName: HnSF.Sample.TDAction.FighterStatManager.groundTraction
+  nameWithType: FighterStatManager.groundTraction
+- uid: HnSF.Sample.TDAction.FighterStatManager.maxFallSpeed
+  name: maxFallSpeed
+  href: api/HnSF.Sample.TDAction.FighterStatManager.html#HnSF_Sample_TDAction_FighterStatManager_maxFallSpeed
+  commentId: F:HnSF.Sample.TDAction.FighterStatManager.maxFallSpeed
+  fullName: HnSF.Sample.TDAction.FighterStatManager.maxFallSpeed
+  nameWithType: FighterStatManager.maxFallSpeed
 - uid: HnSF.Sample.TDAction.GameManager
   name: GameManager
   href: api/HnSF.Sample.TDAction.GameManager.html
@@ -3913,6 +4161,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.GameManager.Initialize
   nameWithType: GameManager.Initialize
+- uid: HnSF.Sample.TDAction.GameManager.localPlayerManager
+  name: localPlayerManager
+  href: api/HnSF.Sample.TDAction.GameManager.html#HnSF_Sample_TDAction_GameManager_localPlayerManager
+  commentId: F:HnSF.Sample.TDAction.GameManager.localPlayerManager
+  fullName: HnSF.Sample.TDAction.GameManager.localPlayerManager
+  nameWithType: GameManager.localPlayerManager
 - uid: HnSF.Sample.TDAction.GameManager.playerCamera
   name: playerCamera
   href: api/HnSF.Sample.TDAction.GameManager.html#HnSF_Sample_TDAction_GameManager_playerCamera
@@ -3993,77 +4247,77 @@ references:
   commentId: F:HnSF.Sample.TDAction.InputButtonData.released
   fullName: HnSF.Sample.TDAction.InputButtonData.released
   nameWithType: InputButtonData.released
-- uid: HnSF.Sample.TDAction.ISimulationObject
-  name: ISimulationObject
-  href: api/HnSF.Sample.TDAction.ISimulationObject.html
-  commentId: T:HnSF.Sample.TDAction.ISimulationObject
-  fullName: HnSF.Sample.TDAction.ISimulationObject
-  nameWithType: ISimulationObject
-- uid: HnSF.Sample.TDAction.ISimulationObject.Manager
+- uid: HnSF.Sample.TDAction.ISimulationBehaviour
+  name: ISimulationBehaviour
+  href: api/HnSF.Sample.TDAction.ISimulationBehaviour.html
+  commentId: T:HnSF.Sample.TDAction.ISimulationBehaviour
+  fullName: HnSF.Sample.TDAction.ISimulationBehaviour
+  nameWithType: ISimulationBehaviour
+- uid: HnSF.Sample.TDAction.ISimulationBehaviour.Manager
   name: Manager
-  href: api/HnSF.Sample.TDAction.ISimulationObject.html#HnSF_Sample_TDAction_ISimulationObject_Manager
-  commentId: P:HnSF.Sample.TDAction.ISimulationObject.Manager
-  fullName: HnSF.Sample.TDAction.ISimulationObject.Manager
-  nameWithType: ISimulationObject.Manager
-- uid: HnSF.Sample.TDAction.ISimulationObject.Manager*
+  href: api/HnSF.Sample.TDAction.ISimulationBehaviour.html#HnSF_Sample_TDAction_ISimulationBehaviour_Manager
+  commentId: P:HnSF.Sample.TDAction.ISimulationBehaviour.Manager
+  fullName: HnSF.Sample.TDAction.ISimulationBehaviour.Manager
+  nameWithType: ISimulationBehaviour.Manager
+- uid: HnSF.Sample.TDAction.ISimulationBehaviour.Manager*
   name: Manager
-  href: api/HnSF.Sample.TDAction.ISimulationObject.html#HnSF_Sample_TDAction_ISimulationObject_Manager_
-  commentId: Overload:HnSF.Sample.TDAction.ISimulationObject.Manager
+  href: api/HnSF.Sample.TDAction.ISimulationBehaviour.html#HnSF_Sample_TDAction_ISimulationBehaviour_Manager_
+  commentId: Overload:HnSF.Sample.TDAction.ISimulationBehaviour.Manager
   isSpec: "True"
-  fullName: HnSF.Sample.TDAction.ISimulationObject.Manager
-  nameWithType: ISimulationObject.Manager
-- uid: HnSF.Sample.TDAction.ISimulationObject.SimAwake
+  fullName: HnSF.Sample.TDAction.ISimulationBehaviour.Manager
+  nameWithType: ISimulationBehaviour.Manager
+- uid: HnSF.Sample.TDAction.ISimulationBehaviour.SimAwake
   name: SimAwake()
-  href: api/HnSF.Sample.TDAction.ISimulationObject.html#HnSF_Sample_TDAction_ISimulationObject_SimAwake
-  commentId: M:HnSF.Sample.TDAction.ISimulationObject.SimAwake
-  fullName: HnSF.Sample.TDAction.ISimulationObject.SimAwake()
-  nameWithType: ISimulationObject.SimAwake()
-- uid: HnSF.Sample.TDAction.ISimulationObject.SimAwake*
+  href: api/HnSF.Sample.TDAction.ISimulationBehaviour.html#HnSF_Sample_TDAction_ISimulationBehaviour_SimAwake
+  commentId: M:HnSF.Sample.TDAction.ISimulationBehaviour.SimAwake
+  fullName: HnSF.Sample.TDAction.ISimulationBehaviour.SimAwake()
+  nameWithType: ISimulationBehaviour.SimAwake()
+- uid: HnSF.Sample.TDAction.ISimulationBehaviour.SimAwake*
   name: SimAwake
-  href: api/HnSF.Sample.TDAction.ISimulationObject.html#HnSF_Sample_TDAction_ISimulationObject_SimAwake_
-  commentId: Overload:HnSF.Sample.TDAction.ISimulationObject.SimAwake
+  href: api/HnSF.Sample.TDAction.ISimulationBehaviour.html#HnSF_Sample_TDAction_ISimulationBehaviour_SimAwake_
+  commentId: Overload:HnSF.Sample.TDAction.ISimulationBehaviour.SimAwake
   isSpec: "True"
-  fullName: HnSF.Sample.TDAction.ISimulationObject.SimAwake
-  nameWithType: ISimulationObject.SimAwake
-- uid: HnSF.Sample.TDAction.ISimulationObject.SimInitialize(HnSF.Sample.TDAction.GameManager)
+  fullName: HnSF.Sample.TDAction.ISimulationBehaviour.SimAwake
+  nameWithType: ISimulationBehaviour.SimAwake
+- uid: HnSF.Sample.TDAction.ISimulationBehaviour.SimInitialize(HnSF.Sample.TDAction.GameManager)
   name: SimInitialize(GameManager)
-  href: api/HnSF.Sample.TDAction.ISimulationObject.html#HnSF_Sample_TDAction_ISimulationObject_SimInitialize_HnSF_Sample_TDAction_GameManager_
-  commentId: M:HnSF.Sample.TDAction.ISimulationObject.SimInitialize(HnSF.Sample.TDAction.GameManager)
-  fullName: HnSF.Sample.TDAction.ISimulationObject.SimInitialize(HnSF.Sample.TDAction.GameManager)
-  nameWithType: ISimulationObject.SimInitialize(GameManager)
-- uid: HnSF.Sample.TDAction.ISimulationObject.SimInitialize*
+  href: api/HnSF.Sample.TDAction.ISimulationBehaviour.html#HnSF_Sample_TDAction_ISimulationBehaviour_SimInitialize_HnSF_Sample_TDAction_GameManager_
+  commentId: M:HnSF.Sample.TDAction.ISimulationBehaviour.SimInitialize(HnSF.Sample.TDAction.GameManager)
+  fullName: HnSF.Sample.TDAction.ISimulationBehaviour.SimInitialize(HnSF.Sample.TDAction.GameManager)
+  nameWithType: ISimulationBehaviour.SimInitialize(GameManager)
+- uid: HnSF.Sample.TDAction.ISimulationBehaviour.SimInitialize*
   name: SimInitialize
-  href: api/HnSF.Sample.TDAction.ISimulationObject.html#HnSF_Sample_TDAction_ISimulationObject_SimInitialize_
-  commentId: Overload:HnSF.Sample.TDAction.ISimulationObject.SimInitialize
+  href: api/HnSF.Sample.TDAction.ISimulationBehaviour.html#HnSF_Sample_TDAction_ISimulationBehaviour_SimInitialize_
+  commentId: Overload:HnSF.Sample.TDAction.ISimulationBehaviour.SimInitialize
   isSpec: "True"
-  fullName: HnSF.Sample.TDAction.ISimulationObject.SimInitialize
-  nameWithType: ISimulationObject.SimInitialize
-- uid: HnSF.Sample.TDAction.ISimulationObject.SimLateUpdate
+  fullName: HnSF.Sample.TDAction.ISimulationBehaviour.SimInitialize
+  nameWithType: ISimulationBehaviour.SimInitialize
+- uid: HnSF.Sample.TDAction.ISimulationBehaviour.SimLateUpdate
   name: SimLateUpdate()
-  href: api/HnSF.Sample.TDAction.ISimulationObject.html#HnSF_Sample_TDAction_ISimulationObject_SimLateUpdate
-  commentId: M:HnSF.Sample.TDAction.ISimulationObject.SimLateUpdate
-  fullName: HnSF.Sample.TDAction.ISimulationObject.SimLateUpdate()
-  nameWithType: ISimulationObject.SimLateUpdate()
-- uid: HnSF.Sample.TDAction.ISimulationObject.SimLateUpdate*
+  href: api/HnSF.Sample.TDAction.ISimulationBehaviour.html#HnSF_Sample_TDAction_ISimulationBehaviour_SimLateUpdate
+  commentId: M:HnSF.Sample.TDAction.ISimulationBehaviour.SimLateUpdate
+  fullName: HnSF.Sample.TDAction.ISimulationBehaviour.SimLateUpdate()
+  nameWithType: ISimulationBehaviour.SimLateUpdate()
+- uid: HnSF.Sample.TDAction.ISimulationBehaviour.SimLateUpdate*
   name: SimLateUpdate
-  href: api/HnSF.Sample.TDAction.ISimulationObject.html#HnSF_Sample_TDAction_ISimulationObject_SimLateUpdate_
-  commentId: Overload:HnSF.Sample.TDAction.ISimulationObject.SimLateUpdate
+  href: api/HnSF.Sample.TDAction.ISimulationBehaviour.html#HnSF_Sample_TDAction_ISimulationBehaviour_SimLateUpdate_
+  commentId: Overload:HnSF.Sample.TDAction.ISimulationBehaviour.SimLateUpdate
   isSpec: "True"
-  fullName: HnSF.Sample.TDAction.ISimulationObject.SimLateUpdate
-  nameWithType: ISimulationObject.SimLateUpdate
-- uid: HnSF.Sample.TDAction.ISimulationObject.SimUpdate
+  fullName: HnSF.Sample.TDAction.ISimulationBehaviour.SimLateUpdate
+  nameWithType: ISimulationBehaviour.SimLateUpdate
+- uid: HnSF.Sample.TDAction.ISimulationBehaviour.SimUpdate
   name: SimUpdate()
-  href: api/HnSF.Sample.TDAction.ISimulationObject.html#HnSF_Sample_TDAction_ISimulationObject_SimUpdate
-  commentId: M:HnSF.Sample.TDAction.ISimulationObject.SimUpdate
-  fullName: HnSF.Sample.TDAction.ISimulationObject.SimUpdate()
-  nameWithType: ISimulationObject.SimUpdate()
-- uid: HnSF.Sample.TDAction.ISimulationObject.SimUpdate*
+  href: api/HnSF.Sample.TDAction.ISimulationBehaviour.html#HnSF_Sample_TDAction_ISimulationBehaviour_SimUpdate
+  commentId: M:HnSF.Sample.TDAction.ISimulationBehaviour.SimUpdate
+  fullName: HnSF.Sample.TDAction.ISimulationBehaviour.SimUpdate()
+  nameWithType: ISimulationBehaviour.SimUpdate()
+- uid: HnSF.Sample.TDAction.ISimulationBehaviour.SimUpdate*
   name: SimUpdate
-  href: api/HnSF.Sample.TDAction.ISimulationObject.html#HnSF_Sample_TDAction_ISimulationObject_SimUpdate_
-  commentId: Overload:HnSF.Sample.TDAction.ISimulationObject.SimUpdate
+  href: api/HnSF.Sample.TDAction.ISimulationBehaviour.html#HnSF_Sample_TDAction_ISimulationBehaviour_SimUpdate_
+  commentId: Overload:HnSF.Sample.TDAction.ISimulationBehaviour.SimUpdate
   isSpec: "True"
-  fullName: HnSF.Sample.TDAction.ISimulationObject.SimUpdate
-  nameWithType: ISimulationObject.SimUpdate
+  fullName: HnSF.Sample.TDAction.ISimulationBehaviour.SimUpdate
+  nameWithType: ISimulationBehaviour.SimUpdate
 - uid: HnSF.Sample.TDAction.MovesetDefinition
   name: MovesetDefinition
   href: api/HnSF.Sample.TDAction.MovesetDefinition.html
@@ -4076,6 +4330,12 @@ references:
   commentId: T:HnSF.Sample.TDAction.PlayerInputData
   fullName: HnSF.Sample.TDAction.PlayerInputData
   nameWithType: PlayerInputData
+- uid: HnSF.Sample.TDAction.PlayerInputData.attack
+  name: attack
+  href: api/HnSF.Sample.TDAction.PlayerInputData.html#HnSF_Sample_TDAction_PlayerInputData_attack
+  commentId: F:HnSF.Sample.TDAction.PlayerInputData.attack
+  fullName: HnSF.Sample.TDAction.PlayerInputData.attack
+  nameWithType: PlayerInputData.attack
 - uid: HnSF.Sample.TDAction.PlayerInputData.dash
   name: dash
   href: api/HnSF.Sample.TDAction.PlayerInputData.html#HnSF_Sample_TDAction_PlayerInputData_dash
@@ -4088,12 +4348,6 @@ references:
   commentId: F:HnSF.Sample.TDAction.PlayerInputData.jump
   fullName: HnSF.Sample.TDAction.PlayerInputData.jump
   nameWithType: PlayerInputData.jump
-- uid: HnSF.Sample.TDAction.PlayerInputData.lightAtk
-  name: lightAtk
-  href: api/HnSF.Sample.TDAction.PlayerInputData.html#HnSF_Sample_TDAction_PlayerInputData_lightAtk
-  commentId: F:HnSF.Sample.TDAction.PlayerInputData.lightAtk
-  fullName: HnSF.Sample.TDAction.PlayerInputData.lightAtk
-  nameWithType: PlayerInputData.lightAtk
 - uid: HnSF.Sample.TDAction.PlayerInputData.lockOn
   name: lockOn
   href: api/HnSF.Sample.TDAction.PlayerInputData.html#HnSF_Sample_TDAction_PlayerInputData_lockOn
@@ -4106,12 +4360,96 @@ references:
   commentId: F:HnSF.Sample.TDAction.PlayerInputData.movement
   fullName: HnSF.Sample.TDAction.PlayerInputData.movement
   nameWithType: PlayerInputData.movement
+- uid: HnSF.Sample.TDAction.PlayerInputData.shoot
+  name: shoot
+  href: api/HnSF.Sample.TDAction.PlayerInputData.html#HnSF_Sample_TDAction_PlayerInputData_shoot
+  commentId: F:HnSF.Sample.TDAction.PlayerInputData.shoot
+  fullName: HnSF.Sample.TDAction.PlayerInputData.shoot
+  nameWithType: PlayerInputData.shoot
+- uid: HnSF.Sample.TDAction.PlayerInputData.special
+  name: special
+  href: api/HnSF.Sample.TDAction.PlayerInputData.html#HnSF_Sample_TDAction_PlayerInputData_special
+  commentId: F:HnSF.Sample.TDAction.PlayerInputData.special
+  fullName: HnSF.Sample.TDAction.PlayerInputData.special
+  nameWithType: PlayerInputData.special
+- uid: HnSF.Sample.TDAction.PlayerInputData.taunt
+  name: taunt
+  href: api/HnSF.Sample.TDAction.PlayerInputData.html#HnSF_Sample_TDAction_PlayerInputData_taunt
+  commentId: F:HnSF.Sample.TDAction.PlayerInputData.taunt
+  fullName: HnSF.Sample.TDAction.PlayerInputData.taunt
+  nameWithType: PlayerInputData.taunt
+- uid: HnSF.Sample.TDAction.PlayerInputData.unique
+  name: unique
+  href: api/HnSF.Sample.TDAction.PlayerInputData.html#HnSF_Sample_TDAction_PlayerInputData_unique
+  commentId: F:HnSF.Sample.TDAction.PlayerInputData.unique
+  fullName: HnSF.Sample.TDAction.PlayerInputData.unique
+  nameWithType: PlayerInputData.unique
+- uid: HnSF.Sample.TDAction.PlayerInputType
+  name: PlayerInputType
+  href: api/HnSF.Sample.TDAction.PlayerInputType.html
+  commentId: T:HnSF.Sample.TDAction.PlayerInputType
+  fullName: HnSF.Sample.TDAction.PlayerInputType
+  nameWithType: PlayerInputType
+- uid: HnSF.Sample.TDAction.PlayerInputType.Attack
+  name: Attack
+  href: api/HnSF.Sample.TDAction.PlayerInputType.html#HnSF_Sample_TDAction_PlayerInputType_Attack
+  commentId: F:HnSF.Sample.TDAction.PlayerInputType.Attack
+  fullName: HnSF.Sample.TDAction.PlayerInputType.Attack
+  nameWithType: PlayerInputType.Attack
+- uid: HnSF.Sample.TDAction.PlayerInputType.Dash
+  name: Dash
+  href: api/HnSF.Sample.TDAction.PlayerInputType.html#HnSF_Sample_TDAction_PlayerInputType_Dash
+  commentId: F:HnSF.Sample.TDAction.PlayerInputType.Dash
+  fullName: HnSF.Sample.TDAction.PlayerInputType.Dash
+  nameWithType: PlayerInputType.Dash
+- uid: HnSF.Sample.TDAction.PlayerInputType.Jump
+  name: Jump
+  href: api/HnSF.Sample.TDAction.PlayerInputType.html#HnSF_Sample_TDAction_PlayerInputType_Jump
+  commentId: F:HnSF.Sample.TDAction.PlayerInputType.Jump
+  fullName: HnSF.Sample.TDAction.PlayerInputType.Jump
+  nameWithType: PlayerInputType.Jump
+- uid: HnSF.Sample.TDAction.PlayerInputType.Lock_On
+  name: Lock_On
+  href: api/HnSF.Sample.TDAction.PlayerInputType.html#HnSF_Sample_TDAction_PlayerInputType_Lock_On
+  commentId: F:HnSF.Sample.TDAction.PlayerInputType.Lock_On
+  fullName: HnSF.Sample.TDAction.PlayerInputType.Lock_On
+  nameWithType: PlayerInputType.Lock_On
+- uid: HnSF.Sample.TDAction.PlayerInputType.Shoot
+  name: Shoot
+  href: api/HnSF.Sample.TDAction.PlayerInputType.html#HnSF_Sample_TDAction_PlayerInputType_Shoot
+  commentId: F:HnSF.Sample.TDAction.PlayerInputType.Shoot
+  fullName: HnSF.Sample.TDAction.PlayerInputType.Shoot
+  nameWithType: PlayerInputType.Shoot
+- uid: HnSF.Sample.TDAction.PlayerInputType.Special
+  name: Special
+  href: api/HnSF.Sample.TDAction.PlayerInputType.html#HnSF_Sample_TDAction_PlayerInputType_Special
+  commentId: F:HnSF.Sample.TDAction.PlayerInputType.Special
+  fullName: HnSF.Sample.TDAction.PlayerInputType.Special
+  nameWithType: PlayerInputType.Special
+- uid: HnSF.Sample.TDAction.PlayerInputType.Taunt
+  name: Taunt
+  href: api/HnSF.Sample.TDAction.PlayerInputType.html#HnSF_Sample_TDAction_PlayerInputType_Taunt
+  commentId: F:HnSF.Sample.TDAction.PlayerInputType.Taunt
+  fullName: HnSF.Sample.TDAction.PlayerInputType.Taunt
+  nameWithType: PlayerInputType.Taunt
+- uid: HnSF.Sample.TDAction.PlayerInputType.Unique
+  name: Unique
+  href: api/HnSF.Sample.TDAction.PlayerInputType.html#HnSF_Sample_TDAction_PlayerInputType_Unique
+  commentId: F:HnSF.Sample.TDAction.PlayerInputType.Unique
+  fullName: HnSF.Sample.TDAction.PlayerInputType.Unique
+  nameWithType: PlayerInputType.Unique
 - uid: HnSF.Sample.TDAction.PlayerManager
   name: PlayerManager
   href: api/HnSF.Sample.TDAction.PlayerManager.html
   commentId: T:HnSF.Sample.TDAction.PlayerManager
   fullName: HnSF.Sample.TDAction.PlayerManager
   nameWithType: PlayerManager
+- uid: HnSF.Sample.TDAction.PlayerManager.jump
+  name: jump
+  href: api/HnSF.Sample.TDAction.PlayerManager.html#HnSF_Sample_TDAction_PlayerManager_jump
+  commentId: F:HnSF.Sample.TDAction.PlayerManager.jump
+  fullName: HnSF.Sample.TDAction.PlayerManager.jump
+  nameWithType: PlayerManager.jump
 - uid: HnSF.Sample.TDAction.PlayerManager.movement
   name: movement
   href: api/HnSF.Sample.TDAction.PlayerManager.html#HnSF_Sample_TDAction_PlayerManager_movement
@@ -4124,12 +4462,6 @@ references:
   commentId: F:HnSF.Sample.TDAction.PlayerManager.player
   fullName: HnSF.Sample.TDAction.PlayerManager.player
   nameWithType: PlayerManager.player
-- uid: HnSF.Sample.TDAction.PlayerManager.playerInput
-  name: playerInput
-  href: api/HnSF.Sample.TDAction.PlayerManager.html#HnSF_Sample_TDAction_PlayerManager_playerInput
-  commentId: F:HnSF.Sample.TDAction.PlayerManager.playerInput
-  fullName: HnSF.Sample.TDAction.PlayerManager.playerInput
-  nameWithType: PlayerManager.playerInput
 - uid: HnSF.Sample.TDAction.PlayerManager.SimUpdate
   name: SimUpdate()
   href: api/HnSF.Sample.TDAction.PlayerManager.html#HnSF_Sample_TDAction_PlayerManager_SimUpdate
@@ -4168,12 +4500,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.SimulationManager.Increment
   nameWithType: SimulationManager.Increment
-- uid: HnSF.Sample.TDAction.SimulationManager.RegisterObject(HnSF.Sample.TDAction.ISimulationObject)
-  name: RegisterObject(ISimulationObject)
-  href: api/HnSF.Sample.TDAction.SimulationManager.html#HnSF_Sample_TDAction_SimulationManager_RegisterObject_HnSF_Sample_TDAction_ISimulationObject_
-  commentId: M:HnSF.Sample.TDAction.SimulationManager.RegisterObject(HnSF.Sample.TDAction.ISimulationObject)
-  fullName: HnSF.Sample.TDAction.SimulationManager.RegisterObject(HnSF.Sample.TDAction.ISimulationObject)
-  nameWithType: SimulationManager.RegisterObject(ISimulationObject)
+- uid: HnSF.Sample.TDAction.SimulationManager.RegisterObject(HnSF.Sample.TDAction.SimulationObject)
+  name: RegisterObject(SimulationObject)
+  href: api/HnSF.Sample.TDAction.SimulationManager.html#HnSF_Sample_TDAction_SimulationManager_RegisterObject_HnSF_Sample_TDAction_SimulationObject_
+  commentId: M:HnSF.Sample.TDAction.SimulationManager.RegisterObject(HnSF.Sample.TDAction.SimulationObject)
+  fullName: HnSF.Sample.TDAction.SimulationManager.RegisterObject(HnSF.Sample.TDAction.SimulationObject)
+  nameWithType: SimulationManager.RegisterObject(SimulationObject)
 - uid: HnSF.Sample.TDAction.SimulationManager.RegisterObject*
   name: RegisterObject
   href: api/HnSF.Sample.TDAction.SimulationManager.html#HnSF_Sample_TDAction_SimulationManager_RegisterObject_
@@ -4213,18 +4545,67 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.SimulationManager.TickRate
   nameWithType: SimulationManager.TickRate
+- uid: HnSF.Sample.TDAction.SimulationObject
+  name: SimulationObject
+  href: api/HnSF.Sample.TDAction.SimulationObject.html
+  commentId: T:HnSF.Sample.TDAction.SimulationObject
+  fullName: HnSF.Sample.TDAction.SimulationObject
+  nameWithType: SimulationObject
+- uid: HnSF.Sample.TDAction.SimulationObject.gameManager
+  name: gameManager
+  href: api/HnSF.Sample.TDAction.SimulationObject.html#HnSF_Sample_TDAction_SimulationObject_gameManager
+  commentId: F:HnSF.Sample.TDAction.SimulationObject.gameManager
+  fullName: HnSF.Sample.TDAction.SimulationObject.gameManager
+  nameWithType: SimulationObject.gameManager
+- uid: HnSF.Sample.TDAction.SimulationObject.nestedObjects
+  name: nestedObjects
+  href: api/HnSF.Sample.TDAction.SimulationObject.html#HnSF_Sample_TDAction_SimulationObject_nestedObjects
+  commentId: F:HnSF.Sample.TDAction.SimulationObject.nestedObjects
+  fullName: HnSF.Sample.TDAction.SimulationObject.nestedObjects
+  nameWithType: SimulationObject.nestedObjects
+- uid: HnSF.Sample.TDAction.SimulationObject.simulationBehaviours
+  name: simulationBehaviours
+  href: api/HnSF.Sample.TDAction.SimulationObject.html#HnSF_Sample_TDAction_SimulationObject_simulationBehaviours
+  commentId: F:HnSF.Sample.TDAction.SimulationObject.simulationBehaviours
+  fullName: HnSF.Sample.TDAction.SimulationObject.simulationBehaviours
+  nameWithType: SimulationObject.simulationBehaviours
 - uid: HnSF.Sample.TDAction.State
   name: HnSF.Sample.TDAction.State
   href: api/HnSF.Sample.TDAction.State.html
   commentId: N:HnSF.Sample.TDAction.State
   fullName: HnSF.Sample.TDAction.State
   nameWithType: HnSF.Sample.TDAction.State
+- uid: HnSF.Sample.TDAction.State.CameraLayoutDefinition
+  name: CameraLayoutDefinition
+  href: api/HnSF.Sample.TDAction.State.CameraLayoutDefinition.html
+  commentId: T:HnSF.Sample.TDAction.State.CameraLayoutDefinition
+  fullName: HnSF.Sample.TDAction.State.CameraLayoutDefinition
+  nameWithType: CameraLayoutDefinition
+- uid: HnSF.Sample.TDAction.State.CameraLayoutDefinition.cameraLayouts
+  name: cameraLayouts
+  href: api/HnSF.Sample.TDAction.State.CameraLayoutDefinition.html#HnSF_Sample_TDAction_State_CameraLayoutDefinition_cameraLayouts
+  commentId: F:HnSF.Sample.TDAction.State.CameraLayoutDefinition.cameraLayouts
+  fullName: HnSF.Sample.TDAction.State.CameraLayoutDefinition.cameraLayouts
+  nameWithType: CameraLayoutDefinition.cameraLayouts
 - uid: HnSF.Sample.TDAction.State.ChangeState
   name: ChangeState
   href: api/HnSF.Sample.TDAction.State.ChangeState.html
   commentId: T:HnSF.Sample.TDAction.State.ChangeState
   fullName: HnSF.Sample.TDAction.State.ChangeState
   nameWithType: ChangeState
+- uid: HnSF.Sample.TDAction.State.ChangeState.Children
+  name: Children
+  href: api/HnSF.Sample.TDAction.State.ChangeState.html#HnSF_Sample_TDAction_State_ChangeState_Children
+  commentId: P:HnSF.Sample.TDAction.State.ChangeState.Children
+  fullName: HnSF.Sample.TDAction.State.ChangeState.Children
+  nameWithType: ChangeState.Children
+- uid: HnSF.Sample.TDAction.State.ChangeState.Children*
+  name: Children
+  href: api/HnSF.Sample.TDAction.State.ChangeState.html#HnSF_Sample_TDAction_State_ChangeState_Children_
+  commentId: Overload:HnSF.Sample.TDAction.State.ChangeState.Children
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.ChangeState.Children
+  nameWithType: ChangeState.Children
 - uid: HnSF.Sample.TDAction.State.ChangeState.condition
   name: condition
   href: api/HnSF.Sample.TDAction.State.ChangeState.html#HnSF_Sample_TDAction_State_ChangeState_condition
@@ -4288,6 +4669,110 @@ references:
   commentId: F:HnSF.Sample.TDAction.State.ChangeState.stateMovesetID
   fullName: HnSF.Sample.TDAction.State.ChangeState.stateMovesetID
   nameWithType: ChangeState.stateMovesetID
+- uid: HnSF.Sample.TDAction.State.ConditionButton
+  name: ConditionButton
+  href: api/HnSF.Sample.TDAction.State.ConditionButton.html
+  commentId: T:HnSF.Sample.TDAction.State.ConditionButton
+  fullName: HnSF.Sample.TDAction.State.ConditionButton
+  nameWithType: ConditionButton
+- uid: HnSF.Sample.TDAction.State.ConditionButton.buffer
+  name: buffer
+  href: api/HnSF.Sample.TDAction.State.ConditionButton.html#HnSF_Sample_TDAction_State_ConditionButton_buffer
+  commentId: F:HnSF.Sample.TDAction.State.ConditionButton.buffer
+  fullName: HnSF.Sample.TDAction.State.ConditionButton.buffer
+  nameWithType: ConditionButton.buffer
+- uid: HnSF.Sample.TDAction.State.ConditionButton.button
+  name: button
+  href: api/HnSF.Sample.TDAction.State.ConditionButton.html#HnSF_Sample_TDAction_State_ConditionButton_button
+  commentId: F:HnSF.Sample.TDAction.State.ConditionButton.button
+  fullName: HnSF.Sample.TDAction.State.ConditionButton.button
+  nameWithType: ConditionButton.button
+- uid: HnSF.Sample.TDAction.State.ConditionButton.buttonState
+  name: buttonState
+  href: api/HnSF.Sample.TDAction.State.ConditionButton.html#HnSF_Sample_TDAction_State_ConditionButton_buttonState
+  commentId: F:HnSF.Sample.TDAction.State.ConditionButton.buttonState
+  fullName: HnSF.Sample.TDAction.State.ConditionButton.buttonState
+  nameWithType: ConditionButton.buttonState
+- uid: HnSF.Sample.TDAction.State.ConditionButton.ButtonStateType
+  name: ConditionButton.ButtonStateType
+  href: api/HnSF.Sample.TDAction.State.ConditionButton.ButtonStateType.html
+  commentId: T:HnSF.Sample.TDAction.State.ConditionButton.ButtonStateType
+  fullName: HnSF.Sample.TDAction.State.ConditionButton.ButtonStateType
+  nameWithType: ConditionButton.ButtonStateType
+- uid: HnSF.Sample.TDAction.State.ConditionButton.ButtonStateType.FirstPress
+  name: FirstPress
+  href: api/HnSF.Sample.TDAction.State.ConditionButton.ButtonStateType.html#HnSF_Sample_TDAction_State_ConditionButton_ButtonStateType_FirstPress
+  commentId: F:HnSF.Sample.TDAction.State.ConditionButton.ButtonStateType.FirstPress
+  fullName: HnSF.Sample.TDAction.State.ConditionButton.ButtonStateType.FirstPress
+  nameWithType: ConditionButton.ButtonStateType.FirstPress
+- uid: HnSF.Sample.TDAction.State.ConditionButton.ButtonStateType.IsDown
+  name: IsDown
+  href: api/HnSF.Sample.TDAction.State.ConditionButton.ButtonStateType.html#HnSF_Sample_TDAction_State_ConditionButton_ButtonStateType_IsDown
+  commentId: F:HnSF.Sample.TDAction.State.ConditionButton.ButtonStateType.IsDown
+  fullName: HnSF.Sample.TDAction.State.ConditionButton.ButtonStateType.IsDown
+  nameWithType: ConditionButton.ButtonStateType.IsDown
+- uid: HnSF.Sample.TDAction.State.ConditionButton.ButtonStateType.Released
+  name: Released
+  href: api/HnSF.Sample.TDAction.State.ConditionButton.ButtonStateType.html#HnSF_Sample_TDAction_State_ConditionButton_ButtonStateType_Released
+  commentId: F:HnSF.Sample.TDAction.State.ConditionButton.ButtonStateType.Released
+  fullName: HnSF.Sample.TDAction.State.ConditionButton.ButtonStateType.Released
+  nameWithType: ConditionButton.ButtonStateType.Released
+- uid: HnSF.Sample.TDAction.State.ConditionButton.FunctionMap
+  name: FunctionMap
+  href: api/HnSF.Sample.TDAction.State.ConditionButton.html#HnSF_Sample_TDAction_State_ConditionButton_FunctionMap
+  commentId: P:HnSF.Sample.TDAction.State.ConditionButton.FunctionMap
+  fullName: HnSF.Sample.TDAction.State.ConditionButton.FunctionMap
+  nameWithType: ConditionButton.FunctionMap
+- uid: HnSF.Sample.TDAction.State.ConditionButton.FunctionMap*
+  name: FunctionMap
+  href: api/HnSF.Sample.TDAction.State.ConditionButton.html#HnSF_Sample_TDAction_State_ConditionButton_FunctionMap_
+  commentId: Overload:HnSF.Sample.TDAction.State.ConditionButton.FunctionMap
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.ConditionButton.FunctionMap
+  nameWithType: ConditionButton.FunctionMap
+- uid: HnSF.Sample.TDAction.State.ConditionButton.offset
+  name: offset
+  href: api/HnSF.Sample.TDAction.State.ConditionButton.html#HnSF_Sample_TDAction_State_ConditionButton_offset
+  commentId: F:HnSF.Sample.TDAction.State.ConditionButton.offset
+  fullName: HnSF.Sample.TDAction.State.ConditionButton.offset
+  nameWithType: ConditionButton.offset
+- uid: HnSF.Sample.TDAction.State.ConditionFallSpeed
+  name: ConditionFallSpeed
+  href: api/HnSF.Sample.TDAction.State.ConditionFallSpeed.html
+  commentId: T:HnSF.Sample.TDAction.State.ConditionFallSpeed
+  fullName: HnSF.Sample.TDAction.State.ConditionFallSpeed
+  nameWithType: ConditionFallSpeed
+- uid: HnSF.Sample.TDAction.State.ConditionFallSpeed.FunctionMap
+  name: FunctionMap
+  href: api/HnSF.Sample.TDAction.State.ConditionFallSpeed.html#HnSF_Sample_TDAction_State_ConditionFallSpeed_FunctionMap
+  commentId: P:HnSF.Sample.TDAction.State.ConditionFallSpeed.FunctionMap
+  fullName: HnSF.Sample.TDAction.State.ConditionFallSpeed.FunctionMap
+  nameWithType: ConditionFallSpeed.FunctionMap
+- uid: HnSF.Sample.TDAction.State.ConditionFallSpeed.FunctionMap*
+  name: FunctionMap
+  href: api/HnSF.Sample.TDAction.State.ConditionFallSpeed.html#HnSF_Sample_TDAction_State_ConditionFallSpeed_FunctionMap_
+  commentId: Overload:HnSF.Sample.TDAction.State.ConditionFallSpeed.FunctionMap
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.ConditionFallSpeed.FunctionMap
+  nameWithType: ConditionFallSpeed.FunctionMap
+- uid: HnSF.Sample.TDAction.State.ConditionFallSpeed.inverse
+  name: inverse
+  href: api/HnSF.Sample.TDAction.State.ConditionFallSpeed.html#HnSF_Sample_TDAction_State_ConditionFallSpeed_inverse
+  commentId: F:HnSF.Sample.TDAction.State.ConditionFallSpeed.inverse
+  fullName: HnSF.Sample.TDAction.State.ConditionFallSpeed.inverse
+  nameWithType: ConditionFallSpeed.inverse
+- uid: HnSF.Sample.TDAction.State.ConditionFallSpeed.maxValue
+  name: maxValue
+  href: api/HnSF.Sample.TDAction.State.ConditionFallSpeed.html#HnSF_Sample_TDAction_State_ConditionFallSpeed_maxValue
+  commentId: F:HnSF.Sample.TDAction.State.ConditionFallSpeed.maxValue
+  fullName: HnSF.Sample.TDAction.State.ConditionFallSpeed.maxValue
+  nameWithType: ConditionFallSpeed.maxValue
+- uid: HnSF.Sample.TDAction.State.ConditionFallSpeed.minValue
+  name: minValue
+  href: api/HnSF.Sample.TDAction.State.ConditionFallSpeed.html#HnSF_Sample_TDAction_State_ConditionFallSpeed_minValue
+  commentId: F:HnSF.Sample.TDAction.State.ConditionFallSpeed.minValue
+  fullName: HnSF.Sample.TDAction.State.ConditionFallSpeed.minValue
+  nameWithType: ConditionFallSpeed.minValue
 - uid: HnSF.Sample.TDAction.State.ConditionFunctionEnum
   name: ConditionFunctionEnum
   href: api/HnSF.Sample.TDAction.State.ConditionFunctionEnum.html
@@ -4300,6 +4785,18 @@ references:
   commentId: F:HnSF.Sample.TDAction.State.ConditionFunctionEnum.BOOLEAN
   fullName: HnSF.Sample.TDAction.State.ConditionFunctionEnum.BOOLEAN
   nameWithType: ConditionFunctionEnum.BOOLEAN
+- uid: HnSF.Sample.TDAction.State.ConditionFunctionEnum.BUTTON
+  name: BUTTON
+  href: api/HnSF.Sample.TDAction.State.ConditionFunctionEnum.html#HnSF_Sample_TDAction_State_ConditionFunctionEnum_BUTTON
+  commentId: F:HnSF.Sample.TDAction.State.ConditionFunctionEnum.BUTTON
+  fullName: HnSF.Sample.TDAction.State.ConditionFunctionEnum.BUTTON
+  nameWithType: ConditionFunctionEnum.BUTTON
+- uid: HnSF.Sample.TDAction.State.ConditionFunctionEnum.FALL_SPEED
+  name: FALL_SPEED
+  href: api/HnSF.Sample.TDAction.State.ConditionFunctionEnum.html#HnSF_Sample_TDAction_State_ConditionFunctionEnum_FALL_SPEED
+  commentId: F:HnSF.Sample.TDAction.State.ConditionFunctionEnum.FALL_SPEED
+  fullName: HnSF.Sample.TDAction.State.ConditionFunctionEnum.FALL_SPEED
+  nameWithType: ConditionFunctionEnum.FALL_SPEED
 - uid: HnSF.Sample.TDAction.State.ConditionFunctionEnum.GROUND_STATE
   name: GROUND_STATE
   href: api/HnSF.Sample.TDAction.State.ConditionFunctionEnum.html#HnSF_Sample_TDAction_State_ConditionFunctionEnum_GROUND_STATE
@@ -4393,6 +4890,68 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.State.ConditionNone.FunctionMap
   nameWithType: ConditionNone.FunctionMap
+- uid: HnSF.Sample.TDAction.State.LocalPlayerData
+  name: LocalPlayerData
+  href: api/HnSF.Sample.TDAction.State.LocalPlayerData.html
+  commentId: T:HnSF.Sample.TDAction.State.LocalPlayerData
+  fullName: HnSF.Sample.TDAction.State.LocalPlayerData
+  nameWithType: LocalPlayerData
+- uid: HnSF.Sample.TDAction.State.LocalPlayerData.camera
+  name: camera
+  href: api/HnSF.Sample.TDAction.State.LocalPlayerData.html#HnSF_Sample_TDAction_State_LocalPlayerData_camera
+  commentId: F:HnSF.Sample.TDAction.State.LocalPlayerData.camera
+  fullName: HnSF.Sample.TDAction.State.LocalPlayerData.camera
+  nameWithType: LocalPlayerData.camera
+- uid: HnSF.Sample.TDAction.State.LocalPlayerManager
+  name: LocalPlayerManager
+  href: api/HnSF.Sample.TDAction.State.LocalPlayerManager.html
+  commentId: T:HnSF.Sample.TDAction.State.LocalPlayerManager
+  fullName: HnSF.Sample.TDAction.State.LocalPlayerManager
+  nameWithType: LocalPlayerManager
+- uid: HnSF.Sample.TDAction.State.LocalPlayerManager.AddPlayer
+  name: AddPlayer()
+  href: api/HnSF.Sample.TDAction.State.LocalPlayerManager.html#HnSF_Sample_TDAction_State_LocalPlayerManager_AddPlayer
+  commentId: M:HnSF.Sample.TDAction.State.LocalPlayerManager.AddPlayer
+  fullName: HnSF.Sample.TDAction.State.LocalPlayerManager.AddPlayer()
+  nameWithType: LocalPlayerManager.AddPlayer()
+- uid: HnSF.Sample.TDAction.State.LocalPlayerManager.AddPlayer*
+  name: AddPlayer
+  href: api/HnSF.Sample.TDAction.State.LocalPlayerManager.html#HnSF_Sample_TDAction_State_LocalPlayerManager_AddPlayer_
+  commentId: Overload:HnSF.Sample.TDAction.State.LocalPlayerManager.AddPlayer
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.LocalPlayerManager.AddPlayer
+  nameWithType: LocalPlayerManager.AddPlayer
+- uid: HnSF.Sample.TDAction.State.LocalPlayerManager.localPlayers
+  name: localPlayers
+  href: api/HnSF.Sample.TDAction.State.LocalPlayerManager.html#HnSF_Sample_TDAction_State_LocalPlayerManager_localPlayers
+  commentId: F:HnSF.Sample.TDAction.State.LocalPlayerManager.localPlayers
+  fullName: HnSF.Sample.TDAction.State.LocalPlayerManager.localPlayers
+  nameWithType: LocalPlayerManager.localPlayers
+- uid: HnSF.Sample.TDAction.State.LocalPlayerManager.maxLocalPlayers
+  name: maxLocalPlayers
+  href: api/HnSF.Sample.TDAction.State.LocalPlayerManager.html#HnSF_Sample_TDAction_State_LocalPlayerManager_maxLocalPlayers
+  commentId: F:HnSF.Sample.TDAction.State.LocalPlayerManager.maxLocalPlayers
+  fullName: HnSF.Sample.TDAction.State.LocalPlayerManager.maxLocalPlayers
+  nameWithType: LocalPlayerManager.maxLocalPlayers
+- uid: HnSF.Sample.TDAction.State.LocalPlayerManager.playerCameraLayouts
+  name: playerCameraLayouts
+  href: api/HnSF.Sample.TDAction.State.LocalPlayerManager.html#HnSF_Sample_TDAction_State_LocalPlayerManager_playerCameraLayouts
+  commentId: F:HnSF.Sample.TDAction.State.LocalPlayerManager.playerCameraLayouts
+  fullName: HnSF.Sample.TDAction.State.LocalPlayerManager.playerCameraLayouts
+  nameWithType: LocalPlayerManager.playerCameraLayouts
+- uid: HnSF.Sample.TDAction.State.LocalPlayerManager.RemovePlayer(System.Int32)
+  name: RemovePlayer(Int32)
+  href: api/HnSF.Sample.TDAction.State.LocalPlayerManager.html#HnSF_Sample_TDAction_State_LocalPlayerManager_RemovePlayer_System_Int32_
+  commentId: M:HnSF.Sample.TDAction.State.LocalPlayerManager.RemovePlayer(System.Int32)
+  fullName: HnSF.Sample.TDAction.State.LocalPlayerManager.RemovePlayer(System.Int32)
+  nameWithType: LocalPlayerManager.RemovePlayer(Int32)
+- uid: HnSF.Sample.TDAction.State.LocalPlayerManager.RemovePlayer*
+  name: RemovePlayer
+  href: api/HnSF.Sample.TDAction.State.LocalPlayerManager.html#HnSF_Sample_TDAction_State_LocalPlayerManager_RemovePlayer_
+  commentId: Overload:HnSF.Sample.TDAction.State.LocalPlayerManager.RemovePlayer
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.LocalPlayerManager.RemovePlayer
+  nameWithType: LocalPlayerManager.RemovePlayer
 - uid: HnSF.Sample.TDAction.State.StateConditionMapper
   name: StateConditionMapper
   href: api/HnSF.Sample.TDAction.State.StateConditionMapper.html
@@ -4424,6 +4983,12 @@ references:
   commentId: F:HnSF.Sample.TDAction.State.StateFunctionEnum.APPLY_GRAVITY
   fullName: HnSF.Sample.TDAction.State.StateFunctionEnum.APPLY_GRAVITY
   nameWithType: StateFunctionEnum.APPLY_GRAVITY
+- uid: HnSF.Sample.TDAction.State.StateFunctionEnum.APPLY_TRACTION
+  name: APPLY_TRACTION
+  href: api/HnSF.Sample.TDAction.State.StateFunctionEnum.html#HnSF_Sample_TDAction_State_StateFunctionEnum_APPLY_TRACTION
+  commentId: F:HnSF.Sample.TDAction.State.StateFunctionEnum.APPLY_TRACTION
+  fullName: HnSF.Sample.TDAction.State.StateFunctionEnum.APPLY_TRACTION
+  nameWithType: StateFunctionEnum.APPLY_TRACTION
 - uid: HnSF.Sample.TDAction.State.StateFunctionEnum.CHANGE_STATE
   name: CHANGE_STATE
   href: api/HnSF.Sample.TDAction.State.StateFunctionEnum.html#HnSF_Sample_TDAction_State_StateFunctionEnum_CHANGE_STATE
@@ -4436,12 +5001,31 @@ references:
   commentId: F:HnSF.Sample.TDAction.State.StateFunctionEnum.NULL
   fullName: HnSF.Sample.TDAction.State.StateFunctionEnum.NULL
   nameWithType: StateFunctionEnum.NULL
+- uid: HnSF.Sample.TDAction.State.StateFunctionEnum.SET_FALL_SPEED
+  name: SET_FALL_SPEED
+  href: api/HnSF.Sample.TDAction.State.StateFunctionEnum.html#HnSF_Sample_TDAction_State_StateFunctionEnum_SET_FALL_SPEED
+  commentId: F:HnSF.Sample.TDAction.State.StateFunctionEnum.SET_FALL_SPEED
+  fullName: HnSF.Sample.TDAction.State.StateFunctionEnum.SET_FALL_SPEED
+  nameWithType: StateFunctionEnum.SET_FALL_SPEED
 - uid: HnSF.Sample.TDAction.State.VarApplyGravity
   name: VarApplyGravity
   href: api/HnSF.Sample.TDAction.State.VarApplyGravity.html
   commentId: T:HnSF.Sample.TDAction.State.VarApplyGravity
   fullName: HnSF.Sample.TDAction.State.VarApplyGravity
   nameWithType: VarApplyGravity
+- uid: HnSF.Sample.TDAction.State.VarApplyGravity.Children
+  name: Children
+  href: api/HnSF.Sample.TDAction.State.VarApplyGravity.html#HnSF_Sample_TDAction_State_VarApplyGravity_Children
+  commentId: P:HnSF.Sample.TDAction.State.VarApplyGravity.Children
+  fullName: HnSF.Sample.TDAction.State.VarApplyGravity.Children
+  nameWithType: VarApplyGravity.Children
+- uid: HnSF.Sample.TDAction.State.VarApplyGravity.Children*
+  name: Children
+  href: api/HnSF.Sample.TDAction.State.VarApplyGravity.html#HnSF_Sample_TDAction_State_VarApplyGravity_Children_
+  commentId: Overload:HnSF.Sample.TDAction.State.VarApplyGravity.Children
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.VarApplyGravity.Children
+  nameWithType: VarApplyGravity.Children
 - uid: HnSF.Sample.TDAction.State.VarApplyGravity.condition
   name: condition
   href: api/HnSF.Sample.TDAction.State.VarApplyGravity.html#HnSF_Sample_TDAction_State_VarApplyGravity_condition
@@ -4517,6 +5101,170 @@ references:
   commentId: F:HnSF.Sample.TDAction.State.VarApplyGravity.useMaxFallSpeedStat
   fullName: HnSF.Sample.TDAction.State.VarApplyGravity.useMaxFallSpeedStat
   nameWithType: VarApplyGravity.useMaxFallSpeedStat
+- uid: HnSF.Sample.TDAction.State.VarApplyTraction
+  name: VarApplyTraction
+  href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html
+  commentId: T:HnSF.Sample.TDAction.State.VarApplyTraction
+  fullName: HnSF.Sample.TDAction.State.VarApplyTraction
+  nameWithType: VarApplyTraction
+- uid: HnSF.Sample.TDAction.State.VarApplyTraction.aerialTraction
+  name: aerialTraction
+  href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_aerialTraction
+  commentId: F:HnSF.Sample.TDAction.State.VarApplyTraction.aerialTraction
+  fullName: HnSF.Sample.TDAction.State.VarApplyTraction.aerialTraction
+  nameWithType: VarApplyTraction.aerialTraction
+- uid: HnSF.Sample.TDAction.State.VarApplyTraction.Children
+  name: Children
+  href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_Children
+  commentId: P:HnSF.Sample.TDAction.State.VarApplyTraction.Children
+  fullName: HnSF.Sample.TDAction.State.VarApplyTraction.Children
+  nameWithType: VarApplyTraction.Children
+- uid: HnSF.Sample.TDAction.State.VarApplyTraction.Children*
+  name: Children
+  href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_Children_
+  commentId: Overload:HnSF.Sample.TDAction.State.VarApplyTraction.Children
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.VarApplyTraction.Children
+  nameWithType: VarApplyTraction.Children
+- uid: HnSF.Sample.TDAction.State.VarApplyTraction.condition
+  name: condition
+  href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_condition
+  commentId: F:HnSF.Sample.TDAction.State.VarApplyTraction.condition
+  fullName: HnSF.Sample.TDAction.State.VarApplyTraction.condition
+  nameWithType: VarApplyTraction.condition
+- uid: HnSF.Sample.TDAction.State.VarApplyTraction.Condition
+  name: Condition
+  href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_Condition
+  commentId: P:HnSF.Sample.TDAction.State.VarApplyTraction.Condition
+  fullName: HnSF.Sample.TDAction.State.VarApplyTraction.Condition
+  nameWithType: VarApplyTraction.Condition
+- uid: HnSF.Sample.TDAction.State.VarApplyTraction.Condition*
+  name: Condition
+  href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_Condition_
+  commentId: Overload:HnSF.Sample.TDAction.State.VarApplyTraction.Condition
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.VarApplyTraction.Condition
+  nameWithType: VarApplyTraction.Condition
+- uid: HnSF.Sample.TDAction.State.VarApplyTraction.frameRanges
+  name: frameRanges
+  href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_frameRanges
+  commentId: F:HnSF.Sample.TDAction.State.VarApplyTraction.frameRanges
+  fullName: HnSF.Sample.TDAction.State.VarApplyTraction.frameRanges
+  nameWithType: VarApplyTraction.frameRanges
+- uid: HnSF.Sample.TDAction.State.VarApplyTraction.FrameRanges
+  name: FrameRanges
+  href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_FrameRanges
+  commentId: P:HnSF.Sample.TDAction.State.VarApplyTraction.FrameRanges
+  fullName: HnSF.Sample.TDAction.State.VarApplyTraction.FrameRanges
+  nameWithType: VarApplyTraction.FrameRanges
+- uid: HnSF.Sample.TDAction.State.VarApplyTraction.FrameRanges*
+  name: FrameRanges
+  href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_FrameRanges_
+  commentId: Overload:HnSF.Sample.TDAction.State.VarApplyTraction.FrameRanges
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.VarApplyTraction.FrameRanges
+  nameWithType: VarApplyTraction.FrameRanges
+- uid: HnSF.Sample.TDAction.State.VarApplyTraction.FunctionMap
+  name: FunctionMap
+  href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_FunctionMap
+  commentId: P:HnSF.Sample.TDAction.State.VarApplyTraction.FunctionMap
+  fullName: HnSF.Sample.TDAction.State.VarApplyTraction.FunctionMap
+  nameWithType: VarApplyTraction.FunctionMap
+- uid: HnSF.Sample.TDAction.State.VarApplyTraction.FunctionMap*
+  name: FunctionMap
+  href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_FunctionMap_
+  commentId: Overload:HnSF.Sample.TDAction.State.VarApplyTraction.FunctionMap
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.VarApplyTraction.FunctionMap
+  nameWithType: VarApplyTraction.FunctionMap
+- uid: HnSF.Sample.TDAction.State.VarApplyTraction.traction
+  name: traction
+  href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_traction
+  commentId: F:HnSF.Sample.TDAction.State.VarApplyTraction.traction
+  fullName: HnSF.Sample.TDAction.State.VarApplyTraction.traction
+  nameWithType: VarApplyTraction.traction
+- uid: HnSF.Sample.TDAction.State.VarApplyTraction.useTractionStat
+  name: useTractionStat
+  href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_useTractionStat
+  commentId: F:HnSF.Sample.TDAction.State.VarApplyTraction.useTractionStat
+  fullName: HnSF.Sample.TDAction.State.VarApplyTraction.useTractionStat
+  nameWithType: VarApplyTraction.useTractionStat
+- uid: HnSF.Sample.TDAction.State.VarSetFallSpeed
+  name: VarSetFallSpeed
+  href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html
+  commentId: T:HnSF.Sample.TDAction.State.VarSetFallSpeed
+  fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed
+  nameWithType: VarSetFallSpeed
+- uid: HnSF.Sample.TDAction.State.VarSetFallSpeed.Children
+  name: Children
+  href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html#HnSF_Sample_TDAction_State_VarSetFallSpeed_Children
+  commentId: P:HnSF.Sample.TDAction.State.VarSetFallSpeed.Children
+  fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed.Children
+  nameWithType: VarSetFallSpeed.Children
+- uid: HnSF.Sample.TDAction.State.VarSetFallSpeed.Children*
+  name: Children
+  href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html#HnSF_Sample_TDAction_State_VarSetFallSpeed_Children_
+  commentId: Overload:HnSF.Sample.TDAction.State.VarSetFallSpeed.Children
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed.Children
+  nameWithType: VarSetFallSpeed.Children
+- uid: HnSF.Sample.TDAction.State.VarSetFallSpeed.condition
+  name: condition
+  href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html#HnSF_Sample_TDAction_State_VarSetFallSpeed_condition
+  commentId: F:HnSF.Sample.TDAction.State.VarSetFallSpeed.condition
+  fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed.condition
+  nameWithType: VarSetFallSpeed.condition
+- uid: HnSF.Sample.TDAction.State.VarSetFallSpeed.Condition
+  name: Condition
+  href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html#HnSF_Sample_TDAction_State_VarSetFallSpeed_Condition
+  commentId: P:HnSF.Sample.TDAction.State.VarSetFallSpeed.Condition
+  fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed.Condition
+  nameWithType: VarSetFallSpeed.Condition
+- uid: HnSF.Sample.TDAction.State.VarSetFallSpeed.Condition*
+  name: Condition
+  href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html#HnSF_Sample_TDAction_State_VarSetFallSpeed_Condition_
+  commentId: Overload:HnSF.Sample.TDAction.State.VarSetFallSpeed.Condition
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed.Condition
+  nameWithType: VarSetFallSpeed.Condition
+- uid: HnSF.Sample.TDAction.State.VarSetFallSpeed.frameRanges
+  name: frameRanges
+  href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html#HnSF_Sample_TDAction_State_VarSetFallSpeed_frameRanges
+  commentId: F:HnSF.Sample.TDAction.State.VarSetFallSpeed.frameRanges
+  fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed.frameRanges
+  nameWithType: VarSetFallSpeed.frameRanges
+- uid: HnSF.Sample.TDAction.State.VarSetFallSpeed.FrameRanges
+  name: FrameRanges
+  href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html#HnSF_Sample_TDAction_State_VarSetFallSpeed_FrameRanges
+  commentId: P:HnSF.Sample.TDAction.State.VarSetFallSpeed.FrameRanges
+  fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed.FrameRanges
+  nameWithType: VarSetFallSpeed.FrameRanges
+- uid: HnSF.Sample.TDAction.State.VarSetFallSpeed.FrameRanges*
+  name: FrameRanges
+  href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html#HnSF_Sample_TDAction_State_VarSetFallSpeed_FrameRanges_
+  commentId: Overload:HnSF.Sample.TDAction.State.VarSetFallSpeed.FrameRanges
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed.FrameRanges
+  nameWithType: VarSetFallSpeed.FrameRanges
+- uid: HnSF.Sample.TDAction.State.VarSetFallSpeed.FunctionMap
+  name: FunctionMap
+  href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html#HnSF_Sample_TDAction_State_VarSetFallSpeed_FunctionMap
+  commentId: P:HnSF.Sample.TDAction.State.VarSetFallSpeed.FunctionMap
+  fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed.FunctionMap
+  nameWithType: VarSetFallSpeed.FunctionMap
+- uid: HnSF.Sample.TDAction.State.VarSetFallSpeed.FunctionMap*
+  name: FunctionMap
+  href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html#HnSF_Sample_TDAction_State_VarSetFallSpeed_FunctionMap_
+  commentId: Overload:HnSF.Sample.TDAction.State.VarSetFallSpeed.FunctionMap
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed.FunctionMap
+  nameWithType: VarSetFallSpeed.FunctionMap
+- uid: HnSF.Sample.TDAction.State.VarSetFallSpeed.value
+  name: value
+  href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html#HnSF_Sample_TDAction_State_VarSetFallSpeed_value
+  commentId: F:HnSF.Sample.TDAction.State.VarSetFallSpeed.value
+  fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed.value
+  nameWithType: VarSetFallSpeed.value
 - uid: HnSF.Sample.TDAction.StateFunctionMapper
   name: StateFunctionMapper
   href: api/HnSF.Sample.TDAction.StateFunctionMapper.html
@@ -4749,6 +5497,12 @@ references:
   commentId: T:HnSF.StateTimelineEditor
   fullName: HnSF.StateTimelineEditor
   nameWithType: StateTimelineEditor
+- uid: HnSF.StateTimelineEditor.currentTimeline
+  name: currentTimeline
+  href: api/HnSF.StateTimelineEditor.html#HnSF_StateTimelineEditor_currentTimeline
+  commentId: F:HnSF.StateTimelineEditor.currentTimeline
+  fullName: HnSF.StateTimelineEditor.currentTimeline
+  nameWithType: StateTimelineEditor.currentTimeline
 - uid: HnSF.StateTimelineEditor.OnInspectorGUI
   name: OnInspectorGUI()
   href: api/HnSF.StateTimelineEditor.html#HnSF_StateTimelineEditor_OnInspectorGUI
@@ -4762,3 +5516,115 @@ references:
   isSpec: "True"
   fullName: HnSF.StateTimelineEditor.OnInspectorGUI
   nameWithType: StateTimelineEditor.OnInspectorGUI
+- uid: HnSF.StateTimelineEditorWindow
+  name: StateTimelineEditorWindow
+  href: api/HnSF.StateTimelineEditorWindow.html
+  commentId: T:HnSF.StateTimelineEditorWindow
+  fullName: HnSF.StateTimelineEditorWindow
+  nameWithType: StateTimelineEditorWindow
+- uid: HnSF.StateTimelineEditorWindow.CreateGUI
+  name: CreateGUI()
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_CreateGUI
+  commentId: M:HnSF.StateTimelineEditorWindow.CreateGUI
+  fullName: HnSF.StateTimelineEditorWindow.CreateGUI()
+  nameWithType: StateTimelineEditorWindow.CreateGUI()
+- uid: HnSF.StateTimelineEditorWindow.CreateGUI*
+  name: CreateGUI
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_CreateGUI_
+  commentId: Overload:HnSF.StateTimelineEditorWindow.CreateGUI
+  isSpec: "True"
+  fullName: HnSF.StateTimelineEditorWindow.CreateGUI
+  nameWithType: StateTimelineEditorWindow.CreateGUI
+- uid: HnSF.StateTimelineEditorWindow.dataBar
+  name: dataBar
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_dataBar
+  commentId: F:HnSF.StateTimelineEditorWindow.dataBar
+  fullName: HnSF.StateTimelineEditorWindow.dataBar
+  nameWithType: StateTimelineEditorWindow.dataBar
+- uid: HnSF.StateTimelineEditorWindow.frameInterruptColor
+  name: frameInterruptColor
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_frameInterruptColor
+  commentId: F:HnSF.StateTimelineEditorWindow.frameInterruptColor
+  fullName: HnSF.StateTimelineEditorWindow.frameInterruptColor
+  nameWithType: StateTimelineEditorWindow.frameInterruptColor
+- uid: HnSF.StateTimelineEditorWindow.frameZeroColor
+  name: frameZeroColor
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_frameZeroColor
+  commentId: F:HnSF.StateTimelineEditorWindow.frameZeroColor
+  fullName: HnSF.StateTimelineEditorWindow.frameZeroColor
+  nameWithType: StateTimelineEditorWindow.frameZeroColor
+- uid: HnSF.StateTimelineEditorWindow.mainFrameBarBG
+  name: mainFrameBarBG
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_mainFrameBarBG
+  commentId: F:HnSF.StateTimelineEditorWindow.mainFrameBarBG
+  fullName: HnSF.StateTimelineEditorWindow.mainFrameBarBG
+  nameWithType: StateTimelineEditorWindow.mainFrameBarBG
+- uid: HnSF.StateTimelineEditorWindow.mainFrameBarLabel
+  name: mainFrameBarLabel
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_mainFrameBarLabel
+  commentId: F:HnSF.StateTimelineEditorWindow.mainFrameBarLabel
+  fullName: HnSF.StateTimelineEditorWindow.mainFrameBarLabel
+  nameWithType: StateTimelineEditorWindow.mainFrameBarLabel
+- uid: HnSF.StateTimelineEditorWindow.OpenWindow(HnSF.StateTimeline)
+  name: OpenWindow(StateTimeline)
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_OpenWindow_HnSF_StateTimeline_
+  commentId: M:HnSF.StateTimelineEditorWindow.OpenWindow(HnSF.StateTimeline)
+  fullName: HnSF.StateTimelineEditorWindow.OpenWindow(HnSF.StateTimeline)
+  nameWithType: StateTimelineEditorWindow.OpenWindow(StateTimeline)
+- uid: HnSF.StateTimelineEditorWindow.OpenWindow*
+  name: OpenWindow
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_OpenWindow_
+  commentId: Overload:HnSF.StateTimelineEditorWindow.OpenWindow
+  isSpec: "True"
+  fullName: HnSF.StateTimelineEditorWindow.OpenWindow
+  nameWithType: StateTimelineEditorWindow.OpenWindow
+- uid: HnSF.StateTimelineEditorWindow.RefreshAll(System.Boolean)
+  name: RefreshAll(Boolean)
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_RefreshAll_System_Boolean_
+  commentId: M:HnSF.StateTimelineEditorWindow.RefreshAll(System.Boolean)
+  fullName: HnSF.StateTimelineEditorWindow.RefreshAll(System.Boolean)
+  nameWithType: StateTimelineEditorWindow.RefreshAll(Boolean)
+- uid: HnSF.StateTimelineEditorWindow.RefreshAll*
+  name: RefreshAll
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_RefreshAll_
+  commentId: Overload:HnSF.StateTimelineEditorWindow.RefreshAll
+  isSpec: "True"
+  fullName: HnSF.StateTimelineEditorWindow.RefreshAll
+  nameWithType: StateTimelineEditorWindow.RefreshAll
+- uid: HnSF.StateTimelineEditorWindow.RefreshFrameBars
+  name: RefreshFrameBars()
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_RefreshFrameBars
+  commentId: M:HnSF.StateTimelineEditorWindow.RefreshFrameBars
+  fullName: HnSF.StateTimelineEditorWindow.RefreshFrameBars()
+  nameWithType: StateTimelineEditorWindow.RefreshFrameBars()
+- uid: HnSF.StateTimelineEditorWindow.RefreshFrameBars*
+  name: RefreshFrameBars
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_RefreshFrameBars_
+  commentId: Overload:HnSF.StateTimelineEditorWindow.RefreshFrameBars
+  isSpec: "True"
+  fullName: HnSF.StateTimelineEditorWindow.RefreshFrameBars
+  nameWithType: StateTimelineEditorWindow.RefreshFrameBars
+- uid: HnSF.StateTimelineEditorWindow.stateTimeline
+  name: stateTimeline
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_stateTimeline
+  commentId: F:HnSF.StateTimelineEditorWindow.stateTimeline
+  fullName: HnSF.StateTimelineEditorWindow.stateTimeline
+  nameWithType: StateTimelineEditorWindow.stateTimeline
+- uid: HnSF.StateTimelineEditorWindow.topbarFrameLabel
+  name: topbarFrameLabel
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_topbarFrameLabel
+  commentId: F:HnSF.StateTimelineEditorWindow.topbarFrameLabel
+  fullName: HnSF.StateTimelineEditorWindow.topbarFrameLabel
+  nameWithType: StateTimelineEditorWindow.topbarFrameLabel
+- uid: HnSF.StateTimelineEditorWindow.tree
+  name: tree
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_tree
+  commentId: F:HnSF.StateTimelineEditorWindow.tree
+  fullName: HnSF.StateTimelineEditorWindow.tree
+  nameWithType: StateTimelineEditorWindow.tree
+- uid: HnSF.StateTimelineEditorWindow.zoomMultiplier
+  name: zoomMultiplier
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_zoomMultiplier
+  commentId: F:HnSF.StateTimelineEditorWindow.zoomMultiplier
+  fullName: HnSF.StateTimelineEditorWindow.zoomMultiplier
+  nameWithType: StateTimelineEditorWindow.zoomMultiplier
