@@ -111,7 +111,7 @@ namespace HnSF
 
             // TOPBAR //
             // Cleanup
-            var frameLabels = dataBars.First().Query(name: "topbar-frame-label").Build();
+            var frameLabels = dataBars.First().Query(name: topbarFrameLabel.name).Build();
             foreach (var fl in frameLabels)
             {
                 dataBars.First().Remove(fl);
@@ -121,7 +121,7 @@ namespace HnSF
             for (int i = 0; i < stateTimeline.totalFrames + 2; i++)
             {
                 topbarFrameLabel.CloneTree(dataBars.First());
-                var thisFrameLabelNumber = dataBars.First().Query(name: "topbar-frame-label").Build().Last();
+                var thisFrameLabelNumber = dataBars.First().Query(name: topbarFrameLabel.name).Build().Last();
                 Label l = thisFrameLabelNumber.Children().First() as Label;
                 l.text = $"{i}";
                 if (i == 0) l.style.backgroundColor = frameZeroColor;
@@ -136,7 +136,7 @@ namespace HnSF
                 for (int j = 0; j < stateTimeline.data[i - 1].FrameRanges.Length; j++)
                 {
                     mainFrameBarLabel.CloneTree(dbs[i]);
-                    var thisMainFrameBarLabel = dbs[i].Query(name: "main-framebar-label").Build().Last();
+                    var thisMainFrameBarLabel = dbs[i].Query(name: mainFrameBarLabel.name).Build().Last();
                     thisMainFrameBarLabel.style.left = 20.0f * stateTimeline.data[i - 1].FrameRanges[j].x;
                     thisMainFrameBarLabel.style.width = new StyleLength(20.0f * ((stateTimeline.data[i - 1].FrameRanges[j].y - stateTimeline.data[i - 1].FrameRanges[j].x) + 1) );
                 }

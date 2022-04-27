@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using HnSF.Sample.TDAction;
 using UnityEngine;
 
-public class SimulationBehaviour : MonoBehaviour, ISimulationObject
+public class SimulationBehaviour : MonoBehaviour, ISimulationBehaviour
 {
     public GameManager Manager
     {

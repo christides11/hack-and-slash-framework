@@ -268,6 +268,7 @@ GameObject:
   m_Component:
   - component: {fileID: 248838089}
   - component: {fileID: 248838090}
+  - component: {fileID: 248838091}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -315,6 +316,46 @@ MonoBehaviour:
   playerManagers: []
   players: []
   cpus: []
+  localPlayerManager: {fileID: 248838091}
+--- !u!114 &248838091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248838088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d59e781f198990c45940a70c8f6f9da9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxLocalPlayers: 4
+  localPlayers: []
+  playerCameraLayouts:
+  - cameraLayouts:
+    - serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+  - cameraLayouts:
+    - serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+  - cameraLayouts:
+    - serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+  - cameraLayouts:
+    - serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
 --- !u!1 &1019620984
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,10 +459,10 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
-    y: 0.083333336
-    width: 0.5
-    height: 0.5007825
+    x: 0.00078125
+    y: 0
+    width: 0.9984375
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60

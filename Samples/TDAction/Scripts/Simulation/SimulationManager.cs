@@ -11,25 +11,51 @@ namespace HnSF.Sample.TDAction
         [field: SerializeField]
         public int Tick { get; protected set; } = 0;
         
-        public List<ISimulationObject> simObjects = new List<ISimulationObject>();
+        public List<SimulationObject> simObjects = new List<SimulationObject>();
         public GameManager gameManager;
         
         public void Increment()
         {
             for (int i = 0; i < simObjects.Count; i++)
             {
-                simObjects[i].SimUpdate();
+                
             }
 
             Physics2D.Simulate(TickRate);
             Tick++;
         }
 
-        public void RegisterObject(ISimulationObject simObject)
+        public void RegisterObject(SimulationObject simObject)
         {
-            simObject.SimInitialize(gameManager);
-            simObject.SimAwake();
             simObjects.Add(simObject);
+            InitializeSimObject(simObject);
+            AwakeSimObject(simObject);
+        }
+
+        private void InitializeSimObject(SimulationObject simObject)
+        {
+            foreach (var t in simObject.simulationBehaviours)
+            {
+                t.SimInitialize(gameManager);
+            }
+
+            foreach (var t in simObject.nestedObjects)
+            {
+                InitializeSimObject(t);
+            }
+        }
+        
+        private static void AwakeSimObject(SimulationObject simObject)
+        {
+            foreach (var t in simObject.simulationBehaviours)
+            {
+                t.SimAwake();
+            }
+
+            foreach (var t in simObject.nestedObjects)
+            {
+                AwakeSimObject(t);
+            }
         }
     }
 }

@@ -46,5 +46,22 @@ namespace HnSF.Sample.TDAction
             if (vars.inverse) r = !r;
             return r;
         }
+
+        public static bool CheckButton(IFighterBase fighter, IConditionVariables variables)
+        {
+            ConditionButton vars = (ConditionButton)variables;
+
+            bool r = false;
+            switch (vars.buttonState)
+            {
+                case ConditionButton.ButtonStateType.FirstPress:
+                    break;
+                case ConditionButton.ButtonStateType.Released:
+                    break;
+                case ConditionButton.ButtonStateType.IsDown:
+                    break;
+            }
+            return r;
+        }
     }
 }
