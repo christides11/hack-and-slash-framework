@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace HnSF.Sample.TDAction.State
 {
-    public class VarSetFallSpeed : IStateVariables
+    public struct VarSetFallSpeed : IStateVariables
     {
         public int FunctionMap => (int)StateFunctionEnum.SET_FALL_SPEED;
         public IConditionVariables Condition => condition;
@@ -20,7 +20,7 @@ namespace HnSF.Sample.TDAction.State
 
         public float value;
         
-        [SelectImplementation(typeof(IConditionVariables))] [SerializeField, SerializeReference] 
+        [SelectImplementation(typeof(IStateVariables))] [SerializeField, SerializeReference] 
         private IStateVariables[] children;
     }
 }

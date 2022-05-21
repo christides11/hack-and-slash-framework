@@ -7,13 +7,13 @@ namespace HnSF.Sample.TDAction
 {
     public static class BaseStateFunctions
     {
-        public static void ChangeState(IFighterBase fighter, IStateVariables variables)
+        public static void ChangeState(IFighterBase fighter, IStateVariables variables, HnSF.StateTimeline arg3, int arg4)
         {
             State.ChangeState vars = (State.ChangeState)variables;
             fighter.StateManager.MarkForStateChange(vars.stateID, vars.stateMovesetID);
         }
         
-        public static void ApplyGravity(IFighterBase fighter, IStateVariables variables)
+        public static void ApplyGravity(IFighterBase fighter, IStateVariables variables, HnSF.StateTimeline arg3, int arg4)
         {
             State.VarApplyGravity vars = (State.VarApplyGravity)variables;
             FighterManager fm = (FighterManager)fighter;
@@ -21,7 +21,7 @@ namespace HnSF.Sample.TDAction
                 vars.useGravityStat ? fm.statManager.gravity : vars.gravity);
         }
 
-        public static void ApplyTraction(IFighterBase fighter, IStateVariables variables)
+        public static void ApplyTraction(IFighterBase fighter, IStateVariables variables, HnSF.StateTimeline arg3, int arg4)
         {
             State.VarApplyTraction vars = (State.VarApplyTraction)variables;
             FighterManager fm = (FighterManager)fighter;
@@ -35,7 +35,7 @@ namespace HnSF.Sample.TDAction
             }
         }
 
-        public static void SetFallSpeed(IFighterBase fighter, IStateVariables variables)
+        public static void SetFallSpeed(IFighterBase fighter, IStateVariables variables, HnSF.StateTimeline arg3, int arg4)
         {
             State.VarSetFallSpeed vars = (State.VarSetFallSpeed)variables;
             FighterManager fm = (FighterManager)fighter;
