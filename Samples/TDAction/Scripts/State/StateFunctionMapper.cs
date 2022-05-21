@@ -6,10 +6,10 @@ namespace HnSF.Sample.TDAction
     {
         public StateFunctionMapper()
         {
-            functions.Add((int)StateFunctionEnum.CHANGE_STATE, BaseStateFunctions.ChangeState);
-            functions.Add((int)StateFunctionEnum.APPLY_GRAVITY, BaseStateFunctions.ApplyGravity);
-            functions.Add((int)StateFunctionEnum.APPLY_TRACTION, BaseStateFunctions.ApplyTraction);
-            functions.Add((int)StateFunctionEnum.SET_FALL_SPEED, BaseStateFunctions.SetFallSpeed);
+            functions.Add(typeof(State.ChangeState), BaseStateFunctions.ChangeState);
+            functions.Add(typeof(State.VarApplyGravity), BaseStateFunctions.ApplyGravity);
+            functions.Add(typeof(State.VarApplyTraction), BaseStateFunctions.ApplyTraction);
+            functions.Add(typeof(State.VarSetFallSpeed), BaseStateFunctions.SetFallSpeed);
         }
     }
 }

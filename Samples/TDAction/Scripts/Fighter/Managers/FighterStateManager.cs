@@ -75,8 +75,9 @@ namespace HnSF.Sample.TDAction
             }
 
             if (!valid) return;
-            if (!conditionMapperBase.TryCondition(d.Condition.FunctionMap, fighterManager, d.Condition)) return;
-            functionMapperBase.functions[d.FunctionMap](fighterManager, d);
+            var varType = d.GetType();
+            if (!conditionMapperBase.TryCondition(varType, fighterManager, d.Condition)) return;
+            functionMapperBase.functions[varType](fighterManager, d);
 
             foreach (var t in d.Children)
             {

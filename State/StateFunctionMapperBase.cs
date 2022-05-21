@@ -7,28 +7,28 @@ namespace HnSF
     [System.Serializable]
     public class StateFunctionMapperBase
     {
-        public Dictionary<int, Action<IFighterBase, IStateVariables>> functions =
-            new Dictionary<int, Action<IFighterBase, IStateVariables>>();
+        public Dictionary<Type, Action<IFighterBase, IStateVariables>> functions =
+            new Dictionary<Type, Action<IFighterBase, IStateVariables>>();
 
-        public virtual bool TryRegisterFunction(int id, Action<IFighterBase, IStateVariables> function)
+        public virtual bool TryRegisterFunction(Type id, Action<IFighterBase, IStateVariables> function)
         {
             if (functions.ContainsKey(id)) return false;
             functions.Add(id, function);
             return true;
         }
 
-        public virtual void RegisterFunction(int id, Action<IFighterBase, IStateVariables> function)
+        public virtual void RegisterFunction(Type  id, Action<IFighterBase, IStateVariables> function)
         {
             functions.Add(id, function);
         }
 
-        public virtual bool OverrideFunction(int id, Action<IFighterBase, IStateVariables> function)
+        public virtual bool OverrideFunction(Type id, Action<IFighterBase, IStateVariables> function)
         {
             functions[id] = function;
             return true;
         }
 
-        public virtual void RemoveFunction(int id)
+        public virtual void RemoveFunction(Type id)
         {
             functions.Remove(id);
         }
