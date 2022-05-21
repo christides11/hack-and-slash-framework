@@ -55,7 +55,7 @@ namespace HnSF.Sample.TDAction
 
         private void WhenUnpairedDeviceUsed(InputControl control, InputEventPtr eventPtr)
         {
-            Debug.Log($"Unpaired device used: {control.displayName}");
+            //Debug.Log($"Unpaired device used: {control.displayName}");
             
             // Make sure it's a button that was actuated.
             if (!(control is ButtonControl))
