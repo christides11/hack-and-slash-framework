@@ -7,22 +7,22 @@ namespace HnSF
     [System.Serializable]
     public class StateFunctionMapperBase
     {
-        public Dictionary<Type, Action<IFighterBase, IStateVariables>> functions =
-            new Dictionary<Type, Action<IFighterBase, IStateVariables>>();
+        public Dictionary<Type, Action<IFighterBase, IStateVariables, StateTimeline, int>> functions =
+            new Dictionary<Type, Action<IFighterBase, IStateVariables, StateTimeline, int>>();
 
-        public virtual bool TryRegisterFunction(Type id, Action<IFighterBase, IStateVariables> function)
+        public virtual bool TryRegisterFunction(Type id, Action<IFighterBase, IStateVariables, StateTimeline, int> function)
         {
             if (functions.ContainsKey(id)) return false;
             functions.Add(id, function);
             return true;
         }
 
-        public virtual void RegisterFunction(Type  id, Action<IFighterBase, IStateVariables> function)
+        public virtual void RegisterFunction(Type id, Action<IFighterBase, IStateVariables, StateTimeline, int> function)
         {
             functions.Add(id, function);
         }
 
-        public virtual bool OverrideFunction(Type id, Action<IFighterBase, IStateVariables> function)
+        public virtual bool OverrideFunction(Type id, Action<IFighterBase, IStateVariables, StateTimeline, int> function)
         {
             functions[id] = function;
             return true;

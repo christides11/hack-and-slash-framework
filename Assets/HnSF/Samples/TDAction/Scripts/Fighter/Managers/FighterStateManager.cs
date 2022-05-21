@@ -48,7 +48,7 @@ namespace HnSF.Sample.TDAction
                 int realFrame = onInterrupt ? state.totalFrames+1 : Mathf.Clamp(CurrentStateFrame, 0, state.totalFrames);
                 foreach (var d in state.data)
                 {
-                    ProcessStateVariables(d, realFrame);
+                    ProcessStateVariables(state, d, realFrame);
                 }
 
                 if (!state.useBaseState) break;
@@ -63,7 +63,7 @@ namespace HnSF.Sample.TDAction
             }
         }
 
-        private void ProcessStateVariables(IStateVariables d, int realFrame)
+        private void ProcessStateVariables(StateTimeline timeline, IStateVariables d, int realFrame)
         {
             var valid = true;
             for (int j = 0; j < d.FrameRanges.Length; j++)
@@ -76,12 +76,12 @@ namespace HnSF.Sample.TDAction
 
             if (!valid) return;
             var varType = d.GetType();
-            if (!conditionMapperBase.TryCondition(varType, fighterManager, d.Condition)) return;
-            functionMapperBase.functions[varType](fighterManager, d);
+            if (!conditionMapperBase.TryCondition(varType, fighterManager, d.Condition, timeline, realFrame)) return;
+            functionMapperBase.functions[varType](fighterManager, d, timeline, realFrame);
 
             foreach (var t in d.Children)
             {
-                ProcessStateVariables(t, realFrame);
+                ProcessStateVariables(timeline, t, realFrame);
             }
         }
 

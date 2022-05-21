@@ -6,12 +6,12 @@ namespace HnSF.Sample.TDAction
 {
     public class BaseConditionFunctions
     {
-        public static bool NoCondition(IFighterBase fighter, IConditionVariables variables)
+        public static bool NoCondition(IFighterBase fighter, IConditionVariables variables, HnSF.StateTimeline arg3, int arg4)
         {
             return true;
         }
 
-        public static bool MovementSqrMagnitude(IFighterBase fighter, IConditionVariables variables)
+        public static bool MovementSqrMagnitude(IFighterBase fighter, IConditionVariables variables, HnSF.StateTimeline arg3, int arg4)
         {
             FighterInputManager inputManager = ((FighterManager)fighter).InputManager;
             ConditionMovementMagnitude vars = (ConditionMovementMagnitude)variables;
@@ -21,7 +21,7 @@ namespace HnSF.Sample.TDAction
             return r;
         }
 
-        public static bool FallSpeed(IFighterBase fighter, IConditionVariables variables)
+        public static bool FallSpeed(IFighterBase fighter, IConditionVariables variables, HnSF.StateTimeline arg3, int arg4)
         {
             FighterPhysicsManager physicsManager = ((FighterManager)fighter).physicsManager;
             ConditionFallSpeed vars = (ConditionFallSpeed)variables;
@@ -38,7 +38,7 @@ namespace HnSF.Sample.TDAction
             return r;
         }
 
-        public static bool GroundedState(IFighterBase fighter, IConditionVariables variables)
+        public static bool GroundedState(IFighterBase fighter, IConditionVariables variables, HnSF.StateTimeline arg3, int arg4)
         {
             ConditionGroundState vars = (ConditionGroundState)variables;
 
