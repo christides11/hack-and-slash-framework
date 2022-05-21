@@ -1,3 +1,17 @@
+# [36.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v35.1.0...v36.0.0) (2022-05-21)
+
+
+### Code Refactoring
+
+* Added more context for state functions ([9c99b77](https://github.com/christides11/hack-and-slash-framework/commit/9c99b773b34802598da962ffa37d3bb336dc9d88))
+* Changed function ID to Type. ([789111c](https://github.com/christides11/hack-and-slash-framework/commit/789111c52187eeec63ab16c37099ed8936f3ee78))
+
+
+### BREAKING CHANGES
+
+* Changed the function signature of state functions to include the state being handled and the frame it's on.
+* Changed function ID from int to type.
+
 # [35.1.0](https://github.com/christides11/hack-and-slash-framework/compare/v35.0.0...v35.1.0) (2022-04-27)
 
 
