@@ -2378,12 +2378,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.BaseConditionFunctions.CheckButton
   nameWithType: BaseConditionFunctions.CheckButton
-- uid: HnSF.Sample.TDAction.BaseConditionFunctions.FallSpeed(HnSF.Fighters.IFighterBase,HnSF.IConditionVariables)
-  name: FallSpeed(IFighterBase, IConditionVariables)
-  href: api/HnSF.Sample.TDAction.BaseConditionFunctions.html#HnSF_Sample_TDAction_BaseConditionFunctions_FallSpeed_HnSF_Fighters_IFighterBase_HnSF_IConditionVariables_
-  commentId: M:HnSF.Sample.TDAction.BaseConditionFunctions.FallSpeed(HnSF.Fighters.IFighterBase,HnSF.IConditionVariables)
-  fullName: HnSF.Sample.TDAction.BaseConditionFunctions.FallSpeed(HnSF.Fighters.IFighterBase, HnSF.IConditionVariables)
-  nameWithType: BaseConditionFunctions.FallSpeed(IFighterBase, IConditionVariables)
+- uid: HnSF.Sample.TDAction.BaseConditionFunctions.FallSpeed(HnSF.Fighters.IFighterBase,HnSF.IConditionVariables,HnSF.StateTimeline,System.Int32)
+  name: FallSpeed(IFighterBase, IConditionVariables, StateTimeline, Int32)
+  href: api/HnSF.Sample.TDAction.BaseConditionFunctions.html#HnSF_Sample_TDAction_BaseConditionFunctions_FallSpeed_HnSF_Fighters_IFighterBase_HnSF_IConditionVariables_HnSF_StateTimeline_System_Int32_
+  commentId: M:HnSF.Sample.TDAction.BaseConditionFunctions.FallSpeed(HnSF.Fighters.IFighterBase,HnSF.IConditionVariables,HnSF.StateTimeline,System.Int32)
+  fullName: HnSF.Sample.TDAction.BaseConditionFunctions.FallSpeed(HnSF.Fighters.IFighterBase, HnSF.IConditionVariables, HnSF.StateTimeline, System.Int32)
+  nameWithType: BaseConditionFunctions.FallSpeed(IFighterBase, IConditionVariables, StateTimeline, Int32)
 - uid: HnSF.Sample.TDAction.BaseConditionFunctions.FallSpeed*
   name: FallSpeed
   href: api/HnSF.Sample.TDAction.BaseConditionFunctions.html#HnSF_Sample_TDAction_BaseConditionFunctions_FallSpeed_
@@ -2391,12 +2391,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.BaseConditionFunctions.FallSpeed
   nameWithType: BaseConditionFunctions.FallSpeed
-- uid: HnSF.Sample.TDAction.BaseConditionFunctions.GroundedState(HnSF.Fighters.IFighterBase,HnSF.IConditionVariables)
-  name: GroundedState(IFighterBase, IConditionVariables)
-  href: api/HnSF.Sample.TDAction.BaseConditionFunctions.html#HnSF_Sample_TDAction_BaseConditionFunctions_GroundedState_HnSF_Fighters_IFighterBase_HnSF_IConditionVariables_
-  commentId: M:HnSF.Sample.TDAction.BaseConditionFunctions.GroundedState(HnSF.Fighters.IFighterBase,HnSF.IConditionVariables)
-  fullName: HnSF.Sample.TDAction.BaseConditionFunctions.GroundedState(HnSF.Fighters.IFighterBase, HnSF.IConditionVariables)
-  nameWithType: BaseConditionFunctions.GroundedState(IFighterBase, IConditionVariables)
+- uid: HnSF.Sample.TDAction.BaseConditionFunctions.GroundedState(HnSF.Fighters.IFighterBase,HnSF.IConditionVariables,HnSF.StateTimeline,System.Int32)
+  name: GroundedState(IFighterBase, IConditionVariables, StateTimeline, Int32)
+  href: api/HnSF.Sample.TDAction.BaseConditionFunctions.html#HnSF_Sample_TDAction_BaseConditionFunctions_GroundedState_HnSF_Fighters_IFighterBase_HnSF_IConditionVariables_HnSF_StateTimeline_System_Int32_
+  commentId: M:HnSF.Sample.TDAction.BaseConditionFunctions.GroundedState(HnSF.Fighters.IFighterBase,HnSF.IConditionVariables,HnSF.StateTimeline,System.Int32)
+  fullName: HnSF.Sample.TDAction.BaseConditionFunctions.GroundedState(HnSF.Fighters.IFighterBase, HnSF.IConditionVariables, HnSF.StateTimeline, System.Int32)
+  nameWithType: BaseConditionFunctions.GroundedState(IFighterBase, IConditionVariables, StateTimeline, Int32)
 - uid: HnSF.Sample.TDAction.BaseConditionFunctions.GroundedState*
   name: GroundedState
   href: api/HnSF.Sample.TDAction.BaseConditionFunctions.html#HnSF_Sample_TDAction_BaseConditionFunctions_GroundedState_
@@ -2404,12 +2404,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.BaseConditionFunctions.GroundedState
   nameWithType: BaseConditionFunctions.GroundedState
-- uid: HnSF.Sample.TDAction.BaseConditionFunctions.MovementSqrMagnitude(HnSF.Fighters.IFighterBase,HnSF.IConditionVariables)
-  name: MovementSqrMagnitude(IFighterBase, IConditionVariables)
-  href: api/HnSF.Sample.TDAction.BaseConditionFunctions.html#HnSF_Sample_TDAction_BaseConditionFunctions_MovementSqrMagnitude_HnSF_Fighters_IFighterBase_HnSF_IConditionVariables_
-  commentId: M:HnSF.Sample.TDAction.BaseConditionFunctions.MovementSqrMagnitude(HnSF.Fighters.IFighterBase,HnSF.IConditionVariables)
-  fullName: HnSF.Sample.TDAction.BaseConditionFunctions.MovementSqrMagnitude(HnSF.Fighters.IFighterBase, HnSF.IConditionVariables)
-  nameWithType: BaseConditionFunctions.MovementSqrMagnitude(IFighterBase, IConditionVariables)
+- uid: HnSF.Sample.TDAction.BaseConditionFunctions.MovementSqrMagnitude(HnSF.Fighters.IFighterBase,HnSF.IConditionVariables,HnSF.StateTimeline,System.Int32)
+  name: MovementSqrMagnitude(IFighterBase, IConditionVariables, StateTimeline, Int32)
+  href: api/HnSF.Sample.TDAction.BaseConditionFunctions.html#HnSF_Sample_TDAction_BaseConditionFunctions_MovementSqrMagnitude_HnSF_Fighters_IFighterBase_HnSF_IConditionVariables_HnSF_StateTimeline_System_Int32_
+  commentId: M:HnSF.Sample.TDAction.BaseConditionFunctions.MovementSqrMagnitude(HnSF.Fighters.IFighterBase,HnSF.IConditionVariables,HnSF.StateTimeline,System.Int32)
+  fullName: HnSF.Sample.TDAction.BaseConditionFunctions.MovementSqrMagnitude(HnSF.Fighters.IFighterBase, HnSF.IConditionVariables, HnSF.StateTimeline, System.Int32)
+  nameWithType: BaseConditionFunctions.MovementSqrMagnitude(IFighterBase, IConditionVariables, StateTimeline, Int32)
 - uid: HnSF.Sample.TDAction.BaseConditionFunctions.MovementSqrMagnitude*
   name: MovementSqrMagnitude
   href: api/HnSF.Sample.TDAction.BaseConditionFunctions.html#HnSF_Sample_TDAction_BaseConditionFunctions_MovementSqrMagnitude_
@@ -2417,12 +2417,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.BaseConditionFunctions.MovementSqrMagnitude
   nameWithType: BaseConditionFunctions.MovementSqrMagnitude
-- uid: HnSF.Sample.TDAction.BaseConditionFunctions.NoCondition(HnSF.Fighters.IFighterBase,HnSF.IConditionVariables)
-  name: NoCondition(IFighterBase, IConditionVariables)
-  href: api/HnSF.Sample.TDAction.BaseConditionFunctions.html#HnSF_Sample_TDAction_BaseConditionFunctions_NoCondition_HnSF_Fighters_IFighterBase_HnSF_IConditionVariables_
-  commentId: M:HnSF.Sample.TDAction.BaseConditionFunctions.NoCondition(HnSF.Fighters.IFighterBase,HnSF.IConditionVariables)
-  fullName: HnSF.Sample.TDAction.BaseConditionFunctions.NoCondition(HnSF.Fighters.IFighterBase, HnSF.IConditionVariables)
-  nameWithType: BaseConditionFunctions.NoCondition(IFighterBase, IConditionVariables)
+- uid: HnSF.Sample.TDAction.BaseConditionFunctions.NoCondition(HnSF.Fighters.IFighterBase,HnSF.IConditionVariables,HnSF.StateTimeline,System.Int32)
+  name: NoCondition(IFighterBase, IConditionVariables, StateTimeline, Int32)
+  href: api/HnSF.Sample.TDAction.BaseConditionFunctions.html#HnSF_Sample_TDAction_BaseConditionFunctions_NoCondition_HnSF_Fighters_IFighterBase_HnSF_IConditionVariables_HnSF_StateTimeline_System_Int32_
+  commentId: M:HnSF.Sample.TDAction.BaseConditionFunctions.NoCondition(HnSF.Fighters.IFighterBase,HnSF.IConditionVariables,HnSF.StateTimeline,System.Int32)
+  fullName: HnSF.Sample.TDAction.BaseConditionFunctions.NoCondition(HnSF.Fighters.IFighterBase, HnSF.IConditionVariables, HnSF.StateTimeline, System.Int32)
+  nameWithType: BaseConditionFunctions.NoCondition(IFighterBase, IConditionVariables, StateTimeline, Int32)
 - uid: HnSF.Sample.TDAction.BaseConditionFunctions.NoCondition*
   name: NoCondition
   href: api/HnSF.Sample.TDAction.BaseConditionFunctions.html#HnSF_Sample_TDAction_BaseConditionFunctions_NoCondition_
@@ -2508,12 +2508,12 @@ references:
   commentId: T:HnSF.Sample.TDAction.BaseStateFunctions
   fullName: HnSF.Sample.TDAction.BaseStateFunctions
   nameWithType: BaseStateFunctions
-- uid: HnSF.Sample.TDAction.BaseStateFunctions.ApplyGravity(HnSF.Fighters.IFighterBase,HnSF.IStateVariables)
-  name: ApplyGravity(IFighterBase, IStateVariables)
-  href: api/HnSF.Sample.TDAction.BaseStateFunctions.html#HnSF_Sample_TDAction_BaseStateFunctions_ApplyGravity_HnSF_Fighters_IFighterBase_HnSF_IStateVariables_
-  commentId: M:HnSF.Sample.TDAction.BaseStateFunctions.ApplyGravity(HnSF.Fighters.IFighterBase,HnSF.IStateVariables)
-  fullName: HnSF.Sample.TDAction.BaseStateFunctions.ApplyGravity(HnSF.Fighters.IFighterBase, HnSF.IStateVariables)
-  nameWithType: BaseStateFunctions.ApplyGravity(IFighterBase, IStateVariables)
+- uid: HnSF.Sample.TDAction.BaseStateFunctions.ApplyGravity(HnSF.Fighters.IFighterBase,HnSF.IStateVariables,HnSF.StateTimeline,System.Int32)
+  name: ApplyGravity(IFighterBase, IStateVariables, StateTimeline, Int32)
+  href: api/HnSF.Sample.TDAction.BaseStateFunctions.html#HnSF_Sample_TDAction_BaseStateFunctions_ApplyGravity_HnSF_Fighters_IFighterBase_HnSF_IStateVariables_HnSF_StateTimeline_System_Int32_
+  commentId: M:HnSF.Sample.TDAction.BaseStateFunctions.ApplyGravity(HnSF.Fighters.IFighterBase,HnSF.IStateVariables,HnSF.StateTimeline,System.Int32)
+  fullName: HnSF.Sample.TDAction.BaseStateFunctions.ApplyGravity(HnSF.Fighters.IFighterBase, HnSF.IStateVariables, HnSF.StateTimeline, System.Int32)
+  nameWithType: BaseStateFunctions.ApplyGravity(IFighterBase, IStateVariables, StateTimeline, Int32)
 - uid: HnSF.Sample.TDAction.BaseStateFunctions.ApplyGravity*
   name: ApplyGravity
   href: api/HnSF.Sample.TDAction.BaseStateFunctions.html#HnSF_Sample_TDAction_BaseStateFunctions_ApplyGravity_
@@ -2521,12 +2521,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.BaseStateFunctions.ApplyGravity
   nameWithType: BaseStateFunctions.ApplyGravity
-- uid: HnSF.Sample.TDAction.BaseStateFunctions.ApplyTraction(HnSF.Fighters.IFighterBase,HnSF.IStateVariables)
-  name: ApplyTraction(IFighterBase, IStateVariables)
-  href: api/HnSF.Sample.TDAction.BaseStateFunctions.html#HnSF_Sample_TDAction_BaseStateFunctions_ApplyTraction_HnSF_Fighters_IFighterBase_HnSF_IStateVariables_
-  commentId: M:HnSF.Sample.TDAction.BaseStateFunctions.ApplyTraction(HnSF.Fighters.IFighterBase,HnSF.IStateVariables)
-  fullName: HnSF.Sample.TDAction.BaseStateFunctions.ApplyTraction(HnSF.Fighters.IFighterBase, HnSF.IStateVariables)
-  nameWithType: BaseStateFunctions.ApplyTraction(IFighterBase, IStateVariables)
+- uid: HnSF.Sample.TDAction.BaseStateFunctions.ApplyTraction(HnSF.Fighters.IFighterBase,HnSF.IStateVariables,HnSF.StateTimeline,System.Int32)
+  name: ApplyTraction(IFighterBase, IStateVariables, StateTimeline, Int32)
+  href: api/HnSF.Sample.TDAction.BaseStateFunctions.html#HnSF_Sample_TDAction_BaseStateFunctions_ApplyTraction_HnSF_Fighters_IFighterBase_HnSF_IStateVariables_HnSF_StateTimeline_System_Int32_
+  commentId: M:HnSF.Sample.TDAction.BaseStateFunctions.ApplyTraction(HnSF.Fighters.IFighterBase,HnSF.IStateVariables,HnSF.StateTimeline,System.Int32)
+  fullName: HnSF.Sample.TDAction.BaseStateFunctions.ApplyTraction(HnSF.Fighters.IFighterBase, HnSF.IStateVariables, HnSF.StateTimeline, System.Int32)
+  nameWithType: BaseStateFunctions.ApplyTraction(IFighterBase, IStateVariables, StateTimeline, Int32)
 - uid: HnSF.Sample.TDAction.BaseStateFunctions.ApplyTraction*
   name: ApplyTraction
   href: api/HnSF.Sample.TDAction.BaseStateFunctions.html#HnSF_Sample_TDAction_BaseStateFunctions_ApplyTraction_
@@ -2534,12 +2534,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.BaseStateFunctions.ApplyTraction
   nameWithType: BaseStateFunctions.ApplyTraction
-- uid: HnSF.Sample.TDAction.BaseStateFunctions.ChangeState(HnSF.Fighters.IFighterBase,HnSF.IStateVariables)
-  name: ChangeState(IFighterBase, IStateVariables)
-  href: api/HnSF.Sample.TDAction.BaseStateFunctions.html#HnSF_Sample_TDAction_BaseStateFunctions_ChangeState_HnSF_Fighters_IFighterBase_HnSF_IStateVariables_
-  commentId: M:HnSF.Sample.TDAction.BaseStateFunctions.ChangeState(HnSF.Fighters.IFighterBase,HnSF.IStateVariables)
-  fullName: HnSF.Sample.TDAction.BaseStateFunctions.ChangeState(HnSF.Fighters.IFighterBase, HnSF.IStateVariables)
-  nameWithType: BaseStateFunctions.ChangeState(IFighterBase, IStateVariables)
+- uid: HnSF.Sample.TDAction.BaseStateFunctions.ChangeState(HnSF.Fighters.IFighterBase,HnSF.IStateVariables,HnSF.StateTimeline,System.Int32)
+  name: ChangeState(IFighterBase, IStateVariables, StateTimeline, Int32)
+  href: api/HnSF.Sample.TDAction.BaseStateFunctions.html#HnSF_Sample_TDAction_BaseStateFunctions_ChangeState_HnSF_Fighters_IFighterBase_HnSF_IStateVariables_HnSF_StateTimeline_System_Int32_
+  commentId: M:HnSF.Sample.TDAction.BaseStateFunctions.ChangeState(HnSF.Fighters.IFighterBase,HnSF.IStateVariables,HnSF.StateTimeline,System.Int32)
+  fullName: HnSF.Sample.TDAction.BaseStateFunctions.ChangeState(HnSF.Fighters.IFighterBase, HnSF.IStateVariables, HnSF.StateTimeline, System.Int32)
+  nameWithType: BaseStateFunctions.ChangeState(IFighterBase, IStateVariables, StateTimeline, Int32)
 - uid: HnSF.Sample.TDAction.BaseStateFunctions.ChangeState*
   name: ChangeState
   href: api/HnSF.Sample.TDAction.BaseStateFunctions.html#HnSF_Sample_TDAction_BaseStateFunctions_ChangeState_
@@ -2547,12 +2547,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.BaseStateFunctions.ChangeState
   nameWithType: BaseStateFunctions.ChangeState
-- uid: HnSF.Sample.TDAction.BaseStateFunctions.SetFallSpeed(HnSF.Fighters.IFighterBase,HnSF.IStateVariables)
-  name: SetFallSpeed(IFighterBase, IStateVariables)
-  href: api/HnSF.Sample.TDAction.BaseStateFunctions.html#HnSF_Sample_TDAction_BaseStateFunctions_SetFallSpeed_HnSF_Fighters_IFighterBase_HnSF_IStateVariables_
-  commentId: M:HnSF.Sample.TDAction.BaseStateFunctions.SetFallSpeed(HnSF.Fighters.IFighterBase,HnSF.IStateVariables)
-  fullName: HnSF.Sample.TDAction.BaseStateFunctions.SetFallSpeed(HnSF.Fighters.IFighterBase, HnSF.IStateVariables)
-  nameWithType: BaseStateFunctions.SetFallSpeed(IFighterBase, IStateVariables)
+- uid: HnSF.Sample.TDAction.BaseStateFunctions.SetFallSpeed(HnSF.Fighters.IFighterBase,HnSF.IStateVariables,HnSF.StateTimeline,System.Int32)
+  name: SetFallSpeed(IFighterBase, IStateVariables, StateTimeline, Int32)
+  href: api/HnSF.Sample.TDAction.BaseStateFunctions.html#HnSF_Sample_TDAction_BaseStateFunctions_SetFallSpeed_HnSF_Fighters_IFighterBase_HnSF_IStateVariables_HnSF_StateTimeline_System_Int32_
+  commentId: M:HnSF.Sample.TDAction.BaseStateFunctions.SetFallSpeed(HnSF.Fighters.IFighterBase,HnSF.IStateVariables,HnSF.StateTimeline,System.Int32)
+  fullName: HnSF.Sample.TDAction.BaseStateFunctions.SetFallSpeed(HnSF.Fighters.IFighterBase, HnSF.IStateVariables, HnSF.StateTimeline, System.Int32)
+  nameWithType: BaseStateFunctions.SetFallSpeed(IFighterBase, IStateVariables, StateTimeline, Int32)
 - uid: HnSF.Sample.TDAction.BaseStateFunctions.SetFallSpeed*
   name: SetFallSpeed
   href: api/HnSF.Sample.TDAction.BaseStateFunctions.html#HnSF_Sample_TDAction_BaseStateFunctions_SetFallSpeed_
@@ -5302,15 +5302,15 @@ references:
   commentId: F:HnSF.StateConditionMapperBase.functions
   fullName: HnSF.StateConditionMapperBase.functions
   nameWithType: StateConditionMapperBase.functions
-- uid: HnSF.StateConditionMapperBase.OverrideCondition(System.Int32,System.Func{HnSF.Fighters.IFighterBase,HnSF.IConditionVariables,System.Boolean})
-  name: OverrideCondition(Int32, Func<IFighterBase, IConditionVariables, Boolean>)
-  href: api/HnSF.StateConditionMapperBase.html#HnSF_StateConditionMapperBase_OverrideCondition_System_Int32_System_Func_HnSF_Fighters_IFighterBase_HnSF_IConditionVariables_System_Boolean__
-  commentId: M:HnSF.StateConditionMapperBase.OverrideCondition(System.Int32,System.Func{HnSF.Fighters.IFighterBase,HnSF.IConditionVariables,System.Boolean})
-  name.vb: OverrideCondition(Int32, Func(Of IFighterBase, IConditionVariables, Boolean))
-  fullName: HnSF.StateConditionMapperBase.OverrideCondition(System.Int32, System.Func<HnSF.Fighters.IFighterBase, HnSF.IConditionVariables, System.Boolean>)
-  fullName.vb: HnSF.StateConditionMapperBase.OverrideCondition(System.Int32, System.Func(Of HnSF.Fighters.IFighterBase, HnSF.IConditionVariables, System.Boolean))
-  nameWithType: StateConditionMapperBase.OverrideCondition(Int32, Func<IFighterBase, IConditionVariables, Boolean>)
-  nameWithType.vb: StateConditionMapperBase.OverrideCondition(Int32, Func(Of IFighterBase, IConditionVariables, Boolean))
+- uid: HnSF.StateConditionMapperBase.OverrideCondition(System.Type,System.Func{HnSF.Fighters.IFighterBase,HnSF.IConditionVariables,HnSF.StateTimeline,System.Int32,System.Boolean})
+  name: OverrideCondition(Type, Func<IFighterBase, IConditionVariables, StateTimeline, Int32, Boolean>)
+  href: api/HnSF.StateConditionMapperBase.html#HnSF_StateConditionMapperBase_OverrideCondition_System_Type_System_Func_HnSF_Fighters_IFighterBase_HnSF_IConditionVariables_HnSF_StateTimeline_System_Int32_System_Boolean__
+  commentId: M:HnSF.StateConditionMapperBase.OverrideCondition(System.Type,System.Func{HnSF.Fighters.IFighterBase,HnSF.IConditionVariables,HnSF.StateTimeline,System.Int32,System.Boolean})
+  name.vb: OverrideCondition(Type, Func(Of IFighterBase, IConditionVariables, StateTimeline, Int32, Boolean))
+  fullName: HnSF.StateConditionMapperBase.OverrideCondition(System.Type, System.Func<HnSF.Fighters.IFighterBase, HnSF.IConditionVariables, HnSF.StateTimeline, System.Int32, System.Boolean>)
+  fullName.vb: HnSF.StateConditionMapperBase.OverrideCondition(System.Type, System.Func(Of HnSF.Fighters.IFighterBase, HnSF.IConditionVariables, HnSF.StateTimeline, System.Int32, System.Boolean))
+  nameWithType: StateConditionMapperBase.OverrideCondition(Type, Func<IFighterBase, IConditionVariables, StateTimeline, Int32, Boolean>)
+  nameWithType.vb: StateConditionMapperBase.OverrideCondition(Type, Func(Of IFighterBase, IConditionVariables, StateTimeline, Int32, Boolean))
 - uid: HnSF.StateConditionMapperBase.OverrideCondition*
   name: OverrideCondition
   href: api/HnSF.StateConditionMapperBase.html#HnSF_StateConditionMapperBase_OverrideCondition_
@@ -5318,15 +5318,15 @@ references:
   isSpec: "True"
   fullName: HnSF.StateConditionMapperBase.OverrideCondition
   nameWithType: StateConditionMapperBase.OverrideCondition
-- uid: HnSF.StateConditionMapperBase.RegisterCondition(System.Int32,System.Func{HnSF.Fighters.IFighterBase,HnSF.IConditionVariables,System.Boolean})
-  name: RegisterCondition(Int32, Func<IFighterBase, IConditionVariables, Boolean>)
-  href: api/HnSF.StateConditionMapperBase.html#HnSF_StateConditionMapperBase_RegisterCondition_System_Int32_System_Func_HnSF_Fighters_IFighterBase_HnSF_IConditionVariables_System_Boolean__
-  commentId: M:HnSF.StateConditionMapperBase.RegisterCondition(System.Int32,System.Func{HnSF.Fighters.IFighterBase,HnSF.IConditionVariables,System.Boolean})
-  name.vb: RegisterCondition(Int32, Func(Of IFighterBase, IConditionVariables, Boolean))
-  fullName: HnSF.StateConditionMapperBase.RegisterCondition(System.Int32, System.Func<HnSF.Fighters.IFighterBase, HnSF.IConditionVariables, System.Boolean>)
-  fullName.vb: HnSF.StateConditionMapperBase.RegisterCondition(System.Int32, System.Func(Of HnSF.Fighters.IFighterBase, HnSF.IConditionVariables, System.Boolean))
-  nameWithType: StateConditionMapperBase.RegisterCondition(Int32, Func<IFighterBase, IConditionVariables, Boolean>)
-  nameWithType.vb: StateConditionMapperBase.RegisterCondition(Int32, Func(Of IFighterBase, IConditionVariables, Boolean))
+- uid: HnSF.StateConditionMapperBase.RegisterCondition(System.Type,System.Func{HnSF.Fighters.IFighterBase,HnSF.IConditionVariables,HnSF.StateTimeline,System.Int32,System.Boolean})
+  name: RegisterCondition(Type, Func<IFighterBase, IConditionVariables, StateTimeline, Int32, Boolean>)
+  href: api/HnSF.StateConditionMapperBase.html#HnSF_StateConditionMapperBase_RegisterCondition_System_Type_System_Func_HnSF_Fighters_IFighterBase_HnSF_IConditionVariables_HnSF_StateTimeline_System_Int32_System_Boolean__
+  commentId: M:HnSF.StateConditionMapperBase.RegisterCondition(System.Type,System.Func{HnSF.Fighters.IFighterBase,HnSF.IConditionVariables,HnSF.StateTimeline,System.Int32,System.Boolean})
+  name.vb: RegisterCondition(Type, Func(Of IFighterBase, IConditionVariables, StateTimeline, Int32, Boolean))
+  fullName: HnSF.StateConditionMapperBase.RegisterCondition(System.Type, System.Func<HnSF.Fighters.IFighterBase, HnSF.IConditionVariables, HnSF.StateTimeline, System.Int32, System.Boolean>)
+  fullName.vb: HnSF.StateConditionMapperBase.RegisterCondition(System.Type, System.Func(Of HnSF.Fighters.IFighterBase, HnSF.IConditionVariables, HnSF.StateTimeline, System.Int32, System.Boolean))
+  nameWithType: StateConditionMapperBase.RegisterCondition(Type, Func<IFighterBase, IConditionVariables, StateTimeline, Int32, Boolean>)
+  nameWithType.vb: StateConditionMapperBase.RegisterCondition(Type, Func(Of IFighterBase, IConditionVariables, StateTimeline, Int32, Boolean))
 - uid: HnSF.StateConditionMapperBase.RegisterCondition*
   name: RegisterCondition
   href: api/HnSF.StateConditionMapperBase.html#HnSF_StateConditionMapperBase_RegisterCondition_
@@ -5334,12 +5334,12 @@ references:
   isSpec: "True"
   fullName: HnSF.StateConditionMapperBase.RegisterCondition
   nameWithType: StateConditionMapperBase.RegisterCondition
-- uid: HnSF.StateConditionMapperBase.RemoveCondition(System.Int32)
-  name: RemoveCondition(Int32)
-  href: api/HnSF.StateConditionMapperBase.html#HnSF_StateConditionMapperBase_RemoveCondition_System_Int32_
-  commentId: M:HnSF.StateConditionMapperBase.RemoveCondition(System.Int32)
-  fullName: HnSF.StateConditionMapperBase.RemoveCondition(System.Int32)
-  nameWithType: StateConditionMapperBase.RemoveCondition(Int32)
+- uid: HnSF.StateConditionMapperBase.RemoveCondition(System.Type)
+  name: RemoveCondition(Type)
+  href: api/HnSF.StateConditionMapperBase.html#HnSF_StateConditionMapperBase_RemoveCondition_System_Type_
+  commentId: M:HnSF.StateConditionMapperBase.RemoveCondition(System.Type)
+  fullName: HnSF.StateConditionMapperBase.RemoveCondition(System.Type)
+  nameWithType: StateConditionMapperBase.RemoveCondition(Type)
 - uid: HnSF.StateConditionMapperBase.RemoveCondition*
   name: RemoveCondition
   href: api/HnSF.StateConditionMapperBase.html#HnSF_StateConditionMapperBase_RemoveCondition_
@@ -5347,12 +5347,12 @@ references:
   isSpec: "True"
   fullName: HnSF.StateConditionMapperBase.RemoveCondition
   nameWithType: StateConditionMapperBase.RemoveCondition
-- uid: HnSF.StateConditionMapperBase.TryCondition(System.Int32,HnSF.Fighters.IFighterBase,HnSF.IConditionVariables)
-  name: TryCondition(Int32, IFighterBase, IConditionVariables)
-  href: api/HnSF.StateConditionMapperBase.html#HnSF_StateConditionMapperBase_TryCondition_System_Int32_HnSF_Fighters_IFighterBase_HnSF_IConditionVariables_
-  commentId: M:HnSF.StateConditionMapperBase.TryCondition(System.Int32,HnSF.Fighters.IFighterBase,HnSF.IConditionVariables)
-  fullName: HnSF.StateConditionMapperBase.TryCondition(System.Int32, HnSF.Fighters.IFighterBase, HnSF.IConditionVariables)
-  nameWithType: StateConditionMapperBase.TryCondition(Int32, IFighterBase, IConditionVariables)
+- uid: HnSF.StateConditionMapperBase.TryCondition(System.Type,HnSF.Fighters.IFighterBase,HnSF.IConditionVariables,HnSF.StateTimeline,System.Int32)
+  name: TryCondition(Type, IFighterBase, IConditionVariables, StateTimeline, Int32)
+  href: api/HnSF.StateConditionMapperBase.html#HnSF_StateConditionMapperBase_TryCondition_System_Type_HnSF_Fighters_IFighterBase_HnSF_IConditionVariables_HnSF_StateTimeline_System_Int32_
+  commentId: M:HnSF.StateConditionMapperBase.TryCondition(System.Type,HnSF.Fighters.IFighterBase,HnSF.IConditionVariables,HnSF.StateTimeline,System.Int32)
+  fullName: HnSF.StateConditionMapperBase.TryCondition(System.Type, HnSF.Fighters.IFighterBase, HnSF.IConditionVariables, HnSF.StateTimeline, System.Int32)
+  nameWithType: StateConditionMapperBase.TryCondition(Type, IFighterBase, IConditionVariables, StateTimeline, Int32)
 - uid: HnSF.StateConditionMapperBase.TryCondition*
   name: TryCondition
   href: api/HnSF.StateConditionMapperBase.html#HnSF_StateConditionMapperBase_TryCondition_
@@ -5360,15 +5360,15 @@ references:
   isSpec: "True"
   fullName: HnSF.StateConditionMapperBase.TryCondition
   nameWithType: StateConditionMapperBase.TryCondition
-- uid: HnSF.StateConditionMapperBase.TryRegisterCondition(System.Int32,System.Func{HnSF.Fighters.IFighterBase,HnSF.IConditionVariables,System.Boolean})
-  name: TryRegisterCondition(Int32, Func<IFighterBase, IConditionVariables, Boolean>)
-  href: api/HnSF.StateConditionMapperBase.html#HnSF_StateConditionMapperBase_TryRegisterCondition_System_Int32_System_Func_HnSF_Fighters_IFighterBase_HnSF_IConditionVariables_System_Boolean__
-  commentId: M:HnSF.StateConditionMapperBase.TryRegisterCondition(System.Int32,System.Func{HnSF.Fighters.IFighterBase,HnSF.IConditionVariables,System.Boolean})
-  name.vb: TryRegisterCondition(Int32, Func(Of IFighterBase, IConditionVariables, Boolean))
-  fullName: HnSF.StateConditionMapperBase.TryRegisterCondition(System.Int32, System.Func<HnSF.Fighters.IFighterBase, HnSF.IConditionVariables, System.Boolean>)
-  fullName.vb: HnSF.StateConditionMapperBase.TryRegisterCondition(System.Int32, System.Func(Of HnSF.Fighters.IFighterBase, HnSF.IConditionVariables, System.Boolean))
-  nameWithType: StateConditionMapperBase.TryRegisterCondition(Int32, Func<IFighterBase, IConditionVariables, Boolean>)
-  nameWithType.vb: StateConditionMapperBase.TryRegisterCondition(Int32, Func(Of IFighterBase, IConditionVariables, Boolean))
+- uid: HnSF.StateConditionMapperBase.TryRegisterCondition(System.Type,System.Func{HnSF.Fighters.IFighterBase,HnSF.IConditionVariables,HnSF.StateTimeline,System.Int32,System.Boolean})
+  name: TryRegisterCondition(Type, Func<IFighterBase, IConditionVariables, StateTimeline, Int32, Boolean>)
+  href: api/HnSF.StateConditionMapperBase.html#HnSF_StateConditionMapperBase_TryRegisterCondition_System_Type_System_Func_HnSF_Fighters_IFighterBase_HnSF_IConditionVariables_HnSF_StateTimeline_System_Int32_System_Boolean__
+  commentId: M:HnSF.StateConditionMapperBase.TryRegisterCondition(System.Type,System.Func{HnSF.Fighters.IFighterBase,HnSF.IConditionVariables,HnSF.StateTimeline,System.Int32,System.Boolean})
+  name.vb: TryRegisterCondition(Type, Func(Of IFighterBase, IConditionVariables, StateTimeline, Int32, Boolean))
+  fullName: HnSF.StateConditionMapperBase.TryRegisterCondition(System.Type, System.Func<HnSF.Fighters.IFighterBase, HnSF.IConditionVariables, HnSF.StateTimeline, System.Int32, System.Boolean>)
+  fullName.vb: HnSF.StateConditionMapperBase.TryRegisterCondition(System.Type, System.Func(Of HnSF.Fighters.IFighterBase, HnSF.IConditionVariables, HnSF.StateTimeline, System.Int32, System.Boolean))
+  nameWithType: StateConditionMapperBase.TryRegisterCondition(Type, Func<IFighterBase, IConditionVariables, StateTimeline, Int32, Boolean>)
+  nameWithType.vb: StateConditionMapperBase.TryRegisterCondition(Type, Func(Of IFighterBase, IConditionVariables, StateTimeline, Int32, Boolean))
 - uid: HnSF.StateConditionMapperBase.TryRegisterCondition*
   name: TryRegisterCondition
   href: api/HnSF.StateConditionMapperBase.html#HnSF_StateConditionMapperBase_TryRegisterCondition_
@@ -5388,15 +5388,15 @@ references:
   commentId: F:HnSF.StateFunctionMapperBase.functions
   fullName: HnSF.StateFunctionMapperBase.functions
   nameWithType: StateFunctionMapperBase.functions
-- uid: HnSF.StateFunctionMapperBase.OverrideFunction(System.Int32,System.Action{HnSF.Fighters.IFighterBase,HnSF.IStateVariables})
-  name: OverrideFunction(Int32, Action<IFighterBase, IStateVariables>)
-  href: api/HnSF.StateFunctionMapperBase.html#HnSF_StateFunctionMapperBase_OverrideFunction_System_Int32_System_Action_HnSF_Fighters_IFighterBase_HnSF_IStateVariables__
-  commentId: M:HnSF.StateFunctionMapperBase.OverrideFunction(System.Int32,System.Action{HnSF.Fighters.IFighterBase,HnSF.IStateVariables})
-  name.vb: OverrideFunction(Int32, Action(Of IFighterBase, IStateVariables))
-  fullName: HnSF.StateFunctionMapperBase.OverrideFunction(System.Int32, System.Action<HnSF.Fighters.IFighterBase, HnSF.IStateVariables>)
-  fullName.vb: HnSF.StateFunctionMapperBase.OverrideFunction(System.Int32, System.Action(Of HnSF.Fighters.IFighterBase, HnSF.IStateVariables))
-  nameWithType: StateFunctionMapperBase.OverrideFunction(Int32, Action<IFighterBase, IStateVariables>)
-  nameWithType.vb: StateFunctionMapperBase.OverrideFunction(Int32, Action(Of IFighterBase, IStateVariables))
+- uid: HnSF.StateFunctionMapperBase.OverrideFunction(System.Type,System.Action{HnSF.Fighters.IFighterBase,HnSF.IStateVariables,HnSF.StateTimeline,System.Int32})
+  name: OverrideFunction(Type, Action<IFighterBase, IStateVariables, StateTimeline, Int32>)
+  href: api/HnSF.StateFunctionMapperBase.html#HnSF_StateFunctionMapperBase_OverrideFunction_System_Type_System_Action_HnSF_Fighters_IFighterBase_HnSF_IStateVariables_HnSF_StateTimeline_System_Int32__
+  commentId: M:HnSF.StateFunctionMapperBase.OverrideFunction(System.Type,System.Action{HnSF.Fighters.IFighterBase,HnSF.IStateVariables,HnSF.StateTimeline,System.Int32})
+  name.vb: OverrideFunction(Type, Action(Of IFighterBase, IStateVariables, StateTimeline, Int32))
+  fullName: HnSF.StateFunctionMapperBase.OverrideFunction(System.Type, System.Action<HnSF.Fighters.IFighterBase, HnSF.IStateVariables, HnSF.StateTimeline, System.Int32>)
+  fullName.vb: HnSF.StateFunctionMapperBase.OverrideFunction(System.Type, System.Action(Of HnSF.Fighters.IFighterBase, HnSF.IStateVariables, HnSF.StateTimeline, System.Int32))
+  nameWithType: StateFunctionMapperBase.OverrideFunction(Type, Action<IFighterBase, IStateVariables, StateTimeline, Int32>)
+  nameWithType.vb: StateFunctionMapperBase.OverrideFunction(Type, Action(Of IFighterBase, IStateVariables, StateTimeline, Int32))
 - uid: HnSF.StateFunctionMapperBase.OverrideFunction*
   name: OverrideFunction
   href: api/HnSF.StateFunctionMapperBase.html#HnSF_StateFunctionMapperBase_OverrideFunction_
@@ -5404,15 +5404,15 @@ references:
   isSpec: "True"
   fullName: HnSF.StateFunctionMapperBase.OverrideFunction
   nameWithType: StateFunctionMapperBase.OverrideFunction
-- uid: HnSF.StateFunctionMapperBase.RegisterFunction(System.Int32,System.Action{HnSF.Fighters.IFighterBase,HnSF.IStateVariables})
-  name: RegisterFunction(Int32, Action<IFighterBase, IStateVariables>)
-  href: api/HnSF.StateFunctionMapperBase.html#HnSF_StateFunctionMapperBase_RegisterFunction_System_Int32_System_Action_HnSF_Fighters_IFighterBase_HnSF_IStateVariables__
-  commentId: M:HnSF.StateFunctionMapperBase.RegisterFunction(System.Int32,System.Action{HnSF.Fighters.IFighterBase,HnSF.IStateVariables})
-  name.vb: RegisterFunction(Int32, Action(Of IFighterBase, IStateVariables))
-  fullName: HnSF.StateFunctionMapperBase.RegisterFunction(System.Int32, System.Action<HnSF.Fighters.IFighterBase, HnSF.IStateVariables>)
-  fullName.vb: HnSF.StateFunctionMapperBase.RegisterFunction(System.Int32, System.Action(Of HnSF.Fighters.IFighterBase, HnSF.IStateVariables))
-  nameWithType: StateFunctionMapperBase.RegisterFunction(Int32, Action<IFighterBase, IStateVariables>)
-  nameWithType.vb: StateFunctionMapperBase.RegisterFunction(Int32, Action(Of IFighterBase, IStateVariables))
+- uid: HnSF.StateFunctionMapperBase.RegisterFunction(System.Type,System.Action{HnSF.Fighters.IFighterBase,HnSF.IStateVariables,HnSF.StateTimeline,System.Int32})
+  name: RegisterFunction(Type, Action<IFighterBase, IStateVariables, StateTimeline, Int32>)
+  href: api/HnSF.StateFunctionMapperBase.html#HnSF_StateFunctionMapperBase_RegisterFunction_System_Type_System_Action_HnSF_Fighters_IFighterBase_HnSF_IStateVariables_HnSF_StateTimeline_System_Int32__
+  commentId: M:HnSF.StateFunctionMapperBase.RegisterFunction(System.Type,System.Action{HnSF.Fighters.IFighterBase,HnSF.IStateVariables,HnSF.StateTimeline,System.Int32})
+  name.vb: RegisterFunction(Type, Action(Of IFighterBase, IStateVariables, StateTimeline, Int32))
+  fullName: HnSF.StateFunctionMapperBase.RegisterFunction(System.Type, System.Action<HnSF.Fighters.IFighterBase, HnSF.IStateVariables, HnSF.StateTimeline, System.Int32>)
+  fullName.vb: HnSF.StateFunctionMapperBase.RegisterFunction(System.Type, System.Action(Of HnSF.Fighters.IFighterBase, HnSF.IStateVariables, HnSF.StateTimeline, System.Int32))
+  nameWithType: StateFunctionMapperBase.RegisterFunction(Type, Action<IFighterBase, IStateVariables, StateTimeline, Int32>)
+  nameWithType.vb: StateFunctionMapperBase.RegisterFunction(Type, Action(Of IFighterBase, IStateVariables, StateTimeline, Int32))
 - uid: HnSF.StateFunctionMapperBase.RegisterFunction*
   name: RegisterFunction
   href: api/HnSF.StateFunctionMapperBase.html#HnSF_StateFunctionMapperBase_RegisterFunction_
@@ -5420,12 +5420,12 @@ references:
   isSpec: "True"
   fullName: HnSF.StateFunctionMapperBase.RegisterFunction
   nameWithType: StateFunctionMapperBase.RegisterFunction
-- uid: HnSF.StateFunctionMapperBase.RemoveFunction(System.Int32)
-  name: RemoveFunction(Int32)
-  href: api/HnSF.StateFunctionMapperBase.html#HnSF_StateFunctionMapperBase_RemoveFunction_System_Int32_
-  commentId: M:HnSF.StateFunctionMapperBase.RemoveFunction(System.Int32)
-  fullName: HnSF.StateFunctionMapperBase.RemoveFunction(System.Int32)
-  nameWithType: StateFunctionMapperBase.RemoveFunction(Int32)
+- uid: HnSF.StateFunctionMapperBase.RemoveFunction(System.Type)
+  name: RemoveFunction(Type)
+  href: api/HnSF.StateFunctionMapperBase.html#HnSF_StateFunctionMapperBase_RemoveFunction_System_Type_
+  commentId: M:HnSF.StateFunctionMapperBase.RemoveFunction(System.Type)
+  fullName: HnSF.StateFunctionMapperBase.RemoveFunction(System.Type)
+  nameWithType: StateFunctionMapperBase.RemoveFunction(Type)
 - uid: HnSF.StateFunctionMapperBase.RemoveFunction*
   name: RemoveFunction
   href: api/HnSF.StateFunctionMapperBase.html#HnSF_StateFunctionMapperBase_RemoveFunction_
@@ -5433,15 +5433,15 @@ references:
   isSpec: "True"
   fullName: HnSF.StateFunctionMapperBase.RemoveFunction
   nameWithType: StateFunctionMapperBase.RemoveFunction
-- uid: HnSF.StateFunctionMapperBase.TryRegisterFunction(System.Int32,System.Action{HnSF.Fighters.IFighterBase,HnSF.IStateVariables})
-  name: TryRegisterFunction(Int32, Action<IFighterBase, IStateVariables>)
-  href: api/HnSF.StateFunctionMapperBase.html#HnSF_StateFunctionMapperBase_TryRegisterFunction_System_Int32_System_Action_HnSF_Fighters_IFighterBase_HnSF_IStateVariables__
-  commentId: M:HnSF.StateFunctionMapperBase.TryRegisterFunction(System.Int32,System.Action{HnSF.Fighters.IFighterBase,HnSF.IStateVariables})
-  name.vb: TryRegisterFunction(Int32, Action(Of IFighterBase, IStateVariables))
-  fullName: HnSF.StateFunctionMapperBase.TryRegisterFunction(System.Int32, System.Action<HnSF.Fighters.IFighterBase, HnSF.IStateVariables>)
-  fullName.vb: HnSF.StateFunctionMapperBase.TryRegisterFunction(System.Int32, System.Action(Of HnSF.Fighters.IFighterBase, HnSF.IStateVariables))
-  nameWithType: StateFunctionMapperBase.TryRegisterFunction(Int32, Action<IFighterBase, IStateVariables>)
-  nameWithType.vb: StateFunctionMapperBase.TryRegisterFunction(Int32, Action(Of IFighterBase, IStateVariables))
+- uid: HnSF.StateFunctionMapperBase.TryRegisterFunction(System.Type,System.Action{HnSF.Fighters.IFighterBase,HnSF.IStateVariables,HnSF.StateTimeline,System.Int32})
+  name: TryRegisterFunction(Type, Action<IFighterBase, IStateVariables, StateTimeline, Int32>)
+  href: api/HnSF.StateFunctionMapperBase.html#HnSF_StateFunctionMapperBase_TryRegisterFunction_System_Type_System_Action_HnSF_Fighters_IFighterBase_HnSF_IStateVariables_HnSF_StateTimeline_System_Int32__
+  commentId: M:HnSF.StateFunctionMapperBase.TryRegisterFunction(System.Type,System.Action{HnSF.Fighters.IFighterBase,HnSF.IStateVariables,HnSF.StateTimeline,System.Int32})
+  name.vb: TryRegisterFunction(Type, Action(Of IFighterBase, IStateVariables, StateTimeline, Int32))
+  fullName: HnSF.StateFunctionMapperBase.TryRegisterFunction(System.Type, System.Action<HnSF.Fighters.IFighterBase, HnSF.IStateVariables, HnSF.StateTimeline, System.Int32>)
+  fullName.vb: HnSF.StateFunctionMapperBase.TryRegisterFunction(System.Type, System.Action(Of HnSF.Fighters.IFighterBase, HnSF.IStateVariables, HnSF.StateTimeline, System.Int32))
+  nameWithType: StateFunctionMapperBase.TryRegisterFunction(Type, Action<IFighterBase, IStateVariables, StateTimeline, Int32>)
+  nameWithType.vb: StateFunctionMapperBase.TryRegisterFunction(Type, Action(Of IFighterBase, IStateVariables, StateTimeline, Int32))
 - uid: HnSF.StateFunctionMapperBase.TryRegisterFunction*
   name: TryRegisterFunction
   href: api/HnSF.StateFunctionMapperBase.html#HnSF_StateFunctionMapperBase_TryRegisterFunction_
