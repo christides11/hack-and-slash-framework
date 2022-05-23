@@ -472,7 +472,7 @@
   "api/HnSF.Sample.TDAction.StateTimeline.html": {
     "href": "api/HnSF.Sample.TDAction.StateTimeline.html",
     "title": "Class StateTimeline | Hack and Slash Framework Documentation",
-    "keywords": "Class StateTimeline Inheritance Object StateTimeline StateTimeline Inherited Members StateTimeline.useBaseState StateTimeline.baseState StateTimeline.totalFrames StateTimeline.autoIncrement StateTimeline.autoLoop StateTimeline.data Namespace : HnSF.Sample.TDAction Assembly : HnSF.TDAction.dll Syntax public class StateTimeline : StateTimeline"
+    "keywords": "Class StateTimeline Inheritance Object StateTimeline StateTimeline Inherited Members StateTimeline.stateName StateTimeline.useBaseState StateTimeline.baseState StateTimeline.totalFrames StateTimeline.autoIncrement StateTimeline.autoLoop StateTimeline.autoLoopFrame StateTimeline.data Namespace : HnSF.Sample.TDAction Assembly : HnSF.TDAction.dll Syntax public class StateTimeline : StateTimeline"
   },
   "api/HnSF.StateConditionMapperBase.html": {
     "href": "api/HnSF.StateConditionMapperBase.html",
@@ -487,7 +487,7 @@
   "api/HnSF.StateTimeline.html": {
     "href": "api/HnSF.StateTimeline.html",
     "title": "Class StateTimeline | Hack and Slash Framework Documentation",
-    "keywords": "Class StateTimeline Inheritance Object StateTimeline StateTimeline Namespace : HnSF Assembly : HnSF.dll Syntax public class StateTimeline : ScriptableObject Fields | Improve this Doc View Source autoIncrement Declaration public bool autoIncrement Field Value Type Description Boolean | Improve this Doc View Source autoLoop Declaration public bool autoLoop Field Value Type Description Boolean | Improve this Doc View Source baseState Declaration public StateTimeline baseState Field Value Type Description StateTimeline | Improve this Doc View Source data Declaration public IStateVariables[] data Field Value Type Description IStateVariables [] | Improve this Doc View Source totalFrames Declaration public int totalFrames Field Value Type Description Int32 | Improve this Doc View Source useBaseState Declaration public bool useBaseState Field Value Type Description Boolean"
+    "keywords": "Class StateTimeline Inheritance Object StateTimeline StateTimeline Namespace : HnSF Assembly : HnSF.dll Syntax public class StateTimeline : ScriptableObject Fields | Improve this Doc View Source autoIncrement Declaration public bool autoIncrement Field Value Type Description Boolean | Improve this Doc View Source autoLoop Declaration public bool autoLoop Field Value Type Description Boolean | Improve this Doc View Source autoLoopFrame Declaration public int autoLoopFrame Field Value Type Description Int32 | Improve this Doc View Source baseState Declaration public StateTimeline baseState Field Value Type Description StateTimeline | Improve this Doc View Source data Declaration public IStateVariables[] data Field Value Type Description IStateVariables [] | Improve this Doc View Source stateName Declaration public string stateName Field Value Type Description String | Improve this Doc View Source totalFrames Declaration public int totalFrames Field Value Type Description Int32 | Improve this Doc View Source useBaseState Declaration public bool useBaseState Field Value Type Description Boolean"
   },
   "api/HnSF.StateTimelineEditor.html": {
     "href": "api/HnSF.StateTimelineEditor.html",

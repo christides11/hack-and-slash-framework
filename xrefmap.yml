@@ -5467,6 +5467,12 @@ references:
   commentId: F:HnSF.StateTimeline.autoLoop
   fullName: HnSF.StateTimeline.autoLoop
   nameWithType: StateTimeline.autoLoop
+- uid: HnSF.StateTimeline.autoLoopFrame
+  name: autoLoopFrame
+  href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_autoLoopFrame
+  commentId: F:HnSF.StateTimeline.autoLoopFrame
+  fullName: HnSF.StateTimeline.autoLoopFrame
+  nameWithType: StateTimeline.autoLoopFrame
 - uid: HnSF.StateTimeline.baseState
   name: baseState
   href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_baseState
@@ -5479,6 +5485,12 @@ references:
   commentId: F:HnSF.StateTimeline.data
   fullName: HnSF.StateTimeline.data
   nameWithType: StateTimeline.data
+- uid: HnSF.StateTimeline.stateName
+  name: stateName
+  href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_stateName
+  commentId: F:HnSF.StateTimeline.stateName
+  fullName: HnSF.StateTimeline.stateName
+  nameWithType: StateTimeline.stateName
 - uid: HnSF.StateTimeline.totalFrames
   name: totalFrames
   href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_totalFrames
