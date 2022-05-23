@@ -10,6 +10,7 @@ namespace HnSF
         public int totalFrames = 10;
         public bool autoIncrement = true;
         public bool autoLoop = true;
+        public int autoLoopFrame = 1;
         
         [SelectImplementation(typeof(IStateVariables))] [SerializeField, SerializeReference]
         public IStateVariables[] data = Array.Empty<IStateVariables>();
