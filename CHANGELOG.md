@@ -1,3 +1,11 @@
+# [36.1.0](https://github.com/christides11/hack-and-slash-framework/compare/v36.0.0...v36.1.0) (2022-05-23)
+
+
+### Features
+
+* StateTimeline auto loop frame variable. ([752ab40](https://github.com/christides11/hack-and-slash-framework/commit/752ab407e5341bdb62034b9a06ca39235d64426e))
+* StateTimeline stateName variable. ([d8caafe](https://github.com/christides11/hack-and-slash-framework/commit/d8caafe1eb3023fec84df608005784fea65a7c7e))
+
 # [36.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v35.1.0...v36.0.0) (2022-05-21)
 
 
