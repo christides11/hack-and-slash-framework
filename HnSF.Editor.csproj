@@ -47,7 +47,14 @@
      <Compile Include="Assets\HnSF\Editor\HurtboxGroupPropertyDrawer.cs" />
      <Compile Include="Assets\HnSF\Editor\HitInfoPropertyDrawer.cs" />
      <Compile Include="Assets\HnSF\Editor\StateTimelineEditor.cs" />
+     <Compile Include="Assets\HnSF\Editor\StateEditor\StateTimelineEditorWindow.cs" />
+     <None Include="Assets\HnSF\Editor\StateEditor\main-framebar-label.uxml" />
+     <None Include="Assets\HnSF\Editor\StateEditor\main-framebar-bg.uxml" />
+     <None Include="Assets\HnSF\Editor\StateEditor\topbar-frame-label.uxml" />
+     <None Include="Assets\HnSF\Editor\StateEditor\StateTimelineStyle.uss" />
      <None Include="Assets\HnSF\Editor\HnSF.Editor.asmdef" />
+     <None Include="Assets\HnSF\Editor\StateEditor\sidebar-data-label.uxml" />
+     <None Include="Assets\HnSF\Editor\StateEditor\StateTimelineVisualTree.uxml" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\2021.3.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>

@@ -6,11 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/HnSF/~Samples/TDAction/Scenes/Singletons.unity
-    guid: 6506ad4337d9363429c16278ebeb5b9a
-  - enabled: 1
-    path: Assets/HnSF/~Samples/TDAction/Scenes/PlayScene.unity
-    guid: d31e3f5a1ca3df845a6ae3ff3cef03da
+    path: Assets/HnSF/Samples/TDAction/TDAction.unity
+    guid: 5d4b661198a2e36408de16d26f4bbbf5
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 51df9e867a5f5ac44b310f7779783fdf,
       type: 2}
