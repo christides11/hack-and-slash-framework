@@ -1,3 +1,10 @@
+## [36.1.1](https://github.com/christides11/hack-and-slash-framework/compare/v36.1.0...v36.1.1) (2022-05-30)
+
+
+### Bug Fixes
+
+* Fixed compile error due to editor scripts. ([1ffa1d8](https://github.com/christides11/hack-and-slash-framework/commit/1ffa1d824e86e5bfdf06d17a40a36ed0dc515405))
+
 # [36.1.0](https://github.com/christides11/hack-and-slash-framework/compare/v36.0.0...v36.1.0) (2022-05-23)
 
 
