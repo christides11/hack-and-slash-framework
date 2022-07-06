@@ -6,9 +6,21 @@ namespace HnSF.Sample.TDAction.State
 {
     public struct VarApplyGravity : IStateVariables
     {
+        public string name;
+        public string Name
+        {
+            get => name;
+            set => name = value;
+        }
+        public int ID
+        {
+            get => id;
+            set => id = value;
+        }
         public int FunctionMap => (int)StateFunctionEnum.APPLY_GRAVITY;
         public IConditionVariables Condition => condition;
-        public IStateVariables[] Children => children;
+        public int Parent => Parent;
+        public int[] Children => children;
 
         public Vector2[] FrameRanges
         {
@@ -16,6 +28,7 @@ namespace HnSF.Sample.TDAction.State
             set => frameRanges = value;
         }
     
+        public int id;
         [SerializeField] public Vector2[] frameRanges;
         [SelectImplementation(typeof(IConditionVariables))] [SerializeField, SerializeReference] 
         public IConditionVariables condition;
@@ -25,7 +38,7 @@ namespace HnSF.Sample.TDAction.State
         public float maxFallSpeed;
         public float gravity;
         
-        [SelectImplementation(typeof(IConditionVariables))] [SerializeField, SerializeReference] 
-        private IStateVariables[] children;
+        public int parent;
+        public int[] children;
     }
 }

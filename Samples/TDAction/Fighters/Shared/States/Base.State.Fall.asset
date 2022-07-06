@@ -12,11 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40f66a5b733e53543bcb2daa52776331, type: 3}
   m_Name: Base.State.Fall
   m_EditorClassIdentifier: 
+  stateName: 
   useBaseState: 0
   baseState: {fileID: 0}
   totalFrames: 10
   autoIncrement: 1
   autoLoop: 1
+  autoLoopFrame: 1
+  path: 
   data:
   - rid: 1423070993831428096
   - rid: 1423070996485636099
@@ -26,6 +29,7 @@ MonoBehaviour:
     - rid: 1423070993831428096
       type: {class: VarApplyGravity, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
       data:
+        id: 0
         frameRanges:
         - {x: 1, y: 10}
         condition:
@@ -34,19 +38,18 @@ MonoBehaviour:
         useGravityStat: 1
         maxFallSpeed: -10
         gravity: 1
-        children: []
     - rid: 1423070994641453056
       type: {class: ConditionNone, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
     - rid: 1423070996485636099
       type: {class: ChangeState, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
       data:
+        id: 1
         frameRanges:
         - {x: 1, y: 10}
         condition:
           rid: 1423070996485636100
         stateMovesetID: -1
         stateID: 1
-        children: []
     - rid: 1423070996485636100
       type: {class: ConditionGroundState, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
       data:

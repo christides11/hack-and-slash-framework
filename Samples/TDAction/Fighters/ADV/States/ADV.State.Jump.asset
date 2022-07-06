@@ -12,16 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40f66a5b733e53543bcb2daa52776331, type: 3}
   m_Name: ADV.State.Jump
   m_EditorClassIdentifier: 
+  stateName: 
   useBaseState: 1
   baseState: {fileID: 11400000, guid: 65f5e055426eb834a95aa16b8f725063, type: 2}
   totalFrames: 10
   autoIncrement: 1
   autoLoop: 1
+  autoLoopFrame: 1
+  path: 00000000
   data:
   - rid: 1423070996485636114
   references:
     version: 2
     RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
     - rid: 1423070996485636114
       type: {class: ChangeState, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
       data:
@@ -31,10 +36,31 @@ MonoBehaviour:
           rid: 1423070996485636115
         stateMovesetID: -1
         stateID: 8
-        children: []
+        children:
+        - rid: 5282967692332498944
+        - rid: 5282967692332498945
     - rid: 1423070996485636115
       type: {class: ConditionFallSpeed, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
       data:
         minValue: -100
         maxValue: 1
         inverse: 0
+    - rid: 5282967692332498944
+      type: {class: VarApplyGravity, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+      data:
+        frameRanges: []
+        condition:
+          rid: -2
+        useMaxFallSpeedStat: 0
+        useGravityStat: 0
+        maxFallSpeed: 0
+        gravity: 0
+        children: []
+    - rid: 5282967692332498945
+      type: {class: VarSetFallSpeed, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+      data:
+        frameRanges: []
+        condition:
+          rid: -2
+        value: 0
+        children: []

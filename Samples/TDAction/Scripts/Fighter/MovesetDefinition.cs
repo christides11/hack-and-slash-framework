@@ -7,6 +7,14 @@ namespace HnSF.Sample.TDAction
     [CreateAssetMenu(menuName = "2dAction/Moveset")]
     public class MovesetDefinition : Combat.MovesetDefinition
     {
-        
+        public override void Initialize()
+        {
+            base.Initialize();
+
+            foreach (var stateMap in states)
+            {
+                stateMap.stateTimeline.Initialize();
+            }
+        }
     }
 }

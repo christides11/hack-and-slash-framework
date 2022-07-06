@@ -88,7 +88,8 @@ namespace HnSF
                     var thisMainBar = dataPanel.contentContainer.Query(name: "main-framebar-bg").Build().Last();
 
                     thisSideBar.Q<UnityEngine.UIElements.Label>(name: "label-text").text =
-                        stateTimeline.data[i].GetType().Name;
+                        !String.IsNullOrEmpty(stateTimeline.data[i].Name) ? stateTimeline.data[i].Name
+                        : stateTimeline.data[i].GetType().Name;
                 }
             }
 

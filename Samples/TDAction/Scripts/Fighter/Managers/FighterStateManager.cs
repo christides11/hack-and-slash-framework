@@ -79,9 +79,9 @@ namespace HnSF.Sample.TDAction
             if (!conditionMapperBase.TryCondition(varType, fighterManager, d.Condition, timeline, realFrame)) return;
             functionMapperBase.functions[varType](fighterManager, d, timeline, realFrame);
 
-            foreach (var t in d.Children)
+            foreach (var childID in d.Children)
             {
-                ProcessStateVariables(timeline, t, realFrame);
+                ProcessStateVariables(timeline, timeline.data[timeline.stateVariablesIDMap[childID]], realFrame);
             }
         }
 
