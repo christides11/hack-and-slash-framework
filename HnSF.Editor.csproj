@@ -43,6 +43,7 @@
   <ItemGroup>
      <Compile Include="Assets\HnSF\Editor\HitInfoBasePropertyDrawer.cs" />
      <Compile Include="Assets\HnSF\Editor\InputDefinitionDrawer.cs" />
+     <Compile Include="Assets\HnSF\Editor\StateTimelineDataEditor.cs" />
      <Compile Include="Assets\HnSF\Editor\BoxDefinitionPropertyDrawer.cs" />
      <Compile Include="Assets\HnSF\Editor\HurtboxGroupPropertyDrawer.cs" />
      <Compile Include="Assets\HnSF\Editor\HitInfoPropertyDrawer.cs" />
