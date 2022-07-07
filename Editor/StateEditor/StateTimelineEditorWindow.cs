@@ -109,7 +109,7 @@ namespace HnSF
             {
                 foreach (var c in stateVariableTypes)
                 {
-                    evt.menu.AppendAction("Add/"+c.Key, (x)=>{ });
+                    evt.menu.AppendAction("Add/"+c.Key, (x) => { AddStateVariable(c); });
                 }
             }));
             
@@ -129,9 +129,22 @@ namespace HnSF
                     {
                         evt.menu.AppendAction("Add/"+c.Key, (x)=>{ });
                     }
-                    evt.menu.AppendAction("Delete", (x)=>{ });
+                    evt.menu.AppendAction("Delete", (x) => { RemoveStateVariable(index); });
                 }));
             }
+        }
+
+        private void RemoveStateVariable(int index)
+        {
+            stateTimeline.RemoveStateVariable(index);
+        }
+
+        private void AddStateVariable(KeyValuePair<string, Type> keyValuePair)
+        {
+            Array.Resize(ref stateTimeline.data, stateTimeline.data.Length+1);
+            stateTimeline.data[^1] = (IStateVariables)Activator.CreateInstance(keyValuePair.Value);
+            if (stateTimeline.data.Length == 1) return;
+            stateTimeline.data[^1].ID = stateTimeline.data[^2].ID + 1;
         }
 
         public void RefreshMainWindow()

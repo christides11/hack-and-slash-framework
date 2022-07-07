@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace HnSF
@@ -30,6 +31,36 @@ namespace HnSF
             {
                 stateVariablesIDMap.Add(data[i].ID, i);
             }
+        }
+
+        public void RemoveStateVariable(int index)
+        {
+            List<IStateVariables> tempData = data.ToList();
+            
+            List<int> stateVarsToRemove = new List<int>();
+
+            Queue<int> stateVarsToCheck = new Queue<int>();
+            stateVarsToCheck.Enqueue(data[index].ID);
+            
+            while (stateVarsToCheck.Count > 0)
+            {
+                int idx = stateVariablesIDMap[stateVarsToCheck.Dequeue()];
+                stateVarsToRemove.Add(idx);
+
+                for (int i = 0; i < data[idx].Children.Length; i++)
+                {
+                    stateVarsToCheck.Enqueue(data[idx].Children[i]);
+                }
+            }
+            
+            stateVarsToRemove.Sort();
+
+            for (int i = stateVarsToRemove.Count - 1; i >= 0; i--)
+            {
+                tempData.RemoveAt(stateVarsToRemove[i]);
+            }
+
+            data = tempData.ToArray();
         }
     }
 }
