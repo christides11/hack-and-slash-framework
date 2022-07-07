@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40f66a5b733e53543bcb2daa52776331, type: 3}
   m_Name: Base.State.JumpSquat
   m_EditorClassIdentifier: 
+  stateName: 
   useBaseState: 0
   baseState: {fileID: 0}
   totalFrames: 4
   autoIncrement: 1
   autoLoop: 1
+  autoLoopFrame: 1
   data:
   - rid: 1423070996485636104
   references:
@@ -25,6 +27,8 @@ MonoBehaviour:
     - rid: 1423070996485636104
       type: {class: VarApplyTraction, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
       data:
+        name: Movement Traction
+        id: 0
         frameRanges:
         - {x: 1, y: 4}
         condition:
@@ -32,6 +36,7 @@ MonoBehaviour:
         useTractionStat: 1
         aerialTraction: 0
         traction: 0
-        children: []
+        parent: 0
+        children: 
     - rid: 1423070996485636105
       type: {class: ConditionNone, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
