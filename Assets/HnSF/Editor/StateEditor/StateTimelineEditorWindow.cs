@@ -59,6 +59,18 @@ namespace HnSF
                 dataPanel.horizontalScroller.value += @event.delta.y * dataPanel.horizontalPageSize;
                 @event.StopPropagation();
             });
+            
+            Button zoomIn = root.Q<Button>(name: "zoom-in");
+            Button zoomOut = root.Q<Button>(name: "zoom-out");
+            zoomIn.clicked += () => { 
+                zoomMultiplier *= 1.5f;
+                RefreshAll(true);
+            };
+            zoomOut.clicked += () =>
+            {
+                zoomMultiplier *= 0.5f;
+                RefreshAll(true);
+            };
         }
 
         public Dictionary<string, Type> stateVariableTypes = new Dictionary<string, Type>();
@@ -92,6 +104,12 @@ namespace HnSF
             RefreshSideBar();
             RefreshMainWindow();
             RefreshFrameBars();
+            RefreshTopBar();
+        }
+
+        private void RefreshTopBar()
+        {
+            VisualElement root = rootVisualElement;
         }
 
         public void RefreshSideBar()
@@ -99,7 +117,7 @@ namespace HnSF
             VisualElement root = rootVisualElement;
             ScrollView sidebarPanel = root.Q<ScrollView>(name: "data-labels");
             
-            var labelsToDelete = sidebarPanel.contentContainer.Query(name: "data-bar").Build();
+            var labelsToDelete = sidebarPanel.contentContainer.Query(name: "sidebar-data-label").Build();
             foreach (var container in labelsToDelete)
             {
                 sidebarPanel.contentContainer.Remove(container);
@@ -116,9 +134,12 @@ namespace HnSF
             for (int i = 0; i < stateTimeline.data.Length; i++)
             {
                 int index = i;
+                int dataID = stateTimeline.data[i].ID;
+                int depth = stateTimeline.GetStateVariableDepth(dataID);
                 dataBar.CloneTree(sidebarPanel.contentContainer);
                 var thisSideBar = sidebarPanel.contentContainer.Query(name: "sidebar-data-label").Build().Last() as Button;
 
+                thisSideBar.style.marginLeft = 10 * depth;
                 thisSideBar.text =
                     !String.IsNullOrEmpty(stateTimeline.data[i].Name) ? stateTimeline.data[i].Name
                         : stateTimeline.data[i].GetType().Name;
@@ -127,7 +148,7 @@ namespace HnSF
                     evt.menu.AppendAction("Edit", (x)=>{ StateTimelineDataEditor.Init(stateTimeline, stateTimeline.data[index].ID); });
                     foreach (var c in stateVariableTypes)
                     {
-                        evt.menu.AppendAction("Add/"+c.Key, (x)=>{ });
+                        evt.menu.AppendAction("Add/"+c.Key, (x)=>{ AddStateVariable(c, dataID); });
                     }
                     evt.menu.AppendAction("Delete", (x) => { RemoveStateVariable(index); });
                 }));
@@ -139,12 +160,9 @@ namespace HnSF
             stateTimeline.RemoveStateVariable(index);
         }
 
-        private void AddStateVariable(KeyValuePair<string, Type> keyValuePair)
+        private void AddStateVariable(KeyValuePair<string, Type> keyValuePair, int parentID = -1)
         {
-            Array.Resize(ref stateTimeline.data, stateTimeline.data.Length+1);
-            stateTimeline.data[^1] = (IStateVariables)Activator.CreateInstance(keyValuePair.Value);
-            if (stateTimeline.data.Length == 1) return;
-            stateTimeline.data[^1].ID = stateTimeline.data[^2].ID + 1;
+            stateTimeline.AddStateVariable((IStateVariables)Activator.CreateInstance(keyValuePair.Value), parentID);
         }
 
         public void RefreshMainWindow()
@@ -152,7 +170,7 @@ namespace HnSF
             VisualElement root = rootVisualElement;
             ScrollView mainPanel = root.Q<ScrollView>(name: "data-frames");
             
-            var datasToDelete = mainPanel.contentContainer.Query(name: "frame-bar").Build();
+            var datasToDelete = mainPanel.contentContainer.Query(name: "main-framebar-bg").Build();
             foreach (var dataContainer in datasToDelete)
             {
                 mainPanel.contentContainer.Remove(dataContainer);
@@ -177,7 +195,7 @@ namespace HnSF
 
             foreach (var c in dataBars)
             {
-                c.style.width = new StyleLength((stateTimeline.totalFrames + 2) * 20.0f);
+                c.style.width = new StyleLength((stateTimeline.totalFrames + 2) * GetFrameWidth());
             }
 
             // TOPBAR //
@@ -197,10 +215,11 @@ namespace HnSF
                 l.text = $"{i}";
                 if (i == 0) l.style.backgroundColor = frameZeroColor;
                 if (i == stateTimeline.totalFrames + 1) l.style.backgroundColor = frameInterruptColor;
+                thisFrameLabelNumber.style.width = new StyleLength(GetFrameWidth());
             }
             
             // MAIN WINDOW //
-            // Cleanup
+            // 
             var dbs = dataBars.ToList();
             for (int i = 1; i < dbs.Count; i++)
             {
@@ -208,10 +227,15 @@ namespace HnSF
                 {
                     mainFrameBarLabel.CloneTree(dbs[i]);
                     var thisMainFrameBarLabel = dbs[i].Query(name: mainFrameBarLabel.name).Build().Last();
-                    thisMainFrameBarLabel.style.left = 20.0f * stateTimeline.data[i - 1].FrameRanges[j].x;
-                    thisMainFrameBarLabel.style.width = new StyleLength(20.0f * ((stateTimeline.data[i - 1].FrameRanges[j].y - stateTimeline.data[i - 1].FrameRanges[j].x) + 1) );
+                    thisMainFrameBarLabel.style.left = GetFrameWidth() * stateTimeline.data[i - 1].FrameRanges[j].x;
+                    thisMainFrameBarLabel.style.width = new StyleLength(GetFrameWidth() * ((stateTimeline.data[i - 1].FrameRanges[j].y - stateTimeline.data[i - 1].FrameRanges[j].x) + 1) );
                 }
             }
+        }
+
+        public float GetFrameWidth()
+        {
+            return 20.0f * zoomMultiplier;
         }
     }
 }

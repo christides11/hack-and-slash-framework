@@ -11,7 +11,7 @@ namespace HnSF
 
         public Vector2[] FrameRanges { get; set; }
         public IConditionVariables Condition { get; }
-        public int Parent { get; }
-        public int[] Children { get; }
+        public int Parent { get; set; }
+        public int[] Children { get; set; }
     }
 }
