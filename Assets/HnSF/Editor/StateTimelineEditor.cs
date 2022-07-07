@@ -16,15 +16,10 @@ namespace HnSF
             base.OnInspectorGUI();
             if (GUILayout.Button("Open Editor"))
             {
+                st.BuildStateVariablesIDMap();
                 currentTimeline = StateTimelineEditorWindow.OpenWindow(st);
-                currentTimeline.RefreshAll();
             }
 
-            if (GUILayout.Button("Test"))
-            {
-                StateTimelineDataEditor.Init(st, 0);
-            }
-            
             if (GUI.changed)
             {
                 if (currentTimeline)

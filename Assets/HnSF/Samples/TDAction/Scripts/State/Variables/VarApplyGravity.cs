@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace HnSF.Sample.TDAction.State
 {
+    [StateVariable("Gravity/Apply Gravity")]
     public struct VarApplyGravity : IStateVariables
     {
         public string name;

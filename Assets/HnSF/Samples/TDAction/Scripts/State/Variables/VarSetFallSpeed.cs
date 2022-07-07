@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace HnSF.Sample.TDAction.State
 {
+    [StateVariable("Gravity/Set Fall Speed")]
     public struct VarSetFallSpeed : IStateVariables
     {
         public string name;

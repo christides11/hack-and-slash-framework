@@ -1,5 +1,7 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -34,6 +36,7 @@ namespace HnSF
 
         public void CreateGUI()
         {
+            GetStateVariablesFromAssemblies();
             VisualElement root = rootVisualElement;
             tree.CloneTree(root);
             ScrollView labelPanel = root.Q<ScrollView>(name: "data-labels");
@@ -58,42 +61,96 @@ namespace HnSF
             });
         }
 
-        public void RefreshAll(bool refreshData = false)
+        public Dictionary<string, Type> stateVariableTypes = new Dictionary<string, Type>();
+        protected virtual void GetStateVariablesFromAssemblies()
         {
-            VisualElement root = rootVisualElement;
-            ScrollView labelPanel = root.Q<ScrollView>(name: "data-labels");
-            ScrollView dataPanel = root.Q<ScrollView>(name: "data-frames");
+            stateVariableTypes.Clear();
+            Assembly[] assemblies = AppDomain.CurrentDomain.GetAssemblies();
 
-            if (stateTimeline == null) return;
-            if (refreshData)
+            foreach (Assembly assembly in assemblies)
             {
-                var labelsToDelete = labelPanel.contentContainer.Query(name: "data-bar").Build();
-                var datasToDelete = dataPanel.contentContainer.Query(name: "frame-bar").Build();
-                foreach (var container in labelsToDelete)
+                Type[] types = assembly.GetTypes();
+
+                foreach (Type type in types)
                 {
-                    labelPanel.contentContainer.Remove(container);
-                }
+                    if (!Attribute.IsDefined(type, typeof(StateVariableAttribute))) continue;
 
-                foreach (var dataContainer in datasToDelete)
-                {
-                    dataPanel.contentContainer.Remove(dataContainer);
-                }
-
-                for (int i = 0; i < stateTimeline.data.Length; i++)
-                {
-                    dataBar.CloneTree(labelPanel.contentContainer);
-                    mainFrameBarBG.CloneTree(dataPanel.contentContainer);
-
-                    var thisSideBar = labelPanel.contentContainer.Query(name: "sidebar-data-label").Build().Last();
-                    var thisMainBar = dataPanel.contentContainer.Query(name: "main-framebar-bg").Build().Last();
-
-                    thisSideBar.Q<UnityEngine.UIElements.Label>(name: "label-text").text =
-                        !String.IsNullOrEmpty(stateTimeline.data[i].Name) ? stateTimeline.data[i].Name
-                        : stateTimeline.data[i].GetType().Name;
+                    StateVariableAttribute sva = type.GetCustomAttribute<StateVariableAttribute>();
+                    stateVariableTypes.Add(sva.menuName, type);
                 }
             }
+        }
 
+        public virtual void RefreshAll(bool refreshData = false)
+        {
+            if (stateTimeline == null)
+            {
+                Close();
+                return;
+            }
+
+            RefreshSideBar();
+            RefreshMainWindow();
             RefreshFrameBars();
+        }
+
+        public void RefreshSideBar()
+        {
+            VisualElement root = rootVisualElement;
+            ScrollView sidebarPanel = root.Q<ScrollView>(name: "data-labels");
+            
+            var labelsToDelete = sidebarPanel.contentContainer.Query(name: "data-bar").Build();
+            foreach (var container in labelsToDelete)
+            {
+                sidebarPanel.contentContainer.Remove(container);
+            }
+            
+            sidebarPanel.AddManipulator(new ContextualMenuManipulator((ContextualMenuPopulateEvent evt) =>
+            {
+                foreach (var c in stateVariableTypes)
+                {
+                    evt.menu.AppendAction("Add/"+c.Key, (x)=>{ });
+                }
+            }));
+            
+            for (int i = 0; i < stateTimeline.data.Length; i++)
+            {
+                int index = i;
+                dataBar.CloneTree(sidebarPanel.contentContainer);
+                var thisSideBar = sidebarPanel.contentContainer.Query(name: "sidebar-data-label").Build().Last() as Button;
+
+                thisSideBar.text =
+                    !String.IsNullOrEmpty(stateTimeline.data[i].Name) ? stateTimeline.data[i].Name
+                        : stateTimeline.data[i].GetType().Name;
+                thisSideBar.AddManipulator(new ContextualMenuManipulator((ContextualMenuPopulateEvent evt) =>
+                {
+                    evt.menu.AppendAction("Edit", (x)=>{ StateTimelineDataEditor.Init(stateTimeline, stateTimeline.data[index].ID); });
+                    foreach (var c in stateVariableTypes)
+                    {
+                        evt.menu.AppendAction("Add/"+c.Key, (x)=>{ });
+                    }
+                    evt.menu.AppendAction("Delete", (x)=>{ });
+                }));
+            }
+        }
+
+        public void RefreshMainWindow()
+        {
+            VisualElement root = rootVisualElement;
+            ScrollView mainPanel = root.Q<ScrollView>(name: "data-frames");
+            
+            var datasToDelete = mainPanel.contentContainer.Query(name: "frame-bar").Build();
+            foreach (var dataContainer in datasToDelete)
+            {
+                mainPanel.contentContainer.Remove(dataContainer);
+            }
+            
+            for (int i = 0; i < stateTimeline.data.Length; i++)
+            {
+                mainFrameBarBG.CloneTree(mainPanel.contentContainer);
+
+                var thisMainBar = mainPanel.contentContainer.Query(name: "main-framebar-bg").Build().Last();
+            }
         }
 
         public void RefreshFrameBars()

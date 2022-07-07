@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace HnSF.Sample.TDAction.State
 {
+    [StateVariable("State/Change State")]
     public struct ChangeState : IStateVariables
     {
         public string name;
