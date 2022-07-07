@@ -33,6 +33,38 @@ namespace HnSF
             }
         }
 
+        public int GetStateVariableDepth(int id)
+        {
+            int depth = 0;
+
+            int idx = stateVariablesIDMap[id];
+            while (data[idx].Parent != -1)
+            {
+                depth++;
+                idx = stateVariablesIDMap[data[idx].Parent];
+            }
+            
+            return depth;
+        }
+
+        public void AddStateVariable(IStateVariables var, int parentID = -1)
+        {
+            Array.Resize(ref data, data.Length+1);
+            data[^1] = var;
+            data[^1].ID = data.Length == 1 ? 0 : data[^2].ID + 1;
+            data[^1].Parent = parentID;
+            if (parentID != -1)
+            {
+                int parentIndex = stateVariablesIDMap[parentID];
+                
+                var tempChildren = data[parentIndex].Children;
+                if (tempChildren == null) tempChildren = Array.Empty<int>();
+                Array.Resize(ref tempChildren, tempChildren.Length+1);
+                tempChildren[^1] = data[^1].ID;
+                data[parentIndex].Children = tempChildren;
+            }
+        }
+
         public void RemoveStateVariable(int index)
         {
             List<IStateVariables> tempData = data.ToList();

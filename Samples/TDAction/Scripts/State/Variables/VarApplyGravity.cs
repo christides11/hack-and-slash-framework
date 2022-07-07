@@ -20,8 +20,17 @@ namespace HnSF.Sample.TDAction.State
         }
         public int FunctionMap => (int)StateFunctionEnum.APPLY_GRAVITY;
         public IConditionVariables Condition => condition;
-        public int Parent => Parent;
-        public int[] Children => children;
+        public int Parent
+        {
+            get => parent;
+            set => parent = value;
+        }
+
+        public int[] Children
+        {
+            get => children;
+            set => children = value;
+        }
 
         public Vector2[] FrameRanges
         {
