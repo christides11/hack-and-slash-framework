@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace HnSF.Sample.TDAction.State
 {
+    [StateVariable("Traction/Apply Traction")]
     public struct VarApplyTraction : IStateVariables
     {
         public string name;
