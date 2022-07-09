@@ -2297,6 +2297,45 @@ references:
   isSpec: "True"
   fullName: HnSF.IStateVariables.FunctionMap
   nameWithType: IStateVariables.FunctionMap
+- uid: HnSF.IStateVariables.ID
+  name: ID
+  href: api/HnSF.IStateVariables.html#HnSF_IStateVariables_ID
+  commentId: P:HnSF.IStateVariables.ID
+  fullName: HnSF.IStateVariables.ID
+  nameWithType: IStateVariables.ID
+- uid: HnSF.IStateVariables.ID*
+  name: ID
+  href: api/HnSF.IStateVariables.html#HnSF_IStateVariables_ID_
+  commentId: Overload:HnSF.IStateVariables.ID
+  isSpec: "True"
+  fullName: HnSF.IStateVariables.ID
+  nameWithType: IStateVariables.ID
+- uid: HnSF.IStateVariables.Name
+  name: Name
+  href: api/HnSF.IStateVariables.html#HnSF_IStateVariables_Name
+  commentId: P:HnSF.IStateVariables.Name
+  fullName: HnSF.IStateVariables.Name
+  nameWithType: IStateVariables.Name
+- uid: HnSF.IStateVariables.Name*
+  name: Name
+  href: api/HnSF.IStateVariables.html#HnSF_IStateVariables_Name_
+  commentId: Overload:HnSF.IStateVariables.Name
+  isSpec: "True"
+  fullName: HnSF.IStateVariables.Name
+  nameWithType: IStateVariables.Name
+- uid: HnSF.IStateVariables.Parent
+  name: Parent
+  href: api/HnSF.IStateVariables.html#HnSF_IStateVariables_Parent
+  commentId: P:HnSF.IStateVariables.Parent
+  fullName: HnSF.IStateVariables.Parent
+  nameWithType: IStateVariables.Parent
+- uid: HnSF.IStateVariables.Parent*
+  name: Parent
+  href: api/HnSF.IStateVariables.html#HnSF_IStateVariables_Parent_
+  commentId: Overload:HnSF.IStateVariables.Parent
+  isSpec: "True"
+  fullName: HnSF.IStateVariables.Parent
+  nameWithType: IStateVariables.Parent
 - uid: HnSF.ITeamable
   name: ITeamable
   href: api/HnSF.ITeamable.html
@@ -4324,6 +4363,19 @@ references:
   commentId: T:HnSF.Sample.TDAction.MovesetDefinition
   fullName: HnSF.Sample.TDAction.MovesetDefinition
   nameWithType: MovesetDefinition
+- uid: HnSF.Sample.TDAction.MovesetDefinition.Initialize
+  name: Initialize()
+  href: api/HnSF.Sample.TDAction.MovesetDefinition.html#HnSF_Sample_TDAction_MovesetDefinition_Initialize
+  commentId: M:HnSF.Sample.TDAction.MovesetDefinition.Initialize
+  fullName: HnSF.Sample.TDAction.MovesetDefinition.Initialize()
+  nameWithType: MovesetDefinition.Initialize()
+- uid: HnSF.Sample.TDAction.MovesetDefinition.Initialize*
+  name: Initialize
+  href: api/HnSF.Sample.TDAction.MovesetDefinition.html#HnSF_Sample_TDAction_MovesetDefinition_Initialize_
+  commentId: Overload:HnSF.Sample.TDAction.MovesetDefinition.Initialize
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.MovesetDefinition.Initialize
+  nameWithType: MovesetDefinition.Initialize
 - uid: HnSF.Sample.TDAction.PlayerInputData
   name: PlayerInputData
   href: api/HnSF.Sample.TDAction.PlayerInputData.html
@@ -4657,6 +4709,51 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.State.ChangeState.FunctionMap
   nameWithType: ChangeState.FunctionMap
+- uid: HnSF.Sample.TDAction.State.ChangeState.ID
+  name: ID
+  href: api/HnSF.Sample.TDAction.State.ChangeState.html#HnSF_Sample_TDAction_State_ChangeState_ID
+  commentId: P:HnSF.Sample.TDAction.State.ChangeState.ID
+  fullName: HnSF.Sample.TDAction.State.ChangeState.ID
+  nameWithType: ChangeState.ID
+- uid: HnSF.Sample.TDAction.State.ChangeState.ID*
+  name: ID
+  href: api/HnSF.Sample.TDAction.State.ChangeState.html#HnSF_Sample_TDAction_State_ChangeState_ID_
+  commentId: Overload:HnSF.Sample.TDAction.State.ChangeState.ID
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.ChangeState.ID
+  nameWithType: ChangeState.ID
+- uid: HnSF.Sample.TDAction.State.ChangeState.name
+  name: name
+  href: api/HnSF.Sample.TDAction.State.ChangeState.html#HnSF_Sample_TDAction_State_ChangeState_name
+  commentId: F:HnSF.Sample.TDAction.State.ChangeState.name
+  fullName: HnSF.Sample.TDAction.State.ChangeState.name
+  nameWithType: ChangeState.name
+- uid: HnSF.Sample.TDAction.State.ChangeState.Name
+  name: Name
+  href: api/HnSF.Sample.TDAction.State.ChangeState.html#HnSF_Sample_TDAction_State_ChangeState_Name
+  commentId: P:HnSF.Sample.TDAction.State.ChangeState.Name
+  fullName: HnSF.Sample.TDAction.State.ChangeState.Name
+  nameWithType: ChangeState.Name
+- uid: HnSF.Sample.TDAction.State.ChangeState.Name*
+  name: Name
+  href: api/HnSF.Sample.TDAction.State.ChangeState.html#HnSF_Sample_TDAction_State_ChangeState_Name_
+  commentId: Overload:HnSF.Sample.TDAction.State.ChangeState.Name
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.ChangeState.Name
+  nameWithType: ChangeState.Name
+- uid: HnSF.Sample.TDAction.State.ChangeState.Parent
+  name: Parent
+  href: api/HnSF.Sample.TDAction.State.ChangeState.html#HnSF_Sample_TDAction_State_ChangeState_Parent
+  commentId: P:HnSF.Sample.TDAction.State.ChangeState.Parent
+  fullName: HnSF.Sample.TDAction.State.ChangeState.Parent
+  nameWithType: ChangeState.Parent
+- uid: HnSF.Sample.TDAction.State.ChangeState.Parent*
+  name: Parent
+  href: api/HnSF.Sample.TDAction.State.ChangeState.html#HnSF_Sample_TDAction_State_ChangeState_Parent_
+  commentId: Overload:HnSF.Sample.TDAction.State.ChangeState.Parent
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.ChangeState.Parent
+  nameWithType: ChangeState.Parent
 - uid: HnSF.Sample.TDAction.State.ChangeState.stateID
   name: stateID
   href: api/HnSF.Sample.TDAction.State.ChangeState.html#HnSF_Sample_TDAction_State_ChangeState_stateID
@@ -5083,12 +5180,57 @@ references:
   commentId: F:HnSF.Sample.TDAction.State.VarApplyGravity.gravity
   fullName: HnSF.Sample.TDAction.State.VarApplyGravity.gravity
   nameWithType: VarApplyGravity.gravity
+- uid: HnSF.Sample.TDAction.State.VarApplyGravity.ID
+  name: ID
+  href: api/HnSF.Sample.TDAction.State.VarApplyGravity.html#HnSF_Sample_TDAction_State_VarApplyGravity_ID
+  commentId: P:HnSF.Sample.TDAction.State.VarApplyGravity.ID
+  fullName: HnSF.Sample.TDAction.State.VarApplyGravity.ID
+  nameWithType: VarApplyGravity.ID
+- uid: HnSF.Sample.TDAction.State.VarApplyGravity.ID*
+  name: ID
+  href: api/HnSF.Sample.TDAction.State.VarApplyGravity.html#HnSF_Sample_TDAction_State_VarApplyGravity_ID_
+  commentId: Overload:HnSF.Sample.TDAction.State.VarApplyGravity.ID
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.VarApplyGravity.ID
+  nameWithType: VarApplyGravity.ID
 - uid: HnSF.Sample.TDAction.State.VarApplyGravity.maxFallSpeed
   name: maxFallSpeed
   href: api/HnSF.Sample.TDAction.State.VarApplyGravity.html#HnSF_Sample_TDAction_State_VarApplyGravity_maxFallSpeed
   commentId: F:HnSF.Sample.TDAction.State.VarApplyGravity.maxFallSpeed
   fullName: HnSF.Sample.TDAction.State.VarApplyGravity.maxFallSpeed
   nameWithType: VarApplyGravity.maxFallSpeed
+- uid: HnSF.Sample.TDAction.State.VarApplyGravity.name
+  name: name
+  href: api/HnSF.Sample.TDAction.State.VarApplyGravity.html#HnSF_Sample_TDAction_State_VarApplyGravity_name
+  commentId: F:HnSF.Sample.TDAction.State.VarApplyGravity.name
+  fullName: HnSF.Sample.TDAction.State.VarApplyGravity.name
+  nameWithType: VarApplyGravity.name
+- uid: HnSF.Sample.TDAction.State.VarApplyGravity.Name
+  name: Name
+  href: api/HnSF.Sample.TDAction.State.VarApplyGravity.html#HnSF_Sample_TDAction_State_VarApplyGravity_Name
+  commentId: P:HnSF.Sample.TDAction.State.VarApplyGravity.Name
+  fullName: HnSF.Sample.TDAction.State.VarApplyGravity.Name
+  nameWithType: VarApplyGravity.Name
+- uid: HnSF.Sample.TDAction.State.VarApplyGravity.Name*
+  name: Name
+  href: api/HnSF.Sample.TDAction.State.VarApplyGravity.html#HnSF_Sample_TDAction_State_VarApplyGravity_Name_
+  commentId: Overload:HnSF.Sample.TDAction.State.VarApplyGravity.Name
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.VarApplyGravity.Name
+  nameWithType: VarApplyGravity.Name
+- uid: HnSF.Sample.TDAction.State.VarApplyGravity.Parent
+  name: Parent
+  href: api/HnSF.Sample.TDAction.State.VarApplyGravity.html#HnSF_Sample_TDAction_State_VarApplyGravity_Parent
+  commentId: P:HnSF.Sample.TDAction.State.VarApplyGravity.Parent
+  fullName: HnSF.Sample.TDAction.State.VarApplyGravity.Parent
+  nameWithType: VarApplyGravity.Parent
+- uid: HnSF.Sample.TDAction.State.VarApplyGravity.Parent*
+  name: Parent
+  href: api/HnSF.Sample.TDAction.State.VarApplyGravity.html#HnSF_Sample_TDAction_State_VarApplyGravity_Parent_
+  commentId: Overload:HnSF.Sample.TDAction.State.VarApplyGravity.Parent
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.VarApplyGravity.Parent
+  nameWithType: VarApplyGravity.Parent
 - uid: HnSF.Sample.TDAction.State.VarApplyGravity.useGravityStat
   name: useGravityStat
   href: api/HnSF.Sample.TDAction.State.VarApplyGravity.html#HnSF_Sample_TDAction_State_VarApplyGravity_useGravityStat
@@ -5177,6 +5319,51 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.State.VarApplyTraction.FunctionMap
   nameWithType: VarApplyTraction.FunctionMap
+- uid: HnSF.Sample.TDAction.State.VarApplyTraction.ID
+  name: ID
+  href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_ID
+  commentId: P:HnSF.Sample.TDAction.State.VarApplyTraction.ID
+  fullName: HnSF.Sample.TDAction.State.VarApplyTraction.ID
+  nameWithType: VarApplyTraction.ID
+- uid: HnSF.Sample.TDAction.State.VarApplyTraction.ID*
+  name: ID
+  href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_ID_
+  commentId: Overload:HnSF.Sample.TDAction.State.VarApplyTraction.ID
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.VarApplyTraction.ID
+  nameWithType: VarApplyTraction.ID
+- uid: HnSF.Sample.TDAction.State.VarApplyTraction.name
+  name: name
+  href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_name
+  commentId: F:HnSF.Sample.TDAction.State.VarApplyTraction.name
+  fullName: HnSF.Sample.TDAction.State.VarApplyTraction.name
+  nameWithType: VarApplyTraction.name
+- uid: HnSF.Sample.TDAction.State.VarApplyTraction.Name
+  name: Name
+  href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_Name
+  commentId: P:HnSF.Sample.TDAction.State.VarApplyTraction.Name
+  fullName: HnSF.Sample.TDAction.State.VarApplyTraction.Name
+  nameWithType: VarApplyTraction.Name
+- uid: HnSF.Sample.TDAction.State.VarApplyTraction.Name*
+  name: Name
+  href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_Name_
+  commentId: Overload:HnSF.Sample.TDAction.State.VarApplyTraction.Name
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.VarApplyTraction.Name
+  nameWithType: VarApplyTraction.Name
+- uid: HnSF.Sample.TDAction.State.VarApplyTraction.Parent
+  name: Parent
+  href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_Parent
+  commentId: P:HnSF.Sample.TDAction.State.VarApplyTraction.Parent
+  fullName: HnSF.Sample.TDAction.State.VarApplyTraction.Parent
+  nameWithType: VarApplyTraction.Parent
+- uid: HnSF.Sample.TDAction.State.VarApplyTraction.Parent*
+  name: Parent
+  href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_Parent_
+  commentId: Overload:HnSF.Sample.TDAction.State.VarApplyTraction.Parent
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.VarApplyTraction.Parent
+  nameWithType: VarApplyTraction.Parent
 - uid: HnSF.Sample.TDAction.State.VarApplyTraction.traction
   name: traction
   href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_traction
@@ -5259,6 +5446,51 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed.FunctionMap
   nameWithType: VarSetFallSpeed.FunctionMap
+- uid: HnSF.Sample.TDAction.State.VarSetFallSpeed.ID
+  name: ID
+  href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html#HnSF_Sample_TDAction_State_VarSetFallSpeed_ID
+  commentId: P:HnSF.Sample.TDAction.State.VarSetFallSpeed.ID
+  fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed.ID
+  nameWithType: VarSetFallSpeed.ID
+- uid: HnSF.Sample.TDAction.State.VarSetFallSpeed.ID*
+  name: ID
+  href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html#HnSF_Sample_TDAction_State_VarSetFallSpeed_ID_
+  commentId: Overload:HnSF.Sample.TDAction.State.VarSetFallSpeed.ID
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed.ID
+  nameWithType: VarSetFallSpeed.ID
+- uid: HnSF.Sample.TDAction.State.VarSetFallSpeed.name
+  name: name
+  href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html#HnSF_Sample_TDAction_State_VarSetFallSpeed_name
+  commentId: F:HnSF.Sample.TDAction.State.VarSetFallSpeed.name
+  fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed.name
+  nameWithType: VarSetFallSpeed.name
+- uid: HnSF.Sample.TDAction.State.VarSetFallSpeed.Name
+  name: Name
+  href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html#HnSF_Sample_TDAction_State_VarSetFallSpeed_Name
+  commentId: P:HnSF.Sample.TDAction.State.VarSetFallSpeed.Name
+  fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed.Name
+  nameWithType: VarSetFallSpeed.Name
+- uid: HnSF.Sample.TDAction.State.VarSetFallSpeed.Name*
+  name: Name
+  href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html#HnSF_Sample_TDAction_State_VarSetFallSpeed_Name_
+  commentId: Overload:HnSF.Sample.TDAction.State.VarSetFallSpeed.Name
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed.Name
+  nameWithType: VarSetFallSpeed.Name
+- uid: HnSF.Sample.TDAction.State.VarSetFallSpeed.Parent
+  name: Parent
+  href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html#HnSF_Sample_TDAction_State_VarSetFallSpeed_Parent
+  commentId: P:HnSF.Sample.TDAction.State.VarSetFallSpeed.Parent
+  fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed.Parent
+  nameWithType: VarSetFallSpeed.Parent
+- uid: HnSF.Sample.TDAction.State.VarSetFallSpeed.Parent*
+  name: Parent
+  href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html#HnSF_Sample_TDAction_State_VarSetFallSpeed_Parent_
+  commentId: Overload:HnSF.Sample.TDAction.State.VarSetFallSpeed.Parent
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed.Parent
+  nameWithType: VarSetFallSpeed.Parent
 - uid: HnSF.Sample.TDAction.State.VarSetFallSpeed.value
   name: value
   href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html#HnSF_Sample_TDAction_State_VarSetFallSpeed_value
@@ -5455,6 +5687,19 @@ references:
   commentId: T:HnSF.StateTimeline
   fullName: HnSF.StateTimeline
   nameWithType: StateTimeline
+- uid: HnSF.StateTimeline.AddStateVariable(HnSF.IStateVariables,System.Int32)
+  name: AddStateVariable(IStateVariables, Int32)
+  href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_AddStateVariable_HnSF_IStateVariables_System_Int32_
+  commentId: M:HnSF.StateTimeline.AddStateVariable(HnSF.IStateVariables,System.Int32)
+  fullName: HnSF.StateTimeline.AddStateVariable(HnSF.IStateVariables, System.Int32)
+  nameWithType: StateTimeline.AddStateVariable(IStateVariables, Int32)
+- uid: HnSF.StateTimeline.AddStateVariable*
+  name: AddStateVariable
+  href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_AddStateVariable_
+  commentId: Overload:HnSF.StateTimeline.AddStateVariable
+  isSpec: "True"
+  fullName: HnSF.StateTimeline.AddStateVariable
+  nameWithType: StateTimeline.AddStateVariable
 - uid: HnSF.StateTimeline.autoIncrement
   name: autoIncrement
   href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_autoIncrement
@@ -5479,18 +5724,76 @@ references:
   commentId: F:HnSF.StateTimeline.baseState
   fullName: HnSF.StateTimeline.baseState
   nameWithType: StateTimeline.baseState
+- uid: HnSF.StateTimeline.BuildStateVariablesIDMap
+  name: BuildStateVariablesIDMap()
+  href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_BuildStateVariablesIDMap
+  commentId: M:HnSF.StateTimeline.BuildStateVariablesIDMap
+  fullName: HnSF.StateTimeline.BuildStateVariablesIDMap()
+  nameWithType: StateTimeline.BuildStateVariablesIDMap()
+- uid: HnSF.StateTimeline.BuildStateVariablesIDMap*
+  name: BuildStateVariablesIDMap
+  href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_BuildStateVariablesIDMap_
+  commentId: Overload:HnSF.StateTimeline.BuildStateVariablesIDMap
+  isSpec: "True"
+  fullName: HnSF.StateTimeline.BuildStateVariablesIDMap
+  nameWithType: StateTimeline.BuildStateVariablesIDMap
 - uid: HnSF.StateTimeline.data
   name: data
   href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_data
   commentId: F:HnSF.StateTimeline.data
   fullName: HnSF.StateTimeline.data
   nameWithType: StateTimeline.data
+- uid: HnSF.StateTimeline.GetStateVariableDepth(System.Int32)
+  name: GetStateVariableDepth(Int32)
+  href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_GetStateVariableDepth_System_Int32_
+  commentId: M:HnSF.StateTimeline.GetStateVariableDepth(System.Int32)
+  fullName: HnSF.StateTimeline.GetStateVariableDepth(System.Int32)
+  nameWithType: StateTimeline.GetStateVariableDepth(Int32)
+- uid: HnSF.StateTimeline.GetStateVariableDepth*
+  name: GetStateVariableDepth
+  href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_GetStateVariableDepth_
+  commentId: Overload:HnSF.StateTimeline.GetStateVariableDepth
+  isSpec: "True"
+  fullName: HnSF.StateTimeline.GetStateVariableDepth
+  nameWithType: StateTimeline.GetStateVariableDepth
+- uid: HnSF.StateTimeline.Initialize
+  name: Initialize()
+  href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_Initialize
+  commentId: M:HnSF.StateTimeline.Initialize
+  fullName: HnSF.StateTimeline.Initialize()
+  nameWithType: StateTimeline.Initialize()
+- uid: HnSF.StateTimeline.Initialize*
+  name: Initialize
+  href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_Initialize_
+  commentId: Overload:HnSF.StateTimeline.Initialize
+  isSpec: "True"
+  fullName: HnSF.StateTimeline.Initialize
+  nameWithType: StateTimeline.Initialize
+- uid: HnSF.StateTimeline.RemoveStateVariable(System.Int32)
+  name: RemoveStateVariable(Int32)
+  href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_RemoveStateVariable_System_Int32_
+  commentId: M:HnSF.StateTimeline.RemoveStateVariable(System.Int32)
+  fullName: HnSF.StateTimeline.RemoveStateVariable(System.Int32)
+  nameWithType: StateTimeline.RemoveStateVariable(Int32)
+- uid: HnSF.StateTimeline.RemoveStateVariable*
+  name: RemoveStateVariable
+  href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_RemoveStateVariable_
+  commentId: Overload:HnSF.StateTimeline.RemoveStateVariable
+  isSpec: "True"
+  fullName: HnSF.StateTimeline.RemoveStateVariable
+  nameWithType: StateTimeline.RemoveStateVariable
 - uid: HnSF.StateTimeline.stateName
   name: stateName
   href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_stateName
   commentId: F:HnSF.StateTimeline.stateName
   fullName: HnSF.StateTimeline.stateName
   nameWithType: StateTimeline.stateName
+- uid: HnSF.StateTimeline.stateVariablesIDMap
+  name: stateVariablesIDMap
+  href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_stateVariablesIDMap
+  commentId: F:HnSF.StateTimeline.stateVariablesIDMap
+  fullName: HnSF.StateTimeline.stateVariablesIDMap
+  nameWithType: StateTimeline.stateVariablesIDMap
 - uid: HnSF.StateTimeline.totalFrames
   name: totalFrames
   href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_totalFrames
@@ -5503,6 +5806,43 @@ references:
   commentId: F:HnSF.StateTimeline.useBaseState
   fullName: HnSF.StateTimeline.useBaseState
   nameWithType: StateTimeline.useBaseState
+- uid: HnSF.StateTimelineDataEditor
+  name: StateTimelineDataEditor
+  href: api/HnSF.StateTimelineDataEditor.html
+  commentId: T:HnSF.StateTimelineDataEditor
+  fullName: HnSF.StateTimelineDataEditor
+  nameWithType: StateTimelineDataEditor
+- uid: HnSF.StateTimelineDataEditor.currentTimeline
+  name: currentTimeline
+  href: api/HnSF.StateTimelineDataEditor.html#HnSF_StateTimelineDataEditor_currentTimeline
+  commentId: F:HnSF.StateTimelineDataEditor.currentTimeline
+  fullName: HnSF.StateTimelineDataEditor.currentTimeline
+  nameWithType: StateTimelineDataEditor.currentTimeline
+- uid: HnSF.StateTimelineDataEditor.id
+  name: id
+  href: api/HnSF.StateTimelineDataEditor.html#HnSF_StateTimelineDataEditor_id
+  commentId: F:HnSF.StateTimelineDataEditor.id
+  fullName: HnSF.StateTimelineDataEditor.id
+  nameWithType: StateTimelineDataEditor.id
+- uid: HnSF.StateTimelineDataEditor.Init(HnSF.StateTimeline,System.Int32)
+  name: Init(StateTimeline, Int32)
+  href: api/HnSF.StateTimelineDataEditor.html#HnSF_StateTimelineDataEditor_Init_HnSF_StateTimeline_System_Int32_
+  commentId: M:HnSF.StateTimelineDataEditor.Init(HnSF.StateTimeline,System.Int32)
+  fullName: HnSF.StateTimelineDataEditor.Init(HnSF.StateTimeline, System.Int32)
+  nameWithType: StateTimelineDataEditor.Init(StateTimeline, Int32)
+- uid: HnSF.StateTimelineDataEditor.Init*
+  name: Init
+  href: api/HnSF.StateTimelineDataEditor.html#HnSF_StateTimelineDataEditor_Init_
+  commentId: Overload:HnSF.StateTimelineDataEditor.Init
+  isSpec: "True"
+  fullName: HnSF.StateTimelineDataEditor.Init
+  nameWithType: StateTimelineDataEditor.Init
+- uid: HnSF.StateTimelineDataEditor.state
+  name: state
+  href: api/HnSF.StateTimelineDataEditor.html#HnSF_StateTimelineDataEditor_state
+  commentId: F:HnSF.StateTimelineDataEditor.state
+  fullName: HnSF.StateTimelineDataEditor.state
+  nameWithType: StateTimelineDataEditor.state
 - uid: HnSF.StateTimelineEditor
   name: StateTimelineEditor
   href: api/HnSF.StateTimelineEditor.html
@@ -5553,6 +5893,12 @@ references:
   commentId: F:HnSF.StateTimelineEditorWindow.dataBar
   fullName: HnSF.StateTimelineEditorWindow.dataBar
   nameWithType: StateTimelineEditorWindow.dataBar
+- uid: HnSF.StateTimelineEditorWindow.depthColors
+  name: depthColors
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_depthColors
+  commentId: F:HnSF.StateTimelineEditorWindow.depthColors
+  fullName: HnSF.StateTimelineEditorWindow.depthColors
+  nameWithType: StateTimelineEditorWindow.depthColors
 - uid: HnSF.StateTimelineEditorWindow.frameInterruptColor
   name: frameInterruptColor
   href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_frameInterruptColor
@@ -5565,6 +5911,32 @@ references:
   commentId: F:HnSF.StateTimelineEditorWindow.frameZeroColor
   fullName: HnSF.StateTimelineEditorWindow.frameZeroColor
   nameWithType: StateTimelineEditorWindow.frameZeroColor
+- uid: HnSF.StateTimelineEditorWindow.GetFrameWidth
+  name: GetFrameWidth()
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_GetFrameWidth
+  commentId: M:HnSF.StateTimelineEditorWindow.GetFrameWidth
+  fullName: HnSF.StateTimelineEditorWindow.GetFrameWidth()
+  nameWithType: StateTimelineEditorWindow.GetFrameWidth()
+- uid: HnSF.StateTimelineEditorWindow.GetFrameWidth*
+  name: GetFrameWidth
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_GetFrameWidth_
+  commentId: Overload:HnSF.StateTimelineEditorWindow.GetFrameWidth
+  isSpec: "True"
+  fullName: HnSF.StateTimelineEditorWindow.GetFrameWidth
+  nameWithType: StateTimelineEditorWindow.GetFrameWidth
+- uid: HnSF.StateTimelineEditorWindow.GetStateVariablesFromAssemblies
+  name: GetStateVariablesFromAssemblies()
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_GetStateVariablesFromAssemblies
+  commentId: M:HnSF.StateTimelineEditorWindow.GetStateVariablesFromAssemblies
+  fullName: HnSF.StateTimelineEditorWindow.GetStateVariablesFromAssemblies()
+  nameWithType: StateTimelineEditorWindow.GetStateVariablesFromAssemblies()
+- uid: HnSF.StateTimelineEditorWindow.GetStateVariablesFromAssemblies*
+  name: GetStateVariablesFromAssemblies
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_GetStateVariablesFromAssemblies_
+  commentId: Overload:HnSF.StateTimelineEditorWindow.GetStateVariablesFromAssemblies
+  isSpec: "True"
+  fullName: HnSF.StateTimelineEditorWindow.GetStateVariablesFromAssemblies
+  nameWithType: StateTimelineEditorWindow.GetStateVariablesFromAssemblies
 - uid: HnSF.StateTimelineEditorWindow.mainFrameBarBG
   name: mainFrameBarBG
   href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_mainFrameBarBG
@@ -5616,12 +5988,44 @@ references:
   isSpec: "True"
   fullName: HnSF.StateTimelineEditorWindow.RefreshFrameBars
   nameWithType: StateTimelineEditorWindow.RefreshFrameBars
+- uid: HnSF.StateTimelineEditorWindow.RefreshMainWindow
+  name: RefreshMainWindow()
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_RefreshMainWindow
+  commentId: M:HnSF.StateTimelineEditorWindow.RefreshMainWindow
+  fullName: HnSF.StateTimelineEditorWindow.RefreshMainWindow()
+  nameWithType: StateTimelineEditorWindow.RefreshMainWindow()
+- uid: HnSF.StateTimelineEditorWindow.RefreshMainWindow*
+  name: RefreshMainWindow
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_RefreshMainWindow_
+  commentId: Overload:HnSF.StateTimelineEditorWindow.RefreshMainWindow
+  isSpec: "True"
+  fullName: HnSF.StateTimelineEditorWindow.RefreshMainWindow
+  nameWithType: StateTimelineEditorWindow.RefreshMainWindow
+- uid: HnSF.StateTimelineEditorWindow.RefreshSideBar
+  name: RefreshSideBar()
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_RefreshSideBar
+  commentId: M:HnSF.StateTimelineEditorWindow.RefreshSideBar
+  fullName: HnSF.StateTimelineEditorWindow.RefreshSideBar()
+  nameWithType: StateTimelineEditorWindow.RefreshSideBar()
+- uid: HnSF.StateTimelineEditorWindow.RefreshSideBar*
+  name: RefreshSideBar
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_RefreshSideBar_
+  commentId: Overload:HnSF.StateTimelineEditorWindow.RefreshSideBar
+  isSpec: "True"
+  fullName: HnSF.StateTimelineEditorWindow.RefreshSideBar
+  nameWithType: StateTimelineEditorWindow.RefreshSideBar
 - uid: HnSF.StateTimelineEditorWindow.stateTimeline
   name: stateTimeline
   href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_stateTimeline
   commentId: F:HnSF.StateTimelineEditorWindow.stateTimeline
   fullName: HnSF.StateTimelineEditorWindow.stateTimeline
   nameWithType: StateTimelineEditorWindow.stateTimeline
+- uid: HnSF.StateTimelineEditorWindow.stateVariableTypes
+  name: stateVariableTypes
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_stateVariableTypes
+  commentId: F:HnSF.StateTimelineEditorWindow.stateVariableTypes
+  fullName: HnSF.StateTimelineEditorWindow.stateVariableTypes
+  nameWithType: StateTimelineEditorWindow.stateVariableTypes
 - uid: HnSF.StateTimelineEditorWindow.topbarFrameLabel
   name: topbarFrameLabel
   href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_topbarFrameLabel
@@ -5640,3 +6044,28 @@ references:
   commentId: F:HnSF.StateTimelineEditorWindow.zoomMultiplier
   fullName: HnSF.StateTimelineEditorWindow.zoomMultiplier
   nameWithType: StateTimelineEditorWindow.zoomMultiplier
+- uid: HnSF.StateVariableAttribute
+  name: StateVariableAttribute
+  href: api/HnSF.StateVariableAttribute.html
+  commentId: T:HnSF.StateVariableAttribute
+  fullName: HnSF.StateVariableAttribute
+  nameWithType: StateVariableAttribute
+- uid: HnSF.StateVariableAttribute.#ctor(System.String)
+  name: StateVariableAttribute(String)
+  href: api/HnSF.StateVariableAttribute.html#HnSF_StateVariableAttribute__ctor_System_String_
+  commentId: M:HnSF.StateVariableAttribute.#ctor(System.String)
+  fullName: HnSF.StateVariableAttribute.StateVariableAttribute(System.String)
+  nameWithType: StateVariableAttribute.StateVariableAttribute(String)
+- uid: HnSF.StateVariableAttribute.#ctor*
+  name: StateVariableAttribute
+  href: api/HnSF.StateVariableAttribute.html#HnSF_StateVariableAttribute__ctor_
+  commentId: Overload:HnSF.StateVariableAttribute.#ctor
+  isSpec: "True"
+  fullName: HnSF.StateVariableAttribute.StateVariableAttribute
+  nameWithType: StateVariableAttribute.StateVariableAttribute
+- uid: HnSF.StateVariableAttribute.menuName
+  name: menuName
+  href: api/HnSF.StateVariableAttribute.html#HnSF_StateVariableAttribute_menuName
+  commentId: F:HnSF.StateVariableAttribute.menuName
+  fullName: HnSF.StateVariableAttribute.menuName
+  nameWithType: StateVariableAttribute.menuName
