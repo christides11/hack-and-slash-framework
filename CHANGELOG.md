@@ -1,3 +1,25 @@
+# [37.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v36.1.1...v37.0.0) (2022-07-09)
+
+
+### Code Refactoring
+
+* flattened statetimeline variable list ([4e30a30](https://github.com/christides11/hack-and-slash-framework/commit/4e30a305522b105bdd977c348a457ab1407991db))
+
+
+### Features
+
+* add & remove state vars from timeline editor ([e3b2f24](https://github.com/christides11/hack-and-slash-framework/commit/e3b2f24ae8ef7c618d5c038ca497bf0cdcbdb007))
+* Alternating bg color for State Editor window ([52714d3](https://github.com/christides11/hack-and-slash-framework/commit/52714d36147a1d1c90b296b502ba69fd0e174f1f))
+* Context menu for Timeline Editor vars. ([81b3fae](https://github.com/christides11/hack-and-slash-framework/commit/81b3fae57f4ae280eec3cdc9edfa161f068930cf))
+* State Timeline editor window. ([a687eea](https://github.com/christides11/hack-and-slash-framework/commit/a687eea8e01cffcf7473dcc27eb61747d63977e2))
+* zoom for state timeline editor ([ca88619](https://github.com/christides11/hack-and-slash-framework/commit/ca88619bbfaf94c32ea9383061f06e08c408475d))
+
+
+### BREAKING CHANGES
+
+* Various changes to StateTimeline to make the editor window work.
+* IStateVariables now refer to their children by ID.
+
 ## [36.1.1](https://github.com/christides11/hack-and-slash-framework/compare/v36.1.0...v36.1.1) (2022-05-30)
 
 
