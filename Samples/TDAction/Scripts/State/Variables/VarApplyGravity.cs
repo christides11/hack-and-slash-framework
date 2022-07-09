@@ -38,7 +38,7 @@ namespace HnSF.Sample.TDAction.State
             set => frameRanges = value;
         }
     
-        public int id;
+        [SerializeField, HideInInspector] private int id;
         [SerializeField] public Vector2[] frameRanges;
         [SelectImplementation(typeof(IConditionVariables))] [SerializeField, SerializeReference] 
         public IConditionVariables condition;
@@ -48,7 +48,7 @@ namespace HnSF.Sample.TDAction.State
         public float maxFallSpeed;
         public float gravity;
         
-        public int parent;
-        public int[] children;
+        [SerializeField, HideInInspector] private int parent;
+        [SerializeField, HideInInspector] private int[] children;
     }
 }

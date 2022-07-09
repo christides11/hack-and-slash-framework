@@ -5,8 +5,6 @@ using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
-using UnityEditor.UIElements;
-using UnityEngine.Serialization;
 
 namespace HnSF
 {
@@ -26,7 +24,7 @@ namespace HnSF
 
         public Color[] depthColors = {
             Color.grey,
-            new Color(0.1f, 0.1f, 0.2f)
+            new Color(0.01f, 0.01f, 0.025f)
         };
 
         public static StateTimelineEditorWindow OpenWindow(StateTimeline stateTimeline)
@@ -68,7 +66,7 @@ namespace HnSF
             Button zoomIn = root.Q<Button>(name: "zoom-in");
             Button zoomOut = root.Q<Button>(name: "zoom-out");
             zoomIn.clicked += () => { 
-                zoomMultiplier *= 1.5f;
+                zoomMultiplier *= 2.0f;
                 RefreshAll(true);
             };
             zoomOut.clicked += () =>
@@ -105,6 +103,7 @@ namespace HnSF
                 Close();
                 return;
             }
+            stateTimeline.BuildStateVariablesIDMap();
 
             RefreshSideBar();
             RefreshMainWindow();
@@ -132,32 +131,46 @@ namespace HnSF
             {
                 foreach (var c in stateVariableTypes)
                 {
-                    evt.menu.AppendAction("Add/"+c.Key, (x) => { AddStateVariable(c); });
+                    evt.menu.AppendAction("Add/"+c.Key, (x) => { AddStateVariable(c); RefreshAll(true); });
                 }
             }));
             
             for (int i = 0; i < stateTimeline.data.Length; i++)
             {
-                int index = i;
+                if (stateTimeline.data[i].Parent != -1) continue;
                 int dataID = stateTimeline.data[i].ID;
-                int depth = stateTimeline.GetStateVariableDepth(dataID);
-                dataBar.CloneTree(sidebarPanel.contentContainer);
-                var thisSideBar = sidebarPanel.contentContainer.Query(name: "sidebar-data-label").Build().Last() as Button;
+                SidebarDrawParentAndChildren(sidebarPanel, dataID);
+            }
+        }
 
-                thisSideBar.style.marginLeft = 10 * depth;
-                thisSideBar.style.backgroundColor = depthColors[(depth+1) % depthColors.Length-1];
-                thisSideBar.text =
-                    !String.IsNullOrEmpty(stateTimeline.data[i].Name) ? stateTimeline.data[i].Name
-                        : stateTimeline.data[i].GetType().Name;
-                thisSideBar.AddManipulator(new ContextualMenuManipulator((ContextualMenuPopulateEvent evt) =>
+        private void SidebarDrawParentAndChildren(ScrollView sidebarPanel, int dataID)
+        {
+            int index = stateTimeline.stateVariablesIDMap[dataID];
+            int depth = stateTimeline.GetStateVariableDepth(dataID);
+            
+            dataBar.CloneTree(sidebarPanel.contentContainer);
+            var thisSideBar = sidebarPanel.contentContainer.Query(name: "sidebar-data-label").Build().Last() as Button;
+            
+            thisSideBar.style.marginLeft = 10 * depth;
+            thisSideBar.style.backgroundColor = depthColors[(depth+1) % Mathf.Abs(depthColors.Length)];
+            thisSideBar.text =
+                !String.IsNullOrEmpty(stateTimeline.data[index].Name) ? stateTimeline.data[index].Name
+                    : stateTimeline.data[index].GetType().Name;
+            thisSideBar.AddManipulator(new ContextualMenuManipulator((ContextualMenuPopulateEvent evt) =>
+            {
+                evt.menu.AppendAction("Edit", (x)=>{ StateTimelineDataEditor.Init(stateTimeline, stateTimeline.data[index].ID); });
+                foreach (var c in stateVariableTypes)
                 {
-                    evt.menu.AppendAction("Edit", (x)=>{ StateTimelineDataEditor.Init(stateTimeline, stateTimeline.data[index].ID); });
-                    foreach (var c in stateVariableTypes)
-                    {
-                        evt.menu.AppendAction("Add/"+c.Key, (x)=>{ AddStateVariable(c, dataID); });
-                    }
-                    evt.menu.AppendAction("Delete", (x) => { RemoveStateVariable(index); });
-                }));
+                    evt.menu.AppendAction("Add/"+c.Key, (x)=>{ AddStateVariable(c, dataID); RefreshAll(true); });
+                }
+                evt.menu.AppendAction("Delete", (x) => { RemoveStateVariable(index); RefreshAll(true); });
+            }));
+
+            if (stateTimeline.data[index].Children == null) return;
+            for (int i = 0; i < stateTimeline.data[index].Children.Length; i++)
+            {
+                int childIndex = stateTimeline.stateVariablesIDMap[stateTimeline.data[index].Children[i]];
+                SidebarDrawParentAndChildren(sidebarPanel, stateTimeline.data[childIndex].ID);
             }
         }
 
@@ -184,9 +197,25 @@ namespace HnSF
             
             for (int i = 0; i < stateTimeline.data.Length; i++)
             {
-                mainFrameBarBG.CloneTree(mainPanel.contentContainer);
+                if (stateTimeline.data[i].Parent != -1) continue;
+                int dataID = stateTimeline.data[i].ID;
+                MainWindowDrawParentAndChildren(mainPanel, dataID);
+            }
+        }
 
-                var thisMainBar = mainPanel.contentContainer.Query(name: "main-framebar-bg").Build().Last();
+        private void MainWindowDrawParentAndChildren(ScrollView mainPanel, int dataID)
+        {
+            int index = stateTimeline.stateVariablesIDMap[dataID];
+            int depth = stateTimeline.GetStateVariableDepth(dataID);
+            
+            mainFrameBarBG.CloneTree(mainPanel.contentContainer);
+            var thisMainBar = mainPanel.contentContainer.Query(name: "main-framebar-bg").Build().Last();
+            
+            if (stateTimeline.data[index].Children == null) return;
+            for (int i = 0; i < stateTimeline.data[index].Children.Length; i++)
+            {
+                int childIndex = stateTimeline.stateVariablesIDMap[stateTimeline.data[index].Children[i]];
+                MainWindowDrawParentAndChildren(mainPanel, stateTimeline.data[childIndex].ID);
             }
         }
 
@@ -225,17 +254,35 @@ namespace HnSF
             }
             
             // MAIN WINDOW //
-            // 
             var dbs = dataBars.ToList();
-            for (int i = 1; i < dbs.Count; i++)
+            dbs.RemoveAt(0);
+            for (int i = 0; i < stateTimeline.data.Length; i++)
             {
-                for (int j = 0; j < stateTimeline.data[i - 1].FrameRanges.Length; j++)
-                {
-                    mainFrameBarLabel.CloneTree(dbs[i]);
-                    var thisMainFrameBarLabel = dbs[i].Query(name: mainFrameBarLabel.name).Build().Last();
-                    thisMainFrameBarLabel.style.left = GetFrameWidth() * stateTimeline.data[i - 1].FrameRanges[j].x;
-                    thisMainFrameBarLabel.style.width = new StyleLength(GetFrameWidth() * ((stateTimeline.data[i - 1].FrameRanges[j].y - stateTimeline.data[i - 1].FrameRanges[j].x) + 1) );
-                }
+                if (stateTimeline.data[i].Parent != -1) continue;
+                int dataID = stateTimeline.data[i].ID;
+                DataBarsDrawParentAndChildren(dbs, dataID, 0);
+            }
+        }
+
+        private void DataBarsDrawParentAndChildren(List<VisualElement> dbs, int dataID, int incr)
+        {
+            int index = stateTimeline.stateVariablesIDMap[dataID];
+            
+            for (int j = 0; j < stateTimeline.data[index].FrameRanges.Length; j++)
+            {
+                mainFrameBarLabel.CloneTree(dbs[incr]);
+                var thisMainFrameBarLabel = dbs[incr].Query(name: mainFrameBarLabel.name).Build().Last();
+                thisMainFrameBarLabel.style.left = GetFrameWidth() * stateTimeline.data[index].FrameRanges[j].x;
+                thisMainFrameBarLabel.style.width = new StyleLength(GetFrameWidth() * ((stateTimeline.data[index].FrameRanges[j].y - stateTimeline.data[index].FrameRanges[j].x) + 1) );
+                thisMainFrameBarLabel.Q<Label>().text = (stateTimeline.data[index].FrameRanges[j].y+1 - stateTimeline.data[index].FrameRanges[j].x).ToString();
+            }
+
+            if (stateTimeline.data[index].Children == null) return;
+            for (int i = 0; i < stateTimeline.data[index].Children.Length; i++)
+            {
+                int childIndex = stateTimeline.stateVariablesIDMap[stateTimeline.data[index].Children[i]];
+                incr++;
+                DataBarsDrawParentAndChildren(dbs, stateTimeline.data[childIndex].ID, incr);
             }
         }
 
