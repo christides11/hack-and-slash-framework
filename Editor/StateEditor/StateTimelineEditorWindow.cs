@@ -24,6 +24,11 @@ namespace HnSF
         public Color frameZeroColor = new Color(0.1141082f, 0.5f, 0);
         public Color frameInterruptColor = new Color(0.5019608f, 0, 0.009442259f);
 
+        public Color[] depthColors = {
+            Color.grey,
+            new Color(0.1f, 0.1f, 0.2f)
+        };
+
         public static StateTimelineEditorWindow OpenWindow(StateTimeline stateTimeline)
         {
             StateTimelineEditorWindow wnd = CreateWindow<StateTimelineEditorWindow>();
@@ -140,6 +145,7 @@ namespace HnSF
                 var thisSideBar = sidebarPanel.contentContainer.Query(name: "sidebar-data-label").Build().Last() as Button;
 
                 thisSideBar.style.marginLeft = 10 * depth;
+                thisSideBar.style.backgroundColor = depthColors[(depth+1) % depthColors.Length-1];
                 thisSideBar.text =
                     !String.IsNullOrEmpty(stateTimeline.data[i].Name) ? stateTimeline.data[i].Name
                         : stateTimeline.data[i].GetType().Name;
