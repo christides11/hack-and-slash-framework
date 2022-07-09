@@ -55,7 +55,9 @@ MonoBehaviour:
       data:
         name: 
         id: 1
-        frameRanges: []
+        frameRanges:
+        - {x: 1, y: 5}
+        - {x: 9, y: 11}
         condition:
           rid: -2
         stateMovesetID: 0
