@@ -13,6 +13,7 @@ namespace HnSF
 
         public int id;
         public StateTimeline state;
+        private SerializedObject so = null;
 
         public static void Init(StateTimeline stateTimeline, int id)
         {
@@ -27,7 +28,7 @@ namespace HnSF
         private Vector2 _scrollPos = Vector2.zero;
         private void OnGUI()
         {
-            SerializedObject so = new SerializedObject(state);
+            if (so == null) so = new SerializedObject(state);
             SerializedProperty sp = so.FindProperty("data").GetArrayElementAtIndex(state.stateVariablesIDMap[id]);
 
             EditorGUILayout.PropertyField(sp, GUIContent.none);

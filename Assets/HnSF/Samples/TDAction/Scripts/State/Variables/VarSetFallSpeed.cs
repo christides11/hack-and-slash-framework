@@ -37,14 +37,14 @@ namespace HnSF.Sample.TDAction.State
             set => frameRanges = value;
         }
     
-        public int id;
+        [SerializeField, HideInInspector] private int id;
         [SerializeField] public Vector2[] frameRanges;
         [SelectImplementation(typeof(IConditionVariables))] [SerializeField, SerializeReference] 
         public IConditionVariables condition;
 
         public float value;
         
-        public int parent;
-        public int[] children;
+        [SerializeField, HideInInspector] private int parent;
+        [SerializeField, HideInInspector] private int[] children;
     }
 }
