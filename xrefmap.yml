@@ -5812,12 +5812,24 @@ references:
   commentId: T:HnSF.StateTimelineDataEditor
   fullName: HnSF.StateTimelineDataEditor
   nameWithType: StateTimelineDataEditor
+- uid: HnSF.StateTimelineDataEditor._scrollPos
+  name: _scrollPos
+  href: api/HnSF.StateTimelineDataEditor.html#HnSF_StateTimelineDataEditor__scrollPos
+  commentId: F:HnSF.StateTimelineDataEditor._scrollPos
+  fullName: HnSF.StateTimelineDataEditor._scrollPos
+  nameWithType: StateTimelineDataEditor._scrollPos
 - uid: HnSF.StateTimelineDataEditor.currentTimeline
   name: currentTimeline
   href: api/HnSF.StateTimelineDataEditor.html#HnSF_StateTimelineDataEditor_currentTimeline
   commentId: F:HnSF.StateTimelineDataEditor.currentTimeline
   fullName: HnSF.StateTimelineDataEditor.currentTimeline
   nameWithType: StateTimelineDataEditor.currentTimeline
+- uid: HnSF.StateTimelineDataEditor.EmptyAction
+  name: StateTimelineDataEditor.EmptyAction
+  href: api/HnSF.StateTimelineDataEditor.EmptyAction.html
+  commentId: T:HnSF.StateTimelineDataEditor.EmptyAction
+  fullName: HnSF.StateTimelineDataEditor.EmptyAction
+  nameWithType: StateTimelineDataEditor.EmptyAction
 - uid: HnSF.StateTimelineDataEditor.id
   name: id
   href: api/HnSF.StateTimelineDataEditor.html#HnSF_StateTimelineDataEditor_id
@@ -5837,6 +5849,25 @@ references:
   isSpec: "True"
   fullName: HnSF.StateTimelineDataEditor.Init
   nameWithType: StateTimelineDataEditor.Init
+- uid: HnSF.StateTimelineDataEditor.onChanged
+  name: onChanged
+  href: api/HnSF.StateTimelineDataEditor.html#HnSF_StateTimelineDataEditor_onChanged
+  commentId: F:HnSF.StateTimelineDataEditor.onChanged
+  fullName: HnSF.StateTimelineDataEditor.onChanged
+  nameWithType: StateTimelineDataEditor.onChanged
+- uid: HnSF.StateTimelineDataEditor.OnGUI
+  name: OnGUI()
+  href: api/HnSF.StateTimelineDataEditor.html#HnSF_StateTimelineDataEditor_OnGUI
+  commentId: M:HnSF.StateTimelineDataEditor.OnGUI
+  fullName: HnSF.StateTimelineDataEditor.OnGUI()
+  nameWithType: StateTimelineDataEditor.OnGUI()
+- uid: HnSF.StateTimelineDataEditor.OnGUI*
+  name: OnGUI
+  href: api/HnSF.StateTimelineDataEditor.html#HnSF_StateTimelineDataEditor_OnGUI_
+  commentId: Overload:HnSF.StateTimelineDataEditor.OnGUI
+  isSpec: "True"
+  fullName: HnSF.StateTimelineDataEditor.OnGUI
+  nameWithType: StateTimelineDataEditor.OnGUI
 - uid: HnSF.StateTimelineDataEditor.state
   name: state
   href: api/HnSF.StateTimelineDataEditor.html#HnSF_StateTimelineDataEditor_state
@@ -5874,6 +5905,22 @@ references:
   commentId: T:HnSF.StateTimelineEditorWindow
   fullName: HnSF.StateTimelineEditorWindow
   nameWithType: StateTimelineEditorWindow
+- uid: HnSF.StateTimelineEditorWindow.AddStateVariable(System.Collections.Generic.KeyValuePair{System.String,System.Type},System.Int32)
+  name: AddStateVariable(KeyValuePair<String, Type>, Int32)
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_AddStateVariable_System_Collections_Generic_KeyValuePair_System_String_System_Type__System_Int32_
+  commentId: M:HnSF.StateTimelineEditorWindow.AddStateVariable(System.Collections.Generic.KeyValuePair{System.String,System.Type},System.Int32)
+  name.vb: AddStateVariable(KeyValuePair(Of String, Type), Int32)
+  fullName: HnSF.StateTimelineEditorWindow.AddStateVariable(System.Collections.Generic.KeyValuePair<System.String, System.Type>, System.Int32)
+  fullName.vb: HnSF.StateTimelineEditorWindow.AddStateVariable(System.Collections.Generic.KeyValuePair(Of System.String, System.Type), System.Int32)
+  nameWithType: StateTimelineEditorWindow.AddStateVariable(KeyValuePair<String, Type>, Int32)
+  nameWithType.vb: StateTimelineEditorWindow.AddStateVariable(KeyValuePair(Of String, Type), Int32)
+- uid: HnSF.StateTimelineEditorWindow.AddStateVariable*
+  name: AddStateVariable
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_AddStateVariable_
+  commentId: Overload:HnSF.StateTimelineEditorWindow.AddStateVariable
+  isSpec: "True"
+  fullName: HnSF.StateTimelineEditorWindow.AddStateVariable
+  nameWithType: StateTimelineEditorWindow.AddStateVariable
 - uid: HnSF.StateTimelineEditorWindow.CreateGUI
   name: CreateGUI()
   href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_CreateGUI
@@ -5893,6 +5940,22 @@ references:
   commentId: F:HnSF.StateTimelineEditorWindow.dataBar
   fullName: HnSF.StateTimelineEditorWindow.dataBar
   nameWithType: StateTimelineEditorWindow.dataBar
+- uid: HnSF.StateTimelineEditorWindow.DataBarsDrawParentAndChildren(System.Collections.Generic.List{VisualElement},System.Int32,System.Int32)
+  name: DataBarsDrawParentAndChildren(List<VisualElement>, Int32, Int32)
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_DataBarsDrawParentAndChildren_System_Collections_Generic_List_VisualElement__System_Int32_System_Int32_
+  commentId: M:HnSF.StateTimelineEditorWindow.DataBarsDrawParentAndChildren(System.Collections.Generic.List{VisualElement},System.Int32,System.Int32)
+  name.vb: DataBarsDrawParentAndChildren(List(Of VisualElement), Int32, Int32)
+  fullName: HnSF.StateTimelineEditorWindow.DataBarsDrawParentAndChildren(System.Collections.Generic.List<VisualElement>, System.Int32, System.Int32)
+  fullName.vb: HnSF.StateTimelineEditorWindow.DataBarsDrawParentAndChildren(System.Collections.Generic.List(Of VisualElement), System.Int32, System.Int32)
+  nameWithType: StateTimelineEditorWindow.DataBarsDrawParentAndChildren(List<VisualElement>, Int32, Int32)
+  nameWithType.vb: StateTimelineEditorWindow.DataBarsDrawParentAndChildren(List(Of VisualElement), Int32, Int32)
+- uid: HnSF.StateTimelineEditorWindow.DataBarsDrawParentAndChildren*
+  name: DataBarsDrawParentAndChildren
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_DataBarsDrawParentAndChildren_
+  commentId: Overload:HnSF.StateTimelineEditorWindow.DataBarsDrawParentAndChildren
+  isSpec: "True"
+  fullName: HnSF.StateTimelineEditorWindow.DataBarsDrawParentAndChildren
+  nameWithType: StateTimelineEditorWindow.DataBarsDrawParentAndChildren
 - uid: HnSF.StateTimelineEditorWindow.depthColors
   name: depthColors
   href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_depthColors
@@ -5949,6 +6012,19 @@ references:
   commentId: F:HnSF.StateTimelineEditorWindow.mainFrameBarLabel
   fullName: HnSF.StateTimelineEditorWindow.mainFrameBarLabel
   nameWithType: StateTimelineEditorWindow.mainFrameBarLabel
+- uid: HnSF.StateTimelineEditorWindow.MainWindowDrawParentAndChildren(ScrollView,System.Int32)
+  name: MainWindowDrawParentAndChildren(ScrollView, Int32)
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_MainWindowDrawParentAndChildren_ScrollView_System_Int32_
+  commentId: M:HnSF.StateTimelineEditorWindow.MainWindowDrawParentAndChildren(ScrollView,System.Int32)
+  fullName: HnSF.StateTimelineEditorWindow.MainWindowDrawParentAndChildren(ScrollView, System.Int32)
+  nameWithType: StateTimelineEditorWindow.MainWindowDrawParentAndChildren(ScrollView, Int32)
+- uid: HnSF.StateTimelineEditorWindow.MainWindowDrawParentAndChildren*
+  name: MainWindowDrawParentAndChildren
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_MainWindowDrawParentAndChildren_
+  commentId: Overload:HnSF.StateTimelineEditorWindow.MainWindowDrawParentAndChildren
+  isSpec: "True"
+  fullName: HnSF.StateTimelineEditorWindow.MainWindowDrawParentAndChildren
+  nameWithType: StateTimelineEditorWindow.MainWindowDrawParentAndChildren
 - uid: HnSF.StateTimelineEditorWindow.OpenWindow(HnSF.StateTimeline)
   name: OpenWindow(StateTimeline)
   href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_OpenWindow_HnSF_StateTimeline_
@@ -6014,6 +6090,45 @@ references:
   isSpec: "True"
   fullName: HnSF.StateTimelineEditorWindow.RefreshSideBar
   nameWithType: StateTimelineEditorWindow.RefreshSideBar
+- uid: HnSF.StateTimelineEditorWindow.RefreshTopBar
+  name: RefreshTopBar()
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_RefreshTopBar
+  commentId: M:HnSF.StateTimelineEditorWindow.RefreshTopBar
+  fullName: HnSF.StateTimelineEditorWindow.RefreshTopBar()
+  nameWithType: StateTimelineEditorWindow.RefreshTopBar()
+- uid: HnSF.StateTimelineEditorWindow.RefreshTopBar*
+  name: RefreshTopBar
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_RefreshTopBar_
+  commentId: Overload:HnSF.StateTimelineEditorWindow.RefreshTopBar
+  isSpec: "True"
+  fullName: HnSF.StateTimelineEditorWindow.RefreshTopBar
+  nameWithType: StateTimelineEditorWindow.RefreshTopBar
+- uid: HnSF.StateTimelineEditorWindow.RemoveStateVariable(System.Int32)
+  name: RemoveStateVariable(Int32)
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_RemoveStateVariable_System_Int32_
+  commentId: M:HnSF.StateTimelineEditorWindow.RemoveStateVariable(System.Int32)
+  fullName: HnSF.StateTimelineEditorWindow.RemoveStateVariable(System.Int32)
+  nameWithType: StateTimelineEditorWindow.RemoveStateVariable(Int32)
+- uid: HnSF.StateTimelineEditorWindow.RemoveStateVariable*
+  name: RemoveStateVariable
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_RemoveStateVariable_
+  commentId: Overload:HnSF.StateTimelineEditorWindow.RemoveStateVariable
+  isSpec: "True"
+  fullName: HnSF.StateTimelineEditorWindow.RemoveStateVariable
+  nameWithType: StateTimelineEditorWindow.RemoveStateVariable
+- uid: HnSF.StateTimelineEditorWindow.SidebarDrawParentAndChildren(ScrollView,System.Int32)
+  name: SidebarDrawParentAndChildren(ScrollView, Int32)
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_SidebarDrawParentAndChildren_ScrollView_System_Int32_
+  commentId: M:HnSF.StateTimelineEditorWindow.SidebarDrawParentAndChildren(ScrollView,System.Int32)
+  fullName: HnSF.StateTimelineEditorWindow.SidebarDrawParentAndChildren(ScrollView, System.Int32)
+  nameWithType: StateTimelineEditorWindow.SidebarDrawParentAndChildren(ScrollView, Int32)
+- uid: HnSF.StateTimelineEditorWindow.SidebarDrawParentAndChildren*
+  name: SidebarDrawParentAndChildren
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_SidebarDrawParentAndChildren_
+  commentId: Overload:HnSF.StateTimelineEditorWindow.SidebarDrawParentAndChildren
+  isSpec: "True"
+  fullName: HnSF.StateTimelineEditorWindow.SidebarDrawParentAndChildren
+  nameWithType: StateTimelineEditorWindow.SidebarDrawParentAndChildren
 - uid: HnSF.StateTimelineEditorWindow.stateTimeline
   name: stateTimeline
   href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_stateTimeline

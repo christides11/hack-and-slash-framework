@@ -124,7 +124,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Combat.HitInfoBasePropertyDrawer.html",
-          "hash": "B70JXDCD5KY+W5XeR0saQo4tScHsNhuwNeEpJaJk5gw="
+          "hash": "hNdFSvOrxGvNCuVhbDfp3tqYmtpGXA4//SVp1iGAIlg="
         }
       },
       "is_incremental": false,
@@ -1188,11 +1188,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.StateTimelineDataEditor.EmptyAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.StateTimelineDataEditor.EmptyAction.html",
+          "hash": "3kEY7P7TLhAoNASab5TOr2Zax+hsFOes43jCciBKuis="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/HnSF.StateTimelineDataEditor.yml",
       "output": {
         ".html": {
           "relative_path": "api/HnSF.StateTimelineDataEditor.html",
-          "hash": "G71S7vebkQ33oJSAOxNj+gSJYiCy2T3LJ8MlPrK7yRA="
+          "hash": "MotcgavxNIM8yQO0LSdbwnXojXkK34JuYJrRqsyROiY="
         }
       },
       "is_incremental": false,
@@ -1216,7 +1228,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.StateTimelineEditorWindow.html",
-          "hash": "wKWpiFH2YcQVOTAakKm6SSfI7VV9bbgRcE+gA237BMI="
+          "hash": "d5nW+tD4g3vWhTAfxkOkrZU8524bVrwUGo+iC1zsqwU="
         }
       },
       "is_incremental": false,
@@ -1240,7 +1252,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.html",
-          "hash": "4pjNLRrFgVQNF9WHC+p7xONIM2rgyH9RD1SXbH0Xc90="
+          "hash": "L2pmBgB8vYSIZFiVmD5tmDPBosPgX2tp2FMFIqlDn8M="
         }
       },
       "is_incremental": false,
@@ -1252,7 +1264,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "dSEqW9VRALw9f37kSTTsqyhRaxmSAhFa8mHxYzeOqB8="
+          "hash": "iP6DpUbxo3NG8SFbrzIilrvGPM7dxMGJgaY+SBNlcJU="
         }
       },
       "is_incremental": false,
@@ -1373,7 +1385,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 102,
+          "total_file_count": 103,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
