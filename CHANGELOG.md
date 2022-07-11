@@ -1,3 +1,11 @@
+# [37.1.0](https://github.com/christides11/hack-and-slash-framework/compare/v37.0.0...v37.1.0) (2022-07-11)
+
+
+### Features
+
+* Refreshing of State Editor ([7b92e11](https://github.com/christides11/hack-and-slash-framework/commit/7b92e1116dd25c573c7b654861b94b390791d507))
+* Virtual members ([d6d983e](https://github.com/christides11/hack-and-slash-framework/commit/d6d983e3930fc1287e8c75d214692067a4a19dcd))
+
 # [37.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v36.1.1...v37.0.0) (2022-07-09)
 
 
