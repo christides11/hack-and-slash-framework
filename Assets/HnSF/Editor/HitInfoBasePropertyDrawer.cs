@@ -30,7 +30,7 @@ namespace HnSF.Combat
             EditorGUI.EndProperty();
         }
 
-        protected float GetLineY()
+        protected virtual float GetLineY()
         {
             return pos.min.y + lines++ * lineHeight;
         }

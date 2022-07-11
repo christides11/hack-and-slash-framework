@@ -37,7 +37,7 @@ namespace HnSF
             return wnd;
         }
 
-        public void CreateGUI()
+        public virtual void CreateGUI()
         {
             GetStateVariablesFromAssemblies();
             VisualElement root = rootVisualElement;
@@ -116,12 +116,12 @@ namespace HnSF
             RefreshTopBar();
         }
 
-        private void RefreshTopBar()
+        public virtual void RefreshTopBar()
         {
             VisualElement root = rootVisualElement;
         }
 
-        public void RefreshSideBar()
+        public virtual void RefreshSideBar()
         {
             VisualElement root = rootVisualElement;
             ScrollView sidebarPanel = root.Q<ScrollView>(name: "data-labels");
@@ -148,7 +148,7 @@ namespace HnSF
             }
         }
 
-        private void SidebarDrawParentAndChildren(ScrollView sidebarPanel, int dataID)
+        public virtual void SidebarDrawParentAndChildren(ScrollView sidebarPanel, int dataID)
         {
             int index = stateTimeline.stateVariablesIDMap[dataID];
             int depth = stateTimeline.GetStateVariableDepth(dataID);
@@ -183,17 +183,17 @@ namespace HnSF
             }
         }
 
-        private void RemoveStateVariable(int index)
+        public virtual void RemoveStateVariable(int index)
         {
             stateTimeline.RemoveStateVariable(index);
         }
 
-        private void AddStateVariable(KeyValuePair<string, Type> keyValuePair, int parentID = -1)
+        public virtual void AddStateVariable(KeyValuePair<string, Type> keyValuePair, int parentID = -1)
         {
             stateTimeline.AddStateVariable((IStateVariables)Activator.CreateInstance(keyValuePair.Value), parentID);
         }
 
-        public void RefreshMainWindow()
+        public virtual void RefreshMainWindow()
         {
             VisualElement root = rootVisualElement;
             ScrollView mainPanel = root.Q<ScrollView>(name: "data-frames");
@@ -212,7 +212,7 @@ namespace HnSF
             }
         }
 
-        private void MainWindowDrawParentAndChildren(ScrollView mainPanel, int dataID)
+        public virtual void MainWindowDrawParentAndChildren(ScrollView mainPanel, int dataID)
         {
             int index = stateTimeline.stateVariablesIDMap[dataID];
             int depth = stateTimeline.GetStateVariableDepth(dataID);
@@ -228,7 +228,7 @@ namespace HnSF
             }
         }
 
-        public void RefreshFrameBars()
+        public virtual void RefreshFrameBars()
         {
             VisualElement root = rootVisualElement;
             ScrollView labelPanel = root.Q<ScrollView>(name: "data-labels");
@@ -273,7 +273,7 @@ namespace HnSF
             }
         }
 
-        private void DataBarsDrawParentAndChildren(List<VisualElement> dbs, int dataID, int incr)
+        public virtual void DataBarsDrawParentAndChildren(List<VisualElement> dbs, int dataID, int incr)
         {
             int index = stateTimeline.stateVariablesIDMap[dataID];
 
@@ -302,7 +302,7 @@ namespace HnSF
             }
         }
 
-        public float GetFrameWidth()
+        public virtual float GetFrameWidth()
         {
             return 20.0f * zoomMultiplier;
         }

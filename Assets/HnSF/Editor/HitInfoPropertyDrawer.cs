@@ -71,7 +71,6 @@ namespace HnSF.Combat
                     EditorGUI.LabelField(new Rect(position.x, GetLineY(), 100, lineHeight), new GUIContent("Force"));
                     EditorGUI.PropertyField(new Rect(position.x+140, GetLineY(), position.width-140, lineHeight), property.FindPropertyRelative("opponentForce"),
                         GUIContent.none);
-                    //yPosition += lineSpacing;
                     break;
                 default:
                     EditorGUI.PropertyField(new Rect(position.x, GetLineY(), position.width, lineHeight), property.FindPropertyRelative("forceIncludeYForce"));

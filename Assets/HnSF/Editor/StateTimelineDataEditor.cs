@@ -25,8 +25,8 @@ namespace HnSF
             return window;
         }
 
-        private Vector2 _scrollPos = Vector2.zero;
-        private void OnGUI()
+        protected Vector2 _scrollPos = Vector2.zero;
+        protected virtual void OnGUI()
         {
             if (so == null) so = new SerializedObject(state);
             SerializedProperty sp = so.FindProperty("data").GetArrayElementAtIndex(state.stateVariablesIDMap[id]);
