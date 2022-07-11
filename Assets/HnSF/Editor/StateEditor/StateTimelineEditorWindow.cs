@@ -65,6 +65,7 @@ namespace HnSF
             
             Button zoomIn = root.Q<Button>(name: "zoom-in");
             Button zoomOut = root.Q<Button>(name: "zoom-out");
+            Button refresh = root.Q<Button>(name: "refresh");
             zoomIn.clicked += () => { 
                 zoomMultiplier *= 2.0f;
                 RefreshAll(true);
@@ -72,6 +73,10 @@ namespace HnSF
             zoomOut.clicked += () =>
             {
                 zoomMultiplier *= 0.5f;
+                RefreshAll(true);
+            };
+            refresh.clicked += () =>
+            {
                 RefreshAll(true);
             };
         }
@@ -158,7 +163,11 @@ namespace HnSF
                     : stateTimeline.data[index].GetType().Name;
             thisSideBar.AddManipulator(new ContextualMenuManipulator((ContextualMenuPopulateEvent evt) =>
             {
-                evt.menu.AppendAction("Edit", (x)=>{ StateTimelineDataEditor.Init(stateTimeline, stateTimeline.data[index].ID); });
+                evt.menu.AppendAction("Edit", (x) =>
+                {
+                    var w = StateTimelineDataEditor.Init(stateTimeline, stateTimeline.data[index].ID);
+                    w.onChanged += id => { RefreshAll(true); };
+                });
                 foreach (var c in stateVariableTypes)
                 {
                     evt.menu.AppendAction("Add/"+c.Key, (x)=>{ AddStateVariable(c, dataID); RefreshAll(true); });
@@ -267,14 +276,21 @@ namespace HnSF
         private void DataBarsDrawParentAndChildren(List<VisualElement> dbs, int dataID, int incr)
         {
             int index = stateTimeline.stateVariablesIDMap[dataID];
-            
-            for (int j = 0; j < stateTimeline.data[index].FrameRanges.Length; j++)
+
+            if (stateTimeline.data[index].FrameRanges != null)
             {
-                mainFrameBarLabel.CloneTree(dbs[incr]);
-                var thisMainFrameBarLabel = dbs[incr].Query(name: mainFrameBarLabel.name).Build().Last();
-                thisMainFrameBarLabel.style.left = GetFrameWidth() * stateTimeline.data[index].FrameRanges[j].x;
-                thisMainFrameBarLabel.style.width = new StyleLength(GetFrameWidth() * ((stateTimeline.data[index].FrameRanges[j].y - stateTimeline.data[index].FrameRanges[j].x) + 1) );
-                thisMainFrameBarLabel.Q<Label>().text = (stateTimeline.data[index].FrameRanges[j].y+1 - stateTimeline.data[index].FrameRanges[j].x).ToString();
+                for (int j = 0; j < stateTimeline.data[index].FrameRanges.Length; j++)
+                {
+                    mainFrameBarLabel.CloneTree(dbs[incr]);
+                    var thisMainFrameBarLabel = dbs[incr].Query(name: mainFrameBarLabel.name).Build().Last();
+                    thisMainFrameBarLabel.style.left = GetFrameWidth() * stateTimeline.data[index].FrameRanges[j].x;
+                    thisMainFrameBarLabel.style.width = new StyleLength(GetFrameWidth() *
+                                                                        ((stateTimeline.data[index].FrameRanges[j].y -
+                                                                          stateTimeline.data[index].FrameRanges[j].x) +
+                                                                         1));
+                    thisMainFrameBarLabel.Q<Label>().text = (stateTimeline.data[index].FrameRanges[j].y + 1 -
+                                                             stateTimeline.data[index].FrameRanges[j].x).ToString();
+                }
             }
 
             if (stateTimeline.data[index].Children == null) return;

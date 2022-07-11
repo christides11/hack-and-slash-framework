@@ -1,7 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 
@@ -9,13 +5,16 @@ namespace HnSF
 {
     public class StateTimelineDataEditor : EditorWindow
     {
+        public delegate void EmptyAction(int ID);
+        public EmptyAction onChanged;
+        
         [SerializeField] public StateTimelineEditorWindow currentTimeline;
 
         public int id;
         public StateTimeline state;
         private SerializedObject so = null;
 
-        public static void Init(StateTimeline stateTimeline, int id)
+        public static StateTimelineDataEditor Init(StateTimeline stateTimeline, int id)
         {
             stateTimeline.BuildStateVariablesIDMap();
             StateTimelineDataEditor window =
@@ -23,6 +22,7 @@ namespace HnSF
             window.state = stateTimeline;
             window.id = id;
             window.Show();
+            return window;
         }
 
         private Vector2 _scrollPos = Vector2.zero;
@@ -31,6 +31,7 @@ namespace HnSF
             if (so == null) so = new SerializedObject(state);
             SerializedProperty sp = so.FindProperty("data").GetArrayElementAtIndex(state.stateVariablesIDMap[id]);
 
+            _scrollPos = EditorGUILayout.BeginScrollView(_scrollPos);
             EditorGUILayout.PropertyField(sp, GUIContent.none);
             
             EditorGUILayout.LabelField("CHILDREN", EditorStyles.boldLabel);
@@ -39,8 +40,14 @@ namespace HnSF
             {
                 EditorGUILayout.PropertyField(so.FindProperty("data").GetArrayElementAtIndex(state.stateVariablesIDMap[d.Children[i]]), GUIContent.none);
             }
-
+            EditorGUILayout.EndScrollView();
+            
             so.ApplyModifiedProperties();
+            
+            if (GUI.changed)
+            {
+                onChanged?.Invoke(id);
+            }
         }
     }
 }
