@@ -26,5 +26,10 @@ namespace HnSF
         {
             return v > 0 ? 1 : -1;
         }
+        
+        public static void SwapValues<T>(this T[] source, long index1, long index2)
+        {
+            (source[index1], source[index2]) = (source[index2], source[index1]);
+        }
     }
 }

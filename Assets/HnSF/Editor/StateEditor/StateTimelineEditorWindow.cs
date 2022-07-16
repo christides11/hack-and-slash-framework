@@ -173,6 +173,8 @@ namespace HnSF
                     evt.menu.AppendAction("Add/"+c.Key, (x)=>{ AddStateVariable(c, dataID); RefreshAll(true); });
                 }
                 evt.menu.AppendAction("Delete", (x) => { RemoveStateVariable(index); RefreshAll(true); });
+                evt.menu.AppendAction("Move Up", (x) => { MoveStateVarUp(dataID); RefreshAll(true); });
+                evt.menu.AppendAction("Move Down", (x) => { MoveStateVarDown(dataID); RefreshAll(true); });
             }));
 
             if (stateTimeline.data[index].Children == null) return;
@@ -181,6 +183,16 @@ namespace HnSF
                 int childIndex = stateTimeline.stateVariablesIDMap[stateTimeline.data[index].Children[i]];
                 SidebarDrawParentAndChildren(sidebarPanel, stateTimeline.data[childIndex].ID);
             }
+        }
+
+        public virtual void MoveStateVarUp(int id)
+        {
+            stateTimeline.MoveStateVariableUp(id);
+        }
+        
+        public virtual void MoveStateVarDown(int id)
+        {
+            stateTimeline.MoveStateVariableDown(id);
         }
 
         public virtual void RemoveStateVariable(int index)
