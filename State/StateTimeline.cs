@@ -47,6 +47,44 @@ namespace HnSF
             return depth;
         }
 
+        public void MoveStateVariableUp(int id)
+        {
+            int currentIndex = stateVariablesIDMap[id];
+
+            if (data[currentIndex].Parent != -1)
+            {
+                int parentIndex = stateVariablesIDMap[data[currentIndex].Parent];
+                if (data[parentIndex].Children.Length <= 1) return;
+                int childIndex = Array.IndexOf(data[parentIndex].Children, id);
+                if (childIndex == 0) return;
+                data[parentIndex].Children.SwapValues(childIndex, childIndex-1);
+            }
+            else
+            {
+                if (currentIndex == 0) return;
+                data.SwapValues(currentIndex, currentIndex-1);
+            }
+        }
+
+        public void MoveStateVariableDown(int id)
+        {
+            int currentIndex = stateVariablesIDMap[id];
+
+            if (data[currentIndex].Parent != -1)
+            {
+                int parentIndex = stateVariablesIDMap[data[currentIndex].Parent];
+                if (data[parentIndex].Children.Length <= 1) return;
+                int childIndex = Array.IndexOf(data[parentIndex].Children, id);
+                if (childIndex == data[parentIndex].Children.Length-1) return;
+                data[parentIndex].Children.SwapValues(childIndex, childIndex+1);
+            }
+            else
+            {
+                if (currentIndex == data.Length-1) return;
+                data.SwapValues(currentIndex, currentIndex+1);
+            }
+        }
+
         public void AddStateVariable(IStateVariables var, int parentID = -1)
         {
             Array.Resize(ref data, data.Length+1);
