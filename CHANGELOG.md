@@ -1,3 +1,15 @@
+# [38.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v37.1.0...v38.0.0) (2022-07-16)
+
+
+### Code Refactoring
+
+* Removed FunctionMap ([4a206fe](https://github.com/christides11/hack-and-slash-framework/commit/4a206fe13372846e4da22bfed3ef1ec6455a40b2))
+
+
+### BREAKING CHANGES
+
+* Removed FunctionMap variable from IStateVariables.
+
 # [37.1.0](https://github.com/christides11/hack-and-slash-framework/compare/v37.0.0...v37.1.0) (2022-07-11)
 
 
