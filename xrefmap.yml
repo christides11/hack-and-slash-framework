@@ -2284,19 +2284,6 @@ references:
   isSpec: "True"
   fullName: HnSF.IStateVariables.FrameRanges
   nameWithType: IStateVariables.FrameRanges
-- uid: HnSF.IStateVariables.FunctionMap
-  name: FunctionMap
-  href: api/HnSF.IStateVariables.html#HnSF_IStateVariables_FunctionMap
-  commentId: P:HnSF.IStateVariables.FunctionMap
-  fullName: HnSF.IStateVariables.FunctionMap
-  nameWithType: IStateVariables.FunctionMap
-- uid: HnSF.IStateVariables.FunctionMap*
-  name: FunctionMap
-  href: api/HnSF.IStateVariables.html#HnSF_IStateVariables_FunctionMap_
-  commentId: Overload:HnSF.IStateVariables.FunctionMap
-  isSpec: "True"
-  fullName: HnSF.IStateVariables.FunctionMap
-  nameWithType: IStateVariables.FunctionMap
 - uid: HnSF.IStateVariables.ID
   name: ID
   href: api/HnSF.IStateVariables.html#HnSF_IStateVariables_ID
