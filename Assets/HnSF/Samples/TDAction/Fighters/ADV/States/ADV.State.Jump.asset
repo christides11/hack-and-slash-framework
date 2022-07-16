@@ -20,26 +20,35 @@ MonoBehaviour:
   autoLoop: 1
   autoLoopFrame: 1
   data:
-  - rid: 1423070996485636114
+  - rid: 2193520578909962240
+  - rid: 2193520578909962241
   references:
     version: 2
     RefIds:
-    - rid: 1423070996485636114
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 2193520578909962240
       type: {class: ChangeState, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
       data:
         name: 
         id: 0
-        frameRanges:
-        - {x: 1, y: 10}
+        frameRanges: []
         condition:
-          rid: 1423070996485636115
-        stateMovesetID: -1
-        stateID: 8
-        parent: 0
+          rid: -2
+        stateMovesetID: 0
+        stateID: 0
+        parent: -1
         children: 
-    - rid: 1423070996485636115
-      type: {class: ConditionFallSpeed, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+    - rid: 2193520578909962241
+      type: {class: VarApplyTraction, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
       data:
-        minValue: -100
-        maxValue: 1
-        inverse: 0
+        name: 
+        id: 1
+        frameRanges: []
+        condition:
+          rid: -2
+        useTractionStat: 0
+        aerialTraction: 0
+        traction: 0
+        parent: -1
+        children: 
