@@ -7,7 +7,6 @@ namespace HnSF
     {
         public string Name { get; set; }
         public int ID { get; set; }
-        public int FunctionMap { get; }
 
         public Vector2[] FrameRanges { get; set; }
         public IConditionVariables Condition { get; }
