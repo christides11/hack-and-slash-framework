@@ -1,3 +1,10 @@
+## [38.1.1](https://github.com/christides11/hack-and-slash-framework/compare/v38.1.0...v38.1.1) (2022-07-18)
+
+
+### Bug Fixes
+
+* Better framebar drawing. ([7968eb4](https://github.com/christides11/hack-and-slash-framework/commit/7968eb4471f3da300466a65c2ffa182cb641f0f7))
+
 # [38.1.0](https://github.com/christides11/hack-and-slash-framework/compare/v38.0.1...v38.1.0) (2022-07-18)
 
 
