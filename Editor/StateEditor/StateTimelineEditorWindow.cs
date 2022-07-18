@@ -68,19 +68,24 @@ namespace HnSF
             Button zoomIn = root.Q<Button>(name: "zoom-in");
             Button zoomOut = root.Q<Button>(name: "zoom-out");
             Button refresh = root.Q<Button>(name: "refresh");
-            zoomIn.clicked += () => { 
-                zoomMultiplier *= 2.0f;
-                RefreshAll(true);
+            zoomIn.clicked += () =>
+            {
+                ChangeZoomLevel(2.0f);
             };
             zoomOut.clicked += () =>
             {
-                zoomMultiplier *= 0.5f;
-                RefreshAll(true);
+                ChangeZoomLevel(0.5f);
             };
             refresh.clicked += () =>
             {
                 RefreshAll(true);
             };
+        }
+
+        public virtual void ChangeZoomLevel(float zoomMultiplier)
+        {
+            this.zoomMultiplier *= zoomMultiplier;
+            RefreshAll(true);
         }
 
         public Dictionary<string, Type> stateVariableTypes = new Dictionary<string, Type>();
@@ -101,6 +106,18 @@ namespace HnSF
                     stateVariableTypes.Add(sva.menuName, type);
                 }
             }
+        }
+        
+        public virtual StateTimeline[] GetStateTimelineParents(StateTimeline startingTimeline)
+        {
+            List<StateTimeline> stateTimelineParents = new List<StateTimeline>();
+            
+            while (startingTimeline != null)
+            {
+                stateTimelineParents.Add(startingTimeline);
+                startingTimeline = startingTimeline.useBaseState ? startingTimeline.baseState : null;
+            }
+            return stateTimelineParents.ToArray();
         }
 
         public virtual void RefreshAll(bool refreshData = false)
@@ -150,24 +167,12 @@ namespace HnSF
                 {
                     if (stateChain[s].data[i].Parent != -1) continue;
                     int dataID = stateChain[s].data[i].ID;
-                    SidebarDrawParentAndChildren(sidebarPanel, stateChain[s], dataID);
+                    SidebarCreateLabel(sidebarPanel, stateChain[s], dataID);
                 }
             }
         }
 
-        public virtual StateTimeline[] GetStateTimelineParents(StateTimeline startingTimeline)
-        {
-            List<StateTimeline> stateTimelineParents = new List<StateTimeline>();
-            
-            while (startingTimeline != null)
-            {
-                stateTimelineParents.Add(startingTimeline);
-                startingTimeline = startingTimeline.useBaseState ? startingTimeline.baseState : null;
-            }
-            return stateTimelineParents.ToArray();
-        }
-
-        public virtual void SidebarDrawParentAndChildren(ScrollView sidebarPanel, StateTimeline stateTimeline, int dataID)
+        public virtual void SidebarCreateLabel(ScrollView sidebarPanel, StateTimeline stateTimeline, int dataID)
         {
             int index = stateTimeline.stateVariablesIDMap[dataID];
             int depth = stateTimeline.GetStateVariableDepth(dataID);
@@ -180,6 +185,18 @@ namespace HnSF
             thisSideBar.text =
                 !String.IsNullOrEmpty(stateTimeline.data[index].Name) ? stateTimeline.data[index].Name
                     : stateTimeline.data[index].GetType().Name;
+            SidebarSetupLabel(stateTimeline, dataID, thisSideBar, index);
+
+            if (stateTimeline.data[index].Children == null) return;
+            for (int i = 0; i < stateTimeline.data[index].Children.Length; i++)
+            {
+                int childIndex = stateTimeline.stateVariablesIDMap[stateTimeline.data[index].Children[i]];
+                SidebarCreateLabel(sidebarPanel, stateTimeline, stateTimeline.data[childIndex].ID);
+            }
+        }
+
+        public virtual void SidebarSetupLabel(StateTimeline stateTimeline, int dataID, Button thisSideBar, int index)
+        {
             thisSideBar.AddManipulator(new ContextualMenuManipulator((ContextualMenuPopulateEvent evt) =>
             {
                 evt.menu.AppendAction("Edit", (x) =>
@@ -189,19 +206,29 @@ namespace HnSF
                 });
                 foreach (var c in stateVariableTypes)
                 {
-                    evt.menu.AppendAction("Add/"+c.Key, (x)=>{ AddStateVariable(c, dataID); RefreshAll(true); });
+                    evt.menu.AppendAction("Add/" + c.Key, (x) =>
+                    {
+                        AddStateVariable(c, dataID);
+                        RefreshAll(true);
+                    });
                 }
-                evt.menu.AppendAction("Delete", (x) => { RemoveStateVariable(index); RefreshAll(true); });
-                evt.menu.AppendAction("Move Up", (x) => { MoveStateVarUp(stateTimeline, dataID); RefreshAll(true); });
-                evt.menu.AppendAction("Move Down", (x) => { MoveStateVarDown(stateTimeline, dataID); RefreshAll(true); });
-            }));
 
-            if (stateTimeline.data[index].Children == null) return;
-            for (int i = 0; i < stateTimeline.data[index].Children.Length; i++)
-            {
-                int childIndex = stateTimeline.stateVariablesIDMap[stateTimeline.data[index].Children[i]];
-                SidebarDrawParentAndChildren(sidebarPanel, stateTimeline, stateTimeline.data[childIndex].ID);
-            }
+                evt.menu.AppendAction("Delete", (x) =>
+                {
+                    RemoveStateVariable(index);
+                    RefreshAll(true);
+                });
+                evt.menu.AppendAction("Move Up", (x) =>
+                {
+                    MoveStateVarUp(stateTimeline, dataID);
+                    RefreshAll(true);
+                });
+                evt.menu.AppendAction("Move Down", (x) =>
+                {
+                    MoveStateVarDown(stateTimeline, dataID);
+                    RefreshAll(true);
+                });
+            }));
         }
 
         public virtual void MoveStateVarUp(StateTimeline stateTimeline, int id)
@@ -243,12 +270,12 @@ namespace HnSF
                 {
                     if (stateChain[s].data[i].Parent != -1) continue;
                     int dataID = stateChain[s].data[i].ID;
-                    MainWindowDrawParentAndChildren(mainPanel, stateChain[s], dataID);
+                    MainWindowCreateFrameBarBG(mainPanel, stateChain[s], dataID);
                 }
             }
         }
 
-        public virtual void MainWindowDrawParentAndChildren(ScrollView mainPanel, StateTimeline stateTimeline, int dataID)
+        public virtual void MainWindowCreateFrameBarBG(ScrollView mainPanel, StateTimeline stateTimeline, int dataID)
         {
             int index = stateTimeline.stateVariablesIDMap[dataID];
             int depth = stateTimeline.GetStateVariableDepth(dataID);
@@ -260,7 +287,7 @@ namespace HnSF
             for (int i = 0; i < stateTimeline.data[index].Children.Length; i++)
             {
                 int childIndex = stateTimeline.stateVariablesIDMap[stateTimeline.data[index].Children[i]];
-                MainWindowDrawParentAndChildren(mainPanel, stateTimeline, stateTimeline.data[childIndex].ID);
+                MainWindowCreateFrameBarBG(mainPanel, stateTimeline, stateTimeline.data[childIndex].ID);
             }
         }
 
@@ -311,15 +338,8 @@ namespace HnSF
                     if (stateChain[s].data[i].Parent != -1) continue;
                     int dataID = stateChain[s].data[i].ID;
                     DataBarsDrawParentAndChildren(dbs, dataID, incr, stateChain[s]);
-                    //MainWindowDrawParentAndChildren(mainPanel, stateChain[s], dataID);
                 }
             }
-            /*for (int i = 0; i < stateTimeline.data.Length; i++)
-            {
-                if (stateTimeline.data[i].Parent != -1) continue;
-                int dataID = stateTimeline.data[i].ID;
-                DataBarsDrawParentAndChildren(dbs, dataID, 0);
-            }*/
         }
 
         public virtual void DataBarsDrawParentAndChildren(List<VisualElement> dbs, int dataID, int incr, StateTimeline stateTimeline)

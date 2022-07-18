@@ -32,7 +32,8 @@ MonoBehaviour:
       data:
         name: 
         id: 0
-        frameRanges: []
+        frameRanges:
+        - {x: 1, y: 2}
         condition:
           rid: -2
         stateMovesetID: 0
