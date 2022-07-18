@@ -36,6 +36,7 @@ namespace HnSF
             
             EditorGUILayout.LabelField("CHILDREN", EditorStyles.boldLabel);
             var d = state.data[state.stateVariablesIDMap[id]];
+            if (d.Children == null) d.Children = new int[0];
             for (int i = 0; i < d.Children.Length; i++)
             {
                 EditorGUILayout.PropertyField(so.FindProperty("data").GetArrayElementAtIndex(state.stateVariablesIDMap[d.Children[i]]), GUIContent.none);
