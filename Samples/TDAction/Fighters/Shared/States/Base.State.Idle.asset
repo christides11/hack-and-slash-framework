@@ -41,11 +41,24 @@ MonoBehaviour:
   - rid: 5282967776474693639
   - rid: 5282967776474693640
   - rid: 5282967776474693641
+  - rid: 2193520629232959488
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
+    - rid: 2193520629232959488
+      type: {class: ChangeState, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+      data:
+        name: 
+        id: 21
+        frameRanges: []
+        condition:
+          rid: -2
+        stateMovesetID: 0
+        stateID: 0
+        parent: 3
+        children: 
     - rid: 5282967762107891712
       type: {class: ChangeState, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
       data:
@@ -95,7 +108,8 @@ MonoBehaviour:
       data:
         name: 
         id: 3
-        frameRanges: []
+        frameRanges:
+        - {x: 5, y: 10}
         condition:
           rid: -2
         useMaxFallSpeedStat: 0
@@ -103,7 +117,7 @@ MonoBehaviour:
         maxFallSpeed: 0
         gravity: 0
         parent: -1
-        children: 0700000008000000
+        children: 070000000800000015000000
     - rid: 5282967762107891717
       type: {class: VarApplyTraction, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
       data:
