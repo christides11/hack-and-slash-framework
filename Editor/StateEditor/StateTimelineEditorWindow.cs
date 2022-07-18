@@ -337,12 +337,13 @@ namespace HnSF
                 {
                     if (stateChain[s].data[i].Parent != -1) continue;
                     int dataID = stateChain[s].data[i].ID;
-                    DataBarsDrawParentAndChildren(dbs, dataID, incr, stateChain[s]);
+                    DataBarsDrawParentAndChildren(dbs, dataID, ref incr, stateChain[s]);
+                    incr++;
                 }
             }
         }
 
-        public virtual void DataBarsDrawParentAndChildren(List<VisualElement> dbs, int dataID, int incr, StateTimeline stateTimeline)
+        public virtual void DataBarsDrawParentAndChildren(List<VisualElement> dbs, int dataID, ref int incr, StateTimeline stateTimeline)
         {
             int index = stateTimeline.stateVariablesIDMap[dataID];
 
@@ -350,13 +351,18 @@ namespace HnSF
             {
                 for (int j = 0; j < stateTimeline.data[index].FrameRanges.Length; j++)
                 {
+                    int framebarStart = stateTimeline.data[index].FrameRanges[j].x < 0
+                        ? 1
+                        : (int)stateTimeline.data[index].FrameRanges[j].x;
+                    int framebarWidth = stateTimeline.data[index].FrameRanges[j].x < 0
+                        ? this.stateTimeline.totalFrames-1
+                        : (int)stateTimeline.data[index].FrameRanges[j].y -
+                          (int)stateTimeline.data[index].FrameRanges[j].x;
                     mainFrameBarLabel.CloneTree(dbs[incr]);
                     var thisMainFrameBarLabel = dbs[incr].Query(name: mainFrameBarLabel.name).Build().Last();
-                    thisMainFrameBarLabel.style.left = GetFrameWidth() * stateTimeline.data[index].FrameRanges[j].x;
+                    thisMainFrameBarLabel.style.left = GetFrameWidth() * framebarStart;
                     thisMainFrameBarLabel.style.width = new StyleLength(GetFrameWidth() *
-                                                                        ((stateTimeline.data[index].FrameRanges[j].y -
-                                                                          stateTimeline.data[index].FrameRanges[j].x) +
-                                                                         1));
+                                                                        (framebarWidth + 1));
                     thisMainFrameBarLabel.Q<Label>().text = (stateTimeline.data[index].FrameRanges[j].y + 1 -
                                                              stateTimeline.data[index].FrameRanges[j].x).ToString();
                 }
@@ -367,7 +373,7 @@ namespace HnSF
             {
                 int childIndex = stateTimeline.stateVariablesIDMap[stateTimeline.data[index].Children[i]];
                 incr++;
-                DataBarsDrawParentAndChildren(dbs, stateTimeline.data[childIndex].ID, incr, stateTimeline);
+                DataBarsDrawParentAndChildren(dbs, stateTimeline.data[childIndex].ID, ref incr, stateTimeline);
             }
         }
 

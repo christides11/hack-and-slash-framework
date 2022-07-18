@@ -45,7 +45,8 @@ MonoBehaviour:
       data:
         name: 
         id: 1
-        frameRanges: []
+        frameRanges:
+        - {x: 3, y: 6}
         condition:
           rid: -2
         useTractionStat: 0
