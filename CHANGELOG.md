@@ -1,3 +1,10 @@
+## [38.1.2](https://github.com/christides11/hack-and-slash-framework/compare/v38.1.1...v38.1.2) (2022-07-18)
+
+
+### Bug Fixes
+
+* Fixed StateTimelineDataEditor children issue ([3ff83a0](https://github.com/christides11/hack-and-slash-framework/commit/3ff83a0a1ff80f9655694b6e5fdc547aaf289537))
+
 ## [38.1.1](https://github.com/christides11/hack-and-slash-framework/compare/v38.1.0...v38.1.1) (2022-07-18)
 
 
