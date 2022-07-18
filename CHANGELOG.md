@@ -1,3 +1,11 @@
+# [38.1.0](https://github.com/christides11/hack-and-slash-framework/compare/v38.0.1...v38.1.0) (2022-07-18)
+
+
+### Features
+
+* Move StateTimeline vars up/down. ([f8058b7](https://github.com/christides11/hack-and-slash-framework/commit/f8058b7daa8baeb55b56d041890997d3b4b52349))
+* StateTimelineEditor show parent timelines. ([47d3c08](https://github.com/christides11/hack-and-slash-framework/commit/47d3c0874fbe9b94bf0ccc7688e280b4a8c48458))
+
 ## [38.0.1](https://github.com/christides11/hack-and-slash-framework/compare/v38.0.0...v38.0.1) (2022-07-16)
 
 
