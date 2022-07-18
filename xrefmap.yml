@@ -5982,15 +5982,15 @@ references:
   commentId: F:HnSF.StateTimelineEditorWindow.dataBar
   fullName: HnSF.StateTimelineEditorWindow.dataBar
   nameWithType: StateTimelineEditorWindow.dataBar
-- uid: HnSF.StateTimelineEditorWindow.DataBarsDrawParentAndChildren(System.Collections.Generic.List{VisualElement},System.Int32,System.Int32,HnSF.StateTimeline)
-  name: DataBarsDrawParentAndChildren(List<VisualElement>, Int32, Int32, StateTimeline)
-  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_DataBarsDrawParentAndChildren_System_Collections_Generic_List_VisualElement__System_Int32_System_Int32_HnSF_StateTimeline_
-  commentId: M:HnSF.StateTimelineEditorWindow.DataBarsDrawParentAndChildren(System.Collections.Generic.List{VisualElement},System.Int32,System.Int32,HnSF.StateTimeline)
-  name.vb: DataBarsDrawParentAndChildren(List(Of VisualElement), Int32, Int32, StateTimeline)
-  fullName: HnSF.StateTimelineEditorWindow.DataBarsDrawParentAndChildren(System.Collections.Generic.List<VisualElement>, System.Int32, System.Int32, HnSF.StateTimeline)
-  fullName.vb: HnSF.StateTimelineEditorWindow.DataBarsDrawParentAndChildren(System.Collections.Generic.List(Of VisualElement), System.Int32, System.Int32, HnSF.StateTimeline)
-  nameWithType: StateTimelineEditorWindow.DataBarsDrawParentAndChildren(List<VisualElement>, Int32, Int32, StateTimeline)
-  nameWithType.vb: StateTimelineEditorWindow.DataBarsDrawParentAndChildren(List(Of VisualElement), Int32, Int32, StateTimeline)
+- uid: HnSF.StateTimelineEditorWindow.DataBarsDrawParentAndChildren(System.Collections.Generic.List{VisualElement},System.Int32,System.Int32@,HnSF.StateTimeline)
+  name: DataBarsDrawParentAndChildren(List<VisualElement>, Int32, ref Int32, StateTimeline)
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_DataBarsDrawParentAndChildren_System_Collections_Generic_List_VisualElement__System_Int32_System_Int32__HnSF_StateTimeline_
+  commentId: M:HnSF.StateTimelineEditorWindow.DataBarsDrawParentAndChildren(System.Collections.Generic.List{VisualElement},System.Int32,System.Int32@,HnSF.StateTimeline)
+  name.vb: DataBarsDrawParentAndChildren(List(Of VisualElement), Int32, ByRef Int32, StateTimeline)
+  fullName: HnSF.StateTimelineEditorWindow.DataBarsDrawParentAndChildren(System.Collections.Generic.List<VisualElement>, System.Int32, ref System.Int32, HnSF.StateTimeline)
+  fullName.vb: HnSF.StateTimelineEditorWindow.DataBarsDrawParentAndChildren(System.Collections.Generic.List(Of VisualElement), System.Int32, ByRef System.Int32, HnSF.StateTimeline)
+  nameWithType: StateTimelineEditorWindow.DataBarsDrawParentAndChildren(List<VisualElement>, Int32, ref Int32, StateTimeline)
+  nameWithType.vb: StateTimelineEditorWindow.DataBarsDrawParentAndChildren(List(Of VisualElement), Int32, ByRef Int32, StateTimeline)
 - uid: HnSF.StateTimelineEditorWindow.DataBarsDrawParentAndChildren*
   name: DataBarsDrawParentAndChildren
   href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_DataBarsDrawParentAndChildren_
