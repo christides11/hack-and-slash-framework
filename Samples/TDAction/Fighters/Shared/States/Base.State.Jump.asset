@@ -19,35 +19,38 @@ MonoBehaviour:
   autoIncrement: 1
   autoLoop: 1
   autoLoopFrame: 1
-  path: 
   data:
-  - rid: 1423070996485636109
-  - rid: 1423070996485636110
+  - rid: 2193520583769325568
+  - rid: 2193520583769325569
   references:
     version: 2
     RefIds:
-    - rid: 1423070996485636109
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 2193520583769325568
       type: {class: VarSetFallSpeed, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
       data:
+        name: Set Fall Speed
         id: 0
         frameRanges:
-        - {x: 0, y: 0}
+        - {x: -1, y: -1}
         condition:
-          rid: 1423070996485636112
+          rid: -2
         value: 10
-    - rid: 1423070996485636110
+        parent: -1
+        children: 
+    - rid: 2193520583769325569
       type: {class: VarApplyGravity, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
       data:
+        name: Apply Grravity
         id: 1
         frameRanges:
-        - {x: 1, y: 10}
+        - {x: -1, y: -1}
         condition:
-          rid: 1423070996485636111
+          rid: -2
         useMaxFallSpeedStat: 1
         useGravityStat: 1
         maxFallSpeed: 0
         gravity: 0
-    - rid: 1423070996485636111
-      type: {class: ConditionNone, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
-    - rid: 1423070996485636112
-      type: {class: ConditionNone, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+        parent: -1
+        children: 
