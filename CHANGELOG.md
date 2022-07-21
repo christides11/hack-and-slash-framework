@@ -1,3 +1,15 @@
+# [39.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v38.2.0...v39.0.0) (2022-07-21)
+
+
+### Code Refactoring
+
+* Changed FrameRange to Vector2Int ([e7d64dc](https://github.com/christides11/hack-and-slash-framework/commit/e7d64dc5ee7abcfd731aef68fe9cea7f9b966cef))
+
+
+### BREAKING CHANGES
+
+* FrameRange for StateTimelineVariables are now Vector2Ints instead of Vector2.
+
 # [38.2.0](https://github.com/christides11/hack-and-slash-framework/compare/v38.1.3...v38.2.0) (2022-07-21)
 
 
