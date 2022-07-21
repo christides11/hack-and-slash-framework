@@ -5976,6 +5976,19 @@ references:
   isSpec: "True"
   fullName: HnSF.StateTimelineEditorWindow.ChangeZoomLevel
   nameWithType: StateTimelineEditorWindow.ChangeZoomLevel
+- uid: HnSF.StateTimelineEditorWindow.ConvertFrameNumber(System.Int32)
+  name: ConvertFrameNumber(Int32)
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_ConvertFrameNumber_System_Int32_
+  commentId: M:HnSF.StateTimelineEditorWindow.ConvertFrameNumber(System.Int32)
+  fullName: HnSF.StateTimelineEditorWindow.ConvertFrameNumber(System.Int32)
+  nameWithType: StateTimelineEditorWindow.ConvertFrameNumber(Int32)
+- uid: HnSF.StateTimelineEditorWindow.ConvertFrameNumber*
+  name: ConvertFrameNumber
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_ConvertFrameNumber_
+  commentId: Overload:HnSF.StateTimelineEditorWindow.ConvertFrameNumber
+  isSpec: "True"
+  fullName: HnSF.StateTimelineEditorWindow.ConvertFrameNumber
+  nameWithType: StateTimelineEditorWindow.ConvertFrameNumber
 - uid: HnSF.StateTimelineEditorWindow.CreateGUI
   name: CreateGUI()
   href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_CreateGUI
