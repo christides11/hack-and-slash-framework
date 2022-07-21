@@ -15,7 +15,7 @@ MonoBehaviour:
   stateName: 
   useBaseState: 1
   baseState: {fileID: 11400000, guid: 65f5e055426eb834a95aa16b8f725063, type: 2}
-  totalFrames: 10
+  totalFrames: 24
   autoIncrement: 1
   autoLoop: 1
   autoLoopFrame: 1

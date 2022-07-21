@@ -22,6 +22,7 @@ MonoBehaviour:
   data:
   - rid: 2193520583769325568
   - rid: 2193520583769325569
+  - rid: 2193520692439547904
   references:
     version: 2
     RefIds:
@@ -33,7 +34,7 @@ MonoBehaviour:
         name: Set Fall Speed
         id: 0
         frameRanges:
-        - {x: -1, y: -1}
+        - {x: 1, y: -1}
         condition:
           rid: -2
         value: 10
@@ -45,12 +46,26 @@ MonoBehaviour:
         name: Apply Grravity
         id: 1
         frameRanges:
-        - {x: -1, y: -1}
+        - {x: 1, y: -1}
         condition:
           rid: -2
         useMaxFallSpeedStat: 1
         useGravityStat: 1
         maxFallSpeed: 0
         gravity: 0
+        parent: -1
+        children: 
+    - rid: 2193520692439547904
+      type: {class: VarApplyTraction, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+      data:
+        name: 
+        id: 2
+        frameRanges:
+        - {x: -2, y: -2}
+        condition:
+          rid: -2
+        useTractionStat: 0
+        aerialTraction: 0
+        traction: 0
         parent: -1
         children: 

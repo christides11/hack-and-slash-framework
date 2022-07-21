@@ -368,20 +368,15 @@ namespace HnSF
             {
                 for (int j = 0; j < stateTimeline.data[index].FrameRanges.Length; j++)
                 {
-                    int framebarStart = stateTimeline.data[index].FrameRanges[j].x < 0
-                        ? 1
-                        : (int)stateTimeline.data[index].FrameRanges[j].x;
-                    int framebarWidth = stateTimeline.data[index].FrameRanges[j].x < 0
-                        ? this.stateTimeline.totalFrames-1
-                        : (int)stateTimeline.data[index].FrameRanges[j].y -
-                          (int)stateTimeline.data[index].FrameRanges[j].x;
+                    int frx = ConvertFrameNumber((int)stateTimeline.data[index].FrameRanges[j].x);
+                    int fry = ConvertFrameNumber((int)stateTimeline.data[index].FrameRanges[j].y);
+                    int framebarStart = frx;
+                    int framebarWidth = fry - frx;
                     mainFrameBarLabel.CloneTree(dbs[incr]);
                     var thisMainFrameBarLabel = dbs[incr].Query(name: mainFrameBarLabel.name).Build().Last();
                     thisMainFrameBarLabel.style.left = GetFrameWidth() * framebarStart;
-                    thisMainFrameBarLabel.style.width = new StyleLength(GetFrameWidth() *
-                                                                        (framebarWidth + 1));
-                    thisMainFrameBarLabel.Q<Label>().text = (stateTimeline.data[index].FrameRanges[j].y + 1 -
-                                                             stateTimeline.data[index].FrameRanges[j].x).ToString();
+                    thisMainFrameBarLabel.style.width = new StyleLength(GetFrameWidth() * (framebarWidth + 1));
+                    thisMainFrameBarLabel.Q<Label>().text = (fry + 1 - frx).ToString();
                 }
             }
 
@@ -392,6 +387,13 @@ namespace HnSF
                 incr++;
                 DataBarsDrawParentAndChildren(dbs, stateTimeline.data[childIndex].ID, ref incr, stateTimeline);
             }
+        }
+
+        public virtual int ConvertFrameNumber(int number)
+        {
+            if (number == -1) return stateTimeline.totalFrames;
+            if (number == -2) return stateTimeline.totalFrames+1;
+            return number;
         }
 
         public virtual float GetFrameWidth()
