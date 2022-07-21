@@ -23,6 +23,17 @@ namespace HnSF
         {
             BuildStateVariablesIDMap();
         }
+
+        public int GetHighestID()
+        {
+            if (data.Length == 0) return -1;
+            int highestID = data[0].ID;
+            for (int i = 1; i < data.Length; i++)
+            {
+                if (data[i].ID > highestID) highestID = data[i].ID;
+            }
+            return highestID;
+        }
         
         public virtual void BuildStateVariablesIDMap()
         {
@@ -57,11 +68,13 @@ namespace HnSF
                 if (data[parentIndex].Children.Length <= 1) return;
                 int childIndex = Array.IndexOf(data[parentIndex].Children, id);
                 if (childIndex == 0) return;
+                UndoUtility.RecordObject(this, "Moved State Variable");
                 data[parentIndex].Children.SwapValues(childIndex, childIndex-1);
             }
             else
             {
                 if (currentIndex == 0) return;
+                UndoUtility.RecordObject(this, "Moved State Variable");
                 data.SwapValues(currentIndex, currentIndex-1);
             }
         }
@@ -76,20 +89,23 @@ namespace HnSF
                 if (data[parentIndex].Children.Length <= 1) return;
                 int childIndex = Array.IndexOf(data[parentIndex].Children, id);
                 if (childIndex == data[parentIndex].Children.Length-1) return;
+                UndoUtility.RecordObject(this, "Moved State Variable");
                 data[parentIndex].Children.SwapValues(childIndex, childIndex+1);
             }
             else
             {
                 if (currentIndex == data.Length-1) return;
+                UndoUtility.RecordObject(this, "Moved State Variable");
                 data.SwapValues(currentIndex, currentIndex+1);
             }
         }
 
         public void AddStateVariable(IStateVariables var, int parentID = -1)
         {
+            UndoUtility.RecordObject(this, "Added State Variable");
             Array.Resize(ref data, data.Length+1);
             data[^1] = var;
-            data[^1].ID = data.Length == 1 ? 0 : data[^2].ID + 1;
+            data[^1].ID = data.Length == 1 ? 0 : GetHighestID() + 1;
             data[^1].Parent = parentID;
             data[^1].Children = Array.Empty<int>();
             data[^1].FrameRanges = Array.Empty<Vector2>();
@@ -107,6 +123,7 @@ namespace HnSF
 
         public void RemoveStateVariable(int index)
         {
+            UndoUtility.RecordObject(this, "Removed State Variable");
             List<IStateVariables> tempData = data.ToList();
             
             List<int> stateVarsToRemove = new List<int>();
