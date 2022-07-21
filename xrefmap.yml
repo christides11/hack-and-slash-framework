@@ -5746,6 +5746,19 @@ references:
   commentId: F:HnSF.StateTimeline.data
   fullName: HnSF.StateTimeline.data
   nameWithType: StateTimeline.data
+- uid: HnSF.StateTimeline.GetHighestID
+  name: GetHighestID()
+  href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_GetHighestID
+  commentId: M:HnSF.StateTimeline.GetHighestID
+  fullName: HnSF.StateTimeline.GetHighestID()
+  nameWithType: StateTimeline.GetHighestID()
+- uid: HnSF.StateTimeline.GetHighestID*
+  name: GetHighestID
+  href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_GetHighestID_
+  commentId: Overload:HnSF.StateTimeline.GetHighestID
+  isSpec: "True"
+  fullName: HnSF.StateTimeline.GetHighestID
+  nameWithType: StateTimeline.GetHighestID
 - uid: HnSF.StateTimeline.GetStateVariableDepth(System.Int32)
   name: GetStateVariableDepth(Int32)
   href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_GetStateVariableDepth_System_Int32_
@@ -6106,6 +6119,19 @@ references:
   isSpec: "True"
   fullName: HnSF.StateTimelineEditorWindow.MoveStateVarUp
   nameWithType: StateTimelineEditorWindow.MoveStateVarUp
+- uid: HnSF.StateTimelineEditorWindow.OnUndoRedoPerformed
+  name: OnUndoRedoPerformed()
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_OnUndoRedoPerformed
+  commentId: M:HnSF.StateTimelineEditorWindow.OnUndoRedoPerformed
+  fullName: HnSF.StateTimelineEditorWindow.OnUndoRedoPerformed()
+  nameWithType: StateTimelineEditorWindow.OnUndoRedoPerformed()
+- uid: HnSF.StateTimelineEditorWindow.OnUndoRedoPerformed*
+  name: OnUndoRedoPerformed
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_OnUndoRedoPerformed_
+  commentId: Overload:HnSF.StateTimelineEditorWindow.OnUndoRedoPerformed
+  isSpec: "True"
+  fullName: HnSF.StateTimelineEditorWindow.OnUndoRedoPerformed
+  nameWithType: StateTimelineEditorWindow.OnUndoRedoPerformed
 - uid: HnSF.StateTimelineEditorWindow.OpenWindow(HnSF.StateTimeline)
   name: OpenWindow(StateTimeline)
   href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_OpenWindow_HnSF_StateTimeline_
@@ -6253,6 +6279,19 @@ references:
   commentId: F:HnSF.StateTimelineEditorWindow.tree
   fullName: HnSF.StateTimelineEditorWindow.tree
   nameWithType: StateTimelineEditorWindow.tree
+- uid: HnSF.StateTimelineEditorWindow.UpdateData(HnSF.StateTimeline,System.Int32)
+  name: UpdateData(StateTimeline, Int32)
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_UpdateData_HnSF_StateTimeline_System_Int32_
+  commentId: M:HnSF.StateTimelineEditorWindow.UpdateData(HnSF.StateTimeline,System.Int32)
+  fullName: HnSF.StateTimelineEditorWindow.UpdateData(HnSF.StateTimeline, System.Int32)
+  nameWithType: StateTimelineEditorWindow.UpdateData(StateTimeline, Int32)
+- uid: HnSF.StateTimelineEditorWindow.UpdateData*
+  name: UpdateData
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_UpdateData_
+  commentId: Overload:HnSF.StateTimelineEditorWindow.UpdateData
+  isSpec: "True"
+  fullName: HnSF.StateTimelineEditorWindow.UpdateData
+  nameWithType: StateTimelineEditorWindow.UpdateData
 - uid: HnSF.StateTimelineEditorWindow.zoomMultiplier
   name: zoomMultiplier
   href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_zoomMultiplier
@@ -6284,3 +6323,106 @@ references:
   commentId: F:HnSF.StateVariableAttribute.menuName
   fullName: HnSF.StateVariableAttribute.menuName
   nameWithType: StateVariableAttribute.menuName
+- uid: HnSF.UndoUtility
+  name: UndoUtility
+  href: api/HnSF.UndoUtility.html
+  commentId: T:HnSF.UndoUtility
+  fullName: HnSF.UndoUtility
+  nameWithType: UndoUtility
+- uid: HnSF.UndoUtility.RecordObject(UnityEngine.Object,System.String)
+  name: RecordObject(UnityEngine.Object, String)
+  href: api/HnSF.UndoUtility.html#HnSF_UndoUtility_RecordObject_UnityEngine_Object_System_String_
+  commentId: M:HnSF.UndoUtility.RecordObject(UnityEngine.Object,System.String)
+  fullName: HnSF.UndoUtility.RecordObject(UnityEngine.Object, System.String)
+  nameWithType: UndoUtility.RecordObject(UnityEngine.Object, String)
+- uid: HnSF.UndoUtility.RecordObject*
+  name: RecordObject
+  href: api/HnSF.UndoUtility.html#HnSF_UndoUtility_RecordObject_
+  commentId: Overload:HnSF.UndoUtility.RecordObject
+  isSpec: "True"
+  fullName: HnSF.UndoUtility.RecordObject
+  nameWithType: UndoUtility.RecordObject
+- uid: HnSF.UnityObjectUtility
+  name: UnityObjectUtility
+  href: api/HnSF.UnityObjectUtility.html
+  commentId: T:HnSF.UnityObjectUtility
+  fullName: HnSF.UnityObjectUtility
+  nameWithType: UnityObjectUtility
+- uid: HnSF.UnityObjectUtility.GetPrefabDefinition(UnityEngine.Object)
+  name: GetPrefabDefinition(UnityEngine.Object)
+  href: api/HnSF.UnityObjectUtility.html#HnSF_UnityObjectUtility_GetPrefabDefinition_UnityEngine_Object_
+  commentId: M:HnSF.UnityObjectUtility.GetPrefabDefinition(UnityEngine.Object)
+  fullName: HnSF.UnityObjectUtility.GetPrefabDefinition(UnityEngine.Object)
+  nameWithType: UnityObjectUtility.GetPrefabDefinition(UnityEngine.Object)
+- uid: HnSF.UnityObjectUtility.GetPrefabDefinition*
+  name: GetPrefabDefinition
+  href: api/HnSF.UnityObjectUtility.html#HnSF_UnityObjectUtility_GetPrefabDefinition_
+  commentId: Overload:HnSF.UnityObjectUtility.GetPrefabDefinition
+  isSpec: "True"
+  fullName: HnSF.UnityObjectUtility.GetPrefabDefinition
+  nameWithType: UnityObjectUtility.GetPrefabDefinition
+- uid: HnSF.UnityObjectUtility.IsConnectedPrefabInstance(UnityEngine.Object)
+  name: IsConnectedPrefabInstance(UnityEngine.Object)
+  href: api/HnSF.UnityObjectUtility.html#HnSF_UnityObjectUtility_IsConnectedPrefabInstance_UnityEngine_Object_
+  commentId: M:HnSF.UnityObjectUtility.IsConnectedPrefabInstance(UnityEngine.Object)
+  fullName: HnSF.UnityObjectUtility.IsConnectedPrefabInstance(UnityEngine.Object)
+  nameWithType: UnityObjectUtility.IsConnectedPrefabInstance(UnityEngine.Object)
+- uid: HnSF.UnityObjectUtility.IsConnectedPrefabInstance*
+  name: IsConnectedPrefabInstance
+  href: api/HnSF.UnityObjectUtility.html#HnSF_UnityObjectUtility_IsConnectedPrefabInstance_
+  commentId: Overload:HnSF.UnityObjectUtility.IsConnectedPrefabInstance
+  isSpec: "True"
+  fullName: HnSF.UnityObjectUtility.IsConnectedPrefabInstance
+  nameWithType: UnityObjectUtility.IsConnectedPrefabInstance
+- uid: HnSF.UnityObjectUtility.IsDisconnectedPrefabInstance(UnityEngine.Object)
+  name: IsDisconnectedPrefabInstance(UnityEngine.Object)
+  href: api/HnSF.UnityObjectUtility.html#HnSF_UnityObjectUtility_IsDisconnectedPrefabInstance_UnityEngine_Object_
+  commentId: M:HnSF.UnityObjectUtility.IsDisconnectedPrefabInstance(UnityEngine.Object)
+  fullName: HnSF.UnityObjectUtility.IsDisconnectedPrefabInstance(UnityEngine.Object)
+  nameWithType: UnityObjectUtility.IsDisconnectedPrefabInstance(UnityEngine.Object)
+- uid: HnSF.UnityObjectUtility.IsDisconnectedPrefabInstance*
+  name: IsDisconnectedPrefabInstance
+  href: api/HnSF.UnityObjectUtility.html#HnSF_UnityObjectUtility_IsDisconnectedPrefabInstance_
+  commentId: Overload:HnSF.UnityObjectUtility.IsDisconnectedPrefabInstance
+  isSpec: "True"
+  fullName: HnSF.UnityObjectUtility.IsDisconnectedPrefabInstance
+  nameWithType: UnityObjectUtility.IsDisconnectedPrefabInstance
+- uid: HnSF.UnityObjectUtility.IsPrefabDefinition(UnityEngine.Object)
+  name: IsPrefabDefinition(UnityEngine.Object)
+  href: api/HnSF.UnityObjectUtility.html#HnSF_UnityObjectUtility_IsPrefabDefinition_UnityEngine_Object_
+  commentId: M:HnSF.UnityObjectUtility.IsPrefabDefinition(UnityEngine.Object)
+  fullName: HnSF.UnityObjectUtility.IsPrefabDefinition(UnityEngine.Object)
+  nameWithType: UnityObjectUtility.IsPrefabDefinition(UnityEngine.Object)
+- uid: HnSF.UnityObjectUtility.IsPrefabDefinition*
+  name: IsPrefabDefinition
+  href: api/HnSF.UnityObjectUtility.html#HnSF_UnityObjectUtility_IsPrefabDefinition_
+  commentId: Overload:HnSF.UnityObjectUtility.IsPrefabDefinition
+  isSpec: "True"
+  fullName: HnSF.UnityObjectUtility.IsPrefabDefinition
+  nameWithType: UnityObjectUtility.IsPrefabDefinition
+- uid: HnSF.UnityObjectUtility.IsPrefabInstance(UnityEngine.Object)
+  name: IsPrefabInstance(UnityEngine.Object)
+  href: api/HnSF.UnityObjectUtility.html#HnSF_UnityObjectUtility_IsPrefabInstance_UnityEngine_Object_
+  commentId: M:HnSF.UnityObjectUtility.IsPrefabInstance(UnityEngine.Object)
+  fullName: HnSF.UnityObjectUtility.IsPrefabInstance(UnityEngine.Object)
+  nameWithType: UnityObjectUtility.IsPrefabInstance(UnityEngine.Object)
+- uid: HnSF.UnityObjectUtility.IsPrefabInstance*
+  name: IsPrefabInstance
+  href: api/HnSF.UnityObjectUtility.html#HnSF_UnityObjectUtility_IsPrefabInstance_
+  commentId: Overload:HnSF.UnityObjectUtility.IsPrefabInstance
+  isSpec: "True"
+  fullName: HnSF.UnityObjectUtility.IsPrefabInstance
+  nameWithType: UnityObjectUtility.IsPrefabInstance
+- uid: HnSF.UnityObjectUtility.IsSceneBound(UnityEngine.Object)
+  name: IsSceneBound(UnityEngine.Object)
+  href: api/HnSF.UnityObjectUtility.html#HnSF_UnityObjectUtility_IsSceneBound_UnityEngine_Object_
+  commentId: M:HnSF.UnityObjectUtility.IsSceneBound(UnityEngine.Object)
+  fullName: HnSF.UnityObjectUtility.IsSceneBound(UnityEngine.Object)
+  nameWithType: UnityObjectUtility.IsSceneBound(UnityEngine.Object)
+- uid: HnSF.UnityObjectUtility.IsSceneBound*
+  name: IsSceneBound
+  href: api/HnSF.UnityObjectUtility.html#HnSF_UnityObjectUtility_IsSceneBound_
+  commentId: Overload:HnSF.UnityObjectUtility.IsSceneBound
+  isSpec: "True"
+  fullName: HnSF.UnityObjectUtility.IsSceneBound
+  nameWithType: UnityObjectUtility.IsSceneBound
