@@ -51,12 +51,14 @@
      <Compile Include="Assets\HnSF\Combat\Boxes\Hurtbox\HurtboxState.cs" />
      <Compile Include="Assets\HnSF\State\StateConditionMapperBase.cs" />
      <Compile Include="Assets\HnSF\Fighter\IFighterCombatManager.cs" />
+     <Compile Include="Assets\HnSF\Helpers\UndoUtility.cs" />
      <Compile Include="Assets\HnSF\Combat\Boxes\Hitbox\HitboxGroup.cs" />
      <Compile Include="Assets\HnSF\Combat\Info\HurtInfoBase.cs" />
      <Compile Include="Assets\HnSF\Fighter\IFighterStateManager.cs" />
      <Compile Include="Assets\HnSF\Combat\Boxes\BoxDefinitionBase.cs" />
      <Compile Include="Assets\HnSF\Combat\ForceType.cs" />
      <Compile Include="Assets\HnSF\Combat\ITeamable.cs" />
+     <Compile Include="Assets\HnSF\Helpers\UnityObjectUtility.cs" />
      <Compile Include="Assets\HnSF\Combat\Boxes\Hitbox\HitboxForceType.cs" />
      <Compile Include="Assets\HnSF\Combat\Info\HurtInfo3D.cs" />
      <Compile Include="Assets\HnSF\Fighter\IFighterPhysicsManager.cs" />
@@ -83,8 +85,6 @@
      <Compile Include="Assets\HnSF\State\FighterStateReferenceBase.cs" />
      <Compile Include="Assets\HnSF\Combat\MovesetDefinition.cs" />
      <Compile Include="Assets\HnSF\Input\InputDefinition.cs" />
-     <Compile Include="Assets\HnSF\Helpers\UnityObjectUtility.cs" />
-     <Compile Include="Assets\HnSF\Helpers\UndoUtility.cs" />
      <None Include="Assets\HnSF\HnSF.asmdef" />
      <None Include="Assets\HnSF\package.json" />
      <Reference Include="UnityEngine">
