@@ -1,3 +1,10 @@
+## [38.1.3](https://github.com/christides11/hack-and-slash-framework/compare/v38.1.2...v38.1.3) (2022-07-21)
+
+
+### Bug Fixes
+
+* ID error when last state var was moved ([0c36d3b](https://github.com/christides11/hack-and-slash-framework/commit/0c36d3b7e826eee41863af29ba23e48599a8802c))
+
 ## [38.1.2](https://github.com/christides11/hack-and-slash-framework/compare/v38.1.1...v38.1.2) (2022-07-18)
 
 
