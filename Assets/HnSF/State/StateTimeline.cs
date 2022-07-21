@@ -108,7 +108,7 @@ namespace HnSF
             data[^1].ID = data.Length == 1 ? 0 : GetHighestID() + 1;
             data[^1].Parent = parentID;
             data[^1].Children = Array.Empty<int>();
-            data[^1].FrameRanges = Array.Empty<Vector2>();
+            data[^1].FrameRanges = Array.Empty<Vector2Int>();
             if (parentID != -1)
             {
                 int parentIndex = stateVariablesIDMap[parentID];
