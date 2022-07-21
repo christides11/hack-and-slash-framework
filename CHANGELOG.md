@@ -1,3 +1,15 @@
+# [38.2.0](https://github.com/christides11/hack-and-slash-framework/compare/v38.1.3...v38.2.0) (2022-07-21)
+
+
+### Features
+
+* Changed negative number frame meanings ([3eaf910](https://github.com/christides11/hack-and-slash-framework/commit/3eaf910eb239ed42ea496ee3d1329a0030d118bf))
+
+
+### BREAKING CHANGES
+
+* For state frame ranges, -1 now means the last frame, -2 means the onchange frame.
+
 ## [38.1.3](https://github.com/christides11/hack-and-slash-framework/compare/v38.1.2...v38.1.3) (2022-07-21)
 
 
