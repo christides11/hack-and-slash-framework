@@ -28,7 +28,7 @@ namespace HnSF
         };
 
         public Color parentColor = new Color(0.05f, 0.05f, 0.05f);
-
+        
         public static StateTimelineEditorWindow OpenWindow(StateTimeline stateTimeline)
         {
             StateTimelineEditorWindow wnd = CreateWindow<StateTimelineEditorWindow>();
@@ -80,6 +80,18 @@ namespace HnSF
             {
                 RefreshAll(true);
             };
+
+            Undo.undoRedoPerformed += OnUndoRedoPerformed;
+        }
+
+        private void OnDestroy()
+        {
+            Undo.undoRedoPerformed -= OnUndoRedoPerformed;
+        }
+
+        public virtual void OnUndoRedoPerformed()
+        {
+            RefreshAll(true);
         }
 
         public virtual void ChangeZoomLevel(float zoomMultiplier)
@@ -139,7 +151,7 @@ namespace HnSF
         {
             VisualElement root = rootVisualElement;
         }
-
+        
         public virtual void RefreshSideBar()
         {
             VisualElement root = rootVisualElement;
@@ -202,7 +214,7 @@ namespace HnSF
                 evt.menu.AppendAction("Edit", (x) =>
                 {
                     var w = StateTimelineDataEditor.Init(stateTimeline, stateTimeline.data[index].ID);
-                    w.onChanged += id => { RefreshAll(true); };
+                    w.onChanged += id => { UpdateData(stateTimeline, stateTimeline.data[index].ID); };
                 });
                 foreach (var c in stateVariableTypes)
                 {
@@ -229,6 +241,11 @@ namespace HnSF
                     RefreshAll(true);
                 });
             }));
+        }
+
+        protected virtual void UpdateData(StateTimeline stateTimeline1, int id)
+        {
+            RefreshAll(true);
         }
 
         public virtual void MoveStateVarUp(StateTimeline stateTimeline, int id)

@@ -83,6 +83,8 @@
      <Compile Include="Assets\HnSF\State\FighterStateReferenceBase.cs" />
      <Compile Include="Assets\HnSF\Combat\MovesetDefinition.cs" />
      <Compile Include="Assets\HnSF\Input\InputDefinition.cs" />
+     <Compile Include="Assets\HnSF\Helpers\UnityObjectUtility.cs" />
+     <Compile Include="Assets\HnSF\Helpers\UndoUtility.cs" />
      <None Include="Assets\HnSF\HnSF.asmdef" />
      <None Include="Assets\HnSF\package.json" />
      <Reference Include="UnityEngine">
