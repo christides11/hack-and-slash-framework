@@ -1,3 +1,10 @@
+# [39.1.0](https://github.com/christides11/hack-and-slash-framework/compare/v39.0.0...v39.1.0) (2022-07-24)
+
+
+### Features
+
+* Name for IntStateMap ([730e8bd](https://github.com/christides11/hack-and-slash-framework/commit/730e8bdaabb1b98ad4cbb98cbfa5a1cda97a1f6d))
+
 # [39.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v38.2.0...v39.0.0) (2022-07-21)
 
 
