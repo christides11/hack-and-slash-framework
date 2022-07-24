@@ -227,7 +227,7 @@
   "api/HnSF.IntStateMap.html": {
     "href": "api/HnSF.IntStateMap.html",
     "title": "Class IntStateMap | Hack and Slash Framework Documentation",
-    "keywords": "Class IntStateMap Inheritance Object IntStateMap Namespace : HnSF Assembly : HnSF.dll Syntax [Serializable] public class IntStateMap Fields | Improve this Doc View Source state Declaration public FighterStateReferenceBase state Field Value Type Description FighterStateReferenceBase | Improve this Doc View Source stateTimeline Declaration public StateTimeline stateTimeline Field Value Type Description StateTimeline"
+    "keywords": "Class IntStateMap Inheritance Object IntStateMap Namespace : HnSF Assembly : HnSF.dll Syntax [Serializable] public class IntStateMap Fields | Improve this Doc View Source name Declaration public string name Field Value Type Description String | Improve this Doc View Source state Declaration public FighterStateReferenceBase state Field Value Type Description FighterStateReferenceBase | Improve this Doc View Source stateTimeline Declaration public StateTimeline stateTimeline Field Value Type Description StateTimeline"
   },
   "api/HnSF.IStateVariables.html": {
     "href": "api/HnSF.IStateVariables.html",

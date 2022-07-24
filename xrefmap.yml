@@ -2243,6 +2243,12 @@ references:
   commentId: T:HnSF.IntStateMap
   fullName: HnSF.IntStateMap
   nameWithType: IntStateMap
+- uid: HnSF.IntStateMap.name
+  name: name
+  href: api/HnSF.IntStateMap.html#HnSF_IntStateMap_name
+  commentId: F:HnSF.IntStateMap.name
+  fullName: HnSF.IntStateMap.name
+  nameWithType: IntStateMap.name
 - uid: HnSF.IntStateMap.state
   name: state
   href: api/HnSF.IntStateMap.html#HnSF_IntStateMap_state
