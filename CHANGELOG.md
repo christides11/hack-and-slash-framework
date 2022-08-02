@@ -1,3 +1,10 @@
+## [39.2.1](https://github.com/christides11/hack-and-slash-framework/compare/v39.2.0...v39.2.1) (2022-08-02)
+
+
+### Bug Fixes
+
+* Updated semantic-release-action ([7c55b34](https://github.com/christides11/hack-and-slash-framework/commit/7c55b3467a07ed3ebedf024c7dbc4dc88f22d309))
+
 # [39.2.0](https://github.com/christides11/hack-and-slash-framework/compare/v39.1.1...v39.2.0) (2022-08-02)
 
 
