@@ -1,3 +1,10 @@
+## [39.1.1](https://github.com/christides11/hack-and-slash-framework/compare/v39.1.0...v39.1.1) (2022-08-02)
+
+
+### Bug Fixes
+
+* Build IDMaps for base states. ([575084e](https://github.com/christides11/hack-and-slash-framework/commit/575084ecf5874eed79a8e560c10b172a55009233))
+
 # [39.1.0](https://github.com/christides11/hack-and-slash-framework/compare/v39.0.0...v39.1.0) (2022-07-24)
 
 
