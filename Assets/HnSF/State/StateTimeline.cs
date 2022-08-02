@@ -7,6 +7,7 @@ namespace HnSF
 {
     public class StateTimeline : ScriptableObject
     {
+        
         public string stateName;
         public bool useBaseState = false;
         public StateTimeline baseState;
