@@ -23,3 +23,4 @@ This guide will walk you through installing the framework all the way to having 
 ## Contributing
 
 Any contributions are appriciated, please create pull request or issues detailing wanted features/bug reports.
+
