@@ -1,3 +1,10 @@
+# [39.2.0](https://github.com/christides11/hack-and-slash-framework/compare/v39.1.1...v39.2.0) (2022-08-02)
+
+
+### Features
+
+* Test ([5f25b8b](https://github.com/christides11/hack-and-slash-framework/commit/5f25b8bf5df928f7f2bccf5d3aa9fdb4a11e6c80))
+
 ## [39.1.1](https://github.com/christides11/hack-and-slash-framework/compare/v39.1.0...v39.1.1) (2022-08-02)
 
 
