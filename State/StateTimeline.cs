@@ -42,6 +42,7 @@ namespace HnSF
             {
                 stateVariablesIDMap.Add(data[i].ID, i);
             }
+            if(useBaseState) baseState.BuildStateVariablesIDMap();
         }
 
         public int GetStateVariableDepth(int id)
