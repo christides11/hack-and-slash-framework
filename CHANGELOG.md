@@ -1,3 +1,10 @@
+## [39.2.3](https://github.com/christides11/hack-and-slash-framework/compare/v39.2.2...v39.2.3) (2022-08-04)
+
+
+### Bug Fixes
+
+* Error with no parent state vars ([dc44828](https://github.com/christides11/hack-and-slash-framework/commit/dc44828f002a71db48aa606a60e9d8e65a4173e6))
+
 ## [39.2.2](https://github.com/christides11/hack-and-slash-framework/compare/v39.2.1...v39.2.2) (2022-08-04)
 
 
