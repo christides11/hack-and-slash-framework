@@ -28,7 +28,6 @@ MonoBehaviour:
   - rid: 5282967762107891718
   - rid: 5282967762107891719
   - rid: 5282967762107891720
-  - rid: 5282967762107891721
   - rid: 5282967762107891722
   - rid: 5282967762107891723
   - rid: 5282967776474693632
@@ -41,7 +40,6 @@ MonoBehaviour:
   - rid: 5282967776474693641
   - rid: 5282967776474693639
   - rid: 2193520680018640896
-  - rid: 5282967776474693640
   - rid: 2193520629232959488
   - rid: 2193520680018640898
   - rid: 2193520680018640897
@@ -159,7 +157,7 @@ MonoBehaviour:
         maxFallSpeed: 0
         gravity: 0
         parent: -1
-        children: 070000000800000015000000
+        children: 0700000015000000
     - rid: 5282967762107891717
       type: {class: VarApplyTraction, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
       data:
@@ -210,19 +208,6 @@ MonoBehaviour:
           rid: -2
         stateMovesetID: 0
         stateID: 0
-        parent: 3
-        children: 
-    - rid: 5282967762107891721
-      type: {class: VarApplyTraction, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
-      data:
-        name: 
-        id: 8
-        frameRanges: []
-        condition:
-          rid: -2
-        useTractionStat: 0
-        aerialTraction: 0
-        traction: 0
         parent: 3
         children: 
     - rid: 5282967762107891722
@@ -350,18 +335,6 @@ MonoBehaviour:
         useTractionStat: 0
         aerialTraction: 0
         traction: 0
-        parent: -1
-        children: 
-    - rid: 5282967776474693640
-      type: {class: ChangeState, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
-      data:
-        name: 
-        id: 19
-        frameRanges: []
-        condition:
-          rid: -2
-        stateMovesetID: 0
-        stateID: 0
         parent: -1
         children: 
     - rid: 5282967776474693641

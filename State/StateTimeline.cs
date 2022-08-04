@@ -135,11 +135,14 @@ namespace HnSF
             Queue<int> stateVarsToCheck = new Queue<int>();
             
             stateVarsToCheck.Enqueue(data[index].ID);
-            
-            List<int> temp = new List<int>(tempData[stateVariablesIDMap[data[index].Parent]].Children);
-            temp.Remove(data[index].ID);
-            tempData[stateVariablesIDMap[data[index].Parent]].Children = temp.ToArray();
-            
+
+            if (data[index].Parent != -1)
+            {
+                List<int> temp = new List<int>(tempData[stateVariablesIDMap[data[index].Parent]].Children);
+                temp.Remove(data[index].ID);
+                tempData[stateVariablesIDMap[data[index].Parent]].Children = temp.ToArray();
+            }
+
             while (stateVarsToCheck.Count > 0)
             {
                 int idx = stateVariablesIDMap[stateVarsToCheck.Dequeue()];
