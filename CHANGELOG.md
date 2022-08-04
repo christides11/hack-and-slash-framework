@@ -1,3 +1,10 @@
+## [39.2.2](https://github.com/christides11/hack-and-slash-framework/compare/v39.2.1...v39.2.2) (2022-08-04)
+
+
+### Bug Fixes
+
+* Fixed removing state var child error ([b09c76e](https://github.com/christides11/hack-and-slash-framework/commit/b09c76e72d228ca3da603d7d90460dc99aae97e9))
+
 ## [39.2.1](https://github.com/christides11/hack-and-slash-framework/compare/v39.2.0...v39.2.1) (2022-08-02)
 
 
