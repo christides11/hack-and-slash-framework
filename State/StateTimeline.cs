@@ -104,6 +104,7 @@ namespace HnSF
 
         public void AddStateVariable(IStateVariables var, int parentID = -1)
         {
+            BuildStateVariablesIDMap();
             UndoUtility.RecordObject(this, "Added State Variable");
             Array.Resize(ref data, data.Length+1);
             data[^1] = var;
@@ -125,13 +126,19 @@ namespace HnSF
 
         public void RemoveStateVariable(int index)
         {
+            BuildStateVariablesIDMap();
             UndoUtility.RecordObject(this, "Removed State Variable");
             List<IStateVariables> tempData = data.ToList();
             
             List<int> stateVarsToRemove = new List<int>();
 
             Queue<int> stateVarsToCheck = new Queue<int>();
+            
             stateVarsToCheck.Enqueue(data[index].ID);
+            
+            List<int> temp = new List<int>(tempData[stateVariablesIDMap[data[index].Parent]].Children);
+            temp.Remove(data[index].ID);
+            tempData[stateVariablesIDMap[data[index].Parent]].Children = temp.ToArray();
             
             while (stateVarsToCheck.Count > 0)
             {
