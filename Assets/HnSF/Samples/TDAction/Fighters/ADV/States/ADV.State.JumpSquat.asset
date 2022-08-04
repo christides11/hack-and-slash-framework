@@ -12,25 +12,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40f66a5b733e53543bcb2daa52776331, type: 3}
   m_Name: ADV.State.JumpSquat
   m_EditorClassIdentifier: 
+  stateName: 
   useBaseState: 1
   baseState: {fileID: 11400000, guid: fd5430be1c2572d42b4e2b9e9564187f, type: 2}
   totalFrames: 4
   autoIncrement: 1
   autoLoop: 0
+  autoLoopFrame: 1
   data:
-  - rid: 1423070996485636106
+  - rid: 8688056216763236352
+  - rid: 8688056216763236354
   references:
     version: 2
     RefIds:
-    - rid: 1423070996485636106
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 8688056216763236352
       type: {class: ChangeState, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
       data:
-        frameRanges:
-        - {x: 4, y: 4}
+        name: 
+        id: 0
+        frameRanges: []
         condition:
-          rid: 1423070996485636107
-        stateMovesetID: -1
-        stateID: 7
-        children: []
-    - rid: 1423070996485636107
-      type: {class: ConditionNone, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+          rid: -2
+        stateMovesetID: 0
+        stateID: 0
+        parent: -1
+        children: 
+    - rid: 8688056216763236354
+      type: {class: ChangeState, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+      data:
+        name: 
+        id: 2
+        frameRanges: []
+        condition:
+          rid: -2
+        stateMovesetID: 0
+        stateID: 0
+        parent: -1
+        children: 
