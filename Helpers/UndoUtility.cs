@@ -1,4 +1,6 @@
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 using UnityObject = UnityEngine.Object;
 
@@ -9,6 +11,7 @@ namespace HnSF
 	{
 		public static void RecordObject(UnityObject uo, string name)
 		{
+			#if UNITY_EDITOR
 			if (uo == null)
 			{
 				return;
@@ -75,6 +78,7 @@ namespace HnSF
 					PrefabUtility.RecordPrefabInstancePropertyModifications(uo); 
 				};
 			}
+			#endif
 		}
 	}
 }
