@@ -1,3 +1,10 @@
+## [39.2.4](https://github.com/christides11/hack-and-slash-framework/compare/v39.2.3...v39.2.4) (2022-08-20)
+
+
+### Bug Fixes
+
+* Fixed error with UnityEditor namespace ([5129d91](https://github.com/christides11/hack-and-slash-framework/commit/5129d9117ec510e47d5115a3f8eceedc780d9552))
+
 ## [39.2.3](https://github.com/christides11/hack-and-slash-framework/compare/v39.2.2...v39.2.3) (2022-08-04)
 
 
