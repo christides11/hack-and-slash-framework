@@ -1,4 +1,6 @@
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 using UnityObject = UnityEngine.Object;
 
@@ -9,7 +11,10 @@ namespace HnSF
     {		
         public static UnityObject GetPrefabDefinition(this UnityObject uo)
         {
+            #if UnityEditor
             return PrefabUtility.GetPrefabParent(uo);
+            #endif
+            return null;
         }
 
         public static bool IsPrefabInstance(this UnityObject uo)
@@ -19,17 +24,26 @@ namespace HnSF
 
         public static bool IsPrefabDefinition(this UnityObject uo)
         {
+            #if UNITY_EDITOR
             return GetPrefabDefinition(uo) == null && PrefabUtility.GetPrefabObject(uo) != null;
+            #endif
+            return false;
         }
 
         public static bool IsConnectedPrefabInstance(this UnityObject go)
         {
+            #if UNITY_EDITOR
             return IsPrefabInstance(go) && PrefabUtility.GetPrefabObject(go) != null;
+            #endif
+            return false;
         }
 
         public static bool IsDisconnectedPrefabInstance(this UnityObject go)
         {
+            #if UNITY_EDITOR
             return IsPrefabInstance(go) && PrefabUtility.GetPrefabObject(go) == null;
+            #endif
+            return false;
         }
 
         public static bool IsSceneBound(this UnityObject uo)

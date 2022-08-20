@@ -70,13 +70,17 @@ namespace HnSF
                 if (data[parentIndex].Children.Length <= 1) return;
                 int childIndex = Array.IndexOf(data[parentIndex].Children, id);
                 if (childIndex == 0) return;
+                #if UNITY_EDITOR
                 UndoUtility.RecordObject(this, "Moved State Variable");
+                #endif
                 data[parentIndex].Children.SwapValues(childIndex, childIndex-1);
             }
             else
             {
                 if (currentIndex == 0) return;
+                #if UNITY_EDITOR
                 UndoUtility.RecordObject(this, "Moved State Variable");
+                #endif
                 data.SwapValues(currentIndex, currentIndex-1);
             }
         }
@@ -91,13 +95,17 @@ namespace HnSF
                 if (data[parentIndex].Children.Length <= 1) return;
                 int childIndex = Array.IndexOf(data[parentIndex].Children, id);
                 if (childIndex == data[parentIndex].Children.Length-1) return;
+                #if UNITY_EDITOR
                 UndoUtility.RecordObject(this, "Moved State Variable");
+                #endif
                 data[parentIndex].Children.SwapValues(childIndex, childIndex+1);
             }
             else
             {
                 if (currentIndex == data.Length-1) return;
+                #if UNITY_EDITOR
                 UndoUtility.RecordObject(this, "Moved State Variable");
+                #endif
                 data.SwapValues(currentIndex, currentIndex+1);
             }
         }
@@ -105,7 +113,9 @@ namespace HnSF
         public void AddStateVariable(IStateVariables var, int parentID = -1)
         {
             BuildStateVariablesIDMap();
+            #if UNITY_EDITOR
             UndoUtility.RecordObject(this, "Added State Variable");
+            #endif
             Array.Resize(ref data, data.Length+1);
             data[^1] = var;
             data[^1].ID = data.Length == 1 ? 0 : GetHighestID() + 1;
@@ -127,7 +137,9 @@ namespace HnSF
         public void RemoveStateVariable(int index)
         {
             BuildStateVariablesIDMap();
+            #if UNITY_EDITOR
             UndoUtility.RecordObject(this, "Removed State Variable");
+            #endif
             List<IStateVariables> tempData = data.ToList();
             
             List<int> stateVarsToRemove = new List<int>();
