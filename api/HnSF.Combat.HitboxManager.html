@@ -1,0 +1,755 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class HitboxManager
+   | Hack and Slash Framework Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class HitboxManager
+   | Hack and Slash Framework Documentation ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="HnSF.Combat.HitboxManager">
+  
+  
+  <h1 id="HnSF_Combat_HitboxManager" data-uid="HnSF.Combat.HitboxManager" class="text-break">Class HitboxManager
+  </h1>
+  <div class="markdown level0 summary"><p>Handles the hitboxes and other boxes used by entities for combat.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">HitboxManager</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HnSF.Combat.html">HnSF.Combat</a></h6>
+  <h6><strong>Assembly</strong>: HnSF.dll</h6>
+  <h5 id="HnSF_Combat_HitboxManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class HitboxManager : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Combat_HitboxManager_collidedIHurtables.md&amp;value=---%0Auid%3A%20HnSF.Combat.HitboxManager.collidedIHurtables%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Combat/HitboxManager.cs/#L23">View Source</a>
+  </span>
+  <h4 id="HnSF_Combat_HitboxManager_collidedIHurtables" data-uid="HnSF.Combat.HitboxManager.collidedIHurtables">collidedIHurtables</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;int, HitboxManager.IDGroupCollisionInfo&gt; collidedIHurtables</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="HnSF.Combat.HitboxManager.IDGroupCollisionInfo.html">HitboxManager.IDGroupCollisionInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Combat_HitboxManager_hurtboxes.md&amp;value=---%0Auid%3A%20HnSF.Combat.HitboxManager.hurtboxes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Combat/HitboxManager.cs/#L71">View Source</a>
+  </span>
+  <h4 id="HnSF_Combat_HitboxManager_hurtboxes" data-uid="HnSF.Combat.HitboxManager.hurtboxes">hurtboxes</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;Hurtbox&gt; hurtboxes</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="HnSF.Combat.Hurtbox.html">Hurtbox</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Combat_HitboxManager_BuildHurtInfo_HnSF_Combat_HitboxGroup_System_Int32_HnSF_Combat_Hurtbox_GameObject_.md&amp;value=---%0Auid%3A%20HnSF.Combat.HitboxManager.BuildHurtInfo(HnSF.Combat.HitboxGroup%2CSystem.Int32%2CHnSF.Combat.Hurtbox%2CGameObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Combat/HitboxManager.cs/#L150">View Source</a>
+  </span>
+  <a id="HnSF_Combat_HitboxManager_BuildHurtInfo_" data-uid="HnSF.Combat.HitboxManager.BuildHurtInfo*"></a>
+  <h4 id="HnSF_Combat_HitboxManager_BuildHurtInfo_HnSF_Combat_HitboxGroup_System_Int32_HnSF_Combat_Hurtbox_GameObject_" data-uid="HnSF.Combat.HitboxManager.BuildHurtInfo(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox,GameObject)">BuildHurtInfo(HitboxGroup, Int32, Hurtbox, GameObject)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual HurtInfoBase BuildHurtInfo(HitboxGroup hitboxGroup, int hitboxIndex, Hurtbox hurtbox, GameObject attacker)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HnSF.Combat.HitboxGroup.html">HitboxGroup</a></td>
+        <td><span class="parametername">hitboxGroup</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">hitboxIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HnSF.Combat.Hurtbox.html">Hurtbox</a></td>
+        <td><span class="parametername">hurtbox</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">attacker</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HnSF.Combat.HurtInfoBase.html">HurtInfoBase</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Combat_HitboxManager_CheckBoxCollision_HnSF_Combat_HitboxGroup_System_Int32_.md&amp;value=---%0Auid%3A%20HnSF.Combat.HitboxManager.CheckBoxCollision(HnSF.Combat.HitboxGroup%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Combat/HitboxManager.cs/#L155">View Source</a>
+  </span>
+  <a id="HnSF_Combat_HitboxManager_CheckBoxCollision_" data-uid="HnSF.Combat.HitboxManager.CheckBoxCollision*"></a>
+  <h4 id="HnSF_Combat_HitboxManager_CheckBoxCollision_HnSF_Combat_HitboxGroup_System_Int32_" data-uid="HnSF.Combat.HitboxManager.CheckBoxCollision(HnSF.Combat.HitboxGroup,System.Int32)">CheckBoxCollision(HitboxGroup, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CheckBoxCollision(HitboxGroup hitboxGroup, int boxIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HnSF.Combat.HitboxGroup.html">HitboxGroup</a></td>
+        <td><span class="parametername">hitboxGroup</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">boxIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Combat_HitboxManager_CheckForCollision_System_Int32_HnSF_Combat_HitboxGroup_GameObject_System_Collections_Generic_List_GameObject__.md&amp;value=---%0Auid%3A%20HnSF.Combat.HitboxManager.CheckForCollision(System.Int32%2CHnSF.Combat.HitboxGroup%2CGameObject%2CSystem.Collections.Generic.List%7BGameObject%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Combat/HitboxManager.cs/#L72">View Source</a>
+  </span>
+  <a id="HnSF_Combat_HitboxManager_CheckForCollision_" data-uid="HnSF.Combat.HitboxManager.CheckForCollision*"></a>
+  <h4 id="HnSF_Combat_HitboxManager_CheckForCollision_System_Int32_HnSF_Combat_HitboxGroup_GameObject_System_Collections_Generic_List_GameObject__" data-uid="HnSF.Combat.HitboxManager.CheckForCollision(System.Int32,HnSF.Combat.HitboxGroup,GameObject,System.Collections.Generic.List{GameObject})">CheckForCollision(Int32, HitboxGroup, GameObject, List&lt;GameObject&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CheckForCollision(int hitboxGroupIndex, HitboxGroup hitboxGroup, GameObject attacker, List&lt;GameObject&gt; ignoreList = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">hitboxGroupIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HnSF.Combat.HitboxGroup.html">HitboxGroup</a></td>
+        <td><span class="parametername">hitboxGroup</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">attacker</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">GameObject</span>&gt;</td>
+        <td><span class="parametername">ignoreList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Combat_HitboxManager_GetIDGroupCollisions_System_Int32_.md&amp;value=---%0Auid%3A%20HnSF.Combat.HitboxManager.GetIDGroupCollisions(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Combat/HitboxManager.cs/#L30">View Source</a>
+  </span>
+  <a id="HnSF_Combat_HitboxManager_GetIDGroupCollisions_" data-uid="HnSF.Combat.HitboxManager.GetIDGroupCollisions*"></a>
+  <h4 id="HnSF_Combat_HitboxManager_GetIDGroupCollisions_System_Int32_" data-uid="HnSF.Combat.HitboxManager.GetIDGroupCollisions(System.Int32)">GetIDGroupCollisions(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual GameObject[] GetIDGroupCollisions(int IDGroup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">IDGroup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Combat_HitboxManager_HitboxGroupHasHurt_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20HnSF.Combat.HitboxManager.HitboxGroupHasHurt(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Combat/HitboxManager.cs/#L59">View Source</a>
+  </span>
+  <a id="HnSF_Combat_HitboxManager_HitboxGroupHasHurt_" data-uid="HnSF.Combat.HitboxManager.HitboxGroupHasHurt*"></a>
+  <h4 id="HnSF_Combat_HitboxManager_HitboxGroupHasHurt_System_Int32_System_Int32_" data-uid="HnSF.Combat.HitboxManager.HitboxGroupHasHurt(System.Int32,System.Int32)">HitboxGroupHasHurt(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>If the given hitbox group has hit anything.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool HitboxGroupHasHurt(int IDGroup, int hitboxGroupID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">IDGroup</span></td>
+        <td><p>The ID group the hitbox group belongs to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">hitboxGroupID</span></td>
+        <td><p>The hitbox group&apos;s identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if the hitbox group has hit something.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Combat_HitboxManager_HurtHurtbox_HnSF_Combat_HitboxGroup_System_Int32_HnSF_Combat_Hurtbox_GameObject_.md&amp;value=---%0Auid%3A%20HnSF.Combat.HitboxManager.HurtHurtbox(HnSF.Combat.HitboxGroup%2CSystem.Int32%2CHnSF.Combat.Hurtbox%2CGameObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Combat/HitboxManager.cs/#L144">View Source</a>
+  </span>
+  <a id="HnSF_Combat_HitboxManager_HurtHurtbox_" data-uid="HnSF.Combat.HitboxManager.HurtHurtbox*"></a>
+  <h4 id="HnSF_Combat_HitboxManager_HurtHurtbox_HnSF_Combat_HitboxGroup_System_Int32_HnSF_Combat_Hurtbox_GameObject_" data-uid="HnSF.Combat.HitboxManager.HurtHurtbox(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox,GameObject)">HurtHurtbox(HitboxGroup, Int32, Hurtbox, GameObject)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void HurtHurtbox(HitboxGroup hitboxGroup, int hitboxIndex, Hurtbox hurtbox, GameObject attacker)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HnSF.Combat.HitboxGroup.html">HitboxGroup</a></td>
+        <td><span class="parametername">hitboxGroup</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">hitboxIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HnSF.Combat.Hurtbox.html">Hurtbox</a></td>
+        <td><span class="parametername">hurtbox</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">attacker</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Combat_HitboxManager_IDGroupHasHurt_System_Int32_.md&amp;value=---%0Auid%3A%20HnSF.Combat.HitboxManager.IDGroupHasHurt(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Combat/HitboxManager.cs/#L44">View Source</a>
+  </span>
+  <a id="HnSF_Combat_HitboxManager_IDGroupHasHurt_" data-uid="HnSF.Combat.HitboxManager.IDGroupHasHurt*"></a>
+  <h4 id="HnSF_Combat_HitboxManager_IDGroupHasHurt_System_Int32_" data-uid="HnSF.Combat.HitboxManager.IDGroupHasHurt(System.Int32)">IDGroupHasHurt(Int32)</h4>
+  <div class="markdown level1 summary"><p>If the given ID group has hit anything.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IDGroupHasHurt(int IDGroup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">IDGroup</span></td>
+        <td><p>The ID group.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if the ID group has hit something.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Combat_HitboxManager_Reset.md&amp;value=---%0Auid%3A%20HnSF.Combat.HitboxManager.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Combat/HitboxManager.cs/#L25">View Source</a>
+  </span>
+  <a id="HnSF_Combat_HitboxManager_Reset_" data-uid="HnSF.Combat.HitboxManager.Reset*"></a>
+  <h4 id="HnSF_Combat_HitboxManager_Reset" data-uid="HnSF.Combat.HitboxManager.Reset">Reset()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Reset()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Combat_HitboxManager_ShouldHurt_HnSF_Combat_HitboxGroup_System_Int32_HnSF_Combat_Hurtbox_.md&amp;value=---%0Auid%3A%20HnSF.Combat.HitboxManager.ShouldHurt(HnSF.Combat.HitboxGroup%2CSystem.Int32%2CHnSF.Combat.Hurtbox)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Combat/HitboxManager.cs/#L139">View Source</a>
+  </span>
+  <a id="HnSF_Combat_HitboxManager_ShouldHurt_" data-uid="HnSF.Combat.HitboxManager.ShouldHurt*"></a>
+  <h4 id="HnSF_Combat_HitboxManager_ShouldHurt_HnSF_Combat_HitboxGroup_System_Int32_HnSF_Combat_Hurtbox_" data-uid="HnSF.Combat.HitboxManager.ShouldHurt(HnSF.Combat.HitboxGroup,System.Int32,HnSF.Combat.Hurtbox)">ShouldHurt(HitboxGroup, Int32, Hurtbox)</h4>
+  <div class="markdown level1 summary"><p>Determines if this hurtbox should be hit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool ShouldHurt(HitboxGroup hitboxGroup, int hitboxIndex, Hurtbox hurtbox)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HnSF.Combat.HitboxGroup.html">HitboxGroup</a></td>
+        <td><span class="parametername">hitboxGroup</span></td>
+        <td><p>The hitbox group of the hitbox.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">hitboxIndex</span></td>
+        <td><p>The index of the hitbox.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HnSF.Combat.Hurtbox.html">Hurtbox</a></td>
+        <td><span class="parametername">hurtbox</span></td>
+        <td><p>The hurtbox that was hit.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>If the hurtbox should be hurt.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Combat_HitboxManager_SortHitHurtboxes.md&amp;value=---%0Auid%3A%20HnSF.Combat.HitboxManager.SortHitHurtboxes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Combat/HitboxManager.cs/#L109">View Source</a>
+  </span>
+  <a id="HnSF_Combat_HitboxManager_SortHitHurtboxes_" data-uid="HnSF.Combat.HitboxManager.SortHitHurtboxes*"></a>
+  <h4 id="HnSF_Combat_HitboxManager_SortHitHurtboxes" data-uid="HnSF.Combat.HitboxManager.SortHitHurtboxes">SortHitHurtboxes()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SortHitHurtboxes()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Combat_HitboxManager_TryHitHurtbox_HnSF_Combat_HitboxGroup_System_Int32_System_Int32_System_Int32_GameObject_.md&amp;value=---%0Auid%3A%20HnSF.Combat.HitboxManager.TryHitHurtbox(HnSF.Combat.HitboxGroup%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CGameObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Combat/HitboxManager.cs/#L114">View Source</a>
+  </span>
+  <a id="HnSF_Combat_HitboxManager_TryHitHurtbox_" data-uid="HnSF.Combat.HitboxManager.TryHitHurtbox*"></a>
+  <h4 id="HnSF_Combat_HitboxManager_TryHitHurtbox_HnSF_Combat_HitboxGroup_System_Int32_System_Int32_System_Int32_GameObject_" data-uid="HnSF.Combat.HitboxManager.TryHitHurtbox(HnSF.Combat.HitboxGroup,System.Int32,System.Int32,System.Int32,GameObject)">TryHitHurtbox(HitboxGroup, Int32, Int32, Int32, GameObject)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool TryHitHurtbox(HitboxGroup hitboxGroup, int hitboxIndex, int hurtboxIndex, int hitboxGroupIndex, GameObject attacker)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HnSF.Combat.HitboxGroup.html">HitboxGroup</a></td>
+        <td><span class="parametername">hitboxGroup</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">hitboxIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">hurtboxIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">hitboxGroupIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">attacker</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Combat_HitboxManager_OnHitHurtbox.md&amp;value=---%0Auid%3A%20HnSF.Combat.HitboxManager.OnHitHurtbox%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Combat/HitboxManager.cs/#L20">View Source</a>
+  </span>
+  <h4 id="HnSF_Combat_HitboxManager_OnHitHurtbox" data-uid="HnSF.Combat.HitboxManager.OnHitHurtbox">OnHitHurtbox</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event HitboxManager.HitboxGroupEventAction OnHitHurtbox</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HnSF.Combat.HitboxManager.HitboxGroupEventAction.html">HitboxManager.HitboxGroupEventAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Combat_HitboxManager.md&amp;value=---%0Auid%3A%20HnSF.Combat.HitboxManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Combat/HitboxManager.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Hack and Slash Framework Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
