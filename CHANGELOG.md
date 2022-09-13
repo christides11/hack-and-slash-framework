@@ -1,3 +1,10 @@
+# [39.3.0](https://github.com/christides11/hack-and-slash-framework/compare/v39.2.4...v39.3.0) (2022-09-13)
+
+
+### Features
+
+* MarkForStateChange frame var ([ff279f1](https://github.com/christides11/hack-and-slash-framework/commit/ff279f14ad1b8f3cb3268f57d7ad42017c864691))
+
 ## [39.2.4](https://github.com/christides11/hack-and-slash-framework/compare/v39.2.3...v39.2.4) (2022-08-20)
 
 
