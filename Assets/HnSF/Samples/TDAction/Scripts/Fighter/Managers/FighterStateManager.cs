@@ -25,6 +25,7 @@ namespace HnSF.Sample.TDAction
         private bool markedForStateChange = false;
         private int nextMoveset = -1;
         private int nextState = 0;
+        private int nextFrame = 0;
         public FighterManager fighterManager;
 
         [NonSerialized] public StateFunctionMapper functionMapperBase = new StateFunctionMapper(); 
@@ -85,11 +86,12 @@ namespace HnSF.Sample.TDAction
             }
         }
 
-        public void MarkForStateChange(int nextState, int moveset = -1)
+        public void MarkForStateChange(int nextState, int moveset = -1, int frame = 0)
         {
             markedForStateChange = true;
             this.nextMoveset = moveset == -1 ? CurrentStateMoveset : moveset;
             this.nextState = nextState;
+            this.nextFrame = nextFrame;
         }
 
         public Combat.MovesetDefinition GetMoveset(int index)
