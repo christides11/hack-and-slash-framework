@@ -65,7 +65,6 @@
      <Compile Include="Assets\HnSF\Helpers\HelperFunctions.cs" />
      <Compile Include="Assets\HnSF\Combat\Info\HurtInfo2D.cs" />
      <Compile Include="Assets\HnSF\Combat\Boxes\Hitbox\HitboxType.cs" />
-     <Compile Include="Assets\HnSF\Helpers\UDictionary.cs" />
      <Compile Include="Assets\HnSF\Fighter\IFighterBase.cs" />
      <Compile Include="Assets\HnSF\Combat\Boxes\Hitbox\HitboxForceRelation.cs" />
      <Compile Include="Assets\HnSF\State\Variables\IStateVariables.cs" />
