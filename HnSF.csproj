@@ -83,8 +83,8 @@
      <Compile Include="Assets\HnSF\Combat\Boxes\BoxDefinition.cs" />
      <Compile Include="Assets\HnSF\Combat\Info\HealInfoBase.cs" />
      <Compile Include="Assets\HnSF\State\FighterStateReferenceBase.cs" />
-     <Compile Include="Assets\HnSF\Combat\MovesetDefinition.cs" />
      <Compile Include="Assets\HnSF\Input\InputDefinition.cs" />
+     <Compile Include="Assets\HnSF\Combat\IMovesetDefinition.cs" />
      <None Include="Assets\HnSF\HnSF.asmdef" />
      <None Include="Assets\HnSF\package.json" />
      <Reference Include="UnityEngine">
