@@ -1,4 +1,6 @@
-﻿namespace HnSF.Fighters
+﻿using HnSF.Combat;
+
+namespace HnSF.Fighters
 {
     public interface IFighterStateManager
     {
@@ -8,7 +10,7 @@
         int CurrentStateFrame { get; }
         
         
-        Combat.MovesetDefinition GetMoveset(int index);
+        IMovesetDefinition GetMoveset(int index);
         void MarkForStateChange(int state, int moveset = -1, int frame = 0);
         bool ChangeState(int state, int moveset = -1, int stateFrame = 0, bool callOnInterrupt = true);
         StateTimeline GetState(int state);

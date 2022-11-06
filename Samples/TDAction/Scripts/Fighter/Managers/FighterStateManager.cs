@@ -94,7 +94,7 @@ namespace HnSF.Sample.TDAction
             this.nextFrame = nextFrame;
         }
 
-        public Combat.MovesetDefinition GetMoveset(int index)
+        public IMovesetDefinition GetMoveset(int index)
         {
             return fighterManager.definition.movesets[index];
         }
@@ -131,17 +131,17 @@ namespace HnSF.Sample.TDAction
 
         public StateTimeline GetState()
         {
-            return (StateTimeline)fighterManager.definition.movesets[CurrentStateMoveset].stateMap[CurrentState];
+            return (StateTimeline)fighterManager.definition.movesets[CurrentStateMoveset].GetState(CurrentState);
         }
         
         public HnSF.StateTimeline GetState(int state)
         {
-            return fighterManager.definition.movesets[CurrentStateMoveset].stateMap[state];
+            return fighterManager.definition.movesets[CurrentStateMoveset].GetState(state);
         }
 
         public HnSF.StateTimeline GetState(int moveset, int state)
         {
-            return fighterManager.definition.movesets[moveset].stateMap[state];
+            return fighterManager.definition.movesets[moveset].GetState(state);
         }
 
         public void SetMoveset(int index)
