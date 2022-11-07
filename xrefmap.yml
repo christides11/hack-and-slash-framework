@@ -1431,6 +1431,25 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.IHurtable.Hurt
   nameWithType: IHurtable.Hurt
+- uid: HnSF.Combat.IMovesetDefinition
+  name: IMovesetDefinition
+  href: api/HnSF.Combat.IMovesetDefinition.html
+  commentId: T:HnSF.Combat.IMovesetDefinition
+  fullName: HnSF.Combat.IMovesetDefinition
+  nameWithType: IMovesetDefinition
+- uid: HnSF.Combat.IMovesetDefinition.GetState(System.Int32)
+  name: GetState(Int32)
+  href: api/HnSF.Combat.IMovesetDefinition.html#HnSF_Combat_IMovesetDefinition_GetState_System_Int32_
+  commentId: M:HnSF.Combat.IMovesetDefinition.GetState(System.Int32)
+  fullName: HnSF.Combat.IMovesetDefinition.GetState(System.Int32)
+  nameWithType: IMovesetDefinition.GetState(Int32)
+- uid: HnSF.Combat.IMovesetDefinition.GetState*
+  name: GetState
+  href: api/HnSF.Combat.IMovesetDefinition.html#HnSF_Combat_IMovesetDefinition_GetState_
+  commentId: Overload:HnSF.Combat.IMovesetDefinition.GetState
+  isSpec: "True"
+  fullName: HnSF.Combat.IMovesetDefinition.GetState
+  nameWithType: IMovesetDefinition.GetState
 - uid: HnSF.Combat.ITargetable
   name: ITargetable
   href: api/HnSF.Combat.ITargetable.html
@@ -1476,37 +1495,6 @@ references:
   isSpec: "True"
   fullName: HnSF.Combat.ITargetable.Targetable
   nameWithType: ITargetable.Targetable
-- uid: HnSF.Combat.MovesetDefinition
-  name: MovesetDefinition
-  href: api/HnSF.Combat.MovesetDefinition.html
-  commentId: T:HnSF.Combat.MovesetDefinition
-  fullName: HnSF.Combat.MovesetDefinition
-  nameWithType: MovesetDefinition
-- uid: HnSF.Combat.MovesetDefinition.Initialize
-  name: Initialize()
-  href: api/HnSF.Combat.MovesetDefinition.html#HnSF_Combat_MovesetDefinition_Initialize
-  commentId: M:HnSF.Combat.MovesetDefinition.Initialize
-  fullName: HnSF.Combat.MovesetDefinition.Initialize()
-  nameWithType: MovesetDefinition.Initialize()
-- uid: HnSF.Combat.MovesetDefinition.Initialize*
-  name: Initialize
-  href: api/HnSF.Combat.MovesetDefinition.html#HnSF_Combat_MovesetDefinition_Initialize_
-  commentId: Overload:HnSF.Combat.MovesetDefinition.Initialize
-  isSpec: "True"
-  fullName: HnSF.Combat.MovesetDefinition.Initialize
-  nameWithType: MovesetDefinition.Initialize
-- uid: HnSF.Combat.MovesetDefinition.stateMap
-  name: stateMap
-  href: api/HnSF.Combat.MovesetDefinition.html#HnSF_Combat_MovesetDefinition_stateMap
-  commentId: F:HnSF.Combat.MovesetDefinition.stateMap
-  fullName: HnSF.Combat.MovesetDefinition.stateMap
-  nameWithType: MovesetDefinition.stateMap
-- uid: HnSF.Combat.MovesetDefinition.states
-  name: states
-  href: api/HnSF.Combat.MovesetDefinition.html#HnSF_Combat_MovesetDefinition_states
-  commentId: F:HnSF.Combat.MovesetDefinition.states
-  fullName: HnSF.Combat.MovesetDefinition.states
-  nameWithType: MovesetDefinition.states
 - uid: HnSF.Combat.OnHitType
   name: OnHitType
   href: api/HnSF.Combat.OnHitType.html
@@ -4372,6 +4360,43 @@ references:
   commentId: T:HnSF.Sample.TDAction.MovesetDefinition
   fullName: HnSF.Sample.TDAction.MovesetDefinition
   nameWithType: MovesetDefinition
+- uid: HnSF.Sample.TDAction.MovesetDefinition.airActions
+  name: airActions
+  href: api/HnSF.Sample.TDAction.MovesetDefinition.html#HnSF_Sample_TDAction_MovesetDefinition_airActions
+  commentId: F:HnSF.Sample.TDAction.MovesetDefinition.airActions
+  fullName: HnSF.Sample.TDAction.MovesetDefinition.airActions
+  nameWithType: MovesetDefinition.airActions
+- uid: HnSF.Sample.TDAction.MovesetDefinition.airAttacks
+  name: airAttacks
+  href: api/HnSF.Sample.TDAction.MovesetDefinition.html#HnSF_Sample_TDAction_MovesetDefinition_airAttacks
+  commentId: F:HnSF.Sample.TDAction.MovesetDefinition.airAttacks
+  fullName: HnSF.Sample.TDAction.MovesetDefinition.airAttacks
+  nameWithType: MovesetDefinition.airAttacks
+- uid: HnSF.Sample.TDAction.MovesetDefinition.GetState(System.Int32)
+  name: GetState(Int32)
+  href: api/HnSF.Sample.TDAction.MovesetDefinition.html#HnSF_Sample_TDAction_MovesetDefinition_GetState_System_Int32_
+  commentId: M:HnSF.Sample.TDAction.MovesetDefinition.GetState(System.Int32)
+  fullName: HnSF.Sample.TDAction.MovesetDefinition.GetState(System.Int32)
+  nameWithType: MovesetDefinition.GetState(Int32)
+- uid: HnSF.Sample.TDAction.MovesetDefinition.GetState*
+  name: GetState
+  href: api/HnSF.Sample.TDAction.MovesetDefinition.html#HnSF_Sample_TDAction_MovesetDefinition_GetState_
+  commentId: Overload:HnSF.Sample.TDAction.MovesetDefinition.GetState
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.MovesetDefinition.GetState
+  nameWithType: MovesetDefinition.GetState
+- uid: HnSF.Sample.TDAction.MovesetDefinition.groundActions
+  name: groundActions
+  href: api/HnSF.Sample.TDAction.MovesetDefinition.html#HnSF_Sample_TDAction_MovesetDefinition_groundActions
+  commentId: F:HnSF.Sample.TDAction.MovesetDefinition.groundActions
+  fullName: HnSF.Sample.TDAction.MovesetDefinition.groundActions
+  nameWithType: MovesetDefinition.groundActions
+- uid: HnSF.Sample.TDAction.MovesetDefinition.groundAttacks
+  name: groundAttacks
+  href: api/HnSF.Sample.TDAction.MovesetDefinition.html#HnSF_Sample_TDAction_MovesetDefinition_groundAttacks
+  commentId: F:HnSF.Sample.TDAction.MovesetDefinition.groundAttacks
+  fullName: HnSF.Sample.TDAction.MovesetDefinition.groundAttacks
+  nameWithType: MovesetDefinition.groundAttacks
 - uid: HnSF.Sample.TDAction.MovesetDefinition.Initialize
   name: Initialize()
   href: api/HnSF.Sample.TDAction.MovesetDefinition.html#HnSF_Sample_TDAction_MovesetDefinition_Initialize
@@ -4385,6 +4410,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.MovesetDefinition.Initialize
   nameWithType: MovesetDefinition.Initialize
+- uid: HnSF.Sample.TDAction.MovesetDefinition.stateMap
+  name: stateMap
+  href: api/HnSF.Sample.TDAction.MovesetDefinition.html#HnSF_Sample_TDAction_MovesetDefinition_stateMap
+  commentId: F:HnSF.Sample.TDAction.MovesetDefinition.stateMap
+  fullName: HnSF.Sample.TDAction.MovesetDefinition.stateMap
+  nameWithType: MovesetDefinition.stateMap
 - uid: HnSF.Sample.TDAction.PlayerInputData
   name: PlayerInputData
   href: api/HnSF.Sample.TDAction.PlayerInputData.html
