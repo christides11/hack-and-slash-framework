@@ -1,3 +1,5 @@
+# [39.4.0](https://github.com/christides11/hack-and-slash-framework/compare/v39.3.0...v39.4.0) (2022-11-07)
+
 # [39.3.0](https://github.com/christides11/hack-and-slash-framework/compare/v39.2.4...v39.3.0) (2022-09-13)
 
 
