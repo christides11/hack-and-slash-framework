@@ -1,3 +1,10 @@
+## [39.4.1](https://github.com/christides11/hack-and-slash-framework/compare/v39.4.0...v39.4.1) (2022-11-13)
+
+
+### Bug Fixes
+
+* Fixed contexual menu freezing ([8dc65fa](https://github.com/christides11/hack-and-slash-framework/commit/8dc65fa6698e80753f83cc4e3606ac7e77156081))
+
 # [39.4.0](https://github.com/christides11/hack-and-slash-framework/compare/v39.3.0...v39.4.0) (2022-11-07)
 
 # [39.3.0](https://github.com/christides11/hack-and-slash-framework/compare/v39.2.4...v39.3.0) (2022-09-13)
