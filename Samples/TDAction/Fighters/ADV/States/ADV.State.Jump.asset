@@ -19,38 +19,7 @@ MonoBehaviour:
   autoIncrement: 1
   autoLoop: 1
   autoLoopFrame: 1
-  data:
-  - rid: 2193520578909962240
-  - rid: 2193520578909962241
+  data: []
   references:
     version: 2
-    RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
-    - rid: 2193520578909962240
-      type: {class: ChangeState, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
-      data:
-        name: 
-        id: 0
-        frameRanges:
-        - {x: 1, y: 2}
-        condition:
-          rid: -2
-        stateMovesetID: 0
-        stateID: 0
-        parent: -1
-        children: 
-    - rid: 2193520578909962241
-      type: {class: VarApplyTraction, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
-      data:
-        name: 
-        id: 1
-        frameRanges:
-        - {x: 3, y: 6}
-        condition:
-          rid: -2
-        useTractionStat: 0
-        aerialTraction: 0
-        traction: 0
-        parent: -1
-        children: 
+    RefIds: []

@@ -81,6 +81,7 @@ namespace HnSF
                 RefreshAll(true);
             };
 
+            Debug.Log("Create GUI");
             Undo.undoRedoPerformed += OnUndoRedoPerformed;
         }
 
@@ -151,7 +152,8 @@ namespace HnSF
         {
             VisualElement root = rootVisualElement;
         }
-        
+
+        private ContextualMenuManipulator sidebarPanelMenuManipulator = null;
         public virtual void RefreshSideBar()
         {
             VisualElement root = rootVisualElement;
@@ -162,14 +164,20 @@ namespace HnSF
             {
                 sidebarPanel.contentContainer.Remove(container);
             }
-            
-            sidebarPanel.AddManipulator(new ContextualMenuManipulator((ContextualMenuPopulateEvent evt) =>
+
+            if(sidebarPanelMenuManipulator != null) sidebarPanel.RemoveManipulator(sidebarPanelMenuManipulator);
+            sidebarPanelMenuManipulator = new ContextualMenuManipulator((ContextualMenuPopulateEvent evt) =>
             {
                 foreach (var c in stateVariableTypes)
                 {
-                    evt.menu.AppendAction("Add/"+c.Key, (x) => { AddStateVariable(c); RefreshAll(true); });
+                    evt.menu.AppendAction("Add/" + c.Key, (x) =>
+                    {
+                        AddStateVariable(c);
+                        RefreshAll(true);
+                    });
                 }
-            }));
+            });
+            sidebarPanel.AddManipulator(sidebarPanelMenuManipulator);
             
             StateTimeline[] stateChain = GetStateTimelineParents(stateTimeline);
             for (int s = 0; s < stateChain.Length; s++)
@@ -206,7 +214,7 @@ namespace HnSF
                 SidebarCreateLabel(sidebarPanel, stateTimeline, stateTimeline.data[childIndex].ID);
             }
         }
-
+        
         public virtual void SidebarSetupLabel(StateTimeline stateTimeline, int dataID, Button thisSideBar, int index)
         {
             thisSideBar.AddManipulator(new ContextualMenuManipulator((ContextualMenuPopulateEvent evt) =>
