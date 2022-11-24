@@ -1,6 +1,6 @@
 {
   "name": "com.christides.hack-and-slash-framework",
-  "version": "39.4.1",
+  "version": "39.5.0",
   "displayName": "Hack and Slash Framework",
   "description": "A framework for hack and slash games.",
   "unity": "2019.4",
