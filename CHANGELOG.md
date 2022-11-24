@@ -1,3 +1,10 @@
+# [39.5.0](https://github.com/christides11/hack-and-slash-framework/compare/v39.4.1...v39.5.0) (2022-11-24)
+
+
+### Features
+
+* Force parameter for MarkForStateChange ([e386a8f](https://github.com/christides11/hack-and-slash-framework/commit/e386a8fa3a13f8898134fd6c0ec7f9a6ee66aa65))
+
 ## [39.4.1](https://github.com/christides11/hack-and-slash-framework/compare/v39.4.0...v39.4.1) (2022-11-13)
 
 
