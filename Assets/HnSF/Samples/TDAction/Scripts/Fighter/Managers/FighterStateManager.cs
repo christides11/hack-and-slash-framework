@@ -86,7 +86,7 @@ namespace HnSF.Sample.TDAction
             }
         }
 
-        public void MarkForStateChange(int nextState, int moveset = -1, int frame = 0)
+        public void MarkForStateChange(int nextState, int moveset = -1, int frame = 0, bool force = false)
         {
             markedForStateChange = true;
             this.nextMoveset = moveset == -1 ? CurrentStateMoveset : moveset;
