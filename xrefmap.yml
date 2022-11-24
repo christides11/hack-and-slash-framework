@@ -1945,12 +1945,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.IFighterStateManager.IncrementFrame
   nameWithType: IFighterStateManager.IncrementFrame
-- uid: HnSF.Fighters.IFighterStateManager.MarkForStateChange(System.Int32,System.Int32,System.Int32)
-  name: MarkForStateChange(Int32, Int32, Int32)
-  href: api/HnSF.Fighters.IFighterStateManager.html#HnSF_Fighters_IFighterStateManager_MarkForStateChange_System_Int32_System_Int32_System_Int32_
-  commentId: M:HnSF.Fighters.IFighterStateManager.MarkForStateChange(System.Int32,System.Int32,System.Int32)
-  fullName: HnSF.Fighters.IFighterStateManager.MarkForStateChange(System.Int32, System.Int32, System.Int32)
-  nameWithType: IFighterStateManager.MarkForStateChange(Int32, Int32, Int32)
+- uid: HnSF.Fighters.IFighterStateManager.MarkForStateChange(System.Int32,System.Int32,System.Int32,System.Boolean)
+  name: MarkForStateChange(Int32, Int32, Int32, Boolean)
+  href: api/HnSF.Fighters.IFighterStateManager.html#HnSF_Fighters_IFighterStateManager_MarkForStateChange_System_Int32_System_Int32_System_Int32_System_Boolean_
+  commentId: M:HnSF.Fighters.IFighterStateManager.MarkForStateChange(System.Int32,System.Int32,System.Int32,System.Boolean)
+  fullName: HnSF.Fighters.IFighterStateManager.MarkForStateChange(System.Int32, System.Int32, System.Int32, System.Boolean)
+  nameWithType: IFighterStateManager.MarkForStateChange(Int32, Int32, Int32, Boolean)
 - uid: HnSF.Fighters.IFighterStateManager.MarkForStateChange*
   name: MarkForStateChange
   href: api/HnSF.Fighters.IFighterStateManager.html#HnSF_Fighters_IFighterStateManager_MarkForStateChange_
@@ -4059,12 +4059,12 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.FighterStateManager.InitState
   nameWithType: FighterStateManager.InitState
-- uid: HnSF.Sample.TDAction.FighterStateManager.MarkForStateChange(System.Int32,System.Int32,System.Int32)
-  name: MarkForStateChange(Int32, Int32, Int32)
-  href: api/HnSF.Sample.TDAction.FighterStateManager.html#HnSF_Sample_TDAction_FighterStateManager_MarkForStateChange_System_Int32_System_Int32_System_Int32_
-  commentId: M:HnSF.Sample.TDAction.FighterStateManager.MarkForStateChange(System.Int32,System.Int32,System.Int32)
-  fullName: HnSF.Sample.TDAction.FighterStateManager.MarkForStateChange(System.Int32, System.Int32, System.Int32)
-  nameWithType: FighterStateManager.MarkForStateChange(Int32, Int32, Int32)
+- uid: HnSF.Sample.TDAction.FighterStateManager.MarkForStateChange(System.Int32,System.Int32,System.Int32,System.Boolean)
+  name: MarkForStateChange(Int32, Int32, Int32, Boolean)
+  href: api/HnSF.Sample.TDAction.FighterStateManager.html#HnSF_Sample_TDAction_FighterStateManager_MarkForStateChange_System_Int32_System_Int32_System_Int32_System_Boolean_
+  commentId: M:HnSF.Sample.TDAction.FighterStateManager.MarkForStateChange(System.Int32,System.Int32,System.Int32,System.Boolean)
+  fullName: HnSF.Sample.TDAction.FighterStateManager.MarkForStateChange(System.Int32, System.Int32, System.Int32, System.Boolean)
+  nameWithType: FighterStateManager.MarkForStateChange(Int32, Int32, Int32, Boolean)
 - uid: HnSF.Sample.TDAction.FighterStateManager.MarkForStateChange*
   name: MarkForStateChange
   href: api/HnSF.Sample.TDAction.FighterStateManager.html#HnSF_Sample_TDAction_FighterStateManager_MarkForStateChange_
