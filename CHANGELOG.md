@@ -1,3 +1,15 @@
+# [39.6.0](https://github.com/christides11/hack-and-slash-framework/compare/v39.5.0...v39.6.0) (2023-02-23)
+
+
+### Features
+
+* State frame range % for functions ([ffd4229](https://github.com/christides11/hack-and-slash-framework/commit/ffd4229e88dfae1b47019cc9d976990d3d04bff6))
+
+
+### BREAKING CHANGES
+
+* Added frame range percentage for functions.
+
 # [39.5.0](https://github.com/christides11/hack-and-slash-framework/compare/v39.4.1...v39.5.0) (2022-11-24)
 
 
