@@ -44,12 +44,13 @@ namespace HnSF.Sample.TDAction
 
         private void ProcessState(StateTimeline state, bool onInterrupt = false, bool autoIncrement = false, bool autoLoop = false)
         {
+            var topState = state;
             while (true)
             {
                 int realFrame = onInterrupt ? state.totalFrames+1 : Mathf.Clamp(CurrentStateFrame, 0, state.totalFrames);
                 foreach (var d in state.data)
                 {
-                    ProcessStateVariables(state, d, realFrame);
+                    ProcessStateVariables(state, d, realFrame, topState.totalFrames);
                 }
 
                 if (!state.useBaseState) break;
@@ -64,26 +65,40 @@ namespace HnSF.Sample.TDAction
             }
         }
 
-        private void ProcessStateVariables(StateTimeline timeline, IStateVariables d, int realFrame)
+        private void ProcessStateVariables(StateTimeline timeline, IStateVariables d, int realFrame, int totalFrames)
         {
-            var valid = true;
+            var valid = d.FrameRanges.Length == 0 ? true : false;
+            int frameRange = 0;
+            int frStart = 0;
+            int frEnd = 0;
             for (int j = 0; j < d.FrameRanges.Length; j++)
             {
-                if (!(realFrame < d.FrameRanges[j].x) &&
-                    !(realFrame > d.FrameRanges[j].y)) continue;
-                valid = false;
-                break;
+                frStart = ConvertFrameRangeNumber((int)d.FrameRanges[j].x, totalFrames);
+                frEnd = ConvertFrameRangeNumber((int)d.FrameRanges[j].y, totalFrames);
+                if (realFrame >= frStart && realFrame <= frEnd)
+                {
+                    frameRange = j;
+                    valid = true;
+                    break;
+                }
             }
 
             if (!valid) return;
             var varType = d.GetType();
             if (!conditionMapperBase.TryCondition(varType, fighterManager, d.Condition, timeline, realFrame)) return;
-            functionMapperBase.functions[varType](fighterManager, d, timeline, realFrame);
+            functionMapperBase.functions[varType](fighterManager, d, timeline, realFrame, (float)(realFrame - frStart) / (float)(frEnd - frStart));
 
             foreach (var childID in d.Children)
             {
-                ProcessStateVariables(timeline, timeline.data[timeline.stateVariablesIDMap[childID]], realFrame);
+                ProcessStateVariables(timeline, timeline.data[timeline.stateVariablesIDMap[childID]], realFrame, totalFrames);
             }
+        }
+
+        private int ConvertFrameRangeNumber(int number, int totalFrames)
+        {
+            if (number == -1) return totalFrames;
+            if (number == -2) return totalFrames + 1;
+            return number;
         }
 
         public void MarkForStateChange(int nextState, int moveset = -1, int frame = 0, bool force = false)
@@ -91,7 +106,7 @@ namespace HnSF.Sample.TDAction
             markedForStateChange = true;
             this.nextMoveset = moveset == -1 ? CurrentStateMoveset : moveset;
             this.nextState = nextState;
-            this.nextFrame = nextFrame;
+            this.nextFrame = frame;
         }
 
         public IMovesetDefinition GetMoveset(int index)
