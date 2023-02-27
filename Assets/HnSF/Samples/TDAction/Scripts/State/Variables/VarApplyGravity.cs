@@ -20,7 +20,7 @@ namespace HnSF.Sample.TDAction.State
             set => id = value;
         }
         public int FunctionMap => (int)StateFunctionEnum.APPLY_GRAVITY;
-        public IConditionVariables Condition => condition;
+        public IConditionVariables Condition { get => condition; set => condition = value; }
         public int Parent
         {
             get => parent;

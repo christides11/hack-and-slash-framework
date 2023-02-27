@@ -17,7 +17,7 @@ namespace HnSF.Sample.TDAction.State
             set => id = value;
         }
         public int FunctionMap => (int)StateFunctionEnum.SET_FALL_SPEED;
-        public IConditionVariables Condition => condition;
+        public IConditionVariables Condition { get => condition; set => condition = value; }
 
         public int Parent
         {
@@ -51,8 +51,6 @@ namespace HnSF.Sample.TDAction.State
         {
             return new VarSetFallSpeed()
             {
-                frameRanges = frameRanges,
-                condition = condition.Copy(),
                 value = value
             };
         }

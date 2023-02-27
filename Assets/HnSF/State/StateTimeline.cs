@@ -112,7 +112,7 @@ namespace HnSF
             }
         }
 
-        public void AddStateVariable(IStateVariables var, int parentID = -1)
+        public int AddStateVariable(IStateVariables var, int parentID = -1)
         {
             BuildStateVariablesIDMap();
             #if UNITY_EDITOR
@@ -124,6 +124,7 @@ namespace HnSF
             data[^1].Parent = parentID;
             data[^1].Children = Array.Empty<int>();
             data[^1].FrameRanges = Array.Empty<Vector2Int>();
+            int dataIndex = data.Length - 1;
             if (parentID != -1)
             {
                 int parentIndex = stateVariablesIDMap[parentID];
@@ -134,6 +135,7 @@ namespace HnSF
                 tempChildren[^1] = data[^1].ID;
                 data[parentIndex].Children = tempChildren;
             }
+            return dataIndex;
         }
 
         public void RemoveStateVariable(int index)
@@ -180,27 +182,36 @@ namespace HnSF
 
         public IStateVariables CopyStateVariable(int index)
         {
-            return data[index].Copy();
+            var copyData = data[index].Copy();
+            copyData.Name = data[index].Name;
+            copyData.FrameRanges = data[index].FrameRanges;
+            copyData.Condition = data[index].Condition?.Copy();
+            return copyData;
         }
 
-        public void PasteInPlace(int index, IStateVariables wantedData)
+        public IStateVariables[] CopyStateVariableTree(int index)
+        {
+            return null;
+        }
+
+        public void PasteInPlace(int index, IStateVariables newData)
         {
 #if UNITY_EDITOR
             UndoUtility.RecordObject(this, "Pasted State Variable");
 #endif
-            var temp = data[index];
+            var oldData = data[index];
 
-            var nameCopy = temp.Name;
-            var idCopy = temp.ID;
-            var parentCopy = temp.Parent;
-            var childrenCopy = temp.Children;
-            var frameRangeCopy = temp.FrameRanges;
+            var nameCopy = oldData.Name;
+            var idCopy = oldData.ID;
+            var parentCopy = oldData.Parent;
+            int[] childrenCopy = oldData.Children;
+            var frameRangeCopy = newData.FrameRanges;
 
-            data[index] = wantedData;
+            data[index] = newData.Copy();
+            data[index].Name = nameCopy;
+            data[index].ID = idCopy;
             data[index].Parent = parentCopy;
             data[index].Children = childrenCopy;
-            data[index].ID = idCopy;
-            data[index].Name = nameCopy;
             data[index].FrameRanges = frameRangeCopy;
         }
 
@@ -209,7 +220,9 @@ namespace HnSF
 #if UNITY_EDITOR
             UndoUtility.RecordObject(this, "Pasted State Variable as Child");
 #endif
-            AddStateVariable(wantedChildData, parentIndex);
+            var frameRangeCopy = wantedChildData.FrameRanges;
+            var dataIndex = AddStateVariable(wantedChildData.Copy(), parentIndex);
+            data[dataIndex].FrameRanges = frameRangeCopy;
         }
     }
 }

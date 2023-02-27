@@ -84,7 +84,6 @@ namespace HnSF
                 RefreshAll(true);
             };
 
-            Debug.Log("Create GUI");
             Undo.undoRedoPerformed += OnUndoRedoPerformed;
         }
 
