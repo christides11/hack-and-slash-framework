@@ -194,12 +194,14 @@ namespace HnSF
             var idCopy = temp.ID;
             var parentCopy = temp.Parent;
             var childrenCopy = temp.Children;
+            var frameRangeCopy = temp.FrameRanges;
 
             data[index] = wantedData;
             data[index].Parent = parentCopy;
             data[index].Children = childrenCopy;
             data[index].ID = idCopy;
             data[index].Name = nameCopy;
+            data[index].FrameRanges = frameRangeCopy;
         }
 
         public void PasteAsChild(int parentIndex, IStateVariables wantedChildData)
