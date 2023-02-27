@@ -5933,6 +5933,19 @@ references:
   isSpec: "True"
   fullName: HnSF.StateTimeline.CopyStateVariable
   nameWithType: StateTimeline.CopyStateVariable
+- uid: HnSF.StateTimeline.CopyStateVariableTree(System.Int32)
+  name: CopyStateVariableTree(Int32)
+  href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_CopyStateVariableTree_System_Int32_
+  commentId: M:HnSF.StateTimeline.CopyStateVariableTree(System.Int32)
+  fullName: HnSF.StateTimeline.CopyStateVariableTree(System.Int32)
+  nameWithType: StateTimeline.CopyStateVariableTree(Int32)
+- uid: HnSF.StateTimeline.CopyStateVariableTree*
+  name: CopyStateVariableTree
+  href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_CopyStateVariableTree_
+  commentId: Overload:HnSF.StateTimeline.CopyStateVariableTree
+  isSpec: "True"
+  fullName: HnSF.StateTimeline.CopyStateVariableTree
+  nameWithType: StateTimeline.CopyStateVariableTree
 - uid: HnSF.StateTimeline.data
   name: data
   href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_data

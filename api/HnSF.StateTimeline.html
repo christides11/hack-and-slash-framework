@@ -375,7 +375,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AddStateVariable(IStateVariables var, int parentID = -1)</code></pre>
+    <pre><code class="lang-csharp hljs">public int AddStateVariable(IStateVariables var, int parentID = -1)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -395,6 +395,21 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">parentID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -419,7 +434,7 @@
     <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_StateTimeline_CopyStateVariable_System_Int32_.md&amp;value=---%0Auid%3A%20HnSF.StateTimeline.CopyStateVariable(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/StateTimeline.cs/#L181">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/StateTimeline.cs/#L183">View Source</a>
   </span>
   <a id="HnSF_StateTimeline_CopyStateVariable_" data-uid="HnSF.StateTimeline.CopyStateVariable*"></a>
   <h4 id="HnSF_StateTimeline_CopyStateVariable_System_Int32_" data-uid="HnSF.StateTimeline.CopyStateVariable(System.Int32)">CopyStateVariable(Int32)</h4>
@@ -457,6 +472,53 @@
     <tbody>
       <tr>
         <td><a class="xref" href="HnSF.IStateVariables.html">IStateVariables</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_StateTimeline_CopyStateVariableTree_System_Int32_.md&amp;value=---%0Auid%3A%20HnSF.StateTimeline.CopyStateVariableTree(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/StateTimeline.cs/#L192">View Source</a>
+  </span>
+  <a id="HnSF_StateTimeline_CopyStateVariableTree_" data-uid="HnSF.StateTimeline.CopyStateVariableTree*"></a>
+  <h4 id="HnSF_StateTimeline_CopyStateVariableTree_System_Int32_" data-uid="HnSF.StateTimeline.CopyStateVariableTree(System.Int32)">CopyStateVariableTree(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IStateVariables[] CopyStateVariableTree(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HnSF.IStateVariables.html">IStateVariables</a>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -622,7 +684,7 @@
     <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_StateTimeline_PasteAsChild_System_Int32_HnSF_IStateVariables_.md&amp;value=---%0Auid%3A%20HnSF.StateTimeline.PasteAsChild(System.Int32%2CHnSF.IStateVariables)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/StateTimeline.cs/#L207">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/StateTimeline.cs/#L218">View Source</a>
   </span>
   <a id="HnSF_StateTimeline_PasteAsChild_" data-uid="HnSF.StateTimeline.PasteAsChild*"></a>
   <h4 id="HnSF_StateTimeline_PasteAsChild_System_Int32_HnSF_IStateVariables_" data-uid="HnSF.StateTimeline.PasteAsChild(System.Int32,HnSF.IStateVariables)">PasteAsChild(Int32, IStateVariables)</h4>
@@ -659,7 +721,7 @@
     <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_StateTimeline_PasteInPlace_System_Int32_HnSF_IStateVariables_.md&amp;value=---%0Auid%3A%20HnSF.StateTimeline.PasteInPlace(System.Int32%2CHnSF.IStateVariables)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/StateTimeline.cs/#L186">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/StateTimeline.cs/#L197">View Source</a>
   </span>
   <a id="HnSF_StateTimeline_PasteInPlace_" data-uid="HnSF.StateTimeline.PasteInPlace*"></a>
   <h4 id="HnSF_StateTimeline_PasteInPlace_System_Int32_HnSF_IStateVariables_" data-uid="HnSF.StateTimeline.PasteInPlace(System.Int32,HnSF.IStateVariables)">PasteInPlace(Int32, IStateVariables)</h4>
@@ -667,7 +729,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void PasteInPlace(int index, IStateVariables wantedData)</code></pre>
+    <pre><code class="lang-csharp hljs">public void PasteInPlace(int index, IStateVariables newData)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -686,7 +748,7 @@
       </tr>
       <tr>
         <td><a class="xref" href="HnSF.IStateVariables.html">IStateVariables</a></td>
-        <td><span class="parametername">wantedData</span></td>
+        <td><span class="parametername">newData</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -696,7 +758,7 @@
     <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_StateTimeline_RemoveStateVariable_System_Int32_.md&amp;value=---%0Auid%3A%20HnSF.StateTimeline.RemoveStateVariable(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/StateTimeline.cs/#L139">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/StateTimeline.cs/#L141">View Source</a>
   </span>
   <a id="HnSF_StateTimeline_RemoveStateVariable_" data-uid="HnSF.StateTimeline.RemoveStateVariable*"></a>
   <h4 id="HnSF_StateTimeline_RemoveStateVariable_System_Int32_" data-uid="HnSF.StateTimeline.RemoveStateVariable(System.Int32)">RemoveStateVariable(Int32)</h4>
