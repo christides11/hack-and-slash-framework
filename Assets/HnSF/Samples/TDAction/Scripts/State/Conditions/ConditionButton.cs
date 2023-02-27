@@ -15,5 +15,16 @@ namespace HnSF.Sample.TDAction.State
         public ButtonStateType buttonState;
         public int offset;
         public int buffer;
+
+        public IConditionVariables Copy()
+        {
+            return new ConditionButton()
+            {
+                button = button,
+                buttonState = buttonState,
+                offset = offset,
+                buffer = buffer
+            };
+        }
     }
 }

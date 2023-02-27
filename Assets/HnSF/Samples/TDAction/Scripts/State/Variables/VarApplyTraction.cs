@@ -38,15 +38,27 @@ namespace HnSF.Sample.TDAction.State
         }
     
         [SerializeField, HideInInspector] private int id;
+
         [SerializeField] public Vector2Int[] frameRanges;
         [SelectImplementation(typeof(IConditionVariables))] [SerializeField, SerializeReference] 
         public IConditionVariables condition;
-
         public bool useTractionStat;
         public bool aerialTraction;
         public float traction;
         
         [SerializeField, HideInInspector] private int parent;
         [SerializeField, HideInInspector] private int[] children;
+
+        public IStateVariables Copy()
+        {
+            return new VarApplyTraction()
+            {
+                frameRanges = frameRanges,
+                condition = condition.Copy(),
+                useTractionStat = useTractionStat,
+                aerialTraction = aerialTraction,
+                traction = traction,
+            };
+        }
     }
 }

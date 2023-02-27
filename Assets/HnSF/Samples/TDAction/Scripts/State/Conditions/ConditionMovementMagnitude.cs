@@ -10,5 +10,14 @@ namespace HnSF.Sample.TDAction.State
 
         public float sqrMagnitude;
         public bool inverse;
+
+        public IConditionVariables Copy()
+        {
+            return new ConditionMovementMagnitude()
+            {
+                sqrMagnitude = sqrMagnitude,
+                inverse = inverse
+            };
+        }
     }
 }

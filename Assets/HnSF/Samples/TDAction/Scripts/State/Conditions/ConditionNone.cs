@@ -7,5 +7,10 @@ namespace HnSF.Sample.TDAction.State
     public struct ConditionNone : IConditionVariables
     {
         public int FunctionMap => (int)ConditionFunctionEnum.NONE;
+
+        public IConditionVariables Copy()
+        {
+            return new ConditionNone();
+        }
     }
 }
