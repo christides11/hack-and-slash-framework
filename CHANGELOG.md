@@ -1,3 +1,10 @@
+## [39.7.3](https://github.com/christides11/hack-and-slash-framework/compare/v39.7.2...v39.7.3) (2023-02-27)
+
+
+### Bug Fixes
+
+* Fixed copying IStateVariable condition ([602bee8](https://github.com/christides11/hack-and-slash-framework/commit/602bee850813cd29c46c4db2e4f85b652c669b62))
+
 ## [39.7.2](https://github.com/christides11/hack-and-slash-framework/compare/v39.7.1...v39.7.2) (2023-02-27)
 
 
