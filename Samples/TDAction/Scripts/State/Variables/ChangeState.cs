@@ -45,5 +45,16 @@ namespace HnSF.Sample.TDAction.State
         
         [SerializeField, HideInInspector] private int parent;
         [SerializeField, HideInInspector] private int[] children;
+
+        public IStateVariables Copy()
+        {
+            return new ChangeState()
+            {
+                frameRanges = frameRanges,
+                condition = condition.Copy(),
+                stateMovesetID = stateMovesetID,
+                stateID = stateID
+            };
+        }
     }
 }

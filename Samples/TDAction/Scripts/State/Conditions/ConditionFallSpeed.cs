@@ -7,5 +7,15 @@ namespace HnSF.Sample.TDAction.State
         public float minValue;
         public float maxValue;
         public bool inverse;
+
+        public IConditionVariables Copy()
+        {
+            return new ConditionFallSpeed()
+            {
+                minValue = minValue,
+                maxValue = maxValue,
+                inverse = inverse
+            };
+        }
     }
 }

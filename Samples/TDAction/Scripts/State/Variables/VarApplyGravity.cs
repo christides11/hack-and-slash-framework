@@ -1,6 +1,7 @@
 using System;
 using HnSF.Fighters;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 namespace HnSF.Sample.TDAction.State
 {
@@ -39,6 +40,7 @@ namespace HnSF.Sample.TDAction.State
         }
     
         [SerializeField, HideInInspector] private int id;
+
         [SerializeField] public Vector2Int[] frameRanges;
         [SelectImplementation(typeof(IConditionVariables))] [SerializeField, SerializeReference] 
         public IConditionVariables condition;
@@ -50,5 +52,17 @@ namespace HnSF.Sample.TDAction.State
         
         [SerializeField, HideInInspector] private int parent;
         [SerializeField, HideInInspector] private int[] children;
+
+        public IStateVariables Copy()
+        {
+            var copy = new VarApplyGravity();
+            copy.frameRanges = frameRanges;
+            copy.condition = condition?.Copy();
+            copy.useMaxFallSpeedStat = useMaxFallSpeedStat;
+            copy.useGravityStat = useGravityStat;
+            copy.gravity = gravity;
+            copy.maxFallSpeed = maxFallSpeed;
+            return copy;
+        }
     }
 }

@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
+using UnityEditor;
 using UnityEngine;
 
 namespace HnSF
@@ -174,6 +176,38 @@ namespace HnSF
             }
 
             data = tempData.ToArray();
+        }
+
+        public IStateVariables CopyStateVariable(int index)
+        {
+            return data[index].Copy();
+        }
+
+        public void PasteInPlace(int index, IStateVariables wantedData)
+        {
+#if UNITY_EDITOR
+            UndoUtility.RecordObject(this, "Pasted State Variable");
+#endif
+            var temp = data[index];
+
+            var nameCopy = temp.Name;
+            var idCopy = temp.ID;
+            var parentCopy = temp.Parent;
+            var childrenCopy = temp.Children;
+
+            data[index] = wantedData;
+            data[index].Parent = parentCopy;
+            data[index].Children = childrenCopy;
+            data[index].ID = idCopy;
+            data[index].Name = nameCopy;
+        }
+
+        public void PasteAsChild(int parentIndex, IStateVariables wantedChildData)
+        {
+#if UNITY_EDITOR
+            UndoUtility.RecordObject(this, "Pasted State Variable as Child");
+#endif
+            AddStateVariable(wantedChildData, parentIndex);
         }
     }
 }

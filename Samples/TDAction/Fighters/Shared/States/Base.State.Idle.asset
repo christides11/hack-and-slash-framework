@@ -20,332 +20,84 @@ MonoBehaviour:
   autoLoop: 1
   autoLoopFrame: 1
   data:
-  - rid: 5282967762107891712
-  - rid: 5282967762107891714
-  - rid: 5282967762107891715
-  - rid: 5282967762107891716
-  - rid: 5282967762107891717
-  - rid: 5282967762107891718
-  - rid: 5282967762107891719
-  - rid: 5282967762107891720
-  - rid: 5282967762107891722
-  - rid: 5282967762107891723
-  - rid: 5282967776474693632
-  - rid: 5282967776474693633
-  - rid: 5282967776474693634
-  - rid: 5282967776474693635
-  - rid: 5282967776474693636
-  - rid: 5282967776474693637
-  - rid: 5282967776474693638
-  - rid: 5282967776474693641
-  - rid: 5282967776474693639
-  - rid: 2193520680018640896
-  - rid: 2193520629232959488
-  - rid: 2193520680018640898
-  - rid: 2193520680018640897
+  - rid: 1200828937721085955
+  - rid: 1200828937721085953
+  - rid: 1200828937721085954
+  - rid: 1200828937721085956
+  - rid: 1200828937721085957
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 2193520629232959488
-      type: {class: ChangeState, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
-      data:
-        name: 
-        id: 21
-        frameRanges: []
-        condition:
-          rid: -2
-        stateMovesetID: 0
-        stateID: 0
-        parent: 3
-        children: 
-    - rid: 2193520680018640896
-      type: {class: VarApplyGravity, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
-      data:
-        name: 
-        id: 22
-        frameRanges: []
-        condition:
-          rid: -2
-        useMaxFallSpeedStat: 0
-        useGravityStat: 0
-        maxFallSpeed: 0
-        gravity: 0
-        parent: -1
-        children: 17000000
-    - rid: 2193520680018640897
-      type: {class: ChangeState, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
-      data:
-        name: 
-        id: 23
-        frameRanges: []
-        condition:
-          rid: -2
-        stateMovesetID: 0
-        stateID: 0
-        parent: 22
-        children: 
-    - rid: 2193520680018640898
+    - rid: 1200828937721085953
       type: {class: VarApplyTraction, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
       data:
         name: 
-        id: 24
+        id: 1
         frameRanges: []
         condition:
           rid: -2
         useTractionStat: 0
         aerialTraction: 0
         traction: 0
-        parent: -1
-        children: 
-    - rid: 5282967762107891712
-      type: {class: ChangeState, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
-      data:
-        name: dkqodpqjkmdqonp
-        id: 0
-        frameRanges:
-        - {x: 1, y: 3}
-        - {x: 5, y: 10}
-        condition:
-          rid: -2
-        stateMovesetID: 0
-        stateID: 0
-        parent: -1
-        children: 01000000090000000a000000
-    - rid: 5282967762107891714
-      type: {class: ChangeState, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
-      data:
-        name: 
-        id: 1
-        frameRanges:
-        - {x: 1, y: 5}
-        - {x: 9, y: 11}
-        condition:
-          rid: -2
-        stateMovesetID: 0
-        stateID: 0
         parent: 0
-        children: 02000000040000000500000006000000
-    - rid: 5282967762107891715
+        children: 
+    - rid: 1200828937721085954
       type: {class: VarApplyGravity, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
       data:
-        name: Grav Grav
+        name: 
         id: 2
         frameRanges:
-        - {x: 0, y: 0}
-        - {x: 2, y: 3}
+        - {x: 1, y: 4}
+        - {x: 6, y: 8}
         condition:
           rid: -2
         useMaxFallSpeedStat: 0
         useGravityStat: 0
         maxFallSpeed: 0
         gravity: 0
-        parent: 1
-        children: 
-    - rid: 5282967762107891716
+        parent: -1
+        children: 0300000004000000
+    - rid: 1200828937721085955
+      type: {class: VarApplyGravity, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+      data:
+        name: 
+        id: 0
+        frameRanges: []
+        condition:
+          rid: -2
+        useMaxFallSpeedStat: 0
+        useGravityStat: 0
+        maxFallSpeed: 0
+        gravity: 0
+        parent: -1
+        children: 01000000
+    - rid: 1200828937721085956
       type: {class: VarApplyGravity, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
       data:
         name: 
         id: 3
-        frameRanges:
-        - {x: 5, y: 10}
+        frameRanges: []
         condition:
           rid: -2
         useMaxFallSpeedStat: 0
         useGravityStat: 0
         maxFallSpeed: 0
         gravity: 0
-        parent: -1
-        children: 0700000015000000
-    - rid: 5282967762107891717
-      type: {class: VarApplyTraction, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+        parent: 2
+        children: 
+    - rid: 1200828937721085957
+      type: {class: VarApplyGravity, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
       data:
         name: 
         id: 4
         frameRanges: []
         condition:
           rid: -2
-        useTractionStat: 0
-        aerialTraction: 0
-        traction: 0
-        parent: 1
-        children: 
-    - rid: 5282967762107891718
-      type: {class: VarApplyGravity, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
-      data:
-        name: 
-        id: 5
-        frameRanges: []
-        condition:
-          rid: -2
         useMaxFallSpeedStat: 0
         useGravityStat: 0
         maxFallSpeed: 0
         gravity: 0
-        parent: 1
-        children: 
-    - rid: 5282967762107891719
-      type: {class: VarSetFallSpeed, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
-      data:
-        name: 
-        id: 6
-        frameRanges:
-        - {x: 0, y: 0}
-        - {x: 5, y: 7}
-        condition:
-          rid: -2
-        value: 0
-        parent: 1
-        children: 
-    - rid: 5282967762107891720
-      type: {class: ChangeState, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
-      data:
-        name: 
-        id: 7
-        frameRanges: []
-        condition:
-          rid: -2
-        stateMovesetID: 0
-        stateID: 0
-        parent: 3
-        children: 
-    - rid: 5282967762107891722
-      type: {class: ChangeState, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
-      data:
-        name: 
-        id: 9
-        frameRanges: []
-        condition:
-          rid: -2
-        stateMovesetID: 0
-        stateID: 0
-        parent: 0
-        children: 
-    - rid: 5282967762107891723
-      type: {class: VarSetFallSpeed, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
-      data:
-        name: 
-        id: 10
-        frameRanges:
-        - {x: -1, y: -2}
-        condition:
-          rid: -2
-        value: 0
-        parent: 0
-        children: 
-    - rid: 5282967776474693632
-      type: {class: VarApplyGravity, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
-      data:
-        name: 
-        id: 11
-        frameRanges: []
-        condition:
-          rid: -2
-        useMaxFallSpeedStat: 0
-        useGravityStat: 0
-        maxFallSpeed: 0
-        gravity: 0
-        parent: -1
-        children: 
-    - rid: 5282967776474693633
-      type: {class: VarApplyGravity, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
-      data:
-        name: 
-        id: 12
-        frameRanges: []
-        condition:
-          rid: -2
-        useMaxFallSpeedStat: 0
-        useGravityStat: 0
-        maxFallSpeed: 0
-        gravity: 0
-        parent: -1
-        children: 
-    - rid: 5282967776474693634
-      type: {class: VarApplyTraction, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
-      data:
-        name: dawdvrfwq
-        id: 13
-        frameRanges: []
-        condition:
-          rid: -2
-        useTractionStat: 0
-        aerialTraction: 0
-        traction: 0
-        parent: -1
-        children: 
-    - rid: 5282967776474693635
-      type: {class: ChangeState, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
-      data:
-        name: 
-        id: 14
-        frameRanges: []
-        condition:
-          rid: -2
-        stateMovesetID: 0
-        stateID: 0
-        parent: -1
-        children: 
-    - rid: 5282967776474693636
-      type: {class: VarApplyGravity, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
-      data:
-        name: 
-        id: 15
-        frameRanges: []
-        condition:
-          rid: -2
-        useMaxFallSpeedStat: 0
-        useGravityStat: 0
-        maxFallSpeed: 0
-        gravity: 0
-        parent: -1
-        children: 
-    - rid: 5282967776474693637
-      type: {class: VarSetFallSpeed, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
-      data:
-        name: 
-        id: 16
-        frameRanges: []
-        condition:
-          rid: -2
-        value: 0
-        parent: -1
-        children: 
-    - rid: 5282967776474693638
-      type: {class: ChangeState, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
-      data:
-        name: 
-        id: 17
-        frameRanges: []
-        condition:
-          rid: -2
-        stateMovesetID: 0
-        stateID: 0
-        parent: -1
-        children: 
-    - rid: 5282967776474693639
-      type: {class: VarApplyTraction, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
-      data:
-        name: 
-        id: 18
-        frameRanges: []
-        condition:
-          rid: -2
-        useTractionStat: 0
-        aerialTraction: 0
-        traction: 0
-        parent: -1
-        children: 
-    - rid: 5282967776474693641
-      type: {class: ChangeState, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
-      data:
-        name: 
-        id: 20
-        frameRanges: []
-        condition:
-          rid: -2
-        stateMovesetID: 0
-        stateID: 0
-        parent: -1
+        parent: 2
         children: 

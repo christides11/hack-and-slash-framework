@@ -28,6 +28,9 @@ namespace HnSF
         };
 
         public Color parentColor = new Color(0.05f, 0.05f, 0.05f);
+
+        public static IStateVariables stateVariableCopy;
+        public static IConditionVariables conditionVariablesCopy;
         
         public static StateTimelineEditorWindow OpenWindow(StateTimeline stateTimeline)
         {
@@ -176,6 +179,14 @@ namespace HnSF
                         RefreshAll(true);
                     });
                 }
+                if (stateVariableCopy != null)
+                {
+                    evt.menu.AppendAction("Paste", (x) =>
+                    {
+                        stateTimeline.AddStateVariable(stateVariableCopy);
+                        RefreshAll(true);
+                    });
+                }
             });
             sidebarPanel.AddManipulator(sidebarPanelMenuManipulator);
             
@@ -238,6 +249,23 @@ namespace HnSF
                     RemoveStateVariable(index);
                     RefreshAll(true);
                 });
+                evt.menu.AppendAction("Copy", (x) =>
+                {
+                    CopyStateVariable(stateTimeline, index);
+                });
+                if (stateVariableCopy != null)
+                {
+                    evt.menu.AppendAction("Paste in Place", (x) =>
+                    {
+                        PasteInPlaceStateVariable(index);
+                        RefreshAll(true);
+                    });
+                    evt.menu.AppendAction("Paste as Child", (x) =>
+                    {
+                        PasteAsChildStateVariable(index);
+                        RefreshAll(true);
+                    });
+                }
                 evt.menu.AppendAction("Move Up", (x) =>
                 {
                     MoveStateVarUp(stateTimeline, dataID);
@@ -249,6 +277,23 @@ namespace HnSF
                     RefreshAll(true);
                 });
             }));
+        }
+
+        protected virtual void CopyStateVariable(StateTimeline stateTimeline, int index)
+        {
+            stateVariableCopy = stateTimeline.CopyStateVariable(index);
+        }
+
+        protected virtual void PasteInPlaceStateVariable(int index)
+        {
+            if (stateVariableCopy == null) return;
+            stateTimeline.PasteInPlace(index, stateVariableCopy);
+        }
+
+        protected virtual void PasteAsChildStateVariable(int index)
+        {
+            if (stateVariableCopy == null) return;
+            stateTimeline.PasteAsChild(index, stateVariableCopy);
         }
 
         protected virtual void UpdateData(StateTimeline stateTimeline1, int id)

@@ -12,5 +12,7 @@ namespace HnSF
         public IConditionVariables Condition { get; }
         public int Parent { get; set; }
         public int[] Children { get; set; }
+
+        IStateVariables Copy();
     }
 }
