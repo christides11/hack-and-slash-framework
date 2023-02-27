@@ -17,7 +17,7 @@ namespace HnSF.Sample.TDAction.State
             set => id = value;
         }
         public int FunctionMap => (int)StateFunctionEnum.CHANGE_STATE;
-        public IConditionVariables Condition => condition;
+        public IConditionVariables Condition { get => condition; set => condition = value; }
         public int Parent
         {
             get => parent;
@@ -50,8 +50,6 @@ namespace HnSF.Sample.TDAction.State
         {
             return new ChangeState()
             {
-                frameRanges = frameRanges,
-                condition = condition.Copy(),
                 stateMovesetID = stateMovesetID,
                 stateID = stateID
             };

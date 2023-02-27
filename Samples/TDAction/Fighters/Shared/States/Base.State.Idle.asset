@@ -20,84 +20,95 @@ MonoBehaviour:
   autoLoop: 1
   autoLoopFrame: 1
   data:
-  - rid: 1200828937721085955
-  - rid: 1200828937721085953
-  - rid: 1200828937721085954
-  - rid: 1200828937721085956
-  - rid: 1200828937721085957
+  - rid: 1200828956845539343
+  - rid: 1200828956845539354
+  - rid: 1200828956845539345
+  - rid: 1200828956845539352
+  - rid: 1200828956845539353
+  - rid: 1200828956845539351
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 1200828937721085953
-      type: {class: VarApplyTraction, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
-      data:
-        name: 
-        id: 1
-        frameRanges: []
-        condition:
-          rid: -2
-        useTractionStat: 0
-        aerialTraction: 0
-        traction: 0
-        parent: 0
-        children: 
-    - rid: 1200828937721085954
-      type: {class: VarApplyGravity, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
-      data:
-        name: 
-        id: 2
-        frameRanges:
-        - {x: 1, y: 4}
-        - {x: 6, y: 8}
-        condition:
-          rid: -2
-        useMaxFallSpeedStat: 0
-        useGravityStat: 0
-        maxFallSpeed: 0
-        gravity: 0
-        parent: -1
-        children: 0300000004000000
-    - rid: 1200828937721085955
-      type: {class: VarApplyGravity, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+    - rid: 1200828956845539343
+      type: {class: ChangeState, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
       data:
         name: 
         id: 0
         frameRanges: []
         condition:
           rid: -2
-        useMaxFallSpeedStat: 0
-        useGravityStat: 0
-        maxFallSpeed: 0
-        gravity: 0
+        stateMovesetID: 0
+        stateID: 0
         parent: -1
-        children: 01000000
-    - rid: 1200828937721085956
-      type: {class: VarApplyGravity, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+        children: 02000000
+    - rid: 1200828956845539345
+      type: {class: VarSetFallSpeed, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+      data:
+        name: 
+        id: 2
+        frameRanges:
+        - {x: 2, y: 4}
+        condition:
+          rid: -2
+        value: 0
+        parent: 0
+        children: 
+    - rid: 1200828956845539351
+      type: {class: VarSetFallSpeed, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+      data:
+        name: 
+        id: 5
+        frameRanges:
+        - {x: 2, y: 4}
+        - {x: 8, y: 9}
+        condition:
+          rid: 1200828956845539355
+        value: 0
+        parent: 3
+        children: 
+    - rid: 1200828956845539352
+      type: {class: VarSetFallSpeed, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
       data:
         name: 
         id: 3
-        frameRanges: []
+        frameRanges:
+        - {x: 2, y: 4}
         condition:
           rid: -2
-        useMaxFallSpeedStat: 0
-        useGravityStat: 0
-        maxFallSpeed: 0
-        gravity: 0
-        parent: 2
-        children: 
-    - rid: 1200828937721085957
-      type: {class: VarApplyGravity, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+        value: 0
+        parent: 1
+        children: 0400000005000000
+    - rid: 1200828956845539353
+      type: {class: VarSetFallSpeed, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
       data:
         name: 
         id: 4
-        frameRanges: []
+        frameRanges:
+        - {x: 2, y: 4}
         condition:
           rid: -2
-        useMaxFallSpeedStat: 0
-        useGravityStat: 0
-        maxFallSpeed: 0
-        gravity: 0
-        parent: 2
+        value: 0
+        parent: 3
         children: 
+    - rid: 1200828956845539354
+      type: {class: VarSetFallSpeed, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+      data:
+        name: 
+        id: 1
+        frameRanges:
+        - {x: 2, y: 4}
+        - {x: 8, y: 9}
+        condition:
+          rid: -2
+        value: 0
+        parent: -1
+        children: 03000000
+    - rid: 1200828956845539355
+      type: {class: ConditionButton, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+      data:
+        button: 3
+        buttonState: 0
+        offset: 0
+        buffer: 0

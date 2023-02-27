@@ -19,7 +19,7 @@ namespace HnSF.Sample.TDAction.State
             set => id = value;
         }
         public int FunctionMap => (int)StateFunctionEnum.APPLY_TRACTION;
-        public IConditionVariables Condition => condition;
+        public IConditionVariables Condition { get => condition; set => condition = value; }
         public int Parent
         {
             get => parent;
@@ -53,8 +53,6 @@ namespace HnSF.Sample.TDAction.State
         {
             return new VarApplyTraction()
             {
-                frameRanges = frameRanges,
-                condition = condition.Copy(),
                 useTractionStat = useTractionStat,
                 aerialTraction = aerialTraction,
                 traction = traction,
