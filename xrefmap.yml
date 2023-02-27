@@ -2070,6 +2070,19 @@ references:
   commentId: T:HnSF.IConditionVariables
   fullName: HnSF.IConditionVariables
   nameWithType: IConditionVariables
+- uid: HnSF.IConditionVariables.Copy
+  name: Copy()
+  href: api/HnSF.IConditionVariables.html#HnSF_IConditionVariables_Copy
+  commentId: M:HnSF.IConditionVariables.Copy
+  fullName: HnSF.IConditionVariables.Copy()
+  nameWithType: IConditionVariables.Copy()
+- uid: HnSF.IConditionVariables.Copy*
+  name: Copy
+  href: api/HnSF.IConditionVariables.html#HnSF_IConditionVariables_Copy_
+  commentId: Overload:HnSF.IConditionVariables.Copy
+  isSpec: "True"
+  fullName: HnSF.IConditionVariables.Copy
+  nameWithType: IConditionVariables.Copy
 - uid: HnSF.IConditionVariables.FunctionMap
   name: FunctionMap
   href: api/HnSF.IConditionVariables.html#HnSF_IConditionVariables_FunctionMap
@@ -2281,6 +2294,19 @@ references:
   isSpec: "True"
   fullName: HnSF.IStateVariables.Condition
   nameWithType: IStateVariables.Condition
+- uid: HnSF.IStateVariables.Copy
+  name: Copy()
+  href: api/HnSF.IStateVariables.html#HnSF_IStateVariables_Copy
+  commentId: M:HnSF.IStateVariables.Copy
+  fullName: HnSF.IStateVariables.Copy()
+  nameWithType: IStateVariables.Copy()
+- uid: HnSF.IStateVariables.Copy*
+  name: Copy
+  href: api/HnSF.IStateVariables.html#HnSF_IStateVariables_Copy_
+  commentId: Overload:HnSF.IStateVariables.Copy
+  isSpec: "True"
+  fullName: HnSF.IStateVariables.Copy
+  nameWithType: IStateVariables.Copy
 - uid: HnSF.IStateVariables.FrameRanges
   name: FrameRanges
   href: api/HnSF.IStateVariables.html#HnSF_IStateVariables_FrameRanges
@@ -4717,6 +4743,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.State.ChangeState.Condition
   nameWithType: ChangeState.Condition
+- uid: HnSF.Sample.TDAction.State.ChangeState.Copy
+  name: Copy()
+  href: api/HnSF.Sample.TDAction.State.ChangeState.html#HnSF_Sample_TDAction_State_ChangeState_Copy
+  commentId: M:HnSF.Sample.TDAction.State.ChangeState.Copy
+  fullName: HnSF.Sample.TDAction.State.ChangeState.Copy()
+  nameWithType: ChangeState.Copy()
+- uid: HnSF.Sample.TDAction.State.ChangeState.Copy*
+  name: Copy
+  href: api/HnSF.Sample.TDAction.State.ChangeState.html#HnSF_Sample_TDAction_State_ChangeState_Copy_
+  commentId: Overload:HnSF.Sample.TDAction.State.ChangeState.Copy
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.ChangeState.Copy
+  nameWithType: ChangeState.Copy
 - uid: HnSF.Sample.TDAction.State.ChangeState.frameRanges
   name: frameRanges
   href: api/HnSF.Sample.TDAction.State.ChangeState.html#HnSF_Sample_TDAction_State_ChangeState_frameRanges
@@ -4854,6 +4893,19 @@ references:
   commentId: F:HnSF.Sample.TDAction.State.ConditionButton.ButtonStateType.Released
   fullName: HnSF.Sample.TDAction.State.ConditionButton.ButtonStateType.Released
   nameWithType: ConditionButton.ButtonStateType.Released
+- uid: HnSF.Sample.TDAction.State.ConditionButton.Copy
+  name: Copy()
+  href: api/HnSF.Sample.TDAction.State.ConditionButton.html#HnSF_Sample_TDAction_State_ConditionButton_Copy
+  commentId: M:HnSF.Sample.TDAction.State.ConditionButton.Copy
+  fullName: HnSF.Sample.TDAction.State.ConditionButton.Copy()
+  nameWithType: ConditionButton.Copy()
+- uid: HnSF.Sample.TDAction.State.ConditionButton.Copy*
+  name: Copy
+  href: api/HnSF.Sample.TDAction.State.ConditionButton.html#HnSF_Sample_TDAction_State_ConditionButton_Copy_
+  commentId: Overload:HnSF.Sample.TDAction.State.ConditionButton.Copy
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.ConditionButton.Copy
+  nameWithType: ConditionButton.Copy
 - uid: HnSF.Sample.TDAction.State.ConditionButton.FunctionMap
   name: FunctionMap
   href: api/HnSF.Sample.TDAction.State.ConditionButton.html#HnSF_Sample_TDAction_State_ConditionButton_FunctionMap
@@ -4879,6 +4931,19 @@ references:
   commentId: T:HnSF.Sample.TDAction.State.ConditionFallSpeed
   fullName: HnSF.Sample.TDAction.State.ConditionFallSpeed
   nameWithType: ConditionFallSpeed
+- uid: HnSF.Sample.TDAction.State.ConditionFallSpeed.Copy
+  name: Copy()
+  href: api/HnSF.Sample.TDAction.State.ConditionFallSpeed.html#HnSF_Sample_TDAction_State_ConditionFallSpeed_Copy
+  commentId: M:HnSF.Sample.TDAction.State.ConditionFallSpeed.Copy
+  fullName: HnSF.Sample.TDAction.State.ConditionFallSpeed.Copy()
+  nameWithType: ConditionFallSpeed.Copy()
+- uid: HnSF.Sample.TDAction.State.ConditionFallSpeed.Copy*
+  name: Copy
+  href: api/HnSF.Sample.TDAction.State.ConditionFallSpeed.html#HnSF_Sample_TDAction_State_ConditionFallSpeed_Copy_
+  commentId: Overload:HnSF.Sample.TDAction.State.ConditionFallSpeed.Copy
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.ConditionFallSpeed.Copy
+  nameWithType: ConditionFallSpeed.Copy
 - uid: HnSF.Sample.TDAction.State.ConditionFallSpeed.FunctionMap
   name: FunctionMap
   href: api/HnSF.Sample.TDAction.State.ConditionFallSpeed.html#HnSF_Sample_TDAction_State_ConditionFallSpeed_FunctionMap
@@ -4958,6 +5023,19 @@ references:
   commentId: T:HnSF.Sample.TDAction.State.ConditionGroundState
   fullName: HnSF.Sample.TDAction.State.ConditionGroundState
   nameWithType: ConditionGroundState
+- uid: HnSF.Sample.TDAction.State.ConditionGroundState.Copy
+  name: Copy()
+  href: api/HnSF.Sample.TDAction.State.ConditionGroundState.html#HnSF_Sample_TDAction_State_ConditionGroundState_Copy
+  commentId: M:HnSF.Sample.TDAction.State.ConditionGroundState.Copy
+  fullName: HnSF.Sample.TDAction.State.ConditionGroundState.Copy()
+  nameWithType: ConditionGroundState.Copy()
+- uid: HnSF.Sample.TDAction.State.ConditionGroundState.Copy*
+  name: Copy
+  href: api/HnSF.Sample.TDAction.State.ConditionGroundState.html#HnSF_Sample_TDAction_State_ConditionGroundState_Copy_
+  commentId: Overload:HnSF.Sample.TDAction.State.ConditionGroundState.Copy
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.ConditionGroundState.Copy
+  nameWithType: ConditionGroundState.Copy
 - uid: HnSF.Sample.TDAction.State.ConditionGroundState.FunctionMap
   name: FunctionMap
   href: api/HnSF.Sample.TDAction.State.ConditionGroundState.html#HnSF_Sample_TDAction_State_ConditionGroundState_FunctionMap
@@ -4983,6 +5061,19 @@ references:
   commentId: T:HnSF.Sample.TDAction.State.ConditionMovementMagnitude
   fullName: HnSF.Sample.TDAction.State.ConditionMovementMagnitude
   nameWithType: ConditionMovementMagnitude
+- uid: HnSF.Sample.TDAction.State.ConditionMovementMagnitude.Copy
+  name: Copy()
+  href: api/HnSF.Sample.TDAction.State.ConditionMovementMagnitude.html#HnSF_Sample_TDAction_State_ConditionMovementMagnitude_Copy
+  commentId: M:HnSF.Sample.TDAction.State.ConditionMovementMagnitude.Copy
+  fullName: HnSF.Sample.TDAction.State.ConditionMovementMagnitude.Copy()
+  nameWithType: ConditionMovementMagnitude.Copy()
+- uid: HnSF.Sample.TDAction.State.ConditionMovementMagnitude.Copy*
+  name: Copy
+  href: api/HnSF.Sample.TDAction.State.ConditionMovementMagnitude.html#HnSF_Sample_TDAction_State_ConditionMovementMagnitude_Copy_
+  commentId: Overload:HnSF.Sample.TDAction.State.ConditionMovementMagnitude.Copy
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.ConditionMovementMagnitude.Copy
+  nameWithType: ConditionMovementMagnitude.Copy
 - uid: HnSF.Sample.TDAction.State.ConditionMovementMagnitude.FunctionMap
   name: FunctionMap
   href: api/HnSF.Sample.TDAction.State.ConditionMovementMagnitude.html#HnSF_Sample_TDAction_State_ConditionMovementMagnitude_FunctionMap
@@ -5014,6 +5105,19 @@ references:
   commentId: T:HnSF.Sample.TDAction.State.ConditionNone
   fullName: HnSF.Sample.TDAction.State.ConditionNone
   nameWithType: ConditionNone
+- uid: HnSF.Sample.TDAction.State.ConditionNone.Copy
+  name: Copy()
+  href: api/HnSF.Sample.TDAction.State.ConditionNone.html#HnSF_Sample_TDAction_State_ConditionNone_Copy
+  commentId: M:HnSF.Sample.TDAction.State.ConditionNone.Copy
+  fullName: HnSF.Sample.TDAction.State.ConditionNone.Copy()
+  nameWithType: ConditionNone.Copy()
+- uid: HnSF.Sample.TDAction.State.ConditionNone.Copy*
+  name: Copy
+  href: api/HnSF.Sample.TDAction.State.ConditionNone.html#HnSF_Sample_TDAction_State_ConditionNone_Copy_
+  commentId: Overload:HnSF.Sample.TDAction.State.ConditionNone.Copy
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.ConditionNone.Copy
+  nameWithType: ConditionNone.Copy
 - uid: HnSF.Sample.TDAction.State.ConditionNone.FunctionMap
   name: FunctionMap
   href: api/HnSF.Sample.TDAction.State.ConditionNone.html#HnSF_Sample_TDAction_State_ConditionNone_FunctionMap
@@ -5182,6 +5286,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.State.VarApplyGravity.Condition
   nameWithType: VarApplyGravity.Condition
+- uid: HnSF.Sample.TDAction.State.VarApplyGravity.Copy
+  name: Copy()
+  href: api/HnSF.Sample.TDAction.State.VarApplyGravity.html#HnSF_Sample_TDAction_State_VarApplyGravity_Copy
+  commentId: M:HnSF.Sample.TDAction.State.VarApplyGravity.Copy
+  fullName: HnSF.Sample.TDAction.State.VarApplyGravity.Copy()
+  nameWithType: VarApplyGravity.Copy()
+- uid: HnSF.Sample.TDAction.State.VarApplyGravity.Copy*
+  name: Copy
+  href: api/HnSF.Sample.TDAction.State.VarApplyGravity.html#HnSF_Sample_TDAction_State_VarApplyGravity_Copy_
+  commentId: Overload:HnSF.Sample.TDAction.State.VarApplyGravity.Copy
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.VarApplyGravity.Copy
+  nameWithType: VarApplyGravity.Copy
 - uid: HnSF.Sample.TDAction.State.VarApplyGravity.frameRanges
   name: frameRanges
   href: api/HnSF.Sample.TDAction.State.VarApplyGravity.html#HnSF_Sample_TDAction_State_VarApplyGravity_frameRanges
@@ -5327,6 +5444,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.State.VarApplyTraction.Condition
   nameWithType: VarApplyTraction.Condition
+- uid: HnSF.Sample.TDAction.State.VarApplyTraction.Copy
+  name: Copy()
+  href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_Copy
+  commentId: M:HnSF.Sample.TDAction.State.VarApplyTraction.Copy
+  fullName: HnSF.Sample.TDAction.State.VarApplyTraction.Copy()
+  nameWithType: VarApplyTraction.Copy()
+- uid: HnSF.Sample.TDAction.State.VarApplyTraction.Copy*
+  name: Copy
+  href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_Copy_
+  commentId: Overload:HnSF.Sample.TDAction.State.VarApplyTraction.Copy
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.VarApplyTraction.Copy
+  nameWithType: VarApplyTraction.Copy
 - uid: HnSF.Sample.TDAction.State.VarApplyTraction.frameRanges
   name: frameRanges
   href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_frameRanges
@@ -5454,6 +5584,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed.Condition
   nameWithType: VarSetFallSpeed.Condition
+- uid: HnSF.Sample.TDAction.State.VarSetFallSpeed.Copy
+  name: Copy()
+  href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html#HnSF_Sample_TDAction_State_VarSetFallSpeed_Copy
+  commentId: M:HnSF.Sample.TDAction.State.VarSetFallSpeed.Copy
+  fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed.Copy()
+  nameWithType: VarSetFallSpeed.Copy()
+- uid: HnSF.Sample.TDAction.State.VarSetFallSpeed.Copy*
+  name: Copy
+  href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html#HnSF_Sample_TDAction_State_VarSetFallSpeed_Copy_
+  commentId: Overload:HnSF.Sample.TDAction.State.VarSetFallSpeed.Copy
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed.Copy
+  nameWithType: VarSetFallSpeed.Copy
 - uid: HnSF.Sample.TDAction.State.VarSetFallSpeed.frameRanges
   name: frameRanges
   href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html#HnSF_Sample_TDAction_State_VarSetFallSpeed_frameRanges
@@ -5777,6 +5920,19 @@ references:
   isSpec: "True"
   fullName: HnSF.StateTimeline.BuildStateVariablesIDMap
   nameWithType: StateTimeline.BuildStateVariablesIDMap
+- uid: HnSF.StateTimeline.CopyStateVariable(System.Int32)
+  name: CopyStateVariable(Int32)
+  href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_CopyStateVariable_System_Int32_
+  commentId: M:HnSF.StateTimeline.CopyStateVariable(System.Int32)
+  fullName: HnSF.StateTimeline.CopyStateVariable(System.Int32)
+  nameWithType: StateTimeline.CopyStateVariable(Int32)
+- uid: HnSF.StateTimeline.CopyStateVariable*
+  name: CopyStateVariable
+  href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_CopyStateVariable_
+  commentId: Overload:HnSF.StateTimeline.CopyStateVariable
+  isSpec: "True"
+  fullName: HnSF.StateTimeline.CopyStateVariable
+  nameWithType: StateTimeline.CopyStateVariable
 - uid: HnSF.StateTimeline.data
   name: data
   href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_data
@@ -5848,6 +6004,32 @@ references:
   isSpec: "True"
   fullName: HnSF.StateTimeline.MoveStateVariableUp
   nameWithType: StateTimeline.MoveStateVariableUp
+- uid: HnSF.StateTimeline.PasteAsChild(System.Int32,HnSF.IStateVariables)
+  name: PasteAsChild(Int32, IStateVariables)
+  href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_PasteAsChild_System_Int32_HnSF_IStateVariables_
+  commentId: M:HnSF.StateTimeline.PasteAsChild(System.Int32,HnSF.IStateVariables)
+  fullName: HnSF.StateTimeline.PasteAsChild(System.Int32, HnSF.IStateVariables)
+  nameWithType: StateTimeline.PasteAsChild(Int32, IStateVariables)
+- uid: HnSF.StateTimeline.PasteAsChild*
+  name: PasteAsChild
+  href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_PasteAsChild_
+  commentId: Overload:HnSF.StateTimeline.PasteAsChild
+  isSpec: "True"
+  fullName: HnSF.StateTimeline.PasteAsChild
+  nameWithType: StateTimeline.PasteAsChild
+- uid: HnSF.StateTimeline.PasteInPlace(System.Int32,HnSF.IStateVariables)
+  name: PasteInPlace(Int32, IStateVariables)
+  href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_PasteInPlace_System_Int32_HnSF_IStateVariables_
+  commentId: M:HnSF.StateTimeline.PasteInPlace(System.Int32,HnSF.IStateVariables)
+  fullName: HnSF.StateTimeline.PasteInPlace(System.Int32, HnSF.IStateVariables)
+  nameWithType: StateTimeline.PasteInPlace(Int32, IStateVariables)
+- uid: HnSF.StateTimeline.PasteInPlace*
+  name: PasteInPlace
+  href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_PasteInPlace_
+  commentId: Overload:HnSF.StateTimeline.PasteInPlace
+  isSpec: "True"
+  fullName: HnSF.StateTimeline.PasteInPlace
+  nameWithType: StateTimeline.PasteInPlace
 - uid: HnSF.StateTimeline.RemoveStateVariable(System.Int32)
   name: RemoveStateVariable(Int32)
   href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_RemoveStateVariable_System_Int32_
@@ -6013,6 +6195,12 @@ references:
   isSpec: "True"
   fullName: HnSF.StateTimelineEditorWindow.ChangeZoomLevel
   nameWithType: StateTimelineEditorWindow.ChangeZoomLevel
+- uid: HnSF.StateTimelineEditorWindow.conditionVariablesCopy
+  name: conditionVariablesCopy
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_conditionVariablesCopy
+  commentId: F:HnSF.StateTimelineEditorWindow.conditionVariablesCopy
+  fullName: HnSF.StateTimelineEditorWindow.conditionVariablesCopy
+  nameWithType: StateTimelineEditorWindow.conditionVariablesCopy
 - uid: HnSF.StateTimelineEditorWindow.ConvertFrameNumber(System.Int32)
   name: ConvertFrameNumber(Int32)
   href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_ConvertFrameNumber_System_Int32_
@@ -6026,6 +6214,19 @@ references:
   isSpec: "True"
   fullName: HnSF.StateTimelineEditorWindow.ConvertFrameNumber
   nameWithType: StateTimelineEditorWindow.ConvertFrameNumber
+- uid: HnSF.StateTimelineEditorWindow.CopyStateVariable(HnSF.StateTimeline,System.Int32)
+  name: CopyStateVariable(StateTimeline, Int32)
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_CopyStateVariable_HnSF_StateTimeline_System_Int32_
+  commentId: M:HnSF.StateTimelineEditorWindow.CopyStateVariable(HnSF.StateTimeline,System.Int32)
+  fullName: HnSF.StateTimelineEditorWindow.CopyStateVariable(HnSF.StateTimeline, System.Int32)
+  nameWithType: StateTimelineEditorWindow.CopyStateVariable(StateTimeline, Int32)
+- uid: HnSF.StateTimelineEditorWindow.CopyStateVariable*
+  name: CopyStateVariable
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_CopyStateVariable_
+  commentId: Overload:HnSF.StateTimelineEditorWindow.CopyStateVariable
+  isSpec: "True"
+  fullName: HnSF.StateTimelineEditorWindow.CopyStateVariable
+  nameWithType: StateTimelineEditorWindow.CopyStateVariable
 - uid: HnSF.StateTimelineEditorWindow.CreateGUI
   name: CreateGUI()
   href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_CreateGUI
@@ -6201,6 +6402,32 @@ references:
   commentId: F:HnSF.StateTimelineEditorWindow.parentColor
   fullName: HnSF.StateTimelineEditorWindow.parentColor
   nameWithType: StateTimelineEditorWindow.parentColor
+- uid: HnSF.StateTimelineEditorWindow.PasteAsChildStateVariable(System.Int32)
+  name: PasteAsChildStateVariable(Int32)
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_PasteAsChildStateVariable_System_Int32_
+  commentId: M:HnSF.StateTimelineEditorWindow.PasteAsChildStateVariable(System.Int32)
+  fullName: HnSF.StateTimelineEditorWindow.PasteAsChildStateVariable(System.Int32)
+  nameWithType: StateTimelineEditorWindow.PasteAsChildStateVariable(Int32)
+- uid: HnSF.StateTimelineEditorWindow.PasteAsChildStateVariable*
+  name: PasteAsChildStateVariable
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_PasteAsChildStateVariable_
+  commentId: Overload:HnSF.StateTimelineEditorWindow.PasteAsChildStateVariable
+  isSpec: "True"
+  fullName: HnSF.StateTimelineEditorWindow.PasteAsChildStateVariable
+  nameWithType: StateTimelineEditorWindow.PasteAsChildStateVariable
+- uid: HnSF.StateTimelineEditorWindow.PasteInPlaceStateVariable(System.Int32)
+  name: PasteInPlaceStateVariable(Int32)
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_PasteInPlaceStateVariable_System_Int32_
+  commentId: M:HnSF.StateTimelineEditorWindow.PasteInPlaceStateVariable(System.Int32)
+  fullName: HnSF.StateTimelineEditorWindow.PasteInPlaceStateVariable(System.Int32)
+  nameWithType: StateTimelineEditorWindow.PasteInPlaceStateVariable(Int32)
+- uid: HnSF.StateTimelineEditorWindow.PasteInPlaceStateVariable*
+  name: PasteInPlaceStateVariable
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_PasteInPlaceStateVariable_
+  commentId: Overload:HnSF.StateTimelineEditorWindow.PasteInPlaceStateVariable
+  isSpec: "True"
+  fullName: HnSF.StateTimelineEditorWindow.PasteInPlaceStateVariable
+  nameWithType: StateTimelineEditorWindow.PasteInPlaceStateVariable
 - uid: HnSF.StateTimelineEditorWindow.RefreshAll(System.Boolean)
   name: RefreshAll(Boolean)
   href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_RefreshAll_System_Boolean_
@@ -6311,6 +6538,12 @@ references:
   commentId: F:HnSF.StateTimelineEditorWindow.stateTimeline
   fullName: HnSF.StateTimelineEditorWindow.stateTimeline
   nameWithType: StateTimelineEditorWindow.stateTimeline
+- uid: HnSF.StateTimelineEditorWindow.stateVariableCopy
+  name: stateVariableCopy
+  href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_stateVariableCopy
+  commentId: F:HnSF.StateTimelineEditorWindow.stateVariableCopy
+  fullName: HnSF.StateTimelineEditorWindow.stateVariableCopy
+  nameWithType: StateTimelineEditorWindow.stateVariableCopy
 - uid: HnSF.StateTimelineEditorWindow.stateVariableTypes
   name: stateVariableTypes
   href: api/HnSF.StateTimelineEditorWindow.html#HnSF_StateTimelineEditorWindow_stateVariableTypes
