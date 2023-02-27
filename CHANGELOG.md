@@ -1,3 +1,15 @@
+# [39.7.0](https://github.com/christides11/hack-and-slash-framework/compare/v39.6.0...v39.7.0) (2023-02-27)
+
+
+### Features
+
+* Copy/Pasting IStateVariables ([7812abc](https://github.com/christides11/hack-and-slash-framework/commit/7812abcbd8d46b227af2f4c4ddb0dd8181f903e1))
+
+
+### BREAKING CHANGES
+
+* IStateVariables & IConditionVariables have copy methods.
+
 # [39.6.0](https://github.com/christides11/hack-and-slash-framework/compare/v39.5.0...v39.6.0) (2023-02-23)
 
 
