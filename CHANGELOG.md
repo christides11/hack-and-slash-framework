@@ -1,3 +1,10 @@
+## [39.7.1](https://github.com/christides11/hack-and-slash-framework/compare/v39.7.0...v39.7.1) (2023-02-27)
+
+
+### Bug Fixes
+
+* IStateVariable Copy FrameRanges ([30c4099](https://github.com/christides11/hack-and-slash-framework/commit/30c40996a13c2bff41fde6a169c25f4b2e1fc719))
+
 # [39.7.0](https://github.com/christides11/hack-and-slash-framework/compare/v39.6.0...v39.7.0) (2023-02-27)
 
 
