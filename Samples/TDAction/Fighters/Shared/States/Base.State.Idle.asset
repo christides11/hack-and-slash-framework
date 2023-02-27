@@ -21,7 +21,7 @@ MonoBehaviour:
   autoLoopFrame: 1
   data:
   - rid: 1200828956845539343
-  - rid: 1200828956845539354
+  - rid: 1200828957409673216
   - rid: 1200828956845539345
   - rid: 1200828956845539352
   - rid: 1200828956845539353
@@ -65,7 +65,7 @@ MonoBehaviour:
         - {x: 8, y: 9}
         condition:
           rid: 1200828956845539355
-        value: 0
+        value: 5
         parent: 3
         children: 
     - rid: 1200828956845539352
@@ -92,7 +92,14 @@ MonoBehaviour:
         value: 0
         parent: 3
         children: 
-    - rid: 1200828956845539354
+    - rid: 1200828956845539355
+      type: {class: ConditionButton, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+      data:
+        button: 3
+        buttonState: 0
+        offset: 0
+        buffer: 322
+    - rid: 1200828957409673216
       type: {class: VarSetFallSpeed, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
       data:
         name: 
@@ -101,14 +108,14 @@ MonoBehaviour:
         - {x: 2, y: 4}
         - {x: 8, y: 9}
         condition:
-          rid: -2
+          rid: 1200828957409673217
         value: 0
         parent: -1
         children: 03000000
-    - rid: 1200828956845539355
+    - rid: 1200828957409673217
       type: {class: ConditionButton, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
       data:
-        button: 3
+        button: 6
         buttonState: 0
         offset: 0
         buffer: 0

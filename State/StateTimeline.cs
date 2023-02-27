@@ -206,6 +206,7 @@ namespace HnSF
             var parentCopy = oldData.Parent;
             int[] childrenCopy = oldData.Children;
             var frameRangeCopy = newData.FrameRanges;
+            var conditionCopy = newData.Condition?.Copy();
 
             data[index] = newData.Copy();
             data[index].Name = nameCopy;
@@ -213,6 +214,7 @@ namespace HnSF
             data[index].Parent = parentCopy;
             data[index].Children = childrenCopy;
             data[index].FrameRanges = frameRangeCopy;
+            data[index].Condition = conditionCopy;
         }
 
         public void PasteAsChild(int parentIndex, IStateVariables wantedChildData)
@@ -221,8 +223,10 @@ namespace HnSF
             UndoUtility.RecordObject(this, "Pasted State Variable as Child");
 #endif
             var frameRangeCopy = wantedChildData.FrameRanges;
+            var conditionCopy = wantedChildData.Condition?.Copy();
             var dataIndex = AddStateVariable(wantedChildData.Copy(), parentIndex);
             data[dataIndex].FrameRanges = frameRangeCopy;
+            data[dataIndex].Condition = conditionCopy;
         }
     }
 }
