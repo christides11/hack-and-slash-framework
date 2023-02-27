@@ -1,3 +1,10 @@
+## [39.7.2](https://github.com/christides11/hack-and-slash-framework/compare/v39.7.1...v39.7.2) (2023-02-27)
+
+
+### Bug Fixes
+
+* Fixed IStateVariable copy/paste bugs ([ff85c9a](https://github.com/christides11/hack-and-slash-framework/commit/ff85c9a8733b816a3bee060878a4c71f1693ec3c))
+
 ## [39.7.1](https://github.com/christides11/hack-and-slash-framework/compare/v39.7.0...v39.7.1) (2023-02-27)
 
 
