@@ -1,3 +1,10 @@
+# [39.8.0](https://github.com/christides11/hack-and-slash-framework/compare/v39.7.4...v39.8.0) (2023-02-28)
+
+
+### Features
+
+* State Reference copying. ([732e9cc](https://github.com/christides11/hack-and-slash-framework/commit/732e9cc89bd0da726fdc44958ef423e48b8a33d8))
+
 ## [39.7.4](https://github.com/christides11/hack-and-slash-framework/compare/v39.7.3...v39.7.4) (2023-02-28)
 
 
