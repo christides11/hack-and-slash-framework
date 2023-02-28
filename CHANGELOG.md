@@ -1,3 +1,10 @@
+## [39.7.4](https://github.com/christides11/hack-and-slash-framework/compare/v39.7.3...v39.7.4) (2023-02-28)
+
+
+### Bug Fixes
+
+* Fixed StateTimeline pasting as child ([4add6cd](https://github.com/christides11/hack-and-slash-framework/commit/4add6cd0e492d0ffbcae32283360889b1aa91014))
+
 ## [39.7.3](https://github.com/christides11/hack-and-slash-framework/compare/v39.7.2...v39.7.3) (2023-02-27)
 
 
