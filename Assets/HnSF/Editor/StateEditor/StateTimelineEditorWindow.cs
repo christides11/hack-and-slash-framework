@@ -261,7 +261,7 @@ namespace HnSF
                     });
                     evt.menu.AppendAction("Paste as Child", (x) =>
                     {
-                        PasteAsChildStateVariable(index);
+                        PasteAsChildStateVariable(dataID);
                         RefreshAll(true);
                     });
                 }
@@ -289,10 +289,10 @@ namespace HnSF
             stateTimeline.PasteInPlace(index, stateVariableCopy);
         }
 
-        protected virtual void PasteAsChildStateVariable(int index)
+        protected virtual void PasteAsChildStateVariable(int parentID)
         {
             if (stateVariableCopy == null) return;
-            stateTimeline.PasteAsChild(index, stateVariableCopy);
+            stateTimeline.PasteAsChild(parentID, stateVariableCopy);
         }
 
         protected virtual void UpdateData(StateTimeline stateTimeline1, int id)
