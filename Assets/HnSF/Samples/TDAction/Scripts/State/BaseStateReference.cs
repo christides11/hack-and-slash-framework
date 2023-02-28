@@ -7,5 +7,13 @@ namespace HnSF.Sample.TDAction
         {
             return (int)state;
         }
+
+        public override FighterStateReferenceBase Copy()
+        {
+            return new BaseStateReference()
+            {
+                state = state
+            };
+        }
     }
 }
