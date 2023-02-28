@@ -7,5 +7,10 @@ namespace HnSF
         {
             return 0;
         }
+
+        public virtual FighterStateReferenceBase Copy()
+        {
+            return new FighterStateReferenceBase();
+        }
     }
 }
