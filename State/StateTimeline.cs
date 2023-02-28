@@ -18,6 +18,7 @@ namespace HnSF
         public bool autoLoop = true;
         public int autoLoopFrame = 1;
 
+        // ID : Index
         public Dictionary<int, int> stateVariablesIDMap = new Dictionary<int, int>();
         [SelectImplementation(typeof(IStateVariables))] [SerializeField, SerializeReference]
         public IStateVariables[] data = Array.Empty<IStateVariables>();
