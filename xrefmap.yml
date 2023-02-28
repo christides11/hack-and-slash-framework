@@ -2003,6 +2003,19 @@ references:
   commentId: T:HnSF.FighterStateReferenceBase
   fullName: HnSF.FighterStateReferenceBase
   nameWithType: FighterStateReferenceBase
+- uid: HnSF.FighterStateReferenceBase.Copy
+  name: Copy()
+  href: api/HnSF.FighterStateReferenceBase.html#HnSF_FighterStateReferenceBase_Copy
+  commentId: M:HnSF.FighterStateReferenceBase.Copy
+  fullName: HnSF.FighterStateReferenceBase.Copy()
+  nameWithType: FighterStateReferenceBase.Copy()
+- uid: HnSF.FighterStateReferenceBase.Copy*
+  name: Copy
+  href: api/HnSF.FighterStateReferenceBase.html#HnSF_FighterStateReferenceBase_Copy_
+  commentId: Overload:HnSF.FighterStateReferenceBase.Copy
+  isSpec: "True"
+  fullName: HnSF.FighterStateReferenceBase.Copy
+  nameWithType: FighterStateReferenceBase.Copy
 - uid: HnSF.FighterStateReferenceBase.GetState
   name: GetState()
   href: api/HnSF.FighterStateReferenceBase.html#HnSF_FighterStateReferenceBase_GetState
@@ -2628,6 +2641,19 @@ references:
   commentId: T:HnSF.Sample.TDAction.BaseStateReference
   fullName: HnSF.Sample.TDAction.BaseStateReference
   nameWithType: BaseStateReference
+- uid: HnSF.Sample.TDAction.BaseStateReference.Copy
+  name: Copy()
+  href: api/HnSF.Sample.TDAction.BaseStateReference.html#HnSF_Sample_TDAction_BaseStateReference_Copy
+  commentId: M:HnSF.Sample.TDAction.BaseStateReference.Copy
+  fullName: HnSF.Sample.TDAction.BaseStateReference.Copy()
+  nameWithType: BaseStateReference.Copy()
+- uid: HnSF.Sample.TDAction.BaseStateReference.Copy*
+  name: Copy
+  href: api/HnSF.Sample.TDAction.BaseStateReference.html#HnSF_Sample_TDAction_BaseStateReference_Copy_
+  commentId: Overload:HnSF.Sample.TDAction.BaseStateReference.Copy
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.BaseStateReference.Copy
+  nameWithType: BaseStateReference.Copy
 - uid: HnSF.Sample.TDAction.BaseStateReference.GetState
   name: GetState()
   href: api/HnSF.Sample.TDAction.BaseStateReference.html#HnSF_Sample_TDAction_BaseStateReference_GetState

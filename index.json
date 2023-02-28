@@ -182,7 +182,7 @@
   "api/HnSF.FighterStateReferenceBase.html": {
     "href": "api/HnSF.FighterStateReferenceBase.html",
     "title": "Class FighterStateReferenceBase | Hack and Slash Framework Documentation",
-    "keywords": "Class FighterStateReferenceBase Inheritance Object FighterStateReferenceBase BaseStateReference Namespace : HnSF Assembly : HnSF.dll Syntax [Serializable] public class FighterStateReferenceBase Methods | Improve this Doc View Source GetState() Declaration public virtual int GetState() Returns Type Description Int32"
+    "keywords": "Class FighterStateReferenceBase Inheritance Object FighterStateReferenceBase BaseStateReference Namespace : HnSF Assembly : HnSF.dll Syntax [Serializable] public class FighterStateReferenceBase Methods | Improve this Doc View Source Copy() Declaration public virtual FighterStateReferenceBase Copy() Returns Type Description FighterStateReferenceBase | Improve this Doc View Source GetState() Declaration public virtual int GetState() Returns Type Description Int32"
   },
   "api/HnSF.HelperFunctions.html": {
     "href": "api/HnSF.HelperFunctions.html",
@@ -267,7 +267,7 @@
   "api/HnSF.Sample.TDAction.BaseStateReference.html": {
     "href": "api/HnSF.Sample.TDAction.BaseStateReference.html",
     "title": "Class BaseStateReference | Hack and Slash Framework Documentation",
-    "keywords": "Class BaseStateReference Inheritance Object FighterStateReferenceBase BaseStateReference Namespace : HnSF.Sample.TDAction Assembly : HnSF.TDAction.dll Syntax public class BaseStateReference : FighterStateReferenceBase Fields | Improve this Doc View Source state Declaration public BaseStateEnum state Field Value Type Description BaseStateEnum Methods | Improve this Doc View Source GetState() Declaration public override int GetState() Returns Type Description Int32 Overrides FighterStateReferenceBase.GetState()"
+    "keywords": "Class BaseStateReference Inheritance Object FighterStateReferenceBase BaseStateReference Namespace : HnSF.Sample.TDAction Assembly : HnSF.TDAction.dll Syntax public class BaseStateReference : FighterStateReferenceBase Fields | Improve this Doc View Source state Declaration public BaseStateEnum state Field Value Type Description BaseStateEnum Methods | Improve this Doc View Source Copy() Declaration public override FighterStateReferenceBase Copy() Returns Type Description FighterStateReferenceBase Overrides FighterStateReferenceBase.Copy() | Improve this Doc View Source GetState() Declaration public override int GetState() Returns Type Description Int32 Overrides FighterStateReferenceBase.GetState()"
   },
   "api/HnSF.Sample.TDAction.BootLoader.html": {
     "href": "api/HnSF.Sample.TDAction.BootLoader.html",
