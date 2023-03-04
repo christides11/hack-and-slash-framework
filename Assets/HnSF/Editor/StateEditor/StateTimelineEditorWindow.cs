@@ -182,7 +182,7 @@ namespace HnSF
                 {
                     evt.menu.AppendAction("Paste", (x) =>
                     {
-                        stateTimeline.AddStateVariable(stateVariableCopy);
+                        stateTimeline.PasteAsChild(-1, stateVariableCopy);
                         RefreshAll(true);
                     });
                 }

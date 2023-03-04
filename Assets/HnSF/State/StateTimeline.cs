@@ -223,9 +223,11 @@ namespace HnSF
 #if UNITY_EDITOR
             UndoUtility.RecordObject(this, "Pasted State Variable as Child");
 #endif
+            var nameCopy = wantedChildData.Name;
             var frameRangeCopy = wantedChildData.FrameRanges;
             var conditionCopy = wantedChildData.Condition?.Copy();
             var dataIndex = AddStateVariable(wantedChildData.Copy(), parentIndex);
+            data[dataIndex].Name = nameCopy;
             data[dataIndex].FrameRanges = frameRangeCopy;
             data[dataIndex].Condition = conditionCopy;
         }

@@ -23,6 +23,9 @@ MonoBehaviour:
   - rid: 2193520583769325568
   - rid: 2193520583769325569
   - rid: 2193520692439547904
+  - rid: 5283439340902154247
+  - rid: 5283439340902154248
+  - rid: 5283439340902154249
   references:
     version: 2
     RefIds:
@@ -31,7 +34,7 @@ MonoBehaviour:
     - rid: 2193520583769325568
       type: {class: VarSetFallSpeed, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
       data:
-        name: Set Fall Speed
+        name: SSS
         id: 0
         frameRanges:
         - {x: 1, y: -1}
@@ -54,7 +57,7 @@ MonoBehaviour:
         maxFallSpeed: 0
         gravity: 0
         parent: -1
-        children: 
+        children: 05000000
     - rid: 2193520692439547904
       type: {class: VarApplyTraction, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
       data:
@@ -68,4 +71,40 @@ MonoBehaviour:
         aerialTraction: 0
         traction: 0
         parent: -1
+        children: 03000000
+    - rid: 5283439340902154247
+      type: {class: VarSetFallSpeed, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+      data:
+        name: SSS
+        id: 3
+        frameRanges:
+        - {x: 1, y: -1}
+        condition:
+          rid: -2
+        value: 10
+        parent: 2
+        children: 
+    - rid: 5283439340902154248
+      type: {class: VarSetFallSpeed, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+      data:
+        name: SSS
+        id: 4
+        frameRanges:
+        - {x: 1, y: -1}
+        condition:
+          rid: -2
+        value: 10
+        parent: -1
+        children: 
+    - rid: 5283439340902154249
+      type: {class: VarSetFallSpeed, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+      data:
+        name: SSS
+        id: 5
+        frameRanges:
+        - {x: 1, y: -1}
+        condition:
+          rid: -2
+        value: 10
+        parent: 1
         children: 
