@@ -1,3 +1,10 @@
+## [39.8.1](https://github.com/christides11/hack-and-slash-framework/compare/v39.8.0...v39.8.1) (2023-03-04)
+
+
+### Bug Fixes
+
+* Fixed IStateVariable pasting with no parent ([ed8b6fa](https://github.com/christides11/hack-and-slash-framework/commit/ed8b6fae6602d77e446c85b38c485175dd492683))
+
 # [39.8.0](https://github.com/christides11/hack-and-slash-framework/compare/v39.7.4...v39.8.0) (2023-02-28)
 
 
