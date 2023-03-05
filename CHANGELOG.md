@@ -1,3 +1,15 @@
+# [39.9.0](https://github.com/christides11/hack-and-slash-framework/compare/v39.8.1...v39.9.0) (2023-03-05)
+
+
+### Features
+
+* Evaluating state during hitstop support ([9404c10](https://github.com/christides11/hack-and-slash-framework/commit/9404c10872e0335fc6a666b994ddb64e4c83cea7))
+
+
+### BREAKING CHANGES
+
+* Added RunDuringHitstop to IStateVariable.
+
 ## [39.8.1](https://github.com/christides11/hack-and-slash-framework/compare/v39.8.0...v39.8.1) (2023-03-04)
 
 
