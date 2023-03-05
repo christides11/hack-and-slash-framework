@@ -42,6 +42,10 @@ namespace HnSF.Sample.TDAction.State
         [SerializeField] public Vector2Int[] frameRanges;
         [SelectImplementation(typeof(IConditionVariables))] [SerializeField, SerializeReference] 
         public IConditionVariables condition;
+
+        public bool RunDuringHitstop { get => runDuringHitstop; set => runDuringHitstop = value; }
+        public bool runDuringHitstop;
+
         public bool useTractionStat;
         public bool aerialTraction;
         public float traction;

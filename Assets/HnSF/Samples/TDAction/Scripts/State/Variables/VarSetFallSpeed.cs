@@ -42,6 +42,9 @@ namespace HnSF.Sample.TDAction.State
         [SelectImplementation(typeof(IConditionVariables))] [SerializeField, SerializeReference] 
         public IConditionVariables condition;
 
+        public bool RunDuringHitstop { get => runDuringHitstop; set => runDuringHitstop = value; }
+        public bool runDuringHitstop;
+
         public float value;
         
         [SerializeField, HideInInspector] private int parent;

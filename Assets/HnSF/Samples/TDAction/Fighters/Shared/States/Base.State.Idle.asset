@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40f66a5b733e53543bcb2daa52776331, type: 3}
   m_Name: Base.State.Idle
   m_EditorClassIdentifier: 
-  stateName: 
+  stateName: Idle
   useBaseState: 0
   baseState: {fileID: 0}
   totalFrames: 10
