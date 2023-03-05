@@ -1,3 +1,10 @@
+## [39.9.1](https://github.com/christides11/hack-and-slash-framework/compare/v39.9.0...v39.9.1) (2023-03-05)
+
+
+### Bug Fixes
+
+* CI fix. ([f522be7](https://github.com/christides11/hack-and-slash-framework/commit/f522be78f381a6f3b5367a986adc51df470edced))
+
 # [39.9.0](https://github.com/christides11/hack-and-slash-framework/compare/v39.8.1...v39.9.0) (2023-03-05)
 
 
