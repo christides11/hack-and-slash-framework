@@ -2372,6 +2372,19 @@ references:
   isSpec: "True"
   fullName: HnSF.IStateVariables.Parent
   nameWithType: IStateVariables.Parent
+- uid: HnSF.IStateVariables.RunDuringHitstop
+  name: RunDuringHitstop
+  href: api/HnSF.IStateVariables.html#HnSF_IStateVariables_RunDuringHitstop
+  commentId: P:HnSF.IStateVariables.RunDuringHitstop
+  fullName: HnSF.IStateVariables.RunDuringHitstop
+  nameWithType: IStateVariables.RunDuringHitstop
+- uid: HnSF.IStateVariables.RunDuringHitstop*
+  name: RunDuringHitstop
+  href: api/HnSF.IStateVariables.html#HnSF_IStateVariables_RunDuringHitstop_
+  commentId: Overload:HnSF.IStateVariables.RunDuringHitstop
+  isSpec: "True"
+  fullName: HnSF.IStateVariables.RunDuringHitstop
+  nameWithType: IStateVariables.RunDuringHitstop
 - uid: HnSF.ITeamable
   name: ITeamable
   href: api/HnSF.ITeamable.html
@@ -4859,6 +4872,25 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.State.ChangeState.Parent
   nameWithType: ChangeState.Parent
+- uid: HnSF.Sample.TDAction.State.ChangeState.runDuringHitstop
+  name: runDuringHitstop
+  href: api/HnSF.Sample.TDAction.State.ChangeState.html#HnSF_Sample_TDAction_State_ChangeState_runDuringHitstop
+  commentId: F:HnSF.Sample.TDAction.State.ChangeState.runDuringHitstop
+  fullName: HnSF.Sample.TDAction.State.ChangeState.runDuringHitstop
+  nameWithType: ChangeState.runDuringHitstop
+- uid: HnSF.Sample.TDAction.State.ChangeState.RunDuringHitstop
+  name: RunDuringHitstop
+  href: api/HnSF.Sample.TDAction.State.ChangeState.html#HnSF_Sample_TDAction_State_ChangeState_RunDuringHitstop
+  commentId: P:HnSF.Sample.TDAction.State.ChangeState.RunDuringHitstop
+  fullName: HnSF.Sample.TDAction.State.ChangeState.RunDuringHitstop
+  nameWithType: ChangeState.RunDuringHitstop
+- uid: HnSF.Sample.TDAction.State.ChangeState.RunDuringHitstop*
+  name: RunDuringHitstop
+  href: api/HnSF.Sample.TDAction.State.ChangeState.html#HnSF_Sample_TDAction_State_ChangeState_RunDuringHitstop_
+  commentId: Overload:HnSF.Sample.TDAction.State.ChangeState.RunDuringHitstop
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.ChangeState.RunDuringHitstop
+  nameWithType: ChangeState.RunDuringHitstop
 - uid: HnSF.Sample.TDAction.State.ChangeState.stateID
   name: stateID
   href: api/HnSF.Sample.TDAction.State.ChangeState.html#HnSF_Sample_TDAction_State_ChangeState_stateID
@@ -5414,6 +5446,25 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.State.VarApplyGravity.Parent
   nameWithType: VarApplyGravity.Parent
+- uid: HnSF.Sample.TDAction.State.VarApplyGravity.runDuringHitstop
+  name: runDuringHitstop
+  href: api/HnSF.Sample.TDAction.State.VarApplyGravity.html#HnSF_Sample_TDAction_State_VarApplyGravity_runDuringHitstop
+  commentId: F:HnSF.Sample.TDAction.State.VarApplyGravity.runDuringHitstop
+  fullName: HnSF.Sample.TDAction.State.VarApplyGravity.runDuringHitstop
+  nameWithType: VarApplyGravity.runDuringHitstop
+- uid: HnSF.Sample.TDAction.State.VarApplyGravity.RunDuringHitstop
+  name: RunDuringHitstop
+  href: api/HnSF.Sample.TDAction.State.VarApplyGravity.html#HnSF_Sample_TDAction_State_VarApplyGravity_RunDuringHitstop
+  commentId: P:HnSF.Sample.TDAction.State.VarApplyGravity.RunDuringHitstop
+  fullName: HnSF.Sample.TDAction.State.VarApplyGravity.RunDuringHitstop
+  nameWithType: VarApplyGravity.RunDuringHitstop
+- uid: HnSF.Sample.TDAction.State.VarApplyGravity.RunDuringHitstop*
+  name: RunDuringHitstop
+  href: api/HnSF.Sample.TDAction.State.VarApplyGravity.html#HnSF_Sample_TDAction_State_VarApplyGravity_RunDuringHitstop_
+  commentId: Overload:HnSF.Sample.TDAction.State.VarApplyGravity.RunDuringHitstop
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.VarApplyGravity.RunDuringHitstop
+  nameWithType: VarApplyGravity.RunDuringHitstop
 - uid: HnSF.Sample.TDAction.State.VarApplyGravity.useGravityStat
   name: useGravityStat
   href: api/HnSF.Sample.TDAction.State.VarApplyGravity.html#HnSF_Sample_TDAction_State_VarApplyGravity_useGravityStat
@@ -5560,6 +5611,25 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.State.VarApplyTraction.Parent
   nameWithType: VarApplyTraction.Parent
+- uid: HnSF.Sample.TDAction.State.VarApplyTraction.runDuringHitstop
+  name: runDuringHitstop
+  href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_runDuringHitstop
+  commentId: F:HnSF.Sample.TDAction.State.VarApplyTraction.runDuringHitstop
+  fullName: HnSF.Sample.TDAction.State.VarApplyTraction.runDuringHitstop
+  nameWithType: VarApplyTraction.runDuringHitstop
+- uid: HnSF.Sample.TDAction.State.VarApplyTraction.RunDuringHitstop
+  name: RunDuringHitstop
+  href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_RunDuringHitstop
+  commentId: P:HnSF.Sample.TDAction.State.VarApplyTraction.RunDuringHitstop
+  fullName: HnSF.Sample.TDAction.State.VarApplyTraction.RunDuringHitstop
+  nameWithType: VarApplyTraction.RunDuringHitstop
+- uid: HnSF.Sample.TDAction.State.VarApplyTraction.RunDuringHitstop*
+  name: RunDuringHitstop
+  href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_RunDuringHitstop_
+  commentId: Overload:HnSF.Sample.TDAction.State.VarApplyTraction.RunDuringHitstop
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.VarApplyTraction.RunDuringHitstop
+  nameWithType: VarApplyTraction.RunDuringHitstop
 - uid: HnSF.Sample.TDAction.State.VarApplyTraction.traction
   name: traction
   href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_traction
@@ -5700,6 +5770,25 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed.Parent
   nameWithType: VarSetFallSpeed.Parent
+- uid: HnSF.Sample.TDAction.State.VarSetFallSpeed.runDuringHitstop
+  name: runDuringHitstop
+  href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html#HnSF_Sample_TDAction_State_VarSetFallSpeed_runDuringHitstop
+  commentId: F:HnSF.Sample.TDAction.State.VarSetFallSpeed.runDuringHitstop
+  fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed.runDuringHitstop
+  nameWithType: VarSetFallSpeed.runDuringHitstop
+- uid: HnSF.Sample.TDAction.State.VarSetFallSpeed.RunDuringHitstop
+  name: RunDuringHitstop
+  href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html#HnSF_Sample_TDAction_State_VarSetFallSpeed_RunDuringHitstop
+  commentId: P:HnSF.Sample.TDAction.State.VarSetFallSpeed.RunDuringHitstop
+  fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed.RunDuringHitstop
+  nameWithType: VarSetFallSpeed.RunDuringHitstop
+- uid: HnSF.Sample.TDAction.State.VarSetFallSpeed.RunDuringHitstop*
+  name: RunDuringHitstop
+  href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html#HnSF_Sample_TDAction_State_VarSetFallSpeed_RunDuringHitstop_
+  commentId: Overload:HnSF.Sample.TDAction.State.VarSetFallSpeed.RunDuringHitstop
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed.RunDuringHitstop
+  nameWithType: VarSetFallSpeed.RunDuringHitstop
 - uid: HnSF.Sample.TDAction.State.VarSetFallSpeed.value
   name: value
   href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html#HnSF_Sample_TDAction_State_VarSetFallSpeed_value
