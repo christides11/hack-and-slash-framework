@@ -8,6 +8,7 @@ namespace HnSF
         public int ID { get; set; }
         public int Parent { get; set; }
         public int[] Children { get; set; }
+        public bool RunDuringHitstop { get; set; }
 
 
         public Vector2Int[] FrameRanges { get; set; }

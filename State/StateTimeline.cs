@@ -187,6 +187,7 @@ namespace HnSF
             copyData.Name = data[index].Name;
             copyData.FrameRanges = data[index].FrameRanges;
             copyData.Condition = data[index].Condition?.Copy();
+            copyData.RunDuringHitstop = data[index].RunDuringHitstop;
             return copyData;
         }
 
@@ -208,6 +209,7 @@ namespace HnSF
             int[] childrenCopy = oldData.Children;
             var frameRangeCopy = newData.FrameRanges;
             var conditionCopy = newData.Condition?.Copy();
+            var runDuringHitstopCopy = newData.RunDuringHitstop;
 
             data[index] = newData.Copy();
             data[index].Name = nameCopy;
@@ -216,6 +218,7 @@ namespace HnSF
             data[index].Children = childrenCopy;
             data[index].FrameRanges = frameRangeCopy;
             data[index].Condition = conditionCopy;
+            data[index].RunDuringHitstop = runDuringHitstopCopy;
         }
 
         public void PasteAsChild(int parentIndex, IStateVariables wantedChildData)
@@ -226,10 +229,12 @@ namespace HnSF
             var nameCopy = wantedChildData.Name;
             var frameRangeCopy = wantedChildData.FrameRanges;
             var conditionCopy = wantedChildData.Condition?.Copy();
+            var hitstopCopy = wantedChildData.RunDuringHitstop;
             var dataIndex = AddStateVariable(wantedChildData.Copy(), parentIndex);
             data[dataIndex].Name = nameCopy;
             data[dataIndex].FrameRanges = frameRangeCopy;
             data[dataIndex].Condition = conditionCopy;
+            data[dataIndex].RunDuringHitstop = hitstopCopy;
         }
     }
 }

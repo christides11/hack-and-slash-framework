@@ -38,12 +38,15 @@ namespace HnSF.Sample.TDAction.State
             get => frameRanges;
             set => frameRanges = value;
         }
-    
+
         [SerializeField, HideInInspector] private int id;
 
         [SerializeField] public Vector2Int[] frameRanges;
         [SelectImplementation(typeof(IConditionVariables))] [SerializeField, SerializeReference] 
         public IConditionVariables condition;
+
+        public bool RunDuringHitstop { get => runDuringHitstop; set => runDuringHitstop = value; }
+        public bool runDuringHitstop;
 
         public bool useMaxFallSpeedStat;
         public bool useGravityStat;
