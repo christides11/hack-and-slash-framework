@@ -1,3 +1,10 @@
+## [39.9.2](https://github.com/christides11/hack-and-slash-framework/compare/v39.9.1...v39.9.2) (2023-03-13)
+
+
+### Bug Fixes
+
+* Fixed state ID map null issue. ([b28a9cd](https://github.com/christides11/hack-and-slash-framework/commit/b28a9cdc2875dfbe1c344fda88216cc3cc0cb1b6))
+
 ## [39.9.1](https://github.com/christides11/hack-and-slash-framework/compare/v39.9.0...v39.9.1) (2023-03-05)
 
 
