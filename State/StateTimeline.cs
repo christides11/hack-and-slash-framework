@@ -41,6 +41,7 @@ namespace HnSF
         
         public virtual void BuildStateVariablesIDMap()
         {
+            if (stateVariablesIDMap == null) stateVariablesIDMap = new Dictionary<int, int>();
             stateVariablesIDMap.Clear();
             for (int i = 0; i < data.Length; i++)
             {
