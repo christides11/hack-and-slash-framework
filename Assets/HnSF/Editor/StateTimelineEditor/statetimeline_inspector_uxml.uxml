@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:Button text="Open Editor" display-tooltip-when-elided="true" name="OpenEditor" />
+    <ui:Label text="General" display-tooltip-when-elided="true" name="Label-General" style="font-size: 24px; -unity-font-style: bold; -unity-text-align: upper-center;" />
+    <ui:TextField picking-mode="Ignore" label="State Name" value="filler text" text="filler text" binding-path="stateName" name="StateName" />
+    <ui:Toggle label="Use Base State?" binding-path="useBaseState" name="UseBaseState" />
+    <uie:ObjectField label="Base State" allow-scene-objects="false" name="BaseState" binding-path="baseState" />
+    <uie:IntegerField label="State Length" value="60" name="StateLength" binding-path="totalFrames" is-delayed="true" />
+    <ui:Label text="Auto" display-tooltip-when-elided="true" name="Label-Auto" style="font-size: 24px; -unity-font-style: bold; -unity-text-align: upper-center;" />
+    <ui:Toggle label="Auto Increment Frames" binding-path="autoIncrement" name="AutoIncrement" />
+    <ui:Toggle label="Auto Loop" binding-path="autoLoop" name="AutoLoop" />
+    <uie:IntegerField label="Auto Loop Frame" value="1" name="AutoLoopFrame" binding-path="autoLoopFrame" />
+    <ui:Foldout text="Default Inspector" name="Default_Inspector" value="false" />
+</ui:UXML>

@@ -72,6 +72,7 @@
     <None Include="Assets\HnSF\Editor\StateEditor\StateTimelineStyle.uss" />
     <None Include="Assets\HnSF\Editor\HnSF.Editor.asmdef" />
     <None Include="Assets\HnSF\Editor\StateEditor\sidebar-data-label.uxml" />
+    <None Include="Assets\HnSF\Editor\StateTimelineEditor\statetimeline_inspector_uxml.uxml" />
     <None Include="Assets\HnSF\Editor\StateEditor\StateTimelineVisualTree.uxml" />
   </ItemGroup>
   <ItemGroup>
