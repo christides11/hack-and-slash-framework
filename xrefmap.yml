@@ -6269,25 +6269,31 @@ references:
   commentId: T:HnSF.StateTimelineEditor
   fullName: HnSF.StateTimelineEditor
   nameWithType: StateTimelineEditor
+- uid: HnSF.StateTimelineEditor.CreateInspectorGUI
+  name: CreateInspectorGUI()
+  href: api/HnSF.StateTimelineEditor.html#HnSF_StateTimelineEditor_CreateInspectorGUI
+  commentId: M:HnSF.StateTimelineEditor.CreateInspectorGUI
+  fullName: HnSF.StateTimelineEditor.CreateInspectorGUI()
+  nameWithType: StateTimelineEditor.CreateInspectorGUI()
+- uid: HnSF.StateTimelineEditor.CreateInspectorGUI*
+  name: CreateInspectorGUI
+  href: api/HnSF.StateTimelineEditor.html#HnSF_StateTimelineEditor_CreateInspectorGUI_
+  commentId: Overload:HnSF.StateTimelineEditor.CreateInspectorGUI
+  isSpec: "True"
+  fullName: HnSF.StateTimelineEditor.CreateInspectorGUI
+  nameWithType: StateTimelineEditor.CreateInspectorGUI
 - uid: HnSF.StateTimelineEditor.currentTimeline
   name: currentTimeline
   href: api/HnSF.StateTimelineEditor.html#HnSF_StateTimelineEditor_currentTimeline
   commentId: F:HnSF.StateTimelineEditor.currentTimeline
   fullName: HnSF.StateTimelineEditor.currentTimeline
   nameWithType: StateTimelineEditor.currentTimeline
-- uid: HnSF.StateTimelineEditor.OnInspectorGUI
-  name: OnInspectorGUI()
-  href: api/HnSF.StateTimelineEditor.html#HnSF_StateTimelineEditor_OnInspectorGUI
-  commentId: M:HnSF.StateTimelineEditor.OnInspectorGUI
-  fullName: HnSF.StateTimelineEditor.OnInspectorGUI()
-  nameWithType: StateTimelineEditor.OnInspectorGUI()
-- uid: HnSF.StateTimelineEditor.OnInspectorGUI*
-  name: OnInspectorGUI
-  href: api/HnSF.StateTimelineEditor.html#HnSF_StateTimelineEditor_OnInspectorGUI_
-  commentId: Overload:HnSF.StateTimelineEditor.OnInspectorGUI
-  isSpec: "True"
-  fullName: HnSF.StateTimelineEditor.OnInspectorGUI
-  nameWithType: StateTimelineEditor.OnInspectorGUI
+- uid: HnSF.StateTimelineEditor.inspectorXML
+  name: inspectorXML
+  href: api/HnSF.StateTimelineEditor.html#HnSF_StateTimelineEditor_inspectorXML
+  commentId: F:HnSF.StateTimelineEditor.inspectorXML
+  fullName: HnSF.StateTimelineEditor.inspectorXML
+  nameWithType: StateTimelineEditor.inspectorXML
 - uid: HnSF.StateTimelineEditorWindow
   name: StateTimelineEditorWindow
   href: api/HnSF.StateTimelineEditorWindow.html

@@ -502,7 +502,7 @@
   "api/HnSF.StateTimelineEditor.html": {
     "href": "api/HnSF.StateTimelineEditor.html",
     "title": "Class StateTimelineEditor | Hack and Slash Framework Documentation",
-    "keywords": "Class StateTimelineEditor Inheritance Object StateTimelineEditor Namespace : HnSF Assembly : HnSF.Editor.dll Syntax public class StateTimelineEditor : Editor Fields | Improve this Doc View Source currentTimeline Declaration public StateTimelineEditorWindow currentTimeline Field Value Type Description StateTimelineEditorWindow Methods | Improve this Doc View Source OnInspectorGUI() Declaration public override void OnInspectorGUI()"
+    "keywords": "Class StateTimelineEditor Inheritance Object StateTimelineEditor Namespace : HnSF Assembly : HnSF.Editor.dll Syntax public class StateTimelineEditor : Editor Fields | Improve this Doc View Source currentTimeline Declaration public StateTimelineEditorWindow currentTimeline Field Value Type Description StateTimelineEditorWindow | Improve this Doc View Source inspectorXML Declaration public VisualTreeAsset inspectorXML Field Value Type Description VisualTreeAsset Methods | Improve this Doc View Source CreateInspectorGUI() Declaration public override VisualElement CreateInspectorGUI() Returns Type Description VisualElement"
   },
   "api/HnSF.StateTimelineEditorWindow.html": {
     "href": "api/HnSF.StateTimelineEditorWindow.html",
