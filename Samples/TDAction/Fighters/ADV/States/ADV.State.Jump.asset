@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40f66a5b733e53543bcb2daa52776331, type: 3}
   m_Name: ADV.State.Jump
   m_EditorClassIdentifier: 
-  stateName: 
+  stateName: 0
   useBaseState: 1
   baseState: {fileID: 11400000, guid: 65f5e055426eb834a95aa16b8f725063, type: 2}
   totalFrames: 24
