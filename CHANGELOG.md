@@ -1,3 +1,15 @@
+# [39.11.0](https://github.com/christides11/hack-and-slash-framework/compare/v39.10.0...v39.11.0) (2023-07-19)
+
+
+### Features
+
+* Removed FunctionMap from ConditionVariables ([e23fc18](https://github.com/christides11/hack-and-slash-framework/commit/e23fc1856f032c9261771ac9f5eff40bcb95f86a))
+
+
+### BREAKING CHANGES
+
+* FunctionMap is unnecessary.
+
 # [39.10.0](https://github.com/christides11/hack-and-slash-framework/compare/v39.9.2...v39.10.0) (2023-07-19)
 
 
