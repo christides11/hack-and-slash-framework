@@ -197,7 +197,7 @@
   "api/HnSF.IConditionVariables.html": {
     "href": "api/HnSF.IConditionVariables.html",
     "title": "Interface IConditionVariables | Hack and Slash Framework Documentation",
-    "keywords": "Interface IConditionVariables Namespace : HnSF Assembly : HnSF.dll Syntax public interface IConditionVariables Properties | Improve this Doc View Source FunctionMap Declaration int FunctionMap { get; } Property Value Type Description Int32 Methods | Improve this Doc View Source Copy() Declaration IConditionVariables Copy() Returns Type Description IConditionVariables"
+    "keywords": "Interface IConditionVariables Namespace : HnSF Assembly : HnSF.dll Syntax public interface IConditionVariables Methods | Improve this Doc View Source Copy() Declaration IConditionVariables Copy() Returns Type Description IConditionVariables"
   },
   "api/HnSF.Input.html": {
     "href": "api/HnSF.Input.html",

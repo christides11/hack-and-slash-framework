@@ -2096,19 +2096,6 @@ references:
   isSpec: "True"
   fullName: HnSF.IConditionVariables.Copy
   nameWithType: IConditionVariables.Copy
-- uid: HnSF.IConditionVariables.FunctionMap
-  name: FunctionMap
-  href: api/HnSF.IConditionVariables.html#HnSF_IConditionVariables_FunctionMap
-  commentId: P:HnSF.IConditionVariables.FunctionMap
-  fullName: HnSF.IConditionVariables.FunctionMap
-  nameWithType: IConditionVariables.FunctionMap
-- uid: HnSF.IConditionVariables.FunctionMap*
-  name: FunctionMap
-  href: api/HnSF.IConditionVariables.html#HnSF_IConditionVariables_FunctionMap_
-  commentId: Overload:HnSF.IConditionVariables.FunctionMap
-  isSpec: "True"
-  fullName: HnSF.IConditionVariables.FunctionMap
-  nameWithType: IConditionVariables.FunctionMap
 - uid: HnSF.Input
   name: HnSF.Input
   href: api/HnSF.Input.html
