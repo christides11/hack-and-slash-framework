@@ -1,3 +1,10 @@
+# [39.10.0](https://github.com/christides11/hack-and-slash-framework/compare/v39.9.2...v39.10.0) (2023-07-19)
+
+
+### Features
+
+* StateTimeline inspector using UI Toolkit ([89c78a1](https://github.com/christides11/hack-and-slash-framework/commit/89c78a18c5aab7c4cf7a635e0c3b24ebd2e7b0da))
+
 ## [39.9.2](https://github.com/christides11/hack-and-slash-framework/compare/v39.9.1...v39.9.2) (2023-03-13)
 
 
