@@ -1,3 +1,10 @@
+# [39.13.0](https://github.com/christides11/hack-and-slash-framework/compare/v39.12.0...v39.13.0) (2023-09-30)
+
+
+### Features
+
+* Added typing for state variables. ([9bf5896](https://github.com/christides11/hack-and-slash-framework/commit/9bf58967f23829d59ab23b925f29842846b21663))
+
 # [39.12.0](https://github.com/christides11/hack-and-slash-framework/compare/v39.11.0...v39.12.0) (2023-07-20)
 
 
