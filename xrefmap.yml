@@ -2372,6 +2372,19 @@ references:
   isSpec: "True"
   fullName: HnSF.IStateVariables.RunDuringHitstop
   nameWithType: IStateVariables.RunDuringHitstop
+- uid: HnSF.IStateVariables.VariableType
+  name: VariableType
+  href: api/HnSF.IStateVariables.html#HnSF_IStateVariables_VariableType
+  commentId: P:HnSF.IStateVariables.VariableType
+  fullName: HnSF.IStateVariables.VariableType
+  nameWithType: IStateVariables.VariableType
+- uid: HnSF.IStateVariables.VariableType*
+  name: VariableType
+  href: api/HnSF.IStateVariables.html#HnSF_IStateVariables_VariableType_
+  commentId: Overload:HnSF.IStateVariables.VariableType
+  isSpec: "True"
+  fullName: HnSF.IStateVariables.VariableType
+  nameWithType: IStateVariables.VariableType
 - uid: HnSF.ITeamable
   name: ITeamable
   href: api/HnSF.ITeamable.html
