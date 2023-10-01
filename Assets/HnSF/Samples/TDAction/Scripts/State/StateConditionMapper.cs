@@ -4,10 +4,10 @@ namespace HnSF.Sample.TDAction.State
     {
         public StateConditionMapper()
         {
-            functions.Add(typeof(ConditionNone), BaseConditionFunctions.NoCondition);
-            functions.Add(typeof(ConditionMovementMagnitude), BaseConditionFunctions.MovementSqrMagnitude);
-            functions.Add(typeof(ConditionGroundState), BaseConditionFunctions.GroundedState);
-            functions.Add(typeof(ConditionFallSpeed), BaseConditionFunctions.FallSpeed);
+            RegisterCondition(typeof(ConditionNone), BaseConditionFunctions.NoCondition);
+            RegisterCondition(typeof(ConditionMovementMagnitude), BaseConditionFunctions.MovementSqrMagnitude);
+            RegisterCondition(typeof(ConditionGroundState), BaseConditionFunctions.GroundedState);
+            RegisterCondition(typeof(ConditionFallSpeed), BaseConditionFunctions.FallSpeed);
         }
     }
 }

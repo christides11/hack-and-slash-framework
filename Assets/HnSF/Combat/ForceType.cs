@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace HnSF.Combat
+﻿namespace HnSF.Combat
 {
     public enum ForceType
     {

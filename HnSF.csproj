@@ -72,8 +72,10 @@
     <Compile Include="Assets\HnSF\Fighter\IFighterStateManager.cs" />
     <Compile Include="Assets\HnSF\Combat\Boxes\Hitbox\HitboxForceRelation.cs" />
     <Compile Include="Assets\HnSF\Combat\Info\HurtInfoBase.cs" />
+    <Compile Include="Assets\HnSF\State\StateMachineContext.cs" />
     <Compile Include="Assets\HnSF\Fighter\IFighterBase.cs" />
     <Compile Include="Assets\HnSF\State\Variables\StateVariableAttribute.cs" />
+    <Compile Include="Assets\HnSF\State\StateFunctionContext.cs" />
     <Compile Include="Assets\HnSF\Combat\Boxes\BoxDefinition.cs" />
     <Compile Include="Assets\HnSF\Input\InputDefinitionType.cs" />
     <Compile Include="Assets\HnSF\Combat\OnHitType.cs" />

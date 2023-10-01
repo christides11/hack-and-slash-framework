@@ -1,31 +1,39 @@
 using System;
 using System.Collections.Generic;
-using HnSF.Fighters;
 
 namespace HnSF
 {
     [System.Serializable]
     public class StateConditionMapperBase
     {
-        public Dictionary<Type, Func<IFighterBase, IConditionVariables, StateTimeline, int, bool>> functions =
-            new Dictionary<Type, Func<IFighterBase, IConditionVariables, StateTimeline, int, bool>>();
+        public Dictionary<Type, Func<IConditionVariables, StateTimeline, StateMachineContext, StateFunctionContext, bool>> functions = new();
         
-        public virtual bool TryRegisterCondition(Type id, Func<IFighterBase, IConditionVariables, StateTimeline, int, bool> condition)
+        public virtual bool TryRegisterCondition(Type id, Func<IConditionVariables, StateTimeline, StateMachineContext, StateFunctionContext, bool> condition)
         {
             if (functions.ContainsKey(id)) return false;
             functions.Add(id, condition);
             return true;
         }
 
-        public virtual void RegisterCondition(Type id, Func<IFighterBase, IConditionVariables, StateTimeline, int, bool> condition)
+        public virtual void RegisterCondition(Type id, Func<IConditionVariables, StateTimeline, StateMachineContext, StateFunctionContext, bool> condition)
         {
             functions.Add(id, condition);
         }
 
-        public virtual bool OverrideCondition(Type id, Func<IFighterBase, IConditionVariables, StateTimeline, int, bool> condition)
+        public virtual bool OverrideCondition(Type id, Func<IConditionVariables, StateTimeline, StateMachineContext, StateFunctionContext, bool> condition)
         {
             functions[id] = condition;
             return true;
+        }
+
+        public virtual void RegisterOrOverrideCondition(Type id, Func<IConditionVariables, StateTimeline, StateMachineContext, StateFunctionContext, bool> condition)
+        {
+            if (functions.ContainsKey(id))
+            {
+                functions[id] = condition;
+                return;
+            }
+            functions.Add(id, condition);
         }
 
         public virtual void RemoveCondition(Type id)
@@ -33,9 +41,9 @@ namespace HnSF
             functions.Remove(id);
         }
 
-        public virtual bool TryCondition(Type id, IFighterBase fighter, IConditionVariables variables, StateTimeline timeline, int frame)
+        public virtual bool TryCondition(Type id, IConditionVariables variables, StateTimeline timeline, StateMachineContext smContext, StateFunctionContext sfContext)
         {
-            return functions[id](fighter, variables, timeline, frame);
+            return functions[id](variables, timeline, smContext, sfContext);
         }
     }
 }

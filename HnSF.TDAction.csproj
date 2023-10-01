@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\Conditions\BaseConditionFunctionEnum.cs" />
     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\FighterDefinition.cs" />
+    <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\FighterStateMachineContext.cs" />
     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Fighter\EnumStateBinding.cs" />
     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\Managers\PlayerManager.cs" />
     <Compile Include="Assets\HnSF\Samples\TDAction\Scripts\State\Conditions\ConditionFallSpeed.cs" />

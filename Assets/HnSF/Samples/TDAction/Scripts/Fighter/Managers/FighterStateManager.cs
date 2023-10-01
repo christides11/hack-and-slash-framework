@@ -1,11 +1,8 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using HnSF.Combat;
 using HnSF.Fighters;
 using HnSF.Sample.TDAction.State;
 using UnityEngine;
-using UnityEngine.Playables;
 
 namespace HnSF.Sample.TDAction
 {
@@ -30,6 +27,15 @@ namespace HnSF.Sample.TDAction
 
         [NonSerialized] public StateFunctionMapper functionMapperBase = new StateFunctionMapper(); 
         [NonSerialized] public StateConditionMapper conditionMapperBase = new StateConditionMapper();
+
+        private FighterStateMachineContext smContext = new FighterStateMachineContext();
+
+        private void Awake()
+        {
+            smContext.fighter = fighterManager;
+            functionMapperBase = new StateFunctionMapper();
+            conditionMapperBase = new StateConditionMapper();
+        }
 
         public void Tick()
         {
@@ -85,9 +91,11 @@ namespace HnSF.Sample.TDAction
 
             if (!valid) return;
             var varType = d.GetType();
-            if (!conditionMapperBase.TryCondition(varType, fighterManager, d.Condition, timeline, realFrame)) return;
-            functionMapperBase.functions[varType](fighterManager, d, timeline, realFrame, (float)(realFrame - frStart) / (float)(frEnd - frStart));
+            var sfContext = new StateFunctionContext() { currentFrame = realFrame, frameRangePercent = (float)(realFrame - frStart) / (float)(frEnd - frStart), };
+            if (d.Condition != null && !conditionMapperBase.TryCondition(d.Condition.GetType(), d.Condition, timeline, smContext, sfContext)) return;
+            functionMapperBase.functions[varType](d, timeline, smContext, sfContext);
 
+            if (d.Children is null) return;
             foreach (var childID in d.Children)
             {
                 ProcessStateVariables(timeline, timeline.data[timeline.stateVariablesIDMap[childID]], realFrame, totalFrames);
