@@ -100,18 +100,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_BaseStateFunctions_ApplyGravity_HnSF_Fighters_IFighterBase_HnSF_IStateVariables_HnSF_StateTimeline_System_Int32_System_Single_.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.BaseStateFunctions.ApplyGravity(HnSF.Fighters.IFighterBase%2CHnSF.IStateVariables%2CHnSF.StateTimeline%2CSystem.Int32%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_BaseStateFunctions_ApplyGravity_HnSF_IStateVariables_HnSF_StateTimeline_HnSF_StateMachineContext_HnSF_StateFunctionContext_.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.BaseStateFunctions.ApplyGravity(HnSF.IStateVariables%2CHnSF.StateTimeline%2CHnSF.StateMachineContext%2CHnSF.StateFunctionContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/State/Functions/BaseStateFunctions.cs/#L16">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/State/Functions/BaseStateFunctions.cs/#L12">View Source</a>
   </span>
   <a id="HnSF_Sample_TDAction_BaseStateFunctions_ApplyGravity_" data-uid="HnSF.Sample.TDAction.BaseStateFunctions.ApplyGravity*"></a>
-  <h4 id="HnSF_Sample_TDAction_BaseStateFunctions_ApplyGravity_HnSF_Fighters_IFighterBase_HnSF_IStateVariables_HnSF_StateTimeline_System_Int32_System_Single_" data-uid="HnSF.Sample.TDAction.BaseStateFunctions.ApplyGravity(HnSF.Fighters.IFighterBase,HnSF.IStateVariables,HnSF.StateTimeline,System.Int32,System.Single)">ApplyGravity(IFighterBase, IStateVariables, StateTimeline, Int32, Single)</h4>
+  <h4 id="HnSF_Sample_TDAction_BaseStateFunctions_ApplyGravity_HnSF_IStateVariables_HnSF_StateTimeline_HnSF_StateMachineContext_HnSF_StateFunctionContext_" data-uid="HnSF.Sample.TDAction.BaseStateFunctions.ApplyGravity(HnSF.IStateVariables,HnSF.StateTimeline,HnSF.StateMachineContext,HnSF.StateFunctionContext)">ApplyGravity(IStateVariables, StateTimeline, StateMachineContext, StateFunctionContext)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ApplyGravity(IFighterBase fighter, IStateVariables variables, StateTimeline arg3, int currentFrame, float frameRangePercent)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ApplyGravity(IStateVariables variables, StateTimeline timeline, StateMachineContext smContext, StateFunctionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -124,46 +124,41 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="HnSF.Fighters.IFighterBase.html">IFighterBase</a></td>
-        <td><span class="parametername">fighter</span></td>
-        <td></td>
-      </tr>
-      <tr>
         <td><a class="xref" href="HnSF.IStateVariables.html">IStateVariables</a></td>
         <td><span class="parametername">variables</span></td>
         <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="HnSF.StateTimeline.html">StateTimeline</a></td>
-        <td><span class="parametername">arg3</span></td>
+        <td><span class="parametername">timeline</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">currentFrame</span></td>
+        <td><a class="xref" href="HnSF.StateMachineContext.html">StateMachineContext</a></td>
+        <td><span class="parametername">smContext</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Single</a></td>
-        <td><span class="parametername">frameRangePercent</span></td>
+        <td><a class="xref" href="HnSF.StateFunctionContext.html">StateFunctionContext</a></td>
+        <td><span class="parametername">context</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_BaseStateFunctions_ApplyTraction_HnSF_Fighters_IFighterBase_HnSF_IStateVariables_HnSF_StateTimeline_System_Int32_System_Single_.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.BaseStateFunctions.ApplyTraction(HnSF.Fighters.IFighterBase%2CHnSF.IStateVariables%2CHnSF.StateTimeline%2CSystem.Int32%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_BaseStateFunctions_ApplyTraction_HnSF_IStateVariables_HnSF_StateTimeline_HnSF_StateMachineContext_HnSF_StateFunctionContext_.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.BaseStateFunctions.ApplyTraction(HnSF.IStateVariables%2CHnSF.StateTimeline%2CHnSF.StateMachineContext%2CHnSF.StateFunctionContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/State/Functions/BaseStateFunctions.cs/#L24">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/State/Functions/BaseStateFunctions.cs/#L20">View Source</a>
   </span>
   <a id="HnSF_Sample_TDAction_BaseStateFunctions_ApplyTraction_" data-uid="HnSF.Sample.TDAction.BaseStateFunctions.ApplyTraction*"></a>
-  <h4 id="HnSF_Sample_TDAction_BaseStateFunctions_ApplyTraction_HnSF_Fighters_IFighterBase_HnSF_IStateVariables_HnSF_StateTimeline_System_Int32_System_Single_" data-uid="HnSF.Sample.TDAction.BaseStateFunctions.ApplyTraction(HnSF.Fighters.IFighterBase,HnSF.IStateVariables,HnSF.StateTimeline,System.Int32,System.Single)">ApplyTraction(IFighterBase, IStateVariables, StateTimeline, Int32, Single)</h4>
+  <h4 id="HnSF_Sample_TDAction_BaseStateFunctions_ApplyTraction_HnSF_IStateVariables_HnSF_StateTimeline_HnSF_StateMachineContext_HnSF_StateFunctionContext_" data-uid="HnSF.Sample.TDAction.BaseStateFunctions.ApplyTraction(HnSF.IStateVariables,HnSF.StateTimeline,HnSF.StateMachineContext,HnSF.StateFunctionContext)">ApplyTraction(IStateVariables, StateTimeline, StateMachineContext, StateFunctionContext)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ApplyTraction(IFighterBase fighter, IStateVariables variables, StateTimeline arg3, int currentFrame, float frameRangePercent)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ApplyTraction(IStateVariables variables, StateTimeline timeline, StateMachineContext smContext, StateFunctionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -176,46 +171,41 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="HnSF.Fighters.IFighterBase.html">IFighterBase</a></td>
-        <td><span class="parametername">fighter</span></td>
-        <td></td>
-      </tr>
-      <tr>
         <td><a class="xref" href="HnSF.IStateVariables.html">IStateVariables</a></td>
         <td><span class="parametername">variables</span></td>
         <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="HnSF.StateTimeline.html">StateTimeline</a></td>
-        <td><span class="parametername">arg3</span></td>
+        <td><span class="parametername">timeline</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">currentFrame</span></td>
+        <td><a class="xref" href="HnSF.StateMachineContext.html">StateMachineContext</a></td>
+        <td><span class="parametername">smContext</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Single</a></td>
-        <td><span class="parametername">frameRangePercent</span></td>
+        <td><a class="xref" href="HnSF.StateFunctionContext.html">StateFunctionContext</a></td>
+        <td><span class="parametername">context</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_BaseStateFunctions_ChangeState_HnSF_Fighters_IFighterBase_HnSF_IStateVariables_HnSF_StateTimeline_System_Int32_System_Single_.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.BaseStateFunctions.ChangeState(HnSF.Fighters.IFighterBase%2CHnSF.IStateVariables%2CHnSF.StateTimeline%2CSystem.Int32%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_BaseStateFunctions_ChangeState_HnSF_IStateVariables_HnSF_StateTimeline_HnSF_StateMachineContext_HnSF_StateFunctionContext_.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.BaseStateFunctions.ChangeState(HnSF.IStateVariables%2CHnSF.StateTimeline%2CHnSF.StateMachineContext%2CHnSF.StateFunctionContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/State/Functions/BaseStateFunctions.cs/#L10">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/State/Functions/BaseStateFunctions.cs/#L5">View Source</a>
   </span>
   <a id="HnSF_Sample_TDAction_BaseStateFunctions_ChangeState_" data-uid="HnSF.Sample.TDAction.BaseStateFunctions.ChangeState*"></a>
-  <h4 id="HnSF_Sample_TDAction_BaseStateFunctions_ChangeState_HnSF_Fighters_IFighterBase_HnSF_IStateVariables_HnSF_StateTimeline_System_Int32_System_Single_" data-uid="HnSF.Sample.TDAction.BaseStateFunctions.ChangeState(HnSF.Fighters.IFighterBase,HnSF.IStateVariables,HnSF.StateTimeline,System.Int32,System.Single)">ChangeState(IFighterBase, IStateVariables, StateTimeline, Int32, Single)</h4>
+  <h4 id="HnSF_Sample_TDAction_BaseStateFunctions_ChangeState_HnSF_IStateVariables_HnSF_StateTimeline_HnSF_StateMachineContext_HnSF_StateFunctionContext_" data-uid="HnSF.Sample.TDAction.BaseStateFunctions.ChangeState(HnSF.IStateVariables,HnSF.StateTimeline,HnSF.StateMachineContext,HnSF.StateFunctionContext)">ChangeState(IStateVariables, StateTimeline, StateMachineContext, StateFunctionContext)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ChangeState(IFighterBase fighter, IStateVariables variables, StateTimeline arg3, int currentFrame, float frameRangePercent)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ChangeState(IStateVariables variables, StateTimeline timeline, StateMachineContext smContext, StateFunctionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -228,46 +218,41 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="HnSF.Fighters.IFighterBase.html">IFighterBase</a></td>
-        <td><span class="parametername">fighter</span></td>
-        <td></td>
-      </tr>
-      <tr>
         <td><a class="xref" href="HnSF.IStateVariables.html">IStateVariables</a></td>
         <td><span class="parametername">variables</span></td>
         <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="HnSF.StateTimeline.html">StateTimeline</a></td>
-        <td><span class="parametername">arg3</span></td>
+        <td><span class="parametername">timeline</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">currentFrame</span></td>
+        <td><a class="xref" href="HnSF.StateMachineContext.html">StateMachineContext</a></td>
+        <td><span class="parametername">smContext</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Single</a></td>
-        <td><span class="parametername">frameRangePercent</span></td>
+        <td><a class="xref" href="HnSF.StateFunctionContext.html">StateFunctionContext</a></td>
+        <td><span class="parametername">context</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_BaseStateFunctions_SetFallSpeed_HnSF_Fighters_IFighterBase_HnSF_IStateVariables_HnSF_StateTimeline_System_Int32_System_Single_.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.BaseStateFunctions.SetFallSpeed(HnSF.Fighters.IFighterBase%2CHnSF.IStateVariables%2CHnSF.StateTimeline%2CSystem.Int32%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_BaseStateFunctions_SetFallSpeed_HnSF_IStateVariables_HnSF_StateTimeline_HnSF_StateMachineContext_HnSF_StateFunctionContext_.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.BaseStateFunctions.SetFallSpeed(HnSF.IStateVariables%2CHnSF.StateTimeline%2CHnSF.StateMachineContext%2CHnSF.StateFunctionContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/State/Functions/BaseStateFunctions.cs/#L38">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/State/Functions/BaseStateFunctions.cs/#L34">View Source</a>
   </span>
   <a id="HnSF_Sample_TDAction_BaseStateFunctions_SetFallSpeed_" data-uid="HnSF.Sample.TDAction.BaseStateFunctions.SetFallSpeed*"></a>
-  <h4 id="HnSF_Sample_TDAction_BaseStateFunctions_SetFallSpeed_HnSF_Fighters_IFighterBase_HnSF_IStateVariables_HnSF_StateTimeline_System_Int32_System_Single_" data-uid="HnSF.Sample.TDAction.BaseStateFunctions.SetFallSpeed(HnSF.Fighters.IFighterBase,HnSF.IStateVariables,HnSF.StateTimeline,System.Int32,System.Single)">SetFallSpeed(IFighterBase, IStateVariables, StateTimeline, Int32, Single)</h4>
+  <h4 id="HnSF_Sample_TDAction_BaseStateFunctions_SetFallSpeed_HnSF_IStateVariables_HnSF_StateTimeline_HnSF_StateMachineContext_HnSF_StateFunctionContext_" data-uid="HnSF.Sample.TDAction.BaseStateFunctions.SetFallSpeed(HnSF.IStateVariables,HnSF.StateTimeline,HnSF.StateMachineContext,HnSF.StateFunctionContext)">SetFallSpeed(IStateVariables, StateTimeline, StateMachineContext, StateFunctionContext)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetFallSpeed(IFighterBase fighter, IStateVariables variables, StateTimeline arg3, int currentFrame, float frameRangePercent)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void SetFallSpeed(IStateVariables variables, StateTimeline timeline, StateMachineContext smContext, StateFunctionContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -280,28 +265,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="HnSF.Fighters.IFighterBase.html">IFighterBase</a></td>
-        <td><span class="parametername">fighter</span></td>
-        <td></td>
-      </tr>
-      <tr>
         <td><a class="xref" href="HnSF.IStateVariables.html">IStateVariables</a></td>
         <td><span class="parametername">variables</span></td>
         <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="HnSF.StateTimeline.html">StateTimeline</a></td>
-        <td><span class="parametername">arg3</span></td>
+        <td><span class="parametername">timeline</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">currentFrame</span></td>
+        <td><a class="xref" href="HnSF.StateMachineContext.html">StateMachineContext</a></td>
+        <td><span class="parametername">smContext</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Single</a></td>
-        <td><span class="parametername">frameRangePercent</span></td>
+        <td><a class="xref" href="HnSF.StateFunctionContext.html">StateFunctionContext</a></td>
+        <td><span class="parametername">context</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -317,7 +297,7 @@
                     <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_Sample_TDAction_BaseStateFunctions.md&amp;value=---%0Auid%3A%20HnSF.Sample.TDAction.BaseStateFunctions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/State/Functions/BaseStateFunctions.cs/#L8" class="contribution-link">View Source</a>
+                    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/Samples/TDAction/Scripts/State/Functions/BaseStateFunctions.cs/#L3" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

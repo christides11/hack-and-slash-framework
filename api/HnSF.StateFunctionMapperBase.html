@@ -105,15 +105,15 @@ public class StateFunctionMapperBase</code></pre>
     <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_StateFunctionMapperBase_functions.md&amp;value=---%0Auid%3A%20HnSF.StateFunctionMapperBase.functions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/StateFunctionMapperBase.cs/#L13">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/StateFunctionMapperBase.cs/#L12">View Source</a>
   </span>
   <h4 id="HnSF_StateFunctionMapperBase_functions" data-uid="HnSF.StateFunctionMapperBase.functions">functions</h4>
-  <div class="markdown level1 summary"><p>IFighterBase, IStateVariables, StateTimeline, Current Frame, Frame Range %</p>
+  <div class="markdown level1 summary"><p>IStateVariables, StateTimeline</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Dictionary&lt;Type, Action&lt;IFighterBase, IStateVariables, StateTimeline, int, float&gt;&gt; functions</code></pre>
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;Type, Action&lt;IStateVariables, StateTimeline, StateMachineContext, StateFunctionContext&gt;&gt; functions</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -125,7 +125,7 @@ public class StateFunctionMapperBase</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-5">Action</a>&lt;<a class="xref" href="HnSF.Fighters.IFighterBase.html">IFighterBase</a>, <a class="xref" href="HnSF.IStateVariables.html">IStateVariables</a>, <a class="xref" href="HnSF.StateTimeline.html">StateTimeline</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Single</a>&gt;&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-4">Action</a>&lt;<a class="xref" href="HnSF.IStateVariables.html">IStateVariables</a>, <a class="xref" href="HnSF.StateTimeline.html">StateTimeline</a>, <a class="xref" href="HnSF.StateMachineContext.html">StateMachineContext</a>, <a class="xref" href="HnSF.StateFunctionContext.html">StateFunctionContext</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -134,18 +134,18 @@ public class StateFunctionMapperBase</code></pre>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_StateFunctionMapperBase_OverrideFunction_System_Type_System_Action_HnSF_Fighters_IFighterBase_HnSF_IStateVariables_HnSF_StateTimeline_System_Int32_System_Single__.md&amp;value=---%0Auid%3A%20HnSF.StateFunctionMapperBase.OverrideFunction(System.Type%2CSystem.Action%7BHnSF.Fighters.IFighterBase%2CHnSF.IStateVariables%2CHnSF.StateTimeline%2CSystem.Int32%2CSystem.Single%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_StateFunctionMapperBase_OverrideFunction_System_Type_System_Action_HnSF_IStateVariables_HnSF_StateTimeline_HnSF_StateMachineContext_HnSF_StateFunctionContext__.md&amp;value=---%0Auid%3A%20HnSF.StateFunctionMapperBase.OverrideFunction(System.Type%2CSystem.Action%7BHnSF.IStateVariables%2CHnSF.StateTimeline%2CHnSF.StateMachineContext%2CHnSF.StateFunctionContext%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/StateFunctionMapperBase.cs/#L28">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/StateFunctionMapperBase.cs/#L26">View Source</a>
   </span>
   <a id="HnSF_StateFunctionMapperBase_OverrideFunction_" data-uid="HnSF.StateFunctionMapperBase.OverrideFunction*"></a>
-  <h4 id="HnSF_StateFunctionMapperBase_OverrideFunction_System_Type_System_Action_HnSF_Fighters_IFighterBase_HnSF_IStateVariables_HnSF_StateTimeline_System_Int32_System_Single__" data-uid="HnSF.StateFunctionMapperBase.OverrideFunction(System.Type,System.Action{HnSF.Fighters.IFighterBase,HnSF.IStateVariables,HnSF.StateTimeline,System.Int32,System.Single})">OverrideFunction(Type, Action&lt;IFighterBase, IStateVariables, StateTimeline, Int32, Single&gt;)</h4>
+  <h4 id="HnSF_StateFunctionMapperBase_OverrideFunction_System_Type_System_Action_HnSF_IStateVariables_HnSF_StateTimeline_HnSF_StateMachineContext_HnSF_StateFunctionContext__" data-uid="HnSF.StateFunctionMapperBase.OverrideFunction(System.Type,System.Action{HnSF.IStateVariables,HnSF.StateTimeline,HnSF.StateMachineContext,HnSF.StateFunctionContext})">OverrideFunction(Type, Action&lt;IStateVariables, StateTimeline, StateMachineContext, StateFunctionContext&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual bool OverrideFunction(Type id, Action&lt;IFighterBase, IStateVariables, StateTimeline, int, float&gt; function)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual bool OverrideFunction(Type id, Action&lt;IStateVariables, StateTimeline, StateMachineContext, StateFunctionContext&gt; function)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -163,7 +163,7 @@ public class StateFunctionMapperBase</code></pre>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-5">Action</a>&lt;<a class="xref" href="HnSF.Fighters.IFighterBase.html">IFighterBase</a>, <a class="xref" href="HnSF.IStateVariables.html">IStateVariables</a>, <a class="xref" href="HnSF.StateTimeline.html">StateTimeline</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Single</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-4">Action</a>&lt;<a class="xref" href="HnSF.IStateVariables.html">IStateVariables</a>, <a class="xref" href="HnSF.StateTimeline.html">StateTimeline</a>, <a class="xref" href="HnSF.StateMachineContext.html">StateMachineContext</a>, <a class="xref" href="HnSF.StateFunctionContext.html">StateFunctionContext</a>&gt;</td>
         <td><span class="parametername">function</span></td>
         <td></td>
       </tr>
@@ -186,18 +186,18 @@ public class StateFunctionMapperBase</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_StateFunctionMapperBase_RegisterFunction_System_Type_System_Action_HnSF_Fighters_IFighterBase_HnSF_IStateVariables_HnSF_StateTimeline_System_Int32_System_Single__.md&amp;value=---%0Auid%3A%20HnSF.StateFunctionMapperBase.RegisterFunction(System.Type%2CSystem.Action%7BHnSF.Fighters.IFighterBase%2CHnSF.IStateVariables%2CHnSF.StateTimeline%2CSystem.Int32%2CSystem.Single%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_StateFunctionMapperBase_RegisterFunction_System_Type_System_Action_HnSF_IStateVariables_HnSF_StateTimeline_HnSF_StateMachineContext_HnSF_StateFunctionContext__.md&amp;value=---%0Auid%3A%20HnSF.StateFunctionMapperBase.RegisterFunction(System.Type%2CSystem.Action%7BHnSF.IStateVariables%2CHnSF.StateTimeline%2CHnSF.StateMachineContext%2CHnSF.StateFunctionContext%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/StateFunctionMapperBase.cs/#L23">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/StateFunctionMapperBase.cs/#L21">View Source</a>
   </span>
   <a id="HnSF_StateFunctionMapperBase_RegisterFunction_" data-uid="HnSF.StateFunctionMapperBase.RegisterFunction*"></a>
-  <h4 id="HnSF_StateFunctionMapperBase_RegisterFunction_System_Type_System_Action_HnSF_Fighters_IFighterBase_HnSF_IStateVariables_HnSF_StateTimeline_System_Int32_System_Single__" data-uid="HnSF.StateFunctionMapperBase.RegisterFunction(System.Type,System.Action{HnSF.Fighters.IFighterBase,HnSF.IStateVariables,HnSF.StateTimeline,System.Int32,System.Single})">RegisterFunction(Type, Action&lt;IFighterBase, IStateVariables, StateTimeline, Int32, Single&gt;)</h4>
+  <h4 id="HnSF_StateFunctionMapperBase_RegisterFunction_System_Type_System_Action_HnSF_IStateVariables_HnSF_StateTimeline_HnSF_StateMachineContext_HnSF_StateFunctionContext__" data-uid="HnSF.StateFunctionMapperBase.RegisterFunction(System.Type,System.Action{HnSF.IStateVariables,HnSF.StateTimeline,HnSF.StateMachineContext,HnSF.StateFunctionContext})">RegisterFunction(Type, Action&lt;IStateVariables, StateTimeline, StateMachineContext, StateFunctionContext&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void RegisterFunction(Type id, Action&lt;IFighterBase, IStateVariables, StateTimeline, int, float&gt; function)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void RegisterFunction(Type id, Action&lt;IStateVariables, StateTimeline, StateMachineContext, StateFunctionContext&gt; function)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -215,7 +215,44 @@ public class StateFunctionMapperBase</code></pre>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-5">Action</a>&lt;<a class="xref" href="HnSF.Fighters.IFighterBase.html">IFighterBase</a>, <a class="xref" href="HnSF.IStateVariables.html">IStateVariables</a>, <a class="xref" href="HnSF.StateTimeline.html">StateTimeline</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Single</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-4">Action</a>&lt;<a class="xref" href="HnSF.IStateVariables.html">IStateVariables</a>, <a class="xref" href="HnSF.StateTimeline.html">StateTimeline</a>, <a class="xref" href="HnSF.StateMachineContext.html">StateMachineContext</a>, <a class="xref" href="HnSF.StateFunctionContext.html">StateFunctionContext</a>&gt;</td>
+        <td><span class="parametername">function</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_StateFunctionMapperBase_RegisterOrOverrideFunction_System_Type_System_Action_HnSF_IStateVariables_HnSF_StateTimeline_HnSF_StateMachineContext_HnSF_StateFunctionContext__.md&amp;value=---%0Auid%3A%20HnSF.StateFunctionMapperBase.RegisterOrOverrideFunction(System.Type%2CSystem.Action%7BHnSF.IStateVariables%2CHnSF.StateTimeline%2CHnSF.StateMachineContext%2CHnSF.StateFunctionContext%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/StateFunctionMapperBase.cs/#L32">View Source</a>
+  </span>
+  <a id="HnSF_StateFunctionMapperBase_RegisterOrOverrideFunction_" data-uid="HnSF.StateFunctionMapperBase.RegisterOrOverrideFunction*"></a>
+  <h4 id="HnSF_StateFunctionMapperBase_RegisterOrOverrideFunction_System_Type_System_Action_HnSF_IStateVariables_HnSF_StateTimeline_HnSF_StateMachineContext_HnSF_StateFunctionContext__" data-uid="HnSF.StateFunctionMapperBase.RegisterOrOverrideFunction(System.Type,System.Action{HnSF.IStateVariables,HnSF.StateTimeline,HnSF.StateMachineContext,HnSF.StateFunctionContext})">RegisterOrOverrideFunction(Type, Action&lt;IStateVariables, StateTimeline, StateMachineContext, StateFunctionContext&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RegisterOrOverrideFunction(Type id, Action&lt;IStateVariables, StateTimeline, StateMachineContext, StateFunctionContext&gt; function)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-4">Action</a>&lt;<a class="xref" href="HnSF.IStateVariables.html">IStateVariables</a>, <a class="xref" href="HnSF.StateTimeline.html">StateTimeline</a>, <a class="xref" href="HnSF.StateMachineContext.html">StateMachineContext</a>, <a class="xref" href="HnSF.StateFunctionContext.html">StateFunctionContext</a>&gt;</td>
         <td><span class="parametername">function</span></td>
         <td></td>
       </tr>
@@ -226,7 +263,7 @@ public class StateFunctionMapperBase</code></pre>
     <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_StateFunctionMapperBase_RemoveFunction_System_Type_.md&amp;value=---%0Auid%3A%20HnSF.StateFunctionMapperBase.RemoveFunction(System.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/StateFunctionMapperBase.cs/#L34">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/StateFunctionMapperBase.cs/#L42">View Source</a>
   </span>
   <a id="HnSF_StateFunctionMapperBase_RemoveFunction_" data-uid="HnSF.StateFunctionMapperBase.RemoveFunction*"></a>
   <h4 id="HnSF_StateFunctionMapperBase_RemoveFunction_System_Type_" data-uid="HnSF.StateFunctionMapperBase.RemoveFunction(System.Type)">RemoveFunction(Type)</h4>
@@ -255,18 +292,18 @@ public class StateFunctionMapperBase</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_StateFunctionMapperBase_TryRegisterFunction_System_Type_System_Action_HnSF_Fighters_IFighterBase_HnSF_IStateVariables_HnSF_StateTimeline_System_Int32_System_Single__.md&amp;value=---%0Auid%3A%20HnSF.StateFunctionMapperBase.TryRegisterFunction(System.Type%2CSystem.Action%7BHnSF.Fighters.IFighterBase%2CHnSF.IStateVariables%2CHnSF.StateTimeline%2CSystem.Int32%2CSystem.Single%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_StateFunctionMapperBase_TryFunction_System_Type_HnSF_IStateVariables_HnSF_StateTimeline_HnSF_StateMachineContext_HnSF_StateFunctionContext_.md&amp;value=---%0Auid%3A%20HnSF.StateFunctionMapperBase.TryFunction(System.Type%2CHnSF.IStateVariables%2CHnSF.StateTimeline%2CHnSF.StateMachineContext%2CHnSF.StateFunctionContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/StateFunctionMapperBase.cs/#L16">View Source</a>
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/StateFunctionMapperBase.cs/#L47">View Source</a>
   </span>
-  <a id="HnSF_StateFunctionMapperBase_TryRegisterFunction_" data-uid="HnSF.StateFunctionMapperBase.TryRegisterFunction*"></a>
-  <h4 id="HnSF_StateFunctionMapperBase_TryRegisterFunction_System_Type_System_Action_HnSF_Fighters_IFighterBase_HnSF_IStateVariables_HnSF_StateTimeline_System_Int32_System_Single__" data-uid="HnSF.StateFunctionMapperBase.TryRegisterFunction(System.Type,System.Action{HnSF.Fighters.IFighterBase,HnSF.IStateVariables,HnSF.StateTimeline,System.Int32,System.Single})">TryRegisterFunction(Type, Action&lt;IFighterBase, IStateVariables, StateTimeline, Int32, Single&gt;)</h4>
+  <a id="HnSF_StateFunctionMapperBase_TryFunction_" data-uid="HnSF.StateFunctionMapperBase.TryFunction*"></a>
+  <h4 id="HnSF_StateFunctionMapperBase_TryFunction_System_Type_HnSF_IStateVariables_HnSF_StateTimeline_HnSF_StateMachineContext_HnSF_StateFunctionContext_" data-uid="HnSF.StateFunctionMapperBase.TryFunction(System.Type,HnSF.IStateVariables,HnSF.StateTimeline,HnSF.StateMachineContext,HnSF.StateFunctionContext)">TryFunction(Type, IStateVariables, StateTimeline, StateMachineContext, StateFunctionContext)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual bool TryRegisterFunction(Type id, Action&lt;IFighterBase, IStateVariables, StateTimeline, int, float&gt; function)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void TryFunction(Type id, IStateVariables variables, StateTimeline timeline, StateMachineContext smContext, StateFunctionContext sfContext)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -284,7 +321,59 @@ public class StateFunctionMapperBase</code></pre>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-5">Action</a>&lt;<a class="xref" href="HnSF.Fighters.IFighterBase.html">IFighterBase</a>, <a class="xref" href="HnSF.IStateVariables.html">IStateVariables</a>, <a class="xref" href="HnSF.StateTimeline.html">StateTimeline</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Single</a>&gt;</td>
+        <td><a class="xref" href="HnSF.IStateVariables.html">IStateVariables</a></td>
+        <td><span class="parametername">variables</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HnSF.StateTimeline.html">StateTimeline</a></td>
+        <td><span class="parametername">timeline</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HnSF.StateMachineContext.html">StateMachineContext</a></td>
+        <td><span class="parametername">smContext</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HnSF.StateFunctionContext.html">StateFunctionContext</a></td>
+        <td><span class="parametername">sfContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_StateFunctionMapperBase_TryRegisterFunction_System_Type_System_Action_HnSF_IStateVariables_HnSF_StateTimeline_HnSF_StateMachineContext_HnSF_StateFunctionContext__.md&amp;value=---%0Auid%3A%20HnSF.StateFunctionMapperBase.TryRegisterFunction(System.Type%2CSystem.Action%7BHnSF.IStateVariables%2CHnSF.StateTimeline%2CHnSF.StateMachineContext%2CHnSF.StateFunctionContext%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/StateFunctionMapperBase.cs/#L14">View Source</a>
+  </span>
+  <a id="HnSF_StateFunctionMapperBase_TryRegisterFunction_" data-uid="HnSF.StateFunctionMapperBase.TryRegisterFunction*"></a>
+  <h4 id="HnSF_StateFunctionMapperBase_TryRegisterFunction_System_Type_System_Action_HnSF_IStateVariables_HnSF_StateTimeline_HnSF_StateMachineContext_HnSF_StateFunctionContext__" data-uid="HnSF.StateFunctionMapperBase.TryRegisterFunction(System.Type,System.Action{HnSF.IStateVariables,HnSF.StateTimeline,HnSF.StateMachineContext,HnSF.StateFunctionContext})">TryRegisterFunction(Type, Action&lt;IStateVariables, StateTimeline, StateMachineContext, StateFunctionContext&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool TryRegisterFunction(Type id, Action&lt;IStateVariables, StateTimeline, StateMachineContext, StateFunctionContext&gt; function)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-4">Action</a>&lt;<a class="xref" href="HnSF.IStateVariables.html">IStateVariables</a>, <a class="xref" href="HnSF.StateTimeline.html">StateTimeline</a>, <a class="xref" href="HnSF.StateMachineContext.html">StateMachineContext</a>, <a class="xref" href="HnSF.StateFunctionContext.html">StateFunctionContext</a>&gt;</td>
         <td><span class="parametername">function</span></td>
         <td></td>
       </tr>
@@ -316,7 +405,7 @@ public class StateFunctionMapperBase</code></pre>
                     <a href="https://github.com/christides11/hack-and-slash-framework/new/master/apiSpec/new?filename=HnSF_StateFunctionMapperBase.md&amp;value=---%0Auid%3A%20HnSF.StateFunctionMapperBase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/StateFunctionMapperBase.cs/#L7" class="contribution-link">View Source</a>
+                    <a href="https://github.com/christides11/hack-and-slash-framework/blob/master/Assets/HnSF/State/StateFunctionMapperBase.cs/#L6" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
