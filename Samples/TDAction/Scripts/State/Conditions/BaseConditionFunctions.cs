@@ -2,18 +2,20 @@ using HnSF.Fighters;
 using HnSF.Sample.TDAction.State;
 using UnityEngine;
 
+
 namespace HnSF.Sample.TDAction
 {
     public class BaseConditionFunctions
     {
-        public static bool NoCondition(IFighterBase fighter, IConditionVariables variables, HnSF.StateTimeline arg3, int arg4)
+        public static bool NoCondition(IConditionVariables variables, HnSF.StateTimeline timeline, StateMachineContext smContext, StateFunctionContext sfContext)
         {
             return true;
         }
 
-        public static bool MovementSqrMagnitude(IFighterBase fighter, IConditionVariables variables, HnSF.StateTimeline arg3, int arg4)
+        public static bool MovementSqrMagnitude(IConditionVariables variables, HnSF.StateTimeline timeline, StateMachineContext smContext, StateFunctionContext sfContext)
         {
-            FighterInputManager inputManager = ((FighterManager)fighter).InputManager;
+            var smc = smContext as FighterStateMachineContext;
+            FighterInputManager inputManager = smc.fighter.InputManager;
             ConditionMovementMagnitude vars = (ConditionMovementMagnitude)variables;
 
             Vector2 movement = inputManager.GetMovement(0);
@@ -21,9 +23,10 @@ namespace HnSF.Sample.TDAction
             return r;
         }
 
-        public static bool FallSpeed(IFighterBase fighter, IConditionVariables variables, HnSF.StateTimeline arg3, int arg4)
+        public static bool FallSpeed(IConditionVariables variables, HnSF.StateTimeline timeline, StateMachineContext smContext, StateFunctionContext sfContext)
         {
-            FighterPhysicsManager physicsManager = ((FighterManager)fighter).physicsManager;
+            var smc = smContext as FighterStateMachineContext;
+            FighterPhysicsManager physicsManager = smc.fighter.physicsManager;
             ConditionFallSpeed vars = (ConditionFallSpeed)variables;
 
             bool r = false;
@@ -38,11 +41,12 @@ namespace HnSF.Sample.TDAction
             return r;
         }
 
-        public static bool GroundedState(IFighterBase fighter, IConditionVariables variables, HnSF.StateTimeline arg3, int arg4)
+        public static bool GroundedState(IConditionVariables variables, HnSF.StateTimeline timeline, StateMachineContext smContext, StateFunctionContext sfContext)
         {
+            var smc = smContext as FighterStateMachineContext;
             ConditionGroundState vars = (ConditionGroundState)variables;
 
-            bool r = fighter.PhysicsManager.IsGrounded;
+            bool r = smc.fighter.PhysicsManager.IsGrounded;
             if (vars.inverse) r = !r;
             return r;
         }

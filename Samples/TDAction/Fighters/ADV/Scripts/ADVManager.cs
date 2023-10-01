@@ -1,8 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 namespace HnSF.Sample.TDAction
 {
     public class ADVManager : FighterManager
@@ -10,7 +5,7 @@ namespace HnSF.Sample.TDAction
         public override void Start()
         {
             base.Start();
-            StateManager.ChangeState((int)BaseStateEnum.IDLE);
+            StateManager.ChangeState((int)BaseStateEnum.FALL);
         }
     }
 }
