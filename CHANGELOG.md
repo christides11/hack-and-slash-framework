@@ -1,3 +1,10 @@
+# [40.1.0](https://github.com/christides11/hack-and-slash-framework/compare/v40.0.0...v40.1.0) (2023-11-11)
+
+
+### Features
+
+* Start of new input reading system. ([4433e49](https://github.com/christides11/hack-and-slash-framework/commit/4433e49279a17385e546bf8b5a5acda275d62346))
+
 # [40.0.0](https://github.com/christides11/hack-and-slash-framework/compare/v39.13.0...v40.0.0) (2023-10-01)
 
 
