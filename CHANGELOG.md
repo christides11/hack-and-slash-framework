@@ -1,3 +1,10 @@
+# [40.2.0](https://github.com/christides11/hack-and-slash-framework/compare/v40.1.0...v40.2.0) (2023-11-11)
+
+
+### Features
+
+* InputBitmask hold time var. ([4b2d8bc](https://github.com/christides11/hack-and-slash-framework/commit/4b2d8bc43ebf23a3fb23a6ae7b6ad447790f10bc))
+
 # [40.1.0](https://github.com/christides11/hack-and-slash-framework/compare/v40.0.0...v40.1.0) (2023-11-11)
 
 
