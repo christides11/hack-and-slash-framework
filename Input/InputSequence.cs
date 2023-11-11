@@ -10,6 +10,7 @@ namespace HnSF.Input
     [System.Serializable]
     public class InputSequence
     {
+
         public uint executeWindow = 3;
         [SerializeField]public List<InputDefinition> executeInputs = new List<InputDefinition>();
         public uint sequenceWindow = 8;

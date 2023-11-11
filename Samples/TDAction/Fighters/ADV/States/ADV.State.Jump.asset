@@ -19,7 +19,24 @@ MonoBehaviour:
   autoIncrement: 1
   autoLoop: 1
   autoLoopFrame: 1
-  data: []
+  data:
+  - rid: 1680875285544697856
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 1680875285544697856
+      type: {class: ChangeState, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+      data:
+        name: 
+        id: 0
+        frameRanges: []
+        condition:
+          rid: 1680875285544697858
+        runDuringHitstop: 0
+        stateMovesetID: 0
+        stateID: 0
+        parent: -1
+        children: 
+    - rid: 1680875285544697858
+      type: {class: ConditionNone, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+      data: 
