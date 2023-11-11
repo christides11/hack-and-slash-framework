@@ -5,6 +5,7 @@ namespace HnSF.Input
     {
         public int bitmask;
         public int lenience;
+        public int holdTime;
         public bool checkNot;
     }
 }
