@@ -396,6 +396,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.EnterInputMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.EnterInputMethod.html",
+          "hash": "LTs87SWvcpHilkjQnLTxt3qu6Dje7wt6x/53SZK8Z5U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/HnSF.FighterStateReferenceBase.yml",
       "output": {
         ".html": {
@@ -516,6 +528,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Input.InputBitmask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Input.InputBitmask.html",
+          "hash": "7ANxQn3/jEGrnnP1FD71+y+ohgu7t1w+rR89MEaIzVg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HnSF.Input.InputCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HnSF.Input.InputCondition.html",
+          "hash": "7x/FsQF7Pbp0RE26p49PlW4UtLGmfazPS20exEEIiGY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/HnSF.Input.InputDefinition.yml",
       "output": {
         ".html": {
@@ -556,7 +592,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Input.InputSequence.html",
-          "hash": "2mWBlYkLaO/JF2wbPKQS15VXIdavdgiaLexyxiooMJ8="
+          "hash": "tQLhGsBNog7oYGhBycnEPvUzpWj1dp+08MVxH9drB2E="
         }
       },
       "is_incremental": false,
@@ -568,7 +604,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.Input.html",
-          "hash": "+cm+YLDjbz1g6T2rhDvk1Z+z4w/ZHL8hUiagGfxR2/w="
+          "hash": "mVaqcNOMI5NjDe8fBETs9b0g9YTi0T+0+Ny5ApV/Kno="
         }
       },
       "is_incremental": false,
@@ -1312,7 +1348,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HnSF.html",
-          "hash": "GiCFU8E2L29AZbJXc8owo2buJoTCpLyhFs1XS9Yz9/4="
+          "hash": "qT0UolISU/2MhyfI5oE/6A5ODT0w5OYAIzOUfLUYcv8="
         }
       },
       "is_incremental": false,
@@ -1324,7 +1360,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "SsQmMHNTpaxZro0bapAQ0hKXFa6pK7PbVEA5n4vCEV4="
+          "hash": "T4+MJU84l+CP1rn670SAFi0VauNyu1hO5mIQ5NsTnHs="
         }
       },
       "is_incremental": false,
@@ -1445,7 +1481,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 108,
+          "total_file_count": 111,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

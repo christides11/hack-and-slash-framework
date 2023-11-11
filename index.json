@@ -154,6 +154,11 @@
     "title": "Enum OnHitType | Hack and Slash Framework Documentation",
     "keywords": "Enum OnHitType Namespace : HnSF.Combat Assembly : HnSF.dll Syntax public enum OnHitType Fields Name Description HITBOX_GROUP ID_GROUP NONE"
   },
+  "api/HnSF.EnterInputMethod.html": {
+    "href": "api/HnSF.EnterInputMethod.html",
+    "title": "Enum EnterInputMethod | Hack and Slash Framework Documentation",
+    "keywords": "Enum EnterInputMethod Namespace : HnSF Assembly : HnSF.dll Syntax public enum EnterInputMethod Fields Name Description Normal Once OnceStrict Release Strict"
+  },
   "api/HnSF.Fighters.html": {
     "href": "api/HnSF.Fighters.html",
     "title": "Namespace HnSF.Fighters | Hack and Slash Framework Documentation",
@@ -192,7 +197,7 @@
   "api/HnSF.html": {
     "href": "api/HnSF.html",
     "title": "Namespace HnSF | Hack and Slash Framework Documentation",
-    "keywords": "Namespace HnSF Classes FighterStateReferenceBase HelperFunctions IntStateMap StateConditionMapperBase StateFunctionMapperBase StateMachineContext StateTimeline StateTimelineDataEditor StateTimelineEditor StateTimelineEditorWindow StateVariableAttribute UndoUtility UnityObjectUtility Structs StateFunctionContext Interfaces IConditionVariables IStateVariables ITeamable Delegates StateTimelineDataEditor.EmptyAction"
+    "keywords": "Namespace HnSF Classes FighterStateReferenceBase HelperFunctions IntStateMap StateConditionMapperBase StateFunctionMapperBase StateMachineContext StateTimeline StateTimelineDataEditor StateTimelineEditor StateTimelineEditorWindow StateVariableAttribute UndoUtility UnityObjectUtility Structs StateFunctionContext Interfaces IConditionVariables IStateVariables ITeamable Enums EnterInputMethod Delegates StateTimelineDataEditor.EmptyAction"
   },
   "api/HnSF.IConditionVariables.html": {
     "href": "api/HnSF.IConditionVariables.html",
@@ -202,7 +207,17 @@
   "api/HnSF.Input.html": {
     "href": "api/HnSF.Input.html",
     "title": "Namespace HnSF.Input | Hack and Slash Framework Documentation",
-    "keywords": "Namespace HnSF.Input Classes InputDefinition InputDefinitionDrawer InputSequence Enums InputDefinitionType"
+    "keywords": "Namespace HnSF.Input Classes InputCondition InputDefinition InputDefinitionDrawer InputSequence Structs InputBitmask Enums InputDefinitionType"
+  },
+  "api/HnSF.Input.InputBitmask.html": {
+    "href": "api/HnSF.Input.InputBitmask.html",
+    "title": "Struct InputBitmask | Hack and Slash Framework Documentation",
+    "keywords": "Struct InputBitmask Namespace : HnSF.Input Assembly : HnSF.dll Syntax [Serializable] public struct InputBitmask Fields | Improve this Doc View Source bitmask Declaration public int bitmask Field Value Type Description Int32 | Improve this Doc View Source checkNot Declaration public bool checkNot Field Value Type Description Boolean | Improve this Doc View Source lenience Declaration public int lenience Field Value Type Description Int32"
+  },
+  "api/HnSF.Input.InputCondition.html": {
+    "href": "api/HnSF.Input.InputCondition.html",
+    "title": "Class InputCondition | Hack and Slash Framework Documentation",
+    "keywords": "Class InputCondition Inheritance Object InputCondition Namespace : HnSF.Input Assembly : HnSF.dll Syntax [Serializable] public class InputCondition Fields | Improve this Doc View Source impreciseInputCount Declaration public int impreciseInputCount Field Value Type Description Int32 | Improve this Doc View Source inputAllowDisable Declaration public bool inputAllowDisable Field Value Type Description Boolean | Improve this Doc View Source method Declaration public EnterInputMethod method Field Value Type Description EnterInputMethod | Improve this Doc View Source sequence Declaration public InputBitmask[] sequence Field Value Type Description InputBitmask []"
   },
   "api/HnSF.Input.InputDefinition.html": {
     "href": "api/HnSF.Input.InputDefinition.html",

@@ -1519,6 +1519,42 @@ references:
   commentId: F:HnSF.Combat.OnHitType.NONE
   fullName: HnSF.Combat.OnHitType.NONE
   nameWithType: OnHitType.NONE
+- uid: HnSF.EnterInputMethod
+  name: EnterInputMethod
+  href: api/HnSF.EnterInputMethod.html
+  commentId: T:HnSF.EnterInputMethod
+  fullName: HnSF.EnterInputMethod
+  nameWithType: EnterInputMethod
+- uid: HnSF.EnterInputMethod.Normal
+  name: Normal
+  href: api/HnSF.EnterInputMethod.html#HnSF_EnterInputMethod_Normal
+  commentId: F:HnSF.EnterInputMethod.Normal
+  fullName: HnSF.EnterInputMethod.Normal
+  nameWithType: EnterInputMethod.Normal
+- uid: HnSF.EnterInputMethod.Once
+  name: Once
+  href: api/HnSF.EnterInputMethod.html#HnSF_EnterInputMethod_Once
+  commentId: F:HnSF.EnterInputMethod.Once
+  fullName: HnSF.EnterInputMethod.Once
+  nameWithType: EnterInputMethod.Once
+- uid: HnSF.EnterInputMethod.OnceStrict
+  name: OnceStrict
+  href: api/HnSF.EnterInputMethod.html#HnSF_EnterInputMethod_OnceStrict
+  commentId: F:HnSF.EnterInputMethod.OnceStrict
+  fullName: HnSF.EnterInputMethod.OnceStrict
+  nameWithType: EnterInputMethod.OnceStrict
+- uid: HnSF.EnterInputMethod.Release
+  name: Release
+  href: api/HnSF.EnterInputMethod.html#HnSF_EnterInputMethod_Release
+  commentId: F:HnSF.EnterInputMethod.Release
+  fullName: HnSF.EnterInputMethod.Release
+  nameWithType: EnterInputMethod.Release
+- uid: HnSF.EnterInputMethod.Strict
+  name: Strict
+  href: api/HnSF.EnterInputMethod.html#HnSF_EnterInputMethod_Strict
+  commentId: F:HnSF.EnterInputMethod.Strict
+  fullName: HnSF.EnterInputMethod.Strict
+  nameWithType: EnterInputMethod.Strict
 - uid: HnSF.Fighters
   name: HnSF.Fighters
   href: api/HnSF.Fighters.html
@@ -2102,6 +2138,60 @@ references:
   commentId: N:HnSF.Input
   fullName: HnSF.Input
   nameWithType: HnSF.Input
+- uid: HnSF.Input.InputBitmask
+  name: InputBitmask
+  href: api/HnSF.Input.InputBitmask.html
+  commentId: T:HnSF.Input.InputBitmask
+  fullName: HnSF.Input.InputBitmask
+  nameWithType: InputBitmask
+- uid: HnSF.Input.InputBitmask.bitmask
+  name: bitmask
+  href: api/HnSF.Input.InputBitmask.html#HnSF_Input_InputBitmask_bitmask
+  commentId: F:HnSF.Input.InputBitmask.bitmask
+  fullName: HnSF.Input.InputBitmask.bitmask
+  nameWithType: InputBitmask.bitmask
+- uid: HnSF.Input.InputBitmask.checkNot
+  name: checkNot
+  href: api/HnSF.Input.InputBitmask.html#HnSF_Input_InputBitmask_checkNot
+  commentId: F:HnSF.Input.InputBitmask.checkNot
+  fullName: HnSF.Input.InputBitmask.checkNot
+  nameWithType: InputBitmask.checkNot
+- uid: HnSF.Input.InputBitmask.lenience
+  name: lenience
+  href: api/HnSF.Input.InputBitmask.html#HnSF_Input_InputBitmask_lenience
+  commentId: F:HnSF.Input.InputBitmask.lenience
+  fullName: HnSF.Input.InputBitmask.lenience
+  nameWithType: InputBitmask.lenience
+- uid: HnSF.Input.InputCondition
+  name: InputCondition
+  href: api/HnSF.Input.InputCondition.html
+  commentId: T:HnSF.Input.InputCondition
+  fullName: HnSF.Input.InputCondition
+  nameWithType: InputCondition
+- uid: HnSF.Input.InputCondition.impreciseInputCount
+  name: impreciseInputCount
+  href: api/HnSF.Input.InputCondition.html#HnSF_Input_InputCondition_impreciseInputCount
+  commentId: F:HnSF.Input.InputCondition.impreciseInputCount
+  fullName: HnSF.Input.InputCondition.impreciseInputCount
+  nameWithType: InputCondition.impreciseInputCount
+- uid: HnSF.Input.InputCondition.inputAllowDisable
+  name: inputAllowDisable
+  href: api/HnSF.Input.InputCondition.html#HnSF_Input_InputCondition_inputAllowDisable
+  commentId: F:HnSF.Input.InputCondition.inputAllowDisable
+  fullName: HnSF.Input.InputCondition.inputAllowDisable
+  nameWithType: InputCondition.inputAllowDisable
+- uid: HnSF.Input.InputCondition.method
+  name: method
+  href: api/HnSF.Input.InputCondition.html#HnSF_Input_InputCondition_method
+  commentId: F:HnSF.Input.InputCondition.method
+  fullName: HnSF.Input.InputCondition.method
+  nameWithType: InputCondition.method
+- uid: HnSF.Input.InputCondition.sequence
+  name: sequence
+  href: api/HnSF.Input.InputCondition.html#HnSF_Input_InputCondition_sequence
+  commentId: F:HnSF.Input.InputCondition.sequence
+  fullName: HnSF.Input.InputCondition.sequence
+  nameWithType: InputCondition.sequence
 - uid: HnSF.Input.InputDefinition
   name: InputDefinition
   href: api/HnSF.Input.InputDefinition.html
