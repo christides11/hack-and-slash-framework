@@ -212,7 +212,7 @@
   "api/HnSF.Input.InputBitmask.html": {
     "href": "api/HnSF.Input.InputBitmask.html",
     "title": "Struct InputBitmask | Hack and Slash Framework Documentation",
-    "keywords": "Struct InputBitmask Namespace : HnSF.Input Assembly : HnSF.dll Syntax [Serializable] public struct InputBitmask Fields | Improve this Doc View Source bitmask Declaration public int bitmask Field Value Type Description Int32 | Improve this Doc View Source checkNot Declaration public bool checkNot Field Value Type Description Boolean | Improve this Doc View Source lenience Declaration public int lenience Field Value Type Description Int32"
+    "keywords": "Struct InputBitmask Namespace : HnSF.Input Assembly : HnSF.dll Syntax [Serializable] public struct InputBitmask Fields | Improve this Doc View Source bitmask Declaration public int bitmask Field Value Type Description Int32 | Improve this Doc View Source checkNot Declaration public bool checkNot Field Value Type Description Boolean | Improve this Doc View Source holdTime Declaration public int holdTime Field Value Type Description Int32 | Improve this Doc View Source lenience Declaration public int lenience Field Value Type Description Int32"
   },
   "api/HnSF.Input.InputCondition.html": {
     "href": "api/HnSF.Input.InputCondition.html",

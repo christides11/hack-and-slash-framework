@@ -2156,6 +2156,12 @@ references:
   commentId: F:HnSF.Input.InputBitmask.checkNot
   fullName: HnSF.Input.InputBitmask.checkNot
   nameWithType: InputBitmask.checkNot
+- uid: HnSF.Input.InputBitmask.holdTime
+  name: holdTime
+  href: api/HnSF.Input.InputBitmask.html#HnSF_Input_InputBitmask_holdTime
+  commentId: F:HnSF.Input.InputBitmask.holdTime
+  fullName: HnSF.Input.InputBitmask.holdTime
+  nameWithType: InputBitmask.holdTime
 - uid: HnSF.Input.InputBitmask.lenience
   name: lenience
   href: api/HnSF.Input.InputBitmask.html#HnSF_Input_InputBitmask_lenience
