@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using UnityEngine;
 
 namespace HnSF
@@ -184,7 +185,13 @@ namespace HnSF
         {
             var copyData = data[index].Copy();
             copyData.Name = data[index].Name;
-            copyData.FrameRanges = data[index].FrameRanges;
+            copyData.FrameRanges = new Vector2Int[0];
+            if (data[index].FrameRanges != null)
+            {
+                copyData.FrameRanges = new Vector2Int[data[index].FrameRanges.Length];
+                for (int i = 0; i < data[index].FrameRanges.Length; i++)
+                    copyData.FrameRanges[i] = data[index].FrameRanges[i];
+            }
             copyData.Condition = data[index].Condition?.Copy();
             copyData.RunDuringHitstop = data[index].RunDuringHitstop;
             return copyData;
@@ -206,7 +213,13 @@ namespace HnSF
             var idCopy = oldData.ID;
             var parentCopy = oldData.Parent;
             int[] childrenCopy = oldData.Children;
-            var frameRangeCopy = newData.FrameRanges;
+            Vector2Int[] frameRangeCopy = new Vector2Int[0];
+            if (oldData.FrameRanges != null)
+            {
+                frameRangeCopy = new Vector2Int[oldData.FrameRanges.Length];
+                for (int i = 0; i < oldData.FrameRanges.Length; i++)
+                    frameRangeCopy[i] = oldData.FrameRanges[i];
+            }
             var conditionCopy = newData.Condition?.Copy();
             var runDuringHitstopCopy = newData.RunDuringHitstop;
 
@@ -226,7 +239,13 @@ namespace HnSF
             UndoUtility.RecordObject(this, "Pasted State Variable as Child");
 #endif
             var nameCopy = wantedChildData.Name;
-            var frameRangeCopy = wantedChildData.FrameRanges;
+            var frameRangeCopy = new Vector2Int[0];
+            if (wantedChildData.FrameRanges != null)
+            {
+                frameRangeCopy = new Vector2Int[wantedChildData.FrameRanges.Length];
+                for (int i = 0; i < wantedChildData.FrameRanges.Length; i++)
+                    frameRangeCopy[i] = wantedChildData.FrameRanges[i];
+            }
             var conditionCopy = wantedChildData.Condition?.Copy();
             var hitstopCopy = wantedChildData.RunDuringHitstop;
             var dataIndex = AddStateVariable(wantedChildData.Copy(), parentIndex);
