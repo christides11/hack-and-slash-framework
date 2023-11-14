@@ -1,3 +1,10 @@
+## [40.2.1](https://github.com/christides11/hack-and-slash-framework/compare/v40.2.0...v40.2.1) (2023-11-14)
+
+
+### Bug Fixes
+
+* Fixed StateTimeline frame range copy/paste ([ca20632](https://github.com/christides11/hack-and-slash-framework/commit/ca2063259c2152e0d54c4ff074af4ad741688f77))
+
 # [40.2.0](https://github.com/christides11/hack-and-slash-framework/compare/v40.1.0...v40.2.0) (2023-11-11)
 
 
