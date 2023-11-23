@@ -1,3 +1,10 @@
+## [40.2.2](https://github.com/christides11/hack-and-slash-framework/compare/v40.2.1...v40.2.2) (2023-11-23)
+
+
+### Bug Fixes
+
+* Property Drawer include children ([42c611e](https://github.com/christides11/hack-and-slash-framework/commit/42c611e285e55ba996d830498c84897ed2ad84ec))
+
 ## [40.2.1](https://github.com/christides11/hack-and-slash-framework/compare/v40.2.0...v40.2.1) (2023-11-14)
 
 
