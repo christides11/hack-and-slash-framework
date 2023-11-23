@@ -51,7 +51,7 @@ namespace HnSF.Combat
 
         protected virtual void DrawGeneralGroup(ref Rect position, SerializedProperty property)
         {
-            EditorGUI.PropertyField(new Rect(position.x, GetLineY(), position.width, lineHeight), property.FindPropertyRelative("ID"));
+            EditorGUI.PropertyField(new Rect(position.x, GetLineY(), position.width, lineHeight), property.FindPropertyRelative("ID"), true);
         }
     }
 }

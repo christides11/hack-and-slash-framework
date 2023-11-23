@@ -36,13 +36,13 @@ namespace HnSF.Combat
 
         protected virtual float DrawSharedProperties(Rect position, SerializedProperty property, float lineHeight, float yPosition)
         {
-            EditorGUI.PropertyField(new Rect(position.x, yPosition, position.width, lineHeight), property.FindPropertyRelative("shape"), new GUIContent("Shape"));
+            EditorGUI.PropertyField(new Rect(position.x, yPosition, position.width, lineHeight), property.FindPropertyRelative("shape"), new GUIContent("Shape"), true);
             yPosition += lineSpacing;
             EditorGUI.LabelField(new Rect(position.x, yPosition, 100, lineHeight), new GUIContent("Offset"));
-            EditorGUI.PropertyField(new Rect(position.x + 120, yPosition, position.width - 120, lineHeight), property.FindPropertyRelative("offset"), GUIContent.none);
+            EditorGUI.PropertyField(new Rect(position.x + 120, yPosition, position.width - 120, lineHeight), property.FindPropertyRelative("offset"), GUIContent.none, true);
             yPosition += lineSpacing;
             EditorGUI.LabelField(new Rect(position.x, yPosition, 100, lineHeight), new GUIContent("Rotation"));
-            EditorGUI.PropertyField(new Rect(position.x + 120, yPosition, position.width - 120, lineHeight), property.FindPropertyRelative("rotation"), GUIContent.none);
+            EditorGUI.PropertyField(new Rect(position.x + 120, yPosition, position.width - 120, lineHeight), property.FindPropertyRelative("rotation"), GUIContent.none, true);
             return yPosition;
         }
 
@@ -52,18 +52,18 @@ namespace HnSF.Combat
             if (shapeEnumValue == (int)BoxShape.Rectangle)
             {
                 EditorGUI.LabelField(new Rect(position.x, yPosition, 100, lineHeight), new GUIContent("Size"));
-                EditorGUI.PropertyField(new Rect(position.x + 120, yPosition, position.width - 120, lineHeight), property.FindPropertyRelative("size"), GUIContent.none);
+                EditorGUI.PropertyField(new Rect(position.x + 120, yPosition, position.width - 120, lineHeight), property.FindPropertyRelative("size"), GUIContent.none, true);
             }
             if (shapeEnumValue == (int)BoxShape.Circle || shapeEnumValue == (int)BoxShape.Capsule)
             {
                 EditorGUI.LabelField(new Rect(position.x, yPosition, 100, lineHeight), new GUIContent("Radius"));
-                EditorGUI.PropertyField(new Rect(position.x + 120, yPosition, position.width - 120, lineHeight), property.FindPropertyRelative("radius"), GUIContent.none);
+                EditorGUI.PropertyField(new Rect(position.x + 120, yPosition, position.width - 120, lineHeight), property.FindPropertyRelative("radius"), GUIContent.none, true);
             }
             yPosition += lineSpacing;
             if (shapeEnumValue == (int)BoxShape.Capsule)
             {
                 EditorGUI.LabelField(new Rect(position.x, yPosition, 100, lineHeight), new GUIContent("Height"));
-                EditorGUI.PropertyField(new Rect(position.x + 120, yPosition, position.width - 120, lineHeight), property.FindPropertyRelative("height"), GUIContent.none);
+                EditorGUI.PropertyField(new Rect(position.x + 120, yPosition, position.width - 120, lineHeight), property.FindPropertyRelative("height"), GUIContent.none, true);
             }
             return yPosition;
         }

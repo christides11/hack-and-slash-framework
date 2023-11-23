@@ -43,20 +43,20 @@ namespace HnSF.Combat
 
         protected virtual float DrawHurtboxGroupGeneralProperties(Rect position, SerializedProperty property, float lineSpacing, float lineHeight, float yPosition)
         {
-            EditorGUI.PropertyField(new Rect(position.x, yPosition, position.width, lineHeight), property.FindPropertyRelative("ID"), new GUIContent("ID"));
+            EditorGUI.PropertyField(new Rect(position.x, yPosition, position.width, lineHeight), property.FindPropertyRelative("ID"), new GUIContent("ID"), true);
             yPosition += lineSpacing;
             var activeFramesLabelRect = new Rect(position.x, yPosition, 100, lineHeight);
             var activeFramesStartRect = new Rect(position.x + 120, yPosition, 50, lineHeight);
             var activeFramesTildeRect = new Rect(activeFramesStartRect.x + activeFramesStartRect.width, yPosition, 30, lineHeight);
             var activeFramesEndRect = new Rect(activeFramesTildeRect.x + activeFramesTildeRect.width, yPosition, 50, lineHeight);
             EditorGUI.LabelField(activeFramesLabelRect, "Active Frames");
-            EditorGUI.PropertyField(activeFramesStartRect, property.FindPropertyRelative("activeFramesStart"), GUIContent.none);
+            EditorGUI.PropertyField(activeFramesStartRect, property.FindPropertyRelative("activeFramesStart"), GUIContent.none, true);
             EditorGUI.LabelField(activeFramesTildeRect, "~");
-            EditorGUI.PropertyField(activeFramesEndRect, property.FindPropertyRelative("activeFramesEnd"), GUIContent.none);
+            EditorGUI.PropertyField(activeFramesEndRect, property.FindPropertyRelative("activeFramesEnd"), GUIContent.none, true);
             yPosition += lineSpacing;
-            EditorGUI.PropertyField(new Rect(position.x, yPosition, position.width, lineHeight), property.FindPropertyRelative("attachToEntity"));
+            EditorGUI.PropertyField(new Rect(position.x, yPosition, position.width, lineHeight), property.FindPropertyRelative("attachToEntity"), true);
             yPosition += lineSpacing;
-            EditorGUI.PropertyField(new Rect(position.x, yPosition, position.width, lineHeight), property.FindPropertyRelative("attachTo"));
+            EditorGUI.PropertyField(new Rect(position.x, yPosition, position.width, lineHeight), property.FindPropertyRelative("attachTo"), true);
             return yPosition;
         }
 
@@ -110,7 +110,7 @@ namespace HnSF.Combat
                         break;
                     }
                     EditorGUI.LabelField(labelPosition, $"Box {i}");
-                    EditorGUI.PropertyField(propertyPosition, boxesProperty.GetArrayElementAtIndex(i));
+                    EditorGUI.PropertyField(propertyPosition, boxesProperty.GetArrayElementAtIndex(i), true);
                     yPosition += tHeight + lineHeight + lineSpacing;
                 }
             }
