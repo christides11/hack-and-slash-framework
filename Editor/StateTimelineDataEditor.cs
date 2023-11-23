@@ -32,14 +32,14 @@ namespace HnSF
             SerializedProperty sp = so.FindProperty("data").GetArrayElementAtIndex(state.stateVariablesIDMap[id]);
 
             _scrollPos = EditorGUILayout.BeginScrollView(_scrollPos);
-            EditorGUILayout.PropertyField(sp, GUIContent.none);
+            EditorGUILayout.PropertyField(sp, GUIContent.none, includeChildren: true);
             
             EditorGUILayout.LabelField("CHILDREN", EditorStyles.boldLabel);
             var d = state.data[state.stateVariablesIDMap[id]];
             if (d.Children == null) d.Children = new int[0];
             for (int i = 0; i < d.Children.Length; i++)
             {
-                EditorGUILayout.PropertyField(so.FindProperty("data").GetArrayElementAtIndex(state.stateVariablesIDMap[d.Children[i]]), GUIContent.none);
+                EditorGUILayout.PropertyField(so.FindProperty("data").GetArrayElementAtIndex(state.stateVariablesIDMap[d.Children[i]]), GUIContent.none, includeChildren: true);
             }
             EditorGUILayout.EndScrollView();
             

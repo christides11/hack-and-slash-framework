@@ -49,14 +49,14 @@ namespace HnSF.Combat
 
         protected virtual void DrawDamageGroup(Rect position, SerializedProperty property)
         {
-            EditorGUI.PropertyField(new Rect(position.x, GetLineY(), position.width, lineHeight), property.FindPropertyRelative("damageOnHit"));
+            EditorGUI.PropertyField(new Rect(position.x, GetLineY(), position.width, lineHeight), property.FindPropertyRelative("damageOnHit"), true);
         }
 
         protected override void DrawGeneralGroup(ref Rect position, SerializedProperty property)
         {
             base.DrawGeneralGroup(ref position, property);
-            EditorGUI.PropertyField(new Rect(position.x, GetLineY(), position.width, lineHeight), property.FindPropertyRelative("causesTumble"));
-            EditorGUI.PropertyField(new Rect(position.x, GetLineY(), position.width, lineHeight), property.FindPropertyRelative("knockdown"));
+            EditorGUI.PropertyField(new Rect(position.x, GetLineY(), position.width, lineHeight), property.FindPropertyRelative("causesTumble"), true);
+            EditorGUI.PropertyField(new Rect(position.x, GetLineY(), position.width, lineHeight), property.FindPropertyRelative("knockdown"), true);
         }
 
         protected virtual void DrawStunGroup(Rect position, SerializedProperty property)
@@ -70,25 +70,25 @@ namespace HnSF.Combat
                 case HitboxForceType.SET:
                     EditorGUI.LabelField(new Rect(position.x, GetLineY(), 100, lineHeight), new GUIContent("Force"));
                     EditorGUI.PropertyField(new Rect(position.x+140, GetLineY(), position.width-140, lineHeight), property.FindPropertyRelative("opponentForce"),
-                        GUIContent.none);
+                        GUIContent.none, true);
                     break;
                 default:
-                    EditorGUI.PropertyField(new Rect(position.x, GetLineY(), position.width, lineHeight), property.FindPropertyRelative("forceIncludeYForce"));
-                    EditorGUI.PropertyField(new Rect(position.x, GetLineY(), position.width, lineHeight), property.FindPropertyRelative("opponentForceMultiplier"));
-                    EditorGUI.PropertyField(new Rect(position.x, GetLineY(), position.width, lineHeight), property.FindPropertyRelative("opponentMinMagnitude"));
-                    EditorGUI.PropertyField(new Rect(position.x, GetLineY(), position.width, lineHeight), property.FindPropertyRelative("opponentMaxMagnitude"));
+                    EditorGUI.PropertyField(new Rect(position.x, GetLineY(), position.width, lineHeight), property.FindPropertyRelative("forceIncludeYForce"), true);
+                    EditorGUI.PropertyField(new Rect(position.x, GetLineY(), position.width, lineHeight), property.FindPropertyRelative("opponentForceMultiplier"), true);
+                    EditorGUI.PropertyField(new Rect(position.x, GetLineY(), position.width, lineHeight), property.FindPropertyRelative("opponentMinMagnitude"), true);
+                    EditorGUI.PropertyField(new Rect(position.x, GetLineY(), position.width, lineHeight), property.FindPropertyRelative("opponentMaxMagnitude"), true);
                     break;
             }
-            EditorGUI.PropertyField(new Rect(position.x, GetLineY(), position.width, lineHeight), property.FindPropertyRelative("groundBounces"));
+            EditorGUI.PropertyField(new Rect(position.x, GetLineY(), position.width, lineHeight), property.FindPropertyRelative("groundBounces"), true);
             if (property.FindPropertyRelative("groundBounces").boolValue)
             {
-                EditorGUI.PropertyField(new Rect(position.x, GetLineY(), position.width, lineHeight), property.FindPropertyRelative("groundBounceForce"));
+                EditorGUI.PropertyField(new Rect(position.x, GetLineY(), position.width, lineHeight), property.FindPropertyRelative("groundBounceForce"), true);
             }
 
-            EditorGUI.PropertyField(new Rect(position.x, GetLineY(), position.width, lineHeight), property.FindPropertyRelative("wallBounces"));
+            EditorGUI.PropertyField(new Rect(position.x, GetLineY(), position.width, lineHeight), property.FindPropertyRelative("wallBounces"), true);
             if (property.FindPropertyRelative("wallBounces").boolValue)
             {
-                EditorGUI.PropertyField(new Rect(position.x, GetLineY(), position.width, lineHeight), property.FindPropertyRelative("wallBounceForce"));
+                EditorGUI.PropertyField(new Rect(position.x, GetLineY(), position.width, lineHeight), property.FindPropertyRelative("wallBounceForce"), true);
             }
         }
     }
