@@ -16,6 +16,11 @@ namespace HnSF.Sample.TDAction.State
         public int offset;
         public int buffer;
 
+        public void SetupDefaults()
+        {
+            
+        }
+
         public IConditionVariables Copy()
         {
             return new ConditionButton()

@@ -49,6 +49,11 @@ namespace HnSF.Sample.TDAction.State
         [SerializeField, HideInInspector] private int parent;
         [SerializeField, HideInInspector] private int[] children;
 
+        public void SetupDefaults()
+        {
+            
+        }
+
         public IStateVariables Copy()
         {
             return new ChangeState()

@@ -8,6 +8,11 @@ namespace HnSF.Sample.TDAction.State
     {
         public int FunctionMap => (int)ConditionFunctionEnum.NONE;
 
+        public void SetupDefaults()
+        {
+            
+        }
+
         public IConditionVariables Copy()
         {
             return new ConditionNone();
