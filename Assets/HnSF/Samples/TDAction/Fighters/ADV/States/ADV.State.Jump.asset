@@ -21,9 +21,12 @@ MonoBehaviour:
   autoLoopFrame: 1
   data:
   - rid: 1680875285544697856
+  - rid: 3771505573970575360
   references:
     version: 2
     RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
     - rid: 1680875285544697856
       type: {class: ChangeState, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
       data:
@@ -40,3 +43,17 @@ MonoBehaviour:
     - rid: 1680875285544697858
       type: {class: ConditionNone, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
       data: 
+    - rid: 3771505573970575360
+      type: {class: VarApplyTraction, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+      data:
+        name: 
+        id: 1
+        frameRanges: []
+        condition:
+          rid: -2
+        runDuringHitstop: 0
+        useTractionStat: 0
+        aerialTraction: 0
+        traction: 5
+        parent: -1
+        children: 

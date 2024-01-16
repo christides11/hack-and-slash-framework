@@ -11,6 +11,11 @@ namespace HnSF.Sample.TDAction.State
         public float sqrMagnitude;
         public bool inverse;
 
+        public void SetupDefaults()
+        {
+            throw new System.NotImplementedException();
+        }
+
         public IConditionVariables Copy()
         {
             return new ConditionMovementMagnitude()

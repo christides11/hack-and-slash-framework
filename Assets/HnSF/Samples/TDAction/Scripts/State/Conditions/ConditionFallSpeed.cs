@@ -8,6 +8,11 @@ namespace HnSF.Sample.TDAction.State
         public float maxValue;
         public bool inverse;
 
+        public void SetupDefaults()
+        {
+            
+        }
+
         public IConditionVariables Copy()
         {
             return new ConditionFallSpeed()

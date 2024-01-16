@@ -6,6 +6,11 @@ namespace HnSF.Sample.TDAction.State
         
         public bool inverse;
 
+        public void SetupDefaults()
+        {
+            
+        }
+
         public IConditionVariables Copy()
         {
             return new ConditionGroundState()

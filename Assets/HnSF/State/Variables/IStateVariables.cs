@@ -14,6 +14,7 @@ namespace HnSF
         public Vector2Int[] FrameRanges { get; set; }
         public IConditionVariables Condition { get; set; }
 
+        void SetupDefaults();
         IStateVariables Copy();
     }
 }

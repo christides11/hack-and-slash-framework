@@ -136,6 +136,7 @@ namespace HnSF
                 tempChildren[^1] = data[^1].ID;
                 data[parentIndex].Children = tempChildren;
             }
+            var.SetupDefaults();
             return dataIndex;
         }
 

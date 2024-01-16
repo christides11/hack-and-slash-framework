@@ -53,6 +53,11 @@ namespace HnSF.Sample.TDAction.State
         [SerializeField, HideInInspector] private int parent;
         [SerializeField, HideInInspector] private int[] children;
 
+        public void SetupDefaults()
+        {
+            traction = 5.0f;
+        }
+
         public IStateVariables Copy()
         {
             return new VarApplyTraction()
