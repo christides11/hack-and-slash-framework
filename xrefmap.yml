@@ -2132,6 +2132,19 @@ references:
   isSpec: "True"
   fullName: HnSF.IConditionVariables.Copy
   nameWithType: IConditionVariables.Copy
+- uid: HnSF.IConditionVariables.SetupDefaults
+  name: SetupDefaults()
+  href: api/HnSF.IConditionVariables.html#HnSF_IConditionVariables_SetupDefaults
+  commentId: M:HnSF.IConditionVariables.SetupDefaults
+  fullName: HnSF.IConditionVariables.SetupDefaults()
+  nameWithType: IConditionVariables.SetupDefaults()
+- uid: HnSF.IConditionVariables.SetupDefaults*
+  name: SetupDefaults
+  href: api/HnSF.IConditionVariables.html#HnSF_IConditionVariables_SetupDefaults_
+  commentId: Overload:HnSF.IConditionVariables.SetupDefaults
+  isSpec: "True"
+  fullName: HnSF.IConditionVariables.SetupDefaults
+  nameWithType: IConditionVariables.SetupDefaults
 - uid: HnSF.Input
   name: HnSF.Input
   href: api/HnSF.Input.html
@@ -2468,6 +2481,19 @@ references:
   isSpec: "True"
   fullName: HnSF.IStateVariables.RunDuringHitstop
   nameWithType: IStateVariables.RunDuringHitstop
+- uid: HnSF.IStateVariables.SetupDefaults
+  name: SetupDefaults()
+  href: api/HnSF.IStateVariables.html#HnSF_IStateVariables_SetupDefaults
+  commentId: M:HnSF.IStateVariables.SetupDefaults
+  fullName: HnSF.IStateVariables.SetupDefaults()
+  nameWithType: IStateVariables.SetupDefaults()
+- uid: HnSF.IStateVariables.SetupDefaults*
+  name: SetupDefaults
+  href: api/HnSF.IStateVariables.html#HnSF_IStateVariables_SetupDefaults_
+  commentId: Overload:HnSF.IStateVariables.SetupDefaults
+  isSpec: "True"
+  fullName: HnSF.IStateVariables.SetupDefaults
+  nameWithType: IStateVariables.SetupDefaults
 - uid: HnSF.IStateVariables.VariableType
   name: VariableType
   href: api/HnSF.IStateVariables.html#HnSF_IStateVariables_VariableType
@@ -4999,6 +5025,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.State.ChangeState.RunDuringHitstop
   nameWithType: ChangeState.RunDuringHitstop
+- uid: HnSF.Sample.TDAction.State.ChangeState.SetupDefaults
+  name: SetupDefaults()
+  href: api/HnSF.Sample.TDAction.State.ChangeState.html#HnSF_Sample_TDAction_State_ChangeState_SetupDefaults
+  commentId: M:HnSF.Sample.TDAction.State.ChangeState.SetupDefaults
+  fullName: HnSF.Sample.TDAction.State.ChangeState.SetupDefaults()
+  nameWithType: ChangeState.SetupDefaults()
+- uid: HnSF.Sample.TDAction.State.ChangeState.SetupDefaults*
+  name: SetupDefaults
+  href: api/HnSF.Sample.TDAction.State.ChangeState.html#HnSF_Sample_TDAction_State_ChangeState_SetupDefaults_
+  commentId: Overload:HnSF.Sample.TDAction.State.ChangeState.SetupDefaults
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.ChangeState.SetupDefaults
+  nameWithType: ChangeState.SetupDefaults
 - uid: HnSF.Sample.TDAction.State.ChangeState.stateID
   name: stateID
   href: api/HnSF.Sample.TDAction.State.ChangeState.html#HnSF_Sample_TDAction_State_ChangeState_stateID
@@ -5091,6 +5130,19 @@ references:
   commentId: F:HnSF.Sample.TDAction.State.ConditionButton.offset
   fullName: HnSF.Sample.TDAction.State.ConditionButton.offset
   nameWithType: ConditionButton.offset
+- uid: HnSF.Sample.TDAction.State.ConditionButton.SetupDefaults
+  name: SetupDefaults()
+  href: api/HnSF.Sample.TDAction.State.ConditionButton.html#HnSF_Sample_TDAction_State_ConditionButton_SetupDefaults
+  commentId: M:HnSF.Sample.TDAction.State.ConditionButton.SetupDefaults
+  fullName: HnSF.Sample.TDAction.State.ConditionButton.SetupDefaults()
+  nameWithType: ConditionButton.SetupDefaults()
+- uid: HnSF.Sample.TDAction.State.ConditionButton.SetupDefaults*
+  name: SetupDefaults
+  href: api/HnSF.Sample.TDAction.State.ConditionButton.html#HnSF_Sample_TDAction_State_ConditionButton_SetupDefaults_
+  commentId: Overload:HnSF.Sample.TDAction.State.ConditionButton.SetupDefaults
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.ConditionButton.SetupDefaults
+  nameWithType: ConditionButton.SetupDefaults
 - uid: HnSF.Sample.TDAction.State.ConditionFallSpeed
   name: ConditionFallSpeed
   href: api/HnSF.Sample.TDAction.State.ConditionFallSpeed.html
@@ -5141,6 +5193,19 @@ references:
   commentId: F:HnSF.Sample.TDAction.State.ConditionFallSpeed.minValue
   fullName: HnSF.Sample.TDAction.State.ConditionFallSpeed.minValue
   nameWithType: ConditionFallSpeed.minValue
+- uid: HnSF.Sample.TDAction.State.ConditionFallSpeed.SetupDefaults
+  name: SetupDefaults()
+  href: api/HnSF.Sample.TDAction.State.ConditionFallSpeed.html#HnSF_Sample_TDAction_State_ConditionFallSpeed_SetupDefaults
+  commentId: M:HnSF.Sample.TDAction.State.ConditionFallSpeed.SetupDefaults
+  fullName: HnSF.Sample.TDAction.State.ConditionFallSpeed.SetupDefaults()
+  nameWithType: ConditionFallSpeed.SetupDefaults()
+- uid: HnSF.Sample.TDAction.State.ConditionFallSpeed.SetupDefaults*
+  name: SetupDefaults
+  href: api/HnSF.Sample.TDAction.State.ConditionFallSpeed.html#HnSF_Sample_TDAction_State_ConditionFallSpeed_SetupDefaults_
+  commentId: Overload:HnSF.Sample.TDAction.State.ConditionFallSpeed.SetupDefaults
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.ConditionFallSpeed.SetupDefaults
+  nameWithType: ConditionFallSpeed.SetupDefaults
 - uid: HnSF.Sample.TDAction.State.ConditionFunctionEnum
   name: ConditionFunctionEnum
   href: api/HnSF.Sample.TDAction.State.ConditionFunctionEnum.html
@@ -5221,6 +5286,19 @@ references:
   commentId: F:HnSF.Sample.TDAction.State.ConditionGroundState.inverse
   fullName: HnSF.Sample.TDAction.State.ConditionGroundState.inverse
   nameWithType: ConditionGroundState.inverse
+- uid: HnSF.Sample.TDAction.State.ConditionGroundState.SetupDefaults
+  name: SetupDefaults()
+  href: api/HnSF.Sample.TDAction.State.ConditionGroundState.html#HnSF_Sample_TDAction_State_ConditionGroundState_SetupDefaults
+  commentId: M:HnSF.Sample.TDAction.State.ConditionGroundState.SetupDefaults
+  fullName: HnSF.Sample.TDAction.State.ConditionGroundState.SetupDefaults()
+  nameWithType: ConditionGroundState.SetupDefaults()
+- uid: HnSF.Sample.TDAction.State.ConditionGroundState.SetupDefaults*
+  name: SetupDefaults
+  href: api/HnSF.Sample.TDAction.State.ConditionGroundState.html#HnSF_Sample_TDAction_State_ConditionGroundState_SetupDefaults_
+  commentId: Overload:HnSF.Sample.TDAction.State.ConditionGroundState.SetupDefaults
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.ConditionGroundState.SetupDefaults
+  nameWithType: ConditionGroundState.SetupDefaults
 - uid: HnSF.Sample.TDAction.State.ConditionMovementMagnitude
   name: ConditionMovementMagnitude
   href: api/HnSF.Sample.TDAction.State.ConditionMovementMagnitude.html
@@ -5259,6 +5337,19 @@ references:
   commentId: F:HnSF.Sample.TDAction.State.ConditionMovementMagnitude.inverse
   fullName: HnSF.Sample.TDAction.State.ConditionMovementMagnitude.inverse
   nameWithType: ConditionMovementMagnitude.inverse
+- uid: HnSF.Sample.TDAction.State.ConditionMovementMagnitude.SetupDefaults
+  name: SetupDefaults()
+  href: api/HnSF.Sample.TDAction.State.ConditionMovementMagnitude.html#HnSF_Sample_TDAction_State_ConditionMovementMagnitude_SetupDefaults
+  commentId: M:HnSF.Sample.TDAction.State.ConditionMovementMagnitude.SetupDefaults
+  fullName: HnSF.Sample.TDAction.State.ConditionMovementMagnitude.SetupDefaults()
+  nameWithType: ConditionMovementMagnitude.SetupDefaults()
+- uid: HnSF.Sample.TDAction.State.ConditionMovementMagnitude.SetupDefaults*
+  name: SetupDefaults
+  href: api/HnSF.Sample.TDAction.State.ConditionMovementMagnitude.html#HnSF_Sample_TDAction_State_ConditionMovementMagnitude_SetupDefaults_
+  commentId: Overload:HnSF.Sample.TDAction.State.ConditionMovementMagnitude.SetupDefaults
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.ConditionMovementMagnitude.SetupDefaults
+  nameWithType: ConditionMovementMagnitude.SetupDefaults
 - uid: HnSF.Sample.TDAction.State.ConditionMovementMagnitude.sqrMagnitude
   name: sqrMagnitude
   href: api/HnSF.Sample.TDAction.State.ConditionMovementMagnitude.html#HnSF_Sample_TDAction_State_ConditionMovementMagnitude_sqrMagnitude
@@ -5297,6 +5388,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.State.ConditionNone.FunctionMap
   nameWithType: ConditionNone.FunctionMap
+- uid: HnSF.Sample.TDAction.State.ConditionNone.SetupDefaults
+  name: SetupDefaults()
+  href: api/HnSF.Sample.TDAction.State.ConditionNone.html#HnSF_Sample_TDAction_State_ConditionNone_SetupDefaults
+  commentId: M:HnSF.Sample.TDAction.State.ConditionNone.SetupDefaults
+  fullName: HnSF.Sample.TDAction.State.ConditionNone.SetupDefaults()
+  nameWithType: ConditionNone.SetupDefaults()
+- uid: HnSF.Sample.TDAction.State.ConditionNone.SetupDefaults*
+  name: SetupDefaults
+  href: api/HnSF.Sample.TDAction.State.ConditionNone.html#HnSF_Sample_TDAction_State_ConditionNone_SetupDefaults_
+  commentId: Overload:HnSF.Sample.TDAction.State.ConditionNone.SetupDefaults
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.ConditionNone.SetupDefaults
+  nameWithType: ConditionNone.SetupDefaults
 - uid: HnSF.Sample.TDAction.State.LocalPlayerData
   name: LocalPlayerData
   href: api/HnSF.Sample.TDAction.State.LocalPlayerData.html
@@ -5573,6 +5677,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.State.VarApplyGravity.RunDuringHitstop
   nameWithType: VarApplyGravity.RunDuringHitstop
+- uid: HnSF.Sample.TDAction.State.VarApplyGravity.SetupDefaults
+  name: SetupDefaults()
+  href: api/HnSF.Sample.TDAction.State.VarApplyGravity.html#HnSF_Sample_TDAction_State_VarApplyGravity_SetupDefaults
+  commentId: M:HnSF.Sample.TDAction.State.VarApplyGravity.SetupDefaults
+  fullName: HnSF.Sample.TDAction.State.VarApplyGravity.SetupDefaults()
+  nameWithType: VarApplyGravity.SetupDefaults()
+- uid: HnSF.Sample.TDAction.State.VarApplyGravity.SetupDefaults*
+  name: SetupDefaults
+  href: api/HnSF.Sample.TDAction.State.VarApplyGravity.html#HnSF_Sample_TDAction_State_VarApplyGravity_SetupDefaults_
+  commentId: Overload:HnSF.Sample.TDAction.State.VarApplyGravity.SetupDefaults
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.VarApplyGravity.SetupDefaults
+  nameWithType: VarApplyGravity.SetupDefaults
 - uid: HnSF.Sample.TDAction.State.VarApplyGravity.useGravityStat
   name: useGravityStat
   href: api/HnSF.Sample.TDAction.State.VarApplyGravity.html#HnSF_Sample_TDAction_State_VarApplyGravity_useGravityStat
@@ -5738,6 +5855,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.State.VarApplyTraction.RunDuringHitstop
   nameWithType: VarApplyTraction.RunDuringHitstop
+- uid: HnSF.Sample.TDAction.State.VarApplyTraction.SetupDefaults
+  name: SetupDefaults()
+  href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_SetupDefaults
+  commentId: M:HnSF.Sample.TDAction.State.VarApplyTraction.SetupDefaults
+  fullName: HnSF.Sample.TDAction.State.VarApplyTraction.SetupDefaults()
+  nameWithType: VarApplyTraction.SetupDefaults()
+- uid: HnSF.Sample.TDAction.State.VarApplyTraction.SetupDefaults*
+  name: SetupDefaults
+  href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_SetupDefaults_
+  commentId: Overload:HnSF.Sample.TDAction.State.VarApplyTraction.SetupDefaults
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.VarApplyTraction.SetupDefaults
+  nameWithType: VarApplyTraction.SetupDefaults
 - uid: HnSF.Sample.TDAction.State.VarApplyTraction.traction
   name: traction
   href: api/HnSF.Sample.TDAction.State.VarApplyTraction.html#HnSF_Sample_TDAction_State_VarApplyTraction_traction
@@ -5897,6 +6027,19 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed.RunDuringHitstop
   nameWithType: VarSetFallSpeed.RunDuringHitstop
+- uid: HnSF.Sample.TDAction.State.VarSetFallSpeed.SetupDefaults
+  name: SetupDefaults()
+  href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html#HnSF_Sample_TDAction_State_VarSetFallSpeed_SetupDefaults
+  commentId: M:HnSF.Sample.TDAction.State.VarSetFallSpeed.SetupDefaults
+  fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed.SetupDefaults()
+  nameWithType: VarSetFallSpeed.SetupDefaults()
+- uid: HnSF.Sample.TDAction.State.VarSetFallSpeed.SetupDefaults*
+  name: SetupDefaults
+  href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html#HnSF_Sample_TDAction_State_VarSetFallSpeed_SetupDefaults_
+  commentId: Overload:HnSF.Sample.TDAction.State.VarSetFallSpeed.SetupDefaults
+  isSpec: "True"
+  fullName: HnSF.Sample.TDAction.State.VarSetFallSpeed.SetupDefaults
+  nameWithType: VarSetFallSpeed.SetupDefaults
 - uid: HnSF.Sample.TDAction.State.VarSetFallSpeed.value
   name: value
   href: api/HnSF.Sample.TDAction.State.VarSetFallSpeed.html#HnSF_Sample_TDAction_State_VarSetFallSpeed_value
