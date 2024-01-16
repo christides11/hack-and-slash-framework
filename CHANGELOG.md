@@ -1,3 +1,10 @@
+# [40.3.0](https://github.com/christides11/hack-and-slash-framework/compare/v40.2.2...v40.3.0) (2024-01-16)
+
+
+### Features
+
+* Default value support for IStateVariables ([eb07814](https://github.com/christides11/hack-and-slash-framework/commit/eb07814abb52a09c30060b07d0fc70cc096d48c9))
+
 ## [40.2.2](https://github.com/christides11/hack-and-slash-framework/compare/v40.2.1...v40.2.2) (2023-11-23)
 
 
