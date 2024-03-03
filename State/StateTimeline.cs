@@ -11,6 +11,7 @@ namespace HnSF
         
         public string stateName;
         public bool useBaseState = false;
+        public bool processBaseStateFirst = false;
         public StateTimeline baseState;
         public int totalFrames = 10;
         public bool autoIncrement = true;

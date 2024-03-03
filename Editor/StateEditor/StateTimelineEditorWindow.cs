@@ -125,13 +125,17 @@ namespace HnSF
         
         public virtual StateTimeline[] GetStateTimelineParents(StateTimeline startingTimeline)
         {
-            List<StateTimeline> stateTimelineParents = new List<StateTimeline>();
-            
-            while (startingTimeline != null)
+            void AddStateTimelinesToList(List<StateTimeline> timelines, StateTimeline currentST)
             {
-                stateTimelineParents.Add(startingTimeline);
-                startingTimeline = startingTimeline.useBaseState ? startingTimeline.baseState : null;
+                if(currentST.useBaseState && currentST.processBaseStateFirst) AddStateTimelinesToList(timelines, currentST.baseState);
+                timelines.Add(currentST);
+                if(currentST.useBaseState && !currentST.processBaseStateFirst) AddStateTimelinesToList(timelines, currentST.baseState);
             }
+            
+            List<StateTimeline> stateTimelineParents = new List<StateTimeline>();
+
+            AddStateTimelinesToList(stateTimelineParents, startingTimeline);
+
             return stateTimelineParents.ToArray();
         }
 
@@ -215,7 +219,7 @@ namespace HnSF
             thisSideBar.text =
                 !String.IsNullOrEmpty(stateTimeline.data[index].Name) ? stateTimeline.data[index].Name
                     : stateTimeline.data[index].GetType().Name;
-            SidebarSetupLabel(stateTimeline, dataID, thisSideBar, index);
+            if(this.stateTimeline == stateTimeline) SidebarSetupLabel(stateTimeline, dataID, thisSideBar, index);
 
             if (stateTimeline.data[index].Children == null) return;
             for (int i = 0; i < stateTimeline.data[index].Children.Length; i++)

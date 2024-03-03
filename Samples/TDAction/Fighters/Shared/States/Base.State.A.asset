@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40f66a5b733e53543bcb2daa52776331, type: 3}
+  m_Name: Base.State.A
+  m_EditorClassIdentifier: 
+  stateName: 
+  useBaseState: 0
+  processBaseStateFirst: 0
+  baseState: {fileID: 0}
+  totalFrames: 4
+  autoIncrement: 1
+  autoLoop: 1
+  autoLoopFrame: 1
+  data:
+  - rid: 1423070996485636104
+  - rid: 2828834600646868992
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 1423070996485636104
+      type: {class: VarApplyTraction, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+      data:
+        name: Movement Traction
+        id: 0
+        frameRanges:
+        - {x: 1, y: 4}
+        condition:
+          rid: 1423070996485636105
+        runDuringHitstop: 0
+        useTractionStat: 1
+        aerialTraction: 0
+        traction: 0
+        parent: 0
+        children: 
+    - rid: 1423070996485636105
+      type: {class: ConditionNone, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+      data: 
+    - rid: 2828834600646868992
+      type: {class: ChangeState, ns: HnSF.Sample.TDAction.State, asm: HnSF.TDAction}
+      data:
+        name: Change A
+        id: 1
+        frameRanges: []
+        condition:
+          rid: -2
+        runDuringHitstop: 0
+        stateMovesetID: 0
+        stateID: 0
+        parent: -1
+        children: 
