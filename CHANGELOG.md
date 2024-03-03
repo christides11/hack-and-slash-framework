@@ -1,3 +1,10 @@
+# [40.4.0](https://github.com/christides11/hack-and-slash-framework/compare/v40.3.0...v40.4.0) (2024-03-03)
+
+
+### Features
+
+* Base State processing order ([a258f41](https://github.com/christides11/hack-and-slash-framework/commit/a258f41a9aabb12e5aae0a6b795009e7d44ddec0))
+
 # [40.3.0](https://github.com/christides11/hack-and-slash-framework/compare/v40.2.2...v40.3.0) (2024-01-16)
 
 
