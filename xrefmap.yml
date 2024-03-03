@@ -6478,6 +6478,12 @@ references:
   isSpec: "True"
   fullName: HnSF.StateTimeline.PasteInPlace
   nameWithType: StateTimeline.PasteInPlace
+- uid: HnSF.StateTimeline.processBaseStateFirst
+  name: processBaseStateFirst
+  href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_processBaseStateFirst
+  commentId: F:HnSF.StateTimeline.processBaseStateFirst
+  fullName: HnSF.StateTimeline.processBaseStateFirst
+  nameWithType: StateTimeline.processBaseStateFirst
 - uid: HnSF.StateTimeline.RemoveStateVariable(System.Int32)
   name: RemoveStateVariable(Int32)
   href: api/HnSF.StateTimeline.html#HnSF_StateTimeline_RemoveStateVariable_System_Int32_
