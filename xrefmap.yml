@@ -1651,19 +1651,6 @@ references:
   isSpec: "True"
   fullName: HnSF.Fighters.IFighterCombatManager.AddHitStun
   nameWithType: IFighterCombatManager.AddHitStun
-- uid: HnSF.Fighters.IFighterCombatManager.CheckForInputSequence(HnSF.Input.InputSequence,System.UInt32,System.Boolean,System.Boolean)
-  name: CheckForInputSequence(InputSequence, UInt32, Boolean, Boolean)
-  href: api/HnSF.Fighters.IFighterCombatManager.html#HnSF_Fighters_IFighterCombatManager_CheckForInputSequence_HnSF_Input_InputSequence_System_UInt32_System_Boolean_System_Boolean_
-  commentId: M:HnSF.Fighters.IFighterCombatManager.CheckForInputSequence(HnSF.Input.InputSequence,System.UInt32,System.Boolean,System.Boolean)
-  fullName: HnSF.Fighters.IFighterCombatManager.CheckForInputSequence(HnSF.Input.InputSequence, System.UInt32, System.Boolean, System.Boolean)
-  nameWithType: IFighterCombatManager.CheckForInputSequence(InputSequence, UInt32, Boolean, Boolean)
-- uid: HnSF.Fighters.IFighterCombatManager.CheckForInputSequence*
-  name: CheckForInputSequence
-  href: api/HnSF.Fighters.IFighterCombatManager.html#HnSF_Fighters_IFighterCombatManager_CheckForInputSequence_
-  commentId: Overload:HnSF.Fighters.IFighterCombatManager.CheckForInputSequence
-  isSpec: "True"
-  fullName: HnSF.Fighters.IFighterCombatManager.CheckForInputSequence
-  nameWithType: IFighterCombatManager.CheckForInputSequence
 - uid: HnSF.Fighters.IFighterCombatManager.Cleanup
   name: Cleanup()
   href: api/HnSF.Fighters.IFighterCombatManager.html#HnSF_Fighters_IFighterCombatManager_Cleanup
@@ -3188,19 +3175,6 @@ references:
   isSpec: "True"
   fullName: HnSF.Sample.TDAction.FighterCombatManager.AddHitStun
   nameWithType: FighterCombatManager.AddHitStun
-- uid: HnSF.Sample.TDAction.FighterCombatManager.CheckForInputSequence(HnSF.Input.InputSequence,System.UInt32,System.Boolean,System.Boolean)
-  name: CheckForInputSequence(InputSequence, UInt32, Boolean, Boolean)
-  href: api/HnSF.Sample.TDAction.FighterCombatManager.html#HnSF_Sample_TDAction_FighterCombatManager_CheckForInputSequence_HnSF_Input_InputSequence_System_UInt32_System_Boolean_System_Boolean_
-  commentId: M:HnSF.Sample.TDAction.FighterCombatManager.CheckForInputSequence(HnSF.Input.InputSequence,System.UInt32,System.Boolean,System.Boolean)
-  fullName: HnSF.Sample.TDAction.FighterCombatManager.CheckForInputSequence(HnSF.Input.InputSequence, System.UInt32, System.Boolean, System.Boolean)
-  nameWithType: FighterCombatManager.CheckForInputSequence(InputSequence, UInt32, Boolean, Boolean)
-- uid: HnSF.Sample.TDAction.FighterCombatManager.CheckForInputSequence*
-  name: CheckForInputSequence
-  href: api/HnSF.Sample.TDAction.FighterCombatManager.html#HnSF_Sample_TDAction_FighterCombatManager_CheckForInputSequence_
-  commentId: Overload:HnSF.Sample.TDAction.FighterCombatManager.CheckForInputSequence
-  isSpec: "True"
-  fullName: HnSF.Sample.TDAction.FighterCombatManager.CheckForInputSequence
-  nameWithType: FighterCombatManager.CheckForInputSequence
 - uid: HnSF.Sample.TDAction.FighterCombatManager.Cleanup
   name: Cleanup()
   href: api/HnSF.Sample.TDAction.FighterCombatManager.html#HnSF_Sample_TDAction_FighterCombatManager_Cleanup
