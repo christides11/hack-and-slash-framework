@@ -10,7 +10,6 @@ namespace HnSF.Fighters
         int CurrentChargeLevelCharge { get; }
         
         void Cleanup();
-        bool CheckForInputSequence(InputSequence sequence, uint baseOffset = 0, bool processSequenceButtons = false, bool holdInput = false);
 
         void SetHitStun(int value);
         void AddHitStun(int value);
