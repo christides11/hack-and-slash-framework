@@ -21,13 +21,7 @@ namespace HnSF.Sample.TDAction
             CurrentChargeLevel = 0;
             CurrentChargeLevelCharge = 0;
         }
-
-        public bool CheckForInputSequence(InputSequence sequence, uint baseOffset = 0, bool processSequenceButtons = false,
-            bool holdInput = false)
-        {
-            throw new System.NotImplementedException();
-        }
-
+        
         public void SetHitStop(int value)
         {
             HitStop = value;
