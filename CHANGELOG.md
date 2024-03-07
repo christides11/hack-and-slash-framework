@@ -1,3 +1,10 @@
+## [40.4.1](https://github.com/christides11/hack-and-slash-framework/compare/v40.4.0...v40.4.1) (2024-03-07)
+
+
+### Bug Fixes
+
+* Removed CheckForInputSequence ([63c3257](https://github.com/christides11/hack-and-slash-framework/commit/63c325760c8458a8a6c728f1cb7d87d8b88b228e))
+
 # [40.4.0](https://github.com/christides11/hack-and-slash-framework/compare/v40.3.0...v40.4.0) (2024-03-03)
 
 
