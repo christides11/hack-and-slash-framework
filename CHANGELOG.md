@@ -1,3 +1,10 @@
+## [40.4.2](https://github.com/christides11/hack-and-slash-framework/compare/v40.4.1...v40.4.2) (2024-04-17)
+
+
+### Bug Fixes
+
+* Fixed DataEditor Inspector Updating ([be6b095](https://github.com/christides11/hack-and-slash-framework/commit/be6b095e240cab605fb8105cfd4c894f926e36a2))
+
 ## [40.4.1](https://github.com/christides11/hack-and-slash-framework/compare/v40.4.0...v40.4.1) (2024-03-07)
 
 
