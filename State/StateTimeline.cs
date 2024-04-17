@@ -20,7 +20,7 @@ namespace HnSF
 
         // ID : Index
         public Dictionary<int, int> stateVariablesIDMap = new Dictionary<int, int>();
-        [SelectImplementation(typeof(IStateVariables))] [SerializeField, SerializeReference]
+        [SubclassSelector] [SerializeField, SerializeReference]
         public IStateVariables[] data = Array.Empty<IStateVariables>();
 
         public virtual void Initialize()

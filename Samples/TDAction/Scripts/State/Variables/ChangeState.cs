@@ -37,7 +37,7 @@ namespace HnSF.Sample.TDAction.State
    
         [SerializeField, HideInInspector] private int id;
         [SerializeField] public Vector2Int[] frameRanges;
-        [SelectImplementation(typeof(IConditionVariables))] [SerializeField, SerializeReference] 
+        [SubclassSelector] [SerializeField, SerializeReference] 
         public IConditionVariables condition;
 
         public bool RunDuringHitstop { get => runDuringHitstop; set => runDuringHitstop = value; }

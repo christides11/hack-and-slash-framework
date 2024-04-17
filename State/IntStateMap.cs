@@ -6,7 +6,7 @@ namespace HnSF
     public class IntStateMap
     {
         public string name;
-        [SelectImplementation((typeof(FighterStateReferenceBase)))] [SerializeField, SerializeReference]
+        [SubclassSelector] [SerializeField, SerializeReference]
         public FighterStateReferenceBase state = new FighterStateReferenceBase();
         public StateTimeline stateTimeline;
     }
