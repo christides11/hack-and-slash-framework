@@ -1,11 +1,11 @@
 {
   "dependencies": {
-    "com.medvedya.select_implementation_property_drawer": {
-      "version": "https://github.com/medvedya/Select-implementation-property-drawer.git",
+    "com.mackysoft.serializereference-extensions": {
+      "version": "https://github.com/christides11/Unity-SerializeReferenceExtensions.git?path=Assets/MackySoft/MackySoft.SerializeReferenceExtensions",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "f94217347e3bf090d470519b9bed30c794e4263e"
+      "hash": "d3e15f9ef5d41ba638bdbf40e5675dfd79aa6fe7"
     },
     "com.unity.2d.sprite": {
       "version": "1.0.0",

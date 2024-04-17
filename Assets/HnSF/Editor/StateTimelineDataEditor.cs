@@ -12,7 +12,6 @@ namespace HnSF
 
         public int id;
         public StateTimeline state;
-        private SerializedObject so = null;
 
         public static StateTimelineDataEditor Init(StateTimeline stateTimeline, int id)
         {
@@ -28,7 +27,7 @@ namespace HnSF
         protected Vector2 _scrollPos = Vector2.zero;
         protected virtual void OnGUI()
         {
-            if (so == null) so = new SerializedObject(state);
+            var so = new SerializedObject(state);
             SerializedProperty sp = so.FindProperty("data").GetArrayElementAtIndex(state.stateVariablesIDMap[id]);
 
             _scrollPos = EditorGUILayout.BeginScrollView(_scrollPos);
